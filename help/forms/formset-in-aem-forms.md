@@ -9,12 +9,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+hide: true
+hidefromtoc: true
+source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2803'
 ht-degree: 0%
 
 ---
+
 
 # Formulário definido no AEM Forms{#form-set-in-aem-forms}
 
@@ -34,7 +37,7 @@ Os conjuntos de formulários também são compatíveis com o aplicativo AEM Form
 
 Você pode associar vários XDPs ou Modelos de formulário, criados usando o Designer, em um conjunto de formulários. Os conjuntos de formulários podem ser usados para renderizar seletivamente os XDPs com base nos valores inseridos pelos usuários nos formulários iniciais e em seus perfis.
 
-Use a [interface do usuário do AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) para gerenciar todos os seus formulários, conjuntos de formulários e ativos relacionados.
+Use a [interface do usuário do AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms) para gerenciar todos os seus formulários, conjuntos de formulários e ativos relacionados.
 
 ### Criar um conjunto de formulários {#create-a-form-set}
 
@@ -65,7 +68,7 @@ Para criar um conjunto de formulários, faça o seguinte:
 
    * Ordem dos formulários: arraste e solte os formulários para reorganizá-los. A ordem do formulário define a ordem em que os formulários são mostrados ao usuário final no aplicativo AEM Forms e na representação independente.
    * Identificador de formulário: especifica uma identidade exclusiva para os formulários a serem usados em expressões de qualificação.
-   * Raiz de dados: para cada formulário no conjunto de formulários, o Autor pode configurar o XPATH onde os dados desse formulário específico estão posicionados no XML enviado. Por padrão, o valor é /. Se todos os formulários no conjunto de formulários estiverem vinculados a um esquema e compartilharem o mesmo esquema XML, você poderá alterar esse valor. Recomenda-se que cada campo no formulário tenha a vinculação de dados adequada especificada no XDP. Se dois campos em dois formulários diferentes compartilharem a associação de dados comum, o campo no segundo formulário mostrará valores preenchidos previamente do primeiro formulário. Não vincule dois subformulários com o mesmo conteúdo interno ao mesmo nó XML. Para obter mais informações sobre a estrutura XML do conjunto de formulários, consulte [Preencher XML previamente para o conjunto de formulários](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
+   * Raiz de dados: para cada formulário no conjunto de formulários, o Autor pode configurar o XPATH onde os dados desse formulário específico estão posicionados no XML enviado. Por padrão, o valor é /. Se todos os formulários no conjunto de formulários estiverem vinculados a um esquema e compartilharem o mesmo esquema XML, você poderá alterar esse valor. Recomenda-se que cada campo no formulário tenha a vinculação de dados adequada especificada no XDP. Se dois campos em dois formulários diferentes compartilharem a associação de dados comum, o campo no segundo formulário mostrará valores preenchidos previamente do primeiro formulário. Não vincule dois subformulários com o mesmo conteúdo interno ao mesmo nó XML. Para obter mais informações sobre a estrutura XML do conjunto de formulários, consulte [Preencher XML previamente para o conjunto de formulários](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set).
    * Expressão de elegibilidade: especifica uma expressão JavaScript que avalia um valor Booleano e indica se um formulário no conjunto de formulários é elegível para preenchimento. Se falso, o usuário não será solicitado ou nem receberá o formulário para preencher. Normalmente, a expressão é baseada nos valores dos campos capturados antes desse formulário. As expressões também contêm chamadas para o conjunto de formulários API fs.valueOf para extrair os valores preenchidos pelo usuário em um campo de um formulário do conjunto de formulários:
 
    *fs.valueOf(&lt;Identificador de Formulário>, &lt;expressão de SomCampo>) > &lt;valor>*
@@ -303,7 +306,7 @@ A subárvore indica os dados dos formulários no conjunto de formulários. O ele
 
 Essa tag indica o início do Formulário XML HTML5. Isso é adicionado no XML de envio se estiver presente no XML de preenchimento prévio ou se não houver XML de preenchimento prévio. Essa tag pode ser removida do XML de preenchimento prévio.
 
-### XFA:CONJUNTOS DE DADOS {#xfa-datasets}
+### XFA:DATASETS {#xfa-datasets}
 
 `parent elements: xdp:xdp`
 
@@ -315,7 +318,7 @@ Essa tag indica o início do Formulário XML HTML5. Isso é adicionado no XML de
 
 `children: xfa:data`
 
-### XFA:DADOS {#xfa-data}
+### XFA:DATA {#xfa-data}
 
 `parent elements: xfa:datasets`
 

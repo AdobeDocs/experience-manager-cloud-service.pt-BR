@@ -9,12 +9,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: a9879445-d626-4279-8a95-a9009294b483
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+hide: true
+hidefromtoc: true
+source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 4%
 
 ---
+
 
 # Salvamento de um formulário HTML5 como rascunho {#saving-an-html-form-as-a-draft}
 
@@ -75,4 +78,4 @@ Para ativar a listagem de formulários para o componente Rascunho e Envio, adici
  </tbody>
 </table>
 
-Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no nó /content/forms/fp na instância de Publicação. Você pode adicionar seu provedor de armazenamento personalizado. Para obter detalhes, consulte [Armazenamento personalizado para componentes de Rascunhos e Envios](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).
+Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no nó /content/forms/fp na instância de Publicação. Você pode adicionar seu provedor de armazenamento personalizado. Para obter detalhes, consulte [Armazenamento personalizado para componentes de Rascunhos e Envios](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).
