@@ -5,10 +5,10 @@ exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 64%
+source-wordcount: '1329'
+ht-degree: 61%
 
 ---
 
@@ -46,7 +46,7 @@ Depois de [criar uma página](/help/sites-cloud/authoring/sites-console/creating
    ![Botão Editar](/help/sites-cloud/authoring/assets/edit.png)
 
 1. A página é aberta e você pode editá-la conforme necessário. Dependendo de como a página selecionada foi criada, a ação **Editar** abrirá o editor apropriado.
-   * [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas criadas com o Editor de Páginas AEM
+   * [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas criadas com o Editor de páginas do AEM
    * [Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas criadas com o Editor Universal
 
 ## Copiar e colar uma página      {#copying-and-pasting-a-page}
@@ -71,7 +71,7 @@ Depois de [criar uma página](/help/sites-cloud/authoring/sites-console/creating
 
 1. A caixa de diálogo Colar apresenta um resumo da transação de colagem e a capacidade de:
    * **Nome do novo site:** alterar o nome da página colada
-   * **Colar sem páginas secundárias:** omitir as páginas secundárias da página selecionada ao colar (por padrão, as páginas secundárias são coladas)
+   * **Colar sem páginas filhas:** omitir as páginas filhas da página selecionada ao colar (por padrão, as páginas filhas são coladas)
 
    ![Caixa de diálogo Colar](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
@@ -106,7 +106,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    ![Botão Mover](/help/sites-cloud/authoring/assets/move.png)
 
-1. Na etapa **Renomear** do assistente, é possível:
+1. A etapa **Renomear** do assistente fornece **Informações** sobre a página, incluindo a data de criação, o caminho e o número de referências diretas. Aqui, é possível:
 
    * Especifique o nome que você deseja para a página após movê-la, em seguida, selecione **Avançar** para continuar.
    * **Cancelar** para suspender o processo.
@@ -144,7 +144,8 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    >[!NOTE]
    >
-   >Se a página não estiver vinculada nem referenciada, essa etapa não estará disponível.
+   >* Se a página não estiver vinculada nem referenciada, essa etapa não estará disponível.
+   >* Esta etapa lista referências diretas e indiretas. Isso pode ser diferente do valor relatado na etapa **Renomear** do assistente, bem como das referências relatadas pelo painel de referências, que relatam apenas referências diretas por motivos de desempenho.
 
    ![Republicar página ao mover](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
