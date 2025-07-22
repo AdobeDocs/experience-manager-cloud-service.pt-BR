@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Alfa" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
+source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '504'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->O recurso descrito neste artigo só está disponível por meio do programa alfa do adotante inicial. Para se inscrever para a versão alfa, consulte [Reversão de um clique para implantações de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>O recurso descrito neste artigo só está disponível por meio do programa alfa. Para se inscrever para a versão alfa, consulte [Reversão de um clique para implantações de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Use **Restaurar o código anterior implantado** para reverter um ambiente instantaneamente para sua última compilação bem-sucedida; não é necessária a execução do pipeline.
 
@@ -31,7 +31,7 @@ Você simplesmente abre o menu ![Mais ícone ou o ícone do menu de reticências
 O recurso **Restaurar código anterior implantado** fica disponível somente quando a condição **a cada** abaixo é verdadeira:
 
 * Você tem **permissões de Criação** de Restauração de Ambiente. Para obter detalhes sobre o gerenciamento de permissões, consulte [Permissões personalizadas](/help/implementing/cloud-manager/custom-permissions.md).
-* Sua organização está inscrita no programa Early Adoter e o sinalizador de recurso está ativado.
+* Sua organização está inscrita no programa alfa e o sinalizador de recurso está ativado.
 * O programa é executado no AEM as a Cloud Service.
 * O ambiente escolhido é um ambiente `Development` (limite temporário do Alpha).
 * O último pipeline para esse ambiente foi concluído com êxito e executado há **menos de 30 dias**.
