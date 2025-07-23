@@ -4,10 +4,10 @@ description: Saiba como pesquisar e descobrir ativos na visualização do AEM As
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 94%
+source-wordcount: '2277'
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 O [!DNL Assets view] oferece uma pesquisa eficiente, que funciona por padrão. A pesquisa é abrangente, pois é uma pesquisa de texto completo. Essa eficiente funcionalidade de pesquisa permite descobrir rapidamente o ativo apropriado e ajuda a melhorar a velocidade do conteúdo. O [!DNL Assets view] fornece pesquisa de texto completo e até mesmo pesquisas por meio de metadados, como tags inteligentes, título, data de criação e direito autoral.
 
-Para pesquisar ativos,
+Para pesquisar ativos:
 
 * Clique na caixa de pesquisa na parte superior da página. Por padrão, a pesquisa é feita na pasta em que você está navegando no momento. Siga uma das seguintes opções:
 
@@ -120,6 +120,40 @@ Para remover filtros personalizados:
 1. Na caixa de diálogo **[!UICONTROL Gerenciamento de filtros personalizados]**, desmarque os filtros que precisam ser removidos da lista de filtros existente.
 
 1. Clique em **[!UICONTROL Confirmar]** para remover os filtros da interface.
+
+## Pesquisa semântica {#semantic-search}
+
+A Pesquisa semântica é um recurso de pesquisa avançada que entende o significado e a intenção por trás da consulta de um usuário, em vez de depender de correspondências exatas de palavras-chave. Ele usa inteligência artificial (IA), processamento de linguagem natural (NLP) e aprendizado de máquina para fornecer resultados mais precisos e sensíveis ao contexto.
+
+Ao contrário da pesquisa tradicional baseada em palavras-chave, que procura termos exatos, a Pesquisa semântica interpreta as relações entre palavras, conceitos e intenção do usuário. Isso garante que os usuários encontrem o que procuram, mesmo que a consulta seja redigida de forma diferente, contenha erros de digitação ou esteja em outro idioma.
+
+Alguns, se seus principais benefícios incluírem:
+
+* **Suporte multilíngue**: pesquise em vários idiomas sem exigir traduções exatas. Os usuários podem encontrar conteúdo relevante independentemente do idioma de consulta.
+
+* **Lida com erros ortográficos**: corrige automaticamente ou interpreta erros de digitação e de ortografia, garantindo resultados precisos mesmo com uma entrada imperfeita.
+
+* **Entende sinônimos**: fornece resultados para termos e frases relacionados, de modo que os usuários não precisam adivinhar a palavra-chave correta.
+
+* **Pesquisa sensível ao contexto**: reconhece a intenção por trás de uma consulta, não apenas as palavras.
+
+* **Pesquisa baseada em prompts baseados em texto**: o Experience Manager Assets aplica filtros ao conteúdo e exibe resultados apropriados automaticamente com base em prompts simples baseados em texto.
+
+>[!IMPORTANT]
+>
+> Especifique três ou mais palavras para que a Pesquisa semântica exiba os resultados apropriados.
+
+### Exemplos para pesquisa semântica {#examples-semantic-search}
+
+**Exemplo de prompt**: *Mulher tomando café*
+
+A pesquisa tradicional baseada em palavras-chave procura correspondências exatas de metadados de ativos, como Mulher, Café e assim por diante, e retorna ativos que incluem essas palavras-chave.
+
+No entanto, a Pesquisa Semântica procura palavras semelhantes, como `Girl`, `Lady` no caso de `Woman` e opções de café, como `Cappuccino` e `Latte` no caso de `Coffee`.
+
+Da mesma forma, você pode especificar este prompt em espanhol ou digitar incorretamente `Woman` como `Wman` e ainda obter os mesmos resultados.
+
+![Pesquisa semântica no modo de exibição Assets](assets/semantic-search.png)
 
 ## Pesquisar ativos usando o [!DNL Adobe Firefly] {#search-firefly}
 
@@ -343,6 +377,6 @@ Se precisar fornecer feedback sobre o recurso de pesquisa contextual, clique no�
 
 * Forneça feedback sobre a documentação por meio das opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita.
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 
