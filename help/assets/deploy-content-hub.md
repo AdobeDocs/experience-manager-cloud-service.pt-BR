@@ -3,9 +3,9 @@ title: Implantar [!DNL Content Hub]
 description: Saiba como implantar e ativar o Content Hub e fornecer acesso a usuários com diferentes tipos de privilégios (fazer upload de ativos, usuários do Adobe Express) e como fornecer privilégios de administrador aos usuários.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: 367406ff325eb71a4c75018c4440eae6535f20dc
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1586'
 ht-degree: 2%
 
 ---
@@ -17,6 +17,10 @@ O Content Hub está disponível como parte do Experience Manager Assets as a Clo
 Os ativos marcados como Aprovado no Experience Manager Assets as a Cloud Service estão disponíveis para distribuição de ativos no Content Hub.
 
 Este artigo fornece um fluxo de trabalho completo para fornecer aos usuários acesso ao Content Hub, incluindo as variações de privilégios com base em suas necessidades.
+
+Assista a este vídeo para saber como ativar o Content Hub para Experience Manager Assets:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469851)
 
 As variações de privilégios no Content Hub incluem:
 
