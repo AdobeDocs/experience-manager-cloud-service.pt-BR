@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a4e023ca44c93124627912bae08dc3535d48400c
+source-git-commit: 3686697c85273ccc13e80b8d7f4ad1ff3c79845d
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '632'
 ht-degree: 17%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 17%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 21644 {#21644}
+## Versão 21706 {#21706}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21644, lançada publicamente em quarta-feira, 22 de julho de 2025. A versão de manutenção anterior era 21570.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21706, lançada publicamente em sexta-feira, 24 de julho de 2025. A versão de manutenção anterior era 21570.
 
-A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+>[!NOTE]
+>
+>A versão 21644 foi tornada privada e substituída pela versão 21706.
 
-### Aprimoramentos {#enhancements-21644}
+A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+
+### Aprimoramentos {#enhancements-21706}
 
 * ASSETS-39377: melhore a manipulação de 429s do armazenamento remoto no Assets Bulk Importer.
 * ASSETS-46026: profundidade máxima configurável para exportador de metadados.
@@ -39,7 +43,7 @@ A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos 
 * SITES-31677: o espaço de trabalho personalizado oferece suporte à exportação do fragmento de conteúdo do AEM para o Target.
 * SKYOPS-112741: Remova o pacote `com.adobe.granite.product.support` do AEM-CS SDK.
 
-### Problemas corrigidos {#fixed-issues-21644}
+### Problemas corrigidos {#fixed-issues-21706}
 
 * ASSETS-12882: problemas de alinhamento da interface do usuário após abrir predefinições do visualizador.
 * ASSETS-48958: problema com a sincronização de ativos alterando o status publicado no AEM local do Sites.
@@ -65,19 +69,19 @@ A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos 
 * GRANITE-60311: AEM SDK Quickstart - NPE em &quot;OSGi Installer Configuration Printer&quot; (Impressora de configuração do instalador OSGi).
 * GS-15285: os usuários são exibidos como desativados.
 
-### Problemas conhecidos {#known-issues-21644}
+### Problemas conhecidos {#known-issues-21706}
 
 Nenhum.
 
-### Recursos e APIs obsoletos {#deprecated-21644}
+### Recursos e APIs obsoletos {#deprecated-21706}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-21644}
+### Correções de segurança {#security-21706}
 
 A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda quatro vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
 
-### Tecnologias integradas {#embedded-tech-21644}
+### Tecnologias integradas {#embedded-tech-21706}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
