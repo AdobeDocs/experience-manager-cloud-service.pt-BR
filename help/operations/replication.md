@@ -4,7 +4,7 @@ description: Saiba mais sobre distribuição e solução de problemas de replica
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 9dac0b63fec56bede7db9331d47ef479b29e67d0
+source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 31%
@@ -24,9 +24,9 @@ O Adobe Experience Manager as a Cloud Service usa o recurso [Distribuição de C
 >[!NOTE]
 >
 >Se você estiver interessado em publicar conteúdo em massa, crie um fluxo de trabalho usando a [Etapa do Fluxo de Trabalho de Ativação da Árvore](#tree-activation), que pode lidar eficientemente com grandes cargas.
->Não é recomendável criar seu próprio código personalizado de publicação em massa.
->Se precisar personalizar por qualquer motivo, você poderá acionar um fluxo de trabalho com essa etapa usando APIs de fluxo de trabalho existentes.
->É sempre uma boa prática publicar somente conteúdo que deve ser publicado. E seja prudente ao não tentar publicar grandes números de conteúdo, se não for necessário. No entanto, não há limites para o conteúdo que você pode enviar por meio de workflows com a Etapa de fluxo de trabalho Ativação em árvore.
+>>Não é recomendável criar seu próprio código personalizado de publicação em massa.
+>>Se precisar personalizar por qualquer motivo, você poderá acionar um fluxo de trabalho com essa etapa usando APIs de fluxo de trabalho existentes.
+>>É sempre uma boa prática publicar somente conteúdo que deve ser publicado. E seja prudente ao não tentar publicar grandes números de conteúdo, se não for necessário. No entanto, não há limites para o conteúdo que você pode enviar por meio de workflows com a Etapa de fluxo de trabalho Ativação em árvore.
 
 ### Publicação/Cancelamento de publicação rápidos — Publicação/Cancelamento de publicação planejados {#publish-unpublish}
 
@@ -135,7 +135,7 @@ Você pode acionar uma replicação em árvore ao escolher **Ferramentas - Fluxo
 
 Não chame o modelo original. Em vez disso, primeiro copie o modelo e chame essa cópia.
 
-Como todos os fluxos de trabalho, também é possível chamá-lo por meio da API. Para obter mais informações, consulte [Interação programática com fluxos de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=pt-BR#extending-aem).
+Como todos os fluxos de trabalho, também é possível chamá-lo por meio da API. Para obter mais informações, consulte [Interação programática com fluxos de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
 Como alternativa, você pode criar um Modelo de Fluxo de Trabalho que use a etapa de processo `Publish Content Tree`.
 
@@ -193,7 +193,6 @@ A seguir estão exemplos de logs gerados durante um exemplo de fluxo de trabalho
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
 </details>
 
 ### API de replicação {#replication-api}
@@ -272,7 +271,7 @@ O tamanho do conteúdo transmitido por chamada de replicação não deve exceder
 
 Para solucionar problemas de replicação, navegue até as filas de replicação na interface web do serviço do autor do AEM:
 
-1. No menu Iniciar do AEM, navegue até **Ferramentas** > **Implantação** > **Distribuição**
+1. Na [Navegação Global](/help/sites-cloud/authoring/basic-handling.md#global-navigation) do AEM, navegue até **Ferramentas** > **Implantação** > **Distribuição**
 1. Selecione o cartão **publicar**
 
    ![Status](assets/publish-status.png "Status")
