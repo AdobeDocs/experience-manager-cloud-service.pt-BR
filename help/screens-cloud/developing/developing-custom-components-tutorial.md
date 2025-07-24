@@ -548,7 +548,7 @@ O vídeo abaixo mostra o componente concluído e como ele pode ser adicionado a 
 
 ## Código concluído {#finished-code}
 
-Abaixo está o código concluído do tutorial. Os **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** e **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** são os pacotes compilados do AEM. O **SRC-screens-weretail-run-0.0.1.zip **é o código-fonte não compilado que pode ser implantado usando Maven.
+Abaixo está o código concluído do tutorial. Os **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** e **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** são os pacotes compilados do AEM. O **SRC-screens-weretail-run-0.0.1.zip &#x200B;** é o código-fonte não compilado que pode ser implantado usando Maven.
 
 [Obter arquivo](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 

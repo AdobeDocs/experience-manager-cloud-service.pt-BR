@@ -24,9 +24,9 @@ O Adobe Experience Manager as a Cloud Service usa o recurso [Distribuição de C
 >[!NOTE]
 >
 >Se você estiver interessado em publicar conteúdo em massa, crie um fluxo de trabalho usando a [Etapa do Fluxo de Trabalho de Ativação da Árvore](#tree-activation), que pode lidar eficientemente com grandes cargas.
->>Não é recomendável criar seu próprio código personalizado de publicação em massa.
->>Se precisar personalizar por qualquer motivo, você poderá acionar um fluxo de trabalho com essa etapa usando APIs de fluxo de trabalho existentes.
->>É sempre uma boa prática publicar somente conteúdo que deve ser publicado. E seja prudente ao não tentar publicar grandes números de conteúdo, se não for necessário. No entanto, não há limites para o conteúdo que você pode enviar por meio de workflows com a Etapa de fluxo de trabalho Ativação em árvore.
+>&#x200B;>Não é recomendável criar seu próprio código personalizado de publicação em massa.
+>&#x200B;>Se precisar personalizar por qualquer motivo, você poderá acionar um fluxo de trabalho com essa etapa usando APIs de fluxo de trabalho existentes.
+>&#x200B;>É sempre uma boa prática publicar somente conteúdo que deve ser publicado. E seja prudente ao não tentar publicar grandes números de conteúdo, se não for necessário. No entanto, não há limites para o conteúdo que você pode enviar por meio de workflows com a Etapa de fluxo de trabalho Ativação em árvore.
 
 ### Publicação/Cancelamento de publicação rápidos — Publicação/Cancelamento de publicação planejados {#publish-unpublish}
 
@@ -193,6 +193,7 @@ A seguir estão exemplos de logs gerados durante um exemplo de fluxo de trabalho
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
+
 </details>
 
 ### API de replicação {#replication-api}
