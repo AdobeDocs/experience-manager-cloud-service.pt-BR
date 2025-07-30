@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: c2229d040c8df7c9089d141d57ca59ff2f4ce8a7
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 6%
+source-wordcount: '542'
+ht-degree: 5%
 
 ---
 
@@ -53,3 +53,22 @@ Consulte também [CDN gerenciada pela Adobe](https://www.aem.live/docs/byo-cdn-a
    | Outro provedor de CDN | Selecione essa opção se estiver usando seu próprio provedor de CDN e não o CDN gerenciado pela Adobe que está disponível para você.<br>Em **Detalhes da configuração**, na lista suspensa **Domínio**, selecione o nome de domínio que deseja usar.<br>Não há domínios verificados disponíveis na lista suspensa? Consulte [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 
 1. Clique em **Salvar**.
+
+   A Adobe recomenda que você teste o mapeamento de domínio.
+
+## Testar o mapeamento de domínio {#test-domain-mapping}
+
+Você pode verificar se um novo mapeamento de domínio está ativo na CDN gerenciada pela Adobe sem esperar pela propagação de DNS público.
+
+Execute um comando **curl** que substitua a resolução DNS e aponte diretamente para a borda CDN:
+
+```bash
+curl -svo /dev/null https://www.example.com \
+--resolve www.example.com:443:151.101.3.10
+```
+
+* Substitua **`www.example.com`** pelo seu domínio.
+* Substitua **151.101.3.10** pelo endereço IP da Edge mostrado no Cloud Manager para esse mapeamento.
+
+O sinalizador `--resolve` força a solicitação para o IP especificado e retorna êxito somente após o certificado e o roteamento para o seu domínio terem sido instalados corretamente.
+

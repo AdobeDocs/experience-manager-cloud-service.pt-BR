@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 41%
+source-wordcount: '698'
+ht-degree: 37%
 
 ---
 
@@ -49,15 +49,19 @@ Em um ambiente, você pode ter ambos os domínios instalados na CDN gerenciada p
 
 ## Fluxo de trabalho {#workflow}
 
-A adição de um nome de domínio personalizado exige interação entre o serviço DNS e o Cloud Manager. Devido a esse fluxo de trabalho, há várias etapas necessárias para instalar, configurar e verificar nomes de domínio personalizados. A tabela a seguir fornece uma visão geral das etapas necessárias, incluindo links para os recursos de documentação para concluí-las.
+A adição de um nome de domínio personalizado exige interação entre o serviço DNS e o Cloud Manager. Devido a esse fluxo de trabalho, há várias etapas necessárias para instalar, configurar e verificar nomes de domínio personalizados. A tabela a seguir descreve as etapas necessárias, com links para os recursos da documentação para concluí-las.
 
-| Etapa | Descrição | Documentação |
-| --- | --- | --- |
-| 1 | Adicionar certificado SSL ao Cloud Manager | [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
-| 2 | Adicionar domínio personalizado ao Cloud Manager | [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 3 | Definir as configurações de DNS adicionando registros CNAME ou Apex de DNS que apontem para o AEM as a Cloud Service | [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | Revisar status de verificação do domínio | [Verificar status do nome de domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | Verificar o status do registro DNS | [Verificar status do registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+>[!WARNING]
+>
+>Execute a Etapa 4 (Configurar DNS) *somente após a Etapa 3* (Adicionar mapeamento de domínio) ser concluída com êxito. Seguindo essa ordem, registra o domínio com o CDN da Adobe e configura o roteamento correto, protegendo seu site contra aquisições de domínio.
+
+| Etapa | Descrição |
+| --- | --- |
+| 1 | [Adicionar certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 2 | [Adicionar um domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 3 | [Adicionar mapeamento de domínio](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 4 | [Configurar DNS](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | [Verificar status do DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >

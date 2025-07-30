@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '833'
 ht-degree: 17%
 
 ---
@@ -105,6 +105,12 @@ Um usuário com a função de **Proprietário da empresa** ou **Gerente de impla
 
 
 ### Excluir um nome de domínio personalizado de um ambiente específico {#delete-cdn-specific}
+
+>[!WARNING]
+>
+>Remova os registros DNS do domínio com seu provedor de DNS *antes* de excluir o domínio no Cloud Manager. Entradas de DNS abandonadas (pendentes) podem ser sequestradas e representar um risco de segurança.
+
+**Para excluir um nome de domínio personalizado de um ambiente específico:**
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
