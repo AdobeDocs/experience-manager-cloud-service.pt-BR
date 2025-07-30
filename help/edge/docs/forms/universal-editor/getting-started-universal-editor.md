@@ -4,9 +4,9 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+source-git-commit: 0e7375adb146c370a189127838d736290d1860ad
 workflow-type: tm+mt
-source-wordcount: '1853'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ O AEM Forms fornece um bloco, conhecido como Bloco adaptável do Forms, para aju
 ![Fluxo De Trabalho Do Repositório Github](/help/edge/assets/repo-workflow.png){width=auto}
 
 Este tutorial o orienta por meio da criação, visualização e publicação de seu próprio formulário com um projeto do Adobe Experience Manager Site novo ou existente usando a criação do WYSIWYG no Universal Editor.
-
 
 ## Pré-requisitos
 
@@ -66,17 +65,16 @@ O modelo do AEM Forms Boilerplate inicia rapidamente com um projeto do AEM pré-
 1. Agora vincule o repositório GitHub criado por meio do AEM Forms Boilerplate ao ambiente de criação do AEM Project. Para conectar:
 
    1. Vá para o repositório GitHub criado anteriormente usando a Matriz do AEM Forms.
-   1. Abra o arquivo **fstab.yaml** para edição.
+   1. Adicione o arquivo **fstab.yaml** à pasta raiz.
 
       ![abrir arquivo fstab.yaml](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. Edite o arquivo **fstab.yaml** para atualizar o ponto de montagem do seu projeto. Substitua o URL pelo URL da sua instância de criação do AEM as a Cloud Service.
-
+   1. Adicione o ponto de montagem do seu projeto ao arquivo **fstab.yaml**. Adicione o URL da instância de criação do AEM as a Cloud Service.
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![editar arquivo fstab.yaml](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-   1. Confirme o arquivo **fstab.yaml** atualizado, depois de atualizar a referência e tudo ficará bem.
+   1. Confirme o arquivo **fstab.yaml** depois de adicionar a referência e tudo ficará bem.
 
       ![confirmar as alterações](/help/edge/docs/forms/assets/commit-fstab-changes.png)
 
@@ -345,7 +343,7 @@ Você pode configurar um ambiente de desenvolvimento do AEM local para desenvolv
        npm install -g @adobe/aem-cli
    ```
 
-1. **Clonar seu projeto do GitHub**: clone seu repositório de projetos do AEM do GitHub usando o seguinte comando, substituindo &lt;owner> com o proprietário do repositório e &lt;repo> com o nome do repositório:
+1. **Clonar seu projeto do GitHub**: clone seu repositório de projetos do AEM do GitHub usando o seguinte comando, substituindo <owner> com o proprietário do repositório e <repo> com o nome do repositório:
 
    ```
    git clone https://github.com/<owner>/<repo>
