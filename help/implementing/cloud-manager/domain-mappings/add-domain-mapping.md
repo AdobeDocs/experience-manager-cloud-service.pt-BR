@@ -5,15 +5,15 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
+source-git-commit: 829881a91a6f1c9a020c04ec581ce010b07bae01
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '543'
 ht-degree: 5%
 
 ---
 
 
-# Adicionar um mapeamento de domínio {#add-domain-mapping}
+# Sobre a adição de um mapeamento de domínio {#add-domain-mapping}
 
 Para vincular um domínio a um certificado SSL no CDN gerenciado pela Adobe em seu programa, você deve adicionar uma configuração de CDN (Content Delivery Network).
 
