@@ -116,13 +116,13 @@ Para publicar dados em um servidor externo, forneça um URL. O formato da URL é
 
    Você também pode **[!UICONTROL Habilitar a solicitação POST]** e fornecer uma URL para publicar a solicitação. Para enviar dados ao servidor do AEM que hospeda o formulário, use um caminho relativo correspondente ao caminho raiz do servidor do AEM. Por exemplo, `/content/forms/af/SampleForm.html`. Para enviar dados para qualquer outro servidor, use o caminho absoluto.
 
-+++
+   +++
 
    +++Configuração
 
    Essa opção permite adicionar uma configuração HTTP predefinida gerenciada pelo Navegador de configuração do AEM. Você pode selecionar a Configuração criada para seu Tipo de autenticação de ponto de extremidade REST de serviço e os Tipos de conteúdo. Para saber mais sobre Tipo de Autenticação e Tipos de Conteúdo, visite [configurar fontes de dados](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-+++
+   +++
 
 1. Clique em **[!UICONTROL Concluído]**.
 
@@ -173,13 +173,13 @@ Para publicar dados em um servidor externo, forneça um URL. O formato da URL é
 
    Você também pode **[!UICONTROL Habilitar a solicitação POST]** e fornecer uma URL para publicar a solicitação. Para enviar dados ao servidor do AEM que hospeda o formulário, use um caminho relativo correspondente ao caminho raiz do servidor do AEM. Por exemplo, `/content/forms/af/SampleForm.html`. Para enviar dados para qualquer outro servidor, use o caminho absoluto.
 
-+++
+   +++
 
    +++Configuração
 
    Essa opção permite adicionar uma configuração HTTP predefinida gerenciada pelo Navegador de configuração do AEM. Você pode selecionar a Configuração criada para seu Tipo de autenticação de ponto de extremidade REST de serviço e os Tipos de conteúdo. Para saber mais sobre Tipo de Autenticação e Tipos de Conteúdo, visite [configurar fontes de dados](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-+++
+   +++
 
 1. Clique em **[!UICONTROL Salvar&amp;Fechar]**.
 
