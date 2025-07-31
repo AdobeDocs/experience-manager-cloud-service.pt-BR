@@ -3,21 +3,21 @@ title: Integração do Adobe Workfront Fusion com o envio do AEM Forms
 description: O Adobe Workfront Fusion permite que você se concentre em novas tarefas, em vez de tarefas repetitivas. Você pode conectar o Adobe Workfront Fusion a um Formulário adaptável usando o Envio de formulário.
 keywords: Enviar um formulário adaptável para o Adobe Workfront Fusion, Integração do Adobe Workfront Fusion com o AEM Forms Submission, Adobe Workfront Fusion com o AEM Forms, Workfront Fusion com o AEM Forms, Conectar o Workfront Fusion ao AEM Forms, AEM Forms e Workfront Fusion, Como conectar o Workfront Fusion com o AEM Forms?, Conectar o Workfront Fusion a um formulário
 topic-tags: author, developer
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: d0d7a10b2c1dadb0f8bfaa654db7993d3e5e6635
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 2%
+source-wordcount: '1287'
+ht-degree: 3%
 
 ---
 
 # Enviar um formulário adaptável ao Adobe Workfront Fusion
 
-<span class="preview"> O recurso está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
-O [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=pt-BR) automatiza o processo de repetição das mesmas tarefas, como fluxos de trabalho de aprovação de documentos, filtragem e classificação de email, permitindo que você se concentre em novas tarefas em vez de tarefas recorrentes. O Adobe Workfront Fusion inclui vários cenários. Um cenário consiste em uma série de módulos que executam a transferência de dados entre aplicativos e serviços da Web. Em um cenário, você adiciona várias etapas (módulos) para automatizar uma tarefa.
+O [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatiza o processo de repetição das mesmas tarefas, como fluxos de trabalho de aprovação de documentos, filtragem e classificação de email, permitindo que você se concentre em novas tarefas em vez de tarefas recorrentes. O Adobe Workfront Fusion inclui vários cenários. Um cenário consiste em uma série de módulos que executam a transferência de dados entre aplicativos e serviços da Web. Em um cenário, você adiciona várias etapas (módulos) para automatizar uma tarefa.
 
 Por exemplo, usando o Workfront Fusion, você pode criar um cenário para coletar dados com o Formulário adaptável, processar os dados e enviá-los a um armazenamento de dados para arquivamento. Depois que um cenário é configurado, o Workfront Fusion executa automaticamente as tarefas sempre que um usuário preenche um formulário, atualizando o armazenamento de dados perfeitamente.
 
@@ -35,12 +35,12 @@ O AEM Forms as a Cloud Service fornece um conector OOTB para conectar e enviar u
 
 Para estabelecer uma conexão entre o Workfront Fusion e o AEM Forms, é necessário o seguinte:
 
-* Uma [licença válida do Workfront e do Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=pt-BR).
-* Um usuário AEM com direito de acessar o [Dev Console](https://my.cloudmanager.adobe.com/) para [recuperar as credenciais de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR).
+* Uma [licença válida do Workfront e do Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Um usuário do AEM com direito de acessar o [Dev Console](https://my.cloudmanager.adobe.com/) para [recuperar as credenciais de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrar o AEM Forms com o Adobe Workfront Fusion
 
-### 1. Criar um cenário do Workfront {#workflow-scenario}
+### &#x200B;1. Criar um cenário do Workfront {#workflow-scenario}
 
 Para criar um cenário do Workfront, execute as seguintes etapas:
 
@@ -51,6 +51,7 @@ Para criar um cenário do Workfront, execute as seguintes etapas:
 #### Criar um cenário {#create-scenario}
 
 Para criar um cenário:
+
 1. Entre na sua [conta do Workfront Fusion](https://app-qa.workfrontfusion.com/).
 1. Clique em **[!UICONTROL Cenários]** ![Ícone Compartilhar](/help/forms/assets/Smock_ShareAndroid_18_N.svg) no painel esquerdo.
 1. Clique em **[!UICONTROL Criar um novo cenário]** no canto superior direito da página. Uma página para criar um novo cenário é exibida na tela.
@@ -102,7 +103,7 @@ Para adicionar uma conexão:
    >
    > O URL da instância é o endereço exclusivo da Web que aponta para uma instância específica do AEM Forms.
 
-   Você pode recuperar as [credenciais de serviço do Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR) necessárias para criar uma conexão.
+   Você pode recuperar as [credenciais de serviço do Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) necessárias para criar uma conexão.
 
 1. Substitua `ims-na1.adobelogin.com` no **ponto de extremidade IMS** pelo valor de **imsEndpoint** das credenciais de serviço no Console do desenvolvedor.
 
@@ -143,49 +144,56 @@ Para adicionar uma conexão:
 >
 > Caso você não ative o cenário do Workfront, ele não detectará o envio do formulário e a configuração da ação de envio para o Workfront resultará em um envio com falha.
 
-### 2. Configurar a ação de envio de um Formulário adaptável do Workfront Fusion
+### &#x200B;2. Configurar a ação de envio de um Formulário adaptável do Workfront Fusion
 
-É possível configurar a ação de envio do Workfront Fusion para:
-* [Novo Forms adaptável](#new-af-submit-action)
-* [Formulários adaptáveis existentes](#existing-af-submit-action)
+>[!BEGINTABS]
 
-#### Configurar a ação de envio do novo Formulário adaptável para o Workfront Fusion {#new-af-submit-action}
+>[!TAB Componente de base]
 
-Para configurar a ação de envio do novo Formulário adaptável para o Workfront Fusion:
+Para configurar a ação de envio de um Formulário adaptável com base nos Componentes de base para o Workfront Fusion:
 
-1. Faça logon na instância do AEM.
-1. Vá para **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]** > **[!UICONTROL Criar]** > **[!UICONTROL Formulário adaptável]**. O assistente **[!UICONTROL Criar Formulário]** é exibido.
-1. Selecione um modelo de formulário adaptável na guia **[!UICONTROL Source]**.
-1. Selecione um tema na guia **[!UICONTROL Estilo]**.
+1. Abra o Formulário adaptável para edição e navegue até a seção **[!UICONTROL Envio]** das propriedades do Contêiner de formulário adaptável.
+1. Na lista suspensa **[!UICONTROL Enviar Ação]**, selecione **[!UICONTROL Chamar um Cenário do Workfront Fusion]**.
+   ![Enviar ação para o Workfront Fusion](/help/forms/assets/workfront-fusion-fc.png)
 
-   ![Enviar ação para o Workfront Fusion](/help/forms/assets/workfront-scenario-new-af.png)
+1. Selecione **[!UICONTROL Cenário do Workfront Fusion]** na lista suspensa.
+1. Clique em **[!UICONTROL Concluído]**.
 
-1. Selecione o **[!UICONTROL Invocar um Cenário do Workfront Fusion]** na guia **[!UICONTROL Envio]**.
-1. Selecione o webhook criado na guia **[!UICONTROL Opções]** da janela **[!UICONTROL Propriedades]**.
+
+>[!TAB Componente principal]
+
+Para configurar a ação de envio de um Formulário adaptável com base nos Componentes principais para o Workfront Fusion:
+
+1. Abra o navegador Conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
+1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
+1. Clique na guia **[!UICONTROL Envio]**.
+1. Na lista suspensa **[!UICONTROL Enviar Ação]**, selecione **[!UICONTROL Chamar um Cenário do Workfront Fusion]**.
+
+   ![Enviar ação para o Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
+1. Selecione **[!UICONTROL Cenário do Workfront Fusion]** na lista suspensa.
+1. Clique em **[!UICONTROL Concluído]**.
+
+>[!TAB Editor Universal]
+
+Para configurar a ação de envio de um Formulário adaptável criado usando o Editor universal:
+
+1. Abra o Formulário adaptável para edição.
+1. Clique na extensão **Editar propriedades do formulário** no editor.
+A caixa de diálogo **Propriedades do Formulário** é exibida.
 
    >[!NOTE]
    >
-   > O nome do webhook do cenário do Workfront aparece na lista suspensa **Opções**.
+   > * Se você não vir o ícone **Editar Propriedades do Formulário** na interface do Universal Editor, habilite a extensão **Editar Propriedades do Formulário** na Extension Manager.
+   > * Consulte o artigo [Destaques dos recursos do Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para saber como habilitar ou desabilitar extensões no Universal Editor.
 
-1. Clique em **[!UICONTROL Criar]**.
-1. Especifique o nome do novo Formulário adaptável e clique em **[!UICONTROL Criar]**.
+1. Clique na guia **Envio** e selecione **[!UICONTROL Invocar um Cenário do Workfront Fusion]** para enviar uma ação.
 
-#### Configurar a ação de envio do Formulário adaptável existente para o Workfront Fusion {#existing-af-submit-action}
+   ![Enviar ação para o Workfront Fusion](/help/forms/assets/workfront-fusion-ue.png)
 
-Para configurar a ação de envio do Formulário adaptável existente para o Workfront Fusion:
-
-1. Faça logon na instância do AEM.
-1. Ir para **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
-1. Selecione um formulário adaptável e abra-o no modo de edição.
-1. Abra o navegador Conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
-1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
-
-   ![Enviar ação para o Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
-
-1. Abra a guia **[!UICONTROL Envio]**.
-1. Selecione a **[!UICONTROL Ação de envio]** como **[!UICONTROL Chamar um Cenário do Workfront Fusion]**
 1. Selecione **[!UICONTROL Cenário do Workfront Fusion]** na lista suspensa.
-1. Clique em **[!UICONTROL Concluído]**.
+1. Clique em **[!UICONTROL Salvar&amp;Fechar]**.
+
+>[!ENDTABS]
 
 ## Práticas recomendadas {#best-practices}
 

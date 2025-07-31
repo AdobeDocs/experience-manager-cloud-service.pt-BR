@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b61ffc522b6666a0f4b7fdb450d382b7231951cb
+source-git-commit: 504c89b2906478980f3e004aa40f098ffdfc687b
 workflow-type: tm+mt
-source-wordcount: '6522'
+source-wordcount: '6551'
 ht-degree: 59%
 
 ---
@@ -766,17 +766,9 @@ ht-degree: 59%
          + [Integrar o AEM Forms as a Cloud Service com o Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
          + [Integrar o Adaptive Forms ao Adobe Analytics](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
          + [Exibição e noções básicas do relatório do Adaptive Forms Analytics](/help/forms/view-understand-aem-forms-analytics-reports.md)
-         + [Enviar um formulário adaptável ao Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-         + [Integrar um Formulário adaptável ao Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
          + [Incorporar um Formulário adaptável em uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Incorporar formulário adaptável baseado nos Componentes principais a uma página da Web externa](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [Integração do AEM Forms com o Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
          + [Incorporar formulário adaptável baseado em Componentes de base a uma página da Web externa](/help/forms/embed-adaptive-form-external-web-page.md)
-         + Integrar o Adaptive Forms ao Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
-            + [Integrar o Adobe Marketo Engage com o AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-            + [Configurar novo formulário para integrar com o Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [Configurar fonte de dados do Adobe Marketo Engage para o Adaptive Forms existente](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [Configurar a ação de envio para o Marketo Engage para formulários existentes](/help/forms/submit-adaptive-form-to-marketo-engage.md)
       + Modelo de dados do formulário {#use-form-data-model}
          + [Conectar o AEM Forms ao banco de dados ou à fonte de dados](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
@@ -789,6 +781,29 @@ ht-degree: 59%
          + [Trabalhar com o modelo de dados de formulário](/help/forms/work-with-form-data-model.md)
          + [Utilizar modelo de dados do formulário](/help/forms/using-form-data-model.md)
          + [Criar esquema XML para um formulário adaptável](/help/forms/adaptive-form-xml-schema-form-model.md)
+      + Definir a Ação de envio para um Formulário adaptável {#set-submit-action}
+         + [Enviar ações compatíveis com o Adaptive Forms](/help/forms/aem-forms-submit-action.md)
+         + [Configurar a ação enviar para um formulário adaptável com base nos componentes de base](/help/forms/configuring-submit-actions.md)
+         + [Configurar a ação enviar para um formulário adaptável com base nos componentes principais](/help/forms/configure-submit-actions-core-components.md)
+         + [Configurar ação de envio para o Edge Delivery Services Forms](/help/forms/configure-submit-action-eds-forms.md)
+         + [Configurar a ação de envio Enviar email para um formulário adaptável](/help/forms/configure-submit-action-send-email.md)
+         + [Integrar um Formulário adaptável ao Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+         + Conectar um formulário adaptável ao Microsoft® SharePoint{#connect-to-sharepoint}
+            + [Conectar um formulário adaptável ao Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [Enviar para a Biblioteca de documentos da SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
+            + [Enviar para a lista do SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
+            + [Configurar o site do SharePoint com acesso limitado usando o escopo de autorização](/help/forms/configure-sharepoint-site-limited-access.md)
+         + [Enviar um formulário adaptável ao Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+         + [Enviar um formulário adaptável para o Armazenamento de blobs do Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
+         + [Configurar a ação de envio Enviar para o Ponto de extremidade REST para o Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
+         + [Enviar um formulário adaptável ao Microsoft](/help/forms/configure-submit-action-onedrive.md)
+         + [Integrar o formulário adaptável do AEM ao fluxo de trabalho do AEM](/help/forms/configure-submit-action-workflow.md)
+         + [Integração do AEM Forms com o Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
+         + Integrar o Adaptive Forms ao Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+            + [Integrar o Adobe Marketo Engage com o AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Configurar novo formulário para integrar com o Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [Configurar fonte de dados do Adobe Marketo Engage para o Adaptive Forms existente](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Configurar a ação de envio para o Marketo Engage para formulários existentes](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Formulários adaptáveis {#adaptive-forms-authoring}
       + [Criação de um Formulário adaptável](/help/forms/create-an-adaptive-form.md)
       + [Quais Forms adaptáveis são melhores para você?](/help/edge/docs/forms/authoring-a-form.md)
@@ -806,17 +821,6 @@ ht-degree: 59%
             + [Usar tradução automática ou humana para traduzir um formulário adaptável](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurar a página de redirecionamento ou mensagem de agradecimento](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Criação de formulários com seções repetidas](/help/forms/create-forms-repeatable-sections.md)
-            + [Configurar a ação enviar para um formulário adaptável](/help/forms/configure-submit-actions-core-components.md)
-            + [Enviar um formulário adaptável para o Armazenamento de blobs do Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
-            + [Enviar um formulário adaptável ao Microsoft](/help/forms/configure-submit-action-onedrive.md)
-            + Conectar um formulário adaptável ao Microsoft® SharePoint{#connect-to-sharepoint}
-               + [Conectar um formulário adaptável ao Microsoft](/help/forms/configure-submit-action-sharepoint.md)
-               + [Enviar para a Biblioteca de documentos da SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
-               + [Enviar para a lista do SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
-               + [Configurar o site do SharePoint com acesso limitado usando o escopo de autorização](/help/forms/configure-sharepoint-site-limited-access.md)
-            + [Integrar o formulário adaptável do AEM ao fluxo de trabalho do AEM](/help/forms/configure-submit-action-workflow.md)
-            + [Configurar a ação de envio Enviar para o Ponto de extremidade REST para o Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
-            + [Configurar a ação de envio Enviar email para um formulário adaptável](/help/forms/configure-submit-action-send-email.md)
             + [Usar o Google reCAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms-core-components.md)
             + [Usar o hCaptcha em componentes principais de um formulário adaptável](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Usar o Captcha com estrutura giratória em um formulário adaptável de componentes principais](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
@@ -889,7 +893,6 @@ ht-degree: 59%
          + Uso [!DNL Adobe Sign] {#use-adobe-sign}
             + [Usar o Adobe Sign para assinar eletronicamente um Formulário adaptável](/help/forms/working-with-adobe-sign.md)
          + Configurar o envio de ações e metadados {#configure-submit-actions-and-metadata-submission}
-            + [Definir a Ação de envio para um Formulário adaptável](/help/forms/configuring-submit-actions.md)
             + [Configurar página de redirecionamento](/help/forms/configuring-redirect-page.md)
             + [Configurar envio assíncrono para um Formulário adaptável](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [Criar uma Ação de envio personalizada](/help/forms/custom-submit-action-form.md)
@@ -1160,14 +1163,14 @@ ht-degree: 59%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação{#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
@@ -1289,7 +1292,7 @@ ht-degree: 59%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)

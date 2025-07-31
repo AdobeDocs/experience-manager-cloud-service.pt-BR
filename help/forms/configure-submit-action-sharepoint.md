@@ -2,11 +2,11 @@
 Title: How to send data to a SharePoint storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
 keywords: Como conectar a lista do SharePoint para um formulário adaptável?, Como conectar a biblioteca de documentos do SharePoint para um formulário adaptável, Enviar para o SharePoint, Criar uma configuração da biblioteca de documentos do SharePoint, Usar a ação enviar Enviar para o SharePoint em um formulário adaptável, Conectar um formulário adaptável à lista do Microsoft&reg; SharePoint.
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 title: Como configurar uma ação enviar para um formulário adaptável?
 role: User, Developer
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+source-git-commit: 64edcfe1bf94638ae5d9510a5a6ac660cf1bcd0a
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 A ação de envio **[!UICONTROL Enviar para o SharePoint]** permite que você conecte facilmente seu Formulário adaptável a um armazenamento do Microsoft® SharePoint. Ele envia os dados do formulário para o armazenamento SharePoint de sua escolha depois que você envia o formulário.
 
-O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções no artigo [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md).
+O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções no artigo [Ação de envio do formulário adaptável](/help/forms/aem-forms-submit-action.md).
 
 ## Vantagens
 

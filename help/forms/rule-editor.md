@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '6492'
-ht-degree: 0%
+source-wordcount: '6727'
+ht-degree: 1%
 
 ---
 
@@ -16,21 +16,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
+> A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componentes de base) | Este artigo |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/rule-editor-core-components.md) |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## Visão geral {#overview}
 
 O recurso do editor de regras permite que usuários e desenvolvedores de negócios de formulários gravem regras em objetos de Formulário adaptável. Essas regras definem as ações a serem acionadas nos objetos de formulário com base nas condições predefinidas, entradas do usuário e ações do usuário no formulário. Isso ajuda a simplificar ainda mais a experiência de preenchimento de formulário, garantindo precisão e velocidade.
 
-O editor de regras fornece uma interface de usuário intuitiva e simplificada para escrever regras. O editor de regras oferece um editor visual para todos os usuários.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Algumas das principais ações que podem ser executadas em objetos de Formulário adaptável usando regras são:
+O editor de regras fornece uma interface de usuário intuitiva e simplificada para escrever regras. O editor de regras oferece um editor visual para todos os usuários.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Algumas das ações-chave que você pode executar em objetos de Formulário adaptável usando regras são:
 
-* Exibir ou ocultar um objeto
+* Mostrar ou ocultar um objeto
 * Habilitar ou desabilitar um objeto
 * Definir um valor para um objeto
 * Validar o valor de um objeto
@@ -46,7 +46,7 @@ Os usuários adicionados ao grupo forms-power-users podem criar scripts e editar
 
 {{rule-editor-diff}}
 
-## Noções básicas sobre um regra {#understanding-a-rule}
+## Noções básicas sobre uma regra {#understanding-a-rule}
 
 Uma regra é uma combinação de ações e condições. No editor de regras, as ações incluem atividades como ocultar, mostrar, habilitar, desabilitar ou calcular o valor de um objeto em um formulário. As condições são expressões booleanas que são avaliadas executando verificações e operações no estado, valor ou propriedade de um objeto de formulário. As ações são executadas com base no valor ( `True` ou `False`) retornado pela avaliação de uma condição.
 
@@ -54,13 +54,13 @@ O editor de regras fornece um conjunto de tipos de regras predefinidos, como Qua
 
 Uma regra normalmente segue uma das seguintes construções:
 
-**Ação de condição Nesta construção** , uma regra primeiro define uma condição seguida de uma ação a ser acionada. A construção é comparável à declaração if-then nas linguagens de programação.
+**Condition-Action** Nesta construção, uma regra primeiro define uma condição seguida por uma ação a ser acionada. A construção é comparável à instrução if-then em linguagens de programação.
 
-No regra editor, o **tipo Quando** regra aplica a construção de ação de condição.
+No editor de regras, o tipo de regra **When** impõe a construção de condição-ação.
 
-**Condição** de ação Nesta construção, uma regra primeiro define uma ação a ser acionada seguida de condições para avaliação. Outra variação dessa construção é a ação alternativa de condição de ação, que também define uma ação alternativa a ser acionada se a condição retornar False.
+**Condição-ação** Nesta construção, uma regra primeiro define uma ação a ser acionada seguida por condições para avaliação. Outra variação dessa construção é ação-condição-ação alternativa, que também define uma ação alternativa a ser acionada se a condição retornar Falso.
 
-A Exibir, Ocultar, Ativar, Desativar, Definir Valor e Validar regra tipos em regra editor impor a construção de regra de ação. Por padrão, a ação alternativa para Exibir é Ocultar e habilitar é Desativar e da maneira oposta. Não é possível alterar a ação alternativa padrão.
+Os tipos de regras Mostrar, Ocultar, Ativar, Desativar, Definir valor de e Validar no editor de regras impõem a construção de regra de condição de ação. Por padrão, a ação alternativa para Mostrar é Ocultar, e para Habilitar é Desabilitar e o oposto. Não é possível alterar a ação alternativa padrão.
 
 >[!NOTE]
 >
@@ -111,11 +111,11 @@ O editor de regras fornece um conjunto de tipos de regras predefinidos que você
 
 ### [!UICONTROL Quando] {#whenruletype}
 
-O **[!UICONTROL tipo When]** regra segue a ação **alternativa de condição-ação** regra construir, ou às vezes, apenas a construção de ação **de condição** . Nesse tipo de regra, primeiro você especifica uma condição para avaliação seguida de uma ação a ser acionada se a condição estiver atendida ( `True`). Ao usar o tipo Quando regra, você pode usar vários operadores AND e OR para criar [expressões](#nestedexpressions) aninhadas.
+O tipo de regra **[!UICONTROL When]** segue a construção de regra **ação-condição-ação-alternativa**, ou, às vezes, apenas a construção **ação-condição**. Nesse tipo de regra, primeiro especifique uma condição para avaliação seguida por uma ação para acionar se a condição for atendida ( `True`). Ao usar o tipo de regra When, você pode usar vários operadores AND e OR para criar [expressões aninhadas](#nestedexpressions).
 
-Ao usar o tipo Quando regra, é possível avaliar uma condição em um objeto de formulário e executar ações em um ou mais objetos.
+Usando o tipo de regra Quando, é possível avaliar uma condição em um objeto de formulário e executar ações em um ou mais objetos.
 
-Em palavras simples, um típico de Quando regra está estruturado da seguinte maneira:
+Em palavras simples, uma regra When típica é estruturada da seguinte maneira:
 
 `When on Object A:`
 
@@ -123,9 +123,9 @@ Em palavras simples, um típico de Quando regra está estruturado da seguinte ma
 
 `Then, do the following:`
 
-Ação 2 no objeto B;
+Ação 2 sobre o objeto B;
 E
-Ação 3 no Objeto C;
+Ação 3 sobre o objeto C;
 
 _
 
@@ -133,7 +133,7 @@ Quando você tem um componente de vários valores, como botões de opção ou li
 
 Por exemplo, uma lista tem quatro opções: Vermelho, Azul, Verde e Amarelo. Ao criar a regra, as opções (botões de opção) são recuperadas automaticamente e disponibilizadas ao criador da regra da seguinte maneira:
 
-![Opções de exibições de vários valores](assets/multivaluefcdisplaysoptions1.png)
+![Opções de exibição de vários valores](assets/multivaluefcdisplaysoptions1.png)
 
 Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Limpar valor da ação limpa o valor do objeto especificado. Ter o valor claro de como uma opção na instrução When permite criar condições complexas com vários campos.
 
@@ -145,7 +145,7 @@ Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Lim
 
 **[!UICONTROL Habilitar]** Habilita o objeto especificado.
 
-**[!UICONTROL Desativa]** o objeto especificado.
+**[!UICONTROL Desabilitar]** Desabilita o objeto especificado.
 
 **[!UICONTROL Chamar serviço]** Chama um serviço configurado em um modelo de dados de formulário (FDM). Quando você escolhe a operação Chamar Serviço, um campo é exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário (FDM) na instância [!DNL Experience Manager]. Ao escolher um serviço de Modelo de dados de formulário (FDM), mais campos são exibidos onde você pode mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado. Consulte exemplo de regra para chamar serviços de Modelo de dados de formulário.
 
@@ -207,19 +207,19 @@ A figura a seguir mostra um exemplo de adição dinâmica de caixas de seleção
 
 O tipo de regra **[!UICONTROL Definir Valor de]** permite que você defina o valor de um objeto de formulário, dependendo se a condição especificada é atendida ou não. O valor pode ser definido como um valor de outro objeto, uma sequência literal, um valor derivado de uma expressão matemática ou de uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, string, propriedade ou valores derivados de uma função ou expressão matemática.
 
-O **tipo Definir Valor de** regra não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Um Conjunto padrão Valor De regra tem a seguinte estrutura:
+O tipo de regra **Definir Valor de** não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Uma regra padrão Definir valor de tem a seguinte estrutura:
 
 Defina o valor do Objeto A como:
 
-(sequência de caracteres ABC) OU
-(objeto propriedade X do objeto C) OU
-(valor de uma função) OU
-(valor de uma expressão matemática) OU
-(valor de saída de um serviço de modelo de dados ou de um serviço da Web);
+(cadeia de caracteres ABC) OU
+(propriedade de objeto X do Objeto C) OU
+(valor de uma função) OR
+(valor de uma expressão matemática) OR
+(valor de saída de um serviço de modelo de dados ou serviço Web);
 
 Quando (opcional):
 
-(Condição 1 E Condição 2 E Condição 3) é VERDADEIRA;
+(Condição 1 E Condição 2 E Condição 3) é VERDADEIRO;
 
 O exemplo a seguir pega o valor no campo `dependentid` como entrada e define o valor do campo `Relation` como a saída do argumento `Relation` do serviço de Modelo de Dados de Formulário `getDependent`.
 
@@ -537,7 +537,7 @@ Para gravar regras, execute as seguintes etapas:
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -601,7 +601,7 @@ Mostra os parâmetros usados pela função. Uma função pode ter várias tags d
 Sintaxe: `@return {type}`
 Como alternativa, você pode usar `@returns {type}`.
 Adiciona informações sobre a função, como seu objetivo.
-{type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
+  {type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
 
    1. string
    1. número
@@ -641,7 +641,7 @@ Por exemplo, você deseja adicionar uma função personalizada que calcula a ár
 
 Para criar uma biblioteca do cliente e adicioná-la ao repositório do CRX, execute as seguintes etapas:
 
-1. Crie uma biblioteca do cliente. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=pt-BR#developing).
+1. Crie uma biblioteca do cliente. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. No CRXDE, adicione uma propriedade `categories` com o valor de tipo de cadeia de caracteres como `customfunction` à pasta `clientlib`.
 
    >[!NOTE]
@@ -730,6 +730,22 @@ var c = {
 >[!NOTE]
 >
 >Certifique-se de usar `jsdoc` para cada função personalizada. Embora seja recomendável usar `jsdoc`comentários, inclua um `jsdoc`comentário vazio para marcar sua função como uma função personalizada. Ela permite o tratamento padrão da função personalizada.
+
+### Suporte a funções personalizadas em expressões de validação {#supporting-custom-functions-in-validation-expressions-br}
+
+Às vezes, se houver **regras de validação complexas**, o script de validação exato residirá em funções personalizadas e o autor chamará essas funções personalizadas da expressão de validação de campo. Para tornar esta biblioteca de funções personalizada conhecida e disponível durante a execução de validações no lado do servidor, o autor do formulário pode configurar o nome da biblioteca do cliente AEM na guia **[!UICONTROL Básico]** das propriedades do Contêiner de formulário adaptável, conforme mostrado abaixo.
+
+![Dando suporte a funções personalizadas em Expressões de Validação](assets/clientlib-cat.png)
+
+Suporte a funções personalizadas em expressões de validação
+
+O autor pode configurar a biblioteca JavaScript personalizada por formulário adaptável. Na biblioteca, mantenha somente as funções reutilizáveis, que dependem de bibliotecas de terceiros de jquery e underscore.js.
+
+## Tratamento de erros na ação enviar {#error-handling-on-submit-action}
+
+Como parte das diretrizes de segurança e proteção do AEM, configure páginas de erro personalizadas como 400.jsp, 404.jsp e 500.jsp. Esses manipuladores são chamados quando ao enviar um formulário 400, 404 ou 500 erros são exibidos. Os manipuladores também são chamados quando esses códigos de erro são acionados no nó Publicar. Você também pode criar páginas JSP para outros códigos de erro HTTP.
+
+Quando você preenche um modelo de dados de formulário (FDM) ou um formulário adaptável baseado em esquema com reclamação de dados XML ou JSON para um esquema cujos dados não contêm as tags `<afData>`, `<afBoundData>` e `</afUnboundData>`, os dados de campos não vinculados do formulário adaptável são perdidos. O esquema pode ser um esquema XML, esquema JSON ou um Modelo de dados de formulário (FDM). Campos não limitados são campos de Formulário adaptável sem a propriedade `bindref`.
 
 ## Gerenciar regras {#manage-rules}
 
@@ -840,7 +856,7 @@ Em um formulário de solicitação de empréstimo, você deseja registrar se o c
 
 * Um botão de opção, **[!UICONTROL Você já é cliente do Geometrixx?]**, que fornece as opções [!UICONTROL Sim] e [!UICONTROL Não]. O valor de Sim é **0** e Não é **1**.
 
-* Geometrixx Um campo de texto, **[!UICONTROL ID do cliente]**, para especificar a ID do cliente.
+* Um campo de texto, **[!UICONTROL ID do cliente do Geometrixx]**, para especificar a ID do cliente.
 
 Quando você escreve uma regra Quando no botão de opção para implementar esse comportamento, a regra é exibida da seguinte maneira no editor visual de regras.
 
