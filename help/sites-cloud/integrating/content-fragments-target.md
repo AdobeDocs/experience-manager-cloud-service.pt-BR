@@ -5,10 +5,10 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 58a0cb3fab9f3be1ff431aa5814797b6e6675265
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 95%
+source-wordcount: '1997'
+ht-degree: 91%
 
 ---
 
@@ -16,8 +16,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 >
->* Os Fragmentos de conteúdo do AEM são exportados para o espaço de trabalho padrão do Adobe Target.
->* O AEM deve estar integrado ao Adobe Target, de acordo com as instruções na seção [Integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
+>O AEM deve estar integrado ao Adobe Target, de acordo com as instruções na seção [Integração com o Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 Você pode exportar [Fragmentos de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md) criados no Adobe Experience Manager as a Cloud Service (AEM) para o Adobe Target (Target). Eles podem ser usados como ofertas em atividades do Target, para testar e personalizar experiências em escala.
 
@@ -70,50 +69,24 @@ Antes de exportar um fragmento, é necessário adicionar a **Configuração da n
 
 * especificar as opções de formato a serem usadas para a exportação
 * selecionar um espaço de trabalho do Target como destino
-* selecionar um domínio externalizador para regravação de referências no Fragmento de conteúdo (opcional)
 
-As opções necessárias podem ser selecionadas nas **Propriedades de página** da pasta e/ou fragmento necessários; a especificação será herdada conforme necessário.
+As opções necessárias podem ser selecionadas em **Propriedades** da pasta necessária; a especificação é herdada conforme necessário.
 
 1. Navegue até o console **Ativos**.
 
-1. Abra as **Propriedades de página** da pasta ou fragmento apropriado.
+1. Abra as **Propriedades** da pasta apropriada.
 
    >[!NOTE]
    >
-   >Se você adicionar a configuração da nuvem à pasta principal do Fragmento de conteúdo, a configuração será herdada por todas as pastas secundárias.
-   >
-   >Se você adicionar a configuração de nuvem ao próprio Fragmento de conteúdo, a configuração será herdada por todas as variações.
+   >Se você adicionar a configuração da nuvem à pasta pai do Fragmento de conteúdo, a configuração será herdada por todas as pastas filhas.
 
 1. Selecione a guia **Cloud Services**.
 
-1. Em **Configuração do Cloud Service**, selecione **Adobe Target** na lista suspensa.
+1. Em **Configuração do Cloud Service**, selecione a configuração de destino na lista suspensa.
 
-   <!-- is this note appropriate? -->
+1. Selecione o espaço de trabalho do Adobe Target.
 
-   >[!NOTE]
-   >
-   >O formato JSON de uma oferta de Fragmento de conteúdo pode ser personalizado. Para fazer isso, defina um componente de Fragmento de conteúdo do cliente e anote como exportar suas propriedades no modelo Sling do componente.
-   >
-   >Consulte o componente principal: [Componentes principais - Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR)
-
-1. Em **Adobe Target**, selecione:
-
-   * a configuração apropriada
-   * a opção de formato exigida
-   * um espaço de trabalho do Adobe Target
-   * se necessário - o domínio externalizador
-
-   >[!CAUTION]
-   >
-   >O domínio externalizador é opcional.
-   >
-   > Um externalizador do AEM é configurado quando você deseja que o conteúdo exportado aponte para um domínio de *publicação* específico. Para obter mais detalhes, consulte [Configurar o Externalizador de links do AEM](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer).
-   >
-   > Observe também que os domínios do externalizador são relevantes somente para o conteúdo do Fragmento de conteúdo que é enviado ao Target, e não para metadados como Visualizar conteúdo da oferta.
-
-   Por exemplo, para uma pasta:
-
-   <!-- need a new screenshot -->
+   Por exemplo:
 
    ![Pasta - Cloud Services](assets/cf-target-integration-01.png "Pasta - Cloud Services")
 
@@ -190,13 +163,13 @@ Agora é possível selecionar a nova configuração para edição.
 
    * **Usar direcionamento preciso:** por padrão, essa caixa de seleção está marcada. Se selecionada, a configuração do Cloud Service aguardará o carregamento do contexto antes de carregar o conteúdo. Veja a observação a seguir.
 
-   * **Sincronizar segmentos do Adobe Target:** selecione essa opção para baixar segmentos definidos no Target e usá-los no AEM. Selecione essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (O termo AEM de &quot;segmento&quot; é equivalente ao termo &quot;público-alvo&quot; do Target.)
+   * **Sincronizar segmentos do Adobe Target:** selecione essa opção para baixar segmentos definidos no Target e usá-los no AEM. Selecione essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (O termo &quot;segmento&quot; do AEM é equivalente ao termo &quot;público-alvo&quot; do Target.)
 
    * **Biblioteca do cliente:** o padrão é a AT.js (a mbox.js foi descontinuada)
 
      >[!NOTE]
      >
-     >O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=pt-BR), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
+     >O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
      >
      >A mbox.js foi descontinuada e será removida em um estágio posterior.
      >
@@ -268,7 +241,7 @@ Sua estrutura foi criada. Para replicar a estrutura para a instância de publica
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=pt-BR).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -337,7 +310,7 @@ Para exportar um Fragmento de conteúdo do AEM para o Target (depois de especifi
    
    -->
 
-1. Selecione **Exportar sem publicar** ou **Publish**, conforme necessário.
+1. Selecione **Exportar sem publicar** ou **Publicar**, conforme necessário.
 
    >[!NOTE]
    >
