@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre o Content Hub
 description: Obtenha respostas para algumas das perguntas mais frequentes do Centro de conteúdo.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1669'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Existem algumas configurações de como os usuários são atribuídos ao [!DNL C
    >
    >O usuário atribuído aos perfis de produto Express e Assets em dois Consoles do Administrador precisa ter o mesmo endereço de email e usar uma conta corporativa **Enterprise ou School**, e não a conta **Personal**. A configuração ideal é ter ambos os Admin Consoles configurados como **Federated ID** com uma relação de confiança configurada entre eles, para que o usuário tenha uma experiência de logon único contínua. Alguns dos planos do Express (por exemplo, Equipes do Express) não oferecem suporte ao Federated ID/logon único.
 
-Além dos direitos de produto corretos, a integração do Adobe Express no Content Hub exige que o usuário atribuído tenha pelo menos [!UICONTROL Pode editar] permissões no ambiente de criação do Assets que viabiliza o Content Hub, em pelo menos **[!UICONTROL # /content/dam/hydroated-assets/]** hierarquia de pastas, onde os usuários do Content Hub podem salvar o conteúdo criado com o Express. Consulte [Gerenciamento de permissões](/help/security/touch-ui-principal-view.md) no modo de exibição de Administração (Interface para toque) ou um [gerenciamento de permissões simplificado no modo de exibição de Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Além dos direitos de produto corretos, a integração do Adobe Express no Content Hub exige que o usuário atribuído tenha pelo menos [!UICONTROL Pode editar] permissões no ambiente de criação do Assets que viabiliza o Content Hub, em pelo menos **[#UICONTROL /content/dam/hydroated-assets/]** hierarquia de pastas, onde os usuários do Content Hub podem salvar o conteúdo criado com o Express. Consulte [Gerenciamento de permissões](/help/security/touch-ui-principal-view.md) no modo de exibição de Administração (Interface para toque) ou um [gerenciamento de permissões simplificado no modo de exibição de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Posso configurar o Content Hub para que as diretrizes de marca da minha organização sejam exibidas como um link na página inicial? {#content-hub-setup-brand-guidelines}
 
@@ -134,5 +134,29 @@ A tabela abaixo descreve as principais diferenças entre as duas soluções:
 |  | Coleções fixadas pelo administrador | ✓ | − |
 |  | Pesquisa semântica | ✓ | − |
 |  | Pesquisa localizada e exibição de metadados | ✓ | − |
+
+## Como posso selecionar um repositório para exibir ativos somente do ambiente selecionado? {#select-repository-multiple-environments}
+
+Ao configurar o Content Hub para Produção e outros ambientes inferiores para o mesmo Programa, você pode selecionar o repositório e exibir os ativos do ambiente selecionado. Execute as seguintes etapas:
+
+1. Clique no ícone do usuário no painel direito.
+
+1. Na seção **[!UICONTROL Configurações do Produto]**, selecione **[!UICONTROL Selecionar Repositório]**.
+
+1. Selecione o repositório no menu suspenso **[!UICONTROL Repositório]** e clique em **[!UICONTROL OK]** para confirmar.
+
+   O Content Hub agora exibe ativos para o ambiente selecionado.
+
+## Como o Content Hub pode exibir a pré-visualização em miniatura do tipo de arquivo .ZIP? {#thumbnail-preview-zip-file}
+
+Para fornecer uma pré-visualização de miniatura para tipos de arquivo, como .ZIP no Content Hub, você pode adicionar uma representação chamada `cq5dam.preview.jpg` ou `cq5dam.preview.png` à raiz do caminho onde o .ZIP está disponível no ambiente de criação do AEM as a Cloud Service.
+
+A imagem que você adiciona como representação:
+
+* Pode estar no formato JPG, JPEG ou PNG.
+
+* Deve ter menos de 50 MB
+
+Quando disponível, o Content Hub exibe a imagem como a miniatura de visualização do arquivo .ZIP no Content Hub.
 
 

@@ -2,7 +2,7 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 4fb2ca8123dfd5a0d3244b9d5966cd8bb7eeaf09
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 8%
@@ -233,7 +233,7 @@ Se a visibilidade dos ativos expirados estiver habilitada, a Content Hub também
 
 ### Representações {#renditions-content-hub}
 
-As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para desabilitá-la, siga estas etapas:
 
