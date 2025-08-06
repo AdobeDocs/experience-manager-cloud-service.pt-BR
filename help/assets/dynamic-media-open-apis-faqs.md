@@ -3,9 +3,9 @@ title: Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI
 description: Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 4c346ea4bd3ddea7f5f9f14af56a0b3ec779f9f9
+source-git-commit: 57ffeca8fc6c1a9e0b04a40fe5ddd1bf0fff50d9
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Da mesma forma, o Experience Manager Assets distingue o status Rejeitado na exib
 
 ## Como você pode fazer com que a ID de usuário ou de grupo do Adobe IMS (Adobe Identity Management Services) seja usada para definir as funções em ativos na exibição de administrador do Experience Manager, para proteger a experiência de entrega e pesquisa? {#set-roles-secure-delivery-search}
 
-Os usuários que exigem acesso ao ambiente do Experience Manager Author são gerenciados como usuários do Adobe IMS no Admin Console da Adobe. Para obter informações sobre o que são os usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console, consulte [Usuários do Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=pt-BR).
+Os usuários que exigem acesso ao ambiente do Experience Manager Author são gerenciados como usuários do Adobe IMS no Admin Console da Adobe. Para obter informações sobre o que são os usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console, consulte [Usuários do Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=en).
 
 
 ## É possível aprovar vários ativos simultaneamente em uma pasta? {#approve-multiple-assets-in-folder}
@@ -133,7 +133,7 @@ A tabela abaixo descreve as principais diferenças entre as duas soluções:
 
 ## Alguns modificadores são marcados como Disponibilidade Limitada. Como posso começar a usá-los? {#use-limited-availability-modifiers}
 
-Para permitir o uso de modificadores na produção em Disponibilidade Limitada na sua conta:
+Para habilitar o uso de produção de [modificadores em Disponibilidade Limitada](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) na sua conta:
 
 1. [Crie um caso de Suporte do Adobe usando o Admin Console](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 
