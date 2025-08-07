@@ -4,7 +4,7 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 0f16c31a5fea1fc538fbeabe6db182ad3a30560d
+source-git-commit: 280e02ba0ace1fe123fd5112a982c6434fd4d499
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 6%
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21772, lançada publicamente em quinta-feira, 6 de agosto de 2025. A versão de manutenção anterior era 21706.
 
-A ativação de recursos do 2025.8.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.8.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Novos recursos  {#new-features-21772}
 
@@ -131,7 +131,7 @@ A ativação de recursos do 2025.8.0 fornecerá o conjunto completo de recursos 
 
 ### Problemas conhecidos {#known-issues-21772}
 
-* SITES-31791: Fragmentos de conteúdo GraphQL - Falha na consulta com &quot;Contagem máxima de campos excedida&quot;. Consulte o [artigo da Knowledge Base](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27231).
+* SITES-31791: Fragmentos de conteúdo GraphQL - Falha na consulta com &quot;Contagem máxima de campos excedida&quot;. Consulte o [artigo da Knowledge Base](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231).
 
 ### Recursos e APIs obsoletos {#deprecated-21772}
 
@@ -140,7 +140,6 @@ Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalh
 ### Correções de segurança {#security-21772}
 
 A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda 35 vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
-
 
 ### Tecnologias integradas {#embedded-tech-21772}
 
@@ -151,5 +150,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | Componentes principais do AEM | 2.29.0 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
-
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
