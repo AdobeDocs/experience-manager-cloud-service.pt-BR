@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2358'
 ht-degree: 0%
 
 ---
@@ -180,14 +180,14 @@ A **Barra de Ferramentas do Editor Universal** contém suas ferramentas primári
 **Propósito:** Exibir seu formulário em uma nova guia sem a interface do editor\
 **Quando usar:** Para testes em tela inteira, compartilhar com as partes interessadas para revisão
 
-    ![Abrir Página](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
+![Abrir página](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
 #### **Publicar**
 
 **Finalidade:** Tornar o formulário ativo e acessível aos usuários\
 **Quando usar:** Após testes completos nos modos Visualização e Responsivo
 
-    ![Publicar](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
+![Publicar](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 **Lista de Verificação de Validação Antes da Publicação:**
 
@@ -216,12 +216,22 @@ A **Barra de Ferramentas do Editor Universal** contém suas ferramentas primári
 
 **Estas ferramentas são usadas para cenários específicos ou configurações avançadas:**
 
-#### **Editar Propriedades do Formulário**
+#### **Propriedades do Formulário AEM**
 
 **Propósito:** definir configurações no nível do formulário, como Modelo de Dados de Formulário (FDM) e datas de publicação\
 **Quando usar:** Configuração de integrações de dados, agendamento de publicação
 
 ![Propriedades do formulário](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+![Assistente de Propriedades do Formulário](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+
+O painel Propriedades do formulário inclui as seguintes seções:
+
+- **Envio**: defina o que acontece depois que um usuário envia o formulário. Escolha entre várias ações de envio, como enviar dados por email, enviar para o SharePoint, usar um modelo de dados de formulário ou integrar a serviços como o Adobe Experience Platform ou o Microsoft Power Automate. Para obter uma lista completa das ações de envio suportadas, consulte o artigo [Ação de envio](/help/edge/docs/forms/universal-editor/submit-action.md).
+
+- **Preenchimento prévio**: configure como os campos de formulário são preenchidos automaticamente antes que o usuário interaja com o formulário. Você pode se conectar a fontes de dados, como um Modelo de dados de formulário (FDM), ou usar parâmetros de URL para preencher campos previamente, aprimorando a experiência do usuário e reduzindo a entrada manual. Para saber mais, consulte o artigo [Serviço de preenchimento prévio](/help/edge/docs/forms/universal-editor/prefill-form.md).
+
+- **Obrigado**: personalize o que os usuários verão depois de enviar o formulário. Você pode exibir uma mensagem de confirmação ou redirecioná-la para outra página da Web, garantindo uma experiência de conclusão perfeita e profissional. Para saber como configurar uma mensagem de agradecimento para formulários, consulte o artigo [Configurar Mensagem de Agradecimento](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md).
 
 #### **Editor de regras** (acesso antecipado)
 
@@ -339,7 +349,7 @@ O **Painel de Propriedades** (lado direito) é o seu centro de controle para cri
 
     ![Gerar variações](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**Saiba Mais:** [Gerar Guia De Variações](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**Saiba Mais:** [Gerar Guia De Variações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **Rascunhos de Conteúdo**
 
@@ -521,4 +531,3 @@ Agora que você entende a interface do Editor universal:
 4. **Editor de regras mestres** - Adicionar comportamentos dinâmicos com o [Guia do Editor de Regras](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 
 **Lembre-se:** o Editor Universal foi criado para tornar a criação de formulários intuitiva. Comece com o básico e explore gradualmente os recursos avançados à medida que suas necessidades aumentam.
-

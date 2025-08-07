@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '3597'
 ht-degree: 1%
@@ -16,6 +16,7 @@ ht-degree: 1%
 # Editor de regras para Forms dinâmico no editor universal
 
 O Editor de regras no Universal Editor permite criar formulários inteligentes e dinâmicos que respondem à entrada do usuário em tempo real. Você pode transformar formulários estáticos em experiências interativas com visibilidade de campo condicional, cálculos automatizados e lógica de negócios complexa, tudo sem escrever código.
+
 
 ## O que você vai aprender
 

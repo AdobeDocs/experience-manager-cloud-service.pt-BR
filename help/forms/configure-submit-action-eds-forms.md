@@ -4,19 +4,19 @@ description: Um Formulário adaptável fornece várias Ações de envio. Uma Aç
 keywords: como selecionar a ação enviar para um formulário adaptável, conectar um formulário adaptável à lista do sharepoint, conectar um formulário adaptável à biblioteca de documentos do sharepoint, conectar um formulário adaptável ao modelo de dados de formulário (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
+source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 8%
 
 ---
 
-
 # Ações de envio para o Edge Delivery Services Forms
 
 | Versão | Link do artigo |
 |---------|-----------------------------|
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Este artigo |
@@ -33,7 +33,7 @@ As seguintes ações de envio são suportadas pelo [Adaptive Forms criado no Uni
 * [Chamar um fluxo do Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Enviar para o SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Chamar Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Enviar usando o Modelo de dados de formulário (FDM)](/help/forms/using-form-data-model.md)
+* [Enviar usando o Modelo de dados de formulário (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Enviar para o Armazenamento de blob do Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Enviar para Ponto de Extremidade REST](/help/forms/configure-submit-action-restpoint.md)
 * [Enviar para o OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -68,4 +68,3 @@ O Forms baseado em documento suporta o envio somente para planilhas. Para saber 
 ## Consulte também {#see-also}
 
 {{af-submit-action}}
-

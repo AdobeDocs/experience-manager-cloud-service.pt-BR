@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '1815'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 # Criar Forms responsivo com editor universal
 
 Os usuários acessam formulários em uma grande variedade de dispositivos, incluindo desktops, tablets e smartphones. A criação de formulários responsivos garante uma experiência ideal para todos os usuários, independentemente do dispositivo. Este guia explica como projetar, testar e otimizar formulários para qualquer tamanho de tela usando o Universal Editor.
+
 
 A criação responsiva de formulários envolve duas atividades principais:
 
@@ -171,7 +172,7 @@ Os padrões de layout determinam como o conteúdo do formulário se adapta a dif
 
 **Etapas de implementação:**
 
-1. Use o [Componente de Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+1. Use o [Componente de Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 2. Agrupar campos relacionados em cada painel.
 3. Adicione cabeçalhos claros para cada seção.
 4. Assegure um espaçamento adequado entre os painéis.
@@ -204,7 +205,7 @@ Os padrões de layout determinam como o conteúdo do formulário se adapta a dif
 
 **Etapas de implementação:**
 
-1. Use o [Componente de Assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+1. Use o [Componente de Assistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 2. Divida formulários complexos em etapas lógicas (3 a 7 etapas são ideais).
 3. Incluir indicadores de progresso para orientação do usuário.
 4. Forneça controles de navegação claros (Próximo, Voltar, Salvar).
@@ -244,7 +245,7 @@ Os padrões de layout determinam como o conteúdo do formulário se adapta a dif
 
 **Etapas de implementação:**
 
-1. Use o [Componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+1. Use o [Componente Acordeão](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 2. Agrupe o conteúdo opcional relacionado em cada seção.
 3. Use cabeçalhos de seção descritiva.
 4. Defina os estados de abertura/fechamento padrão apropriados.

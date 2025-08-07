@@ -6,9 +6,9 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 title: Como configurar uma ação enviar para um formulário adaptável?
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: 64edcfe1bf94638ae5d9510a5a6ac660cf1bcd0a
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '455'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 1%
 # Conectar um formulário adaptável à lista Microsoft® SharePoint {#connect-af-sharepoint-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
+
+<span> Este vídeo se aplica somente aos Componentes principais. Para Componentes UE/Foundation, consulte o artigo.</span>
 
 Para usar a ação enviar [!UICONTROL Enviar para a Lista do SharePoint] em um formulário adaptável:
 
