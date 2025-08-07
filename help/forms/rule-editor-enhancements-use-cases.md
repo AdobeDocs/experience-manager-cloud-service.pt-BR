@@ -4,7 +4,9 @@ description: Este artigo explora vários casos de uso para o editor de regras em
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 4ff533de73fcb91fb2b68cfdb3fd2602645ff7aa
+hide: true
+hidefromtoc: true
+source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
