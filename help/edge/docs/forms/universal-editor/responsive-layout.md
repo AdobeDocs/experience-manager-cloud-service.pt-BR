@@ -171,7 +171,7 @@ Os padrões de layout determinam como o conteúdo do formulário se adapta a dif
 
 **Etapas de implementação:**
 
-1. Use o [Componente de Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+1. Use o [Componente de Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 2. Agrupar campos relacionados em cada painel.
 3. Adicione cabeçalhos claros para cada seção.
 4. Assegure um espaçamento adequado entre os painéis.
@@ -204,7 +204,7 @@ Os padrões de layout determinam como o conteúdo do formulário se adapta a dif
 
 **Etapas de implementação:**
 
-1. Use o [Componente de Assistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+1. Use o [Componente de Assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 2. Divida formulários complexos em etapas lógicas (3 a 7 etapas são ideais).
 3. Incluir indicadores de progresso para orientação do usuário.
 4. Forneça controles de navegação claros (Próximo, Voltar, Salvar).
@@ -244,7 +244,7 @@ Os padrões de layout determinam como o conteúdo do formulário se adapta a dif
 
 **Etapas de implementação:**
 
-1. Use o [Componente Acordeão](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+1. Use o [Componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 2. Agrupe o conteúdo opcional relacionado em cada seção.
 3. Use cabeçalhos de seção descritiva.
 4. Defina os estados de abertura/fechamento padrão apropriados.

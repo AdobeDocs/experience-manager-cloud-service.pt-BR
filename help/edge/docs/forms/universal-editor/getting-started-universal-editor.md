@@ -70,7 +70,7 @@ Antes de começar, verifique se você tem o seguinte:
 
 >[!TIP]
 >
-> Novo no AEM? Comece com o [Guia de Introdução do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html).
+> Novo no AEM? Comece com o [Guia de Introdução do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=pt-BR).
 
 ## Caminho A: Criar novo projeto com o Forms
 

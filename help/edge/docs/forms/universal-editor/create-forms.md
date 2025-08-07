@@ -505,8 +505,8 @@ Abaixo estão problemas comuns e soluções para o AEM Forms com o Edge Delivery
 Se os problemas persistirem:
 
 1. Verifique o status do serviço do Adobe Experience Cloud.
-2. Revise a [documentação do Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
-3. Visite A [Comunidade Da Adobe Experience League](https://experienceleaguecommunities.adobe.com/).
+2. Revise a [documentação do Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=pt-BR).
+3. Visite A [Comunidade Da Adobe Experience League](https://experienceleaguecommunities.adobe.com/?profile.language=pt).
 4. Entre em contato com o Atendimento ao cliente da Adobe.
 
 +++
@@ -528,6 +528,6 @@ Após concluir a criação e a publicação do formulário, considere o seguinte
 
 ### Otimização do desempenho
 
-- [Práticas recomendadas da Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html): maximize o desempenho.
+- [Práticas recomendadas da Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=pt-BR): maximize o desempenho.
 - [Análise de formulários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): controle o desempenho do formulário e o comportamento do usuário.
 
