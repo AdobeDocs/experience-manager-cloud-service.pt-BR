@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta privado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 2d1b7385fec60a77f8c76f260fc87f9e5af428a3
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '519'
 ht-degree: 8%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->&#x200B;>O recurso descrito neste artigo só está disponível por meio do programa beta privado. Para se inscrever no beta privado, consulte [Ambiente de testes especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>O recurso descrito neste artigo só está disponível por meio do programa beta privado. Para se inscrever no beta privado, consulte [Ambiente de testes especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 O ambiente de teste especializado, ou DevXL, é um novo tipo de ambiente do Cloud Manager que você pode criar. Ele foi projetado para atender a casos de uso avançados, como testes de aceitação de usuários (UAT) e validação de desempenho. Diferentemente dos ambientes tradicionais de desenvolvimento, desenvolvimento rápido ou preparo, os ambientes DevXL operam fora do pipeline de implantação de produção. Dessa forma, eles oferecem maior flexibilidade e, ao mesmo tempo, mantêm um isolamento rigoroso para impedir a interferência nos workflows de produção.
 
@@ -31,7 +31,7 @@ O DevXL foi criado para refletir o tamanho, a escalabilidade e as configuraçõe
 | Tamanho do ambiente | Corresponde ao ambiente de preparo. |
 | Isolamento | Totalmente isolado de outros ambientes. |
 | Pipelines de código | Igual ao ambiente de desenvolvimento (validação, criação, implantação). |
-| Cópia de conteúdo | Permitido no ambiente de produção ou preparo. |
+| Copiar conteúdo | Permitido a partir de ambiente de produção, preparo ou teste especializado. |
 | Restauração de conteúdo | Igual ao ambiente de desenvolvimento. |
 | Logs de acesso | Igual ao ambiente de desenvolvimento. |
 | Console do desenvolvedor | Igual ao ambiente de desenvolvimento. |
@@ -52,9 +52,8 @@ Para adicionar ou editar um ambiente, o usuário deve ser membro da função **P
 
 1. Siga uma das seguintes opções:
 
-   Se a opção **Adicionar Ambiente** estiver esmaecida (desabilitada), talvez seja devido à falta de permissões ou dependente dos recursos licenciados.
-
    * No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, no cartão **Ambientes**, clique em **Adicionar Ambiente**.
+Se a opção **Adicionar Ambiente** estiver esmaecida (desabilitada), talvez seja devido à falta de permissões ou dependente dos recursos licenciados.
 
    ![Cartão Ambientes](assets/no-environments.png)
 

@@ -6,15 +6,14 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta privado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-hide: true
-hidefromtoc: true
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+hide: false
+hidefromtoc: false
+source-git-commit: 96a619c6ab8f71034914b72a57bdb1e7f363fbc6
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 35%
+source-wordcount: '489'
+ht-degree: 4%
 
 ---
-
 
 
 # Adicionar um pipeline do Edge Delivery {#configure-production-pipeline}
@@ -25,9 +24,9 @@ Um usuário deve ter a função **[Gerente de implantação](/help/onboarding/cl
 
 >[!NOTE]
 >
->Um pipeline de produção não pode ser configurado até que o seguinte tenha acontecido:
+>Um pipeline do Edge Delivery não pode ser configurado até que o seguinte tenha acontecido:
 >
->* O programa é criado.
+>* É criado um programa que contém um site do Edge Delivery Services e um domínio mapeado. Caso contrário, a opção **Adicionar pipeline de Edge Delivery** aparecerá desabilitada na interface, e uma dica de ferramenta explica os requisitos ausentes. <!-- CMGR‑69680 -->
 >* O repositório Git tem pelo menos uma ramificação.
 >* Os ambientes de produção e de preparo são criados.
 
@@ -35,47 +34,56 @@ Antes de começar a implantar seu código, defina as configurações de pipeline
 
 >[!NOTE]
 >
->Você poderá [editar as configurações do pipeline](managing-pipelines.md) após a configuração inicial.
+>Você pode [editar as configurações do pipeline](managing-pipelines.md) após a configuração inicial.
 
-## Adicionar um novo pipeline do Edge Delivery {#adding-production-pipeline}
+**Para adicionar um pipeline do Edge Delivery:**
 
-Depois de configurar seu programa e ter pelo menos um ambiente usando a interface do usuário do [!UICONTROL Cloud Manager], você estará pronto para adicionar um pipeline de não produção seguindo essas etapas.
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização desejada.
 
->[!TIP]
->
->Antes de configurar um pipeline de front-end, consulte a [Jornada de Criação rápida de sites do AEM](/help/journey-sites/quick-site/overview.md) para obter um guia completo sobre a ferramenta simples de Criação rápida de sites do AEM. Esta jornada pode ajudá-lo a simplificar o desenvolvimento de front-end do seu site do AEM, permitindo que você personalize seu site rapidamente sem conhecimento de back-end no AEM.
+1. Na página **Meus Programas**, selecione o programa desejado.
 
-**Para adicionar um novo pipeline do Edge Delivery:**
+   ![Página Meus programas no Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
+1. Siga uma das seguintes opções:
 
-1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
+   * **Adicionar um pipeline do Edge Delivery a partir do cartão Pipelines**
 
-1. Navegue até o cartão **Pipelines** da página **Visão geral do programa** e clique em **Adicionar** para selecionar **Adicionar pipeline de produção**.
+      1. No painel esquerdo, em **Programa**, clique em **![Ícone de visão geral](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg) [Visão geral](/help/implementing/cloud-manager/navigation.md#my-programs)**.
+      1. Na página **Visão geral do programa**, no cartão **Pipelines**, clique no **![Sinal de adição](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)Adicionar** e selecione **Adicionar pipeline de Edge Delivery**.
 
-   ![O cartão Pipelines na visão geral do Gerenciador de programas](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
+         ![O cartão Pipelines na página Visão Geral do Programa](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinescard-add-ed-pipeline.png)
 
-1. A caixa de diálogo **Adicionar pipeline de produção** será exibida. Forneça um **Nome do pipeline** para identificar o pipeline junto com as opções a seguir. Clique em **Continuar**.
+   * **Adicionar um pipeline de Edge Delivery da página Pipelines**
 
-   **Acionador da implantação** - Você tem as seguintes opções ao definir os acionadores de implantação para iniciar o pipeline.
+      1. No painel à esquerda, em **Programa**, clique em **![ícone de Fluxo de Trabalho ou em ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) Pipelines**.
+      1. Na página Pipelines, próximo ao canto superior direito, clique em **Adicionar pipeline** > **Adicionar pipeline de Edge Delivery**.
 
-   * **Manual** - Iniciar o pipeline manualmente.
-   * **Sobre Alterações do Git** - Inicia o pipeline de CI/CD sempre que confirmações são adicionadas à ramificação Git configurada. Com essa opção, ainda é possível iniciar o pipeline manualmente, conforme necessário.
+         ![A página Pipelines com o botão Adicionar Pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinespage-add-ed-pipeline.png)
 
-   **Comportamento de falhas importantes da métrica** - Durante a configuração ou edição do pipeline, o **Gerente de implantação** tem a opção de definir o comportamento do pipeline quando uma falha importante é encontrada em qualquer um dos quality gates (portais de qualidade). As opções disponíveis são:
+1. Na caixa de diálogo **Adicionar pipeline de Edge Delivery**, no campo de texto **Nome do pipeline**, digite um rótulo de pipeline descritivo.
 
-   * **Perguntar sempre** - Configuração padrão. Requer intervenção manual em qualquer falha importante.
-   * **Falhar imediatamente**: se selecionado, o pipeline será cancelado sempre que ocorrer uma falha importante. Esse processo é basicamente semelhante a um usuário que rejeita manualmente cada falha.
-   * **Continuar imediatamente** - Se selecionado, o pipeline continuará automaticamente sempre que ocorrer uma falha importante. Esse processo é basicamente semelhante a um usuário que aprova manualmente cada falha.
+   ![Caixa de diálogo Adicionar pipeline do Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-configuration.png)
 
-   ![Configuração do pipeline de produção](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
+1. Selecione a opção de pipeline **Acionador de implantação** que você deseja.
 
-1. Na guia **Código Source**, selecione o tipo de código que o pipeline deve processar.
+   * **Manual** - Você inicia a implantação.
+   * **Sobre Alterações do Git** - As confirmações do Git iniciam a implantação automaticamente. Com essa opção, ainda é possível iniciar o pipeline manualmente, se necessário.
 
-   * **[Configurar um pipeline de código de pilha completa](#full-stack-code)**
-   * **[Configurar um pipeline de implantação direcionado](#targeted-deployment)**
+1. Clique em **Continuar**.
 
-Consulte [Pipelines de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obter mais informações sobre os tipos de pipelines.
+1. Em **Source Code**, defina as seguintes opções:
 
-As etapas para concluir a criação do pipeline de produção variam de acordo com o tipo de código-fonte selecionado. Siga os links acima para acessar a próxima seção deste documento e concluir a configuração do pipeline.
+   * **Ambiente de Implantação** - Exibe o campo do ambiente de destino; permanece como somente leitura.
 
+   * **Repositório** - Use a lista suspensa para apontar o pipeline para o repositório Git exato que armazena a configuração do Edge Delivery.
+
+     Consulte também [Adicionar e gerenciar repositórios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
+
+   * **Ramificação Git** - Use a lista suspensa para selecionar uma ramificação específica dentro do repositório escolhido. Se necessário, clique em ![Ícone de reciclagem ou ícone de atualização](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) para recarregar a lista suspensa da ramificação Git após envios recentes
+   * **Localização do código** - Define o caminho da pasta dentro do repositório onde o código pronto para pipeline é iniciado ( `/` é igual à raiz do repositório).
+
+   ![Configurar pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
+
+1. Clique em **Salvar**.
+
+Agora você pode [gerenciar seu pipeline](managing-pipelines.md) no cartão **Pipelines** na página **Visão geral do programa** ou na página **Pipelines**.
