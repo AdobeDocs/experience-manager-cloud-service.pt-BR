@@ -2,9 +2,9 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+source-git-commit: e8932e6490008368e0e22ebec3331553b7b54c59
 workflow-type: tm+mt
-source-wordcount: '2089'
+source-wordcount: '2189'
 ht-degree: 8%
 
 ---
@@ -177,11 +177,20 @@ Como administrador, personalize o portal do [!DNL Content Hub] para atender aos 
 ![redefinir padrão](/help/assets/assets/reset-default-content-hub.png)
 Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]**, use o **[!UICONTROL Banner]**, **[!UICONTROL Cores]** e **[!UICONTROL Imagem do banner]** para executar as seguintes personalizações:
 
+1. [Alterar a imagem do logotipo da seção [!UICONTROL Imagem de logotipo]](#Change-the-logo-image)
 1. [Alterar a imagem do banner da seção [!UICONTROL Imagem do banner]](#Change-the-banner-image)
 1. [Atualize o título e o texto do corpo no banner e altere a cor do texto da seção [!UICONTROL Banner]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
 1. [Altere as cores primária e secundária da seção [!UICONTROL Cores] para aplicar um esquema de cores que se alinhe ao tema da sua marca](#Change-the-primary-and-secondary-color)
 
 Selecione a opção **[!UICONTROL Redefinir Padrões]** para reverter suas alterações e restaurar o tema padrão.
+
+#### Alterar a imagem do logotipo{#change-the-logo-image}
+
+Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]**, execute as seguintes etapas para alterar a imagem do logotipo da sua implantação do [!DNL Content Hub]:
+
+1. Clique em ![selecionar imagem](/help/assets/assets/Browse.svg) **[!UICONTROL Selecionar imagem]** para selecionar uma imagem de logotipo usando a caixa de diálogo seletor de ativos. O seletor de ativos exibe somente imagens aprovadas.
+1. Selecione a imagem, clique em **[!UICONTROL Selecionar]** e em **[!UICONTROL Salvar]** para exibi-la como a imagem do logotipo da sua implantação do [!DNL Content Hub].
+   ![imagem do banner](/help/assets/assets/logo-image-content-hub1.png)
 
 #### Alterar a imagem do banner{#Change-the-banner-image}
 
@@ -190,6 +199,12 @@ Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]
 1. Clique em ![selecionar imagem](/help/assets/assets/Browse.svg) **[!UICONTROL Selecionar da galeria]** para selecionar uma imagem de banner usando a caixa de diálogo do seletor de ativos. O seletor de ativos exibe somente imagens aprovadas.
 1. Selecione a imagem, clique em **[!UICONTROL Selecionar]** e em **[!UICONTROL Salvar]** para exibi-la como a imagem de banner da sua implantação do [!DNL Content Hub].
    ![imagem do banner](/help/assets/assets/banner-image-content-hub1.png)
+
+>[!NOTE]
+>
+> * O tamanho recomendado para **Imagem do banner** é `height = 200 to 450px` e `width = 1920 to 2560px`.
+> * O tamanho recomendado para **Imagem de logotipo** é `height = 80 to 120px` e `width = 120 to 200px`.
+> * Os **tipos MIME** com suporte para as imagens de banner e logotipo são `'JPG', value: 'image/jpeg'`, `'PNG', value: 'image/png'`, `'WEBP', value: 'image/webp'`, `'TIFF', value: 'image/tiff'`, `'SVG', value: 'image/svg+xml'`, `'GIF', value: 'image/gif'`.
 
 #### Adicionar título e texto de corpo ao banner e alterar a cor do texto{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
@@ -233,7 +248,7 @@ Se a visibilidade dos ativos expirados estiver habilitada, a Content Hub também
 
 ### Representações {#renditions-content-hub}
 
-As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para desabilitá-la, siga estas etapas:
 

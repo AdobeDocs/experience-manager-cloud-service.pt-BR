@@ -3,9 +3,9 @@ title: Pesquisar ativos no Content Hub
 description: Saiba como pesquisar ativos no [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Por exemplo, pesquise por todas as imagens do **[!UICONTROL JPEG]** com a palavr
 
 ## Restringir os resultados da pesquisa usando filtros {#narrow-down-search-results}
 
-Use o painel Filtros para pesquisar ativos com base em metadados. Você pode filtrar os resultados da pesquisa com base em vários predicados de pesquisa. Você pode selecionar todos os predicados apropriados para minimizar ou restringir os resultados da pesquisa. Ao selecionar várias opções em um filtro, o Content Hub exibe os ativos que correspondem a qualquer uma das opções selecionadas em um filtro. No entanto, quando você seleciona várias opções em filtros, o Content Hub exibe somente os ativos que correspondem a todas as opções selecionadas em filtros para restringir os resultados da pesquisa.
+Use o painel Filtros para pesquisar ativos com base em metadados. Você pode filtrar os resultados da pesquisa com base em vários predicados de pesquisa. Você pode selecionar todos os predicados apropriados para minimizar ou restringir os resultados da pesquisa. Você pode escolher mais de 10 predicados ao filtrar os resultados da pesquisa. Ao selecionar várias opções em um filtro, o Content Hub exibe os ativos que correspondem a qualquer uma das opções selecionadas em um filtro. No entanto, quando você seleciona várias opções em filtros, o Content Hub exibe somente os ativos que correspondem a todas as opções selecionadas em filtros para restringir os resultados da pesquisa.
 
 Os filtros padrão incluem formato de arquivo, aprovado por, data de aprovação, ativos expirados e não expirados e data de expiração. Os administradores também podem configurar os filtros exibidos na lista de filtros. Para obter mais informações, consulte [Configurar a interface do usuário do Content Hub](configure-content-hub-ui-options.md#configure-filters-content-hub).
 
