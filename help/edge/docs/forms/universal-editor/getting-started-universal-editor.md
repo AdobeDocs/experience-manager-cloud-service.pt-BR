@@ -184,7 +184,7 @@ O arquivo `fstab.yaml` conecta seu repositório GitHub ao ambiente de criação 
 
     >[!NOTE]
     >
->Você está tendo problemas de build? Consulte [Solução de problemas de compilação do GitHub](#troubleshooting-github-build-issues).
+    >Você está tendo problemas de build? Consulte [Solução de problemas de compilação do GitHub](#troubleshooting-github-build-issues).
 
 +++
 
