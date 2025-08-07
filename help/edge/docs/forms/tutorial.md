@@ -241,7 +241,7 @@ Para começar a usar rapidamente um ambiente de desenvolvimento local do AEM:
        npm install -g @adobe/aem-cli
    ```
 
-1. Clonar o projeto do GitHub: clone o repositório de projetos do GitHub usando o comando a seguir, substituindo <owner> com o proprietário do repositório e <repo> com o nome do repositório:
+1. Clonar o projeto do GitHub: clone o repositório de projetos do GitHub usando o comando a seguir, substituindo &lt;owner> com o proprietário do repositório e &lt;repo> com o nome do repositório:
 
    ```
    git clone https://github.com/<owner>/<repo>

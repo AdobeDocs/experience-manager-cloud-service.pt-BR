@@ -150,13 +150,14 @@ Configure o Compartilhamento de recursos entre origens na origem do formulário:
 
 2. **Exemplo de configuração**:
 
-       # Configuração do site que hospeda o formulário
+       &#x200B;# Configuração do site que hospeda o formulário
        cabeçalhos:
        - caminho: /forms/**
        personalizado:
        Controle de Acesso com Permissão de Origem: https://host-domain.com
        Métodos de permissão de controle de acesso: GET, OPTIONS
    
+
 ### Etapas de incorporação
 
 1. **Criar e Publicar Formulário**

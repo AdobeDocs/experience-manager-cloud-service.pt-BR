@@ -142,7 +142,7 @@ O Editor universal fornece duas opções de serviço de preenchimento prévio:
 
        >[!NOTE]
        >
-   > Saiba mais sobre como configurar serviços do FDM em [Trabalhar com o Modelo de Dados de Formulário (FDM)](/help/forms/work-with-form-data-model.md).
+       > Saiba mais sobre como configurar serviços do FDM em [Trabalhar com o Modelo de Dados de Formulário (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -267,19 +267,19 @@ O formulário deve ser preenchido automaticamente com dados com base no parâmet
 
     &quot;
     
-    {
-    &quot;afBoundData&quot;: {
-    &quot;user&quot;: {
+    &lbrace;
+    &quot;afBoundData&quot;: &lbrace;
+    &quot;user&quot;: &lbrace;
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    }
-    },
-    &quot;afUnBoundData&quot;: {
+    &rbrace;
+    &rbrace;,
+    &quot;afUnBoundData&quot;: &lbrace;
     &quot;additionalInfo&quot;: &quot;Preferências do usuário&quot; carregado&quot;
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     &quot;
 
