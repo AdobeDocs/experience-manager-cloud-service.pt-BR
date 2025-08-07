@@ -4,9 +4,9 @@ description: Saiba como criar fragmentos de formulário no Editor universal e ad
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1407'
 ht-degree: 1%
 
 ---
@@ -24,17 +24,17 @@ No final do artigo, você aprenderá a criar e usar fragmentos em formulários u
 
 ## Recursos dos fragmentos de formulário do Edge Delivery Services
 
-* **Mantendo a consistência com fragmentos de formulário**
+- **Mantendo a consistência com fragmentos de formulário**
 É possível integrar fragmentos em diferentes formulários, ajudando a manter layouts consistentes e conteúdo padronizado.
 
   >[!NOTE]
   >
   > Com uma abordagem &quot;alterar uma vez, refletir em todos os lugares&quot;, qualquer atualização feita em um fragmento se aplica automaticamente a todos os formulários no modo Visualização. No entanto, no modo Publicar, você deve publicar o fragmento ou republicar o formulário para que as alterações sejam refletidas.
 
-* **Adicionando fragmentos de formulário várias vezes no formulário**
+- **Adicionando fragmentos de formulário várias vezes no formulário**
 Você pode adicionar um fragmento de formulário várias vezes em um formulário e configurar suas propriedades de associação de dados para fontes de dados ou esquemas.
 
-* **Usando fragmentos dentro de fragmentos**
+- **Usando fragmentos dentro de fragmentos**
 É possível criar fragmentos de formulário aninhados, o que significa que você pode adicionar um fragmento em outro fragmento e ter uma estrutura de fragmento aninhada.
 
   >[!NOTE]
@@ -43,23 +43,23 @@ Você pode adicionar um fragmento de formulário várias vezes em um formulário
 
 ## Considerações ao usar fragmentos de formulário do Edge Delivery Services
 
-* É necessário adicionar o mesmo URL do GitHub no fragmento e no formulário em que você pretende usar o fragmento.
-* Não é possível editar um fragmento de formulário em um formulário. Para fazer alterações, modifique o fragmento de formulário independente.
+- É necessário adicionar o mesmo URL do GitHub no fragmento e no formulário em que você pretende usar o fragmento.
+- Não é possível editar um fragmento de formulário em um formulário. Para fazer alterações, modifique o fragmento de formulário independente.
 
 ## Pré-requisitos
 
-* [Configure seu repositório GitHub](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) para estabelecer uma conexão entre seu ambiente AEM e o repositório GitHub.
-* Se você já estiver usando o Edge Delivery Services, adicione a versão mais recente do [bloco adaptável do Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) ao seu repositório GitHub.
-* A instância do Autor do AEM Forms inclui um modelo com base no Edge Delivery Services.
-* Mantenha o URL da instância do autor do AEM Forms as a Cloud Service e do Repositório GitHub acessíveis.
+- [Configure seu repositório GitHub](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) para estabelecer uma conexão entre seu ambiente AEM e o repositório GitHub.
+- Se você já estiver usando o Edge Delivery Services, adicione a versão mais recente do [bloco adaptável do Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) ao seu repositório GitHub.
+- A instância do Autor do AEM Forms inclui um modelo com base no Edge Delivery Services.
+- Mantenha o URL da instância do autor do AEM Forms as a Cloud Service e do Repositório GitHub acessíveis.
 
 ## Trabalhar com fragmentos de formulário do Edge Delivery Services
 
 Você pode criar fragmentos de formulário do Edge Delivery Services no Editor universal e adicionar os fragmentos criados aos formulários do Edge Delivery Services. Você pode executar as seguintes ações com os fragmentos de formulário do Edge Delivery Services:
 
-* [Criação de fragmentos de formulário](#creating-form-fragments)
-* [Adição de fragmentos de formulário a um formulário](#adding-form-fragments-to-a-form)
-* [Gerenciamento de fragmentos de formulário](#managing-form-fragments)
+- [Criação de fragmentos de formulário](#creating-form-fragments)
+- [Adição de fragmentos de formulário a um formulário](#adding-form-fragments-to-a-form)
+- [Gerenciamento de fragmentos de formulário](#managing-form-fragments)
 
 ### Criação de fragmentos de formulário
 
@@ -84,14 +84,14 @@ Para criar um fragmento de formulário no Universal Editor, execute as seguintes
 
    ![Exibe o tipo de modelo na guia Modelo de Formulário](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
 
-   * **Modelo de dados de formulário (FDM)**: integre objetos de modelo de dados e serviços de fontes de dados ao seu fragmento. Escolha Modelo de dados de formulário (FDM) se o formulário exigir leitura e gravação de dados de várias fontes.
+   - **Modelo de dados de formulário (FDM)**: integre objetos de modelo de dados e serviços de fontes de dados ao seu fragmento. Escolha Modelo de dados de formulário (FDM) se o formulário exigir leitura e gravação de dados de várias fontes.
 
-   * **Esquema JSON**: integre seu formulário a um sistema de back-end associando um esquema JSON que define a estrutura de dados. Ela permite adicionar conteúdo dinâmico usando os elementos do esquema.
-   * **Nenhum**: especifica criar o fragmento do zero sem usar nenhum modelo de formulário.
+   - **Esquema JSON**: integre seu formulário a um sistema de back-end associando um esquema JSON que define a estrutura de dados. Ela permite adicionar conteúdo dinâmico usando os elementos do esquema.
+   - **Nenhum**: especifica criar o fragmento do zero sem usar nenhum modelo de formulário.
 
    >[!NOTE]
    >
-   > Para saber como integrar formulários ou fragmentos a um Modelo de Dados de Formulário (FDM) no Editor Universal para usar fontes de dados de back-end diversas, [clique aqui](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
+   > Para saber como integrar formulários ou fragmentos a um Modelo de dados de formulário (FDM) no Editor Universal para usar fontes de dados de back-end diversas, consulte [Integrar formulários com o Modelo de dados de formulário no Editor Universal](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
 
 1. (Opcional) Especifique a **Data de publicação** ou a **Data de cancelamento da publicação** do fragmento na guia **Avançado**.
 
@@ -211,10 +211,8 @@ Vamos criar um formulário `Employee Details` simples que inclua informações d
 
 ## Práticas recomendadas
 
-* Certifique-se de que o nome do fragmento seja exclusivo. O fragmento não é criado se houver um fragmento existente com o mesmo nome.
-* Qualquer expressão, script ou estilo em um fragmento de formulário independente é retido quando inserido por referência ou incorporado em um formulário.
-* Ao publicar um formulário, os fragmentos de formulário inseridos por referência no formulário são publicados automaticamente.
+- Certifique-se de que o nome do fragmento seja exclusivo. O fragmento não é criado se houver um fragmento existente com o mesmo nome.
+- Qualquer expressão, script ou estilo em um fragmento de formulário independente é retido quando inserido por referência ou incorporado em um formulário.
+- Ao publicar um formulário, os fragmentos de formulário inseridos por referência no formulário são publicados automaticamente.
 
-## Consulte também
 
-{{universal-editor-see-also}}

@@ -4,9 +4,9 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) do A
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '4225'
+source-wordcount: '4221'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artigo |
 
 ## Visão geral {#overview}
@@ -281,7 +281,6 @@ A tabela a seguir descreve os componentes do formulário adaptável e os compone
 | Componente de formulário adaptável | Componente XFA correspondente | Notas |
 |---|---|---|
 | Imagem | Imagem | Os componentes TextDraw e Image, vinculados ou não, sempre aparecem no Documento de registro para um Formulário adaptável baseado em XSD, a menos que sejam excluídos usando as configurações do Documento de registro. |
-| Texto | Texto |
 
 ### Tabelas {#tables}
 
@@ -364,7 +363,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
       * **Para os componentes da Caixa de Seleção e do Botão de Opção, mostrar apenas os valores selecionados**: a configuração da propriedade exibe apenas os valores selecionados da caixa de seleção e do botão de opção em [!UICONTROL Documento de Registro].
       * **Separador para vários valores**: você pode escolher qualquer separador como vírgula ou quebra de linha para exibir vários valores.
       * **Alinhamento de Opções**: Você pode selecionar o alinhamento desejado (Horizontal, Vertical, Igual ao Formulário adaptável) para definir o alinhamento dos campos, como caixa de seleção ou botão de opção, a serem exibidos em [!UICONTROL Documento de Registro]. Por padrão, o alinhamento vertical é definido para os campos em [!UICONTROL Documento de registro]. Definir as propriedades das [!UICONTROL Propriedades do Campo de Formulário] de DoR substitui as propriedades definidas no [!UICONTROL Alinhamento de Itens] para os campos em um Formulário adaptável. Caso você selecione a opção [!UICONTROL Igual ao formulário adaptável], o alinhamento conforme configurado em uma instância de autor do formulário adaptável será usado para os campos [!UICONTROL Documento de registro].
-      * **Número de opções de alinhamento horizontal**:Você pode definir o número de opções a serem exibidas no Documento de Registro para o alinhamento horizontal.
+      * **Número de opções de alinhamento horizontal**:You pode definir o número de opções a serem exibidas no Documento de Registro para o alinhamento horizontal.
 
       ![Propriedades do Campo de Formulário](/help/forms/assets/formfieldpropertiesdor.png)
 
@@ -414,9 +413,7 @@ Execute as seguintes etapas a partir da instância de autor do editor de Formul�
 1. Clique no ![Ícone de Configurar](/help/forms/assets/configure-icon.svg) para abrir as **[!UICONTROL Propriedades]** do container do formulário adaptável.
 1. Abra a guia **[!UICONTROL Documento do Modelo de Registro]** e selecione uma das seguintes opções:
    * **[!UICONTROL Nenhum]**: quando esta opção é selecionada em um modelo de [!UICONTROL Documento de Registro] criado para o formulário adaptável.
-
-   * **[!UICONTROL Associar Modelo de Formulário como Documento de Modelo de Registro]**:Quando esta opção é selecionada, o Formulário XFA é usado como modelo para Documento de Registro.
-
+   * **[!UICONTROL Associar Modelo de Formulário como Documento de Modelo de Registro]**:When essa opção está selecionada, o Formulário XFA é usado como modelo para Documento de Registro.
    * **[!UICONTROL Gerar documento de registro]**: quando esta opção é selecionada, o modelo [!UICONTROL documento de registro] é gerado automaticamente para o formulário adaptável.
 
 1. Selecione ![Salvar](/help/forms/assets/check-button.png) para salvar as propriedades.

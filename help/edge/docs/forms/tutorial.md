@@ -4,9 +4,9 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1921'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ Este tutorial do AEM Forms orienta você na criação, visualização e publica�
 
 ## Pré-requisitos
 
-* Você tem uma conta GitHub e compreende as noções básicas sobre Git.
-* Você tem uma conta do Google ou do Microsoft SharePoint.
-* Você entende as noções básicas do HTML, CSS e JavaScript.
-* Você tem o Node/npm instalado para desenvolvimento local.
+- Você tem uma conta GitHub e compreende as noções básicas sobre Git.
+- Você tem uma conta do Google ou do Microsoft SharePoint.
+- Você entende as noções básicas do HTML, CSS e JavaScript.
+- Você tem o Node/npm instalado para desenvolvimento local.
 
 **Atenção!** Este tutorial usa macOS, Chrome e Visual Studio Code. Embora as etapas possam ser adaptadas para outras configurações, as capturas de tela e os elementos específicos da interface do usuário podem ser diferentes com base no sistema operacional, no navegador e no editor de código escolhidos.
 
@@ -63,9 +63,9 @@ O modelo do AEM Forms Boilerplate inicia rapidamente com um projeto do AEM pré-
 
    Parabéns! Você tem um novo site em execução em `https://<branch>--<repo>--<owner>.aem.page/`.
 
-   * `<branch>` refere-se à ramificação do seu repositório GitHub.
-   * `<repository>` indica seu repositório GitHub.
-   * `<owner>` refere-se ao nome de usuário da sua conta GitHub que hospeda seu repositório GitHub.
+   - `<branch>` refere-se à ramificação do seu repositório GitHub.
+   - `<repository>` indica seu repositório GitHub.
+   - `<owner>` refere-se ao nome de usuário da sua conta GitHub que hospeda seu repositório GitHub.
 
    Por exemplo, se o nome da ramificação for `main`, o repositório for `wefinance` e o proprietário for `wkndforms`, o site estará ativo e em execução em `https://main--wefinance--wkndforms.aem.page`
 &lt;!—(https://main--wefinance--wkndform.aem.page)-->
@@ -173,9 +173,9 @@ Para visualizar conteúdo não publicado:
    https://<branch>--<repository>--<owner>.aem.live
    ```
 
-   * `<branch>` refere-se à ramificação do seu repositório GitHub.
-   * `<repository>` indica seu repositório GitHub.
-   * `<owner>` refere-se ao nome de usuário da sua conta GitHub que hospeda seu repositório GitHub.
+   - `<branch>` refere-se à ramificação do seu repositório GitHub.
+   - `<repository>` indica seu repositório GitHub.
+   - `<owner>` refere-se ao nome de usuário da sua conta GitHub que hospeda seu repositório GitHub.
 
 
    URL `https://<branch>--<repo>--<owner>.aem.page/enquiry`.
@@ -241,7 +241,7 @@ Para começar a usar rapidamente um ambiente de desenvolvimento local do AEM:
        npm install -g @adobe/aem-cli
    ```
 
-1. Clonar o projeto do GitHub: clone o repositório de projetos do GitHub usando o comando a seguir, substituindo &lt;owner> com o proprietário do repositório e &lt;repo> com o nome do repositório:
+1. Clonar o projeto do GitHub: clone o repositório de projetos do GitHub usando o comando a seguir, substituindo <owner> com o proprietário do repositório e <repo> com o nome do repositório:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,9 +281,9 @@ Para integrar:
 
 1. Copie e cole as seguintes pastas e arquivos do [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) no seu projeto do AEM:
 
-   * Pasta [bloco de formulários](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)
-   * [arquivo form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
-   * Arquivo [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
+   - Pasta [bloco de formulários](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)
+   - [arquivo form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
+   - Arquivo [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
 1. Navegue até o arquivo `/scripts/editor-support.js` no seu projeto do AEM e atualize-o com o arquivo [editor-support.js no Modelo do AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
 1. Navegue até `/models/_section.json` no seu projeto do AEM e anexe &quot;formulário&quot; e &quot;formulário-incorporado-adaptável-formulário&quot; à matriz de componentes do objeto `filters`:
 
@@ -363,13 +363,9 @@ Pronto! O bloco adaptável do Forms agora faz parte do projeto do AEM. Você pod
 
 Verifique se o processo de criação do GitHub está descomplicado, solucionando possíveis problemas:
 
-* **Resolver Erro de Caminho do Módulo:**
+- **Resolver Erro de Caminho do Módulo:**
 Se você encontrar o erro &quot;Não é possível resolver o caminho para o módulo &quot;&#39;/scripts/lib-franklin.js&#39;&quot;, navegue até o arquivo [EDS Project]/blocks/forms/form.js. Atualize a instrução de importação substituindo o arquivo lib-franklin.js pelo arquivo aem.js.
 
-* **Manipular Erros de Linting:**
+- **Manipular Erros de Linting:**
 Caso encontre erros de impressão, você pode ignorá-los. Abra o arquivo [Projeto EDS]/package.json e modifique o script &quot;lint&quot; de `"lint": "npm run lint:js && npm run lint:css"` para `"lint": "echo 'skipping linting for now'"`. Salve o arquivo e confirme as alterações no projeto GitHub.
 
-
-## Consulte também:
-
-{{see-more-forms-eds}}

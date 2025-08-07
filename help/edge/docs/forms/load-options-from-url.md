@@ -1,34 +1,34 @@
 ---
-title: Carregar opções de lista suspensa de um URL ou outra planilha para Edge Delivery Services para AEM Forms as a Cloud Service
+title: Carregar opções de lista suspensa de um URL ou outra planilha do Edge Delivery Services para o AEM Forms as a Cloud Service
 description: As opções da lista suspensa são incluídas em uma planilha distinta e, em seguida, importadas para a planilha principal por meio do URL fornecido.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
 
 
-# Opções de um URL ou outra planilha para Edge Delivery Services para AEM Forms as a Cloud Service
+# Opções de um URL ou outra planilha do Edge Delivery Services para o AEM Forms as a Cloud Service
 
 O Forms geralmente inclui menus suspensos para que os usuários selecionem entre as opções predefinidas. Normalmente, essas opções são definidas no próprio formulário, mas o gerenciamento de listas longas pode ser complicado. Este guia descreve como melhorar a criação de formulários carregando opções suspensas de uma planilha separada por meio de um URL.
 
 
 Os benefícios de carregar opções suspensas em uma planilha separada são:
 
-* Gerenciamento simplificado: mantenha as opções suspensas em um local centralizado para facilitar atualizações e adições.
-* Maior eficiência: elimine a necessidade de adicionar manualmente longas listas de opções na definição do formulário.
+- Gerenciamento simplificado: mantenha as opções suspensas em um local centralizado para facilitar atualizações e adições.
+- Maior eficiência: elimine a necessidade de adicionar manualmente longas listas de opções na definição do formulário.
 
 ![Opções suspensas](/help/forms/assets/drop-down-options.png)
 
 
 No final deste artigo, você aprenderá a:
 
-* [Definir opções em uma planilha separada](#define-options)
-* [Adicionar URL para carregar opções da lista suspensa](#add-url)
+- [Definir opções em uma planilha separada](#define-options)
+- [Adicionar URL para carregar opções da lista suspensa](#add-url)
 
 ## Definir opções em uma planilha separada {#define-options}
 
@@ -39,8 +39,8 @@ Definição de Opções em uma Planilha Separada
    1. Adicione uma nova planilha. Por exemplo, &quot;país compartilhado&quot;.
 1. Definir Colunas de Opção:
 Adicione duas colunas: &quot;Option&quot; e &quot;Value&quot;.
-   * &quot;Option&quot; define o texto exibido no menu suspenso.
-   * &quot;Value&quot; define o valor enviado quando um usuário seleciona a opção.
+   - &quot;Option&quot; define o texto exibido no menu suspenso.
+   - &quot;Value&quot; define o valor enviado quando um usuário seleciona a opção.
 
    >[!NOTE]
    >
@@ -84,11 +84,6 @@ Depois de integrar a URL à definição de formulário para carregar as opções
 Por exemplo, se o repositório do seu projeto for chamado &quot;wefinance&quot;, estiver localizado sob o proprietário da conta &quot;wkndform&quot; e você estiver usando a ramificação &quot;main&quot;, a URL abaixo exibirá o formulário `enquiry` exibindo as opções salvas na planilha separada:
 
 `https://main--wefinance--wkndform.aem.live/enquiry-form`
-<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
--->
 
-## Consulte também:
-
-{{see-more-forms-eds}}
 
 

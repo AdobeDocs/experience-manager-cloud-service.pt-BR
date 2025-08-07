@@ -4,7 +4,7 @@ description: Com um design responsivo, as mesmas experiências podem ser exibida
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Projete suas experiências para que elas se adaptem à janela de visualização 
 
 ![Exemplos de design responsivo](assets/responsive-example.png)
 
-Desenvolva aplicativos Adobe Experience Manager (AEM) que geram HTML5 que se adapta a vários tamanhos de janela e orientações. Por exemplo, os seguintes intervalos de larguras de visor correspondem a vários tipos e orientações de dispositivo
+Desenvolva aplicativos Adobe Experience Manager (AEM) que geram HTML5 que se adaptam a vários tamanhos de janela e orientações. Por exemplo, os seguintes intervalos de larguras de visor correspondem a vários tipos e orientações de dispositivo
 
 * Largura máxima de 480 pixels (telefone, retrato)
 * Largura máxima de 767 pixels (telefone, paisagem)
@@ -53,7 +53,7 @@ Conforme você cria, use a barra de ferramentas **Emulador** para visualizar sua
 
 ## Antes de desenvolver {#before-you-develop}
 
-Antes de desenvolver o aplicativo AEM compatível com suas páginas da Web, várias decisões de design devem ser tomadas. Por exemplo, você precisa ter as seguintes informações:
+Antes de desenvolver o aplicativo do AEM compatível com suas páginas da Web, várias decisões de design devem ser tomadas. Por exemplo, você precisa ter as seguintes informações:
 
 * Os dispositivos que você está direcionando
 * Os tamanhos das janelas de visualização de destino
@@ -61,7 +61,7 @@ Antes de desenvolver o aplicativo AEM compatível com suas páginas da Web, vár
 
 ### Estrutura do aplicativo {#application-structure}
 
-A estrutura típica do aplicativo AEM é compatível com todas as implementações de design responsivas:
+A estrutura de aplicativo típica do AEM é compatível com todas as implementações de design responsivas:
 
 * Os componentes da página residem abaixo de `/apps/<application_name>/components`
 * Os modelos residem abaixo de `/apps/<application_name>/templates`
@@ -83,9 +83,9 @@ No arquivo CSS, defina consultas de mídia com base nas propriedades dos disposi
 
 O [tutorial do WKND](develop-wknd-tutorial.md) usa essa estratégia para definir estilos no design do site. O arquivo CSS usado pela WKND está localizado em `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
 
-### Uso de consultas de mídia com páginas AEM {#using-media-queries-with-aem-pages}
+### Uso de consultas de mídia com páginas do AEM {#using-media-queries-with-aem-pages}
 
-[O projeto de amostra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) usam o [Componente principal de página](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=pt-BR), que inclui as clientlibs por meio da política de página.
+[O projeto de amostra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e o [Arquétipo de Projeto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview) usam o [Componente principal de página](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), que inclui as clientlibs por meio da política de página.
 
 Se o seu próprio componente de página não for baseado no Componente principal de página, você também poderá incluir a pasta da biblioteca do cliente no script HTL ou JSP dele. Isso gerará e referenciará o arquivo CSS com as consultas de mídia necessárias para que a grade responsiva funcione.
 
@@ -102,7 +102,7 @@ Se o seu próprio componente de página não for baseado no Componente principal
 <ui:includeClientLib categories="apps.weretail.all"/>
 ```
 
-O script JSP gera o seguinte código de HTML que faz referência às folhas de estilos:
+O script JSP gera o seguinte código HTML que faz referência às folhas de estilos:
 
 ```xml
 <link rel="stylesheet" href="/etc/designs/weretail/clientlibs-all.css" type="text/css">
@@ -137,14 +137,14 @@ Páginas responsivas se adaptarão dinamicamente ao dispositivo no qual são ren
 
 [O Componente de Imagem do Componente Principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=pt-BR) apresenta recursos como seleção de imagem adaptável.
 
-* Por padrão, o Componente de imagem usa o [Servlet de imagem adaptável](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=pt-BR) para fornecer a representação adequada.
+* Por padrão, o Componente de imagem usa o [Servlet de imagem adaptável](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) para fornecer a representação adequada.
 * A [Entrega de imagens otimizadas para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) também está disponível por meio de uma caixa de seleção simples em sua política, que fornece ativos de imagem do DAM em formato WebP e pode reduzir o tamanho de download de uma imagem em cerca de 25%, em média.
 
 ## O Contêiner de layout {#layout-container}
 
 O Contêiner de layout do AEM permite implementar com eficiência e eficácia o layout responsivo para adaptar as dimensões da página à janela de visualização do cliente.
 
->[A documentação do GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) da grade responsiva é uma referência que pode ser fornecida para desenvolvedores front-end permitindo que usem a grade AEM fora do AEM, por exemplo, ao criar modelos de HTML estáticos para um futuro site AEM.
+>[A documentação do GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) da grade responsiva é uma referência que pode ser fornecida para desenvolvedores front-end permitindo que usem a grade do AEM fora do AEM, por exemplo, ao criar modelos estáticos do HTML para um site futuro do AEM.
 
 >[!TIP]
 >
@@ -152,7 +152,7 @@ O Contêiner de layout do AEM permite implementar com eficiência e eficácia o 
 
 ## Grades Responsivas Aninhadas {#nested-responsive-grids}
 
-Pode haver ocasiões em que você ache necessário aninhar grades responsivas para suportar as necessidades do seu projeto. No entanto, lembre-se de que a prática recomendada para o Adobe é manter a estrutura o mais plana possível.
+Pode haver ocasiões em que você ache necessário aninhar grades responsivas para suportar as necessidades do seu projeto. No entanto, lembre-se de que a prática recomendada pela Adobe é manter a estrutura o mais plana possível.
 
 Quando não for possível evitar o uso de grades responsivas aninhadas, verifique se:
 
@@ -184,7 +184,7 @@ container
       @text =" Text Column 1"
 ```
 
->[!TAB Exemplo de HTML resultante]
+>[!TAB Exemplo de HTML] resultante
 
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">

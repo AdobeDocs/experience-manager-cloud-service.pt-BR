@@ -1,10 +1,10 @@
 ---
 title: Usar regras para adicionar comportamento dinâmico a um formulário
-description: Os Edge Delivery Services para AEM Forms foram criados para oferecer desempenho máximo, permitindo que você visualize o futuro da coleta de dados simplificada e do engajamento do usuário. Use regras para adicionar comportamento dinâmico aos formulários.
+description: O Edge Delivery Services for AEM Forms foi criado para oferecer desempenho máximo, permitindo que você visualize o futuro da coleta de dados simplificada e do engajamento do usuário. Use regras para adicionar comportamento dinâmico aos formulários.
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 0%
@@ -21,16 +21,16 @@ Este artigo mostra como usar várias propriedades de Bloco de Formulário Adapt�
 
 Regras são como instruções que nos dizem o que fazer em diferentes situações. Uma regra geralmente tem as seguintes construções:
 
-* Condições : especificam as circunstâncias em que a regra se aplica. Pense neles como uma pergunta que precisa ser respondida (sim ou não).
+- Condições : especificam as circunstâncias em que a regra se aplica. Pense neles como uma pergunta que precisa ser respondida (sim ou não).
 
-* Ações: definem o que acontece quando a condição é atendida (true) ou não é atendida (false).
+- Ações: definem o que acontece quando a condição é atendida (true) ou não é atendida (false).
 
 
 Por exemplo, para exibir uma caixa de email, quando uma caixa de seleção estiver marcada:
 
-* Condição: a mensagem &quot;Você gosta de se inscrever para Revista e Atividades?&quot; está marcada. (Sim ou não?). Essa condição é definida na propriedade `Visible` do formulário.
-* Ação (True): a caixa de email é exibida. (O que acontece se a resposta for sim). O `Visibility Expression` usa a condição definida para a propriedade `visible` para mostrar campos dinamicamente.
-* Ação (False): a caixa de email está oculta. (O que acontece se não houver). O `Visibility Expression` usa a condição definida para o `Value` para ocultar campos dinamicamente.
+- Condição: a mensagem &quot;Você gosta de se inscrever para Revista e Atividades?&quot; está marcada. (Sim ou não?). Essa condição é definida na propriedade `Visible` do formulário.
+- Ação (True): a caixa de email é exibida. (O que acontece se a resposta for sim). O `Visibility Expression` usa a condição definida para a propriedade `visible` para mostrar campos dinamicamente.
+- Ação (False): a caixa de email está oculta. (O que acontece se não houver). O `Visibility Expression` usa a condição definida para o `Value` para ocultar campos dinamicamente.
 
 Para obter instruções detalhadas passo a passo, consulte o [campo mostrar/ocultar email com base em uma condição](#example-1-conditional-email-field)
 
@@ -41,8 +41,8 @@ Para obter instruções detalhadas passo a passo, consulte o [campo mostrar/ocul
 
 Imagine um interruptor para o seu campo de formulário. A propriedade `Visible` é como essa opção, controlando se o campo está inicialmente visível no formulário quando carregado pela primeira vez.
 
-* True (como a opção de luz &quot;ligada&quot;): o campo é mostrado no formulário.
-* False (como o botão luminoso estar &quot;desligado&quot;): o campo fica oculto no formulário.
+- True (como a opção de luz &quot;ligada&quot;): o campo é mostrado no formulário.
+- False (como o botão luminoso estar &quot;desligado&quot;): o campo fica oculto no formulário.
 
 Você pode usar a Fórmula de Planilha (incluindo a tag = ) para escrever uma fórmula usando uma lógica semelhante a uma planilha para determinar a visibilidade do campo. Você pode usar os valores de outros campos no formulário dentro desta fórmula. Por exemplo, se um usuário selecionar &quot;Individual&quot; em um campo de tipo de registro, você poderá ocultar o campo de email usando uma fórmula que verifica esse valor.
 
@@ -73,10 +73,10 @@ Use o `=FORMULATEXT("Address of the corresponding Value property)` para trazer a
 
 Veja uma analogia para solidificar esses conceitos:
 
-* Visível: Imagine uma forma como uma casa. A propriedade &quot;Visible&quot; é como o botão de luz de cada sala (campo). Você decide se a sala está inicialmente iluminada (visível) ou escura (oculta) quando alguém entra na casa (abre o formulário).
-* Expressão visível: é como um interruptor de luz do sensor de movimento. A sala (campo) pode estar inicialmente escura (oculta), mas uma fórmula (sensor de movimento) pode ligá-la (mostrar o campo) se alguém passar (altera o valor em outro campo).
-* Valor: é como um interruptor de regulador predefinido para a luz (dados iniciais no campo). Os usuários podem ajustar o brilho (modificar o valor).
-* Expressão de valor: é como uma calculadora sofisticada criada na etiqueta de preço de um produto na casa (formulário). A etiqueta de preço (campo) mostra o preço final com base em uma fórmula (por exemplo, adicionar imposto ao preço base) que usa outras informações como o preço base (valor de outro campo).
+- Visível: Imagine uma forma como uma casa. A propriedade &quot;Visible&quot; é como o botão de luz de cada sala (campo). Você decide se a sala está inicialmente iluminada (visível) ou escura (oculta) quando alguém entra na casa (abre o formulário).
+- Expressão visível: é como um interruptor de luz do sensor de movimento. A sala (campo) pode estar inicialmente escura (oculta), mas uma fórmula (sensor de movimento) pode ligá-la (mostrar o campo) se alguém passar (altera o valor em outro campo).
+- Valor: é como um interruptor de regulador predefinido para a luz (dados iniciais no campo). Os usuários podem ajustar o brilho (modificar o valor).
+- Expressão de valor: é como uma calculadora sofisticada criada na etiqueta de preço de um produto na casa (formulário). A etiqueta de preço (campo) mostra o preço final com base em uma fórmula (por exemplo, adicionar imposto ao preço base) que usa outras informações como o preço base (valor de outro campo).
 
 Ao combinar essas propriedades com as [funções da planilha](#spreadsheet-functions-for-rules), é possível obter uma grande variedade de comportamentos dinâmicos em seus formulários.
 
@@ -86,19 +86,19 @@ O bloco adaptável do Forms suporta uma variedade de funções de planilha que p
 
 ### Funções lógicas
 
-* [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): reverte o estado lógico (TRUE torna-se FALSE e vice-versa).
-* [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): retorna TRUE somente se todas as condições especificadas forem TRUE.
-* [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): retornará TRUE se pelo menos uma das condições especificadas for TRUE.
+- [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): reverte o estado lógico (TRUE torna-se FALSE e vice-versa).
+- [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): retorna TRUE somente se todas as condições especificadas forem TRUE.
+- [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): retornará TRUE se pelo menos uma das condições especificadas for TRUE.
 
 ### Funções condicionais
 
-* [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): avalia uma condição e retorna um valor específico se TRUE, e outro valor se FALSE.
+- [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): avalia uma condição e retorna um valor específico se TRUE, e outro valor se FALSE.
 
 ### Funções matemáticas
 
-* [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): adiciona valores de um intervalo de células especificado.
-* [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): arredonda um número para um número especificado de casas decimais.
-* [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): retorna o menor valor de um intervalo de células especificado.
+- [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): adiciona valores de um intervalo de células especificado.
+- [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): arredonda um número para um número especificado de casas decimais.
+- [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): retorna o menor valor de um intervalo de células especificado.
 
 ## Criação de uma regra
 
@@ -156,7 +156,7 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
 
 **Funções lógicas:**
 
-* **NOT():** Reverte o estado lógico (TRUE torna-se FALSE e vice-versa).
+- **NOT():** Reverte o estado lógico (TRUE torna-se FALSE e vice-versa).
 
   Exemplo: ocultar um campo &quot;Confirmar email&quot; se o campo de email ficar em branco.
 
@@ -170,9 +170,9 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
       ![Fórmula de expressão visível do AEM Forms](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
 
-* AND(): retorna TRUE somente se todas as condições especificadas forem TRUE.
+- AND(): retorna TRUE somente se todas as condições especificadas forem TRUE.
 
-   * Exemplo: habilitar um botão &quot;enviar&quot; somente se todos os campos obrigatórios estiverem preenchidos.
+   - Exemplo: habilitar um botão &quot;enviar&quot; somente se todos os campos obrigatórios estiverem preenchidos.
 
    1. Defina a propriedade `Visible` do botão &quot;enviar&quot; como:
 
@@ -202,9 +202,9 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
 
       Esta fórmula mostra o botão &quot;enviar&quot; (TRUE) somente se todos os campos (nome, email, telefone) estiverem preenchidos (NOT()) retorna TRUE para cada um), caso contrário, ele oculta o botão (AND(multiple FALSES) = FALSE).
 
-* OR(): retorna TRUE se pelo menos uma das condições especificadas for TRUE.
+- OR(): retorna TRUE se pelo menos uma das condições especificadas for TRUE.
 
-   * Exemplo: Aplicar um desconto se um usuário inserir qualquer um dos códigos de cupom de desconto aplicáveis.
+   - Exemplo: Aplicar um desconto se um usuário inserir qualquer um dos códigos de cupom de desconto aplicáveis.
 
    1. Defina a propriedade `Visible` do campo &quot;valor final&quot; como:
 
@@ -229,9 +229,9 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
 
 **Funções de texto:**
 
-* IF(): Avalia uma condição e retorna um valor específico se TRUE, e outro valor se FALSE.
+- IF(): Avalia uma condição e retorna um valor específico se TRUE, e outro valor se FALSE.
 
-   * Exemplo: exibição de uma mensagem personalizada com base em uma categoria de produto escolhida.
+   - Exemplo: exibição de uma mensagem personalizada com base em uma categoria de produto escolhida.
 
    1. Defina a propriedade `Value` do campo `message` como `Only upto 7 kg check-in lagguage is allowed!`:
 
@@ -264,7 +264,7 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
 
 **Funções matemáticas:**
 
-* SUM(): Adiciona valores de um intervalo de células especificado.
+- SUM(): Adiciona valores de um intervalo de células especificado.
 
   Exemplo: cálculo do custo total de itens em um carrinho de compras.
 
@@ -273,7 +273,7 @@ SUM(preço * quantidade)
 
   Essa fórmula supõe que você tenha campos separados para &quot;preço&quot; e &quot;quantidade&quot; de cada item. Ele os multiplica e usa SUM() para somar o custo total de todos os itens no carrinho.
 
-* ROUND(): Arredonda um número para um número especificado de casas decimais.
+- ROUND(): Arredonda um número para um número especificado de casas decimais.
 
   Exemplo: Arredondamento de um valor de desconto calculado para duas casas decimais.
 
@@ -282,7 +282,7 @@ ROUND(desconto, 2)
 
   Esta fórmula arredonda o valor do desconto para duas casas decimais.
 
-* MIN(): Retorna o menor valor de um intervalo de células especificado.
+- MIN(): Retorna o menor valor de um intervalo de células especificado.
 
   Exemplo: localização da idade mínima necessária para um formulário de inscrição com base em um país selecionado.
 
@@ -304,9 +304,9 @@ O bloco OOTB (pronto para uso) do Adaptive Forms fornece implementações para m
 
 As funções personalizadas residem no arquivo `[Adaptive form block]/functions.js`. O processo de criação geralmente envolve as seguintes etapas:
 
-* Declaração de função: defina o nome da função e seus parâmetros (as entradas que ela aceita).
-* Implementação lógica: escreva o código que descreve os cálculos ou manipulações específicos executados pela função.
-* Exportação de função: torne a função acessível em suas regras, exportando-a do arquivo relevante.
+- Declaração de função: defina o nome da função e seus parâmetros (as entradas que ela aceita).
+- Implementação lógica: escreva o código que descreve os cálculos ou manipulações específicos executados pela função.
+- Exportação de função: torne a função acessível em suas regras, exportando-a do arquivo relevante.
 
 ### Exemplo: Função Ano
 
@@ -315,9 +315,9 @@ Este exemplo demonstra duas funções personalizadas que imitam a função YEAR(
 
 ```JavaScript
 /**
- * Get the current date and time
- * @name now
- * @returns {Date} The current date and time as a Date object
+ - Get the current date and time
+ - @name now
+ - @returns {Date} The current date and time as a Date object
  */
 function now() {
   const today = new Date();
@@ -325,11 +325,11 @@ function now() {
 }
 
 /**
- * Get the year from a Date object
- * @name year
- * @param {Date} date The date object
- * @throws {TypeError} If the input is not a Date object
- * @returns {number} The year as a number
+ - Get the year from a Date object
+ - @name year
+ - @param {Date} date The date object
+ - @throws {TypeError} If the input is not a Date object
+ - @returns {number} The year as a number
  */
 function year(date) {
   let inputDate = new Date(date)

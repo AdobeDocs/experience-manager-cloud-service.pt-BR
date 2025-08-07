@@ -4,17 +4,15 @@ description: Use o Universal Editor para Edge Delivery Services no Forms para cr
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '987'
 ht-degree: 3%
 
 ---
 
 
 # Editor universal do Edge Delivery Services para Forms
-
-<span class="preview"> Este é um recurso de pré-lançamento disponível através do nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>. </span>
 
 O Editor universal revoluciona a criação de formulários para os Serviços de entrega de borda da Adobe, oferecendo uma interface simples, visual e intuitiva do What You See Is What You Get (WYSIWYG). Projetado para criadores de conteúdo e autores de formulários, ele elimina a complexidade dos processos tradicionais de criação de formulários, tornando-o acessível até mesmo para usuários não técnicos.
 
@@ -54,26 +52,6 @@ Quer você esteja gerenciando uma renderização leve do lado do cliente, garant
 | Use o reCAPTCHA para proteger formulários de bots automatizados, garantindo uma coleta de dados segura e confiável. | Incorpore formulários diretamente nas páginas do Edge Delivery Services Sites usando o componente de incorporação integrado do Editor universal. | Personalize facilmente a mensagem ou página de confirmação exibida aos usuários após o envio bem-sucedido do formulário. |
 
 
-<!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
-
-
-* **Rule editor**: The rule editor stands out as a powerful mechanism for creating sophisticated form interactions. It supports event-driven rules, instant validation, and error handling through lightweight JavaScript and JSON-based definitions. This allows developers to implement complex form logic, such as conditional field visibility, automatic calculations, and dynamic form behaviour without extensive coding.
-
-* **Submit actions**: Submit Actions enable form submission workflows. These actions provide comprehensive backend integration options, supporting protocols like REST API. The system allows you configure data pre-processors for automatic data transformation, conditional submission logic based on form field values, and secure endpoint connections. Organizations can define complex submission rules that validate data, and manage form responses with granular control.
-
-* **Pre-fill services:** Pre-fill Services enhance user experience by intelligently populating form fields with relevant data. These services connect to various data sources, including user profiles, browser local storage, and external databases. The mechanism supports dynamic data population, enabling automatic completion of form fields based on contextual information. Users benefit from reduced manual data entry, while administrators gain flexibility in configuring pre-fill rules across different form types and scenarios. The pre-fill functionality adapts to different authentication methods, including session-based approaches and token-based systems, ensuring both convenience and security.
-
-* **Data binding capabilities**: Data binding in the Universal Editor enables direct, dynamic connections between form fields and backend data sources. This feature allows real-time synchronization of form data, supporting complex data mapping scenarios. The system supports transforming form inputs into structured database records with minimal configuration. Advanced mapping supports nested data structures, allowing complex form designs to interact seamlessly with intricate data models.
-
-* **Internationalization/localization capabilities**: Internationalization support ensures global accessibility, with multi-language rendering, right-to-left language compatibility, and locale-specific formatting.
-
-* **Analytics and tracking mechanisms**: The built-in analytics and tracking mechanisms provide comprehensive insights into form interactions, submission rates, and user behavior, enabling continuous optimization of form design and performance. 
-
-* **Experimentation (A/B Testing)**: The Universal Editor supports experimentation by allowing organizations to run A/B tests on form designs to identify the best-performing layouts or features.
-
-* **Task Management via Adobe Workfront**: Integration with Adobe Workfront allows teams to manage tasks related to form creation and maintenance, ensuring streamlined collaboration and efficient workflows.
-
-* **Editor Customization via UI Extension**: Developers can extend the functionality of the Universal Editor through UI extensions, enabling tailored solutions that fit specific organizational needs. -->
 
 ## Componentes de formulário pré-construídos
 
@@ -180,53 +158,17 @@ O Editor universal fornece os seguintes componentes de formulário prontos para 
   </tbody>
 </table>
 
-<!-- * Footer: Adds a footer section for consistent design or additional information.
-* Form Container: Wraps all form elements and manages overall form properties.
-* Header: Adds a header section for form titles, branding, or instructions.-->
-<!-- * 
-* Prefillable Fields: Automatically populates form fields with data from predefined sources such as user profiles or APIs. 
-
-* Switches/Toggle Buttons: Provides binary on/off choices for user input.
-
-
-* Title: Adds a text-based heading or label to improve form clarity and organization.
-
-
-In-addtion to pre-built form components, the Universal editor also provides support for:
-
-* **Embedding Forms in Another Webpage**: The Universal Editor supports embedding forms directly into Edge Deliver Services Sites pages. This can be done using the embed component provided out of the box.
-
-* **Validation Messages**: Validation messages provide real-time feedback to users when they enter incorrect or incomplete data. Features include:
-    * Dynamic Error Display: Instantly alerts users to errors, such as invalid email addresses or missing required fields.
-    * Customizable Messages: Allows form authors to define user-friendly error texts.
-    * Rule-Based Validation: Supports advanced validation logic, such as checking dependencies between fields or implementing conditional rules.
-
-* **Hidden Fields**: Hidden fields store data invisibly within the form, often for backend processing or prefilled values. Use cases include:
-    * Passing contextual information (e.g., user ID or session data) to the backend without displaying it to users.
-    * Capturing metadata like timestamps or tracking IDs.
-    * Hidden fields are not visible to end-users but can be prefilled, updated dynamically, or used in workflows.
-
-* **Custom Components**: Custom components allow developers to extend the functionality of forms by creating specialized or third-party integrations. Features include:
-    * Flexibility: Developers can design unique form elements tailored to specific use cases.
-    * Third-Party Integration: Embed widgets or tools like payment gateways, analytics trackers, or AI-driven input fields.
-    * Seamless Compatibility: Custom components can integrate with the Universal Editor's drag-and-drop interface and existing features like data binding or validation.
-
-* **Thank you Configuration**: Customize the acknowledgment message or page shown after form submission.
--->
-
 
 ## Integração
-
-<span class="preview"> Este é um recurso de pré-lançamento disponível através do nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>. </span>
 
 ## Perguntas frequentes
 
 **T. Quem pode usar o Editor universal?**
 O Editor universal foi projetado para um amplo público-alvo, incluindo:
 
-* Criadores de conteúdo que desejam criar formulários visualmente atraentes.
-* Desenvolvedores que precisam de recursos avançados de personalização e integração.
-* Organizações que buscam soluções de formulários escaláveis, seguras e compatíveis.
+- Criadores de conteúdo que desejam criar formulários visualmente atraentes.
+- Desenvolvedores que precisam de recursos avançados de personalização e integração.
+- Organizações que buscam soluções de formulários escaláveis, seguras e compatíveis.
 
 **P: Posso integrar formulários criados com o Editor Universal aos meus sistemas existentes?**
 Absolutamente. O Editor universal oferece suporte à vinculação de dados contínua com sistemas de back-end, permitindo atualizações em tempo real e mapeamento de dados avançado. Ele também se integra a ferramentas como o Adobe Workfront para gerenciamento de tarefas e oferece suporte a endpoints seguros para workflows de envio de dados.
@@ -241,7 +183,5 @@ O Editor universal foi projetado com a rigorosa observância dos padrões de ace
 O Editor universal inclui ferramentas de análise e rastreamento integradas para monitorar interações do usuário, taxas de envio de formulário e métricas de conversão. Esses insights ajudam a otimizar seus formulários para obter melhor desempenho.
 
 
-## Começar a criar formulários
 
-{{universal-editor-see-also}}
 

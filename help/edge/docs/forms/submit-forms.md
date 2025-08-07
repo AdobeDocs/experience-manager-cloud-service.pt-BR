@@ -4,9 +4,9 @@ description: Crie formulários poderosos mais rápido usando planilhas e campos 
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 Depois que você tiver [criado e visualizado o formulário](/help/edge/docs/forms/create-forms.md), será hora de habilitar a planilha correspondente para começar a receber dados. Você pode
 
-* [Habilitar manualmente a planilha para aceitar os dados](#manually-enable-the-spreadsheet-to-accept-data)
-* [Usar APIs de administrador para permitir que uma planilha aceite dados](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
+- [Habilitar manualmente a planilha para aceitar os dados](#manually-enable-the-spreadsheet-to-accept-data)
+- [Usar APIs de administrador para permitir que uma planilha aceite dados](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![Ecossistema de criação baseado em documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -36,7 +36,7 @@ Para permitir que a planilha aceite dados
 
    >[!WARNING]
    >
-   > Se a planilha `incoming` não estiver presente, o AEM não enviará dados para a planilha.
+   > Se a planilha `incoming` não estiver presente, o AEM não enviará dados para ela.
 
 1. Nesta planilha, insira uma tabela chamada &quot;input_form&quot;. Selecione o número de colunas necessárias para corresponder aos nomes dos campos de formulário. Em seguida, na barra de ferramentas, vá para Insert > Table e clique em OK.
 
@@ -68,7 +68,7 @@ Depois que a planilha estiver configurada para receber dados, você poderá [vis
 
 ## Usar APIs de administrador para permitir que uma planilha aceite dados
 
-Você também pode enviar uma solicitação POST para o formulário para permitir que ele aceite dados e configure cabeçalhos para a folha `incoming`. Ao receber o pedido de POST, o serviço analisa o corpo do pedido e gera de forma autônoma os cabeçalhos e folhas essenciais necessários para a assimilação de dados.
+Você também pode enviar uma solicitação POST para o formulário para habilitá-lo a aceitar dados e configurar cabeçalhos para a folha `incoming`. Ao receber a solicitação POST, o serviço analisa o corpo da solicitação e gera de forma autônoma os cabeçalhos e folhas essenciais necessários para a assimilação de dados.
 
 Para usar APIs de administrador para permitir que uma planilha aceite dados:
 
@@ -130,7 +130,7 @@ Para usar APIs de administrador para permitir que uma planilha aceite dados:
    {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
    ```
 
-   Você pode usar ferramentas como curl ou Postman para executar essa solicitação de POST, conforme demonstrado abaixo:
+   Você pode usar ferramentas como curl ou Postman para executar essa solicitação POST, conforme demonstrado abaixo:
 
    ```JSON
    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
@@ -158,15 +158,15 @@ Para usar APIs de administrador para permitir que uma planilha aceite dados:
 
 Depois que a planilha é definida para receber dados, você observa as seguintes alterações em sua planilha:
 
-Uma planilha chamada &quot;Slack&quot; é adicionada à sua Pasta de trabalho do Excel ou Planilha do Google. Nesta planilha, você pode configurar notificações automáticas para um canal de Slack designado sempre que novos dados forem assimilados em sua planilha. Atualmente, o AEM suporta notificações exclusivamente para a organização AEM Engineering Slack e a organização Adobe Enterprise Support.
+Uma planilha chamada &quot;Slack&quot; é adicionada à Pasta de trabalho do Excel ou à Planilha do Google. Nesta planilha, você pode configurar notificações automáticas para um canal do Slack designado sempre que novos dados forem assimilados em sua planilha. No momento, a AEM oferece suporte a notificações exclusivamente para a organização AEM Engineering Slack e para a organização Adobe Enterprise Support.
 
-1. Para configurar notificações de Slack, digite a &quot;teamId&quot; do espaço de trabalho do Slack e o &quot;channel name&quot; ou &quot;ID&quot;. Você também pode pedir ao slack-bot (com o comando debug) o &quot;teamId&quot; e a &quot;channel ID&quot;. É preferível usar a &quot;ID do canal&quot; em vez do &quot;nome do canal&quot;, pois ela sobrevive à renomeação de canais.
+1. Para configurar notificações do Slack, digite a &quot;teamId&quot; do espaço de trabalho do Slack e o &quot;channel name&quot; ou a &quot;ID&quot;. Você também pode pedir ao slack-bot (com o comando debug) o &quot;teamId&quot; e a &quot;channel ID&quot;. É preferível usar a &quot;ID do canal&quot; em vez do &quot;nome do canal&quot;, pois ela sobrevive à renomeação de canais.
 
    >[!NOTE]
    >
    > Formulários mais antigos não tinham a coluna &quot;teamId&quot;. A &quot;teamId&quot; foi incluída na coluna do canal, separada por um &quot;#&quot; ou &quot;/&quot;.
 
-1. Insira qualquer título que desejar e em campos insira os nomes dos campos que deseja ver na notificação Slack. Cada cabeçalho deve ser separado por vírgula (por exemplo, nome, email).
+1. Insira qualquer título que desejar e em campos insira os nomes dos campos que deseja ver na notificação do Slack. Cada cabeçalho deve ser separado por vírgula (por exemplo, nome, email).
 
    >[!WARNING]
    >
@@ -174,138 +174,5 @@ Uma planilha chamada &quot;Slack&quot; é adicionada à sua Pasta de trabalho do
 
 
 
-<!--
-## Send data to your sheet {#send-data-to-your-sheet}
-
-After the sheet is set to receive data, you can [preview the form using Adaptive Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use Admin APIs](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
-
-### Use Admin APIs to send data to your sheet
-
-You can send POST requests directly to your form using aem.page, aem.live, or your production domain, to send data. 
-
-
-```JSON
-
-POST https://branch–repo–owner.aem.(page|live)/email-form
-POST https://my-domain.com/email-form
-
-```
-
->[!NOTE] 
->
-> The URL should not have the .json extension. You must publish the sheet for POST operations to function on `.live` or on the production domain.
-
-#### Formatting the form data
-
-There are a few different ways that you can format the form data in the POST body. You can use: 
-
-* array of `name:value` pairs: 
-    
-    ```JSON
-    
-    {
-      "data": [
-        { "name": "name", "value": "Clark Kent" },
-        { "name": "email", "value": "superman@example.com" },
-        { "name": "subject", "value": "Regarding Product Inquiry" },
-        { "name": "message", "value": "I have some questions about your products." },
-        { "name": "phone", "value": "123-456-7890" },
-        { "name": "company", "value": "Example Inc." },
-        { "name": "country", "value": "United States" },
-        { "name": "preferred_contact_method", "value": "Email" },
-        { "name": "newsletter_subscribe", "value": true }
-      ]
-    }
-
-    ```
-
-    For example
-
-    ```JSON
-
-    curl -s -i -X POST 'https://main--wefinance--wkndform.aem.page/contact-us' \
-        --header 'Content-Type: application/json' \
-        --data '{
-        "data": [
-            { "name": "name", "value": "Clark Kent" },
-            { "name": "email", "value": "superman@example.com" },
-            { "name": "subject", "value": "Regarding Product Inquiry" },
-            { "name": "message", "value": "I have some questions about your        products." },
-            { "name": "phone", "value": "123-456-7890" },
-            { "name": "company", "value": "Example Inc." },
-            { "name": "country", "value": "United States" },
-            { "name": "preferred_contact_method", "value": "Email" },
-            { "name": "newsletter_subscribe", "value": true }
-        ]
-    }'
-
-    ```
-
-
-
-* an object with `key:value` pairs:
-
-    ```JSON
-
-        {
-          "data": {
-            "name": "Jessica Jones",
-            "email": "jj@example.com",
-            "subject": "Regarding Product Inquiry",
-            "message": "I have some questions about your products.",
-            "phone": "123-456-7890",
-            "company": "Example Inc.",
-            "country": "United States",
-            "preferred_contact_method": "Email",
-            "newsletter_subscribe": true
-          }
-        }
-
-    ```
-
-    For example,
-
-    ```JSON
-
-    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "data": {
-            "Email": "khushwant@wknd.com",
-            "Name": "khushwant",
-            "Subject": "Regarding Product Inquiry",
-            "Message": "I have some questions about your products.",
-            "Phone": "123-456-7890",
-            "Company": "Adobe Inc.",
-            "Country": "United States",
-            "PreferredContactMethod": "Email",
-            "SubscribeToNewsletter": true
-        }
-    }'
-
-    ```
-
-* URL encoded (`x-www-form-urlencoded`) body (with `content-type` header set to `application/x-www-form-urlencoded`)
-
-    ```Shell
-
-    'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&Message=I   +have+some+questions+about+your+products.&Phone=123-456-7890&Company=Adobe+Inc.&   Country=United+States&PreferredContactMethod=Email&SubscribeToNewsletter=true'
-
-    ```
-
-    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.,
-
-    ```Shell
-
-    curl -s -i -X POST \
-      -d 'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&   Message=I+have+some+questions+about+your+products.&Phone=123-456-7890& Company=Adobe+Inc.&Country=United+States&PreferredContactMethod=Email&   SubscribeToNewsletter=true' \
-      https://main--wefinance--wkndform.aem.live/contact-us
-
-    ```
--->
-
 Em seguida, você pode [personalizar a mensagem de agradecimento](/help/edge/docs/forms/thank-you-page-form.md).
 
-## Consulte também:
-
-{{see-more-forms-eds}}

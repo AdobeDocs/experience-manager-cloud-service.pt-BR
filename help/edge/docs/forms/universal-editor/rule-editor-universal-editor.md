@@ -1,231 +1,433 @@
 ---
-title: Como usar o editor de regras para aplicar regras a campos de formulário, permitindo um comportamento dinâmico e uma lógica complexa para formulários criados com a criação do WYSIWYG?
-description: O editor de regras no Universal Editor permite adicionar comportamento dinâmico e criar lógica complexa em formulários sem codificação ou script.
+title: Editor de regras para Forms dinâmico no editor universal
+description: Crie formulários dinâmicos e inteligentes usando o Editor de regras no Editor universal. Adicionar lógica condicional, cálculos e comportamentos interativos sem codificação.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '3597'
 ht-degree: 1%
 
 ---
 
 
-# Introdução ao Editor de regras na Criação do WYSIWYG
+# Editor de regras para Forms dinâmico no editor universal
 
-<span class="preview"> Este é um recurso de pré-lançamento disponível através do nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>. </span>
+O Editor de regras no Universal Editor permite criar formulários inteligentes e dinâmicos que respondem à entrada do usuário em tempo real. Você pode transformar formulários estáticos em experiências interativas com visibilidade de campo condicional, cálculos automatizados e lógica de negócios complexa, tudo sem escrever código.
 
+## O que você vai aprender
 
-É possível adicionar um comportamento de formulário dinâmico usando o Editor de regras, que permite criar regras. Essas regras permitem visibilidade condicional de campo, automatizam cálculos com base na entrada do usuário e melhoram a experiência geral do usuário. Ao simplificar o processo de preenchimento de formulário, o Editor de regras ajuda a garantir precisão e eficiência.
+Ao final deste guia, você deverá:
 
-O Editor de regras oferece uma interface visual intuitiva para criar e gerenciar regras. Sua abordagem amigável torna-o acessível a todos os usuários, mesmo aqueles sem extensa experiência técnica, permitindo-lhes implementar a lógica sem esforço dentro de suas formas.
+- Entenda como as regras funcionam e quando usar diferentes tipos de regras
+- Habilitar e acessar o Editor de regras no Editor universal
+- Criar lógica condicional para mostrar ou ocultar campos de formulário dinamicamente
+- Implementar cálculos automatizados e validação de dados
+- Criar funções personalizadas para regras de negócios complexas
+- Aplicar práticas recomendadas para obter o desempenho ideal do formulário
 
-## Noções básicas sobre uma regra
+## Por que usar o editor de regras?
 
-As regras são instruções que orientam os usuários sobre quais ações executar em condições específicas.
+**Transformar Forms Estático em Experiências Inteligentes:**
 
-* **Condição**: uma condição é uma verificação ou regra que avalia se algo é verdadeiro ou falso. Ela responde à pergunta: &quot;Isso atende aos requisitos?&quot;
+- **Lógica condicional**: mostrar campos relevantes com base em seleções de usuário
+- **Cálculos Dinâmicos**: Calcular valores automaticamente como tipo de usuários
+- **Validação de dados**: forneça feedback em tempo real e evite erros
+- **UX aprimorado**: reduza a complexidade do formulário e oriente os usuários pelos fluxos lógicos
+- **Nenhuma Codificação Necessária**: Interface visual acessível para não desenvolvedores
 
-* **Ação**: uma ação é o que acontece quando a condição é verdadeira. É a tarefa ou o comportamento acionado com base na avaliação da condição.
+**Casos de uso comuns:**
 
-Uma regra normalmente segue uma das seguintes construções:
+- Formulários de cálculo de imposto com deduções condicionais
+- Assistentes de várias etapas com caminhos de ramificação
+- Formulários de seguro com cálculos de taxa
+- Formulários de pesquisa com perguntas condicionais
+- Formulários de comércio eletrônico com preços dinâmicos
 
-* **Condition-Action**: verifique uma condição primeiro e, em seguida, execute uma ação. No editor de regras, o tipo de regra `When` impõe a construção `condition-action`.
-* **Condição-ação**: execute uma ação primeiro e, em seguida, verifique uma condição. Os tipos de regra `Set Value Of` e `Validate` no editor de regras impõem a construção `action-condition`.
-* **Ação-Condição-Alternativa**: Execute uma ação, verifique uma condição e execute a ação principal ou uma ação alternativa com base na condição. Por exemplo, por padrão, a ação alternativa para `Show` é `Hide`, e para `Enable` é `Disable`.
+## Como as regras funcionam
 
-Por exemplo, uma condição pode verificar se um usuário inseriu um determinado valor em um campo e a ação pode ser mostrar ou ocultar um campo.
-* **Condição**: verifique se a renda é superior a US$ 50.000.
-* **Ação**: se a condição for verdadeira, mostrar o campo `Additional Deduction`; caso contrário, executar a ação alternativa: ocultar o campo `Additional Deduction`.
+As regras são instruções automatizadas que tornam seus formulários inteligentes e responsivos. Eles especificam o que deve acontecer quando determinadas condições são atendidas.
 
-Para obter instruções detalhadas passo a passo, consulte [adicionar uma regra condicional](#2-add-a-conditional-rule).
+### **Componentes da Regra**
 
-## Como ativar a extensão do Editor de regras?
+**Condição**: um teste lógico que é avaliado como verdadeiro ou falso.
 
-No Editor universal, a extensão Editor de regras não é ativada por padrão. Para habilitar a gravação da extensão do Editor de Regras em [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) da sua ID de email oficial.
+- &quot;A renda do usuário é superior a US$ 50 mil?&quot;
+- &quot;O usuário selecionou &#39;Sim&#39; para cobertura de seguro?&quot;
+- &quot;O campo de formulário está vazio?&quot;
 
-Depois que a extensão Editor de regras for habilitada para o seu ambiente, o ícone ![editar-regras](/help/forms/assets/edit-rules-icon.svg) aparecerá no canto superior direito do editor.
+**Ação**: o resultado que ocorre quando a condição é atendida.
+
+- Mostrar ou ocultar campos de formulário
+- Calcular valores automaticamente
+- Exibir mensagens de validação
+- Ativar ou desativar componentes
+
+### **Padrões Lógicos da Regra**
+
+**1. Condition-Action (When-Then)**
+
+```
+WHEN gross salary > 50000
+THEN show "Additional Deduction" field
+```
+
+*Recomendado para:* Visibilidade de campo condicional, conteúdo dinâmico
+
+**2. Condição de Ação (Set-If)**
+
+```
+SET taxable income = gross salary - deductions
+IF deductions are applicable
+```
+
+*Recomendado para:* Cálculos, transformações de dados
+
+**3. Action-Condition-Alternate (If-Then-Else)**
+
+```
+IF income > 50000
+THEN show "High Income" fields
+ELSE show "Standard Income" fields
+```
+
+*Recomendado para:* Lógica de ramificação, opções mutuamente exclusivas
+
+### **Exemplo do mundo real**
+
+**Cenário**: formulário de cálculo de imposto
+
+- **Condição**: &quot;O salário bruto excede $50.000&quot;
+- **Ação primária**: mostrar o campo &quot;Dedução adicional&quot;
+- **Ação alternativa**: ocultar o campo &quot;Dedução adicional&quot;
+- **Resultado**: os usuários só veem campos relevantes com base em seus níveis de renda
+
+## Pré-requisitos
+
+Antes de começar a trabalhar com o Editor de regras, verifique se você tem o seguinte:
+
+### **Requisitos de Acesso**
+
+- Acesso de criação ao **AEM as a Cloud Service**
+- **Editor Universal** com a extensão do Editor de Regras habilitada
+- Permissões de edição de formulários no ambiente do AEM
+
+### **Requisitos técnicos**
+
+- **Conhecimento básico sobre design de formulário**: familiaridade com componentes de formulário e suas propriedades
+- **Familiaridade da lógica de negócios**: capacidade de definir requisitos condicionais
+- **Conhecimento básico sobre o JavaScript** (necessário somente para funções personalizadas)
+
+### **Habilitar Extensão de Editor de Regras**
+
+A extensão Editor de Regras não está habilitada por padrão no Editor Universal. Você pode habilitá-lo no [Extension Manager](/help/implementing/developing/extending/extension-manager.md).
+
+**Depois de habilitar a extensão:**
+O ícone ![editar-regras](/help/forms/assets/edit-rules-icon.svg) aparece no canto superior direito ao selecionar componentes de formulário.
 
 ![Editor de regras do Universal Editor](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
+*Figura: o ícone Editor de regras aparece ao selecionar componentes de formulário*
 
-Selecione o componente de formulário para o qual deseja gravar uma regra e clique no ícone ![editar-regras](/help/forms/assets/edit-rules-icon.svg). A interface do usuário do Editor de regras é exibida.
+**Para acessar o Editor de Regras:**
+
+1. Selecione qualquer componente de formulário no Universal Editor.
+2. Clique no ícone ![edit-rules](/help/forms/assets/edit-rules-icon.svg) que aparece.
+3. A interface do Editor de regras é aberta em um novo painel.
 
 ![Interface do usuário do Editor de Regras](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+*Figura: interface do Editor de regras para editar regras de componentes*
 
-Neste artigo, `form object` e `form component` são usados alternadamente.
+>[!NOTE]
+>
+> Neste artigo, o &quot;componente de formulário&quot; e o &quot;objeto de formulário&quot; se referem aos mesmos elementos (como campos de entrada, botões, painéis, etc.).
 
-Agora, você pode começar a escrever regras ou lógica de negócios para o campo de formulário selecionado usando os [tipos de regras disponíveis no Editor de regras](#available-rule-types-in-rule-editor).
+## Visão geral da interface do editor de regras
 
-## Noções básicas sobre a interface do usuário do Editor de regras
-
-O editor do Editor de regras é aberto quando você clica no ícone ![edit-rules](/help/forms/assets/edit-rules-icon.svg):
+O Editor de regras oferece uma interface visual simples para criar e gerenciar regras:
 
 ![Interface do usuário do Editor de Regras](/help/edge/docs/forms/assets/rule-editor-interface.png)
+*Figura: Concluir a interface do Editor de Regras com componentes numerados*
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>Componente do Editor de regras</th>
-      <th>Descrição</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1. Título</td>
-      <td>Exibe o título do componente de formulário e o tipo de regra selecionado. Por exemplo, 'Inserir Salário Bruto' é um componente da caixa de texto para o qual o tipo de regra 'Quando' está selecionado. </td>
-    </tr>
-    <tr>
-      <td>2. Funções e objetos de formulário</td>
-      <td>A guia <b>Objetos Forms</b> mostra uma exibição hierárquica de todos os componentes contidos no formulário. A guia <b>Funções</b> inclui um conjunto de funções integradas no editor de regras.</td>
-    </tr>
-    <tr>
-      <td>3. Alternância entre objetos de formulário e funções</td>
-      <td>O botão de alternância alternadamente mostra ou oculta o painel de funções e objetos de formulário. </td>
-    </tr>
-    <tr>
-      <td>4. Editor de regras visuais</td>
-      <td>O Editor visual de regras é a interface em que você pode criar regras para os componentes de formulário.</td>
-    </tr>
-    <tr>
-      <td>5. Botões Concluído e Cancelar</td>
-      <td>O botão <b>Concluído</b> é usado para salvar uma regra. O botão <b>Cancelar</b> descarta todas as alterações feitas em uma regra e fecha o Editor de Regras.</td>
-    </tr>
-  </tbody>
-</table>
+### **Componentes da Interface**
 
-Todas as regras existentes em um componente de formulário são listadas ao selecionar o componente. É possível exibir o título e uma pré-visualização do resumo da regra no Editor de regras. Além disso, você pode alterar a ordem das regras, editar regras, habilitar/desabilitar regras ou excluir regras.
+**1. Título de Componente e Tipo de Regra**
+
+- **Propósito**: exibe o nome do componente selecionado e o tipo de regra atual.
+- **Exemplo**: &quot;Insira o Salário Bruto&quot; (Entrada de Texto) com a regra &quot;Quando&quot; selecionada.
+- **Dica**: sempre confirme se você está editando o componente correto.
+
+**2. Painel de Funções e Objetos de Formulário**
+
+- **Guia Objetos de Formulário**: fornece uma exibição hierárquica de todos os componentes de formulário.
+   - Usar para: fazer referência a outros campos nas regras.
+   - Navegação: expanda ou recolha para localizar componentes específicos.
+- **Guia Funções**: contém funções matemáticas e lógicas internas.
+   - Usar para: execução de cálculos complexos e manipulação de dados.
+   - Categorias: funções de Matemática, String, Data e Validação.
+
+**3. Botão de Alternância do Painel**
+
+- **Propósito**: mostra ou oculta o painel de objetos e funções.
+- **Dica**: desative o painel para aumentar o espaço de trabalho de edição de regras.
+- **Atalho do teclado**: útil ao trabalhar com regras complexas.
+
+**4. Construtor de Regras Visual**
+
+- **Propósito**: a área principal para a construção da lógica da regra.
+- **Recursos**: seletores de lista suspensa e interface de arrastar e soltar.
+- **Fluxo de trabalho**: Selecione o tipo de regra → Defina condições → Defina ações.
+
+**5. Botões de Controle**
+
+- **Concluído**: salva a regra e fecha o editor.
+- **Cancelar**: descarta as alterações e fecha o editor sem salvar.
+- **Dica**: sempre teste suas regras antes de clicar em Concluído.
+
+### **Gerenciamento de regras**
+
+Ao abrir o Editor de regras para um componente que já tem regras:
 
 ![mostrar as regras disponíveis do objeto de formulário](/help/edge/docs/forms/assets/rule-editor15.png)
+*Figura: gerenciamento de regras existentes para um componente de formulário*
+
+**Ações disponíveis:**
+
+- **Exibir**: revise os resumos e a lógica da regra.
+- **Editar**: modificar as condições ou ações da regra existentes.
+- **Reordenar**: alterar a ordem de execução das regras (regras são executadas de cima para baixo).
+- **Habilitar/Desabilitar**: habilitar ou desabilitar temporariamente regras para fins de teste.
+- **Excluir**: remover regras permanentemente.
+
+>[!TIP]
+>
+> **A ordem de execução das regras é importante**: as regras são executadas de cima para baixo. Coloque condições mais específicas antes das gerais.
 
 ## Tipos de regras disponíveis
 
-O Editor de regras fornece um conjunto de tipos de regras predefinidos que você pode usar para escrever regras, conforme exibido na tabela abaixo:
+O Editor de regras oferece um conjunto abrangente de tipos de regras organizados por funcionalidade. Selecione o tipo apropriado com base no seu caso de uso específico:
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>Tipo de regra</th>
-      <th>Descrição</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Definir valor de</td>
-      <td>Define o valor de um componente de formulário dependendo se a condição especificada é atendida ou não.</td>
-    </tr>
-    <tr>
-      <td>Limpar Valor de</td>
-      <td>Limpa o valor do componente de formulário especificado.</td>
-    </tr>
-    <tr>
-      <td>Ocultar/Mostrar</td>
-      <td>Oculta ou mostra um componente de formulário com base no fato de uma condição ser atendida ou não.</td>
-    </tr>
-    <tr>
-      <td>Habilitar/desabilitar</td>
-      <td>Ativa ou desativa um componente de formulário com base no fato de uma condição ser atendida ou não.</td>
-    </tr>
-    <tr>
-      <td>Validar</td>
-      <td>Verifica o componente de formulário com base em uma condição e exibe um erro se a condição não for atendida. </td>
-    </tr>
-    <tr>
-      <td>Quando</td>
-      <td>Especifica uma condição para avaliação seguida por uma ação para acionar se a condição for atendida. Ela segue a construção da regra de ação <i>condition-action-alternate</i> ou a construção da regra <i>condition-action</i>. </td>
-    </tr>
-    <tr>
-      <td>Formato</td>
-      <td> Modifica o valor de exibição do componente de formulário usando a expressão fornecida quando seu valor é alterado.</td>
-    </tr>
-    <tr>
-      <td>Executar serviço</td>
-      <td>Chama um serviço configurado usando APIs externas, Modelo de dados de formulário ou serviços Web RESTful.</td>
-    </tr>
-    <tr>
-      <td>Definir Propriedade</td>
-      <td>Define o valor de uma propriedade do componente de formulário especificado com base em uma condição.</td>
-    </tr>
-    <tr>
-      <td>Definir Foco</td>
-      <td>Define o foco no componente de formulário especificado.</td>
-    </tr>
-    <tr>
-      <td>Salvar Formulário</td>
-      <td>Ele permite que o usuário salve o formulário como rascunho usando o componente Rascunhos e envios do Forms Portal. </td>
-    </tr>
-    <tr>
-      <td>Enviar Formulário</td>
-      <td>Envia o formulário.</td>
-    </tr>
-    <tr>
-      <td>Restaurar Formulário</td>
-      <td>Redefine o formulário.</td>
-    </tr>
-    <tr>
-      <td>Adicionar/Remover Instância</td>
-      <td>Adiciona ou remove uma ocorrência da linha de tabela ou painel repetível especificada.</td>
-    </tr>
-    <tr>
-      <td>Navegar para</td>
-      <td>Navega até outro Forms adaptável, outros ativos, como imagens ou fragmentos de documentos, ou um URL externo.</td>
-    </tr>
-    <tr>
-      <td>Evento de envio</td>
-      <td>Aciona ações específicas com base em condições ou eventos predefinidos.</td>
-    </tr>
-    <tr>
-      <td>Navegar entre os painéis</td>
-      <td>Permite alterar o foco entre diferentes painéis em um formulário.</td>
-    </tr>
-  </tbody>
-</table>
+### **Regras de Lógica Condicional**
+
+**Quando**
+
+- **Propósito**: serve como a regra condicional primária para implementar lógica complexa.
+- **Caso de uso**: por exemplo, &quot;Quando o usuário selecionar &#39;Casado&#39;, mostrar campos de informações do cônjuge.&quot;
+- **Padrão lógico**: Condição → Ação (com uma ação alternativa opcional)
+
+**Ocultar/Mostrar**
+
+- **Propósito**: controla a visibilidade do campo com base nas condições especificadas.
+- **Caso de uso**: ocultar seções irrelevantes ou habilitar divulgação progressiva.
+- **Prática recomendada**: usar para criar uma experiência do usuário limpa e focalizada.
+
+**Habilitar/Desabilitar**
+
+- **Propósito**: controla se um campo pode ter interação, com base nas condições.
+- **Caso de uso**: desabilite o botão enviar até que todos os campos necessários sejam preenchidos.
+- **Prática recomendada**: fornecer feedback visual claro aos usuários.
+
+### **Regras de Manipulação de Dados**
+
+**Definir Valor De**
+
+- **Propósito**: preenche automaticamente os valores do campo.
+- **Caso de uso**: definir a data de hoje, calcular totais ou copiar valores entre campos.
+- **Prática recomendada**: usar para reduzir o esforço do usuário e garantir a precisão.
+
+**Limpar Valor De**
+
+- **Propósito**: remove dados de campos quando as condições são alteradas.
+- **Caso de uso**: limpar campos dependentes quando uma seleção pai for alterada.
+- **Prática recomendada**: mantenha a integridade dos dados e evite valores órfãos.
+
+**Formato**
+
+- **Propósito**: transforma como os valores são exibidos.
+- **Caso de uso**: moeda de formato, números de telefone ou datas.
+- **Prática recomendada**: melhorar a legibilidade sem alterar os dados subjacentes.
+
+### **Regras de validação**
+
+**Validar**
+
+- **Propósito**: implementa a lógica de validação personalizada.
+- **Caso de uso**: aplicar regras comerciais complexas ou validação entre campos.
+- **Prática recomendada**: fornecer mensagens de erro claras e acionáveis.
+
+### **Regras de Cálculo**
+
+**Expressão matemática**
+
+- **Propósito**: executa cálculos automatizados.
+- **Caso de uso**: cálculos de impostos, totais ou porcentagens.
+- **Prática recomendada**: atualizar cálculos em tempo real conforme os usuários digitam.
+
+### **Regras da Interface do Usuário**
+
+**Definir Foco**
+
+- **Propósito**: direciona a atenção do usuário para campos específicos.
+- **Caso de uso**: concentre-se em campos de erro ou oriente os usuários pelas etapas do assistente.
+- **Prática recomendada**: use com moderação para não interromper o fluxo do usuário.
+
+**Definir Propriedade**
+
+- **Propósito**: modifica dinamicamente as propriedades do componente.
+- **Caso de uso**: alterar o texto do espaço reservado ou modificar opções em uma lista suspensa.
+- **Prática recomendada**: aprimorar a experiência do usuário com alterações contextuais.
+
+### **Regras de Controle de Formulário**
+
+**Enviar Formulário**
+
+- **Propósito**: aciona o envio de formulários de forma programática.
+- **Caso de uso**: envio automático depois que condições específicas forem atendidas.
+- **Prática recomendada**: sempre validar o formulário antes de enviar.
+
+**Redefinir Formulário**
+
+- **Propósito**: Limpa todos os dados do formulário e redefine o formulário para seu estado inicial.
+- **Caso de uso**: funcionalidade &quot;Recomeçar&quot;.
+- **Prática recomendada**: confirmar a ação com o usuário antes de redefinir.
+
+**Salvar formulário**
+
+- **Propósito**: salva o formulário como rascunho para conclusão posterior.
+- **Caso de uso**: útil para formulários longos ou fluxos de trabalho de várias sessões.
+- **Prática recomendada**: fornecer feedback claro sobre o status salvo.
+
+### **Regras avançadas**
+
+**Invocar Serviço**
+
+- **Finalidade**: chama APIs ou serviços externos.
+- **Caso de uso**: pesquisa de endereço, validação em tempo real ou enriquecimento de dados.
+- **Prática recomendada**: lidar adequadamente com estados de carregamento e cenários de erro.
+
+**Adicionar/Remover Instância**
+
+- **Propósito**: gerencia dinamicamente seções que podem ser repetidas.
+- **Caso de uso**: adicionar membros da família ou vários endereços.
+- **Prática recomendada**: fornecer controles claros para adicionar ou remover instâncias.
+
+**Navegar Para**
+
+- **Propósito**: redireciona os usuários para outros formulários ou páginas.
+- **Caso de uso**: fluxos de trabalho de vários formulários ou roteamento condicional.
+- **Prática recomendada**: preservar dados de formulário antes da navegação.
+
+**Navegar Entre Painéis**
+
+- **Propósito**: controla a navegação em formulários de estilo de assistente.
+- **Caso de uso**: formulários de várias etapas ou ignorando etapa condicional.
+- **Prática recomendada**: exibir indicadores de progresso claros.
+
+**Evento de expedição**
+
+- **Propósito**: aciona eventos personalizados para integrações avançadas.
+- **Caso de uso**: rastreamento do Analytics ou integrações de terceiros.
+- **Prática recomendada**: usar somente para ações não bloqueadoras.
 
 
-Agora, vamos explorar como [gravar regras no Editor de regras](#write-rules).
+## Tutorial Passo a Passo: Criando uma Calculadora de Imposto Inteligente
 
-## Regras de gravação
-
-Para entender como escrever regras no Editor de regras visuais, considere um exemplo simples de um formulário de cálculo de imposto:
+Esta seção fornece um exemplo prático para demonstrar os recursos do Editor de regras. O exemplo orienta você na criação de um formulário de cálculo de imposto que usa lógica condicional e cálculos automatizados.
 
 ![Captura de tela da interface do Editor de regras mostrando a criação de uma regra condicional com lógica Quando-Então para visibilidade do campo de formulário](/help/edge/docs/forms/assets/rule-editor-1.png)
+*Figura: formulário de cálculo de imposto com campos condicionais inteligentes*
 
-No formulário descrito acima, o usuário informa o salário bruto. Com base nessa entrada, o campo condicional é exibido e o imposto a pagar é calculado.
+### **Visão geral do tutorial**
 
-**Campos de formulário:**
-* Salário Bruto (entrada do usuário)
-* Dedução Adicional (campo condicional)
-* Receita Tributável (campo calculado)
-* Imposto a Pagar (campo calculado)
+Neste tutorial, você criará um formulário que:
 
-**Regra condicional:**
-* Condição: Salário Bruto > 50.000
-* Ação: Mostrar o campo Dedução Adicional
+1. **Adapta-se à entrada do usuário**: exibe campos relevantes com base no nível de renda.
+2. **Calcula automaticamente**: calcula a obrigação fiscal em tempo real.
+3. **Valida dados**: garante cálculos precisos e entrada de dados.
 
-**Regras de Cálculo:**
+### **Estrutura do formulário**
 
-* Receita Tributável = Salário Bruto - Dedução Adicional (se aplicável)
-* Imposto a Pagar = Receita Tributável * Alíquota de Imposto (para simplificar, suponha uma alíquota fixa de 10%)
+| Nome do campo | Tipo | Propósito | Comportamento |
+|------------|------|---------|----------|
+| **Salário bruto** | Entrada de número | Usuário insere renda anual | Aciona a lógica condicional |
+| **Dedução Adicional** | Entrada de número | Deduções adicionais (se aplicável) | Exibe quando o salário é superior a US$ 50.000 |
+| **Renda Tributável** | Entrada de número | Calculado automaticamente | Atualizações em alterações de entrada |
+| **Imposto a Pagar** | Entrada de número | Valor final do imposto | Calcula em uma taxa de 10% |
 
-Para gravar regras, execute as seguintes etapas:
+### **Lógica de negócios a ser implementada**
 
-### &#x200B;1. Criar um formulário
+**Regra 1: Exibição de Campo Condicional**
 
-Para criar um formulário no Universal Editor:
+```
+WHEN Gross Salary > 50,000
+THEN Show "Additional Deduction" field
+ELSE Hide "Additional Deduction" field
+```
 
-1. Abra um formulário no Universal Editor para edição.
-1. Adicione os seguintes componentes de formulário:
-   * Formulário de Cálculo de Imposto (Título)
-   * Salário Bruto (Entrada de Número)
-   * Dedução Adicional (Entrada de Número)
-   * Receita Tributável (Entrada de Número)
-   * Imposto a Pagar (Entrada de Número)
-   * Enviar (Botão Enviar)
-1. Oculte o campo de formulário `Additional Deduction` abrindo seu `Properties`.
+**Regra 2: Cálculo de Receita Tributável**
 
-   ![Captura de tela de um formulário de cálculo de imposto com campos de entrada para salário bruto, estado civil e filhos dependentes, demonstrando a estrutura do formulário antes da aplicação das regras](/help/edge/docs/forms/assets/rule-editor2.png)
+```
+SET Taxable Income = Gross Salary - Additional Deduction
+(When Additional Deduction is applicable)
+```
 
-### &#x200B;2. Adicionar uma regra condicional para um campo de formulário
+**Regra 3: Cálculo de Imposto**
+
+```
+SET Tax Payable = Taxable Income × 10%
+(Simplified flat rate for demonstration)
+```
+
+### **Etapas de implementação**
+
+Siga estas etapas para criar seu form de imposto inteligente:
+
+
+
++++ 1: Criar o formulário de base
+
+**Objetivo**: criar a estrutura básica do formulário com todos os componentes necessários
+
+Para criar o formulário de cálculo de imposto no Universal Editor:
+
+1. **Abrir editor universal**
+   - Navegue até o console AEM Sites
+   - Selecione a página onde deseja adicionar o formulário
+   - Clique em **Editar** para abrir o Editor Universal
+
+2. **Adicionar componentes de formulário**
+
+   Adicione esses componentes na ordem:
+
+   | Componente | Tipo | Rótulo | Configurações |
+   |-----------|------|-------|----------|
+   | Título | Título | &quot;Formulário de Cálculo de Imposto&quot; | Nível do cabeçalho H2 |
+   | Entrada de número | Entrada de número | &quot;Salário Bruto&quot; | Obrigatório: Sim, Espaço Reservado: &quot;Informar salário anual&quot; |
+   | Entrada de número | Entrada de número | &quot;Dedução Adicional&quot; | Obrigatório: Não, Espaço Reservado: &quot;Informar deduções adicionais&quot; |
+   | Entrada de número | Entrada de número | &quot;Renda Tributável&quot; | Obrigatório: Não, Somente leitura: Sim |
+   | Entrada de número | Entrada de número | &quot;Imposto a Pagar&quot; | Obrigatório: Não, Somente leitura: Sim |
+   | Botão de enviar | Enviar | &quot;Calcular Imposto&quot; | Tipo: enviar |
+
+3. **Definir Configurações Iniciais**
+
+   - **Ocultar o campo Dedução Adicional**:
+      - Selecione o componente &quot;Dedução Adicional&quot;
+      - No painel Propriedades, defina **Visível** como **Não**
+      - Este campo será exibido condicionalmente com base em regras
+
+   - **Tornar campos calculados somente leitura**:
+      - Selecionar os campos &quot;Renda Tributável&quot; e &quot;Imposto a Pagar&quot;
+      - Definir **Somente Leitura** como **Sim** em Propriedades
+
+     ![Captura de tela de um formulário de cálculo de imposto com campos de entrada para salário bruto, estado civil e filhos dependentes, demonstrando a estrutura do formulário antes da aplicação das regras](/help/edge/docs/forms/assets/rule-editor2.png)
+     *Figura: estrutura de formulário inicial com componentes básicos configurados*
+
+**Ponto de verificação**: agora você deve ter um formulário com todos os campos obrigatórios, em que &quot;Dedução adicional&quot; esteja oculta e os campos calculados sejam somente leitura.
+
++++
+
++++ &#x200B;2. Adicionar uma regra condicional para um campo de formulário
 
 Depois de criar o formulário, escreva a primeira regra para mostrar o campo `Additional Deduction` somente se o salário bruto exceder $50.000. Para adicionar uma regra condicional:
 
@@ -261,7 +463,9 @@ A regra é exibida da seguinte maneira no Editor de regras:
 >
 > Como alternativa, você pode escrever uma regra Mostrar no campo Dedução Adicional, em vez de uma regra Quando no campo Salário Bruto, para implementar o mesmo comportamento.
 
-### &#x200B;3. Adicionar regras de cálculo para os campos de formulário
++++
+
++++ &#x200B;3. Adicionar regras de cálculo para os campos de formulário
 
 Em seguida, escreva uma regra para calcular o `Taxable Income`, que é a diferença entre `Gross Salary` e `Additional Deduction` (se aplicável). Para adicionar uma regra de cálculo ao campo **[!UICONTROL Receita Tributável]**, execute as seguintes etapas:
 
@@ -273,12 +477,11 @@ Em seguida, escreva uma regra para calcular o `Taxable Income`, que é a diferen
 
 1. No campo de expressão matemática:
 
-   * Selecione ou arraste e solte da guia Objeto do Forms o campo **[!UICONTROL Salário Bruto]** no primeiro objeto **[!UICONTROL Soltar ou selecione aqui]**.
+   - Selecione ou arraste e solte da guia Objeto do Forms o campo **[!UICONTROL Salário Bruto]** no primeiro objeto **[!UICONTROL Soltar ou selecione aqui]**.
 
-   * Selecione **[!UICONTROL Menos]** no campo **[!UICONTROL Selecionar Operador]**.
+   - Selecione **[!UICONTROL Menos]** no campo **[!UICONTROL Selecionar Operador]**.
 
-   * Selecione ou arraste e solte da guia Objeto do Forms o campo **[!UICONTROL Dedução Adicional]** no outro objeto **[!UICONTROL Soltar ou selecione aqui]**.
-
+   - Selecione ou arraste e solte da guia Objeto do Forms o campo **[!UICONTROL Dedução Adicional]** no outro objeto **[!UICONTROL Soltar ou selecione aqui]**.
      ![Exemplo do Editor de Regras15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Selecione **[!UICONTROL Concluído]** para salvar a regra.
@@ -291,12 +494,11 @@ Em seguida, escreva uma regra para calcular o `Taxable Income`, que é a diferen
    ![Exemplo do Editor de Regras17](/help/edge/docs/forms/assets/rule-editor20.png)
 1. No campo de expressão matemática:
 
-   * Selecione ou arraste e solte da guia Objeto do Forms o campo **[!UICONTROL Receita Tributável]** no primeiro objeto **[!UICONTROL Soltar ou selecione aqui]**.
+   - Selecione ou arraste e solte da guia Objeto do Forms o campo **[!UICONTROL Receita Tributável]** no primeiro objeto **[!UICONTROL Soltar ou selecione aqui]**.
 
-   * Selecione **[!UICONTROL Multiplicado por]** no campo **[!UICONTROL Selecionar operador]**.
+   - Selecione **[!UICONTROL Multiplicado por]** no campo **[!UICONTROL Selecionar operador]**.
 
-   * Selecione **Número** no campo **[!UICONTROL Selecionar Opção]** e insira o valor como `10` no campo **[!UICONTROL Inserir um Número]**.
-
+   - Selecione **Número** no campo **[!UICONTROL Selecionar Opção]** e insira o valor como `10` no campo **[!UICONTROL Inserir um Número]**.
      ![Exemplo do Editor de Regras18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Em seguida, selecione na área destacada ao redor do campo de expressão e selecione **[!UICONTROL Estender expressão]**.
    ![Exemplo do Editor de Regras19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -304,47 +506,80 @@ Em seguida, escreva uma regra para calcular o `Taxable Income`, que é a diferen
    ![Exemplo do Editor de Regras20](/help/edge/docs/forms/assets/rule-editor23.png)
 1. Selecione **[!UICONTROL Concluído]** para salvar a regra.
 
-### &#x200B;4. Pré-visualizar um formulário
++++
+
++++ &#x200B;4. Pré-visualizar um formulário
 
 Agora, ao visualizar o formulário e inserir o **Salário Bruto** como `60,000`, o campo **Dedução Adicional** será exibido e a **Renda Tributável** e o **Imposto a Pagar** serão calculados adequadamente.
 
 ![Visualizar um formulário](/help/edge/docs/forms/assets/rule-editor-form.png)
 
-Além das funções prontas para uso como Sum, Average que estão listadas em Saída de funções, você pode [gravar funções personalizadas](#create-a-custom-function) para implementar lógicas de negócios complexas.
++++
 
-## Função personalizada no editor de regras
+Além das funções integradas como Sum e Average, é possível criar funções personalizadas para implementar uma lógica de negócios complexa e personalizada de acordo com suas necessidades específicas.
 
-O Edge Delivery Services Forms é compatível com funções personalizadas, que permitem aos usuários definir funções do JavaScript para implementar regras de negócios complexas. As funções personalizadas estendem os recursos dos formulários facilitando a manipulação e o processamento dos dados inseridos para atender a requisitos especificados.
+## Avançado: funções personalizadas
 
-### Criar uma função personalizada
+**Quando Usar Funções Personalizadas:**
 
-Para criar funções personalizadas, edite o arquivo `../[blocks]/form/functions.js`. O processo de criação geralmente envolve as seguintes etapas:
+- Para cálculos complexos que vão além dos recursos de funções integradas
+- Para implementar regras de validação específicas de negócios
+- Para transformações e formatação de dados
+- Para integrar a sistemas ou APIs externos
 
-* **Declaração de função**: defina o nome da função e seus parâmetros (as entradas que ela aceita).
-* **Implementação lógica**: escreva o código que descreve os cálculos ou manipulações específicos executados pela função.
-* **Exportação de Função**: torne a função acessível em suas regras exportando-a do arquivo relevante.
+**Vantagens:**
 
+- **Reusabilidade**: gravar a função uma vez e usá-la em vários formulários e regras
+- **Capacidade de manutenção**: lógica centralizada e fácil de atualizar
+- **Desempenho**: execução otimizada do JavaScript
+- **Flexibilidade**: capacidade de lidar com cenários complexos não resolvidos pelas regras padrão
 
-Este exemplo demonstra duas funções personalizadas como `getFullName` e `days`:
+### **Criando Funções Personalizadas**
+
+**Local do Arquivo**: `/blocks/form/functions.js` em seu projeto do AEM
+
+**Fluxo de Trabalho de Desenvolvimento:**
+
+1. **Declaração de função**
+   - Defina nomes e parâmetros de funções claros e descritivos
+   - Usar nomes que indicam a finalidade da função
+   - Parâmetros de documento e tipos de retorno
+
+2. **Implementação lógica**
+   - Escreva um código JavaScript limpo e eficiente
+   - Lidar com casos de borda e cenários de erro
+   - Seguir as práticas recomendadas de codificação
+
+3. **Exportação de Função**
+   - Exportar funções para torná-las disponíveis no Editor de regras
+   - Usar exportações nomeadas para uma melhor organização
+   - Testar funções antes da implantação
+
+4. **Documentação**
+   - Adicionar comentários JSDoc para a documentação da função
+   - Incluir exemplos de uso
+   - Especificar tipos de parâmetros e valores de retorno
+
+O exemplo a seguir demonstra duas funções personalizadas: `getFullName` e `days`.
 
 ```JavaScript
 /**
- * Get Full Name
- * @name getFullName Concats first name and last name
- * @param {string} firstname in Stringformat
- * @param {string} lastname in Stringformat
- * @return {string}
+ - Get Full Name
+ - @name getFullName Concats first name and last name
+ - @param {string} firstname in Stringformat
+ - @param {string} lastname in Stringformat
+ - @return {string}
  */
 function getFullName(firstname, lastname) {
   return `${firstname} ${lastname}`.trim();
 }
 
 /**
- * Calculate the number of days between two dates.
- * @param {*} endDate
- * @param {*} startDate
- * @name days Calculates the numebr of days between two dates
- * @returns {number} returns the number of days between two dates
+ - Calculate the number of days between two dates.
+ - @param {*} endDate
+ - @param {*} startDate
+ - @name days Calculates the numebr of days between two dates
+ - @returns {number} returns the number of days between two dates
  */
 function days(endDate, startDate) {
   const start = typeof startDate === 'string' ? new Date(startDate) : startDate;
@@ -367,26 +602,190 @@ export { getFullName, days };
 
 ### Usar uma função personalizada no editor de regras
 
-Para usar a função personalizada no Editor de regras:
+Para usar uma função personalizada no Editor de regras:
 
-1. **Adicionar a Função**: Inclua sua função personalizada no arquivo`../[blocks]/form/functions.js`. Lembre-se de adicioná-lo à instrução `export` no arquivo.
-1. **Implantar o arquivo**: implante o arquivo `functions.js` atualizado em seu projeto GitHub e verifique se a compilação foi bem-sucedida.
-1. **Uso da Função**: acesse a função no Editor de Regras do formulário selecionando a opção `Function Output` no campo **[!UICONTROL Selecionar Ação]**.
+1. **Adicionar a Função**: adicione sua função personalizada ao arquivo `../[blocks]/form/functions.js`. Certifique-se de incluí-lo na instrução `export` no arquivo.
+2. **Implantar o arquivo**: implante o arquivo `functions.js` atualizado em seu projeto GitHub e confirme se a compilação foi concluída com êxito.
+3. **Uso da Função**: no Editor de Regras do formulário, acesse a função selecionando a opção `Function Output` no campo **[!UICONTROL Selecionar Ação]**.
 
    ![Função personalizada no editor de regras](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
-1. **Visualizar o formulário**: visualize o formulário com a função recém-implementada.
+4. **Visualizar o Formulário**: visualize o formulário para verificar se a função recém-implementada funciona conforme esperado.
 
-## Informações adicionais
+## Práticas recomendadas para o desenvolvimento de regras
 
->[!NOTE]
+### **Otimização do desempenho**
+
+**Minimizar Complexidade da Regra**
+
+- Mantenha as regras individuais simples e concentradas.
+- Divida a lógica complexa em várias regras menores.
+- Evite condições aninhadas profundamente quando possível.
+
+**Otimizar Execução da Regra**
+
+- Coloque as regras acionadas com mais frequência primeiro.
+- Use condições específicas para reduzir avaliações desnecessárias.
+- Considere o impacto das regras no tempo de carregamento do formulário.
+
+**Gerenciamento de recursos**
+
+- Limitar o número de regras por componente de formulário.
+- Use funções personalizadas para lógica repetida em vez de regras de duplicação.
+- Teste o desempenho com volumes de dados realistas.
+
+### **Diretrizes de experiência do usuário**
+
+**Fornecer Comentários Claros**
+
+- Use mensagens de validação que orientem os usuários para a entrada correta.
+- Mostrar indicadores de carregamento para regras que envolvem serviços externos.
+- Implemente a divulgação progressiva para reduzir a carga cognitiva.
+
+**Manter Capacidade De Resposta Do Formulário**
+
+- Evite regras que causam alterações visuais abruptas.
+- Implementar transições suaves para operações de mostrar/ocultar.
+- Testar regras em diferentes dispositivos e tamanhos de tela.
+
+**Tratamento de erros**
+
+- Fornecer comportamento de fallback quando as regras falharem.
+- Exibir mensagens de erro amigáveis.
+- Registra erros para depuração enquanto mantém uma experiência do usuário positiva.
+
+### **Práticas recomendadas de desenvolvimento**
+
+**Estratégia de teste**
+
+- Testar regras com casos de borda e valores de limite.
+- Verifique o comportamento da regra em navegadores diferentes.
+- Teste a funcionalidade do formulário com e sem o JavaScript ativado.
+
+**Documentação**
+
+- Documente a lógica de negócios por trás de regras complexas.
+- Manter um estoque de regras para formulários grandes.
+- Use convenções de nomenclatura consistentes para componentes e regras.
+
+**Controle de Versão**
+
+- Rastrear alterações em funções personalizadas no controle de versão.
+- Testar regras em um ambiente de desenvolvimento antes da produção.
+- Manter cópias de backup de configurações de regra de trabalho.
+
+## Solução de problemas comuns
+
+### **Problemas de Execução da Regra**
+
+**Regras Não Estão Sendo Acionadas**
+
+- **Verificar nomes de componentes**: verifique se os componentes referenciados existem e se têm nomes corretos.
+- **Verificar ordem da regra**: as regras são executadas de cima para baixo; reordene se necessário.
+- **Validar condições**: teste condições com valores conhecidos para verificar a lógica.
+- **Console do navegador**: verifique se há erros de JavaScript que possam bloquear a execução.
+
+**Comportamento de Regra Incorreto**
+
+- **Revise os operadores lógicos**: Confirme se as condições E/OU estão estruturadas corretamente.
+- **Testar com dados de exemplo**: use valores conhecidos para isolar problemas.
+- **Verificar tipos de dados**: verifique se as comparações numéricas usam números, não cadeias de caracteres.
+- **Validar expressões**: teste expressões matemáticas separadamente.
+
+### **Problemas de desempenho**
+
+**Resposta lenta do formulário**
+
+- **Reduza a complexidade da regra**: simplifique a lógica condicional complexa.
+- **Otimizar funções personalizadas**: criar um perfil e otimizar o código JavaScript.
+- **Limitar chamadas externas**: minimize as invocações de serviço nas regras.
+- **Usar seletores eficientes**: verifique se as referências a objetos de formulário são específicas.
+
+**Uso de Memória**
+
+- **Limpar ouvintes de eventos**: Remova as associações de regra não usadas.
+- **Otimizar funções personalizadas**: evite vazamentos de memória no código JavaScript.
+- **Escopo de regra de limite**: use regras de destino em vez de condições globais.
+
+### **Problemas de função personalizada**
+
+**Funções Não Disponíveis**
+
+- **Verificar caminho do arquivo**: verifique se `functions.js` está no local correto: `/blocks/form/functions.js`.
+- **Verificar exportações**: verifique se as funções foram exportadas corretamente.
+- **Processo de compilação**: confirme se a compilação do projeto inclui o arquivo de funções atualizado.
+- **Limpeza de cache**: limpe o cache do navegador após implantar novas funções.
+
+**Erros de Função**
+
+- **Validação de parâmetro**: verifique se os parâmetros de função correspondem aos tipos esperados.
+- **Manipulação de erros**: adicione blocos try-catch para manipular exceções normalmente.
+- **Log de console**: use console.log para a execução da função de depuração.
+- **Validação de JSDoc**: verifique se a documentação da função corresponde à implementação.
+
+### **Integração do Editor Universal**
+
+**O Editor De Regras Não Aparece**
+
+- **Extensão habilitada**: verifique se a extensão do Editor de Regras está ativada.
+- **Seleção de componente**: verifique se você selecionou um componente de formulário com suporte.
+- **Compatibilidade de navegador**: testar em navegadores compatíveis (Chrome, Firefox, Safari).
+- **Permissões de acesso**: confirme se o usuário tem as permissões necessárias do AEM.
+
+**Problemas de interface**
+
+- **Visibilidade do painel**: use o botão de alternância para mostrar ou ocultar o painel de objetos de formulário.
+- **Salvando regra**: verifique se as regras estão salvas antes de fechar o editor.
+- **Zoom do navegador**: redefina o zoom do navegador para 100% para uma exibição de interface ideal.
+
+## Limitações importantes
+
+>[!IMPORTANT]
 >
-> No Universal Editor, importações estáticas e dinâmicas não são suportadas em scripts de função personalizados. É necessário adicionar o código completo no arquivo `../[blocks]/form/functions.js`.
+> **Restrições de Função Personalizada**:
+>
+> - Importações estáticas e dinâmicas não são suportadas em scripts de função personalizados.
+> - Todo o código deve ser incluído diretamente no arquivo `/blocks/form/functions.js`.
+> - As funções devem ser síncronas (sem assíncronas/espera ou Promessas).
+> - O acesso às APIs do navegador é limitado por motivos de segurança.
 
-Este artigo fornece informações limitadas sobre o Editor de regras disponível no Editor universal. Para saber mais sobre o Editor de regras e as funções personalizadas, consulte os seguintes artigos:
+>[!WARNING]
+>
+> **Considerações sobre a produção**:
+>
+> - Teste todas as regras completamente em um ambiente de preparo.
+> - Monitore o desempenho do formulário após implantar regras complexas.
+> - Ter um plano de reversão para problemas relacionados a regras.
+> - Considere o impacto em usuários com conexões de rede lentas.
 
-{{see-also-rule-editor}}
+## Resumo
 
-## Consulte também:
+O Editor de regras no Universal Editor permite criar formulários inteligentes e dinâmicos que proporcionam experiências excepcionais para o usuário. Ao implementar lógica condicional, cálculos automatizados e regras de negócios personalizadas, você pode:
 
-{{universal-editor-see-also}}
+**Transformar Forms Estática**:
+
+- Adicione visibilidade de campo condicional para interfaces mais limpas e focadas.
+- Implementar cálculos em tempo real e validação de dados.
+- Crie uma lógica de negócios sofisticada sem codificar.
+
+**Melhorar a Experiência do Usuário**:
+
+- Orientar usuários por meio de fluxos de formulário lógicos.
+- Reduza erros com validação inteligente.
+- Forneça feedback e assistência imediatos.
+
+**Aumentar a Eficiência**:
+
+- Automatize cálculos repetitivos e a entrada de dados.
+- Simplifique workflows complexos com roteamento inteligente.
+- Reduza a carga de suporte com recursos de autoatendimento.
+
+### **Próximas etapas**
+
+Agora que você entende os fundamentos do Editor de regras:
+
+1. **Iniciar como Simples**: comece com regras básicas de mostrar/ocultar antes de avançar para cálculos complexos.
+1. **Prática com Exemplos**: use o tutorial de calculadora de impostos como base.
+1. **Explorar recursos avançados**: experimente funções personalizadas para requisitos especializados.
+1. **Testar Completamente**: Sempre validar regras em diferentes cenários e dispositivos.
+1. **Monitorar Desempenho**: certifique-se de que as regras melhorem em vez de dificultarem a experiência do usuário.

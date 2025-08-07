@@ -1,14 +1,14 @@
 ---
-title: Edge Delivery Services para expressões regex usadas com frequência pelo AEM Forms para validar campos de formulário
-description: Edge Delivery Services para expressões regex usadas com frequência pelo AEM Forms para validar campos de formulário
+title: O Edge Delivery Services para AEM Forms geralmente usa expressões regex para validar campos de formulário
+description: O Edge Delivery Services para AEM Forms geralmente usa expressões regex para validar campos de formulário
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '193'
 ht-degree: 4%
 
 ---
@@ -25,10 +25,10 @@ Estas são algumas expressões regulares que você pode usar para aprimorar a va
 
 Garante pelo menos 8 caracteres com:
 
-* Letra minúscula (a-z)
-* Letra maiúscula (A-Z)
-* Dígito (0-9)
-* Caractere especial (@$!%*?&amp;)
+- Letra minúscula (a-z)
+- Letra maiúscula (A-Z)
+- Dígito (0-9)
+- Caractere especial (@$!%*?&amp;)
 
 
 ## Endereço de email

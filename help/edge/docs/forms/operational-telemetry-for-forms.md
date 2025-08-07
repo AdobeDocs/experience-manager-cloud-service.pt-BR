@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ https://data.aem.live/?ext=forms
 
 Para fazer logon no painel de monitoramento do Edge Delivery Services para AEM Forms as a Cloud Service, digite o seguinte:
 
-* **URL**: a URL é específica para o site ou domínio do usuário. Os usuários têm a opção de filtrar o site ou domínio para exibir o painel de acordo com seus requisitos.
+- **URL**: a URL é específica para o site ou domínio do usuário. Os usuários têm a opção de filtrar o site ou domínio para exibir o painel de acordo com seus requisitos.
 
-* **Chave de Domínio**: o usuário gera manualmente a chave de domínio. Para obter chaves de domínio para seus formulários, entre em contato com o representante da Adobe.
+- **Chave de Domínio**: o usuário gera manualmente a chave de domínio. Para obter chaves de domínio para seus formulários, entre em contato com o representante da Adobe.
 
 ### Painel de monitoramento do Edge Delivery Services para AEM Forms as a Cloud Service
 
@@ -46,36 +46,34 @@ A ilustração abaixo demonstra o painel do Edge Delivery Services para AEM Form
 
 Esse painel fornece os principais insights sobre como os visitantes interagem com formulários no site do Adobe Experience Manager (AEM). Ao monitorar essas métricas, é possível identificar áreas de aprimoramento e otimizar seus formulários para obter uma melhor experiência do usuário e taxas de conversão:
 
-* **Exibições de formulário**: controle o número total de vezes que os formulários são exibidos
-* **Envios de formulário**: rastreia o número total de envios concluídos
+- **Exibições de formulário**: controle o número total de vezes que os formulários são exibidos
+- **Envios de formulário**: rastreia o número total de envios concluídos
 
-* **Maior Pintura de Conteúdo**: mostra a velocidade com que a URL é carregada, indicando o tempo necessário para renderizar o maior elemento de conteúdo visível na janela de visualização a partir do momento em que o usuário solicita a URL. Esse maior elemento de conteúdo pode ser uma imagem, vídeo ou um elemento de texto substancial em nível de bloco. As classificações de desempenho para a velocidade de carregamento do URL são categorizadas da seguinte maneira:
-   * **Bom**: se o tempo de carregamento for 2,5 segundos ou menos.
-   * **OK**: se o tempo de carregamento for superior a 2,5 segundos, mas igual ou inferior a 4 segundos.
-   * **Incorreto**: se o tempo de carregamento exceder 4 segundos
+- **Maior Pintura de Conteúdo**: mostra a velocidade com que a URL é carregada, indicando o tempo necessário para renderizar o maior elemento de conteúdo visível na janela de visualização a partir do momento em que o usuário solicita a URL. Esse maior elemento de conteúdo pode ser uma imagem, vídeo ou um elemento de texto substancial em nível de bloco. As classificações de desempenho para a velocidade de carregamento do URL são categorizadas da seguinte maneira:
+   - **Bom**: se o tempo de carregamento for 2,5 segundos ou menos.
+   - **OK**: se o tempo de carregamento for superior a 2,5 segundos, mas igual ou inferior a 4 segundos.
+   - **Incorreto**: se o tempo de carregamento exceder 4 segundos
 
-* **Deslocamento de layout cumulativo**: mede a soma total de todas as pontuações de deslocamento de layout individuais para cada deslocamento de layout inesperado que ocorre durante toda a vida útil da página. Ela desempenha um papel crucial na identificação do desempenho de uma página, pois quando os elementos da página mudam enquanto um usuário está tentando interagir com eles, a experiência do usuário é ruim. Essa pontuação varia de zero a qualquer número positivo: zero indica que não há deslocamento, enquanto um número mais alto significa mais deslocamentos de layout na página. As métricas de desempenho usadas para avaliar as pontuações de deslocamento de layout são categorizadas da seguinte maneira:
+- **Deslocamento de layout cumulativo**: mede a soma total de todas as pontuações de deslocamento de layout individuais para cada deslocamento de layout inesperado que ocorre durante toda a vida útil da página. Ela desempenha um papel crucial na identificação do desempenho de uma página, pois quando os elementos da página mudam enquanto um usuário está tentando interagir com eles, a experiência do usuário é ruim. Essa pontuação varia de zero a qualquer número positivo: zero indica que não há deslocamento, enquanto um número mais alto significa mais deslocamentos de layout na página. As métricas de desempenho usadas para avaliar as pontuações de deslocamento de layout são categorizadas da seguinte maneira:
 
-   * **Bom**: se a pontuação de deslocamento de layout for 0,1 ou menos.
-   * **OK**: se a pontuação de deslocamento de layout for maior que 0,1, mas igual ou inferior a 0,25.
-   * **Incorreto**: se a pontuação de deslocamento de layout exceder 0,25.
+   - **Bom**: se a pontuação de deslocamento de layout for 0,1 ou menos.
+   - **OK**: se a pontuação de deslocamento de layout for maior que 0,1, mas igual ou inferior a 0,25.
+   - **Incorreto**: se a pontuação de deslocamento de layout exceder 0,25.
 
-* **Interação com a Próxima Pintura**: avalia a rapidez com que uma página reage às interações do usuário, considerando o tempo necessário para a página responder a cliques, toques e entradas de teclado durante a visita de um usuário à página. O valor final é a interação mais longa observada, independentemente de qualquer anomalia. As métricas de desempenho do Interaction to Next Paint são categorizadas da seguinte maneira:
-   * **Bom**: se a duração entre as ações do usuário for 200 milissegundos (ms) ou menos.
-   * **OK**: se a duração for superior a 200 ms, mas igual ou inferior a 500 ms.
-   * **Incorreto**: se a duração exceder 500 ms.
+- **Interação com a Próxima Pintura**: avalia a rapidez com que uma página reage às interações do usuário, considerando o tempo necessário para a página responder a cliques, toques e entradas de teclado durante a visita de um usuário à página. O valor final é a interação mais longa observada, independentemente de qualquer anomalia. As métricas de desempenho do Interaction to Next Paint são categorizadas da seguinte maneira:
+   - **Bom**: se a duração entre as ações do usuário for 200 milissegundos (ms) ou menos.
+   - **OK**: se a duração for superior a 200 ms, mas igual ou inferior a 500 ms.
+   - **Incorreto**: se a duração exceder 500 ms.
 
 ## Insights acionáveis
 
 Ao analisar essas métricas, é possível identificar oportunidades para:
 
-* Simplifique os formulários e reduza o número de campos.
-* Melhore a clareza do formulário com instruções e rótulos claros.
-* Otimizar o layout do formulário para obter agilidade.
-* Resolver problemas técnicos que retardam o carregamento de formulários.
+- Simplifique os formulários e reduza o número de campos.
+- Melhore a clareza do formulário com instruções e rótulos claros.
+- Otimizar o layout do formulário para obter agilidade.
+- Resolver problemas técnicos que retardam o carregamento de formulários.
 
 Ao se concentrar nessas áreas, é possível criar formulários mais fáceis de usar e incentivar os visitantes a preenchê-los, resultando em taxas de conversão mais altas.
 
-## Consulte também:
 
-{{see-more-forms-eds}}

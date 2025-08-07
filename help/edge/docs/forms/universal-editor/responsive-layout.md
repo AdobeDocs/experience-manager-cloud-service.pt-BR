@@ -1,159 +1,460 @@
 ---
-title: Noções básicas do Editor universal - Modo responsivo
-description: Este artigo explica como visualizar formulários usando diferentes emuladores no Editor universal para visualizar sua aparência durante a criação.
+title: Criar Forms responsivo com editor universal
+description: Saiba como projetar, testar e otimizar formulários responsivos para todos os dispositivos usando o Universal Editor. Teste de dispositivo mestre, padrões de layout e técnicas de otimização para dispositivos móveis para AEM Forms com Edge Delivery Services.
+keywords: formulários responsivos, formulários móveis, teste de dispositivo, editor universal, layout adaptável, otimização de formulário, design móvel, design responsivo, layouts de formulário, emulador de dispositivo
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: User, Developer
+level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 1%
+source-wordcount: '1815'
+ht-degree: 0%
 
 ---
 
 
-# Modo responsivo na criação do WYSIWYG
+# Criar Forms responsivo com editor universal
 
-<span class="preview"> Este é um recurso de pré-lançamento disponível através do nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>. </span>
+Os usuários acessam formulários em uma grande variedade de dispositivos, incluindo desktops, tablets e smartphones. A criação de formulários responsivos garante uma experiência ideal para todos os usuários, independentemente do dispositivo. Este guia explica como projetar, testar e otimizar formulários para qualquer tamanho de tela usando o Universal Editor.
 
-## Introdução ao Responsive Forms
+A criação responsiva de formulários envolve duas atividades principais:
 
-No mundo de vários dispositivos de hoje, seus formulários precisam ter ótima aparência e funcionar bem em telas de todos os tamanhos: de monitores de desktop a smartphones. O modo responsivo no Editor universal ajuda você a fazer isso permitindo visualizar e testar seus formulários em diferentes tamanhos de dispositivo durante o processo de criação.
+- **Teste responsivo:** Visualize e teste seus formulários em vários tamanhos de tela usando emuladores de dispositivo.
+- **Design responsivo:** Selecione e implemente padrões de layout que se adaptem perfeitamente a diferentes dispositivos.
 
-O [Editor Universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) permite que você crie formulários que se adaptam automaticamente a diferentes tamanhos de tela, fornecendo uma experiência do usuário ideal independentemente do dispositivo que está sendo usado.
+**Neste guia, você aprenderá a:**
 
-## Visualizar o Forms no modo responsivo para diferentes dispositivos
+- Testar formulários em dispositivos desktop, tablet e móveis
+- Selecione os padrões de layout apropriados para o seu conteúdo
+- Aplicar práticas recomendadas de design responsivo
+- Solução de problemas comuns de formulários responsivos
+- Otimizar formulários para desempenho móvel
 
-O Editor Universal fornece um ícone de **Emulador** localizado no canto superior direito da tela, que permite que você visualize páginas em diferentes tamanhos de dispositivo e teste o comportamento do seu design responsivo para obter uma melhor experiência do usuário.
+## Por que o Forms responsivo é importante
 
-Para visualizar um formulário no modo responsivo:
+**Impacto na experiência do usuário:**
 
-1. Abra o formulário no Universal Editor para edição.
-2. Clique no ícone ![Emulador mostrando um símbolo de visualização de dispositivo](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} na barra de ferramentas.
-3. Selecione um formato de dispositivo:
-   - Área de trabalho (padrão)
-   - Tablet
-   - Dispositivos móveis
-   - Personalizado (especificar largura e altura)
+- Mais de 60% dos usuários acessam formulários em dispositivos móveis
+- Experiências móveis ruins resultam em uma taxa de abandono 67% maior
+- Formulários responsivos podem aumentar as taxas de conclusão em até 25%
 
-![Captura de tela do Editor Universal mostrando opções do modo responsivo para diferentes dispositivos](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
+**Benefícios para os negócios:**
 
-Você também pode usar o ícone **Rotador de Tela** para alternar entre as orientações retrato e paisagem ao visualizar em tablet ou dispositivos móveis.
+- Taxas mais altas de conclusão de formulários
+- Maior satisfação do usuário
+- Conformidade aprimorada com acessibilidade
+- Reduzir os custos de desenvolvimento e manutenção
 
-O Editor universal fornece diferentes emuladores para visualizar formulários em vários dispositivos. A tabela abaixo lista os tipos de emulador disponíveis junto com suas representações de dispositivo correspondentes:
+>[!TIP]
+>
+> **Primeira Abordagem para Dispositivos Móveis:** comece a criar para dispositivos móveis e, em seguida, melhore para telas maiores. Isso garante que a funcionalidade principal funcione no ambiente mais restrito.
 
-<table border="1" style="text-align:" left; border-collapse: collapse;">
-    <tr>
-        <th style="width: 20%">Tipo de emulador</th>
-        <th style="width: 80%">Imagem do dispositivo</th>
-    </tr>
-    <tr>
-        <td style="width: 20%">Desktop</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png" alt="Modo de exibição de desktop de um formulário mostrando layout de largura total" style="width: auto; height: auto"></td>
-    </tr>
-    <tr>
-        <td style="width: 20%">Tablet</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png" alt="Exibição de tablet de um formulário mostrando layout de largura média com componentes ajustados" style="width: auto; height: auto"></td>
-    </tr>
-    <tr>
-        <td style="width: 20%">Dispositivos móveis</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png" alt="Modo de exibição móvel de um formulário que mostra layout estreito com componentes empilhados" style="width: auto; height: auto"></td>
-    </tr>
-    <tr>
-        <td style="width: 20%">Dispositivo personalizado</td>
-        <td style="width: 80%"><img src="/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png" alt="Exibição de dispositivo personalizado de um formulário com dimensões especificadas pelo usuário" style="width: auto; height: auto"></td>
-    </tr>
-</table>
+## Parte 1: Testando o Forms em vários dispositivos
 
-## Recursos de layout
+Testar seus formulários em diferentes dispositivos ajuda a identificar e resolver problemas responsivos antes que os usuários os encontrem. O Editor universal fornece um modo emulador para simular vários tamanhos e orientações de tela.
 
-O Universal Editor permite criar formulários fáceis de usar que oferecem experiências dinâmicas para os usuários finais. O layout de formulário controla como os itens ou componentes são exibidos em um formulário.
+### Como testar seu Forms
 
-O Universal Editor é compatível com os seguintes tipos de layouts para formulários:
+**Etapa 1: Abrir o Emulador de Dispositivo**
 
-- [Layout do painel](#panel-layout)
-- [Layout do assistente](#wizard-layout)
-- [Layout do acordeão](#accordion-layout)
+1. Abra o formulário no Editor universal.
+2. Clique no ícone ![Emulador](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%,width=2%} **Emulador** na barra de ferramentas.
+3. O menu do seletor de dispositivos será exibido.
+
+![Interface de Teste Responsiva do Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor-emulator.png)
+
+**Etapa 2: Selecionar um dispositivo para teste**
+
+- **Área de trabalho** (largura superior a 1200 px): modo de exibição de edição padrão
+- **Tablet** (largura de 768px-1199px): teste de tela do Medium
+- **Dispositivo móvel** (largura de 320px-767px): teste de tela pequena
+- **Personalizado**: especifique dimensões exatas para dispositivos específicos
+
+**Etapa 3: Testar orientações do dispositivo**
+
+Use o ícone **Rotador de telas** para testar:
+
+- **Modo retrato**: orientação móvel padrão
+- **Modo paisagem**: exibição de tablet ou telefone girada
+
+### Resultados do teste de dispositivo
+
+Cada tipo de dispositivo revela comportamentos responsivos exclusivos:
+
+| **Tipo de dispositivo** | **Largura da tela** | **O que Verificar** | **Problemas comuns** |
+|-----------------|------------------|-------------------|-------------------|
+| **Área de Trabalho** | 1200px+ | Layout completo, todos os recursos visíveis | Excesso de espaços em branco, layouts muito largos |
+| **Tablet** | 768px-1199px | Empilhamento de componentes, usabilidade de navegação | Dimensionamento estranho, problemas de direcionamento por toque |
+| **Móvel** | 320px-767px | Layout de coluna única, navegação em miniatura | Texto pequeno, botões próximos ao espaçamento |
+| **Personalizado** | Definido pelo usuário | Requisitos específicos do dispositivo | Casos de borda de ponto de interrupção |
+
+### Exemplos visuais por dispositivo
+
+**Modo de Exibição de Área de Trabalho (1200px+):**
+![Modo de exibição de formulário da área de trabalho](/help/edge/docs/forms/universal-editor/assets/universal-editor-desktop.png)
+*Layout de largura total com campos de formulário lado a lado.*
+
+**Exibição do tablet (768px-1199px):**
+![Modo de exibição de formulário do tablet](/help/edge/docs/forms/universal-editor/assets/universal-editor-tab.png)
+*Layout de largura de Medium com espaçamento de componente ajustado.*
+
+**Exibição do Mobile (320px-767px):**
+![Exibição de formulário móvel](/help/edge/docs/forms/universal-editor/assets/universal-editor-mobile.png)
+*Layout de coluna única com componentes empilhados.*
+
+**Modo de Exibição de Dispositivo Personalizado:**
+![Exibição de dispositivo personalizada](/help/edge/docs/forms/universal-editor/assets/universal-editor-custom.png)
+*Dimensões especificadas pelo usuário para testes direcionados.*
+
+### Testar fluxo de trabalho
+
+**Para o Novo Forms:**
+
+1. **Compilação na exibição da área de trabalho:** Inicie com funcionalidade completa.
+2. **Teste no tablet:** Verifique as adaptações para telas médias.
+3. **Validar em dispositivos móveis:** garanta a usabilidade em telas pequenas.
+4. **Corrigir problemas responsivos:** Ajuste layouts conforme necessário.
+5. **Retestar todos os dispositivos:** Confirme as correções em todos os tamanhos.
+
+**Para Forms Existente:**
+
+1. **Verificação rápida de celular:** o formulário funciona em telefones?
+2. **Identificar áreas com problemas:** Problemas de layout de observação e usabilidade.
+3. **Teste sistemático:** teste completamente cada tamanho de dispositivo.
+4. **Problemas de documento:** Acompanhe o que precisa ser corrigido.
+5. **Implementar correções:** Resolver problemas metodicamente.
+
+## Parte 2: Seleção de padrões de layout responsivos
+
+Os padrões de layout determinam como o conteúdo do formulário se adapta a diferentes tamanhos de tela. O padrão correto melhora a experiência do usuário e o desempenho móvel.
+
+### Visão geral do padrão de layout
+
+| **Tipo de layout** | **Melhor para** | **Desempenho móvel** | **Complexidade** |
+|---------------------|-------------------------------------------|------------------------|----------------|
+| **Layout do painel** | Conteúdo categorizado, formulários de estilo de painel | Bom | Baixa |
+| **Layout do Assistente** | Processos em várias etapas, fluxos de trabalho complexos | Excelente | Média |
+| **Layout da opção** | Conteúdo no estilo das perguntas frequentes, seções opcionais | Excelente | Baixa |
+
+### Guia de decisão rápida
+
+**Usar Layout do Painel quando:**
+
+- Seu conteúdo é dividido em categorias distintas
+- Os usuários precisam visualizar várias seções de uma só vez
+- O conteúdo é relativamente simples
+
+**Usar Layout do Assistente quando:**
+
+- O formulário tem várias etapas lógicas
+- Você quer reduzir a carga cognitiva
+- Os usuários móveis são o público principal
+
+**Usar Layout Acordeão quando:**
+
+- O formulário tem conteúdo opcional ou secundário
+- A conservação do espaço é importante
+- O conteúdo pode ser agrupado logicamente
 
 ### Layout do painel
 
-O layout do painel é útil para organizar campos relacionados de uma maneira que facilite a navegação e a localização do conteúdo correspondente. O layout do painel organiza os componentes do formulário em seções distintas ou painéis em formulários.
+**Propósito:** Organiza o conteúdo relacionado em seções visualmente distintas que podem ser visualizadas simultaneamente.
 
-![Layout do painel mostrando várias seções distintas dentro de um formulário](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
+![Exemplo de layout do painel](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
-**Exemplo:** Um formulário de aplicativo de trabalho pode usar painéis para separar &quot;Informações Pessoais&quot;, &quot;Educação&quot;, &quot;Experiência Profissional&quot; e &quot;Referências&quot; em seções distintas.
+**Comportamento responsivo:**
 
-**Comportamento responsivo:** Em telas menores, os painéis normalmente são empilhados verticalmente, mantendo seus agrupamentos distintos enquanto ajustam para uma largura mais estreita.
+- **Área de Trabalho (1200px+):** Painéis exibidos lado a lado ou em uma grade
+- **Tablet (768px-1199px):** Painéis empilhados verticalmente com espaçamento
+- **Dispositivo móvel (320px-767px):** Layout de coluna única com quebras de seção claras
 
-Você pode usar o [componente do painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) para adicionar o layout do painel em um formulário. Para obter instruções detalhadas sobre como configurar várias propriedades do componente do painel, consulte o artigo [componente do painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+**Etapas de implementação:**
+
+1. Use o [Componente de Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+2. Agrupar campos relacionados em cada painel.
+3. Adicione cabeçalhos claros para cada seção.
+4. Assegure um espaçamento adequado entre os painéis.
+
+**Práticas recomendadas:**
+
+- Limite de 3 a 4 painéis no desktop para evitar sobrecarregar os usuários.
+- Use títulos descritivos para cada painel.
+- Agrupar campos relacionados logicamente para reduzir a carga cognitiva.
+- Teste a navegação do painel em dispositivos de toque.
+
+**Exemplo de casos de uso:**
+
+- **Aplicativo de Trabalho:** Informações Pessoais, Educação, Experiência, Referências
+- **Registro do Produto:** Detalhes Básicos, Especificações Técnicas, Informações de Garantia
+- **Forms de Pesquisa:** Demografia, Preferências, Comentários, Contato
 
 ### Layout do assistente
 
-O layout do assistente ajuda a simplificar um formulário complexo, dividindo-o em etapas distintas. Cada etapa representa uma parte diferente do processo, e os usuários navegam pelas etapas sequencialmente, geralmente com os botões **Avançar** e **Voltar**. Você pode usar o layout do assistente para criar um formulário que envolve várias seções ou etapas.
+**Propósito:** orienta os usuários sobre processos complexos passo a passo, reduzindo a carga cognitiva e melhorando as taxas de conclusão.
 
-![Layout do assistente mostrando um formulário de várias etapas com controles de navegação](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
+![Exemplo de layout do assistente](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
-**Exemplo:** Um formulário de reclamação de seguro pode usar um assistente para orientar os usuários sobre como fornecer detalhes do incidente, carregar evidências, inserir informações pessoais e revisar o envio.
+**Comportamento responsivo:**
 
-**Comportamento responsivo:** Em dispositivos móveis, o assistente mantém sua abordagem passo a passo, mas ajusta o conteúdo em cada etapa para caber na tela mais estreita, geralmente empilhando elementos que apareceriam lado a lado em telas maiores.
+- **Todos os Dispositivos:** mantém o foco de etapa única para obter a experiência móvel ideal.
+- **Conteúdo da Etapa:** Adapta-se dentro de cada etapa (empilhamento ou lado a lado).
+- **Navegação:** botões de toque simples com espaçamento suficiente.
+- **Indicador de Progresso:** Dimensionado adequadamente para o tamanho da tela.
 
-Você pode usar o [componente de assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para adicionar o layout de assistente em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente do assistente, consulte o artigo [componente do assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+**Etapas de implementação:**
+
+1. Use o [Componente de Assistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+2. Divida formulários complexos em etapas lógicas (3 a 7 etapas são ideais).
+3. Incluir indicadores de progresso para orientação do usuário.
+4. Forneça controles de navegação claros (Próximo, Voltar, Salvar).
+
+**Otimização móvel:**
+
+- Use destinos de toque grande (mínimo de 44px) para botões de navegação.
+- Verifique se os indicadores de etapa estão claros e visíveis em telas pequenas.
+- Limite o número de campos por etapa para reduzir a rolagem.
+- Ative o salvamento automático para evitar perda de dados.
+
+**Práticas recomendadas:**
+
+- Assegurar a progressão lógica da etapa — cada etapa deve se basear na anterior.
+- Use títulos de etapas claras para que os usuários saibam o que esperar.
+- Valide a entrada em cada etapa para detectar erros antecipadamente.
+- Permite que os usuários recuem para revisar ou editar informações.
+
+**Exemplo de casos de uso:**
+
+- **Reivindicações de Seguro:** Incidente → Evidência → Pessoal → Revisão
+- **Configuração da Conta:** Informações Básicas → Preferências → Segurança → Confirmação
+- **Processo do pedido:** Produtos → Envio → Pagamento → Resumo
 
 ### Layout do acordeão
 
-O layout do Accordion exibe o conteúdo em seções ou painéis que podem ser recolhidos em um Formulário adaptável. Quando uma seção é expandida, ela exibe o conteúdo em, enquanto outras seções permanecem recolhidas. Esse layout é ideal para exibir grandes quantidades de informações em um formato compacto.
+**Propósito:** economiza espaço organizando o conteúdo em seções que podem ser recolhidas, ideal para informações opcionais ou secundárias.
 
-![Layout do Accordion mostrando seções expansíveis em um formulário](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
+![Exemplo de layout do acordeão](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
-**Exemplo:** um formulário de configuração de produto pode usar seções do Accordion para &quot;Opções Básicas&quot;, &quot;Recursos Avançados&quot;, &quot;Acessórios&quot; e &quot;Planos de Pagamento&quot;, permitindo que os usuários se concentrem em um aspecto de cada vez.
+**Comportamento responsivo:**
 
-**Comportamento responsivo:** Os acordeões funcionam particularmente bem em dispositivos móveis, pois conservam naturalmente o espaço vertical ao mostrar somente a seção de conteúdo expandida, tornando-os ideais para telas menores.
+- **Excelente desempenho móvel:** somente conteúdo relevante é exibido.
+- **Cabeçalhos otimizados para toque:** Fáceis de tocar e expandir seções.
+- **Animações suaves:** fornece feedback visual para interações.
+- **Eficiência de espaço:** minimiza a rolagem em todos os dispositivos.
 
-Você pode usar o [componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para adicionar o layout acordeão em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente Acordeão, consulte o artigo [componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+**Etapas de implementação:**
 
-### Como escolher o layout correto?
+1. Use o [Componente Acordeão](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+2. Agrupe o conteúdo opcional relacionado em cada seção.
+3. Use cabeçalhos de seção descritiva.
+4. Defina os estados de abertura/fechamento padrão apropriados.
 
-É importante selecionar o layout correto para otimizar a experiência do usuário e a funcionalidade do formulário. A tabela ajuda você a entender as diferentes opções de layout disponíveis e orienta você a selecionar o layout mais adequado com base nas suas necessidades e casos de uso específicos:
+**Vantagens móveis:**
 
-| Destaque | Layout do painel | Layout do assistente | Layout do acordeão |
-|----------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| **Finalidade** | Agrupa conteúdo relacionado em seções distintas | Orienta os usuários por meio de um processo ou formulário de várias etapas | Organiza o conteúdo em seções que podem ser recolhidas |
-| **Estrutura** | Seções distintas | Etapas/páginas sequenciais | Painéis/seções flexíveis |
-| **Navegação** | Clique nos cabeçalhos do painel para navegar | - Avançar: botão &quot;Avançar&quot;<br>- Voltar: botão &quot;Voltar&quot;<br>- Etapas de ignorar opcionais | Clique em cabeçalhos para expandir/recolher seções |
-| **Experiência do usuário** | Organiza grandes quantidades de conteúdo de maneira gerenciável | Orientação passo a passo, reduzindo a sobrecarga | Exibição compacta com seções expandidas/recolhidas |
-| **Caso de uso** | Formulários complexos com seções categorizadas | Processos de configuração, formulários complexos | Perguntas frequentes, menus de configurações e seções detalhadas de conteúdo |
-| **Melhor para dispositivos móveis** | Moderado - painéis empilhados verticalmente | Bom - mantém o foco somente na etapa atual | Excelente - preserva o espaço com seções que podem ser recolhidas |
+- Reduz a rolagem recolhendo seções não usadas.
+- Interação amigável ao toque com gestos de expansão/colapso naturais.
+- Carregamento mais rápido — somente o conteúdo ativo fica visível.
+- Foco aprimorado — os usuários veem somente o que precisam.
 
-## Práticas recomendadas para Forms responsivo
+**Práticas recomendadas:**
 
-Para garantir que seus formulários forneçam a melhor experiência em todos os dispositivos, siga estas práticas recomendadas:
+- Use cabeçalhos de seção limpa para que os usuários saibam o que há dentro antes de expandir.
+- Agrupe o conteúdo relacionado logicamente em cada seção.
+- Defina seções importantes para iniciar a expansão, se necessário.
+- Forneça breves visualizações de seção para ajudar os usuários a decidir o que expandir.
 
-1. **Crie para dispositivos móveis primeiro:** comece criando seu formulário para dispositivos móveis e depois melhore para telas maiores. Essa abordagem garante que a funcionalidade principal funcione nas telas menores.
+**Exemplo de casos de uso:**
 
-2. **Usar tipos de campo apropriados:** Escolha tipos de campo que funcionem bem em dispositivos de toque:
-   - Use menus suspensos em vez de botões de opção quando houver muitas opções
-   - Usar seletores de data projetados para entrada de toque
-   - Verifique se os botões e os destinos de toque têm pelo menos 44px x 44px
+- **Configuração do produto:** Básico → Avançado → Acessórios → Suporte
+- **Perguntas frequentes Forms:** Conta → Faturamento → Técnico → Geral
+- **Configurações Forms:** Privacidade → Notificações → Aparência → Avançado
 
-3. **Simplificar para telas menores:**
-   - Exibir menos campos por linha em dispositivos móveis
-   - Considere ocultar campos opcionais atrás de uma opção &quot;Mostrar mais&quot;
-   - Divida formulários complexos em mais etapas no dispositivo móvel
+## Parte 3: Práticas recomendadas de design responsivo
 
-4. **Teste completamente:** sempre teste seus formulários em dispositivos reais ou usando o modo emulador no Universal Editor para garantir que eles funcionem corretamente em todos os tamanhos de tela.
+### Práticas recomendadas por tipo de dispositivo
 
-5. **Considere carregar os tempos:** otimize os tamanhos das imagens e minimize os recursos necessários, especialmente para usuários móveis que possam ter conexões mais lentas.
++++Otimização móvel (320px-767px)
 
-## Solução de problemas do Responsive Forms
+**Práticas essenciais:**
 
-| Problema | Causa possível | Solução |
-|-------|---------------|----------|
-| O formulário aparece cortado em dispositivos móveis | Configurações de largura corrigidas ou problemas de estouro | Usar unidades relativas (%, rem) em vez de pixels e verificar se há propriedades overflow:hidden |
-| Elementos de toque de difícil interação | Destinos de toque muito pequenos ou muito próximos | Aumente o tamanho do botão/entrada para pelo menos 44 px x 44 px e adicione mais espaço entre elementos interativos |
-| Sobrecargas de conteúdo em telas pequenas | Nenhuma regra responsiva para janelas de visualização menores | Adicionar consultas de mídia ou classes responsivas para ajustar o layout para diferentes tamanhos de tela |
-| Formulário muito lento em dispositivos móveis | Imagens grandes ou scripts em excesso | Otimizar imagens, minimizar o JavaScript e considerar o carregamento lento de elementos não críticos |
-| Aparência diferente entre emulador e dispositivos reais | Renderização específica do navegador ou variações de dispositivo | Testar em dispositivos reais quando possível, não apenas em emuladores |
+- Use um layout de coluna única para todo o conteúdo.
+- Oferece botões grandes e sensíveis ao toque (altura mínima de 44 px).
+- Simplifique a navegação com opções claras de voltar/avançar.
+- Minimize a rolagem em cada seção.
+- Foco automático no primeiro campo para exibir o teclado.
 
-## Consulte também:
+**Diretrizes Específicas de Campo:**
 
-{#see-more-eds-forms}
+- **Entradas de texto:** Largura total com preenchimento de amostra.
+- **Menus suspensos:** use elementos nativos selecionados para obter uma melhor experiência de toque.
+- **Seletores de data:** use entradas de data nativas para compatibilidade móvel.
+- **Carregamentos de arquivos:** forneça áreas de carregamento grandes e claras.
+
++++
+
++++Otimização do tablet (768px-1199px)
+
+**Estratégias de layout:**
+
+- Use layouts de duas colunas para campos relacionados.
+- Teste as orientações retrato e paisagem.
+- São compatíveis com interações com toque e mouse.
+- Fornecer áreas de conteúdo maiores, mantendo a legibilidade.
+
++++
+
++++Otimização de desktop (1200px+)
+
+**Recursos Avançados:**
+
+- Use layouts de várias colunas para um uso eficiente do espaço.
+- Ofereça atalhos de teclado para usuários avançados.
+- Implemente estados de focalização para feedback interativo.
+- Fornecer validação avançada com mensagens de erro detalhadas.
+
++++
+
+## Solução de problemas abrangente
+
+### Problemas de layout
+
++++Quebras de layout de formulário em dispositivos móveis
+
+**Causas Comuns:**
+
+- Elementos de largura fixa que não são dimensionados
+- CSS projetado para layouts de desktop
+- Imagens ou conteúdo que excedem seus contêineres
+
+**Soluções:**
+
+- Verifique se as imagens e os contêineres são dimensionados de acordo com o tamanho da tela.
+- Use um design móvel com aprimoramento progressivo.
+- Teste com emuladores de dispositivo e dispositivos reais.
+- Use dimensionamento flexível em vez de dimensões fixas.
+
++++
+
++++Destinos de toque muito pequenos
+
+**Causas Comuns:**
+
+- Botões menores que 44px × 44px
+- Elementos interativos posicionados muito próximos
+- Substituição de padrões amigáveis ao toque por CSS personalizado
+
+**Soluções:**
+
+- Verifique se todos os elementos interativos estão no mínimo em 44px × 44px.
+- Adicionar espaçamento entre botões e links.
+- Teste a interação com os dedos reais, não apenas com o mouse.
+- Aumente as áreas de destino de toque para facilitar o toque.
+
++++
+
++++Problemas de estouro de conteúdo
+
+**Causas Comuns:**
+
+- Texto longo ou rótulos que não quebram automaticamente
+- Contêineres de largura fixa
+- Imagens que não são dimensionadas corretamente
+
+**Soluções:**
+
+- Ativar quebra de texto para conteúdo longo.
+- Use imagens responsivas que sejam dimensionadas adequadamente.
+- Implementar layouts flexíveis que se adaptam ao conteúdo.
+- Teste com vários comprimentos de conteúdo.
+
++++
+
+### Problemas de desempenho
+
++++Carregamento lento em dispositivos móveis
+
+**Causas Comuns:**
+
+- Imagens grandes não otimizadas para dispositivos móveis
+- Execução excessiva do JavaScript
+- Muitos campos de formulário carregando de uma vez
+
+**Soluções:**
+
+- Otimizar imagens para tamanhos de tela diferentes.
+- Carregue conteúdo não crítico somente quando necessário.
+- Use técnicas para acelerar o carregamento móvel.
+- Minimize scripts e widgets de terceiros.
+
++++
+
+### Problemas de teste e validação
+
++++Emulador vs. Diferenças reais do dispositivo
+
+**Causas Comuns:**
+
+- Diferenças de renderização específicas do navegador
+- Diferenças de interação entre toque e mouse
+- Variações de velocidade da rede
+
+**Soluções:**
+
+- Testar em dispositivos reais sempre que possível.
+- Use vários navegadores para testes de emulador.
+- Simular velocidades de rede diferentes durante o teste.
+- Validar com usuários reais em ambientes de destino.
+
++++
+
+## Métricas de sucesso para o Responsive Forms
+
++++Indicadores-chave de desempenho
+
+**Métricas de experiência do usuário:**
+
+- **Taxa de conclusão de formulário:** Target 85%+ em dispositivos móveis
+- **Tempo para concluir:** o tempo de conclusão móvel deve estar dentro de 20% da área de trabalho
+- **Taxa de erros:** Menos de 5% de erros de validação
+- **Pontos de abandono:** identifique onde os usuários caem
+
+**Desempenho Técnico:**
+
+- **Tempo de carregamento da página:** Em 3 segundos em redes 3G
+- **Web Vitals Principais:** Aprovados em todos os benchmarks de desempenho da Google
+- **Pontuação de acessibilidade:** Conformidade com a WCAG 2.1 AA
+- **Compatibilidade entre navegadores:** Funcionalidade 98%+ nos principais navegadores
+
++++
+
++++Lista de verificação de teste
+
+**Antes de publicar:**
+
+- Teste o formulário em dispositivos móveis reais.
+- Verifique se todos os destinos de toque têm pelo menos 44px × 44px.
+- Verifique a legibilidade do texto em todos os tamanhos de tela.
+- Confirmar se a validação de formulário funciona em todos os dispositivos.
+- Verifique se o tempo de carregamento está abaixo de 3 segundos no dispositivo móvel.
+- Verifique se todos os elementos interativos estão acessíveis.
+- Teste o envio de formulário em todos os dispositivos compatíveis.
+
++++
+
+## Próximas etapas
+
+**Ações imediatas:**
+
+1. **Faça a auditoria dos formulários atuais:** Teste formulários existentes usando o emulador de dispositivo.
+2. **Identifique ganhos rápidos:** corrija primeiro problemas óbvios de usabilidade móvel.
+3. **Priorizar formulários de alto tráfego:** Concentre-se nos formulários com maior impacto para o usuário.
+4. **Implemente uma abordagem móvel:** comece com o menor design de tela.
+
+**Otimização avançada:**
+
+- **Monitoramento de desempenho**: configure análises para rastrear métricas de formulário.
+- **Teste A/B:** experimente com diferentes layouts e abordagens.
+- **Coleção de comentários do usuário:** Obtenha insights de usuários reais.
+- **Aperfeiçoamento contínuo:** examine e otimize formulários regularmente.
+
+

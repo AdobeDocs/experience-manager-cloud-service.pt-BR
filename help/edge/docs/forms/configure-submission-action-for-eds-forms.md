@@ -4,320 +4,227 @@ description: Saiba como configurar ações de envio no AEM Forms usando o Edge D
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '2166'
-ht-degree: 0%
+source-wordcount: '855'
+ht-degree: 3%
 
 ---
 
-# Configuração dos envios de formulários: para onde vão seus dados?
+# Configurar ações de envio para o AEM Forms
 
-Depois que um usuário clicar em **enviar** no seu formulário, você precisará informar à Edge Delivery Services o que fazer com esses dados. Você tem duas opções principais:
+Configure o manuseio de envio de formulário para rotear dados para planilhas, emails ou sistemas de back-end usando o AEM Forms com o Edge Delivery Services.
 
-## Método 1: usar o serviço de envio do AEM Forms (simplificado)
+## Guia de decisão rápida
 
-Esse serviço é ideal para ações comuns e diretas, como enviar dados para uma planilha ou um email.
+Escolha seu método de envio:
 
-**O que é e como ele pode ajudá-lo?**
+| Método | Melhor para | Complexidade da configuração | Casos de uso |
+|--------|----------|------------------|-----------|
+| **Serviço de Envio do Forms** | Captura de dados simples | Baixa | Formulários de contato, pesquisas, coleta básica de dados |
+| **Envio de publicação do AEM** | Fluxos de trabalho complexos | Alta | Integrações empresariais, processamento personalizado, fluxos de trabalho |
 
-O [Serviço de Envio do Forms](/help/forms/forms-submission-service.md) é um ponto de extremidade hospedado pela Adobe. Quando o formulário envia dados para ele, esse serviço assume o controle e executa uma ação pré-configurada. Ele foi projetado para ser fácil de configurar. Você Pode Configurar: Enviando para Planilhas ou E-mail:
+## Pré-requisitos
 
-* **Enviar para Planilha:** Adicione automaticamente os dados do formulário enviado como uma nova linha em uma Planilha do Google ou em um arquivo do Microsoft Excel (armazenado no OneDrive ou no SharePoint).
-* **Enviar Email:** Enviar um email contendo os dados de formulário para um ou mais endereços de email que você especificar.
+Antes de configurar ações de envio, verifique se você tem:
 
-#### Importante: requisitos de configuração
+- Instância do AEM Forms as a Cloud Service
+- Projeto do Edge Delivery Services configurado
+- Formulário criado usando Criação de Documento ou Editor Universal
+- Permissões necessárias para destinos de destino (planilhas, sistemas de email ou AEM)
 
-* **Acesso à Planilha:** Para enviar dados a uma Planilha do Google ou a um arquivo do Excel no OneDrive/SharePoint, a conta de serviço da Adobe (geralmente `forms@adobe.com`) geralmente precisa de **permissão de edição** nessa planilha específica.
-* **Programa de Acesso Antecipado** Alguns recursos deste serviço, especialmente para planilhas, podem fazer parte de um programa de acesso antecipado. Talvez seja necessário solicitar acesso enviando um email para `aem-forms-ea@adobe.com` ou preenchendo um formulário específico do Adobe com os detalhes do projeto. Sempre verifique a documentação mais recente do Adobe.
++++ Método 1: Serviço de envio do Forms
 
-**Fluxograma do Serviço de Envio do Forms**
-<!--
-```mermaid
-    graph TD
-    UserForm[User Submits Form on Your EDS Site] >|Data Sent| FormSubmissionService[AEM Forms Submission Service]
-    FormSubmissionService -- "If configured for Google Sheets" > GoogleSheet[Data written to Google Sheet]
-    FormSubmissionService -- "If configured for Excel (OneDrive or SharePoint)" > ExcelSheet[Data written to Excel]
-    FormSubmissionService -- "If configured for Email" > Email[Email with data is sent]
+O Serviço de envio da Forms é um terminal hospedado pela Adobe ideal para cenários simples de captura de dados.
 
-    style UserForm fill:#ccf,stroke:#333
-    style FormSubmissionService fill:#fca,stroke:#333
-    style GoogleSheet fill:#90ee90,stroke:#333
-    style ExcelSheet fill:#90ee90,stroke:#333
-    style Email fill:#add8e6,stroke:#333
-```-->
+### Destinos suportados
 
-![Envio de Forms](/help/forms/assets/eds-fss.png)
+- **Planilhas**: Google Sheets, Microsoft Excel (OneDrive/SharePoint)
+- **Email**: enviar dados de formulário para endereços de email especificados
 
-Este fluxograma mostra como o Serviço de Envio do Forms pega os dados enviados e os envia para uma planilha ou email configurado.
+### Etapas de configuração
 
-## Método 2: enviar para sua instância de publicação do AEM (avançado)
+1. **Configurar Acesso ao Destino**
+   - Para planilhas: Conceder permissão de edição a `forms@adobe.com` na planilha de destino
+   - Para email: verifique se os endereços de email dos recipients estão acessíveis
 
-Para necessidades mais complexas, os [formulários (especialmente aqueles criados com o Universal Editor) podem enviar dados diretamente para sua instância de Publicação do AEM as a Cloud Service](/help/forms/configure-submit-actions-core-components.md). Isso libera toda a capacidade de back-end do AEM.
+2. **Configurar Envio de Formulário**
+   - Abrir o formulário no ambiente de criação
+   - Definir a ação de envio como &quot;Serviço de envio do Forms&quot;
+   - Especificar URL da planilha de destino ou endereços de email
+   - Salvar e publicar o formulário
 
-**Quando Você Precisa Enviar para o AEM Publish?**
+3. **Envio de teste**
+   - Enviar dados de teste por meio do formulário
+   - Verificar se os dados aparecem no destino
+   - Verificar logs de erros se o envio falhar
 
-* Para acionar Workflows personalizados do AEM após o envio.
-* Usar o Modelo de dados de formulário (FDM) do AEM para integrar-se a bancos de dados ou outros sistemas corporativos.
-* Para conectar-se a serviços de terceiros, como Marketo, Microsoft Power Automate ou Adobe Workfront Fusion.
-* Para armazenar dados em locais específicos, como o Armazenamento de blobs do Azure ou bibliotecas de listas/documentos do SharePoint (não apenas planilhas simples).
-* Quando você tem validação complexa do lado do servidor ou lógica de processamento de dados no AEM.
+### Observações importantes
 
-**Ações de Envio Disponíveis (Envios de Publicação do AEM)**
+- A conta de serviço `forms@adobe.com` requer acesso de edição para planilhas de destino
+- As notificações por email são enviadas imediatamente após o envio do formulário
+- A validação de dados ocorre no nível de serviço
 
-* [Enviar para um terminal REST](/help/forms/configure-submit-action-restpoint.md)
-* [Enviar e-mail (usando os serviços de e-mail da AEM)](/help/forms/configure-submit-action-send-email.md)
-* [Enviar usando o Modelo de dados de formulário (FDM)](/help/forms/configure-data-sources.md)
-* [Chamar um fluxo de trabalho do AEM](/help/forms/aem-forms-workflow-step-reference.md)
-* [Enviar para o SharePoint (como itens de lista ou documentos)](/help/forms/configure-submit-action-sharepoint.md)
-* [Enviar para o OneDrive (como documentos)](/help/forms/configure-submit-action-onedrive.md)
-* [Enviar para o Armazenamento de blob do Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [Enviar para o Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-* [Enviar para o Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Enviar para o Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+![Fluxo do Serviço de Envio do Forms](/help/forms/assets/eds-fss.png)
 
->[!NOTE]
->
-> Mesmo direcionando uma Planilha/Excel do AEM Publish para o Google, isso envolve etapas de configuração diferentes do Serviço de envio direto do Forms.
++++
 
-**Fluxograma de Envio de Publicação do AEM**
++++ Método 2: envio de publicação do AEM
 
-<!--```mermaid
-    graph TD
-    UEForm[User Submits Universal Editor Form on EDS Site] >|Data sent to AEM Publish URL - example: /adobe/forms/af/submit/...| AEMPublish[AEM Publish Instance]
-    AEMPublish -- Configured to run AEM Workflow > AEMWorkflow[AEM Workflow is Triggered]
-    AEMPublish -- Configured to use Form Data Model > FDM[FDM updates Backend System or Database]
-    AEMPublish -- Configured for Marketo > Marketo[Data sent to Marketo Engage]
-    AEMPublish -- Other configured actions... > OtherIntegrations[...]
+Envie dados de formulário diretamente para a instância de publicação do AEM as a Cloud Service para processamento complexo.
 
-    style UEForm fill:#ccf,stroke:#333
-    style AEMPublish fill:#fca,stroke:#333
-    style AEMWorkflow fill:#add8e6,stroke:#333
-    style FDM fill:#add8e6,stroke:#333
-    style Marketo fill:#add8e6,stroke:#333
-```-->
+### Quando usar a publicação do AEM
 
-![Fluxograma de Envio de Publicação do AEM](/help/forms/assets/eds-aem-publish.png)
-Este fluxograma mostra um formulário sendo enviado para o AEM Publish, que então lida com tarefas complexas de backend.
+- Fluxos de trabalho personalizados do AEM necessários após envio
+- Integração do Form Data Model (FDM) com bancos de dados
+- Integrações de serviços de terceiros (Marketo, Power Automate, Workfront Fusion)
+- Armazenamento Azure Blob ou bibliotecas de documentos do SharePoint
+- Validação ou lógica de processamento complexa do lado do servidor
 
-### Envio do serviço de envio do Forms versus envio de publicação do AEM
+### Ações de envio disponíveis
 
-| Destaque | Serviço de envio de Forms | Envios de publicação do AEM |
-| :- | :- | :-- |
-| **Melhor para** | Captura de dados simples em planilhas, notificações por email | Fluxos de trabalho complexos, integrações empresariais, lógica personalizada |
-| **Criação de formulário** | Bom para baseado em documento; ok para formulários UE simples | Melhor para formulários criados pelo Universal Editor |
-| **Esforço de instalação** | Baixa (geralmente configuração simples) | Mais alto (precisa da configuração do AEM Publish, Dispatcher, OSGi, CDN) |
-| **Sistema de back-end** | Serviço hospedado pela Adobe | Sua instância de publicação do AEM as a Cloud Service |
-| **Flexibilidade** | Limitado a Planilha/Email | Uma gama completa e muito flexível de ações do AEM Forms |
-| **Exemplo** | Entrar em contato com dados de formulário para uma planilha do Google | Aplicativo de empréstimo acionando um fluxo de trabalho de aprovação do AEM |
+- [Enviar para endpoint REST](/help/forms/configure-submit-action-restpoint.md)
+- [Enviar email por meio dos serviços de email da AEM](/help/forms/configure-submit-action-send-email.md)
+- [Enviar usando modelo de dados do formulário](/help/forms/configure-data-sources.md)
+- [Chamar fluxo de trabalho de AEM](/help/forms/aem-forms-workflow-step-reference.md)
+- [Enviar para o SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+- [Enviar para o OneDrive](/help/forms/configure-submit-action-onedrive.md)
+- [Enviar para o Armazenamento de blob do Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
+- [Enviar para o Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+- [Enviar para o Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+- [Enviar para o Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-## Como incorporar o Forms em diferentes sites ou páginas
+![Fluxo de envio de publicação do AEM](/help/forms/assets/eds-aem-publish.png)
 
-Às vezes, você deseja exibir um formulário criado e gerenciado em um local (por exemplo, um &quot;site de formulários&quot; central) em uma página da Web ou site diferente.
+### Requisitos de configuração
 
-### Por que você incorporaria um formulário?
+#### &#x200B;1. Configuração do AEM Dispatcher
 
-* Você tem um formulário padrão &quot;Fale conosco&quot; criado com o Universal Editor que precisa aparecer em várias páginas de aterrissagem criadas com a Criação baseada em documento.
-* O conteúdo principal do site está no Document Authoring (DA) e você precisa incluir um formulário especializado.
-* Você deseja reutilizar um formulário único e bem mantido em vários projetos diferentes de EDS.
+Configure o Dispatcher na sua instância de publicação do AEM:
 
-### Como funciona tecnicamente a incorporação de formulários
+- **Permitir Caminhos de Envio**: Modificar `filters.any` para permitir solicitações POST para `/adobe/forms/af/submit/...`
+- **Sem redirecionamentos**: certifique-se de que as regras do Dispatcher não redirecionem caminhos de envio de formulário
 
-A página onde você deseja que o formulário apareça (vamos chamá-la de &quot;Página de host&quot;) conterá algum código (geralmente um bloco ou script especial). Quando um usuário visita a página do host, esse código faz uma solicitação para o URL onde o formulário real está hospedado (vamos chamá-lo de &quot;Form Source&quot;). O Form Source envia de volta sua HTML, que a Página do host injeta e exibe.
+#### &#x200B;2. Filtro referenciador OSGi
 
-**Arquitetura de Formulário Inserida**
+No console OSGi do AEM (`/system/console/configMgr`):
 
-<!--```mermaid
-   graph LR
-    User[User] >|Visits| HostPage[Host Page - for example: your-site.com/landing-page]
-    HostPage >|Contains code to embed form| FetchForm{Host Page Requests Form HTML}
-    FetchForm >|HTTP GET request to the form URL| FormSource[Form Source - for example: forms-repo.hlx.page/my-form]
-    FormSource >|Returns form HTML| FetchForm
-    FetchForm >|Injects form HTML into page| HostPage
-    HostPage >|Displays full page with embedded form| User
+1. Localizar &quot;Filtro referenciador Apache Sling&quot;
+2. Adicione seu domínio do Edge Delivery à lista &quot;Permitir hosts&quot;
+3. Incluir domínios como `https://your-eds-domain.hlx.page`
 
-    subgraph Submission ["Form Submission from Host Page"]
-        HostPage_Form[Embedded form on the host page] >|User submits| TargetEndpoint[Submission endpoint - FSS or AEM Publish]
-    end
+#### &#x200B;3. Regras de redirecionamento da CDN
 
-    style HostPage fill:#e6f3ff,stroke:#333
-    style FormSource fill:#ffe6e6,stroke:#333
-    style FetchForm fill:#fff2cc,stroke:#333
-    style Submission fill:#f0fff0,stroke:#333
-```-->
+Configure sua CDN do Edge Delivery para rotear envios:
+
+- Rotear solicitações de `/adobe/forms/af/submit/...` para sua instância de publicação do AEM
+- A implementação varia de acordo com o provedor de CDN (Fastly, Akamai, Cloudflare)
+
+#### &#x200B;4. Configuração do formulário
+
+1. Criar formulário no Editor Universal
+2. Configurar ação de envio para ação do AEM Forms de destino
+3. Especificar caminho de ponto de extremidade de envio
+4. Publicar formulário no site do Edge Delivery
+
++++
+
++++ Incorporação de formulários (opcional)
+
+Incorpore formulários criados em um local em diferentes páginas da Web ou sites.
+
+### Casos de uso
+
+- Reutilizar formulários padrão em várias páginas de destino
+- Incluir formulários especializados em conteúdo criado por documento
+- Manter formulário único em vários projetos de EDS
+
+### Configuração do CORS
+
+Configure o Compartilhamento de recursos entre origens na origem do formulário:
+
+1. **Adicionar cabeçalhos CORS** para formar respostas de origem:
+   - `Access-Control-Allow-Origin: https://your-host-domain.com`
+   - `Access-Control-Allow-Methods: GET, OPTIONS`
+   - `Access-Control-Allow-Headers: Content-Type`
+
+2. **Exemplo de configuração**:
+
+       # Configuração do site que hospeda o formulário
+       cabeçalhos:
+       - caminho: /forms/**
+       personalizado:
+       Controle de Acesso com Permissão de Origem: https://host-domain.com
+       Métodos de permissão de controle de acesso: GET, OPTIONS
+   
+### Etapas de incorporação
+
+1. **Criar e Publicar Formulário**
+   - Criar formulário usando Criação de Documento ou Editor Universal
+   - Configurar o método de envio (FSS ou Publicação do AEM)
+   - Publicar no URL independente
+
+2. **Configurar CORS**
+   - Configurar cabeçalhos CORS no site de origem do formulário
+   - Permitir que o domínio da página de host busque o formulário
+
+3. **Incorporar na Página de Host**
+   - Adicionar bloco de incorporação de formulário à página do host
+   - Aponte o bloco para o URL do formulário publicado
+   - Publicar página de host
 
 ![Arquitetura de Formulário Inserida](/help/forms/assets/eds-embedded-form.png)
-Este diagrama mostra a Página de host que busca o formulário HTML no Form Source e o exibe. O envio usa o ponto de extremidade configurado do formulário original.
 
-## Configuração do CORS para Forms incorporado
++++
 
-[O CORS (Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) é um recurso de segurança do navegador. Se sua Página de Host (por exemplo, `site-a.com`) tentar buscar um formulário de um domínio diferente (por exemplo, `forms-site-b.com`), o navegador a bloqueará, a menos que `forms-site-b.com` permita explicitamente por meio de cabeçalhos CORS.
++++ Problemas comuns
 
-Sem os cabeçalhos CORS corretos no **servidor do Form Source**, o navegador impede que a Página de Host carregue o formulário, e seu formulário inserido não seria exibido.
+| Problema | Solução |
+|-------|----------|
+| **Falha no envio do formulário** | Verifique os erros do console, verifique o URL do endpoint e confirme as permissões |
+| **Formulário inserido não aparece** | Configure os cabeçalhos CORS na origem do formulário e verifique o URL do formulário |
+| Erros **403/401 com o AEM** | Atualize o filtro do referenciador Sling, verifique as configurações de autenticação |
+| **Dados não atingindo a planilha** | Verificar se `forms@adobe.com` tem acesso de edição, verificar URL da planilha |
+| **Erros do CORS** | Adicionar cabeçalhos `Access-Control-Allow-Origin` adequados à origem do formulário |
 
-### Como configurar o CORS no site que atende ao seu formulário?
++++
 
-Você precisa configurar o servidor que hospeda o **Form Source** para enviar cabeçalhos HTTP específicos em sua resposta. O método exato depende da configuração do EDS (por exemplo, para projetos do Franklin, isso geralmente é feito em um `helix-config.yaml` ou em um arquivo de configuração semelhante no repositório do GitHub que controla o comportamento do CDN ou a lógica do trabalhador de borda).
-Cabeçalhos principais a serem adicionados às respostas do Form Source:
+## Exemplos de configuração
 
-* `Access-Control-Allow-Origin: <URL_of_Host_Page>` (por exemplo, `https://your-site.com`). Para testes, você pode usar `*`, mas para produção, especifique os domínios exatos.
-* `Access-Control-Allow-Methods: GET, OPTIONS` (Talvez seja necessário `POST` se o envio do formulário também tiver origem cruzada, mas os envios normalmente têm uma origem diferente ou um ponto de extremidade configurado especificamente).
-* `Access-Control-Allow-Headers: Content-Type` (e quaisquer outros cabeçalhos personalizados que sua busca de formulários possa usar).
++++ Formulário Baseado em Documento com Envio de Planilha
 
-**Exemplo (conceitual para um arquivo de configuração):**
+1. Criar estrutura de formulário no Google Docs/Sheets
+2. Configurar ponto de extremidade do Serviço de envio do Forms
+3. Conceder acesso de edição `forms@adobe.com` à planilha de destino
+4. Publicar documento no site do Edge Delivery
+5. Testar envio de formulário e fluxo de dados
 
-```yaml
-        # In the configuration for the site HOSTING THE FORM (Form Source)
-        headers:
-          # Apply to paths where your forms are served, e.g., /forms/**
-          - path: /forms/**
-            custom:
-              Access-Control-Allow-Origin: https://host-page-domain.com
-              Access-Control-Allow-Methods: GET, OPTIONS
-```
++++
 
-## Considerações adicionais: CDNs e bases de código múltiplas (Helix 4)
++++ Formulário do editor universal com fluxo de trabalho do AEM
 
-* **Regras de CDN:** seu CDN pode oferecer maneiras de solicitações de proxy. Por exemplo, uma solicitação para `host-page.com/embedded-form` pode ser roteada internamente pela CDN para buscar conteúdo de `form-source.com/actual-form`, fazendo com que apareça a mesma origem para o navegador. A configuração pode ser complexa.
-* **Várias bases de código (Helix 4):** Se a sua página de host e o Form Source estiverem em repositórios GitHub diferentes (comum nas configurações do Helix 4), verifique se qualquer &quot;Bloco de formulários&quot; do JavaScript necessário para renderizar ou gerenciar o formulário está disponível na base de código da página de host, ou se o formulário que o HTML buscou no Form Source está independente de toda a sua JavaScript necessária. Os documentos originais mencionam que para &quot;helix4 com bases de código diferentes, então você precisa adicionar o bloco Form em ambas as bases de código.&quot;
+1. Criar formulário no Editor Universal
+2. Configurar a ação de envio para &quot;Chamar fluxo de trabalho do AEM&quot;
+3. Configurar o Dispatcher e o filtro de referenciador no AEM Publish
+4. Configurar regras de roteamento CDN
+5. Publicar formulário e testar a execução do fluxo de trabalho
 
-### Etapas comuns de configuração e configuração da arquitetura
++++
 
-Estas são algumas maneiras comuns de configurar seus formulários, combinando métodos de criação com estratégias de envio, juntamente com pontos principais de configuração.
+## Práticas recomendadas
 
-#### Formulário Baseado em Documento com Envio de Planilha/Email
+- **Use o Serviço de Envio do Forms** para cenários simples de captura de dados
+- **Escolha Publicar no AEM** quando um processamento complexo ou integrações forem necessários
+- **Testar completamente** no ambiente de preparo antes da implantação de produção
+- **Monitorar envios** usando logs do AEM e erros de console
+- **Implementar a manipulação adequada de erros** para envios com falha
+- **Validar dados** nos níveis de cliente e servidor
+- **Usar HTTPS** para todos os envios de formulários e transmissão de dados
 
-Esta é a configuração mais simples. Você cria seu formulário no Word/Google Docs e ele envia dados para uma planilha ou email por meio do Serviço de envio do Forms.
+## Tópicos relacionados
 
-1. Defina o formulário em um Documento/Folha do Word/Google usando a estrutura de tabela ou o bloco de formulário especificado.
-1. No documento (ou na configuração relacionada), especifique o URL da planilha de destino ou o endereço de email do Serviço de envio do Forms.
-1. Verifique se `forms@adobe.com` (ou a conta de serviço relevante) tem acesso de edição à planilha de destino.
-1. Publique seu documento no site do Edge Delivery.
-
-**Baseado em Documento + Arquitetura do Forms Submissions Service**
-<!--
-```mermaid
-    graph TD
-        User[<img src='https://img.icons8.com/ios-filled/50/000000/user.png' width='30' /> User] >|Fills Out| EDS_Page_DocBased[EDS Page with Document-Based Form]
-        EDS_Page_DocBased >|Submits Data| FSS[AEM Forms Submission Service]
-        FSS > Target[<img src='https://img.icons8.com/color/48/000000/google-sheets.png' width='30' /> Data to Spreadsheet / <img src='https://img.icons8.com/color/48/000000/filled-sent.png' width='30' /> Email Notification]
-
-        Authoring[Form defined in Google Doc/Sheet] >|EDS Syncs & Renders| EDS_Page_DocBased
-
-        style EDS_Page_DocBased fill:#ccf,stroke:#333
-        style FSS fill:#fca,stroke:#333
-        style Target fill:#90ee90,stroke:#333
-        style Authoring fill:#e6ffe6,stroke:#333
-```-->
-
-![Baseado em Documento + Arquitetura do Forms Submissions Service](/help/forms/assets/eds-doc-fss.png)
-
-#### Formulário do Editor Universal com Envio de Planilha/Email
-
-Você usa o editor universal visual para criar o formulário, mas ainda usa o serviço simples de envio do Forms para captura de dados.
-
-1. Crie o formulário usando o Editor universal no AEM.
-1. Configure a ação de envio do formulário no UE para usar a opção &quot;Enviar para o serviço de envio do Forms&quot;.
-1. Especifique o URL da planilha de destino ou o endereço de email.
-1. Se estiver usando planilhas, verifique se `forms@adobe.com` tem acesso de edição.
-1. Publique sua página contendo o formulário do AEM no site do Edge Delivery.
-
-   **Editor Universal + Arquitetura do Serviço de Envio do Forms**
-
-   ![Editor Universal + Arquitetura do Serviço de Envio do Forms](/help/forms/assets/eds-ue-fss.png)
-
-   <!--```mermaid
-    graph TD
-    User[User] >|Fills Out| EDS_Page_UE[EDS Page with Universal Editor Form]
-    EDS_Page_UE >|Submits Data| FSS[AEM Forms Submission Service]
-    FSS > Target[Data sent to Google Sheet and Email Notification]
-    AuthoringUE[Form built in Universal Editor - AEM] >|AEM Publishes to EDS| EDS_Page_UE
-    style EDS_Page_UE fill:#ccf,stroke:#333
-    style FSS fill:#fca,stroke:#333
-    style Target fill:#90ee90,stroke:#333
-    style AuthoringUE fill:#e6f3ff,stroke:#333
-    ```
-    -->
-
-#### Formulário do Editor universal com envio de publicação do AEM (avançado)
-
-Essa configuração usa o Editor universal para a criação de formulários e a instância de publicação do AEM para um processamento avançado de back-end (workflows, FDM etc.). Isso requer mais configuração.
-
-1. **Criar Formulário no UE:** Crie seu formulário no Editor Universal. Configure sua ação de envio para apontar para uma ação do AEM Forms (por exemplo, &quot;Chamar um fluxo de trabalho do AEM&quot;, &quot;Enviar usando o modelo de dados de formulário&quot;).
-1. **Configuração do AEM Dispatcher (na sua camada de Publicação do AEM):**
-   * **Nenhum redirecionamento:** verifique se as regras do Dispatcher fazem *não* solicitações de redirecionamento feitas para caminhos `/adobe/forms/af/submit/...`.
-   * **Permitir envios:** modifique seus filtros do Dispatcher (por exemplo, em `filters.any`) para `allow` explicitamente solicitações POST para `/adobe/forms/af/submit/...` do domínio ou endereços IP de seu site do Edge Delivery.
-1. **Filtro Referenciador OSGi no AEM (na sua camada de Publicação do AEM):**
-   * No console OSGi do AEM (`/system/console/configMgr`), localize e configure o &quot;Filtro referenciador do Apache Sling&quot;.
-   * Adicione o(s) domínio(s) do site do Edge Delivery (por exemplo, `https://your-eds-domain.hlx.page`, `https://your-custom-eds-domain.com`) à lista &quot;Permitir hosts&quot; ou &quot;Permitir hosts RegExp&quot;. Isso instrui o AEM a aceitar envios originados de seu site EDS.
-1. **Regra de Redirecionamento da CDN (na sua CDN do Edge Delivery):**
-   * Seu site do Edge Delivery (por exemplo, `your-eds-domain.hlx.page`) precisa rotear corretamente as solicitações de envio para sua instância de Publicação do AEM.
-   * Quando o formulário na sua página de EDS for enviado, ele poderá ter como alvo um caminho relativo como `/adobe/forms/af/submit/...`. Você precisa de uma regra na CDN (ou trabalhador de borda) do Edge Delivery que diga: &quot;Se uma solicitação chegar a `your-eds-domain.hlx.page/adobe/forms/af/submit/...`, encaminhe (proxy ou redirecione) para `your-aem-publish-instance.com/adobe/forms/af/submit/...`.&quot;
-   * A implementação exata depende do seu provedor de CDN (por exemplo, Fastly VCL, Akamai Property Manager, Cloudflare Workers).
-1. **(Opcional) `constants.js` para Desenvolvimento (na base de código do projeto EDS):**
-   * Para desenvolvimento local ou se os scripts de formulário do lado do cliente precisarem saber a URL completa de publicação do AEM, você poderá configurá-la em um `constants.js` ou em um arquivo de configuração semelhante no repositório GitHub do projeto do Edge Delivery. Exemplo:
-
-   ```javascript
-       // in your-eds-project/scripts/constants.js
-       export const AEM_PUBLISH_URL = 'https://publish-p123-e456.adobeaemcloud.com';
-            // Your form submission script might then construct the submit URL:
-           // const submitUrl = `${AEM_PUBLISH_URL}/adobe/forms/af/submit/...`;
-   ```
-
-1. **Publicar:** publique a página do formulário do AEM no EDS e verifique se todas as configurações do AEM estão ativas na sua instância de Publicação do AEM.
-
-   **Editor Universal + Arquitetura de Publicação do AEM**
-
-![Editor Universal + Arquitetura de Publicação do AEM](/help/forms/assets/eds-aem-publish.png)
-
-Isso mostra o fluxo: o usuário envia no site do EDS, o CDN roteia para o AEM Dispatcher e, em seguida, o AEM Publish a processa.
-
-#### Incorporação de um formulário a uma página de Criação de documento (DA)
-
-O conteúdo principal do site é criado no Document Authoring (DA). Você cria o formulário usando a Criação baseada em documento ou o Editor universal separadamente e, em seguida, incorpora-o à página do DA.
-
-1. **Criar e Publicar o Formulário:**
-   * Use a Criação baseada em documento OU o Editor universal para criar o formulário.
-   * Configurar o método de envio (para o Serviço de envio do Forms ou para a Publicação do AEM, conforme Configuração 1, 2 ou 3).
-   * Publique este formulário para que ele esteja disponível em sua própria URL do Edge Delivery (por exemplo, `.../forms/my-special-form`).
-1. **Configurar o CORS:** No site/projeto do Edge Delivery que hospeda este formulário independente, verifique se os cabeçalhos do CORS estão configurados para permitir que o domínio do site de Criação de Documentos o busque.
-1. **Criar página no DA:** Crie ou edite sua página no Document Authoring.
-1. **Inserir bloco de formulário:** Use o bloco apropriado no DA para inserir uma URL externa. Aponte esse bloco para o URL do formulário publicado independente.
-1. **Publicar página do DA:** Publique sua página do DA. Agora ele buscará e exibirá o formulário.
-
-   **Forms Incorporado na Arquitetura DA**
-
-   ![Forms Incorporado na Arquitetura DA](/help/forms/assets/eds-forms-embedd-da.png)
-
-   Isso mostra uma página do DA que puxa um formulário de outro local do EDS. O formulário incorporado lida com seu próprio envio.
-
-## Resolução de problemas
-
-* **O envio do meu formulário não está funcionando.**
-   * **Verificar Erros do Console:** Abra o console do desenvolvedor do navegador (geralmente F12) e procure erros na guia Rede ou na guia Console ao enviar.
-   * **Verificar URL de Envio:** O formulário está tentando enviar para o ponto de extremidade correto (URL do Serviço de Envio do Forms ou caminho de Publicação do AEM)?
-   * **Serviço de Envio do Forms:** Se estiver enviando para uma planilha, `forms@adobe.com` recebeu acesso de edição? O URL da planilha está correto?
-   * **Envios de Publicação do AEM:**
-      * O seu Dispatcher está permitindo o envio de POST para `/adobe/forms/af/submit/...`?
-      * O Filtro referenciador Sling na publicação do AEM está configurado para permitir o domínio EDS?
-      * Suas regras de redirecionamento CDN para `/adobe/forms/af/submit/...` estão funcionando corretamente?
-
-* **Meu formulário inserido não está aparecendo.**
-
-   * **CORS!** Este é o motivo mais comum. Verifique se há erros de CORS no console do navegador. Verifique se o site *hospedagem* do formulário tem os cabeçalhos `Access-Control-Allow-Origin` corretos.
-   * **URL do formulário correto?** O código de inserção na página do host aponta para a URL ativa correta do formulário?
-   * **Blocos JavaScript:** Se o formulário depender de um &quot;Bloco de formulário&quot; JavaScript específico para renderização, o código desse bloco estará disponível na página do host?
-
-* **Recebo um &quot;403 Proibido&quot; ou &quot;401 Não Autorizado&quot; ao enviar para a Publicação do AEM.**
-
-   * Isso geralmente aponta para o Sling Referrer Filter na publicação do AEM, impedindo solicitações do seu domínio EDS. Verifique novamente a configuração.
-   * Também pode ser um problema de autenticação/autorização se o terminal de envio do AEM exigir, embora os envios de formulários padrão geralmente sejam anônimos.
-
-## Próximas etapas
-
-Este guia fornece uma visão geral do uso de formulários com o AEM Edge Delivery Services. Para obter instruções passo a passo mais detalhadas sobre configurações específicas, consulte a documentação oficial do Adobe Experience Manager:
-
-* [Criação baseada em documento com o Edge Delivery Services Forms](/help/edge/docs/forms/tutorial.md)
-* [Editor universal com o Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [Criação de Documentos (DA) e Incorporação de Conteúdo](https://www.aem.live/developer/da-tutorial)
-* [Serviço de envio de AEM Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+- [Criação baseada em documento com o EDS Forms](/help/edge/docs/forms/tutorial.md)
+- [Editor universal com EDS Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+- [Serviço de envio de AEM Forms](/help/forms/forms-submission-service.md)
+- [Configurar fontes de dados](/help/forms/configure-data-sources.md)
+- [Referência do fluxo de trabalho do AEM Forms](/help/forms/aem-forms-workflow-step-reference.md)

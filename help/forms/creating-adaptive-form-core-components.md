@@ -1,14 +1,14 @@
 ---
 title: Como criar um formulário adaptável com base nos Componentes principais?
-description: Saiba como criar um Formulário adaptável usando o  [!DNL Experience Manager Forms]. Os Forms adaptáveis são formulários de HTML5 responsivos que simplificam a coleta e o processamento de informações. Saiba mais sobre como criar um Formulário adaptável com base em um Modelo de dados de formulário (FDM) e um esquema XML ou JSON.
+description: Saiba como criar um Formulário adaptável usando o  [!DNL Experience Manager Forms]. Os Forms adaptáveis são formulários HTML5 responsivos que simplificam a coleta e o processamento de informações. Saiba mais sobre como criar um Formulário adaptável com base em um Modelo de dados de formulário (FDM) e um esquema XML ou JSON.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 812b1e41b460783d3fa220bd24ecfcfd4208a5df
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '2370'
-ht-degree: 44%
+source-wordcount: '2348'
+ht-degree: 45%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 44%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -24,9 +24,9 @@ Formulários adaptáveis permitem criar formulários envolventes, responsivos, d
 
 Antes de começar, saiba mais sobre o tipo de componentes do Forms disponíveis para você:
 
-* [Componentes principais de formulários adaptáveis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR): Esses são componentes de captura de dados padronizados. Esses componentes oferecem recursos de personalização, redução do tempo de desenvolvimento e dos custos de manutenção para suas experiências de inscrição digital. Um desenvolvedor pode personalizar e estilizar facilmente esses componentes. A Adobe recomenda o uso desses componentes modernos e extensíveis para desenvolver o Adaptive Forms.
+* [Componentes principais de formulários adaptáveis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR): Esses são componentes de captura de dados padronizados. Esses componentes oferecem recursos de personalização, redução do tempo de desenvolvimento e dos custos de manutenção para suas experiências de inscrição digital. Um desenvolvedor pode personalizar e estilizar facilmente esses componentes. A Adobe recomenda usar esses componentes modernos e extensíveis para desenvolver o Adaptive Forms.
 
-* [Componentes de fundamentais de formulários adaptáveis](creating-adaptive-form.md): esses são componentes clássicos (antigos) de captura de dados. Você pode continuar usando-os para editar seus componentes fundamentais já existentes com base no formulário adaptável. Se você estiver criando novos formulários, a Adobe recomenda o uso dos [Componentes principais do Adaptive Forms](creating-adaptive-form-core-components.md) para criar um Forms Adaptável.
+* [Componentes de fundamentais de formulários adaptáveis](creating-adaptive-form.md): esses são componentes clássicos (antigos) de captura de dados. Você pode continuar usando-os para editar seus componentes fundamentais já existentes com base no formulário adaptável. Se você estiver criando novos formulários, a Adobe recomenda usar os [Componentes principais do Forms Adaptive](creating-adaptive-form-core-components.md) para criar um Forms Adaptável.
 
 ![Assistente para criar um formulário adaptável](/help/release-notes/assets/wizard.png)
 
@@ -42,9 +42,9 @@ Você precisará do seguinte para criar um formulário adaptável:
    * O modelo `blank` está incluído em todos os novos programas do AEM Forms as a Cloud Service.
    * É possível instalar o pacote de referência, por meio do Gerenciador de pacotes, para adicionar o modelo `blank` para o seu programa do AEM Forms as a Cloud Service.
    * Você também pode [criar um modelo Adaptive Forms (Componentes principais)](/help/forms/template-editor-core-components.md) do zero.
-   * Você também pode implantar [modelos de amostra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR) em seu ambiente. Isso o ajuda a começar a criar formulários rapidamente.
+   * Você também pode implantar [modelos de amostra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) em seu ambiente. Isso o ajuda a começar a criar formulários rapidamente.
 
-* **Um tema de formulários adaptáveis**: um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes.  O modelo `Canvas` é incluído em todos os novos programas as a Cloud Service do AEM Forms. Você também pode implantar [temas de amostra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR) em seu ambiente. Isso o ajuda a começar a estilizar seus formulários e a fornecer uma estrutura básica para criar ou personalizar um tema de acordo com os requisitos da empresa.
+* **Um tema de formulários adaptáveis**: um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes.  O modelo `Canvas` é incluído em todos os novos programas do AEM Forms as a Cloud Service. Você também pode implantar [temas de amostra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) em seu ambiente. Isso o ajuda a começar a estilizar seus formulários e a fornecer uma estrutura básica para criar ou personalizar um tema de acordo com os requisitos da empresa.
 
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
@@ -55,7 +55,7 @@ Você precisará do seguinte para criar um formulário adaptável:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Criação de um Formulário adaptável  {#create-an-adaptive-form-core-components}
@@ -195,7 +195,7 @@ Você pode usar o serviço de preenchimento do modelo de dados de formulário pa
 1. Selecione **[!UICONTROL Salvar]** para salvar as propriedades.
 
 
-## Como renomear um formulário adaptável para AEM? {#rename-an-AEM-Adaptive-Form}
+## Como renomear um Formulário adaptável do AEM? {#rename-an-AEM-Adaptive-Form}
 
 Para renomear um formulário adaptável, execute as seguintes etapas:
 
@@ -204,22 +204,7 @@ Para renomear um formulário adaptável, execute as seguintes etapas:
 1. Altere o nome do formulário na guia **Título**, conforme mostrado na imagem abaixo.
 1. Clique em **Salvar e fechar**.
 
-![Renomear um Formulário adaptável de AEM](/help/forms/assets/change-af-name.png)
+![Renomear um Formulário adaptável do AEM](/help/forms/assets/change-af-name.png)
 
-<!--
 
-## See next
-
-* [Create style or themes for your forms](using-themes-in-core-components.md)
-* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR)
-
--->
-
-## Consulte também {#see-also}
-
-{{see-also}}
-* [Adicionar comportamento dinâmico a formulários usando o editor de regras](/help/forms/rule-editor-core-components.md)
-* [Definir layout de formulários para diferentes tamanhos de tela e tipos de dispositivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 

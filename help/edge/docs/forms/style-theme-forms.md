@@ -4,9 +4,9 @@ description: Personalizar temas e estilos do Edge Delivery Services para AEM For
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -22,51 +22,51 @@ Este documento descreve a estrutura do HTML para vários componentes de formulá
 
 Ao final do artigo, você irá:
 
-* Criar uma compreensão da estrutura do arquivo CSS padrão incluído no Bloco do Forms adaptável
-* Desenvolva uma compreensão da estrutura de HTML dos componentes de formulário fornecidos pelo bloco adaptável de Forms, incluindo componentes gerais e componentes específicos, como menus suspensos, grupos de rádio e grupos de caixas de seleção
-* Saiba como estilizar campos de formulário com base no tipo de campo e nos nomes de campo usando Seletores de CSS, permitindo um estilo consistente ou exclusivo com base nos requisitos
+- Criar uma compreensão da estrutura do arquivo CSS padrão incluído no Bloco do Forms adaptável
+- Desenvolva uma compreensão da estrutura de HTML dos componentes de formulário fornecidos pelo bloco adaptável de Forms, incluindo componentes gerais e componentes específicos, como menus suspensos, grupos de rádio e grupos de caixas de seleção
+- Saiba como estilizar campos de formulário com base no tipo de campo e nos nomes de campo usando Seletores de CSS, permitindo um estilo consistente ou exclusivo com base nos requisitos
 
 
 ## Noções básicas sobre tipos de campos de formulário
 
 Antes de mergulhar no estilo, vamos rever os [tipos de campo](/help/edge/docs/forms/form-components.md) de formulário comuns compatíveis com o Bloco de Forms adaptável:
 
-* Campos de entrada: incluem entradas de texto, entradas de email, entradas de senha e muito mais
-* Grupos de caixas de seleção: usado para selecionar várias opções
-* Grupos de opções: usados para selecionar apenas uma opção de um grupo
-* Menus suspensos: também conhecido como caixas de seleção, usadas para selecionar uma opção de uma lista
-* Painéis/Contêineres: usados para agrupar elementos de formulário relacionados
+- Campos de entrada: incluem entradas de texto, entradas de email, entradas de senha e muito mais
+- Grupos de caixas de seleção: usado para selecionar várias opções
+- Grupos de opções: usados para selecionar apenas uma opção de um grupo
+- Menus suspensos: também conhecido como caixas de seleção, usadas para selecionar uma opção de uma lista
+- Painéis/Contêineres: usados para agrupar elementos de formulário relacionados
 
 ## Princípios básicos de estilo
 
 Entender os [conceitos CSS fundamentais](https://www.w3schools.com/css/css_intro.asp) é fundamental antes de estilizar campos de formulário específicos:
 
-* [Seletores](https://www.w3schools.com/css/css_selectors.asp): os Seletores de CSS permitem direcionar elementos HTML específicos para o estilo. Você pode usar seletores de elemento, seletores de classe ou seletores de ID
-* [Propriedades](https://www.w3schools.com/css/css_syntax.asp): as propriedades CSS definem a aparência visual dos elementos. As propriedades comuns para os campos de formulário de estilo incluem cor, cor de fundo, borda, preenchimento, margem e muito mais
-* [Modelo de caixa](https://www.w3schools.com/css/css_boxmodel.asp): o modelo de caixa CSS descreve a estrutura dos elementos do HTML como uma área de conteúdo cercada por preenchimento, bordas e margens
-* Flexbox/Grade: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) e [Layouts de grade](https://www.w3schools.com/css/css_grid.asp) são ferramentas eficientes para criar designs responsivos e flexíveis
+- [Seletores](https://www.w3schools.com/css/css_selectors.asp): os Seletores de CSS permitem direcionar elementos HTML específicos para o estilo. Você pode usar seletores de elemento, seletores de classe ou seletores de ID
+- [Propriedades](https://www.w3schools.com/css/css_syntax.asp): as propriedades CSS definem a aparência visual dos elementos. As propriedades comuns para os campos de formulário de estilo incluem cor, cor de fundo, borda, preenchimento, margem e muito mais
+- [Modelo de caixa](https://www.w3schools.com/css/css_boxmodel.asp): o modelo de caixa CSS descreve a estrutura dos elementos do HTML como uma área de conteúdo cercada por preenchimento, bordas e margens
+- Flexbox/Grade: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) e [Layouts de grade](https://www.w3schools.com/css/css_grid.asp) são ferramentas eficientes para criar designs responsivos e flexíveis
 
 ## Criar um estilo de formulário para o bloco adaptável do Forms
 
 O bloco Forms adaptável oferece uma estrutura HTML padronizada, simplificando o processo de seleção e estilo de componentes de formulário:
 
-* **Atualizar estilos padrão**: você pode modificar os estilos padrão de um formulário editando o arquivo `/blocks/form/form.css`. Esse arquivo fornece um estilo abrangente para um formulário, compatível com formulários de assistente de várias etapas. Ela enfatiza o uso de variáveis CSS personalizadas para facilitar a personalização, a manutenção e o estilo uniforme em todos os formulários. Para obter instruções sobre como adicionar o Bloco Adaptive Forms ao seu projeto, consulte [criar um formulário](/help/edge/docs/forms/create-forms.md).
+- **Atualizar estilos padrão**: você pode modificar os estilos padrão de um formulário editando o arquivo `/blocks/form/form.css`. Esse arquivo fornece um estilo abrangente para um formulário, compatível com formulários de assistente de várias etapas. Ela enfatiza o uso de variáveis CSS personalizadas para facilitar a personalização, a manutenção e o estilo uniforme em todos os formulários. Para obter instruções sobre como adicionar o Bloco Adaptive Forms ao seu projeto, consulte [criar um formulário](/help/edge/docs/forms/create-forms.md).
 
-* **Personalização**: Use o `forms.css` padrão como base e personalize-o para modificar a aparência dos componentes do formulário, tornando-os visualmente atraentes e amigáveis. A estrutura do arquivo incentiva a organização e mantém estilos para formulários, promovendo designs consistentes em todo o site.
+- **Personalização**: Use o `forms.css` padrão como base e personalize-o para modificar a aparência dos componentes do formulário, tornando-os visualmente atraentes e amigáveis. A estrutura do arquivo incentiva a organização e mantém estilos para formulários, promovendo designs consistentes em todo o site.
 
 ## Detalhamento da estrutura forms.css
 
-* **Variáveis globais:** definidas no nível `:root`, essas variáveis (`--variable-name`) armazenam valores usados em toda a folha de estilos para garantir consistência e facilidade de atualizações. Essas variáveis definem cores, tamanhos de fonte, preenchimento e outras propriedades. Você pode declarar suas próprias variáveis globais ou modificar as existentes para alterar o estilo do formulário.
+- **Variáveis globais:** definidas no nível `:root`, essas variáveis (`--variable-name`) armazenam valores usados em toda a folha de estilos para garantir consistência e facilidade de atualizações. Essas variáveis definem cores, tamanhos de fonte, preenchimento e outras propriedades. Você pode declarar suas próprias variáveis globais ou modificar as existentes para alterar o estilo do formulário.
 
-* **Estilos de seletor universal:** o seletor `*` corresponde a cada elemento do formulário, garantindo que os estilos sejam aplicados a todos os componentes por padrão, incluindo a configuração da propriedade `box-sizing` como `border-box`.
+- **Estilos de seletor universal:** o seletor `*` corresponde a cada elemento do formulário, garantindo que os estilos sejam aplicados a todos os componentes por padrão, incluindo a configuração da propriedade `box-sizing` como `border-box`.
 
-* **Estilo de formulário:** essa seção se concentra no estilo de componentes de formulário usando seletores para direcionar elementos HTML específicos. Ele define estilos para campos de entrada, áreas de texto, caixas de seleção, botões de opção, entradas de arquivo, rótulos de formulário e descrições.
+- **Estilo de formulário:** essa seção se concentra no estilo de componentes de formulário usando seletores para direcionar elementos HTML específicos. Ele define estilos para campos de entrada, áreas de texto, caixas de seleção, botões de opção, entradas de arquivo, rótulos de formulário e descrições.
 
-* **Estilo do assistente (se aplicável):** esta seção é dedicada ao estilo do layout do assistente, um formulário de várias etapas no qual cada etapa é exibida, uma de cada vez. Ele define estilos para o contêiner do assistente, conjuntos de campos, legendas, botões de navegação e layouts responsivos.
+- **Estilo do assistente (se aplicável):** esta seção é dedicada ao estilo do layout do assistente, um formulário de várias etapas no qual cada etapa é exibida, uma de cada vez. Ele define estilos para o contêiner do assistente, conjuntos de campos, legendas, botões de navegação e layouts responsivos.
 
-* **Consultas de mídia:** fornecem estilos para diferentes tamanhos de tela, ajustando o layout e o estilo de acordo.
+- **Consultas de mídia:** fornecem estilos para diferentes tamanhos de tela, ajustando o layout e o estilo de acordo.
 
-* **Estilos diversos:** esta seção aborda estilos para mensagens de erro ou êxito, áreas de carregamento de arquivo e outros elementos que você possa encontrar em um formulário.
+- **Estilos diversos:** esta seção aborda estilos para mensagens de erro ou êxito, áreas de carregamento de arquivo e outros elementos que você possa encontrar em um formulário.
 
 
 ## Estrutura de componentes
@@ -89,14 +89,14 @@ Todos os campos de formulário, exceto os menus suspensos, grupos de opções e 
 </div>
 ```
 
-* Classes: o elemento div tem várias classes para direcionar elementos específicos e estilo. Você precisa das classes `{Type}-wrapper` ou `field-{Name}` para desenvolver um Seletor de CSS para estilizar um campo de formulário:
-   * {Type}: Identifica o componente por tipo de campo. Por exemplo, texto (invólucro de texto), número (invólucro numérico), data (invólucro de data)
-   * {Name}: Identifica o componente por nome. O nome do campo pode ter apenas caracteres alfanuméricos; vários traços consecutivos no nome são substituídos por um único traço `(-)` e os traços inicial e final em um nome de campo são removidos. Por exemplo, nome (field-first-name field-wrapper)
-   * {FieldId}: é um identificador exclusivo do campo, gerado automaticamente
-   * {Required}: é um booleano indicando se o campo é obrigatório
-* Rótulo: o elemento `label` fornece texto descritivo para o campo e o associa ao elemento de entrada usando o atributo `for`
-* Entrada: o elemento `input` define o tipo de dados a serem inseridos. Por exemplo, texto, número, email
-* Descrição (Opcional): O `div` com classe `field-description` fornece informações ou instruções adicionais para o usuário
+- Classes: o elemento div tem várias classes para direcionar elementos específicos e estilo. Você precisa das classes `{Type}-wrapper` ou `field-{Name}` para desenvolver um Seletor de CSS para estilizar um campo de formulário:
+   - {Type}: Identifica o componente por tipo de campo. Por exemplo, texto (invólucro de texto), número (invólucro numérico), data (invólucro de data)
+   - {Name}: Identifica o componente por nome. O nome do campo pode ter apenas caracteres alfanuméricos; vários traços consecutivos no nome são substituídos por um único traço `(-)` e os traços inicial e final em um nome de campo são removidos. Por exemplo, nome (field-first-name field-wrapper)
+   - {FieldId}: é um identificador exclusivo do campo, gerado automaticamente
+   - {Required}: é um booleano indicando se o campo é obrigatório
+- Rótulo: o elemento `label` fornece texto descritivo para o campo e o associa ao elemento de entrada usando o atributo `for`
+- Entrada: o elemento `input` define o tipo de dados a serem inseridos. Por exemplo, texto, número, email
+- Descrição (Opcional): O `div` com classe `field-description` fornece informações ou instruções adicionais para o usuário
 
 **Exemplo de estrutura HTML**
 
@@ -138,8 +138,8 @@ Todos os campos de formulário, exceto os menus suspensos, grupos de opções e 
 }
 ```
 
-* `.{Type}-wrapper`: Direciona o elemento `div` externo com base no tipo de campo. Por exemplo, `.text-wrapper` é direcionado a todos os campos de texto
-* `.field-{Name}`: Seleciona ainda mais o elemento com base no nome do campo específico. Por exemplo, `.field-first-name` é direcionado ao campo de texto &quot;Nome&quot;. Embora esse seletor possa ser usado para direcionar elementos com a classe field-{Name}, é importante ter cuidado. Nesse caso específico, não seria útil para estilizar campos de entrada, pois direcionaria não apenas a própria entrada, mas também os elementos de rótulo e descrição. É recomendável usar seletores mais específicos como os que você tem para direcionar campos de entrada de texto (entrada .text-wrapper)
+- `.{Type}-wrapper`: Direciona o elemento `div` externo com base no tipo de campo. Por exemplo, `.text-wrapper` é direcionado a todos os campos de texto
+- `.field-{Name}`: Seleciona ainda mais o elemento com base no nome do campo específico. Por exemplo, `.field-first-name` é direcionado ao campo de texto &quot;Nome&quot;. Embora esse seletor possa ser usado para direcionar elementos com a classe field-{Name}, é importante ter cuidado. Nesse caso específico, não seria útil para estilizar campos de entrada, pois direcionaria não apenas a própria entrada, mas também os elementos de rótulo e descrição. É recomendável usar seletores mais específicos como os que você tem para direcionar campos de entrada de texto (entrada .text-wrapper)
 
 **Exemplo de Seletores de CSS para Componentes Gerais**
 
@@ -280,7 +280,7 @@ Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estr
 
 +++ Seletores de CSS para grupos de botões de opção
 
-* Direcionamento do conjunto de campos
+- Direcionamento do conjunto de campos
 
 ```CSS
   .radio-group-wrapper {
@@ -291,7 +291,7 @@ Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estr
 
 Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapper. Isso seria útil para aplicar estilos gerais a todo o grupo de rádio.
 
-* Rótulos do botão de opção de direcionamento
+- Rótulos do botão de opção de direcionamento
 
 ```CSS
 .radio-wrapper label {
@@ -300,7 +300,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
   }
 ```
 
-* Direcionar todos os rótulos de botão de opção em um conjunto de campos específico com base em seu nome
+- Direcionar todos os rótulos de botão de opção em um conjunto de campos específico com base em seu nome
 
 ```CSS
 .field-color .radio-wrapper label {
@@ -350,7 +350,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 
 +++ Seletores de CSS para grupos de caixas de seleção
 
-* Direcionamento do Outer Wrapper: esses seletores direcionam os contêineres mais externos dos grupos de rádio e de caixa de seleção, permitindo aplicar estilos gerais a toda a estrutura do grupo. Isso é útil para definir o espaçamento, alinhamento ou outras propriedades relacionadas ao layout.
+- Direcionamento do Outer Wrapper: esses seletores direcionam os contêineres mais externos dos grupos de rádio e de caixa de seleção, permitindo aplicar estilos gerais a toda a estrutura do grupo. Isso é útil para definir o espaçamento, alinhamento ou outras propriedades relacionadas ao layout.
 
 
   ```CSS
@@ -366,7 +366,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
   ```
 
 
-* Rótulos do grupo de direcionamento: esse seletor direciona o elemento `.field-label` aos invólucros do grupo de caixas de seleção e de rádio. Isso permite estilizar os rótulos especificamente para esses grupos, possivelmente fazendo com que eles se destaquem mais.
+- Rótulos do grupo de direcionamento: esse seletor direciona o elemento `.field-label` aos invólucros do grupo de caixas de seleção e de rádio. Isso permite estilizar os rótulos especificamente para esses grupos, possivelmente fazendo com que eles se destaquem mais.
 
   ```CSS
    .radio-group-wrapper legend,
@@ -377,7 +377,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 
 
 
-* Direcionamento de entradas e rótulos individuais: esses seletores fornecem controle mais granular sobre botões de opção individuais, caixas de seleção e seus rótulos associados. Você pode usá-los para ajustar o dimensionamento, o espaçamento ou aplicar estilos visuais mais distintos.
+- Direcionamento de entradas e rótulos individuais: esses seletores fornecem controle mais granular sobre botões de opção individuais, caixas de seleção e seus rótulos associados. Você pode usá-los para ajustar o dimensionamento, o espaçamento ou aplicar estilos visuais mais distintos.
 
   ```CSS
   /* Styling radio buttons */
@@ -404,7 +404,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 
 
 
-* Personalização da aparência de botões de opção e caixas de seleção: essa técnica oculta a entrada padrão e usa pseudoelementos `:before` e `:after` para criar visuais personalizados que alteram a aparência com base no estado &quot;marcado&quot;.
+- Personalização da aparência de botões de opção e caixas de seleção: essa técnica oculta a entrada padrão e usa pseudoelementos `:before` e `:after` para criar visuais personalizados que alteram a aparência com base no estado &quot;marcado&quot;.
 
   ```CSS
   /* Hide the default radio button or checkbox */
@@ -475,10 +475,10 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 </fieldset>
 ```
 
-* O elemento fieldset atua como o contêiner do painel com o invólucro de painel de classe e classes adicionais para estilização com base no nome do painel (logon de campo).
-* O elemento da legenda (&lt;legend>) serve como o título do painel com o texto &quot;Informações de logon&quot; e o rótulo de campo da classe. O atributo data-visible=&quot;false&quot; pode ser usado com o JavaScript para controlar a visibilidade do título.
-* Dentro do conjunto de campos, vários .Os elementos {Type}-wrapper (.text-wrapper e .password-wrapper, neste caso) representam campos de formulário individuais dentro do painel.
-* Cada invólucro contém um rótulo, campo de entrada e descrição, semelhantes aos exemplos anteriores.
+- O elemento fieldset atua como o contêiner do painel com o invólucro de painel de classe e classes adicionais para estilização com base no nome do painel (logon de campo).
+- O elemento da legenda (<legend>) serve como o título do painel com o texto &quot;Informações de logon&quot; e o rótulo de campo da classe. O atributo data-visible=&quot;false&quot; pode ser usado com o JavaScript para controlar a visibilidade do título.
+- Dentro do conjunto de campos, vários .Os elementos {Type}-wrapper (.text-wrapper e .password-wrapper, neste caso) representam campos de formulário individuais dentro do painel.
+- Cada invólucro contém um rótulo, campo de entrada e descrição, semelhantes aos exemplos anteriores.
 
 +++
 
@@ -497,7 +497,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
  }
 ```
 
-* O seletor `.panel-wrapper` estiliza todos os elementos com o invólucro de painel de classe, criando uma aparência consistente para todos os painéis.
+- O seletor `.panel-wrapper` estiliza todos os elementos com o invólucro de painel de classe, criando uma aparência consistente para todos os painéis.
 
 1. Direcionamento do título do painel:
 
@@ -513,7 +513,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
   }
 ```
 
-* O seletor `.panel-wrapper legend` estiliza o elemento de legenda dentro do painel, fazendo com que o título se destaque visualmente.
+- O seletor `.panel-wrapper legend` estiliza o elemento de legenda dentro do painel, fazendo com que o título se destaque visualmente.
 
 
 1. Direcionamento de campos individuais no painel:
@@ -526,7 +526,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 }
 ```
 
-* O seletor `.panel-wrapper .{Type}-wrapper` é direcionado a todos os invólucros com a classe `.{Type}-wrapper` dentro do painel, permitindo que você estilize o espaçamento entre os campos de formulário.
+- O seletor `.panel-wrapper .{Type}-wrapper` é direcionado a todos os invólucros com a classe `.{Type}-wrapper` dentro do painel, permitindo que você estilize o espaçamento entre os campos de formulário.
 
 1. Direcionamento de campos específicos (opcional):
 
@@ -542,7 +542,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
   }
 ```
 
-* Esses seletores opcionais permitem direcionar wrappers de campo específicos no painel para um estilo exclusivo, como realçar o campo de nome de usuário.
+- Esses seletores opcionais permitem direcionar wrappers de campo específicos no painel para um estilo exclusivo, como realçar o campo de nome de usuário.
 
 +++
 
@@ -604,15 +604,15 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 
 Cada painel tem a mesma estrutura que o exemplo de painel único, com atributos adicionais:
 
-* data-repeat=&quot;true&quot;: este atributo indica que o painel pode ser repetido dinamicamente usando o JavaScript ou uma estrutura.
+- data-repeat=&quot;true&quot;: este atributo indica que o painel pode ser repetido dinamicamente usando o JavaScript ou uma estrutura.
 
-* IDs e nomes exclusivos: cada elemento no painel tem um ID exclusivo (por exemplo, name-1, email-1) e um atributo de nome com base no índice do painel (por exemplo, name=&quot;contacts[0].name&quot;). Isso permite a coleta de dados adequada quando vários painéis são enviados.
+- IDs e nomes exclusivos: cada elemento no painel tem um ID exclusivo (por exemplo, name-1, email-1) e um atributo de nome com base no índice do painel (por exemplo, name=&quot;contacts[0].name&quot;). Isso permite a coleta de dados adequada quando vários painéis são enviados.
 
 +++
 
 +++ Seletores de CSS para um painel repetível
 
-* Direcionamento de todos os painéis repetíveis:
+- Direcionamento de todos os painéis repetíveis:
 
 ```CSS
   /* Target all panels with the repeatable attribute */
@@ -628,7 +628,7 @@ Cada painel tem a mesma estrutura que o exemplo de painel único, com atributos 
 O seletor estimula todos os painéis que podem ser repetidos, garantindo uma aparência consistente.
 
 
-* Direcionamento de campos individuais em um painel:
+- Direcionamento de campos individuais em um painel:
 
 ```CSS
 /* Target all form field wrappers within a repeatable panel */
@@ -637,10 +637,9 @@ O seletor estimula todos os painéis que podem ser repetidos, garantindo uma apa
   margin-bottom: 10px;
 }
 ```
-
 Este seletor estimula todos os invólucros de campo em um painel repetível, mantendo um espaçamento consistente entre os campos.
 
-* Direcionamento de campos específicos (em um painel):
+- Direcionamento de campos específicos (em um painel):
 
 ```CSS
 /* Target the name field wrapper within the first panel */
@@ -694,15 +693,15 @@ Este seletor estimula todos os invólucros de campo em um painel repetível, man
 </div>
 ```
 
-* O atributo de classe usa o nome fornecido para o anexo de arquivo (claim_form).
-* Os atributos id e name do elemento de entrada correspondem ao nome do anexo de arquivo (claim_form).
-* A seção da lista de arquivos está inicialmente vazia. Ele é preenchido dinamicamente com o JavaScript quando os arquivos são carregados.
+- O atributo de classe usa o nome fornecido para o anexo de arquivo (claim_form).
+- Os atributos id e name do elemento de entrada correspondem ao nome do anexo de arquivo (claim_form).
+- A seção da lista de arquivos está inicialmente vazia. Ele é preenchido dinamicamente com o JavaScript quando os arquivos são carregados.
 
 +++
 
 +++ Seletores de CSS para o componente de Anexo de arquivo
 
-* Direcionar todo o componente de anexo de arquivo:
+- Direcionar todo o componente de anexo de arquivo:
 
 ```CSS
 /* Target the entire file attachment component */
@@ -717,7 +716,7 @@ Este seletor estimula todos os invólucros de campo em um painel repetível, man
 
 Este seletor estimula todo o componente de anexo do arquivo, incluindo a legenda, a área de arrastar, o campo de entrada e a lista.
 
-* Direcionamento de elementos específicos:
+- Direcionamento de elementos específicos:
 
 ```CSS
 /* Target the drag and drop area */
@@ -808,12 +807,12 @@ Você pode usar os Seletores de CSS para direcionar tipos de campo específicos 
 </div>
 ```
 
-* Cada campo é colocado em um elemento `div` com várias classes:
-   * `{Type}-wrapper`: Identifica o tipo de campo. Por exemplo, `form-text-wrapper`, `form-number-wrapper`, `form-email-wrapper`.
-   * `field-{Name}`: Identifica o campo pelo seu nome. Por exemplo `form-name`, `form-age`, `form-email`.
-   * `field-wrapper`: uma classe genérica para todos os wrappers de campo.
-* O atributo `data-required` indica se o campo é obrigatório ou opcional.
-* Cada campo tem um rótulo correspondente, elemento de entrada e possíveis elementos adicionais, como espaços reservados e descrições.
+- Cada campo é colocado em um elemento `div` com várias classes:
+   - `{Type}-wrapper`: Identifica o tipo de campo. Por exemplo, `form-text-wrapper`, `form-number-wrapper`, `form-email-wrapper`.
+   - `field-{Name}`: Identifica o campo pelo seu nome. Por exemplo `form-name`, `form-age`, `form-email`.
+   - `field-wrapper`: uma classe genérica para todos os wrappers de campo.
+- O atributo `data-required` indica se o campo é obrigatório ou opcional.
+- Cada campo tem um rótulo correspondente, elemento de entrada e possíveis elementos adicionais, como espaços reservados e descrições.
 
 
 +++
@@ -880,6 +879,3 @@ Este CSS destina-se a todos os elementos de entrada localizados em um elemento q
 
 +++
 
-## Consulte também:
-
-{{see-more-forms-eds}}

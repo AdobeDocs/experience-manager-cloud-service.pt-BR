@@ -4,7 +4,7 @@ description: Saiba como criar e fornecer formulários de alto desempenho no Adob
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
@@ -41,11 +41,11 @@ Ao final, você poderá escolher o método de criação correto, entender as op�
 
 O Universal Editor é uma ferramenta de criação visual, do tipo &quot;arrastar e soltar&quot;, para profissionais de marketing e designers que combina velocidade e eficiência de nível empresarial:
 
-* Edição em tempo real do WYSIWYG e visualizações de dispositivos.
-* Regras avançadas e interface de validação — nenhum código é necessário.
-* Integração direta com ativos, workflows e modelos de dados de formulário (FDM) do AEM.
-* Entrega contínua para desenvolvedores para componentes personalizados em JS/CSS básicos.
-* Destinos de envio flexíveis: comece de forma simples com o **Serviço de Envio do Forms (FSS)** ou alterne para as **ações de envio de Publicação do AEM** conforme suas necessidades aumentarem.
+- Edição em tempo real do WYSIWYG e visualizações de dispositivos.
+- Regras avançadas e interface de validação — nenhum código é necessário.
+- Integração direta com ativos, workflows e modelos de dados de formulário (FDM) do AEM.
+- Entrega contínua para desenvolvedores para componentes personalizados em JS/CSS básicos.
+- Destinos de envio flexíveis: comece de forma simples com o **Serviço de Envio do Forms (FSS)** ou alterne para as **ações de envio de Publicação do AEM** conforme suas necessidades aumentarem.
 
 > **Recomendação**: inicie todos os novos projetos de formulário com o Universal Editor, a menos que sua equipe seja 100% centrada em documentos e o formulário seja muito básico.
 
@@ -54,10 +54,10 @@ O Universal Editor é uma ferramenta de criação visual, do tipo &quot;arrastar
 
 A Criação baseada em documento é mais adequada para criar formulários simples e de baixa complexidade usando ferramentas familiares, como o Microsoft Word, Google Docs ou Google Sheets. Esse método é ideal para equipes de conteúdo que exigem uma maneira rápida e direta de criar formulários.
 
-* Defina campos de formulário em uma tabela (Documentos) ou como linhas (Planilhas).
-* Oferece suporte à validação básica de campo e ao Google reCAPTCHA para proteção contra spam.
-* Os envios de formulários são tratados exclusivamente pelo Serviço de envio do Forms.
-* Publicação instantânea — todas as alterações feitas no documento de origem são refletidas imediatamente no site, sem exigir um pipeline de implantação.
+- Defina campos de formulário em uma tabela (Documentos) ou como linhas (Planilhas).
+- Oferece suporte à validação básica de campo e ao Google reCAPTCHA para proteção contra spam.
+- Os envios de formulários são tratados exclusivamente pelo Serviço de envio do Forms.
+- Publicação instantânea — todas as alterações feitas no documento de origem são refletidas imediatamente no site, sem exigir um pipeline de implantação.
 
 
 ### Incorporação do Forms na Criação de documentos (DA)

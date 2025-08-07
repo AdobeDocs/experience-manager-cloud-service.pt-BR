@@ -1,269 +1,524 @@
 ---
-title: Noções básicas sobre o Universal Editor
-description: Este tutorial ajuda você a começar a usar a interface do Universal Editor. Ele orienta você a entender a interface do usuário para criar seus próprios formulários Edge Delivery Services no Universal Editor.
+title: Navegar pela interface do editor universal para o AEM Forms
+description: Domine a interface do Editor universal para criar AEM Forms com Edge Delivery Services. Conheça as ferramentas, os atalhos e os fluxos de trabalho essenciais para criar formulários de maneira eficiente com este abrangente guia de interface.
+keywords: editor universal, AEM forms, edge delivery services, guia de interface, criação de formulários, editor do WYSIWYG, ferramentas do construtor de formulários, navegação da interface do usuário
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: User, Developer, Admin
+level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '2209'
 ht-degree: 0%
 
 ---
 
 
-# Explorar a interface do editor universal (WYSIWYG)
+# Navegar pela interface do editor universal para o AEM Forms
 
-O [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) oferece uma interface simples, visual e intuitiva do What You See Is What You Get (WYSIWYG) para o Adobe Edge Delivery Services Forms. Ele fornece uma interface moderna com funcionalidade de arrastar e soltar para uma criação de formulários eficiente.
+O [Editor Universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fornece uma interface visual para criar AEM Forms com Edge Delivery Services. Este guia ajuda você a entender a interface para criar formulários com eficiência.
 
-![Interface de Usuário do Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
+![Visão Geral da Interface do Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## O que você vai aprender
+## Visão geral
 
-Ao final deste tutorial, você irá:
+O Editor Universal oferece uma experiência do **What You See Is What You Get (WYSIWYG)** que mostra exatamente como seus formulários aparecerão para os usuários. Quer você seja novo na criação de formulários ou um desenvolvedor experiente, este guia ajudará a:
 
-- Entender os principais componentes da interface do Universal Editor
-- Navegar com confiança pelas diferentes seções da interface
-- Saber como acessar e usar ferramentas essenciais de criação de formulários
-- Estar familiarizado com atalhos de teclado que aumentam a produtividade
+**Conheça as habilidades essenciais:**
 
-## Compreender a interface do editor universal
+- Navegue pela interface com confiança e eficiência
+- Usar as ferramentas apropriadas para as tarefas comuns de criação de formulários
+- Aproveite os atalhos de teclado para aumentar a produtividade
+- Solução de problemas comuns de interface
 
-Ao editar um formulário usando o Editor universal, o console abre uma interface interativa do WYSIWYG que permite iniciar a edição imediatamente. Essa interface fornece feedback visual em tempo real enquanto você trabalha, mostrando exatamente como seu formulário aparecerá para os usuários finais.
+**Fluxos de Trabalho de Chave Mestra:**
+
+- Configure seu espaço de trabalho para obter produtividade ideal
+- Criar formulários do conceito à publicação
+- Testar e visualizar formulários em vários dispositivos
+- Colaborar com membros da equipe em projetos de formulário
+
+## Introdução rapidamente
+
+**Novos usuários:** Comece com as [Ferramentas essenciais](#essential-tools-for-form-building) para conhecer os recursos principais que você usará com mais frequência.
+
+**Usuários experientes:** Use os [Recursos Avançados](#advanced-features-and-integrations) para obter ferramentas e integrações especializadas.
+
+**Referência rápida:** Use as seções [Visão Geral da Interface](#interface-overview) e [Atalhos de Teclado](#keyboard-shortcuts) para pesquisas rápidas.
 
 >[!NOTE]
 >
-> Para saber como criar formulários usando o Universal Editor, consulte o artigo [Introdução ao Edge Delivery Services para AEM Forms usando o Universal Editor (WYSIWYG)](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
+> Novo na criação de formulários? Consulte [Introdução ao Edge Delivery Services para AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) para obter orientação passo a passo sobre a criação de formulários.
 
-![Interface de Usuário do Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface1.png)
+## Visão geral da interface
 
-A interface do Editor universal é dividida em quatro partes lógicas:
+A interface do Editor universal é organizada em quatro áreas principais, cada uma projetada para tarefas específicas:
 
-- **[A: Cabeçalho Do Experience Cloud](#experience-cloud-header)**
-- **[B: Barra de Ferramentas do Editor Universal](#universal-editor-toolbar)**
-- **[C: Painel Propriedades](#properties-panel)**
-- **[D: Editor](#editor)**
+![Layout da Interface do Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface1.png)
 
-Vamos explorar cada seção em detalhes.
+| **Área** | **Finalidade** | **Uso principal** |
+|----------|-------------|----------------|
+| **[A: Cabeçalho Do Experience Cloud](#experience-cloud-header)** | Navegação e gerenciamento de conta | Alternar entre ferramentas do Adobe, acessar ajuda, gerenciar notificações |
+| **[B: Barra de Ferramentas do Editor Universal](#universal-editor-toolbar)** | Edição e publicação de formulários | Criar, editar, visualizar e publicar formulários |
+| **[C: Painel Propriedades](#properties-panel)** | Configuração do componente | Configurar campos de formulário, gerenciar estrutura de conteúdo, acessar recursos avançados |
+| **[D: Tela Do Editor](#editor-canvas)** | Criação visual do formulário | Adicione componentes, organize o layout, consulte visualização em tempo real |
 
-### Cabeçalho Experience Cloud
+**Fluxo de Interface:** A maioria dos usuários trabalha principalmente na **Tela do Editor** (D) e no **Painel de Propriedades** (C), usando a **Barra de Ferramentas** (B) para ações como visualizar e publicar.
 
-O Cabeçalho do Experience Cloud é exibido na parte superior do console e fornece o contexto de navegação dentro do ecossistema mais amplo da Adobe Experience Cloud. Ele mostra sua localização atual e permite acesso rápido a outros aplicativos da Experience Cloud.
+## Ferramentas essenciais para a construção de formulários
 
-![Cabeçalho Experience Cloud do Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
+Comece aqui se você é novo no Editor universal. Estas são as ferramentas principais que você usará para a maioria das tarefas de criação de formulários:
 
-Vamos examinar cada componente:
+### **1. Tela do Editor - Seu Workspace principal**
 
-- **Adobe Experience Cloud**
+A **Tela do Editor** é onde você constrói visualmente seus formulários. Ele mostra exatamente como o formulário será exibido para os usuários.
 
-  Clicar no link **Adobe Experience Cloud** no lado esquerdo da tela permite navegar até a raiz da solução do Experience Manager. A partir daí, você pode acessar outras ferramentas, como o Experience Manager Sites, o Experience Manager Assets e o Experience Manager Guides.
+![Tela do Editor](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
 
-  ![Adobe Experience Manager](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager.png)
+**Ações principais:**
 
-- **Nome da Organização**
+- **Adicionar componentes** clicando no botão **Adicionar** no Painel Propriedades
+- **Selecione os elementos** clicando diretamente neles na tela
+- **Ver alterações em tempo real** ao configurar componentes
+- **Interações de teste** no modo de visualização
 
-  O **Nome da Organização** exibe o nome da organização do Identity Management System (IMS) na qual você está conectado no momento. Se você tiver acesso a várias organizações, poderá alternar entre elas usando esse menu suspenso. Por exemplo, na captura de tela, a organização IMS selecionada no momento é &quot;AEM Forms Internal01&quot;.
+### **2. Painel Propriedades - Configurar Seus Componentes**
 
-  ![Organização](/help/edge/docs/forms/universal-editor/assets/universal-editor-organization.png)
-
-- **Ajuda**
-
-  O ícone Ajuda fornece acesso rápido aos recursos de aprendizagem e suporte. Isso é particularmente valioso quando você encontra desafios ou precisa de orientação sobre recursos específicos. Você também pode enviar feedback por meio desta seção.
-
-  ![Ajuda](/help/edge/docs/forms/universal-editor/assets/ue-help.png)
-
-- **Notificações**
-
-  A seção **Notificações** exibe o número de notificações incompletas, solicitações e tarefas atuais atribuídas atualmente na sua organização IMS. Estar de olho nesta seção ajuda você a se manter atualizado em relação ao fluxo de trabalho.
-
-  ![Notificação](/help/edge/docs/forms/universal-editor/assets/ue-notification.png)
-
-- **Soluções**
-
-  O menu **Soluções** permite alternar para outras soluções da Adobe Experience Cloud, facilitando a movimentação entre diferentes ferramentas em seu fluxo de trabalho.
-
-  ![Soluções](/help/edge/docs/forms/universal-editor/assets/ue-solutions.png)
-
-- **Perfil de usuário**
-
-  Esse ícone exibe as informações do seu perfil, juntamente com o nome da organização IMS na qual você está conectado no momento. Clique neste ícone para acessar as configurações da conta e as opções de saída.
-
-  ![Autor](/help/edge/docs/forms/universal-editor/assets/ue-author.png)
-
-### Barra de ferramentas do editor universal
-
-A barra de ferramentas fornece ferramentas essenciais de navegação e edição. Com ele, você pode mover-se entre formulários, publicar ou desfazer a publicação de formulários, editar propriedades do formulário e acessar o editor de regras para adicionar comportamentos dinâmicos.
-
-![Barra de Ferramentas do Editor Universal](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
-
-Veja o que cada componente oferece:
-
-- **Botão da Página Inicial**
-
-  O botão Home retorna à página inicial do Universal Editor. Isso é útil quando você precisa começar a trabalhar em um formulário diferente. Você também pode inserir diretamente um URL na barra de localização para navegar para qualquer formulário que deseja editar.
-
-  ![Página Inicial do Editor Universal](/help/edge/docs/forms/universal-editor/assets/ue-home.png)
-
-- **Barra de Localização**
-
-  A **Barra de Localização** exibe o endereço do formulário que você está editando no momento. Para alternar para um formulário diferente, basta clicar na barra de localização e inserir sua URL. O atalho de teclado para focalizar a barra de localização é `l`.
-
-  ![Barra de Localização](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png)
-
-- **Editor de regras**
-
-  O **Editor de regras** permite que você adicione comportamentos dinâmicos aos seus formulários por meio de uma interface visual intuitiva. Com ele, você pode criar condições, validações e ações que respondam à entrada do usuário, tornando seus formulários interativos e inteligentes.
-
-  ![Editor de regras](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
-
-  >[!NOTE]
-  >
-  > - A extensão Editor de Regras não está habilitada por padrão no Editor Universal. Para habilitar este recurso avançado, contate-nos em [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) pelo seu endereço de email oficial.
-  > - Para saber como criar e gerenciar regras, consulte o artigo [Introdução ao Editor de regras em Criação no WYSIWYG](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
-
-- **Editar Propriedades do Formulário**
-
-  A opção **Editar propriedades do formulário** permite definir configurações importantes do formulário, como o Modelo de dados de formulário (FDM) e a data de publicação. Essas propriedades influenciam como o formulário se comporta e se integra a sistemas de back-end.
-
-  ![Editar Propriedades do Formulário](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
-
-- **Configurações do Cabeçalho de Autenticação**
-
-  A opção **Configurações do Cabeçalho de Autenticação** permite definir cabeçalhos de autenticação personalizados para fins de desenvolvimento local. Isso é particularmente útil ao testar formulários que exigem credenciais de autenticação.
-
-  ![Cabeçalho de Autenticação](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png)
-
-- **Modo responsivo**
-
-  O recurso **Modo responsivo** permite testar como o formulário será exibido em diferentes dispositivos. Por padrão, o editor é aberto no layout de desktop, mas você pode alternar para o modo de exibição móvel para garantir que o formulário permaneça utilizável e atraente em telas menores.
-
-  ![Modo responsivo](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
-
-- **Modo de visualização**
-
-  **Modo de Visualização** mostra o formulário exatamente como ele será exibido quando publicado. Isso permite que você interaja com o formulário clicando em links e botões, como seus usuários fariam. Essa é uma etapa essencial antes da publicação para verificar se tudo funciona conforme o esperado. Alternar entre os modos de edição e visualização usando o atalho de teclado `p`.
-
-  ![Visualização](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
-
-- **Abrir página**
-
-  O botão **Abrir Página** abre o formulário em uma nova guia do navegador para visualização. Isso fornece uma visualização em tela cheia do formulário sem a interface do editor. O atalho de teclado desta ação é `o`.
-
-  ![Abrir página](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
-
-- **Publicar**
-
-  Quando o formulário estiver pronto para os usuários, o botão **Publicar** o tornará online e disponível para o seu público-alvo. Esta é a etapa final no fluxo de trabalho de criação do formulário.
-
-  ![Publicar](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
-
-- **Menu de reticências**
-
-  Clicar nas reticências (...) revela opções adicionais, incluindo a capacidade de **Desfazer a publicação** de um formulário que está ativo no momento. Isso é útil quando você precisa remover temporariamente um formulário do acesso público ou substituí-lo por uma versão atualizada.
-
-  ![Reticências](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png)
-
-### Painel Propriedades
-
-O **Painel de Propriedades** aparece no lado direito da interface e exibe informações contextuais com base no que você selecionou no formulário. Quando nenhum componente é selecionado, ele mostra a estrutura geral do formulário.
+O **Painel de Propriedades** (lado direito) é onde você personaliza componentes selecionados e gerencia a estrutura do formulário.
 
 ![Painel de propriedades](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
 
-Vamos explorar seus principais componentes:
+**Recursos Essenciais:**
 
-- **Modo de Propriedades**
+- **Modo de Propriedades** (atalho `d`) - Definir configurações do componente selecionado
+- **Árvore de conteúdo** (atalho `f`) - Navegar pela estrutura do formulário
+- **Adicionar componentes** (atalho `a`) - Inserir novos campos de formulário
+- **Ações de componentes** - Duplicar ou excluir elementos selecionados
 
-  O modo **Propriedades** exibe configurações e opções para o componente selecionado no momento. É aqui que você personaliza elementos individuais do formulário para atender aos seus requisitos específicos. O atalho de teclado para abrir as propriedades de um componente selecionado é `d`.
+### **3. Toolbar Essentials - Visualizar e Publicar**
 
-  ![Propriedades](/help/edge/docs/forms/universal-editor/assets/ue-properties.png)
+A **Barra de Ferramentas do Editor Universal** fornece ações-chave para testar e publicar seus formulários.
 
-- **Árvore de conteúdo**
+![Barra de Ferramentas do Editor Universal](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-  A **Árvore de conteúdo** exibe a estrutura hierárquica do formulário. Essa representação visual ajuda você a entender como os componentes são aninhados entre si. Clicar em qualquer item na árvore seleciona-o no editor e rola a tela até seu local. Isso é especialmente útil em formas complexas. Alternar a exibição da árvore de conteúdo com o atalho de teclado `f`.
+**Ferramentas Obrigatórias:**
 
-  ![Árvore de conteúdo](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png)
+- **Modo de Visualização** (atalho `p`) - Teste o formulário como os usuários o verão
+- **Modo responsivo** - Verifique a aparência do formulário em dispositivos móveis
+- **Abrir página** (atalho `o`) - Exibir formulário em uma nova guia
+- **Publicar** - Tornar o formulário disponível para os usuários
 
-- **Gerar Variações**
+### **4. Fluxo de Trabalho de Início Rápido**
 
-  O recurso **Gerar variações** aproveita a inteligência artificial para criar diferentes versões do formulário com base em prompts específicos. Isso ajuda você a experimentar com diferentes abordagens e designs sem criar manualmente cada variação. Os prompts podem ser fornecidos pela Adobe ou personalizados por você.
+**Para o primeiro formulário:**
 
-  ![Gerar Variações](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
+1. **Iniciar criação** - Adicionar componentes usando o botão **Adicionar** (`a`)
+2. **Configurar campos** - Selecionar componentes e usar o **Modo de Propriedades** (`d`)
+3. **Testar o formulário** - Use o **Modo de Visualização** (`p`) para interagir com o formulário
+4. **Verificar exibição móvel** - Alternar para **Modo Responsivo** para teste móvel
+5. **Ativar** - Clique em **Publicar** quando estiver pronto
 
-  >[!NOTE]
-  >
-  > Para obter instruções detalhadas sobre como usar a opção Gerar variações para formulários, consulte o artigo [Gerar variações](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
+**Pontos de Verificação de Validação:**
 
-- **Experimentação**
+- É possível adicionar e configurar campos de formulário?
+- O modo de visualização funciona corretamente?
+- Todos os campos obrigatórios estão configurados corretamente?
+- O formulário é exibido bem em dispositivos móveis?
 
-  O recurso **Experimentação** permite executar testes controlados comparando diferentes designs e layouts de formulário. Analisando como os usuários interagem com cada variante, é possível tomar decisões orientadas por dados para otimizar as taxas de conversão e a experiência do usuário.
+## Cabeçalho Experience Cloud
 
-  ![Experimentação](/help/edge/docs/forms/universal-editor/assets/ue-experimentation.png)
+O **Cabeçalho do Experience Cloud** fornece ferramentas de navegação e gerenciamento de conta. A maioria dos construtores de formulários o usa ocasionalmente para alternar entre as ferramentas do Adobe ou acessar a ajuda.
 
-- **Personalização**
+![Cabeçalho do Experience Cloud](/help/edge/docs/forms/universal-editor/assets/universal-editor-experience-manager-header.png)
 
-  As configurações do **Personalization** permitem que você conecte seus formulários com o Adobe Experience Platform (AEP) ou aplicativos externos. Essa conexão permite criar experiências de formulário personalizadas com base nos dados e comportamentos do usuário, aumentando a relevância e o engajamento.
+**Elementos-chave:**
 
-  ![Personalização](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png)
+| **Elemento** | **Finalidade** | **Quando usar** |
+|-------------|-------------|----------------|
+| **Adobe Experience Cloud** | Navegar até outras ferramentas do Adobe | Alternância entre Sites, Assets, Forms |
+| **Organização** | Alternar entre organizações | Cenários de acesso de várias organizações |
+| **Ajuda** | Acessar a documentação e o suporte | Quando precisar de orientação ou quiser enviar feedback |
+| **Notificações** | Exibir tarefas atribuídas e alertas | Verificação do status do fluxo de trabalho |
+| **Soluções** | Acesso rápido a outras soluções da Adobe | Transferência entre diferentes produtos da Adobe |
+| **Perfil de usuário** | Configurações da conta e saída | Gerenciamento de conta ou alternância de usuários |
 
-- **Teste A/B**
+**Usos Mais Comuns:**
 
-  O **Teste A/B** ajuda você a comparar variações específicas do seu formulário para determinar qual tem melhor desempenho. Diferentemente da experimentação mais ampla, os testes A/B normalmente se concentram na comparação de elementos ou alterações específicos para identificar a opção mais eficaz.
+- **Obtendo Ajuda** - Clique no ícone Ajuda para obter documentação e suporte
+- **Alternando Organizações** - Use a lista suspensa Organização se você tiver acesso para várias organizações
 
-  ![Teste A/B](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
+## Barra de ferramentas do editor universal
 
-- **Gerenciamento de tarefas**
+A **Barra de Ferramentas do Editor Universal** contém suas ferramentas primárias de edição e publicação de formulários. Elas são organizadas por frequência de uso e fluxo de trabalho típico.
 
-  O recurso **Gerenciamento de tarefas** simplifica a colaboração, ajudando sua equipe a organizar, rastrear e concluir tarefas relacionadas à criação e otimização de formulários. Isso mantém os projetos avançando eficientemente com uma responsabilidade clara.
+![Barra de Ferramentas do Editor Universal](/help/edge/docs/forms/universal-editor/assets/ue-toolbar.png)
 
-  ![Gerenciamento de tarefas](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png)
+### **Ferramentas de Fluxo de Trabalho Diário**
 
-- **Rascunhos de Conteúdo**
+**Estas ferramentas são usadas na maioria das sessões de criação de formulários:**
 
-  O recurso **Rascunhos de Conteúdo** permite criar e salvar versões preliminares de elementos de texto no formulário. Você pode criar rascunhos usando texto de formulário existente ou começar do zero e, em seguida, editá-los ou excluí-los conforme necessário. Por padrão, você verá três rascunhos, mas ao clicar em **Mostrar tudo** serão exibidos rascunhos adicionais.
+#### **Modo de Visualização** (atalho `p`)
 
-  ![Rascunhos de Conteúdo](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png)
+**Finalidade:** testar seu formulário exatamente como os usuários irão experimentá-lo\
+**Quando usar:** Antes de publicar, depois de fazer alterações, para testar a funcionalidade do formulário
 
-- **Source de dados**
+![Modo de visualização](/help/edge/docs/forms/universal-editor/assets/ue-preview.png)
 
-  A opção **Data Source** permite configurar e selecionar as fontes de dados para seu Modelo de Dados de Formulário (FDM). Essa integração disponibiliza para uso no formulário todos os objetos, propriedades e serviços do modelo de dados das fontes selecionadas, permitindo a recuperação e o envio de dados dinâmicos.
+**Prática recomendada:** visualizar após cada grande alteração para capturar problemas antecipadamente.
 
-  ![Source de dados](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png)
+#### **Modo responsivo**
 
-- **Adicionar**
+**Finalidade:** Verifique como o formulário é exibido em dispositivos móveis\
+**Quando usar:** Após criar o formulário, antes de publicar
 
-  O botão **Adicionar** revela uma lista suspensa de componentes que podem ser adicionados ao contêiner selecionado no momento. Por exemplo, quando uma seção Formulário adaptável é selecionada, essa lista mostra todos os componentes que podem ser adicionados a essa seção. O atalho de teclado para abrir esta lista de componentes é `a`.
+![Modo responsivo](/help/edge/docs/forms/universal-editor/assets/ue-responsivemode.png)
 
-  ![Adicionar ícone](/help/edge/docs/forms/universal-editor/assets/ue-add.png)
+**Prática recomendada:** Sempre testar a exibição móvel - muitos usuários acessarão formulários em telefones.
 
-- **Duplicar**
+#### **Abrir página** (`o` atalho)
 
-  A opção **Duplicar** cria uma cópia exata do componente selecionado. Isso economiza tempo quando você precisa de vários elementos semelhantes, pois é possível duplicar e modificar em vez de criar do zero.
+**Propósito:** Exibir seu formulário em uma nova guia sem a interface do editor\
+**Quando usar:** Para testes em tela inteira, compartilhar com as partes interessadas para revisão
 
-  ![Ícone Duplicado](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png)
+    ![Abrir Página](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
-- **Excluir**
+#### **Publicar**
 
-  A opção **Excluir** remove o componente selecionado do formulário. Tenha cuidado ao usar essa opção, pois ela remove imediatamente o elemento sem um prompt de confirmação.
+**Finalidade:** Tornar o formulário ativo e acessível aos usuários\
+**Quando usar:** Após testes completos nos modos Visualização e Responsivo
 
-  ![Excluir](/help/edge/docs/forms/universal-editor/assets/ue-delete.png)
+    ![Publicar](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
-### Editor
+**Lista de Verificação de Validação Antes da Publicação:**
 
-O Editor é o espaço de trabalho central onde você cria e modifica o formulário. Ele exibe o formulário especificado na barra de localização e fornece uma experiência do WYSIWYG que mostra exatamente como o formulário será exibido para os usuários. No modo de visualização, você pode interagir com o formulário da mesma forma que seus usuários fariam, testando a navegação por botões e links.
+- Formulário testado no modo de visualização
+- Capacidade de resposta remota verificada
+- Todos os campos obrigatórios configurados
+- As ações enviar estão funcionando corretamente
 
-![Editor](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
+### **Ferramentas de Navegação**
 
-O Editor é onde você passa a maior parte do seu tempo, adicionando componentes, configurando suas propriedades e organizando-os para criar uma experiência de formulário intuitiva e eficaz.
+#### **Botão da Página Inicial**
 
-## Resumo de atalhos de teclado
+**Finalidade:** retornar à página inicial do Editor Universal\
+**Quando usar:** Iniciando o trabalho em um formulário diferente
 
-Para aumentar sua produtividade, lembre-se desses atalhos essenciais do teclado:
+![Botão da Página Inicial](/help/edge/docs/forms/universal-editor/assets/ue-home.png)
 
-- `l` - Focalizar a barra de localização
-- `p` - Alternar entre os modos de edição e de visualização
-- `o` - Abrir o formulário em uma nova guia
-- `d` - Abrir propriedades do componente selecionado
-- `f` - Alternar a exibição da árvore de conteúdo
-- `a` - Abrir a lista de componentes a serem adicionados
+#### **Barra de Localização** (`l` atalho)
 
+**Propósito:** Navegar diretamente para qualquer formulário por URL\
+**Quando usar:** alternar rapidamente entre formulários específicos
+
+![Barra de Localização](/help/edge/docs/forms/universal-editor/assets/ue-locationbar.png)
+
+### **Ferramentas de Configuração Avançada**
+
+**Estas ferramentas são usadas para cenários específicos ou configurações avançadas:**
+
+#### **Editar Propriedades do Formulário**
+
+**Propósito:** definir configurações no nível do formulário, como Modelo de Dados de Formulário (FDM) e datas de publicação\
+**Quando usar:** Configuração de integrações de dados, agendamento de publicação
+
+![Propriedades do formulário](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+#### **Editor de regras** (acesso antecipado)
+
+**Propósito:** adicionar comportamentos dinâmicos, validações e lógica condicional\
+**Quando usar:** Criar formulários interativos com lógica de negócios complexa
+
+![Editor de regras](/help/edge/docs/forms/universal-editor/assets/ue-ruleeditor.png)
+
+>[!IMPORTANT]
+>
+> **Recurso de Acesso Antecipado:** o Editor de Regras requer acesso especial. Contate [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para habilitar este recurso.
+>
+> **Saiba Mais:** Consulte o [Guia do Editor de Regras](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) para obter instruções detalhadas.
+
+#### **Configurações do Cabeçalho de Autenticação**
+
+**Propósito:** definir cabeçalhos de autenticação personalizados para teste de desenvolvimento\
+**Quando usar:** Desenvolvimento local com formulários de autenticação obrigatória
+
+![Cabeçalhos de autenticação](/help/edge/docs/forms/universal-editor/assets/ue-authenticationheader.png)
+
+#### **Opções Adicionais** (Menu Reticências)
+
+**Propósito:** Acessar ações menos comuns, como desfazer a publicação\
+**Quando usar:** Colocando formulários offline, acessando opções avançadas
+
+![Opções adicionais](/help/edge/docs/forms/universal-editor/assets/ue-ellipsis.png)
+
+## Painel Propriedades
+
+O **Painel de Propriedades** (lado direito) é o seu centro de controle para criar e configurar formulários. Ele muda com base no que você seleciona e fornece ferramentas diferentes para tarefas diferentes.
+
+![Painel de propriedades](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+
+### **Ferramentas de Criação de Formulários Principais**
+
+**Estas ferramentas são essenciais para criar e organizar seus formulários:**
+
+#### **Adicionar Componentes** (atalho `a`)
+
+**Propósito:** inserir novos campos e elementos de formulário\
+**Como funciona:** Mostra os componentes disponíveis para o contêiner selecionado
+
+![Adicionar componentes](/help/edge/docs/forms/universal-editor/assets/ue-add.png)
+
+**Componentes comuns:**
+
+- Entrada de texto, email, campos de telefone
+- Lista suspensa, Botões de opção, Caixas de seleção
+- Upload de arquivo, Seletor de data
+- Painéis e seções para organização
+
+#### **Modo de Propriedades** (`d` atalho)
+
+**Propósito:** definir configurações para os componentes selecionados\
+**Quando usar:** Depois de adicionar qualquer componente para personalizar seu comportamento
+
+![Modo de Propriedades](/help/edge/docs/forms/universal-editor/assets/ue-properties.png)
+
+**Configurações de Chave:**
+
+- Rótulos de campo e texto de espaço reservado
+- Regras de validação (obrigatório, formato, comprimento)
+- Valores padrão e texto de ajuda
+- Regras de visibilidade condicional
+
+#### **Árvore de conteúdo** (`f` atalho)
+
+**Propósito:** Navegar e organizar sua estrutura de formulário\
+**Quando usar:** formulários complexos com várias seções, localizando componentes específicos
+
+![Árvore de conteúdo](/help/edge/docs/forms/universal-editor/assets/ue-contenttree.png)
+
+**Vantagens:**
+
+- Navegação rápida para qualquer componente
+- Hierarquia do formulário visual
+- Fácil reorganização dos elementos
+
+#### **Ações do componente**
+
+**Propósito:** Gerenciar componentes existentes\
+**Ações disponíveis:**
+
+- **Duplicar** - Copiar componentes rapidamente ![Duplicar](/help/edge/docs/forms/universal-editor/assets/ue-duplicate.png)
+- **Excluir** - Remover componentes (sem prompt de confirmação) ![Excluir](/help/edge/docs/forms/universal-editor/assets/ue-delete.png)
+
+### **Integrações e recursos avançados**
+
+**Estas ferramentas habilitam funcionalidade de formulário sofisticada:**
+
++++Integração de dados
+
+#### **Source de dados**
+
+**Finalidade:** conectar formulários a sistemas de dados de back-end\
+**Quando usar:** Forms que precisam ler/gravar em bancos de dados ou serviços externos
+
+![Source de dados](/help/edge/docs/forms/universal-editor/assets/ue-datasource.png)
+
+**Recursos:**
+
+- Configuração do modelo de dados de formulário (FDM)
+- População de dados dinâmicos
+- Envio a sistemas externos
+
++++
+
++++Ferramentas alimentadas por IA
+
+#### **Gerar variações**
+
+**Finalidade:** usar a IA para criar diferentes versões do conteúdo do formulário\
+**Quando usar:** Experimentar com texto, layouts ou abordagens diferentes
+
+    ![Gerar variações](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
+
+**Saiba Mais:** [Gerar Guia De Variações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+
+#### **Rascunhos de Conteúdo**
+
+**Finalidade:** criar e salvar versões de texto preliminares\
+**Quando usar:** Iterando na cópia do formulário, salvando opções de texto alternativo
+
+![Rascunhos de Conteúdo](/help/edge/docs/forms/universal-editor/assets/ue-contentdraft.png)
+
++++
+
++++Teste e otimização
+
+#### **Teste A/B**
+
+**Propósito:** Comparar variações de formulário para otimizar o desempenho\
+**Quando usar:** Otimizando as taxas de conversão, testando designs diferentes
+
+![Teste A/B](/help/edge/docs/forms/universal-editor/assets/ue-abtesting.png)
+
+#### **Experimentação**
+
+**Propósito:** executar testes controlados em designs de formulário\
+**Quando usar:** otimização de formulário orientado por dados, teste de experiência do usuário
+
+    ![Experimentação](/help/edge/docs/forms/universal-editor/assets/ue-experimentation.png)
+
++++
+
++++Ferramentas do Collaboration
+
+#### **Gerenciamento de tarefas**
+
+**Propósito:** organizar o fluxo de trabalho de equipe para projetos de formulário\
+**Quando usar:** desenvolvimento de formulário multipessoa, rastreamento de projetos
+
+![Gerenciamento de tarefas](/help/edge/docs/forms/universal-editor/assets/ue-taskmanagement.png)
+
+#### **Personalização**
+
+**Propósito:** conectar-se com a Adobe Experience Platform para obter experiências personalizadas\
+**Quando usar:** Criar formulários personalizados com base nos dados do usuário
+
+    ![Personalization](/help/edge/docs/forms/universal-editor/assets/ue-personalizaton.png)
+
++++
+
+## Tela do editor
+
+A **Tela do Editor** é o seu espaço de trabalho principal onde você cria visualmente formulários. Ele mostra exatamente como o formulário será exibido para os usuários e fornece feedback em tempo real conforme você faz alterações.
+
+![Tela do Editor](/help/edge/docs/forms/universal-editor/assets/ue-editor.png)
+
+**Principais Recursos:**
+
+- **edição de WYSIWYG** - Ver as alterações imediatamente à medida que forem feitas
+- **Interação direta** - Clique em qualquer componente para selecioná-lo e editá-lo
+- **Visualização em tempo real** - Alternar para o modo de visualização para testar a funcionalidade
+- **Exibição responsiva** - Alternar exibições do dispositivo para verificar a compatibilidade móvel
+
+**Práticas recomendadas:**
+
+- **Iniciar com estrutura** - Adicionar seções principais antes de componentes detalhados
+- **Testar com frequência** - Use o Modo de visualização regularmente para detectar problemas antecipadamente
+- **Think mobile-first** - Verificar Modo Responsivo durante todo o processo de design
+
+## Atalhos de teclado
+
+Domine esses atalhos para criar formulários com mais rapidez e eficiência:
+
+| **Atalho** | **Ação** | **Quando usar** |
+|--------------|------------|----------------|
+| `a` | Abrir lista de componentes | Adição de novos campos de formulário |
+| `d` | Abrir propriedades do componente | Configuração dos elementos selecionados |
+| `f` | Alternar árvore de conteúdo | Navegação em formulários complexos |
+| `p` | Alternar modo de visualização | Teste da funcionalidade do formulário |
+| `o` | Abrir formulário em nova guia | Teste de tela cheia |
+| `l` | Barra de localização de foco | Alternar para diferentes formulários |
+
+**Dica Profissional:** Use estes atalhos em combinação; por exemplo, selecione um componente, pressione `d` para configurá-lo e `p` para testar as alterações.
+
+## Fluxos de trabalho comuns
+
+### **Criando Seu Primeiro Formulário**
+
+1. **Adicionar estrutura** - Use `a` para adicionar um Painel para seções de formulário
+2. **Adicionar campos** - Inserir Entrada de Texto, Email e outros componentes
+3. **Configurar propriedades** - Selecione cada campo e pressione `d` para definir rótulos e validação
+4. **Testar funcionalidade** - Pressione `p` para visualizar e testar o formulário
+5. **Verificar exibição móvel** - Use o Modo Responsivo para verificar a exibição móvel
+6. **Publicar** - Clique em Publicar quando estiver pronto para entrar no ar
+
+### **Editando Forms Existente**
+
+1. **Navegar pela estrutura** - Use a Árvore de Conteúdo (`f`) para localizar componentes rapidamente
+2. **Selecionar e modificar** - Clique diretamente nos componentes ou use a Árvore de Conteúdo
+3. **Testar alterações** - Visualizar (`p`) após cada alteração significativa
+4. **Validar fluxo de trabalho** - Testar o fluxo de formulários completo antes de republicar
+
+### **Colaborando com Equipes**
+
+1. **Usar Gerenciamento de Tarefas** - Atribuir seções de formulário específicas aos membros da equipe
+2. **Compartilhar para revisão** - Use Abrir Página (`o`) para compartilhar visualizações limpas
+3. **Testar juntos** - Use o Modo de Visualização para sessões de teste colaborativo
+4. **Rastrear progresso** - Verificar notificações de atualizações de tarefa
+
+## Solução de problemas comuns
+
+### **Problemas de interface**
+
++++Elementos de interface não carregam
+
+**Problema:** os botões da barra de ferramentas, o Painel de Propriedades ou outros elementos da interface não aparecem
+
+**Soluções:**
+
+- **Atualizar a página** - Uma simples atualização do navegador frequentemente resolve problemas de carregamento
+- **Verificar compatibilidade do navegador** - Use Chrome, Firefox ou Safari
+- **Limpar cache do navegador** - Remover arquivos em cache que possam estar desatualizados
+- **Verificar permissões** - Verifique se você tem acesso adequado para editar formulários
+
++++
+
++++Componentes não respondem
+
+**Problema:** Não é possível selecionar componentes ou o Painel Propriedades não é atualizado
+
+**Soluções:**
+
+- **Clique diretamente nos componentes** - Evite clicar em áreas vazias
+- **Usar árvore de conteúdo** - Pressione `f` e selecione componentes da árvore
+- **Verificar elementos sobrepostos** - Alguns componentes podem estar bloqueando outros
+- **Recarregar o formulário** - Use a Barra de Localização (`l`) para recarregar o formulário atual
+
++++
+
++++Problemas do modo de visualização
+
+**Problema:** o Modo de Visualização não funciona corretamente ou mostra erros
+
+**Soluções:**
+
+- **Verificar validação de formulário** - Garantir que todos os campos obrigatórios estejam configurados corretamente
+- **Testar primeiro no Modo de Edição** - Verifique se os componentes funcionam antes de visualizar
+- **Limpar cache do navegador** - Os scripts em cache podem interferir na visualização
+- **Verifique a configuração do componente** - Verifique se há erros nas configurações do Modo de Propriedades
+
++++
+
+## Práticas recomendadas para a construção eficiente de formulários
+
+### **Dicas da Organização**
+
+- **Usar nomes descritivos** - Componentes de rótulo claramente no Modo de Propriedades
+- **Agrupar campos relacionados** - Use Painéis para organizar seções de formulário logicamente
+- **Planejar antes de compilar** - Faça um esboço da estrutura do formulário antes de iniciar
+- **Mantenha a simplicidade** - Evite sobrecarregar os usuários com muitos campos
+
+### **Otimização do desempenho**
+
+- **Minimizar componentes** - Use apenas os campos de formulário necessários
+- **Otimizar imagens** - Compactar todas as imagens usadas em formulários
+- **Testar em dispositivo móvel** - Garantir bom desempenho em conexões móveis mais lentas
+- **Validar com antecedência** - Configurar a validação adequada para evitar erros de envio
+
+### **Experiência do usuário**
+
+- **Testar com frequência** - Usar Modo de Visualização após cada alteração importante
+- **Pense como usuários** - Considere a experiência completa de preenchimento de formulário
+- **Fornecer rótulos claros** - Tornar as finalidades de campo óbvias para os usuários
+- **Adicionar texto útil** - Use texto de ajuda para campos complexos
+
+## Próximas etapas
+
+Agora que você entende a interface do Editor universal:
+
+1. **Pratique com um formulário simples** - Comece com campos básicos para se familiarizar
+2. **Explore recursos avançados** - Experimente ferramentas e integrações alimentadas por IA quando estiver pronto
+3. **Saiba mais sobre criação de formulários** - Consulte o [Guia de Introdução](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+4. **Editor de regras mestres** - Adicionar comportamentos dinâmicos com o [Guia do Editor de Regras](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+
+**Lembre-se:** o Editor Universal foi criado para tornar a criação de formulários intuitiva. Comece com o básico e explore gradualmente os recursos avançados à medida que suas necessidades aumentam.
 

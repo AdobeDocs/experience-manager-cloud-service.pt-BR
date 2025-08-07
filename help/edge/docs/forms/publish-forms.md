@@ -1,17 +1,17 @@
 ---
-title: Publish e Edge Delivery Services para AEM Forms
-description: Publish e Edge Delivery Services para AEM Forms
+title: Publicar uma Edge Delivery Services para o AEM Forms
+description: Publicar uma Edge Delivery Services para o AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 1%
+source-wordcount: '585'
+ht-degree: 0%
 
 ---
 
-# Publish seu formulário e comece a coletar dados
+# Publicar seu formulário e começar a coletar dados
 
 Quando estiver pronto para compartilhar o formulário com os clientes para coleta ou envio de dados, você pode simplesmente publicá-lo, disponibilizando o formulário prontamente para uso pelos clientes.
 
@@ -19,20 +19,20 @@ Quando estiver pronto para compartilhar o formulário com os clientes para colet
 
 ## Pré-requisitos
 
-* Você tem um projeto AEM com base em [Modelo do AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [adicionou um Bloco Forms AEM Adaptável ao seu projeto existente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
-* O formulário foi totalmente testado e está pronto para uso.
-* Sua [planilha está configurada](/help/edge/docs/forms/submit-forms.md) para aceitar os dados.
+- Você tem um Projeto do AEM baseado no [Modelo do AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [Bloco do Adaptive Forms adicionado ao seu Projeto do AEM existente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project)
+- O formulário foi totalmente testado e está pronto para uso.
+- Sua [planilha está configurada](/help/edge/docs/forms/submit-forms.md) para aceitar os dados.
 
 
-## Publish seu formulário
+## Publicar seu formulário
 
-+++ 1. Publish sua planilha
++++ &#x200B;1. Publique sua planilha
 
-1. Abra a conta do Microsoft SharePoint ou do Google AEM Drive e navegue até o diretório do projeto do Edge Delivery.
+1. Abra sua conta do Microsoft SharePoint ou Google Drive e navegue até o diretório do projeto do AEM Edge Delivery.
 
 1. Abra a planilha que tem seu formulário. Por exemplo, a [consulta](/help/edge/assets/enquiry.xlsx) da pasta de trabalho do Microsoft Excel.
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a planilha.
+1. Use o [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a planilha.
 
    ![Usar AEM Sidekick para visualizar a planilha](/help/edge/assets/preview-form.png)
 
@@ -40,16 +40,16 @@ Quando estiver pronto para compartilhar o formulário com os clientes para colet
 
    ![Formato JSON de Visualização do Forms](/help/edge/assets/forms-preview-json-format.png)
 
-1. Use AEM Sidekick para publicar a planilha. capture a URL de publicação, pois ela é necessária para renderizar o formulário na próxima seção. O formato do URL é o seguinte:
+1. Use o AEM Sidekick para publicar a planilha. capture a URL de publicação, pois ela é necessária para renderizar o formulário na próxima seção. O formato do URL é o seguinte:
 
 
    ```JSON
        https://<branch>--<repository>--<owner>.aem.live/<form>.json
    ```
 
-   * `<branch>` refere-se à ramificação do seu repositório GitHub.
-   * `<repository>` indica seu repositório GitHub.
-   * `<owner>` refere-se ao nome de usuário da sua conta GitHub que hospeda seu repositório GitHub.
+   - `<branch>` refere-se à ramificação do seu repositório GitHub.
+   - `<repository>` indica seu repositório GitHub.
+   - `<owner>` refere-se ao nome de usuário da sua conta GitHub que hospeda seu repositório GitHub.
 
    Por exemplo, se o repositório do seu projeto for chamado de &quot;wefinance&quot;, estiver localizado na conta &quot;wkndform&quot; e você estiver usando a ramificação e o formulário &quot;main&quot; como &quot;query&quot;, o URL será semelhante ao seguinte:
 
@@ -58,7 +58,7 @@ Quando estiver pronto para compartilhar o formulário com os clientes para colet
 
 +++
 
-+++ 2. Adicionar o formulário à sua página da Web
++++ &#x200B;2. Adicionar o formulário à sua página da Web
 
 Adicione o `<form>.json` a uma página da Web para facilitar a interação com o cliente, permitindo que os preenchimentos de formulário sejam preenchidos e enviados com facilidade.
 
@@ -99,18 +99,18 @@ Para adicionar o formulário à sua página da Web:
    | `https://main--wefinance--wkndform.aem.page/enquiry.json` |
 
 
-   **URL DO Publish**
+   **Publicar URL**
 
    | Formulário |
    |---|
    | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a página da Web. A página agora exibe o formulário. Por exemplo, este é o formulário baseado na [planilha de consulta](/help/edge/assets/enquiry-form.docx):
+1. Use o [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a página da Web. A página agora exibe o formulário. Por exemplo, este é o formulário baseado na [planilha de consulta](/help/edge/assets/enquiry-form.docx):
 
 
    ![Um exemplo de formulário EDS](/help/edge/assets/updated-form.png)
 
-1. Use AEM Sidekick para publicar o formulário. Agora, seus clientes podem preencher o formulário e enviá-lo.
+1. Use o AEM Sidekick para publicar o formulário. Agora, seus clientes podem preencher o formulário e enviá-lo.
 
 +++
 
@@ -125,6 +125,4 @@ Se você encontrar um erro semelhante à mensagem a seguir, isso indica que a pl
 +++
 
 
-## Consulte também:
 
-{{see-more-forms-eds}}

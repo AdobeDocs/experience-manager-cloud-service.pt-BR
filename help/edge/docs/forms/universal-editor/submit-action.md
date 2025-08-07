@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 hide: true
 hidefromToC: true
-source-git-commit: 565336d96a718a46f23d0acfa6155a6fd78ad87d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '928'
 ht-degree: 1%
 
 ---
@@ -23,20 +23,20 @@ O envio de formulários é a etapa final crítica na jornada do usuário — é 
 
 No final deste documento, você entenderá como:
 
-* Configurar diferentes tipos de ações de envio para seus formulários
-* Configurar envios de endpoint REST para integração com sistemas externos
-* Configurar envios de email para respostas de formulário
-* Implementar ações de envio personalizadas para necessidades comerciais específicas
-* Lidar com cenários de erro e validação de formulário durante o envio
+- Configurar diferentes tipos de ações de envio para seus formulários
+- Configurar envios de endpoint REST para integração com sistemas externos
+- Configurar envios de email para respostas de formulário
+- Implementar ações de envio personalizadas para necessidades comerciais específicas
+- Lidar com cenários de erro e validação de formulário durante o envio
 
 ### Público-alvo
 
 Este guia foi projetado para:
 
-* **Desenvolvedores de formulários** implementando a lógica de envio
-* **Integradores de sistemas** conectando formulários a sistemas back-end
-* **Analistas de negócios** definindo fluxos de trabalho de formulário
-* **Arquitetos técnicos** projetando processos de envio de formulário
+- **Desenvolvedores de formulários** implementando a lógica de envio
+- **Integradores de sistemas** conectando formulários a sistemas back-end
+- **Analistas de negócios** definindo fluxos de trabalho de formulário
+- **Arquitetos técnicos** projetando processos de envio de formulário
 
 ### Ações de envio disponíveis
 
@@ -49,16 +49,16 @@ O Universal Editor fornece dois tipos de ação de envio principais:
 
 Antes de configurar ações de envio, verifique se você tem:
 
-* Acesso ao Universal Editor
-* Permissões apropriadas para a configuração do formulário
-* Noções básicas do terminal de envio do target ou da configuração de email
+- Acesso ao Universal Editor
+- Permissões apropriadas para a configuração do formulário
+- Noções básicas do terminal de envio do target ou da configuração de email
 
 Uma ação enviar especifica o destino dos dados coletados por meio de um formulário adaptável. O processo de envio começa quando o usuário clica no botão **[!UICONTROL Enviar]** no formulário. O AEM Forms oferece dois tipos de ações de envio descritos abaixo e permite que você crie e use ações de envio personalizadas para atender às suas necessidades específicas. As ações de envio prontas para uso são:
 
 <!--To define a Submit Action for an Adaptive Form, you use the Properties dialog of the **Adaptive Form block** in the **Editor**-->
 
-* [Enviar para endpoint REST](#rest-endpoint-submission-ue)
-* [Enviar e-mail](#email-submission-ue)
+- [Enviar para endpoint REST](#rest-endpoint-submission-ue)
+- [Enviar e-mail](#email-submission-ue)
 
 
 ### Enviar para endpoint REST {#rest-endpoint-submission-ue}
@@ -66,9 +66,9 @@ Uma ação enviar especifica o destino dos dados coletados por meio de um formul
 A ação Enviar para Ponto de Extremidade REST é usada para enviar os dados de formulário enviados para um ponto de extremidade REST especificado. O endpoint pode pertencer a um servidor interno em que o formulário está hospedado ou a um servidor externo usando um caminho relativo ou um caminho absoluto. Para enviar dados ao servidor do AEM que hospeda o formulário, use um caminho relativo correspondente ao caminho raiz do servidor do AEM. Por exemplo, `/content/forms/af/SampleForm.html`. Para enviar dados para qualquer outro servidor, use o caminho absoluto.
 
 <!--Configuring the Submit Action to REST Endpoint for Adaptive Forms offers several benefits such as:  
-* It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
-* Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
-* Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
+- It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
+- Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
+- Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
 -->
 
 
@@ -86,8 +86,8 @@ Para configurar um endpoint REST:
 
 >[!NOTE]
 >
-> * Para publicar dados em um servidor interno, forneça o caminho do recurso. Os dados são publicados no caminho do recurso. Por exemplo, `/content/restEndPoint`. Para essas solicitações de publicação, as informações de autenticação da solicitação de envio são usadas.
-> * Para publicar dados em um servidor externo, forneça um URL. O formato da URL é `https://host:port/path_to_rest_end_point`. Certifique-se de configurar o caminho para lidar com a solicitação POST de forma anônima.
+> - Para publicar dados em um servidor interno, forneça o caminho do recurso. Os dados são publicados no caminho do recurso. Por exemplo, `/content/restEndPoint`. Para essas solicitações de publicação, as informações de autenticação da solicitação de envio são usadas.
+> - Para publicar dados em um servidor externo, forneça um URL. O formato da URL é `https://host:port/path_to_rest_end_point`. Certifique-se de configurar o caminho para lidar com a solicitação POST de forma anônima.
 
 ### Enviar e-mail {#email-submission-ue}
 
@@ -176,11 +176,8 @@ A opção Ao enviar ajuda a configurar uma mensagem de Ação de envio no envio 
 1. Selecione o **[!UICONTROL Bloco de Formulários Adaptáveis]**.
 1. Clique no ícone de propriedades ![propriedades](/help/forms/assets/Smock_Properties_18_N.svg).
 1. Ao clicar em, você verá a seguinte opção:
-   * **[!UICONTROL Ao Enviar]**: Ao Enviar ajuda você a personalizar uma mensagem a ser exibida quando um formulário for enviado. Por padrão, uma mensagem personalizada &quot;Obrigado por enviar o formulário&quot; é exibida ao usuário quando um formulário é enviado com êxito.
+   - **[!UICONTROL Ao Enviar]**: Ao Enviar ajuda você a personalizar uma mensagem a ser exibida quando um formulário for enviado. Por padrão, uma mensagem personalizada &quot;Obrigado por enviar o formulário&quot; é exibida ao usuário quando um formulário é enviado com êxito.
 Você também pode personalizar a mensagem de agradecimento no envio do formulário, selecionando a opção para **[!UICONTROL Mostrar mensagem]** e adicionar/editar sua mensagem no Rich Text **Editor**.
 
 
-## Consulte também:
-
-{{universal-editor-see-also}}
 

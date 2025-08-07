@@ -4,17 +4,17 @@ description: Saiba como criar um formulário adaptável usando  [!DNL Experience
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '711'
 ht-degree: 11%
 
 ---
 
-
 # Criar um formulário adaptável (componentes principais) com base em modelos de formulário XFA
 
-<span class="preview"> O recurso está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 O AEM as a Cloud Service fornece aos usuários a opção de criar o Forms adaptável com base nos Componentes principais usando modelos de formulário XFA (XML Forms Architecture) ou arquivos `*.XDP` (XML Data Package). Esse recurso permite que os usuários economizem tempo migrando campos do modelo de formulário XFA ou arquivos XDP diretamente para o Adaptive Forms.
 
@@ -25,7 +25,7 @@ Você pode redefinir o modelo de formulário XFA ou os modelos de formulário de
 Algumas das vantagens de criar formulários com base em modelos de formulário XFA ou arquivos XDP são:
 
 * **Economia de tempo**: você pode reutilizar rapidamente modelos de formulário XFA (arquivos XDP) existentes sem precisar recriar a estrutura do formulário, economizando tempo e esforço durante o processo de criação.
-* **Migração sem esforço**: se você já tiver modelos de formulário XFA em uso, essa opção fornecerá um caminho de migração fácil para o Adaptive Forms, permitindo que você aproveite os benefícios dos Componentes principais do AEM modernos sem perder a lógica e os dados de formulário existentes.
+* **Migração sem esforço**: se você já tiver modelos de formulário XFA em uso, essa opção fornecerá um caminho de migração fácil para o Adaptive Forms, permitindo que você aproveite os benefícios dos Componentes principais modernos do AEM sem perder a lógica e os dados de formulário existentes.
 * **Experiência do usuário aprimorada**: o Forms adaptável é mais responsivo e personalizável do que os formulários XFA. Ao fazer a transição para o Adaptive Forms, você pode garantir uma experiência mais amigável em diferentes dispositivos e tamanhos de tela.
 * **Integração aprimorada**: o Forms adaptável integra-se melhor com outros recursos, como fluxos de trabalho, associação de dados e envios de formulários, permitindo fluxos de trabalho mais suaves e um melhor gerenciamento geral de formulários.
 
@@ -93,7 +93,3 @@ Um Formulário adaptável será criado e aberto no editor de Formulários adapt�
 >
 > Você pode desativar scripts para campos de formulário XDP usando a barra de ferramentas do painel do campo adicionado. Crie lógicas para os campos adicionados usando o [Editor de Regras Visuais](/help/forms/rule-editor-core-components.md).
 
-## Consulte também:
-
-{{see-also}}
-* [Adicionar comportamento dinâmico a formulários usando o editor de regras](/help/forms/rule-editor-core-components.md)
