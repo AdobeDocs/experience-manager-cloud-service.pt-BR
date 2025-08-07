@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2117'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Antes de começar, verifique se você tem o seguinte:
 
 >[!TIP]
 >
-> Novo no AEM? Comece com o [Guia de Introdução do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=pt-BR).
+> Novo no AEM? Comece com o [Guia de Introdução do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html).
 
 ## Caminho A: Criar novo projeto com o Forms
 
@@ -182,8 +182,8 @@ O arquivo `fstab.yaml` conecta seu repositório GitHub ao ambiente de criação 
 
 **Validação:** confirme a conexão do repositório GitHub com o AEM.
 
->[!NOTE]
->
+    >[!NOTE]
+    >
 >Você está tendo problemas de build? Consulte [Solução de problemas de compilação do GitHub](#troubleshooting-github-build-issues).
 
 +++
@@ -399,11 +399,11 @@ Vamos analisar cada etapa:
 
    ```bash
    # Form block rule engine files
-    blocks/form/rules/formula/*
-    blocks/form/rules/model/*
-    blocks/form/rules/functions.js
-    scripts/editor-support.js
-    scripts/editor-support-rte.js
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
    ```
 
 2. **Atualizar .eslintrc.js**
@@ -648,7 +648,7 @@ Um ambiente de desenvolvimento local permite fazer alterações e vê-las instan
    A CLI do AEM simplifica as tarefas de desenvolvimento locais:
 
    ```bash
-   npm install -g @adobe/aem-cli
+       npm install -g @adobe/aem-cli
    ```
 
 2. **Clonar seu repositório**

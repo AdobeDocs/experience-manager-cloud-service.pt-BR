@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: b4aec70b13575366c1d40ccf935481580a1fb6d8
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 8%
+source-wordcount: '2197'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2025.6.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 26 de junho de 2025. O próximo lançamento de recursos (2025.7.0) está planejado para sexta-feira, 7 de agosto de 2025.
+A data de lançamento da versão atual (2025.7.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 7 de agosto de 2025. O próximo lançamento de recursos (2025.8.0) está planejado para sexta-feira, 28 de agosto de 2025.
 
 ## Notas da versão de manutenção {#maintenance}
 
@@ -38,56 +38,147 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 ## Release Video {#release-video}
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
+Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Novos recursos no Experience Manager Sites {#enhancements-sites}
+
+**Melhorias nos fragmentos de conteúdo**
+
+* Agora você pode copiar fragmentos de conteúdo com filhos.
+* Agora você pode configurar um espaço de trabalho personalizado nas configurações da pasta para exportar os fragmentos de conteúdo para o espaço de trabalho configurado no Adobe Target.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Gerenciamento aprimorado do formulário de metadados no Assets View**
+**Adicionar formas aos modelos do Dynamic Media**
 
-Agora é possível importar formulários de metadados da Exibição de administração diretamente para a Exibição do Assets. Qualquer atualização feita nesses formulários na exibição do Assets reflete automaticamente na exibição do Administrador, garantindo a consistência em ambas as experiências. Esse recurso oferece suporte a uma transição contínua para a nova visualização do Assets, mantendo a continuidade com as configurações de metadados existentes.
+Agora você pode [adicionar camadas de forma a modelos do Dynamic Media](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas) no Experience Manager Assets. Semelhante às camadas de imagem e texto, as camadas de forma são compatíveis com parâmetros para atualizações em tempo real por meio da URL do modelo. Também é possível incluir links do call-to-action (CTA) para formas em seus modelos.
 
-![Metadados gerados pela IA](/help/assets/assets/import-metadata-forms-page.png)
+![Adicionar formas aos modelos do Dynamic Media](/help/assets/assets/enable-uniform-radius-shape.png)
+
+**Aprimoramentos de metadados gerados por IA**
+
+O AEM Assets agora permite [configurar a exibição de títulos de ativos no modo de exibição Cartão ou em Lista](/help/assets/smart-tags.md#configure-ai-generated-titles) na página Procurar Ativos. Você pode optar por exibir o título do ativo definido por você, o título gerado usando IA ou usar o título gerado por IA somente se não houver um título existente para o ativo.
+
+![Configurar títulos gerados por IA](/help/assets/assets/configure-title-ai-generated.png)
+
+Agora, também é possível optar por desativar os metadados gerados por IA no nível da pasta.
+
 
 ### Novos recursos no Content Hub {#new-features-content-hub}
 
-**Governança de coleções**
+**Flexibilidade de marca aprimorada no Content Hub**
 
-O Content Hub agora permite [controlar o acesso às coleções durante a criação, garantindo que somente usuários autorizados possam exibir ou gerenciar ativos agrupados](/help/assets/collections-content-hub.md##create-collections). Ele garante maior segurança, melhor colaboração, gerenciamento organizado de ativos e governança simplificada.
+Com base nos recursos de personalização existentes, o Content Hub agora permite que os administradores personalizem ainda mais sua implantação adicionando imagens de logotipo personalizadas. O suporte para o formato de arquivo do TIFF também foi adicionado para imagens de banner e logotipo, permitindo maior flexibilidade de design.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463336)
+**Compartilhamento mais inteligente com links denominados**
+
+Agora é possível adicionar um título ao gerar um link compartilhado, seja na exibição de detalhes do ativo ou após selecionar um ou mais ativos. Isso ajuda os recipients a identificar facilmente a finalidade de cada link, especialmente ao receber vários ativos compartilhados.
+
+![link privado e público](/help/assets/assets/shared-link-for-assets.png)
+
+**Navegação de filtro aprimorada**
+
+O Content Hub agora inclui uma opção **Mostrar tudo** nos filtros, permitindo que os usuários visualizem todas as facetas disponíveis junto com as contagens de ativos a partir da limitação atual de visualizar apenas até dez facetas. Os recursos aprimorados de pesquisa e classificação em cada filtro facilitam a descoberta e o gerenciamento de ativos com mais eficiência.
+
+### AEM Desktop App versão 3.0.0 {#desktop-app-release-3.0.0}
+
+Aproveite o upload automatizado de novos arquivos e pastas, as operações aprimoradas de arquivos, a detecção mais inteligente de ativos e a integração perfeita com o AEM — tornando o gerenciamento de conteúdo mais rápido, claro e intuitivo.
+
+Para obter a lista completa de recursos, consulte as [Notas de Versão do Aplicativo de Desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
+
+### Novos recursos no Dynamic Media com recursos OpenAPI {#new-features-dynamic-media-with-openapi}
+
+**Visualizar ativos antes de publicar**
+
+[!DNL Dynamic Media with OpenAPI capabilities] agora permite a visualização de ativos diretamente nas [!DNL AEM Sites] páginas do autor, antes de torná-los disponíveis publicamente. Compartilhe páginas de visualização com as partes interessadas para coletar feedback sobre a qualidade visual e o ajuste contextual. Durante o ciclo de revisão, é possível criar e gerenciar várias versões de ativos antes de finalizá-los para publicação.
+
+**Imagem inteligente aprimorada para solicitações de imagem OpenAPI**
+
+Todas as solicitações de imagem do OpenAPI agora aproveitam totalmente o Smart Imaging com promoção automática e lógica de fallback. Esse aprimoramento otimiza as imagens com base nas condições do dispositivo e da rede, oferecendo carregamentos de página mais rápidos e uso reduzido da largura de banda — enquanto mantém a qualidade visual.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### Novos recursos no AEM Forms {#forms-new-features}
+
+**Editor Universal para Forms Adaptável e Fragmentos de Formulário**
+
+O [Editor Universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) agora oferece suporte à criação de Fragmentos de formulário adaptáveis e reutilizáveis do Forms. Os autores podem criar formulários visualmente, configurar ações de envio e adicionar a validação do reCAPTCHA, tudo em um ambiente de criação simplificado do WYSIWYG. Esse recurso acelera a criação de formulários, melhora a consistência e melhora a proteção contra spam e abuso automatizado.
+
+![Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-### Recursos de pré-lançamento
+**Serviço de envio do Forms para o Edge Delivery Services Forms**
 
-* [Editor Universal para Forms Forms Adaptável e Fragmentos de Formulário](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): o Editor Universal agora oferece suporte à criação de Fragmentos de Formulário Adaptáveis e Reutilizáveis. Os autores podem criar formulários visualmente, configurar ações de envio e adicionar a validação do reCAPTCHA, tudo em um ambiente de criação simplificado do WYSIWYG. Esse recurso acelera a criação de formulários, melhora a consistência e melhora a proteção contra spam e abuso automatizado.
+Consulte [Serviço de Envio do Forms](/help/forms/forms-submission-service.md). O permite armazenar dados diretamente de envios do Formulário adaptável em plataformas de planilhas populares, como Google Sheets, Microsoft OneDrive ou SharePoint. Essa integração simplifica o gerenciamento de dados permitindo o envio direto de dados de formulário para a planilha escolhida, eliminando a transferência manual de dados e reduzindo erros.
 
-* [Gerar e Sincronizar representações AFP do Forms Adaptive](/help/forms/document-generation-afp-api.md): a API de Sincronização de Saída AFP permite que administradores e usuários gerem a saída AFP (Advanced Function Presentation) do Forms Adaptive e sincronizem a saída com sistemas externos ou locais de armazenamento. O AFP é um formato de documento de alto desempenho otimizado para impressão, geralmente usado em ambientes corporativos de grande escala.
+Os principais benefícios incluem:
 
-* [Biblioteca de documentos do SharePoint - Salvar anexos com nomes de arquivo originais](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): agora há a opção de salvar anexos de formulário usando seus nomes de arquivo originais ao armazená-los em uma Biblioteca de Documentos do SharePoint. Esse aprimoramento simplifica a identificação e o gerenciamento de arquivos carregados.
+* **Integração direta:** configure seus formulários para enviar dados diretamente para uma planilha especificada.
+* **Mapeamento de dados personalizado:** Mapeie campos de formulário para colunas de planilha correspondentes para armazenamento organizado.
+* **Controle de acesso:** use as permissões de planilha existentes para gerenciar quem pode acessar ou modificar os dados enviados.
 
-* **Editor de regras**:
-   * [Condição Binária com Evento de Clique na Cláusula &quot;When&quot;](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): o Editor de Regras agora permite combinar um evento de clique de botão (_É Clicado_) com outras condições na cláusula &quot;When&quot;. Isso permite um controle mais preciso sobre a execução da regra com base na interação do usuário e outros fatores. Observação: ao usar várias condições, o evento de clique deve ser a primeira condição listada.
-   * [Condições de Validação para Campos e Painéis](/help/forms/rule-editor-core-components-usecases.md): o Editor de Regras agora inclui condições _IsValid_ e _IsNotValid_. Isso permite verificar o status de validação de campos específicos ou painéis inteiros (incluindo layouts como Guias horizontais, Guias verticais, Acordeões e Assistentes), facilitando a navegação aprimorada do formulário e a experiência do usuário com base nos resultados da validação.
-* [Gerenciamento de Escopo aprimorado para Listas do SharePoint](/help/forms/connect-forms-to-sharepoint-list.md): os sites do SharePoint agora oferecem suporte a todos os caminhos gerenciados, por exemplo, /sites e /team. Esse aprimoramento permite uma integração mais ampla em várias estruturas de site do SharePoint, oferecendo maior flexibilidade na conexão com o conteúdo organizacional.
-* [Suporte para Salvar Documento de Registro na Lista do SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): o Forms criado usando um Modelo de Dados de Formulário (FDM) baseado em Lista do SharePoint agora pode salvar o Documento de Registro (DoR) nas Listas do SharePoint configurando a propriedade do campo Documento de Referência de Associação de Registro. Esse aprimoramento permite a integração perfeita de dados e documentos de formulário compatíveis com o armazenamento da SharePoint.
+**Gerar e sincronizar representações AFP do Forms Adaptável**
 
-### Recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
+A [API de Sincronização de Saída AFP](/help/forms/document-generation-afp-api.md) permite que administradores e usuários gerem a saída AFP (Advanced Function Presentation) do Adaptive Forms e sincronizem a saída com sistemas externos ou locais de armazenamento. O AFP é um formato de documento de alto desempenho otimizado para impressão, geralmente usado em ambientes corporativos de grande escala.
 
-O programa de acesso antecipado da AEM Forms oferece uma oportunidade única para você obter acesso exclusivo a inovações de última geração e ajudar a moldar seu desenvolvimento.
+<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
 
-Estas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no Programa de Acesso Antecipado, consulte a [documentação do Programa de Acesso Antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
+**Enhancements in Rule Editor**
 
-#### Integração do Adobe Experience Platform (AEP) com o Forms
+* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
+* The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
+* Rules now support the use of dynamic variables.
+* Custom event-based rules are now supported.
+* Repeatable panel rules are now executed based on context, rather than only on the last panel instance.
+* Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
+* Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
-* [Integração do AEM Forms com o Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): o AEM Forms ao Adobe Experience Platform Connector permite a integração perfeita entre o Adaptive Forms e o Adobe Experience Platform. Esse recurso permite que os dados do formulário sejam mapeados para esquemas XDM e enviados diretamente para a AEP em tempo real. Ele simplifica a captura de dados para casos de uso de personalização e ativação em soluções da Adobe Experience Cloud.
+ -->
+
+### Novos recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
+
+O Programa de acesso antecipado da AEM Forms oferece uma oportunidade única para você obter acesso exclusivo a inovações de última geração e ajudar a moldar seu desenvolvimento.
+
+Essas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no Programa de Acesso Antecipado, consulte a [documentação do Programa de Acesso Antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
+
+
+<!-- **Forms Optimization opportunities**
+
+Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469472/) 
+
+Key optimization opportunities include:
+
+* Increasing visibility for forms with low views
+* Improving completion rates for forms with low conversions
+* Addressing accessibility compliance issues
+* Streamlining navigation to enhance user experience
+
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
+
+**Editor de Regras para o Editor de Comunicações Interativas**
+
+Crie ações dinâmicas orientadas por dados diretamente nos seus documentos usando uma interface intuitiva do tipo apontar-e-clicar. Defina facilmente a lógica condicional, automatize fluxos de trabalho e personalize o conteúdo sem gravar código.
+
+**CLI do AEM Forms Scaffolder para Componentes Personalizados**
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+
+Acelere o desenvolvimento do AEM Forms Edge Delivery Services com essa ferramenta de CLI. Gere instantaneamente o código e a fiação necessários para iniciar o desenvolvimento de componentes personalizados — sem chapas metálicas, sem complicações.
+
+**Ferramenta de Integração de API para Dados de Formulário Dinâmicos**
+
+A Ferramenta de integração de API permite que os autores de formulários criem formulários dinâmicos e inteligentes que buscam e preenchem automaticamente dados de APIs REST externas com base nas interações do usuário. Esse recurso de integração sem código transforma formulários estáticos em interfaces responsivas de coleção de dados.
+
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -105,6 +196,7 @@ Expanda a lista abaixo para visualizar as APIs obsoletas e as configurações de
   <summary>Expandir para ver as descontinuações</summary>
 
 APIs Java:
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -131,7 +223,7 @@ Propriedades OSGi:
 
 ### Descontinuação do Java 11 Runtime {#java11-runtime-deprecation}
 
-O **Java 11 runtime** agora está obsoleto, e a maioria dos ambientes já foi atualizada para o **Java 21 runtime** mais eficiente.
+O **Java 11 runtime*- agora está obsoleto, e a maioria dos ambientes já foi atualizada para o **Java 21 runtime** de maior desempenho.
 
 Se seu ambiente não pôde ser atualizado devido a dependências sem suporte (consulte [requisitos de tempo de execução do Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), você deve ter recebido um email da Adobe com as próximas etapas específicas. Verifique se todas as atualizações necessárias foram concluídas até **28 de agosto de 2025** para que seu ambiente possa ser atualizado sem interrupções.
 
@@ -150,18 +242,18 @@ Revise e atualize todos os processos downstream que dependem do comportamento de
 
 ### Limpeza padrão de versões anteriores e logs de auditoria {#mt-defaults}
 
-Atualmente, as versões de conteúdo e logs de auditoria têm suas *tarefas de manutenção de limpeza* associadas desabilitadas por padrão e, portanto, nenhum dado é removido, a menos que seja configurado explicitamente.
+Atualmente, as versões de conteúdo e os logs de auditoria têm suas *tarefas de manutenção de limpeza — desativadas por padrão e, portanto, nenhum dado é removido, a menos que seja configurado explicitamente.
 
-No entanto, para otimizar o desempenho do repositório, a partir de **início de julho de 2025**, a limpeza será habilitada por padrão, seguindo estas diretrizes:
+No entanto, para otimizar o desempenho do repositório, a limpeza será ativada por padrão em uma data futura anunciada, seguindo estas diretrizes:
 
 #### Versões de conteúdo {#mt-content}
 
-* **Novos ambientes** (criados após uma data futura) (a ser comunicada posteriormente)
-   * Versões com mais de **30 dias** serão excluídas periodicamente.
+* **Novos ambientes*- (criado após uma data futura (a ser comunicado posteriormente)
+   * Versões com mais de **30 dias*- serão excluídas periodicamente.
    * As cinco versões mais recentes nos últimos 30 dias são mantidas, juntamente com a versão mais recente e a versão atual, independentemente da idade.
 
-* **Ambientes existentes** (criados antes desta data futura):
-   * Versões com mais de **7 anos** serão excluídas periodicamente.
+* **Ambientes existentes*- (criados antes desta data futura):
+   * Versões com mais de **7 anos*- serão excluídas periodicamente.
    * Todas as versões nos últimos 7 anos são mantidas.
    * Esse alto limite padrão impede a remoção não intencional de dados recentes. No entanto, é recomendável configurar valores mais baixos para otimizar o desempenho do repositório.
 
@@ -169,12 +261,12 @@ No entanto, para otimizar o desempenho do repositório, a partir de **início de
 
 #### Log de auditoria {#mt-auditlogs}
 
-* **Novos ambientes** (criados após uma data futura, que serão comunicados separadamente):
-   * Logs de replicação, DAM e auditoria de página com mais de **7 dias** serão excluídos periodicamente.
+* **Novos ambientes*- (criado após uma data futura, que será comunicada separadamente):
+   * Logs de replicação, DAM e auditoria de página com mais de **7 dias*- serão excluídos periodicamente.
    * Todos os eventos são registrados por padrão.
 
-* **Ambientes existentes** (criados antes desta data futura):
-   * Logs de replicação, DAM e auditoria de página com mais de **7 anos** serão excluídos periodicamente.
+* **Ambientes existentes*- (criados antes desta data futura):
+   * Logs de replicação, DAM e auditoria de página com mais de **7 anos*- serão excluídos periodicamente.
    * Todos os eventos são registrados por padrão.
    * Esse alto limite padrão impede a remoção não intencional de dados recentes. No entanto, é recomendável configurar valores mais baixos para otimizar o desempenho do repositório.
 
@@ -193,6 +285,7 @@ Casos de uso comuns incluem:
 * Atuar como middleware entre a CDN e sua origem
 * Reformatar respostas de APIs de terceiros (e talvez agregar várias respostas de APIs) antes de entregá-las ao navegador
 * Compor e servir HTML renderizado pelo servidor na borda usando conteúdo compilado de vários back-ends
+* Expor um servidor MCP para LLMs como ChatGPT e Claude para acessar ferramentas personalizadas
 
 Temos um número limitado de oportunidades disponíveis para projetos do AEM Publish Delivery ou do Edge Delivery Services para sites de produção em tempo real. Se você estiver interessado em participar ou quiser saber mais, envie um email para [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) com uma breve descrição do seu caso de uso.
 
@@ -200,19 +293,25 @@ Temos um número limitado de oportunidades disponíveis para projetos do AEM Pub
 
 A CDN gerenciada pela Adobe oferece opções de configuração flexíveis, conforme descrito no [artigo sobre Pipeline de configuração](/help/operations/config-pipeline.md#configurations).
 
-Agora em uma versão beta, implante um pipeline de configuração para recursos que incluem seletores de origem CDN, transformações de resposta e solicitação e muito mais. Entre em contato com [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) com os detalhes do seu caso de uso.
+Agora em uma versão beta, implante um pipeline de configuração para recursos que incluem seletores de origem de CDN, transformações de resposta e solicitação, encaminhamento de log de CDN e muito mais. Entre em contato com [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) com os detalhes do seu caso de uso.
+
+### Instantâneos para RDEs (Programa Alpha) {#rde-snapshot-beta}
+
+Em alfa, os ambientes de desenvolvimento rápido (RDEs) agora oferecem suporte a um recurso para obter um instantâneo do estado atual do código e do conteúdo, que pode ser restaurado posteriormente. Isso pode ser útil ao sincronizar código que pode precisar ser revertido ou ao alternar entre o desenvolvimento de diferentes recursos. Também é possível restaurar apenas o conteúdo mutável como um ponto de partida conhecido para testes.
+
+Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) se houver interesse em fornecer feedback sobre esse recurso.
 
 ### Encaminhamento de logs do AEM para mais destinos (programa Beta) {#log-forwarding-beta}
 
 Embora os logs possam ser baixados da Cloud Manager, muitas organizações acham útil transmitir esses logs para um destino de registro preferencial. O AEM já oferece suporte ao encaminhamento de logs do AEM e do CDN para o Armazenamento de Blobs do Azure, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. Esse recurso é configurado de maneira automatizada e implantado usando o Pipeline de configuração.
 
-Agora na versão beta, você pode encaminhar logs do AEM para o Amazon S3, o Sumo Logic e sua própria conta da New Relic (não a conta fornecida pela Adobe). Observe que os logs do AEM (incluindo o Apache/Dispatcher) são compatíveis com esses destinos de log, mas não com os logs CDN. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para acesso.
+Agora na versão beta, você pode encaminhar logs do AEM para o Amazon S3, Sumo Logic, Dynatrace e sua própria conta da New Relic (não a conta fornecida pela Adobe). Observe que os logs do AEM (incluindo o Apache/Dispatcher) são compatíveis com esses destinos de log, mas não com os logs CDN. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para acesso.
 
 Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/developing/introduction/log-forwarding.md).
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

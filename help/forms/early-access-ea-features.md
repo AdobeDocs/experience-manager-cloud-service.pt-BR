@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
-source-wordcount: '2467'
+source-wordcount: '2837'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,8 @@ As Comunicações interativas na nuvem são uma solução poderosa para criar, g
 
 * **Flexibilidade de Formato**: Saída para os formatos PDF, HTML, PCL, PostScript® e ZPL.
 
+* **Editor de regras**: crie ações dinâmicas orientadas por dados diretamente nos seus documentos usando uma interface intuitiva do tipo apontar-e-clicar. Defina facilmente a lógica condicional, automatize fluxos de trabalho e personalize o conteúdo sem gravar código.
+
 #### Casos de uso:
 
 * Instituições financeiras que geram extratos de conta
@@ -154,6 +156,38 @@ O AEM Forms HTML5 Forms permite renderizar modelos de formulário XFA (XML Forms
 * **Salvamento do rascunho**: Salve um formulário do HTML5 como rascunho e retome o preenchimento do formulário em um estágio posterior.
 
 Pronto para começar? A documentação de [Introdução aos formulários HTML5](/help/forms/introductionhtml5.md) fornece uma visão geral abrangente e um guia de introdução para essa inovação.
+
+### CLI de Scaffolder do AEM Forms para componentes personalizados
+
+Acelere o desenvolvimento do AEM Forms Edge Delivery Services com a ferramenta AEM Forms CLI. Essa interface de linha de comando permite gerar instantaneamente o código e a fiação necessários para iniciar o desenvolvimento de componentes personalizados — sem chapas metálicas, sem complicações.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+
+**Principais recursos:**
+
+* **Armação rápida**: gere instantaneamente a estrutura e o código para novos componentes personalizados, reduzindo o tempo de configuração manual.
+* **Práticas recomendadas internas**: a ferramenta segue os padrões recomendados para o AEM Forms Edge Delivery Services, garantindo a consistência e a capacidade de manutenção.
+* **Produtividade do desenvolvedor**: concentre-se na criação da lógica de negócios e da interface do usuário, enquanto a CLI lida com tarefas de instalação repetitivas.
+* **Integração contínua**: os componentes gerados estão prontos para uso e se integram aos seus projetos existentes do AEM Forms.
+
+Pronto para começar? A ferramenta AEM Forms CLI está disponível no programa de acesso antecipado para implantações do Forms as a Cloud Service. Para solicitar acesso, envie um email para a ID da sua organização e os detalhes do programa para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) a partir do seu endereço oficial.
+
+### Ferramenta de integração de API para dados de formulário dinâmicos
+
+A Ferramenta de integração de API permite que os autores de formulários criem formulários dinâmicos e inteligentes que buscam e preenchem automaticamente dados de APIs REST externas com base nas interações do usuário. Esse recurso de integração sem código transforma formulários estáticos em interfaces responsivas de coleção de dados.
+
+Os principais recursos incluem:
+
+* **Interface de Configuração Visual**: crie integrações de API por meio de uma interface intuitiva, do tipo apontar-e-clicar, sem codificação personalizada
+* **Preenchimento de dados em tempo real**: preencher automaticamente campos de formulário com base na entrada do usuário (por exemplo, preencher automaticamente a cidade e o estado quando o usuário digitar o CEP)
+* **Suporte à API flexível**: conecte-se a qualquer API REST acessível publicamente com suporte a métodos GET/POST, autenticação e respostas JSON/XML
+* **Acionadores com base em regras**: defina quando as chamadas de API serão acionadas usando o mecanismo de regras interno (por exemplo, alterações de campo, eventos de formulário)
+* **Mapeamento de dados inteligentes**: configure como os dados de resposta da API são mapeados para campos de formulário específicos usando os recursos de análise JSON do Adobe
+* **Experiência do Usuário Aprimorada**: reduza a entrada manual de dados, melhore a precisão dos dados e crie interações de formulário mais envolventes
+
+Essa ferramenta é útil principalmente para cenários como preenchimento automático de endereços, população suspensa dinâmica, validação em tempo real em relação a bancos de dados externos e criação de experiências de formulário com reconhecimento de contexto que se adaptam com base na entrada do usuário.
+
+
 
 ## Inovações adicionais de acesso antecipado
 
@@ -204,7 +238,7 @@ A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas 
 
 Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
 
-Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### APIs Doc Assurance
 
