@@ -4,7 +4,7 @@ description: Criar componentes personalizados para um formulário EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1789'
 ht-degree: 0%
@@ -45,10 +45,13 @@ No final deste artigo, você aprenderá a criar componentes personalizados do ze
 Antes de um componente personalizado poder ser usado, ele deve ser registrado para que o Editor universal o reconheça como uma opção disponível. Isso é feito por meio de uma definição de componente, que inclui um identificador exclusivo, propriedades padrão e a estrutura do componente.Execute as seguintes etapas para disponibilizar o componente personalizado para criação de formulário:
 
 1. **Adicionar nova pasta e arquivos**
-Adicione novas pastas e arquivos para o novo componente personalizado no projeto do AEM.
+
+   Adicione novas pastas e arquivos para o novo componente personalizado no projeto do AEM.
+
    1. Abra o projeto do AEM e navegue até `../blocks/form/components/`.
    1. Adicione uma nova pasta para o componente personalizado em `../blocks/form/components/<component_name>`. Neste exemplo, criamos uma pasta chamada `range`.
    1. Navegue até a pasta recém-criada em `../blocks/form/components/<component_name>`. Por exemplo, navegue até `../blocks/form/components/range` e adicione os seguintes arquivos:
+
       - `/blocks/form/components/range/_range.json`: contém a definição do componente personalizado.
       - `../blocks/form/components/range/range.css`: define o estilo do componente personalizado.
       - `../blocks/form/components/range/range.js`: Personaliza o componente personalizado no tempo de execução.
@@ -101,7 +104,7 @@ O arquivo `_range.json`, após adicionar a definição do componente, é o segui
 
 >[!NOTE]
 >
-> Todos os componentes relacionados ao formulário seguem a mesma abordagem que o Sites ao adicionar blocos ao Universal Editor. Consulte o artigo [Criação de blocos instrumentados para uso com o Editor universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) para obter mais informações.
+> Todos os componentes relacionados ao formulário seguem a mesma abordagem que o Sites ao adicionar blocos ao Universal Editor. Consulte o artigo [Criação de blocos instrumentados para uso com o Editor universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) para obter mais informações.
 
 ### &#x200B;2. Definir as propriedades do componente personalizado para criação
 
@@ -158,7 +161,7 @@ O componente personalizado inclui um modelo de componente que especifica quais p
 
    >[!NOTE]
    >
-   > Para adicionar um novo campo à caixa de diálogo **Propriedade** de um componente personalizado, siga o [esquema definido](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
+   > Para adicionar um novo campo à caixa de diálogo **Propriedade** de um componente personalizado, siga o [esquema definido](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
 
    Você também pode [adicionar propriedades personalizadas](#adding-custom-properties-for-your-custom-component) a um componente personalizado para estender sua funcionalidade.
 
@@ -358,18 +361,18 @@ Você pode modificar componentes personalizados usando marcação predefinida, c
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /- Dark Blue */
-   border: 3px solid #00008B; /- Dark Blue */
+   background: #00008B; /* Dark Blue */
+   border: 3px solid #00008B; /* Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /- Dark Blue */
+   border-color: #00008B; /* Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /- Dark Blue */
+   color: #00008B; /* Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -407,7 +410,7 @@ Você pode modificar componentes personalizados usando marcação predefinida, c
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
+   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),

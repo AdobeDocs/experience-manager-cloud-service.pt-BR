@@ -1,18 +1,17 @@
 ---
-title: Como preencher previamente os campos do formulário adaptável?
+title: Como preencher previamente campos de formulário adaptável
 description: Use dados existentes para preencher previamente os campos de um Formulário adaptável. Os usuários podem preencher previamente as informações básicas em um formulário fazendo logon com seus perfis sociais.
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: preenchimento prévio de formulário adaptável, serviços de entrega de borda de formulários adaptáveis, preenchimento automático de formulário adaptável
-source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 1%
 
 ---
-
 
 # Configuração do serviço de preenchimento prévio no Forms adaptável usando o Edge Delivery Services
 
@@ -37,9 +36,9 @@ O diagrama a seguir ilustra o processo de preenchimento automático que ocorre q
 O processo de preenchimento prévio envolve quatro etapas principais:
 
 1. **O usuário abre o formulário**: o usuário acessa um formulário adaptável por meio de uma URL ou navegação
-2. **Identificar Source de Dados**: o serviço de Preenchimento Prévio determina a fonte de dados configurada (Modelo de Dados de Formulário ou serviço de Rascunho)
-3. **Recuperar Dados**: o sistema busca dados de usuário relevantes com base no contexto, nos parâmetros ou na identificação do usuário
-4. **Mapear e Exibir**: os dados são mapeados para campos de formulário usando propriedades `bindRef` e o formulário preenchido é exibido ao usuário
+1. **Identificar Source de Dados**: o serviço de Preenchimento Prévio determina a fonte de dados configurada (Modelo de Dados de Formulário ou serviço de Rascunho)
+1. **Recuperar Dados**: o sistema busca dados de usuário relevantes com base no contexto, nos parâmetros ou na identificação do usuário
+1. **Mapear e Exibir**: os dados são mapeados para campos de formulário usando propriedades `bindRef` e o formulário preenchido é exibido ao usuário
 
 Esse processo automatizado garante que os usuários vejam um formulário pré-preenchido com suas informações relevantes, melhorando significativamente a experiência do usuário e as taxas de conclusão do formulário.
 
@@ -62,7 +61,6 @@ O formato de dados deve corresponder ao seu modelo de formulário:
 - **Formulários de esquema JSON**: compatível com JSON com o esquema
 - **Formulários do Modelo de Dados de Formulário (FDM)**: JSON correspondente à estrutura do FDM
 - **Formulários sem esquema**: todos os campos estão desvinculados e usam XML desvinculado
-
 
 ## Pré-requisitos
 
@@ -106,39 +104,39 @@ O Editor universal fornece duas opções de serviço de preenchimento prévio:
 
 ## Configurar o serviço de preenchimento prévio para um formulário
 
-
 +++Fase 1: Configuração Do Modelo De Dados De Formulário
 
 ### Etapa 1: Criar modelo de dados do formulário
 
 1. Faça logon na sua instância do AEM Forms as a Cloud Service
-2. Navegue até **Adobe Experience Manager** > **Forms** > **Integrações de Dados**
-3. Selecione **Criar** > **Modelo de Dados de Formulário**
-4. Escolha sua **Configuração do Data Source** e selecione o **Data Source** configurado
+1. Navegue até **Adobe Experience Manager** > **Forms** > **Integrações de Dados**
+1. Selecione **Criar** > **Modelo de Dados de Formulário**
+1. Escolha sua **Configuração do Data Source** e selecione o **Data Source** configurado
 
    ![Modelo de dados de formulário criado](/help/edge/docs/forms/universal-editor/assets/create-fdm.png)
 
    >[!TIP]
    >
-   > Para obter instruções detalhadas sobre como criar Modelos de Dados de Formulário, consulte [Criar Modelo de Dados de Formulário](/help/forms/create-form-data-models.md).
+   >Para obter instruções detalhadas sobre como criar Modelos de Dados de Formulário, consulte [Criar Modelo de Dados de Formulário](/help/forms/create-form-data-models.md).
 
 ### Etapa 2: Configurar Serviços do FDM
 
 1. Ir para **Adobe Experience Manager** > **Forms** > **Integrações de Dados**
-2. Abrir o modelo de dados de formulário no modo de edição
-3. Selecione um objeto de modelo de dados e clique em **Editar Propriedades**
-4. Configurar os serviços **Leitura** e **Gravação** para os objetos de modelo de dados selecionados
+1. Abrir o modelo de dados de formulário no modo de edição
+1. Selecione um objeto de modelo de dados e clique em **Editar Propriedades**
+1. Configurar os serviços **Leitura** e **Gravação** para os objetos de modelo de dados selecionados
 
    ![Configurar serviço de leitura/gravação](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
-5. Configurar argumentos do serviço:
+1. Configurar argumentos do serviço:
+
    - Clique no ícone de edição para o argumento do serviço de leitura
    - Associe o argumento a um **Atributo de Perfil de Usuário**, **Atributo de Solicitação** ou **Valor literal**
    - Especifique o valor da associação (por exemplo, `petid` para um formulário de registro de animal de estimação)
 
    ![Configurar argumento de id do animal de estimação](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
 
-6. Clique em **Concluído** para salvar o argumento e em **Salvar** para salvar o FDM
+1. Clique em **Concluído** para salvar o argumento e em **Salvar** para salvar o FDM
 
    >[!NOTE]
    >
@@ -251,7 +249,7 @@ Verifique se essas extensões estão habilitadas no Universal Editor:
 3. Escolher **Visualizar como HTML**
 4. Teste o preenchimento prévio anexando parâmetros ao URL:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Exemplo:**
 
@@ -271,19 +269,19 @@ O formulário deve ser preenchido automaticamente com dados com base no parâmet
 
     &quot;
     
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
+    {
+    &quot;afBoundData&quot;: {
+    &quot;user&quot;: {
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    &rbrace;
-    &rbrace;,
-    &quot;afUnBoundData&quot;: &lbrace;
+    }
+    },
+    &quot;afUnBoundData&quot;: {
     &quot;additionalInfo&quot;: &quot;Preferências do usuário&quot; carregado&quot;
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     &quot;
 
