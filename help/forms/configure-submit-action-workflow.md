@@ -18,7 +18,7 @@ A Ação de Envio **[!UICONTROL Chamar um Fluxo de Trabalho do AEM]** associa um
 
 >[!NOTE]
 >
->  Saiba como [criar um modelo de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) para definir a série de etapas executadas quando um usuário inicia o fluxo de trabalho. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos.
+>  Saiba como [criar um modelo de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem) para definir a série de etapas executadas quando um usuário inicia o fluxo de trabalho. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos.
 
 O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções no artigo [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md).
 
@@ -47,7 +47,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 >[!TAB Componente de base]
 
-Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) para um Formulário adaptável com base em Componentes de Base, execute as seguintes etapas:
+Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem) para um Formulário adaptável com base em Componentes de Base, execute as seguintes etapas:
 
 1. Abra o Formulário adaptável para edição e navegue até a seção **[!UICONTROL Envio]** das propriedades do Contêiner de formulário adaptável.
 1. Na lista suspensa **[!UICONTROL Enviar Ação]**, selecione **Enviar Ação** como **[!UICONTROL Chamar um fluxo de trabalho do AEM]**.
@@ -73,7 +73,7 @@ Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https:/
 
 >[!TAB Componente principal]
 
-Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) para um Formulário adaptável com base nos Componentes principais, execute as seguintes etapas:
+Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem) para um Formulário adaptável com base nos Componentes principais, execute as seguintes etapas:
 
 1. Abra o navegador Conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
 1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
@@ -102,7 +102,7 @@ Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https:/
 
 >[!TAB Editor Universal]
 
-Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) para um Formulário adaptável criado no Universal Editor, execute as seguintes etapas:
+Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem) para um Formulário adaptável criado no Universal Editor, execute as seguintes etapas:
 
 1. Abra o Formulário adaptável para edição.
 1. Clique na extensão **Editar propriedades do formulário** no editor.
