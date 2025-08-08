@@ -4,7 +4,7 @@ description: Saiba como criar fragmentos de formulário no Editor universal e ad
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 0%
@@ -13,9 +13,11 @@ ht-degree: 0%
 
 # Criação de fragmentos de formulário no Editor universal
 
-<!--<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+<!--
+<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>-->
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+-->
 
 O Forms geralmente inclui seções comuns, como informações de contato, detalhes de identificação ou contratos de consentimento. Os desenvolvedores de formulários criam essas seções toda vez que criam um novo formulário, que é repetitivo e demorado.
 Para eliminar essa duplicação de esforços, o Universal Editor fornece uma maneira de criar segmentos de formulário reutilizáveis, como painéis ou grupos de campos, apenas uma vez e reutilizá-los em vários formulários. Esses segmentos reutilizáveis, modulares e independentes são chamados de fragmentos de formulário. Por exemplo, o mesmo fragmento de contato de emergência pode ser usado em diferentes seções de um formulário, como para detalhes de contato do funcionário e do supervisor.

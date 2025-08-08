@@ -4,7 +4,7 @@ description: Estender fragmentos de experiência para o Adobe Experience Manager
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 feature: Developing, Experience Fragments
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '1657'
 ht-degree: 0%
@@ -27,11 +27,11 @@ Como não há `/libs/cq/experience-fragments/components/xfpage/xfpage.html`, ele
 
 ## A representação HTML simples {#the-plain-html-rendition}
 
-Usando o seletor `.plain.` no URL, você poderá acessar a representação de HTML simples.
+Usando o seletor `.plain.` na URL, você poderá acessar a representação simples do HTML.
 
 Essa representação está disponível no navegador. No entanto, seu objetivo principal é permitir que outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações personalizadas de publicações de conteúdo para dispositivos móveis) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL.
 
-A representação de HTML simples adiciona o protocolo, o host e o caminho de contexto aos caminhos que são:
+A representação simples do HTML adiciona o protocolo, o host e o caminho de contexto aos caminhos que são:
 
 * do tipo: `src`, `href` ou `action`
 
@@ -47,24 +47,24 @@ Por exemplo:
 >
 >Para obter mais informações, consulte [Externalizar URLs](/help/implementing/developing/tools/externalizer.md).
 
-![Representação de HTML simples](assets/xf-14.png)
+![Representação simples de HTML](assets/xf-14.png)
 
 O seletor de representação simples usa um transformador em vez de scripts adicionais. O [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) é usado como transformador. Esse transformador é configurado da seguinte maneira:
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
-### Configuração da geração de representação de HTML {#configuring-html-rendition-generation}
+### Configuração da geração de representação do HTML {#configuring-html-rendition-generation}
 
-A representação de HTML é gerada usando os Pipelines de reescrita do Sling. O pipeline está definido em `/libs/experience-fragments/config/rewriter/experiencefragments`. O Transformador de HTML suporta as seguintes opções:
+A representação do HTML é gerada usando os Pipelines de reescrita do Sling. O pipeline está definido em `/libs/experience-fragments/config/rewriter/experiencefragments`. O transformador do HTML é compatível com as seguintes opções:
 
 * `allowedCssClasses`
    * Uma expressão RegEx que corresponde às classes CSS que devem ser deixadas na representação final.
    * Essa opção é útil se o cliente quiser eliminar algumas classes CSS específicas
 * `allowedTags`
-   * Uma lista de tags HTML a serem permitidas na representação final.
+   * Uma lista de tags do HTML que serão permitidas na representação final.
    * Por padrão, as seguintes tags são permitidas (nenhuma configuração é necessária): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link e script
 
-Adobe recomenda configurar a reescrita usando uma sobreposição. Consulte [Sobreposições no AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
+A Adobe recomenda configurar a reescrita usando uma sobreposição. Consulte [Sobreposições no AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Modelos para fragmentos de experiência {#templates-for-experience-fragments}
 
@@ -74,12 +74,14 @@ Adobe recomenda configurar a reescrita usando uma sobreposição. Consulte [Sobr
 >
 >Os Fragmentos de experiência só podem ser usados em páginas baseadas em modelos editáveis.
 
-<!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
+<!-- 
+***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->
 
 Ao desenvolver um novo modelo para Fragmentos de experiência, você pode seguir as práticas padrão para um modelo editável.
 
-<!-- When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
+<!-- 
+When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 -->
 
 Para criar um modelo de Fragmento de experiência detectado pelo assistente **Criar Fragmento de Experiência**, siga um destes conjuntos de regras:
@@ -87,11 +89,9 @@ Para criar um modelo de Fragmento de experiência detectado pelo assistente **Cr
 1. Ambos:
 
    1. O tipo de recurso do template (o nó inicial) deve herdar de:
-
       `cq/experience-fragments/components/xfpage`
 
    1. E o nome do template deve começar com:
-
       `experience-fragments`
 Esse padrão permite que os usuários criem fragmentos de experiência em /content/experience-fragments, pois a propriedade `cq:allowedTemplates` dessa pasta inclui todos os modelos com nomes que começam com `experience-fragment`. Os clientes podem atualizar essa propriedade para incluir seu próprio esquema de nomenclatura ou locais do modelo.
 
@@ -101,7 +101,8 @@ Esse padrão permite que os usuários criem fragmentos de experiência em /conte
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
 
-<!-- >[!NOTE]
+<!-- 
+>[!NOTE]
 >
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->
@@ -120,10 +121,10 @@ The only additional configuration is to ensure that the components are [allowed 
 
 ## O provedor de reescrita de link do fragmento de experiência - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
-No AEM, é possível criar Fragmentos de experiência. Um fragmento de experiência:
+No AEM, é possível criar fragmentos de experiência. Um fragmento de experiência:
 
 * consiste em um grupo de componentes juntamente com um layout,
-* O pode existir independentemente de uma página AEM.
+* O pode existir independentemente de uma página do AEM.
 
 Um dos casos de uso para esses grupos é para incorporar conteúdo em pontos de contato de terceiros, como o Adobe Target.
 
@@ -144,11 +145,11 @@ Esse recurso pode ser ativado em uma instância de autor do AEM. Ele requer uma 
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-O Externalizador de links é usado para determinar os URLs corretos necessários ao criar a versão do HTML da oferta do Target, que é então enviada para o Adobe Target. Esse processo é necessário, pois a Adobe Target exige que todos os links dentro da Oferta de HTML do Target possam ser acessados publicamente. Isso significa que todos os recursos aos quais os links fazem referência e o próprio fragmento de experiência devem ser publicados antes de serem usados.
+O Externalizador de links é usado para determinar os URLs corretos necessários ao criar a versão do HTML da oferta do Target, que é então enviada para o Adobe Target. Esse processo é necessário, pois o Adobe Target exige que todos os links dentro da Oferta do Target HTML possam ser acessados publicamente. Isso significa que todos os recursos aos quais os links fazem referência e o próprio fragmento de experiência devem ser publicados antes de serem usados.
 
-Por padrão, quando você constrói uma Oferta de HTML do Target, uma solicitação é enviada para um seletor de Sling personalizado no AEM. Este seletor é chamado `.nocloudconfigs.html`. Como o nome indica, ele cria uma renderização de HTML simples de um Fragmento de experiência, mas não inclui configurações de nuvem (que seriam informações supérfluas).
+Por padrão, ao criar uma oferta do HTML do Target, uma solicitação é enviada para um seletor de Sling personalizado no AEM. Este seletor é chamado `.nocloudconfigs.html`. Como o nome indica, ele cria uma renderização de HTML simples de um Fragmento de experiência, mas não inclui configurações de nuvem (que seriam informações supérfluas).
 
-Depois de gerar a página HTML, o pipeline de reescrita do Sling é modificado para a saída:
+Depois de gerar a página do HTML, o pipeline de reescrita do Sling é modificado para a saída:
 
 1. Os elementos `html`, `head` e `body` são substituídos por elementos `div`. Os elementos `meta`, `noscript` e `title` são removidos (são elementos filho do elemento `head` original e não são considerados quando substituídos pelo elemento `div`).
 
@@ -165,7 +166,7 @@ Depois de gerar a página HTML, o pipeline de reescrita do Sling é modificado p
 
    >[!NOTE]
    >
-   >Os links internos no HTML são links relativos, mas pode haver casos em que os componentes personalizados forneçam URLs completos no HTML. Por padrão, o AEM ignora esses URLs completos e não faz modificações.
+   >Os links internos no HTML são links relativos, mas pode haver casos em que os componentes personalizados forneçam URLs completos na HTML. Por padrão, o AEM ignora esses URLs completos e não faz modificações.
 
    Os links nesses atributos são executados por meio do AEM Link Externalizer `publishLink()` para recriar a URL como se ela estivesse em uma instância publicada e, como tal, disponibilizada publicamente.
 
@@ -174,11 +175,11 @@ Ao usar uma implementação pronta para uso, o processo descrito acima deve ser 
 * Mapeamento do Sling disponível somente na instância de publicação
 * Redirecionamentos do Dispatcher
 
-Para esses casos de uso, o AEM fornece a interface do provedor de reescrita de links.
+Para esses casos de uso, a AEM fornece a interface do provedor de reescrita de links.
 
 ### Interface do provedor de reescrita de links {#link-rewriter-provider-interface}
 
-Para casos mais complicados, não cobertos pelo [padrão](#default-link-rewriting), o AEM oferece a Interface do Provedor de Reescrita de Link. Esta interface é uma interface `ConsumerType` que você pode implementar em seus pacotes, como um serviço. Ele ignora as modificações que o AEM executa nos links internos de uma oferta de HTML, conforme renderizado a partir de um Fragmento de experiência. Essa interface permite personalizar o processo de reescrita de links de HTML internos para alinhar-se às suas necessidades comerciais.
+Para casos mais complicados, não cobertos pelo [padrão](#default-link-rewriting), a AEM oferece a Interface do Provedor de Reescrita de Link. Esta interface é uma interface `ConsumerType` que você pode implementar em seus pacotes, como um serviço. Ele ignora as modificações que o AEM realiza em links internos de uma oferta do HTML, conforme renderizado a partir de um Fragmento de experiência. Essa interface permite personalizar o processo de reescrita de links internos do HTML para alinhar-se às suas necessidades comerciais.
 
 Exemplos de casos de uso para implementar essa interface como um serviço incluem:
 
@@ -188,7 +189,7 @@ Exemplos de casos de uso para implementar essa interface como um serviço inclue
 
 >[!NOTE]
 >
->Essa interface só processa os links de HTML internos da Oferta do Target gerada.
+>Essa interface processa apenas os links internos do HTML da Oferta do Target gerada.
 
 A Interface do Provedor de Reescrita de Link ( `ExperienceFragmentLinkRewriterProvider`) é a seguinte:
 
@@ -349,7 +350,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 #### Prioridades - getPriority {#priorities-getpriority}
 
-Não é incomum precisar de vários serviços para atender a diferentes tipos de Fragmentos de experiência, ou até mesmo ter um Serviço genérico que lida com a externalização e o mapeamento de todos os Fragmentos de experiência. Nesses casos, podem surgir conflitos sobre qual serviço usar, portanto, o AEM oferece a possibilidade de definir **Prioridades** para serviços diferentes. As prioridades são especificadas usando o método:
+Não é incomum precisar de vários serviços para atender a diferentes tipos de Fragmentos de experiência, ou até mesmo ter um Serviço genérico que lida com a externalização e o mapeamento de todos os Fragmentos de experiência. Nesses casos, podem surgir conflitos sobre qual serviço usar. Por isso, a AEM oferece a possibilidade de definir **Prioridades** para diferentes serviços. As prioridades são especificadas usando o método:
 
 * `getPriority()`
 
