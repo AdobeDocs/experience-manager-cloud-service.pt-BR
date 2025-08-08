@@ -1,13 +1,13 @@
 ---
 title: Introdução ao Assets as a Cloud Service para gerenciamento de ativos digitais no AEM
 description: Introdução ao Assets as a Cloud Service para gerenciamento de ativos digitais no AEM
-source-git-commit: 707c2125b3a5401cd5b0ebe19f3bc9c46302b697
+exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
+source-git-commit: c3a528d7e903b43f6b9a18b2426a04638b086d38
 workflow-type: tm+mt
 source-wordcount: '5032'
 ht-degree: 11%
 
 ---
-
 
 # Introdução ao Assets as a Cloud Service para gerenciamento de ativos digitais no AEM {#assets-as-cloud-service-digital-asset-management-aem}
 
@@ -57,11 +57,11 @@ Use estes links para acessar a documentação detalhada sobre estas ferramentas 
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/using">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
    <img alt="Usar o aplicativo de desktop do AEM" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/using">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
       <strong>Usar aplicativo de desktop do AEM</strong>
       </a>
    </div>
@@ -267,11 +267,11 @@ O AEM Assets fornece recursos que facilitam chegar ao ativo certo rapidamente, c
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=pt">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Práticas recomendadas de gerenciamento de metadados" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=pt">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Práticas recomendadas de gerenciamento de metadados</strong>
       </a>
    </div>
@@ -517,7 +517,7 @@ O AEM Assets pode se integrar perfeitamente a vários aplicativos Adobe e não A
 
 * **Integração com o Adobe Workfront**: [!DNL Adobe Workfront] é um aplicativo de gerenciamento de trabalho que ajuda você a gerenciar todo o ciclo de vida do trabalho em um único local. A integração entre o [!DNL Workfront] e o [!DNL Adobe Experience Manager Assets] permite que as organizações melhorem a velocidade do conteúdo e o prazo para comercialização, conectando intrinsecamente o gerenciamento de trabalho e de ativos digitais. No contexto do gerenciamento de trabalho no Workfront, os usuários têm acesso aos documentos e imagens necessários.
 
-  Ofertas do Adobe para [integrar [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] nativamente](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=pt-BR).
+  Ofertas do Adobe para [integrar [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] nativamente](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
 
 * **Integração com o Figma**: o AEM Assets integra-se nativamente com o Figma, o que permite que os designers acessem diretamente os ativos armazenados no AEM Assets na Interface do Usuário do Figma. Você pode colocar conteúdo gerenciado no AEM Assets na tela do Figma e depois salvar conteúdo novo ou editado no repositório do AEM Assets. Para acessar o AEM Assets Connector disponível na página da Comunidade Figma, clique [aqui](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
@@ -583,11 +583,11 @@ Se você já tiver um site do [!DNL Edge Delivery Services], consulte a document
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Integração com o Adobe Journey Optimizer" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>Integração com o Adobe Journey Optimizer</strong>
       </a>
    </div>
@@ -596,11 +596,11 @@ Se você já tiver um site do [!DNL Edge Delivery Services], consulte a document
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+   <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
    <img alt="Integração com o Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
       <strong>Integração com o Commerce</strong>
       </a>
    </div>
@@ -906,5 +906,3 @@ Usuários que possuem acesso à visualização de admin também podem acessar a 
 Bibliotecários, desenvolvedores e superusuários do DAM podem continuar a usar a visualização de admin ou alternar entre as interfaces, conforme necessário. Você pode selecionar a experiência que funciona melhor para sua função.
 
 Para obter informações sobre como acessar a visualização de ativos e alguns dos recursos simplificados que ela oferece em relação à visualização de admin, consulte [Introdução à visualização de ativos](/help/assets/assets-view-introduction.md).
-
-
