@@ -4,9 +4,9 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.8.0 no Adobe E
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3111e74e844fb37afa0c7d218c37014d32ad0a64
+source-git-commit: c465542d5e89dbae0eb1c380ca1e7756d0beb2b6
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1308'
 ht-degree: 3%
 
 ---
@@ -25,11 +25,6 @@ A data de lançamento do Cloud Manager 2025.8.0 no AEM as a Cloud Service é qui
 
 A próxima versão está planejada para sexta-feira, 4 de setembro de 2025.
 
-
-
-
-
-
 ## Novidades {#what-is-new}
 
 * **A licença do Edge Delivery Services pode ser incluída em um programa HIPAA de maneira automatizada**
@@ -42,7 +37,7 @@ A próxima versão está planejada para sexta-feira, 4 de setembro de 2025.
 
 * **Provisionamento automatizado para o novo Complemento do Forms**
 
-  Clientes exclusivos de sites geralmente precisam de uma maneira leve e econômica de criar formulários de marketing. O novo Complemento do AEM Forms Sites atende a essa necessidade, adicionando recursos limitados do Forms a um programa do Sites. Ela também cria um caminho de atualização claro para a oferta completa do AEM Forms, se desejado. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+  Clientes exclusivos de sites geralmente precisam de uma maneira leve e econômica de criar formulários de marketing. O novo Complemento do AEM Forms Sites atende a essa necessidade, adicionando recursos limitados do Forms a um programa do Sites. Ele também cria um caminho de atualização claro para a oferta completa do AEM Forms. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
   O complemento:
    * Anexa-se a um programa do Sites e é implantado junto a ele, sem nenhum programa ou direito separado do Forms.
@@ -67,13 +62,13 @@ As seguintes oportunidades estão disponíveis no momento:
 
 Reverta rapidamente para uma implantação anterior se o código-fonte do cliente mais recente não estiver funcionando como esperado — não é necessário executar novamente o pipeline completo ou reverter as confirmações manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar o código-fonte do cliente a partir do cartão Ambientes](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *cartão Ambientes acima, mostrando a opção **Restaurar**>**Código anterior implantado**&#x200B;para um ambiente selecionado.*
+![Restaurar o código-fonte do cliente a partir do cartão Ambientes](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *cartão Ambientes acima, mostrando a opção **Restaurar**>**Código anterior implantado**para um ambiente selecionado.*
 
 ![Restaurar caixa de diálogo implantada de código anterior](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Na caixa de diálogo **Restaurar código anterior implantado**, revise a versão implantada no momento e a versão que deseja restaurar e clique em **Confirmar***.
 
 ![Restaurando a ativação](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-O *Cloud Manager reverte o ambiente para a compilação anterior, mantém o conteúdo e a configuração intactos e marca o ambiente **Restaurando**&#x200B;até que a implantação seja concluída.*
+O *Cloud Manager reverte o ambiente para a compilação anterior, mantém o conteúdo e a configuração intactos e marca o ambiente **Restaurando**até que a implantação seja concluída.*
 
 ![Versão do código Source em uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *A exibição de detalhes do Ambiente, como visto acima, agora também mostra a versão ativa do código-fonte em uso.*
 
@@ -82,7 +77,6 @@ Se você estiver interessado em testar este novo recurso e compartilhar seus com
 Consulte [Restaurar o código anterior implantado no AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
 Consulte também [Restauração de Conteúdo no AEM as a Cloud Service](/help/operations/restore.md).
-
 
 ### Ambiente de testes especializados {#specialized-test-environment}
 
@@ -152,13 +146,13 @@ Os Pipelines de configuração agora são compatíveis com sites criados com o E
 
   ![Painel de filtros mostrando o novo tipo de entrega do Edge e de publicação](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**&#x200B;cartão.*
+![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**cartão.*
 
 ![Caixa de diálogo Adicionar pipeline do Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Caixa de diálogo Adicionar pipeline do Edge Delivery.*
 
 Consulte [Adicionar pipeline de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 
-Se você estiver interessado em testar este novo recurso e compartilhar seus comentários, envie um email para [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) com seu endereço de email associado à sua Adobe ID.
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ## Correções de erros
