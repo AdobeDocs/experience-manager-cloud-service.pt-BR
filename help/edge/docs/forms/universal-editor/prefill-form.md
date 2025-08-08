@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: preenchimento prévio de formulário adaptável, serviços de entrega de borda de formulários adaptáveis, preenchimento automático de formulário adaptável
-source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
+source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1829'
 ht-degree: 1%
 
 ---
@@ -140,9 +140,9 @@ O Editor universal fornece duas opções de serviço de preenchimento prévio:
 
 6. Clique em **Concluído** para salvar o argumento e em **Salvar** para salvar o FDM
 
-       >[!NOTE]
-       >
-       > Saiba mais sobre como configurar serviços do FDM em [Trabalhar com o Modelo de Dados de Formulário (FDM)](/help/forms/work-with-form-data-model.md).
+   >[!NOTE]
+   >
+   > Saiba mais sobre como configurar serviços do FDM em [Trabalhar com o Modelo de Dados de Formulário (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -151,35 +151,36 @@ O Editor universal fornece duas opções de serviço de preenchimento prévio:
 ### Etapa 3: Criar um formulário adaptável
 
 1. Navegue até **Adobe Experience Manager** > **Forms** > **Forms e Documentos**
-2. Selecione **Criar** > **Forms Adaptável**
-3. Na guia **Source**, selecione um modelo do Edge Delivery Services:
+1. Selecione **Criar** > **Forms Adaptável**
+1. Na guia **Source**, selecione um modelo do Edge Delivery Services:
 
-       ![Modelo do Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
-   
-4. Clique em **Criar** para abrir o assistente **Criar Formulário**
-5. Especifique os detalhes do formulário:
+   ![Modelo do Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
+
+1. Clique em **Criar** para abrir o assistente **Criar Formulário**
+1. Especifique os detalhes do formulário:
+
    - **Nome**: insira um nome descritivo para o formulário
    - **Título**: forneça um título amigável
    - **URL do GitHub**: insira sua URL de repositório (por exemplo, `https://github.com/wkndforms/edsforms`)
 
-6. Clique em **Criar**
+1. Clique em **Criar**
 
-       ![Criar formulário baseado em esquema](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
-   
+   ![Criar formulário baseado em esquema](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
+
 O formulário é aberto no Editor universal para criação.
 
 ### Etapa 4: configurar o Form Data Source
 
 1. Selecione seu formulário e clique em **Propriedades**
 
-       ![Selecionar Propriedades do Formulário](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
-   
+   ![Selecionar Propriedades do Formulário](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
+
 2. Abra a guia **Modelo de formulário**
 3. Na lista suspensa **Selecionar de**, escolha **Modelo de Dados de Formulário (FDM)**
 4. Selecione o modelo de dados de formulário criado (por exemplo, PetFDM) na lista suspensa
 
-       ![Guia Selecionar modelo de formulário](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
-   
+   ![Guia Selecionar modelo de formulário](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
+
 5. Clique em **Salvar e fechar**
 6. Abrir o formulário para edição no Editor Universal
 
@@ -193,6 +194,7 @@ Os elementos de formulário do FDM aparecem na guia **Datasource** do **Navegado
    ![Captura de tela do Editor Universal mostrando o formulário baseado em esquema](/help/edge/docs/forms/universal-editor/assets/ue-form.png)
 
 3. Adicionar vinculação de dados a campos de formulário:
+
    - Selecionar um campo de formulário
    - No painel **Propriedades**, localize a propriedade **Referência de Ligação**
    - Selecione a referência de vinculação de dados apropriada
@@ -208,12 +210,14 @@ Os elementos de formulário do FDM aparecem na guia **Datasource** do **Navegado
 Verifique se essas extensões estão habilitadas no Universal Editor:
 
 1. **Extensão de Propriedades do Formulário do AEM**
+
    - Abrir **Extension Manager** no Editor Universal
    - Habilitar a extensão **Propriedades do Formulário AEM**
 
    ![Ícone de propriedades do formulário](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
-2. **Extensão do Data Source**
+1. **Extensão do Data Source**
+
    - Habilite a extensão **Fonte de dados** se você não visualizar o ícone **Fontes de dados**
 
    ![Captura de tela do Universal Editor Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
@@ -232,8 +236,8 @@ Verifique se essas extensões estão habilitadas no Universal Editor:
 3. Clique na guia **Preenchimento prévio**
 4. Selecionar **Serviço de Preenchimento de Modelo de Dados de Formulário**
 
-       ![Selecionar serviço de Preenchimento prévio](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
-   
+   ![Selecionar serviço de preenchimento prévio](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
+
 5. Clique em **Salvar e fechar**
 
 +++
@@ -247,14 +251,14 @@ Verifique se essas extensões estão habilitadas no Universal Editor:
 3. Escolher **Visualizar como HTML**
 4. Teste o preenchimento prévio anexando parâmetros ao URL:
 
-       https://your-preview-url.com?&lt;bindreferencefield>=&lt;valor>
-   
+   https://your-preview-url.com?<bindreferencefield>=<value>
+
    **Exemplo:**
 
-       https://your-preview-url.com?petid=12345
-       
-       ![Preencher Formulário](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
-   
+   https://your-preview-url.com?petid=12345
+
+   ![Preencher Formulário](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
+
 O formulário deve ser preenchido automaticamente com dados com base no parâmetro fornecido.
 
 +++
@@ -267,19 +271,19 @@ O formulário deve ser preenchido automaticamente com dados com base no parâmet
 
     &quot;
     
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
+    {
+    &quot;afBoundData&quot;: {
+    &quot;user&quot;: {
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    &rbrace;
-    &rbrace;,
-    &quot;afUnBoundData&quot;: &lbrace;
+    }
+    },
+    &quot;afUnBoundData&quot;: {
     &quot;additionalInfo&quot;: &quot;Preferências do usuário&quot; carregado&quot;
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     &quot;
 
@@ -306,11 +310,11 @@ Os URLs abaixo são apenas para fins de ilustração e não funcionarão como es
 
 **Teste básico de preenchimento prévio:**
 
-    https://preview.example.com/form.html?userId=12345
+`https://preview.example.com/form.html?userId=12345`
 
 **Teste de vários parâmetros:**
 
-    https://preview.example.com/form.html?userId=12345&amp;category=premium
+`https://preview.example.com/form.html?userId=12345&category=premium`
 
 
 ## Resolução de problemas
@@ -330,21 +334,25 @@ Os URLs abaixo são apenas para fins de ilustração e não funcionarão como es
 +++Etapas de depuração
 
 1. **Verificar Configuração do FDM:**
+
    - Verificar se os serviços estão configurados corretamente
    - Testar os serviços do FDM independentemente
    - Validar conectividade da fonte de dados
 
 2. **Verificar Configuração do Formulário:**
+
    - Confirmar se o formulário está associado ao FDM correto
    - Verificar os valores do campo `bindRef`
    - Formulário de ensaio sem preenchimento prévio
 
 3. **Testar Fluxo de Dados:**
+
    - Usar ferramentas de desenvolvedor do navegador para inspecionar solicitações de rede
    - Verifique se há erros de JavaScript no console
    - Validar formato de dados de resposta
 
 4. **Mensagens de Erro Comuns:**
+
    - &quot;Serviço de preenchimento prévio não encontrado&quot;: verifique a configuração do serviço
    - &quot;Falha na associação de dados&quot;: verifique a precisão `bindRef`
    - &quot;Formato de dados inválido&quot;: verifique se os dados correspondem ao esquema
