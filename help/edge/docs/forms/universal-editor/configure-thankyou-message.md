@@ -4,7 +4,7 @@ description: Saiba como os usuários podem exibir uma mensagem de agradecimento 
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 958891216e117acc03c50446ae92f85108d275a7
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -56,5 +56,3 @@ Para configurar a página de redirecionamento ou a mensagem de agradecimento:
 ![obrigado](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 Os autores de formulários podem configurar uma página para cada formulário, para a qual os usuários são redirecionados após enviarem um formulário.
-
-

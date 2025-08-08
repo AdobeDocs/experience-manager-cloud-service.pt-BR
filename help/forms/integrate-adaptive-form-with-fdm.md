@@ -3,7 +3,7 @@ title: Como integrar o Modelo de dados de formulário (FDM) de um formulário co
 description: Saiba como criar formulários com base em um modelo de dados de formulário (FDM). Gere e edite dados de amostra para objetos de modelo de dados no FDM.
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -66,15 +66,19 @@ Execute as seguintes etapas para configurar o Modelo de dados de formulário com
 
 1. Abra o Formulário adaptável para edição.
 1. Clique na extensão **Editar propriedades do formulário** no editor.
-A caixa de diálogo **Propriedades do Formulário** é exibida.
+
+   A caixa de diálogo **Propriedades do Formulário** é exibida.
 
    >[!NOTE]
    >
    > * Se você não vir o ícone **Editar Propriedades do Formulário** na interface do Universal Editor, habilite a extensão **Editar Propriedades do Formulário** na Extension Manager.
    > * Consulte o artigo [Destaques dos recursos do Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para saber como habilitar ou desabilitar extensões no Universal Editor.
+
 1. Clique na guia **Envio** e selecione **[!UICONTROL Enviar usando o Modelo de Dados de Formulário]**.
+
    ![OneDrive GIF](/help/forms/assets/submit-uisng-fdm-ue.png)
 Se você selecionar **Salvar anexos com nome original**, os anexos serão armazenados na pasta usando seus nomes de arquivo originais. Você também pode salvar o Documento de registro (DoR) no Armazenamento de blobs do Azure.
+
 1. Selecione a **[!UICONTROL Configuração de Armazenamento]**, onde você deseja salvar seus dados.
 1. Clique em **[!UICONTROL Salvar&amp;Fechar]**
 

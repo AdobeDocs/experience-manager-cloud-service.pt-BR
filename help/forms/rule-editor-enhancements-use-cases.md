@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Na regra acima, o botão **Avançar** verifica se os campos na seção **Detalhe
 
 >[!NOTE]
 >
-> Você pode usar o método **validate()** em formulários, fragmentos ou campos individuais. Quando um fragmento é incluído em um formulário, o formulário e o fragmento são exibidos como opções no contexto de validação. Nesse caso, o fragmento se refere aos campos dentro dele, enquanto o formulário se refere ao formulário principal no qual o fragmento é incorporado.
+>Você pode usar o método **validate()** em formulários, fragmentos ou campos individuais. Quando um fragmento é incluído em um formulário, o formulário e o fragmento são exibidos como opções no contexto de validação. Nesse caso, o fragmento se refere aos campos dentro dele, enquanto o formulário se refere ao formulário principal no qual o fragmento é incorporado.
 
 ## DownloadDor como função OOTB no Editor de regras
 
@@ -67,7 +67,7 @@ Usar a função pronta para uso (OOTB) **DownloadDor()** no Editor de regras per
 
 >[!NOTE]
 >
-> Se o formulário não estiver configurado para o Documento de Registro, uma mensagem de erro será exibida quando a regra que usa a função **downloadDoR()** for aplicada ao botão.
+>Se o formulário não estiver configurado para o Documento de Registro, uma mensagem de erro será exibida quando a regra que usa a função **downloadDoR()** for aplicada ao botão.
 
 **Cenário**: uma agência governamental fornece um formulário de inscrição digital para a emissão de certificados. Depois de enviar o formulário, os candidatos geralmente exigem uma cópia do formulário preenchido para seus registros ou para compartilhar com outro departamento. Para melhorar a experiência do usuário, a agência quer dar aos candidatos a opção de baixar um Documento de Registro (DoR) imediatamente após o envio ou em qualquer estágio antes do envio final.
 
