@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 7%
+source-wordcount: '2235'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,10 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Novos recursos no Experience Manager Sites {#enhancements-sites}
 
-**Melhorias nos fragmentos de conteúdo**
-
-* Agora você pode copiar fragmentos de conteúdo com filhos.
-* Agora você pode configurar um espaço de trabalho personalizado nas configurações da pasta para exportar os fragmentos de conteúdo para o espaço de trabalho configurado no Adobe Target.
+* Agora você pode copiar fragmentos de conteúdo com fragmentos referenciados (secundários) em uma operação. Isso permite reutilizar estruturas de fragmento de conteúdo existentes para criar novo conteúdo.
+* Na interface do administrador dos fragmentos de conteúdo, agora é possível visualizar o status do fluxo de trabalho para fragmentos de conteúdo, com informações detalhadas sobre fluxos de trabalho anteriores e atuais de um fragmento selecionado.
+* Renomear ou mover uma página de origem de live copy agora acionará a republicação de uma página de live copy renomeada ou movida correspondentemente.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -90,7 +89,7 @@ O Content Hub agora inclui uma opção **Mostrar tudo** nos filtros, permitindo 
 
 Aproveite o upload automatizado de novos arquivos e pastas, as operações aprimoradas de arquivos, a detecção mais inteligente de ativos e a integração perfeita com o AEM — tornando o gerenciamento de conteúdo mais rápido, claro e intuitivo.
 
-Para obter a lista completa de recursos, consulte as [Notas de Versão do Aplicativo de Desktop](https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/release-notes).
+Para obter a lista completa de recursos, consulte as [Notas de Versão do Aplicativo de Desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Novos recursos no Dynamic Media com recursos OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -223,7 +222,7 @@ Propriedades OSGi:
 
 ### Descontinuação do Java 11 Runtime {#java11-runtime-deprecation}
 
-O **Java 11 runtime*- agora está obsoleto, e a maioria dos ambientes já foi atualizada para o &#x200B;** Java 21 runtime** de maior desempenho.
+O **Java 11 runtime*- agora está obsoleto, e a maioria dos ambientes já foi atualizada para o **Java 21 runtime** de maior desempenho.
 
 Se seu ambiente não pôde ser atualizado devido a dependências sem suporte (consulte [requisitos de tempo de execução do Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), você deve ter recebido um email da Adobe com as próximas etapas específicas. Verifique se todas as atualizações necessárias foram concluídas até **28 de agosto de 2025** para que seu ambiente possa ser atualizado sem interrupções.
 
@@ -311,7 +310,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
