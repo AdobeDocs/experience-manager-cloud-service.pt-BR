@@ -1,13 +1,13 @@
 ---
-Title: How to configure submit action to Marketo Engage for forms?
-Description: Learn how to configure the submit action of Adaptive Form to send data to Marketo Engage.
-Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: Como configurar a ação de envio para o Marketo Engage para formulários?
+description: Saiba como configurar a ação de envio do Formulário adaptável para enviar dados ao Marketo Engage.
+keywords: Enviar dados para o Marketo engage, Configurar a ação de envio como Enviar para o Marketo Engage
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '772'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 ![Fluxo de trabalho](/help/forms/assets/workflow-marketo-3.png)
 
-O editor Adaptive Forms fornece a ação de envio **Enviar para o Marketo Engage** para enviar dados Adaptive Forms ao Adobe Marketo Engage para processamento. Você pode configurar um Formulário adaptável existente para enviar dados ao [Adobe Marketo Engage](https://experienceleague.adobe.com/pt-br/docs/marketo/using/home) no envio.
+O editor Adaptive Forms fornece a ação de envio **Enviar para o Marketo Engage** para enviar dados Adaptive Forms ao Adobe Marketo Engage para processamento. Você pode configurar um Formulário adaptável existente para enviar dados ao [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) no envio.
 
 Várias ações de envio prontas para uso para manipular envios de formulários estão disponíveis. Você pode saber mais sobre essas opções no artigo [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md).
 
@@ -97,7 +97,7 @@ Depois de configurar a ação de envio para o Formulário adaptável como **Envi
 
 ## Próxima etapa
 
-Você também pode conectar um Formulário adaptável à [biblioteca do Munchkin](https://experienceleague.adobe.com/pt-br/docs/marketo/using/product-docs/administration/setup/munchkin) para rastrear o número de visitas, cliques e envios de formulários.
+Você também pode conectar um Formulário adaptável à [biblioteca do Munchkin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) para rastrear o número de visitas, cliques e envios de formulários.
 
 ## Artigos relacionados
 

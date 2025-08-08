@@ -1,18 +1,18 @@
 ---
-Title: How to configure a SharePoint Site with limited access using authorization scope?
-Description: Learn how to configure SharePoint Site with limited access using the authorization scope.
+title: Como configurar um site do SharePoint com acesso limitado usando o escopo de autorização?
+description: Saiba como configurar o SharePoint Site com acesso limitado usando o escopo de autorização.
 keywords: Como configurar o SharePoint Site com acesso limitado?, Configurar o SharePoint com acesso limitado, Usar escopo de autorização para limitar o acesso ao SharePoint Site.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '842'
 ht-degree: 2%
 
 ---
 
-
-<span class="preview"> O recurso está disponível no programa de adoção antecipada. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso está disponível no programa de adoção antecipada. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 # Configurar o site do SharePoint com acesso limitado usando o escopo de autorização
 
@@ -58,7 +58,7 @@ Consulte o [artigo do blog - Desenvolver aplicativos que usam Sites.Permissões 
 
 Para fornecer acesso limitado a um site do Microsoft SharePoint, é essencial definir o escopo de autorização corretamente. Para definir o escopo de autorização e conectar o AEM Forms ao seu armazenamento Microsoft® SharePoint:
 
-1. Vá para sua instância do **AEM Forms Author** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**.
+1. Vá para sua instância do **AEM Forms Author** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Após selecionar o **[!UICONTROL Microsoft® SharePoint]**, você será redirecionado para o **[!UICONTROL Navegador SharePoint]**.
 1. Selecione um **Contêiner de Configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
 1. Clique em **[!UICONTROL Criar]** > **[!UICONTROL Biblioteca de Documentos da SharePoint]** na lista suspensa. O assistente de configuração do SharePoint é exibido.

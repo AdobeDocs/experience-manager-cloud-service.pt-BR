@@ -1,13 +1,13 @@
 ---
-Title: How to integrate Adaptive Form to a SharePoint Document Library?
+title: Como integrar o formulário adaptável a uma biblioteca de documentos do SharePoint?
 Description: This article explains how to send data from your Adaptive Form to a SharePoint  Document library when you submit the form.
 keywords: Como conectar a biblioteca de documentos do SharePoint para um formulário adaptável, Enviar para o SharePoint, Criar uma configuração da biblioteca de documentos do SharePoint, Usar a ação de envio Enviar para o SharePoint em um formulário adaptável, Biblioteca de documentos do SharePoint do modelo de dados do AEM Forms, Biblioteca de documentos do SharePoint do modelo de dados do Forms, Integrar o modelo de dados do Forms à biblioteca de documentos do SharePoint
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
