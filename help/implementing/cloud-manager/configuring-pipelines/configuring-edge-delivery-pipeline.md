@@ -8,7 +8,7 @@ badge: label="Beta privado" type="Positive" url="/help/implementing/cloud-manage
 hide: false
 index: false
 hidefromtoc: false
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 4%
@@ -26,9 +26,12 @@ Um usuário deve ter a função **[Gerente de implantação](/help/onboarding/cl
 >
 >Um pipeline do Edge Delivery não pode ser configurado até que o seguinte tenha acontecido:
 >
->* É criado um programa que contém um site do Edge Delivery Services e um domínio mapeado. Caso contrário, a opção **Adicionar pipeline de Edge Delivery** aparecerá desabilitada na interface, e uma dica de ferramenta explica os requisitos ausentes. <!-- CMGR‑69680 -->
+>* É criado um programa que contém um site do Edge Delivery Services e um domínio mapeado. Caso contrário, a opção **Adicionar pipeline de Edge Delivery** aparecerá desabilitada na interface, e uma dica de ferramenta explica os requisitos ausentes.
 >* O repositório Git tem pelo menos uma ramificação.
 >* Os ambientes de produção e de preparo são criados.
+
+<!-- CMGR‑69680 -->
+
 
 Antes de começar a implantar seu código, defina as configurações de pipeline do [!UICONTROL Cloud Manager].
 
