@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: preenchimento prévio de formulário adaptável, serviços de entrega de borda de formulários adaptáveis, preenchimento automático de formulário adaptável
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 1%
@@ -142,7 +142,7 @@ O Editor universal fornece duas opções de serviço de preenchimento prévio:
 
        >[!NOTE]
        >
-       > Saiba mais sobre como configurar serviços do FDM em [Trabalhar com o Modelo de Dados de Formulário (FDM)](/help/forms/work-with-form-data-model.md).
+   > Saiba mais sobre como configurar serviços do FDM em [Trabalhar com o Modelo de Dados de Formulário (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
 
@@ -267,19 +267,19 @@ O formulário deve ser preenchido automaticamente com dados com base no parâmet
 
     &quot;
     
-    &lbrace;
-    &quot;afBoundData&quot;: &lbrace;
-    &quot;user&quot;: &lbrace;
+    {
+    &quot;afBoundData&quot;: {
+    &quot;user&quot;: {
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    &rbrace;
-    &rbrace;,
-    &quot;afUnBoundData&quot;: &lbrace;
+    }
+    },
+    &quot;afUnBoundData&quot;: {
     &quot;additionalInfo&quot;: &quot;Preferências do usuário&quot; carregado&quot;
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     &quot;
 
@@ -431,8 +431,6 @@ A autenticação depende da configuração da fonte de dados. Para preenchimento
 É possível configurar um serviço de preenchimento prévio principal por formulário. No entanto, é possível combinar diferentes fontes de dados em um único Modelo de dados de formulário para obter funcionalidade semelhante.
 
 +++
-
-=
 
 ## Tópicos relacionados
 
