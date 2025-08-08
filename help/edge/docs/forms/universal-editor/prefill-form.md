@@ -251,7 +251,7 @@ Verifique se essas extensões estão habilitadas no Universal Editor:
 3. Escolher **Visualizar como HTML**
 4. Teste o preenchimento prévio anexando parâmetros ao URL:
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **Exemplo:**
 
@@ -271,19 +271,19 @@ O formulário deve ser preenchido automaticamente com dados com base no parâmet
 
     &quot;
     
-    {
-    &quot;afBoundData&quot;: {
-    &quot;user&quot;: {
+    &lbrace;
+    &quot;afBoundData&quot;: &lbrace;
+    &quot;user&quot;: &lbrace;
     &quot;firstName&quot;: &quot;John&quot;,
     &quot;lastName&quot;: &quot;Doe&quot;,
     &quot;email&quot;: &quot;john.doe@example.com&quot;,
     &quot;phone&quot;: &quot;+1-555-0123&quot;
-    }
-    },
-    &quot;afUnBoundData&quot;: {
+    &rbrace;
+    &rbrace;,
+    &quot;afUnBoundData&quot;: &lbrace;
     &quot;additionalInfo&quot;: &quot;Preferências do usuário&quot; carregado&quot;
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     &quot;
 
