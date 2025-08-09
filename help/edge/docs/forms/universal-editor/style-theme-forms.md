@@ -147,6 +147,7 @@ As variáveis de tipografia e espaçamento fornecem controle abrangente sobre a 
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
+
 +++
 
 +++ Variáveis de layout e estrutura
@@ -1108,6 +1109,7 @@ Você pode usar os Seletores de CSS para direcionar tipos de campo específicos 
   text-align: center;
 }
 ```
+
 +++
 
 +++ Estilo com base no nome do campo
@@ -1495,6 +1497,7 @@ main .form form .text-wrapper input {
   cursor: not-allowed;
 }
 ```
+
 +++
 
 ### **Práticas recomendadas específicas de componente**
