@@ -1,13 +1,13 @@
 ---
+title: Como enviar dados para um armazenamento do SharePoint no envio de um Formulário adaptável?
 description: Saiba como enviar dados do seu Formulário adaptável para um armazenamento do SharePoint, como uma lista ou biblioteca de documentos do SharePoint, ao enviar o formulário.
 keywords: Como conectar a lista do SharePoint para um formulário adaptável?, Como conectar a biblioteca de documentos do SharePoint para um formulário adaptável, Enviar para o SharePoint, Criar uma configuração da biblioteca de documentos do SharePoint, Usar a ação enviar Enviar para o SharePoint em um formulário adaptável, Conectar um formulário adaptável à lista do Microsoft&reg; SharePoint.
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
-title: Como configurar uma ação enviar para um formulário adaptável?
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---

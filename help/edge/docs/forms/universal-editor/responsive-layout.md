@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '2383'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,9 @@ ht-degree: 0%
 
 # Criar Forms responsivo com editor universal
 
-Os usuários acessam formulários em uma grande variedade de dispositivos, incluindo desktops, tablets e smartphones. A criação de formulários responsivos garante uma experiência ideal para todos os usuários, independentemente do dispositivo. Este guia explica como projetar, testar e otimizar formulários para qualquer tamanho de tela usando o Universal Editor.
+O cenário moderno da Web exige formulários que funcionem perfeitamente em um espectro cada vez maior de dispositivos e tamanhos de tela. De grandes monitores de desktop a telas de smartphone compactas, os usuários esperam experiências consistentes e intuitivas, independentemente do dispositivo escolhido. A criação de formulários responsivos não é mais opcional — é um requisito fundamental para o fornecimento de experiências digitais profissionais, acessíveis e otimizadas para conversão.
 
+O Universal Editor fornece ferramentas e metodologias abrangentes para desenvolver formulários responsivos que se adaptem de forma inteligente a várias dimensões de tela, métodos de entrada e contextos de usuário. Este guia explora as bases técnicas, as estratégias de implementação e as técnicas de otimização necessárias para criar formulários que tenham desempenho excepcional em todos os dispositivos, mantendo a usabilidade, a acessibilidade e o apelo visual.
 
 A criação responsiva de formulários envolve duas atividades principais:
 
@@ -160,115 +161,116 @@ Os padrões de layout determinam como o conteúdo do formulário se adapta a dif
 
 ### Layout do painel
 
-**Propósito:** Organiza o conteúdo relacionado em seções visualmente distintas que podem ser visualizadas simultaneamente.
+O Layout do painel organiza o conteúdo relacionado em seções visualmente distintas, permitindo que os usuários visualizem várias seções de uma só vez. Esse layout é ideal para formulários com informações categorizadas que se beneficiam de uma apresentação lado a lado em telas maiores.
 
 ![Exemplo de layout do painel](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
-**Comportamento responsivo:**
+**Comportamento responsivo**
 
-- **Área de Trabalho (1200px+):** Painéis exibidos lado a lado ou em uma grade
-- **Tablet (768px-1199px):** Painéis empilhados verticalmente com espaçamento
-- **Dispositivo móvel (320px-767px):** Layout de coluna única com quebras de seção claras
+- **Área de Trabalho (1200px e superior):** Painéis são exibidos lado a lado ou em uma grade para máxima visibilidade.
+- **Tablet (768px-1199px):** os painéis são empilhados verticalmente com espaçamento apropriado para manter a clareza.
+- **Dispositivo móvel (320px-767px):** os painéis são apresentados em um layout de coluna única, com separação clara entre seções para facilitar a navegação.
 
-**Etapas de implementação:**
+**Como implementar**
 
-1. Use o [Componente de Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
-2. Agrupar campos relacionados em cada painel.
-3. Adicione cabeçalhos claros para cada seção.
-4. Assegure um espaçamento adequado entre os painéis.
+1. Adicione o [Componente de Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) ao formulário.
+2. Agrupe campos relacionados em cada painel para manter a organização lógica.
+3. Atribua cabeçalhos claros e descritivos a cada seção do painel.
+4. Verifique se há espaçamento suficiente entre os painéis para evitar desordem visual.
 
-**Práticas recomendadas:**
+**Práticas recomendadas**
 
-- Limite de 3 a 4 painéis no desktop para evitar sobrecarregar os usuários.
-- Use títulos descritivos para cada painel.
-- Agrupar campos relacionados logicamente para reduzir a carga cognitiva.
-- Teste a navegação do painel em dispositivos de toque.
+- Limite o número de painéis para 3 ou 4 no desktop para evitar sobrecarregar os usuários.
+- Use títulos concisos e descritivos para cada painel para auxiliar a compreensão do usuário.
+- Organize campos dentro de painéis logicamente para minimizar a carga cognitiva.
+- Teste a navegação do painel em dispositivos de toque para garantir a usabilidade em todas as plataformas.
 
-**Exemplo de casos de uso:**
+**Casos de uso comuns**
 
-- **Aplicativo de Trabalho:** Informações Pessoais, Educação, Experiência, Referências
-- **Registro do Produto:** Detalhes Básicos, Especificações Técnicas, Informações de Garantia
-- **Forms de Pesquisa:** Demografia, Preferências, Comentários, Contato
+- **Aplicativo de Trabalho:** Seções para Informações Pessoais, Educação, Experiência e Referências.
+- **Registro do Produto:** Painéis para Detalhes Básicos, Especificações Técnicas e Informações de Garantia.
+- **Forms de Pesquisa:** Agrupamentos para Demografia, Preferências, Comentários e Informações de Contato.
 
 ### Layout do assistente
 
-**Propósito:** orienta os usuários sobre processos complexos passo a passo, reduzindo a carga cognitiva e melhorando as taxas de conclusão.
+O Layout do assistente orienta os usuários por um processo de várias etapas, apresentando uma seção de cada vez. Esse layout é especialmente eficaz para formulários complexos, pois reduz a carga cognitiva e aumenta as taxas de conclusão quebrando o processo em etapas controláveis.
 
 ![Exemplo de layout do assistente](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
-**Comportamento responsivo:**
+**Comportamento responsivo**
 
-- **Todos os Dispositivos:** mantém o foco de etapa única para obter a experiência móvel ideal.
-- **Conteúdo da Etapa:** Adapta-se dentro de cada etapa (empilhamento ou lado a lado).
-- **Navegação:** botões de toque simples com espaçamento suficiente.
-- **Indicador de Progresso:** Dimensionado adequadamente para o tamanho da tela.
+- **Todos os Dispositivos:** Mantém o foco em uma única etapa, o que é ideal para usuários móveis.
+- **Conteúdo da Etapa:** cada etapa se adapta com agilidade, empilhando campos ou organizando-os lado a lado conforme apropriado para o tamanho da tela.
+- **Navegação:** apresenta botões de toque com espaçamento adequado para facilitar a interação.
+- **Indicador de progresso:** Barras de progresso ou indicadores de etapa são dimensionados adequadamente para dispositivos diferentes, fornecendo feedback claro sobre o status de conclusão.
 
-**Etapas de implementação:**
+**Como implementar**
 
-1. Use o [Componente de Assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
-2. Divida formulários complexos em etapas lógicas (3 a 7 etapas são ideais).
-3. Incluir indicadores de progresso para orientação do usuário.
-4. Forneça controles de navegação claros (Próximo, Voltar, Salvar).
+1. Insira o [Componente de Assistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) no formulário.
+2. Divida o formulário em etapas lógicas, idealmente entre 3 e 7, para manter cada etapa focalizada e gerenciável.
+3. Adicione indicadores de progresso para ajudar os usuários a entender sua posição no processo.
+4. Forneça controles de navegação claros, como os botões Próximo, Voltar e Salvar.
 
-**Otimização móvel:**
+**Dicas de Otimização Móvel**
 
-- Use destinos de toque grande (mínimo de 44px) para botões de navegação.
-- Verifique se os indicadores de etapa estão claros e visíveis em telas pequenas.
-- Limite o número de campos por etapa para reduzir a rolagem.
-- Ative o salvamento automático para evitar perda de dados.
+- Use destinos de toque grande (pelo menos 44 px de altura) para controles de navegação para melhorar a acessibilidade.
+- Verifique se os indicadores de etapa estão visíveis e legíveis em telas pequenas.
+- Limite o número de campos por etapa para minimizar a rolagem e melhorar o foco.
+- Ative a funcionalidade de salvamento automático para impedir a perda de dados se os usuários deixarem o formulário.
 
-**Práticas recomendadas:**
+**Práticas recomendadas**
 
-- Assegurar a progressão lógica da etapa — cada etapa deve se basear na anterior.
-- Use títulos de etapas claras para que os usuários saibam o que esperar.
-- Valide a entrada em cada etapa para detectar erros antecipadamente.
-- Permite que os usuários recuem para revisar ou editar informações.
+- Etapas de design para seguir uma progressão lógica, com cada etapa tendo como base a anterior.
+- Use títulos claros e descritivos para cada etapa para definir as expectativas do usuário.
+- Valide a entrada do usuário em cada etapa para detectar erros antecipadamente e reduzir a frustração.
+- Permite que os usuários naveguem para trás para revisar ou editar informações anteriores sem perder dados.
 
-**Exemplo de casos de uso:**
+**Casos de uso comuns**
 
-- **Reivindicações de Seguro:** Incidente → Evidência → Pessoal → Revisão
-- **Configuração da Conta:** Informações Básicas → Preferências → Segurança → Confirmação
-- **Processo do pedido:** Produtos → Envio → Pagamento → Resumo
+- **Reivindicações de Seguro:** Etapas para Detalhes do Incidente, Envio de Evidências, Informações Pessoais e Revisão.
+- **Configuração de Conta:** Estágios para Informações Básicas, Preferências, Configurações de Segurança e Confirmação.
+- **Processo do pedido:** Etapas para seleção de produto, informações de envio, detalhes de pagamento e resumo do pedido.
 
 ### Layout do acordeão
 
-**Propósito:** economiza espaço organizando o conteúdo em seções que podem ser recolhidas, ideal para informações opcionais ou secundárias.
+O Layout do Acordeão economiza espaço organizando o conteúdo em seções que podem ser recolhidas, tornando-o ideal para informações opcionais ou secundárias. Esse layout é particularmente eficiente para formulários com conteúdo que pode ser agrupado logicamente e não precisa ser exibido de uma só vez.
 
 ![Exemplo de layout do acordeão](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
-**Comportamento responsivo:**
+**Comportamento responsivo**
 
-- **Excelente desempenho móvel:** somente conteúdo relevante é exibido.
-- **Cabeçalhos otimizados para toque:** Fáceis de tocar e expandir seções.
-- **Animações suaves:** fornece feedback visual para interações.
-- **Eficiência de espaço:** minimiza a rolagem em todos os dispositivos.
+- **Desempenho móvel:** somente a seção relevante é expandida, reduzindo a necessidade de rolagem e melhorando os tempos de carregamento.
+- **Cabeçalhos otimizados para toque:** os cabeçalhos de seção são fáceis de tocar e expandir, oferecendo suporte a gestos naturais em dispositivos móveis.
+- **Animações Suaves:** Expandir e recolher seções fornece comentários visuais para as interações do usuário.
+- **Eficiência de Espaço:** as seções recolhidas minimizam o espaço vertical, tornando o formulário mais fácil de navegar em todos os dispositivos.
 
-**Etapas de implementação:**
+**Como implementar**
 
-1. Use o [Componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
-2. Agrupe o conteúdo opcional relacionado em cada seção.
-3. Use cabeçalhos de seção descritiva.
-4. Defina os estados de abertura/fechamento padrão apropriados.
+1. Adicione o [Componente Acordeão](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) ao seu formulário.
+2. Agrupe o conteúdo opcional ou secundário relacionado em cada seção do acordeão.
+3. Use cabeçalhos claros e descritivos para cada seção para ajudar os usuários a entender quais informações estão contidas em.
+4. Defina os estados de abertura ou fechamento padrão apropriados para cada seção com base na importância e nas necessidades do usuário.
 
-**Vantagens móveis:**
+**Vantagens móveis**
 
-- Reduz a rolagem recolhendo seções não usadas.
-- Interação amigável ao toque com gestos de expansão/colapso naturais.
-- Carregamento mais rápido — somente o conteúdo ativo fica visível.
-- Foco aprimorado — os usuários veem somente o que precisam.
+- Reduz a rolagem ao recolher seções não usadas, permitindo que os usuários se concentrem em uma seção por vez.
+- A interação amigável ao toque suporta gestos de expansão/recolhimento naturais.
+- Carregamento mais rápido, pois somente o conteúdo ativo está visível.
+- Foco aprimorado, já que os usuários veem somente as informações de que precisam em um determinado momento.
 
-**Práticas recomendadas:**
+**Práticas recomendadas**
 
-- Use cabeçalhos de seção limpa para que os usuários saibam o que há dentro antes de expandir.
-- Agrupe o conteúdo relacionado logicamente em cada seção.
-- Defina seções importantes para iniciar a expansão, se necessário.
-- Forneça breves visualizações de seção para ajudar os usuários a decidir o que expandir.
+- Use limpar cabeçalhos de seção para que os usuários saibam o que esperar antes de expandir uma seção.
+- Agrupe o conteúdo relacionado logicamente em cada seção para auxiliar na compreensão.
+- Defina seções importantes para começar a expandir se for necessária atenção imediata.
+- Forneça visualizações de seção resumidas ou resumos para ajudar os usuários a decidir quais seções expandir.
 
-**Exemplo de casos de uso:**
+**Casos de uso comuns**
 
-- **Configuração do produto:** Básico → Avançado → Acessórios → Suporte
-- **Perguntas frequentes Forms:** Conta → Faturamento → Técnico → Geral
-- **Configurações Forms:** Privacidade → Notificações → Aparência → Avançado
+- **Configuração do Produto:** Seções de Opções Básicas, Configurações Avançadas, Acessórios e Suporte.
+- **Perguntas frequentes sobre Forms:** Agrupamentos para perguntas sobre Conta, Faturamento, Técnico e Geral.
+- **Configurações Forms:** Seções para opções de Privacidade, Notificações, Aparência e Avançadas.
+
 
 ## Parte 3: Práticas recomendadas de design responsivo
 
@@ -276,42 +278,42 @@ Os padrões de layout determinam como o conteúdo do formulário se adapta a dif
 
 +++Otimização móvel (320px-767px)
 
-**Práticas essenciais:**
+**Layout e interação:**
 
-- Use um layout de coluna única para todo o conteúdo.
-- Oferece botões grandes e sensíveis ao toque (altura mínima de 44 px).
-- Simplifique a navegação com opções claras de voltar/avançar.
-- Minimize a rolagem em cada seção.
-- Foco automático no primeiro campo para exibir o teclado.
+- Use um layout de coluna única para todo o conteúdo do formulário para maximizar a legibilidade e a facilidade de uso.
+- Verifique se todos os botões e elementos interativos têm pelo menos 44 px de altura para uma interação de toque confiável.
+- Fornece navegação clara e simples com botões de voltar e próximo visíveis.
+- Minimize a necessidade de rolagem em cada seção separando formulários longos.
+- Focalize automaticamente no primeiro campo de entrada para avisar o teclado móvel.
 
-**Diretrizes Específicas de Campo:**
+**Diretrizes de Campo:**
 
-- **Entradas de texto:** Largura total com preenchimento de amostra.
-- **Menus suspensos:** use elementos nativos selecionados para obter uma melhor experiência de toque.
-- **Seletores de data:** use entradas de data nativas para compatibilidade móvel.
-- **Carregamentos de arquivos:** forneça áreas de carregamento grandes e claras.
+- Os campos de texto devem abranger a largura total da tela com preenchimento suficiente para entrada por toque.
+- Use a lista suspensa nativa/selecione elementos para obter a usabilidade móvel ideal.
+- Implemente seletores de data nativos para obter experiência móvel consistente.
+- Torne grandes as áreas de upload de arquivos e claramente rotuladas para facilitar o acesso.
 
 +++
 
 +++Otimização do tablet (768px-1199px)
 
-**Estratégias de layout:**
+**Layout e Usabilidade:**
 
-- Use layouts de duas colunas para campos relacionados.
-- Teste as orientações retrato e paisagem.
-- São compatíveis com interações com toque e mouse.
-- Fornecer áreas de conteúdo maiores, mantendo a legibilidade.
+- Utilize layouts de duas colunas para campos relacionados a fim de aproveitar o aumento do espaço na tela.
+- Teste a aparência do formulário e a usabilidade nas orientações de retrato e paisagem.
+- Design para entrada de toque e mouse, garantindo que todos os controles sejam facilmente acessíveis.
+- Aumente o tamanho da área de conteúdo mantendo uma hierarquia visual clara e a legibilidade.
 
 +++
 
 +++Otimização de desktop (1200px+)
 
-**Recursos Avançados:**
+**Layout e Recursos Avançados:**
 
-- Use layouts de várias colunas para um uso eficiente do espaço.
-- Ofereça atalhos de teclado para usuários avançados.
-- Implemente estados de focalização para feedback interativo.
-- Fornecer validação avançada com mensagens de erro detalhadas.
+- Use layouts de várias colunas para usar o espaço horizontal com eficiência e reduzir a rolagem vertical.
+- Forneça atalhos de teclado para ações frequentes de suporte a usuários avançados.
+- Implemente estados de focalização e feedback visual para elementos interativos.
+- Ofereça validação avançada com mensagens de erro claras e detalhadas para formulários complexos.
 
 +++
 
@@ -321,52 +323,52 @@ Os padrões de layout determinam como o conteúdo do formulário se adapta a dif
 
 +++Quebras de layout de formulário em dispositivos móveis
 
-**Causas Comuns:**
+**Causas possíveis:**
 
-- Elementos de largura fixa que não são dimensionados
-- CSS projetado para layouts de desktop
-- Imagens ou conteúdo que excedem seus contêineres
+- Elementos de largura fixa que não se adaptam a telas menores
+- CSS do primeiro desktop que substitui estilos móveis
+- Imagens ou conteúdo que transborda seus contêineres
 
-**Soluções:**
+**Como Corrigir:**
 
-- Verifique se as imagens e os contêineres são dimensionados de acordo com o tamanho da tela.
-- Use um design móvel com aprimoramento progressivo.
-- Teste com emuladores de dispositivo e dispositivos reais.
-- Use dimensionamento flexível em vez de dimensões fixas.
+- Verifique se todas as imagens e contêineres usam dimensionamento relativo ou baseado em porcentagem.
+- Comece com uma abordagem CSS móvel e crie camadas de aprimoramentos para telas maiores.
+- Teste formulários usando emuladores de dispositivo e dispositivos reais.
+- Evite dimensões fixas; use layouts flexíveis.
 
 +++
 
 +++Destinos de toque muito pequenos
 
-**Causas Comuns:**
+**Causas possíveis:**
 
-- Botões menores que 44px × 44px
+- Botões ou links menores que 44px por 44px
 - Elementos interativos posicionados muito próximos
-- Substituição de padrões amigáveis ao toque por CSS personalizado
+- CSS personalizado reduzindo o tamanho de destino de toque padrão
 
-**Soluções:**
+**Como Corrigir:**
 
-- Verifique se todos os elementos interativos estão no mínimo em 44px × 44px.
-- Adicionar espaçamento entre botões e links.
-- Teste a interação com os dedos reais, não apenas com o mouse.
-- Aumente as áreas de destino de toque para facilitar o toque.
+- Verifique se cada elemento interativo tem no mínimo 44px por 44px.
+- Adicione um espaçamento adequado entre botões, links e outros controles.
+- Teste com dispositivos de toque reais, não apenas com um mouse.
+- Expanda as áreas de destino de toque conforme necessário para acessibilidade.
 
 +++
 
 +++Problemas de estouro de conteúdo
 
-**Causas Comuns:**
+**Causas possíveis:**
 
 - Texto longo ou rótulos que não quebram automaticamente
-- Contêineres de largura fixa
-- Imagens que não são dimensionadas corretamente
+- Contêineres com larguras fixas
+- Imagens que não são dimensionadas responsivamente
 
-**Soluções:**
+**Como Corrigir:**
 
-- Ativar quebra de texto para conteúdo longo.
-- Use imagens responsivas que sejam dimensionadas adequadamente.
-- Implementar layouts flexíveis que se adaptam ao conteúdo.
-- Teste com vários comprimentos de conteúdo.
+- Ativar quebra automática de texto para todos os rótulos e conteúdo.
+- Use imagens responsivas que são dimensionadas com o container.
+- Criar layouts flexíveis que se adaptam a tamanhos variáveis de conteúdo.
+- Teste o conteúdo curto e o conteúdo longo para garantir a adaptabilidade.
 
 +++
 
@@ -374,18 +376,18 @@ Os padrões de layout determinam como o conteúdo do formulário se adapta a dif
 
 +++Carregamento lento em dispositivos móveis
 
-**Causas Comuns:**
+**Causas possíveis:**
 
-- Imagens grandes não otimizadas para dispositivos móveis
-- Execução excessiva do JavaScript
-- Muitos campos de formulário carregando de uma vez
+- Imagens grandes, não otimizadas
+- JavaScript pesado ou excessivo
+- Muitos campos de formulário carregando simultaneamente
 
-**Soluções:**
+**Como Corrigir:**
 
-- Otimizar imagens para tamanhos de tela diferentes.
-- Carregue conteúdo não crítico somente quando necessário.
-- Use técnicas para acelerar o carregamento móvel.
-- Minimize scripts e widgets de terceiros.
+- Otimizar imagens para dispositivos móveis e usar formatos de arquivo apropriados.
+- Adiar ou carregar lentamente conteúdo não crítico.
+- Minimize o uso de scripts e widgets de terceiros.
+- Simplifique os campos de formulário para carregar somente o que é necessário.
 
 +++
 
@@ -393,18 +395,18 @@ Os padrões de layout determinam como o conteúdo do formulário se adapta a dif
 
 +++Emulador vs. Diferenças reais do dispositivo
 
-**Causas Comuns:**
+**Causas possíveis:**
 
-- Diferenças de renderização específicas do navegador
-- Diferenças de interação entre toque e mouse
-- Variações de velocidade da rede
+- Diferenças nos mecanismos de renderização do navegador
+- Interação de toque não simulada com precisão pelo mouse
+- Discrepâncias de velocidade da rede
 
-**Soluções:**
+**Como Corrigir:**
 
-- Testar em dispositivos reais sempre que possível.
-- Use vários navegadores para testes de emulador.
-- Simular velocidades de rede diferentes durante o teste.
-- Validar com usuários reais em ambientes de destino.
+- Sempre testar em dispositivos reais além de emuladores.
+- Use vários navegadores e dispositivos para testes abrangentes.
+- Simular várias velocidades de rede para identificar gargalos de desempenho.
+- Obtenha feedback de usuários reais no seu público-alvo.
 
 +++
 
@@ -412,33 +414,34 @@ Os padrões de layout determinam como o conteúdo do formulário se adapta a dif
 
 +++Indicadores-chave de desempenho
 
-**Métricas de experiência do usuário:**
+**Experiência do Usuário:**
 
-- **Taxa de conclusão de formulário:** Target 85%+ em dispositivos móveis
-- **Tempo para concluir:** o tempo de conclusão móvel deve estar dentro de 20% da área de trabalho
-- **Taxa de erros:** Menos de 5% de erros de validação
-- **Pontos de abandono:** identifique onde os usuários caem
+- **Taxa de conclusão de formulário:** Objetivo para 85% ou mais em dispositivos móveis.
+- **Tempo para concluir:** usuários móveis devem concluir formulários dentro de 20% do tempo de conclusão da área de trabalho.
+- **Taxa de erros:** Mantenha os erros de validação abaixo de 5%.
+- **Pontos de abandono:** identifique e encaminhe as etapas nas quais os usuários são liberados.
 
 **Desempenho Técnico:**
 
-- **Tempo de carregamento da página:** Em 3 segundos em redes 3G
-- **Web Vitals Principais:** Aprovados em todos os benchmarks de desempenho da Google
-- **Pontuação de acessibilidade:** Conformidade com a WCAG 2.1 AA
-- **Compatibilidade entre navegadores:** Funcionalidade 98%+ nos principais navegadores
+- **Tempo de carregamento da página:** Menos de 3 segundos em uma conexão 3G.
+- **Web Vitals Principais:** Atenda ou exceda os limites recomendados pela Google.
+- **Acessibilidade:** atenda à conformidade WCAG 2.1 AA.
+- **Compatibilidade do navegador:** verifique a funcionalidade de mais de 98% em todos os principais navegadores.
 
 +++
 
 +++Lista de verificação de teste
 
-**Antes de publicar:**
+**Lista de Verificação de Pré-Publicação:**
 
-- Teste o formulário em dispositivos móveis reais.
+- Teste o formulário em dispositivos móveis reais (não apenas emuladores).
 - Verifique se todos os destinos de toque têm pelo menos 44px × 44px.
-- Verifique a legibilidade do texto em todos os tamanhos de tela.
-- Confirmar se a validação de formulário funciona em todos os dispositivos.
-- Verifique se o tempo de carregamento está abaixo de 3 segundos no dispositivo móvel.
-- Verifique se todos os elementos interativos estão acessíveis.
+- Verifique a legibilidade do texto em todos os tamanhos de tela compatíveis.
+- Confirme se a validação de formulário funciona de maneira consistente em dispositivos e navegadores.
+- Verifique se o tempo de carregamento do dispositivo móvel está abaixo de 3 segundos.
+- Verifique se todos os elementos interativos podem ser acessados pelo teclado e pelos leitores de tela.
 - Teste o envio de formulário em todos os dispositivos compatíveis.
+
 
 +++
 

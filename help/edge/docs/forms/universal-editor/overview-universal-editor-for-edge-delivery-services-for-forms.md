@@ -4,9 +4,9 @@ description: Use o Universal Editor para Edge Delivery Services no Forms para cr
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '984'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,7 @@ Quer você esteja gerenciando uma renderização leve do lado do cliente, garant
 
 | ![Estilo](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Serviços de preenchimento prévio](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![Teste A/B](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Estilo**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Preencher Serviços** (Em Breve) | [**Teste A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**Estilo**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[Preencher formulários previamente](/help/edge/docs/forms/universal-editor/prefill-form.md)** | [**Teste A/B**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | O estilo com CSS permite que os desenvolvedores personalizem a aparência dos elementos de formulário e criem um design visualmente atraente que se alinhe à estética do site. | Os serviços de pré-preenchimento preenchem automaticamente os campos de formulário com dados relevantes do usuário de várias fontes, reduzindo a entrada manual e aprimorando a experiência do usuário. | O teste A/B permite que as organizações experimentem diferentes designs de formulário, layouts e recursos para identificar as variantes com melhor desempenho. |
 
 | ![Análise e Acompanhamento](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Fragmentos de formulário](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Associação de Dados](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |

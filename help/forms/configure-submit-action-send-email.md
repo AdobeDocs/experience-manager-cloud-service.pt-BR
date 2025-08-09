@@ -1,13 +1,13 @@
 ---
+title: Como enviar um email no envio de um Formulário adaptável?
 description: Explore o processo para configurar notificações por email ao enviar um Formulário adaptável.
 keywords: como enviar um email para um formulário adaptável, Ação enviar de email, Email do formulário adaptável, Email de envio do formulário, Guia de envio de email
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
-title: Como configurar uma ação enviar para um formulário adaptável?
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '841'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ A caixa de diálogo **Propriedades do Formulário** é exibida.
 
 * É recomendável manter o conteúdo do email claro e conciso. Os usuários devem entender a finalidade do email e quaisquer ações que precisem ser realizadas.
 * É recomendável que todos os campos de formulário tenham nomes de elemento exclusivos, mesmo que eles sejam colocados em painéis diferentes em um Formulário adaptável.
-* Ao usar o AEM as a Cloud Service, o email de saída requer criptografia. Por padrão, a funcionalidade de email de saída está desativada. Para ativá-lo, envie um tíquete de suporte para [solicitar acesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=pt-BR#sending-email).
+* Ao usar o AEM as a Cloud Service, o email de saída requer criptografia. Por padrão, a funcionalidade de email de saída está desativada. Para ativá-lo, envie um tíquete de suporte para [solicitar acesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
 ## Artigos relacionados
 
