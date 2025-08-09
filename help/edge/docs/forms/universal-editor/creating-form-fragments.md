@@ -16,7 +16,7 @@ ht-degree: 0%
 <!--
 <span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
 -->
 
 Os fragmentos de formulário são componentes reutilizáveis que eliminam o trabalho de desenvolvimento repetitivo e garantem a consistência entre os formulários de sua organização. Em vez de recriar seções comuns, como informações de contato, detalhes de endereço ou contratos de consentimento para cada formulário, você pode criar esses elementos uma vez como fragmentos e reutilizá-los em vários formulários.
