@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: 60e693593778a558e91d68da41025277438c6f03
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1545'
 ht-degree: 1%
 
 ---
@@ -18,8 +18,6 @@ ht-degree: 1%
 # Serviço de envio de Forms para o Edge Delivery Services
 
 O Serviço de envio da Forms é a solução hospedada da Adobe que armazena automaticamente os dados de envio de formulário diretamente em suas planilhas preferidas: Google Sheets, Microsoft OneDrive ou SharePoint. Isso elimina a necessidade de infraestruturas complexas de back-end e, ao mesmo tempo, fornece coleta e gerenciamento de dados em tempo real.
-
-
 
 ## Visão geral
 
@@ -57,8 +55,6 @@ O Serviço de envio da Forms é a solução hospedada da Adobe que armazena auto
 ## Principais benefícios
 
 O serviço de envio da Forms oferece várias vantagens para uma coleta de dados simplificada:
-
-
 
 +++ Configuração simplificada
 
@@ -119,7 +115,7 @@ Escolha uma das plataformas compatíveis:
 
 >[!TIP]
 >
->**Novo no Edge Delivery Services?** Comece com o [Tutorial de introdução](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para configurar a base do seu projeto.
+>**Novo no Edge Delivery Services?** Comece com o [Tutorial de introdução](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para configurar a base do seu projeto.
 
 ## Métodos de configuração
 
@@ -139,9 +135,8 @@ O Serviço de envio da Forms oferece duas abordagens de configuração. Escolha 
 
 Antes de configurar qualquer método, verifique se a base do projeto do AEM está pronta:
 
-1. **Crie ou atualize seu projeto do AEM** com o Bloco Adaptive Forms mais recente ([Tutorial de Introdução](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
-
-2. **Atualize`fstab.yaml`** na raiz do seu projeto:
+1. **Crie ou atualize seu projeto do AEM** com o Bloco Adaptive Forms mais recente ([Tutorial de Introdução](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+1. **Atualize`fstab.yaml`** na raiz do seu projeto:
 
    ```yaml
    # Replace with the path to your shared folder
@@ -149,8 +144,7 @@ Antes de configurar qualquer método, verifique se a base do projeto do AEM est�
      /: https://drive.google.com/drive/folders/your-shared-folder-id
    ```
 
-
-3. **Compartilhar a pasta do projeto** com `forms@adobe.com` (são necessárias permissões de edição)
+1. **Compartilhar a pasta do projeto** com `forms@adobe.com` (são necessárias permissões de edição)
 
 +++
 
@@ -170,9 +164,9 @@ Crie a estrutura do formulário usando o Google Sheets ou o Microsoft Excel.
 **Etapas de Criação do Formulário:**
 
 1. **Abra a plataforma de planilha** (Google Sheets ou Microsoft Excel)
-2. **Criar uma nova planilha** para o projeto de formulário
-3. **Nomeie sua planilha** (deve ser `helix-default` ou `shared-aem`)
-4. **Defina sua estrutura de formulário** usando o [guia de criação de formulário](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+1. **Criar uma nova planilha** para o projeto de formulário
+1. **Nomeie sua planilha** (deve ser `helix-default` ou `shared-aem`)
+1. **Defina sua estrutura de formulário** usando o [guia de criação de formulário](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Definição de Formulário](/help/forms/assets/form-submission-definition.png)
 *Exemplo: definição de formulário com tipos de campo, rótulos e regras de validação*
@@ -203,9 +197,9 @@ Configure uma planilha dedicada para receber dados de envio do formulário.
 **Configuração de Folha de Dados:**
 
 1. **Adicionar uma nova planilha** à planilha existente
-2. **Nomeie a planilha exatamente`incoming`** (diferencia maiúsculas de minúsculas)
-3. **Configurar cabeçalhos de coluna** que correspondam aos seus campos de formulário
-4. **Salve a planilha** para garantir que as alterações sejam preservadas
+1. **Nomeie a planilha exatamente`incoming`** (diferencia maiúsculas de minúsculas)
+1. **Configurar cabeçalhos de coluna** que correspondam aos seus campos de formulário
+1. **Salve a planilha** para garantir que as alterações sejam preservadas
 
 ![Planilha de entrada](/help/forms/assets/form-submission-incoming-sheet.png)
 *Exemplo: planilha de entrada com cabeçalhos de coluna correspondentes aos campos de formulário*
@@ -239,11 +233,13 @@ Conceda acesso ao Adobe Forms Submission Service para sua planilha.
 **Processo de Compartilhamento:**
 
 1. **Clique no botão Compartilhar** no canto superior direito da planilha
-2. **Adicionar a conta de serviço da Adobe:**
+1. **Adicionar a conta de serviço da Adobe:**
+
    - Email: `forms@adobe.com`
    - Nível de permissão: **Editor** (necessário para gravação de dados)
-3. **Enviar o convite de compartilhamento**
-4. **Copie o link da planilha** para a próxima etapa
+
+1. **Enviar o convite de compartilhamento**
+1. **Copie o link da planilha** para a próxima etapa
 
    ![Compartilhar planilha de entrada](/help/forms/assets/form-submission-share-incoming.png)
    *Processo de compartilhamento passo a passo para conceder acesso ao serviço da Adobe*
@@ -280,9 +276,9 @@ Vincule a definição do formulário à planilha de envio.
 **Conexão de Planilha de Formulário:**
 
 1. **Abra a planilha de definição de formulário** (aquela com a planilha `helix-default` ou `shared-aem`)
-2. **Localize a linha de campo Enviar** na definição do formulário
-3. **Cole o link da planilha copiada** na coluna **Ação** para o campo Enviar
-4. **Salve as alterações** na definição do formulário
+1. **Localize a linha de campo Enviar** na definição do formulário
+1. **Cole o link da planilha copiada** na coluna **Ação** para o campo Enviar
+1. **Salve as alterações** na definição do formulário
 
    ![Vincular uma planilha](/help/forms/assets/form-submission-sheet-linking.png)
    *Exemplo: Conectando a ação de envio à sua planilha de coleta de dados*
@@ -290,8 +286,8 @@ Vincule a definição do formulário à planilha de envio.
 **Publicando Seu Formulário:**
 
 1. **Abra o AEM Sidekick** no navegador
-2. **Visualize seu formulário** para testar a configuração
-3. **Publicar o formulário** para ativá-lo
+1. **Visualize seu formulário** para testar a configuração
+1. **Publicar o formulário** para ativá-lo
 
 **Validação Final:**
 
@@ -368,37 +364,38 @@ O Postman fornece uma interface simples para testar os envios de API.
 **Instruções de Instalação:**
 
 1. **Criar uma nova solicitação POST** no Postman
-2. **Configurar o ponto de extremidade:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
-3. **Substituir espaços reservados:**
+1. **Configurar o ponto de extremidade:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
+1. **Substituir espaços reservados:**
+
    - `{id}` → Sua ID de formulário real
    - `[repository]` → Seu nome de repositório no GitHub
    - `[organization]` → Sua organização/nome de usuário do GitHub
 
 **Solicitar configuração:**
 
-    &quot;json
+```json
 POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-Cabeçalhos:
-Tipo de conteúdo: application/json
-x-adobe-routing: tier=live,bucket=main—your-repo—your-org
+Headers:
+Content-Type: application/json
+x-adobe-routing: tier=live,bucket=main--your-repo--your-org
 
-Corpo (JSON):
-&lbrace;
-&quot;data&quot;: &lbrace;
-&quot;startDate&quot;: &quot;10/01/2025&quot;,
-&quot;endDate&quot;: &quot;25/01/2025&quot;,
-&quot;destination&quot;: &quot;Australia&quot;,
-&quot;class&quot;: &quot;First Class&quot;,
-&quot;budget&quot;: &quot;2000&quot;,
-&quot;amount&quot;: &quot;1000000&quot;,
-&quot;name&quot;: &quot;Mary&quot;,
-&quot;age&quot;: &quot;35&quot;,
-&quot;subscribe&quot;: nulo,
-&quot;email&quot;: &quot;mary@gmail.com&quot;
-&rbrace;
-&rbrace;
-&quot;
+Body (JSON):
+{
+        "data": {
+            "startDate": "2025-01-10",
+            "endDate": "2025-01-25",
+            "destination": "Australia",
+            "class": "First Class",
+            "budget": "2000",
+            "amount": "1000000",
+            "name": "Mary",
+            "age": "35",
+            "subscribe": null,
+            "email": "mary@gmail.com"
+                }
+}
+```
 
 **Resposta esperada:**
 
@@ -444,10 +441,10 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-        ```
+```
 
->[!TAB Windows Command Prompt]
-     
+>[!TAB Prompt de Comando do Windows]
+
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
     --header "Content-Type: application/json" ^
@@ -477,15 +474,15 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-    ```
+```
 
 >[!ENDTABS]
 
 +++
 
-+++ API Response & Verification
++++ Resposta e verificação da API
 
-**Successful Response:**
+**Resposta Bem-sucedida:**
 
 ```http
 HTTP/1.1 201 Created
@@ -571,7 +568,7 @@ Solutions:
 
 - **Problemas de acesso antecipado:** Email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 - **Documentação da API:** [Referência do desenvolvedor](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **Suporte da comunidade:** [Comunidade da Adobe Experience League](https://experienceleaguecommunities.adobe.com/?profile.language=pt)
+- **Suporte da comunidade:** [Comunidade da Adobe Experience League](https://experienceleaguecommunities.adobe.com/)
 
 +++
 
@@ -582,7 +579,7 @@ Agora que você tem o Serviço de envio do Forms configurado, explore estes tóp
 
 +++ Aprimorar seu Forms
 
-- **[Criar Forms Avançado](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Adicionar validação, lógica condicional e estilo personalizado
+- **[Criar Forms Avançado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Adicionar validação, lógica condicional e estilo personalizado
 - **[Guia de Componentes de Formulário](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - Explorar tipos de campos de formulário disponíveis
 
 +++
