@@ -249,7 +249,7 @@ Verifique se essas extensões estão habilitadas no Universal Editor:
 3. Escolher **Visualizar como HTML**
 4. Teste o preenchimento prévio anexando parâmetros ao URL:
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **Exemplo:**
 
