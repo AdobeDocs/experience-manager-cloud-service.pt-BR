@@ -4,11 +4,11 @@ description: Saiba como publicar, configurar e acessar o Adaptive Forms usando o
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
-keywords: [publicar formulários, Edge Delivery Services, configuração de formulário, CORS, filtro de referenciador]
+keywords: publicar formulários, Edge Delivery Services, configuração de formulário, CORS, filtro referenciador
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
 workflow-type: tm+mt
-source-wordcount: 746
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -169,8 +169,8 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentação de referência:**
 
-- [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [Documentação de Filtro do Referenciador](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+- [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [Documentação de Filtro do Referenciador](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
 +++
 
@@ -221,7 +221,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentação de referência:**
 
-- [Configurar Filtro Referenciador via Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [Configurar Filtro Referenciador via Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
 +++
 
