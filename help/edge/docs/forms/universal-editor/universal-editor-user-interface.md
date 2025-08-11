@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2358'
 ht-degree: 0%
@@ -349,7 +349,7 @@ O **Painel de Propriedades** (lado direito) é o seu centro de controle para cri
 
     ![Gerar variações](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**Saiba Mais:** [Gerar Guia De Variações](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**Saiba Mais:** [Gerar Guia De Variações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **Rascunhos de Conteúdo**
 
@@ -507,19 +507,19 @@ Domine esses atalhos para criar formulários com mais rapidez e eficiência:
 - **Planejar antes de compilar** - Faça um esboço da estrutura do formulário antes de iniciar
 - **Mantenha a simplicidade** - Evite sobrecarregar os usuários com muitos campos
 
-### **Otimização do desempenho**
-
-- **Minimizar componentes** - Use apenas os campos de formulário necessários
-- **Otimizar imagens** - Compactar todas as imagens usadas em formulários
-- **Testar em dispositivo móvel** - Garantir bom desempenho em conexões móveis mais lentas
-- **Validar com antecedência** - Configurar a validação adequada para evitar erros de envio
-
 ### **Experiência do usuário**
 
 - **Testar com frequência** - Usar Modo de Visualização após cada alteração importante
 - **Pense como usuários** - Considere a experiência completa de preenchimento de formulário
 - **Fornecer rótulos claros** - Tornar as finalidades de campo óbvias para os usuários
 - **Adicionar texto útil** - Use texto de ajuda para campos complexos
+
+### **Otimização do desempenho**
+
+- **Minimizar componentes** - Use apenas os campos de formulário necessários
+- **Otimizar imagens** - Compactar todas as imagens usadas em formulários
+- **Testar em dispositivo móvel** - Garantir bom desempenho em conexões móveis mais lentas
+- **Validar com antecedência** - Configurar a validação adequada para evitar erros de envio
 
 ## Próximas etapas
 

@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 1%
@@ -41,10 +41,12 @@ Antes de começar, determine qual tipo de modelo se alinha aos seus requisitos:
 
 **Diretrizes de decisão:**
 
+![Decisão de Seleção de Modelo](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 - Use os **Componentes principais** para fluxos de trabalho complexos, integração profunda do AEM ou se estiver aproveitando os ativos existentes do AEM.
 - Use o **Edge Delivery Services** para obter desempenho, simplicidade e práticas modernas de desenvolvimento.
 
-![Decisão de Seleção de Modelo](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 *Fluxograma de decisão para escolher o tipo de modelo apropriado*
 
 ## Pré-requisitos
@@ -505,8 +507,8 @@ Abaixo estão problemas comuns e soluções para o AEM Forms com o Edge Delivery
 Se os problemas persistirem:
 
 1. Verifique o status do serviço do Adobe Experience Cloud.
-2. Revise a [documentação do Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=pt-BR).
-3. Visite A [Comunidade Da Adobe Experience League](https://experienceleaguecommunities.adobe.com/?profile.language=pt).
+2. Revise a [documentação do Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html).
+3. Visite A [Comunidade Da Adobe Experience League](https://experienceleaguecommunities.adobe.com/).
 4. Entre em contato com o Atendimento ao cliente da Adobe.
 
 +++
@@ -528,6 +530,6 @@ Após concluir a criação e a publicação do formulário, considere o seguinte
 
 ### Otimização do desempenho
 
-- [Práticas recomendadas da Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=pt-BR): maximize o desempenho.
+- [Práticas recomendadas da Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html): maximize o desempenho.
 - [Análise de formulários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html): controle o desempenho do formulário e o comportamento do usuário.
 

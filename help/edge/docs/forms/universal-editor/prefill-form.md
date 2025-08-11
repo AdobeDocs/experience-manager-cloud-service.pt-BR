@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: preenchimento prévio de formulário adaptável, serviços de entrega de borda de formulários adaptáveis, preenchimento automático de formulário adaptável
-source-git-commit: 074b81f9cb1050eac5175bdc46796f9371f3a35b
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 1%
@@ -249,7 +249,7 @@ Verifique se essas extensões estão habilitadas no Universal Editor:
 3. Escolher **Visualizar como HTML**
 4. Teste o preenchimento prévio anexando parâmetros ao URL:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Exemplo:**
 
@@ -422,17 +422,19 @@ Verifique se todos os campos têm `bindRef` valores corretos que correspondam ex
 
 +++
 
++++Posso usar vários serviços de preenchimento prévio em um formulário?
+
+É possível configurar um serviço de preenchimento prévio principal por formulário. No entanto, é possível combinar diferentes fontes de dados em um único Modelo de dados de formulário para obter funcionalidade semelhante.
+
++++
+
 +++Como gerenciar a autenticação para serviços de preenchimento prévio?
 
 A autenticação depende da configuração da fonte de dados. Para preenchimento prévio baseado em FDM, configure a autenticação nas configurações da fonte de dados. Para o preenchimento prévio de rascunho, os usuários normalmente precisam estar conectados para acessar os rascunhos salvos.
 
 +++
 
-+++Posso usar vários serviços de preenchimento prévio em um formulário?
 
-É possível configurar um serviço de preenchimento prévio principal por formulário. No entanto, é possível combinar diferentes fontes de dados em um único Modelo de dados de formulário para obter funcionalidade semelhante.
-
-+++
 
 ## Tópicos relacionados
 

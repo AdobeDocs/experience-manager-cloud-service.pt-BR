@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 1%
@@ -308,7 +308,7 @@ Você criará um formulário que:
 
 1. **Abrir editor universal**:
    - Navegue até o console AEM Sites, selecione sua página, clique em **Editar**
-   - Verifique se o [Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=pt-BR) está configurado corretamente
+   - Verifique se o [Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) está configurado corretamente
 
 2. **Adicionar componentes de formulário nesta ordem**:
    - Título (H2): &quot;Formulário de cálculo de imposto&quot;
@@ -664,7 +664,7 @@ O Forms se torna ferramentas eficientes para a coleta de dados, a qualificação
 
 +++
 
-+++ Próximas etapas
+## Próximas etapas
 
 **Caminho de Aprendizado recomendado**:
 
@@ -676,8 +676,7 @@ O Forms se torna ferramentas eficientes para a coleta de dados, a qualificação
 
 **Recursos adicionais**:
 
-- [Documentação do Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=pt-BR) para contexto mais amplo
+- [Documentação do Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) para contexto mais amplo
 - [guia do Extension Manager](/help/implementing/developing/extending/extension-manager.md) para habilitar recursos adicionais
 - [Edge Delivery Services forms](/help/edge/docs/forms/overview.md) para obter orientação abrangente sobre o desenvolvimento de formulários
 
-+++

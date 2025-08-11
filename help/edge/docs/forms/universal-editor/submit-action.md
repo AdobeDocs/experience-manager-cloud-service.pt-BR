@@ -4,9 +4,9 @@ description: Um Formulário adaptável fornece várias Ações de envio. Uma Aç
 keywords: como selecionar a ação enviar para um formulário adaptável, conectar um formulário adaptável à lista do sharepoint, conectar um formulário adaptável à biblioteca de documentos do sharepoint, conectar um formulário adaptável ao modelo de dados de formulário (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: d221959bbf19a874ec65eb414c4c49811df291ca
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 6%
 
 ---
@@ -15,12 +15,11 @@ ht-degree: 6%
 
 | Versão | Link do artigo |
 |---------|-----------------------------|
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Este artigo |
 
-## Visão geral
 
 O envio de formulários é a etapa final crítica na jornada do usuário — é onde os dados coletados são processados e as ações são executadas. Este documento fornece um guia abrangente para configurar e gerenciar ações de envio para o Adaptive Forms no Universal Editor.
 

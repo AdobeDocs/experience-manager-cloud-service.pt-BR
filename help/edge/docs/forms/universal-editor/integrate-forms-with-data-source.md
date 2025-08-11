@@ -1,12 +1,12 @@
 ---
 title: Como integrar o Modelo de dados de formulário (FDM) a um formulário no Universal Editor?
-description: Saiba como criar formulários com base em um modelo de dados de formulário (FDM). Gere e edite dados de amostra para objetos de modelo de dados no FDM.
+description: Saiba como criar formulários para serviços de entrega de borda com base em um modelo de dados de formulário (FDM). Gere e edite dados de amostra para objetos de modelo de dados no FDM.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '716'
 ht-degree: 1%
 
 ---

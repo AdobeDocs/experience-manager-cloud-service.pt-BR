@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [publicar formulários, Edge Delivery Services, configuração de formulário, CORS, filtro de referenciador]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: 746
 ht-degree: 0%
@@ -169,8 +169,8 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentação de referência:**
 
-- [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [Documentação de Filtro do Referenciador](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+- [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [Documentação de Filtro do Referenciador](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
 +++
 
@@ -221,7 +221,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentação de referência:**
 
-- [Configurar Filtro Referenciador via Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [Configurar Filtro Referenciador via Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
 +++
 
@@ -284,7 +284,8 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 - [Configurar ações de envio de formulário](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [Estilo e tema de seus formulários](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-- [Adicionar proteção reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [Criar layouts de formulário responsivos](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+- [Adicionar proteção reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
 
 

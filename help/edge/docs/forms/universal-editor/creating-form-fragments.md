@@ -4,7 +4,7 @@ description: Saiba como criar fragmentos de formulário no Editor universal e ad
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 0%
@@ -12,12 +12,6 @@ ht-degree: 0%
 ---
 
 # Criação de fragmentos de formulário no Editor universal
-
-<!--
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
--->
 
 Os fragmentos de formulário são componentes reutilizáveis que eliminam o trabalho de desenvolvimento repetitivo e garantem a consistência entre os formulários de sua organização. Em vez de recriar seções comuns, como informações de contato, detalhes de endereço ou contratos de consentimento para cada formulário, você pode criar esses elementos uma vez como fragmentos e reutilizá-los em vários formulários.
 

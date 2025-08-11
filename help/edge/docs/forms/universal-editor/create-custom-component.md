@@ -4,7 +4,7 @@ description: Criar componentes personalizados para um formulário EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1789'
 ht-degree: 0%
@@ -104,7 +104,7 @@ O arquivo `_range.json`, após adicionar a definição do componente, é o segui
 
 >[!NOTE]
 >
-> Todos os componentes relacionados ao formulário seguem a mesma abordagem que o Sites ao adicionar blocos ao Universal Editor. Consulte o artigo [Criação de blocos instrumentados para uso com o Editor universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) para obter mais informações.
+> Todos os componentes relacionados ao formulário seguem a mesma abordagem que o Sites ao adicionar blocos ao Universal Editor. Consulte o artigo [Criação de blocos instrumentados para uso com o Editor universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) para obter mais informações.
 
 ### &#x200B;2. Definir as propriedades do componente personalizado para criação
 
@@ -161,7 +161,7 @@ O componente personalizado inclui um modelo de componente que especifica quais p
 
    >[!NOTE]
    >
-   > Para adicionar um novo campo à caixa de diálogo **Propriedade** de um componente personalizado, siga o [esquema definido](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
+   > Para adicionar um novo campo à caixa de diálogo **Propriedade** de um componente personalizado, siga o [esquema definido](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
 
    Você também pode [adicionar propriedades personalizadas](#adding-custom-properties-for-your-custom-component) a um componente personalizado para estender sua funcionalidade.
 
@@ -504,12 +504,12 @@ Os fieldTypes compatíveis para formulários são:
 - number-input
 - date-input
 - painel
-- caixa de seleção
-- menu suspenso
-- grupo de rádio
 - texto sem formatação
 - entrada de arquivo
 - email
 - imagem
 - botão
+- caixa de seleção
+- menu suspenso
+- grupo de rádio
 

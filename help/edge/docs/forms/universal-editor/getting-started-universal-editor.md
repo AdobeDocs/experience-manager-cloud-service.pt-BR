@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2609'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Para garantir uma experiência perfeita e bem-sucedida com o Edge Delivery Servi
 
 >[!TIP]
 >
-> Novo no AEM? Comece com o [Guia de Introdução do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=pt-BR).
+> Novo no AEM? Comece com o [Guia de Introdução do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html).
 
 ## Caminho A: criar um novo projeto com o Forms
 
@@ -186,7 +186,7 @@ O arquivo `fstab.yaml` conecta seu repositório GitHub ao ambiente de criação 
 
     >[!NOTE]
     >
-    >Você está tendo problemas de build? Consulte [Solução de problemas de compilação do GitHub](#troubleshooting-github-build-issues).
+>Você está tendo problemas de build? Consulte [Solução de problemas de compilação do GitHub](#troubleshooting-github-build-issues).
 
 +++
 
@@ -759,27 +759,6 @@ Se você vir &quot;Não é possível resolver o caminho para o módulo &#39;/scr
 
 +++
 
-+++Problemas do editor universal
-
-**Problema:** componentes de formulário não aparecem no Editor Universal
-
-**Soluções:**
-
-- Verifique se a sincronização de código do AEM está instalada e em execução
-- Verifique se `fstab.yaml` tem a URL correta do autor do AEM
-- Verifique se a instância do AEM tem acesso antecipado ativado
-- Confirmar se `component-definition.json` inclui componentes de formulário
-
-**Problema:** alterações não visíveis após a publicação
-
-**Soluções:**
-
-- Aguardar atualização do cache da CDN
-- Verificar o cache do navegador (tentar modo incógnito/privado)
-- Verifique se o formato correto de URL está sendo usado
-
-+++
-
 +++Problemas de funcionalidade de formulário
 
 **Problema:** os envios de formulários não estão funcionando
@@ -801,4 +780,27 @@ Se você vir &quot;Não é possível resolver o caminho para o módulo &#39;/scr
 - Testar no ambiente de desenvolvimento local
 
 +++
+
++++Problemas do editor universal
+
+**Problema:** componentes de formulário não aparecem no Editor Universal
+
+**Soluções:**
+
+- Verifique se a sincronização de código do AEM está instalada e em execução
+- Verifique se `fstab.yaml` tem a URL correta do autor do AEM
+- Verifique se a instância do AEM tem acesso antecipado ativado
+- Confirmar se `component-definition.json` inclui componentes de formulário
+
+**Problema:** alterações não visíveis após a publicação
+
+**Soluções:**
+
+- Aguardar atualização do cache da CDN
+- Verificar o cache do navegador (tentar modo incógnito/privado)
+- Verifique se o formato correto de URL está sendo usado
+
++++
+
+
 

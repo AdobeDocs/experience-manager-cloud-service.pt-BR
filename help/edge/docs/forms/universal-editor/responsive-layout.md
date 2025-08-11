@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '2383'
+source-wordcount: '2382'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,7 @@ O Layout do painel organiza o conteúdo relacionado em seções visualmente dist
 
 **Como implementar**
 
-1. Adicione o [Componente de Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) ao formulário.
+1. Adicione o [Componente de Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) ao formulário.
 2. Agrupe campos relacionados em cada painel para manter a organização lógica.
 3. Atribua cabeçalhos claros e descritivos a cada seção do painel.
 4. Verifique se há espaçamento suficiente entre os painéis para evitar desordem visual.
@@ -206,7 +206,7 @@ O Layout do assistente orienta os usuários por um processo de várias etapas, a
 
 **Como implementar**
 
-1. Insira o [Componente de Assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) no formulário.
+1. Insira o [Componente de Assistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) no formulário.
 2. Divida o formulário em etapas lógicas, idealmente entre 3 e 7, para manter cada etapa focalizada e gerenciável.
 3. Adicione indicadores de progresso para ajudar os usuários a entender sua posição no processo.
 4. Forneça controles de navegação claros, como os botões Próximo, Voltar e Salvar.
@@ -246,7 +246,7 @@ O Layout do Acordeão economiza espaço organizando o conteúdo em seções que 
 
 **Como implementar**
 
-1. Adicione o [Componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) ao seu formulário.
+1. Adicione o [Componente Acordeão](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) ao seu formulário.
 2. Agrupe o conteúdo opcional ou secundário relacionado em cada seção do acordeão.
 3. Use cabeçalhos claros e descritivos para cada seção para ajudar os usuários a entender quais informações estão contidas em.
 4. Defina os estados de abertura ou fechamento padrão apropriados para cada seção com base na importância e nas necessidades do usuário.
@@ -317,7 +317,7 @@ O Layout do Acordeão economiza espaço organizando o conteúdo em seções que 
 
 +++
 
-## Solução de problemas abrangente
+## Resolução de problemas
 
 ### Problemas de layout
 
