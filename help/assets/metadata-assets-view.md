@@ -5,12 +5,13 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+source-git-commit: fecc13161b2502aab086e4c1c89d650d003cec06
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 73%
+source-wordcount: '2557'
+ht-degree: 69%
 
 ---
+
 
 # Metadados na visualização do Assets {#metadata}
 
@@ -181,7 +182,6 @@ Siga as etapas abaixo para usar o componente Link no formulário de metadados:
    * Clique no ![ícone de editar](assets/do-not-localize/edit.svg) para editar o URL.
 1. Clique em **[!UICONTROL Salvar]** para salvar as alterações.
 
-
 ### Trabalhar com o componente de tags no formulário de metadados {#tag-component-metadata-form}
 
 O elemento raiz representa a estrutura em árvore das tags que podem ser associadas aos ativos, ajudando a identificar o ativo com base na tag atribuída a ele. Além disso, é possível restringir o acesso de uma taxonomia específica por meio da configuração do formulário de metadados no editor de metadados.
@@ -213,6 +213,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 -->
 
 Para visualizar as tags raiz configuradas, acesse a página de detalhes do ativo na qual o mapeamento entre o formulário de metadados e as tags raiz é executado.
+
+## Editar Forms de metadados {#edit-metadata-forms}
+
+Execute as seguintes etapas para editar um formulário de metadados:
+
+1. Navegue até a página inicial do [!DNL Assets View] e selecione **[!DNL Metadata Forms]** para exibir uma lista de formulários de metadados.
+1. Selecione um formulário e clique em **[!UICONTROL Editar]** para abrir a página [!DNL Metadata Form Editor]. Esta página exibe componentes do formulário de metadados no painel esquerdo, guias como Básico, Avançado, Tags e muito mais no painel do meio e no painel Configurações para editar as propriedades de metadados no painel direito.
+1. Abra uma guia (**[!DNL Basic]**, **[!DNL Advanced]** ou **[!DNL Tags]**).
+1. Selecione uma propriedade de metadados para editar suas configurações no painel **[!UICONTROL Configurações]**. Você pode atualizar os mapeamentos de propriedade, renomear rótulos, modificar ou adicionar valores de propriedade e fazer mais edições no painel **[!UICONTROL Configurações]**.
+1. Clique em **[!UICONTROL Visualizar]** para revisar as alterações feitas no formulário antes de salvá-las.
+1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações.
 
 ## Aprimoramento da descoberta de conteúdo com metadados gerados por IA {#ai-smart-tags}
 
@@ -260,7 +271,7 @@ Para obter informações sobre como desabilitar metadados gerados por IA, consul
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
@@ -291,4 +302,3 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
-
