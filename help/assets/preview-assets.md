@@ -26,7 +26,7 @@ Verifique se você tem:
 
 * Acesso a [!DNL AEM Assets as a Cloud Service].
 * Permissão para editar a propriedade Status dos ativos.
-* [Adicionou o valor [!UICONTROL Preview] à propriedade de metadados [!UICONTROL  Status], disponível na guia [!UICONTROL Basic]](/help/assets/metadata-assets-view.md#edit-metadata-forms) do formulário de metadados aplicado à pasta que contém os ativos a serem visualizados.
+* [Adicionou o valor [!UICONTROL Preview] à propriedade de metadados [!UICONTROL &#x200B; Status], disponível na guia [!UICONTROL Basic]](/help/assets/metadata-assets-view.md#edit-metadata-forms) do formulário de metadados aplicado à pasta que contém os ativos a serem visualizados.
   ![Adicionar opção de Visualização](/help/assets/assets/metedata-form-preview.png)
 * A chave para gerar o token de visualização. [Contate o suporte da Adobe](https://helpx.adobe.com/in/contact.html) e solicite a chave.
 
