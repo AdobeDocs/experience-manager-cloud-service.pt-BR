@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 5%
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -510,7 +510,8 @@ Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo 
 }
 ```
 
-<!--- ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
+<!--
+## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. You can pre-configure form objects to [evaluate an expression](adaptive-form-expressions.md) on a form event.
 
@@ -779,6 +780,7 @@ Here is the sample JSON code for previously mentioned examples.
 }
 
 ```
+
 -->
 
 ## Limitar valores aceitáveis para um componente de Formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}

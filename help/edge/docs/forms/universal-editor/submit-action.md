@@ -4,7 +4,8 @@ description: Um Formulário adaptável fornece várias Ações de envio. Uma Aç
 keywords: como selecionar a ação enviar para um formulário adaptável, conectar um formulário adaptável à lista do sharepoint, conectar um formulário adaptável à biblioteca de documentos do sharepoint, conectar um formulário adaptável ao modelo de dados de formulário (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 6%
@@ -15,7 +16,7 @@ ht-degree: 6%
 
 | Versão | Link do artigo |
 |---------|-----------------------------|
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Este artigo |
@@ -23,7 +24,7 @@ ht-degree: 6%
 
 O envio de formulários é a etapa final crítica na jornada do usuário — é onde os dados coletados são processados e as ações são executadas. Este documento fornece um guia abrangente para configurar e gerenciar ações de envio para o Adaptive Forms no Universal Editor.
 
-### O que você vai aprender
+## O que você vai aprender
 
 No final deste documento, você entenderá como:
 
@@ -33,7 +34,7 @@ No final deste documento, você entenderá como:
 - Implementar ações de envio personalizadas para necessidades comerciais específicas
 - Lidar com cenários de erro e validação de formulário durante o envio
 
-### Público-alvo
+## Público-alvo
 
 Este guia foi projetado para:
 
@@ -77,6 +78,3 @@ As seguintes ações de envio são suportadas pelo [Adaptive Forms criado no Uni
 >
 > - Se você não vir o ícone **Editar Propriedades do Formulário** na interface do Universal Editor, habilite a extensão **Editar Propriedades do Formulário** na Extension Manager.
 > - Consulte o artigo [Destaques dos recursos do Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para saber como habilitar ou desabilitar extensões no Universal Editor.
-
-
-

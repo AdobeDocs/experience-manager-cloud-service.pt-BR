@@ -4,7 +4,7 @@ description: Saiba mais sobre como encaminhar logs para fornecedores de registro
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 2%
@@ -93,7 +93,6 @@ Os clientes com uma licença de com um fornecedor de registro em log ou que hosp
     </tr>
   </tbody>
 </table>
-&lt;/html>
 
 >[!NOTE]
 >
@@ -216,7 +215,6 @@ Use a tabela abaixo para ver quais são os requisitos para a configuração avan
       <td>Sim</td>
   </tbody>
 </table>
-&lt;/html>
 
 >[!NOTE]
 >O fato de seus registros serem exibidos a partir de um único endereço IP é determinado pela sua escolha de configuração avançada de rede.  A saída dedicada deve ser usada para facilitar isso.

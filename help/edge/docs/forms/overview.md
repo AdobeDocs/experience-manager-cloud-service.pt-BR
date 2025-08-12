@@ -4,7 +4,7 @@ description: Crie e forneça formulários de alto desempenho no Adobe Experience
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Ao final, você poderá escolher o método de criação correto, entender as op�
 ### Editor universal
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 O [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) é uma ferramenta de criação visual, do tipo arrastar-e-soltar, para profissionais de marketing e designers que combina velocidade e poder de nível empresarial:
@@ -110,7 +110,6 @@ O diagrama a seguir ilustra como você pode editar formulários no Microsoft Exc
 | Submit to AEM workflows/FDM | ✅ | – | Via UE embed |
 | Custom components (JS/CSS) | ✅ | ✅ | Via embed |
 | Localization via Sites | ✅ | Manual | Via embed |
-
 -->
 
 ## Próximas etapas
@@ -124,8 +123,7 @@ O diagrama a seguir ilustra como você pode editar formulários no Microsoft Exc
 Agora você está pronto para criar seu primeiro formulário de alto desempenho com o AEM Edge Delivery Services.
 
 
-<!-- 
-
+<!--
 ## Start creating forms
 
 - [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
@@ -137,9 +135,6 @@ Agora você está pronto para criar seu primeiro formulário de alto desempenho 
 - [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 - [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
 - [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
--->
-
-<!-- 
 
 ## Start creating forms
 

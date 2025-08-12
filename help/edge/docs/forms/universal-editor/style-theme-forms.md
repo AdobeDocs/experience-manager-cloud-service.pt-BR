@@ -4,7 +4,7 @@ description: Personalize efetivamente o tema e o estilo do AEM Forms fornecido p
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 0%
@@ -308,7 +308,7 @@ O bloco adaptável do Forms oferece uma estrutura consistente do HTML para vári
 
 Todos os campos de formulário, exceto os menus suspensos, grupos de opções e grupos de caixas de seleção, têm a seguinte estrutura HTML:
 
-#### Estrutura HTML de componentes gerais
+### Estrutura HTML de componentes gerais
 
 ```HTML
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
@@ -1051,7 +1051,7 @@ Você pode estilizar campos de formulário com base em seu tipo específico (`{T
 
 Você pode usar os Seletores de CSS para direcionar tipos de campo específicos e aplicar estilos de forma consistente.
 
-#### Estrutura do HTML
+### Estrutura do HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -1092,7 +1092,7 @@ Você pode usar os Seletores de CSS para direcionar tipos de campo específicos 
 
 
 
-#### Exemplo de seletores CSS
+### Exemplo de seletores CSS
 
 ```CSS
 /- Primary Pattern: Target all text input fields */
