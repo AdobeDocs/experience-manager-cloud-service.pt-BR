@@ -637,6 +637,7 @@ O seletor estimula todos os painéis que podem ser repetidos, garantindo uma apa
   margin-bottom: 10px;
 }
 ```
+
 Este seletor estimula todos os invólucros de campo em um painel repetível, mantendo um espaçamento consistente entre os campos.
 
 - Direcionamento de campos específicos (em um painel):

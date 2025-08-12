@@ -93,7 +93,7 @@ Os clientes com uma licença de com um fornecedor de registro em log ou que hosp
     </tr>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ Use a tabela abaixo para ver quais são os requisitos para a configuração avan
       <td>Sim</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >O fato de seus registros serem exibidos a partir de um único endereço IP é determinado pela sua escolha de configuração avançada de rede.  A saída dedicada deve ser usada para facilitar isso.
