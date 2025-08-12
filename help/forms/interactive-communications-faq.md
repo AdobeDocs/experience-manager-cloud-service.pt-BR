@@ -5,19 +5,18 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+exl-id: 4cc1bff3-edfb-4826-b914-2a2231b703f9
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 13%
 
 ---
 
-
-## Perguntas frequentes
+# Perguntas frequentes
 
 **P: Posso importar um XDP existente para o editor de Comunicações Interativas?**
 Sim, você pode importar um XDP existente e usá-lo como ponto de partida. Todos os recursos não suportados são realçados durante o processo de importação.
 
 **P: O Editor de comunicações interativas está disponível para implantações locais?**
-Não, o editor só está disponível para implantações as a Cloud Service do Forms.
-
+Não, o editor só está disponível para implantações do Forms as a Cloud Service.

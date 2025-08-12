@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -48,7 +48,7 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 ### Criar Definição e Modelo de Bloco {#create-block-model}
 
-1. Clona localmente o projeto do GitHub que você criou no [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o guia do Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e o abre em um editor de sua escolha.
+&#x200B;1. Clona localmente o projeto do GitHub que você criou no [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o guia do Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e o abre em um editor de sua escolha.
 
 * O código Microsoft é usado aqui para fins ilustrativos.
 
@@ -193,7 +193,7 @@ Agora que o bloco de cotação básico está definido e comprometido com o proje
 
 Agora que você tem um bloco de cotação de trabalho, é possível aplicar o estilo a ele.
 
-1. Retorne ao editor do projeto.
+&#x200B;1. Retorne ao editor do projeto.
 
 2\ Crie uma pasta `quote` na pasta `blocks`.
 
@@ -346,4 +346,4 @@ Consulte o documento [Modelagem de conteúdo para criação no WYSIWYG com proje
 
 >[!TIP]
 >
->Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service como fonte de conteúdo, exiba [este webinário de GEMs do AEM](https://experienceleague.adobe.com/pt-br/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
+>Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service como fonte de conteúdo, exiba [este webinário de GEMs do AEM](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

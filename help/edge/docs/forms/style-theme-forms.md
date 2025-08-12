@@ -4,7 +4,7 @@ description: Personalizar temas e estilos do Edge Delivery Services para AEM For
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 0%
@@ -476,7 +476,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 ```
 
 - O elemento fieldset atua como o contêiner do painel com o invólucro de painel de classe e classes adicionais para estilização com base no nome do painel (logon de campo).
-- O elemento da legenda (&lt;legend>) serve como o título do painel com o texto &quot;Informações de logon&quot; e o rótulo de campo da classe. O atributo data-visible=&quot;false&quot; pode ser usado com o JavaScript para controlar a visibilidade do título.
+- O elemento de legenda (`<legend>`) serve como o título do painel com o texto &quot;Informações de Logon&quot; e o rótulo de campo de classe. O atributo data-visible=&quot;false&quot; pode ser usado com o JavaScript para controlar a visibilidade do título.
 - Dentro do conjunto de campos, vários .Os elementos {Type}-wrapper (.text-wrapper e .password-wrapper, neste caso) representam campos de formulário individuais dentro do painel.
 - Cada invólucro contém um rótulo, campo de entrada e descrição, semelhantes aos exemplos anteriores.
 
@@ -637,7 +637,6 @@ O seletor estimula todos os painéis que podem ser repetidos, garantindo uma apa
   margin-bottom: 10px;
 }
 ```
-
 Este seletor estimula todos os invólucros de campo em um painel repetível, mantendo um espaçamento consistente entre os campos.
 
 - Direcionamento de campos específicos (em um painel):

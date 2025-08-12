@@ -5,7 +5,7 @@ keywords: Adicionar uma função personalizada, usar uma função personalizada,
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 0%
@@ -42,9 +42,10 @@ Antes de começar a adicionar uma função personalizada ao Adaptive Forms, veri
 
 ## Criar uma função personalizada
 
-Crie uma biblioteca do cliente para chamar funções personalizadas no editor de regras. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=pt-BR#developing).
+Crie uma biblioteca do cliente para chamar funções personalizadas no editor de regras. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 
 As etapas para criar funções personalizadas são:
+
 1. [Criar uma biblioteca do cliente](#create-client-library)
 1. [Adicionar a biblioteca do cliente a um Formulário adaptável](#use-custom-function)
 
@@ -54,7 +55,7 @@ As etapas para criar funções personalizadas são:
 
 **Clonar o Repositório**
 
-Clonar o [Repositório as a Cloud Service do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git):
+Clonar seu [Repositório as a Cloud Service do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
 
 1. Abra a linha de comando ou a janela do terminal.
 
@@ -152,7 +153,7 @@ Adicione o seguinte à pasta da biblioteca do cliente adicionada:
 
 **Implante a pasta da biblioteca do cliente recém-criada no seu ambiente AEM**
 
-Implante o AEM as a Cloud Service, [diretório do projeto AEMaaCS], no seu ambiente Cloud Service. Para implantar no ambiente de Cloud Service:
+Implante o AEM as a Cloud Service, [diretório do projeto AEMaaCS], no seu ambiente Cloud Service. Para implantar no ambiente do Cloud Service:
 
 1. Confirmar as alterações
 
@@ -168,7 +169,7 @@ Implante o AEM as a Cloud Service, [diretório do projeto AEMaaCS], no seu ambie
 
    1. Acione uma implantação do seu código por meio do pipeline de pilha completa existente. Isso cria e implanta automaticamente o código atualizado.
 
-Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline).
+Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 Depois que o pipeline for executado com êxito, a função personalizada adicionada à biblioteca do cliente ficará disponível em seu [editor de regras de Formulário adaptável](/help/forms/rule-editor-core-components.md).
 
@@ -232,9 +233,9 @@ Vamos visualizar o formulário para observar como as funções personalizadas s�
 
 ## Recursos de funções personalizadas
 
-As funções personalizadas em formulários AEM oferecem uma solução robusta para estender e personalizar a funcionalidade de seus formulários. Você pode usar as funções personalizadas para atender às necessidades específicas de sua organização.
+As funções personalizadas nos formulários do AEM oferecem uma solução robusta para estender e personalizar a funcionalidade de seus formulários. Você pode usar as funções personalizadas para atender às necessidades específicas da sua organização.
 
-Essas funções oferecem suporte a várias funcionalidades, incluindo o trabalho com campos específicos, o uso de campos globais e operações assíncronas, além de incorporar mecanismos de armazenamento em cache. Essa flexibilidade garante que os formulários possam se adaptar a requisitos complexos e fornecer uma experiência do usuário eficiente e personalizada. Ao utilizar esses recursos avançados, você pode aprimorar as interações de formulários e otimizar o desempenho, tornando seus formulários AEM mais funcionais e ágeis.
+Essas funções oferecem suporte a várias funcionalidades, incluindo o trabalho com campos específicos, o uso de campos globais e operações assíncronas, além de incorporar mecanismos de armazenamento em cache. Essa flexibilidade garante que os formulários possam se adaptar a requisitos complexos e fornecer uma experiência do usuário eficiente e personalizada. Ao aproveitar esses recursos avançados, é possível aprimorar as interações de formulários e otimizar o desempenho, tornando os formulários do AEM mais funcionais e ágeis.
 
 Vamos analisar os recursos de funções personalizadas.
 

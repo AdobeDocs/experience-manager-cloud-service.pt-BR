@@ -4,7 +4,7 @@ description: Saiba como substituir a página de erro padrão hospedando arquivos
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Configuração de páginas de erro do CDN {#cdn-error-pages}
 
-No evento improvável de que o [CDN gerenciado por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) não possa atingir a origem AEM, o CDN por padrão fornece uma página de erro genérica e sem marca que indica que o servidor não pode ser alcançado. Você pode substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de Blob do Azure, e fazendo referência a eles em um arquivo de configuração implantado com o uso do [pipeline de configuração](/help/operations/config-pipeline.md#managing-in-cloud-manager) do Cloud Manager.
+No evento improvável de que a [CDN gerenciada pela Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) não possa acessar a origem do AEM, a CDN serve por padrão uma página de erro genérica e sem marca que indica que o servidor não pode ser acessado. Você pode substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de Blob do Azure, e fazendo referência a eles em um arquivo de configuração implantado com o uso do [pipeline de configuração](/help/operations/config-pipeline.md#managing-in-cloud-manager) do Cloud Manager.
 
 ## Configurar {#setup}
 
@@ -60,7 +60,7 @@ Consulte [Usando Pipelines de Configuração](/help/operations/config-pipeline.m
 
 ### HTML gerado por exemplo {#sample-generated-html}
 
-O código HTML gerado pelo CDN e fornecido ao cliente, como um navegador, será semelhante (mas não idêntico) ao seguinte trecho:
+O código HTML gerado pela CDN e fornecido ao cliente, como um navegador, será semelhante (mas não idêntico) ao seguinte trecho:
 
 ```
 <!DOCTYPE html>
@@ -93,6 +93,6 @@ Dessa forma, você aciona diretamente o manipulador de erros do CDN para testar 
 
 ### Tutorial
 
-Consulte o tutorial [páginas de erro da CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obter instruções passo a passo sobre como criar, implantar e testar as páginas de erro fornecidas pela CDN.
+Consulte o tutorial [páginas de erro da CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obter instruções passo a passo sobre como criar, implantar e testar as páginas de erro fornecidas pela CDN.
 
 

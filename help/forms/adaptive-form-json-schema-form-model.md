@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1388'
 ht-degree: 5%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
+> A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -144,180 +144,180 @@ O Formulário adaptável usa as informações disponíveis no Esquema JSON para 
 >[!TAB Esquema JSON v4]
 
 ```json
-{
-"$schema": "https://json-schema.org/draft-04/schema#",
-"definitions": {
-  "employee": {
-  "type": "object",
-  "properties": {
-    "userName": {
-     "type": "string"
-   },
-    "dateOfBirth": {
-     "type": "string",
-     "format": "date"
+  {
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "employee": {
+    "type": "object",
+    "properties": {
+      "userName": {
+       "type": "string"
+     },
+      "dateOfBirth": {
+       "type": "string",
+       "format": "date"
+      },
+      "email": {
+      "type": "string",
+      "format": "email"
+      },
+      "language": {
+       "type": "string"
+     },
+      "personalDetails": {
+       "$ref": "#/definitions/personalDetails"
+     },
+      "projectDetails": {
+       "$ref": "#/definitions/projectDetails"
+      }
     },
-    "email": {
-    "type": "string",
-    "format": "email"
+    "required": [
+     "userName",
+     "dateOfBirth",
+     "language"
+    ]
     },
-    "language": {
-     "type": "string"
-   },
-    "personalDetails": {
-     "$ref": "#/definitions/personalDetails"
-   },
+      "personalDetails": {
+     "type": "object",
+    "properties": {
+       "GeneralDetails": {
+      "$ref": "#/definitions/GeneralDetails"
+     },
+      "Family": {
+       "$ref": "#/definitions/Family"
+      },
+      "Income": {
+       "$ref": "#/definitions/Income"
+     }
+     }
+       },
     "projectDetails": {
-     "$ref": "#/definitions/projectDetails"
+     "type": "array",
+     "items": {
+     "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     },
+     "projects": {
+      "$ref": "#/definitions/projects"
+     }
     }
-  },
-  "required": [
-   "userName",
-   "dateOfBirth",
-   "language"
-  ]
-  },
-    "personalDetails": {
-   "type": "object",
-  "properties": {
-     "GeneralDetails": {
-    "$ref": "#/definitions/GeneralDetails"
    },
-    "Family": {
-     "$ref": "#/definitions/Family"
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "projects": {
+   "type": "array",
+   "items": {
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     },
+     "projectsAdditional": {
+      "$ref": "#/definitions/projectsAdditional"
+     }
+    }
+   },
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "projectsAdditional": {
+   "type": "array",
+   "items": {
+    "properties": {
+     "Additional_name": {
+      "type": "string"
+     },
+     "Additional_areacode": {
+      "type": "number"
+     }
+    }
+   },
+   "minItems": 1,
+   "maxItems": 4
+  },
+  "GeneralDetails": {
+   "type": "object",
+   "properties": {
+    "age": {
+     "type": "number"
+    },
+    "married": {
+     "type": "boolean"
+    },
+    "phone": {
+     "type": "number",
+     "aem:afProperties": {
+      "sling:resourceType": "/libs/fd/af/components/guidetelephone",
+      "guideNodeClass": "guideTelephone"
+     }
+    },
+    "address": {
+     "type": "string"
+    }
+   }
+  },
+  "Family": {
+   "type": "object",
+   "properties": {
+    "spouse": {
+     "$ref": "#/definitions/spouse"
+    },
+    "kids": {
+     "$ref": "#/definitions/kids"
+    }
+   }
+  },
+  "Income": {
+   "type": "object",
+   "properties": {
+    "monthly": {
+     "type": "number"
+    },
+    "yearly": {
+     "type": "number"
+    }
+   }
+  },
+  "spouse": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "type": "string"
     },
     "Income": {
      "$ref": "#/definitions/Income"
+    }
    }
-   }
-     },
-  "projectDetails": {
-   "type": "array",
-   "items": {
-   "properties": {
-   "name": {
-    "type": "string"
-   },
-   "age": {
-    "type": "number"
-   },
-   "projects": {
-    "$ref": "#/definitions/projects"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"projects": {
- "type": "array",
- "items": {
-  "properties": {
-   "name": {
-    "type": "string"
-   },
-   "age": {
-    "type": "number"
-   },
-   "projectsAdditional": {
-    "$ref": "#/definitions/projectsAdditional"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"projectsAdditional": {
- "type": "array",
- "items": {
-  "properties": {
-   "Additional_name": {
-    "type": "string"
-   },
-   "Additional_areacode": {
-    "type": "number"
-   }
-  }
- },
- "minItems": 1,
- "maxItems": 4
-},
-"GeneralDetails": {
- "type": "object",
- "properties": {
-  "age": {
-   "type": "number"
-  },
-  "married": {
-   "type": "boolean"
-  },
-  "phone": {
-   "type": "number",
-   "aem:afProperties": {
-    "sling:resourceType": "/libs/fd/af/components/guidetelephone",
-    "guideNodeClass": "guideTelephone"
-   }
-  },
-  "address": {
-   "type": "string"
-  }
- }
-},
-"Family": {
- "type": "object",
- "properties": {
-  "spouse": {
-   "$ref": "#/definitions/spouse"
   },
   "kids": {
-   "$ref": "#/definitions/kids"
-  }
- }
-},
-"Income": {
- "type": "object",
- "properties": {
-  "monthly": {
-   "type": "number"
-  },
-  "yearly": {
-   "type": "number"
-  }
- }
-},
-"spouse": {
- "type": "object",
- "properties": {
-  "name": {
-   "type": "string"
-  },
-  "Income": {
-   "$ref": "#/definitions/Income"
-  }
- }
-},
-"kids": {
- "type": "array",
- "items": {
-  "properties": {
-   "name": {
-    "type": "string"
+   "type": "array",
+   "items": {
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "age": {
+      "type": "number"
+     }
+    }
    },
-   "age": {
-    "type": "number"
-   }
+   "minItems": 1,
+   "maxItems": 4
   }
  },
- "minItems": 1,
- "maxItems": 4
-}
-},
-"type": "object",
-"properties": {
-"employee": {
- "$ref": "#/definitions/employee"
-}
-}
+ "type": "object",
+ "properties": {
+  "employee": {
+   "$ref": "#/definitions/employee"
+  }
+ }
 }
 ```
 
@@ -453,6 +453,7 @@ O Formulário adaptável usa as informações disponíveis no Esquema JSON para 
 >[!ENDTABS]
 
 As principais alterações das especificações do Esquema JSON V4 para a versão 2020-12 são:
+
 * ID declarada como `$id`
 * definições são declaradas como `$defs`
 
@@ -800,7 +801,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador Numérico<br /> </li>
-     <li>Seletor de data</li>
+     <li>Seletor de datas</li>
     </ul> </td>
   </tr>
   <tr>
@@ -811,7 +812,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de data</li>
+     <li>Seletor de datas</li>
     </ul> </td>
   </tr>
   <tr>
@@ -822,7 +823,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de data</li>
+     <li>Seletor de datas</li>
     </ul> </td>
   </tr>
   <tr>
@@ -833,7 +834,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de data</li>
+     <li>Seletor de datas</li>
     </ul> </td>
   </tr>
   <tr>
@@ -883,7 +884,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
 
 Para permitir que todo o Forms adaptável baseado em esquema JSON gere dados compatíveis com o esquema no envio do formulário, siga estas etapas:
 
-1. Vá para o Experience Manager web console em `https://server:host/system/console/configMgr`.
+1. Vá para o console da Web do Experience Manager em `https://server:host/system/console/configMgr`.
 1. Localize **[!UICONTROL Configuração de Canal da Web de Comunicação entre Interações e Formulários Adaptáveis]**.
 1. Selecione para abrir a configuração no modo de edição.
 1. Marque a caixa de seleção **[!UICONTROL Gerar dados compatíveis com o esquema]**.

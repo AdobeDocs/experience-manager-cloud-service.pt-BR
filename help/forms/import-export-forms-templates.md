@@ -1,29 +1,27 @@
 ---
-title: Como importar, exportar e organizar o Adaptive Forms ou PDF forms em uma instância do AEM Forms?
-description: Saiba como migrar Forms adaptável, PDF forms, temas e outros ativos de suporte para e de instâncias AEM.
+title: Como importar, exportar e organizar o Adaptive Forms ou o PDF forms em uma instância do AEM Forms?
+description: Saiba como migrar o Adaptive Forms, o PDF forms, temas e outros ativos de suporte para e de instâncias do AEM.
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 3%
 
 ---
 
-
+# Importar ou exportar ativos adaptáveis do Forms e do AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | Este artigo |
 
-# Importar ou exportar ativos adaptáveis do Forms e do AEM Forms {#importing-and-exporting-assets-to-aem-forms}
+Você pode mover o Adaptive Forms e ativos relacionados, como temas do Formulário Adaptável, Modelo de Dados de Formulário (FDM), modelos de Formulário Adaptável, Fragmentos e PDF forms, entre [!DNL AEM Forms] instâncias.
 
-Você pode mover o Adaptive Forms e ativos relacionados, como temas do Formulário adaptável, Modelo de dados de formulário (FDM), modelos de Formulário adaptável, Fragmentos e PDF forms entre [!DNL AEM Forms] instâncias.
-
-## Baixar o Forms adaptável, o PDF forms ou ativos relacionados {#download-forms-amp-documents-assets}
+## Baixar o Adaptive Forms, o PDF forms ou ativos relacionados {#download-forms-amp-documents-assets}
 
 Para baixar formulários ou ativos relacionados:
 
@@ -106,7 +104,7 @@ Para fazer upload de um tema:
 
 1. Procure e selecione um pacote de tema no computador e clique em **[!UICONTROL Carregar]**. O tema carregado fica disponível na página Temas.
 
-## Usar pastas para organizar o Forms adaptável, PDF forms e ativos relacionados  {#folders-and-organizing-assets}
+## Usar pastas para organizar o Adaptive Forms, o PDF forms e ativos relacionados  {#folders-and-organizing-assets}
 
 Você pode usar pastas para organizar e organizar ativos. Organizar documentos e ativos em uma pasta permite agrupar os arquivos para facilitar o gerenciamento. Você pode selecionar uma pasta e escolher baixá-la ou excluí-la.
 

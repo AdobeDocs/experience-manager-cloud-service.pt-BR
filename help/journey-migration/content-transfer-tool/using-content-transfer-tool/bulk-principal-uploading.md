@@ -2,7 +2,7 @@
 title: Upload em massa de entidades de segurança para o IMS após o uso da CTT
 description: Visão geral dos arquivos de upload em massa para grupos e usuários e como usá-los no Admin Console para criar grupos e usuários no IMS.
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
-source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 3%
@@ -37,9 +37,10 @@ Há algumas diretrizes gerais para editar e usar os dois tipos de arquivos de up
 
 ## Upload de grupo em massa {#group-upload}
 
-#### Caso de uso: os grupos foram migrados para o AEM as a Cloud Service, mas não estão presentes no IMS/Admin Console, portanto, precisam ser carregados para o IMS por meio da Admin Console.
+### Caso de uso: os grupos foram migrados para o AEM as a Cloud Service, mas não estão presentes no IMS/Admin Console, portanto, precisam ser carregados para o IMS por meio da Admin Console.
 
 Para usar a funcionalidade de upload de grupo em massa do Admin Console depois de executar uma migração CTT/CAM, siga estas etapas:
+
 1. Baixar o arquivo de grupo em massa do CAM
 
    1. No CAM, vá para **Transferência de conteúdo** e selecione **Trabalhos de assimilação**.
@@ -54,7 +55,6 @@ Para usar a funcionalidade de upload de grupo em massa do Admin Console depois d
       * _Nome do Grupo de Usuários_ - O nome do grupo é obrigatório e pode conter no máximo 255 caracteres.  Esse nome de grupo deve ser o mesmo no IMS e no AEM
       * _Descrição_ - Este campo é opcional e pode conter no máximo 255 caracteres
       * _Administradores do grupo de usuários_ - Pelo menos um administrador de grupo deve ser incluído neste campo. Vários administradores podem ser atribuídos separando cada administrador com uma vírgula e colocando a lista entre aspas. A entrada para cada administrador deve incluir o tipo de identidade do usuário, seguido por um hífen e, em seguida, o endereço de email.  Por exemplo
-
         `"Adobe ID-myAdmin@example.com,Adobe ID-myOtherAdmin@example.com"`. Não inclua um espaço após a vírgula que separa os administradores. Não é possível incluir usuários (como administradores) que não façam parte da organização no Admin Console
       * _Perfis de produto atribuídos_ - Este campo é opcional. É possível atribuir vários perfis de produto separando cada perfil com uma vírgula e colocando a lista entre aspas. No entanto, os perfis de produto incluídos já devem estar configurados para a organização. Certifique-se de especificar o nome do Perfil do produto, e não o nome do produto.  A associação de Perfis de produto atribuídos a um grupo será herdada por todos os usuários colocados nesse grupo.  Para localizar um perfil de produto:
 
@@ -97,7 +97,7 @@ Para usar a funcionalidade de upload de usuários em massa do Admin Console, sig
    1. Na caixa de diálogo exibida, selecione **Arquivo de Usuário em Massa** na lista suspensa em **Baixar um arquivo...** e clique no botão **Baixar**.
    1. Salvar o arquivo CSV resultante
 1. Editar o arquivo de usuário em massa
-   * Cada linha representa um usuário a ser carregado e tem quinze campos (os nomes dos campos constituem a primeira linha do arquivo). Alguns campos são opcionais e não estão descritos aqui. Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format).  Os campos são:
+   * Cada linha representa um usuário a ser carregado e tem quinze campos (os nomes dos campos constituem a primeira linha do arquivo). Alguns campos são opcionais e não estão descritos aqui. Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format).  Os campos são:
 
       * _Tipo De Identidade_ - Opcional.  Se não for especificado, será criado como um Adobe ID
       * _Nome de usuário_ - Opcional e não usado para carregamentos do Adobe ID
@@ -108,14 +108,14 @@ Para usar a funcionalidade de upload de usuários em massa do Admin Console, sig
       * _Código do país_ - Opcional e não usado para carregamentos do Adobe ID
       * _ID_ - Opcional e não usado para carregamentos do Adobe ID
       * _Configurações de produto_ - Opcional. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
-      * _Funções de administrador_ - Opcional. Use este campo se o usuário for um Administrador. Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
-      * _Configurações de Produto Administradas_ - Opcional.  Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
+      * _Funções de administrador_ - Opcional. Use este campo se o usuário for um Administrador. Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
+      * _Configurações de Produto Administradas_ - Opcional.  Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
       * _Grupos de Usuários_ - Opcional. Uma lista de grupos aos quais o usuário deve ser atribuído como membro. Cada grupo deve ser um grupo IMS já existente. Quando o arquivo de usuário em massa é baixado do CAM, esse campo é pré-preenchido com nomes de grupo habilitado para IMS do qual o usuário era membro (direta ou indiretamente) antes da migração
-      * _Grupos De Usuários Administrados_ - Opcional.  Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
-      * _Produtos Administrados_ - Opcional.  Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
-      * _Contratos Administrados_ - Opcional.  Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
-      * _Acesso do Desenvolvedor_ - Opcional.  Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
-      * _Produtos Atribuídos Automaticamente_ - Opcional.  Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
+      * _Grupos De Usuários Administrados_ - Opcional.  Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
+      * _Produtos Administrados_ - Opcional.  Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
+      * _Contratos Administrados_ - Opcional.  Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
+      * _Acesso do Desenvolvedor_ - Opcional.  Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
+      * _Produtos Atribuídos Automaticamente_ - Opcional.  Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
 
    * Ao editar o CSV, alguns aplicativos podem adicionar aspas extras ao salvar, o que faz com que o processamento falhe. É uma boa prática inspecionar o CSV bruto em um editor de texto simples para garantir que cada campo tenha apenas uma aspa de abertura e uma de fechamento (e elas não devem ser &quot;aspas inteligentes&quot;)
 

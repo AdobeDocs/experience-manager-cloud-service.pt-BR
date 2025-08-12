@@ -3,10 +3,10 @@ title: Personalizar o aplicativo Seletor de ativos
 description: Use funções para personalizar o Seletor de ativos no aplicativo.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 23%
+source-wordcount: '1246'
+ht-degree: 21%
 
 ---
 
@@ -170,18 +170,18 @@ A tabela a seguir descreve algumas das propriedades importantes do objeto de ati
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
-| *repo:repositoryId* | string | Identificador exclusivo do repositório onde o ativo está armazenado. |
-| *repo:id* | string | Identificador exclusivo do ativo. |
-| *repo:assetClass* | string | A classificação do ativo (por exemplo, imagem, vídeo ou documento). |
-| *repo:name* | string | O nome do ativo, incluindo a extensão de arquivo. |
-| *repo:size* | número | O tamanho do ativo em bytes. |
-| *repo:path* | string | O local do ativo no repositório. |
-| *repo:ancestors* | `Array<string>` | Uma matriz de itens ancestrais do ativo no repositório. |
-| *repo:state* | string | Estado atual do ativo no repositório (Por exemplo, ativo, excluído etc.). |
-| *repo:createdBy* | string | O usuário ou sistema que criou o ativo. |
-| *repo:createDate* | string | A data e a hora em que o ativo foi criado. |
-| *repo:modifiedBy* | string | O usuário ou sistema que modificou o ativo pela última vez. |
-| *repo:modifyDate* | string | A data e a hora em que o ativo foi modificado pela última vez. |
+| *repositório:repositoryId* | string | Identificador exclusivo do repositório onde o ativo está armazenado. |
+| *repositório:id* | string | Identificador exclusivo do ativo. |
+| *repositório:assetClass* | string | A classificação do ativo (por exemplo, imagem, vídeo ou documento). |
+| *repositório:name* | string | O nome do ativo, incluindo a extensão de arquivo. |
+| *repositório:size* | número | O tamanho do ativo em bytes. |
+| *repositório:path* | string | O local do ativo no repositório. |
+| *repositório:ancestors* | `Array<string>` | Uma matriz de itens ancestrais do ativo no repositório. |
+| *repositório:state* | string | Estado atual do ativo no repositório (Por exemplo, ativo, excluído etc.). |
+| *repositório:createdBy* | string | O usuário ou sistema que criou o ativo. |
+| *repositório:createDate* | string | A data e a hora em que o ativo foi criado. |
+| *repositório:modifiedBy* | string | O usuário ou sistema que modificou o ativo pela última vez. |
+| *repositório:modifyDate* | string | A data e a hora em que o ativo foi modificado pela última vez. |
 | *dc:format* | string | O formato do ativo, como o tipo de arquivo (por exemplo, JPEG, PNG etc.). |
 | *tiff:imageWidth* | número | A largura de um ativo. |
 | *tiff:imageLength* | número | A altura de um ativo. |
@@ -255,6 +255,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 

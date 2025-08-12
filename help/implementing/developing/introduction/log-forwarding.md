@@ -4,7 +4,7 @@ description: Saiba mais sobre como encaminhar logs para fornecedores de registro
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 2%
@@ -19,22 +19,6 @@ ht-degree: 2%
 
 Os clientes com uma licença de com um fornecedor de registro em log ou que hospedam um produto de registro em log podem ter registros do AEM (incluindo Apache/Dispatcher) e registros CDN encaminhados ao destino de registro associado. O AEM as a Cloud Service oferece suporte aos seguintes destinos de registro:
 
-&lt;html>
-&lt;style>
-table &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  table-layout: fixed;
-&rbrace;
-th, td &lbrace;
-  width: 5%;
-  max-width: 100%;
-  border: 1px solid black;
-  padding: 8px;
-  word-wrap: break-word;
-&rbrace;
-&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +93,7 @@ th, td &lbrace;
     </tr>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >
@@ -200,14 +184,7 @@ Outro cenário é desativar o encaminhamento dos logs CDN ou AEM (incluindo o Ap
 Algumas organizações escolhem restringir qual tráfego pode ser recebido pelos destinos de registro, outras podem exigir o uso de portas diferentes de HTTPS (443).  Nesse caso, a [Rede Avançada](/help/security/configuring-advanced-networking.md) precisará ser configurada antes da implantação da configuração de encaminhamento de log.
 
 Use a tabela abaixo para ver quais são os requisitos para a configuração avançada de rede e registro com base no fato de você estar usando ou não a porta 443 e se você precisa ou não que seus registros apareçam a partir de um endereço IP fixo.
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-&rbrace;
-&lt;/style>
+
 <table>
   <tbody>
     <tr>
@@ -239,7 +216,7 @@ table, th, td &lbrace;
       <td>Sim</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >O fato de seus registros serem exibidos a partir de um único endereço IP é determinado pela sua escolha de configuração avançada de rede.  A saída dedicada deve ser usada para facilitar isso.
@@ -270,6 +247,7 @@ data:
 Para logs CDN, você pode adicionar os endereços IP à lista de permissões, conforme descrito em [Documentação do Fastly - Lista de IP Públicos](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se essa lista de endereços IP compartilhados for muito grande, considere enviar tráfego para um servidor https ou Azure Blob Store (que não seja da Adobe), em que a lógica possa ser gravada para enviar os logouts de um IP conhecido para seu destino final.
 
 >[!NOTE]
+>
 >Não é possível que os logs CDN apareçam a partir do mesmo endereço IP que os logs do AEM aparecem. Isso ocorre porque os logs são enviados diretamente do Fastly e não pelo AEM Cloud Service.
 
 ## Configuração de destino de registro {#logging-destinations}
@@ -304,15 +282,15 @@ Para usar o S3 Log Forwarder, será necessário pré-configurar um usuário do A
 A política IAM deve permitir que o usuário use `s3:putObject`.  Por exemplo:
 
 ```json
-{
-   "Version": "2012-10-17",
-   "Statement": [{
-       "Effect": "Allow",
-       "Action": [
-           "s3:PutObject"
-       ],
-       "Resource": "arn:aws:s3:::your_bucket_name/*"
-   }]
+ {
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "s3:PutObject"
+        ],
+        "Resource": "arn:aws:s3:::your_bucket_name/*"
+    }]
 }
 ```
 
@@ -512,6 +490,7 @@ O encaminhamento de logs para o New Relic aproveita a API HTTPS do New Relic par
 ```
 
 >[!NOTE]
+>
 >O encaminhamento de logs para a New Relic só está disponível para contas da New Relic de propriedade do cliente.
 >
 >Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
@@ -538,6 +517,7 @@ O atributo de escopo &quot;Logs de assimilação&quot; é necessário para o tok
 ```
 
 >[!NOTE]
+>
 > Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
 
 ### Splunk {#splunk}
@@ -630,6 +610,7 @@ Quando estiver pronto para migrar, basta configurar o arquivo YAML conforme desc
 Recomenda-se, mas não é necessário, que uma configuração seja implantada em todos os ambientes para que todos estejam sob controle de autoatendimento. Caso contrário, você pode esquecer quais ambientes foram configurados pelo Adobe e quais foram configurados de maneira automatizada.
 
 >[!NOTE]
+>
 >Os valores do campo `sourcetype` enviados para o índice do Splunk podem ter sido alterados, portanto, ajuste de acordo.
 >
 >Quando o encaminhamento de logs é implantado em um ambiente previamente configurado pelo suporte da Adobe, você pode receber logs duplicados por até algumas horas. Isso acabará sendo resolvido automaticamente.

@@ -4,7 +4,7 @@ description: Saiba como você pode usar pipelines de configuração para implant
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 1%
@@ -63,10 +63,10 @@ Como observado anteriormente, a configuração de RDEs é implantada usando a [f
 Cada arquivo de configuração começa com propriedades que se assemelham ao seguinte trecho de exemplo:
 
 ```yaml
-  kind: "LogForwarding"
-  version: "1"
-  metadata:
-    envTypes: ["dev"]
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
 ```
 
 | Propriedade | Descrição | Padrão |

@@ -5,10 +5,10 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '5372'
-ht-degree: 30%
+source-wordcount: '5357'
+ht-degree: 29%
 
 ---
 
@@ -172,7 +172,7 @@ As propriedades `ImsAuthProps` definem as informações de autenticação e o fl
 | `imsClientId` | Um valor de string que representa a ID do cliente IMS usada para fins de autenticação. Esse valor é fornecido pela Adobe e é específico para a sua organização do Adobe AEM CS. |
 | `imsScope` | Descreve os escopos usados na autenticação. Os escopos determinam o nível de acesso que o aplicativo tem aos recursos da organização. Vários escopos podem ser separados por vírgulas. |
 | `redirectUrl` | Representa o URL para o qual o usuário é redirecionado após a autenticação. Normalmente, esse valor é definido como o URL atual do aplicativo. Se um `redirectUrl` não for fornecido, `ImsAuthService` usará o redirectUrl usado para registrar o `imsClientId` |
-| `modalMode` | Um booleano que indica se o fluxo de autenticação deve ser exibido em um modal (pop-up) ou não. Se definido como `true`, o fluxo de autenticação será exibido em um pop-up. Se definido como `false`, o fluxo de autenticação será exibido em um recarregamento de página completo. _Observação:_ para obter um UX melhor, você pode controlar este valor dinamicamente se o usuário tiver o pop-up do navegador desabilitado. |
+| `modalMode` | Um booleano que indica se o fluxo de autenticação deve ser exibido em um modal (pop-up) ou não. Se definido como `true`, o fluxo de autenticação será exibido em um pop-up. Se definido como `false`, o fluxo de autenticação será exibido em um recarregamento de página completo. _Observação :_para melhor UX, você pode controlar dinamicamente esse valor se o usuário tiver o pop-up do navegador desabilitado. |
 | `onImsServiceInitialized` | Uma função de retorno de chamada que é chamada quando o serviço de autenticação do Adobe IMS é inicializado. Essa função recebe um parâmetro, `service`, que é um objeto que representa o serviço Adobe IMS. Consulte [`ImsAuthService`](#imsauthservice-ims-auth-service) para obter mais detalhes. |
 | `onAccessTokenReceived` | Uma função de retorno de chamada que é chamada quando um `imsToken` é recebido do serviço de autenticação do Adobe IMS. Esta função recebe um parâmetro, `imsToken`, que é uma cadeia de caracteres que representa o token de acesso. |
 | `onAccessTokenExpired` | Uma função de retorno de chamada chamada chamada quando um token de acesso expira. Normalmente, essa função é usada para acionar um novo fluxo de autenticação para obter um novo token de acesso. |
@@ -572,7 +572,7 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 | *selectedAssets* | Matriz `<Object>` | Não |                 | Especifique os ativos selecionados quando o Seletor de ativos for renderizado. É necessária uma matriz de objetos que contenha uma propriedade de id dos ativos. Por exemplo, `[{id: 'urn:234}, {id: 'urn:555'}]` Um ativo deve estar disponível no diretório atual. Se precisar usar um diretório diferente, forneça um valor para a propriedade `path` também. |
 | *acvConfig* | Objeto | Não | | A propriedade Exibição da coleção do ativo que contém o objeto com a configuração personalizada para substituir os padrões. Além disso, essa propriedade é usada com a propriedade `rail` para habilitar a exibição do painel do visualizador de ativos. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Não |                 | Se as traduções OOTB forem insuficientes para as necessidades do aplicativo, você poderá expor uma interface pela qual poderá passar seus próprios valores localizados e personalizados pela prop `i18nSymbols`. Transmitir um valor por meio dessa interface substitui as traduções padrão fornecidas e, em vez disso, usa suas próprias traduções. Para executar a substituição, deverá transmitir um objeto [Descritor de mensagem](https://formatjs.io/docs/react-intl/api/#message-descriptor) à chave de `i18nSymbols` que deseja substituir. |
-| *intl* | Objeto | Não | | O Seletor de ativos fornece traduções OOTB padrão. Você pode selecionar o idioma de tradução fornecendo uma string de idioma válida por meio da propriedade `intl.locale`. Por exemplo: `intl={{ locale: "es-es" }}` </br></br> As strings de idioma com suporte seguem os padrões [ISO 639 - Códigos](https://www.iso.org/iso-639-language-codes.html) para a representação de nomes de idiomas. </br></br> Lista de idiomas com suporte: Inglês - “en-us” (padrão) Espanhol - “es-es” Alemão - “de-de” Francês - “fr-fr” Italiano - “it-it” Japonês - “ja-jp” Coreano - “ko-kr” Português - “pt-br” Chinês (Tradicional) - “zh-cn” Chinês (Taiwan) - “zh-tw” |
+| *intl* | Objeto | Não | | O Seletor de ativos fornece traduções OOTB padrão. Você pode selecionar o idioma de tradução fornecendo uma string de localidade válida por meio da propriedade `intl.locale`. Por exemplo: `intl={{ locale: "es-es" }}` </br></br> As strings de idioma com suporte seguem os padrões [ISO 639 - Códigos](https://www.iso.org/iso-639-language-codes.html) para a representação de nomes de idiomas. </br></br> Lista de localidades compatíveis: Inglês - “en-us” (padrão) Espanhol - “es-es” Alemão - “de-de” Francês - “fr-fr” Italiano - “it-it” Japonês - “ja-jp” Coreano - “ko-kr” Português - “pt-br” Chinês (Tradicional) - “zh-cn” Chinês (Taiwan) - “zh-tw” |
 | *repositoryId* | String | Não | &#39;&#39; | Repositório de onde o Seletor de ativos carrega o conteúdo. |
 | *additionalAemSolutions* | `Array<string>` | Não | [ ] | Ele permite adicionar uma lista de repositórios AEM adicionais. Se nenhuma informação for fornecida nessa propriedade, somente a biblioteca de mídia ou os repositórios do AEM Assets serão considerados. |
 | *hideTreeNav* | Booleano | Não |  | Especifica se deve mostrar ou ocultar a barra lateral de navegação da árvore de ativos. Usada apenas na exibição modal e, portanto, não há efeito dessa propriedade na exibição de painel. |
@@ -790,18 +790,18 @@ A tabela a seguir descreve algumas das propriedades importantes do objeto de ati
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
-| *repo:repositoryId* | string | Identificador exclusivo do repositório onde o ativo está armazenado. |
-| *repo:id* | string | Identificador exclusivo do ativo. |
-| *repo:assetClass* | string | A classificação do ativo (por exemplo, imagem, vídeo ou documento). |
-| *repo:name* | string | O nome do ativo, incluindo a extensão de arquivo. |
-| *repo:size* | número | O tamanho do ativo em bytes. |
-| *repo:path* | string | O local do ativo no repositório. |
-| *repo:ancestors* | `Array<string>` | Uma matriz de itens ancestrais do ativo no repositório. |
-| *repo:state* | string | Estado atual do ativo no repositório (Por exemplo, ativo, excluído etc.). |
-| *repo:createdBy* | string | O usuário ou sistema que criou o ativo. |
-| *repo:createDate* | string | A data e a hora em que o ativo foi criado. |
-| *repo:modifiedBy* | string | O usuário ou sistema que modificou o ativo pela última vez. |
-| *repo:modifyDate* | string | A data e a hora em que o ativo foi modificado pela última vez. |
+| *repositório:repositoryId* | string | Identificador exclusivo do repositório onde o ativo está armazenado. |
+| *repositório:id* | string | Identificador exclusivo do ativo. |
+| *repositório:assetClass* | string | A classificação do ativo (por exemplo, imagem, vídeo ou documento). |
+| *repositório:name* | string | O nome do ativo, incluindo a extensão de arquivo. |
+| *repositório:size* | número | O tamanho do ativo em bytes. |
+| *repositório:path* | string | O local do ativo no repositório. |
+| *repositório:ancestors* | `Array<string>` | Uma matriz de itens ancestrais do ativo no repositório. |
+| *repositório:state* | string | Estado atual do ativo no repositório (Por exemplo, ativo, excluído etc.). |
+| *repositório:createdBy* | string | O usuário ou sistema que criou o ativo. |
+| *repositório:createDate* | string | A data e a hora em que o ativo foi criado. |
+| *repositório:modifiedBy* | string | O usuário ou sistema que modificou o ativo pela última vez. |
+| *repositório:modifyDate* | string | A data e a hora em que o ativo foi modificado pela última vez. |
 | *dc:format* | string | O formato do ativo, como o tipo de arquivo (por exemplo, JPEG, PNG etc.). |
 | *tiff:imageWidth* | número | A largura de um ativo. |
 | *tiff:imageLength* | número | A altura de um ativo. |
@@ -840,6 +840,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 

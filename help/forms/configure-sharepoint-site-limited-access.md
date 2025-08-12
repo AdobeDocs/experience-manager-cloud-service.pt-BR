@@ -5,16 +5,16 @@ keywords: Como configurar o SharePoint Site com acesso limitado?, Configurar o S
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 2%
 
 ---
 
-<span class="preview"> O recurso está disponível no programa de adoção antecipada. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
-
 # Configurar o site do SharePoint com acesso limitado usando o escopo de autorização
+
+<span class="preview"> O recurso está disponível no programa de adoção antecipada. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 O objetivo do acesso limitado ou restrito é aprimorar o gerenciamento de segurança, permitindo que os administradores controlem o acesso do usuário a um site específico do SharePoint ou a um grupo do SharePoint Sites. O nível de permissão é útil quando você precisa conceder a um usuário ou grupo acesso a um Site específico sem permitir que ele visualize outros Sites da SharePoint não permitidos.
 

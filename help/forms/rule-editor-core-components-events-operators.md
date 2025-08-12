@@ -5,14 +5,14 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2333'
+source-wordcount: '2327'
 ht-degree: 0%
 
 ---
 
-# Tipos e eventos de operador em regra editor de um formulário adaptável com base nos componentes principais
+# Tipos de operadores e eventos no editor de regras de um Formulário adaptável com base nos Componentes principais
 
 No AEM Forms as a Cloud, o editor de regras inclui vários tipos de operadores e eventos que permitem definir e executar condições e ações complexas com facilidade.
 
@@ -28,11 +28,11 @@ O editor de regras fornece os seguintes operadores lógicos e eventos com os qua
 
 * **É Igual a** - Verifica se um objeto de formulário corresponde a um valor especificado.
 * **Não É Igual a** - Verifica se um objeto de formulário não corresponde a um valor especificado.
-* **Inicia com** - Verifica se um objeto de formulário começa com uma string especificada.
-* **Termina com** - Verifica se um objeto de formulário termina com uma string especificada.
-* **Contém** – Verifica se o objeto de formulário inclui uma subsequência de caracteres especificada.
-* **Não contém** - Verifica se o objeto de formulário não inclui uma subsequência de caracteres especificada.
-* **Está vazio** - Verifica se um objeto de formulário está vazio ou não é fornecido.
+* **Começa com** - Verifica se um objeto de formulário começa com uma cadeia de caracteres especificada.
+* **Termina com** - Verifica se um objeto de formulário termina com uma cadeia de caracteres especificada.
+* **Contém** - Verifica se um objeto de formulário inclui uma subcadeia de caracteres especificada.
+* **Não Contém** - Verifica se um objeto de formulário não inclui uma subcadeia de caracteres especificada.
+* **Está Vazio** - Verifica se um objeto de formulário está vazio ou não foi fornecido.
 * **Não Está Vazio** - Verifica se um objeto de formulário está presente e não está vazio.
 * **Selecionado** - Retorna verdadeiro quando um usuário seleciona uma caixa de seleção, uma lista suspensa ou uma opção de botão de opção específica.
 * **Está Inicializado (evento)** - Retorna verdadeiro quando um objeto de formulário é renderizado no navegador.
@@ -68,12 +68,11 @@ Em palavras simples, uma regra When típica é estruturada da seguinte maneira:
 
 `Action 2 on Object B;`
 `AND`
-&quot;Ação 3 sobre o objeto C;
+`Action 3 on Object C;`
 
 `Else, do the following:`
 
 `Action 2 on Object C;`
-_
 
 Quando você tem um componente de vários valores, como botões de opção ou lista, ao criar uma regra para esse componente, as opções são automaticamente recuperadas e disponibilizadas para o criador da regra. Não é necessário digitar os valores da opção novamente.
 
@@ -87,11 +86,11 @@ Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Lim
 
 >[!NOTE]
 >
-> Quando o tipo de regra suporta apenas declarações de nível único e outras.
+> Quando o tipo de regra suporta apenas instruções then-else de nível único.
 
 ##### Vários campos permitidos em [!UICONTROL Quando] {#allowed-multiple-fields}
 
-Na condição **Quando** , você tem a opção de adicionar outros campos além do campo ao qual a regra é aplicada.
+Na condição **When**, você tem a opção de adicionar outros campos além do campo ao qual a regra é aplicada.
 
 Por exemplo, usando o tipo de regra Quando, é possível avaliar uma condição em diferentes objetos de formulário e executar a ação:
 
@@ -157,13 +156,13 @@ Se os vários campos permitidos no recurso Quando condição encontrarem problem
 
 >[!NOTE]
 >
-> Para saber mais sobre o serviço Invoke, [clique aqui](/help/forms/invoke-service-enhancements-rule-editor.md).
+> Para saber mais sobre o serviço Chamar, [clique aqui](/help/forms/invoke-service-enhancements-rule-editor.md).
 
-Consulte o exemplo regra para invocar serviços do Modelo de dados de formulário (FDM).
+Consulte a regra de exemplo para chamar os serviços do Modelo de dados de formulário (FDM).
 
-Além do serviço modelo de dados de formulário, você pode especificar um URL WSDL direto para chamar um serviço da Web. No entanto, um serviço de Modelo de dados de formulário tem muitos benefícios e a abordagem recomendada para invocar um serviço.
+Além do serviço de modelo de dados de formulário, você pode especificar um URL WSDL direto para chamar um serviço Web. No entanto, um serviço de modelo de dados de formulário tem muitos benefícios e a abordagem recomendada para chamar um serviço.
 
-Para obter mais informações sobre como configurar serviços no modelo de dados de formulário (FDM), consulte [[!DNL Experience Manager Forms] Integração](data-integration.md) de dados.
+Para obter mais informações sobre como configurar serviços no modelo de dados de formulário (FDM), consulte [[!DNL Experience Manager Forms] Integração de Dados](data-integration.md).
 
 **[!UICONTROL Defina o valor de]** Computes e defina o valor do objeto especificado. Você pode definir o valor do objeto como uma string, o valor de outro objeto, o valor calculado usando uma expressão matemática ou função, o valor de uma propriedade de um objeto ou o valor de saída de um serviço de Modelo de Dados de Formulário configurado. Quando você escolhe a opção de serviço Web, ela exibe todos os serviços configurados em todos os modelos de dados de formulário (FDM) na sua instância [!DNL Experience Manager]. Ao escolher um serviço de modelo de dados de formulário, mais campos são exibidos onde você pode mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado.
 
@@ -234,7 +233,7 @@ Defina o valor do Objeto A como:
 
 Quando (opcional):
 
-(Condição 1 E Condição 2 E Condição 3) é VERDADEIRA;
+(Condição 1 E Condição 2 E Condição 3) é VERDADEIRO;
 
 O exemplo a seguir seleciona o valor de `Question2` como `True` e define o valor de `Result` como `correct`.
 
@@ -276,9 +275,9 @@ Uma regra típica de Ocultar está estruturada da seguinte maneira:
 
 #### [!UICONTROL Habilitar] {#enable}
 
-O **[!UICONTROL tipo Ativar]** regra permite ativar ou desativar um objeto de formulário com base na satisfação ou não de uma condição. O tipo Habilitar regra também aciona a ação Desativar caso a condição não seja atendida ou retorne `False`.
+O tipo de regra **[!UICONTROL Habilitar]** permite habilitar ou desabilitar um objeto de formulário com base no fato de uma condição ser atendida ou não. O tipo de regra Habilitar também aciona a ação Desabilitar caso a condição não seja atendida ou retorne `False`.
 
-Um regra de Ativação típico está estruturado da seguinte maneira:
+Uma regra Enable típica é estruturada da seguinte maneira:
 
 `Enable Object A;`
 
@@ -354,9 +353,9 @@ Para obter mais detalhes sobre como criar uma regra para navegar em um painel, [
 
 <span class="preview"> É um recurso de pré-lançamento acessível através do nosso [canal de pré-lançamento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features). </span>
 
-A **[!UICONTROL chamada]** de Função assíncrona regra tipo permite executar funções assíncronas. Ele permite iniciar uma chamada de função que opera independentemente do encadeamento de execução principal, permitindo que outros processos continuem em execução sem esperar a conclusão da função assíncrona.
+O tipo de regra **[!UICONTROL Chamada de função assíncrona]** permite que você execute funções assíncronas. Ela permite iniciar uma chamada de função que opera independentemente do thread de execução principal, permitindo que outros processos continuem em execução sem esperar a conclusão da função assíncrona.
 
-Uma chamada típica de Função assíncrona regra para executar uma função assíncrona é estruturada da seguinte maneira:
+Uma regra de chamada de Função assíncrona típica para executar uma função assíncrona está estruturada da seguinte maneira:
 
 `When:`
 

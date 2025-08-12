@@ -6,7 +6,8 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: preenchimento prévio de formulário adaptável, serviços de entrega de borda de formulários adaptáveis, preenchimento automático de formulário adaptável
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 1%
@@ -249,7 +250,7 @@ Verifique se essas extensões estão habilitadas no Universal Editor:
 3. Escolher **Visualizar como HTML**
 4. Teste o preenchimento prévio anexando parâmetros ao URL:
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
 
    **Exemplo:**
 

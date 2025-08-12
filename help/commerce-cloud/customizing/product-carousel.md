@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,15 @@ O componente Carrossel de produtos é estendido por todo este tutorial. Como pri
 1. Insira um novo componente Carrossel do produto no container do layout principal da página.
    ![Componente do carrossel do produto](/help/commerce-cloud/assets/product-carousel-component.png)
 1. Expanda o painel lateral (se ainda não estiver sendo exibido) e na lista suspensa do localizador de ativos selecione **Produtos**.
-     ![Produtos do carrossel](/help/commerce-cloud/assets/carousel-products.png)    
+
+   ![Produtos do carrossel](/help/commerce-cloud/assets/carousel-products.png)
+
 1. Isso deve exibir uma lista de produtos disponíveis em uma instância conectada do Adobe Commerce.
+
    ![Instância Conectada](/help/commerce-cloud/assets/connected-instance.png)
+
 1. Os produtos serão exibidos abaixo com as propriedades padrão:
+
    ![Produto exibido com as propriedades](/help/commerce-cloud/assets/discount.png)
 
 ## Atualizar o modelo do Sling {#update-sling-model}
@@ -50,7 +55,7 @@ O padrão de delegação para Modelos do Sling permite que `CustomCarouselImpl` 
    private ProductCarousel productCarousel;
    ```
 
-1. A anotação @PostConstruct garante que esse método seja chamado quando o Modelo Sling for inicializado. A consulta do GraphQL do produto já foi estendida usando o método extendProductQueryWith para recuperar atributos. Atualize a consulta do GraphQL para incluir a  atributo na consulta parcial:
+1. A anotação @PostConstruct garante que esse método seja chamado quando o Modelo Sling for inicializado. A consulta do GraphQL do produto já foi estendida usando o método extendProductQueryWith para recuperar atributos. Atualize a consulta do GraphQL para incluir o atributo na consulta parcial:
 
    ```
    @PostConstruct

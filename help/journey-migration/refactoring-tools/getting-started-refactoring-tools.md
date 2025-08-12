@@ -1,7 +1,8 @@
 ---
 title: Introdução às ferramentas de refatoração
 description: Saiba como começar a usar as Ferramentas de refatoração no AEM as a Cloud Service
-source-git-commit: 20bb756c4a2eb37341da4582f19cf41e4d60304a
+exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 2%
@@ -17,7 +18,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=pt-BR" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -34,8 +35,6 @@ Use a Ferramenta de refatoração para migrar seu código e obter compatibilidad
 1. Ao acessar pela primeira vez a **Exibição de código do Source**, você verá um estado vazio solicitando que carregue seu código-fonte.
 
    ![imagem](/help/journey-migration/refactoring-tools/assets/rscam2.png)
-
-&#x200B;---
 
 ## Upload do código do Source {#uploading}
 
@@ -67,12 +66,12 @@ Quando os clientes acessam as **Ferramentas de refatoração** pela primeira vez
    ![imagem](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
+>
 >Fazer upload de um novo projeto excluirá o projeto existente. Verifique se os dados necessários foram salvos antes de continuar.
 
 >[!NOTE]
+>
 >Os trabalhos de refatoração só poderão ser executados se o upload do código-fonte for bem-sucedido.
-
-&#x200B;---
 
 ## Trabalhos de refatoração {#refactoring-jobs}
 
@@ -89,9 +88,8 @@ Ao clicar na guia **Trabalho de Refatoração**, você verá uma lista de trabal
 ![imagem](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
+>
 >Você pode acionar trabalhos individuais de refatoração ou executar todas as ferramentas disponíveis de uma só vez usando a opção **Todas as ferramentas em conjunto**.
-
-&#x200B;---
 
 ### &#x200B;2. Status da tarefa
 
@@ -110,5 +108,5 @@ Quando o trabalho for concluído com êxito, o botão **Download** ficará dispo
 ![imagem](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
 >[!NOTE]
+>
 >Cada tarefa pode levar até 1 hora para ser concluída. Se o status não for atualizado, entre em contato com o Suporte da Adobe.
-

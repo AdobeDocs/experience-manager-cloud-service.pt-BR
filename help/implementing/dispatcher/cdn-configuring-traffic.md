@@ -4,9 +4,9 @@ description: Saiba como configurar o tráfego CDN declarando regras e filtros em
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ As ações disponíveis são explicadas na tabela abaixo.
 |     | var | Remove uma variável especificada. |
 |     | queryParamMatch | Remove todos os parâmetros de consulta que correspondem a uma expressão regular especificada. |
 |     | queryParamDoesNotMatch | Remove todos os parâmetros de consulta que não correspondem a uma expressão regular especificada. |
-| **transformar** | op:replace, (reqProperty ou reqHeader ou queryParam ou reqCookie ou var), match, replacement | Substitui parte do parâmetro de solicitação (somente a propriedade &quot;path&quot; é compatível), o cabeçalho de solicitação, o parâmetro de consulta, o cookie ou a variável por um novo valor. |
+| **transformar** | op:replace, (reqProperty ou reqHeader ou queryParam ou reqCookie ou var), correspondência, substituição | Substitui parte do parâmetro de solicitação (somente a propriedade &quot;path&quot; é compatível), o cabeçalho de solicitação, o parâmetro de consulta, o cookie ou a variável por um novo valor. |
 |              | op:tolower, (reqProperty ou reqHeader ou queryParam ou reqCookie ou var) | Define o parâmetro de solicitação (somente a propriedade &quot;path&quot; é compatível), o cabeçalho de solicitação, o parâmetro de consulta, o cookie ou a variável com seu valor em minúsculas. |
 
 As ações de substituição oferecem suporte aos grupos de captura, conforme ilustrado abaixo:

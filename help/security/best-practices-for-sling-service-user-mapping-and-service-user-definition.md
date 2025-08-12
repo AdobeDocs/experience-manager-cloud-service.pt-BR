@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas para o mapeamento de usu
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1883'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ Além disso, observe que `principalNames` é a lista de nomes principais de usu�
 * Nomes de subserviços para tarefas diferentes - se os serviços do seu conjunto executam tarefas diferentes, é recomendável identificar `subserviceNames` para agrupá-los por tarefas
 * Se um determinado serviço executar operações diferentes (por exemplo, ler o conteúdo do ativo e atualizar as informações abaixo de uma subárvore de `/var`), é recomendável refletir isso agregando entidades de serviço diferentes que refletem a operação individual, como agregar o `dam-reader-service` comum com o `assetreport-writer-service` específico do recurso
 * Idealmente, cada serviço está vinculado a um conjunto muito específico e limitado de operações
-* O novo formato com `[one,or,multiple,principalNames]` é a maneira recomendada de definir mapeamentos de usuários de serviço a partir do AEM 6.4.
+* O novo formato com `[one,or,multiple,principalNames]` é a maneira recomendada de definir mapeamentos de usuário de serviço a partir do AEM 6.4.
 
-Veja abaixo uma lista dos motivos para alterar o formato e por que o Adobe recomenda usá-lo em vez do mapeamento de versão apenas para uma única ID de usuário:
+Veja abaixo uma lista dos motivos para alterar o formato e por que a Adobe recomenda usá-lo em vez do mapeamento de versão para apenas uma única ID de usuário:
 
 * A capacidade de reutilizar usuários de serviço combinando as necessidades especiais dos clientes com tarefas comuns
 * Evitar duplicação da configuração de permissão
@@ -77,7 +77,7 @@ A sequência para obter um serviço `Session/ResourceResolver` funciona da segui
 
 1. Obtenha nomes principais de `ServiceUserMapper` => logon de repositório de pré-autenticação conforme descrito abaixo
 1. Recuperar ID de usuário de `ServiceUserMapper`
-1. Verificar 1ServiceUserConfiguration&grave; obsoleto para a id do usuário atual
+1. Verificar `1ServiceUserConfiguration` obsoleto para a ID de usuário atual
 1. Logon padrão do serviço Sling com a ID de usuário (por exemplo, uma sequência de `createAdministrativeSession` e representação da ID de usuário do serviço)
 
 O novo mapeamento com nomes principais resulta no seguinte logon de repositório simplificado:
@@ -94,9 +94,9 @@ O novo mapeamento com nomes principais resulta no seguinte logon de repositório
 
 ### ServiceUserConfiguration obsoleto {#deprecated-serviceUserConfiguration}
 
-Observe que especificar um único nome de usuário no mapeamento é equivalente ao `ServiceUserConfiguration.simpleSubjectPopulation` existente. Com o novo formato, a solução alternativa fornecida pelo `ServiceUserConfiguration` pode ser refletida diretamente no mapeamento de usuário do serviço. O `ServiceUserConfiguration` foi, portanto, descontinuado para AEM e todos os usos existentes foram substituídos.
+Observe que especificar um único nome de usuário no mapeamento é equivalente ao `ServiceUserConfiguration.simpleSubjectPopulation` existente. Com o novo formato, a solução alternativa fornecida pelo `ServiceUserConfiguration` pode ser refletida diretamente no mapeamento de usuário do serviço. O `ServiceUserConfiguration` foi, portanto, descontinuado para o AEM e todos os usos existentes foram substituídos.
 
-## Usuários de serviço {#service-users}
+## Usuários do serviço {#service-users}
 
 ### Reutilizar Usuários de Serviços Existentes {#reusing-existing-service-users}
 
@@ -114,7 +114,7 @@ Não reutilizar usuários de serviço existentes se:
 
 ### Criando um Usuário de Serviço {#creating-a-service-user}
 
-Depois de verificar que nenhum usuário de serviço existente no AEM é aplicável ao seu caso de uso e que os problemas de RTC correspondentes foram aprovados, você pode adicionar o novo usuário ao conteúdo padrão. Idealmente, um membro da equipe de segurança estendida está envolvido na votação do RTC, portanto, certifique-se de envolver também as partes interessadas apropriadas.
+Depois de verificar que nenhum usuário de serviço existente no AEM é aplicável ao seu caso de uso e que os problemas de RTC correspondentes foram aprovados, você pode continuar e adicionar o novo usuário ao conteúdo padrão. Idealmente, um membro da equipe de segurança estendida está envolvido na votação do RTC, portanto, certifique-se de envolver também as partes interessadas apropriadas.
 
 **Convenção de Nomenclatura**
 
@@ -225,7 +225,7 @@ Sempre use o `repo-init` para definir usuários de serviço e suas permissões p
 
 * Sempre usar `repo-init` para criar o usuário do serviço
 * Sempre especificar um caminho intermediário para a criação do usuário de serviço
-* Todos os usuários do serviço interno para AEM devem estar localizados abaixo de `system/cq:services/internal`
+* Todos os usuários do serviço interno do AEM devem estar localizados abaixo de `system/cq:services/internal`
 * Além disso, anexe ao caminho relativo intermediário para agrupar usuários de serviço por recurso: `system/cq:services/internal/<your-feature>`
 * Os usuários do serviço definido pelo cliente devem estar localizados abaixo de `system/cq:services/<customer-intermediate-rel-path>` e nunca abaixo da árvore interna
 * Use **com o caminho forçado** em vez de **com o caminho** se um usuário já existir e precisar ser movido para o novo local que dá suporte à autorização baseada em entidade de segurança.

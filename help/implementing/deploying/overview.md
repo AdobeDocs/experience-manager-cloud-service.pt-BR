@@ -4,7 +4,7 @@ description: Saiba mais sobre os fundamentos e as práticas recomendadas da impl
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: d6c5c70e8b6565a20866d392900aef219d3fd09d
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 93%
@@ -41,7 +41,7 @@ Para desenvolver um código personalizado para uma versão interna, a versão re
 
 O vídeo a seguir fornece uma visão geral de alto nível sobre como implantar código no AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/33377?quality=9&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -56,8 +56,7 @@ O vídeo a seguir fornece uma visão geral de alto nível sobre como implantar c
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-Clientes implantam código personalizado em ambientes na nuvem por meio do Cloud Manager. O Cloud Manager transforma pacotes de conteúdo montados localmente em um artefato compatível com o modelo de recurso do Sling, que é a forma como um aplicativo do AEM as a Cloud Service é descrito ao ser executado em um ambiente na nuvem. Como resultado, ao examinar os pacotes do [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) em ambientes na nuvem, o nome incluirá “cp2fm” e os pacotes transformados terão todos os metadados removidos. Não é possível interagir com eles, o que significa que não podem ser baixados, replicados ou abertos. Para obter a documentação detalhada sobre o conversor, consulte [&#128279;](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)
-sling-org-apache-sling-feature-cpconverter no GitHub.
+Clientes implantam código personalizado em ambientes na nuvem por meio do Cloud Manager. O Cloud Manager transforma pacotes de conteúdo montados localmente em um artefato compatível com o modelo de recurso do Sling, que é a forma como um aplicativo do AEM as a Cloud Service é descrito ao ser executado em um ambiente na nuvem. Como resultado, ao examinar os pacotes do [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) em ambientes na nuvem, o nome incluirá “cp2fm” e os pacotes transformados terão todos os metadados removidos. Não é possível interagir com eles, o que significa que não podem ser baixados, replicados ou abertos. Para obter a documentação detalhada sobre o conversor, consulte [sling-org-apache-sling-feature-cpconverter no GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Os pacotes de conteúdo criados para aplicativos do AEM as a Cloud Service devem ter uma separação clara entre conteúdo imutável e mutável, e o Cloud Manager só instalará o conteúdo mutável, além de exibir uma mensagem como esta:
 

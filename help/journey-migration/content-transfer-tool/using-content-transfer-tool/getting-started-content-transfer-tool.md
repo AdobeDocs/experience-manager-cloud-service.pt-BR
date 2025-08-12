@@ -4,7 +4,7 @@ description: Saiba como começar a usar a ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: 0c76419b5efa6d45cf4db51990633fea3b489063
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 14%
@@ -48,7 +48,7 @@ A instância do AEM de origem pode estar sendo executada por trás de um firewal
 
 Às vezes, pode ser difícil entender os problemas de conexão SSL/TLS. Para solucionar problemas de conexão durante um processo de extração, você pode ativar o registro SSL por meio do Console do sistema do ambiente AEM de origem seguindo estas etapas:
 
-1. Navegue até o Console da Web do Adobe Experience Manager na instância de origem, indo até **Ferramentas > Operações > Console da Web** ou diretamente para a URL em *https://serveraddress:serverport/system/console/configMgr*
+1. Navegue até o Console da Web do Adobe Experience Manager na sua instância de origem, indo até **Ferramentas > Operações > Console da Web** ou diretamente para a URL em *https://serveraddress:serverport/system/console/configMgr*
 1. Pesquisar por **Configuração do serviço de extração da ferramenta de transferência de conteúdo**
 1. Use o botão de ícone de lápis para editar seus valores de configuração
 1. Habilite a configuração **Habilitar log ssl para extração** e pressione **Salvar**:
@@ -56,6 +56,7 @@ A instância do AEM de origem pode estar sendo executada por trás de um firewal
    ![imagem](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
 >[!NOTE]
+>
 >Esse sinalizador é apenas para depurar problemas de SSL. Verifique se o sinalizador está desativado antes de executar a extração, pois pode exigir uma grande quantidade de espaço em disco. Isso poderia preencher a capacidade da unidade e causar falha no processo de extração.
 
 ## Execução da ferramenta Transferência de conteúdo {#running-tool}
@@ -64,7 +65,7 @@ A instância do AEM de origem pode estar sendo executada por trás de um firewal
 >id="aemcloud_ctt_demo"
 >title="Execução do Content Transfer Tool"
 >abstract="Saiba como usar o Content Transfer Tool para migrar o conteúdo para o AEM as a Cloud Service (Autor/Publicação)."
->additional-url="https://video.tv.adobe.com/v/327071/?quality=12&learn=on&captions=por_br" text=" Consulte a demonstração"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Consulte a demonstração"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=pt-BR#migration" text="Tutorial: utilização do Content Transfer Tool"
 
 A seção a seguir se aplica à nova versão da ferramenta Transferência de conteúdo. Siga esta seção para saber como usar a ferramenta Transferência de conteúdo para migrar conteúdo para o AEM as a Cloud Service:
@@ -101,7 +102,7 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 
    >[!NOTE]
    >
-   >O nome deve seguir as mesmas convenções de um nó AEM, portanto, não pode conter nenhum destes caracteres: &grave;. / : [ ] | * &lt; > ^ ? { } % # &quot;nem símbolos ou emojis incomuns.
+   >O nome deve seguir as mesmas convenções de um nó AEM; portanto, não pode conter nenhum destes caracteres: `. / : [ ] | * < > ^ ? { } % # `, nem símbolos ou emojis incomuns.
 
 1. Agora você deve ver sua lista de migração na exibição de lista. Selecione o símbolo de três pontos (**...**) para abrir o menu suspenso e selecione **Copiar chave de extração**. Essa chave é necessária durante a fase de Extração. Copie essa chave de Extração.
 
@@ -148,7 +149,6 @@ Para preencher o conjunto de migração criado no Cloud Acceleration Manager, in
       >A partir da versão CTT (3.0.24), novos recursos foram incluídos na ferramenta Transferência de conteúdo, aprimorando o processo de inclusão e exclusão de caminhos. Anteriormente, os caminhos precisavam ser selecionados um por um, o que era tedioso e demorado. Agora, os usuários podem incluir caminhos diretamente da interface do usuário ou fazer upload de um arquivo CSV de acordo com suas preferências.  O arquivo CSV deve ter um caminho por linha e sem vírgulas.
 
    1. **Caminhos a serem incluídos**: use o navegador de caminhos para selecionar os caminhos que precisam ser migrados. O seletor de caminhos aceita a entrada digitando ou selecionando. Os usuários podem selecionar apenas uma opção para incluir caminhos: na interface ou fazendo upload de um arquivo CSV.
-
       >[!IMPORTANT]
       >Os seguintes caminhos estão restritos ao criar um conjunto de migração:
       >* `/apps`

@@ -4,17 +4,17 @@ description: Saiba como criar uma Ação de envio personalizada para um Forms ad
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
-source-git-commit: b703d4c0b0bb25ecc57e5335b672069f7ad2199d
+exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
 # Criar uma ação de envio personalizada para o Forms adaptável (Componentes principais)
 
-Uma ação de envio permite que os usuários selecionem o destino dos dados capturados de um formulário e definam funcionalidades adicionais a serem executadas no envio do formulário. O formulário AEM oferece suporte a várias [ações de envio prontas (OOTB)](/help/forms/configure-submit-actions-core-components.md), como enviar um email ou salvar dados no SharePoint ou OneDrive.
+Uma ação de envio permite que os usuários selecionem o destino dos dados capturados de um formulário e definam funcionalidades adicionais a serem executadas no envio do formulário. O formulário do AEM oferece suporte a várias [ações de envio prontas (OOTB)](/help/forms/configure-submit-actions-core-components.md), como enviar um email ou salvar dados no SharePoint ou OneDrive.
 
 Você também pode criar uma ação de envio personalizada para adicionar funcionalidades não incluídas nas [opções predefinidas](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action). Por exemplo, integre os dados do formulário a um aplicativo de terceiros ou acione uma notificação SMS personalizada com base na entrada do usuário.
 
@@ -47,11 +47,11 @@ O diagrama abaixo descreve as etapas para criar uma ação de envio personalizad
 
    **Onde encontrar essas informações?**
 
-   Para obter instruções passo a passo sobre como localizar esses detalhes, consulte o artigo da Adobe Experience League &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git)&quot;.
+   Para obter as instruções passo a passo sobre como localizar esses detalhes, consulte o artigo &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot; da Adobe Experience League.
 
    **Seu projeto está pronto!**
 
-   Quando o comando for concluído com sucesso, você verá uma nova pasta criada no diretório local. Essa pasta é nomeada com base no aplicativo (por exemplo, app-id). Esta pasta contém todos os arquivos e códigos baixados do repositório Git da AEM as a Cloud Service. Você pode encontrar `<appid>` para seu projeto AEM no arquivo `archetype.properties`.
+   Quando o comando for concluído com sucesso, você verá uma nova pasta criada no diretório local. Essa pasta é nomeada com base no aplicativo (por exemplo, app-id). Esta pasta contém todos os arquivos e códigos baixados do repositório Git da AEM as a Cloud Service. Você pode encontrar `<appid>` para seu Projeto AEM no arquivo `archetype.properties`.
 
    ![Propriedades do Arquétipo](/help/forms/assets/custom-submit-action-archetype-app-id.png)
 
@@ -81,7 +81,7 @@ O diagrama abaixo descreve as etapas para criar uma ação de envio personalizad
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`: Substituir &lt;app-id> com a ID real do aplicativo.
+   `Important`: Substitua `<app-id>` pela ID do aplicativo real.
 
 1. Criar novo arquivo de configuração.
 Na pasta `customsubmitaction`, crie um novo arquivo chamado `.content.xml`.
@@ -134,7 +134,7 @@ Na pasta `customsubmitaction`, crie um novo arquivo chamado `.content.xml`.
 
 1. Navegue até o seguinte diretório no `[AEMaaCS project directory]`:
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`: Substituir &lt;app-id> com a ID real do aplicativo.
+   `Important`: Substitua `<app-id>` pela ID do aplicativo real.
 1. Criar novo arquivo Java para implementar o serviço para a ação de envio adicionada. Por exemplo, adicione o novo arquivo Java como `CustomSubmitService.java`.
 
    ![Pasta de Ação de Envio Personalizada](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -204,9 +204,9 @@ Na pasta `customsubmitaction`, crie um novo arquivo chamado `.content.xml`.
 
       ![Implantação local](/help/forms/assets/custom-submit-action-local-deployment.png)
 
-**Implantar o código para o ambiente Cloud Service**
+**Implantar o código para o ambiente do Cloud Service**
 
-* Implante o AEM as a Cloud Service, `[AEMaaCS project directory]`, no seu ambiente Cloud Service. Para implantar no ambiente de Cloud Service:
+* Implante o AEM as a Cloud Service, `[AEMaaCS project directory]`, no seu ambiente Cloud Service. Para implantar no ambiente do Cloud Service:
 
    1. Confirme suas alterações:
 
@@ -214,9 +214,9 @@ Na pasta `customsubmitaction`, crie um novo arquivo chamado `.content.xml`.
 
    1. Implante o código atualizado:
 
-      Acione uma implantação do seu código por meio do [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline). Ele cria e implanta automaticamente o código atualizado com o novo suporte personalizado às ações de envio.
+      Acione uma implantação do seu código por meio do [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Ele cria e implanta automaticamente o código atualizado com o novo suporte personalizado às ações de envio.
 
-      Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline).
+      Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
       ![Implantação da nuvem](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 
@@ -230,7 +230,7 @@ Na pasta `customsubmitaction`, crie um novo arquivo chamado `.content.xml`.
 
 ### Visualizar um formulário adaptável com a ação de envio recém-adicionada
 
-1. Faça logon na instância as a Cloud Service do AEM Forms.
+1. Faça logon na sua instância do AEM Forms as a Cloud Service.
 1. Ir para **Forms** > **Forms e Documentos**.
 
    ![Forms e Documentos](/help/forms/assets/custom-submit-action-fnd.png)

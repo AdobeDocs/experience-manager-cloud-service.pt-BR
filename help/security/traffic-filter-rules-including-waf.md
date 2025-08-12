@@ -4,7 +4,7 @@ description: Configuração das regras de filtro de tráfego, incluindo as regra
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '4582'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Por padrão, o Adobe toma medidas para evitar a degradação do desempenho devid
 
 Os clientes podem tomar medidas proativas para atenuar os ataques à camada do aplicativo (camada 7), configurando regras em várias camadas do fluxo de entrega de conteúdo.
 
-Por exemplo, na camada do Apache, os clientes podem configurar o [módulo do Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou o [ModSecurity](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) para limitar o acesso a determinado conteúdo.
+Por exemplo, na camada do Apache, os clientes podem configurar o [módulo do Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou o [ModSecurity](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) para limitar o acesso a determinado conteúdo.
 
 Como este artigo descreve, as regras de filtro de tráfego podem ser implantadas na CDN Gerenciada pela Adobe, usando os [pipelines de configuração](/help/operations/config-pipeline.md) da Cloud Manager. Além das *regras padrão de filtro de tráfego* baseadas em propriedades como endereço IP, caminho e cabeçalhos ou regras baseadas na definição de limites de taxa, os clientes também podem licenciar uma subcategoria poderosa de regras de filtro de tráfego chamada *regras do WAF*.
 
@@ -733,7 +733,7 @@ data:
       action: block
 ```
 
-### Regras recomendadas do WAF {#recommended-waf-starter-rules}
+### Regras do WAF recomendadas {#recommended-waf-starter-rules}
 
 Adicione as seguintes regras à configuração existente:
 
@@ -745,8 +745,8 @@ Adicione as seguintes regras à configuração existente:
    * Após implantar essa regra, analise cuidadosamente os logs CDN para verificar se as solicitações legítimas não estão sendo sinalizadas incorretamente. Depois de ter certeza de que nenhum tráfego legítimo será afetado, alterne para o modo de bloqueio.
 
 >[!NOTE]
-> Nossa experiência indica que falsos positivos associados à bandeira ATAQUE são raros. Portanto, pode ser uma estratégia prática bloquear imediatamente todo o tráfego suspeito, mesmo que o endereço IP não seja reconhecidamente mal-intencionado, e subsequentemente usar a análise de log da CDN para identificar e introduzir regras de permissão para tráfego legítimo. Cada organização deve avaliar sua própria tolerância ao risco, ponderando os benefícios de uma maior proteção contra o risco de bloquear inadvertidamente solicitações legítimas.
 >
+> Nossa experiência indica que falsos positivos associados à bandeira ATAQUE são raros. Portanto, pode ser uma estratégia prática bloquear imediatamente todo o tráfego suspeito, mesmo que o endereço IP não seja reconhecidamente mal-intencionado, e subsequentemente usar a análise de log da CDN para identificar e introduzir regras de permissão para tráfego legítimo. Cada organização deve avaliar sua própria tolerância ao risco, ponderando os benefícios de uma maior proteção contra o risco de bloquear inadvertidamente solicitações legítimas.
 
 ```
     # blocks likely attack traffic, which also comes from suspected IPs
@@ -773,8 +773,7 @@ Adicione as seguintes regras à configuração existente:
 
 Antes de julho de 2025, a Adobe recomendou as regras do WAF listadas abaixo, que ainda são válidas e eficazes na defesa contra tráfego mal-intencionado. Consulte o tutorial para considerações sobre a migração para as novas regras recomendadas.
 
-<details>
-  <summary>Expanda para ver as regras herdadas recomendadas do WAF.</summary>
++++ Expanda para ver as regras herdadas recomendadas do WAF.
 
 ```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
@@ -800,11 +799,11 @@ Antes de julho de 2025, a Adobe recomendou as regras do WAF listadas abaixo, que
           - NULLBYTE
 ```
 
-</details>
++++
 
 ## Tutorial {#tutorial}
 
-Trabalhe com [uma série de tutoriais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) para obter conhecimento prático e experiência sobre regras de filtro de tráfego, incluindo regras do WAF.
+Trabalhe com [uma série de tutoriais](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) para obter conhecimento prático e experiência sobre regras de filtro de tráfego, incluindo regras do WAF.
 
 Os tutoriais incluem:
 
@@ -814,7 +813,3 @@ Os tutoriais incluem:
 * Testar suas regras usando ferramentas para simular tráfego mal-intencionado
 * Analisando resultados usando a Ferramenta de Análise de Log
 * Práticas recomendadas
-
-
-
-

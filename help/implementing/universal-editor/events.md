@@ -4,9 +4,9 @@ description: Saiba mais sobre os diferentes eventos que o Editor universal envia
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '510'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Os eventos incluem a carga da solicitação e da resposta e são acionados assim
 
 ## Eventos de atualização de conteúdo {#content-events}
 
-### aue:adição de conteúdo {#content-add}
+### aue:content-add {#content-add}
 
 O evento `aue:content-add` é disparado quando um novo componente é adicionado a um contêiner.
 
@@ -70,7 +70,7 @@ A carga é o conteúdo do componente e, opcionalmente, seu schema.
 }
 ```
 
-### aue:movimentação de conteúdo {#content-move}
+### aue:content-move {#content-move}
 
 O evento `aue:content-move` é disparado quando um componente é movido.
 
@@ -108,7 +108,7 @@ A carga é uma correção JSON das propriedades atualizadas.
 }
 ```
 
-### aue:remoção de conteúdo {#content-remove}
+### aue:content-remove {#content-remove}
 
 O evento `aue:content-remove` é disparado quando um componente é removido de um contêiner.
 
@@ -124,7 +124,7 @@ A carga é a ID do item do componente removido.
 }
 ```
 
-### aue:atualização de conteúdo {#content-update}
+### aue:content-update {#content-update}
 
 O evento `aue:content-update` é disparado quando as propriedades de um componente são atualizadas no contexto.
 
@@ -219,7 +219,7 @@ A carga são as dimensões da janela de visualização.
 }
 ```
 
-### aue:inicializado {#initialized}
+### aue:initialized {#initialized}
 
 O evento `aue:initialized` é disparado para informar à página remota que ele foi carregado com êxito no Editor Universal.
 

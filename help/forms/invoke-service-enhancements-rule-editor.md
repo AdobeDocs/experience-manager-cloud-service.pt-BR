@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: chame os aprimoramentos do serviço no VRE, preenchendo as opções suspensas usando invocar serviço, Defina o painel repetível usando a saída de invocar serviço, Defina o painel usando a saída de invocar serviço, Use o parâmetro de saída de invocar serviço para validar outro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 O Editor de Regras Visuais em um Formulário Adaptável oferece suporte ao recurso **Chamar Serviço**, que permite selecionar um serviço da lista de Modelos de Dados de Formulário (FDM) configurados para sua instância. Você pode mapear campos de formulário diretamente para os parâmetros de entrada do serviço. Para mapear campos de formulário para os parâmetros de saída, use a opção de carga do evento para o serviço de Modelo de dados de formulário especificado. Além disso, o editor de regras Visual permite criar regras para manipuladores de sucesso e falha para operações de **Chamar serviço** com base nas respostas de saída. Os manipuladores de êxito gerenciam a execução bem-sucedida da operação **Chamar Serviço**, enquanto os manipuladores de falha solucionam os erros que ocorrerem.
 
-### Vantagens de usar a função Chamar serviço no editor de regras do formulário
+## Vantagens de usar a função Chamar serviço no editor de regras do formulário
 
 Estas são algumas das vantagens de usar a operação Chamar serviço no editor de regras de um Formulário adaptável:
 
