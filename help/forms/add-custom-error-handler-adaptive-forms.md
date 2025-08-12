@@ -22,7 +22,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 O AEM Forms fornece manipuladores de sucesso e erro prontos para uso para envios de formulários. Ele também fornece recursos para personalizar funções do manipulador de erros. Por exemplo, você pode chamar um fluxo de trabalho personalizado no backend para códigos de erro específicos ou informar ao cliente que o serviço está inativo. Os manipuladores são funções do lado do cliente executadas com base na resposta do servidor. Quando um serviço externo é chamado usando APIs, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou com erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função. Um manipulador de erros ajuda a gerenciar e exibir erros ou problemas de validação encontrados.
@@ -180,7 +180,7 @@ Você pode exibir o valor de dataRef na janela **[!UICONTROL Propriedades]** de 
 
 ## Adicionar manipulador de erros usando o Editor de regras {#add-error-handler-using-rule-editor}
 
-Usando a ação Chamar serviço[ do ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)Editor de regras, você define os critérios de validação com base na fonte de dados usada com o Formulário adaptável. Caso você use os serviços Web RESTful como fonte de dados, é possível definir os critérios de validação em um arquivo de definição do Swagger. Ao usar as funções do manipulador de erros e o Editor de regras no Adaptive Forms, você pode gerenciar e personalizar com eficiência a manipulação de erros. Você define as condições usando o Editor de regras e configura as ações desejadas a serem executadas quando a regra for acionada. O Formulário adaptável valida as entradas inseridas nos campos com base em critérios de validação predefinidos. Caso os valores de entrada não atendam aos critérios de validação, as mensagens de erro serão exibidas no nível do campo em um Formulário adaptável.
+Usando a ação Chamar serviço[ do ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=pt-BR#invoke)Editor de regras, você define os critérios de validação com base na fonte de dados usada com o Formulário adaptável. Caso você use os serviços Web RESTful como fonte de dados, é possível definir os critérios de validação em um arquivo de definição do Swagger. Ao usar as funções do manipulador de erros e o Editor de regras no Adaptive Forms, você pode gerenciar e personalizar com eficiência a manipulação de erros. Você define as condições usando o Editor de regras e configura as ações desejadas a serem executadas quando a regra for acionada. O Formulário adaptável valida as entradas inseridas nos campos com base em critérios de validação predefinidos. Caso os valores de entrada não atendam aos critérios de validação, as mensagens de erro serão exibidas no nível do campo em um Formulário adaptável.
 
 >[!NOTE]
 >
@@ -196,7 +196,7 @@ Usando o Editor de regras, você pode:
 ### Adicionar função de manipulador de erros padrão {#add-default-errror-handler}
 
 Um manipulador de erros padrão é compatível com a exibição de mensagens de erro em campos se a resposta do erro estiver no esquema padrão ou na falha de validação do lado do servidor.
-Para entender como usar um manipulador de erros padrão usando a ação Chamar serviço[ do ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)Editor de regras, use um exemplo de um Formulário adaptável simples com dois campos, **ID de animal de estimação** e **Nome de animal de estimação** e use um manipulador de erros padrão no campo **ID de animal de estimação** para verificar vários erros retornados pelo ponto de extremidade REST configurado para chamar um serviço externo, por exemplo, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Para adicionar um manipulador de erros padrão usando a ação Chamar serviço do Editor de regras, execute as seguintes etapas:
+Para entender como usar um manipulador de erros padrão usando a ação Chamar serviço[ do ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=pt-BR#invoke)Editor de regras, use um exemplo de um Formulário adaptável simples com dois campos, **ID de animal de estimação** e **Nome de animal de estimação** e use um manipulador de erros padrão no campo **ID de animal de estimação** para verificar vários erros retornados pelo ponto de extremidade REST configurado para chamar um serviço externo, por exemplo, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Para adicionar um manipulador de erros padrão usando a ação Chamar serviço do Editor de regras, execute as seguintes etapas:
 
 1. Abra um Formulário adaptável no modo de criação, selecione um componente de formulário e selecione **[!UICONTROL Editor de regras]** para abrir o editor de regras.
 1. Selecione **[!UICONTROL Criar]**.
@@ -224,7 +224,7 @@ Você pode adicionar uma função de manipulador de erros personalizada para exe
 Além das ações mencionadas, os manipuladores de erros personalizados podem ser usados para executar funções personalizadas que atendam a requisitos específicos do usuário.
 
 O manipulador de erros personalizado é uma função (Biblioteca do cliente) criada para responder aos erros retornados por um serviço externo e fornecer uma resposta personalizada aos usuários finais. Qualquer Biblioteca de Cliente com anotação `@errorHandler` é considerada uma função de manipulador de erro personalizada. Esta anotação ajuda a identificar a função do manipulador de erros especificada no arquivo `.js`.
-Para entender como criar e usar um manipulador de erros personalizado usando a ação [Chamar serviço](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) do Editor de regras, vamos ver um exemplo de Formulário adaptável com dois campos, **Pet ID** e **Pet Name**, e usar um manipulador de erros personalizado no campo **Pet ID** para verificar vários erros retornados pelo ponto de extremidade REST configurado para invocar um serviço externo, por exemplo, `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
+Para entender como criar e usar um manipulador de erros personalizado usando a ação [Chamar serviço](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=pt-BR#invoke) do Editor de regras, vamos ver um exemplo de Formulário adaptável com dois campos, **Pet ID** e **Pet Name**, e usar um manipulador de erros personalizado no campo **Pet ID** para verificar vários erros retornados pelo ponto de extremidade REST configurado para invocar um serviço externo, por exemplo, `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
 
 Para adicionar e usar um manipulador de erros personalizado em um Formulário adaptável, execute as seguintes etapas:
 
@@ -237,7 +237,7 @@ Para saber como adicionar funções personalizadas, clique em [Criar funções p
 
 <!-- To create a custom error function, perform the following steps:
 
-1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git). 
 2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
 3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
 4. Create a folder named `js`.
@@ -298,7 +298,7 @@ The created folder structure looks like:
     ```
 -->
 
-1. [Executar o pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
+1. [Executar o pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline).
 
 Depois que o pipeline é executado com êxito, o manipulador de erros personalizado fica disponível em seu editor de regras do Formulário adaptável. Agora, vamos entender como configurar e usar um manipulador de erros personalizado usando o serviço Chamar do editor de regras no AEM Forms.
 

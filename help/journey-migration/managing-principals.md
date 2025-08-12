@@ -20,7 +20,7 @@ Antes de o conteúdo ser transferido para o ambiente de nuvem do AEM as a Cloud 
 
 ## Criar grupos e seus usuários no Admin Console
 
-[Usar o Admin Console para entidades de segurança do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/ims-support#how-to-set-up) fornece instruções detalhadas sobre como criar usuários e grupos no IMS e como adicionar os usuários aos grupos ao mesmo tempo ou posteriormente.  O documento inclui três opções para criá-los: manualmente por meio da Admin Console, por meio de upload de CSV pela Admin Console e por meio de uma Ferramenta de sincronização de usuários.
+[Usar o Admin Console para entidades de segurança do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/ims-support#how-to-set-up) fornece instruções detalhadas sobre como criar usuários e grupos no IMS e como adicionar os usuários aos grupos ao mesmo tempo ou posteriormente.  O documento inclui três opções para criá-los: manualmente por meio da Admin Console, por meio de upload de CSV pela Admin Console e por meio de uma Ferramenta de sincronização de usuários.
 
 A opção manual permite criar um grupo ou usuário por vez; o upload de CSV permite criar e vincular vários usuários e grupos de uma só vez; e a Ferramenta de sincronização de usuários permite usar um IDP existente para criar e gerenciar os usuários e grupos do IMS.
 
@@ -28,4 +28,4 @@ Depois que um usuário usa o IMS para fazer logon no AEM, uma representação do
 
 Após a conclusão da migração de conteúdo, os grupos IMS normalmente precisarão ter algumas configurações adicionais para que os usuários possam acessar o conteúdo migrado.  Consulte [Migrando Entidades Após a Migração](/help/journey-migration/managing-principals-after-migration.md)
 
-Consulte também [Tutorial, usuários, grupos e permissões do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions) para saber mais sobre como os usuários e grupos do AEM e do IMS são integrados e administrados.
+Consulte também [Tutorial, usuários, grupos e permissões do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions) para saber mais sobre como os usuários e grupos do AEM e do IMS são integrados e administrados.

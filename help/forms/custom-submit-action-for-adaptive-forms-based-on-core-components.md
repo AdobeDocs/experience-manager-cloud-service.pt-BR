@@ -47,7 +47,7 @@ O diagrama abaixo descreve as etapas para criar uma ação de envio personalizad
 
    **Onde encontrar essas informações?**
 
-   Para obter as instruções passo a passo sobre como localizar esses detalhes, consulte o artigo &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot; da Adobe Experience League.
+   Para obter as instruções passo a passo sobre como localizar esses detalhes, consulte o artigo &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git)&quot; da Adobe Experience League.
 
    **Seu projeto está pronto!**
 
@@ -214,9 +214,9 @@ Na pasta `customsubmitaction`, crie um novo arquivo chamado `.content.xml`.
 
    1. Implante o código atualizado:
 
-      Acione uma implantação do seu código por meio do [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Ele cria e implanta automaticamente o código atualizado com o novo suporte personalizado às ações de envio.
+      Acione uma implantação do seu código por meio do [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline). Ele cria e implanta automaticamente o código atualizado com o novo suporte personalizado às ações de envio.
 
-      Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
+      Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline).
 
       ![Implantação da nuvem](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 

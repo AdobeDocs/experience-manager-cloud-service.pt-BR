@@ -97,7 +97,7 @@ Para usar a funcionalidade de upload de usuários em massa do Admin Console, sig
    1. Na caixa de diálogo exibida, selecione **Arquivo de Usuário em Massa** na lista suspensa em **Baixar um arquivo...** e clique no botão **Baixar**.
    1. Salvar o arquivo CSV resultante
 1. Editar o arquivo de usuário em massa
-   * Cada linha representa um usuário a ser carregado e tem quinze campos (os nomes dos campos constituem a primeira linha do arquivo). Alguns campos são opcionais e não estão descritos aqui. Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format).  Os campos são:
+   * Cada linha representa um usuário a ser carregado e tem quinze campos (os nomes dos campos constituem a primeira linha do arquivo). Alguns campos são opcionais e não estão descritos aqui. Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format).  Os campos são:
 
       * _Tipo De Identidade_ - Opcional.  Se não for especificado, será criado como um Adobe ID
       * _Nome de usuário_ - Opcional e não usado para carregamentos do Adobe ID
@@ -108,14 +108,14 @@ Para usar a funcionalidade de upload de usuários em massa do Admin Console, sig
       * _Código do país_ - Opcional e não usado para carregamentos do Adobe ID
       * _ID_ - Opcional e não usado para carregamentos do Adobe ID
       * _Configurações de produto_ - Opcional. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
-      * _Funções de administrador_ - Opcional. Use este campo se o usuário for um Administrador. Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
-      * _Configurações de Produto Administradas_ - Opcional.  Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
+      * _Funções de administrador_ - Opcional. Use este campo se o usuário for um Administrador. Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
+      * _Configurações de Produto Administradas_ - Opcional.  Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
       * _Grupos de Usuários_ - Opcional. Uma lista de grupos aos quais o usuário deve ser atribuído como membro. Cada grupo deve ser um grupo IMS já existente. Quando o arquivo de usuário em massa é baixado do CAM, esse campo é pré-preenchido com nomes de grupo habilitado para IMS do qual o usuário era membro (direta ou indiretamente) antes da migração
-      * _Grupos De Usuários Administrados_ - Opcional.  Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
-      * _Produtos Administrados_ - Opcional.  Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
-      * _Contratos Administrados_ - Opcional.  Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
-      * _Acesso do Desenvolvedor_ - Opcional.  Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
-      * _Produtos Atribuídos Automaticamente_ - Opcional.  Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
+      * _Grupos De Usuários Administrados_ - Opcional.  Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
+      * _Produtos Administrados_ - Opcional.  Consulte [Formato CSV de Usuário em Massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes. Este campo também será herdado de qualquer grupo do qual o usuário seja membro
+      * _Contratos Administrados_ - Opcional.  Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
+      * _Acesso do Desenvolvedor_ - Opcional.  Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
+      * _Produtos Atribuídos Automaticamente_ - Opcional.  Consulte [Formato CSV de usuário em massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html#csv-format) para obter detalhes
 
    * Ao editar o CSV, alguns aplicativos podem adicionar aspas extras ao salvar, o que faz com que o processamento falhe. É uma boa prática inspecionar o CSV bruto em um editor de texto simples para garantir que cada campo tenha apenas uma aspa de abertura e uma de fechamento (e elas não devem ser &quot;aspas inteligentes&quot;)
 
