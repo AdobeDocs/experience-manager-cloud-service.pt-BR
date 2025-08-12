@@ -51,13 +51,13 @@ Execute as seguintes etapas para definir o status do ativo para visualização n
    >
    > O Seletor de ativos exibe ativos com a atualização de status mais recente definida como Aprovado ou Visualizar.
 
-1. Publique sua página no nível de visualização usando a opção **[!UICONTROL Gerenciar publicação]**. Execute as etapas na seção [Publicar conteúdo para visualização](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) para publicar sua página no nível de visualização. Após a publicação, gere um URL de pré-visualização da página. A página Visualizar exibe os ativos (com as atualizações de status mais recentes) na página Sites.
+1. Publique sua página no nível de visualização usando a opção **[!UICONTROL Gerenciar publicação]**. Execute as etapas na seção [Publicar conteúdo para visualização](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) para publicar sua página no nível de visualização. Após a publicação, gere um URL de pré-visualização da página. A página Visualizar exibe os ativos (com as atualizações de status mais recentes) na página Sites.
 
-Compartilhe este URL de visualização com as partes interessadas para análise e feedback. Certifique-se de que as partes interessadas tenham acesso à página de visualização. Consulte [Acessar o serviço de visualização](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service) para obter informações sobre como fornecer acesso às páginas de visualização.
+Compartilhe este URL de visualização com as partes interessadas para análise e feedback. Certifique-se de que as partes interessadas tenham acesso à página de visualização. Consulte [Acessar o serviço de visualização](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service) para obter informações sobre como fornecer acesso às páginas de visualização.
 
 >[!NOTE]
 >
->O [componente principal da Imagem V3](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility) dá suporte à versão de visualização de ativos por padrão. Ao selecionar uma versão de visualização de um ativo (ativo com status de visualização) usando o painel [Seletor de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload), o componente de Imagem V3 o renderiza automaticamente no nível de Visualização (uma versão de visualização na página do autor do Sites).
+>O [componente principal da Imagem V3](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility) dá suporte à versão de visualização de ativos por padrão. Ao selecionar uma versão de visualização de um ativo (ativo com status de visualização) usando o painel [Seletor de ativos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload), o componente de Imagem V3 o renderiza automaticamente no nível de Visualização (uma versão de visualização na página do autor do Sites).
 
 Depois de finalizar a versão do ativo, [publique suas páginas no nível de publicação](#publish-your-pages-to-publish-tier) para consumo público.
 
@@ -66,8 +66,8 @@ Depois de finalizar a versão do ativo, [publique suas páginas no nível de pub
 Depois de finalizar a versão do ativo para uso público, defina o status do ativo como **[!UICONTROL Aprovado]**. Em seguida, publique suas páginas no nível de publicação. Execute as seguintes etapas para publicar suas páginas:
 
 1. Siga a etapa 1 na seção [Visualizar ativos na página de visualização de sites](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities) acima para alterar o status do ativo para **[!UICONTROL Aprovado]**.
-1. Navegue até a página do autor do Sites e publique-a no [!DNL Publish tier]. Publique as páginas executando as etapas em [Publicação na seção Editor de páginas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor).
-Como alternativa, siga as etapas da seção [Publicação de páginas no Console de sites](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) para publicar sua página no console do site.
+1. Navegue até a página do autor do Sites e publique-a no [!DNL Publish tier]. Publique as páginas executando as etapas em [Publicação na seção Editor de páginas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor).
+Como alternativa, siga as etapas da seção [Publicação de páginas no Console de sites](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) para publicar sua página no console do site.
 
    >[!NOTE]
    >
