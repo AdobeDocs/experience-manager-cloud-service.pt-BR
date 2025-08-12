@@ -115,6 +115,7 @@ Agora, configure o manipulador de autenticação OIDC. Várias conexões OIDC po
       "storeRefreshToken": false
    }
    ```
+
 1. Em seguida, configure suas propriedades da seguinte maneira:
    * `groupsInIdToken`: Definido como verdadeiro se os grupos forem enviados no Token de ID. Se o valor for falso, ou não for especificado, os grupos serão lidos do ponto de extremidade UserInfo.
    * `groupsClaimName`: O nome da declaração contém os grupos a serem sincronizados no AEM.
