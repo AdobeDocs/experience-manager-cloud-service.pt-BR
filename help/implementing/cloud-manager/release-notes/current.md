@@ -4,9 +4,9 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.8.0 no Adobe E
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: c465542d5e89dbae0eb1c380ca1e7756d0beb2b6
+source-git-commit: c93716b1a2453c26169020b32e66eb4207f13002
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1377'
 ht-degree: 3%
 
 ---
@@ -26,6 +26,12 @@ A data de lançamento do Cloud Manager 2025.8.0 no AEM as a Cloud Service é qui
 A próxima versão está planejada para sexta-feira, 4 de setembro de 2025.
 
 ## Novidades {#what-is-new}
+
+* **Adobe Experience Hub em breve**
+
+  A partir de 19 de agosto de 2025, o Adobe iniciará uma implantação em fases do novo Experience Hub para todos os usuários do Adobe Experience Manager.
+
+  O Experience Hub é um ponto de partida unificado que fornece experiências personalizadas e contextuais para ajudar os usuários a atingirem as metas com mais rapidez. A implantação será concluída até 26 de agosto de 2025, disponibilizando-a para todos os usuários. A nova Experience Hub pode ser acessada diretamente em [experience.adobe.com](https://experience.adobe.com/). Para saber mais, consulte [Adobe Experience Hub](/help/implementing/cloud-manager/aem-home.md).
 
 * **A licença do Edge Delivery Services pode ser incluída em um programa HIPAA de maneira automatizada**
 
@@ -62,13 +68,13 @@ As seguintes oportunidades estão disponíveis no momento:
 
 Reverta rapidamente para uma implantação anterior se o código-fonte do cliente mais recente não estiver funcionando como esperado — não é necessário executar novamente o pipeline completo ou reverter as confirmações manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar o código-fonte do cliente a partir do cartão Ambientes](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *cartão Ambientes acima, mostrando a opção **Restaurar**>**Código anterior implantado**&#x200B;para um ambiente selecionado.*
+![Restaurar o código-fonte do cliente a partir do cartão Ambientes](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *cartão Ambientes acima, mostrando a opção **Restaurar**>**Código anterior implantado**para um ambiente selecionado.*
 
 ![Restaurar caixa de diálogo implantada de código anterior](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Na caixa de diálogo **Restaurar código anterior implantado**, revise a versão implantada no momento e a versão que deseja restaurar e clique em **Confirmar***.
 
 ![Restaurando a ativação](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-O *Cloud Manager reverte o ambiente para a compilação anterior, mantém o conteúdo e a configuração intactos e marca o ambiente **Restaurando**&#x200B;até que a implantação seja concluída.*
+O *Cloud Manager reverte o ambiente para a compilação anterior, mantém o conteúdo e a configuração intactos e marca o ambiente **Restaurando**até que a implantação seja concluída.*
 
 ![Versão do código Source em uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *A exibição de detalhes do Ambiente, como visto acima, agora também mostra a versão ativa do código-fonte em uso.*
 
@@ -146,7 +152,7 @@ Os Pipelines de configuração agora são compatíveis com sites criados com o E
 
   ![Painel de filtros mostrando o novo tipo de entrega do Edge e de publicação](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**&#x200B;cartão.*
+![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**cartão.*
 
 ![Caixa de diálogo Adicionar pipeline do Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Caixa de diálogo Adicionar pipeline do Edge Delivery.*
 
