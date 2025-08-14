@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 37%
@@ -60,7 +60,7 @@ A adição de um nome de domínio personalizado exige interação entre o servi�
 | 1 | [Adicionar certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | [Adicionar um domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 3 | [Adicionar mapeamento de domínio](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | [Configurar DNS](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 4 | [Configurar DNS](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#config-dns) |
 | 5 | [Verificar status do DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]

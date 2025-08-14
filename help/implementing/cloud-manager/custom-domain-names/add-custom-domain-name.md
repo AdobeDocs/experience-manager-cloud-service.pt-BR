@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 13%
+source-wordcount: '1089'
+ht-degree: 12%
 
 ---
 
@@ -94,13 +94,18 @@ Para definir essas configurações, determine se um registro `CNAME` ou apex dev
 >
 >Para CDNs gerenciadas pela Adobe, ao usar certificados DV (Domain Validation, validação de domínio), somente sites com validação ACME são permitidos.
 
-#### Requisitos {#adobe-managed-cert-dv-requirements}
 
-Atenda a esses requisitos antes de configurar seus registros DNS.
+### Configurar DNS{#config-dns}
+
+>[!WARNING]
+>
+>O princípio &quot;registrar antes de anunciar&quot; se aplica aqui. Ou seja, a configuração do DNS só deve ser executada *depois* de você ter adicionado o mapeamento de domínio com êxito. Isso garante que a Cloud Manager reconheça e valide se o domínio existe em sua própria configuração antes de responder às solicitações dele. Também evita qualquer tentativa de aquisição de domínio.
+
+Certifique-se de atender aos seguintes requisitos *antes* de configurar seus registros DNS:
 
 * Identifique o host ou o registrador do seu domínio, se você ainda não o conhece.
 * Ser capaz de editar os registros DNS do domínio de sua organização ou entrar em contato com a pessoa apropriada que pode fazer isso.
-* Você já deve ter verificado o nome de domínio personalizado configurado, conforme descrito no documento [Verificando o Status do Nome de Domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+* Você já verificou o nome de domínio personalizado configurado, conforme descrito no documento [Verificando o Status do Nome de Domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 #### Registro CNAME {#adobe-managed-cert-cname-record}
 
