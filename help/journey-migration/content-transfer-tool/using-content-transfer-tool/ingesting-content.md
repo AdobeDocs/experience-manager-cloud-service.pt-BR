@@ -4,9 +4,9 @@ description: Saiba como usar o Cloud Acceleration Manager para assimilar conteú
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 30386a3117f241d81eed5e55f6c6e97bbe4084f8
+source-git-commit: c81e870667d284626a0092775fdd3bab37b99c58
 workflow-type: tm+mt
-source-wordcount: '3467'
+source-wordcount: '3577'
 ht-degree: 11%
 
 ---
@@ -151,13 +151,13 @@ Esta mensagem indica que o Cloud Acceleration Manager não conseguiu acessar o s
 > O campo &quot;Token de migração&quot; é exibido porque, em alguns casos, a recuperação desse token é o que realmente não é permitido. Ao permitir que seja fornecido manualmente, ele pode permitir que o usuário inicie a assimilação rapidamente, sem nenhuma ajuda adicional. Se o token for fornecido e a mensagem ainda for exibida, a recuperação do token não foi o problema.
 
 * A AEM as a Cloud Service mantém o estado do ambiente e, ocasionalmente, deve reiniciar o serviço de migração por vários motivos normais. Se esse serviço estiver sendo reiniciado, ele não poderá ser acessado, mas estará disponível no futuro.
-* É possível que outro processo esteja sendo executado na instância. Por exemplo, se as [Atualizações de versão do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) estiverem aplicando uma atualização, o sistema pode estar ocupado e o serviço de migração pode ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
+* É possível que outro processo esteja sendo executado na instância. Por exemplo, se as [Atualizações de versão do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) estiverem aplicando uma atualização, o sistema pode estar ocupado e o serviço de migração pode ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
 * Se uma [Inclui na lista de permissões de IP ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tiver sido aplicada por meio do Cloud Manager, ela impedirá que o Cloud Acceleration Manager acesse o serviço de migração. Um endereço IP não pode ser adicionado para assimilações porque seu endereço é dinâmico. Atualmente, a única solução é desativar a inclui na lista de permissões de IP durante o processo de assimilação e indexação.
 * Pode haver outros motivos que precisem de investigação. Se a assimilação ou indexação continuar a falhar, entre em contato com o Atendimento ao cliente da Adobe.
 
 ### Atualizações e assimilações de versão do AEM {#aem-version-updates-and-ingestions}
 
-[As Atualizações de Versão do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) são aplicadas automaticamente aos ambientes para mantê-los atualizados com a versão mais recente do AEM as a Cloud Service. Se a atualização for acionada quando uma assimilação for executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente.
+[As Atualizações de Versão do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) são aplicadas automaticamente aos ambientes para mantê-los atualizados com a versão mais recente do AEM as a Cloud Service. Se a atualização for acionada quando uma assimilação for executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente.
 
 Se as &quot;Atualizações de versão do AEM&quot; estiverem integradas no programa de destino, o processo de assimilação tentará desativar sua fila antes de ser iniciado. Quando a assimilação é concluída, o estado do atualizador de versão retorna ao estado em que estava antes de as assimilações começarem.
 
@@ -239,7 +239,7 @@ Essa é uma restrição MongoDB.
 
 Consulte a observação `Node property value in MongoDB` em [Pré-requisitos da Ferramenta de Transferência de Conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obter mais informações e um link para uma ferramenta Oak que possa ajudar a encontrar todos os nós grandes. Depois que todos os nós com tamanhos grandes forem corrigidos, execute a extração e a assimilação novamente.
 
-Para evitar possivelmente essa restrição, execute o [Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) na instância do AEM de origem e revise as descobertas apresentadas, especialmente o padrão [&quot;Estrutura de Repositório Sem Suporte&quot; (URS)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-pattern-detection/table-of-contents/urs).
+Para evitar possivelmente essa restrição, execute o [Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) na instância do AEM de origem e revise as descobertas apresentadas, especialmente o padrão [&quot;Estrutura de Repositório Sem Suporte&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 >[!NOTE]
 >
@@ -269,6 +269,15 @@ Para evitar possivelmente essa restrição, execute o [Analisador de Práticas R
 >abstract="A extração que a ingestão aguardava não foi concluída com sucesso. A ingestão foi cancelada porque não pôde ser executada."
 
 Uma assimilação criada com uma extração em execução, à medida que seu conjunto de migração de origem aguarda pacientemente até que a extração seja bem-sucedida, e nesse ponto começa normalmente. Se a extração falhar ou for interrompida, a assimilação e seu trabalho de indexação não serão iniciados, mas serão rescindidos. Nesse caso, verifique a extração para determinar por que ela falhou, corrija o problema e comece a extrair novamente. Uma vez que a extração fixa estiver em execução, uma nova assimilação pode ser programada.
+
+### Falha ao iniciar aguardando assimilação {#waiting-ingestion-not-started}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_waiting_ingestion_not_started"
+>title="Aguardando assimilação não iniciada"
+>abstract="Falha ao iniciar a assimilação após aguardar a conclusão de uma extração."
+
+Uma assimilação criada com uma extração em execução enquanto seu conjunto de migração de origem aguarda até que a extração seja bem-sucedida e, nesse ponto, a assimilação tenta iniciar normalmente. Se a assimilação não for iniciada, ela será marcada como com falha. Possíveis motivos para não iniciar são: uma Lista de permissões IP é configurada no ambiente de autor de destino; o ambiente de destino não está disponível por algum outro motivo.  Nesse caso, verifique por que a assimilação falhou ao iniciar, corrija o problema e inicie a assimilação novamente (não há necessidade de executar novamente a extração).
 
 ### O ativo excluído não está presente após executar a assimilação novamente
 
