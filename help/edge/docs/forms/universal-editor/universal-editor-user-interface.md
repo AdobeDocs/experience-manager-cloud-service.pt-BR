@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2355'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,11 @@ ht-degree: 0%
 
 # Navegar pela interface do editor universal para o AEM Forms
 
-O [Editor Universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fornece uma interface visual para criar AEM Forms com Edge Delivery Services. Este guia ajuda você a entender a interface para criar formulários com eficiência.
+O [Editor Universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) fornece uma interface visual para criar AEM Forms com Edge Delivery Services. Ele oferece uma experiência do **What You See Is What You Get (WYSIWYG)** que mostra exatamente como seus formulários aparecerão para os usuários.
 
 ![Visão Geral da Interface do Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## Visão geral
-
-O Editor Universal oferece uma experiência do **What You See Is What You Get (WYSIWYG)** que mostra exatamente como seus formulários aparecerão para os usuários. Quer você seja novo na criação de formulários ou um desenvolvedor experiente, este guia ajudará a:
+Este guia ajuda você a entender a interface para criar formulários com eficiência. Quer você seja novo na criação de formulários ou um desenvolvedor experiente, este guia ajudará a:
 
 **Conheça as habilidades essenciais:**
 
@@ -37,6 +35,8 @@ O Editor Universal oferece uma experiência do **What You See Is What You Get (W
 - Criar formulários do conceito à publicação
 - Testar e visualizar formulários em vários dispositivos
 - Colaborar com membros da equipe em projetos de formulário
+
+
 
 ## Introdução rapidamente
 
@@ -349,7 +349,7 @@ O **Painel de Propriedades** (lado direito) é o seu centro de controle para cri
 
     ![Gerar variações](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**Saiba Mais:** [Gerar Guia De Variações](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**Saiba Mais:** [Gerar Guia De Variações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **Rascunhos de Conteúdo**
 
