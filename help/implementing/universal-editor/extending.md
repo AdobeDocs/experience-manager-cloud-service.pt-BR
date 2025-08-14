@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para estender os recursos d
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Se quiser explorar as possibilidades de criar suas próprias extensões, consult
 
 >[!TIP]
 >
->Se preferir aprender por exemplo, consulte o [tutorial de extensibilidade da interface do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
+>Se preferir aprender por exemplo, consulte o [tutorial de extensibilidade da interface do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
 
 [Usando o Extension Manager no AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), você pode habilitar ou desabilitar suas extensões por instância, acessar extensões primárias do Adobe, inclusive as do Universal Editor, e muito mais.
 
@@ -59,6 +59,6 @@ Se quiser explorar as possibilidades de criar suas próprias extensões, consult
 
 Além da extensibilidade da interface do usuário, o Universal Editor oferece muitos outros pontos de extensão flexíveis para permitir a integração perfeita de requisitos comerciais personalizados.
 
-* **[Blocos](/help/edge/developer/block-collection.md)**: no formato JSON simples, os projetos podem ajustar os blocos e os recursos UE disponíveis para criação de conteúdo.
+* **[Blocos](https://www.aem.live/developer/block-collection)**: no formato JSON simples, os projetos podem ajustar os blocos e os recursos UE disponíveis para criação de conteúdo.
 * **[Interface do Usuário Personalizada](#extending-ui)**: as extensões podem exibir a interface do usuário necessária em painéis laterais ou caixas de diálogo modais.
 * **[Eventos](/help/implementing/universal-editor/events.md)**: as extensões recebem eventos sobre as ações e seleções do autor na página para responder adequadamente.

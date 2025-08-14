@@ -4,9 +4,9 @@ description: Saiba mais sobre os principais casos de uso do Universal Editor e c
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ Dessa forma, você pode se beneficiar das ferramentas disponíveis no console Si
 
 Se este for seu caso de uso, como uma próxima etapa imediata, consulte os documentos a seguir para obter uma visão geral completa de como começar a usar o Universal Editor no AEM.
 
-1. [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Introdução ao primeiro projeto do Universal Editor no AEM
-1. [Criação de Blocos Instrumentados para uso com o Editor Universal](/help/edge/wysiwyg-authoring/create-block.md) - Saiba como instrumentar blocos para tornar seu conteúdo editável no Editor Universal
-1. [Modelagem de conteúdo para criação no WYSIWYG com Projetos do Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) - Saiba mais sobre os detalhes de como os blocos são estruturados para modelar efetivamente seu conteúdo para uso com o Editor Universal.
+1. [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o Edge Delivery Services](https://www.aem.live/developer/ue-tutorial) - Introdução ao primeiro projeto do Universal Editor no AEM
+1. [Criação de Blocos Instrumentados para uso com o Editor Universal](https://www.aem.live/developer/universal-editor-blocks) - Saiba como instrumentar blocos para tornar seu conteúdo editável no Editor Universal
+1. [Modelagem de conteúdo para criação no WYSIWYG com Projetos do Edge Delivery Services](https://www.aem.live/developer/component-model-definitions) - Saiba mais sobre os detalhes de como os blocos são estruturados para modelar efetivamente seu conteúdo para uso com o Editor Universal.
 
 Depois de ler esses documentos, você pode retornar a esta página para saber mais sobre o caso de uso de criação headless e como o Universal Editor funciona em geral.
 
@@ -65,7 +65,7 @@ O poder do Editor universal é sua capacidade de criar qualquer conteúdo no loc
 O Editor Universal funciona da seguinte maneira.
 
 1. Um desenvolvedor instrumenta o aplicativo ou a página para usar o Editor universal. Essa instrumentação informa ao editor qual conteúdo é editável e como mantê-lo.
-   * Se você seguir a documentação do [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md), suas páginas serão automaticamente instrumentadas.
+   * Se você seguir a documentação do [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com o Edge Delivery Services](https://www.aem.live/developer/ue-tutorial), suas páginas serão automaticamente instrumentadas.
    * Para criação headless, seu aplicativo pode ser facilmente instrumentado.
 1. O autor de conteúdo carrega o Editor universal, que, por sua vez, carrega sua página para edição. Por ser instrumentado, ele sabe qual conteúdo é editável e como deve ser representado e persistente.
 1. O autor de conteúdo edita o conteúdo da página em uma interface intuitiva do WYSIWYG, editando no local.

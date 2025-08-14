@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 21%
@@ -44,7 +44,7 @@ Assista ao vídeo Visão geral da versão de setembro de 2023 que exibe um resum
 
 O Edge Delivery é um novo conjunto de serviços de composição que têm como objetivo maximizar o impacto do conteúdo e gerar resultados mensuráveis para os negócios no ponto de interação com o cliente.
 
-Saiba mais sobre Edge Delivery Services no artigo [aqui](/help/edge/overview.md).
+Saiba mais sobre o Edge Delivery Services no artigo [aqui](/help/edge/overview.md).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,7 +58,7 @@ Agora você pode atribuir o formulário de metadados a uma pasta específica na 
 
 ### Novos recursos na exibição do Administrador {#admin-view-features}
 
-* **Integre o AEM Assets as a Cloud Service com a Criação Baseada em Documento para o Edge Delivery Services**: integre o AEM Assets com a Criação Baseada em Documento para o Edge Delivery Services para permitir que os autores do site [usem imagens disponíveis em repositórios do AEM Assets ao criar documentos no Microsoft Word ou Google Docs](/help/edge/using.md#integrate-assets-edge).
+* **Integrar o AEM Assets as a Cloud Service com Criação Baseada em Documento para o Edge Delivery Services**: integre o AEM Assets com Criação Baseada em Documento para o Edge Delivery Services para permitir que os autores de sites [usem imagens disponíveis em repositórios do AEM Assets ao criar documentos no Microsoft Word ou Google Docs](/help/edge/overview.md).
 
 * **Extrair arquivos ZIP**: capacidade de selecionar arquivos ZIP gerenciados no Experience Manager e [extrair os arquivos diretamente no Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sem baixá-los.
 
@@ -76,17 +76,17 @@ Agora você pode atribuir o formulário de metadados a uma pasta específica na 
 
 * [**Suporte empresarial para o Google reCAPTCHA**](/help/forms/captcha-adaptive-forms-core-components.md): use o Google reCAPTCHA Enterprise em um Formulário adaptável para fornecer proteção aprimorada contra atividades fraudulentas e spam, proporcionando uma experiência mais segura para o usuário. Com a análise de risco avançada e a integração perfeita, os usuários genuínos podem enviar formulários facilmente, enquanto os bots são bloqueados de maneira eficaz.
 
-* [**Adobe Analytics com Automação de Instalação do Experience Cloud para Forms**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md): agora é possível habilitar o Adobe Analytics com Automação de Instalação do Experience Cloud girando alguns botões. Ele permite conectar o AEM Forms as a Cloud Service com tags Experience Platform e o Adobe Analytics para capturar e rastrear as métricas de desempenho de seus formulários publicados.
+* [**Adobe Analytics com Automação de Instalação do Experience Cloud para Forms**](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md): agora é possível habilitar o Adobe Analytics com Automação de Instalação do Experience Cloud com alguns botões. Ela permite conectar o AEM Forms as a Cloud Service com tags da Experience Platform e Adobe Analytics para capturar e rastrear métricas de desempenho para seus formulários publicados.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3424577/enable-adobe-analytics/?quality=12&learn=on)
 
-* [**Modelo de relatório do Adobe Analytics para o Adaptive Forms**](/help/forms/view-understand-aem-forms-analytics-reports.md): o Forms as a Cloud Service fornece um relatório do Adobe Analytics OOTB. Ele ajuda você a entender facilmente o desempenho de seus formulários. As métricas no nível do formulário fornecem um insight sobre o desempenho do formulário em vários indicadores principais de desempenho (KPIs), como representações, visitantes, envios e tempo médio de preenchimento. Ao rastrear o comportamento do usuário e o feedback, você pode identificar áreas do formulário que estão causando confusão e orientar melhorias no design e na funcionalidade do formulário.
+* [**Modelo de relatório do Adobe Analytics para o Adaptive Forms**](/help/forms/view-understand-aem-forms-analytics-reports.md): o Forms as a Cloud Service agora fornece um relatório do Adobe Analytics OOTB. Ele ajuda você a entender facilmente o desempenho de seus formulários. As métricas no nível do formulário fornecem uma insight sobre o desempenho do formulário em vários indicadores-chave de desempenho (KPIs), como representações, visitantes, envios e tempo médio de preenchimento. Ao rastrear o comportamento do usuário e o feedback, você pode identificar áreas do formulário que estão causando confusão e orientar melhorias no design e na funcionalidade do formulário.
 
   ![Relatório do adobe analytics de engajamento do usuário do formulário adaptável](/help/forms/assets/forms-analytics-report.png)
 
 * **[Fragmento de formulário no Adaptive Forms com base nos Componentes principais](/help/forms/adaptive-form-fragments-core-components.md)**: Diga adeus à duplicação, otimize seu inventário digital e melhore a colaboração à medida que você eleva sua experiência de criação de formulários com Fragmentos de formulário. Esses componentes reutilizáveis se integram perfeitamente em vários formulários, simplificando a criação de formulários consistentes e com aparência profissional. Os fragmentos de formulário garantem a reutilização, a padronização e a consistência da marca por meio da funcionalidade &quot;alterar uma vez e refletir em todos os lugares&quot;. Experimente maior capacidade de manutenção e eficiência, já que as atualizações feitas em um local são propagadas automaticamente em todos os formulários que utilizam esses fragmentos.
 
-* **[Etapa do fluxo de trabalho aprimorado do Adobe Sign](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: a etapa do fluxo de trabalho do Adobe Sign foi aprimorada para incluir o seguinte:
+* **[Etapa aprimorada do fluxo de trabalho do Adobe Sign](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: a etapa do fluxo de trabalho do Adobe Sign foi aprimorada para incluir o seguinte:
    * **Autenticação com base em ID do governo para o Adobe Sign**: a autenticação com base em ID do governo da Adobe Acrobat Sign oferece uma camada adicional de verificação, permitindo que os usuários autentiquem sua identidade usando IDs emitidas pelo governo (CNH, identificação nacional, passaporte). Ao usar documentos de identificação confiáveis, esse aprimoramento adiciona um nível extra de confiança ao processo de assinatura, tornando-o ideal para cenários que exigem maior segurança, conformidade e validação do usuário.
 
    * **Trilha de auditoria para documentos do Adobe Sign**: use o recurso de Trilha de auditoria para obter insights detalhados sobre o ciclo de vida dos documentos do Adobe Sign. Com a Trilha de auditoria, agora é possível manter um registro abrangente de todas as ações e interações relacionadas aos documentos. Isso inclui detalhes como quem visualizou, editou ou assinou o documento, além de carimbos de data e hora para cada evento. Esse aprimoramento é fundamental para manter a conformidade, resolver disputas e garantir a integridade de seus contratos digitais.
@@ -101,7 +101,7 @@ Agora você pode atribuir o formulário de metadados a uma pasta específica na 
 
 ### Programa de adoção antecipada {#forms-early-adopter}
 
-* **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de Comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs DocAssurance permitem proteger informações confidenciais ao assinar e criptografar os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
+* **[Proteja seus documentos com as APIs do DocAssurance (Parte das APIs de Comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: as APIs do DocAssurance permitem proteger informações confidenciais ao assinar e criptografar os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
 
   Você pode escrever para `aem-forms-ea@adobe.com` a partir de sua ID de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
 

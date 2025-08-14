@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 1%
+source-wordcount: '422'
+ht-degree: 2%
 
 ---
 
@@ -39,7 +39,7 @@ A interface de usuário do Adobe Experience Manager funciona com as seguintes pl
 
 * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Editor de página](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [Criação baseada em documentos](/help/edge/docs/authoring.md) usando o [Sidekick](/help/edge/docs/sidekick.md)
+* [Criação baseada em documentos](https://www.aem.live/docs/aem-authoring) usando o [Sidekick](https://www.aem.live/docs/sidekick)
 
 Todos os navegadores são testados com o conjunto padrão de plug-ins e complementos.
 
@@ -64,4 +64,4 @@ Todos os navegadores são testados com o conjunto padrão de plug-ins e compleme
 
 O suporte do navegador para sites renderizados pelo AEM depende da implementação de modelos de página, blocos, design e saída de componente do AEM. Portanto, os desenvolvedores que implementam o projeto controlam a compatibilidade do site.
 
-O [modelo do projeto do AEM,](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project) [Componentes principais,](/help/implementing/developing/components/overview.md#aem-core-components) e [site de exemplo do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) são compatíveis com todos os navegadores modernos.
+O [modelo do projeto do AEM,](https://www.aem.live/developer/ue-tutorial#create-github-project) [Componentes principais,](/help/implementing/developing/components/overview.md#aem-core-components) e [site de exemplo do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) são compatíveis com todos os navegadores modernos.

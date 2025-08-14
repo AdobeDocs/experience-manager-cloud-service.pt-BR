@@ -4,9 +4,9 @@ description: Introdução à arquitetura do Adobe Experience Manager as a Cloud 
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '2712'
+source-wordcount: '2711'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 >id="intro_aem_cloudservice_architecture"
 >title="Introdução à arquitetura do AEM as a Cloud Service"
 >abstract="Nesta guia, é possível visualizar a nova arquitetura do AEM as a Cloud Service e compreender as alterações. O AEM virou uma arquitetura dinâmica com um número variável de imagens, portanto é importante reservar um tempo para entender a arquitetura da nuvem."
->additional-url="https://video.tv.adobe.com/v/346185?captions=por_br" text="Visão geral da arquitetura"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Visão geral da arquitetura"
 
 O Adobe Experience Manager (AEM) as a Cloud Service oferece um conjunto de serviços combináveis para a criação e o gerenciamento de experiências de alto impacto.
 
@@ -238,5 +238,5 @@ A arquitetura mais recente do AEM as a Cloud Service apresenta algumas mudanças
    * [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:
    * [Visão geral do AEM as a Cloud Service - com o Edge Delivery Services](/help/edge/overview.md)
-   * [Utilização do Edge Delivery Services](/help/edge/using.md)
-   * [Explore a arquitetura subjacente e as partes importantes do AEM as a Cloud Service com o Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=pt-BR)
+   * [Utilização do Edge Delivery Services](/help/edge/overview.md)
+   * [Explore a arquitetura subjacente e as partes importantes do AEM as a Cloud Service com o Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

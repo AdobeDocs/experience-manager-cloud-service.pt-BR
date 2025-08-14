@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8689041bffbdd6edb048a1ba50f0ebd82ad740e7
+source-git-commit: a36829e621e97de6ca7548ad07bd1b6343dd9af6
 workflow-type: tm+mt
-source-wordcount: '6604'
-ht-degree: 58%
+source-wordcount: '6470'
+ht-degree: 60%
 
 ---
 
@@ -837,7 +837,7 @@ ht-degree: 58%
             + [Criar ação de envio personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Conversão de Forms adaptável com base em componentes de base em formulários baseados em Componentes principais usando a ferramenta utilitário de migração](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Modelos de email no Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [&#x200B;Gerenciar publicação no Experience Manager Forms](/help/forms/manage-publication.md)
+            + [Gerenciar publicação no Experience Manager Forms](/help/forms/manage-publication.md)
             + Introdução ao Editor de regras para o Forms adaptável com base nos Componentes principais{#rule-editor-core-components}
                + [Introdução ao Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components.md)
                + [Interface do usuário do Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1066,50 +1066,7 @@ ht-degree: 58%
    + [Perguntas frequentes](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [Visão geral do Edge Delivery Services](/help/edge/overview.md)
-   + [Utilização do Edge Delivery Services com o AEM](/help/edge/using.md)
-   + [Escolhendo um Método de Criação](/help/edge/authoring-methods.md)
-   + Criação no WYSIWYG {#wysiwyg-authoring}
-      + [Criação de conteúdo do WYSIWYG para o Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
-      + [Publicar conteúdo no Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
-      + [Guia de introdução do desenvolvedor](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
-      + [Criando blocos](/help/edge/wysiwyg-authoring/create-block.md)
-      + [Modelagem de conteúdo](/help/edge/wysiwyg-authoring/content-modeling.md)
-      + [Mapeamento de caminho](/help/edge/wysiwyg-authoring/path-mapping.md)
-      + [Dados em Tabelas e Planilhas](/help/edge/wysiwyg-authoring/tabular-data.md)
-      + [Gerenciamento de dados de taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [Blocos do WYSIWYG e baseados em documento](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-      + [Páginas com DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [Reutilizar código entre sites](/help/edge/wysiwyg-authoring/repoless.md)
-      + [Gerenciamento de vários sites de resposta](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [Ambientes de preparo e produção de respostas](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-      + [Configuração da autenticação do site](/help/edge/wysiwyg-authoring/site-authentication.md)
-      + [Recursos de Sites WIP](/help/edge/wysiwyg-authoring/wip-features.md)
-   + Criação baseada em documento {#document-authoring}
-      + [Criação](/help/edge/docs/authoring.md)
-      + [Metadados em massa](/help/edge/docs/bulk-metadata.md)
-      + [Espaços reservados](/help/edge/docs/placeholders.md)
-      + [Mapa do site](/help/edge/developer/sitemap.md)
-      + [Configuração do SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Slack Bot](/help/edge/docs/slack.md)
-   + Criação de aplicativos {#build}
-      + [Introdução - Tutorial do desenvolvedor](/help/edge/developer/tutorial.md)
-      + [Anatomia de um projeto](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [Bloquear coleção](/help/edge/developer/block-collection.md)
-      + [Planilhas](/help/edge/developer/spreadsheets.md)
-      + [Forms](/help/edge/developer/forms.md)
-      + [Indexação](/help/edge/developer/indexing.md)
-      + [Mantendo 100](/help/edge/developer/keeping-it-100.md)
-      + [Marcação - Seções](/help/edge/developer/markup-sections-blocks.md)
-      + [Favicon](/help/edge/developer/favicon.md)
-      + [Cabeçalhos personalizados](/help/edge/docs/custom-headers.md)
-      + [Práticas recomendadas para desenvolvedores](/help/edge/docs/dev-collab-and-good-practices.md)
-   + Iniciando Aplicativos {#launch}
-      + [Lista de verificação de ativação](/help/edge/docs/go-live-checklist.md)
-      + [Invalidação por push](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
-      + [Configuração do Cloud Worker](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
-      + [Configuração do Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
-      + [Configuração do Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
-      + [Redirecionamentos](/help/edge/docs/redirects.md)
+{#wysiwyg-authoring}
    + Criação de Forms {#build-forms}
       + [Visão geral](/help/edge/docs/forms/overview.md)
       + Criação no WYSIWYG {#universal-editor}
@@ -1151,14 +1108,6 @@ ht-degree: 58%
       + [Configurar envio para o Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [Perguntas frequentes](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [Práticas recomendadas para criar formulários](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
-   + Recursos do Edge Delivery {#resources}
-      + Sidekick {#sidekick}
-         + [Utilização do Sidekick](/help/edge/docs/sidekick.md)
-         + [Instalar extensão](/help/edge/docs/sidekick-extension.md)
-         + [Biblioteca da Sidekick](/help/edge/docs/sidekick-library.md)
-      + [Perguntas frequentes](/help/edge/docs/faq.md)
-      + Ferramentas {#tools}
-         + [Log de auditoria](/help/edge/docs/auditlog.md)
 + Headless {#headless}
    + [O que é um CMS headless?](/help/headless/what-is-headless.md)
    + [Introdução ao AEM Headless](/help/headless/introduction.md)
@@ -1172,14 +1121,14 @@ ht-degree: 58%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação{#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
@@ -1302,7 +1251,7 @@ ht-degree: 58%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
