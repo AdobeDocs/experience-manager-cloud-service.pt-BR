@@ -51,7 +51,7 @@ O substituto mais adequado para o Editor de SPA depende das necessidades dos pro
 
 * **[O Editor Universal](https://www.aem.live/docs/aem-authoring)** é a melhor substituição direta para o Editor SPA.
    * O Editor universal também é um editor visual e foi projetado especificamente para implementações dissociadas, incorporando toda a experiência do Adobe no Editor SPA.
-   * O Universal Editor também foi [lançado para o AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (com a versão 2024.11.05 do AEM 6.5) e, portanto, é compatível com AMS e casos de uso no local, além do Cloud Services.
+   * O Universal Editor também foi [lançado para o AEM 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (com a versão 2024.11.05 do AEM 6.5) e, portanto, é compatível com AMS e casos de uso no local, além do Cloud Services.
 * **[O Editor de Fragmento de Conteúdo](/help/assets/content-fragments/content-fragments-managing.md)** é uma alternativa para aqueles que preferem um editor baseado em formulário.
    * O Editor de fragmento de conteúdo é mais adequado quando o conteúdo é estruturado como fragmentos de conteúdo do que como páginas.
 
