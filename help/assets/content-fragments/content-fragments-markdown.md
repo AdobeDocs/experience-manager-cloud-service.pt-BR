@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: ea85381d63954af3093c34f612babd953c466e1e
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 77%
+source-wordcount: '595'
+ht-degree: 75%
 
 ---
 
@@ -136,7 +136,7 @@ Você pode ter citações de bloco aninhadas. Por exemplo:
 
 É possível criar listas ordenadas e não ordenadas.
 
-Para criar uma lista não ordenada, use o símbolo &ast; antes dos itens na lista. Por exemplo:
+Para criar uma lista não ordenada, use o símbolo &amp;ast; antes dos itens na lista. Por exemplo:
 
     `* item in list`
 
@@ -172,7 +172,7 @@ Para criar uma lista ordenada, adicione os números, seguidos de um ponto, antes
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Para indicar um trecho de código, envolva-o com aspas invertidas (&grave;). Ao contrário de um bloco de código pré-formatado, um trecho de código mostra o código dentro de um parágrafo normal.
+Para indicar um trecho de código, envolva-o com aspas invertidas (`` ` ``). Ao contrário de um bloco de código pré-formatado, um trecho de código mostra o código dentro de um parágrafo normal.
 
 Por exemplo:
 
