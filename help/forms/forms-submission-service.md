@@ -380,8 +380,8 @@ Tipo de conteúdo: application/json
 x-adobe-routing: tier=live,bucket=main—your-repo—your-org
 
 Corpo (JSON):
-{
-&quot;data&quot;: {
+&lbrace;
+&quot;data&quot;: &lbrace;
 &quot;startDate&quot;: &quot;10/01/2025&quot;,
 &quot;endDate&quot;: &quot;25/01/2025&quot;,
 &quot;destination&quot;: &quot;Australia&quot;,
@@ -392,8 +392,8 @@ Corpo (JSON):
 &quot;age&quot;: &quot;35&quot;,
 &quot;subscribe&quot;: nulo,
 &quot;email&quot;: &quot;mary@gmail.com&quot;
-}
-}
+&rbrace;
+&rbrace;
 &quot;
 
 **Resposta esperada:**
