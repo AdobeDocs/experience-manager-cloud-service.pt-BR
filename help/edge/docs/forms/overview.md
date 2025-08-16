@@ -4,7 +4,7 @@ description: Crie e forneça formulários de alto desempenho no Adobe Experience
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Ao final, você poderá escolher o método de criação correto, entender as op�
 ### Editor universal
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 O [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) é uma ferramenta de criação visual, do tipo arrastar-e-soltar, para profissionais de marketing e designers que combina velocidade e poder de nível empresarial:
@@ -121,7 +121,6 @@ O diagrama a seguir ilustra como você pode editar formulários no Microsoft Exc
 
 
 Agora você está pronto para criar seu primeiro formulário de alto desempenho com o AEM Edge Delivery Services.
-
 
 <!--
 ## Start creating forms
