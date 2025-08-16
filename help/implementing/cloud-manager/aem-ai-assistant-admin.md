@@ -6,26 +6,26 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ab8fefe18e43c1fe937d0d16df65b6137fc8a292
+source-git-commit: a216777f6d5bb3dd1afe5d7cdb88ec41435c0500
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '657'
 ht-degree: 3%
 
 ---
 
-# Configurar o AEM AI Assistant - Configuração do administrador {#aem-ai-asst-admin-setup}
+# Configurar o assistente de IA no Adobe Experience Manager {#aem-ai-asst-admin-setup}
 
-Um Administrador deve definir o acesso, as permissões e as configurações para que os usuários em sua organização possam usar os recursos no Assistente do AEM AI. Este artigo descreve como ativar o Assistente de IA para sua organização, configurar as credenciais necessárias e salvar as alterações de configuração.
+Um administrador precisa definir o acesso, as permissões e as configurações para que os usuários em sua organização possam usar os recursos do AEM (Adobe Experience Manager) AI Assistant. Este artigo descreve como ativar o Assistente de IA para sua organização, configurar as credenciais necessárias e salvar as alterações de configuração.
 
 **Visão geral do processo de configuração do AEM AI Assistant**
 
 O processo de configuração consiste nas seguintes etapas:
 
-1. Crie um novo perfil de produto no Adobe Admin Console.
-1. Ative a permissão &quot;Conhecimento de produto do assistente de IA&quot;.
-1. Criar ou usar um grupo de usuários existente.
-1. Adicionar usuários ao grupo de usuários.
-1. Atribua o perfil de produto ao grupo de usuários.
+1. [Crie um novo perfil de produto no Adobe Admin Console](#create-profile).
+1. [Habilitar a permissão Conhecimento de Produto do Assistente de IA](#enable-permission).
+1. [Criar um novo grupo de usuários (ou usar um grupo de usuários existente)](#create-user-group).
+1. [Adicionar usuários ao grupo de usuários](#add-users).
+1. [Atribuir o perfil de produto ao grupo de usuários](#assign-product-profile).
 
 **Pré-requisitos**
 
@@ -36,9 +36,9 @@ Antes de começar, verifique se os seguintes pré-requisitos foram atendidos:
 
 ## 1 - Criar um novo perfil de produto no Adobe Admin Console{#create-profile}
 
-1. Siga as instruções detalhadas em [Criar um novo perfil de produto no Adobe Admin Console](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/ui/create-profile) localizado na documentação do Experience Platform.
+1. Siga as instruções detalhadas em [Criar um novo perfil de produto no Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile), encontradas na documentação do Experience Platform.
 
-1. Ao criar o novo perfil de produto, use os exemplos a seguir dos valores que você pode usar para o Assistente de IA.
+1. Ao criar o novo perfil de produto, você pode usar os seguintes valores sugeridos para o Assistente de IA.
 
    | Campo de texto | Valor sugerido |
    | --- | --- |
@@ -50,11 +50,11 @@ Antes de começar, verifique se os seguintes pré-requisitos foram atendidos:
 
 
 
-## 2 - Ativar a permissão &quot;Conhecimento de produto do AI Assistant&quot;{#enable-permission}
+## 2 - Ativar a permissão de conhecimento do produto AI Assistant{#enable-permission}
 
 O processo para atribuir permissões personalizadas a perfis de produtos segue o fluxo de trabalho padrão de permissões personalizadas do Adobe Cloud Manager.
 
-Artigo de referência: [Atribuir permissões personalizadas ao novo perfil de produto](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+Artigo de referência: [Atribuir permissões personalizadas ao novo perfil de produto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. Na Admin Console, clique no nome do perfil de produto recém-criado (`AEM AI Assistant`)
 
@@ -68,7 +68,7 @@ Artigo de referência: [Atribuir permissões personalizadas ao novo perfil de pr
 
 1. À direita do nome da permissão, clique em ![Ícone de lápis ou ícone Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
 
-1. Na página **Editar Permissões para o Assistente de IA**, ative a opção **Conhecimento de Produto do Assistente de IA**.
+1. Na página **Editar Permissões do Assistente de IA**, ative a opção **Conhecimento de Produto do Assistente de IA**.
 
    ![Página Editar Permissões para a opção de alternância Conhecimento de Produto do Assistente de IA](/help/implementing/cloud-manager/assets/ai-assistant-prod-knowledge.png)
 
@@ -77,7 +77,7 @@ Artigo de referência: [Atribuir permissões personalizadas ao novo perfil de pr
    O perfil de produto agora tem a permissão Assistente de IA Conhecimento do produto ativada.
 
 
-## 3 - Criar um grupo de usuários (ou usar um grupo de usuários existente){#create-user-group}
+## 3 - Criar um novo grupo de usuários (ou usar um grupo de usuários existente){#create-user-group}
 
 1. Siga uma das seguintes opções:
 
@@ -85,7 +85,7 @@ Artigo de referência: [Atribuir permissões personalizadas ao novo perfil de pr
 
 >[!TAB Criar um novo grupo de usuários]
 
-1. No Admin Console, clique em **Usuários** > **Grupos de usuários**.
+1. Na Admin Console, clique em **Usuários** > **Grupos de usuários**.
 
    ![Grupos de usuários](/help/implementing/cloud-manager/assets/ai-assistant-user-groups.png)
 
@@ -126,7 +126,7 @@ Você pode usar um grupo de usuários existente do AEM se ele atender aos requis
 
    ![A página de grupos de usuários do AEM AI Assistant, mostrando a guia Usuários e o botão Adicionar usuários](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
 
-1. Na página **Adicionar usuários a este grupo de usuários**, procure e selecione os usuários que precisam de acesso ao Assistente do AEM AI.
+1. Na página **`Add users to this user group`**, pesquise e selecione os usuários que precisam de acesso ao Assistente do AEM AI.
 
    ![Adicionar usuários a esta página de grupo de usuários](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
@@ -138,7 +138,7 @@ Você pode usar o recurso de upload em massa na Admin Console.
 
 1. Prepare um arquivo CSV com informações do usuário.
 
-1. Use a opção **Adicionar usuários por CSV** para uma adição eficiente em massa.
+1. Use a opção **`Add users by CSV`** para uma adição em massa eficiente.
 
 >[!ENDTABS]
 
