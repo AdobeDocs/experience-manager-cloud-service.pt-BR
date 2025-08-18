@@ -136,7 +136,7 @@ Você pode usar um grupo de usuários existente do AEM se ele atender aos requis
    ![Adicionar usuários a esta página de grupo de usuários](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
 1. No canto inferior direito da página, clique em **Salvar**.
-1. Agora, atribua o perfil de produto ao grupo de usuários](#assign-product-profile).
+1. Agora, atribua o perfil de produto ao grupo de usuários&rbrack;(#assign-product-profile).
 
 >[!TAB Adicionar usuários em massa]
 
@@ -144,7 +144,7 @@ Você pode usar o recurso de upload em massa na Admin Console.
 
 1. Prepare um arquivo CSV com informações do usuário.
 1. Use a opção **`Add users by CSV`** para uma adição em massa eficiente.
-1. Agora, atribua o perfil de produto ao grupo de usuários](#assign-product-profile).
+1. Agora, atribua o perfil de produto ao grupo de usuários&rbrack;(#assign-product-profile).
 
 >[!ENDTABS]
 
