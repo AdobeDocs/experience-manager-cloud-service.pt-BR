@@ -4,9 +4,9 @@ description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Mana
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
 workflow-type: tm+mt
-source-wordcount: '5981'
+source-wordcount: '5984'
 ht-degree: 73%
 
 ---
@@ -109,7 +109,7 @@ Com o GraphQL, é possível executar consultas para retornar:
 
 * Uma **[lista de entradas](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-O AEM fornece recursos para converter consultas (de ambos os tipos) em [consultas persistentes, que podem ser armazenadas em cache](/help/headless/graphql-api/persisted-queries.md) pelo Dispatcher e CDN.
+O AEM fornece recursos para converter consultas (ambos os tipos) em [Consultas Persistentes, que podem ser armazenadas em cache](/help/headless/graphql-api/persisted-queries.md) pela Dispatcher e pela CDN.
 
 ### Práticas recomendadas de consulta GraphQL (Dispatcher e CDN) {#graphql-query-best-practices}
 
@@ -375,7 +375,7 @@ Para consultar metadados:
 >[!NOTE]
 >
 >**Diferença entre metadados normais e de matriz**
->&#x200B;>Lembre-se que `StringMetadata` e `StringArrayMetadata` se referem ao que é armazenado no repositório, não a como você os recupera.
+>>Lembre-se que `StringMetadata` e `StringArrayMetadata` se referem ao que é armazenado no repositório, não a como você os recupera.
 >
 >Por exemplo, ao chamar o campo `stringMetadata`, você receberia uma matriz de todos os metadados que foram armazenados no repositório como um `String`; e ao chamar `stringArrayMetadata`, você receberia uma matriz de todos os metadados que foram armazenados no repositório como `String[]`.
 
@@ -1171,7 +1171,7 @@ As limitações atuais são:
 
   >[!NOTE]
   >
-  >A URL completa precisa ser construída no lado do cliente, com base na [API de entrega de ativos](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+  >A URL completa precisa ser construída no lado do cliente, com base na [API de entrega de ativos](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 * Apenas *Aprovados* ativos estarão disponíveis para referência a partir dos repositórios remotos
 * Se um ativo referenciado for removido do repositório remoto, isso resultará em uma referência quebrada ao ativo do fragmento de conteúdo.
