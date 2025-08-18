@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
+source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 12%
@@ -95,7 +95,7 @@ Para definir essas configurações, determine se um registro `CNAME` ou apex dev
 >Para CDNs gerenciadas pela Adobe, ao usar certificados DV (Domain Validation, validação de domínio), somente sites com validação ACME são permitidos.
 
 
-### Configurar DNS{#config-dns}
+## Configurar DNS{#config-dns}
 
 >[!WARNING]
 >
@@ -107,7 +107,7 @@ Certifique-se de atender aos seguintes requisitos *antes* de configurar seus reg
 * Ser capaz de editar os registros DNS do domínio de sua organização ou entrar em contato com a pessoa apropriada que pode fazer isso.
 * Você já verificou o nome de domínio personalizado configurado, conforme descrito no documento [Verificando o Status do Nome de Domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
-#### Registro CNAME {#adobe-managed-cert-cname-record}
+### Registro CNAME {#adobe-managed-cert-cname-record}
 
 Um nome canônico ou registro CNAME é um tipo de registro DNS que mapeia um nome de alias a um nome de domínio verdadeiro ou canônico. Os registros CNAME normalmente são usados para mapear um subdomínio como `www.example.com` ao domínio que hospeda o conteúdo desse subdomínio.
 
@@ -117,7 +117,7 @@ Faça logon no provedor de serviços DNS e crie um registro `CNAME` para apontar
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### Registro APEX {#adobe-managed-cert-apex-record}
+### Registro APEX {#adobe-managed-cert-apex-record}
 
 Um domínio apex é um domínio personalizado que não contém um subdomínio, como `example.com`. Um domínio apex é configurado com um registro `A`, `ALIAS` ou `ANAME` por meio do provedor de DNS. Domínios apex devem apontar para endereços IP específicos.
 
