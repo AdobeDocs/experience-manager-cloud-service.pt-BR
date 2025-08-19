@@ -37,7 +37,7 @@ O complemento CIF é fornecido como um arquivo de recursos Sling. O arquivo zip 
 >[!TIP]
 >
 >**Novo no AEM as a Cloud Service?**
->>Consulte [um guia mais detalhado para configurar um ambiente de desenvolvimento local usando o AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+>&#x200B;>Consulte [um guia mais detalhado para configurar um ambiente de desenvolvimento local usando o AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
 ### Software necessário {#required-software}
 
