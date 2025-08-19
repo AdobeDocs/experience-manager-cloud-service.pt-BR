@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 83c3c9189fe7885ee260eceaea0d53ca3e0f4b4a
+source-git-commit: 1aa9e870df5eae6045bb7fb082d084e9b6821e55
 workflow-type: tm+mt
-source-wordcount: '6486'
+source-wordcount: '6497'
 ht-degree: 59%
 
 ---
@@ -1025,47 +1025,52 @@ ht-degree: 59%
    + [Perguntas frequentes sobre o Screens as a Cloud Service](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [Introdução e visão geral](/help/commerce-cloud/introduction.md)
-   + [Introdução ao CIF](/help/commerce-cloud/cif-introduction.md)
-   + [Alterações importantes no AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
-   + Commerce Jornada {#journeys}
-      + Jornada do autor de conteúdo {#author}
-         + [Jornada de autor de conteúdo do AEM Content and Commerce](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
-         + [Introdução à criação da CIF](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
-         + [Gerenciar páginas e modelo do catálogo de produtos](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
-         + [Criação de experiências de catálogo de produtos em estágios](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
-         + [Criação de experiências de produto](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
-   + Integrações {#integrations}
-      + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-      + [Componente CIF do Live Search](/help/commerce-cloud/integrating/live-search-plp.md)
-      + [Componente Popover CIF do Live Search](/help/commerce-cloud/integrating/live-search-popover.md)
-      + [Solução comercial de terceiros](/help/commerce-cloud/integrating/third-party.md)
-      + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
-   + AEM Storefront {#storefront}
-      + [Introdução](/help/commerce-cloud/getting-started.md)
-      + Criação {#authoring}
-         + [Experiências comerciais](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
-         + [Cockpit do produto](/help/commerce-cloud/authoring/product-cockpit.md)
-         + [Uso de vários modelos](/help/commerce-cloud/authoring/multi-template-usage.md)
-         + [Enriquecer os dados do produto com o conteúdo associado](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
-         + [Recomendações do produto](/help/commerce-cloud/authoring/product-recommendations.md)
-      + Administração {#administering}
-         + [Configuração de várias lojas](/help/commerce-cloud/configuring/multi-store-setup.md)
-         + [Configuração de sistemas de comércio múltiplos](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
-         + [Configurar URLs para SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
-         + [Opções de armazenamento em cache](/help/commerce-cloud/configuring/caching.md)
-         + [Cabeçalhos HTTP personalizados](/help/commerce-cloud/configuring/custom-http-headers.md)
-         + [Configuração do carrinho de compras e do Dispatcher](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
-         + [Component &amp; GraphQL Clear Cache](/help/commerce-cloud/configuring/clear-cache.md)
-      + Desenvolver {#developing}
-         + [Desenvolver com o SDK do AEM Cloud Service](/help/commerce-cloud/develop.md)
-         + [Alterar estilo de componentes da CIF](/help/commerce-cloud/customizing/style-cif-component.md)
-         + [Personalizar componentes da CIF](/help/commerce-cloud/customizing/customize-cif-components.md)
-         + [Usar seletores de catálogo da CIF](/help/commerce-cloud/customizing/use-cif-pickers.md)
-         + [Atributos personalizados para o Carrossel de produtos do CIF](/help/commerce-cloud/customizing/product-carousel.md)
-         + [Metadados JSON-LD](/help/commerce-cloud/customizing/json-ld.md)
-   + [PWA Studio do Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
-   + [Migração](/help/commerce-cloud/migration.md)
-   + [Perguntas frequentes](/help/commerce-cloud/faq.md)
+   + Edge Delivery Services Storefront {#edge-storefront}
+      + [Introdução](/help/commerce-cloud/edge-storefront/introduction.md)
+   + Loja de terceiros {#thrid-party-storefront}
+      + [Introdução](/help/commerce-cloud/third-party-storefront/introduction.md)
+   + CIF Storefront {#cif-storefront}
+      + [Introdução ao CIF](/help/commerce-cloud/cif-storefront/introduction.md)
+      + [Alterações importantes no AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/cif-storefront/changes.md)
+      + Commerce Jornada {#journeys}
+         + Jornada do autor de conteúdo {#author}
+            + [Jornada de autor de conteúdo do AEM Content and Commerce](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/overview.md)
+            + [Introdução à criação da CIF](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md)
+            + [Gerenciar páginas e modelo do catálogo de produtos](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+            + [Criação de experiências de catálogo de produtos em estágios](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
+            + [Criação de experiências de produto](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
+      + Integrações {#integrations}
+         + [Adobe Commerce](/help/commerce-cloud/cif-storefront/integrating/magento.md)
+         + [Componente CIF do Live Search](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md)
+         + [Componente Popover CIF do Live Search](/help/commerce-cloud/cif-storefront/integrating/live-search-popover.md)
+         + [Solução comercial de terceiros](/help/commerce-cloud/cif-storefront/integrating/third-party.md)
+         + [Experience Platform](/help/commerce-cloud/cif-storefront/integrating/aep.md)
+      + AEM Storefront {#storefront}
+         + [Introdução](/help/commerce-cloud/cif-storefront/getting-started.md)
+         + Criação {#authoring}
+            + [Experiências comerciais](/help/commerce-cloud/cif-storefront/authoring/authoring-commerce-experiences.md)
+            + [Cockpit do produto](/help/commerce-cloud/cif-storefront/authoring/product-cockpit.md)
+            + [Uso de vários modelos](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
+            + [Enriquecer os dados do produto com o conteúdo associado](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md)
+            + [Recomendações do produto](/help/commerce-cloud/cif-storefront/authoring/product-recommendations.md)
+         + Administração {#administering}
+            + [Configuração de várias lojas](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
+            + [Configuração de sistemas de comércio múltiplos](/help/commerce-cloud/cif-storefront/configuring/multiple-commerce-systems-setup.md)
+            + [Configurar URLs para SEO](/help/commerce-cloud/cif-storefront/configuring/advanced-url-configuration.md)
+            + [Opções de armazenamento em cache](/help/commerce-cloud/cif-storefront/configuring/caching.md)
+            + [Cabeçalhos HTTP personalizados](/help/commerce-cloud/cif-storefront/configuring/custom-http-headers.md)
+            + [Configuração do carrinho de compras e do Dispatcher](/help/commerce-cloud/cif-storefront/configuring/shopping-cart-dispatcher.md)
+            + [Component &amp; GraphQL Clear Cache](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
+         + Desenvolver {#developing}
+            + [Desenvolver com o SDK do AEM Cloud Service](/help/commerce-cloud/cif-storefront/develop.md)
+            + [Alterar estilo de componentes da CIF](/help/commerce-cloud/cif-storefront/customizing/style-cif-component.md)
+            + [Personalizar componentes da CIF](/help/commerce-cloud/cif-storefront/customizing/customize-cif-components.md)
+            + [Usar seletores de catálogo da CIF](/help/commerce-cloud/cif-storefront/customizing/use-cif-pickers.md)
+            + [Atributos personalizados para o Carrossel de produtos do CIF](/help/commerce-cloud/cif-storefront/customizing/product-carousel.md)
+            + [Metadados JSON-LD](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+      + [PWA Studio do Adobe Commerce](/help/commerce-cloud/cif-storefront/pwa-studio/getting-started.md)
+      + [Migração](/help/commerce-cloud/cif-storefront/migration.md)
+      + [Perguntas frequentes](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [Visão geral do Edge Delivery Services](/help/edge/overview.md)
 {#wysiwyg-authoring}
@@ -1123,14 +1128,14 @@ ht-degree: 59%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação{#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
@@ -1254,7 +1259,7 @@ ht-degree: 59%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)

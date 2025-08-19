@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 11%
@@ -19,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo Visão geral da versão de abril de 2025 que exibe um resumo dos recursos adicionados na versão 2025.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464007?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -65,7 +65,7 @@ Além disso, os clientes que usam o AEM 6.5 devem estar cientes de que a pilha d
 
 A guia Largura de banda no painel de relatórios do Dynamic Media Classic não é mais compatível desde abril de 2025.
 
-Consulte [Largura de Banda e Armazenamento, Tipos de relatórios](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+Consulte [Largura de Banda e Armazenamento, Tipos de relatórios](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 ## Novos recursos no Assets View {#new-features-assets-view}
 
@@ -112,8 +112,8 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 ### Aprimoramentos {#enhancements-cif}
 
 * Adição da seleção de variante de produto para o tipo de dados de referência de produto CIF
-* **Experimental**: [JSON+LD em Componentes Principais do CIF em PDPs](/help/commerce-cloud/customizing/json-ld.md)
-* **Experimental**: [a capacidade do CIF de limpar o cache](/help/commerce-cloud/configuring/clear-cache.md)
+* **Experimental**: [JSON+LD em Componentes Principais do CIF em PDPs](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+* **Experimental**: [a capacidade do CIF de limpar o cache](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
 
 ### Correções de erros {#bug-fixes-cif}
 
@@ -127,7 +127,7 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguem a especificação OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação são geradas pela criação de projetos do Adobe Developer Console e oferecem suporte a OAuth de servidor para servidor, aplicativo da Web e aplicativo de página única (SPA).
 
-[Consulte a lista completa](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) de APIs baseadas em OpenAPI, [saiba mais](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustre a configuração e o uso.
+[Consulte a lista completa](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) de APIs baseadas em OpenAPI, [saiba mais](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustre a configuração e o uso.
 
 Assista a este vídeo para saber como configurar uma API autenticada para uso posterior:
 
@@ -198,7 +198,7 @@ Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@a
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

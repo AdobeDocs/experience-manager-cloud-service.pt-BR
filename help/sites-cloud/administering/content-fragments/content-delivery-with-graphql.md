@@ -5,10 +5,10 @@ feature: Content Fragments, GraphQL API
 role: Developer, Architect
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 95%
+source-wordcount: '736'
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ Isso é feito usando fragmentos de conteúdo em conjunto com a API GraphQL do AE
 >
 >O GraphQL é usado atualmente em dois cenários (separados) no Adobe Experience Manager (AEM) as a Cloud Service:
 >
->* [O AEM Commerce consome dados de uma plataforma de comércio por meio do GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [O AEM Commerce consome dados de uma plataforma de comércio via GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* [Fragmentos de conteúdo do AEM trabalham em conjunto com a API GraphQL do AEM (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos](/help/headless/graphql-api/content-fragments.md).
 
 ## CMS headless {#headless-cms}
@@ -39,7 +39,7 @@ Um sistema de gerenciamento de conteúdo (CMS) headless é um sistema exclusivam
 
 Em termos de criação de fragmentos de conteúdo no AEM, isso significa que:
 
-* É possível usar fragmentos de conteúdo para criar um conteúdo que não é inicialmente destinado a ser publicado diretamente (1:1) em páginas formatadas.
+* Você pode usar Fragmentos de conteúdo para criar conteúdo que não seja inicialmente destinado a ser publicado diretamente (1:1) em páginas formatadas.
 
 * O conteúdo dos fragmentos de conteúdo será estruturado de maneira predeterminada, de acordo com os Modelos de fragmento de conteúdo. Isso simplifica o acesso para os seus aplicativos, que processarão ainda mais seu conteúdo.
 
@@ -103,7 +103,7 @@ A **[Referência do fragmento](/help/sites-cloud/administering/content-fragments
 
 ## Análise da estrutura do fragmento de conteúdo {#analyzing-content-fragments-structure}
 
-Para ajudar na análise, o AEM fornece vários métodos de visualização da estrutura dos fragmentos no [editor de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md).
+Para ajudar na análise, o AEM fornece vários métodos de exibição da estrutura dos fragmentos no [editor de Fragmento de Conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 Consulte [Analisando a estrutura do fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/analysis.md) para obter mais detalhes:
 

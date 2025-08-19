@@ -4,7 +4,7 @@ description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Mana
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 73%
@@ -28,7 +28,7 @@ Usar a API GraphQL no AEM permite a entrega eficiente dos Fragmentos de conteúd
 >
 >O GraphQL é usado atualmente em dois cenários (separados) no Adobe Experience Manager (AEM) as a Cloud Service:
 >
->* [O AEM Commerce consome dados de uma plataforma do Commerce por meio do GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [O AEM Commerce consome dados de uma plataforma Commerce via GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* Fragmentos de conteúdo do AEM trabalham em conjunto com a API GraphQL do AEM (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos.
 
 >[!NOTE]
@@ -375,7 +375,7 @@ Para consultar metadados:
 >[!NOTE]
 >
 >**Diferença entre metadados normais e de matriz**
->&#x200B;>Lembre-se que `StringMetadata` e `StringArrayMetadata` se referem ao que é armazenado no repositório, não a como você os recupera.
+>>Lembre-se que `StringMetadata` e `StringArrayMetadata` se referem ao que é armazenado no repositório, não a como você os recupera.
 >
 >Por exemplo, ao chamar o campo `stringMetadata`, você receberia uma matriz de todos os metadados que foram armazenados no repositório como um `String`; e ao chamar `stringArrayMetadata`, você receberia uma matriz de todos os metadados que foram armazenados no repositório como `String[]`.
 
@@ -791,8 +791,8 @@ A estrutura e a sintaxe são:
 * `size`: uma subestrutura de dimensão; se a largura ou a altura for omitida, elas serão usadas como o mesmo valor
    * `width`: a largura da dimensão
    * `height`: a altura da dimensão
-* `rotation`: uma lista discriminada de todas as rotações compatíveis: R90, R180, R270
-* `flip`: uma lista discriminada de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
+* `rotation`: uma enumeração de todas as rotações compatíveis: R90, R180, R270
+* `flip`: uma enumeração de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: um número inteiro entre 1 e 100 que indica a porcentagem da qualidade da imagem
 * `width`: um número inteiro que define a largura da imagem de saída, mas ignorado pelo gerador de imagens
 
