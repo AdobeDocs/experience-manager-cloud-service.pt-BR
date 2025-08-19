@@ -50,7 +50,7 @@ Dados dinâmicos, como preço ou inventário, não são armazenados em cache no 
 
 ## &#x200B;9. Como a invalidação de cache para o AEM Dispatcher funciona com o AEM e o commerce? {#faq-9}
 
-A Adobe recomenda configurar a invalidação do cache com base em TTL para páginas armazenadas em cache na Dispatcher. Para obter informações dinâmicas, como preço ou estoque, a Adobe recomenda renderizar os dados no lado do cliente. Para obter mais informações sobre a invalidação do cache com base em TTL, consulte [Otimização do cache do Dispatcher.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)
+A Adobe recomenda configurar a invalidação do cache com base em TTL para páginas armazenadas em cache na Dispatcher. Para obter informações dinâmicas, como preço ou estoque, a Adobe recomenda renderizar os dados no lado do cliente. Para obter mais informações sobre a invalidação do cache com base em TTL, consulte [Otimização do cache do Dispatcher.](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=pt-BR)
 
 ## &#x200B;10. Há alguma recomendação sobre a pesquisa unificada de conteúdo no AEM com o Commerce? {#faq-10}
 
