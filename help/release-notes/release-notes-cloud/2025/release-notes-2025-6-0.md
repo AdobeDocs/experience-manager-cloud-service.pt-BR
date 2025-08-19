@@ -3,10 +3,11 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.6.0.
 feature: Release Information
 role: Admin
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+exl-id: 6bd35c41-4caf-481c-8cf5-b739307e70da
+source-git-commit: 92077a34aa02daf177ca760dafca1a6190a8acb8
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 12%
+source-wordcount: '1363'
+ht-degree: 14%
 
 ---
 
@@ -18,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -32,15 +33,11 @@ A data de lançamento da versão atual (2025.6.0) do [!DNL Adobe Experience Mana
 
 Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-notes/maintenance/latest.md).
 
-<!-- 
+## Vídeo da versão {#release-video}
 
-## Release Video {#release-video}
+Assista ao vídeo de visão geral da versão de junho de 2025 para ver um resumo dos recursos adicionados na versão 2025.6.0:
 
-Have a look at the June 2025 Release Overview video for a summary of the features added in the 2025.6.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440925?quality=12&captions=por_br)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3470878?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -181,7 +178,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 280e02ba0ace1fe123fd5112a982c6434fd4d499
+source-git-commit: 90e92cfb15a6dfe5a8a474996f52c8a0c689f5e6
 workflow-type: tm+mt
-source-wordcount: '1619'
-ht-degree: 6%
+source-wordcount: '607'
+ht-degree: 18%
 
 ---
 
@@ -16,138 +16,71 @@ ht-degree: 6%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 21772 {#21772}
+## Versão 21994 {#21994}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21772, lançada publicamente em quinta-feira, 6 de agosto de 2025. A versão de manutenção anterior era 21706.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21994, lançada publicamente em quarta-feira, 19 de agosto de 2025. A versão de manutenção anterior era 21772.
 
-A ativação de recursos do 2025.8.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.8.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Novos recursos  {#new-features-21772}
+### Novos recursos  {#new-features-21994}
 
-* SITES-30049: adição de um novo endpoint para recuperar as cópias de idioma de um fragmento de conteúdo por sua UUID.
+Nenhum.
 
-### Aprimoramentos {#enhancements-21772}
+### Aprimoramentos {#enhancements-21994}
 
-* CQ-4358722 : resolvidos problemas de localização causados por códigos de localidade diferentes entre o Java 11 e o Java 17.
-* FORMS-19624: Comunicações interativas (IC) ativadas. Ele permite que as organizações forneçam comunicações personalizadas sob demanda — como demonstrativos, faturas e correspondência — combinando modelos estruturados com dados dinâmicos. Com recursos como design de modelo baseado na Web, fragmentos de conteúdo reutilizáveis, variações orientadas por regras e integração de dados contínua, a IC permite comunicações consistentes e escaláveis com o cliente em todos os canais.
-* FORMS-19587, FORMS-17107, FORMS-19591, FORMS-19582, FORMS-20129, FORMS-20002, FORMS-19593,FORMS-20655, FORMS-19583, FORMS-18024, FORMS-19581: As seguintes melhorias foram feitas para o Editor de regras adaptáveis do Forms:
-   * O método `validate` na lista de funções agora pode validar painéis, campos e formulários.
-   * Análise de função personalizada do lado do cliente aprimorada para suportar recursos ES10+ e importações estáticas.
-   * Adição de um botão pronto para uso (OOTB) &quot;Baixar documento de registro (DoR)&quot; no editor de regras.
-   * Adição de suporte para variáveis dinâmicas nas regras.
-   * Ativação da criação de regras com base em eventos personalizados.
-   * As regras para painéis repetíveis agora são executadas no contexto correto, em vez de somente na última instância do painel.
-   * Agora, as regras podem ser acionadas com base em parâmetros de consulta, parâmetros UTM e parâmetros do navegador.
-   * Adição de suporte para scripts de função personalizada específicos do formulário no EDS (Experience Data Store).
-   * Adicionado suporte para o uso de `EVENT_PAYLOAD` na ação &quot;Navegar para&quot; no manipulador de sucesso do editor de regras.
-   * As chamadas de função compatíveis nos parâmetros de entrada no editor de regras e as regras garantidas não serão salvas se algum parâmetro necessário estiver ausente na chamada de função.
-   * Regras quebradas destacadas na interface do editor de regras.
-* FORMS-18450: o reCAPTCHA V2 (incluindo o reCAPTCHA invisível) agora é mais fácil de configurar e usar no Adaptive Forms. A configuração agora é gerenciada em um único local, simplificando a ativação da proteção contra spam em seus formulários.
-* FORMS-18385: adição de suporte para geração AFP a partir de XDP e dados no AEM Forms por meio do serviço de saída.
-* FORMS-17789: adição de um botão pronto para uso no editor de regras para baixar o Documento de registro (DoR).
-* FORMS-20313, FORMS-2896: adição de suporte para a propriedade `dorExclude` para desabilitar recursos específicos em formulários baseados em componentes principais.
-* FORMS-20262: tratou anexos de arquivo inválidos (0 byte) no lado do cliente.
-* FORMS-18347: Melhoria do registro do editor Adaptive Forms para componentes proxy de contêineres de formulário ausentes.
-* FORMS-16205: componentes desativados excluídos do Documento de registro (DoR) nos formulários baseados em componentes principais.
-* FORMS-10836: Alteração da orientação das propriedades da página principal no Documento de registro (DoR) para idiomas da direita para a esquerda.
-* SITES-33025: Abra um novo Editor de CF pelo ID em vez do caminho.
-* SITES-32741: atualização do acionador de referências de página do fragmento de contexto de forma assíncrona.
-* SITES-32087: GraphQL: adicionar suporte para `_ignoreCase` em StringArray.
-* SITES-12211: desempenho aprimorado no editor de modelo
-* SITES-32861: melhoria de desempenho para a criação de live copy por meio do processamento fragmentado.
-* SITES-21383: otimização de desempenho para operações de exclusão de inicialização de fragmento de conteúdo.
-* SITES-31165: aprimoramento de desempenho ao dividir as operações de implantação em partes gerenciáveis.
-* SITES-21353: melhoria do desempenho da consulta para inicializações de Fragmento de conteúdo usando a indexação de banco de dados.
-* SITES-30495: aprimoramento para suportar referências de fragmento baseadas em UUID em inicializações de fragmentos de conteúdo.
-* SITES-32151: aprimoramento da API que expõe a funcionalidade de propriedade do contêiner.
-* SITES-26849: ajusta as referências anteriores quando uma variação de fragmento de conteúdo é movida ou excluída.
-* SITES-31846: adicione a opção para copiar/colar o fragmento raiz e as referências na mesma pasta para a operação de cópia de árvore.
-* SITES-30241: Ajuste as Referências localizadas em um campo de texto longo ao mover, renomear ou excluir um fragmento.
-* SITES-32684: aprimorar o mecanismo para sincronizar alterações de guia no esquema da interface do usuário.
-* SITES-33308: adicione o mecanismo de repetição para sincronizar alterações no esquema da interface do usuário ao editar modelos.
-* SITES-32247: Caixa de diálogo ausente Personalization &amp; UI desalinhada no componente &quot;Texto e Personalization&quot;.
-* SITES-32261: fragmento de experiência i18n não aplicado ao campo.
-* SITES-32666: O Predicado do Modelo contém `\n`, causando falha na pesquisa do HTML.
-* SITES-32674: o Seletor de Imagem de Campo de Imagem em Destaque não funciona para o Assistente de Criação de Página Apesar de `cq:showOnCreate`.
-* SITES-32014: Edge Delivery com Universal Editor: adicionar configuração automática das políticas do CORS para localhost, aem.page e aem.live
-* SITES-26532: Edge Delivery com Universal Editor: adicionar suporte para URLs localizados (acesso antecipado).
-* SITES-30887: adicionar uuids de fragmento de conteúdo armazenadas nos metadados do fluxo de trabalho.
+* GRANITE-53488: Melhore a manipulação de erros do ponto de extremidade deleteconf.json.
+* GRANITE-59968: permissão para configurar REPLICATION_FORCE_READY_MILLIES.
+* GRANITE-60183: Apache commons-fileupload 1.6.0.
+* GRANITE-60306: Apache commons-lang para 3.18.0.
+* GRANITE-60637: Apache commons-codec para 1.19.0.
+* GRANITE-60645: Apache commons-ui 2.20.0.
+* GRANITE-60663: Apache commons-text 1.14.0.
+* GRANITE-60714: Driver Java Mongo 5.2.
+* GRANITE-60778: Filevault 4.0.0.
+* GRANITE-60823: Jackrabbit 2.22.2.
+* GRANITE-60967: crie métricas para rastrear o tempo de compilação da clientlib.
+* SKYOPS-105469: Adição de suporte para acsredirectMgr na api de correção automática.
+* SKYOPS-113929: Adicionar métricas para verificação de replicação pronta.
+* SKYOPS-84821: Mecanismo Sling 2.16.6.
+* SKYOPS-114322: aumente o nível da linguagem do compilador de fechamento para `ECMASCRIPT_2018`.
 
-### Problemas corrigidos {#fixed-issues-21772}
+### Problemas corrigidos {#fixed-issues-21994}
 
-* CQ-4360190: correção de `UnsupportedOperationException` que ocorre ao tentar usar add em um keySet que não oferece suporte à operação.
-* CQ-4360421: solucionado um problema com a criptografia de chave de assinatura do Microsoft Translator para melhorar a segurança e a compatibilidade.
-* FORMS-20980: correção de problemas de acessibilidade do teclado no Seletor de datas com formato de exibição personalizado no Adaptive Forms.
-* FORMS-20498: adição de uma verificação para exceções de ponteiro nulo no OdataResponse para evitar erros de tempo de execução.
-* FORMS-20947: abordou vários problemas de acessibilidade, incluindo violações do leitor de tela e problemas de truncamento/sobreposição de texto.
-* FORMS-21030, FORMS-20630: solução de problemas com campos suspensos configurados para várias seleções em formulários adaptáveis. O PDF gerado agora inclui corretamente todos os valores selecionados.
-* FORMS-19579: corrigido o problema em que a regra do serviço Chamar não era corrigida automaticamente ao salvar novamente.
-* FORMS-20734: correção da duplicação de campos de assinatura em documentos do PDF gerados pelo serviço de saída para modelos PDF de entrada baseados em XFAF.
-* FORMS-20934: Corrigida a lista suspensa de Atributo de preenchimento automático na interface de criação do AEM Forms para remover entradas duplicadas e incluir todos os tokens de preenchimento automático padrão do HTML.
-* FORMS-20700: resolução da oscilação do texto de ajuda suspenso no carregamento inicial no AEM Forms.
-* FORMS-20307: correção do problema em que os formulários incorporados em uma página do site não eram traduzidos com localidades de 4 caracteres.
-* FORMS-20493: resolveu o problema em que os formulários eram atualizados automaticamente quando os dados eram obtidos, causando inconveniência para o usuário.
-* FORMS-18455: aprimoramento do Editor Forms adaptável para componentes principais a fim de mostrar pontos para objetos de dados usados na árvore da fonte de dados.
-* FORMS-19373: evitou erros de replicação para ambientes de publicação que não tinham agentes de replicação configurados.
-* FORMS-20042: corrigida a visualização de propriedades quebradas causadas pela configuração do Apache Sling GET Servlet com a configuração do HTML ativada.
-* FORMS-20036, FORMS-19978: abordados problemas de conformidade e validação do PDF/A-1b.
-* FORMS-19166: pagedatasource.jsp movido para o servlet para melhorar a clareza do rastreamento de pilha de erros e adicionar mais medidas de proteção e registro.
-* FORMS-16466: correção de problemas em painéis repetíveis que não eram preenchidos corretamente no AEM Forms.
-* FORMS-19629: resolveu problemas com a análise do esquema JSON do cliente fornecendo resultados inválidos.
-* LC-3923083: erro &quot;objeto de caminho não marcado&quot; resolvido para itens com bordas em modelos XDP.
-* SITES-33177: Edge Delivery com Universal Editor: corrija estilos de seção quebrados quando armazenados como cadeias de caracteres separadas por vírgula.
-* SITES-33262: Edge Delivery com Universal Editor: corrigir blocos sem renderização e publicação de página de quebra de propriedade de nome.
-* SITES-33309: Edge Delivery com Universal Editor: corrija `IllegalArgumentException` ao gravar em uma planilha com uma barra em colunas.
-* SITES-33408: Edge Delivery com Universal Editor: corrigir Planilhas não aparecem como modificadas após fazer alterações.
-* SITES-31992: GraphQL: corrija erros esporádicos na verificação de modelo durante a inicialização de pacotes.
-* SITES-29967: GraphiQL: nomes de consulta longos são cortados.
-* SITES-26266: Referências de conteúdo que não começam com `/` não são retornadas da resposta BE (API Java).
-* SITES-17874: consultas persistentes do GraphQL: corrigir a codificação para aplicativo do tipo conteúdo/graphql-response+json.
-* SITES-24506: Leitores de tela informados sobre os resultados da pesquisa.
-* SITES-25268: Melhorias no leitor de tela para anotações.
-* SITES-32366: resultados da verificação ortográfica ocultos atrás da caixa de diálogo do RTE.
-* SITES-32829: Melhorias no emulador do MediaQuery para analisar a consulta de mídia de nível 3 e 4.
-* SITES-32278: campos de tag corrigidos para usar o rótulo de campo corretamente.
-* SITES-25244: a barra horizontal não aparece mais no modal da imagem.
-* SITES-33395: funcionalidade de botão de implantação fixa para sincronização da live copy do Fragmento de conteúdo.
-* SITES-33147: correção de um problema de vinculação de serviço que afetava a funcionalidade de relacionamento dinâmico.
-* SITES-33528: problema de preservação do carimbo de data e hora corrigido durante a promoção de inicialização.
-* SITES-33014: Corrigida a geração de log de aviso excessivo de LaunchesAdapterFactory.
-* SITES-32305: corrigida a funcionalidade de quebra de herança da live copy após alterações no layout.
-* SITES-32268: desative a codificação de URL para a pesquisa de fragmento de conteúdo.
-* SITES-32772: A propriedade bloqueada nos campos de variação era sempre falsa ao habilitar as melhorias do SITES-31455 - relacionadas à unificação do valor etag.
-* SITES-32696: correção de um problema em que um campo de fragmento de conteúdo da Live Copy com herança interrompida não podia mais ser editado.
-* SITES-31712: Consultas lentas do Omni-search no prod Author.
-* SITES-33039: eventos de página não acionados corretamente.
-* SITES-31192: os fragmentos de experiência perdem o histórico de versões depois de serem movidos.
-* SITES-33529: erro ao vincular os templates do ACS Campaign às páginas do AEM.
-* SITES-33678: adicionar alternância para SITES-33529.
-* SITES-33468: AEMaaCS não consegue se conectar ao ACS.
+* GRANITE-60167: a atualização de índice assíncrono no Skyline não oferece suporte a dados CSV.
+* GRANITE-60532: a modificação de alternadores de valor não é recebida.
+* SITES-34277: corrija o erro de bloqueio em fluxos de trabalho de tradução para páginas.
+* SKYOPS-105471: Dambaseredirect fix de suporte para autofix de aso.
+* SKYOPS-109532: adição de link de recurso removido como comentário atrás da alternância.
 
-### Funcionalidade alterada {#altered-functionality-21772}
+#### Guias do AEM {#guides-21994}
 
-* SITES-26344: Unificar validação de `fragmentId`/`modelId` entre pontos de extremidade - essas IDs agora estão validadas e um código de status 400 será retornado se não forem válidas.
-* SITES-29598: valide as referências de fragmento de conteúdo adicionadas nos campos de referência do fragmento ao atualizar um modelo de fragmento de conteúdo.
+* GUIDES-26688: Os arquivos CSS e de layout de página nos modelos nativos do PDF exibem um comportamento de bloqueio de arquivos inconsistente, permitindo edições mesmo quando os arquivos estão bloqueados.
+* GUIDES-30900: Copiar uma pasta com um grande número de ativos da interface do Assets leva a um tempo limite da API. A operação continua a ser executada no backend e é concluída após algum tempo, mas nenhuma mensagem de sucesso ou falha, ou notificação é mostrada na interface do usuário.
+* GUIDES-29090: Na saída do PDF nativo, a Lista de índice (LOI) é exibida em uma ordem não alfabética e os termos de índice aninhados não são agrupados corretamente, dificultando a navegação do índice.
+* GUIDES-11227: Copiar um mapa DITA da interface do usuário do Assets também copia sua linha de base anexada para o novo mapa.
+* GUIDES-31506: A página inicial fica em branco quando um dos arquivos listados no widget Arquivos recentes é baseado em um modelo cujo modelo de origem não inclui uma miniatura.
 
-### Problemas conhecidos {#known-issues-21772}
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-* SITES-31791: Fragmentos de conteúdo GraphQL - Falha na consulta com &quot;Contagem máxima de campos excedida&quot;. Consulte o [artigo da Knowledge Base](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27231).
+### Problemas conhecidos {#known-issues-21994}
 
-### Recursos e APIs obsoletos {#deprecated-21772}
+* O Apache HTTPD versão 2.4.65 apresenta alterações que podem afetar determinadas configurações devido a novas restrições implementadas como parte das correções de segurança. Essas correções resolvem as vulnerabilidades, garantindo que diretivas como `RequestHeader set`, `edit` e `edit_r` usadas para modificar o cabeçalho Content-Type agora sejam limitadas corretamente aos cabeçalhos de solicitação. Essa alteração impede modificações não intencionais nos cabeçalhos de resposta, especialmente para conteúdo estático.
+
+### Recursos e APIs obsoletos {#deprecated-21994}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-21772}
+### Correções de segurança {#security-21994}
 
-A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda 35 vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
+A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda duas vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
 
-### Tecnologias integradas {#embedded-tech-21772}
+### Tecnologias integradas {#embedded-tech-21994}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
-| AEM Oak | 1.80.0 | [API Oak API 1.80.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html) |
+| AEM Oak | 1.84.0 | [API Oak API 1.84.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.84/index.html) |
 | API DO SLING DO AEM | 2.27.6 | [API Apache Sling API 2.27.6](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
-| Apache HTTP Server | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
+| Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.29.0 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
