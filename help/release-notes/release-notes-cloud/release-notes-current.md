@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ O Content Hub agora inclui uma opção **Mostrar tudo** nos filtros, permitindo 
 
 Aproveite o upload automatizado de novos arquivos e pastas, as operações aprimoradas de arquivos, a detecção mais inteligente de ativos e a integração perfeita com o AEM — tornando o gerenciamento de conteúdo mais rápido, claro e intuitivo.
 
-Para obter a lista completa de recursos, consulte as [Notas de Versão do Aplicativo de Desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
+Para obter a lista completa de recursos, consulte as [Notas de Versão do Aplicativo de Desktop](https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Novos recursos no Dynamic Media com recursos OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -134,7 +134,7 @@ Todas as solicitações de imagem do OpenAPI agora aproveitam totalmente o Smart
 
 * **Tratamento de Erros Aprimorado para Tipos de Arquivos Restritos**
 
-  [O tratamento de erros para tipos de arquivos restritos](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) agora é suportado, o que bloqueia os carregamentos de arquivos não suportados. Quando os usuários tentam enviar um arquivo alterando seu tipo para um formato não compatível, o formulário lança um erro durante o envio.
+  [O tratamento de erros para tipos de arquivos restritos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) agora é suportado, o que bloqueia os carregamentos de arquivos não suportados. Quando os usuários tentam enviar um arquivo alterando seu tipo para um formato não compatível, o formulário lança um erro durante o envio.
 
 
 <!--
@@ -322,7 +322,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
