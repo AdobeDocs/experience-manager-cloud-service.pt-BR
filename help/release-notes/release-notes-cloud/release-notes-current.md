@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 401eaaaa0bb8dad054c7105533cbd4486964c484
+source-git-commit: 07b957374dcc513050c48bb320e8d639385c3344
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: '2350'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -88,7 +88,7 @@ O Content Hub agora inclui uma opção **Mostrar tudo** nos filtros, permitindo 
 
 Aproveite o upload automatizado de novos arquivos e pastas, as operações aprimoradas de arquivos, a detecção mais inteligente de ativos e a integração perfeita com o AEM — tornando o gerenciamento de conteúdo mais rápido, claro e intuitivo.
 
-Para obter a lista completa de recursos, consulte as [Notas de Versão do Aplicativo de Desktop](https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/release-notes).
+Para obter a lista completa de recursos, consulte as [Notas de Versão do Aplicativo de Desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Novos recursos no Dynamic Media com recursos OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -105,32 +105,44 @@ Todas as solicitações de imagem do OpenAPI agora aproveitam totalmente o Smart
 
 ### Novos recursos no AEM Forms {#forms-new-features}
 
-**Editor Universal para Forms Adaptável e Fragmentos de Formulário**
+* **Editor Universal para Forms Adaptável e Fragmentos de Formulário**
 
-O [Editor Universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) agora oferece suporte à criação de Fragmentos de formulário adaptáveis e reutilizáveis do Forms. Os autores podem criar formulários visualmente, configurar ações de envio e adicionar a validação do reCAPTCHA, tudo em um ambiente de criação simplificado do WYSIWYG. Esse recurso acelera a criação de formulários, melhora a consistência e melhora a proteção contra spam e abuso automatizado.
+  O [Editor Universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) agora oferece suporte à criação de Fragmentos de formulário adaptáveis e reutilizáveis do Forms. Os autores podem criar formulários visualmente, configurar ações de envio e adicionar a validação do reCAPTCHA, tudo em um ambiente de criação simplificado do WYSIWYG. Esse recurso acelera a criação de formulários, melhora a consistência e melhora a proteção contra spam e abuso automatizado.
 
-![Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+  ![Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-**Serviço de envio do Forms para o Edge Delivery Services Forms**
+* **Serviço de envio do Forms para o Edge Delivery Services Forms**
 
-Consulte [Serviço de Envio do Forms](/help/forms/forms-submission-service.md). O permite armazenar dados diretamente de envios do Formulário adaptável em plataformas de planilhas populares, como Google Sheets, Microsoft OneDrive ou SharePoint. Essa integração simplifica o gerenciamento de dados permitindo o envio direto de dados de formulário para a planilha escolhida, eliminando a transferência manual de dados e reduzindo erros.
+  O [Serviço de envio do Forms](/help/forms/forms-submission-service.md) permite armazenar dados diretamente de envios de formulários adaptáveis em plataformas de planilhas populares, como Google Sheets, Microsoft OneDrive ou SharePoint. Essa integração simplifica o gerenciamento de dados, permitindo o envio direto de dados de formulário para a planilha escolhida, eliminando a transferência manual de dados e reduzindo erros.Os principais benefícios incluem:
 
-Os principais benefícios incluem:
+   * **Integração direta:** configure seus formulários para enviar dados diretamente para uma planilha especificada.
+   * **Mapeamento de dados personalizado:** Mapeie campos de formulário para colunas de planilha correspondentes para armazenamento organizado.
+   * **Controle de acesso:** use as permissões de planilha existentes para gerenciar quem pode acessar ou modificar os dados enviados.
 
-* **Integração direta:** configure seus formulários para enviar dados diretamente para uma planilha especificada.
-* **Mapeamento de dados personalizado:** Mapeie campos de formulário para colunas de planilha correspondentes para armazenamento organizado.
-* **Controle de acesso:** use as permissões de planilha existentes para gerenciar quem pode acessar ou modificar os dados enviados.
+* **Gerar e sincronizar representações AFP do Forms Adaptável**
 
-**Gerar e sincronizar representações AFP do Forms Adaptável**
+  A [API de Sincronização de Saída AFP](/help/forms/document-generation-afp-api.md) permite que administradores e usuários gerem a saída AFP (Advanced Function Presentation) do Adaptive Forms e sincronizem a saída com sistemas externos ou locais de armazenamento. O AFP é um formato de documento de alto desempenho otimizado para impressão, geralmente usado em ambientes corporativos de grande escala.
 
-A [API de Sincronização de Saída AFP](/help/forms/document-generation-afp-api.md) permite que administradores e usuários gerem a saída AFP (Advanced Function Presentation) do Adaptive Forms e sincronizem a saída com sistemas externos ou locais de armazenamento. O AFP é um formato de documento de alto desempenho otimizado para impressão, geralmente usado em ambientes corporativos de grande escala.
+* **Suporte a Mapeamento Automático para Fragmentos de Formulário Adaptáveis**
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+  O Forms adaptável agora oferece suporte a [mapeamento automático de fragmentos do Formulário adaptável](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form). Com esse aprimoramento, os fragmentos correspondentes são inseridos automaticamente quando os objetos do esquema se alinham a uma estrutura de fragmento definida. Ele simplifica a criação de formulários, melhora a reutilização de fragmentos e garante a consistência entre formulários integrados a dados.
+
+* **Título de formulário personalizado no documento de registro**
+
+  Os autores agora podem definir um [título de formulário personalizado no Documento de registro](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) editando o Título de formulário personalizado. O título personalizado aparece no cabeçalho do PDF, nas propriedades do documento do PDF e como o título de exibição inicial quando o PDF é aberto, garantindo uma identificação clara e identidade visual consistente.
+
+* **Tratamento de Erros Aprimorado para Tipos de Arquivos Restritos**
+
+  [O tratamento de erros para tipos de arquivos restritos](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) agora é suportado, o que bloqueia os carregamentos de arquivos não suportados. Quando os usuários tentam enviar um arquivo alterando seu tipo para um formato não compatível, o formulário lança um erro durante o envio.
+
+
+<!--
+### Pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
-* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* The `validate` / `reset` method in the function list now supports validation at the panel, field, and form levels.
 * Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
 * The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
 * Rules now support the use of dynamic variables.
@@ -139,16 +151,14 @@ A [API de Sincronização de Saída AFP](/help/forms/document-generation-afp-api
 * Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
 * Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
- -->
+### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-### Novos recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
+The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
 
-O Programa de acesso antecipado da AEM Forms oferece uma oportunidade única para você obter acesso exclusivo a inovações de última geração e ajudar a moldar seu desenvolvimento.
-
-Essas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no Programa de Acesso Antecipado, consulte a [documentação do Programa de Acesso Antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
+These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 
-<!-- **Forms Optimization opportunities**
+**Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -224,7 +234,7 @@ Propriedades OSGi:
 
 ### Descontinuação do Java 11 Runtime {#java11-runtime-deprecation}
 
-O **Java 11 runtime*- agora está obsoleto, e a maioria dos ambientes já foi atualizada para o &#x200B;** Java 21 runtime** de maior desempenho.
+O **Java 11 runtime*- agora está obsoleto, e a maioria dos ambientes já foi atualizada para o **Java 21 runtime** de maior desempenho.
 
 Se seu ambiente não pôde ser atualizado devido a dependências sem suporte (consulte [requisitos de tempo de execução do Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), você deve ter recebido um email da Adobe com as próximas etapas específicas. Verifique se todas as atualizações necessárias foram concluídas até **28 de agosto de 2025** para que seu ambiente possa ser atualizado sem interrupções.
 
@@ -312,7 +322,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
