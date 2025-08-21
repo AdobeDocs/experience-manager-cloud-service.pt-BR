@@ -4,10 +4,10 @@ description: A ferramenta de cópia de conteúdo permite que os usuários copiem
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 35%
+source-wordcount: '1340'
+ht-degree: 34%
 
 ---
 
@@ -133,6 +133,7 @@ Após criar um conjunto de conteúdo, você pode usá-lo para copiar o conteúdo
       * Produção
       * Estágios
       * Desenvolvimento / RDE
+   * Por padrão, a Cópia de conteúdo entre programas está desativada. No entanto, mediante solicitação do cliente, ele pode ser habilitado, o que disponibilizará um campo de entrada adicional **Programa de destino**.
 
 1. Se necessário, você também pode optar por **Incluir listas de controle de acesso** no seu processo de cópia.
 
@@ -193,7 +194,6 @@ A ferramenta de cópia de conteúdo tem as seguintes limitações.
 
 * O conteúdo não pode ser copiado de um ambiente inferior para um ambiente superior.
 * O conteúdo só pode ser copiado de e para os serviços de autoria.
-* Não é possível copiar conteúdo entre programas.
 * Não é possível executar operações de cópia de conteúdo simultâneas no mesmo ambiente.
 * Até 50 caminhos podem ser especificados por conjunto de conteúdo. Não há limitação para os caminhos excluídos.
 * Não use a ferramenta de cópia de conteúdo como uma ferramenta de clonagem ou de espelhamento porque ela não pode rastrear conteúdo movido ou excluído na origem.
