@@ -3,13 +3,13 @@ title: Como adicionar links de formulários na página do AEM Sites usando o com
 description: Saiba como adicionar links de formulários à página do AEM Sites.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '536'
 ht-degree: 1%
 
 ---
-
 
 # Adicionar links de formulário à página Sites
 
@@ -19,7 +19,7 @@ No cenário do site bancário, o **Link** do Portal Forms aprimora a navegação
 
 ## Pré-requisito
 
-Antes de explorar os vários recursos de um componente do Forms Portal, verifique se os Componentes principais estão habilitados para o seu ambiente. Para obter instruções detalhadas sobre como habilitar os Componentes principais para o seu ambiente, [clique aqui](/help/forms/enable-adaptive-forms-core-components.md).
+Antes de explorar os vários recursos de um componente do Forms Portal, verifique se os Componentes principais estão habilitados para o seu ambiente. Instale os componentes principais adaptáveis do Forms mais recentes até o momento para ativar o ambiente do AEM Cloud Service.
 
 Depois de implantar os Componentes principais mais recentes em seu ambiente, os componentes do Forms Portal ficam acessíveis em seu ambiente de criação.
 
@@ -31,7 +31,7 @@ Para adicionar o componente de portal **Link** à página Sites, execute as segu
 1. Vá para as **[!UICONTROL Informações da Página]** > **[!UICONTROL Editar Modelo]**
    ![Editar política de modelo](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. Clique na **[!UICONTROL Política]** e marque a caixa de seleção **[!UICONTROL Link]** em **[Nome do projeto do Arquétipo AEM] - Forms e Portal de Comunicações**.
+1. Clique na **[!UICONTROL Política]** e marque a caixa de seleção **[!UICONTROL Link]** em **[Nome do Projeto do Arquétipo do AEM] - Forms e Portal de Comunicações**.
 
    ![Seleção de Política](/help/forms/assets/add-link.png)
 

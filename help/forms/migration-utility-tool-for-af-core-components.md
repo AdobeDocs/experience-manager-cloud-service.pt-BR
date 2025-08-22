@@ -1,6 +1,6 @@
 ---
-title: Ferramentas do Migration Utility/AEM Modernizar ferramentas para converter Forms adaptável baseado em componentes de base em formulários baseados em componentes principais
-description: Saiba como instalar e usar o Utilitário de migração/AEM Modernizar ferramentas para converter Forms adaptável com base em Componentes de base em formulários do Componente principal.
+title: Ferramenta do Migration Utility/AEM Modernizar ferramentas para converter Forms adaptável baseado em componentes básicos em formulários baseados em Componentes principais
+description: Saiba como instalar e usar o Migration Utility/AEM Modernizar ferramentas para converter Forms adaptável com base em componentes de base em formulários baseados em componentes principais.
 Keywords: Migration Utility Tool, Convert Adaptive Forms based on Foundation Components to Core Component based forms, Convert Foundation forms to Core Components forms, Using Modernizer Tool to convert Foundation Components to Core Components in forms.
 role: User, Developer, Admin
 features: core components
@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1068'
 ht-degree: 5%
 
 ---
@@ -21,19 +21,19 @@ ht-degree: 5%
 
 O Utilitário de conversão do Forms, parte do conjunto da [Ferramenta de modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/), ajuda a converter facilmente o Adaptive Forms criado com componentes fundamentais herdados em formulários que aproveitam os recursos modernos e compatíveis dos Componentes principais.
 
-## O que são as ferramentas de modernização do AEM?
+## O que são as Ferramentas de modernização do AEM?
 
-[Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/) refere-se a um conjunto de utilitários ou aplicativos de software criados para facilitar o processo de modernização ou atualização de projetos do Adobe Experience Manager (AEM). Normalmente, essas ferramentas ajudam a converter componentes ou funcionalidades mais antigos do AEM em alternativas mais recentes, eficientes e compatíveis. O Utilitário de conversão do Forms é instalado em AEM Modernizar ferramentas para converter Forms adaptável com base em Componentes de base em formulários baseados em Componentes principais.
+[Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/) refere-se a um conjunto de utilitários ou aplicativos de software criados para facilitar o processo de modernização ou atualização de projetos do Adobe Experience Manager (AEM). Normalmente, essas Ferramentas ajudam a converter componentes ou funcionalidades mais antigos no AEM em alternativas mais recentes, eficientes e compatíveis. O Utilitário de conversão do Forms é instalado em Ferramentas de modernização do AEM para converter Forms adaptável com base em Componentes de base em formulários baseados em Componentes principais.
 
 O Utilitário de conversão do Forms converte o Forms adaptável, que é baseado em Componentes de base mais antigos, em formulários mais recentes baseados em Componentes principais. Esse processo de conversão garante que os formulários estejam alinhados a padrões e recursos modernos, melhorando potencialmente o desempenho, a compatibilidade e a facilidade de manutenção no ambiente do AEM.
 
-![Ferramentas de Modernização de AEM](/help/forms/assets/aem-modernize-tools.png)
+![Ferramentas de Modernização do AEM](/help/forms/assets/aem-modernize-tools.png)
 
 >[!NOTE]
 > 
 >É recomendável instalar as Ferramentas de modernização do AEM na configuração local do AEM. Migre o Forms adaptável baseado em Componentes de base para formulários baseados em Componentes principais. Baixe o formulário com seus ativos. Em seguida, carregue o formulário e seus ativos no ambiente necessário.
 
-## Considerações ao usar as ferramentas de modernização do AEM {#considerations}
+## Considerações ao usar as ferramentas de Modernização do AEM {#considerations}
 
 * Nas conversões bem-sucedidas, todas as regras aplicadas ao formulário são removidas. As regras não são migradas automaticamente. Você deve recriar manualmente e aplicar essas regras ao formulário convertido.
 * As configurações de tradução usadas no formulário original não são transferidas. Reconfigure a tradução para o formulário convertido.
@@ -42,7 +42,7 @@ O Utilitário de conversão do Forms converte o Forms adaptável, que é baseado
 
    * Bloco do Adobe Sign
    * Gráfico
-   * Listagem do anexo de arquivo
+   * Listagem de anexos de arquivo
    * Espaço reservado para nota de rodapé
    * Opção de imagem
    * Botão Próximo
@@ -51,41 +51,41 @@ O Utilitário de conversão do Forms converte o Forms adaptável, que é baseado
    * Etapa de resumo
    * Barra de ferramentas
 
-## Pré-requisitos para usar as ferramentas de modernização do AEM
+## Pré-requisitos para usar as ferramentas de Modernização do AEM
 
 * [Configurar o ambiente de desenvolvimento local para o AEM Forms](/help/forms/setup-local-development-environment.md).
-* [Habilitar os Componentes principais adaptáveis do Forms para o seu ambiente](/help/forms/enable-adaptive-forms-core-components.md).
+* Instale os componentes principais adaptáveis do Forms mais recentes até o momento para ativar o ambiente do AEM Cloud Service.
 * Adicione usuários ao grupo [!DNL forms-users]. Os membros do grupo [!DNL forms-users] têm permissões para criar um Formulário adaptável.
-* Usuários com as seguintes funções têm as permissões para instalar as ferramentas de modernização do AEM em um ambiente AEM:
+* Os usuários com as seguintes funções têm permissões para instalar as Ferramentas de modernização do AEM em um ambiente do AEM:
 
    * Função de desenvolvedor
    * Função de administrador
 
 Para obter uma lista detalhada de grupos de usuários específicos de formulários, consulte [Grupos e permissões](forms-groups-privileges-tasks.md).
 
-## Instalar e configurar ferramentas de Modernização do AEM
+## Instalar e configurar as Ferramentas de modernização do AEM
 
 Para instalar e configurar as Ferramentas de modernização do AEM:
 
-1. [Instalar ferramentas de Modernização do AEM no ambiente local do AEM Forms](#install-aem-modernize-Tools)
-1. [Ativar ferramentas de Modernização do AEM para o ambiente local do AEM Forms](#enable-aem-modernize-Tools)
+1. [Instalar as Ferramentas de modernização do AEM no ambiente local do AEM Forms](#install-aem-modernize-Tools)
+1. [Ativar as Ferramentas de modernização do AEM para o ambiente local do AEM Forms](#enable-aem-modernize-Tools)
 
-### Instalar ferramentas de Modernização do AEM no ambiente local do AEM Forms {#install-aem-modernize-Tools}
+### Instalar as Ferramentas de modernização do AEM no ambiente local do AEM Forms {#install-aem-modernize-Tools}
 
 Execute as seguintes etapas para instalar as Ferramentas de modernização do AEM no ambiente local do AEM Forms:
 
 1. Abra o prompt de comando ou o terminal.
-1. Inicie o serviço de autor local do AEM. Por exemplo, execute o seguinte código do para iniciar a instância local do autor do AEM:
+1. Inicie o Serviço de autor do AEM local. Por exemplo, execute o seguinte código do para iniciar a instância local do AEM Author:
 
    `java -jar aem-author-p4502.jar`
 
-1. Clonar o repositório da [Ferramenta de Modernização de AEM](https://github.com/adobe/forms-modernizer) no sistema local.
+1. Clonar o repositório da [Ferramenta de Modernização do AEM](https://github.com/adobe/forms-modernizer) no sistema local.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
    ```
 
-   Depois de executar o comando com êxito, você terá uma cópia local do repositório da ferramenta Modernizar AEM disponível em sua máquina.
+   Depois de executar o comando com êxito, você terá uma cópia local do repositório da Ferramenta de modernização do AEM disponível em sua máquina.
 
 1. Navegue até `[AEM Modernize Tool Repository]` em seu sistema local.
 1. Execute o seguinte comando:
@@ -98,12 +98,12 @@ Execute as seguintes etapas para instalar as Ferramentas de modernização do AE
 
 Após a instalação bem-sucedida, as Ferramentas de modernização do AEM ficam disponíveis para o seu ambiente.
 
-![Habilitar a Ferramenta Utilitário de Migração AEM](/help/forms/assets/enable-aem-modernizer-tools.png)
+![Habilitar a Ferramenta do Utilitário de Migração do AEM](/help/forms/assets/enable-aem-modernizer-tools.png)
 
 
-### Ativar ferramentas de Modernização do AEM para o ambiente local do AEM Forms{#enable-aem-modernize-Tools}
+### Ativar as Ferramentas de modernização do AEM para o ambiente local do AEM Forms{#enable-aem-modernize-Tools}
 
-Para ativar e usar as Ferramentas de modernização do AEM para o seu ambiente AEM, é importante mapear as regras para migrar Componentes de base para Componentes principais:
+Para ativar e usar as Ferramentas de modernização do AEM para o seu ambiente do AEM, é importante mapear as regras para migrar Componentes de base para Componentes principais:
 
 1. Faça logon na instância do autor.
 1. Navegue até `http://[host]:[port]/system/console/configMgr`
@@ -111,13 +111,13 @@ Para ativar e usar as Ferramentas de modernização do AEM para o seu ambiente A
 1. Adicione o `Component Rule Paths` como `/apps/forms-modernizer/rules`.
 1. Clique em **Salvar** para salvar as alterações.
 
-![Regra do componente de Modernização de AEM](/help/forms/assets/aem-modernize-tools-component-rule.png)
+![Regra do componente de Modernização do AEM](/help/forms/assets/aem-modernize-tools-component-rule.png)
 
 ## Execute o utilitário de Conversão de Formulário para converter formulários baseados em Componentes de Base em formulários baseados em Componentes Principais
 
-1. Acesse **[!UICONTROL Ferramentas > Ferramentas de Modernização de AEM > Conversão de Forms]**.
+1. Acesse **[!UICONTROL Ferramentas > Ferramentas de Modernização do AEM > Conversão do Forms]**.
 
-   ![Selecionar ferramentas de Modernização de AEM](/help/forms/assets/aem-modernize-tools-select-form.png)
+   ![Selecionar ferramentas de Modernização do AEM](/help/forms/assets/aem-modernize-tools-select-form.png)
 
 1. Selecione a opção **[!UICONTROL Conversão do Forms]**.
 
@@ -125,7 +125,7 @@ Para ativar e usar as Ferramentas de modernização do AEM para o seu ambiente A
 
 1. Clique em **Criar** para criar um novo trabalho.
 
-   ![Ferramentas de Modernização de AEM para Criar Trabalho](/help/forms/assets/aem-modernize-tools-create-job.png)
+   ![Ferramentas de Modernização do AEM para Criar Trabalho](/help/forms/assets/aem-modernize-tools-create-job.png)
 
 1. Especifique o **[!UICONTROL Nome do Trabalho]**.
 1. Na guia **[!UICONTROL Formulário]**, você pode selecionar uma das seguintes opções:
@@ -142,13 +142,13 @@ Para ativar e usar as Ferramentas de modernização do AEM para o seu ambiente A
 1. Clique em **[!UICONTROL Adicionar Forms]**. Todos os formulários no `source folder` aparecem na tela.
 1. Selecione o Forms adaptável com base em Componentes de base para convertê-lo em formulários baseados em Componentes principais. Também é possível selecionar vários formulários.
 
-   ![Modernizar ferramentas e selecionar formulário do AEM](/help/forms/assets/aem-modernize-tools-select-form.png)
+   ![Ferramentas de Modernização do AEM - Selecionar Formulário](/help/forms/assets/aem-modernize-tools-select-form.png)
 
 1. Clique em **[!UICONTROL Selecionar]**.
 1. Clique em **[!UICONTROL Agendar trabalho]** para iniciar o processo de conversão.
 1. Clique em **[!UICONTROL Converter]** na caixa de diálogo **[!UICONTROL Converter páginas]**.
 
-   ![Ferramentas de Modernização de AEM Converter Páginas](/help/forms/assets/aem-modernize-tools-convert-form.png)
+   ![Ferramentas de Modernização do AEM Converter Páginas](/help/forms/assets/aem-modernize-tools-convert-form.png)
 
    Quando o status do processo for alterado para `success`. Navegue até `target folder` para ver o formulário convertido.
 
@@ -156,14 +156,14 @@ Para ativar e usar as Ferramentas de modernização do AEM para o seu ambiente A
 
 1. Selecione o Formulário adaptável e selecione > **[!UICONTROL Propriedades]**. A página Propriedades do formulário será aberta.
 
-   ![Pasta de Destino de Ferramentas de Modernização de AEM](/help/forms/assets/aem-modernize-tools-destination-folder.png)
+   ![Pasta de Destino de Ferramentas de Modernização do AEM](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. Selecione **[!UICONTROL Salvar e Fechar]** para salvar novamente as propriedades do formulário convertido.
-   ![Propriedades do formulário adaptável das ferramentas de Modernização de AEM](/help/forms/assets/aem-modernize-tools-af-properties.png)
+   ![Propriedades do formulário adaptável das ferramentas de Modernização do AEM](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 Agora é possível ver que o Formulário adaptável incorporado aos Componentes de base se transforma no Formulário adaptável incorporado aos Componentes principais.
 
 ## Práticas recomendadas {#best-practices}
 
-* Certifique-se de que os formulários baseados em Componentes de Base usem apenas os componentes que tenham um [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalente disponível. Nos casos em que você usa Componentes de base que não têm um Componente principal equivalente, o Componente de base não é convertido. Como resultado, não funciona corretamente ao criar um formulário
+* Certifique-se de que os formulários baseados em Componentes de Base usem apenas os componentes que tenham um [Componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalente disponível. Nos casos em que você usa Componentes de base que não têm um Componente principal equivalente, o Componente de base não é convertido. Como resultado, não funciona corretamente ao criar um formulário
 * Verifique se as regras para converter os Componentes de base em Componentes principais estão formatadas em XML.

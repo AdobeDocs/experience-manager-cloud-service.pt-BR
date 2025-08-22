@@ -2,12 +2,12 @@
 title: Quais são os recursos de layout do Adaptive Forms com base nos componentes principais?
 description: O layout e as aparências do Adaptive Forms em vários dispositivos são regidos pelas configurações de layout. Entenda os vários layouts e como aplicá-los.
 feature: Adaptive Forms, Core Components
-keywords: Layout do formulário adaptável com base nos componentes principais, Layouts diferentes para formulários, Layouts dinâmicos de formulário AEM, Layouts de formulário do AEM Cloud Service, Tipos de layout de formulário nos Componentes principais do AEM, Layouts de formulário adaptável
+keywords: Layout do formulário adaptável com base nos componentes principais, Layouts diferentes para formulários, AEM de layouts dinâmicos de formulário, Layouts de formulário do AEM Cloud Service, Tipos de layout de formulário nos Componentes principais do AEM, Layouts de formulário adaptável
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2104'
+source-wordcount: '2106'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service (Componentes principais) | Este artigo |
 
@@ -27,7 +27,7 @@ O Forms adaptável fornece componentes de primeira classe para layout e design d
 
 ## Pré-requisito
 
-Antes de explorar os vários recursos de um layout, verifique se os componentes principais estão habilitados para o seu ambiente. Para obter instruções detalhadas sobre como habilitar os componentes principais para o seu ambiente, [clique aqui](/help/forms/enable-adaptive-forms-core-components.md).
+Antes de explorar os vários recursos de um layout, verifique se os componentes principais estão habilitados para o seu ambiente. Instale os componentes principais adaptáveis do Forms mais recentes até o momento para ativar o ambiente do AEM Cloud Service.
 
 ## Tipos de layout adaptáveis do Forms
 
@@ -48,7 +48,7 @@ O layout do painel é útil para organizar campos relacionados de uma maneira qu
 
 Layout do painel
 
-Você pode usar o [componente do painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) para adicionar o layout do painel em um formulário. Para obter instruções detalhadas sobre como configurar várias propriedades do componente do painel, consulte o artigo [componente do painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+Você pode usar o [componente do painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) para adicionar o layout do painel em um formulário. Para obter instruções detalhadas sobre como configurar várias propriedades do componente do painel, consulte o artigo [componente do painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
 >[!TAB Layout do Assistente]
 
@@ -58,7 +58,7 @@ O layout do assistente ajuda a simplificar um formulário complexo, dividindo-o 
 
 Layout do assistente
 
-Você pode usar o [componente de assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para adicionar o layout de assistente em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente do assistente, consulte o artigo [componente do assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+Você pode usar o [componente de assistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para adicionar o layout de assistente em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente do assistente, consulte o artigo [componente do assistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 >[!TAB Layout de Guias Verticais]
 
@@ -68,7 +68,7 @@ O layout de guias verticais também é conhecido como guias no layout esquerdo. 
 
 Layout de guias verticais
 
-Você pode usar o [componente de guias verticais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) para adicionar o layout de guias verticais em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente de guias verticais, consulte o artigo [componente de guias verticais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs).
+Você pode usar o [componente de guias verticais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) para adicionar o layout de guias verticais em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente de guias verticais, consulte o artigo [componente de guias verticais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs).
 
 
 >[!TAB Layout de Guias Horizontais]
@@ -80,7 +80,7 @@ O layout de guias horizontais também é conhecido como Guias no layout superior
 
 Layout de Guias Horizontais
 
-Você pode usar o [componente de guias horizontais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para adicionar o layout de guias horizontais em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente de guias horizontais, consulte o artigo [componente de guias horizontais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
+Você pode usar o [componente de guias horizontais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs) para adicionar o layout de guias horizontais em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente de guias horizontais, consulte o artigo [componente de guias horizontais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs).
 
 
 >[!TAB Layout da opção]
@@ -91,7 +91,7 @@ O layout do Accordion exibe o conteúdo em seções ou painéis que podem ser re
 
 Layout do acordeão
 
-Você pode usar o [componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para adicionar o layout acordeão em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente Acordeão, consulte o artigo [componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+Você pode usar o [componente Acordeão](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para adicionar o layout acordeão em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente Acordeão, consulte o artigo [componente Acordeão](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
 >[!ENDTABS]
 
@@ -126,7 +126,7 @@ Considere o **Formulário de solicitação de TI** mostrado na seção [Tipos de
 
 Vamos explorar o processo passo a passo para inserir um layout e adicionar componentes a ele. Neste exemplo, um layout de guias horizontais é inserido em um formulário.
 
-### 1. Inserir um componente de layout em um formulário
+### &#x200B;1. Inserir um componente de layout em um formulário
 
 1. Faça logon na instância do [!DNL Experience Manager Forms].
 1. No canto superior esquerdo, selecione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
@@ -168,7 +168,7 @@ Por exemplo, nesse caso, adicionamos o nome do componente de guias horizontais c
 
 Depois que o componente de layout for adicionado ao formulário, modifique o número de painéis de acordo com os requisitos.
 
-### 2. Adicionar painéis ao layout
+### &#x200B;2. Adicionar painéis ao layout
 
 Adicionar novo painel ao componente de guias horizontais:
 
@@ -216,7 +216,7 @@ Adicionar novo painel ao componente de guias horizontais:
 
 Da mesma forma, também é possível ocultar títulos dos outros dois painéis. Depois de concluído, você pode continuar com a adição de componentes de formulário a cada painel.
 
-### 3. Adicionar componentes de formulário ao painel
+### &#x200B;3. Adicionar componentes de formulário ao painel
 
 <!-- You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)

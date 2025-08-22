@@ -6,7 +6,9 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 0656e923c4b50d0554780ecf56dd08302a165fa9
+hide: true
+hidefromtoc: true
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 2%
@@ -299,7 +301,7 @@ Implante o código atualizado em seus ambientes de desenvolvimento local e do Cl
 
    Depois que o pacote for criado com êxito, você poderá encontrá-lo na [Pasta do Repositório Git]\all\target\[appid].all-[version].zip
 
-1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) para implantar o [pacote de Pasta de Projeto do Arquétipo do AEM]\all\target\[appid].all-[version].zip no ambiente de desenvolvimento local.
+1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) para implantar o [pacote de Pasta de Projeto do Arquétipo do AEM]\all\target\[appid].all-[version].zip no ambiente de desenvolvimento local.
 
 
 ### Criar e implantar código atualizado em um ambiente do AEM Forms as a Cloud Service {#core-components-on-aem-forms-cs}
