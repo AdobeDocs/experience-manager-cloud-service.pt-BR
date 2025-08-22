@@ -6,13 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
-source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1737'
 ht-degree: 2%
 
 ---
+
 
 # Introdução ao Forms Experience Builder
 
@@ -97,11 +97,10 @@ Tente esta conversa simples para começar:
 * **Solicitar ajuda**: Digite `/help` seguido da sua pergunta
 * **Iterar**: fazer uma alteração de cada vez para obter melhores resultados
 
-## Recursos principais
 
-### Duas maneiras de criar o Forms
+## Maneiras de começar a criar um Formulário
 
-#### &#x200B;1. Criar do Zero
+### &#x200B;1. Comece com prompts de linguagem natural
 
 Descreva os requisitos de formulário em linguagem natural, e o Forms Experience Builder gera a estrutura completa do formulário:
 
@@ -111,17 +110,17 @@ Descreva os requisitos de formulário em linguagem natural, e o Forms Experience
 * &quot;Crie um formulário de feedback do cliente com classificações, comentários e categorias do produto&quot;
 * &quot;Preciso de um formulário de inscrição em várias etapas para uma conferência com processamento de pagamento&quot;
 
-#### &#x200B;2. Importar e converter
+### &#x200B;2. Importar e converter
 
 Transforme formulários e documentos existentes em experiências modernas e interativas:
 
 **Fontes com Suporte:**
 
-* **PDF forms**: carregar PDFs estáticos → Formulários digitais interativos com validação
-* **Capturas de tela/Imagens**: Foto de formulários em papel → Versões digitais funcionais
-* **HTML Forms**: formulários Web básicos → AEM Forms aprimorado com recursos avançados
-* **XFA Forms**: formulários Adobe herdados → formulários responsivos modernos
-* **URLs**: formulários Web existentes → AEM Forms Nativo com UX aprimorado
+* **PDF forms**: carregue PDFs estáticos para convertê-los em formulários digitais interativos com validações.
+* **Capturas de tela ou Imagens**: carregue fotos de formulários em papel para gerar versões digitais funcionais
+* **HTML Forms**: importe e converta formulários Web básicos em AEM Forms aprimorado com recursos avançados
+* **XFA Forms**: converter formulários herdados baseados em XFA em formulários responsivos modernos
+* **URLs**: converter formulários Web existentes em AEM Forms nativo com UX aprimorado
 
 **Como importar:**
 
@@ -482,4 +481,4 @@ O Forms Experience Builder também pode ensiná-lo sobre os recursos do AEM Form
 
 **Ainda precisa de ajuda?** Digite `/help` seguido da pergunta específica ou contate o administrador do sistema.
 
-Para obter suporte adicional, consulte a [Biblioteca de Prompts do Forms Experience Builder](/help/edge/docs/forms/ai-assistant-prompt-library.md) principal ou entre em contato com o administrador do sistema para obter assistência técnica.
+Para obter suporte adicional, consulte a [Biblioteca de Prompts do Forms Experience Builder](ai-assistant-prompt-library.md) principal ou entre em contato com o administrador do sistema para obter assistência técnica.

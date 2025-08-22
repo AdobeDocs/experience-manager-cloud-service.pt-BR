@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1113'
 ht-degree: 0%
 
 ---
@@ -175,11 +175,9 @@ O Forms Experience Builder segue uma abordagem simples e conversacional:
 Transforme seus formulários existentes em experiências digitais avançadas com a conversão baseada em IA.
 
 
-### 📄 PDF para Digital
+#### Transforme o PDF forms em Forms digital
 
-**De documentos estáticos para formulários interativos**
-
-Transforme o PDF forms com mais de 50 campos em experiências digitais dinâmicas com cálculos automatizados e design responsivo para dispositivos móveis.
+Transforme o PDF forms com vários campos em experiências digitais dinâmicas com cálculos automatizados e design responsivo para dispositivos móveis.
 
 **Principais benefícios:**
 
@@ -188,17 +186,10 @@ Transforme o PDF forms com mais de 50 campos em experiências digitais dinâmica
 - Otimização do layout responsivo para dispositivos móveis
 - 95% de redução nos erros de processamento
 
-**Recomendado para:** Formulários de imposto, solicitações do governo, documentos comerciais complexos
 
-**Economia de tempo:** 2-3 horas → 15 minutos por formulário
+#### Modernização de formulários herdados baseados em XFA
 
-
-
-### Modernização de XFA herdado 🏛️
-
-**Transforme sua nova vida em formulários desatualizados**
-
-Converta aplicativos XFA complexos em assistentes modernos de várias etapas com validação em tempo real e conformidade com acessibilidade.
+Você pode converter aplicativos XFA complexos em assistentes modernos de várias etapas com validação em tempo real e conformidade com acessibilidade.
 
 **Principais benefícios:**
 
@@ -207,37 +198,21 @@ Converta aplicativos XFA complexos em assistentes modernos de várias etapas com
 - Integração de banco de dados governamental
 - Conformidade total com a acessibilidade da WCAG 2.1
 
-**Recomendado para:** permissões do governo, aplicativos corporativos, formulários de conformidade
 
-**Impacto:** conclusão 70% mais rápida, 90% menos erros
+#### Converter captura de tela do formulário em um formulário digital
 
-
-
-
-### 📱 captura de tela para digital
-
-**Transforme qualquer formulário em papel em uma experiência digital**
-
-Carregue uma imagem de qualquer formulário em papel e assista aos campos de extração de IA, otimize o layout e crie formulários digitais prontos para integração.
+Você pode transformar qualquer formulário em papel em uma experiência digital. O AEM Forms otimiza automaticamente o layout e cria formulários digitais prontos para integração a partir de uma captura de tela.
 
 **Principais benefícios:**
 
-- Detecção inteligente de tipo de campo (99% ou mais de precisão)
+- Detecção inteligente do tipo de campo
 - Geração de layout responsivo otimizado
 - Validação aprimorada além do papel original
 - Arquitetura pronta para integração
 
-**Recomendado para:** aplicativos de papel, formulários manuscritos, documentos herdados
+#### Importar e aprimorar formulários web existentes
 
-**Tempo de processamento:** 2 horas → 5 minutos por formulário
-
-
-
-### Aprimoramento do HTML 🌐
-
-**Turbine seus formulários web existentes**
-
-Adicione validação avançada, lógica condicional e envio de vários canais aos formulários básicos do HTML sem romper a funcionalidade existente.
+Você pode importar seu formulário web existente e adicionar validação avançada, lógica condicional e envio de vários canais aos seus formulários sem romper a funcionalidade existente.
 
 **Principais benefícios:**
 
@@ -245,11 +220,6 @@ Adicione validação avançada, lógica condicional e envio de vários canais ao
 - Comportamentos e fluxos de trabalho de campo condicionais
 - Opções de envio de vários canais
 - Análise integrada e rastreamento de desempenho
-
-**Recomendado para:** Formulários de contato, formulários de registro, aplicativos web simples
-
-**Aperfeiçoamento de conversão:** +40% com experiência aprimorada do usuário
-
 
 ## Forms Experience Builder versus desenvolvimento tradicional
 
