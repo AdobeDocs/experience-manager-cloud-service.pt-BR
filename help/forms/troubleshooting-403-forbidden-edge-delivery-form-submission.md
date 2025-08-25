@@ -75,7 +75,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 >
 >Substitua `main--abc--adobe.aem.live` e `main--abc1--adobe.aem.live` pelos domínios de site reais. Cada site hospedado no mesmo repositório requer uma entrada de configuração do CORS separada.
 
-Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 ### &#x200B;2. Regras do Dispatcher
 
@@ -262,8 +262,8 @@ Com as arquiteturas Helix-5 e repless, siga estas diretrizes:
 ## Recursos adicionais
 
 - [Configuração de filtro referenciador com AEM Headless](/help/headless/deployment/referrer-filter.md)
-- [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [Noções Básicas Sobre Compartilhamento De Recursos Entre Origens](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [Noções Básicas Sobre Compartilhamento De Recursos Entre Origens](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 - [Documentação do Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
 
 ## Tópicos relacionados
