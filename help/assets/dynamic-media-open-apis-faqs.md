@@ -51,7 +51,7 @@ Da mesma forma, o Experience Manager Assets distingue o status Rejeitado na exib
 
 ## Como você pode fazer com que a ID de usuário ou de grupo do Adobe IMS (Adobe Identity Management Services) seja usada para definir as funções em ativos na exibição de administrador do Experience Manager, para proteger a experiência de entrega e pesquisa? {#set-roles-secure-delivery-search}
 
-Os usuários que exigem acesso ao ambiente do Experience Manager Author são gerenciados como usuários do Adobe IMS no Admin Console da Adobe. Para obter informações sobre o que são os usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console, consulte [Usuários do Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=en).
+Os usuários que exigem acesso ao ambiente do Experience Manager Author são gerenciados como usuários do Adobe IMS no Admin Console da Adobe. Para obter informações sobre o que são os usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console, consulte [Usuários do Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=pt-BR).
 
 
 ## É possível aprovar vários ativos simultaneamente em uma pasta? {#approve-multiple-assets-in-folder}
