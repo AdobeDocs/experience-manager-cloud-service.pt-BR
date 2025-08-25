@@ -3,9 +3,9 @@ title: Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI
 description: Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 57ffeca8fc6c1a9e0b04a40fe5ddd1bf0fff50d9
+source-git-commit: c3bac140c2e0b33cfc206cda7c0591fc75a47a1f
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Da mesma forma, o Experience Manager Assets distingue o status Rejeitado na exib
 
 ## Como você pode fazer com que a ID de usuário ou de grupo do Adobe IMS (Adobe Identity Management Services) seja usada para definir as funções em ativos na exibição de administrador do Experience Manager, para proteger a experiência de entrega e pesquisa? {#set-roles-secure-delivery-search}
 
-Os usuários que exigem acesso ao ambiente do Experience Manager Author são gerenciados como usuários do Adobe IMS no Admin Console da Adobe. Para obter informações sobre o que são os usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console, consulte [Usuários do Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=pt-BR).
+Os usuários que exigem acesso ao ambiente do Experience Manager Author são gerenciados como usuários do Adobe IMS no Admin Console da Adobe. Para obter informações sobre o que são os usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console, consulte [Usuários do Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=en).
 
 
 ## É possível aprovar vários ativos simultaneamente em uma pasta? {#approve-multiple-assets-in-folder}
@@ -74,7 +74,7 @@ Da mesma forma, para aprovar vários ativos simultaneamente em uma pasta na exib
 1. Clique em **[!UICONTROL Salvar]**.
 
 
-## Como posso proteger a entrega de ativos e pesquisar as APIs abertas do Dynamic Media? {#secure-asset-delivery}
+## Como posso proteger a entrega de ativos e pesquisar o Dynamic Media com OpenAPIs? {#secure-asset-delivery}
 
 A governança de ativos centrais no Experience Manager permite que os administradores do DAM ou gerentes de marca gerenciem o acesso aos ativos. Eles podem restringir o acesso definindo funções ou definindo o tempo de ativação e desativação para ativos aprovados no lado da criação, especificamente na instância de autor do AEM as a Cloud Service.
 
@@ -104,16 +104,16 @@ Estas são algumas das principais diferenças entre o Dynamic Media com recursos
 | Dynamic Media com recursos OpenAPI | Dynamic Media |
 |---|---|
 | [Disponível somente com o Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Também disponível com On-premise ou Adobe Managed Services com etapas adicionais de configuração e provisionamento. |
-| [Conjunto limitado de modificadores de imagem com suporte, como largura, altura, rotação, inversão, qualidade e formato](/help/assets/deliver-assets-apis.md) | Conjunto avançado de modificadores de imagem disponíveis |
+| [Conjunto avançado de modificadores de imagem com suporte, como largura, altura, rotação, inversão, qualidade e formato](/help/assets/deliver-assets-apis.md) | Conjunto avançado de modificadores de imagem disponíveis |
 | [Entrega de ativos restrita com base em usuários, funções, data e hora](/help/assets/restrict-assets-delivery.md) | O Assets publicado no Dynamic Media é acessível a todos os usuários |
 | A maioria dos desenvolvedores está familiarizada com as especificações da OpenAPI. A extensibilidade do AEM Assets fica muito simples ao usar o [Seletor de ativos de micro front-end](/help/assets/overview-asset-selector.md). | APIs baseadas em SOAP, que se tornam uma barreira ao desenvolver personalizações de integração. |
 | Quaisquer alterações feitas em ativos aprovados no DAM, incluindo atualizações de versão e modificações de metadados, são refletidas automaticamente nos URLs de entrega. Com um valor curto de TTL (Time-to-Live) de 10 minutos configurado para o Dynamic Media com recursos OpenAPI por meio do CDN, as atualizações ficam visíveis em todas as interfaces de criação e publicação em menos de 10 minutos. | TTL de CDN recomendado de 10 horas. Você pode substituir o valor TTL usando a ação de invalidação de cache. |
 | Somente os ativos aprovados estão disponíveis para entrega de ativos em aplicativos downstream, permitindo ativos aprovados pela marca em experiências digitais. | As atualizações em um ativo publicado do Dynamic Media são publicadas automaticamente sem nenhum fluxo de trabalho de aprovação, o que não garante ativos aprovados pela marca em experiências digitais. |
 | Relatórios de uso com base no número de ativos entregues. Esse recurso estará disponível em breve. | Os relatórios de uso não estão disponíveis. Esse recurso estará disponível em breve. |
 | O Assets marcado como Expirado no repositório do Assets as a Cloud Service não está mais disponível para aplicativos downstream. | Nenhuma expiração de ativo inerente. Um ativo permanece público até ser excluído do repositório do AEM as a Cloud Service. |
-| Não suporta predefinições de imagens e recursos de recorte inteligente de vídeo. | Suporta predefinições de imagens e recursos de recorte inteligente de vídeo. |
+| Não suporta recursos de recorte inteligente de vídeo. | Suporta recursos de recorte inteligente de vídeo. |
 | Codificações de vídeo dinâmico, que garantem que as melhores codificações sejam fornecidas com base no vídeo de entrada. Nenhuma configuração é necessária para a entrega de vídeo nativo. | O padrão 3 codifica independentemente do vídeo de entrada (pode afetar o desempenho da entrega de vídeo). Você precisa configurar manualmente diferentes códigos para taxas de bits de vídeo diferentes. |
-| Difícil de adivinhar URLs de ativos baseados em UID (permite ofuscação de URL), mas SEO otimizado. | Ofuscação de URL disponível apenas para parâmetros de consulta de URL. As Assets IDs (nomes de ativos) em URLs são reconhecíveis. |
+| Permite URLs protegidos e ofuscados usando UIDs de ativos sem comprometer o SEO. | Ofuscação de URL disponível apenas para parâmetros de consulta de URL. As Assets IDs (nomes de ativos) em URLs são reconhecíveis. |
 
 
 ## Como o Dynamic Media com recursos OpenAPI aborda as limitações do recurso Connected Assets? {#dynamic-media-openapi-addresses-connected-assets-limitations}
@@ -142,3 +142,9 @@ Para habilitar o uso de produção de [modificadores em Disponibilidade Limitada
    * IMS Org
 
    * Lista de modificadores a serem ativados
+
+
+## Como testar modificadores experimentais? {#modifiers-not-generally-available}
+
+Você pode testar qualquer modificador, que geralmente não está disponível por meio de APIs experimentais. Por exemplo, &lt;/adobe/experimental/advancemodifiers-expires-YYYMMDD/assets>
+Clique aqui para saber mais sobre como usar as [APIs experimentais](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) e a [lista completa de modificadores](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
