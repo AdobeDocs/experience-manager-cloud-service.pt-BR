@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '1665'
-ht-degree: 38%
+source-wordcount: '1693'
+ht-degree: 37%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 38%
 # Navegar na interface do usuário do Cloud Manager {#navigation}
 
 Saiba como a interface do Cloud Manager é organizada e como encontrar e gerenciar seus programas e ambientes.
+
 
 A interface do Cloud Manager é composta principalmente por duas interfaces gráficas:
 
@@ -25,6 +26,12 @@ A interface do Cloud Manager é composta principalmente por duas interfaces grá
 >[!TIP]
 >
 >Verifique também a [jornada de documentação de integração](/help/journey-onboarding/overview.md) para obter uma visão geral completa de como começar a usar o AEM as a Cloud Service usando o Cloud Manager.
+
+
+## Assistente de IA no AEM
+
+Para clientes que possuem [critérios de pré-requisito concluídos](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), o Assistente de IA do AEM está disponível para usuários de suas organizações. Consulte [Assistente de IA no AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
 
 ## Console Meus programas {#my-programs-console}
 
@@ -59,9 +66,9 @@ A primeira é o cabeçalho do Cloud Manager, que permanece fixo ao navegar pelo 
 
 1. Clique no ![ícone Mostrar menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (mostrar ou ocultar menu lateral) para ter acesso a uma variedade de guias que podem levá-lo a partes específicas de um programa individual. Ou você pode alternar entre o [Painel de Licenças](/help/implementing/cloud-manager/license-dashboard.md) e o console **[Meus Programas](#my-programs-console)**, dependendo do contexto.
 1. Clique no botão Adobe Cloud Manager para voltar ao console Meus programas do Cloud Manager, onde quer que você esteja no Cloud Manager.
-1. Clique em **Feedback** para fornecer feedback ao Adobe sobre o Cloud Manager.
+1. Clique em **Feedback** para fornecer feedback à Adobe sobre o Cloud Manager.
 1. Clique no seletor de organizações para exibir a organização na qual você está conectado no momento (neste exemplo, Foundation Internal). Clique para alternar para outra organização se a Adobe ID estiver associada a várias.
-1. Clique no ![ícone Aplicativos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (alternador de Soluções) para acessar rapidamente outras soluções de Experience Cloud.
+1. Clique no ![ícone Aplicativos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (alternador de Soluções) para acessar rapidamente outras soluções da Experience Cloud.
 1. Clique no ![ícone da Ajuda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg) para fornecer acesso rápido aos recursos de aprendizado e suporte.
 1. Clique no ![ícone de Campainha](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notificações](/help/implementing/cloud-manager/notifications.md)) para ver notificações e anúncios, entre outras coisas.
 1. Clique no ícone que representa o acesso do usuário às configurações do usuário. Se você não tiver uma imagem de usuário configurada, um ícone será atribuído aleatoriamente.
@@ -78,7 +85,7 @@ A barra de ferramentas do programa fornece links para alternar entre programas e
 
 ### Estatísticas e frases de chamariz {#statistics}
 
-A seção de estatísticas e frase de chamariz fornece dados agregados para sua organização, por exemplo, se você tiver configurado seus programas com êxito, as estatísticas de suas atividades nos últimos 90 dias poderão ser exibidas, incluindo:
+A seção Estatísticas e call-to-action fornece dados agregados para sua organização. Por exemplo, se você tiver configurado seus programas com êxito, as estatísticas das atividades nos últimos 90 dias poderão ser exibidas, incluindo:
 
 * Número de [implantações](/help/implementing/cloud-manager/deploy-code.md)
 * Número de [problemas de qualidade de código](/help/implementing/cloud-manager/code-quality-testing.md) identificados
@@ -119,7 +126,7 @@ Um cartão (ou linha em uma tabela) representa cada programa, fornecendo uma vis
 * Nome atribuído ao programa. A imagem acima mostra &quot;SecurBank Sample&quot; como o nome do programa.
 * Tipo de serviço:
    * **Experience Manager Cloud** — para programas do AEM as a Cloud Service
-   * **Experience Manager** — para [programas do AMS (Adobe Managed Services)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — para [programas do AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Produção
@@ -146,7 +153,7 @@ O ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_
 * Navegue até um ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Ambiente](/help/implementing/cloud-manager/manage-environments.md) específico do programa
 * Abra o ![ícone de visão geral do programa](/help/implementing/cloud-manager/assets/program-overview.svg) [Visão geral do programa](#program-overview)
 * ![Ícone Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Editar o programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Excluir ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Excluir um programa de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Excluir ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Excluir um programa de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -183,11 +190,11 @@ As barras de ferramentas para a visão geral do programa são semelhantes às do
 
 #### Cabeçalho do Cloud Manager {#cloud-manager-header-2}
 
-No canto superior esquerdo da página, está o cabeçalho Adobe Cloud Manager. Você pode clicar no ![ícone do menu lateral](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar ou ocultar o menu lateral de guias para outras áreas do software.
+No canto superior esquerdo da página, está o cabeçalho Cloud Manager do Adobe. Você pode clicar no ![ícone do menu lateral](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para mostrar ou ocultar o menu lateral de guias para outras áreas do software.
 
 ![menu lateral do Cloud Manager](assets/cloud-manager-hamburger.png)
 
-Clique em Adobe Cloud Manager para voltar à Página inicial.
+Clique em Adobe Cloud Manager para retornar à Página inicial.
 
 #### Barra de ferramentas do programa {#program-toolbar-2}
 
@@ -233,7 +240,7 @@ No canto superior esquerdo do [cabeçalho do Cloud Manager](#cloud-manager-heade
 
 A seção da frase de chamariz fornece informações úteis de acordo com o status do seu programa. Para um novo programa, você pode ver as próximas etapas fornecidas e um lembrete de uma data de ativação, [definida durante a criação do programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
-![Frase de chamariz para um novo programa](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
+![Call-to-action para um novo programa](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
 No caso de um programa em tempo real, é possível ver o status da última implantação e links para obter detalhes e iniciar uma nova implantação.
 

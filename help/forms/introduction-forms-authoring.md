@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '2468'
-ht-degree: 92%
+source-wordcount: '2496'
+ht-degree: 91%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 92%
 
 >[!NOTE]
 >
-> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
+> A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | Este artigo |
 
 ## Visão geral {#overview}
@@ -157,7 +157,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no Formulário 
   </tr>
   <tr>
    <td>Email</td>
-   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Anexo de arquivo</td>
@@ -197,7 +197,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no Formulário 
   </tr>
   <tr>
    <td>Painel</td>
-   <td><p>Adiciona um painel ou subpainel.</p> <p>Você também pode adicionar um componente de painel da barra de ferramentas do painel principal usando o botão <span class="uicontrol">Adicionar painel secundário</code> botão. Da mesma forma, é possível adicionar uma barra de ferramentas específica do painel usando o botão <span class="uicontrol">Adicionar barra de ferramentas do painel</code> botão. É possível configurar a posição da barra de ferramentas do painel usando a caixa de diálogo Editar painel.</p> </td>
+   <td><p>Adiciona um painel ou subpainel.</p> <p>Você também pode adicionar um componente de painel da barra de ferramentas do painel pai usando o botão <span class="uicontrol">Adicionar painel filho</code> botão. Da mesma forma, é possível adicionar uma barra de ferramentas específica do painel usando o botão <span class="uicontrol">Adicionar barra de ferramentas do painel</code> botão. É possível configurar a posição da barra de ferramentas do painel usando a caixa de diálogo Editar painel.</p> </td>
   </tr>
   <tr>
    <td>Caixa de senha</td>
@@ -245,7 +245,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no Formulário 
   </tr>
   <tr>
    <td>Alternar</td>
-   <td>Adiciona um botão que executa uma ação de alternância ou ativação/desativação. Não é possível adicionar mais de duas opções no componente Alternar. Como um botão de alternância pode ter apenas dois valores: ligado ou desligado, não é possível torná-lo obrigatório. Pelo menos um valor é salvo independentemente da entrada do usuário. <br /> </td>
+   <td>Adiciona um botão que executa um botão de alternância ou ativação/desativação. Não é possível adicionar mais de duas opções no componente Alternar. Como um botão de alternância pode ter apenas dois valores: ligado ou desligado, não é possível torná-lo obrigatório. Pelo menos um valor é salvo independentemente da entrada do usuário. <br /> </td>
   </tr>
   <tr>
    <td>Tabela</td>
@@ -363,6 +363,10 @@ A estrutura de conteúdo normalmente contém os seguintes componentes principais
 * **barra de ferramentas:** um container de Formulário adaptável tem uma barra de ferramentas global associada, que é global ao formulário. Essa barra de ferramentas pode ser adicionada usando o **[!UICONTROL Adicionar barra de ferramentas]** na barra de edição, que permite que se adicionem ações, como Enviar, Salvar, Redefinir e assim por diante.
 
 * **ativos:** esse nó contém informações adicionais usadas para a criação de formulários. Por exemplo, detalhes do modelo de formulário, detalhes de localização e assim por diante.
+
+## Assistente de IA no AEM
+
+Para clientes que possuem [critérios de pré-requisito concluídos](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), o Assistente de IA do AEM está disponível para usuários de suas organizações. Consulte [Assistente de IA no AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 ## Consulte também {#see-also}
 

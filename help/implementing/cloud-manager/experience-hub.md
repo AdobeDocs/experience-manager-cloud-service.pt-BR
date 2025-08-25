@@ -8,9 +8,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 7835fba8383893a961226a8cc77cc9c38d4f2959
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '590'
 ht-degree: 2%
 
 ---
@@ -84,4 +84,4 @@ Se não houver ambientes de produção do AEM Cloud Service ou do Managed Servic
 
 ## Assistente de IA no AEM
 
-Para clientes que possuem [critérios de pré-requisito concluídos](/help/implementing/cloud-manager/aem-ai-assistant.md#get-access), o Assistente de IA do AEM no AEM está disponível para usuários de suas organizações. Consulte [Assistente de IA no AEM](/help/implementing/cloud-manager/aem-ai-assistant.md).
+Para clientes que possuem [critérios de pré-requisito concluídos](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), o Assistente de IA do AEM está disponível para usuários de suas organizações. Consulte [Assistente de IA no AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).

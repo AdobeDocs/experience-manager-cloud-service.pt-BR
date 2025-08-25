@@ -7,9 +7,10 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d36eb5807718f3d20ea0c3de4491981cb7942b44
+exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
+source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1263'
 ht-degree: 1%
 
 ---
@@ -33,7 +34,7 @@ Ele é diretamente incorporado ao AEM e acessível no AEM Experience Hub, Cloud 
 
 O vídeo de 39 segundos a seguir, com duração de 3 minutos, fornece uma apresentação passo a passo do Assistente de IA no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470360?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Obter acesso ao Assistente de IA no AEM{#get-access}
 
@@ -44,17 +45,15 @@ Para conceder aos usuários acesso ao Assistente de IA no AEM, o Administrador d
 
 As solicitações do Assistente de IA no AEM são autenticadas por meio do Adobe Identity Management Services (IMS). Para obter detalhes, consulte a [visão geral dos Serviços Identity Management da Adobe](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
->[!NOTE]
-> 
->As organizações do cliente devem aceitar termos legais adicionais para ativar o Assistente de IA. Entre em contato com o representante de conta da Adobe para obter mais detalhes.
-
 **Para obter acesso ao Assistente de IA no AEM:**
 
-1. [Os clientes devem assinar o Gen AI Rider com o Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1).
+1. Os clientes devem ter um contrato adicional em vigor para acessar a maioria dos recursos de IA e agentes no Adobe Experience Manager. Entre em contato com seu representante da Adobe para obter mais detalhes.
 
-   O GenAI Rider é um acordo legal entre um cliente e a Adobe, necessário para usar a maioria dos recursos de IA e agente. Entre em contato com o Atendimento ao cliente da Adobe para saber mais.
+<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
 
-1. O administrador do AEM configura o Assistente de IA para uso em sua organização. Consulte [Configurar o Assistente de IA no AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md).
+    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+
+1. O administrador do AEM configura o Assistente de IA para uso em sua organização. Consulte [Configurar o Assistente de IA no AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md).
 
 <!--
 >[!IMPORTANT]
@@ -93,7 +92,7 @@ O conhecimento do produto abrange conceitos e tópicos derivados da documentaç�
 | Aprendizado apontado | <ul><li>O que é o Editor Universal?</li><li>Como criar um programa no Cloud Manager?</li></ul> |
 | Abrir descoberta | <ul><li>Como usar o Universal Editor?</li><li>Existe uma maneira de copiar o conteúdo de um ambiente para outro?</li></ul> |
 | Resolução de problemas | <ul><li>Por que não posso acessar o Universal Editor?</li><li>Por que meu pipeline está falhando?</li></ul> |
-| **Criação do tíquete de suporte** | **Disponível somente para Administradores de Suporte &#x200B;**<br>**Exemplos** |
+| **Criação do tíquete de suporte** | **Disponível somente para Administradores de Suporte **<br>**Exemplos** |
 | Criação automatizada de tíquetes de suporte, capturando o histórico e o contexto do bate-papo do Assistente de IA | <ul><li>Crie um tíquete de suporte para mim.</li></ul> |
 | Recuperar status do tíquete de suporte | <ul><li>Mostre-me todos os tíquetes de suporte que abri.</li><li>Mostre-me o status do tíquete &quot;E—&quot;</li></ul> |
 
@@ -133,7 +132,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -148,7 +147,11 @@ Você pode redefinir o Assistente de IA no AEM e iniciar uma nova conversa quand
 
    ![Ícone do Assistente de IA na barra de ferramentas](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
-1. Na caixa de texto do painel do **Assistente de IA** próximo à parte inferior, digite a pergunta e pressione `Enter` ou clique em ![Ícone Enviar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+1. Na caixa de texto do painel **Assistente de IA** próxima à parte inferior, digite a pergunta ou o prompt e pressione `Enter` ou clique em ![Ícone Enviar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+
+   >[!NOTE]
+   >
+   >Dados pessoais não devem ser incluídos em suas entradas, pois são desnecessários para usar essa ferramenta.
 
    ![Caixa de texto na parte inferior do painel do Assistente de IA](/help/implementing/cloud-manager/assets/ai-assistant-prompt-text-box.png)
 
@@ -168,7 +171,7 @@ O Assistente de IA no AEM inclui um recurso de descoberta para ajudar você a ex
    *Painel mostrando as categorias de prompt no Assistente do AI.*
 
 1. Selecione uma categoria para exibir uma lista de prompts relacionados.
-1. Selecione um prompt para ver exemplos dos tipos de perguntas que o Assistente do AEM AI pode responder.
+1. Selecione um prompt para ver exemplos dos tipos de perguntas que o Assistente de IA pode responder.
 
 1. Para ocultar o painel de descoberta de prompts, clique novamente no ![ícone Aprender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
 
