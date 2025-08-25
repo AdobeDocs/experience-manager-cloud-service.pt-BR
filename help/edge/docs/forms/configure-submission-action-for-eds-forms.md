@@ -4,9 +4,9 @@ description: Saiba como configurar ações de envio no AEM Forms usando o Edge D
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '810'
 ht-degree: 3%
 
 ---
@@ -98,27 +98,100 @@ Envie dados de formulário diretamente para a instância de publicação do AEM 
 
 ### Requisitos de configuração
 
-#### &#x200B;1. Configuração do AEM Dispatcher
+#### &#x200B;1. Atualizar o URL da instância do AEM no Edge Delivery
 
-Configure o Dispatcher na sua instância de publicação do AEM:
+Atualize a URL da instância do AEM Cloud Service no arquivo `constant.js` no bloco `form` em `submitBaseUrl`. Você pode configurar o URL com base em seu ambiente:
 
-- **Permitir Caminhos de Envio**: Modificar `filters.any` para permitir solicitações POST para `/adobe/forms/af/submit/...`
-- **Sem redirecionamentos**: certifique-se de que as regras do Dispatcher não redirecionem caminhos de envio de formulário
+**Para a instância do Cloud Service**
+
+```js
+export const submitBaseUrl = '<aem-publish-instance-URL>';
+```
+
+**Para desenvolvimento local**
+
+```js
+export const submitBaseUrl = 'http://localhost:<port-number>';
+```
 
 #### &#x200B;2. Filtro referenciador OSGi
 
-No console OSGi do AEM (`/system/console/configMgr`):
+Configure o Filtro referenciador para permitir domínios de site específicos do Edge Delivery:
 
-1. Localizar &quot;Filtro referenciador Apache Sling&quot;
-2. Adicione seu domínio do Edge Delivery à lista &quot;Permitir hosts&quot;
-3. Incluir domínios como `https://your-eds-domain.hlx.page`
+1. Criar ou atualizar o arquivo de configuração OSGi: `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-#### &#x200B;3. Regras de redirecionamento da CDN
+2. Adicione a seguinte configuração com os domínios específicos do site:
 
-Configure sua CDN do Edge Delivery para rotear envios:
+   ```json
+   {
+     "allow.empty": false,
+     "allow.hosts": [
+       "main--abc--adobe.aem.live",
+       "main--abc1--adobe.aem.live"
+     ],
+     "allow.hosts.regexp": [
+       "https://.*\\.aem\\.live:443",
+       "https://.*\\.aem\\.page:443",
+       "https://.*\\.hlx\\.page:443",
+       "https://.*\\.hlx\\.live:443"
+     ],
+     "filter.methods": [
+       "POST",
+       "PUT",
+       "DELETE",
+       "COPY",
+       "MOVE"
+     ],
+     "exclude.agents.regexp": [
+       ""
+     ]
+   }
+   ```
 
-- Rotear solicitações de `/adobe/forms/af/submit/...` para sua instância de publicação do AEM
-- A implementação varia de acordo com o provedor de CDN (Fastly, Akamai, Cloudflare)
+3. Implantar a configuração por meio do Cloud Manager
+
+Para obter a configuração detalhada do Filtro referenciador OSGi, consulte o Guia do [Filtro referenciador](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
+
+#### &#x200B;3. Questões do CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)
+
+Defina as configurações do CORS no AEM para permitir solicitações de domínios específicos do site do Edge Delivery:
+
+**Localhost do Desenvolvedor**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
+```
+
+**Sites do Edge Delivery - Adicionar cada domínio de site individualmente**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
+```
+
+**Domínios herdados do Franklin (se ainda estiverem em uso)**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
+```
+
+>[!NOTE]
+>
+>Substitua `main--abc--adobe.aem.live` e `main--abc1--adobe.aem.live` pelos domínios de site reais. Cada site hospedado no mesmo repositório requer uma entrada de configuração do CORS separada.
+
+Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+
+
+Para habilitar o CORS para o seu ambiente de desenvolvimento local, consulte o artigo [Entender o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
+
+<!--
+#### 4. CDN Redirect Rules
+
+Configure your Edge Delivery CDN to route submissions:
+
+- Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
 
 #### &#x200B;4. Configuração do formulário
 
@@ -128,55 +201,54 @@ Configure sua CDN do Edge Delivery para rotear envios:
 4. Publicar formulário no site do Edge Delivery
 
 +++
+<!--
++++ Form Embedding
 
-+++ Incorporação de formulários (opcional)
+Embed forms created in one location into different web pages or sites.
 
-Incorpore formulários criados em um local em diferentes páginas da Web ou sites.
+### Use Cases
 
-### Casos de uso
+- Reuse standard forms across multiple landing pages
+- Include specialized forms in Document-Authored content
+- Maintain single form across multiple EDS projects
 
-- Reutilizar formulários padrão em várias páginas de destino
-- Incluir formulários especializados em conteúdo criado por documento
-- Manter formulário único em vários projetos de EDS
+### CORS Configuration
 
-### Configuração do CORS
+Configure Cross-Origin Resource Sharing on the form source:
 
-Configure o Compartilhamento de recursos entre origens na origem do formulário:
-
-1. **Adicionar cabeçalhos CORS** para formar respostas de origem:
+1. **Add CORS Headers** to form source responses:
    - `Access-Control-Allow-Origin: https://your-host-domain.com`
-   - `Access-Control-Allow-Methods: GET, OPTIONS`
+   - `Access-Control-Allow-Methods: GET, OPTIONS`  
    - `Access-Control-Allow-Headers: Content-Type`
 
-2. **Exemplo de configuração**:
+2. **Example Configuration**:
 
-       &#x200B;# Configuração do site que hospeda o formulário
-       cabeçalhos:
-       - caminho: /forms/**
-       personalizado:
-       Controle de Acesso com Permissão de Origem: https://host-domain.com
-       Métodos de permissão de controle de acesso: GET, OPTIONS
-   
+        # Configuration for site hosting the form
+        headers:
+          - path: /forms/**
+            custom:
+              Access-Control-Allow-Origin: https://host-domain.com
+              Access-Control-Allow-Methods: GET, OPTIONS
 
-### Etapas de incorporação
+### Embedding Steps
 
-1. **Criar e Publicar Formulário**
-   - Criar formulário usando Criação de Documento ou Editor Universal
-   - Configurar o método de envio (FSS ou Publicação do AEM)
-   - Publicar no URL independente
+1. **Create and Publish Form**
+   - Build form using Document Authoring or Universal Editor
+   - Configure submission method (FSS or AEM Publish)
+   - Publish to standalone URL
 
-2. **Configurar CORS**
-   - Configurar cabeçalhos CORS no site de origem do formulário
-   - Permitir que o domínio da página de host busque o formulário
+2. **Configure CORS**
+   - Set up CORS headers on form source site
+   - Allow host page domain to fetch form
 
-3. **Incorporar na Página de Host**
-   - Adicionar bloco de incorporação de formulário à página do host
-   - Aponte o bloco para o URL do formulário publicado
-   - Publicar página de host
+3. **Embed in Host Page**
+   - Add form embedding block to host page
+   - Point block to published form URL
+   - Publish host page
 
-![Arquitetura de Formulário Inserida](/help/forms/assets/eds-embedded-form.png)
+![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
 
-+++
++++-->
 
 +++ Problemas comuns
 

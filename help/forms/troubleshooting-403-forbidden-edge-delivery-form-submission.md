@@ -3,13 +3,13 @@ title: Solução de problemas de erros 403 proibidos no envio do formulário do 
 description: Saiba como diagnosticar e resolver erros 403 proibidos ao enviar formulários do Edge Delivery Services para o AEM Publish. Este guia aborda causas comuns, incluindo CORS, regras do Dispatcher e problemas de Filtro de referenciador.
 feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
+exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
+source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 2%
 
 ---
-
 
 # Solução de problemas de erros 403 proibidos no envio do formulário do Edge Delivery Services {#troubleshooting-403-forbidden-edge-delivery}
 
@@ -75,7 +75,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 >
 >Substitua `main--abc--adobe.aem.live` e `main--abc1--adobe.aem.live` pelos domínios de site reais. Cada site hospedado no mesmo repositório requer uma entrada de configuração do CORS separada.
 
-Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 ### &#x200B;2. Regras do Dispatcher
 
@@ -169,7 +169,7 @@ Configure o Filtro referenciador para permitir domínios de site específicos do
 
 >[!IMPORTANT]
 >
->**Para configurações sem resposta:** Adicione cada domínio de site individualmente à matriz `allow.hosts`. Usar somente padrões de regex pode não ser suficiente para todos os cenários. Inclua domínios específicos e padrões de regex para uma cobertura abrangente.
+>**Para configurações de resposta:** Adicione cada domínio de site individualmente à matriz `allow.hosts`. Usar somente padrões de regex pode não ser suficiente para todos os cenários. Inclua domínios específicos e padrões de regex para uma cobertura abrangente.
 
 >[!WARNING]
 >
@@ -262,8 +262,8 @@ Com as arquiteturas Helix-5 e repless, siga estas diretrizes:
 ## Recursos adicionais
 
 - [Configuração de filtro referenciador com AEM Headless](/help/headless/deployment/referrer-filter.md)
-- [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [Noções Básicas Sobre Compartilhamento De Recursos Entre Origens](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [Noções Básicas Sobre Compartilhamento De Recursos Entre Origens](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 - [Documentação do Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
 
 ## Tópicos relacionados
