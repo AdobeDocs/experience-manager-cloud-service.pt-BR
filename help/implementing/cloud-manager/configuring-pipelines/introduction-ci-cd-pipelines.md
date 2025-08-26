@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: d065397b874cc24fb7af53e1258520f3e8270c55
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 35%
+source-wordcount: '1489'
+ht-degree: 33%
 
 ---
 
@@ -55,7 +55,7 @@ Um pipeline de não produção serve principalmente para executar verificações
 
 Os pipelines também podem diferir pelo tipo de código que implantam, além de ambientes de produção e não produção.
 
-* **[Pipelines de pilha completa](#full-stack-pipeline)** - Implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor AEM, juntamente com configurações HTTPD/Dispatcher.
+* **[Pipelines de pilha completa](#full-stack-pipeline)** - Implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor do AEM, juntamente com configurações HTTPD/Dispatcher.
 * **[Configurar pipelines](#config-deployment-pipeline)** - Você pode implantar configurações rapidamente para recursos como encaminhamento de logs e tarefas de manutenção relacionadas à limpeza. Também inclui várias configurações de CDN (Content Delivery Network), como regras de filtro de tráfego, incluindo regras do Web Application Firewall (WAF). Além disso, você pode gerenciar transformações de solicitação e resposta, seletores de origem, redirecionamentos do lado do cliente, páginas de erro, chaves CDN, chaves de API de limpeza e autenticação básica. Consulte [Usar pipelines de configuração](/help/operations/config-pipeline.md) para obter detalhes.
 * **[Pipelines de front-end](#front-end)** - Implante compilações de código de front-end contendo um ou mais aplicativos de interface do usuário do lado do cliente.
 * **[Pipelines de configuração no nível da Web](#web-tier-config-pipelines)** - Implanta configurações HTTPD/Dispatcher.
@@ -68,7 +68,7 @@ A tabela a seguir resume os pipelines disponíveis no Cloud Manager e seus usos.
 
 | Tipo de pipeline | Implantação ou qualidade do código | código Source | Propósito | Notas |
 | --- | --- | --- | --- | ---|
-| Produção ou não produção | Implantação | Pilha completa | Implanta simultaneamente compilações de código back-end e front-end, juntamente com configurações HTTPD/Dispatcher | Usado quando o código de front-end deve ser implantado simultaneamente com o código do servidor AEM. Usado quando os pipelines de front-end ou de configuração no nível da Web ainda não foram adotados. |
+| Produção ou não produção | Implantação | Pilha completa | Implanta simultaneamente compilações de código back-end e front-end, juntamente com configurações HTTPD/Dispatcher | Usado quando o código de front-end deve ser implantado simultaneamente com o código de servidor do AEM. Usado quando os pipelines de front-end ou de configuração no nível da Web ainda não foram adotados. |
 | Produção ou não produção | Implantação | Front-end | Implanta a compilação do código de front-end contendo um ou mais aplicativos de interface do usuário do lado do cliente | Suporta vários pipelines de front-end simultâneos<br>Muito mais rápido do que implantações de pilha completa. |
 | Produção ou não produção | Implantação | Configuração no nível da Web | Implanta configurações HTTPD/Dispatcher | Implantações em minutos |
 | Produção ou não produção | Implantação | Configuração | Implanta a [configuração para vários recursos](/help/operations/config-pipeline.md) relacionados às tarefas de manutenção de CDN, encaminhamento de logs e limpeza | Implantações em minutos |
@@ -126,7 +126,7 @@ Consulte [Adicionar um pipeline de não produção](/help/implementing/cloud-man
 
 O código de front-end é qualquer código que é servido como arquivos estáticos. Ele é separado do código de interface fornecido pelo AEM e pode incluir temas de site, SPAs definidos pelo cliente, SPAs comuns e outras soluções.
 
-Os pipelines de front-end ajudam as equipes a agilizar o processo de design e desenvolvimento, permitindo uma implantação mais rápida do código de front-end, de forma assíncrona ao desenvolvimento de back-end. Esse pipeline dedicado implanta JavaScript e CSS na camada de distribuição AEM como um tema, resultando em uma nova versão de tema, que pode ser referenciada a partir de páginas entregues pelo AEM.
+Os pipelines de front-end ajudam as equipes a agilizar o processo de design e desenvolvimento, permitindo uma implantação mais rápida do código de front-end, de forma assíncrona ao desenvolvimento de back-end. Esse pipeline dedicado implanta o JavaScript e o CSS na camada de distribuição do AEM como um tema, resultando em uma nova versão de tema, que pode ser referenciada a partir de páginas entregues pelo AEM.
 
 >[!NOTE]
 >
@@ -138,7 +138,7 @@ Os pipelines de front-end podem ser pipelines de implantação ou de qualidade d
 
 ### Antes de configurar pipelines de front-end {#before-start}
 
-Antes de configurar os pipelines de front-end, revise a [Jornada de criação rápida de sites do AEM](/help/journey-sites/quick-site/overview.md) para obter um guia completo sobre a ferramenta simples de criação rápida de sites do AEM. Essa jornada ajuda a simplificar o desenvolvimento de front-end e permite personalizar o site rapidamente sem conhecimento de AEM de back-end.
+Antes de configurar os pipelines de front-end, revise a [Jornada de criação rápida de sites do AEM](/help/journey-sites/quick-site/overview.md) para obter um guia completo sobre a ferramenta simples de criação rápida de sites do AEM. Esta jornada ajuda a simplificar o desenvolvimento de front-end e permite personalizar o site rapidamente sem conhecimento de back-end no AEM.
 
 ### Configurar um pipeline de front-end {#configure-front-end}
 
@@ -161,7 +161,7 @@ Os pipelines de configuração no nível da Web permitem a implantação exclusi
 
 As restrições a seguir se aplicam.
 
-* Esteja usando o AEM versão `2021.12.6151.20211217T120950Z` ou mais recente para usar pipelines de configuração no nível da Web.
+* Estar na versão `2021.12.6151.20211217T120950Z` ou mais recente do AEM para usar pipelines de configuração no nível da Web.
 * [Aceite o modo flexível das ferramentas do Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para usar pipelines de configuração no nível da Web.
 * É necessário estar conectado na função **Gerente de implantação** para configurar ou executar pipelines.
 * Em um dado momento, somente pode haver um pipeline de configuração no nível da Web por ambiente.
