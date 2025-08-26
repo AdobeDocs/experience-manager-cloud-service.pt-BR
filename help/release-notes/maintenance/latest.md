@@ -4,7 +4,7 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90e92cfb15a6dfe5a8a474996f52c8a0c689f5e6
+source-git-commit: 3067e88f8adea50f6b6b05e0466974bc57bc4a4e
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 18%
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21994, lançada publicamente em quarta-feira, 19 de agosto de 2025. A versão de manutenção anterior era 21772.
 
-A ativação de recursos do 2025.8.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.8.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Novos recursos  {#new-features-21994}
 
@@ -33,7 +33,7 @@ Nenhum.
 * GRANITE-60183: Apache commons-fileupload 1.6.0.
 * GRANITE-60306: Apache commons-lang para 3.18.0.
 * GRANITE-60637: Apache commons-codec para 1.19.0.
-* GRANITE-60645: Apache commons-ui 2.20.0.
+* GRANITE-60645: Apache commons-io 2.20.0.
 * GRANITE-60663: Apache commons-text 1.14.0.
 * GRANITE-60714: Driver Java Mongo 5.2.
 * GRANITE-60778: Filevault 4.0.0.
@@ -60,7 +60,7 @@ Nenhum.
 * GUIDES-11227: Copiar um mapa DITA da interface do usuário do Assets também copia sua linha de base anexada para o novo mapa.
 * GUIDES-31506: A página inicial fica em branco quando um dos arquivos listados no widget Arquivos recentes é baseado em um modelo cujo modelo de origem não inclui uma miniatura.
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problemas conhecidos {#known-issues-21994}
 
@@ -83,4 +83,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.29.0 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
