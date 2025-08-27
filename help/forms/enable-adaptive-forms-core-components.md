@@ -333,7 +333,7 @@ Implante o código atualizado em seus ambientes de desenvolvimento local e do Cl
 
    Depois que o pacote for criado com êxito, você poderá encontrá-lo na [Pasta do Repositório Git]\all\target\[appid].all-[version].zip
 
-1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) para implantar o [pacote de Pasta de Projeto do Arquétipo do AEM]\all\target\[appid].all-[version].zip no ambiente de desenvolvimento local.
+1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) para implantar o [pacote de Pasta de Projeto do Arquétipo do AEM]\all\target\[appid].all-[version].zip no ambiente de desenvolvimento local.
 
 
 ### Criar e implantar código atualizado em um ambiente do AEM Forms as a Cloud Service {#core-components-on-aem-forms-cs}
