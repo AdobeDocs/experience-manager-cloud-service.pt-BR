@@ -1,6 +1,6 @@
 ---
-title: Como ativar os Componentes principais do Forms adaptável no AEM Forms as a Cloud Service e no ambiente de desenvolvimento local?
-description: Saiba como ativar os Componentes principais do Adaptive Forms no AEM Forms as a Cloud Service.
+title: Marque e ative os Componentes principais do Adaptive Forms no AEM Forms as a Cloud Service
+description: Saiba como verificar se os Componentes principais do Forms adaptável estão ativados e como ativá-los, se necessário, no AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
@@ -8,34 +8,66 @@ feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 hide: true
 hidefromtoc: true
-source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
+source-git-commit: 3c1931d67e69d155e777c8761fe2bbbd21461ddf
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 2%
+source-wordcount: '1235'
+ht-degree: 1%
 
 ---
 
-# Habilitar os componentes principais dos formulários adaptáveis {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# Marque e ative os componentes principais adaptáveis do Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
-A ativação dos Componentes principais do Forms adaptável no AEM Forms as a Cloud Service permite que você comece a criar, publicar e fornecer Componentes principais com base no Forms adaptável e no Forms headless usando as instâncias do AEM Forms Cloud Service para vários canais. Você precisa do ambiente habilitado dos Componentes principais adaptáveis do Forms para usar o Forms adaptável headless.
+Os Componentes principais adaptáveis do Forms e o Forms adaptável headless já estão habilitados para a maioria dos clientes do AEM Forms as a Cloud Service. Isso permite criar, publicar e fornecer Forms adaptável e Forms headless baseados em componentes principais usando suas instâncias do AEM Forms Cloud Service para vários canais.
 
-## Considerações
+## Verifique se os Componentes principais adaptáveis do Forms estão ativados {#check-if-enabled}
 
-* Ao criar um novo programa AEM Forms as a Cloud Service, [os Componentes principais do Adaptive Forms e o Headless Adaptive Forms já estão habilitados para o seu ambiente](#are-adaptive-forms-core-components-enabled-for-my-environment).
+Antes de seguir qualquer etapa de ativação, verifique se os Componentes principais adaptáveis do Forms já estão ativados para o seu ambiente:
 
-* Se você tiver um programa mais antigo do Forms as a Cloud Service em que os Componentes principais [não estão habilitados](#enable-components), poderá [adicionar dependências dos Componentes principais do Adaptive Forms](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) ao repositório do AEM as a Cloud Service e implantar o repositório nos ambientes do Cloud Service para habilitar o Headless Adaptive Forms.
+### Para novos programas do AEM Forms as a Cloud Service
 
-* Se seu ambiente Cloud Service existente fornecer a opção de [criar Forms Adaptável baseado em Componentes Principais](creating-adaptive-form-core-components.md), os Componentes Principais do Adaptive Forms e o Forms Adaptável Headless já estarão habilitados para seu ambiente e você poderá usar o Forms Adaptável baseado em Componentes Principais como formulários headless para canais como dispositivos móveis, Web, aplicativos nativos e serviços que exigem uma representação headless do Forms Adaptável.
+Ao criar um novo programa AEM Forms as a Cloud Service, os Componentes principais do Adaptive Forms e o Headless Adaptive Forms já estão ativados para o seu ambiente.
 
-## Ativar os Componentes principais adaptáveis do Forms e o Forms adaptável headless {#enable-headless-forms}
+### Para ambientes Cloud Service existentes
 
-Execute as seguintes etapas, na ordem listada, para ativar os Componentes principais adaptáveis do Forms e o Forms adaptável headless para um ambiente do AEM Forms as a Cloud Service
+Se seu ambiente Cloud Service existente fornecer a opção de [criar Forms adaptável baseado em Componentes principais](creating-adaptive-form-core-components.md), os Componentes principais do Adaptive Forms e o Forms adaptável headless já estarão habilitados para o seu ambiente.
 
+### Verificar verificando o repositório
+
+Para confirmar se os Componentes principais do Adaptive Forms estão ativados para o seu ambiente:
+
+1. Clonar o repositório do AEM Forms as a Cloud Service.
+
+1. Abra o arquivo `[AEM Repository Folder]/all/pom.xml` do Repositório Git do AEM Forms Cloud Service.
+
+1. Procure as seguintes dependências:
+
+   * core-forms-components-af-core
+   * core-forms-components-core
+   * core-forms-components-apps
+   * core-forms-components-af-apps
+   * core-forms-components-examples-apps
+   * core-forms-components-examples-content
+
+   ![localize o artefato core-forms-components-af-core em all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
+
+   Se essas dependências existirem, os Componentes principais adaptáveis do Forms serão ativados para o seu ambiente.
+
+## Quando a ativação manual é necessária {#when-manual-enablement-needed}
+
+Somente se você tiver um programa mais antigo do Forms as a Cloud Service em que os Componentes principais não estejam ativados (confirmado pela verificação acima), será necessário adicionar manualmente as dependências dos Componentes principais do Adaptive Forms ao repositório do AEM as a Cloud Service e implantar o repositório nos ambientes do Cloud Service.
+
++++ Etapas de ativação manual 
+
+>[!WARNING]
+>
+>Siga estas etapas somente se a verificação acima confirmar que os componentes principais adaptáveis do Forms NÃO estão ativados para o seu ambiente.
+
+Execute as seguintes etapas, na ordem listada, para ativar os Componentes principais adaptáveis do Forms e o Forms adaptável headless para um ambiente do AEM Forms as a Cloud Service:
 
 ![Habilitar componentes principais e formulários adaptáveis headless](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
@@ -301,7 +333,7 @@ Implante o código atualizado em seus ambientes de desenvolvimento local e do Cl
 
    Depois que o pacote for criado com êxito, você poderá encontrá-lo na [Pasta do Repositório Git]\all\target\[appid].all-[version].zip
 
-1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) para implantar o [pacote de Pasta de Projeto do Arquétipo do AEM]\all\target\[appid].all-[version].zip no ambiente de desenvolvimento local.
+1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) para implantar o [pacote de Pasta de Projeto do Arquétipo do AEM]\all\target\[appid].all-[version].zip no ambiente de desenvolvimento local.
 
 
 ### Criar e implantar código atualizado em um ambiente do AEM Forms as a Cloud Service {#core-components-on-aem-forms-cs}
@@ -321,6 +353,7 @@ Implante o código atualizado em seus ambientes de desenvolvimento local e do Cl
 
    Depois que a execução do pipeline for bem-sucedida, os Componentes principais adaptáveis do Forms serão ativados para o ambiente correspondente. Além disso, um modelo de Forms adaptável (Componentes principais) e o tema do Canvas 3.0 são adicionados ao ambiente do Forms as a Cloud Service, fornecendo opções para personalizar e criar Componentes principais com base no Adaptive Forms.
 
++++
 
 ## Perguntas frequentes {#faq}
 
@@ -337,26 +370,14 @@ Quando os Componentes principais do Forms adaptável estiverem ativados para seu
 * [Criar temas personalizados para os Componentes principais com base em modelos de Formulário adaptável](/help/forms/using-themes-in-core-components.md).
 * [Servir representações JSON do Formulário adaptável com base no Componente principal para canais como dispositivos móveis, Web, aplicativos nativos e serviços que exigem a representação headless de um formulário](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR).
 
-### Os Componentes principais adaptáveis do Forms estão habilitados para meu ambiente? {#enable-components}
+### Como sei se preciso ativar manualmente os Componentes principais do Adaptive Forms? {#manual-enablement-needed-faq}
 
-Para verificar se os Componentes principais do Adaptive Forms estão ativados para o seu ambiente:
+A maioria dos clientes já tem os Componentes principais adaptáveis do Forms ativados. Você só precisará ativá-los manualmente se:
 
-1. [Clonar o repositório do AEM Forms as a Cloud Service](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
+1. Você tem um programa mais antigo do Forms as a Cloud Service criado antes dos Componentes principais serem incluídos automaticamente
+1. A verificação na seção [Verificar se os Componentes principais adaptáveis do Forms estão habilitados](#check-if-enabled) confirma que as dependências necessárias estão ausentes do repositório
 
-1. Abra o arquivo `[AEM Repository Folder]/all/pom.xml` do Repositório Git do AEM Forms Cloud Service.
-
-1. Procure as seguintes dependências:
-
-   * core-forms-components-af-core
-   * core-forms-components-core
-   * core-forms-components-apps
-   * core-forms-components-af-apps
-   * core-forms-components-examples-apps
-   * core-forms-components-examples-content
-
-   ![localize o artefato core-forms-components-af-core em all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
-
-   Se as dependências existirem, os Componentes principais adaptáveis do Forms serão ativados para o seu ambiente.
+Se não tiver certeza, siga as etapas de verificação na seção [Verificar se os Componentes principais adaptáveis do Forms estão habilitados](#check-if-enabled) acima.
 
 ### Por que os formulários baseados nos Componentes principais não são renderizados no projeto?
 
