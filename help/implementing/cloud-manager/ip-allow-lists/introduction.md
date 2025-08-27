@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
+source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 7%
+source-wordcount: '515'
+ht-degree: 21%
 
 ---
 
@@ -17,16 +17,12 @@ ht-degree: 7%
 
 Saiba como as Listas de permissões de IP podem limitar os endereços dos quais os usuários podem acessar domínios no AEM as a Cloud Service.
 
-<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
->title="Manage IP Allow Lists"
->abstract="AEM as a Cloud Service is accessible by way of the Internet and is secured through user authentication and authorization. Cloud Manager's IP Allow Lists can be used to limit and control access only to trusted IP addresses. Cloud Manager users with appropriate permissions can create allowlists of trusted IP addresses from which their site's users can access their AEM domains."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists" text="Add an IP Allow List"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists" text="View and update an IP Allow List"
-
--->
+>title="Gerenciar listas de permissões de IP"
+>abstract="O AEM as a Cloud Service pode ser acessado pela Internet e é protegido por meio da autenticação e da autorização do usuário. As listas de permissões de IP do Cloud Manager podem ser usadas para limitar e controlar o acesso somente a endereços IP confiáveis. Usuários do Cloud Manager com as permissões apropriadas podem criar listas de permissões de endereços IP confiáveis a partir dos quais os usuários do site podem acessar seus domínios do AEM."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/ip-allow-lists/add-ip-allow-lists" text="Adicionar uma lista de permissões de IP"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/ip-allow-lists/managing-ip-allow-lists" text="Exibir e atualizar uma lista de permissões de IP"
 
 ## Visão geral {#overview}
 

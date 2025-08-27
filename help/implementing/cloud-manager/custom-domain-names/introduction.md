@@ -5,26 +5,22 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
+source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 34%
+source-wordcount: '698'
+ht-degree: 37%
 
 ---
 
 
 # Introdução a nomes de domínio personalizados {#introduction}
 
-<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
->title="Manage Custom Domain Names"
->abstract="Cloud Manager's UI lets you add a custom domain to identify your site with a unique, branded name in a self-service manner."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Adding a Custom Domain Name"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="View & Update Custom Domain Name"
-
--->
+>title="Gerenciar nomes de domínio personalizados"
+>abstract="A interface do Cloud Manager permite adicionar um domínio personalizado para identificar seu site com um nome exclusivo e de marca por meio de autoatendimento."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/add-custom-domain-name" text="Adicionar um nome de domínio personalizado"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/custom-domain-names/managing-custom-domain-names" text="Exibir e atualizar o nome de domínio personalizado"
 
 O Adobe Experience Manager as a Cloud Service é provisionado com um nome de domínio padrão, terminando em `*.adobeaemcloud.com`. Usando a interface do usuário da Cloud Manager, você pode adicionar um domínio personalizado para identificar seu site com um nome exclusivo e de marca, de maneira automatizada. O nome de domínio padrão `*.adobeaemcloud.com` permanece, mesmo depois de associar nomes de domínio personalizados ao site.
 

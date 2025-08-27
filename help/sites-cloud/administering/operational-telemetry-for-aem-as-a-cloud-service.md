@@ -4,9 +4,9 @@ description: Saiba mais sobre a Telemetria operacional, um serviço automatizado
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: 41d9fd628eec8ce757447bed13d50211e71785de
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ A Telemetria operacional ajuda os clientes e a Adobe a entender como os usuário
 
 ## Amostragem de dados do serviço de telemetria operacional {#operational-telemetry-service-data-sampling}
 
-As soluções tradicionais de análise da Web tentam coletar dados em cada visitante. O serviço de Telemetria operacional da AEM captura apenas informações de uma pequena fração de visualizações de página. O serviço deve ser amostrado e anonimizado em vez de ser um substituto para o Analytics. Por padrão, as páginas têm uma proporção de amostragem de 1:100. Os operadores do site não podem aumentar ou diminuir a taxa de amostragem neste momento. Para estimar o tráfego total com precisão, para cada 100 exibições de página, os dados são coletados de 1, fornecendo uma aproximação confiável do tráfego geral.
+As soluções tradicionais de análise da Web tentam coletar dados em cada visitante. O serviço de Telemetria operacional da AEM captura apenas informações de uma pequena fração de visualizações de página. O serviço deve ser amostrado e anonimizado em vez de ser um substituto para o Analytics. Por padrão, as páginas têm uma taxa de amostragem de 1:100. Os operadores do site não podem aumentar ou diminuir a taxa de amostragem neste momento. Para estimar o tráfego total com precisão, para cada 100 exibições de página, os dados são coletados de 1, fornecendo uma aproximação confiável do tráfego geral.
 
 Como a decisão sobre se os dados serão coletados, ela é feita em uma base de exibição de página por exibição de página, e se torna praticamente impossível rastrear interações em várias páginas. Por design, a Telemetria Operacional não tem conceito de visitantes ou sessões, apenas de exibições de página.
 
@@ -42,7 +42,7 @@ O serviço de Telemetria Operacional foi projetado para minimizar a coleta de da
 * O nome de host do site que está sendo visitado, por exemplo: `experienceleague.adobe.com`
 * O tipo amplo de agente de usuário e sistema operacional que é usado para exibir a página, como: `desktop:windows` ou `mobile:ios`
 * A hora da coleta de dados, como: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* A URL da página que está sendo visitada, por exemplo: `https://experienceleague.adobe.com/docs?lang=pt-BR`
+* A URL da página que está sendo visitada, por exemplo: `https://experienceleague.adobe.com/docs`
 * O URL referenciador (o URL da página que se vinculou à página atual, se o usuário seguiu um link)
 * Uma ID gerada aleatoriamente da exibição de página, em um formato semelhante a: `2Ac6`
 * O peso ou o inverso da taxa de amostragem, como: `100`. Significa que somente uma em cada cem exibições de página é registrada
@@ -93,7 +93,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 1. **O caminho `/.rum` está bloqueado no meu site, como devo corrigir?**
 
-   O caminho `/.rum` é necessário para que a coleção de Telemetria Operacional funcione. Se você usar um CDN na frente do AEM as a Cloud Service do Adobe, certifique-se de que o caminho `/.rum` seja encaminhado para a mesma origem do AEM que o outro conteúdo do AEM. E certifique-se de que ele não seja ajustado de forma alguma.
+   O caminho `/.rum` é necessário para que a coleção de Telemetria Operacional funcione. Se você usar um CDN na frente do AEM as a Cloud Service do Adobe, certifique-se de que o caminho `/.rum` seja encaminhado para a mesma origem do AEM que o outro conteúdo do AEM. E certifique-se de que ele não seja ajustado de forma alguma. Como alternativa, você pode alterar o host a ser usado para a Telemetria Operacional `rum.hlx.page`, [definindo uma variável de ambiente no Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) chamada `AEM_OPTEL_EXTERNAL` para o valor `true`. Se você quiser voltar para as mesmas solicitações de domínio posteriormente, basta remover essa variável de ambiente novamente.
 
 1. **A coleção de Telemetria Operacional conta para solicitações de conteúdo para fins contratuais?**
 
@@ -103,4 +103,4 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    A Adobe recomenda usar a Telemetria operacional devido aos seus benefícios significativos e que permitirá que a Adobe o ajude a otimizar suas experiências digitais melhorando o desempenho do site. O serviço foi projetado para ser ininterrupto e não tem impacto no desempenho do site.
 
-   Recusar pode significar perder uma chance de melhorar o engajamento no tráfego do seu site. No entanto, se encontrar problemas, entre em contato com o Suporte da Adobe.
+   Recusar pode significar perder uma chance de melhorar o engajamento no tráfego do seu site. No entanto, se você encontrar problemas, poderá desabilitar a Telemetria Operacional [definindo uma variável de ambiente no Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) chamada `AEM_OPTEL_DISABLED` para o valor `true`. Se você quiser ativar a Telemetria operacional novamente em um ponto posterior, basta remover essa variável de ambiente novamente.
