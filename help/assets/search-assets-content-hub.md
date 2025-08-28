@@ -3,16 +3,16 @@ title: Pesquisar ativos no Content Hub
 description: Saiba como pesquisar ativos no [!DNL Content Hub]
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
+source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
 
 # Pesquisar Assets em [!DNL Content Hub] {#search-assets}
 
-Quando você tem um grande número de ativos no repositório, pesquisar o ativo certo é demorado. A pesquisa do [!DNL The Content Hub] fornece a capacidade de procurar os ativos aprovados para que você possa executar ações adicionais neles, como baixar, compartilhar ou criar coleções. Você pode utilizar vários recursos para restringir os resultados da pesquisa, como o, executar pesquisa baseada em texto, usar filtros, executar tags ou pesquisa específica de tags inteligentes, pesquisar um formato de arquivo específico e assim por diante.
+Quando você tem um grande número de ativos no repositório, pesquisar o ativo certo é demorado. A pesquisa do [!DNL The Content Hub] fornece a capacidade de procurar os ativos aprovados para que você possa executar ações adicionais neles, como baixar, compartilhar ou criar coleções. Você pode utilizar vários recursos para restringir os resultados da pesquisa, como executar pesquisa baseada em texto, usar filtros, executar tags ou pesquisa específica de tags inteligentes, pesquisar um formato de arquivo específico e assim por diante.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -148,6 +148,24 @@ Os filtros padrão incluem formato de arquivo, aprovado por, data de aprovação
 
 -->
 
+## Pesquisar em massa {#bulk-search}
+
+A pesquisa em massa de ativos permite pesquisar vários ativos simultaneamente inserindo uma lista de identificadores (como nomes, formatos de arquivo, cores, tags e muito mais). Em vez de pesquisar ativos um por um, a [!DNL Content Hub] Pesquisa em massa agiliza a descoberta dos ativos necessários. Com esse recurso, você pode inserir vários valores para qualquer propriedade de filtro, separados por um delimitador (por exemplo, várias IDs de SKU), e recuperar instantaneamente todos os ativos correspondentes com uma única pesquisa.
+
+Para pesquisar vários ativos de uma só vez, insira vários valores em uma única consulta separando-os com delimitadores ` [ , | \t | \r | \n | \r\n ]`. Também é possível adicionar mais delimitadores dependendo do caso de uso. Consulte [Configurar Pesquisa Em Massa](configure-content-hub-ui-options.md#bulk-search-configuration).
+
+Para executar a Pesquisa em Massa no [!DNL Content Hub], execute as seguintes etapas:
+
+1. Quando a Pesquisa em Massa estiver [configurada](configure-content-hub-ui-options.md#bulk-search-configuration), você poderá ver a opção Pesquisa em Massa nas propriedades de filtro [!DNL Content Hub] que você configurou. Você pode habilitá-lo ou desabilitá-lo de acordo com o requisito.
+
+1. Adicione uma consulta de pesquisa contendo delimitadores especificados na configuração. A consulta de pesquisa deve conter uma string acompanhada de vários valores separados por vírgulas.
+
+![Interface de Pesquisa em Massa](assets/bulk-search-ui.png)
+
 ## Faça mais com a pesquisa {#do-more-with-search}
 
 [!DNL The Content Hub] não está limitado à pesquisa. Em vez disso, permite que você execute ações adicionais, como [baixar](download-assets-content-hub.md), [compartilhar](share-assets-content-hub.md) e [adicionar ativos à coleção](collections-content-hub.md), diretamente da interface de pesquisa ou visualização. Selecione os ativos na página de resultados da pesquisa para exibir essas opções.
+
+Saiba mais sobre [como configurar ativos no [!DNL Content Hub]](configure-content-hub-ui-options.md).
+
+

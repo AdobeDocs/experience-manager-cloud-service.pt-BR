@@ -2,9 +2,9 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e8932e6490008368e0e22ebec3331553b7b54c59
+source-git-commit: 06373e14ff9199d97c03332d95a0d2b024b3220f
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2265'
 ht-degree: 8%
 
 ---
@@ -90,7 +90,7 @@ Você pode configurar os campos de metadados exibidos para os usuários ao fazer
 
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações.
 
-Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada propriedade disponível, para editar os rótulos, tornar esses campos obrigatórios ou não obrigatórios para os usuários ao carregar ativos usando a opção **[!UICONTROL Campo obrigatório]** ou clicar no ícone Excluir para excluir qualquer propriedade de metadados.
+Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg) disponível ao lado de cada propriedade disponível, para editar os rótulos, tornar esses campos obrigatórios ou não obrigatórios para os usuários ao carregar ativos usando a opção **[!UICONTROL Campo obrigatório]** ou clicar no ícone Excluir para excluir qualquer propriedade de metadados.
 
 Clique na opção **[!UICONTROL Aprovação automática]** se precisar que todos os ativos adicionados ao repositório do Experience Manager Assets sejam aprovados automaticamente para que estejam disponíveis no Content Hub imediatamente. Os autores ou administradores do DAM precisam aprovar manualmente os ativos para disponibilizá-los no Content Hub. Por padrão, o botão está definido como Desligado.
 
@@ -123,6 +123,20 @@ Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edi
 
 Os filtros ativados na Interface do Usuário de Configuração são exibidos na página Pesquisar:
 ![Pesquisar no Content Hub](assets/content-hub-filters1.png)
+
+#### Pesquisar em massa {#bulk-search-configuration}
+
+Para habilitar a pesquisa de vários ativos de uma só vez no [!DNL Content Hub], execute as etapas a seguir:
+
+1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Filtros]**.
+
+1. Clique no ![ícone Editar](assets/do-not-localize/edit_icon.svg)disponível ao lado de cada filtro disponível.
+
+1. Habilitar alternância de **[!UICONTROL Pesquisa em Massa]**. Os delimitadores padrão `[ , | \t | \r\n | \r | \n ]` são exibidos automaticamente. Além disso, também é possível adicionar outros delimitadores. Para fazer isso, especifique delimitadores na caixa de entrada separados por um `pipe symbol (|)`.
+
+   ![Configuração de Pesquisa em Massa](assets/bulk-search-configuration.png)
+
+1. Clique em **[!UICONTROL Confirmar]** para salvar as alterações. Veja [Pesquisa em Massa no Content Hub](search-assets-content-hub.md#bulk-search) em ação.
 
 ### Detalhes do ativo {#configure-asset-details-content-hub}
 
@@ -248,7 +262,7 @@ Se a visibilidade dos ativos expirados estiver habilitada, a Content Hub também
 
 ### Representações {#renditions-content-hub}
 
-As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para desabilitá-la, siga estas etapas:
 
@@ -312,3 +326,4 @@ Enable the following setting on the Configurations user interface to allow Conte
 -->
 
 Saiba mais sobre o [compartilhamento de ativos no [!DNL Content Hub]](share-assets-content-hub.md).
+
