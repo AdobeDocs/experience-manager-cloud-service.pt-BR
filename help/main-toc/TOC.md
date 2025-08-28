@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 94a20e8e95edf603227bfadd07e4b4c62e6421e6
+source-git-commit: b6cc9b51ac36cc5f9450a8ccb305b86496f3e7cb
 workflow-type: tm+mt
 source-wordcount: '6552'
 ht-degree: 59%
@@ -1135,14 +1135,14 @@ ht-degree: 59%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação{#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
@@ -1226,34 +1226,34 @@ ht-degree: 59%
       + [Criar programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
       + [Editar Programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
       + [Ambientes do Hibernate](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-   + Criar um projeto de aplicativo do AEM {#create-application-project}
-      + [Assistente de criação de projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-      + [Configuração do projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-      + [Ambiente de criação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
-   + [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md)
-   + [Ambientes de teste especializados (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
-   + Gerenciar o código {#managing-code}
-      + [Manuseio da versão do projeto do Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-      + [Gerenciar repositórios no Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-      + [Adicionar um repositório da Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-      + [Adicionar um repositório privado](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-      + [Adicionar um repositório externo (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-      + [Gerenciar tokens de acesso de repositórios externos (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
-      + [Acessar repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-      + [Suporte ao submódulo Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
-      + [Usar o Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-      + [Usar vários repositórios](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-      + [Configuração da equipe de desenvolvimento corporativa](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-      + [Configuração de verificação do GitHub](/help/implementing/cloud-manager/managing-code/github-check-config.md)
-      + [Anotações de verificação do GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
-   + [Variáveis de ambiente](/help/implementing/cloud-manager/environment-variables.md)
-   + Pipelines de CI-CD do Cloud Manager {#cicd-pipelines}
-      + [Introdução aos pipelines de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-      + [Configurar um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-      + [Configurar um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-      + [Configurar um pipeline de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
-      + [Gerenciar pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
-      + [Variáveis de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
+      + Criar um projeto de aplicativo do AEM {#create-application-project}
+         + [Assistente de criação de projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [Configuração do projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+         + [Ambiente de criação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+      + [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md)
+      + [Ambientes de teste especializados (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
+      + Gerenciar o código {#managing-code}
+         + [Manuseio da versão do projeto do Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+         + [Gerenciar repositórios no Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+         + [Adicionar um repositório da Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Adicionar um repositório privado](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+         + [Adicionar um repositório externo (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Gerenciar tokens de acesso de repositórios externos (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [Acessar repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [Suporte ao submódulo Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
+         + [Usar o Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [Usar vários repositórios](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [Configuração da equipe de desenvolvimento corporativa](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Configuração de verificação do GitHub](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+         + [Anotações de verificação do GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
+      + [Variáveis de ambiente](/help/implementing/cloud-manager/environment-variables.md)
+      + Pipelines de CI-CD do Cloud Manager {#cicd-pipelines}
+         + [Introdução aos pipelines de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [Configurar um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [Configurar um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [Configurar um pipeline de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
+         + [Gerenciar pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+         + [Variáveis de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Implante Seu Código](/help/implementing/cloud-manager/deploy-code.md)
       + Entender os resultados de teste {#test-results}
          + [Visão geral](/help/implementing/cloud-manager/overview-test-results.md)
@@ -1270,7 +1270,7 @@ ht-degree: 59%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
