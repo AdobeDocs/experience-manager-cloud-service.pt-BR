@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b6cc9b51ac36cc5f9450a8ccb305b86496f3e7cb
+source-git-commit: c273b78fe698ef0cdc4bf3999a0479d0509c7ad4
 workflow-type: tm+mt
 source-wordcount: '6552'
 ht-degree: 59%
@@ -1135,14 +1135,14 @@ ht-degree: 59%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação{#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
@@ -1218,14 +1218,14 @@ ht-degree: 59%
    + [Implementação de aplicativos do AEM as a Cloud Service](/help/implementing/home.md)
    + Usar o Cloud Manager {#using-cloud-manager}
       + [Navegação](/help/implementing/cloud-manager/navigation.md)
-   + Programas {#programs}
-      + [Programas e tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
-      + [Programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-      + [Criar programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
-      + [Programas do Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-      + [Criar programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
-      + [Editar Programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
-      + [Ambientes do Hibernate](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
+      + Programas {#programs}
+         + [Programas e tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+         + [Programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+         + [Criar programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+         + [Programas do Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [Criar programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+         + [Editar Programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [Ambientes do Hibernate](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Criar um projeto de aplicativo do AEM {#create-application-project}
          + [Assistente de criação de projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configuração do projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1270,7 +1270,7 @@ ht-degree: 59%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
