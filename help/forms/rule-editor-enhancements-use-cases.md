@@ -122,7 +122,7 @@ O campo **Custo Total da Remessa** é atualizado dinamicamente para refletir o c
 >[!NOTE]
 >
 > Você também pode adicionar a função **Obter valor da variável** na condição Quando.
-> > ![Função Get Variable Value em When condition](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> &#x200B;> ![Função Get Variable Value em When condition](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Essa abordagem permite cálculos dinâmicos em tempo real sem adicionar campos extras ao formulário, mantendo a estrutura limpa e fácil de usar.
 
