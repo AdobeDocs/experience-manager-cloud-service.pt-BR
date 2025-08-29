@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Crie URLs personalizados para entrega de ativos no DM com OpenAPI, substituindo 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 * [Componente de entrada de data e hora](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): um componente de data e hora está disponível, permitindo que os usuários selecionem data e hora usando uma interface de calendário e relógio ou inserindo valores manualmente em um formato com suporte.
-* [Tratamento de Erros Aprimorado para Carregamentos de Arquivos](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): o componente de Anexo de Arquivo agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
+* [Tratamento de Erros Aprimorado para Carregamentos de Arquivos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): o componente de Anexo de Arquivo agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
 * [Resposta de Erro Especificada para Ação de Envio Personalizada](/help/forms/custom-submit-action-troubleshooting.md): Quando uma ação de envio personalizada encontra um erro sem tratamento, o código de erro 502 é retornado. Isso ajuda a identificar que o problema está relacionado à ação de envio personalizada, facilitando a depuração.
 * [Excluindo campos ocultos do documento de registro](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): uma nova propriedade foi adicionada para permitir a exclusão de campos ocultos do documento de registro. Por padrão, essa opção não está selecionada e se aplica a todos os campos de formulário.
 
@@ -218,7 +218,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
