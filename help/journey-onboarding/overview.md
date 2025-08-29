@@ -112,4 +112,4 @@ Se quiser saber o que a Adobe recomenda sobre como integrar sua equipe ao novo a
 
 A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo da jornada de integração.
 
-* [Integração com o AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding) - este breve vídeo fornece uma visão geral do processo de integração do Cloud Service com o AEM.
+* [Integração com o AEM as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding) - este breve vídeo fornece uma visão geral do processo de integração do Cloud Service com o AEM.
