@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b09452637fd86af8fc71101f98e05597a8fe630e
+source-git-commit: 39cfcc26181ca651dda8d6f492c588397a865ea4
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2920'
 ht-degree: 37%
 
 ---
@@ -134,6 +134,18 @@ Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
    * Selecione a contagem para abrir uma caixa de diálogo que exibe todas as cópias de idioma. Para abrir uma cópia de idioma específica, clique no **Título** na caixa de diálogo.
 
      ![Console de Fragmentos de conteúdo - Caixa de diálogo Idioma](assets/cf-managing-console-languages-dialog.png)
+
+* **Fluxos de trabalhos**
+
+   * Somente informações
+
+   * Selecione o ícone para um fragmento específico:
+
+     ![Console de Fragmentos de conteúdo - Ícone de fluxos de trabalho](assets/cf-managing-console-workflows-icon.png)
+
+     Para abrir uma caixa de diálogo com informações detalhadas sobre os fluxos de trabalho (passados e atuais) do fragmento.:
+
+     ![Console de Fragmentos de conteúdo - Caixa de diálogo de fluxos de trabalho](assets/cf-managing-console-workflows-dialog.png)
 
 ## Ações {#actions}
 
