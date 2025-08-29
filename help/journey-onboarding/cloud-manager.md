@@ -4,10 +4,10 @@ description: Saiba como acessar o Cloud Manager para poder configurar os recurso
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 4cad0ea1be4cba1c7f1af55cc760fb65fdc3cc4a
+source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 71%
+source-wordcount: '909'
+ht-degree: 57%
 
 ---
 
@@ -42,9 +42,13 @@ Para que os membros da equipe com função de **Proprietário da empresa** possa
 
    Retorne à etapa anterior, [Atribuir Membros da Equipe a Perfis de Produto do Cloud Manager](assign-profiles-cloud-manager.md), para obter detalhes sobre como atribuir a função de **Proprietário da Empresa** ao administrador do sistema.
 
-1. Entre no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Entre no Cloud Manager em [experience.adobe.com](https://experience.adobe.com/).
+1. No agrupamento Acesso rápido, clique em **Experience Manager**.
+1. No painel lateral esquerdo, clique em **Cloud Manager**.
 
-Ao entrar como administrador do sistema com a função **Proprietário da empresa**, você inicializa o Cloud Manager para uso pelos outros usuários com a função **Proprietário da empresa**. Você não recebe uma confirmação ou qualquer mensagem. Apenas fazer logon é suficiente.
+   ![Cloud Manager no console](/help/journey-onboarding/assets/consol-cloud-manager.png)
+
+Ao entrar como administrador do sistema com a função **Proprietário da empresa**, você usa o Cloud Manager para ser usado pelos outros usuários com a função **Proprietário da empresa**. Você não recebe uma confirmação ou qualquer mensagem. Apenas fazer logon é suficiente.
 
 Até você entrar no Cloud Manager como administrador do sistema com a função **Proprietário da empresa**, outros usuários com a função **Proprietário da empresa** não poderão criar programas no Cloud Manager. Essa regra é verdadeira mesmo se eles forem atribuídos às funções corretas.
 
@@ -63,27 +67,28 @@ Usuários com a função **Proprietário da empresa** receberão um email de boa
 
 1. Você será direcionado para a página de destino do Cloud Manager.
 
-Como alternativa, você pode navegar para a página **Programas e Produtos** da Cloud Manager a partir da página inicial da Adobe Experience Cloud usando essas etapas.
+<!-- OLD
+Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
 
-1. Navegue diretamente para a [Adobe Experience Cloud](https://experience.adobe.com) e faça logon usando sua Adobe ID.
+1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
 
-1. Na página inicial do Adobe Experience Cloud, selecione **Experience Manager** para abrir a página inicial do AEM.
+1. From the Adobe Experience Cloud home page, select **Experience Manager** to open the AEM home page.
 
-   ![Página inicial da Experience Cloud](/help/journey-onboarding/assets/setup-resources2.png)
+   ![Experience Cloud homepage](/help/journey-onboarding/assets/setup-resources2.png)
 
-1. No bloco **Cloud Manager**, selecione **Iniciar**.
+1. On the **Cloud Manager** tile, select **Launch**.
 
-   ![Página inicial do AEM](/help/journey-onboarding/assets/setup-resources3.png)
+   ![AEM home page](/help/journey-onboarding/assets/setup-resources3.png)
 
-1. Depois de fazer logon, você é direcionado para a página de destino do Cloud Manager. Consulte [Visualização dos programas do Cloud Manager](#viewing-programs) para obter mais detalhes.
+1. After successfully logging on, you are directed to the Cloud Manager landing page. See [Viewing Cloud Manager's Programs](#viewing-programs) for more details.
 
-A maneira como você acessa seus programas e produtos por meio do Cloud Manager é da sua responsabilidade e não afeta a forma como você usa o Cloud Manager ou como gerencia seus programas.
+How you access your programs and products via Cloud Manager is up to you and has no effect on how you use Cloud Manager or how you manage your programs.
 
 >[!NOTE]
 >
->Dependendo das funções atribuídas no Cloud Manager e do estado do aplicativo, você verá telas diferentes ao usar a interface do usuário do Cloud Manager.
+>Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface. -->
 
-## Exibição dos programas {#viewing-programs}
+## Exibir programas {#viewing-programs}
 
 Ao acessar o Cloud Manager, o conteúdo exibido dependerá do estado dos seus programas, conforme detalhado nas seções a seguir.
 
@@ -91,35 +96,35 @@ Ao acessar o Cloud Manager, o conteúdo exibido dependerá do estado dos seus pr
 
 Se não existirem programas em sua organização, a página de aterrissagem o direcionará para criar seu primeiro programa.
 
-![Nenhum programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+![Nenhum programa](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
 
-### Quando já existem programas {#programs-exist}
+### Quando os programas já existem {#programs-exist}
 
 Se programas já existirem em sua organização, a página de destino exibirá os programas existentes e também oferecerá um botão para adicionar mais programas.
 
-![Existem programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+![Existem programas](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
 
-### Quando existe um programa e você é um administrador do sistema {#programs-exist-sysadmin}
+### Quando existe um programa e você é um Administrador do sistema {#programs-exist-sysadmin}
 
 Se houver programas em sua organização e você for um administrador do sistema, a página de aterrissagem exibirá o botão **Gerenciar Acesso** junto com a opção **Adicionar Programa**.
 
-![Exibição do administrador do sistema](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+![Exibição do administrador do sistema](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
 
-## Verificação das suas funções de usuário {#verify-user-roles}
+## Verificar suas funções de usuário {#verify-user-roles}
 
 Depois de fazer logon no Cloud Manager, você poderá verificar se recebeu o perfil de produto **Proprietário da empresa**.
 
-1. Selecione o perfil na parte superior direita da janela.
+1. Ao lado do canto superior direito da página, clique no ícone **Conta**.
 
-1. Para exibir as funções atribuídas ao seu usuário, selecione **Funções do usuário**.
+1. Clique em **Funções de usuário**.
 
-   ![Funções do usuário](/help/journey-onboarding/assets/setup-resources6.png)
+   ![Funções do usuário](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
-1. A caixa de diálogo deve confirmar que o usuário tem a função **Proprietário da empresa**.
+1. Na caixa de diálogo **Funções do Usuário**, confirme se o usuário tem a função **Proprietário da Empresa**.
 
-   ![Lista de funções de usuário](/help/journey-onboarding/assets/setup-resources7.png)
+   ![Lista de funções de usuário](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
-Você fez logon no Cloud Manager como Proprietário da empresa! Se você não recebeu a função **Proprietário da empresa**, entre em contato com o administrador do sistema.
+Você fez logon no Cloud Manager como Proprietário da empresa. Se você não recebeu a função **Proprietário da empresa**, entre em contato com o administrador do sistema.
 
 ## O que vem a seguir {#whats-next}
 
