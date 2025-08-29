@@ -1,12 +1,12 @@
 ---
 title: Uso de bibliotecas do lado do cliente no AEM as a Cloud Service
-description: O AEM fornece Pastas de bibliotecas do lado do cliente, que permitem armazenar o código do lado do cliente (clientlibs) no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente
+description: O AEM fornece Pastas de bibliotecas do lado do cliente, que permitem armazenar seu código do lado do cliente (clientlibs) no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: da44719521546e81af60e4f8dd5452d83ff5e1e7
 workflow-type: tm+mt
-source-wordcount: '2497'
+source-wordcount: '2422'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Uso de bibliotecas do lado do cliente no AEM as a Cloud Service {#using-client-side-libraries}
 
-As experiências digitais dependem muito do processamento do lado do cliente orientado por códigos JavaScript e CSS complexos. Bibliotecas do lado do cliente do AEM (clientlibs) permitem organizar e armazenar centralmente essas bibliotecas do lado do cliente no repositório. Juntamente com o [processo de compilação de front-end no arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=pt-BR), o gerenciamento do código de front-end para o seu projeto AEM fica simples.
+As experiências digitais dependem muito do processamento do lado do cliente orientado por códigos JavaScript e CSS complexos. As Bibliotecas do lado do cliente do AEM (clientlibs) permitem organizar e armazenar centralmente essas bibliotecas do lado do cliente no repositório. Juntamente com o [processo de compilação de front-end no arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), o gerenciamento do código de front-end para o seu projeto do AEM torna-se simples.
 
 As vantagens de usar clientlibs no AEM incluem:
 
@@ -23,21 +23,21 @@ As vantagens de usar clientlibs no AEM incluem:
 * Exponha clientlibs por um caminho acessível por meio do [dispatcher](/help/implementing/dispatcher/disp-overview.md)
 * Permite a regravação de caminhos para arquivos ou imagens referenciados
 
-As clientlibs são a solução integrada para fornecer CSS e JavaScript do AEM.
+As bibliotecas de clientes são a solução integrada para fornecer CSS e JavaScript da AEM.
 
 >[!TIP]
 >
->Os desenvolvedores de front-end que estão criando projetos CSS e JavaScript para AEM também devem se familiarizar com o [Arquétipo de projeto do AEM e seu processo de compilação automatizado de front-end](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=pt-BR).
+>Os desenvolvedores de front-end que estão criando CSS e JavaScript para projetos do AEM também devem se familiarizar com o [Arquétipo de Projetos AEM e seu processo de compilação automatizado de front-end](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
 ## O que são bibliotecas do lado do cliente {#what-are-clientlibs}
 
-Os sites exigem que o JavaScript e o CSS, além de recursos estáticos, como ícones e fontes da Web, sejam processados no lado do cliente. Uma clientlib é um mecanismo AEM que faz referência (por categoria, se necessário) e serve esses recursos.
+Os sites exigem que o JavaScript e o CSS, além de recursos estáticos, como ícones e fontes da Web, sejam processados no lado do cliente. Uma clientlib é o mecanismo do AEM para referenciar (por categoria, se necessário) e veicular esses recursos.
 
-O AEM coleta o CSS e o JavaScript do site em um único arquivo, em um local central, para garantir que apenas uma cópia de qualquer recurso seja incluída na saída do HTML. Isso maximiza a eficiência da entrega e permite que esses recursos sejam mantidos centralmente no repositório via proxy, mantendo o acesso seguro.
+A AEM coleta o CSS e o JavaScript do site em um único arquivo, em um local central, para garantir que apenas uma cópia de qualquer recurso seja incluída na saída do HTML. Isso maximiza a eficiência da entrega e permite que esses recursos sejam mantidos centralmente no repositório via proxy, mantendo o acesso seguro.
 
 ## Desenvolvimento de front-end para o AEM as a Cloud Service {#fed-for-aemaacs}
 
-Todos os ativos de JavaScript, CSS e outros ativos de front-end devem ser mantidos no [módulo ui.frontend do Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=pt-BR). A flexibilidade do arquétipo permite usar suas ferramentas da Web modernas preferidas para criar e gerenciar esses recursos.
+Todos os ativos de JavaScript, CSS e outros ativos de front-end devem ser mantidos no módulo [ui.frontend do Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html). A flexibilidade do arquétipo permite usar suas ferramentas da Web modernas preferidas para criar e gerenciar esses recursos.
 
 O arquétipo pode então compilar os recursos em arquivos CSS e JS únicos, incorporando-os automaticamente em um `cq:clientLibraryFolder` no repositório.
 
@@ -92,7 +92,7 @@ Para que as bibliotecas de clientes em `/apps` sejam acessíveis, um servidor pr
 1. Se você precisar gerenciar recursos estáticos, crie uma subpasta chamada `resources` abaixo da pasta da biblioteca do cliente.
    * Se você armazenar recursos estáticos em qualquer lugar que não seja na pasta `resources`, eles não poderão ser referenciados em uma instância de publicação.
 1. Adicionar arquivos de origem à pasta da biblioteca.
-   * Isso normalmente é feito pelo processo de build de front-end do [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=pt-BR).
+   * Isso normalmente é feito pelo processo de build de front-end do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * Você pode organizar os arquivos de origem em subpastas, se desejar.
 1. Selecione a pasta da biblioteca do cliente e clique em **Criar > Criar arquivo**.
 1. Na caixa Nome do arquivo, digite um dos seguintes nomes de arquivo e clique em OK:
@@ -123,11 +123,11 @@ A propriedade `allowProxy` permite solicitar:
 
 Depois que as clientlibs forem armazenadas e gerenciadas com êxito na pasta da biblioteca do cliente, elas poderão ser acessadas por HTL.
 
-As bibliotecas de clientes são carregadas por meio de um modelo auxiliar fornecido pelo AEM, que pode ser acessado por meio de `data-sly-use`. Modelos auxiliares estão disponíveis neste arquivo, que pode ser chamado através de `data-sly-call`.
+As bibliotecas de clientes são carregadas por meio de um modelo auxiliar fornecido pela AEM, que pode ser acessado por meio de `data-sly-use`. Modelos auxiliares estão disponíveis neste arquivo, que pode ser chamado através de `data-sly-call`.
 
 Cada modelo auxiliar espera uma opção `categories` para fazer referência às bibliotecas de clientes desejadas. Essa opção pode ser uma matriz de valores de cadeias de caracteres ou uma cadeia contendo uma lista de valores separados por vírgula.
 
-[Consulte a documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=pt-BR#loading-client-libraries) para obter mais detalhes sobre como carregar clientlibs via HTL.
+[Consulte a documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) para obter mais detalhes sobre como carregar clientlibs via HTL.
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
@@ -135,7 +135,7 @@ Cada modelo auxiliar espera uma opção `categories` para fazer referência às 
 This is possible. Still need detail.
 -->
 
-## Bibliotecas de clientes no Autor versus Publish {#clientlibs-author-publish}
+## Bibliotecas de clientes no Autor versus Publicar {#clientlibs-author-publish}
 
 A maioria das clientlibs é necessária na instância de publicação do AEM. Ou seja, a finalidade da maioria das clientlibs é produzir a experiência do usuário final do conteúdo. Para clientlibs em instâncias de publicação, as [ferramentas de compilação de front-end](#fed-for-aemaacs) podem ser usadas e implantadas por meio de [pastas de biblioteca do cliente, conforme descrito acima](#creating-clientlib-folders).
 
@@ -178,7 +178,7 @@ Há vários outros recursos compatíveis com as pastas da biblioteca do cliente 
 >
 >Esses recursos adicionais das Pastas da biblioteca do cliente não são necessários no AEM as a Cloud Service e, portanto, seu uso não é incentivado. Eles estão listados aqui para fins de integridade.
 
-### Adobe Granite HTML LIbrary Manager {#html-library-manager}
+### Gerenciador de biblioteca HTML do Adobe Granite {#html-library-manager}
 
 As configurações adicionais da biblioteca do cliente podem ser controladas por meio do painel **Gerenciador de Bibliotecas de HTML do Adobe Granite** do Console do Sistema em `https://<host>:<port>/system/console/configMgr`).
 
@@ -191,7 +191,7 @@ As propriedades adicionais da pasta incluem permitir controle de dependências e
 
 ### Vinculação a Dependências {#linking-to-dependencies}
 
-Quando o código na pasta da biblioteca do cliente fizer referência a outras bibliotecas, identifique as outras bibliotecas como dependências. A tag `ui:includeClientLib` que faz referência à pasta da biblioteca do cliente faz com que o código HTML inclua um link para o arquivo de biblioteca gerado e as dependências.
+Quando o código na pasta da biblioteca do cliente fizer referência a outras bibliotecas, identifique as outras bibliotecas como dependências. A marca `ui:includeClientLib` que faz referência à pasta da biblioteca do cliente faz com que o código HTML inclua um link para o arquivo de biblioteca gerado e as dependências.
 
 As dependências devem ser outro `cq:ClientLibraryFolder`. Para identificar dependências, adicione uma propriedade ao nó `cq:ClientLibraryFolder` com os seguintes atributos:
 
@@ -199,7 +199,7 @@ As dependências devem ser outro `cq:ClientLibraryFolder`. Para identificar depe
 * **Tipo:** Cadeia de Caracteres[]
 * **Valores:** o valor da propriedade categories do nó cq:ClientLibraryFolder do qual a pasta da biblioteca atual depende.
 
-Por exemplo, o `/etc/clientlibs/myclientlibs/publicmain` tem uma dependência na biblioteca `cq.jquery`. A página que faz referência à biblioteca cliente principal gera um HTML que inclui o seguinte código:
+Por exemplo, o `/etc/clientlibs/myclientlibs/publicmain` tem uma dependência na biblioteca `cq.jquery`. A página que faz referência à biblioteca principal do cliente gera um HTML que inclui o seguinte código:
 
 ```xml
 <script src="/etc/clientlibs/foundation/cq.jquery.js" type="text/javascript">
@@ -277,7 +277,7 @@ Abrir o arquivo `publicmain.css` revela o seguinte código:
 
 ### Uso de pré-processadores {#using-preprocessors}
 
-O AEM permite pré-processadores conectáveis e é fornecido com suporte ao [Compactador YUI](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) para CSS e JavaScript e ao [Compilador de Fechamento Google (GCC)](https://developers.google.com/closure/compiler/) para JavaScript AEM com YUI definido como o pré-processador padrão do.
+O AEM permite pré-processadores conectáveis e é fornecido com suporte ao [Compactador YUI](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) para CSS e JavaScript e ao [Compilador de Fechamento do Google (GCC)](https://developers.google.com/closure/compiler/) para JavaScript com a interface do usuário definida como pré-processador padrão do AEM.
 
 Os pré-processadores conectáveis permitem um uso flexível, incluindo:
 
@@ -288,7 +288,7 @@ Os pré-processadores conectáveis permitem um uso flexível, incluindo:
 
 >[!NOTE]
 >
->Por padrão, o AEM usa o Compactador YUI. Consulte a [documentação do GitHub do Compactador YUI](https://github.com/yui/yuicompressor/issues) para obter uma lista de problemas conhecidos. Alternar para o compactador GCC para clientlibs específicas pode resolver alguns problemas observados ao usar a interface do usuário do.
+>Por padrão, o AEM usa o Compactador GCC para minificar o Javascript.
 
 >[!CAUTION]
 >
@@ -299,9 +299,8 @@ Os pré-processadores conectáveis permitem um uso flexível, incluindo:
 Você pode optar por definir a configuração de pré-processadores por biblioteca do cliente ou em todo o sistema.
 
 * Adicione as propriedades multivalor `cssProcessor` e `jsProcessor` no nó clientlibrary
-* Ou defina a configuração padrão do sistema através do **Gerenciador de biblioteca de HTML** Configuração OSGi
 
-Uma configuração de pré-processador no nó clientlib tem prioridade sobre a configuração OSGI.
+Não há suporte para a definição da configuração padrão do sistema por meio do **HTML Library Manager**. Ela só será aplicada ao SDK local e não às execuções de pipeline de pilha completa.
 
 #### Formato e exemplos {#format-and-examples}
 
@@ -337,7 +336,7 @@ jsProcessor: [
 ```javascript
 failOnWarning (defaults to "false")
 languageIn (defaults to "ECMASCRIPT5")
-languageOut (defaults to "ECMASCRIPT5")
+languageOut (defaults to "ECMASCRIPT_2018" as of release 21994, was previously "ECMASCRIPT5" )
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
@@ -345,11 +344,4 @@ Para obter mais detalhes sobre as opções do GCC, consulte a [documentação do
 
 #### Definir Minificador Padrão do Sistema {#set-system-default-minifier}
 
-A interface do usuário é definida como o minificador padrão no AEM. Para alterar isso para GCC, siga estas etapas.
-
-1. Ir para o Apache Felix Config Manager em (`http://<host>:<port/system/console/configMgr`)
-1. Localize e edite o **Gerenciador de Bibliotecas de HTML do Adobe Granite**.
-1. Habilitar a opção **Minify** (se ainda não estiver habilitada).
-1. Defina o valor **Configurações Padrão do Processador JS** como `min:gcc`.
-   * As opções podem ser passadas se separadas por ponto e vírgula, por exemplo, `min:gcc;obfuscate=true`.
-1. Clique em **Salvar** para salvar as alterações.
+Não há suporte para a configuração do minificador padrão do sistema no AEM as a Cloud Service.
