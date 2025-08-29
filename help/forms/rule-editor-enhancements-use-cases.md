@@ -4,22 +4,21 @@ description: Este artigo explora vários casos de uso para o editor de regras em
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
+source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1975'
 ht-degree: 0%
 
 ---
 
 # Aprimoramentos do editor de regras e casos de uso
 
-<span class="preview"> Estes são recursos de pré-lançamento disponíveis em nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>.
+<span class="preview"> Estes são recursos de pré-lançamento disponíveis em nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>. Essas melhorias também se aplicam ao Edge Delivery Services Forms.
 
 Este artigo apresenta os últimos aprimoramentos feitos ao editor de regras no Adaptive Forms. Essas atualizações foram projetadas para ajudá-lo a definir o comportamento do formulário com mais facilidade, sem escrever código personalizado, e para criar experiências de formulário mais dinâmicas, responsivas e personalizadas.
 
-A tabela abaixo lista as melhorias recentes feitas ao editor de regras no Adaptive Forms, juntamente com uma breve descrição e as principais vantagens de cada recurso.:
+A tabela abaixo lista as melhorias recentes feitas ao editor de regras no Adaptive Forms, juntamente com uma breve descrição e as principais vantagens de cada recurso:
 
 | Aprimoramento | Descrição | Vantagens |
 |---|----|---|
@@ -29,6 +28,10 @@ A tabela abaixo lista as melhorias recentes feitas ao editor de regras no Adapti
 | **Regras personalizadas baseadas em eventos** | Defina regras que respondam a eventos personalizados além dos acionadores padrão. | - Oferece suporte a casos de uso avançados <br> - Maior controle sobre quando e como as regras são executadas <br> - Melhora a interatividade |
 | **Execução do painel repetível com reconhecimento de contexto** | As regras agora são executadas no contexto correto para cada painel repetido, em vez de somente na última instância. | - Aplicativo de regra preciso para cada instância de repetição <br> - Reduz erros nas seções dinâmicas <br> - Melhora a experiência do usuário com conteúdo repetido |
 | **Suporte para cadeia de caracteres de consulta, UTM e parâmetros do navegador** | Crie regras que adaptam o comportamento do formulário com base em parâmetros de URL ou valores específicos do navegador. | - Habilita a personalização com base na origem ou no ambiente <br> - Útil para fluxos de marketing ou específicos de rastreamento <br> - Não há necessidade de script extra ou personalização |
+
+>[!NOTE]
+>
+> As melhorias no Editor de regras também se aplicam ao Edge Delivery Services Forms.
 
 Agora vamos explorar cada método detalhadamente com casos de uso específicos para ajudar você a entender como esses recursos podem ser usados para fornecer uma experiência personalizada para os usuários
 
@@ -89,58 +92,63 @@ Se o formulário estiver configurado para geração DoR, essa função gerará e
 
 ## Compatibilidade com variáveis dinâmicas em regras
 
-O editor de regras aprimorado agora é compatível com a criação e o uso de variáveis dinâmicas (temporárias). Essas variáveis podem ser definidas e recuperadas no ciclo de vida do formulário usando as funções internas **Definir Valor da Variável** e **Obter Valor da Variável**.
+O editor de regras aprimorado é compatível com a criação e o uso de variáveis dinâmicas (temporárias). Essas variáveis podem ser definidas e recuperadas no ciclo de vida do formulário usando as funções internas **Definir Valor da Variável** e **Obter Valor da Variável**.
 Estas variáveis:
 
 * Não são enviados com os dados de formulário.
 * Pode conter valores intermediários ou calculados.
 * Pode ser usado em lógica condicional e ações.
 
-**Cenário**: uma empresa de comércio eletrônico fornece um formulário de pedido no qual os usuários podem selecionar um produto e um método de envio preferencial. Embora o preço do produto seja capturado por meio de um campo de formulário, o custo de envio é determinado dinamicamente com base no método selecionado e no país escolhido.
+**Cenário**: um formulário de compras online permite que os usuários selecionem um produto, insiram uma quantidade e escolham um país para remessa. O preço do produto é um valor fixo capturado por meio de um campo de formulário, enquanto o encargo de remessa varia dinamicamente, dependendo do país selecionado.
 
-Para manter a estrutura do formulário limpa e evitar a adição de campos ocultos desnecessários, a empresa deseja tratar o custo de envio como um valor temporário que suporta o cálculo do valor total em tempo real.
+Para evitar a desorganização do formulário com campos ocultos, a empresa decide armazenar o custo de envio em uma variável temporária e usá-lo para cálculos em tempo real.
 
 **Implementação usando as funções Definir Valor da Variável e Obter Valor da Variável no Editor de Regras**
 
-Uma regra está configurada para definir uma variável temporária denominada **extracharge** usando a função **Definir Valor da Variável**. O valor dessa variável depende do país selecionado. Por exemplo, se o usuário selecionar &quot;Estados Unidos&quot;, o valor será definido como 50. Para qualquer outro país, é definido como 100.
+Uma regra é configurada no fragmento **Address** usando a função **Set Variable Value** para atribuir uma variável temporária chamada **extracharge**. O valor dessa variável muda dinamicamente com base no país selecionado. Por exemplo:
+
+* Se o usuário selecionar Estados Unidos, **extracharge** será definido como 500.
+* Para qualquer outro país, **extracharge** está definido como 100.
 
 ![Definir valor da variável](/help/forms/assets/setvalue.png)
 
-Posteriormente, ao calcular o custo total de remessa, a função **Obter Valor de Variável** recupera o valor **extracharge** com base no país selecionado.
+Posteriormente, quando o **Custo Total de Remessa** for calculado, a função **Obter Valor da Variável** será usada para recuperar o valor de **extracharge**. Este valor é adicionado ao **Preço do Produto × Quantidade do Produto** para calcular o valor final a pagar no clique de botão.
 
 ![Obter valor de variável](/help/forms/assets/getvalue.png)
 
-Esse valor é então adicionado ao custo de envio do produto e o resultado é exibido no campo **Custo total de remessa**.
-
+O campo **Custo Total da Remessa** é atualizado dinamicamente para refletir o custo do produto e o encargo da remessa conforme o usuário altera o país ou a quantidade.
 ![saída](/help/forms/assets/getsetvalue-output.png)
 
-Essa abordagem permite calcular e exibir encargos adicionais dinamicamente sem armazená-los em um campo visível, permitindo uma experiência do usuário limpa, responsiva e sem código.
+>[!NOTE]
+>
+> Você também pode adicionar a função **Obter valor da variável** na condição Quando.
+> > ![Função Get Variable Value em When condition](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
+Essa abordagem permite cálculos dinâmicos em tempo real sem adicionar campos extras ao formulário, mantendo a estrutura limpa e fácil de usar.
 
 ## Suporte a regras baseadas em eventos personalizados
 
 O editor de regras aprimorado oferece suporte à manipulação personalizada de eventos usando as funções **Evento de Despacho** e **Evento de Acionamento**. Essas funções permitem que diferentes partes do formulário se comuniquem emitindo e ouvindo eventos personalizados, permitindo uma lógica modular mais limpa sem associar ações firmemente a campos específicos.
 
-**Cenário**: um formulário de aplicativo de trabalho está integrado a um sistema de RH externo que realiza verificação em segundo plano. Quando a verificação estiver concluída, o sistema atualizará o formulário com a **Verificação em segundo plano concluída!** mensagem. O formulário deve ajustar dinamicamente o que o candidato vê com base nesse resultado.
+**Cenário**: um formulário de logon é criado usando um fragmento de logon reutilizável que contém os campos **Inserir nome de usuário** e **Inserir senha**. Quando um usuário fornece credenciais válidas, o formulário valida a entrada e inicia o processo **Obter OTP**. Depois que o usuário insere um OTP válido, ele é redirecionado para a página apropriada.
 
-Em vez de vincular a lógica diretamente ao campo que recebe o status, o formulário usa uma abordagem personalizada baseada em eventos para melhorar a modularidade e a capacidade de manutenção.
+Em vez de associar a lógica diretamente aos campos, o formulário usa uma abordagem baseada em eventos com **Evento de Despacho** e **Evento de Acionador** para melhorar a modularidade e a capacidade de manutenção.
 
 **Implementação usando Evento de Despacho e Evento On Trigger**
 
-Quando o status da verificação em segundo plano é atualizado, uma regra usa **Evento de Despacho** para emitir um evento personalizado como **bgvmsg** junto com o resultado do status. Uma regra separada escuta esse evento usando **No Evento de Acionador**.
+O fragmento de logon é adicionado ao formulário, contendo campos predefinidos para Nome de usuário e Senha. Uma regra está configurada no botão **Obter OTP** para exibir o **Painel de Validação**, que inclui o campo de entrada para inserir e validar o OTP.
 
-As capturas de tela abaixo exibem as regras aplicadas à variável &quot;Verificação em segundo plano concluída?&quot; e o campo de texto &quot;bgvmsg&quot;.
+![Obter Regra OTP](/help/forms/assets/get-otp-rule.png)
 
-![despachar evento](/help/forms/assets/dispatch-event-rule.png)
+No **Painel de Validação**, uma regra é configurada no botão Validar. A integração de API é usada para validar o OTP inserido no campo **Inserir OTP**. Se a validação for bem-sucedida, um **Evento de Despacho** chamado **LoggedIn** será acionado com a carga do evento contendo a resposta da API.
 
-![evento de acionador](/help/forms/assets/trigger-event-rule.png)
+![Na regra de evento do gatilho](/help/forms/assets/trigger-event-rule.png)
 
-Quando o evento é detectado, ele verifica o status e atualiza o formulário adequadamente. Por exemplo:
+No nível de formulário, uma regra é configurada para escutar o evento **LoggedIn**. Quando esse evento é acionado, a regra exibe a mensagem de redirecionamento e leva o usuário para a página do painel.
 
-* Se a verificação de segundo plano for aprovada, o formulário exibirá uma mensagem de confirmação.
-* Se forem necessários documentos adicionais, o formulário exibirá uma seção solicitando ao candidato que carregue as informações necessárias, juntamente com uma mensagem de alerta.
+![regra de evento de expedição](/help/forms/assets/dispatch-event-rule.png)
 
-![Enviar saída de evento](/help/forms/assets/dispatch-trigger-output.png)
+Quando o usuário envia o formulário com as credenciais corretas e um OTP válido, o logon é bem-sucedido e o usuário é redirecionado para o painel.
 
 Suporte para eventos personalizados que permitem aos desenvolvedores criar e acionar eventos personalizados que podem ser usados como condições no editor de regras.
 
@@ -192,3 +200,7 @@ Se o valor do parâmetro **utm_source** for igual a &quot;google&quot;, uma mens
 Isso permite que os profissionais de marketing forneçam conteúdo relevante aos usuários com base na campanha que os trouxe para o formulário sem precisar de entrada manual de campo ou script personalizado.
 
 Esses aprimoramentos expandem significativamente os recursos do Editor de regras do Adaptive Forms, fornecendo aos desenvolvedores ferramentas poderosas para criar formulários mais dinâmicos, interativos e inteligentes. Cada aprimoramento atende a necessidades específicas de negócios, mantendo a facilidade de uso que torna o Editor de regras acessível a usuários técnicos e não técnicos.
+
+## Recursos adicionais
+
+{{see-also-rule-editor}}

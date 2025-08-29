@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: chame os aprimoramentos do serviço no VRE, preenchendo as opções suspensas usando invocar serviço, Defina o painel repetível usando a saída de invocar serviço, Defina o painel usando a saída de invocar serviço, Use o parâmetro de saída de invocar serviço para validar outro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1586'
 ht-degree: 1%
 
 ---
@@ -218,6 +218,10 @@ Crie uma regra na caixa de texto `Pet ID` para invocar o serviço `getPetById`. 
 Digite `102` na caixa de texto `Pet ID` e o botão **Enviar** ficará oculto.
 
 ![Saída](/help/forms/assets/output4.png)
+
+>[!NOTE]
+>
+> Você também pode [integrar a API diretamente na interface do Editor de regras](/help/forms/api-integration-in-rule-editor.md) sem usar um modelo de dados de formulário predefinido.
 
 ## Perguntas frequentes
 

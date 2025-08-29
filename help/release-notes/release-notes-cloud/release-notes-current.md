@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 96022123209fff18548b77a4cbd63ccec697119b
+source-git-commit: 69147d156a6a3d441aca3cb9da089a3768dc593c
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1903'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -81,30 +81,30 @@ Crie URLs personalizados para entrega de ativos no DM com OpenAPI, substituindo 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* **Componente de entrada de data e hora**: um componente de data e hora está disponível, permitindo que os usuários selecionem data e hora usando uma interface de calendário e relógio ou inserindo valores manualmente em um formato com suporte.
-* [Tratamento de Erros Aprimorado para Carregamentos de Arquivos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): o componente de Anexo de Arquivo agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
-* **Resposta de Erro Especificada para Ação de Envio Personalizada**: Quando uma ação de envio personalizada encontra um erro sem tratamento, o código de erro 502 é retornado. Isso ajuda a identificar que o problema está relacionado à ação de envio personalizada, facilitando a depuração.
+* [Componente de entrada de data e hora](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): um componente de data e hora está disponível, permitindo que os usuários selecionem data e hora usando uma interface de calendário e relógio ou inserindo valores manualmente em um formato com suporte.
+* [Tratamento de Erros Aprimorado para Carregamentos de Arquivos](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): o componente de Anexo de Arquivo agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
+* [Resposta de Erro Especificada para Ação de Envio Personalizada](/help/forms/custom-submit-action-troubleshooting.md): Quando uma ação de envio personalizada encontra um erro sem tratamento, o código de erro 502 é retornado. Isso ajuda a identificar que o problema está relacionado à ação de envio personalizada, facilitando a depuração.
 * [Excluindo campos ocultos do documento de registro](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): uma nova propriedade foi adicionada para permitir a exclusão de campos ocultos do documento de registro. Por padrão, essa opção não está selecionada e se aplica a todos os campos de formulário.
 
 ### Recursos de pré-lançamento no AEM Forms
 
 * [Gerar e sincronizar representações AFP](/help/forms/document-generation-afp-api.md): agora você pode usar a API de comunicação do AEM Forms para converter um arquivo XDP para o formato AFP. O AFP é um formato de alto desempenho amplamente usado em impressão corporativa em larga escala.
 * **Aprimoramentos no Editor de Regras**
-   * **Melhorias das funções Validar e Redefinir**: os métodos validar e redefinir agora oferecem suporte à execução nos níveis de painel, campo e formulário. Anteriormente, eles só eram compatíveis no nível do formulário.
-   * **Suporte a JavaScript Moderno**: o suporte a recursos do ECMAScript 2019 e posteriores foi adicionado para funções personalizadas, permitindo que você escreva código mais eficiente, modular e reutilizável
-   * **Opção Baixar DoR no Editor de Regras**: uma função para baixar o Documento de Registro (DoR) foi adicionada como uma opção pronta para uso (OOTB) no Editor de Regras.
+   * [Validar método na Lista de Funções](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): os métodos validate e reset agora oferecem suporte para execução nos níveis de painel, campo e formulário. Anteriormente, eles só eram compatíveis no nível do formulário.
+   * [Suporte a JavaScript Moderno](/help/forms/rule-editor-core-components-difference-tables.md): o suporte a recursos do ECMAScript 2019 e posteriores foi adicionado para funções personalizadas, permitindo que você escreva código mais eficiente, modular e reutilizável
+   * [Opção Baixar DoR no Editor de Regras](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): uma função para baixar o Documento de Registro (DoR) foi adicionada como uma opção pronta para uso (OOTB) no Editor de Regras.
      ![Documento de Registro](/help/forms/assets/document-of-record-rn.gif)
-   * **Variáveis dinâmicas no Editor de regras**: agora você pode usar variáveis dinâmicas (temporárias) no Editor de regras para obter maior flexibilidade na definição de condições e ações. Campos ocultos não são mais necessários para armazenar valores temporários.
-   * **Regras personalizadas baseadas em eventos no Editor de regras**: agora é possível definir eventos personalizados e acionar regras com base nesses eventos.
-   * **Regras de painel repetíveis sensíveis ao contexto**: em painéis repetíveis, as regras agora são executadas com base no contexto, em vez de serem aplicadas somente à última instância do painel.
-   * **Regras acionadas por Parâmetros**: o Editor de Regras agora oferece suporte à execução de regras com base em parâmetros de consulta, parâmetros UTM ou parâmetros do navegador.
-   * **Funções personalizadas específicas de formulário**: o Edge Delivery Services Forms agora oferece suporte a scripts de funções personalizadas específicas de formulário, fornecendo maior flexibilidade no gerenciamento de lógica reutilizável.
-   * **Importações Estáticas para Funções Personalizadas**: o Editor de Regras no Universal Editor agora oferece suporte a importações estáticas, permitindo que os desenvolvedores organizem, compartilhem e reutilizem funções em vários formulários.
+   * [Variáveis dinâmicas no Editor de regras](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): agora você pode usar variáveis dinâmicas (temporárias) no Editor de regras para obter maior flexibilidade na definição de condições e ações. Campos ocultos não são mais necessários para armazenar valores temporários.
+   * [Suporte a Regras Personalizadas Baseadas em Eventos](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): Agora é possível definir eventos personalizados e acionar regras com base nesses eventos.
+   * [Regras de painel repetíveis sensíveis ao contexto](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): em painéis repetíveis, as regras agora são executadas com base no contexto, em vez de serem aplicadas somente à última instância do painel.
+   * [Regras acionadas por Parâmetros](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): o Editor de Regras agora oferece suporte à execução de regras com base em parâmetros de consulta, parâmetros UTM ou parâmetros do navegador.
+   * [Funções personalizadas específicas de formulário](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): o Edge Delivery Services Forms agora oferece suporte a scripts de funções personalizadas específicas de formulário, fornecendo maior flexibilidade no gerenciamento de lógica reutilizável.
+   * [Importações Estáticas para Funções Personalizadas](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): o Editor de Regras no Universal Editor agora oferece suporte a importações estáticas, permitindo que os desenvolvedores organizem, compartilhem e reutilizem funções em vários formulários.
 
 ### Recursos iniciais do usuário no AEM Forms
 
-* **Componente de assinatura assinável**: agora você pode usar o componente de assinatura assinável para ajudar os usuários a adicionar suas assinaturas a um formulário, como em um formulário de contrato. O componente permite aos usuários desenhar sua assinatura diretamente no formulário usando um mouse, caneta ou tela sensível ao toque.
-* **Integração de API direta no Editor de regras**: o Adaptive Forms agora oferece suporte à integração de API direta no Editor de regras visuais sem exigir um Modelo de dados de formulário. Os autores podem configurar APIs usando uma importação de URL ou cURL, mapear parâmetros de entrada/saída e chamadas seguras com autenticação.
+* [Componente de assinatura assinável](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): agora você pode usar o componente de assinatura assinável para ajudar os usuários a adicionar suas assinaturas a um formulário, como em um formulário de contrato. O componente permite aos usuários desenhar sua assinatura diretamente no formulário usando um mouse, caneta ou tela sensível ao toque.
+* [Integração de API direta no Editor de regras](/help/forms/api-integration-in-rule-editor.md): o Adaptive Forms agora oferece suporte à integração de API direta no Editor de regras visuais sem exigir um Modelo de dados de formulário. Os autores podem configurar APIs usando uma importação de URL ou cURL, mapear parâmetros de entrada/saída e chamadas seguras com autenticação.
 
 <!--
 **Forms Optimization opportunities**
@@ -218,7 +218,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

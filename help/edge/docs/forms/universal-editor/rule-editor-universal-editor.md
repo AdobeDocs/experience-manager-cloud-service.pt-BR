@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '2598'
-ht-degree: 1%
+source-wordcount: '2781'
+ht-degree: 0%
 
 ---
 
@@ -238,7 +238,7 @@ Escolha o tipo de regra que melhor corresponda à sua intenção.
 
 +++
 
-+++ Avançado 
++++ Avançado
 
 - **Invocar Serviço**: chamar APIs/serviços externos (manipular carregamento e erros)
 - **Adicionar/Remover Instância**: Gerenciar seções que podem ser repetidas (por exemplo, dependentes, endereços)
@@ -308,7 +308,7 @@ Você criará um formulário que:
 
 1. **Abrir editor universal**:
    - Navegue até o console AEM Sites, selecione sua página, clique em **Editar**
-   - Verifique se o [Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=pt-BR) está configurado corretamente
+   - Verifique se o [Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) está configurado corretamente
 
 2. **Adicionar componentes de formulário nesta ordem**:
    - Título (H2): &quot;Formulário de cálculo de imposto&quot;
@@ -533,6 +533,7 @@ Figura: Adicionar funções personalizadas ao arquivo functions.js
 ![Função personalizada no editor de regras](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Figura: Seleção e configuração de funções personalizadas na interface do Editor de regras
 
+
 **Práticas recomendadas para uso de função**:
 
 - **Tratamento de erros**: sempre incluir comportamento de fallback para falhas de função
@@ -541,6 +542,56 @@ Figura: Seleção e configuração de funções personalizadas na interface do E
 - **Testes**: criar casos de teste que cubram casos normais e de borda
 
 +++
+
+
+### Importações estáticas para funções personalizadas
+
+O Editor de regras do Editor universal oferece suporte a importações estáticas, permitindo organizar a lógica reutilizável em vários arquivos e formulários. Em vez de manter todas as funções personalizadas em um único arquivo (/blocks/form/functions.js), você pode importar funções de outros módulos.
+Por exemplo: Importando Funções de um Arquivo Externo
+Considere a seguinte estrutura de pastas:
+
+```
+      form
+      ┣ commonLib
+      ┃ ┗ functions.js
+      ┣ rules
+      ┃ ┗ _form.json
+      ┣ form.js
+      ┗ functions.js
+```
+
+Você pode importar funções de `commonLib/functions.js` para seu arquivo `functions.js` principal conforme mostrado abaixo:
+
+```
+`import {days} from './commonLib/functions';
+/**
+ * Get Full Name
+ * @name getFullName Concats first name and last name
+ * @param {string} firstname in String format
+ * @param {string} lastname in String format
+ * @return {string}
+ */
+function getFullName(firstname, lastname) {
+  return `${firstname} ${lastname}`.trim();
+}
+
+// Export multiple functions for use in Rule Editor
+export { getFullName, days};
+```
+
+### Organização de funções personalizadas em diferentes Forms
+
+É possível criar diferentes conjuntos de funções em arquivos ou pastas separados e exportá-los conforme necessário:
+
+- Se quiser que determinadas funções estejam disponíveis somente em formulários específicos, forneça o caminho para o arquivo de funções na configuração do formulário.
+
+- Se a caixa de texto do caminho for deixada em branco, o Editor de Regras assumirá como padrão o carregamento de funções de `/blocks/form/functions.js`
+
+![Função personalizada em UE](/help/forms/assets/custom-function-in-ue.png){width=50%}
+
+Na captura de tela acima, o caminho da função personalizada é adicionado na caixa de texto Caminho da função personalizada. As funções personalizadas para este formulário são carregadas do arquivo especificado (`cc_function.js`).
+
+Isso permite flexibilidade ao compartilhar funções em vários formulários ou mantê-las isoladas por formulário.
 
 ## Práticas recomendadas para o desenvolvimento de regras
 
@@ -676,7 +727,7 @@ O Forms se torna ferramentas eficientes para a coleta de dados, a qualificação
 
 **Recursos adicionais**:
 
-- [Documentação do Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=pt-BR) para contexto mais amplo
+- [Documentação do Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) para contexto mais amplo
 - [guia do Extension Manager](/help/implementing/developing/extending/extension-manager.md) para habilitar recursos adicionais
 - [Edge Delivery Services forms](/help/edge/docs/forms/overview.md) para obter orientação abrangente sobre o desenvolvimento de formulários
 

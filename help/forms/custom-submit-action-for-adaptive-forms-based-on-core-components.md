@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1137'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ O diagrama abaixo descreve as etapas para criar uma ação de envio personalizad
 
    **Onde encontrar essas informações?**
 
-   Para obter as instruções passo a passo sobre como localizar esses detalhes, consulte o artigo &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git)&quot; da Adobe Experience League.
+   Para obter as instruções passo a passo sobre como localizar esses detalhes, consulte o artigo &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot; da Adobe Experience League.
 
    **Seu projeto está pronto!**
 
@@ -214,9 +214,9 @@ Na pasta `customsubmitaction`, crie um novo arquivo chamado `.content.xml`.
 
    1. Implante o código atualizado:
 
-      Acione uma implantação do seu código por meio do [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline). Ele cria e implanta automaticamente o código atualizado com o novo suporte personalizado às ações de envio.
+      Acione uma implantação do seu código por meio do [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Ele cria e implanta automaticamente o código atualizado com o novo suporte personalizado às ações de envio.
 
-      Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline).
+      Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
       ![Implantação da nuvem](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 
@@ -268,7 +268,14 @@ Na pasta `customsubmitaction`, crie um novo arquivo chamado `.content.xml`.
 
    >[!NOTE]
    >
-   > Para exibir logs de erros no ambiente do AEM as a Cloud Service, você pode usar o Splunk.
+   > * Para exibir logs de erros no ambiente do AEM as a Cloud Service, você pode usar o Splunk.
+   > * Se um serviço de ação de envio personalizado encontrar um erro não tratado, o AEM as a Cloud Service retornará uma página de erro 502 HTML.
+
+
+## Perguntas frequentes
+
+**P: Por que meu formulário adaptável mostra uma página de erro 5.x.x após o envio?**
+Falha no serviço de ação de envio personalizado com um erro sem tratamento. O AEM Cloud Service retorna a página de erro padrão.
 
 <!--
 ## Best practices

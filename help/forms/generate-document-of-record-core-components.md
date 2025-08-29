@@ -4,9 +4,9 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) para
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '3207'
+source-wordcount: '3244'
 ht-degree: 1%
 
 ---
@@ -348,7 +348,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
       * **Para os componentes da Caixa de Seleção e do Botão de Opção, mostrar apenas os valores selecionados**: a configuração da propriedade exibe apenas os valores selecionados da caixa de seleção e do botão de opção em [!UICONTROL Documento de Registro].
       * **Separador para vários valores**: você pode escolher qualquer separador como vírgula ou quebra de linha para exibir vários valores.
       * **Alinhamento de Opções**: Você pode selecionar o alinhamento desejado (Horizontal, Vertical, Igual ao Formulário adaptável) para definir o alinhamento dos campos, como caixa de seleção ou botão de opção, a serem exibidos em [!UICONTROL Documento de Registro]. Por padrão, o alinhamento vertical é definido para os campos em [!UICONTROL Documento de registro]. Definir as propriedades das [!UICONTROL Propriedades do Campo de Formulário] de DoR substitui as propriedades definidas no [!UICONTROL Alinhamento de Itens] para os campos em um Formulário adaptável. Caso você selecione a opção [!UICONTROL Igual ao formulário adaptável], o alinhamento conforme configurado em uma instância de autor do formulário adaptável será usado para os campos [!UICONTROL Documento de registro].
-      * **Número de opções de alinhamento horizontal**:Você pode definir o número de opções a serem exibidas no Documento de Registro para o alinhamento horizontal.
+      * **Número de opções de alinhamento horizontal**:You pode definir o número de opções a serem exibidas no Documento de Registro para o alinhamento horizontal.
 
 
 
@@ -415,6 +415,7 @@ A configuração do componente Documento de registro está disponível em suas p
 * **Exibir painel como tabela:** Definir a propriedade exibe o painel como tabela no Documento de Registro se o painel tiver menos de 6 campos. Aplicável somente para o painel.
 * **Excluir título do documento de registro:** a configuração da propriedade exclui título do painel/tabela do documento de registro. Aplicável somente para painel e tabela.
 * **Excluir descrição do documento de registro:** a configuração da propriedade exclui a descrição do painel/tabela do documento de registro. Aplicável somente para painel e tabela.
+* **Excluir campos ocultos do documento de registro**: a seleção dessa propriedade exclui campos ocultos do documento de registro. Ela se aplica a todos os campos de formulário. Por padrão, a opção **Excluir campos ocultos do Documento de Registro** não está selecionada.
 
 **Configurações de nível de formulário**
 
