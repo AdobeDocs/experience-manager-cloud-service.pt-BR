@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -105,6 +105,8 @@ Para evitar a desorganização do formulário com campos ocultos, a empresa deci
 
 **Implementação usando as funções Definir Valor da Variável e Obter Valor da Variável no Editor de Regras**
 
+>[!VIDEO](https://video.tv.adobe.com/v/3471607/get-set-variable-final-video/?quality=12&learn=on)
+
 Uma regra é configurada no fragmento **Address** usando a função **Set Variable Value** para atribuir uma variável temporária chamada **extracharge**. O valor dessa variável muda dinamicamente com base no país selecionado. Por exemplo:
 
 * Se o usuário selecionar Estados Unidos, **extracharge** será definido como 500.
@@ -122,7 +124,7 @@ O campo **Custo Total da Remessa** é atualizado dinamicamente para refletir o c
 >[!NOTE]
 >
 > Você também pode adicionar a função **Obter valor da variável** na condição Quando.
-> &#x200B;> ![Função Get Variable Value em When condition](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Função Get Variable Value em When condition](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Essa abordagem permite cálculos dinâmicos em tempo real sem adicionar campos extras ao formulário, mantendo a estrutura limpa e fácil de usar.
 
@@ -135,6 +137,9 @@ O editor de regras aprimorado oferece suporte à manipulação personalizada de 
 Em vez de associar a lógica diretamente aos campos, o formulário usa uma abordagem baseada em eventos com **Evento de Despacho** e **Evento de Acionador** para melhorar a modularidade e a capacidade de manutenção.
 
 **Implementação usando Evento de Despacho e Evento On Trigger**
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 O fragmento de logon é adicionado ao formulário, contendo campos predefinidos para Nome de usuário e Senha. Uma regra está configurada no botão **Obter OTP** para exibir o **Painel de Validação**, que inclui o campo de entrada para inserir e validar o OTP.
 
