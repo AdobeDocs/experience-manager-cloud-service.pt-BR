@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 69147d156a6a3d441aca3cb9da089a3768dc593c
+source-git-commit: 4a1dcc9f069bdf8f5cf8abaa3f784f5ebd4922cc
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 8%
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Crie URLs personalizados para entrega de ativos no DM com OpenAPI, substituindo 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 * [Componente de entrada de data e hora](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): um componente de data e hora está disponível, permitindo que os usuários selecionem data e hora usando uma interface de calendário e relógio ou inserindo valores manualmente em um formato com suporte.
-* [Tratamento de Erros Aprimorado para Carregamentos de Arquivos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): o componente de Anexo de Arquivo agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
+* [Tratamento de Erros Aprimorado para Carregamentos de Arquivos](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): o componente de Anexo de Arquivo agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
 * [Resposta de Erro Especificada para Ação de Envio Personalizada](/help/forms/custom-submit-action-troubleshooting.md): Quando uma ação de envio personalizada encontra um erro sem tratamento, o código de erro 502 é retornado. Isso ajuda a identificar que o problema está relacionado à ação de envio personalizada, facilitando a depuração.
 * [Excluindo campos ocultos do documento de registro](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): uma nova propriedade foi adicionada para permitir a exclusão de campos ocultos do documento de registro. Por padrão, essa opção não está selecionada e se aplica a todos os campos de formulário.
 
@@ -130,7 +130,7 @@ A compilação padrão do JavaScript da biblioteca do lado do cliente (clientlib
 
 ### Futuras descontinuações da API Java {#java-api-deprecation}
 
-Várias APIs obsoletas estão direcionando a remoção em 31 de agosto e, portanto, não devem mais ser referenciadas. No início de setembro, as notificações da Central de ações serão enviadas se o uso da API for detectado e, após 25 de setembro, os avisos serão exibidos durante os builds do Cloud Manager para reforçar a importância de remover o uso. Consulte o [artigo de descontinuação](/help/release-notes/deprecated-removed-features.md#aem-apis) para obter detalhes completos, mas, para conveniência, essas APIs estão listadas abaixo:
+Várias APIs obsoletas estão direcionando a remoção em 31 de agosto e, portanto, não devem mais ser referenciadas. No início de setembro, as notificações do Centro de ações serão enviadas se o uso da API for detectado e, após 25 de setembro, os avisos serão exibidos durante os builds do Cloud Manager para reforçar a importância de remover o uso. Consulte o [artigo de descontinuação](/help/release-notes/deprecated-removed-features.md#aem-apis) para obter detalhes completos, mas, para conveniência, essas APIs estão listadas abaixo:
 
 <details>
   <summary>Expanda para ver as descontinuações da API Java</summary>
@@ -218,7 +218,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
