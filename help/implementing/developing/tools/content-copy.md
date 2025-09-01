@@ -4,16 +4,19 @@ description: A ferramenta de cópia de conteúdo permite que os usuários copiem
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
+source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 34%
+source-wordcount: '1450'
+ht-degree: 31%
 
 ---
 
 # A ferramenta de cópia de conteúdo {#content-copy}
 
 A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção no AEM as a Cloud Service para ambientes inferiores para fins de teste.
+
+>[!NOTE]
+>Embora o fluxo de cópia do conteúdo principal seja de ambientes superiores para ambientes inferiores, um recurso adicional - **Fluxo de encaminhamento** - permite copiar de ambientes inferiores não relacionados à produção para ambientes superiores não relacionados à produção (por exemplo, Dev → Stage, RDE → Stage). Consulte [Limitações](#limitations) para obter detalhes, incluindo requisitos de disponibilidade.
 
 ## Introdução {#introduction}
 
@@ -84,7 +87,7 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
 1. É possível editar os caminhos especificados, se necessário.
 
    1. Clique no X ao lado dos subcaminhos excluídos para excluí-los.
-   1. Clique no botão de reticências ao lado dos caminhos para poder revelar as opções **Editar** e **Excluir**.
+   1. Clique no botão de reticências ao lado dos caminhos para que você possa revelar as opções **Editar** e **Excluir**.
 
    ![Editar lista de caminhos](assets/add-content-set-excluded-paths.png)
 
@@ -105,7 +108,7 @@ Ao editar o conjunto de conteúdo, você pode expandir os caminhos configurados 
 Após criar um conjunto de conteúdo, você pode usá-lo para copiar o conteúdo. Siga estas etapas para poder copiar o conteúdo.
 
 >[!NOTE]
-> Não use a Cópia de Conteúdo em um ambiente enquanto uma operação de [transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) estiver em execução nesse ambiente.
+> Não use a cópia de conteúdo em um ambiente enquanto uma operação de [transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) estiver em execução nesse ambiente.
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
@@ -132,8 +135,8 @@ Após criar um conjunto de conteúdo, você pode usá-lo para copiar o conteúdo
    * O conteúdo só pode ser copiado de um ambiente superior para um ambiente inferior ou entre ambientes de desenvolvimento/RDE, em que a hierarquia de ambientes é a seguinte (do mais alto para o mais baixo):
       * Produção
       * Estágios
-      * Desenvolvimento / RDE
-   * Por padrão, a Cópia de conteúdo entre programas está desativada. No entanto, mediante solicitação do cliente, ele pode ser habilitado, o que disponibilizará um campo de entrada adicional **Programa de destino**.
+      * Desenvolvimento/RDE
+   * Por padrão, a cópia de conteúdo entre programas está desativada. No entanto, mediante solicitação do cliente, ele pode ser habilitado, o que disponibilizará um campo de entrada adicional **Programa de destino**.
 
 1. Se necessário, você também pode optar por **Incluir listas de controle de acesso** no seu processo de cópia.
 
@@ -192,7 +195,9 @@ Os logs são baixados no computador local. Se o download não começar, verifiqu
 
 A ferramenta de cópia de conteúdo tem as seguintes limitações.
 
-* O conteúdo não pode ser copiado de um ambiente inferior para um ambiente superior.
+* A ferramenta de cópia de conteúdo é compatível com dois modos de fluxo:
+   1. Fluxo de cima para baixo - o conteúdo pode ser copiado de ambientes superiores para ambientes inferiores (por exemplo, Produção → Preparo, Preparo → Desenvolvimento/RDE).
+   2. Fluxo de encaminhamento (novo recurso) - O conteúdo também pode ser copiado de um ambiente de não produção inferior para um ambiente de não produção superior (por exemplo, Desenvolvimento → Preparo, RDE → Preparo). Esse recurso está disponível somente mediante solicitação explícita e permanece habilitado até que seja explicitamente solicitado que seja desabilitado. Os ambientes de produção nunca são destinos válidos para o Fluxo de encaminhamento.
 * O conteúdo só pode ser copiado de e para os serviços de autoria.
 * Não é possível executar operações de cópia de conteúdo simultâneas no mesmo ambiente.
 * Até 50 caminhos podem ser especificados por conjunto de conteúdo. Não há limitação para os caminhos excluídos.
