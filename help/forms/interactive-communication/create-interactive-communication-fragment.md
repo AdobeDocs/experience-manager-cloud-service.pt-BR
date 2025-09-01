@@ -7,15 +7,22 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5dd94d22a2a1a2ddbfd7dee44e93e6ea0c4b7ad9
+source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
 
-
 # Criar um fragmento de comunicação interativa
+
+>[!NOTE]
+>
+> O recurso de comunicação interativa está disponível no programa dos primeiros usuários. Envie um email de seu endereço comercial para `aem-forms-ea@adobe.com` para solicitar acesso.
+
+>[!IMPORTANT]
+>
+> **Documentação sujeita a alterações**: esta biblioteca de prompts está sendo testada no momento em relação ao produto e está sujeita a atualizações e revisões. Os prompts, exemplos e práticas recomendadas podem mudar à medida que o Forms Experience Builder continua a evoluir durante o programa de adoção antecipada.
 
 Um Fragmento de comunicação interativa permite que os usuários criem blocos de conteúdo modulares e reutilizáveis, como cabeçalhos, rodapés ou avisos de isenção de responsabilidade padrão que podem ser usados em vários documentos de comunicação. Esses fragmentos ajudam a manter a consistência, reduzir o trabalho repetitivo e acelerar o processo de design ao criar comunicações personalizadas e integradas aos dados.
 
@@ -35,7 +42,7 @@ Para criar um fragmento de comunicação interativa, execute as seguintes etapas
 
 1. Ao selecionar o Fragmento de comunicação interativa, é exibida uma tela onde você define os detalhes principais do fragmento, como título, nome, descrição, modelo de dados (uma representação estruturada de dados de back-end) e tags.
 
-   Para saber mais, consulte o [Guia de Configuração do Modelo de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Para saber mais, consulte o [Guia de Configuração do Modelo de Dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![Localizar IC Docu](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
