@@ -42,7 +42,7 @@ Para criar um fragmento de comunicação interativa, execute as seguintes etapas
 
 1. Ao selecionar o Fragmento de comunicação interativa, é exibida uma tela onde você define os detalhes principais do fragmento, como título, nome, descrição, modelo de dados (uma representação estruturada de dados de back-end) e tags.
 
-   Para saber mais, consulte o [Guia de Configuração do Modelo de Dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Para saber mais, consulte o [Guia de Configuração do Modelo de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![Localizar IC Docu](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
