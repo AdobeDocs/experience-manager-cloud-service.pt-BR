@@ -3,9 +3,9 @@ title: Dynamic Media com recursos OpenAPI
 description: Saiba mais sobre os principais conceitos, como por que usar o Dynamic Media com recursos OpenAPI e como ativá-lo.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 2b7dc8e25c28c7e537bf19b9ed0518c9adfe7a74
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ O Dynamic Media com recursos OpenAPI oferece os seguintes benefícios principais
 
 * **Entrega otimizada para a Web**: os ativos digitais são entregues em formatos otimizados para a Web para aprimorar os Componentes principais da Web das suas experiências digitais. Isso inclui suporte para representações WebP para imagens, transmissão adaptável por meio dos protocolos HLS ou DASH para vídeos e representações originais para documentos.
 
-* **Transformação dinâmica de ativos**: nosso sistema permite a transformação instantânea de imagens usando parâmetros de URL conhecidos como modificadores de imagem. [Por exemplo, largura, altura, girar, virar, qualidade, recorte, formato e recorte inteligente](/help/assets/deliver-assets-apis.md). As representações transformadas são geradas dinamicamente e entregues perfeitamente por meio da CDN.
+* [Transformação dinâmica de ativos](https://developer.adobe.com/experience-cloud/experience-manager-apis): nosso sistema permite a transformação instantânea de imagens usando parâmetros de URL conhecidos como modificadores de imagem. Por exemplo, largura, altura, girar, virar, qualidade, recorte, formato e recorte inteligente. As representações transformadas são geradas dinamicamente e entregues perfeitamente por meio da CDN.
 
 * **Entrega segura de ativos**: o Dynamic Media com recursos OpenAPI fornece um mecanismo para controlar o acesso aos seus ativos digitais. Você pode especificar funções ou grupos de usuários como metadados para ativos que serão protegidos e definir um período predefinido durante o qual [somente usuários autorizados podem acessar esses ativos](/help/assets/restrict-assets-delivery.md). Os URLs de entrega dos ativos protegidos não são resolvidos para usuários não autorizados durante o período restrito.
 
