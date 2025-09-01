@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3067e88f8adea50f6b6b05e0466974bc57bc4a4e
+source-git-commit: 3884f53d56a8fc5bb71b736dd0b1368906c05623
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '632'
 ht-degree: 18%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21994, lançada publicamente em quarta-feira, 19 de agosto de 2025. A versão de manutenção anterior era 21772.
 
-A ativação de recursos do 2025.8.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.8.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Novos recursos  {#new-features-21994}
 
@@ -60,11 +60,13 @@ Nenhum.
 * GUIDES-11227: Copiar um mapa DITA da interface do usuário do Assets também copia sua linha de base anexada para o novo mapa.
 * GUIDES-31506: A página inicial fica em branco quando um dos arquivos listados no widget Arquivos recentes é baseado em um modelo cujo modelo de origem não inclui uma miniatura.
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problemas conhecidos {#known-issues-21994}
 
 * O Apache HTTPD versão 2.4.65 apresenta alterações que podem afetar determinadas configurações devido a novas restrições implementadas como parte das correções de segurança. Essas correções resolvem as vulnerabilidades, garantindo que diretivas como `RequestHeader set`, `edit` e `edit_r` usadas para modificar o cabeçalho Content-Type agora sejam limitadas corretamente aos cabeçalhos de solicitação. Essa alteração impede modificações não intencionais nos cabeçalhos de resposta, especialmente para conteúdo estático.
+* A versão 2.4.65 do Apache HTTPD apresenta alterações no mod_proxy ao usar conexões ProxyRemote. Se tiver problemas, defina o sinalizador disablereuse como Ativado.
+  ```ProxyPass "/example" "http://backend.example.com" disablereuse=on```
 
 ### Recursos e APIs obsoletos {#deprecated-21994}
 
@@ -83,4 +85,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.29.0 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
