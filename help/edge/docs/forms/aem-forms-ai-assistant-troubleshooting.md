@@ -198,6 +198,7 @@ Este abrangente guia de solução de problemas ajuda você a identificar, diagno
        - Mensagem (área de texto necessária, máximo de 500 caracteres)
        - Enviar notificação por e-mail
    
+
 ### Problemas de layout e estilo
 
 **Sintomas:**
