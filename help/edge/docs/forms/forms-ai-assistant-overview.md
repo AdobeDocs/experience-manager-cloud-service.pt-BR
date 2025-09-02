@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
+source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -99,31 +99,38 @@ O Forms Experience Builder segue uma abordagem simples e conversacional:
 
 ## Exemplos de cenários
 
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-pdf.svg?lang=pt-BR)
-
-**Transformar o PDF forms em Forms Digital**
-
-Converta Acroforms, PDFs XFA ou documentos simples do PDF em formulários digitais responsivos e interativos com funcionalidade aprimorada.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/data-transfer-up.svg)
-
-**Modernizar Forms XFA herdado**
-
-Transforme aplicativos XFA complexos em experiências digitais modernas e acessíveis com fluxos de trabalho de usuário aprimorados.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/image.svg?lang=pt-BR)
-
-**Converter Capturas de Tela em Forms Digital**
-
-Transforme imagens, capturas de tela ou formulários desenhados à mão em experiências digitais totalmente funcionais.
-:::
-::::
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Transforme o PDF forms em Forms digital</p>
+                    <p class="is-size-6">Converta Acroforms, PDFs XFA ou documentos simples do PDF em formulários digitais responsivos e interativos com funcionalidade aprimorada.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Modernize Legacy XFA Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Modernizar Forms XFA herdado</p>
+                    <p class="is-size-6">Transforme aplicativos XFA complexos em experiências digitais modernas e acessíveis com fluxos de trabalho de usuário aprimorados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Convert Screenshots to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Converter capturas de tela em Forms digital</p>
+                    <p class="is-size-6">Transforme imagens, capturas de tela ou formulários desenhados à mão em experiências digitais totalmente funcionais.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- #### Import and Enhance Web Forms
 
@@ -148,39 +155,48 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## Benefícios para organizações
 
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/users.svg?lang=pt-BR)
-
-**Criação de formulário democratizada**
-
-Capacite usuários não técnicos a criar formulários sofisticados sem programar o conhecimento por meio de conversas em linguagem natural.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/bolt.svg?lang=pt-BR)
-
-**Tempo de Implantação Reduzido (TTV)**
-
-Acelere drasticamente o desenvolvimento de formulários, de dias para horas, permitindo uma entrada mais rápida no mercado para iniciativas digitais.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/lightbulb.svg?lang=pt-BR)
-
-**Simplicidade da interface**
-
-Elimine a curva de aprendizado com uma interface de conversação intuitiva, reduzindo o tempo de treinamento e aumentando a adoção.
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/layers.svg)
-
-**Esforços de Modernização de Escala**
-
-Modernize portfólios de formulários herdados com eficiência, preservando a lógica de negócios e aprimorando a experiência do usuário em todo o seu ecossistema de formulários.
-:::
-::::
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Criação democratizada de formulários</p>
+                    <p class="is-size-6">Capacite usuários não técnicos a criar formulários sofisticados sem programar o conhecimento por meio de conversas em linguagem natural.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Reduced Time to Value (TTV)">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Tempo de implantação reduzido (TTV)</p>
+                    <p class="is-size-6">Acelere drasticamente o desenvolvimento de formulários, de dias para horas, permitindo uma entrada mais rápida no mercado para iniciativas digitais.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Interface Simplicity">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Simplicidade da interface</p>
+                    <p class="is-size-6">Elimine a curva de aprendizado com uma interface de conversação intuitiva, reduzindo o tempo de treinamento e aumentando a adoção.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Scaling Modernization Efforts">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Dimensionar esforços de modernização</p>
+                    <p class="is-size-6">Modernize portfólios de formulários herdados com eficiência, preservando a lógica de negócios e aprimorando a experiência do usuário em todo o seu ecossistema de formulários.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 ## Integração
 
