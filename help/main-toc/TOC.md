@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4b41412a2c71d3e43ce5d6387ffb6d40fac2b18f
+source-git-commit: 29b1f3f24a92d45c4be7429fe3401147eb4c782a
 workflow-type: tm+mt
-source-wordcount: '6569'
+source-wordcount: '6571'
 ht-degree: 59%
 
 ---
@@ -298,7 +298,7 @@ ht-degree: 59%
       + [Instalação](/help/journey-sites/demos-add-on/installation.md)
       + [Criar programa](/help/journey-sites/demos-add-on/create-program.md)
       + [Criar site de demonstração](/help/journey-sites/demos-add-on/create-site.md)
-      + [Ativar o Screens](/help/journey-sites/demos-add-on/screens.md)
+      + [Habilitar o Screens](/help/journey-sites/demos-add-on/screens.md)
       + [Gerenciar seu site de demonstração](/help/journey-sites/demos-add-on/manage.md)
    + Outros conceitos de integração {#concepts}
       + [Introdução ao Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
@@ -395,7 +395,7 @@ ht-degree: 59%
          + [Versões de página](/help/sites-cloud/authoring/sites-console/page-versions.md)
          + [Diferencial de páginas](/help/sites-cloud/authoring/sites-console/page-diff.md)
          + [Uso de tags](/help/sites-cloud/authoring/sites-console/tags.md)
-         + [Ativação de recursos progressivos do aplicativo web](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
+         + [Habilitação de recursos progressivos do aplicativo web](/help/sites-cloud/authoring/sites-console/enable-pwa.md)
          + [Atalhos de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)
          + [Exportar para CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
       + Editor de página {#page-editor}
@@ -445,7 +445,7 @@ ht-degree: 59%
          + [Trabalhar com conteúdo direcionado em vários sites](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
          + [Como o gerenciamento multisite para conteúdo direcionado está estruturado](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [Gerenciamento de atividades](/help/sites-cloud/authoring/personalization/activities.md)
-         + [Gerenciamento de públicos](/help/sites-cloud/authoring/personalization/audiences.md)
+         + [Gerenciamento de públicos-alvos](/help/sites-cloud/authoring/personalization/audiences.md)
          + [Criação e gerenciamento de ofertas (console Ofertas)](/help/sites-cloud/authoring/personalization/offers.md)
          + [Noções sobre segmentação](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Configuração da segmentação com o ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -469,7 +469,7 @@ ht-degree: 59%
          + [Atalhos de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Criação do site {#site-creation}
          + [Criação de um novo site](/help/sites-cloud/administering/site-creation/create-site.md)
-         + [Ativar pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
+         + [Habilitar pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [Uso do painel do site](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [Modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [Layout responsivo](/help/sites-cloud/administering/responsive-layout.md)
@@ -604,7 +604,7 @@ ht-degree: 59%
    + Fragmentos de conteúdo {#content-fragments}
       + [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
       + [Entrega headless com fragmentos de conteúdo e GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
-      + [Ativar a funcionalidade de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+      + [Habilitar a funcionalidade de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
       + [Gerenciamento dos fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md)
       + [Variações - Criação dos fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-variations.md)
@@ -684,6 +684,7 @@ ht-degree: 59%
          + [Visualizar ativos](/help/assets/preview-assets.md)
          + [Perguntas frequentes](/help/assets/dynamic-media-open-apis-faqs.md)
          + [Configurar domínio personalizado](/help/assets/configure-custom-domain.md)
+         + [Otimizar imagens](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
    + Trabalho com a visualização do Assets {#assets-view}
       + [Introdução](/help/assets/assets-view-introduction.md)
       + [Introdução](/help/assets/get-started-assets-view.md)
@@ -1138,14 +1139,14 @@ ht-degree: 59%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação{#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
@@ -1273,7 +1274,7 @@ ht-degree: 59%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
@@ -1343,7 +1344,7 @@ ht-degree: 59%
             + [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
             + [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=pt-BR)
             + [Exportador JSON para serviços de conteúdo](/help/implementing/developing/components/json-exporter.md)
-            + [Ativação de exportação em JSON para um componente](/help/implementing/developing/components/enabling-json-exporter.md)
+            + [Habilitação de exportação em JSON para um componente](/help/implementing/developing/components/enabling-json-exporter.md)
             + [Editor de imagem](/help/implementing/developing/components/image-editor.md)
             + [Tags de decoração](/help/implementing/developing/components/decoration-tag.md)
             + [Uso de condições de ocultação](/help/implementing/developing/components/hide-conditions.md)
@@ -1378,7 +1379,7 @@ ht-degree: 59%
       + [Gerenciamento de experiência headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=pt-BR)
       + Desenvolvimento híbrido e SPA {#hybrid}
          + [Híbrido e SPA com o AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [Ativação da exportação em JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=pt-BR)
+         + [Habilitação da exportação em JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=pt-BR)
          + [Descontinuação do editor de SPA](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [Introdução e passo a passo do SPA](/help/implementing/developing/hybrid/introduction.md)
          + [Tutorial WKND do SPA](/help/implementing/developing/hybrid/wknd-tutorial.md)
@@ -1394,7 +1395,7 @@ ht-degree: 59%
          + [O componente RemotePage](/help/implementing/developing/hybrid/remote-page.md)
          + [Edição de um SPA externo no AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [Composite Components em SPAs](/help/implementing/developing/hybrid/composite-components.md)
-         + [Ativação de exportação em JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=pt-BR)
+         + [Habilitação da exportação em JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=pt-BR)
          + [Integração do Launch](/help/implementing/developing/hybrid/launch-integration.md)
          + [Documentos de referência SPA](/help/implementing/developing/hybrid/reference-materials.md)
    + Ferramentas do desenvolvedor {#developer-tools}
