@@ -3,9 +3,9 @@ title: Otimizar imagens usando o Dynamic Media com recursos OpenAPI
 description: Saiba como otimizar imagens em tempo real antes da entrega pública usando os recursos de otimização de imagem do Dynamic Media com recursos OpenAPI
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 5a01aff1d6c10d86e2faef22da2dbe724e24e673
+source-git-commit: 3d5ae3bae9635625912a4afb2f74d002cd0ab670
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [Recorte inteligente](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request) é uma capacidade de dimensionamento dinâmico de [!DNL Dynamic Media with OpenAPI capabilities]. [!DNL Smart Crop] é uma técnica avançada de processamento de imagens que usa o recorte com reconhecimento de conteúdo habilitado por IA para cortar imagens de forma inteligente para vários tamanhos de tela, preservando o contexto visual em versões cortadas. A IA analisa a imagem para identificar o ponto focal ou ponto de interesse pretendido e, em seguida, corta automaticamente a imagem para manter o ponto focal em todas as versões cortadas. [!DNL Smart Crop], um elemento-chave de design responsivo, fornece uma maneira econômica e eficiente de cortar imagens.
 
-Consulte o artigo [Perfis de Imagem de Mídia Dinâmica](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles) para saber como [criar representações de Recorte Inteligente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles) em [!DNL Admin View], [aplicá-las a pastas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders) ou [editar representações](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image) já aplicadas a uma imagem ou pasta. Saiba como criar um [!DNL Smart Crop] passo a passo neste [vídeo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+Consulte o artigo [Perfis de Imagem de Mídia Dinâmica](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles) para saber como [criar representações de Recorte Inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles) em [!DNL Admin View], [aplicá-las a pastas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders) ou [editar representações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image) já aplicadas a uma imagem ou pasta. Saiba como criar um [!DNL Smart Crop] passo a passo neste [vídeo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
 O parâmetro [!DNL Smart Crop] espera que perfis de smartcrop nomeados existam e tenham sido aplicados ao ativo. Consulte [Perfis de corte inteligente](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request) para saber mais sobre o parâmetro [!DNL Smart Crop] e como perfis nomeados [!DNL Smart Crop] são aplicados.
 
@@ -35,7 +35,7 @@ O [!DNL Dynamic Media with OpenAPI capabilities] usa nomes predefinidos para tra
 
 É possível aplicar uma única predefinição a várias imagens por meio das URLs de entrega de [!DNL Dynamic Media with OpenAPI]. Isso garante uma formatação consistente entre os ativos sem editar manualmente cada um.
 
-Consulte o artigo [gerenciando predefinições de imagens](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets) para saber [como criar predefinições de imagens no Modo de Exibição de Administração](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets) e [como criar predefinições de imagens responsivas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset) que adaptam ativos automaticamente para se ajustarem a diferentes tamanhos de tela.
+Consulte o artigo [gerenciando predefinições de imagens](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets) para saber [como criar predefinições de imagens no Modo de Exibição de Administração](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets) e [como criar predefinições de imagens responsivas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset) que adaptam ativos automaticamente para se ajustarem a diferentes tamanhos de tela.
 
 ### Benefícios do uso de predefinições de imagem{#benefits-of-image-presets}
 
@@ -56,7 +56,7 @@ Depois de criar o [!DNL Image Presets], você pode usá-los para os seguintes fl
 
 #### Usar predefinições no URL de entrega da imagem{#use-presets-in-delivery-urls}
 
-As predefinições tornam os URLs de entrega mais curtos e fáceis de usar.  Cada nome predefinido serve como um identificador exclusivo no URL de entrega. Em vez de adicionar vários modificadores ao URL de entrega de um ativo, faça referência ao nome predefinido para gerar sua representação instantaneamente. [Saiba como aplicar Predefinições de Imagem do Dynamic Media à sua imagem](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).
+As predefinições tornam os URLs de entrega mais curtos e fáceis de usar.  Cada nome predefinido serve como um identificador exclusivo no URL de entrega. Em vez de adicionar vários modificadores ao URL de entrega de um ativo, faça referência ao nome predefinido para gerar sua representação instantaneamente. [Saiba como aplicar Predefinições de Imagem do Dynamic Media à sua imagem](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).
 O exemplo a seguir compara um URL com uma predefinição a um URL sem uma predefinição.
 
 **URL sem uma predefinição (URL longa)**:
@@ -76,13 +76,10 @@ A miniatura predefinida agrupa as mesmas configurações do modificador de image
 #### Usar predefinições durante a criação no AEM Sites{#use-presets-during-authoring-in-aem-sites}
 
 Os autores podem selecionar [!DNL Image Presets] durante a edição da página na página de criação [!DNL AEM Sites], quando o suporte para [!DNL Dynamic Media] estiver habilitado.
-
 Execute as seguintes etapas para usar predefinições de imagem na página de criação:
-
 1. Navegue até a página de criação do Sites.
 1. Execute as etapas na seção [Acessar ativos remotos no Editor de páginas do AEM](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) para usar o painel [!DNL Asset Selector] para selecionar um ativo.
-1. No painel [!DNL asset selector], role até **[!UICONTROL Tipo de predefinição]** e especifique `Preset=Preset Name` no campo **[!UICONTROL Modificadores de imagem]**.
-
+1. No painel [!DNL asset selector], role até **[!UICONTROL Tipo de predefinição]**, especifique `Preset=Preset Name` no campo **[!UICONTROL Modificadores de imagem]** e clique em **[!UICONTROL Concluído]**.
    ![predefinição](/help/assets/assets/preset-in-asset-selector-panel.png)
 
 ## Imagem inteligente{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
