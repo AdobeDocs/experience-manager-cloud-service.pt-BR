@@ -3,9 +3,9 @@ title: Visualizar ativo e suas propriedades em  [!DNL the Content Hub]
 description: Saiba como visualizar ativos e propriedades no [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
+source-git-commit: 45e731d2286b07db5852138ae1ac914a56b13a6a
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '636'
 ht-degree: 8%
 
 ---
@@ -45,7 +45,7 @@ Antes de usar, compartilhar ou baixar um ativo, é possível visualizá-lo mais 
 * **K:** Fechar tela de visualização
 * **L:** Informações de um ativo que inclui título, formato, tamanho, resolução, marcas, marcas de cor e marcas inteligentes.
 
-## Formatos de arquivo não compatíveis {#supported-formats}
+## Formatos de ativos compatíveis {#supported-formats}
 
 O [!DNL Content Hub] oferece suporte a todos os tipos e formatos de ativos aceitos pelo repositório [!DNL Assets] subjacente. A tabela a seguir lista os principais formatos de arquivo em [!DNL the Content Hub], que fornecem suporte adicional para a visualização de ativos visualmente:
 
@@ -54,23 +54,16 @@ O [!DNL Content Hub] oferece suporte a todos os tipos e formatos de ativos aceit
      <tr>
       <th><strong>Tipo de arquivo</strong></th>
       <th><strong>Formatos compatíveis</strong></th>
-      <th><strong>Tamanho</strong></th>
      </tr>
      <tr>
-        <td rowspan="4"> Imagem </td>
+        <td rowspan="3"> Imagem </td>
     </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8000 X 8000 pixels, máximo de 40 MB</td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8000 X 8000 pixels, máximo de 40 MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL SVG]</td>
-        <td> Máximo de 250 KB</td>
     </tr>
     <tr>
         <td rowspan="4"> Vídeo </td>
@@ -78,15 +71,12 @@ O [!DNL Content Hub] oferece suporte a todos os tipos e formatos de ativos aceit
     </tr>
     <tr>
         <td>[!UICONTROL Quicktime]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
-        <td> 3840 X 3840 pixels, máximo de 200 MB</td>
     </tr>
     <tr>
         <td>[!UICONTROL MPEG]</td>
-        <td> Máximo de 200 MB </td>
     </tr>
     <tr>
         <td rowspan="4"> Documento </td>
@@ -94,15 +84,12 @@ O [!DNL Content Hub] oferece suporte a todos os tipos e formatos de ativos aceit
     </tr>
     <tr>
         <td>[!UICONTROL txt] (Simples)</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL Doc/Docx]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL XML]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td rowspan="2"> Mídia de impressão </td>
@@ -110,7 +97,6 @@ O [!DNL Content Hub] oferece suporte a todos os tipos e formatos de ativos aceit
     </tr>
     <tr>
         <td>[!UICONTROL PDF]</td>
-        <td> - </td>
     </tr>
     </tbody>
 </table>
@@ -125,7 +111,7 @@ Algumas propriedades dos ativos exibidos em [!DNL Content Hub] são derivadas, o
 
 * **Tags inteligentes:** o [!DNL The Content Hub] usa os serviços de conteúdo inteligente da Adobe Sensei para treinar ativos usando o algoritmo de reconhecimento na estrutura baseada em tags. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. As Tags inteligentes aumentam a velocidade do conteúdo de seus projetos, ajudando você a encontrar ativos relevantes rapidamente. As tags inteligentes são um exemplo de informações de ativos que não estão contidas na imagem. O [!DNL Experience Manager Assets] aplica tags inteligentes automaticamente a ativos, por padrão.
 
-* **Marcas de cores:** [Marcas de cores](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=pt-BR) ajudam a reconhecer um ativo usando cores identificadas automaticamente em um ativo com os recursos Sensei AI da Adobe.
+* **Marcas de cores:** [Marcas de cores](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) ajudam a reconhecer um ativo usando cores identificadas automaticamente em um ativo com os recursos Sensei AI da Adobe.
 
 * Data de upload
 
