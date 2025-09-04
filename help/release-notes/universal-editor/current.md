@@ -4,7 +4,7 @@ description: Estas são as notas de versão do Universal Editor de 2025.09.04.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8ca329ad8fe64ab4c45b01ce5906d51c8db45155
+source-git-commit: 0c380e0faca1db0966d22d056dd1f824a731a7bc
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -24,6 +24,13 @@ Estas são as notas de versão da versão de 4 de setembro de 2025 do Universal 
 
 * Copiar e colar está disponível para [participantes antecipados](#copy-paste)
 
+### Desfazer/Refazer {#undo-redo}
+
+Desfazer e refazer agora está disponível para autores de conteúdo do Universal Editor.
+
+* Isso inclui edições feitas em contexto, edições feitas por meio do painel Propriedades, bem como adição (ou duplicação), movimentação e exclusão de blocos.
+* Desfazer e refazer estão limitados à sessão atual do navegador.
+
 ## Recursos da adoção antecipada {#early-adopter}
 
 Se você estiver interessado em testar esses recursos futuros e compartilhar seu feedback, envie um email para o Gerente de sucesso do cliente da Adobe a partir do endereço de email associado à sua Adobe ID.
@@ -31,13 +38,6 @@ Se você estiver interessado em testar esses recursos futuros e compartilhar seu
 ### Novo RTE {#new-rte}
 
 O novo RTE do ProseMirror, com um seletor de páginas na caixa de diálogo de link, agora está disponível no painel direito.
-
-### Desfazer/Refazer {#undo-redo}
-
-Desfazer e refazer agora está disponível para autores de conteúdo do Universal Editor.
-
-* Isso inclui edições feitas em contexto, edições feitas por meio do painel Propriedades, bem como adição (ou duplicação), movimentação e exclusão de blocos.
-* Desfazer e refazer estão limitados à sessão atual do navegador.
 
 ### Copiar/Colar {#copy-paste}
 
