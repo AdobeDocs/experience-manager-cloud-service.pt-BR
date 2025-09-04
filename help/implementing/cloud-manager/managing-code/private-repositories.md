@@ -4,10 +4,10 @@ description: Saiba como configurar o Cloud Manager para trabalhar com os seus re
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 33%
+source-wordcount: '1000'
+ht-degree: 34%
 
 ---
 
@@ -19,9 +19,10 @@ Ao configurar o Cloud Manager para integrar com sua Nuvem privada do GitHub (rep
 >
 >Você também pode adicionar os seguintes tipos de repositório com webhooks:
 >
->* Repositórios do GitHub Enterprise Server (versão auto-hospedada do GitHub)
->* Repositórios do GitLab (versões `gitlab.com` e auto-hospedadas do GitLab)
->* Repositórios Bitbucket (o `bitbucket.org` e o Servidor de Bitbucket, a versão auto-hospedada do BitBucket)
+>* Repositórios do GitHub Enterprise Server (versão auto-hospedada do GitHub) .
+>* Repositórios do GitLab (versões `gitlab.com` e auto-hospedadas do GitLab).
+>* Repositórios Bitbucket (o `bitbucket.org` e o Servidor de Bitbucket, a versão auto-hospedada do BitBucket).
+>* Repositórios do Azure DevOps ([dev.azure.com](http://dev.azure.com) e versões auto-hospedadas do Azure DevOps).
 >
 >Consulte [Adicionar repositórios externos no Cloud Manager - beta privado](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -153,13 +154,13 @@ Repositórios privados validados podem ser associados a [pipelines de pilha com
 
 
 
-## Notas de uso {#usage-notes}
+## Limitações {#limitations}
 
-* Os pipelines de nível da Web e de configuração não são compatíveis com repositórios privados.
+Certas limitações se aplicam ao uso de repositórios privados com o Cloud Manager.
+
 * Nenhuma tag do Git será criada e enviada ao usar repositórios privados em pipelines de pilha completa de produção.
 * Se o aplicativo GitHub da Adobe for removido da organização GitHub, ele removerá o recurso de validação de solicitações de pull para todos os repositórios.
 * Os pipelines usando repositórios privados da nuvem do GitHub e o acionador de build &quot;na confirmação&quot; não são iniciados automaticamente quando uma nova confirmação é enviada para a ramificação selecionada.
 * A [Funcionalidade de reutilização de artefato](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) não se aplica a repositórios privados.
-* Não é possível pausar a validação da solicitação de pull usando a verificação do GitHub da Cloud Manager.
-Se o repositório GitHub for validado no Cloud Manager, o Cloud Manager sempre tentará validar as solicitações de pull criadas para esse repositório.
-* Se a organização GitHub tiver restrições de IP, crie um caso de suporte para receber a lista de endereços IP permitidos.
+* Não é possível pausar a validação da solicitação de pull usando a verificação do GitHub no Cloud Manager. Se o repositório GitHub for validado no Cloud Manager, o Cloud Manager sempre tentará validar as solicitações de pull criadas para esse repositório.
+* Se sua organização GitHub impor restrições de IP, abra um caso de suporte para obter a lista de endereços IP que devem ser permitidos.

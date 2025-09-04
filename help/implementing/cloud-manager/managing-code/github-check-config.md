@@ -1,28 +1,28 @@
 ---
-title: Configuração de verificação do GitHub para repositórios privados
+title: Verificações de solicitação de pull para repositórios privados
 description: Saiba como controlar os pipelines criados automaticamente para validar cada solicitação de pull para um repositório privado.
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0a08d5fc033f4f4f57b824492766e5b42a801b6e
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 33%
+source-wordcount: '296'
+ht-degree: 28%
 
 ---
 
-# Configuração de verificação do GitHub para repositórios privados {#github-check-config}
+# Verificações de solicitação de pull para repositórios privados {#github-check-config}
 
 Saiba como controlar os pipelines criados automaticamente para validar cada solicitação de pull para um repositório privado.
 
-## Configuração das verificações do GitHub {#configuration}
+## Configuração de verificações de repositório privado {#configuration}
 
 Ao usar [repositórios privados](private-repositories.md#using), um [pipeline de qualidade de código de pilha completa](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) será criado automaticamente. Esse pipeline é iniciado a cada atualização de solicitação de pull.
 
 Você pode controlar essas verificações criando um arquivo de configuração `.cloudmanager/pr_pipelines.yml` na ramificação padrão do repositório privado.
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
   shouldSkipCheckAnnotations: false
 pipelines:

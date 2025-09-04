@@ -4,17 +4,17 @@ description: Saiba como adicionar um pipeline do Edge Delivery para criar e impl
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta privado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 hide: false
 index: false
 hidefromtoc: false
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
+source-git-commit: dbd4ef8d782c9d05e50cab7479adbbc16d6a247d
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '488'
 ht-degree: 4%
 
 ---
-
 
 # Adicionar um pipeline do Edge Delivery {#configure-production-pipeline}
 
