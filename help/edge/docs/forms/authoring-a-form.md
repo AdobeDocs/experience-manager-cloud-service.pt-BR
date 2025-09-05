@@ -5,8 +5,9 @@ feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
-hidefromToC: true
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+index: false
+hidefromtoc: true
+source-git-commit: a0cb31cefb6f3c086882c237acb13020646573a5
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 1%
@@ -44,7 +45,7 @@ O AEM oferece suporte a vários métodos de criação, cada um adequado para dif
 - [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md): o Edge Delivery Services Forms transforma a maneira como os formulários são criados, executados e processados. Ao utilizar o Edge Delivery Services, as organizações podem criar formulários digitais rápidos, seguros e altamente disponíveis, aprimorando a experiência do usuário e a eficiência operacional com um ambiente de desenvolvimento rápido. Você pode criar o Edge Delivery Services Forms de duas maneiras:
    - [Criação no WYSIWYG](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): use o Universal Editor para criar formulários visuais, do tipo arrastar-e-soltar, ideais para autores de conteúdo com conhecimento técnico limitado. O Forms criado com Universal Editor é fornecido usando o Edge Delivery Services para renderização rápida e leve.
    - [Criação com base em documento](/help/edge/docs/forms/tutorial.md): use ferramentas como o Microsoft Excel ou o Google Sheets para definir a estrutura e o conteúdo do formulário. Esse método é útil para usuários empresariais que preferem entradas orientadas por planilha. Normalmente, esses formulários são publicados por meio do Edge Delivery Services e são adequados para casos de uso leves e de alto volume.
-- [Criação headless](https://experienceleague.adobe.com/pt-br/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): use APIs para renderizar formulários como JSON para qualquer front-end, por exemplo, React, Angular, aplicativos móveis ou quiosques, sem depender do AEM. Atualmente, somente os Componentes principais são compatíveis com entrega headless. Os formulários headless são ideais para casos de uso omnicanal e são consumidos independentemente da renderização de página do AEM, tornando-os flexíveis para implantações front-end personalizadas.
+- [Criação headless](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): use APIs para renderizar formulários como JSON para qualquer front-end, por exemplo, React, Angular, aplicativos móveis ou quiosques, sem depender do AEM. Atualmente, somente os Componentes principais são compatíveis com entrega headless. Os formulários headless são ideais para casos de uso omnicanal e são consumidos independentemente da renderização de página do AEM, tornando-os flexíveis para implantações front-end personalizadas.
 
 ### Análise comparativa de métodos de criação de formulários do AEM
 
