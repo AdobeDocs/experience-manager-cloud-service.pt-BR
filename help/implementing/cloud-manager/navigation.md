@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+source-git-commit: 71311bfffefec8d2c2f71b0c69e6fec4ce3f299b
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1692'
 ht-degree: 37%
 
 ---
@@ -30,7 +30,7 @@ A interface do Cloud Manager é composta principalmente por duas interfaces grá
 
 ## Assistente de IA no AEM
 
-Para clientes que possuem [critérios de pré-requisito concluídos](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), o Assistente de IA do AEM está disponível para usuários de suas organizações. Consulte [Assistente de IA no AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+Para clientes que possuem [critérios de pré-requisito concluídos](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), o Assistente de IA no AEM está disponível para usuários de suas organizações. Consulte [Assistente de IA no AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 
 ## Console Meus programas {#my-programs-console}
@@ -126,7 +126,7 @@ Um cartão (ou linha em uma tabela) representa cada programa, fornecendo uma vis
 * Nome atribuído ao programa. A imagem acima mostra &quot;SecurBank Sample&quot; como o nome do programa.
 * Tipo de serviço:
    * **Experience Manager Cloud** — para programas do AEM as a Cloud Service
-   * **Experience Manager** — para [programas do AMS (Adobe Managed Services)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — para [programas do AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Produção
@@ -153,7 +153,7 @@ O ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_
 * Navegue até um ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Ambiente](/help/implementing/cloud-manager/manage-environments.md) específico do programa
 * Abra o ![ícone de visão geral do programa](/help/implementing/cloud-manager/assets/program-overview.svg) [Visão geral do programa](#program-overview)
 * ![Ícone Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Editar o programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Excluir ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Excluir um programa de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Excluir ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Excluir um programa de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
