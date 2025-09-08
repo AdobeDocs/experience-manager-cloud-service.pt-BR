@@ -5,10 +5,10 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 93%
+source-wordcount: '2142'
+ht-degree: 91%
 
 ---
 
@@ -334,14 +334,14 @@ Ao editar um Fragmento de experiência disponível, os Blocos de construção s�
 
 A personalização no Fragmento de experiência permite que você, como profissional de marketing, defina públicos-alvo para o Fragmento de experiência apenas uma vez e, em seguida, reutilize o fragmento em qualquer página. Isto:
 
-* elimina a necessidade de especificar as variações necessárias para cada público sempre que o fragmento for usado
+* elimina a necessidade de especificar as variações necessárias para cada público-alvo sempre que o fragmento for usado
 * mantém o estilo nas ofertas
 
-Você pode criar um Fragmento de experiência com vários componentes agrupados dentro desse único fragmento. Você também pode criar variações do fragmento para cada segmento de público específico e reutilizar esses Fragmentos de experiência nos canais necessários.
+Você pode criar um Fragmento de experiência com vários componentes agrupados dentro desse único fragmento. Você também pode criar variações do fragmento para cada segmento de público-alvo específico e reutilizar esses Fragmentos de experiência nos canais necessários.
 
 A personalização é alcançada definindo as propriedades de **Personalização** no Fragmento de experiência ou na variação, ou na pasta que contém os fragmentos; isso significa que a herança pode substituir as propriedades de personalização.
 
-A configuração dessas propriedades também ativa o modo **Direcionamento** no editor de Fragmento de experiência.
+A configuração dessas propriedades também habilita o modo **Direcionamento** no editor de Fragmento de experiência.
 
 ### Definição de personalização para seu Fragmento de experiência {#defining-personalization-experience-fragment}
 
@@ -353,7 +353,7 @@ Para personalizar o fragmento:
 
    >[!NOTE]
    >
-   >As propriedades de personalização definidas em uma pasta são herdadas por todas as pastas secundárias abaixo na subárvore e os Fragmentos de experiência (e variações) dentro dessa subárvore. Elas podem ser substituídas quebrando a herança.
+   >As propriedades de personalização definidas em uma pasta são herdadas por todas as pastas filhas abaixo na subárvore e os Fragmentos de experiência (e variações) dentro dessa subárvore. Elas podem ser substituídas quebrando a herança.
 
 1. Abra a guia **Personalização** para definir e salvar suas configurações. Por exemplo, em uma pasta:
 
@@ -445,6 +445,16 @@ Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML 
 Publicar seu fragmento de experiência é basicamente o mesmo que [publicar uma página](/help/sites-cloud/authoring/sites-console/publishing-pages.md) (mas diretamente do console ou do editor de fragmentos de experiência).
 
 Como alternativa, também é possível [publicar para visualização](/help/sites-cloud/authoring/sites-console/previewing-content.md) (novamente diretamento do console ou do editor de fragmentos de experiência).
+
+>[!CAUTION]
+>
+>Por padrão, publicando a pasta raiz dos Fragmentos de experiência (localizados diretamente em `/content/experience-fragments`):
+>
+>* publica somente a própria pasta do contêiner
+>* não publica nenhum filho
+>* cancela a publicação de qualquer filho já publicado
+>
+>Para publicação de todos os Fragmentos de experiência na pasta, cada um deve ser publicado separadamente.
 
 ## Exportar fragmentos de experiência {#exporting-experience-fragments}
 
