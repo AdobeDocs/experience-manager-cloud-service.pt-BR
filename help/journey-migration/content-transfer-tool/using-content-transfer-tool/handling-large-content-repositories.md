@@ -32,13 +32,13 @@ Siga a seção abaixo para entender as considerações importantes antes de inic
 
 * A versão do Source AEM deve ser 6.3 - 6.5.
 
-* O armazenamento de dados do Source AEM está configurado para usar o Amazon S3 ou o Armazenamento de blobs do Azure. Para obter mais detalhes, consulte [Configurando armazenamentos de nós e armazenamentos de dados no AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html).
+* O armazenamento de dados do Source AEM está configurado para usar o Amazon S3 ou o Armazenamento de blobs do Azure. Para obter mais detalhes, consulte [Configurando armazenamentos de nós e armazenamentos de dados no AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=pt-BR).
 
 * Cada conjunto de migração copia todo o armazenamento de dados, de modo que apenas um único conjunto de migração deve ser usado.
 
 * Você precisa de acesso para instalar o [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) na instância (ou VM) que executa a instância do AEM de origem.
 
-* A Coleta de Lixo do Armazenamento de Dados foi executada nos últimos sete dias na origem. Para obter mais detalhes, consulte [Coleta de lixo do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
+* A Coleta de Lixo do Armazenamento de Dados foi executada nos últimos sete dias na origem. Para obter mais detalhes, consulte [Coleta de lixo do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=pt-BR#data-store-garbage-collection).
 
 ### Considerações adicionais se a instância do AEM de origem estiver configurada para usar um Armazenamento de dados Amazon S3 ou Azure Blob {#additional-considerations-amazons3-azure}
 
