@@ -162,7 +162,7 @@ Com o arquivo de configuração acima em vigor, a fase de pré-cópia do AzCopy 
 
 >[!NOTE]
 >Se o AzCopy não estiver configurado corretamente, você verá a seguinte mensagem nos logs:
->>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+>&#x200B;>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. Inicie uma extração da interface da CTT. Consulte [Introdução à ferramenta de transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) e o [processo de extração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) para obter mais detalhes.
 
