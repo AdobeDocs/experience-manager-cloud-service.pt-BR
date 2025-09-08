@@ -4,9 +4,9 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.9.0 no Adobe E
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2b82e3b848be828fbf8c316244031a0e06f512ca
+source-git-commit: 8092f18ec350a68bc192a11afbd0ca440f72e282
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1137'
 ht-degree: 4%
 
 ---
@@ -33,13 +33,13 @@ A próxima versão está planejada para sexta-feira, 2 de outubro de 2025.
 
   ![Renovação do certificado SSL](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* **Suporte adicionado para Azure DevOps para repositórios privados**
+* **Suporte adicionado para Azure DevOps (repositórios privados)**
 
   As atualizações de documentação incluem etapas de configuração para Trazer seu próprio Git com o Azure DevOps e validação de solicitação de pull. Consulte [Adicionar repositórios externos no Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-* **Verificações de solicitação de pull para repositórios privados**
+* **O suporte BYOG (Bring Your Own Git) foi estendido para configurar pipelines (repositórios privados)**
 
-  O Cloud Manager agora oferece suporte a pipelines de configuração com repositórios privados no GitHub, Bitbucket, Azure DevOps e GitLab. Consulte [Verificações de Solicitação Pull para Repositórios Privados](/help/implementing/cloud-manager/managing-code/github-check-config.md).
+  O Cloud Manager agora oferece suporte a pipelines de configuração com repositórios privados no GitHub, Bitbucket, Azure DevOps e GitLab. Esse suporte acelera ainda mais o ciclo de desenvolvimento. Consulte [Verificações de Solicitação Pull para Repositórios Privados](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -63,13 +63,13 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 Reverta rapidamente para uma implantação anterior se o código-fonte do cliente mais recente não estiver funcionando como esperado — não é necessário executar novamente o pipeline completo ou reverter as confirmações manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar o código-fonte do cliente a partir do cartão Ambientes](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *cartão Ambientes acima, mostrando a opção **Restaurar**>**Código anterior implantado**&#x200B;para um ambiente selecionado.*
+![Restaurar o código-fonte do cliente a partir do cartão Ambientes](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *cartão Ambientes acima, mostrando a opção **Restaurar**>**Código anterior implantado**para um ambiente selecionado.*
 
 ![Restaurar caixa de diálogo implantada de código anterior](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Na caixa de diálogo **Restaurar código anterior implantado**, revise a versão implantada no momento e a versão que deseja restaurar e clique em **Confirmar***.
 
 ![Restaurando a ativação](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-O *Cloud Manager reverte o ambiente para a compilação anterior, mantém o conteúdo e a configuração intactos e marca o ambiente **Restaurando**&#x200B;até que a implantação seja concluída.*
+O *Cloud Manager reverte o ambiente para a compilação anterior, mantém o conteúdo e a configuração intactos e marca o ambiente **Restaurando**até que a implantação seja concluída.*
 
 ![Versão do código Source em uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *A exibição de detalhes do Ambiente, como visto acima, agora também mostra a versão ativa do código-fonte em uso.*
 
@@ -152,7 +152,7 @@ Os Pipelines de configuração agora são compatíveis com sites criados com o E
 
   ![Painel de filtros mostrando o novo tipo de entrega do Edge e de publicação](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**&#x200B;cartão.*
+![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**cartão.*
 
 ![Caixa de diálogo Adicionar pipeline do Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Caixa de diálogo Adicionar pipeline do Edge Delivery.*
 
