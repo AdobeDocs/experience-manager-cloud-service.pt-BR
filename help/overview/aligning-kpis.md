@@ -22,7 +22,7 @@ ht-degree: 93%
 
 Em um mundo digital, você pode medir quase tudo. Escolher três KPIs para sua implementação do Adobe Experience Manager ajudará sua equipe a se concentrar no que é mais importante.
 
-##  **Siga estas seis etapas para decidir o que medir e como**
+## **Siga estas seis etapas para decidir o que medir e como**
 
 1. **Comece com seus objetivos comerciais.** Por exemplo, seus objetivos comerciais podem ser aumentar a receita online, diminuir as despesas operacionais ou reduzir as despesas legais associadas às violações de Digital Rights Management (DRM).
 
