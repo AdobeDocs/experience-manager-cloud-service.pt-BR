@@ -35,7 +35,7 @@ A tabela a seguir ilustra o uso das várias APIs de entrega disponíveis:
 >[!IMPORTANT]
 >
 >Você pode testar qualquer modificador, que geralmente não está disponível por meio de APIs experimentais. Por exemplo, `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
->>Clique aqui para saber mais sobre como usar as [APIs experimentais](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) e a [lista completa de modificadores](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>&#x200B;>Clique aqui para saber mais sobre como usar as [APIs experimentais](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) e a [lista completa de modificadores](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 O Dynamic Media com recursos de OpenAPI também é compatível com vídeos de formulários longos. Os vídeos podem suportar até 50 GB e 2 horas.
 
