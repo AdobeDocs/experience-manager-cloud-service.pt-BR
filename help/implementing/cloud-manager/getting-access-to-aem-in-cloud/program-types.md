@@ -40,7 +40,7 @@ Os usuários podem acessar o repositório Git do Cloud Manager usando um cliente
 
 Depois que um cliente Git é configurado, você pode gerenciar seu repositório Git na interface do usuário do Cloud Manager. Para saber mais sobre como gerenciar o Git usando a interface do usuário do Cloud Manager, consulte [Acessar o Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-Para começar a desenvolver o aplicativo AEM Cloud, verifique o código do aplicativo do repositório do Cloud Manager para o computador local.
+Para começar a desenvolver o aplicativo da AEM Cloud, verifique o código do aplicativo do repositório da Cloud Manager para o computador local.
 
 ```java
 $ git clone {URL}
