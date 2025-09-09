@@ -3,9 +3,9 @@ title: Dynamic Media com recursos OpenAPI
 description: Saiba mais sobre os principais conceitos, como por que usar o Dynamic Media com recursos OpenAPI e como ativá-lo.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 2b7dc8e25c28c7e537bf19b9ed0518c9adfe7a74
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,13 @@ O Dynamic Media com recursos OpenAPI oferece os seguintes benefícios principais
 * **Insights de dados para tomar decisões informadas (no futuro)**: além do gerenciamento e da entrega de ativos, ele captura insights de dados de entrega em entregas de ativos na CDN, permitindo que os gerentes de marca rastreiem as métricas de entrega entre canais. Ele permite que eles tomem decisões orientadas por dados para a otimização contínua da governança de ativos e estratégias de entrega.
 
 ![Diagrama de fluxo de dados da API aberta do Dynamic Media](assets/dm-openapi-dfd.png)
+
+Para obter informações sobre as ofertas do Dynamic Media disponíveis e seus recursos, consulte [Dynamic Media Prime e Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
+
+>[!NOTE]
+>
+>Os clientes do DM Prime podem usar modificadores básicos de imagem, incluindo girar, cortar, virar, altura, largura e qualidade. A Imagem inteligente não é compatível com AVIF para clientes do DM Prime.
+
 
 ## Pré-requisitos para acessar o Dynamic Media com recursos OpenAPI {#prerequisites-dynaminc-media-open-apis}
 

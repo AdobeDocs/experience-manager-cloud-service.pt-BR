@@ -3,9 +3,9 @@ title: APIs de entrega
 description: Saiba como usar as APIs de entrega.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
+source-git-commit: 9f7164e99abb6fce3b1bbc6401234996bcd43889
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,18 @@ A tabela a seguir ilustra o uso das várias APIs de entrega disponíveis:
 | [Contêiner de player do ativo de vídeo](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoPlayerDelivery) | Retorna o container do reprodutor do ativo de vídeo. Você pode incorporar o reprodutor em um elemento HTML do iframe e reproduzir o vídeo. |
 | [Manifestos de reprodução no formato de saída selecionado](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/videoManifestDelivery) | Retorna o arquivo de manifesto de reprodução do ativo de vídeo especificado no formato de saída selecionado. Você deve criar um reprodutor personalizado capaz de transmissão adaptável por meio dos protocolos HLS ou DASH para poder obter o arquivo de manifesto de reprodução e reproduzir o vídeo. |
 
+>[!IMPORTANT]
+>
+>Você pode testar qualquer modificador, que geralmente não está disponível por meio de APIs experimentais. Por exemplo, `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
+>>Clique aqui para saber mais sobre como usar as [APIs experimentais](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) e a [lista completa de modificadores](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+
 O Dynamic Media com recursos de OpenAPI também é compatível com vídeos de formulários longos. Os vídeos podem suportar até 50 GB e 2 horas.
 
 Para obter informações sobre as ofertas do Dynamic Media disponíveis e seus recursos, consulte [Dynamic Media Prime e Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
+
+>[!NOTE]
+>
+>Os clientes do DM Prime podem usar modificadores básicos de imagem, incluindo girar, cortar, virar, altura, largura e qualidade. A Imagem inteligente não é compatível com AVIF para clientes do DM Prime.
 
 ## Endpoints das APIs de entrega {#delivery-apis-endpoint}
 
@@ -64,7 +73,7 @@ headers: {
     }
 ```
 
-Para invocar as APIs de Entrega, é necessário um token IMS nos detalhes `Authorization` para entregar um ativo restrito. O token IMS é obtido de uma conta técnica. Consulte [Buscar as credenciais do AEM as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para criar uma nova conta técnica. Consulte [Gerar o token de acesso](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para gerar o token IMS e usá-lo corretamente no cabeçalho da solicitação de APIs de Entrega.
+Para invocar as APIs de Entrega, é necessário um token IMS nos detalhes `Authorization` para entregar um ativo restrito. O token IMS é obtido de uma conta técnica. Consulte [Buscar as credenciais do AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para criar uma nova conta técnica. Consulte [Gerar o token de acesso](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para gerar o token IMS e usá-lo corretamente no cabeçalho da solicitação de APIs de Entrega.
 
 
 Para exibir amostras de solicitações, amostras de respostas e códigos de resposta, consulte [APIs de entrega](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
