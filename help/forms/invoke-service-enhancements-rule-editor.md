@@ -6,22 +6,25 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: chame os aprimoramentos do serviço no VRE, preenchendo as opções suspensas usando invocar serviço, Defina o painel repetível usando a saída de invocar serviço, Defina o painel usando a saída de invocar serviço, Use o parâmetro de saída de invocar serviço para validar outro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
+source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1598'
 ht-degree: 1%
 
 ---
 
-# Utilização de Chamar serviço no Editor de regras visuais para formulários com base em Componentes principais
+# Integração de APIs externas com o Editor de regras visuais no Forms dos Componentes principais
 
-O Editor de Regras Visuais em um Formulário Adaptável oferece suporte ao recurso **Chamar Serviço**, que permite selecionar um serviço da lista de Modelos de Dados de Formulário (FDM) configurados para sua instância. Você pode mapear campos de formulário diretamente para os parâmetros de entrada do serviço. Para mapear campos de formulário para os parâmetros de saída, use a opção de carga do evento para o serviço de Modelo de dados de formulário especificado. Além disso, o editor de regras Visual permite criar regras para manipuladores de sucesso e falha para operações de **Chamar serviço** com base nas respostas de saída. Os manipuladores de êxito gerenciam a execução bem-sucedida da operação **Chamar Serviço**, enquanto os manipuladores de falha solucionam os erros que ocorrerem.
+O Editor de Regras Visuais em um Formulário Adaptável oferece suporte ao recurso **Chamar Serviço**, permitindo que você se conecte a APIs externas por meio de Modelos de Dados de Formulário (FDM) configurados para sua instância. Você pode mapear campos de formulário diretamente para os parâmetros de entrada do serviço e usar a opção de carga útil do evento para mapear os parâmetros de saída. O Editor visual de regras também permite definir regras para manipuladores de sucesso e falha com base na resposta do serviço: manipuladores de sucesso lidam com chamadas de API bem-sucedidas, enquanto manipuladores de falha gerenciam erros.
+
+Isso permite enviar facilmente solicitações de API do seu formulário, processar as respostas da API e exibir ou usar os dados retornados dinamicamente no formulário. Ele garante uma integração perfeita entre seu Formulário adaptável e sistemas externos ou fontes de dados.
+
 
 ## Vantagens de usar a função Chamar serviço no editor de regras do formulário
 
 Estas são algumas das vantagens de usar a operação Chamar serviço no editor de regras de um Formulário adaptável:
 
-* **Integração simplificada**: o Editor de regras visuais simplifica o processo de integração de serviços externos ou APIs ao Forms adaptável. Ao usar o **Invocar Serviço**, você pode conectar formulários facilmente a várias fontes de dados e serviços sem a necessidade de uma codificação complexa, tornando a integração de formulários mais eficiente.
+* **Integração simplificada de API**: o Editor de regras visuais simplifica o processo de integração de serviços externos ou APIs ao Forms adaptável. Ao usar o **Invocar Serviço**, você pode conectar formulários facilmente a várias fontes de dados e serviços sem a necessidade de uma codificação complexa, tornando a integração de formulários mais eficiente.
 
 * **Manipulação de resposta dinâmica**: você pode gerenciar respostas de sucesso e erro com base nas respostas de saída do **Invoke Service**, permitindo que os formulários reajam dinamicamente a diferentes cenários. Garante que os formulários lidem com várias condições adequadamente, melhorando a flexibilidade e o controle.
 

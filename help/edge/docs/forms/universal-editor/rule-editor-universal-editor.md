@@ -1,21 +1,21 @@
 ---
-title: Editor de regras para Forms dinâmico no editor universal
+title: Editor de regras para o Edge Delivery Services Forms
 description: Crie formulários dinâmicos e inteligentes usando o Editor de regras no Editor universal. Adicionar lógica condicional, cálculos e comportamentos interativos sem codificação.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2780'
 ht-degree: 0%
 
 ---
 
 
-# Editor de regras para Forms dinâmico no editor universal
+# Editor de regras para o Edge Delivery Services Forms
 
-O Editor de regras permite que os autores transformem formulários estáticos em experiências responsivas e inteligentes, sem escrever código. Você pode mostrar campos condicionalmente, realizar cálculos, validar dados, orientar usuários por meio de fluxos e integrar uma lógica de negócios que se adapta à medida que as pessoas digitam.
+O Editor de regras permite que os autores transformem formulários estáticos em experiências responsivas e inteligentes sem escrever código. Você pode mostrar campos condicionalmente, realizar cálculos, validar dados, orientar usuários por meio de fluxos e integrar uma lógica de negócios que se adapta à medida que as pessoas digitam.
 
 ## O que você vai aprender
 
@@ -308,7 +308,7 @@ Você criará um formulário que:
 
 1. **Abrir editor universal**:
    - Navegue até o console AEM Sites, selecione sua página, clique em **Editar**
-   - Verifique se o [Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=pt-BR) está configurado corretamente
+   - Verifique se o [Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) está configurado corretamente
 
 2. **Adicionar componentes de formulário nesta ordem**:
    - Título (H2): &quot;Formulário de cálculo de imposto&quot;
@@ -727,7 +727,7 @@ O Forms se torna ferramentas eficientes para a coleta de dados, a qualificação
 
 **Recursos adicionais**:
 
-- [Documentação do Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=pt-BR) para contexto mais amplo
+- [Documentação do Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) para contexto mais amplo
 - [guia do Extension Manager](/help/implementing/developing/extending/extension-manager.md) para habilitar recursos adicionais
 - [Edge Delivery Services forms](/help/edge/docs/forms/overview.md) para obter orientação abrangente sobre o desenvolvimento de formulários
 
