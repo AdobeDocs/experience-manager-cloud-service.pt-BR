@@ -4,9 +4,9 @@ description: Entenda o contrato JSON entre a definição do componente e o Edito
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 2b945504385ad78ddfb58d210db4212382e9872c
+source-git-commit: b4e61ec6abcaf73119f8963d72317759b2bd7c76
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Veja a seguir um exemplo completo, mas simples de `component-definition.json`.
 `plugins` define qual plug-in é responsável pela persistência do componente. Os plug-ins comuns incluem:
 
 * `aem` para [AEM as a Cloud Service.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service)
-* `aem65` para [AEM 6.5.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
+* `aem65` para [AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65) e [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts)
 * `xwalk` para [Criação com o AEM Sites para Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` ou `cf` {#page-cf}
