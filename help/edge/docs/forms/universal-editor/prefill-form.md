@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: preenchimento prévio de formulário adaptável, serviços de entrega de borda de formulários adaptáveis, preenchimento automático de formulário adaptável
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1803'
 ht-degree: 1%
 
 ---
@@ -156,6 +156,11 @@ O Editor universal fornece duas opções de serviço de preenchimento prévio:
    ![Modelo do Edge Delivery Services](/help/edge/assets/create-eds-forms.png)
 
 1. Clique em **Criar** para abrir o assistente **Criar Formulário**
+
+   >
+   >
+   > Você pode configurar a fonte de dados na guia **Dados** ou posterior editando as propriedades do formulário.
+
 1. Especifique os detalhes do formulário:
 
    - **Nome**: insira um nome descritivo para o formulário
@@ -241,7 +246,7 @@ Verifique se essas extensões estão habilitadas no Universal Editor:
 
 +++
 
-+++Fase 4: Teste Da Configuração De Preenchimento Prévio
++++Fase 4: Testar A Configuração De Preenchimento Prévio
 
 ### Etapa 8: pré-visualização e teste
 
@@ -250,7 +255,7 @@ Verifique se essas extensões estão habilitadas no Universal Editor:
 3. Escolher **Visualizar como HTML**
 4. Teste o preenchimento prévio anexando parâmetros ao URL:
 
-   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
+   `https://your-preview-url.com?<bindreferencefield>=<value>`
 
    **Exemplo:**
 
@@ -365,7 +370,7 @@ Os URLs abaixo são apenas para fins de ilustração e não funcionarão como es
 
 +++
 
-+++Otimização de desempenho
++++Otimização do desempenho
 
 - **Minimizar volume de dados**: preencher apenas os campos necessários
 - **Usar armazenamento em cache**: configurar o armazenamento em cache apropriado para os dados acessados com frequência
@@ -411,7 +416,7 @@ O Forms adaptável é compatível com vários formatos, dependendo do modelo de 
 
 +++
 
-+++É possível preencher previamente campos vinculados e não vinculados?
++++Posso preencher previamente campos vinculados e não vinculados?
 
 Sim, você pode preencher previamente ambos os tipos de campos. Os campos associados usam a seção `afBoundData` e devem corresponder ao esquema do modelo de formulário. Campos desatados usam a seção `afUnBoundData` e podem conter dados adicionais.
 
@@ -429,7 +434,7 @@ Verifique se todos os campos têm `bindRef` valores corretos que correspondam ex
 
 +++
 
-+++Como gerenciar a autenticação para serviços de preenchimento prévio?
++++Como gerenciar a autenticação de serviços de preenchimento prévio?
 
 A autenticação depende da configuração da fonte de dados. Para preenchimento prévio baseado em FDM, configure a autenticação nas configurações da fonte de dados. Para o preenchimento prévio de rascunho, os usuários normalmente precisam estar conectados para acessar os rascunhos salvos.
 

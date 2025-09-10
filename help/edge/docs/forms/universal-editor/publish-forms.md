@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: publicar formulários, Edge Delivery Services, configuração de formulário, CORS, filtro referenciador
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Cada fase se baseia na anterior para garantir uma implantação segura e funcion
 1. **Acessar o formulário**: Abra o formulário adaptável no Editor Universal
 2. **Iniciar publicação**: clique no ícone **Publicar** na barra de ferramentas
 
-   ![Clique em Publicar](/help/forms/assets/publish-icon-eds-form.png)
+   ![Clique em Publicar](/help/edge/docs/forms/universal-editor/assets/publish-form-ue.png)
 
 +++
 
@@ -58,12 +58,12 @@ Cada fase se baseia na anterior para garantir uma implantação segura e funcion
 
 1. **Revisar ativos de publicação**: o sistema mostra todos os ativos que estão sendo publicados, incluindo o formulário
 
-   ![Ao clicar em Publicar](/help/forms/assets/on-click-publish.png)
+   ![Ao clicar em Publicar](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-review.png)
 
 2. **Confirmar publicação**: Clique em **Publicar** para continuar
 3. **Verificar êxito**: procure a mensagem de confirmação
 
-   ![Êxito na publicação](/help/forms/assets/publish-success.png)
+   ![Êxito na publicação](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-success.png)
 
 +++
 
@@ -72,7 +72,7 @@ Cada fase se baseia na anterior para garantir uma implantação segura e funcion
 
 **Verificar status**: clique no ícone **Publicar** novamente para exibir o status atual
 
-![Status de publicação](/help/forms/assets/publish-status.png)
+![Status de publicação](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-validate.png)
 
 **Ponto de Verificação de Validação:**
 
@@ -91,7 +91,7 @@ Cada fase se baseia na anterior para garantir uma implantação segura e funcion
 2. Clique no menu de três pontos () no canto superior direito
 3. Selecione **Cancelar publicação**
 
-![Cancelar publicação do formulário](/help/forms/assets/unpublish--form.png)
+![Cancelar publicação do formulário](/help/edge/docs/forms/universal-editor/assets/unpublish-ue.png)
 
 +++
 
@@ -169,8 +169,8 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentação de referência:**
 
-- [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [Documentação de Filtro do Referenciador](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+- [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [Documentação de Filtro do Referenciador](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
 +++
 
@@ -221,7 +221,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 **Documentação de referência:**
 
-- [Configurar Filtro Referenciador via Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [Configurar Filtro Referenciador via Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
 +++
 

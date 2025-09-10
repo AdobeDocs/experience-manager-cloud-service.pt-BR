@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
+source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
 workflow-type: tm+mt
-source-wordcount: '2780'
+source-wordcount: '2824'
 ht-degree: 0%
 
 ---
@@ -165,13 +165,15 @@ Figura: interface do Editor de regras para editar regras de componentes
 ![Interface do usuário do Editor de Regras](/help/edge/docs/forms/assets/rule-editor-interface.png)
 Figura: Interface completa do Editor de regras com componentes numerados
 
-- **Título e tipo de regra do componente**: confirma o componente selecionado e o tipo de regra ativo.
-- **Painel de Funções e Objetos de Formulário**:
+1. **Título e tipo de regra do componente**: confirma o componente selecionado e o tipo de regra ativo.
+2. **Painel de Funções e Objetos de Formulário**:
+
    - Objetos de formulário: exibição hierárquica de campos e containers para referência em regras
    - Funções: auxiliares de matemática, string, data e validação integrados
-- **Alternância de painel**: mostrar/ocultar o painel de objetos e funções para aumentar o espaço de trabalho
-- **Construtor visual de regras**: arrastar e soltar, criador de regras orientado por lista suspensa
-- **Controles**: Concluído (salvar), Cancelar (descartar). Sempre teste as regras antes de salvar.
+
+3. **Alternância de painel**: mostrar/ocultar o painel de objetos e funções para aumentar o espaço de trabalho
+4. **Construtor visual de regras**: arrastar e soltar, criador de regras orientado por lista suspensa
+5. **Controles**: Concluído (salvar), Cancelar (descartar). Sempre teste as regras antes de salvar.
 
 +++
 
@@ -302,13 +304,13 @@ Você criará um formulário que:
 
 +++
 
-+++ Etapa 1: criar o formulário de base
++++ Etapa 1: criar o formulário
 
 **Objetivo**: criar o formulário base com todos os campos e configurações iniciais.
 
 1. **Abrir editor universal**:
    - Navegue até o console AEM Sites, selecione sua página, clique em **Editar**
-   - Verifique se o [Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=pt-BR) está configurado corretamente
+   - Verifique se o [Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) está configurado corretamente
 
 2. **Adicionar componentes de formulário nesta ordem**:
    - Título (H2): &quot;Formulário de cálculo de imposto&quot;
@@ -533,6 +535,9 @@ Figura: Adicionar funções personalizadas ao arquivo functions.js
 ![Função personalizada no editor de regras](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Figura: Seleção e configuração de funções personalizadas na interface do Editor de regras
 
+>
+>
+> As melhorias no Editor de regras, incluindo regras personalizadas baseadas em eventos, suporte para variáveis dinâmicas e integração de API, também estão disponíveis para o Edge Delivery Services Forms. Para saber mais sobre esses aprimoramentos e como usá-los, consulte o artigo [Aprimoramentos do Editor de regras e Casos de uso](/help/forms/rule-editor-enhancements-use-cases.md).
 
 **Práticas recomendadas para uso de função**:
 
@@ -727,7 +732,7 @@ O Forms se torna ferramentas eficientes para a coleta de dados, a qualificação
 
 **Recursos adicionais**:
 
-- [Documentação do Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=pt-BR) para contexto mais amplo
+- [Documentação do Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) para contexto mais amplo
 - [guia do Extension Manager](/help/implementing/developing/extending/extension-manager.md) para habilitar recursos adicionais
 - [Edge Delivery Services forms](/help/edge/docs/forms/overview.md) para obter orientação abrangente sobre o desenvolvimento de formulários
 

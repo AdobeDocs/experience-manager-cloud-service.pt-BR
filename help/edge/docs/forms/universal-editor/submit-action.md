@@ -5,9 +5,9 @@ keywords: como selecionar a ação enviar para um formulário adaptável, conect
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '413'
 ht-degree: 6%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | Versão | Link do artigo |
 |---------|-----------------------------|
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Este artigo |
@@ -72,7 +72,7 @@ As seguintes ações de envio são suportadas pelo [Adaptive Forms criado no Uni
 
 ![Ícone de propriedades do formulário](/help/forms/assets/ue-form-properties-icon.png)
 
-![Propriedades de Formulário do Editor Universal](/help/forms/assets/ue-form-properties.png)
+![Assistente de Propriedades do Formulário](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
 
 >[!NOTE]
 >

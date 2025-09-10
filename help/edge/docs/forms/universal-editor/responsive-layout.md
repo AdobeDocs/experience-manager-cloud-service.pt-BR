@@ -6,15 +6,15 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2443'
 ht-degree: 0%
 
 ---
 
 
-# Criar Forms responsivo com editor universal
+# Criação de Forms responsivo com Universal Editor - Um guia completo
 
 O cenário moderno da Web exige formulários que funcionem perfeitamente em um espectro cada vez maior de dispositivos e tamanhos de tela. De grandes monitores de desktop a telas de smartphone compactas, os usuários esperam experiências consistentes e intuitivas, independentemente do dispositivo escolhido. A criação de formulários responsivos não é mais opcional — é um requisito fundamental para o fornecimento de experiências digitais profissionais, acessíveis e otimizadas para conversão.
 
@@ -33,20 +33,21 @@ A criação responsiva de formulários envolve duas atividades principais:
 - Solução de problemas comuns de formulários responsivos
 - Otimizar formulários para desempenho móvel
 
-## Por que o Forms responsivo é importante
+<!--
+## Why Responsive Forms Are Important
 
-**Impacto na experiência do usuário:**
+**User Experience Impact:**
 
-- Mais de 60% dos usuários acessam formulários em dispositivos móveis
-- Experiências móveis ruins resultam em uma taxa de abandono 67% maior
-- Formulários responsivos podem aumentar as taxas de conclusão em até 25%
+- Over 60% of users access forms on mobile devices
+- Poor mobile experiences result in a 67% higher abandonment rate
+- Responsive forms can increase completion rates by up to 25%
 
-**Benefícios para os negócios:**
+**Business Benefits:**
 
-- Taxas mais altas de conclusão de formulários
-- Maior satisfação do usuário
-- Conformidade aprimorada com acessibilidade
-- Reduzir os custos de desenvolvimento e manutenção
+- Higher form completion rates
+- Improved user satisfaction
+- Enhanced accessibility compliance
+- Lower development and maintenance costs-->
 
 >[!TIP]
 >
@@ -173,7 +174,7 @@ O Layout do painel organiza o conteúdo relacionado em seções visualmente dist
 
 **Como implementar**
 
-1. Adicione o [Componente de Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) ao formulário.
+1. Adicione o [Componente de Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) ao formulário.
 2. Agrupe campos relacionados em cada painel para manter a organização lógica.
 3. Atribua cabeçalhos claros e descritivos a cada seção do painel.
 4. Verifique se há espaçamento suficiente entre os painéis para evitar desordem visual.
@@ -206,7 +207,7 @@ O Layout do assistente orienta os usuários por um processo de várias etapas, a
 
 **Como implementar**
 
-1. Insira o [Componente de Assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) no formulário.
+1. Insira o [Componente de Assistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) no formulário.
 2. Divida o formulário em etapas lógicas, idealmente entre 3 e 7, para manter cada etapa focalizada e gerenciável.
 3. Adicione indicadores de progresso para ajudar os usuários a entender sua posição no processo.
 4. Forneça controles de navegação claros, como os botões Próximo, Voltar e Salvar.
@@ -246,7 +247,7 @@ O Layout do Acordeão economiza espaço organizando o conteúdo em seções que 
 
 **Como implementar**
 
-1. Adicione o [Componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) ao seu formulário.
+1. Adicione o [Componente Acordeão](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) ao seu formulário.
 2. Agrupe o conteúdo opcional ou secundário relacionado em cada seção do acordeão.
 3. Use cabeçalhos claros e descritivos para cada seção para ajudar os usuários a entender quais informações estão contidas em.
 4. Defina os estados de abertura ou fechamento padrão apropriados para cada seção com base na importância e nas necessidades do usuário.
@@ -299,14 +300,14 @@ O Layout do Acordeão economiza espaço organizando o conteúdo em seções que 
 
 **Layout e Usabilidade:**
 
-- Utilize layouts de duas colunas para campos relacionados a fim de aproveitar o aumento do espaço na tela.
+- Use layouts de duas colunas para campos relacionados a fim de aproveitar o espaço aumentado da tela.
 - Teste a aparência do formulário e a usabilidade nas orientações de retrato e paisagem.
 - Design para entrada de toque e mouse, garantindo que todos os controles sejam facilmente acessíveis.
 - Aumente o tamanho da área de conteúdo mantendo uma hierarquia visual clara e a legibilidade.
 
 +++
 
-+++Otimização de desktop (1200px+)
++++Otimização para desktop (1200px+)
 
 **Layout e Recursos Avançados:**
 
@@ -316,6 +317,40 @@ O Layout do Acordeão economiza espaço organizando o conteúdo em seções que 
 - Ofereça validação avançada com mensagens de erro claras e detalhadas para formulários complexos.
 
 +++
+
+## Configurar layouts personalizados com pontos de interrupção de consulta de mídia
+
+Ao criar layouts personalizados para componentes no Forms Adaptável usando o **Editor Universal**, você deve definir o comportamento responsivo usando os **pontos de interrupção de consulta de mídia CSS**. Isso garante que os formulários sejam renderizados corretamente em diferentes dispositivos e tamanhos de tela.
+
+**Pontos de interrupção recomendados (com base nos Componentes principais do AEM)**
+
+| **Tipo de dispositivo** | **Ponto de interrupção recomendado** |
+|-----------------|---------------------------|
+| **Área de Trabalho** | `min-width: 1200px` |
+| **Tablet** | `min-width: 768px and max-width: 1199px` |
+| **Móvel** | `max-width: 767px` |
+
+**Pontos principais**
+
+- Use esses pontos de interrupção para controlar como os componentes são redimensionados, empilhados ou ocultados em dispositivos diferentes.
+- Siga as diretrizes de design responsivo da organização para obter um UX consistente.
+- Teste layouts em vários dispositivos e orientações para garantir a usabilidade e a acessibilidade.
+
+```css
+/* Example: Stack form fields on smaller screens */
+@media (max-width: 767px) {
+  .custom-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+```
+
+>[!NOTE]
+>
+> O Editor Universal não fornece uma interface para definir o comportamento responsivo. Toda a personalização de layout deve ser feita por meio de CSS.
+
+
 
 ## Resolução de problemas
 
@@ -393,7 +428,7 @@ O Layout do Acordeão economiza espaço organizando o conteúdo em seções que 
 
 ### Problemas de teste e validação
 
-+++Emulador vs. Diferenças reais do dispositivo
++++Diferenças entre o emulador e o dispositivo real
 
 **Causas possíveis:**
 

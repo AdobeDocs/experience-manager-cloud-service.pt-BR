@@ -6,9 +6,9 @@ keywords: reCAPTCHA em formulários, Uso do reCAPTCHA no Universal Editor, Adiç
 role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,6 @@ Antes de iniciar, verifique se você tem o seguinte:
 
 - Acesso de criação ao AEM as a Cloud Service
 - Acesso ao Editor universal com permissões de edição de formulário
-- Inscrição no programa de acesso antecipado para recursos do reCAPTCHA
 
 ### Requisitos técnicos
 
@@ -313,7 +312,7 @@ Após configurar o serviço reCAPTCHA, adicione proteção ao formulário da seg
 ![Adicionando o componente reCAPTCHA a um formulário](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
 *Figura: Adicionando o componente Captcha Invisível ao formulário*
 
-+++1. Abrir formulário no Editor Universal
++++&#x200B;1. Abrir formulário no Universal Editor
 Vá para o formulário no AEM Sites e clique em Editar para abri-lo no Universal Editor. Aguarde até que o editor seja carregado.
 
 - Acesse seu formulário no AEM Sites
@@ -321,14 +320,14 @@ Vá para o formulário no AEM Sites e clique em Editar para abri-lo no Universal
 - Aguardar o editor carregar
 +++
 
-+++2. Localizar a estrutura do formulário
++++&#x200B;2. Localize a estrutura do formulário
 Na Árvore de conteúdo (painel esquerdo), encontre a seção Formulário adaptável e expanda a estrutura do formulário para ver os pontos de inserção.
 
 - Na Árvore de conteúdo (painel esquerdo), encontre a seção Formulário adaptável
 - Expanda a estrutura do formulário para ver pontos de inserção
 +++
 
-+++3. Adicionar componente reCAPTCHA
++++&#x200B;3. Adicionar componente reCAPTCHA
 Adicione o componente Captcha (Invisível) ao formulário.
 
 - Clique no ícone Adicionar (+) na seção do formulário
@@ -336,7 +335,7 @@ Adicione o componente Captcha (Invisível) ao formulário.
 - Como alternativa, arraste e solte o componente do painel Componentes
 +++
 
-+++4. Configurar componente (opcional)
++++&#x200B;4. Configurar Componente (Opcional)
 Selecione o componente captcha recém-adicionado e verifique se ele usa a configuração do reCAPTCHA.
 
 - Selecione o componente captcha recém-adicionado
@@ -344,7 +343,7 @@ Selecione o componente captcha recém-adicionado e verifique se ele usa a config
 - Nenhuma configuração adicional é necessária para a configuração básica
 +++
 
-+++5. Publicar suas alterações
++++&#x200B;5. Publicar suas alterações
 Publique suas alterações e verifique se não há erros.
 
 - Clique em Publicar no Universal Editor

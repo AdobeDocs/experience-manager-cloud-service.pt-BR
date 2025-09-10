@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
-source-wordcount: '2609'
+source-wordcount: '2608'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Para garantir uma experiência perfeita e bem-sucedida com o Edge Delivery Servi
 
 >[!TIP]
 >
-> Novo no AEM? Comece com o [Guia de Introdução do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=pt-BR).
+> Novo no AEM? Comece com o [Guia de Introdução do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html).
 
 ## Caminho A: criar um novo projeto com o Forms
 
@@ -117,7 +117,7 @@ As seções a seguir guiarão você em cada etapa em detalhes, garantindo uma ex
 
 +++
 
-+++Etapa 2: instalar sincronização de código do AEM
++++Etapa 2: instalar a sincronização de código do AEM
 
 A sincronização de código do AEM sincroniza automaticamente as alterações de conteúdo entre o ambiente de criação do AEM e o repositório do GitHub.
 
@@ -157,7 +157,10 @@ O arquivo `fstab.yaml` conecta seu repositório GitHub ao ambiente de criação 
 
    ```yaml
    mountpoints:
-     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     /: 
+     url: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     type: "markup" 
+     suffix: ".html" 
    ```
 
    **Substituir:**
@@ -184,13 +187,13 @@ O arquivo `fstab.yaml` conecta seu repositório GitHub ao ambiente de criação 
 
 **Validação:** confirme a conexão do repositório GitHub com o AEM.
 
-    >[!NOTE]
-    >
-    >Você está tendo problemas de build? Consulte [Solução de problemas de compilação do GitHub](#troubleshooting-github-build-issues).
+>[!NOTE]
+>
+> Você está tendo problemas de build? Consulte [Solução de problemas de compilação do GitHub](#troubleshooting-github-build-issues).
 
 +++
 
-+++Etapa 4: criar um site do AEM conectado ao repositório do GitHub.
++++Etapa 4: criar um site do AEM conectado ao seu repositório do GitHub.
 
 1. **Acessar o console do AEM Sites**
    - Faça logon na instância de criação do AEM as a Cloud Service
@@ -258,7 +261,7 @@ O arquivo `fstab.yaml` conecta seu repositório GitHub ao ambiente de criação 
 
 +++
 
-+++Etapa 5: Publicar Seu Site
++++Etapa 5: publicar seu site
 
 A publicação disponibiliza seu site no Edge Delivery Services para acesso global.
 
@@ -397,7 +400,7 @@ Você concluirá as seguintes etapas de alto nível:
 
 +++
 
-+++Etapa 3: configurar ESLint (Opcional)
++++Etapa 3: configurar ESLint (opcional)
 
 **Por que esta etapa:** impede a listagem de erros de arquivos específicos do formulário e configura as regras de validação adequadas.
 
@@ -550,7 +553,7 @@ As seções a seguir guiarão você em cada uma dessas etapas em detalhes, garan
 
 +++
 
-+++Etapa 2: Adicionar Componentes De Formulário
++++Etapa 2: Adicionar componentes de formulário
 
 1. **Navegar até o bloco de formulários**
    - Na árvore de conteúdo, localize a seção Formulário adaptável recém-adicionada
@@ -626,13 +629,13 @@ As seções a seguir guiarão você em cada uma dessas etapas em detalhes, garan
    Seu formulário agora está disponível em:
 
    ```
-   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   https://<branch>--<repo>--<owner>.aem.live/content/<site-name>/
    ```
 
    **Exemplo de URL:**
 
    ```
-   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   https://main--my-forms-project--mycompany.aem.live/content/my-forms-project/
    ```
 
    ![Página de formulário online](/help/edge/docs/forms/assets/publish-index-page.png)
@@ -759,7 +762,7 @@ Se você vir &quot;Não é possível resolver o caminho para o módulo &#39;/scr
 
 +++
 
-+++Problemas de funcionalidade de formulário
++++Problemas de funcionalidade de formulários
 
 **Problema:** os envios de formulários não estão funcionando
 
@@ -781,7 +784,7 @@ Se você vir &quot;Não é possível resolver o caminho para o módulo &#39;/scr
 
 +++
 
-+++Problemas do editor universal
++++Problemas do Universal Editor
 
 **Problema:** componentes de formulário não aparecem no Editor Universal
 

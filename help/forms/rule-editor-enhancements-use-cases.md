@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -31,7 +31,7 @@ A tabela abaixo lista as melhorias recentes feitas ao editor de regras no Adapti
 
 >[!NOTE]
 >
-> As melhorias no Editor de regras também se aplicam ao Edge Delivery Services Forms.
+> As melhorias também se aplicam ao [Editor de regras do Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
 
 Agora vamos explorar cada método detalhadamente com casos de uso específicos para ajudar você a entender como esses recursos podem ser usados para fornecer uma experiência personalizada para os usuários
 
@@ -124,7 +124,7 @@ O campo **Custo Total da Remessa** é atualizado dinamicamente para refletir o c
 >[!NOTE]
 >
 > Você também pode adicionar a função **Obter valor da variável** na condição Quando.
-> &#x200B;> ![Função Get Variable Value em When condition](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Função Get Variable Value em When condition](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Essa abordagem permite cálculos dinâmicos em tempo real sem adicionar campos extras ao formulário, mantendo a estrutura limpa e fácil de usar.
 
