@@ -354,7 +354,7 @@ O **Painel de Propriedades** (lado direito) é o seu centro de controle para cri
 
     ![Gerar variações](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**Saiba Mais:** [Gerar Guia De Variações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**Saiba Mais:** [Gerar Guia De Variações](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **Rascunhos de Conteúdo**
 
