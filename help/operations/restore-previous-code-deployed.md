@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: fcc066945d1e44072c4718dd9c1d887dd97be0b6
+source-git-commit: 650ef846b469337c96e728277af02ca890e85117
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '536'
 ht-degree: 3%
 
 ---
@@ -30,13 +30,15 @@ Você simplesmente abre o menu ![Mais ícone ou o ícone do menu de reticências
 
 O recurso **Restaurar código anterior implantado** fica disponível somente quando a condição **a cada** abaixo é verdadeira:
 
+* Somente uma restauração é permitida por execução bem-sucedida do pipeline; para restaurar novamente, conclua outra execução bem-sucedida do pipeline.
 * Você tem **permissões de Criação** de Restauração de Ambiente. Para obter detalhes sobre o gerenciamento de permissões, consulte [Permissões personalizadas](/help/implementing/cloud-manager/custom-permissions.md).
 * Sua organização está inscrita no programa beta e o sinalizador de recurso está ativado.
 * O programa é executado no AEM as a Cloud Service.
-* O ambiente escolhido é um ambiente `Development` (limite temporário do Beta).
+* A restauração do código-fonte anterior pode ser feita em um ambiente `Development`, `Stage` ou `Specialized Testng Environment`.
 * O último pipeline para esse ambiente foi concluído com êxito e executado há **menos de 30 dias**.
 * O status do ambiente é *Em execução* e nenhum pipeline está em andamento.
 
+Restaurar O ambiente escolhido é um `Development`, Ambiente de Preparo ou Ambiente de Teste Especializado.
 Se alguma verificação falhar, o Cloud Manager abre a caixa de diálogo a seguir, que lista uma ou mais condições não atendidas e desabilita a **Confirmação**, impedindo a restauração.
 
 ![Caixa de diálogo de falha de restauração de código anterior implantada](/help/operations/assets/restore-previous-code-deployment-not-allowed.png).
