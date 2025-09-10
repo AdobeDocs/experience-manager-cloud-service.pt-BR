@@ -4,9 +4,9 @@ description: Saiba mais sobre a entrega de fragmentos de conteúdo do AEM com Op
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
+source-git-commit: de161d6707dcb8cedf032ee1f286d79e733be94d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -81,6 +81,14 @@ As origens permitidas do CORS definidas no lado da configuração do dispatcher,
 A API permite novas solicitações a uma taxa de até 200 solicitações por segundo, por ambiente.
 
 Quando esse limite for excedido, a API começará a enviar [429 respostas de erro](https://www.rfc-editor.org/rfc/rfc6585#section-4). Esses erros devem ser tratados por qualquer aplicativo cliente e as solicitações com falha devem ser repetidas após uma nova tentativa de backoff exponencial. A resposta HTTP vem com um cabeçalho específico, `Retry-After`, que indica ao cliente quanto tempo ele precisa aguardar antes de enviar a solicitação novamente.
+
+## Solicitações autenticadas {#authenticated-requests}
+
+O suporte para solicitações autenticadas pode ser implementado com a [chave Edge CDN do AEM](/help/implementing/dispatcher/cdn-credentials-authentication.md). Usar a chave Edge de CDN da AEM permite que você confie na CDN da AEM e garanta que somente solicitações específicas possam acessar a API, com base no cabeçalho de chave da Edge fornecido.
+
+>[!NOTE]
+>
+>No momento, a autorização baseada nas ACLs específicas do repositório não é suportada.
 
 <!-- 
 ## Limitations {#limitations}
