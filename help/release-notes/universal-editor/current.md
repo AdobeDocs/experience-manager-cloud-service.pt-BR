@@ -4,9 +4,9 @@ description: Estas são as notas de versão do Universal Editor de 2025.09.04.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 0c380e0faca1db0966d22d056dd1f824a731a7bc
+source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,9 @@ Estas são as notas de versão da versão de 4 de setembro de 2025 do Universal 
 ## Novidades {#what-is-new}
 
 * Copiar e colar está disponível para [participantes antecipados](#copy-paste)
-
-### Desfazer/Refazer {#undo-redo}
-
-Desfazer e refazer agora está disponível para autores de conteúdo do Universal Editor.
-
-* Isso inclui edições feitas em contexto, edições feitas por meio do painel Propriedades, bem como adição (ou duplicação), movimentação e exclusão de blocos.
-* Desfazer e refazer estão limitados à sessão atual do navegador.
+* [Desfazer e refazer](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) agora está disponível para autores de conteúdo.
+   * Desfazer e refazer pode ser executado para edições feitas em contexto, edições feitas por meio do painel Propriedades, bem como adição, duplicação, movimentação e exclusão de blocos.
+   * Desfazer e refazer estão limitados à sessão atual do navegador.
 
 ## Recursos da adoção antecipada {#early-adopter}
 
@@ -47,8 +43,3 @@ Copiar e colar componentes na mesma página agora está disponível para autores
 
 * O estilo da barra de ferramentas do editor foi atualizado para se alinhar melhor ao novo RTE que está por vir.
 * Os filtros na caixa de diálogo do seletor de ativos foram restaurados.
-
-## Desaprovações {#deprecations}
-
-* Os componentes `text-input` e `text-area` foram oficialmente descontinuados na [versão 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
-   * Em `model-definition.json`, use o componente de texto para criar entradas de texto para o painel Propriedades.

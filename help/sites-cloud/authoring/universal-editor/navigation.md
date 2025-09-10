@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 24%
+source-wordcount: '1854'
+ht-degree: 20%
 
 ---
 
@@ -89,15 +89,9 @@ Exibe a organização na qual você está conectado no momento. Selecione para a
 
 ![Indicador da organização](assets/organization.png)
 
-#### Soluções {#solutions}
+#### Centro de ajuda {#help}
 
-Tocar ou clicar no alternador de soluções permite acessar rapidamente as outras soluções da Experience Cloud.
-
-![Alternador de soluções](assets/solutions.png)
-
-#### Ajuda {#help}
-
-O ícone de ajuda fornece acesso rápido aos recursos de aprendizagem e suporte.
+O ícone da central de ajuda fornece acesso rápido aos recursos de aprendizagem e suporte.
 
 ![Ajuda](assets/help.png)
 
@@ -107,9 +101,15 @@ Este ícone contém uma medalha com o número de [notificações](/help/implemen
 
 ![Notificações](assets/notifications.png)
 
-#### Propriedades do usuário {#user-properties}
+#### Aplicativos {#solutions}
 
-Clique no ícone que representa seu usuário para acessar as configurações de usuário. Se você não tiver uma imagem de usuário configurada, um ícone será atribuído aleatoriamente.
+Tocar ou clicar no alternador de aplicativos permite que você vá rapidamente para outras soluções da Experience Cloud.
+
+![Seletor de aplicativo](assets/solutions.png)
+
+#### Conta {#user-properties}
+
+Selecione o ícone que representa seu usuário para acessar as configurações da conta. Se você não tiver uma imagem do usuário configurada, um ícone é atribuído aleatoriamente.
 
 ![Propriedades do usuário](assets/user-properties.png)
 
@@ -135,6 +135,8 @@ Na página inicial, você pode inserir o URL do site que deseja editar com o Edi
 >
 >Qualquer página que você deseja editar com o Editor Universal deve ser [instrumentada para oferecer suporte ao Editor Universal](/help/implementing/universal-editor/getting-started.md).
 
+Uma seção de **Links Rápidos** fornece recursos de ajuda, e uma seção de **Recentes** fornece links para páginas abertas recentemente com o Universal Editor.
+
 #### Barra de localização {#location-bar}
 
 A barra de localização mostra o endereço da página que você está editando. Selecione para inserir o endereço de outra página a ser editada.
@@ -149,21 +151,32 @@ A barra de localização mostra o endereço da página que você está editando.
 >
 >Qualquer página que você deseja editar com o Editor Universal deve ser [instrumentada para oferecer suporte ao Editor Universal](/help/implementing/universal-editor/getting-started.md).
 
-#### Configurações do cabeçalho de autenticação {#authentication-settings}
+#### Desfazer e refazer {#undo-redo}
 
-Selecione o ícone de configurações do cabeçalho de autenticação se precisar [definir um cabeçalho de autenticação personalizado para fins de desenvolvimento local](/help/implementing/universal-editor/developer-overview.md#auth-header).
+Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edição no editor. Consulte o documento [Criação de Conteúdo com o Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) para obter mais informações.
+
+![Ícone Desfazer](assets/undo.png)
+![Ícone Refazer](assets/redo.png)
+
+>[!TIP]
+>
+>Use a tecla de atalho `Command-Z` ou `Shift-Command-Z` para desfazer ou refazer, respectivamente.
+
+#### Cabeçalhos de autenticação {#authentication-settings}
+
+Selecione o ícone de cabeçalhos de autenticação se precisar [definir um cabeçalho de autenticação personalizado para fins de desenvolvimento local](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Botão de configurações do cabeçalho de autenticação](assets/authentication-header-settings.png)
 
-#### Configurações do emulador {#emulator}
+#### Modo responsivo {#emulator}
 
-Selecione o ícone de emulação para definir como o Editor universal renderiza a página.
+Selecione o ícone de modo responsivo para definir como o Editor universal renderiza a página.
 
-![Ícone de Emulador](assets/emulator.png)
+![Ícone do modo responsivo](assets/emulator.png)
 
-Tocar ou clicar no ícone de emulação revelará as opções.
+Tocar ou clicar no ícone de modo responsivo revela as opções.
 
-![Opções de emulação](assets/emulation-options.png)
+![Opções do modo responsivo](assets/emulation-options.png)
 
 Por padrão, o editor é aberto no layout de desktop, onde a altura e a largura são definidas automaticamente pelo navegador.
 
@@ -173,7 +186,7 @@ Também é possível optar por emular um dispositivo móvel e, no editor univers
 * Definir largura e altura
 * Alterar a orientação
 
-#### Modo de visualização {#preview-mode}
+#### Visualização {#preview-mode}
 
 No modo de visualização, a página é renderizada no editor da maneira como seria vista em seu serviço publicado. Isso permite que o autor de conteúdo navegue pelo conteúdo clicando em links e assim por diante.
 

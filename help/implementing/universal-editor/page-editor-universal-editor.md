@@ -4,9 +4,9 @@ description: O Editor de páginas permanece compatível com o Adobe, mas o Edito
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 3%
 
 ---
@@ -63,7 +63,7 @@ Como a lacuna de recursos entre os dois editores está diminuindo constantemente
 | Recortar/Copiar-Colar bloco | [!BADGE Disponível]{type=Positive} |  | [!BADGE Indisponível]{type=Negative} | Planejado |
 | Aplicar estilos | [!BADGE Disponível]{type=Positive} | Os estilos podem ser aplicados a componentes usando o [Sistema de Estilos.](/help/sites-cloud/authoring/page-editor/style-system.md) | [!BADGE Disponível]{type=Positive} | Os estilos podem ser aplicados usando propriedades regulares de componente (ou Fragmento de conteúdo). O mesmo seletor de estilo não está disponível no Editor universal, no entanto, usar um widget de multisseleção para um UX muito semelhante pode ser obtido. |
 | Aplicar layout | [!BADGE Disponível]{type=Positive} | Os sites devem implementar a [Grade responsiva do AEM](/help/implementing/developing/introduction/responsive-design.md) para permitir que os autores redimensionem componentes em três pontos de interrupção predefinidos. | [!BADGE Disponível]{type=Positive} | Os layouts podem ser aplicados usando propriedades regulares de componente (ou Fragmento de conteúdo). No entanto, a Grade responsiva não é compatível. |
-| Desfazer-Refazer | [!BADGE Disponível]{type=Positive} |  | [!BADGE Indisponível]{type=Negative} | Planejado |
+| Desfazer-Refazer | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |
 | Publicar (também para visualização) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |
 | [Iniciar fluxo de trabalho](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | Disponível como uma extensão |
 | Comentando | [!BADGE Disponível]{type=Positive} | Usando [anotações](/help/sites-cloud/authoring/page-editor/annotations.md) | [!BADGE Indisponível]{type=Negative} | Planejado |
@@ -87,7 +87,7 @@ Como a lacuna de recursos entre os dois editores está diminuindo constantemente
 O Editor Universal oferece muitas vantagens, tornando-se uma ótima solução para novos projetos.
 
 * **Edição visual:** assim como no Editor de páginas, os autores podem editar o conteúdo diretamente na visualização e ver instantaneamente como suas alterações afetam a experiência do visitante.
-* **À prova de obsolescência:** o roteiro do AEM prioriza o Editor universal como editor visual. A sua adoção garante o acesso às mais recentes inovações e melhorias.
+* **Prova futura:** o roteiro do AEM prioriza o Editor universal como editor visual. A sua adoção garante o acesso às mais recentes inovações e melhorias.
 * **Integração mais simples**: nenhuma SDK específica do AEM é necessária para usar o Editor Universal, reduzindo o bloqueio da pilha técnica.
 * **Traga Seu Próprio Aplicativo:** O Universal Editor oferece suporte a qualquer estrutura ou arquitetura da Web, permitindo a adoção sem a necessidade de refatoração complexa.
 * **Extensibilidade:** o Editor Universal se beneficia de uma [estrutura de extensão](/help/implementing/universal-editor/extending.md) robusta, que inclui integrações com GenAI, Workfront e muito mais.

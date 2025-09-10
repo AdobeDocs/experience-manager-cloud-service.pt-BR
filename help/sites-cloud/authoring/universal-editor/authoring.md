@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2319'
 ht-degree: 10%
 
 ---
@@ -51,7 +51,7 @@ Dependendo do conteúdo selecionado, você pode ter diferentes opções de ediç
 
 O contorno azul fino se transforma em um contorno azul pesado para indicar a seleção e a exibição de um cursor. Faça as alterações e pressione Enter/Return ou selecione fora da caixa de texto para salvar as alterações.
 
-Quando você seleciona o componente de texto, seus detalhes são mostrados no [painel de propriedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). Também é possível editar o texto no painel.
+Ao selecionar o componente de texto, seus detalhes serão mostrados no [painel de propriedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). Também é possível editar o texto no painel.
 
 ![Editando texto no painel de propriedades](assets/ue-editing-text-component-rail.png)
 
@@ -172,13 +172,27 @@ O componente selecionado foi excluído.
 
    ![Reordenando componentes](assets/ue-reordering-components.png)
 
-1. O componente arrastado fica cinza na árvore de conteúdo, enquanto o ponto de inserção é representado por uma linha azul. Libere o componente para colocá-lo em seu novo local.
+1. O componente arrastado fica esmaecido na árvore de conteúdo, enquanto o ponto de inserção é representado por uma linha azul. Libere o componente para colocá-lo em seu novo local.
 
 Os componentes são reordenados na árvore de conteúdo e no editor.
 
 >[!NOTE]
 >
 >Os componentes só poderão ser movidos entre contêineres se o [filtro de componente](/help/implementing/universal-editor/filtering.md) dos contêineres de destino permitir o componente selecionado.
+
+### Desfazer e refazer {#undo-redo}
+
+Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edição no editor.
+
+![Ícone Desfazer](assets/undo.png)
+![Ícone Refazer](assets/redo.png)
+
+* Desfazer e refazer pode ser executado para edições feitas em contexto, edições feitas por meio do painel Propriedades, bem como adição, duplicação, movimentação e exclusão de blocos.
+* Desfazer e refazer estão limitados à sessão atual do navegador.
+
+>[!TIP]
+>
+>Use a tecla de atalho `Command-Z` ou `Shift-Command-Z` para desfazer ou refazer, respectivamente.
 
 ## Visualização de conteúdo {#previewing-content}
 
