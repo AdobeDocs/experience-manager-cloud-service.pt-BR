@@ -520,13 +520,13 @@ A maneira herdada de fazer isso é seguir manualmente as etapas descritas abaixo
 
 10. **Atualizar _component-definition.json**: em `models/_component-definition.json`, atualize a matriz no grupo com `id custom-components` com um objeto da seguinte maneira:
 
-   ```javascript
-   {
-   "...":"../blocks/form/components/cards/_cards.json#/definitions"
-   }
-   ```
+    ```javascript
+    {
+    "...":"../blocks/form/components/cards/_cards.json#/definitions"
+    }
+    ```
 
-   Isso fornece a referência para o novo componente de placas a ser construído com o restante dos componentes
+    Isso fornece a referência para o novo componente de placas a ser construído com o restante dos componentes
 
 11. **Execute o script de compilação:json**: Execute `npm run build:json` para compilar e mesclar todas as definições de JSON de componente em um único arquivo a ser fornecido pelo servidor. Isso garante que o esquema do novo componente seja incluído na saída mesclada.
 
