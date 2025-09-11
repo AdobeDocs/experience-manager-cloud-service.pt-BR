@@ -4,9 +4,9 @@ description: Criar componentes personalizados para um formulário EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
+source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2121'
 ht-degree: 0%
 
 ---
@@ -443,7 +443,7 @@ Agora, o componente de cartão personalizado aparece, como mostrado abaixo:
 
 ![Componente personalizado do cartão](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## Confirmar e enviar alterações
+### &#x200B;3. Confirmar e enviar alterações
 
 Depois de implementar o JavaScript e o CSS para o componente personalizado e verificá-los localmente, confirme e envie as alterações para o repositório Git.
 
@@ -453,7 +453,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 Você criou com sucesso um componente complexo de seleção de cartão personalizado em algumas etapas simples.
 
-## Método manual ou herdado para criar componente personalizado
++++ ## Método manual ou herdado para criar componente personalizado
 
 A maneira herdada de fazer isso é seguir manualmente as etapas descritas abaixo:
 
@@ -522,13 +522,13 @@ A maneira herdada de fazer isso é seguir manualmente as etapas descritas abaixo
 
 10. **Atualizar _component-definition.json**: em `models/_component-definition.json`, atualize a matriz no grupo com `id custom-components` com um objeto da seguinte maneira:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Isso fornece a referência para o novo componente de placas a ser construído com o restante dos componentes
+   Isso fornece a referência para o novo componente de placas a ser construído com o restante dos componentes
 
 11. **Execute o script de compilação:json**: Execute `npm run build:json` para compilar e mesclar todas as definições de JSON de componente em um único arquivo a ser fornecido pelo servidor. Isso garante que o esquema do novo componente seja incluído na saída mesclada.
 
