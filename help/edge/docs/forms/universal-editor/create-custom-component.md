@@ -4,7 +4,7 @@ description: Criar componentes personalizados para um formulário EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
 workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 0%
@@ -175,6 +175,8 @@ Nesta seção, você aprenderá o processo de criação de um **componente perso
 #### 1.1 Arquivos e pastas
 
 A primeira etapa é configurar os arquivos necessários do componente personalizado e conectá-lo ao código no repositório. Este processo é executado automaticamente pela **CLI do AEM Forms Scaffolder**, o que torna mais rápido o scaffold e a conexão dos arquivos necessários.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474752)
 
 1. Abra o terminal e navegue até a raiz do projeto de formulário.
 2. Execute os seguintes comandos:
@@ -520,13 +522,13 @@ A maneira herdada de fazer isso é seguir manualmente as etapas descritas abaixo
 
 10. **Atualizar _component-definition.json**: em `models/_component-definition.json`, atualize a matriz no grupo com `id custom-components` com um objeto da seguinte maneira:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Isso fornece a referência para o novo componente de placas a ser construído com o restante dos componentes
+   Isso fornece a referência para o novo componente de placas a ser construído com o restante dos componentes
 
 11. **Execute o script de compilação:json**: Execute `npm run build:json` para compilar e mesclar todas as definições de JSON de componente em um único arquivo a ser fornecido pelo servidor. Isso garante que o esquema do novo componente seja incluído na saída mesclada.
 
