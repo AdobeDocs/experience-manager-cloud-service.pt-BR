@@ -5,7 +5,7 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 519b1ec43f28f27809c727c2519f646c27ab646e
+source-git-commit: 2fa7005eec0a53f632e1b1cb2f5cc5910bbf21f8
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Você simplesmente abre o menu ![Mais ícone ou o ícone do menu de reticências
 * O programa é executado no AEM as a Cloud Service.
 * O último pipeline para esse ambiente foi concluído com êxito e executado há **menos de 30 dias**.
 * O status do ambiente é *Em execução* e nenhum pipeline está em andamento.
-* **Restaurar o código anterior implantado** pode ser feito em um ambiente `Development`, ambiente `Stage` ou um `Specialized Testng Environment`.
+* **Restaurar o código anterior implantado** pode ser feito em um ambiente `Development`, ambiente `Stage` ou um `Specialized Testing Environment`.
 
 Se alguma verificação falhar, o Cloud Manager abre a caixa de diálogo a seguir, que lista uma ou mais condições não atendidas e desabilita a **Confirmação**, impedindo a restauração.
 
