@@ -4,9 +4,9 @@ description: Saiba como você pode usar submódulos Git para mesclar o conteúdo
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 8a53bef8bdf592869c895cbaca1e79034e52f856
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '394'
 ht-degree: 24%
 
 ---
@@ -68,7 +68,7 @@ O resultado é um arquivo `.gitmodules` semelhante ao seguinte:
 
 Consulte também o [Manual de referência do Git](https://git-scm.com/book/en/v2/Git-Tools-Submodules) para obter mais informações sobre os submódulos do Git.
 
-## Notas de uso {#usage-notes}
+## Notas de uso para repositórios Adobe {#usage-notes-recommendations-adobe-repos}
 
 * O URL do Git deve seguir exatamente a sintaxe descrita na seção anterior.
 * Somente há suporte aos submódulos na raiz da ramificação.
@@ -94,4 +94,4 @@ No entanto, após configurar seu arquivo `pom.xml` e executar os comandos `git s
 
 * Os URLs Git do submódulo podem estar no formato HTTPS ou SSH, mas devem apontar para um repositório GitHub.com. Não há suporte para a adição de um submódulo do repositório Adobe a um repositório agregador GitHub ou o inverso.
 * Os submódulos do GitHub devem ser acessíveis pelo aplicativo GitHub da Adobe.
-* [As limitações do uso de submódulos Git com repositórios gerenciados pela Adobe](#limitations-recommendations) também se aplicam.
+* [As limitações do uso de submódulos Git com repositórios gerenciados pela Adobe](#usage-notes-recommendations-adobe-repos) também se aplicam.
