@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1894'
 ht-degree: 20%
 
 ---
@@ -338,6 +338,19 @@ Tocar ou clicar no botão Excluir [exclui o componente](/help/sites-cloud/author
 >[!TIP]
 >
 >Use a tecla de atalho `Shift+Backspace` para excluir um componente selecionado de um contêiner.
+
+##### Copiar e colar {#copy-paste}
+
+Você pode copiar e colar componentes que estão em [contêineres.](/help/implementing/universal-editor/field-types.md#container)
+
+![Ícone Copiar](assets/copy.png)
+![Ícone Colar](assets/paste.png)
+
+>[!TIP]
+>
+>Use a tecla de atalho `Command-C` ou `Command-V` para copiar ou colar, respectivamente.
+
+Consulte o documento [Criação de Conteúdo com o Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) para obter mais informações.
 
 #### Botões adicionais {#additional-properties-panel-buttons}
 

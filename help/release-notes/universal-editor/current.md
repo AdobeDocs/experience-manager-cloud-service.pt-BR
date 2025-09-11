@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2025.09.04
-description: Estas são as notas de versão do Universal Editor de 2025.09.04.
+title: Notas de versão do Universal Editor 2025.09.11
+description: Estas são as notas de versão do Universal Editor de 2025.09.11.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 96524d433d5b8637d0e21186fd465bd550035bde
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
 
 
-# Notas de versão do Universal Editor 2025.09.04 {#release-notes}
+# Notas de versão do Universal Editor 2025.09.11 {#release-notes}
 
-Estas são as notas de versão da versão de 4 de setembro de 2025 do Universal Editor.
+Estas são as notas de versão do editor universal de 11 de setembro de 2025.
 
 >[!TIP]
 >
@@ -22,10 +22,9 @@ Estas são as notas de versão da versão de 4 de setembro de 2025 do Universal 
 
 ## Novidades {#what-is-new}
 
-* Copiar e colar está disponível para [participantes antecipados](#copy-paste)
-* [Desfazer e refazer](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) agora está disponível para autores de conteúdo.
-   * Desfazer e refazer pode ser executado para edições feitas em contexto, edições feitas por meio do painel Propriedades, bem como adição, duplicação, movimentação e exclusão de blocos.
-   * Desfazer e refazer estão limitados à sessão atual do navegador.
+* [Copiar e colar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) agora está disponível para componentes em contêineres na mesma página.
+* O 6.5 LTS SP1 agora é compatível.
+* O Editor Universal agora oferece suporte a [herança de gerenciamento de vários sites](/help/sites-cloud/authoring/universal-editor/inheritance.md) para Fragmentos de conteúdo, incluindo a quebra automática da herança quando um Fragmento de conteúdo de live copy é editado.
 
 ## Recursos da adoção antecipada {#early-adopter}
 
@@ -35,11 +34,11 @@ Se você estiver interessado em testar esses recursos futuros e compartilhar seu
 
 O novo RTE do ProseMirror, com um seletor de páginas na caixa de diálogo de link, agora está disponível no painel direito.
 
-### Copiar/Colar {#copy-paste}
+### Copiar e colar entre páginas {#copy-paste}
 
-Copiar e colar componentes na mesma página agora está disponível para autores de conteúdo.
+Agora, copiar e colar são possíveis em várias páginas, além de dentro da mesma página.
 
 ## Outras melhorias {#other-improvements}
 
-* O estilo da barra de ferramentas do editor foi atualizado para se alinhar melhor ao novo RTE que está por vir.
-* Os filtros na caixa de diálogo do seletor de ativos foram restaurados.
+* Várias pequenas melhorias de desempenho foram implementadas em torno do Universal Editor funciona com o AEM como um sistema de back-end.
+* Agora os fragmentos de conteúdo são publicados usando a API aberta, o que traz melhorias de desempenho e consistência à forma como o Editor de fragmentos de conteúdo e o console publicam.

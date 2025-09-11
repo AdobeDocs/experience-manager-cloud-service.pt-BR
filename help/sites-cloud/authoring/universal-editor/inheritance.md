@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 2099a1aecd30eaa2ca3ca33a13729817a30b6c3f
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '524'
 ht-degree: 1%
 
 ---
@@ -67,4 +67,3 @@ Para obter informações sobre como habilitar esta extensão, [consulte a docume
 
 * Para reverter a herança de componentes únicos, a **Extensão MSM (Gerenciamento de Vários Sites) do AEM** deve estar habilitada.
 * Para que o feedback visual veja quais componentes têm sua herança desabilitada e quais ainda a preservam, a **Extensão MSM (Gerenciamento de Vários Sites) do AEM** deve estar habilitada.
-* No momento, esses recursos estão limitados a componentes em páginas e ainda não se aplicam a [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md), apesar de também terem recursos do MSM e do Launch.

@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
 workflow-type: tm+mt
-source-wordcount: '2319'
-ht-degree: 10%
+source-wordcount: '2422'
+ht-degree: 9%
 
 ---
 
@@ -193,6 +193,24 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 >[!TIP]
 >
 >Use a tecla de atalho `Command-Z` ou `Shift-Command-Z` para desfazer ou refazer, respectivamente.
+
+### Copiar e colar {#copy-paste}
+
+Você pode copiar e colar componentes que estão em [ contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso é possível somente na mesma página e se o [contêiner de destino permitir que o componente seja colado.](/help/implementing/universal-editor/filtering.md)
+
+![Ícone Copiar](assets/copy.png)
+![Ícone Colar](assets/paste.png)
+
+1. Selecione um componente no editor ou na árvore de conteúdo.
+1. O ícone **Copiar** aparece no painel de propriedades [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Toque ou clique.
+1. O ícone **Colar** aparece no painel de propriedades.
+1. Selecione o componente _após_ no qual você deseja colar o componente copiado.
+1. Toque ou clique em Colar.
+1. O componente copiado foi colado _depois_ do componente selecionado.
+
+>[!TIP]
+>
+>Use a tecla de atalho `Command-C` ou `Command-V` para copiar ou colar, respectivamente.
 
 ## Visualização de conteúdo {#previewing-content}
 
