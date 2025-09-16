@@ -6,7 +6,7 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
+source-git-commit: 6bbec984e1e22764c762d95ff52ae1f474c6b413
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 0%
@@ -23,8 +23,6 @@ ht-degree: 0%
 O AEM Forms Experience Builder aproveita o poder da IA gerativa para democratizar e acelerar a criação e a atualização de experiências de formulário digital. Ao permitir fluxos de trabalho baseados em intenção e impulsionados por interações de linguagem natural, ele permite que os usuários projetem, modifiquem e otimizem formulários com velocidade e simplicidade.
 
 Desenvolvido com tecnologias modernas da Web e alimentado por serviços avançados de IA, o Forms Experience Builder permite que usuários técnicos e não técnicos criem formulários sofisticados de nível profissional por meio de interfaces conversacionais. Essa abordagem revolucionária reduz o tempo de implantação de dias para horas, elimina barreiras técnicas por meio da simplicidade da interface e dimensiona os esforços de modernização em todo o seu ecossistema de formulários.
-
-
 
 ## Principais recursos
 
@@ -54,7 +52,6 @@ Configurar envios de formulários para integrar aos sistemas comerciais existent
 - **Automação de Fluxo de Trabalho**: Conectar ao Power Automate e ao Workfront Fusion
 - **Plataformas de marketing**: integração direta com a Marketo para gerenciamento de clientes potenciais
 - **Fluxos de trabalho do AEM**: aproveitar os recursos de fluxo de trabalho existentes do AEM
-
 
 ### &#x200B;2. Importação e conversão inteligentes
 
