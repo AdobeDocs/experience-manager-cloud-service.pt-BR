@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -56,7 +56,7 @@ Você pode criar [Forms adaptável](creating-adaptive-form.md) e Fragmentos de f
 
    ![create-af-3](assets/create-af-3.png)
 
-   Depois que o formulário adaptável ou o fragmento de formulário adaptável baseado em um modelo de dados de formulário (FDM) for criado, os objetos de modelo de dados de formulário aparecerão na guia **[!UICONTROL Fontes de dados]** do navegador de conteúdo no editor de formulário adaptável.
+   Depois que o formulário adaptável ou o fragmento de formulário adaptável baseado em um modelo de dados de formulário (FDM) for criado, os objetos de modelo de dados de formulário aparecerão na guia **[!UICONTROL Fontes de dados]** do navegador de conteúdo no Criador de formulários adaptáveis.
 
    >[!NOTE]
    >

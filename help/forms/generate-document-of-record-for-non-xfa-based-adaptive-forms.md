@@ -4,7 +4,7 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) do A
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '4221'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artigo |
 
 ## Visão geral {#overview}
@@ -405,9 +405,9 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
 ## Suporte a documento de registro no editor de formulário adaptável {#dor-support-in-adaptiveform}
 
-Você pode configurar o modelo [!UICONTROL Documento de registro] diretamente do editor de modelo de Formulário adaptável ou do editor de modelo de Formulário adaptável.
+Você pode configurar o modelo [!UICONTROL Documento de registro] diretamente do Criador de modelos de formulários adaptáveis ou do Criador de modelos de formulários adaptáveis.
 
-Execute as seguintes etapas a partir da instância de autor do editor de Formulário adaptável:
+Execute as seguintes etapas a partir da instância de autor do Criador de formulários adaptáveis:
 
 1. Selecione o componente **[!UICONTROL Container de Formulário Adaptável (raiz)]**.
 1. Clique no ![Ícone de Configurar](/help/forms/assets/configure-icon.svg) para abrir as **[!UICONTROL Propriedades]** do container do formulário adaptável.

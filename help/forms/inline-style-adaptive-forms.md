@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 3%
@@ -16,11 +16,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
+> A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artigo |
 
 Você pode definir a aparência geral e o estilo de um Formulário adaptável especificando estilos com o [editor de temas](themes.md). Além disso, você pode aplicar estilos CSS em linha a componentes individuais do Formulário adaptável e visualizar as alterações em tempo real. Os estilos embutidos substituem o estilo fornecido no tema.
@@ -29,7 +29,7 @@ Você pode definir a aparência geral e o estilo de um Formulário adaptável es
 
 Para adicionar estilos em linha a um componente:
 
-1. Abra o formulário no editor de formulários e altere o modo para o modo de estilo. Para alterar o modo para o modo de estilo, na barra de ferramentas da página, selecione ![tela suspensa](assets/Smock_ChevronDown.svg) > **[!UICONTROL Estilo]**.
+1. Abra o formulário no construtor de formulários e altere o modo para o modo de estilo. Para alterar o modo para o modo de estilo, na barra de ferramentas da página, selecione ![tela suspensa](assets/Smock_ChevronDown.svg) > **[!UICONTROL Estilo]**.
 1. Selecione um componente na página e selecione o botão de edição ![botão de edição](assets/edit.svg). As propriedades de estilo são abertas na barra lateral.
 
    Você também pode selecionar componentes da árvore de hierarquia de formulários na barra lateral. A árvore de hierarquia de formulários está disponível como Objetos de formulário na barra lateral.
@@ -40,7 +40,7 @@ Para adicionar estilos em linha a um componente:
 
 1. Clique em uma guia na barra lateral para especificar as propriedades de CSS. É possível especificar propriedades como:
 
-   * [!UICONTROL Dimension e Posição] (Exibir configuração, preenchimento, altura, largura, margem, posição, índice z, flutuante, limpar, estouro)
+   * [!UICONTROL Dimensões e Posição] (Configuração de exibição, preenchimento, altura, largura, margem, posição, índice z, flutuante, limpar, estouro)
    * [!UICONTROL Texto] (Família da fonte, peso, cor, tamanho, altura da linha e alinhamento)
    * [!UICONTROL Plano de fundo] (imagem e gradiente, cor do plano de fundo)
    * [!UICONTROL Borda] (Largura, estilo, cor, raio)
@@ -82,7 +82,7 @@ Observe a alteração no estilo da caixa de texto, como mostrado na imagem a seg
   </tr>
   <tr>
    <td><p>Rótulo</p> </td>
-   <td><p>Dimension e Posição &gt; largura</p> </td>
+   <td><p>Dimensões e posição &gt; largura</p> </td>
    <td><p>100px</p> </td>
    <td><p>Corrige a largura como 100px para o rótulo</p> </td>
   </tr>

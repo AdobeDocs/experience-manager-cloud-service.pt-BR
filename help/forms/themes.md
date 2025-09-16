@@ -4,7 +4,7 @@ description: Use temas de formulário adaptável para estilizar e fornecer uma i
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Este artigo |
 
 Você pode criar e aplicar temas para estilizar um Formulário adaptável<!-- or an interactive communication-->. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes. O tema é gerenciado independentemente sem uma referência a um Formulário adaptável<!-- or interactive communication -->.
@@ -299,7 +299,7 @@ O editor de temas armazena em cache até dez estilos aplicados a um componente. 
 
 Neste exemplo, o estilo do rótulo do campo é alterado e, quando a Descrição do painel responsivo é selecionada para estilo, uma entrada de lista é adicionada à biblioteca de ativos. A entrada na biblioteca de ativos pode ser usada para alterar o estilo de Descrição do painel responsivo.
 
-Quando um estilo é adicionado na biblioteca de ativos, ele fica disponível para outros temas e no [modo de estilo](inline-style-adaptive-forms.md) da interface do editor de formulários. Da mesma forma, quando você usa o modo de estilo da interface do editor de formulários <!-- or interactive communication editor --> para estilizar um componente, o estilo é armazenado em cache e está disponível em temas.
+Quando um estilo é adicionado na biblioteca de ativos, ele fica disponível para outros temas e no [modo de estilo](inline-style-adaptive-forms.md) da interface do construtor de formulários. Da mesma forma, quando você usa o modo de estilo da interface do construtor de formulários <!-- or interactive communication editor --> para estilizar um componente, o estilo é armazenado em cache e está disponível em temas.
 
 O botão de mais na biblioteca de ativos permite salvar permanentemente o estilo com um nome que você fornece. O botão de adição salva o estilo mesmo se você não clicar no botão Salvar na barra lateral para aplicar o estilo a um componente. O botão de adição para salvar um estilo para uso posterior não está disponível no modo de estilo.
 
@@ -420,7 +420,7 @@ As opções para personalizar estilos de estado variam para diferentes component
    <td><p>Permite adicionar efeitos especiais aos componentes, como opacidade, modo de mesclagem e sombras. </p> </td>
   </tr>
   <tr>
-   <td><p>Avançado </p> </td>
+   <td><p>Avançado</p> </td>
    <td><p>Permite adicionar:</p>
     <ul>
      <li>Propriedades dos pseudoelementos <code>::before</code> e <code>::after</code> para adicionar conteúdo após ou antes do conteúdo padrão no seletor e estilizá-lo.<br /> Consulte <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-elementos CSS</a>.</li>
@@ -673,10 +673,10 @@ Você pode ver o CSS gerado usando as seguintes opções:
 
   Não é recomendável alterar a largura do layout do painel de contêiner. Quando você especifica a largura de um painel de contêiner, ele se torna estático e não se adapta a exibições diferentes.
 
-* **Quando usar o editor de formulários ou de temas para trabalhar com o cabeçalho e o rodapé**
+* **Quando usar o construtor de formulários ou o editor de temas para trabalhar com cabeçalho e rodapé**
 
   Use o editor de temas se desejar estilizar o cabeçalho e o rodapé usando opções de estilo, como estilo da fonte, plano de fundo e transparência.
-Se você quiser fornecer informações como uma imagem de logotipo, o nome da empresa no cabeçalho e informações de direitos autorais no rodapé, use as opções do editor de formulários.
+Se você quiser fornecer informações como uma imagem de logotipo, o nome da empresa no cabeçalho e informações de direitos autorais no rodapé, use as opções do construtor de formulários.
 
 
 ## Consulte também {#see-also}

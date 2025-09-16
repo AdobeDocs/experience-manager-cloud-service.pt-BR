@@ -6,7 +6,7 @@ keywords: Adicionar fragmentos de formulário adaptável, Fragmentos de formulá
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1479'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componentes principais) | Este artigo |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/adaptive-form-fragments.md) |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 Embora cada formulário seja projetado para um propósito específico, há alguns segmentos comuns na maioria dos formulários, como o de fornecer detalhes pessoais, como nome e endereço, detalhes familiares e detalhes de renda. Os desenvolvedores de formulários são necessários para criar esses segmentos comuns sempre que um novo formulário for criado.
 
@@ -32,7 +32,7 @@ Você pode adicionar um fragmento várias vezes a um documento e usar as proprie
 
 >[!NOTE]
 >
-> Você pode personalizar facilmente a experiência do fragmento para usuários com a [Caixa de diálogo de Configuração e Caixa de diálogo de Design do componente de Fragmento de Formulário](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> Você pode personalizar facilmente a experiência do fragmento para usuários com a [Caixa de diálogo de Configuração e Caixa de diálogo de Design do componente de Fragmento de Formulário](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 ## Criar um fragmento de formulário adaptável {#create-a-fragment}
 
@@ -67,7 +67,7 @@ Você pode criar um fragmento de formulário adaptável do zero ou salvar um pai
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Além disso, se você selecionou um esquema XML como o modelo de formulário do fragmento, uma nova guia que exibe a hierarquia de modelo de formulário é exibida no localizador de conteúdo. Ela permite arrastar e soltar elementos do modelo de formulário no fragmento. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
-Depois que o fragmento do Formulário adaptável com base em um esquema ou modelo de dados de formulário (FDM) é criado, o modelo de dados de formulário (FDM) ou os elementos do esquema aparecem na guia Fontes de dados do navegador de conteúdo no editor de Formulário adaptável. Você pode arrastar e soltar elementos do modelo de formulário no fragmento. Os elementos de modelo de formulário adicionados são convertidos em componentes de formulário, ao mesmo tempo em que retêm as propriedades originais do esquema associado.
+Depois que o fragmento do Formulário adaptável com base em um esquema ou modelo de dados de formulário (FDM) é criado, o modelo de dados de formulário (FDM) ou os elementos do esquema aparecem na guia Fontes de dados do navegador de conteúdo no Criador de formulários adaptáveis. Você pode arrastar e soltar elementos do modelo de formulário no fragmento. Os elementos de modelo de formulário adicionados são convertidos em componentes de formulário, ao mesmo tempo em que retêm as propriedades originais do esquema associado.
 
 
 ## Adicionar um fragmento a um Formulário adaptável {#insert-a-fragment-in-an-adaptive-form}

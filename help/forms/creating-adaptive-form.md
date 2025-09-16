@@ -1,18 +1,19 @@
 ---
-title: Como criar o Forms adaptável?
-description: Saiba como criar um formulário adaptável para simplificar a coleta e o processamento de informações. Além disso, aprenda a criar o Formulário adaptável com base em um Modelo de dados de formulário (FDM).
+title: 'Construtor de formulários: criar formulários com componentes de base'
+description: Saiba como usar o construtor de formulários do AEM Forms para criar formulários adaptáveis com componentes de base. Perfeito para criadores de formulários que mantêm formulários existentes ou que trabalham com integrações herdadas.
+keywords: construtor de formulários, componentes de base, criar formulários, criador de formulários, formulários adaptáveis, criar formulários, AEM forms, criador de formulários
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 64%
+source-wordcount: '1588'
+ht-degree: 59%
 
 ---
 
-# Criar um formulário adaptável (componentes de base) {#creating-an-adaptive-form}
+# Construtor de formulários: criar formulários com componentes de base {#creating-an-adaptive-form}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -22,15 +23,15 @@ ht-degree: 64%
 
 >[!NOTE]
 >
-> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
+> A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
-Formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms fornece um assistente prático para que o usuário empresarial possa criar rapidamente o Forms adaptável. O assistente fornece uma navegação por guias rápidas para selecionar facilmente modelos pré-configurados, estilos, campos e as opções de envio para criar um formulário adaptável.
+O construtor de formulários do AEM Forms permite criar formulários envolventes, responsivos, dinâmicos e adaptáveis. Quer você seja um criador de formulários que mantém formulários com base em bases existentes ou precise criar formulários rapidamente com componentes estabelecidos, o AEM Forms fornece um assistente simples. O assistente fornece uma navegação rápida por guias para selecionar facilmente modelos pré-configurados, estilos, campos e opções de envio.
 
 Antes de começar, saiba mais sobre o tipo de componentes do Forms disponíveis para você:
 
-* [Os Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) são componentes de captura de dados padronizados. Esses componentes fornecem recursos de personalização, tempo de desenvolvimento reduzido e custos de manutenção mais baixos para suas experiências de inscrição digital. Um desenvolvedor pode personalizar e estilizar facilmente esses componentes. A Adobe recomenda o uso desses componentes modernos e extensíveis para desenvolver o Adaptive Forms.
+* [Os Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) são componentes de captura de dados padronizados. Esses componentes fornecem recursos de personalização, tempo de desenvolvimento reduzido e custos de manutenção mais baixos para suas experiências de inscrição digital. Um desenvolvedor pode personalizar e estilizar facilmente esses componentes. A Adobe recomenda usar esses componentes modernos e extensíveis para desenvolver o Adaptive Forms.
 
-* [Os componentes adaptáveis do Forms Foundation](creating-adaptive-form.md) são componentes de captura de dados clássicos (antigos). Você pode continuar usando-os para editar seus componentes fundamentais já existentes com base no formulário adaptável. Se você estiver criando novos formulários, a Adobe recomenda o uso dos [Componentes principais do Adaptive Forms](creating-adaptive-form-core-components.md) para criar um Forms Adaptável.
+* [Os componentes adaptáveis do Forms Foundation](creating-adaptive-form.md) são componentes de captura de dados clássicos (antigos). Você pode continuar usando-os para editar seus componentes fundamentais já existentes com base no formulário adaptável. Se você estiver criando novos formulários, a Adobe recomenda usar os [Componentes principais do Forms Adaptive](creating-adaptive-form-core-components.md) para criar um Forms Adaptável.
 
 
 
@@ -76,7 +77,7 @@ Você precisará do seguinte para criar um formulário adaptável:
 
 ## Criar um formulário adaptável (componentes de base) {#create-an-adaptive-form-foundation-components}
 
-1. Acessar a Instância do autor do [!DNL Experience Manager Forms]. Pode ser uma instância da nuvem ou uma instância de desenvolvimento local.
+1. Acessar a Instância de criação do [!DNL Experience Manager Forms]. Pode ser uma instância da nuvem ou uma instância de desenvolvimento local.
 
 1. Insira suas credenciais na página de logon do Experience Manager.
 
@@ -100,7 +101,7 @@ Você precisará do seguinte para criar um formulário adaptável:
 
 1. (Opcional) Na guia **[!UICONTROL Dados]**, selecione um modelo de dados:
 
-   * **Modelo de dados do formulário**: um [Modelo de dados do formulário](data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados a um formulário adaptável. Escolha Modelo de dados de formulário (FDM) se o Formulário adaptável que você está criando envolver a busca e a gravação de dados de e para várias fontes de dados.
+   * **Modelo de dados de formulário**: um [Modelo de dados de formulário](data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados a um formulário adaptável. Escolha Modelo de dados de formulário (FDM) se o Formulário adaptável que você está criando envolver a busca e a gravação de dados de e para várias fontes de dados.
 
    * **Esquema JSON**: o [Esquema JSON](adaptive-form-json-schema-form-model.md) representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema back-end em sua organização. É possível associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estão disponíveis para uso na guia Objetos do modelo de dados do navegador de conteúdo ao criar o Adaptive Forms e todos os campos também são adicionados ao Formulário adaptável criado.
 
@@ -146,7 +147,7 @@ To use a Form Data Model for creating an Adaptive Form:
 >
 >You can also change the Form Data Model for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model).
 
-## Create an Adaptive Form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
+## Build an adaptive form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
 XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate a schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available in the Data Model Object tab of the content browser for authoring Adaptive Forms. You can drag-drop the schema elements to build the form.
 
@@ -179,7 +180,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 >
 >You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model). -->
 
-## Edição das propriedades do modelo de formulário de um formulário adaptável {#edit-form-model}
+## Editar propriedades do modelo de formulário de um formulário adaptável {#edit-form-model}
 
 Você pode alterar o modelo de formulário para um formulário adaptável (com base em JSON ou Modelo de dados de formulário). Não é possível alterar de um modelo de formulário para outro.
 
@@ -191,7 +192,7 @@ Você pode alterar o modelo de formulário para um formulário adaptável (com b
 
 1. Selecione **[!UICONTROL Salvar]** para salvar as propriedades.
 
-É possível também modificar as propriedades do modelo de formulário a partir do editor de formulário adaptável ou do editor de modelo de formulário adaptável.
+Você também pode modificar as propriedades do modelo de formulário no Criador de formulários adaptáveis ou no Criador de modelos de formulários adaptáveis.
 
 1. Selecione o componente **[!UICONTROL Container de Formulário Adaptável (raiz)]**.
 1. Clique no ![Ícone de Configurar](/help/forms/assets/configure-icon.svg) para abrir as **[!UICONTROL Propriedades]** do container do formulário adaptável.
@@ -207,7 +208,7 @@ Você pode alterar o modelo de formulário para um formulário adaptável (com b
 >
 > Você também pode salvar um Formulário adaptável como um modelo. Para obter mais informações, consulte [Criação de um modelo usando um formulário adaptável](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
 
-## Como renomear um formulário adaptável para AEM? {#rename-an-AEM-Adaptive-Form}
+## Como renomear um formulário adaptável do AEM? {#rename-an-AEM-Adaptive-Form}
 
 Para renomear um formulário adaptável, execute as seguintes etapas:
 
@@ -216,8 +217,8 @@ Para renomear um formulário adaptável, execute as seguintes etapas:
 1. Altere o nome do formulário na guia **Título**, conforme mostrado na imagem abaixo.
 1. Clique em **Salvar e fechar**.
 
-![Renomear um Formulário adaptável de AEM](/help/forms/assets/change-af-name.png)
+![Renomear um Formulário adaptável do AEM](/help/forms/assets/change-af-name.png)
 
-## Consulte também {#see-also}
+## Consulte também: {#see-also}
 
 {{see-also}}

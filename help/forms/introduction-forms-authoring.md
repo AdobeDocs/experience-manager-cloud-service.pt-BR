@@ -1,20 +1,20 @@
 ---
-title: Introdução à criação de formulários adaptáveis
-description: O AEM Forms fornece uma interface fácil de usar, mas eficiente, para a criação de formulários adaptáveis. Ele fornece vários componentes e ferramentas que podem ser usadas para criar formulários.
+title: Introdução à criação do Forms adaptável
+description: O AEM Forms fornece uma interface fácil de usar, mas eficiente para a criação do Forms adaptável. Ele fornece vários componentes e ferramentas que podem ser usadas para criar formulários.
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2496'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
-# Editor de formulários adaptáveis {#introduction-to-authoring-adaptive-forms}
+# Construtor adaptável do Forms {#introduction-to-authoring-adaptive-forms}
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ ht-degree: 91%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | Este artigo |
 
 ## Visão geral {#overview}
@@ -43,7 +43,7 @@ Os formulários adaptáveis criados com essa opção não usam nenhum modelo de 
 
   >[!NOTE]
   >
-  > É possível modificar as propriedades do modelo de formulário no editor de formulário adaptável ou no editor de modelo de formulário adaptável. Para obter mais informações, consulte [Editar as propriedades do modelo de formulário de um formulário adaptável](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  > Você pode modificar as propriedades do modelo de formulário no Criador de formulários adaptáveis ou no Criador de modelos de formulários adaptáveis. Para obter mais informações, consulte [Editar as propriedades do modelo de formulário de um formulário adaptável](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Para criar um formulário adaptável, consulte [Criação de um formulário adaptável](creating-adaptive-form.md).
 
@@ -157,7 +157,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no Formulário 
   </tr>
   <tr>
    <td>Email</td>
-   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Anexo de arquivo</td>
@@ -245,7 +245,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no Formulário 
   </tr>
   <tr>
    <td>Alternar</td>
-   <td>Adiciona um botão que executa um botão de alternância ou ativação/desativação. Não é possível adicionar mais de duas opções no componente Alternar. Como um botão de alternância pode ter apenas dois valores: ligado ou desligado, não é possível torná-lo obrigatório. Pelo menos um valor é salvo independentemente da entrada do usuário. <br /> </td>
+   <td>Adiciona um botão que executa um botão de alternância ou habilitação/desabilitação. Não é possível adicionar mais de duas opções no componente Alternar. Como um botão de alternância pode ter apenas dois valores: ligado ou desligado, não é possível torná-lo obrigatório. Pelo menos um valor é salvo independentemente da entrada do usuário. <br /> </td>
   </tr>
   <tr>
    <td>Tabela</td>
@@ -267,7 +267,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no Formulário 
   </tr>
   <tr>
    <td>Caixa de texto </td>
-   <td><p>Adiciona uma caixa de texto na qual o usuário pode especificar as informações necessárias. </p> <p>Por padrão, o componente Caixa de texto apenas aceita texto sem formatação. Você pode ativar um componente Caixa de texto para aceitar rich text. Um componente de texto Rich text habilitado fornece opções para adicionar cabeçalhos, alterar estilos de caracteres (negrito, itálico, sublinhar os caracteres), criar listas ordenadas e não ordenadas, alterar o plano de fundo do texto e a cor do texto e adicionar hiperlinks. Para ativar o rich text de uma caixa de texto, ative a opção<strong> Permitir Rich text</strong> nas propriedades do componente.</p> </td>
+   <td><p>Adiciona uma caixa de texto na qual o usuário pode especificar as informações necessárias. </p> <p>Por padrão, o componente Caixa de texto apenas aceita texto sem formatação. Você pode habilitar um componente Caixa de texto para aceitar rich text. Um componente de texto Rich text habilitado fornece opções para adicionar cabeçalhos, alterar estilos de caracteres (negrito, itálico, sublinhar os caracteres), criar listas ordenadas e não ordenadas, alterar o plano de fundo do texto e a cor do texto e adicionar hiperlinks. Para ativar o rich text de uma caixa de texto, ative a opção<strong> Permitir Rich text</strong> nas propriedades do componente.</p> </td>
   </tr>
   <tr>
    <td>Título</td>
