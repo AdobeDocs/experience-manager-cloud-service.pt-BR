@@ -120,7 +120,7 @@ Execute as seguintes etapas para configurar a ação de envio personalizada pron
 
    Após executar essas etapas, você poderá exibir uma nova ação de envio personalizada [Enviar com assinaturas eletrônicas do DocuSign](#enabledocusign), disponível na lista de opções de envio para um formulário adaptável e uma [configuração do serviço de nuvem do DocuSign](#configure-docusign-with-aem-forms) em seu ambiente de desenvolvimento local.
 
-1. Compile e [Implante o código em seu [!DNL AEM Forms] ambiente as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases).
+1. Compile e [Implante o código em seu [!DNL AEM Forms] ambiente as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#customer-releases).
 
 ## Integrar [!DNL DocuSign] a [!DNL AEM Forms] {#configure-docusign-with-aem-forms}
 

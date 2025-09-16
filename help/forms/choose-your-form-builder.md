@@ -201,4 +201,4 @@ Para obter orientação personalizada, consulte sua equipe de implementação do
 - [Comparação detalhada da criação de formulários](/help/edge/docs/forms/authoring-a-form.md)
 - [Visão geral dos Componentes principais do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR)
 - [Visão geral do Edge Delivery Services para Forms](/help/edge/docs/forms/overview.md)
-- [Forms adaptável headless com componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)
+- [Forms adaptável headless com componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)

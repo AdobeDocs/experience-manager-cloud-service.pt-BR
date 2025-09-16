@@ -323,7 +323,7 @@ Monitore o desempenho dos formulários à medida que ele acontece, com painéis 
 
 ### Recursos de rastreamento prontos para uso
 
-O AEM Forms integra-se perfeitamente com o [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) para capturar e rastrear automaticamente as métricas de desempenho dos formulários publicados. Você pode monitorar o comportamento de usuários autenticados e anônimos sem configurações adicionais.
+O AEM Forms integra-se perfeitamente com o [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=pt-BR) para capturar e rastrear automaticamente as métricas de desempenho dos formulários publicados. Você pode monitorar o comportamento de usuários autenticados e anônimos sem configurações adicionais.
 
 Antes de implementar a análise de formulários, verifique se o seu [ambiente do AEM Forms está configurado corretamente](/help/forms/setup-forms-cloud-service.md) e se você [criou seus formulários adaptáveis](/help/forms/creating-adaptive-form-core-components.md) usando os Componentes Principais ou os [Componentes de Base](/help/forms/creating-adaptive-form.md).
 
@@ -527,12 +527,12 @@ Antes de iniciar a implementação do form Analytics, verifique se seu ambiente 
 Antes de configurar [!DNL Adobe Analytics], crie:
 
 - Uma Adobe ID para fazer logon no [Adobe Experience Cloud](https://experience.adobe.com/#/home).
-- Um [conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
+- Um [conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=pt-BR).
 
 
 ### Instalar o AEM Forms e as extensões do [!DNL Adobe Analytics] {#install-extensions}
 
-Execute as seguintes etapas para configurar o AEM Forms e as extensões do [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html):
+Execute as seguintes etapas para configurar o AEM Forms e as extensões do [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=pt-BR):
 
 1. Faça logon no Adobe Experience Cloud e selecione um nome apropriado para a empresa.
 
@@ -676,7 +676,7 @@ Execute as seguintes etapas para publicar a configuração:
 
 ## &#x200B;2. Configurar o AEM Forms {#configure-aem-forms}
 
-Antes de criar uma configuração do Adobe Launch, crie uma [Configuração do Adobe IMS usando o Adobe Launch como a Solução da nuvem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+Antes de criar uma configuração do Adobe Launch, crie uma [Configuração do Adobe IMS usando o Adobe Launch como a Solução da nuvem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=pt-BR).
 
 ### Criar configuração do Adobe Launch {#create-adobe-launch-configuration}
 
@@ -688,7 +688,7 @@ Execute as seguintes etapas para criar uma configuração do Adobe Launch:
 
 1. Especifique um título para a configuração no campo **[!UICONTROL Título]**.
 
-1. Selecione a [configuração IMS da Adobe associada](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+1. Selecione a [configuração IMS da Adobe associada](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=pt-BR).
 
 1. Selecione o nome da empresa usada durante a [configuração do Adobe Analytics](#Configure-adobe-analytics).
 
@@ -708,7 +708,7 @@ Para usar a configuração [!DNL Adobe Launch] em um Formulário adaptável exis
 1. Selecione **[!UICONTROL Salvar e fechar]**. O Formulário adaptável está habilitado para [!DNL Adobe Analytics].
 1. Publique o formulário.
 
-Depois de habilitar [!DNL Adobe Analytics] para um formulário adaptável, você poderá [validar](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) se houver um fluxo de eventos de dados apropriado entre o AEM Forms e o [!DNL Adobe Analytics]. A integração do AEM Forms com o Adobe Analytics está concluída. Agora você pode [configurar e exibir relatórios no Adobe Analytics](#view-reports-adobe-analytics).
+Depois de habilitar [!DNL Adobe Analytics] para um formulário adaptável, você poderá [validar](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=pt-BR#validate-the-page-view-beacon) se houver um fluxo de eventos de dados apropriado entre o AEM Forms e o [!DNL Adobe Analytics]. A integração do AEM Forms com o Adobe Analytics está concluída. Agora você pode [configurar e exibir relatórios no Adobe Analytics](#view-reports-adobe-analytics).
 
 ### Criar regras para capturar eventos personalizados (Opcional) {#capture-custom-events}
 
