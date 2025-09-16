@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 53e476981874597bfb7f9293e67b2d135c72b318
+source-git-commit: 3a8670061ce0e45f9ae70ab8d8f5df0604ed503a
 workflow-type: tm+mt
-source-wordcount: '6619'
+source-wordcount: '6618'
 ht-degree: 58%
 
 ---
@@ -525,7 +525,7 @@ ht-degree: 58%
       + [Exportar fragmentos de conteúdo para o Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportar Fragmentos de experiência para o Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integração ao Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Usando fragmentos de conteúdo no Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=pt-BR)
+      + [Usando fragmentos de conteúdo no Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operacional do AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Ativos {#assets}
    + [Visão geral e novidades](/help/assets/overview.md)
@@ -1002,6 +1002,21 @@ ht-degree: 58%
       + [Reiniciar o AEM SDK](/help/forms/restart-aem-sdk.md)
       + [Solução de falhas de criação do Forms](/help/forms/form-creation-failing.md)
       + [Página de erro 502 na ação de envio personalizada](/help/forms/custom-submit-action-troubleshooting.md)
++ IA no AEM {#ai-in-aem}
+   + [Visão geral](/help/ai-in-aem/overview.md)
+   + Assistente de IA {#ai-assistant}
+      + [Configurar o assistente de IA no AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+      + [Sobre o assistente de IA no AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+   + IA generativa {#generative-ai}
+      + [Gerar variações - Integrado nos editores do AEM](/help/generative-ai/generate-variations-integrated-editor.md)
+      + [Gerar variações](/help/generative-ai/generate-variations.md)
+   + Forms Experience Builder {#forms-experience-builder}
+      + [Assistente de IA para o AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
+      + [Introdução ao Assistente de IA para AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
+      + [Introdução ao Assistente de IA para AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+      + [Assistente do AEM Forms AI - Biblioteca de prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+      + [Forms Experience Builder - Práticas recomendadas](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+      + [Forms Experience Builder - Guia de solução de problemas](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
    + Visão geral do Screens as a Cloud Service {#overview}
       + [Introdução](/help/screens-cloud/introduction/introduction.md)
@@ -1150,14 +1165,14 @@ ht-degree: 58%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação{#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
@@ -1216,19 +1231,6 @@ ht-degree: 58%
          + [Noções básicas de criação para headless com AEM](/help/journey-headless/author/basics.md)
          + [Saiba mais sobre como usar referências em Fragmentos de conteúdo](/help/journey-headless/author/references.md)
          + [Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo](/help/journey-headless/author/metadata-tagging.md)
-+ Assistente de IA {#ai-assistant}
-   + [Configurar o assistente de IA no AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
-   + [Sobre o assistente de IA no AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
-+ IA generativa {#generative-ai}
-   + [IA gerativa no AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
-   + [Gerar variações - Integrado nos editores do AEM](/help/generative-ai/generate-variations-integrated-editor.md)
-   + [Gerar variações](/help/generative-ai/generate-variations.md)
-   + [Assistente de IA para o AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-   + [Introdução ao Assistente de IA para AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [Introdução ao Assistente de IA para AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-   + [Assistente do AEM Forms AI - Biblioteca de prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-   + [Forms Experience Builder - Práticas recomendadas](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-   + [Forms Experience Builder - Guia de solução de problemas](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Implementação {#implementing}
    + [Implementação de aplicativos do AEM as a Cloud Service](/help/implementing/home.md)
    + Usar o Cloud Manager {#using-cloud-manager}
@@ -1286,7 +1288,7 @@ ht-degree: 58%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
