@@ -163,7 +163,7 @@ Selecione uma variação, seguida por **Gerar Imagem**, para abrir diretamente *
 
 Você pode fazer mais alterações:
 
-* [escreva seu próprio prompt no Adobe Express](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) descrevendo o que você gostaria de ver,
+* [escreva seu próprio prompt no Adobe Express](https://helpx.adobe.com/br/firefly/using/tips-and-tricks.html) descrevendo o que você gostaria de ver,
 * ajustar as opções de **Texto para imagem**,
 * depois **Atualize** as imagens geradas.
 
@@ -182,7 +182,7 @@ Aqui você pode passar o mouse sobre a imagem para mostrar os itens de ação pa
 
 >[!NOTE]
 >
->[As credenciais de conteúdo](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) não são persistentes quando usadas na criação baseada em documento.
+>[As credenciais de conteúdo](https://helpx.adobe.com/br/creative-cloud/help/content-credentials.html) não são persistentes quando usadas na criação baseada em documento.
 
 ### Usar conteúdo {#use-content}
 
@@ -355,13 +355,13 @@ Selecionar um público-alvo do **Adobe Target** no prompt permite que a geraçã
 
    >[!NOTE]
    >
-   >Para usar um público-alvo do **Adobe Target**, o campo de descrição deve ser preenchido. Caso contrário, o público-alvo será exibido na lista suspensa como indisponível. Para adicionar uma descrição, vá para Target e [adicione uma descrição de público-alvo](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
+   >Para usar um público-alvo do **Adobe Target**, o campo de descrição deve ser preenchido. Caso contrário, o público-alvo será exibido na lista suspensa como indisponível. Para adicionar uma descrição, vá para Target e [adicione uma descrição de público-alvo](https://experienceleague.adobe.com/pt-br/docs/target-learn/tutorials/audiences/create-audiences).
 
    ![Gerar variações - origem do público-alvo - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 
 #### Adicionar público-alvo do Adobe Target {#add-adobe-target-audience}
 
-Consulte [Criar públicos-alvo](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences) para criar um público-alvo no Adobe Target.
+Consulte [Criar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/target-learn/tutorials/audiences/create-audiences) para criar um público-alvo no Adobe Target.
 
 ### Público-alvo - arquivo CSV {#audience-csv-file}
 
@@ -412,11 +412,11 @@ O gerenciamento de uso depende da ação tomada:
 
   >[!NOTE]
   >
-  >Consulte [Adobe Experience Manager: Cloud Service | Descrição do produto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obter mais detalhes sobre direitos básicos e entrar em contato com a equipe de conta se desejar adquirir ações mais geradoras.
+  >Consulte [Adobe Experience Manager: Cloud Service | Descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/aem-cloud-service.html) para obter mais detalhes sobre direitos básicos e entrar em contato com a equipe de conta se desejar adquirir ações mais geradoras.
 
 * Adobe Express
 
-  O uso da geração de imagens é feito por meio de direitos da Adobe Express e [créditos gerativos](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+  O uso da geração de imagens é feito por meio de direitos da Adobe Express e [créditos gerativos](https://helpx.adobe.com/br/firefly/using/generative-credits-faq.html).
 
 ## Acessar Gerar Variações {#access-generate-variations}
 
