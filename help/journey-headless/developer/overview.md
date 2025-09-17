@@ -6,9 +6,9 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: ae873f8d61f3f6b79f09df100d62714e41e3b849
+source-git-commit: 20914cde3be3ff3061b061d930154bd72da45d11
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1065'
 ht-degree: 94%
 
 ---
@@ -23,7 +23,7 @@ Saiba mais sobre os avançados e flexíveis recursos headless, suas funcionalida
 >id="aemcloud_headless_developer_resources"
 >title="Recursos de desenvolvedor do AEM Headless e documentação avançada"
 >abstract="Tudo o que você precisa aprender sobre o CMS headless do AEM, para criar e distribuir aplicativos melhores e fornecer experiências mais rápidas."
->additional-url="https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR" text="Recursos de desenvolvedor do AEM Headless"
+
 
 ## Introdução {#introduction}
 
@@ -39,7 +39,7 @@ Este guia aborda os tópicos de implementação headless no AEM. Quando terminar
 >
 > Se preferir **aprender na prática** e já tiver conhecimento do AEM, visite os tutoriais do AEM Headless, que são organizados pela API e pela estrutura e estão disponíveis na [Seção Recursos adicionais](#additional-resources) no final deste documento.
 
-## Público {#audience}
+## Público-alvo {#audience}
 
 Essa jornada foi projetada para o perfil do desenvolvedor, apresentando os requisitos, as etapas e a abordagem de um projeto AEM Headless da perspectiva do desenvolvedor. A jornada define perfis adicionais com as quais o desenvolvedor deve interagir para um projeto bem-sucedido, mas o ponto de vista da jornada é o do desenvolvedor.
 
