@@ -4,9 +4,9 @@ description: Entenda como o AEM as a Cloud Service pode se beneficiar do desempe
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
+source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '988'
 ht-degree: 2%
 
 ---
@@ -14,18 +14,19 @@ ht-degree: 2%
 
 # Visão geral do Edge Delivery Services {#edge-delivery-services}
 
+>[!TIP]
+>
+>**Deseja colocar as mãos na prática imediatamente?**
+>
+>Se você quiser participar do Edge Delivery Services imediatamente, tem duas opções.
+>* [Comece a criar imediatamente com um ambiente de tutorial pré-construído - totalmente configurado e pronto para uso.](https://www.aem.live/developer/ue-trial)
+>* Acesse mais detalhes e configure seu próprio ambiente em menos de 30 minutos [conferindo o tutorial no aem.live.](https://www.aem.live/developer/ue-tutorial)
+
 ## O que é o Edge Delivery Services? {#what-is-edge}
 
 O Edge Delivery Services é uma estrutura moderna de entrega de conteúdo que recria como os sites são criados e entregues, otimizando a velocidade, a simplicidade e a escalabilidade. É uma parte essencial do Adobe Experience Manager e permite experiências digitais mais rápidas, aproximando a renderização e o delivery do usuário, na borda da rede.
 
 Não é uma substituição de uma rede de entrega de conteúdo (CDN), mas se integra perfeitamente à sua própria CDN ou à [CDN gerenciada pela Adobe incluída.](/help/implementing/dispatcher/cdn.md)
-
->[!TIP]
->
->**Deseja colocar as mãos na prática imediatamente?**
->
->Se você quiser colocar as mãos na prática imediatamente, poderá iniciar seu próprio projeto do Edge Delivery Services com a criação do AEM em menos de 30 minutos [conferindo o tutorial no aem.live.](https://www.aem.live/developer/ue-tutorial)
-
 
 ## Por que Edge Delivery Services? {#why-edge}
 
@@ -90,7 +91,7 @@ Introdução ao uso da criação do AEM com o Universal Editor e o Edge Delivery
 
 O Edge Delivery Services faz parte do Adobe Experience Manager. Dessa forma, o Edge Delivery Services e o AEM Sites podem coexistir no mesmo domínio, que é um caso de uso comum para sites maiores. Além disso, suas páginas do AEM Sites podem consumir conteúdo do Edge Delivery Services sem problemas, e o contrário também é verdadeiro.
 
-Você também pode usar o Edge Delivery Services com o [Adobe Target](https://www.aem.live/developer/target-integration) e o [Launch.](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/home)
+Você também pode usar o Edge Delivery Services com o [Adobe Target](https://www.aem.live/developer/target-integration) e o [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Obtendo ajuda do Adobe {#getting-help}
 
