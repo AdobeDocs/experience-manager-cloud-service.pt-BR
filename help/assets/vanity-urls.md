@@ -3,9 +3,9 @@ title: Criar URLs personalizados usando o Dynamic Media com recursos OpenAPI
 description: Use os recursos OpenAPI do Dynamic Media para transformar seus URLs de entrega de ativos longos em URLs personalizados curtos e de marca. Um URL personalizado é uma versão curta, limpa, fácil de lembrar e legível do seu URL de entrega complexo. Você pode incluir o nome da sua marca, nomes de produtos e palavras-chave relevantes no URL personalizado para aumentar a visibilidade da sua marca e o envolvimento do usuário
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: c72966bff9220b681f8c1e4c534f19cb4b950700
+source-git-commit: 73574b3358451dfe135b91011abb5cad372a783e
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ Saiba mais sobre [esquemas de metadados](/help/assets/metadata-schemas.md).
 
      >[!NOTE]
      >
-     > Um único ativo pode ter várias IDs personalizadas. [Contate o suporte da Adobe](https://helpx.adobe.com/in/contact.html) e gere uma solicitação para gerar as IDs personalizadas necessárias.
+     > * Use IDs personalizadas exclusivas para cada ativo. Sempre verifique se os ativos que compartilham o mesmo formulário de metadados têm IDs personalizadas exclusivas para DM com entrega de OpenAPI por meio de URLs personalizados. Se dois ativos compartilharem a mesma ID personalizada, o DM com OpenAPI fornecerá o ativo que recebeu essa ID mais recentemente, substituindo o direito anterior da ID por outro ativo.
+     >
+     > * Um único ativo pode ter várias IDs personalizadas. [Contate o suporte da Adobe](https://helpx.adobe.com/in/contact.html) e gere uma solicitação para gerar as IDs personalizadas necessárias.
 
 Depois de configurar sua ID personalizada no formulário de metadados de ativos, [mapeie este campo de metadados para o mecanismo de entrega do sistema](#map-cloud-manager-environment-variable).
 
@@ -132,7 +134,7 @@ Quando o usuário clica na URL personalizada, o [!DNL Dynamic Media with OpenAPI
 
 ## Dimensionar usando URLs personalizados{#scale-using-vanity-url}
 
-O AEM as a Cloud Service permite que você [personalize os nomes DNS e CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) em seus endereços Web. Use esses recursos do AEMCS com suas URLs personalizadas para transformá-las em endereços da Web exclusivos que sejam limpos, descritivos, de marca, intuitivos e forneçam os [benefícios mencionados acima](#key-benefits).
+O AEM as a Cloud Service permite que você [personalize os nomes DNS e CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) em seus endereços Web. Use esses recursos do AEMCS com suas URLs personalizadas para transformá-las em endereços da Web exclusivos que sejam limpos, descritivos, de marca, intuitivos e forneçam os [benefícios mencionados acima](#key-benefits).
 
 Consulte o seguinte URL personalizado e seus componentes personalizáveis:
 
@@ -182,7 +184,7 @@ Consulte o seguinte URL personalizado e seus componentes personalizáveis:
 Execute as seguintes etapas para regravar as regras de CDN para delivery:
 
 1. Navegue até o repositório do AEM para criar um arquivo de configuração YAML.
-2. Execute as etapas na seção [configuração](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para definir regras CDN e implantar a configuração por meio do pipeline de configuração do Cloud Manager.
+2. Execute as etapas na seção [configuração](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para definir regras CDN e implantar a configuração por meio do pipeline de configuração do Cloud Manager.
 Siga estas [práticas recomendadas](#best-practices) para criar seu caminho de domínio.
    [Saiba mais sobre as regras de regravação da CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
