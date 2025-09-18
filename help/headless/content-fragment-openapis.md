@@ -4,7 +4,7 @@ description: Saiba mais sobre os Fragmentos de conteúdo e as OpenAPIs dos Model
 exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: d683051387af5c0de45917a50003c2194d887bc4
+source-git-commit: 1fb1201fa976e4c0e3c87f22bd9327a55828efef
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
@@ -15,7 +15,11 @@ ht-degree: 0%
 
 A implementação modernizada da OpenAPI da API de gerenciamento de fragmento de conteúdo permite que os desenvolvedores executem programaticamente operações de criação, leitura, atualização e exclusão no AEM Author para gerenciar modelos de fragmento de conteúdo e fragmentos de conteúdo armazenados no AEM. Essas APIs são compatíveis com vários casos de uso.
 
-O uso existente da [API HTTP do Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) para fragmentos de conteúdo deve ser migrado para a nova OpenAPI de gerenciamento de fragmento de conteúdo. Para obter a documentação completa, consulte [API de gerenciamento de fragmento de conteúdo](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+Para obter a documentação completa, consulte [API de gerenciamento de fragmento de conteúdo](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+
+>[!NOTE]
+>
+>O uso existente da [API HTTP do Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) para fragmentos de conteúdo deve ser migrado para a nova OpenAPI de gerenciamento de fragmento de conteúdo.
 
 >[!NOTE]
 >
