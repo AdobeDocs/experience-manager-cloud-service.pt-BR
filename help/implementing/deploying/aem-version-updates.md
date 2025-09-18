@@ -1,10 +1,10 @@
 ---
 title: Atualizações de versão do AEM
-description: Saiba como o Adobe Experience Manager (AEM) as a Cloud Service integração e entrega contínuas (CI/CD) para manter seus projetos na versão mais recente.
+description: Saiba como o Adobe Experience Manager (AEM) as a Cloud Service usa integração contínua e entrega (CI/CD) para manter seus projetos na versão mais recente.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 01de7b0c4e0408a3bbc5322e37db5075d43c4c5f
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 2%
@@ -14,11 +14,11 @@ ht-degree: 2%
 
 # Atualizações de versão do AEM {#aem-version-updates}
 
-Saiba como o Adobe Experience Manager (AEM) as a Cloud Service integração e entrega contínuas (CI/CD) para manter seus projetos na versão mais recente.
+Saiba como o Adobe Experience Manager (AEM) as a Cloud Service usa integração contínua e entrega (CI/CD) para manter seus projetos na versão mais recente.
 
 ## CI/CD {#ci-cd}
 
-O AEM as a Cloud Service usa integração contínua e entrega contínua (CI/CD) para garantir que seus projetos estejam na versão AEM mais atual. Esse processo atualiza com facilidade suas instâncias de produção, preparo e desenvolvimento sem causar interrupções para os usuários.
+O AEM as a Cloud Service usa integração contínua e entrega contínua (CI/CD) para garantir que seus projetos estejam na versão mais recente do AEM. Esse processo atualiza com facilidade suas instâncias de produção, preparo e desenvolvimento sem causar interrupções para os usuários.
 
 >[!NOTE]
 > Como as instâncias de desenvolvimento já são atualizadas automaticamente, as atualizações manuais das instâncias de desenvolvimento podem não estar disponíveis para _alguns_ de seus programas. Este recurso está sendo transferido para atualizações automáticas.
@@ -28,7 +28,7 @@ Antes que suas instâncias sejam atualizadas automaticamente, uma nova versão d
 ### NIMU (Atualizações de manutenção não invasivas) {#nimu}
 
 As Atualizações de manutenção não invasivas são atualizações automáticas aplicadas sem envolver os pipelines do cliente.
-Por meio do NIMU, o cliente pode usar o pipeline a qualquer momento, mesmo se uma atualização de versão de AEM estiver programada ou em andamento e as atualizações de manutenção não aparecerão mais no histórico de execução do pipeline do cliente, facilitando o acompanhamento do histórico de implantações de código.
+Por meio do NIMU, o cliente pode usar o pipeline a qualquer momento, mesmo se uma atualização de versão do AEM estiver programada ou em andamento e as atualizações de manutenção não aparecerão mais no histórico de execução do pipeline do cliente, facilitando o acompanhamento do histórico de implantações de código.
 
 #### Atualizar atividades
 
@@ -38,7 +38,6 @@ Uma [notificação da interface do usuário do Cloud Manager](/help/implementing
 >[!NOTE]
 >
 > Observação: as atualizações de manutenção não invasivas serão progressivamente habilitadas para todos os clientes em 2024.
-
 
 ## Tipo de atualizações {#update-types}
 
@@ -55,13 +54,13 @@ Há dois tipos de atualizações de versão do AEM:
 
 >[!NOTE]
 >
-> Verifique as principais datas de lançamentos mensais no [roteiro de lançamentos do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service) e marque em seu calendário para se preparar para as atividades principais e assim estar pronto para o lançamento.
+> Verifique as principais datas de lançamentos mensais no [roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service) e marque em seu calendário para se preparar para as atividades principais e assim estar pronto para o lançamento.
 
 ## Falha ao atualizar {#update-failure}
 
-As atualizações do AEM passam por um pipeline de validação de produto intenso e totalmente automatizado, envolvendo várias etapas, garantindo que não haja interrupção do serviço para nenhum sistema em produção. As verificações de integridade são usadas para monitorar a integridade do aplicativo. Se essas verificações falharem durante uma atualização do AEM as a Cloud Service, a versão não continuará e o Adobe investigará por que a atualização causou esse comportamento inesperado.
+As atualizações do AEM passam por um pipeline de validação de produto intenso e totalmente automatizado que envolve várias etapas, garantindo que não haja interrupção do serviço para nenhum sistema em produção. As verificações de integridade são usadas para monitorar a integridade do aplicativo. Se essas verificações falharem durante uma atualização do AEM as a Cloud Service, a versão não continuará e a Adobe investigará por que a atualização causou esse comportamento inesperado.
 
-Quando você implanta uma nova versão de código personalizado em seu ambiente, os [Testes funcionais de produtos e personalizados](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) desempenham uma função crucial. Eles garantem que os sistemas de produção permaneçam estáveis e funcionais mesmo após uma alteração ser aplicada. Esses testes também são aplicados no processo de atualização da versão do AEM.
+Quando você implanta uma nova versão de código personalizado em seu ambiente, os [Testes funcionais de produtos e personalizados](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) desempenham uma função crucial. Eles garantem que os sistemas de produção permaneçam estáveis e funcionais mesmo após uma alteração ser aplicada. Esses testes também são aplicados no processo de atualização de versão do AEM.
 
 Se a atualização para o ambiente de produção falhar, o Cloud Manager reverterá automaticamente o ambiente de preparo. Isso é feito automaticamente para garantir que, após a conclusão de uma atualização, os ambientes de preparo e de produção estejam na mesma versão do AEM.
 Da mesma forma, se uma atualização automatizada de um ambiente de desenvolvimento falhar, os ambientes de preparo e produção não serão atualizados.
@@ -89,7 +88,7 @@ Da mesma forma, se uma atualização automatizada de um ambiente de desenvolvime
 
 * **Teste funcional automatizado**
    * Inclua testes automatizados em seu pipeline para que você possa testar a funcionalidade crítica.
-   * O [Teste funcional do cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) e o [Teste personalizado da interface do usuário](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) estão bloqueando, caso falhem, a versão do AEM não será lançada.
+   * O [Teste funcional do cliente](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) e o [Teste personalizado da interface do usuário](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) estão bloqueando, caso falhem, a versão do AEM não será implementada.
 
 ## Regressão {#regression}
 
