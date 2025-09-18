@@ -4,9 +4,9 @@ description: Criar componentes personalizados para um formulário EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
+source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2103'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Agora que o formulário contém o componente personalizado, é possível interme
 
 Vamos adicionar um **cartão** de classe ao componente para estilo e adicionar uma imagem para cada rádio. Use o código abaixo para isso.
 
-**Estilize o componente personalizado usando a função decorar em cards.js**
+**Estilo do componente usando card.js**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -268,7 +268,7 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**Adicionar Comportamento em Tempo de Execução para o Componente Personalizado em cards.css**
+**Adicionar Comportamento de Tempo de Execução usando cards.css**
 
 ```javascript
 .card .radio-wrapper {
@@ -505,13 +505,13 @@ A maneira herdada de fazer isso é seguir manualmente as etapas descritas abaixo
 
 10. **Atualizar _component-definition.json**: em `models/_component-definition.json`, atualize a matriz no grupo com `id custom-components` com um objeto da seguinte maneira:
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    Isso fornece a referência para o novo componente de placas a ser construído com o restante dos componentes
+   Isso fornece a referência para o novo componente de placas a ser construído com o restante dos componentes
 
 11. **Execute o script de compilação:json**: Execute `npm run build:json` para compilar e mesclar todas as definições de JSON de componente em um único arquivo a ser fornecido pelo servidor. Isso garante que o esquema do novo componente seja incluído na saída mesclada.
 
@@ -587,7 +587,7 @@ Lembre-se dos pontos abaixo antes de criar seu próprio componente personalizado
 
 ## Referências
 
-- tipos de campo de formulário: estruturas e propriedades básicas do HTML para todos os tipos de campo. [Clique aqui](/help/edge/docs/forms/eds-form-field-properties) para exibir as estruturas e propriedades detalhadas dos campos de formulário.
+- [tipos de campo de formulário](/help/edge/docs/forms/eds-form-field-properties.md): estruturas e propriedades de base do HTML para todos os tipos de campo.
 
 - **blocos/formulário/modelos/formulário-components**: OOTB e definições de propriedades de componentes personalizados.
 
