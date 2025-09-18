@@ -1,20 +1,21 @@
 ---
-title: Configure o Editor de Rich Text para criar conteúdo em  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Configurar o Editor de Rich Text para criar conteúdo em  [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Configure o Editor de Rich Text para criar conteúdo no  [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Configure o Editor de Rich Text para criar conteúdo no  [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 2c1b444d7b7dad94cc9ebda59783f9c6fde84a91
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
 
+
 # Configurar o editor de rich text {#configure-the-rich-text-editor}
 
-O Editor de Rich Text (RTE) fornece aos autores uma grande variedade de funcionalidades para editar conteúdo de texto. Ícones, caixas de seleção, barra de ferramentas e menus são fornecidos para uma experiência de edição de texto WYSIWYG. Os administradores configuram o RTE para ativar, desativar e estender os recursos disponíveis nos componentes de criação. Veja como os autores [usam o RTE para criar](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) conteúdo da Web.
+O Editor de Rich Text (RTE) fornece aos autores uma grande variedade de funcionalidades para editar conteúdo de texto. Ícones, caixas de seleção, barra de ferramentas e menus são fornecidos para uma experiência de edição de texto no WYSIWYG. Os administradores configuram o RTE para ativar, desativar e estender os recursos disponíveis nos componentes de criação. Veja como os autores [usam o RTE para criar](/help/sites-cloud/authoring/page-editor/rich-text-editor.md) conteúdo da Web.
 
 Os conceitos e as etapas do RTE necessários para configurá-lo estão listados abaixo.
 
@@ -24,6 +25,10 @@ Os conceitos e as etapas do RTE necessários para configurá-lo estão listados 
 | [Tipos de modos de edição](#editingmodes) | [Ativar plug-ins](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [Definir propriedades do recurso](#aboutplugins) |
 | [Sobre plug-ins](#aboutplugins) | [Configurar barras de ferramentas do RTE](#dialogfullscreen) | [Configurar os modos de colagem](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
 
+>[!NOTE]
+>
+>O RTE descrito neste documento descreve aquele disponível no Editor de páginas. Se você estiver usando o Editor Universal moderno, consulte o documento [Configurando o RTE para o Editor Universal](/help/implementing/universal-editor/configure-rte.md) para obter detalhes.
+
 ## Compreender a interface do usuário disponível para autores {#understand-rte-ui}
 
 A interface do RTE oferece um [design responsivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) para o ambiente de criação. A interface foi projetada para ser usada em dispositivos de toque e desktop.
@@ -32,7 +37,7 @@ A interface do RTE oferece um [design responsivo](/help/sites-cloud/authoring/pa
 
 *Figura: barra de ferramentas do Editor de Rich Text com todas as opções disponíveis habilitadas.*
 
-A barra de ferramentas fornece as opções para a experiência de criação WYSIWYG. Os administradores do [!DNL Experience Manager] podem configurar as opções disponíveis na barra de ferramentas da interface. Um conjunto abrangente de opções de edição está disponível por padrão no [!DNL Experience Manager]. Os desenvolvedores podem personalizar [!DNL Experience Manager] para adicionar mais opções de edição.
+A barra de ferramentas fornece as opções para a experiência de criação do WYSIWYG. Os administradores do [!DNL Experience Manager] podem configurar as opções disponíveis na barra de ferramentas da interface. Um conjunto abrangente de opções de edição está disponível por padrão no [!DNL Experience Manager]. Os desenvolvedores podem personalizar [!DNL Experience Manager] para adicionar mais opções de edição.
 
 ## Vários modos de edição {#editingmodes}
 
@@ -130,14 +135,14 @@ O [modo de edição de RTE e a interface](#editingmodes) fornecida para seus aut
 >Não nomeie o nó sob `cq:inplaceEditing` como `config`. No nó `cq:inplaceEditing`, defina as seguintes propriedades:
 >
 >* **Nome**: `configPath`
->* **Tipo**: `String`
+>* **Tipo**: `String`
 >* **Value**: caminho do nó que contém a configuração real
 >
 >Não nomeie o nó de configuração de RTE como `config`. Caso contrário, as configurações de RTE terão efeito somente para os administradores e não para os usuários no grupo `content-author`.
 
 Configure as seguintes propriedades que se aplicam ao modo de edição da caixa de diálogo:
 
-* `useFixedInlineToolbar`: você pode tornar a barra de ferramentas do RTE fixa em vez de flutuante. Defina essa propriedade Booliana definida no nó RTE com sling:resourceType= `cq/gui/components/authoring/dialog/richtext` como `True`. Quando esta propriedade é definida como `True`, a edição de rich text é iniciada no evento `foundation-contentloaded`. Para evitar isso, defina a propriedade `customStart` como `True` e acione o evento `rte-start` para iniciar a edição do RTE. Quando essa propriedade é `true`, o RTE não inicia ao clicar e esse é o comportamento padrão.
+* `useFixedInlineToolbar`: você pode tornar a barra de ferramentas do RTE fixa em vez de flutuante. Defina esta propriedade Booliana definida no nó RTE com sling:resourceType= `cq/gui/components/authoring/dialog/richtext` to `True`. Quando esta propriedade é definida como `True`, a edição de rich text é iniciada no evento `foundation-contentloaded`. Para evitar isso, defina a propriedade `customStart` como `True` e acione o evento `rte-start` para iniciar a edição do RTE. Quando essa propriedade é `true`, o RTE não inicia ao clicar e esse é o comportamento padrão.
 
 * `customStart`: Defina esta propriedade Booliana definida no nó de RTE como `True`, para controlar quando iniciar o RTE acionando o evento `rte-start`.
 
@@ -154,7 +159,7 @@ Para obter configurações detalhadas dos plug-ins RTE, consulte [como ativar e 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-O [componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem vários plug-ins de RTE usando a interface do usuário como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento. Para obter mais informações, consulte [criar modelos de página](/help/sites-cloud/authoring/page-editor/templates.md) e a [documentação do desenvolvedor dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=pt-BR).
+O [componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem vários plug-ins de RTE usando a interface do usuário como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento. Para obter mais informações, consulte [criar modelos de página](/help/sites-cloud/authoring/page-editor/templates.md) e a [documentação do desenvolvedor dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >Para fins de referência, os componentes de Texto padrão (fornecidos como parte de uma instalação padrão) podem ser encontrados em:
 >
@@ -228,7 +233,7 @@ As opções disponíveis no fluxo de RTE downstream das configurações da inter
 * Se a configuração da interface do usuário do RTE tiver sido removida ou não ativar um item, a política de conteúdo não poderá configurá-lo.
 * Um autor tem acesso somente a essas funcionalidades, conforme disponibilizado pelas configurações da interface do usuário e pelas políticas de conteúdo.
 
-Como exemplo, você pode ver a [documentação do Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR#the-text-component-and-the-rich-text-editor).
+Como exemplo, você pode ver a [documentação do Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizar o mapeamento entre ícones e comandos da barra de ferramentas {#iconstoolbar}
 
