@@ -25,7 +25,7 @@ Você pode configurar esses intervalos de tempo usando duas opções de agendame
 
 Os recursos de atualização de períodos livres e horários silenciosos são configurados com base em &quot;por programa&quot;.
 
-Além disso, para obter informações sobre períodos programados de manutenção automática do AEM as a Cloud Service, consulte a página [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Além disso, para obter informações sobre períodos programados de manutenção automática do AEM as a Cloud Service, consulte a página [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ## Horas de silêncio {#quiet-hours}
 
