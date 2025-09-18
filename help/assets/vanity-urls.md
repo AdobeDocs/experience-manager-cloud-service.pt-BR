@@ -3,9 +3,9 @@ title: Criar URLs personalizados usando o Dynamic Media com recursos OpenAPI
 description: Use os recursos OpenAPI do Dynamic Media para transformar seus URLs de entrega de ativos longos em URLs personalizados curtos e de marca. Um URL personalizado é uma versão curta, limpa, fácil de lembrar e legível do seu URL de entrega complexo. Você pode incluir o nome da sua marca, nomes de produtos e palavras-chave relevantes no URL personalizado para aumentar a visibilidade da sua marca e o envolvimento do usuário
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 54c592e4db4cbaa884e298cc5e81115cd5573b28
+source-git-commit: e4ee2e3f251f585a3e057c04d62039a0c2e8bef1
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Execute as seguintes etapas para criar uma variável de ambiente e mapeá-la par
 
 1. [Navegue até a página de configurações do seu ambiente Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) e faça o seguinte:
    1. Adicionar a variável `ASSET_DELIVERY_VANITY_ID`. Esta é a chave.
-   1. Use o campo de valor para mapear para a propriedade de metadados que contém a ID personalizada. O mapeamento segue o formato `dc:<your-metadata-property>`, em que o prefixo do mapeamento de metadados (como dc:) varia de acordo com a propriedade de configuração de metadados.
+   1. Use o campo de valor para mapear para a propriedade de metadados do ativo que contém a ID personalizada. O mapeamento segue o formato `dc:<your-metadata-property>`, em que o prefixo do mapeamento de metadados (como dc:) varia com base na propriedade de configuração dos metadados do ativo.
       ![Variável ASSET_DELIVERY_VANITY_ID](/help/assets/assets/environment-config.png)
 1. Salve as alterações para reiniciar os pods em seu ambiente.
 
@@ -134,7 +134,7 @@ Quando o usuário clica na URL personalizada, o [!DNL Dynamic Media with OpenAPI
 
 ## Dimensionar usando URLs personalizados{#scale-using-vanity-url}
 
-O AEM as a Cloud Service permite que você [personalize os nomes DNS e CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) em seus endereços Web. Use esses recursos do AEMCS com suas URLs personalizadas para transformá-las em endereços da Web exclusivos que sejam limpos, descritivos, de marca, intuitivos e forneçam os [benefícios mencionados acima](#key-benefits).
+O AEM as a Cloud Service permite que você [personalize os nomes DNS e CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) em seus endereços Web. Use esses recursos do AEMCS com suas URLs personalizadas para transformá-las em endereços da Web exclusivos que sejam limpos, descritivos, de marca, intuitivos e forneçam os [benefícios mencionados acima](#key-benefits).
 
 Consulte o seguinte URL personalizado e seus componentes personalizáveis:
 
@@ -184,7 +184,7 @@ Consulte o seguinte URL personalizado e seus componentes personalizáveis:
 Execute as seguintes etapas para regravar as regras de CDN para delivery:
 
 1. Navegue até o repositório do AEM para criar um arquivo de configuração YAML.
-2. Execute as etapas na seção [configuração](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para definir regras CDN e implantar a configuração por meio do pipeline de configuração do Cloud Manager.
+2. Execute as etapas na seção [configuração](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para definir regras CDN e implantar a configuração por meio do pipeline de configuração do Cloud Manager.
 Siga estas [práticas recomendadas](#best-practices) para criar seu caminho de domínio.
    [Saiba mais sobre as regras de regravação da CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
