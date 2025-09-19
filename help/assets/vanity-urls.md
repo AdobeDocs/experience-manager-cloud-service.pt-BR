@@ -3,9 +3,9 @@ title: Criar URLs personalizados usando o Dynamic Media com recursos OpenAPI
 description: Use os recursos OpenAPI do Dynamic Media para transformar seus URLs de entrega de ativos longos em URLs personalizados curtos e de marca. Um URL personalizado é uma versão curta, limpa, fácil de lembrar e legível do seu URL de entrega complexo. Você pode incluir o nome da sua marca, nomes de produtos e palavras-chave relevantes no URL personalizado para aumentar a visibilidade da sua marca e o envolvimento do usuário
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e4ee2e3f251f585a3e057c04d62039a0c2e8bef1
+source-git-commit: d9223a8af5d531e66a91e9054201de765be50961
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1380'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Usar URLs personalizados{#vanity-urls}
 
-Use o [!DNL Dynamic Media OpenAPI capabilities] para transformar suas URLs de entrega de ativos longos em URLs personalizadas curtas e de marca. Os URLs de entrega de ativos padrão incluem UUIDs de ativos gerados pelo sistema que tornam o URL de entrega complexo, difícil de lembrar e compartilhar. Substitua esses UUIDs de ativos por identificadores simples (IDs personalizadas) para gerar um URL personalizado. Um URL personalizado é uma versão curta, limpa e legível do URL de entrega complexo.
+Use o [!DNL Dynamic Media with OpenAPI capabilities] para transformar suas URLs de entrega de ativos longos em URLs personalizadas curtas e de marca. Os URLs de entrega de ativos padrão incluem UUIDs de ativos gerados pelo sistema que tornam o URL de entrega complexo, difícil de lembrar e compartilhar. Substitua esses UUIDs de ativos por identificadores simples (IDs personalizadas) para gerar um URL personalizado. Um URL personalizado é uma versão curta, limpa e legível do URL de entrega complexo.
 
 Consulte os seguintes formatos de URL para entender a diferença entre eles:
 * [URL de entrega padrão](#standard-urls)
@@ -21,7 +21,7 @@ Consulte os seguintes formatos de URL para entender a diferença entre eles:
 
 As URLs de entrega padrão usam `aaid` seguido por uma UUID, enquanto as URLs personalizadas usam `avid` seguido por um identificador personalizado (identificador personalizado).
 
-Use identificadores personalizados simples e curtos para tornar o URL de entrega curto, limpo, legível, fácil de lembrar e compartilhar. Use o nome da sua marca, nomes de produtos e palavras-chave relevantes como IDs personalizadas para aumentar a visibilidade da sua marca e o engajamento do usuário.
+Use identificadores personalizados simples e curtos para tornar seu URL personalizado curto, limpo, legível, fácil de lembrar e compartilhar. Use o nome da sua marca, nomes de produtos e palavras-chave relevantes como IDs personalizadas para aumentar a visibilidade da sua marca e o engajamento do usuário.
 
 Quando o usuário clica na URL personalizada, o [!DNL Dynamic Media with OpenAPI] mapeia automaticamente para o local do ativo original no momento da assimilação e os resolve corretamente no momento da entrega para o servidor do ativo para o usuário.
 
@@ -130,11 +130,11 @@ Saiba como [copiar o Dynamic Media com URLs de entrega de OpenAPI](/help/assets/
 
 Quando o usuário clica na URL personalizada, o [!DNL Dynamic Media with OpenAPI] mapeia automaticamente a ID personalizada para a UUID do ativo original no momento da assimilação e os resolve corretamente no momento da entrega para fornecer o ativo ao usuário sem atraso. Você pode personalizar o URL personalizado em tempo real sem afetar o desempenho do delivery do ativo.
 
-[Melhore o impacto de seus URLs personalizados usando os recursos avançados de personalização do AEM Cloud Service.](#scale-using-vanity-url)
+[Use os recursos avançados de personalização do AEM Cloud Service com sua URL personalizada para aprimorar o impacto](#scale-using-vanity-url).
 
 ## Dimensionar usando URLs personalizados{#scale-using-vanity-url}
 
-O AEM as a Cloud Service permite que você [personalize os nomes DNS e CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) em seus endereços Web. Use esses recursos do AEMCS com suas URLs personalizadas para transformá-las em endereços da Web exclusivos que sejam limpos, descritivos, de marca, intuitivos e forneçam os [benefícios mencionados acima](#key-benefits).
+O AEM as a Cloud Service permite que você [personalize os nomes DNS e CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) em seus endereços Web. Use esses recursos do AEMCS com suas URLs personalizadas para transformá-las em endereços da Web exclusivos que sejam limpos, descritivos, de marca, intuitivos e forneçam os [benefícios mencionados acima](#key-benefits).
 
 Consulte o seguinte URL personalizado e seus componentes personalizáveis:
 
@@ -184,7 +184,7 @@ Consulte o seguinte URL personalizado e seus componentes personalizáveis:
 Execute as seguintes etapas para regravar as regras de CDN para delivery:
 
 1. Navegue até o repositório do AEM para criar um arquivo de configuração YAML.
-2. Execute as etapas na seção [configuração](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para definir regras CDN e implantar a configuração por meio do pipeline de configuração do Cloud Manager.
+2. Execute as etapas na seção [configuração](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para definir regras CDN e implantar a configuração por meio do pipeline de configuração do Cloud Manager.
 Siga estas [práticas recomendadas](#best-practices) para criar seu caminho de domínio.
    [Saiba mais sobre as regras de regravação da CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
@@ -233,9 +233,9 @@ type: transform
 
 ## Siga as práticas recomendadas para criar URLs personalizados limpos{#best-practices}
 
-Siga estas práticas recomendadas para criar IDs personalizadas, DNS personalizados e nomes de domínio:
+Siga estas práticas recomendadas para criar [IDs personalizadas](#create-vanity-urls), [DNS personalizados](#customize-dns) e [nomes de CDN](#rewrite-cdn-rules):
 
 1. Não use caracteres especiais em IDs personalizadas, como espaços, barras, hifens e muito mais. O sistema substitui caracteres especiais em IDs personalizadas usando um mapeamento predefinido.
-1. Use o nome da sua marca, nomes de produtos e palavras-chave relevantes em suas IDs personalizadas, DNS personalizadas e nomes de domínio para aumentar a visibilidade da sua marca e o envolvimento do usuário.
+1. Use o nome da sua marca, nomes de produtos e palavras-chave relevantes em suas [IDs personalizadas](#create-vanity-urls), [DNS personalizadas](#customize-dns) e [Nomes CDN](#rewrite-cdn-rules) para aumentar a visibilidade da sua marca e o engajamento do usuário.
 1. Use palavras curtas e descritivas ou strings que transmitam significado.
 1. Use textos que convidam usuários para cliques.
