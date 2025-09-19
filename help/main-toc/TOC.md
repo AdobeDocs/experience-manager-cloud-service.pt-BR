@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 8a0d4b6d3228306d28c047ec947c5ce017bda77f
+source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
 workflow-type: tm+mt
-source-wordcount: '6648'
+source-wordcount: '6665'
 ht-degree: 58%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 58%
       + [Exportar fragmentos de conteúdo para o Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportar Fragmentos de experiência para o Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integração ao Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Usando fragmentos de conteúdo no Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=pt-BR)
+      + [Usando fragmentos de conteúdo no Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operacional do AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Ativos {#assets}
    + [Visão geral e novidades](/help/assets/overview.md)
@@ -1013,12 +1013,16 @@ ht-degree: 58%
       + [Gerar variações - Integrado nos editores do AEM](/help/generative-ai/generate-variations-integrated-editor.md)
       + [Gerar variações](/help/generative-ai/generate-variations.md)
    + Forms Experience Builder {#forms-experience-builder}
-      + [Assistente de IA para o AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-      + [Introdução ao Assistente de IA para AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-      + [Introdução ao Assistente de IA para AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-      + [Assistente do AEM Forms AI - Biblioteca de prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-      + [Forms Experience Builder - Práticas recomendadas](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-      + [Forms Experience Builder - Guia de solução de problemas](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
+      + [Forms Experience Builder - Visão geral](/help/forms/experience-builder/product-overview.md)
+      + [Introdução ao Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+      + [Implantar e configurar o Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+      + Como {#forms-experience-builder-how-to}
+         + [Como converter uma imagem em um formulário?](/help/forms/experience-builder/intelligent-import-conversion.md)
+         + [Como configurar envios e integrações de formulários?](/help/forms/experience-builder/form-submission-integration.md)
+         + [Como criar campos inteligentes aprimorados por LLM no Forms Experience Builder?](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
+         + [Como iniciar uma nova conversa por thread no Forms Experience Builder?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+      + [Biblioteca de Prompts](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+      + [Perguntas frequentes](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
    + Visão geral do Screens as a Cloud Service {#overview}
       + [Introdução](/help/screens-cloud/introduction/introduction.md)
@@ -1168,14 +1172,14 @@ ht-degree: 58%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação{#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
@@ -1291,7 +1295,7 @@ ht-degree: 58%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
