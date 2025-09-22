@@ -1,26 +1,26 @@
 ---
-title: Configurar um domínio personalizado para a camada de publicação
-description: Saiba como configurar um domínio personalizado para o nível de publicação no Adobe Cloud Manager.
+title: Configurar um domínio personalizado para a camada de entrega
+description: Saiba como configurar um domínio personalizado para a camada de Entrega no Adobe Cloud Manager.
 exl-id: cc71c8c5-cf42-4092-b0e0-646a2ed0ee54
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: d2859c547c87bd1856ba0e05fac835db434d824c
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 6%
 
 ---
 
-# Configurar um domínio personalizado para o nível de publicação{#configure-custom-domain}
+# Configurar um domínio personalizado para a camada de Entrega{#configure-custom-domain}
 
 No Adobe Cloud Manager, você pode destacar seu site adicionando um domínio personalizado. Embora o AEM as a Cloud Service venha com um domínio padrão, você pode personalizá-lo de acordo com suas necessidades.
 
 ## Antes de começar
 
 * Você deve ter um certificado TLS ou SSL multisSAN (Nome alternativo da entidade).
-* O certificado SSL deve ter SANs distintas em relação ao certificado mapeado para o nível de publicação no mesmo domínio.
+* O certificado SSL deve ter SANs distintas em relação ao certificado mapeado para o nível de entrega no mesmo domínio.
 * A política de certificado deve seguir a Validação Estendida (EV) ou a Validação da Organização (OV), e não a política de Validação de Domínio (DV).
 
 
-## Configurar um domínio personalizado para o nível de publicação
+## Configurar um domínio personalizado para a camada de Entrega
 
 1. Acesse **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Visão geral do programa]** > **[!UICONTROL Certificados SSL]** e adicione seu certificado SSL.
    ![imagem](/help/assets/assets/ssl-certificate.png)
