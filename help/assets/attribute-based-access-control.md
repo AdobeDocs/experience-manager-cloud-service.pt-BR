@@ -3,7 +3,7 @@ title: Controle de acesso baseado em atributos
 description: Saiba como habilitar o controle de acesso baseado em atributos para definir regras baseadas em metadados e definir o nível de acesso aos ativos disponíveis no Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
+source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 0%
@@ -34,7 +34,7 @@ A partir de agora, você não poderá criar regras de controle de acesso baseada
 
 Clique em **Baixar planilha** para baixar e definir regras em uma planilha. Crie um tíquete de suporte do Adobe e forneça as regras definidas na planilha ao Adobe.
 
-[!BADGE Baixar Planilha]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+[!BADGE Baixar Planilha]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 Defina as regras na planilha usando as diretrizes definidas neste artigo.
