@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
+source-git-commit: 7213dfa6f4203d406efb5e0f4ac55fcefa59d388
 workflow-type: tm+mt
 source-wordcount: '1961'
 ht-degree: 8%
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -85,11 +85,11 @@ Crie URLs personalizados para entrega de ativos no DM com OpenAPI, substituindo 
 
 **Componente de Entrada de Data e Hora**
 
-Um [componente de Data e Hora](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) está disponível, permitindo que os usuários selecionem data e hora usando um calendário e uma interface de relógio ou inserindo valores manualmente em um formato com suporte.
+Um [componente de Data e Hora](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) está disponível, permitindo que os usuários selecionem data e hora usando um calendário e uma interface de relógio ou inserindo valores manualmente em um formato com suporte.
 
 **Tratamento de Erros Aprimorado para Carregamentos de Arquivos**
 
-O [componente Anexo de Arquivo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
+O [componente Anexo de Arquivo](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
 
 **Resposta de Erro Especificada para Ação de Envio Personalizada**
 
@@ -129,7 +129,7 @@ Essas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 **Componente de assinatura de assinatura de assinatura**
 
-Agora você pode usar o [componente de Assinatura Escrita](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) para ajudar os usuários a adicionar suas assinaturas a um formulário, como em um formulário de contrato. O componente permite aos usuários desenhar sua assinatura diretamente no formulário usando um mouse, caneta ou tela sensível ao toque.
+Agora você pode usar o [componente de Assinatura Escrita](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) para ajudar os usuários a adicionar suas assinaturas a um formulário, como em um formulário de contrato. O componente permite aos usuários desenhar sua assinatura diretamente no formulário usando um mouse, caneta ou tela sensível ao toque.
 
 **Integração de API direta no Editor de regras**
 
@@ -149,7 +149,8 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. 
+-->
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -161,8 +162,7 @@ A compilação padrão do JavaScript da biblioteca do lado do cliente (clientlib
 
 Várias APIs obsoletas estão direcionando a remoção em 31 de agosto e, portanto, não devem mais ser referenciadas. No início de setembro, as notificações do Centro de ações serão enviadas se o uso da API for detectado e, após 25 de setembro, os avisos serão exibidos durante os builds do Cloud Manager para reforçar a importância de remover o uso. Consulte o [artigo de descontinuação](/help/release-notes/deprecated-removed-features.md#aem-apis) para obter detalhes completos, mas, para conveniência, essas APIs estão listadas abaixo:
 
-<details>
-  <summary>Expanda para ver as descontinuações da API Java</summary>
++++ Expanda para ver as descontinuações da API Java
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -181,7 +181,7 @@ Várias APIs obsoletas estão direcionando a remoção em 31 de agosto e, portan
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
-</details>
++++
 
 <!--
 OSGi properties:
@@ -248,7 +248,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
