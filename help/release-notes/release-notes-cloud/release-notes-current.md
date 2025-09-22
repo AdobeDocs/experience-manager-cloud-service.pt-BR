@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -85,11 +85,11 @@ Crie URLs personalizados para entrega de ativos no DM com OpenAPI, substituindo 
 
 **Componente de Entrada de Data e Hora**
 
-Um [componente de Data e Hora](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) está disponível, permitindo que os usuários selecionem data e hora usando um calendário e uma interface de relógio ou inserindo valores manualmente em um formato com suporte.
+Um [componente de Data e Hora](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) está disponível, permitindo que os usuários selecionem data e hora usando um calendário e uma interface de relógio ou inserindo valores manualmente em um formato com suporte.
 
 **Tratamento de Erros Aprimorado para Carregamentos de Arquivos**
 
-O [componente Anexo de Arquivo](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
+O [componente Anexo de Arquivo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
 
 **Resposta de Erro Especificada para Ação de Envio Personalizada**
 
@@ -129,7 +129,7 @@ Essas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 **Componente de assinatura de assinatura de assinatura**
 
-Agora você pode usar o [componente de Assinatura Escrita](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) para ajudar os usuários a adicionar suas assinaturas a um formulário, como em um formulário de contrato. O componente permite aos usuários desenhar sua assinatura diretamente no formulário usando um mouse, caneta ou tela sensível ao toque.
+Agora você pode usar o [componente de Assinatura Escrita](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) para ajudar os usuários a adicionar suas assinaturas a um formulário, como em um formulário de contrato. O componente permite aos usuários desenhar sua assinatura diretamente no formulário usando um mouse, caneta ou tela sensível ao toque.
 
 **Integração de API direta no Editor de regras**
 
@@ -248,7 +248,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
