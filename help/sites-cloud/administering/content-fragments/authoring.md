@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
 workflow-type: tm+mt
-source-wordcount: '2824'
+source-wordcount: '2823'
 ht-degree: 3%
 
 ---
@@ -176,9 +176,9 @@ Consulte [Gerar variações - Integrado em editores do AEM](/help/generative-ai/
 
 Para excluir uma variação do fragmento de conteúdo:
 
-    >[!NOTE]
-    >
-    >Não é possível excluir **Principal*.
+>[!NOTE]
+>
+>Você não pode excluir **Principal**.
 
 1. Selecione a Variação.
 
@@ -267,7 +267,7 @@ O campo Várias linhas é aberto em tela cheia e:
 
   >[!CAUTION]
   >
-  >A sincronização só está disponível para copiar alterações *de **Main**&#x200B;para a variação*.
+  >A sincronização só está disponível para copiar alterações *de **Main**para a variação*.
   >
   >A transferência de alterações *de uma variação para **Main*** não está disponível como uma opção.
 
@@ -551,7 +551,7 @@ O painel **Campos** lista todos os campos dentro do Fragmento de conteúdo. O í
    <td><p> <img src="assets/cf-authoring-date-time-icon.png"> </p></td>
   </tr>
   <tr>
-   <td><p><b>Lista discriminada</b></p> </td>
+   <td><p><b>Enumeração</b></p> </td>
    <td><p> <img src="assets/cf-authoring-enumeration-icon.png"> </p></td>
   </tr>
   <tr>
