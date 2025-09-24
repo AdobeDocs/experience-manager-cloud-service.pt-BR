@@ -8,10 +8,11 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 24d78f19932a30026c0357db646124c9dd1fa759
+exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
+source-git-commit: 51318172b826eb81dff86b3e8dfb6f2ded648c4c
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 49%
+source-wordcount: '1052'
+ht-degree: 48%
 
 ---
 
@@ -81,11 +82,11 @@ Os pipelines somente de produção e somente de preparo são criados de maneira 
 
    ![Guia Código Source na caixa de diálogo Adicionar pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
-1. Na guia **Auditoria de Experiência**, a URL do Site especificada é a URL de publicação que a Cloud Manager audita quanto à qualidade da página.
+1. Na guia **Auditoria de Experiência**, a URL do Site especificada é a URL publicada que a Cloud Manager audita quanto à qualidade da página.
 
 1. No campo **Caminho da página**, especifique quais páginas deseja auditar e clique em **![Ícone Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) Adicionar página**.
 
-   A Auditoria de experiência analisa cada caminho adicionado em termos de desempenho, acessibilidade, aplicativos web progressivos, práticas recomendadas, SEO e outras verificações de qualidade. Você pode adicionar vários caminhos e remover qualquer um clicando em ![ícone de tamanho cruzado 400](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
+   A Auditoria de experiência analisa cada caminho adicionado para verificar o desempenho, a acessibilidade, os aplicativos web progressivos, as práticas recomendadas, o SEO e outras verificações de qualidade. Você pode adicionar vários caminhos e remover qualquer um clicando em ![ícone de tamanho cruzado 400](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
 
    ![Guia Auditoria de Experiência na caixa de diálogo Adicionar Pipeline de Não Produção](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
 
@@ -94,13 +95,13 @@ Os pipelines somente de produção e somente de preparo são criados de maneira 
 
 ### Criar um pipeline somente de produção {#prod-only}
 
-1. Na caixa de diálogo **Adicionar Pipeline Somente de Produção**, no campo de texto **Nome do Pipeline**, digite o nome de texto livre do pipeline.
+1. Na caixa de diálogo **Adicionar Pipeline Somente Produção**, no campo de texto **Nome do Pipeline**, digite o nome de texto livre do pipeline.
 1. No campo **Nome do pipeline**, digite o nome desejado.
 1. Em **Opções de Implantação de Produção**, selecione **Pausar antes de implantar em Produção**.
 
    Essa opção insere um portão de aprovação manual logo antes da etapa de produção. O pipeline é interrompido e aguarda um aprovador (como um Gerente de implantação ou um Proprietário da empresa) aprovar ou cancelar a implantação de produção.
 
-   Use isso para controle de alterações ou verificações de última hora.
+   Use para controle de alterações ou verificações de última hora.
 
 1. Clique em **Salvar** para criar o pipeline somente de produção com essas opções.
 
@@ -129,7 +130,7 @@ Nos detalhes da execução, um botão **Promover compilação** aparece após as
 
 ![Execução de pipeline somente de preparo](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-Ao clicar em **Promover build**, se existir um pipeline somente de preparo, uma caixa de diálogo de confirmação será aberta para iniciá-lo. Clique em **Executar**.
+Ao clicar em **Promover compilação**, uma caixa de diálogo é aberta para você confirmar a execução do pipeline somente de produção relacionado. Clique em **Executar** para iniciá-lo.
 
 ![Promover Compilação - Caixa de diálogo Executar Pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
@@ -144,4 +145,3 @@ Para um pipeline **somente de produção**, o Cloud Manager exibe os artefatos d
 
 
 ![Detalhes do artefato](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
-
