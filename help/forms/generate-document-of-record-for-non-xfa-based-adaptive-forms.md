@@ -4,9 +4,9 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) do A
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
 workflow-type: tm+mt
-source-wordcount: '4221'
+source-wordcount: '4217'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artigo |
 
 ## Visão geral {#overview}
@@ -142,7 +142,7 @@ Agora, quando o formulário adaptável for enviado, um documento de registro atu
 
 Lembre-se das seguintes considerações e limitações ao trabalhar no Documento de registro do Adaptive Forms.
 
-* Os modelos de documento de registro não são compatíveis com rich text. Portanto, qualquer rich text no Formulário adaptável estático ou nas informações preenchidas pelo usuário aparece como texto simples no Documento de registro.
+* **Suporte a rich text**: o documento de registro oferece suporte a marcas de marcação HTML em campos de rich text. Para obter detalhes completos sobre as marcas com suporte e considerações de acessibilidade, consulte [Marcações do HTML com suporte no Documento de Registro](html-markup-tags-support-in-document-of-record.md).
 * Os fragmentos de documento em um Formulário adaptável não aparecem no Documento de registro. No entanto, os fragmentos de formulário adaptável são compatíveis.
 * Não há suporte para vinculação de conteúdo no Documento de registro gerado para o Formulário adaptável baseado em Esquema XML.
 * A versão localizada do documento de registro é criada sob demanda para um local quando o usuário solicita a renderização do documento de registro. A localização do documento de registro ocorre juntamente com a localização do formulário adaptável. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
@@ -405,9 +405,9 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
 ## Suporte a documento de registro no editor de formulário adaptável {#dor-support-in-adaptiveform}
 
-Você pode configurar o modelo [!UICONTROL Documento de registro] diretamente do Criador de modelos de formulários adaptáveis ou do Criador de modelos de formulários adaptáveis.
+Você pode configurar o modelo [!UICONTROL Documento de registro] diretamente do editor de modelo de Formulário adaptável ou do editor de modelo de Formulário adaptável.
 
-Execute as seguintes etapas a partir da instância de autor do Criador de formulários adaptáveis:
+Execute as seguintes etapas a partir da instância de autor do editor de Formulário adaptável:
 
 1. Selecione o componente **[!UICONTROL Container de Formulário Adaptável (raiz)]**.
 1. Clique no ![Ícone de Configurar](/help/forms/assets/configure-icon.svg) para abrir as **[!UICONTROL Propriedades]** do container do formulário adaptável.
