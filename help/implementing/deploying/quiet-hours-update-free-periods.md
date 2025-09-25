@@ -4,7 +4,8 @@ description: Saiba como minimizar o impacto operacional das atualizações autom
 feature: Deploying
 role: Admin
 badge: label="Disponibilidade limitada" type="Positive"
-source-git-commit: 44696aef63b7a9882b001a33ea24a815183996a8
+exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
+source-git-commit: 350b288d30b3fb8d9d308dbd279f579cec0b292c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 # Período de silêncio e atualização dos períodos livres {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Esse recurso estará disponível como um recurso de **Disponibilidade limitada** a partir de 29 de setembro. Envie um email para [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para ativar o recurso em seus programas.
+>Esse recurso estará disponível como um recurso de **Disponibilidade limitada** a partir de 25 de setembro. Envie um email para [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para ativar o recurso em seus programas.
 
 As [atualizações automáticas de manutenção](/help/implementing/deploying/aem-version-updates.md) do AEM as a Cloud Service garantem que suas instâncias permaneçam seguras e atualizadas com as versões de manutenção mais recentes. Dito isso, em alguns casos (como eventos de ativação), pode ser necessário &quot;proteger&quot; essas horas de trabalho críticas contra possíveis interrupções. Dessa forma, a AEM as a Cloud Service oferece a opção de definir um período no qual as atualizações automáticas não ocorrem para seus programas em andamento.
 
@@ -25,7 +26,7 @@ Você pode configurar esses intervalos de tempo usando duas opções de agendame
 
 Os recursos de atualização de períodos livres e horários silenciosos são configurados com base em &quot;por programa&quot;.
 
-Além disso, para obter informações sobre períodos programados de manutenção automática do AEM as a Cloud Service, consulte a página [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Além disso, para obter informações sobre períodos programados de manutenção automática do AEM as a Cloud Service, consulte a página [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ## Horas de silêncio {#quiet-hours}
 
