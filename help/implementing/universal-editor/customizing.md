@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para personalizar o Editor 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,14 @@ Determinados fluxos de trabalho de criação podem precisar limitar a capacidade
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## Desativação de Copiar e Colar {#copy-paste}
+
+Determinados fluxos de trabalho de criação podem precisar limitar a capacidade do autor de conteúdo de copiar e colar componentes. Você pode desabilitar os [ícones copiar e colar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) adicionando os seguintes metadados.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="copy"/>
 ```
 
 ## Alterando seu endpoint {#custom-endpoint}
@@ -107,7 +115,7 @@ As condições podem ser definidas usando o [esquema JsonLogic](https://jsonlogi
 
 ## URLs de visualização personalizados {#custom-preview-urls}
 
-Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Para fazer isso, basta incluir o URL de visualização desejado em uma meta tag do aplicativo instrumentado, como no exemplo a seguir.
 

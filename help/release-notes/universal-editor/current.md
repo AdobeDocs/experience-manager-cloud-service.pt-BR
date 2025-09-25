@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2025.09.18
-description: Estas são as notas de versão do Universal Editor de 2025.09.18.
+title: Notas de versão do Universal Editor 2025.09.25
+description: Estas são as notas de versão do Universal Editor de 25/09/2025.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 34ae65fb0f6f69ac1983484da6ed020453ea4419
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
 
-# Notas de versão do Universal Editor 2025.09.18 {#release-notes}
+# Notas de versão do Universal Editor 2025.09.25 {#release-notes}
 
-Estas são as notas de versão do editor universal de 18 de setembro de 2025.
+Estas são as notas de versão do Universal Editor de 25 de setembro de 2025.
 
 >[!TIP]
 >
@@ -22,8 +22,8 @@ Estas são as notas de versão do editor universal de 18 de setembro de 2025.
 
 ## Novidades {#what-is-new}
 
-* [universal-editor-service.adobe.io](http://universal-editor-service.adobe.io/) agora é usado como ponto de extremidade de serviço para o AMS, em vez de precisar hospedar o serviço localmente.
-* Agora, os vários campos compostos são permitidos durante a criação no AEM.
+* [O recurso de copiar e colar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) agora pode ser [desabilitado usando uma metatag.](/help/implementing/universal-editor/customizing.md#copy-paste)
+* [Ao usar o Editor Universal em ambientes AEM hospedados (AMS),](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) o Editor Universal agora usará o serviço editor universal hospedado pela AEM e não dependerá mais de uma instalação local do AMS, garantindo que você sempre tenha o serviço Editor Universal mais recente automaticamente.
 
 ## Recursos da adoção antecipada {#early-adopter}
 
@@ -39,5 +39,5 @@ Agora, copiar e colar são possíveis em várias páginas, além de dentro da me
 
 ## Outras melhorias {#other-improvements}
 
-* Várias pequenas melhorias de desempenho foram implementadas em torno do Universal Editor funciona com o AEM como um sistema de back-end.
-* Agora os fragmentos de conteúdo são publicados usando a API aberta, o que traz melhorias de desempenho e consistência à forma como o Editor de fragmentos de conteúdo e o console publicam.
+* O painel de propriedades foi corrigido ao usá-lo com a Criação de documento.
+* Foi corrigido um problema ao editar vários campos de um Fragmento de conteúdo ao usar o MSM.
