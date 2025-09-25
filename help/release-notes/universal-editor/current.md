@@ -23,7 +23,7 @@ Estas são as notas de versão do Universal Editor de 25 de setembro de 2025.
 ## Novidades {#what-is-new}
 
 * [O recurso de copiar e colar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) agora pode ser [desabilitado usando uma metatag.](/help/implementing/universal-editor/customizing.md#copy-paste)
-* [Ao usar o Editor Universal em ambientes AEM hospedados (AMS),](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) o Editor Universal agora usará o serviço editor universal hospedado pela AEM e não dependerá mais de uma instalação local do AMS, garantindo que você sempre tenha o serviço Editor Universal mais recente automaticamente.
+* [Ao usar o Editor Universal em ambientes AEM hospedados (AMS),](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) o Editor Universal agora usará o serviço editor universal hospedado pela AEM e não dependerá mais de uma instalação local do AMS, garantindo que você sempre tenha o serviço Editor Universal mais recente automaticamente.
 
 ## Recursos da adoção antecipada {#early-adopter}
 
