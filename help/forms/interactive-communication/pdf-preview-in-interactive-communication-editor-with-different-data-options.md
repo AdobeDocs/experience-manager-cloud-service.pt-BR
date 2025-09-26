@@ -53,7 +53,7 @@ Visualize comunicações interativas sem dados, dados locais ou dados de amostra
 
 +++&#x200B;2. Visualizar com dados JSON locais
 
-2.1. Prepare um arquivo JSON estruturado. Para referência, você pode copiar os dados de amostra do esquema JSON [(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) usado para a comunicação.
+2.1. Prepare um arquivo JSON estruturado. Para referência, você pode copiar os dados de amostra do esquema JSON [(FDM)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) usado para a comunicação.
 
 2.2. No Editor IC, vá para **Visualização do PDF** > Usando Dados Locais.
 

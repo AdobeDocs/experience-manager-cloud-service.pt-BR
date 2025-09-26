@@ -44,7 +44,7 @@ Antes de começar a adicionar uma função personalizada ao Adaptive Forms, veri
 
 ## Criar uma função personalizada
 
-Crie uma biblioteca do cliente para chamar funções personalizadas no editor de regras. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+Crie uma biblioteca do cliente para chamar funções personalizadas no editor de regras. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=pt-BR#developing).
 
 As etapas para criar funções personalizadas são:
 
@@ -57,7 +57,7 @@ As etapas para criar funções personalizadas são:
 
 **Clonar o Repositório**
 
-Clonar seu [Repositório as a Cloud Service do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
+Clonar seu [Repositório as a Cloud Service do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git):
 
 1. Abra a linha de comando ou a janela do terminal.
 
@@ -171,7 +171,7 @@ Implante o AEM as a Cloud Service, [diretório do projeto AEMaaCS], no seu ambie
 
    1. Acione uma implantação do seu código por meio do pipeline de pilha completa existente. Isso cria e implanta automaticamente o código atualizado.
 
-Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
+Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline).
 
 Depois que o pipeline for executado com êxito, a função personalizada adicionada à biblioteca do cliente ficará disponível em seu [editor de regras de Formulário adaptável](/help/forms/rule-editor-core-components.md).
 
