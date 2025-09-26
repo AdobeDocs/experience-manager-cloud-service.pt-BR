@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '2837'
+source-wordcount: '2940'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Quando alguém envia um formulário em seu site criado com o AEM Adaptive Forms,
 
 Ao simplificar o processo de transferência de dados, o conector pode ajudar você a melhorar as taxas de conversão do seu site. Ao enviar automaticamente dados de clientes potenciais para o Marketo, você pode garantir que esses clientes em potencial qualificados sejam rapidamente inseridos em seus programas de criação.
 
-Basicamente, o AEM Forms para o Marketo Connector ajuda você a aproveitar os pontos fortes de ambas as plataformas para criar um funil de marketing mais eficiente e eficaz.
+Basicamente, o AEM Forms para o Marketo Connector ajuda você a aproveitar os pontos fortes de ambas as plataformas para criar uma funnel de marketing mais eficiente e eficaz.
 
 Pronto para começar? Os artigos a seguir fornecem instruções detalhadas sobre como usar a inovação.
 
@@ -117,6 +117,11 @@ As Comunicações interativas na nuvem são uma solução poderosa para criar, g
 * **Flexibilidade de Formato**: Saída para os formatos PDF, HTML, PCL, PostScript® e ZPL.
 
 * **Editor de regras**: crie ações dinâmicas orientadas por dados diretamente nos seus documentos usando uma interface intuitiva do tipo apontar-e-clicar. Defina facilmente a lógica condicional, automatize fluxos de trabalho e personalize o conteúdo sem gravar código.
+
+* **Visualização do PDF:** visualize a comunicação interativa sem dados, arquivos JSON locais ou modelos de dados para testes flexíveis orientados por dados.
+* **Fontes Personalizadas** incorpore fontes personalizadas ou aprovadas pela organização para garantir uma renderização consistente e com a marca PDF em todos os dispositivos.
+* **Importar e exportar:** migre e reutilize facilmente a comunicação interativa com seus fragmentos e modelos de dados entre ambientes.
+
 
 #### Casos de uso:
 
@@ -161,7 +166,7 @@ Pronto para começar? A documentação de [Introdução aos formulários HTML5](
 
 Acelere o desenvolvimento do AEM Forms Edge Delivery Services com a ferramenta AEM Forms CLI. Essa interface de linha de comando permite gerar instantaneamente o código e a fiação necessários para iniciar o desenvolvimento de componentes personalizados — sem chapas metálicas, sem complicações.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **Principais recursos:**
 
@@ -238,7 +243,7 @@ A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas 
 
 Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
 
-Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### APIs Doc Assurance
 
@@ -283,6 +288,10 @@ O armazenamento de PDFs no Armazenamento Azure Blob permite o gerenciamento cent
 * **Segurança aprimorada**: ao aproveitar os recursos de segurança internos do Azure, como criptografia em repouso e RBAC (controle de acesso baseado em função), os documentos confidenciais permanecem protegidos durante o armazenamento.
 
 * **Caminhos de Armazenamento Personalizáveis**: a capacidade de definir caminhos de diretório personalizados garante que os PDFs gerados sejam armazenados em locais organizados e específicos do aplicativo, melhorando o gerenciamento de arquivos.
+
+### Aprimoramentos no Editor de regras visuais
+
+* O Editor de regras visuais no Adaptive Forms agora oferece suporte à integração de API direta [sem exigir um Modelo de dados de formulário](/help/forms/api-integration-in-rule-editor.md). Você pode se conectar a um endpoint de API inserindo o URL JSON ou importando a configuração usando um comando cURL. Após a integração, a API pode ser invocada usando a ação `Invoke Service`.
 
 ## Consulte também:
 

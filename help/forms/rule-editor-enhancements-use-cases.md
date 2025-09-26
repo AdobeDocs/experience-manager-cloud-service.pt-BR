@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -22,12 +22,12 @@ A tabela abaixo lista as melhorias recentes feitas ao editor de regras no Adapti
 
 | Aprimoramento | Descrição | Vantagens |
 |---|----|---|
-| **Validação usando o método `validate()`** | Disponível na lista de funções para validar campos individuais, painéis ou o formulário inteiro. | - Validação granular no nível de painel, campo ou formulário <br> - Melhor experiência do usuário com mensagens de erro direcionadas <br> - Impede a progressão com dados incompletos <br> - Reduz erros de envio de formulário |
-| **Baixar DOR** | Função integrada disponível no editor de regras para baixar o Documento de registro (DoR). | - Não é necessário desenvolvimento personalizado para baixar o DoR <br> - Experiência de download consistente em todos os formulários |
-| **Variáveis dinâmicas** | Crie regras usando variáveis que são alteradas com base na entrada do usuário ou em outras condições. | - Habilita condições de regra flexíveis <br> - Reduz a necessidade de lógica duplicada <br> - Elimina a necessidade de criar campos ocultos |
-| **Regras personalizadas baseadas em eventos** | Defina regras que respondam a eventos personalizados além dos acionadores padrão. | - Oferece suporte a casos de uso avançados <br> - Maior controle sobre quando e como as regras são executadas <br> - Melhora a interatividade |
-| **Execução do painel repetível com reconhecimento de contexto** | As regras agora são executadas no contexto correto para cada painel repetido, em vez de somente na última instância. | - Aplicativo de regra preciso para cada instância de repetição <br> - Reduz erros nas seções dinâmicas <br> - Melhora a experiência do usuário com conteúdo repetido |
-| **Suporte para cadeia de caracteres de consulta, UTM e parâmetros do navegador** | Crie regras que adaptam o comportamento do formulário com base em parâmetros de URL ou valores específicos do navegador. | - Habilita a personalização com base na origem ou no ambiente <br> - Útil para fluxos de marketing ou específicos de rastreamento <br> - Não há necessidade de script extra ou personalização |
+| [Validação usando o método validate()](#validate-method-in-function-list) | Disponível na lista de funções para validar campos individuais, painéis ou o formulário inteiro. | - Validação granular no nível de painel, campo ou formulário <br> - Melhor experiência do usuário com mensagens de erro direcionadas <br> - Impede a progressão com dados incompletos <br> - Reduz erros de envio de formulário |
+| [Baixar documento de registro](#download-document-of-record) | Função integrada disponível no editor de regras para baixar o Documento de registro (DoR). | - Não é necessário desenvolvimento personalizado para baixar o DoR <br> - Experiência de download consistente em todos os formulários |
+| [Variáveis dinâmicas](#support-for-dynamic-variables-in-rules) | Crie regras usando variáveis que são alteradas com base na entrada do usuário ou em outras condições. | - Habilita condições de regra flexíveis <br> - Reduz a necessidade de lógica duplicada <br> - Elimina a necessidade de criar campos ocultos |
+| [Regras personalizadas baseadas em eventos](#custom-event-based-rules-support) | Defina regras que respondam a eventos personalizados além dos acionadores padrão. | - Oferece suporte a casos de uso avançados <br> - Maior controle sobre quando e como as regras são executadas <br> - Melhora a interatividade |
+| [Execução do painel repetível com reconhecimento de contexto](#context-based-rule-execution-for-repeatable-panels) | As regras agora são executadas no contexto correto para cada painel repetido, em vez de somente na última instância. | - Aplicativo de regra preciso para cada instância de repetição <br> - Reduz erros nas seções dinâmicas <br> - Melhora a experiência do usuário com conteúdo repetido |
+| [Suporte para cadeia de caracteres de consulta, UTM e parâmetros do navegador](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Crie regras que adaptam o comportamento do formulário com base em parâmetros de URL ou valores específicos do navegador. | - Habilita a personalização com base na origem ou no ambiente <br> - Útil para fluxos de marketing ou específicos de rastreamento <br> - Não há necessidade de script extra ou personalização |
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Na regra acima, o botão **Avançar** verifica se os campos na seção **Detalhe
 >
 >Você pode usar o método **validate()** em formulários, fragmentos ou campos individuais. Quando um fragmento é incluído em um formulário, o formulário e o fragmento são exibidos como opções no contexto de validação. Nesse caso, o fragmento se refere aos campos dentro dele, enquanto o formulário se refere ao formulário principal no qual o fragmento é incorporado.
 
-## DownloadDor como função OOTB no Editor de regras
+## Baixar documento de registro
 
 Usar a função pronta para uso (OOTB) **DownloadDor()** no Editor de regras permite que o usuário baixe o Documento de registro, se o formulário estiver configurado para gerar o Documento de registro.
 
@@ -124,7 +124,7 @@ O campo **Custo Total da Remessa** é atualizado dinamicamente para refletir o c
 >[!NOTE]
 >
 > Você também pode adicionar a função **Obter valor da variável** na condição Quando.
-> &#x200B;> ![Função Get Variable Value em When condition](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
+> > ![Função Get Variable Value em When condition](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 Essa abordagem permite cálculos dinâmicos em tempo real sem adicionar campos extras ao formulário, mantendo a estrutura limpa e fácil de usar.
 

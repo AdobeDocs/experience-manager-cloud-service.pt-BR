@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: chame os aprimoramentos do serviço no VRE, preenchendo as opções suspensas usando invocar serviço, Defina o painel repetível usando a saída de invocar serviço, Defina o painel usando a saída de invocar serviço, Use o parâmetro de saída de invocar serviço para validar outro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1800'
 ht-degree: 1%
 
 ---
@@ -78,6 +78,7 @@ A tabela abaixo descreve alguns cenários nos quais o **Chamar Serviço** pode s
 | **Definir painel repetível usando a saída de Invocar Serviço** | Configura um painel repetível usando dados da saída Chamar serviço, permitindo painéis dinâmicos. [Clique aqui](#use-case-2-set-repeatable-panel-using-output-of-invoke-service) para ver a implementação. |
 | **Definir o painel usando a saída de Chamar Serviço** | Define o conteúdo ou a visibilidade de um painel usando valores específicos da saída Chamar serviço. [Clique aqui](#use-case-3-set-panel-using-output-of-invoke-service) para ver a implementação. |
 | **Use o parâmetro de saída do Invoke Service para validar outros campos** | Usa parâmetros de saída específicos do serviço de chamada para validar os campos de formulário. [Clique aqui](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields) para ver a implementação. |
+| **Usar carga do evento na ação Navegar para no Serviço de Chamada** | Usa a carga do evento para lidar com respostas de sucesso e falha e para transmitir dados para a ação Navegar para durante a navegação. [Clique aqui](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) para ver a implementação. |
 
 Crie um formulário `Get Information` que recupere valores com base na entrada inserida na caixa de texto `Pet ID`. A captura de tela abaixo mostra o formulário usado nesses casos de uso:
 
@@ -142,7 +143,6 @@ Vamos publicar o seguinte JSON usando o serviço [addPet](https://petstore.swagg
         "status": "available"
     }
 ```
-
 
 As regras e a lógica são implementadas usando a ação **Invocar Serviço** no editor de regras na caixa de texto `Pet ID` para demonstrar os casos de uso mencionados.
 
@@ -222,9 +222,38 @@ Digite `102` na caixa de texto `Pet ID` e o botão **Enviar** ficará oculto.
 
 ![Saída](/help/forms/assets/output4.png)
 
+### Caso de uso 5: Carga útil do evento de uso em Navegar para ação em Chamar serviço
+
+Este caso de uso demonstra como configurar uma regra no botão **Enviar** que chama um **Chamar Serviço** e redireciona o usuário para outra página usando a ação **Navegar para**.
+
+#### Implementação
+
+Crie uma regra no botão **Enviar** para invocar o serviço de API `redirect-api`. Este serviço é responsável por redirecionar o usuário para o formulário **Fale Conosco**.
+
+Você pode integrar diretamente uma API como o serviço de API `redirect-api` no Editor de regras usando os dados JSON fornecidos abaixo:
+
+```json
+{
+  "id": "1",
+  "path": "/content/dam/formsanddocuments/contact-detail/jcr:content?wcmmode=disabled"
+}
+```
+
 >[!NOTE]
 >
-> Você também pode [integrar a API diretamente na interface do Editor de regras](/help/forms/api-integration-in-rule-editor.md) sem usar um modelo de dados de formulário predefinido.
+> Para saber como integrar a API diretamente na interface do Editor de regras, [clique aqui](/help/forms/api-integration-in-rule-editor.md) sem usar um Modelo de dados de formulário predefinido.
+
+Em **[!UICONTROL Adicionar Manipulador de Êxito]**, configure a ação **Navegar para** para redirecionar o usuário para a página **Fale Conosco** usando o parâmetro `Event Payload`. Aqui, o usuário pode enviar seus detalhes de contato.
+
+![Carga do evento](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+
+Opcionalmente, configure um manipulador de falhas para exibir uma mensagem de erro se a chamada de serviço falhar.
+
+#### Saída
+
+Quando o botão **Enviar** é clicado, o serviço de API `redirect-api` é chamado. Após o sucesso, o usuário será redirecionado para a página **Fale Conosco**.
+
+![Saída de carga do evento](/help/forms/assets/output5.gif)
 
 ## Perguntas frequentes
 

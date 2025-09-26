@@ -5,9 +5,9 @@ keywords: Adicionar uma função personalizada, usar uma função personalizada,
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,8 @@ Este artigo orienta você pelas etapas da criação de funções personalizadas 
    * Parâmetros padrão
    * Parâmetros rest
 
+* Os recursos mais recentes do ECMAScript estão disponíveis como Acesso antecipado (EA), enquanto que até o ECMAScript 2019 é compatível com a disponibilidade geral.
+
 ## Pré-requisitos para criar uma função personalizada
 
 Antes de começar a adicionar uma função personalizada ao Adaptive Forms, verifique se você tem o seguinte:
@@ -42,7 +44,7 @@ Antes de começar a adicionar uma função personalizada ao Adaptive Forms, veri
 
 ## Criar uma função personalizada
 
-Crie uma biblioteca do cliente para chamar funções personalizadas no editor de regras. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=pt-BR#developing).
+Crie uma biblioteca do cliente para chamar funções personalizadas no editor de regras. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 
 As etapas para criar funções personalizadas são:
 
@@ -55,7 +57,7 @@ As etapas para criar funções personalizadas são:
 
 **Clonar o Repositório**
 
-Clonar seu [Repositório as a Cloud Service do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git):
+Clonar seu [Repositório as a Cloud Service do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
 
 1. Abra a linha de comando ou a janela do terminal.
 
@@ -144,10 +146,10 @@ Adicione o seguinte à pasta da biblioteca do cliente adicionada:
 
 1. Navegue até o arquivo `/ui.apps/src/main/content/META-INF/vault/filter.xml` no seu [diretório do projeto AEMaaCS].
 
-1. Abra o arquivo e adicione a seguinte linha no final:
+2. Abra o arquivo e adicione a seguinte linha no final:
 
    `<filter root="/apps/experience-league" />`
-1. Salve o arquivo.
+3. Salve o arquivo.
 
 ![xml de filtro de função personalizada](/help/forms/assets/custom-function-filterxml.png)
 
@@ -169,7 +171,7 @@ Implante o AEM as a Cloud Service, [diretório do projeto AEMaaCS], no seu ambie
 
    1. Acione uma implantação do seu código por meio do pipeline de pilha completa existente. Isso cria e implanta automaticamente o código atualizado.
 
-Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline).
+Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 Depois que o pipeline for executado com êxito, a função personalizada adicionada à biblioteca do cliente ficará disponível em seu [editor de regras de Formulário adaptável](/help/forms/rule-editor-core-components.md).
 

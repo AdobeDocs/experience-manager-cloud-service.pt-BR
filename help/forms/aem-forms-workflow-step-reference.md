@@ -6,9 +6,9 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Usar workflows do AEM, usando etapas atribuir tarefa, converter para etapa PDF/A, Gerar documento da etapa registrada, usar workflows, etapa Assinar documento, etapa Gerar saída impressa, Gerar saída não interativa do PDF
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '7370'
+source-wordcount: '7409'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Este artigo |
 
-Você usa modelos de fluxo de trabalho. Um modelo ajuda a definir e executar uma série de etapas. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos. Você pode [incluir várias etapas do fluxo de trabalho do AEM em um modelo para obter a lógica de negócios](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem).
+Você usa modelos de fluxo de trabalho. Um modelo ajuda a definir e executar uma série de etapas. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos. Você pode [incluir várias etapas do fluxo de trabalho do AEM em um modelo para obter a lógica de negócios](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
 ## Etapas centradas no Forms {#forms-workflow-steps}
 
@@ -121,7 +121,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
     -->
 
 * **[!UICONTROL Atribuído]** > **[!UICONTROL Opções de atribuição]**: especifique o método para atribuir a tarefa a um usuário. Você pode atribuir a tarefa dinamicamente a um usuário ou grupo usando o script Seletor de participante ou atribuir a tarefa a um usuário ou grupo específico da AEM.
-* **[!UICONTROL Seletor de participantes]**: a opção estará disponível quando a opção **[!UICONTROL Dinamicamente para um usuário ou grupo]** estiver selecionada no campo Opções de atribuição. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Criação de uma etapa personalizada de Participante dinâmico do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR&CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Seletor de participantes]**: a opção estará disponível quando a opção **[!UICONTROL Dinamicamente para um usuário ou grupo]** estiver selecionada no campo Opções de atribuição. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Criação de uma etapa personalizada de Participante dinâmico do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Participantes]**: o campo está disponível quando a opção **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** é selecionada no campo **[!UICONTROL Seletor de Participantes]**. O campo permite selecionar usuários ou grupos para a opção RandomParticipantChooser.
 
@@ -189,7 +189,7 @@ A etapa Converter em PDF/A tem as seguintes propriedades:
 
 Use a etapa do email para enviar um email, por exemplo, um email com um Documento de Registro, um link de um Formulário Adaptável <!-- , link of an interactive communication--> ou um documento do PDF anexado. A etapa Enviar Email oferece suporte a [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Os emails do HTML são responsivos e se adaptam ao cliente de email dos recipients e ao tamanho da tela. Você pode usar um modelo de email do HTML para definir a aparência, o esquema de cores e o comportamento do email.
 
-A etapa de email usa o Day CQ Mail Service para enviar emails. Antes de usar a etapa de email, verifique se o serviço de email está configurado. Por padrão, o email suporta somente os protocolos HTTP e HTTPs. [Contate a equipe de suporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=pt-BR#sending-email) para habilitar as portas para enviar emails e habilitar o protocolo SMTP para o seu ambiente. A restrição ajuda a melhorar a segurança da plataforma.
+A etapa de email usa o Day CQ Mail Service para enviar emails. Antes de usar a etapa de email, verifique se o serviço de email está configurado. Por padrão, o email suporta somente os protocolos HTTP e HTTPs. [Contate a equipe de suporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) para habilitar as portas para enviar emails e habilitar o protocolo SMTP para o seu ambiente. A restrição ajuda a melhorar a segurança da plataforma.
 
 A etapa de email tem as seguintes propriedades:
 
@@ -362,7 +362,12 @@ A etapa Serviço Chamar modelo de dados de formulário (FDM) tem os campos lista
 
    * **[!UICONTROL Relativo à carga]**: use a opção para recuperar o anexo de arquivo salvo em um caminho relativo à carga. Selecione a opção e especifique o nome da pasta que inclui o anexo de arquivo ou especifique o nome do anexo de arquivo na caixa de texto.
 
-     Por exemplo, se a pasta Relativo a Carga no repositório do CRX incluir um anexo de arquivo no local `attachment\attachment-folder`, especifique `attachment\attachment-folder` na caixa de texto depois de selecionar a opção **[!UICONTROL Relativo a Carga]**.
+     >[!NOTE]
+     >
+     > A etapa de fluxo de trabalho **Invocar Modelo de Dados de Formulário** dá suporte a metadados do fluxo de trabalho para matrizes de anexo codificadas em Base64 em [Modelos de Dados de Formulário baseados em Lista do SharePoint](/help/forms/connect-forms-to-sharepoint-list.md) e permite que os fluxos de trabalho transmitam, armazenem e recuperem metadados como nome de arquivo, tipo MIME ou propriedades personalizadas para os anexos.
+     > ![Anexos da Lista de SPs](/help/edge/docs/forms/assets/workflow-sp-list.png)
+     >
+     > A pasta Relative to Payload inclui um anexo de arquivo no local `attachment`, especifique `attachment` na caixa de texto depois de selecionar a opção **[!UICONTROL Relative to Payload]**.
 
    * **[!UICONTROL Anotação JSON Dot]**: use a opção quando o valor a ser usado estiver em um arquivo JSON. Por exemplo, insurance.customerDetails.emailAddress. A opção Anotação JSON Dot estará disponível somente se Mapear campos de entrada da opção JSON de entrada estiver selecionada.
    * **[!UICONTROL Mapear campos de entrada do JSON de entrada]**: especifique o caminho de um arquivo JSON para obter o valor de entrada de alguns argumentos de serviço do arquivo JSON. O caminho do arquivo JSON pode ser relativo à carga, um caminho absoluto ou você pode selecionar um documento JSON de entrada usando uma variável do tipo JSON ou Form Data Model (FDM).
