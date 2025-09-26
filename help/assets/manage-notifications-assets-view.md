@@ -4,10 +4,10 @@ description: Monitore as operações realizadas nos ativos ou pastas disponívei
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4d31745d4ada9e68ffefbba3dc91995037f205b9
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 70%
+source-wordcount: '774'
+ht-degree: 46%
 
 ---
 
@@ -79,6 +79,8 @@ Para assinar as categorias de notificação:
 
 ## Observar e deixar de observar pastas, ativos ou coleções {#watch-unwatch-assets}
 
+É possível observar e deixar de observar pastas, ativos ou coleções para se manter informado, permitindo uma melhor colaboração em torno dos ativos que você está monitorando.
+
 Depois de [assinar as categorias de notificação](#subscribe-to-notification-categories), você deve assinar o conteúdo para começar a receber notificações.
 
 >[!NOTE]
@@ -86,15 +88,49 @@ Depois de [assinar as categorias de notificação](#subscribe-to-notification-ca
 >* Para as categorias de notificação **[!UICONTROL Solicitações]** e **[!UICONTROL Atribuído a mim]**, não é necessário assinar o conteúdo após ter assinado as categorias de notificação. Você recebe notificações automaticamente sobre solicitações que criou e quando uma tarefa é atribuída a você.
 >* A exibição do Assets envia notificações somente quando outros usuários executam ações no conteúdo assinado. Você não recebe notificações para ações que você executou no conteúdo assinado.
 
-Para assinar o conteúdo, selecione a pasta, ativo ou coleção que você precisa assinar e clique em **[!UICONTROL Observar]**.
+### Assinar o conteúdo {#subscribe-to-content}
 
-A visualização do Assets exibe uma mensagem de sucesso. Você pode clicar em **[!UICONTROL Ir para as preferências de notificação]** disponível na mensagem de sucesso para editar a [assinatura de categorias de notificação](#subscribe-to-notification-categories).
+Siga estas etapas para assinar pastas, ativos ou coleções:
 
-![Notificações no modo de exibição Assets](assets/watch-assets.png)
+1. Navegue pela pasta, ativo ou coleção que você deseja assinar e clique em **[!UICONTROL Observar]**.
 
-A exibição do Assets agora envia notificações para as categorias que você assinou. Você também pode selecionar vários ativos, pastas ou coleções e clicar em **[!UICONTROL Observar]** para economizar tempo. No entanto, se você selecionar várias entidades, dentre as quais algumas você já assinou algumas, a opção **[!UICONTROL Observar]** não é exibida.
+1. A visualização Assets exibe uma mensagem de sucesso. Você pode clicar em **[!UICONTROL Ir para preferências de notificação]** na mensagem de êxito para editar sua [assinatura de categorias de notificação](#subscribe-to-notification-categories).
 
-De maneira similar, para cancelar a assinatura, selecione o ativo, pasta ou coleção que você assinou e clique em **[!UICONTROL Deixar de observar]**.
+   ![Notificações no modo de exibição Assets](assets/watch-assets.png)
+
+A visualização do Assets agora enviará notificações para as categorias que você assinou. Você também pode selecionar vários ativos, pastas ou coleções e clicar em **[!UICONTROL Observar]** para economizar tempo. No entanto, se você selecionar vários itens e alguns já tiverem assinado, a opção **[!UICONTROL Observar]** não será exibida.
+
+### Exibir conteúdo da inscrição {#view-subscribed-content}
+
+Para exibir o conteúdo assinado, siga estas etapas:
+
+1. Navegue até **[!UICONTROL Assets]** assistido em [!UICONTROL Gerenciamento de ativos].
+
+1. A visualização Assets exibe uma lista de ativos inscritos, incluindo nome, tipo e caminho. Selecione um ativo, pasta ou coleção na lista para exibir seus detalhes, local ou para [cancelar a inscrição](#unsubscribe-to-content).
+
+   ![exibir conteúdo da inscrição](assets/view-watched-assets.png)
+
+### Exibir assinantes de conteúdo {#view-content-subscribers}
+
+Para exibir seus assinantes de conteúdo, siga estas etapas:
+
+1. Navegue pela pasta, ativo ou coleção e selecione **[!UICONTROL Detalhes]**.
+
+1. Clique no olho![ícone de olho](assets/do-not-localize/eye-icon.png) no painel direito para ver uma lista de observadores do conteúdo.
+
+   Como alternativa, clique em ![Ícone de comentário](assets/do-not-localize/comment-icon.svg) no painel direito para ver os observadores de conteúdo.
+
+### Cancelar inscrição no conteúdo {#unsubscribe-to-content}
+
+Para cancelar a inscrição:
+
+1. Vá para **[!UICONTROL Assets assistido]** em [!UICONTROL Gerenciamento de ativos].
+
+1. Selecione o ativo, pasta ou coleção do qual deseja cancelar a inscrição e clique em **[!UICONTROL Deixar de observar]**.
+
+   ![cancelar inscrição de conteúdo](assets/unsubscribe-assets.png)
+
+Como alternativa, procure a pasta, ativo ou coleção em [!UICONTROL Gerenciamento de ativos]. Selecione o [ativo assinado](#subscribe-to-content) e clique em **[!UICONTROL Deixar de observar]**.
 
 ## Visualizar notificações {#view-notifications}
 
