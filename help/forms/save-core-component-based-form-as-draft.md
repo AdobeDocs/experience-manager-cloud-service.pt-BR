@@ -4,9 +4,9 @@ description: Saiba como salvar os Componentes principais com base no Formulário
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 8f1fa3a95f232f34ad6ae89c391e9e2272a2c072
+source-git-commit: bf0a42e1376e4743fe8ce0650e1f807dfba2d050
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1387'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Salvar formulários como rascunhos e listá-los na página Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Considere um usuário que começa a preencher um formulário, mas precisa pausar e retornar posteriormente. O AEM oferece uma opção `save-as-draft`, permitindo que o usuário salve o formulário como rascunho para conclusão futura. Para facilitar isso, o AEM fornece o componente de **Rascunhos e envios** do Forms Portal pronto para uso, que exibe rascunhos e envios em páginas do AEM Sites. O componente lista formulários que foram salvos como rascunhos para conclusão posterior, bem como aqueles que foram enviados. Somente os usuários conectados podem editar os rascunhos ou exibir os formulários enviados. No entanto, se um usuário anônimo navegar pela lista de formulários usando o componente **Pesquisa e Listagem** e salvar um formulário como rascunho, ele não será listado pelo componente **Rascunhos e Envios**. Para visualizar rascunhos e envios, os usuários devem estar conectados no momento do envio do formulário.
 
@@ -171,7 +171,7 @@ Você também pode descartar os formulários clicando nas reticências (...) que
 
 >[!NOTE]
 >
-> A lista Envios no Portal do Forms exibe somente envios de formulários com base no Foundation.
+> No Portal do Forms, o componente Rascunhos e envios é compatível somente com envios de formulários baseados em Fundação.
 
 ## Próximas etapas
 
