@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 0%
 
 ---
-
 
 # Introdução ao AEM Forms as a Cloud Service {#introduction}
 
@@ -95,7 +95,7 @@ Implemente a [lógica condicional](/help/forms/rule-editor-core-components.md), 
 Renderize formulários baseados em XFA como [formulários HTML5](/help/forms/introductionhtml5.md) para dispositivos móveis e navegadores herdados. O HTML5 Forms fornece experiência nativa em dispositivos móveis sem plug-ins, mantendo a lógica e a validação de formulários a partir de modelos XDP originais.
 
 **Comunicações interativas**
-Crie comunicações centradas em documentos como demonstrativos, faturas e avisos usando um editor visual. [Comunicações interativas](/help/forms/introduction-to-interactive-communication.md) combina conteúdo estático com dados dinâmicos para gerar comunicações personalizadas entre canais digitais e de impressão.
+Crie comunicações centradas em documentos como demonstrativos, faturas e avisos usando um editor visual. [Comunicações interativas](/help/forms/interactive-communication/create-interactive-communication.md) combina conteúdo estático com dados dinâmicos para gerar comunicações personalizadas entre canais digitais e de impressão.
 
 ### Controlar: análise e conformidade {#govern}
 
@@ -249,7 +249,7 @@ Para requisitos complexos envolvendo vários sistemas, geração de documentos e
 **Comunicações e Serviços de Documentos:**
 
 1. **[Implementar APIs de comunicação](/help/forms/aem-forms-cloud-service-communications-introduction.md)** para geração automatizada de documentos
-2. **[Criar comunicações interativas](/help/forms/introduction-to-interactive-communication.md)** para instruções e avisos personalizados
+2. **[Criar comunicações interativas](/help/forms/interactive-communication/create-interactive-communication.md)** para instruções e avisos personalizados
 3. **[Configurar o Forms Portal](/help/forms/configure-forms-portal.md)** para gerenciamento centralizado de formulários
 
 ### Implantação empresarial: dimensionamento e governança {#enterprise-deployment}

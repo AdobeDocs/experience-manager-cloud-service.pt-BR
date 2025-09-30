@@ -4,14 +4,15 @@ description: Projete comunicações dinâmicas orientadas por dados com facilida
 feature: Release Information
 role: Admin
 hide: true
+index: false
 hidefromtoc: true
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '427'
 ht-degree: 2%
 
 ---
-
 
 # Comunicações interativas
 
@@ -32,19 +33,19 @@ Os principais recursos do editor de Comunicações interativas são:
 
 | Recurso | Descrição | Disponibilidade |
 |------------|-------------|--------------|
-| Design amigável | Interface intuitiva do tipo apontar-e-clicar que exige o mínimo de conhecimento técnico | Disponíveis |
-| Integração de dados | Conectar-se a esquemas, bancos de dados e serviços da Web para geração de conteúdo dinâmico | Disponíveis |
-| Mídia avançada | Incorpore textos, imagens e elementos interativos com facilidade | Disponíveis |
-| Controle da versão | Controlar alterações e manter o histórico do documento | Disponíveis |
-| Suporte a modelos | Crie do zero ou use modelos para gerar documentos com eficiência | Disponíveis |
-| Integração com a nuvem | Editar documentos diretamente no AEM Forms as a Cloud Service | Disponíveis |
-| Fragmentos do documento | Reutilizar blocos de conteúdo modular em vários documentos para obter consistência e eficiência | Disponíveis |
-| Vinculação de dados em linha | Vincule dados diretamente no conteúdo para personalização em tempo real sem configurações externas | Disponíveis |
-| Vários componentes | Utilizar diversos componentes para criar documentos complexos e envolventes | Disponíveis |
-| Design multicanal | Criar experiências unificadas em formatos impressos e digitais com conformidade regulamentar | ?? Parcialmente Disponível |
-| Conteúdo dinâmico | Gerar conteúdo personalizado usando lógica de negócios e vinculação de dados | ?? Parcialmente Disponível |
-| Flexibilidade de formato | Saída para os formatos PDF, HTML, PCL®️ PostScript e ZPL | ?? Parcialmente Disponível |
-| Suporte de idioma | Criar comunicações em vários idiomas com suporte a fontes personalizadas | ⏳ Em Breve |
+| Design amigável | Interface intuitiva do tipo apontar-e-clicar que exige o mínimo de conhecimento técnico | ✅ Disponível |
+| Integração de dados | Conectar-se a esquemas, bancos de dados e serviços da Web para geração de conteúdo dinâmico | ✅ Disponível |
+| Mídia avançada | Incorpore textos, imagens e elementos interativos com facilidade | ✅ Disponível |
+| Controle da versão | Controlar alterações e manter o histórico do documento | ✅ Disponível |
+| Suporte a modelos | Crie do zero ou use modelos para gerar documentos com eficiência | ✅ Disponível |
+| Integração com a nuvem | Editar documentos diretamente no AEM Forms as a Cloud Service | ✅ Disponível |
+| Fragmentos do documento | Reutilizar blocos de conteúdo modular em vários documentos para obter consistência e eficiência | ✅ Disponível |
+| Vinculação de dados em linha | Vincule dados diretamente no conteúdo para personalização em tempo real sem configurações externas | ✅ Disponível |
+| Vários componentes | Utilizar diversos componentes para criar documentos complexos e envolventes | ✅ Disponível |
+| Design multicanal | Criar experiências unificadas em formatos impressos e digitais com conformidade regulamentar | 🌓 Parcialmente Disponível |
+| Conteúdo dinâmico | Gerar conteúdo personalizado usando lógica de negócios e vinculação de dados | 🌓 Parcialmente Disponível |
+| Flexibilidade de formato | Saída para os formatos PDF, HTML, PCL®️ PostScript e ZPL | 🌓 Parcialmente Disponível |
+| Suporte de idioma | Criar comunicações em vários idiomas com suporte a fontes personalizadas | ⏳ Em breve |
 
 ## Integração
 
