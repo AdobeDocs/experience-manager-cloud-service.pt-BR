@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: a42ca544fc53e04f197b109022205d24d020690e
+source-git-commit: b0570595a05f311a16f2522cabc0661e5f1db15e
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1280'
 ht-degree: 3%
 
 ---
@@ -29,9 +29,9 @@ O Assistente de IA é compatível com o AEM as a Cloud Service, incluindo as seg
 
 Ele é diretamente incorporado ao AEM e acessível no AEM Experience Hub, Cloud Manager e na interface do usuário do autor.
 
-O vídeo de 39 segundos de 3 minutos a seguir fornece uma apresentação passo a passo do Assistente de IA no AEM.
+O vídeo de 3 minutos e 25 segundos a seguir fornece uma apresentação passo a passo do Assistente de IA no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470360?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Obter acesso ao Assistente de IA no AEM{#get-access}
 
@@ -83,7 +83,7 @@ O conhecimento do produto abrange conceitos e tópicos derivados da documentaç�
 | Aprendizado apontado | <ul><li>O que é o Editor Universal?</li><li>Como criar um programa no Cloud Manager?</li></ul> |
 | Abrir descoberta | <ul><li>Como usar o Universal Editor?</li><li>Existe uma maneira de copiar o conteúdo de um ambiente para outro?</li></ul> |
 | Resolução de problemas | <ul><li>Por que não posso acessar o Universal Editor?</li><li>Por que meu pipeline está falhando?</li></ul> |
-| **Criação do tíquete de suporte** | **Disponível somente para Administradores de Suporte &#x200B;**<br>**Exemplos** |
+| **Criação do tíquete de suporte** | **Disponível somente para Administradores de Suporte **<br>**Exemplos** |
 | Criação automatizada de tíquetes de suporte, capturando o histórico e o contexto do bate-papo do Assistente de IA | <ul><li>Crie um tíquete de suporte para mim.</li></ul> |
 | Recuperar status do tíquete de suporte | <ul><li>Mostre-me todos os tíquetes de suporte que abri.</li><li>Mostre-me o status do tíquete &quot;E—&quot;</li></ul> |
 
@@ -123,7 +123,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
