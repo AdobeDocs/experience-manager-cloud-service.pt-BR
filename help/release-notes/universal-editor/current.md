@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2025.09.25
-description: Estas são as notas de versão do Universal Editor de 25/09/2025.
+title: Notas de versão do Universal Editor 2025.10.02
+description: Estas são as notas de versão do Universal Editor 2025.10.02.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+source-git-commit: 017ac03f6547317197a903f23ce77b1227dc94ca
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 0%
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
 
-# Notas de versão do Universal Editor 2025.09.25 {#release-notes}
+# Notas de versão do Universal Editor 2025.10.02 {#release-notes}
 
-Estas são as notas de versão do Universal Editor de 25 de setembro de 2025.
+Estas são as notas de versão da versão de 2 de outubro de 2025 do Universal Editor.
 
 >[!TIP]
 >
@@ -22,8 +22,7 @@ Estas são as notas de versão do Universal Editor de 25 de setembro de 2025.
 
 ## Novidades {#what-is-new}
 
-* [O recurso de copiar e colar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) agora pode ser [desabilitado usando uma metatag.](/help/implementing/universal-editor/customizing.md#copy-paste)
-* [Ao usar o Editor Universal em ambientes AEM hospedados (AMS),](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) o Editor Universal agora usará o serviço editor universal hospedado pela AEM e não dependerá mais de uma instalação local do AMS, garantindo que você sempre tenha o serviço Editor Universal mais recente automaticamente.
+* Foi adicionado um botão para alternar entre os ambientes de visualização e produção.
 
 ## Recursos da adoção antecipada {#early-adopter}
 
@@ -39,5 +38,4 @@ Agora, copiar e colar são possíveis em várias páginas, além de dentro da me
 
 ## Outras melhorias {#other-improvements}
 
-* O painel de propriedades foi corrigido ao usá-lo com a Criação de documento.
-* Foi corrigido um problema ao editar vários campos de um Fragmento de conteúdo ao usar o MSM.
+* A barra de localização e seu texto foram mais bem alinhados na interface do usuário.
