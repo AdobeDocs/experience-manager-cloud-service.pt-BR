@@ -324,10 +324,10 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
 >O AEM tem proteção de recorrência para:
 >
 >* Referências do conteúdo
->  >  Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
+>  &#x200B;>  Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
 >
 >* Referências de fragmento no GraphQL
->  >  Se você criar uma consulta profunda que retorna vários fragmentos de conteúdo referenciados uns pelos outros, ele retornará um valor nulo na primeira ocorrência.
+>  &#x200B;>  Se você criar uma consulta profunda que retorna vários fragmentos de conteúdo referenciados uns pelos outros, ele retornará um valor nulo na primeira ocorrência.
 
 ### Referência de conteúdo {#content-reference}
 
