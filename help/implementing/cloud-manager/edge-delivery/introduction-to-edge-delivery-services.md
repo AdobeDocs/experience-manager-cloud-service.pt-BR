@@ -87,7 +87,7 @@ A **lista de tarefas do Edge Delivery** no Cloud Manager é uma lista de verific
 | 8 | Configurar validação por push | Consulte [Configurar validação por push para um site do Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Publicação | Consulte a [Lista de verificação de ativação](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441566?learn=on&captions=por_br)
 
 ## Registrar um tíquete de suporte {#eds-support-ticket}
 
