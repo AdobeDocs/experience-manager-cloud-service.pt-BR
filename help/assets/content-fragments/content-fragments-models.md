@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
+source-git-commit: 8c9c51c349317250ddf7ef07e1b545860fd18351
 workflow-type: tm+mt
-source-wordcount: '3175'
-ht-degree: 76%
+source-wordcount: '3588'
+ht-degree: 69%
 
 ---
 
@@ -18,9 +18,9 @@ Os modelos de fragmento de conteúdo no AEM definem a estrutura do conteúdo par
 
 Para usar modelos de fragmento de conteúdo, você pode:
 
-1. [Ativar a funcionalidade de modelo de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+1. [Habilitar a funcionalidade de modelo de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Criar](#creating-a-content-fragment-model) e [configurar](#defining-your-content-fragment-model) os modelos de fragmento de conteúdo
-1. [Ativar os Modelos de fragmento de conteúdo](#enabling-disabling-a-content-fragment-model) para uso ao criar Fragmentos de conteúdo
+1. [Habilitar os Modelos de fragmento de conteúdo](#enabling-disabling-a-content-fragment-model) para uso ao criar Fragmentos de conteúdo
 1. [Autorizar os modelos de fragmento de conteúdo nas pastas de ativos necessárias](#allowing-content-fragment-models-assets-folder) ao configurar as **Políticas**.
 
 >[!NOTE]
@@ -28,6 +28,14 @@ Para usar modelos de fragmento de conteúdo, você pode:
 >Os Fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
 >
 >Os Fragmentos de conteúdo e os Modelos de fragmento de conteúdo agora são gerenciados principalmente com o console **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, embora os Fragmentos de conteúdo ainda possam ser gerenciados no console **Assets** e os Modelos de fragmento de conteúdo no console **Ferramentas**. Esta seção aborda o gerenciamento dos consoles **Assets** e **Ferramentas**.
+
+>[!NOTE]
+>
+>Se um modelo foi criado com o [novo editor de modelo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md), você sempre deve usar esse editor para o modelo.
+>
+>Se você abrir o modelo com esse editor de modelo (original), verá a mensagem:
+>
+>* &quot;Este modelo tem um esquema de interface do usuário personalizado configurado. A ordem dos campos exibidos nesta interface pode não corresponder ao esquema da interface do usuário. Para exibir os campos alinhados ao esquema da interface do usuário, é necessário alternar para o novo Editor de fragmento de conteúdo.&quot;
 
 ## Criação de um modelo de fragmento de conteúdo {#creating-a-content-fragment-model}
 
@@ -67,6 +75,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
    * à esquerda: campos já definidos
    * à direita: **Tipos de dados** disponíveis para criar campos (e **Propriedades** para uso depois que os campos forem criados)
+   * topo: uma opção para experimentar o [novo editor](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
    >[!NOTE]
    >
@@ -142,17 +151,43 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
 * **Tags**
    * Permite que os autores de fragmentos acessem e selecionem áreas de tags
 
+* **Referência do fragmento**
+   * Faz referência a outros fragmentos de conteúdo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
+   * O tipo de dados pode ser configurado para permitir que os autores de fragmento:
+      * Editem o fragmento referenciado diretamente.
+      * Crie um novo Fragmento de conteúdo, com base no modelo apropriado
+      * Criar novas instâncias do campo
+   * A referência especifica o caminho para o recurso referenciado; por exemplo `/content/dam/path/to/resource`
+
+* **Referência de fragmento (UUID)**
+   * Faz referência a outros fragmentos de conteúdo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
+   * O tipo de dados pode ser configurado para permitir que os autores de fragmento:
+      * Editem o fragmento referenciado diretamente.
+      * Crie um novo Fragmento de conteúdo, com base no modelo apropriado
+      * Criar novas instâncias do campo
+   * No editor, a referência especifica o caminho para o recurso referenciado; internamente, a referência é mantida como uma ID universalmente exclusiva (UUID) que faz referência ao recurso
+      * Não é necessário conhecer a UUID; no editor de fragmentos, é possível navegar até o fragmento necessário
+
+  >[!NOTE]
+  >
+  >Os UUIDs são específicos do repositório. Se você usar a [Ferramenta de cópia de conteúdo](/help/implementing/developing/tools/content-copy.md) para copiar fragmentos de conteúdo, as UUIDs serão recalculadas no ambiente de destino.
+
 * **Referência de conteúdo**
    * Faz referência a outros conteúdos, de qualquer tipo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
    * Se uma imagem for referenciada, você pode optar por mostrar uma miniatura
    * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
+   * A referência especifica o caminho para o recurso referenciado; por exemplo `/content/dam/path/to/resource`
 
-* **Referência do fragmento**
-   * Faz referência a outros fragmentos de conteúdo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
-   * O campo pode ser configurado para permitir que os autores de fragmento:
-      * Editar o fragmento referenciado diretamente
-      * Crie um novo Fragmento de conteúdo, com base no modelo apropriado
-      * Criar novas instâncias do campo
+* **Referência de conteúdo (UUID)**
+   * Faz referência a outros conteúdos, de qualquer tipo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
+   * Se uma imagem for referenciada, você pode optar por mostrar uma miniatura
+   * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
+   * No editor, a referência especifica o caminho para o recurso referenciado; internamente, a referência é mantida como uma ID universalmente exclusiva (UUID) que faz referência ao recurso
+      * Não é necessário conhecer a UUID; no editor de fragmentos, é possível navegar até o recurso de ativo necessário
+
+  >[!NOTE]
+  >
+  >Os UUIDs são específicos do repositório. Se você usar a [Ferramenta de cópia de conteúdo](/help/implementing/developing/tools/content-copy.md) para copiar fragmentos de conteúdo, as UUIDs serão recalculadas no ambiente de destino.
 
 * **Objeto JSON**
    * Permite que o autor do Fragmento de conteúdo insira a sintaxe JSON nos elementos correspondentes de um fragmento.
@@ -260,32 +295,43 @@ Vários tipos de dados agora incluem a possibilidade de definir requisitos de va
 
 Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguintes tipos de dados:
 
-* **[Referência de conteúdo](#content-reference)**
+* [Referência de conteúdo](#content-reference)
    * Fornece uma referência simples a outro conteúdo, de qualquer tipo.
+   * Fornecidos pelos tipos de dados:
+      * **Referência de conteúdo** - baseada em caminho
+      * **Referência de conteúdo (UUID)** - baseada em UUID
    * Pode ser configurado para uma ou várias referências (no fragmento resultante).
 
-* **[Referência de fragmento](#fragment-reference-nested-fragments)** (fragmentos aninhados)
+* [Referência de fragmento](#fragment-reference-nested-fragments) (fragmentos aninhados)
    * Faz referência a outros fragmentos, dependendo dos modelos especificados.
+   * Fornecidos pelos tipos de dados:
+      * **Referência de fragmento** - baseada em caminho
+      * **Referência de fragmento (UUID)** - baseada em UUID
    * Permite incluir/recuperar dados estruturados.
 
      >[!NOTE]
      >
-     >Este método é especialmente interessante quando utilizado em conjunto com a [Entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+     >Este método é especialmente interessante quando você está usando a [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+
    * Pode ser configurado para uma ou várias referências (no fragmento resultante).
+
+>[!NOTE]
+>
+>Consulte [Atualizar os fragmentos de conteúdo para referências UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) para obter mais informações sobre a referência de conteúdo/fragmento e a referência de conteúdo/fragmento (UUID), além de atualizar para os tipos de dados baseados em UUID.
 
 >[!NOTE]
 >
 >O AEM tem proteção de recorrência para:
 >
->* Referências de conteúdo
->Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
+>* Referências do conteúdo
+>  >  Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
 >
 >* Referências de fragmento no GraphQL
->Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
+>  >  Se você criar uma consulta profunda que retorna vários fragmentos de conteúdo referenciados uns pelos outros, ele retornará um valor nulo na primeira ocorrência.
 
 ### Referência de conteúdo {#content-reference}
 
-A Referência de conteúdo permite renderizar o conteúdo de outra fonte; por exemplo, imagem ou fragmento de conteúdo.
+Os tipos de dados **Referência de Conteúdo** e **Referência de Conteúdo (UUID)** permitem renderizar o conteúdo de outra fonte; por exemplo, imagem, página ou Fragmento de Experiência.
 
 Além das propriedades padrão, é possível especificar:
 
@@ -300,7 +346,7 @@ Além das propriedades padrão, é possível especificar:
 
 ### Referência de fragmento (fragmentos aninhados) {#fragment-reference-nested-fragments}
 
-A referência do fragmento faz referência a um ou mais fragmentos de conteúdo. Esse recurso é especialmente interessante ao recuperar conteúdo para uso no aplicativo, pois permite recuperar dados estruturados com várias camadas.
+Os tipos de dados **Referência de Fragmento** e **Referência de Fragmento (UUID)** podem fazer referência a um ou mais Fragmentos de Conteúdo. Esse recurso é especialmente interessante ao recuperar conteúdo para uso no aplicativo, pois permite recuperar dados estruturados com várias camadas.
 
 Por exemplo:
 
@@ -369,11 +415,11 @@ Especifica um caminho raiz para qualquer fragmento referenciado.
      >Isto só é usado pelo *novo* Editor de Fragmento de Conteúdo. Consulte [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) para obter mais informações.
 
 
-## Ativar ou desativar um modelo de fragmento de conteúdo {#enabling-disabling-a-content-fragment-model}
+## Habilitar ou desabilitar um Modelo de fragmento de conteúdo {#enabling-disabling-a-content-fragment-model}
 
 Para ter controle total sobre o uso dos modelos de fragmento de conteúdo, eles têm um status que pode ser definido.
 
-### Ativar um modelo de fragmento de conteúdo {#enabling-a-content-fragment-model}
+### Habilitar um modelo de fragmento de conteúdo {#enabling-a-content-fragment-model}
 
 Quando um modelo é criado, ele deve ser ativado para:
 
@@ -381,17 +427,17 @@ Quando um modelo é criado, ele deve ser ativado para:
 * Poder ser referenciado a partir de um modelo de fragmento de conteúdo.
 * Estar disponível no GraphQL; assim, o esquema é gerado.
 
-Para ativar um modelo que esteja sinalizado como:
+Para habilitar um modelo que esteja sinalizado como:
 
-* **Rascunho**: novo (nunca ativado).
+* **Rascunho**: novo (nunca habilitado).
 * **Desativado**: foi especificamente desativado.
 
-Você usa a opção **Ativar** a partir:
+Você usa a opção **Habilitar** a partir:
 
 * Da barra de ferramentas superior, quando o modelo necessário estiver selecionado.
 * Da ação rápida correspondente (passa o mouse sobre o modelo necessário).
 
-![Ativar um rascunho ou modelo desativado](assets/cfm-status-enable.png)
+![Habilitar um rascunho ou modelo desabilitado](assets/cfm-status-enable.png)
 
 ### Desativar um modelo de fragmento de conteúdo {#disabling-a-content-fragment-model}
 
@@ -403,12 +449,12 @@ Um modelo também pode ser desativado para que:
    * Quaisquer fragmentos de conteúdo baseados no modelo ainda podem ser consultados e retornados a partir do ponto de acesso do GraphQL.
 * O modelo não pode mais ser referenciado, mas as referências existentes são mantidas e ainda podem ser consultadas e retornadas a partir do ponto de acesso do GraphQL.
 
-Para desativar um Modelo que esteja sinalizado como **Ativado**, você usa a opção **Desativar**:
+Para desabilitar um Modelo que esteja sinalizado como **Habilitado**, você usa a opção **Desabilitar**:
 
 * Da barra de ferramentas superior, quando o modelo necessário estiver selecionado.
 * Da ação rápida correspondente (passa o mouse sobre o modelo necessário).
 
-![Desativar um modelo ativado](assets/cfm-status-disable.png)
+![Desabilitar um modelo habilitado](assets/cfm-status-disable.png)
 
 ## Permitir modelos de fragmentos de conteúdo na pasta de ativos {#allowing-content-fragment-models-assets-folder}
 
@@ -416,7 +462,7 @@ Para implementar a governança de conteúdo, você pode configurar **Políticas*
 
 >[!NOTE]
 >
->O mecanismo é semelhante ao de [permitir modelos de página](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) para uma página e suas derivadas nas suas propriedades avançadas.
+>O mecanismo é semelhante ao de [permitir modelos de página](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) para uma página e suas filhas nas suas propriedades avançadas.
 
 Para configurar as **políticas** para **modelos de fragmento de conteúdo permitidos**:
 
@@ -426,7 +472,7 @@ Para configurar as **políticas** para **modelos de fragmento de conteúdo permi
 
    * **Herdado de`<folder>`**
 
-     As políticas são automaticamente herdadas ao criar novas pastas derivadas; a política pode ser reconfigurada (e a herança quebrada) se as subpastas precisarem permitir modelos diferentes da pasta principal.
+     As políticas são automaticamente herdadas ao criar novas pastas filhas; a política pode ser reconfigurada (e a herança quebrada) se as subpastas precisarem permitir modelos diferentes da pasta pai.
 
    * **Modelos de fragmento de conteúdo permitidos por caminho**
 

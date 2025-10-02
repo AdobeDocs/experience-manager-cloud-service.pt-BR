@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: baf9e56e65bc537e136310814f269a3a20a80dd3
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 37%
+source-wordcount: '2496'
+ht-degree: 34%
 
 ---
 
@@ -33,7 +33,7 @@ Os modelos de fragmento de conteúdo no Adobe Experience Manager (AEM) as a Clou
 
 Como uma visão geral muito rápida, para trabalhar com modelos de fragmento de conteúdo, você pode:
 
-1. [Ativar a funcionalidade de modelo de fragmento de conteúdo para sua instância](/help/sites-cloud/administering/content-fragments/setup.md)
+1. [Habilitar a funcionalidade de modelo de fragmento de conteúdo para sua instância](/help/sites-cloud/administering/content-fragments/setup.md)
 1. [Crie](#creating-a-content-fragment-model) seu modelo de fragmento de conteúdo.
    * Neste ponto, também é possível **Habilitar** o modelo (para uso ao criar fragmentos de conteúdo).
 1. [Defina](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#defining-your-content-fragment-model) a estrutura do seu modelo.
@@ -54,8 +54,8 @@ Aqui você pode ver três áreas principais:
 
 * A barra de ferramentas superior
    * Fornece a funcionalidade padrão do AEM
-   * Também mostra sua organização IMS
-   * Fornece várias [ações](#actions-unselected)
+   * Mostra sua organização IMS
+   * Fornece várias [ações](#actions-unselected), que podem [ser alteradas quando você selecionar um ou mais modelos](#actions-selected-content-fragment-models)
 * O painel esquerdo
    * Mostra os [caminhos para todas as configurações](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) listadas como pastas
    * Aqui você pode ocultar ou revelar a árvore de pastas
@@ -97,20 +97,29 @@ Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
 * **Status**
    * Somente informações.
    * Pode ser usada para [Filtragem Rápida](#fast-filtering)
-* **Modificado**
+* **Status da Replicação**
    * Somente informações.
+   * Pode ser usada para [Filtragem Rápida](#fast-filtering).
+* **Visualização**
+   * Somente informações.
+* **Modificado Em**
+   * Somente informações.
+   * Pode ser usada para [Filtragem Rápida](#fast-filtering).
 * **Modificado por**
    * Somente informações.
    * Pode ser usada para [Filtragem Rápida](#fast-filtering).
 * **Tags**
    * Somente informações.
-   * Mostra todas as tags relacionadas ao modelo.
+   * Abre uma caixa de diálogo mostrando todas as tags relacionadas ao modelo.
    * Pode ser usada para [Filtragem Rápida](#fast-filtering).
 * **Publicado em**
    * Somente informações.
+   * Pode ser usada para [Filtragem Rápida](#fast-filtering).
 * **Publicado por**
    * Somente informações.
    * Pode ser usada para [Filtragem Rápida](#fast-filtering).
+* **Usado por**
+   * Abre uma caixa de diálogo listando os Fragmentos de conteúdo baseados no modelo. A lista fornece links para permitir abrir fragmentos diretamente.
 
 ## Propriedades do modelo {#model-properties}
 
@@ -169,8 +178,9 @@ Determinadas ações estão disponíveis no console — depois de selecionar uma
 Selecionar um modelo específico abre uma barra de ferramentas focada nas ações disponíveis para esse modelo. Você também pode selecionar vários modelos. As ações disponíveis serão ajustadas de acordo.
 
 * **[Edite](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)** para definir seu modelo de fragmento de conteúdo.
-* **Publicar** nas camadas [Publicar](/help/implementing/cloud-manager/manage-environments.md#environment-types) ou [Visualizar](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+* **[Publicar](#publishing-a-content-fragment-model)** e **[Cancelar publicação](#unpublishing-a-content-fragment-model)** nos níveis [Publicar](/help/implementing/cloud-manager/manage-environments.md#environment-types) ou [Visualizar](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 * **Bloquear**/**Desbloquear** para controlar se um usuário tem permissão para modificar o Modelo.
+* **Copiar** seu modelo.
 * **[Habilite](#enabling-a-content-fragment-model)**/**[Desabilitar](#disabling-a-content-fragment-model)** para controlar se um usuário tem permissão para criar Fragmentos de Conteúdo com base neste modelo.
 
 Selecionar um único modelo também mostra as [propriedades do modelo](#properties) no painel direito.
@@ -251,7 +261,7 @@ Se você inserir o **Título** primeiro, o **Nome** será gerado a partir dele.
 
 1. Use **Criar** para salvar o modelo vazio ou **Criar e abrir**.
 
-### Ativar um modelo de fragmento de conteúdo {#enabling-a-content-fragment-model}
+### Habilitar um modelo de fragmento de conteúdo {#enabling-a-content-fragment-model}
 
 Depois que um modelo é criado, ele deve ser ativado para:
 
@@ -286,7 +296,7 @@ Para implementar a governança de conteúdo, você pode configurar **Políticas*
 
 >[!NOTE]
 >
->O mecanismo é semelhante ao de [permitir modelos de página](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) para uma página e suas derivadas nas suas propriedades avançadas.
+>O mecanismo é semelhante ao de [permitir modelos de página](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) para uma página e suas filhas nas suas propriedades avançadas.
 
 Para configurar as **políticas** para **modelos de fragmento de conteúdo permitidos**:
 
@@ -317,23 +327,21 @@ Os modelos de fragmento de conteúdo permitidos para uma pasta são resolvidos d
 * Se a cadeia de herança não fornecer um resultado, verifique a configuração de **Cloud Services** dessa pasta (diretamente e, em seguida, por herança).
 * Se nenhuma das opções acima fornecer resultados, então não há modelos permitidos para essa pasta.
 
-<!--
-## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
+## Exclusão de um modelo de fragmento de conteúdo {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 >
->Deleting a Content Fragment model can impact dependent fragments.
+>A exclusão de um modelo de Fragmento de conteúdo pode afetar fragmentos dependentes.
 
-To delete a Content Fragment model:
+Para excluir um modelo de fragmento de conteúdo:
 
-1. Navigate to, and select your Content Fragment Model. You can select multiple models.
+1. Navegue até Modelo de fragmento de conteúdo e selecione-o. É possível selecionar vários modelos.
 
-1. Select **Delete** from the toolbar.
+1. Selecione **Excluir** na barra de ferramentas.
 
    >[!NOTE]
    >
-   >If the model is referenced a warning is given, so that you can take appropriate action.
--->
+   >Se o modelo for referenciado, um aviso será exibido para que você possa tomar as medidas apropriadas.
 
 ## Publicação de um Modelo de fragmento de conteúdo {#publishing-a-content-fragment-model}
 
@@ -352,25 +360,25 @@ Para publicar um modelo de fragmento de conteúdo:
 
 1. O fluxo de trabalho para publicar os modelos selecionados e suas referências será iniciado. O status publicado é exibido no console.
 
-<!--
-## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
+## Desfazer a publicação de um Modelo de fragmento de conteúdo {#unpublishing-a-content-fragment-model}
 
-Content Fragment Models can be unpublished if they are not referenced by any fragments.
+Os modelos de fragmento de conteúdo podem ter a publicação desfeita se não forem referenciados por nenhum fragmento.
 
-To unpublish a Content Fragment Model:
+Para desfazer a publicação de um modelo de fragmento de conteúdo:
 
-1. Navigate to, and select your Content Fragment Model.
-1. Select **Unpublish** from the toolbar.
-   The published status is indicated in the console. 
+1. Navegue até Modelo de fragmento de conteúdo e selecione-o.
+O status publicado é indicado no console.
 
-If you try to unpublish a model that is currently used by one or more fragments, then an error warning is shown. For example: 
+1. Selecione **Cancelar publicação** na barra de ferramentas.
 
-![Content Fragment Model error message when unpublishing a model that is in use](assets/cf-cfmodels-unpublish-error.png)
+1. Na caixa de diálogo Cancelar publicação, selecione o **Destino**:
 
-The message suggests that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
+   * **Serviço de publicação**
+   * **Serviço de visualização**
 
-![Content Fragment Model in References](assets/cf-cfmodels-references.png)
--->
+1. O fluxo de trabalho para desfazer a publicação dos modelos selecionados e suas referências será iniciado. O status não publicado é exibido no console.
+
+Se você tentar desfazer a publicação de um modelo que é usado atualmente por um ou mais fragmentos, um aviso de erro será exibido. A mensagem sugere que você verifique o painel [Referências](/help/sites-cloud/authoring/basic-handling.md#references) para investigar melhor:
 
 ## Modelos de fragmentos do conteúdo bloqueados {#locked-content-fragment-models}
 

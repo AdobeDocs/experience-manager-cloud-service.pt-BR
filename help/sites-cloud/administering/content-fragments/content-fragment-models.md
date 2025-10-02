@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 36%
+source-wordcount: '2201'
+ht-degree: 31%
 
 ---
 
@@ -24,6 +24,14 @@ Esta página aborda como definir o modelo de fragmento de conteúdo usando o edi
 >
 >Para obter mais detalhes, consulte a [API do AEM GraphQL para uso com Fragmentos de conteúdo - Limitações](/help/headless/graphql-api/content-fragments.md#limitations)
 
+>[!NOTE]
+>
+>Se criar um modelo com esse novo editor, você sempre deve usar esse editor para esse modelo.
+>
+>Se você abrir o modelo com o [editor de modelo original](/help/assets/content-fragments/content-fragments-models.md), verá a mensagem:
+>
+>* &quot;Este modelo tem um esquema de interface do usuário personalizado configurado. A ordem dos campos exibidos nesta interface pode não corresponder ao esquema da interface do usuário. Para exibir os campos alinhados ao esquema da interface do usuário, é necessário alternar para o novo Editor de fragmento de conteúdo.&quot;
+
 ## Definição do Modelo de fragmento de conteúdo {#defining-your-content-fragment-model}
 
 O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmentos de conteúdo resultantes usando uma seleção de **[Tipos de dados](#data-types)**. Usando o editor do modelo, é possível adicionar instâncias dos tipos de dados e configurá-las para criar os campos necessários:
@@ -38,26 +46,46 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
    >
    >Você também pode abrir um modelo diretamente após [criá-lo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
 
-1. Abra o modelo necessário para **Edição**; use a ação rápida ou selecione o modelo e depois a ação na barra de ferramentas.
+1. Abra o modelo necessário para **Editar**; use um dos links de ação rápida ou selecione o modelo e depois a ação na barra de ferramentas.
 
-   Uma vez aberto, o editor de modelo mostra:
-
-   * à esquerda: campos já definidos
-   * à direita: **Tipos de dados** disponíveis para criar campos (e **Propriedades** para uso depois que os campos forem criados)
-
-   >[!NOTE]
-   >
-   >Quando um campo é definido como **Obrigatório**, o **Rótulo** indicado no painel à esquerda é marcado com um asterisco (**&#42;**).
 
    ![Propriedades](assets/cf-cfmodels-empty-model.png)
 
+   Uma vez aberto, o editor de modelo mostra:
+
+   * início:
+      * Ícone da **Página inicial**
+      * opção para alternar entre o [original](/help/assets/content-fragments/content-fragments-models.md) e o novo editor
+      * **Cancelar**
+      * **Salvar**
+
+   * à esquerda: **Tipos de dados** disponíveis para criar campos
+
+   * meio: campos já definidos junto com a opção **Adicionar**
+
+   * à direita: usando os ícones na extremidade direita, você pode selecionar entre:
+
+      * **Propriedades**: defina e exiba propriedades para o campo selecionado
+      * **Detalhes do modelo**: mostrar o status **Habilitado**, **Título do Modelo**, **Marcas**, **Descrição** e **Visualizar URL**
+
 1. **Para adicionar um campo**
 
-   * Arraste um tipo de dados necessário para o local exigido de um campo:
+   * Ou:
 
-     ![Arraste o tipo de dados para criar o campo](assets/cf-cfmodels-create-field.png)
+      * Arraste um tipo de dados do painel esquerdo para o local necessário para um campo no painel central.
+      * Selecione o ícone **+** por um Tipo de Dados para adicioná-lo à parte inferior da lista de campos.
+      * Selecione **Adicionar** no painel do meio e o tipo de dados necessário na lista suspensa resultante para adicionar um campo à parte inferior da lista.
 
-   * Depois que um campo é adicionado ao modelo, o painel direito mostra as **Propriedades** que podem ser definidas para esse tipo de dados específico. Aqui é possível definir o que é necessário para esse campo.
+     >[!NOTE]
+     >
+     >Os campos **de espaço reservado para tabulação** devem sempre aparecer acima dos campos existentes.
+
+   * É possível reposicionar um campo usando a formação de pontos à esquerda da caixa de campo:
+
+     ![Mover campo](assets/cf-cfmodels-move-field-icon.png)
+
+   * Depois que um campo é adicionado ao modelo (e é selecionado), o painel direito mostra as **Propriedades** que podem ser definidas para esse tipo de dados específico. Aqui é possível definir o que é necessário para a
+campo.
 
       * Muitas propriedades são autoexplicativas. Para obter mais detalhes, consulte [Propriedades (Tipos de Dados)](#properties).
       * Digitar um **Rótulo de Campo** preenche automaticamente o **Nome da Propriedade**, se estiver vazio, e pode ser atualizado manualmente posteriormente.
@@ -72,15 +100,17 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
      ![Propriedades do campo](assets/cf-cfmodels-field-properties.png)
 
+     >[!NOTE]
+     >
+     >Quando um campo é definido como **Obrigatório**, o **Rótulo** indicado no painel do meio é marcado com um asterisco (**&#42;**).
+
 1. **Para remover um campo**
 
-   Selecione o campo obrigatório e, em seguida, o ícone da lixeira. Você receberá uma solicitação para confirmar a ação.
+   Selecione o ícone da lixeira do campo apropriado no painel do meio.
 
    ![Remover](assets/cf-cfmodels-remove-icon.png)
 
-1. Adicione todos os campos obrigatórios e defina as propriedades relacionadas, conforme necessário. Por exemplo:
-
-   ![Salvar](assets/cf-cfmodels-save.png)
+1. Adicione todos os campos obrigatórios e defina as propriedades relacionadas, conforme necessário.
 
 1. Selecione **Salvar** para salvar a definição.
 
@@ -118,6 +148,7 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
 
 * **Tags**
    * Permite que os autores de fragmentos acessem e selecionem áreas de tags
+
 * **Referência do fragmento**
    * Faz referência a outros fragmentos de conteúdo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
    * O tipo de dados pode ser configurado para permitir que os autores de fragmento:
@@ -126,18 +157,16 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
       * Criar novas instâncias do campo
    * A referência especifica o caminho para o recurso referenciado; por exemplo `/content/dam/path/to/resource`
 
-* **Referência de fragmento (UUID)**
-   * Faz referência a outros fragmentos de conteúdo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
-   * O tipo de dados pode ser configurado para permitir que os autores de fragmento:
-      * Editem o fragmento referenciado diretamente.
-      * Crie um novo Fragmento de conteúdo, com base no modelo apropriado
-      * Criar novas instâncias do campo
-   * No editor, a referência especifica o caminho para o recurso referenciado; internamente, a referência é mantida como uma ID universalmente exclusiva (UUID) que faz referência ao recurso
-      * Não é necessário conhecer a UUID; no editor de fragmentos, é possível navegar até o fragmento necessário
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >Os UUIDs são específicos do repositório. Se você usar a [Ferramenta de cópia de conteúdo](/help/implementing/developing/tools/content-copy.md) para copiar fragmentos de conteúdo, as UUIDs serão recalculadas no ambiente de destino.
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **Referência de conteúdo**
    * Faz referência a outros conteúdos, de qualquer tipo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
@@ -145,16 +174,16 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
    * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
    * A referência especifica o caminho para o recurso referenciado; por exemplo `/content/dam/path/to/resource`
 
-* **Referência de conteúdo (UUID)**
-   * Faz referência a outros conteúdos, de qualquer tipo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
-   * Se uma imagem for referenciada, você pode optar por mostrar uma miniatura
-   * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
-   * No editor, a referência especifica o caminho para o recurso referenciado; internamente, a referência é mantida como uma ID universalmente exclusiva (UUID) que faz referência ao recurso
-      * Não é necessário conhecer a UUID; no editor de fragmentos, é possível navegar até o recurso de ativo necessário
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >Os UUIDs são específicos do repositório. Se você usar a [Ferramenta de cópia de conteúdo](/help/implementing/developing/tools/content-copy.md) para copiar fragmentos de conteúdo, as UUIDs serão recalculadas no ambiente de destino.
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **Objeto JSON**
    * Permite que o autor do Fragmento de conteúdo insira a sintaxe JSON nos elementos correspondentes de um fragmento.
@@ -170,6 +199,8 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
      >[!NOTE]
      >
      >Esse tipo de dados é usado apenas para formatação e é ignorado pelo esquema GraphQL do AEM.
+     >
+     >Os campos **de espaço reservado para tabulação** devem sempre aparecer acima dos campos existentes.
 
 ## Propriedades (Tipos de dados) {#properties}
 
@@ -258,16 +289,12 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
 
 * [Referência de conteúdo](#content-reference)
    * Fornece uma referência simples a outro conteúdo, de qualquer tipo.
-   * Fornecidos pelos tipos de dados:
-      * **Referência de conteúdo** - baseada em caminho
-      * **Referência de conteúdo (UUID)** - baseada em UUID
+   * Fornecido pelo tipo de dados **Referência de Conteúdo**
    * Pode ser configurado para uma ou várias referências (no fragmento resultante).
 
 * [Referência de fragmento](#fragment-reference-nested-fragments) (fragmentos aninhados)
    * Faz referência a outros fragmentos, dependendo dos modelos especificados.
-   * Fornecidos pelos tipos de dados:
-      * **Referência de fragmento** - baseada em caminho
-      * **Referência de fragmento (UUID)** - baseada em UUID
+   * Fornecido pelo tipo de dados **Referência de fragmento**
    * Permite incluir/recuperar dados estruturados.
 
      >[!NOTE]
@@ -275,19 +302,21 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
      >Este método é especialmente interessante quando você está usando a [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Pode ser configurado para uma ou várias referências (no fragmento resultante).
 
+<!--
 >[!NOTE]
 >
->Consulte [Atualizar os fragmentos de conteúdo para referências UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) para obter mais informações sobre a referência de conteúdo/fragmento e a referência de conteúdo/fragmento (UUID), além de atualizar para os tipos de dados baseados em UUID.
+>See [Upgrade your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md) for further information about Content/Fragment Reference and Content/Fragment Reference (UUID), and upgrading to the UUID-based data types.
+-->
 
 >[!NOTE]
 >
 >O AEM tem proteção de recorrência para:
 >
->* Referências de conteúdo
->Isso impede que o usuário adicione uma referência ao fragmento atual e pode levar a uma caixa de diálogo vazia do seletor de Referência de fragmento.
+>* Referências do conteúdo
+>  >  Isso impede que o usuário adicione uma referência ao fragmento atual e pode levar a uma caixa de diálogo vazia do seletor de Referência de fragmento.
 >
 >* Referências de fragmento no GraphQL
->Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
+>  >  Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
 
 >[!CAUTION]
 >
@@ -297,7 +326,7 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
 
 ### Referência de conteúdo {#content-reference}
 
-Os tipos de dados **Referência de Conteúdo** e **Referência de Conteúdo (UUID)** permitem renderizar o conteúdo de outra fonte; por exemplo, imagem, página ou Fragmento de Experiência.
+O tipo de dados **Referência de Conteúdo** permite renderizar o conteúdo de outra fonte; por exemplo, imagem, página ou Fragmento de Experiência.
 
 Além das propriedades padrão, é possível especificar:
 
@@ -324,7 +353,7 @@ Além das propriedades padrão, é possível especificar:
 
 ### Referência de fragmento (fragmentos aninhados) {#fragment-reference-nested-fragments}
 
-Os tipos de dados **Referência de Fragmento** e **Referência de Fragmento (UUID)** podem fazer referência a um ou mais Fragmentos de Conteúdo. Esse recurso é especialmente interessante ao recuperar conteúdo para uso no aplicativo, pois permite recuperar dados estruturados com várias camadas.
+O tipo de dados **Referência de fragmento** pode fazer referência a um ou mais Fragmentos de conteúdo. Esse recurso é especialmente interessante ao recuperar conteúdo para uso no aplicativo, pois permite recuperar dados estruturados com várias camadas.
 
 Por exemplo:
 
