@@ -4,10 +4,10 @@ description: Saiba como usar o CDN gerenciado pela AEM e como apontar seu própr
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
+source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
 workflow-type: tm+mt
 source-wordcount: '1744'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 

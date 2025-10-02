@@ -1,31 +1,31 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0.
-description: as a Cloud Service Notas de versão do [!DNL Adobe Experience Manager] para 2020.8.0.
+description: Notas de versão do as a Cloud Service [!DNL Adobe Experience Manager] para 2020.8.0.
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 34%
 
 ---
 
-# Notas de versão para [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.8.0.
 
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## as a Cloud Service [!DNL Adobe Experience Manager Sites] {#sites}
 
 ### Novidades do [!DNL Sites] {#what-is-new-sites}
 
 * Capacidade de [restaurar páginas e subpáginas (árvores de página) para uma versão anterior](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
-* Capacidade de [criar Inicializações](/help/sites-cloud/authoring/launches/overview.md) no [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) do AEM.
+* Capacidade de [criar Inicializações](/help/sites-cloud/authoring/launches/overview.md) no [Editor SPA](/help/implementing/developing/hybrid/introduction.md) do AEM.
 
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## as a Cloud Service [!DNL Adobe Experience Manager Assets] {#assets}
 
 ### Novidades do [!DNL Assets] {#what-is-new-assets}
 
@@ -42,9 +42,9 @@ A seção a seguir descreve as Notas de versão gerais do Experience Manager as 
 
 * Use um perfil de processamento para gerar metadados personalizados usando o Serviço de computação. Consulte [Metadados personalizados usando o perfil de processamento](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Uma experiência de download mais simples para usuários do Brand Portal que os administradores podem configurar. Consulte [visão geral da experiência de download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR#download-configurations).
+* Uma experiência de download mais simples para usuários do Brand Portal que os administradores podem configurar. Consulte [visão geral da experiência de download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
-* Visualizações de documentos nativos e de alta fidelidade do PDF agora estão disponíveis no Brand Portal. Consulte [visão geral do visualizador de documentos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR#doc-viewer).
+* Visualizações de documentos nativos e de alta fidelidade do PDF agora estão disponíveis no Brand Portal. Consulte [visão geral do visualizador de documentos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
 * Agora você pode invalidar o cache CDN (Content Delivery Network) diretamente do [!DNL Dynamic Media] no AEM as a Cloud Service (em vez de usar [!DNL Dynamic Media Classic]). Ele garante que os ativos mais recentes sejam disponibilizados em minutos em vez de horas. Consulte [Invalidar o cache CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
@@ -66,7 +66,7 @@ A seção a seguir descreve as Notas de versão gerais do Experience Manager as 
 
 ### Novidades {#what-is-new-commerce}
 
-* O recurso Console do produto agora está disponível. Isso permite que profissionais de marketing/autores no AEM visualizem e naveguem por categorias e produtos armazenados no back-end de comércio. Também é fornecido suporte a propriedades de categorias e produtos no Console do produto.
+* O recurso Console do produto agora está disponível. Isso permite que profissionais de marketing/autores no AEM visualizem e naveguem categorias e produtos armazenados no back-end de comércio. Também é fornecido suporte a propriedades de categorias e produtos no Console do produto.
 
 * Os seletores de categoria e produto foram aprimorados para permitir que os profissionais de marketing selecionem o produto via SKU ou selecionem a categoria por meio da ID da categoria.
 
@@ -78,13 +78,13 @@ A data de lançamento da versão 2020.8.0 do [!UICONTROL Cloud Manager] é sexta
 
 ### Novidades {#what-is-new-cloud-manager}
 
-* A Auditoria de conteúdo é um recurso ativado nos pipelines de produção do Sites do Cloud Manager. A configuração do pipeline de produção para programas com Sites agora inclui uma terceira guia chamada **Auditoria de conteúdo**. Sempre que um pipeline de produção é executado, uma nova etapa da Auditoria de conteúdo é incluída no pipeline após um teste funcional personalizado que avalia o site em relação a várias dimensões, incluindo desempenho, SEO (Otimização de mecanismo de pesquisa), acessibilidade, práticas recomendadas e PWA (Aplicativo web progressivo).
+* A Auditoria de conteúdo é um recurso habilitado nos pipelines de produção do Sites do Cloud Manager. A configuração do pipeline de produção para programas com Sites agora inclui uma terceira guia chamada **Auditoria de conteúdo**. Sempre que um pipeline de produção é executado, uma nova etapa da Auditoria de conteúdo é incluída no pipeline após um teste funcional personalizado que avalia o site em relação a várias dimensões, incluindo desempenho, SEO (Otimização de mecanismo de pesquisa), acessibilidade, práticas recomendadas e PWA (Aplicativo web progressivo).
 
 
   >[!NOTE]
   >A Auditoria de conteúdo foi renomeada para Auditoria de experiência.
 
-  Consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obter mais detalhes.
+  Consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/reports/report-experience-audit.md) para obter mais detalhes.
 
 * Os ambientes recém-criados nos programas do Assets agora serão configurados automaticamente com os Serviços de conteúdo inteligente.
 
@@ -120,7 +120,7 @@ A data de lançamento da versão 2020.8.0 do [!UICONTROL Cloud Manager] é sexta
 
 * Para ativar a etapa Auditoria de conteúdo, os usuários precisam editar o pipeline e também podem adicionar páginas. Se nenhuma página for adicionada, a página inicial será auditada.
 
-## Ferramenta Transferência de conteúdo {#content-transfer-tool}
+## Ferramenta de transferência de conteúdo {#content-transfer-tool}
 
 Siga esta seção para saber mais sobre as novidades e atualizações da Ferramenta de transferência de conteúdo versão v1.0.4.
 
@@ -142,6 +142,6 @@ Siga esta seção para saber mais sobre as novidades e atualizações das Ferram
 
 * Lançamento do plug-in AIO-CLI para unificar as ferramentas de refatoração de código para permitir que os desenvolvedores chamem e executem ferramentas de refatoração de código de um só lugar. Consulte [Recurso do Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obter mais detalhes.
 
-* O AEM Dispatcher Converter foi estendido para aceitar conversões de configurações no local e do Adobe Managed Services Dispatcher em configurações do AEM as a Cloud Service compatíveis com Dispatcher. Consulte [Recurso do Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) para obter mais detalhes.
+* O AEM Dispatcher Converter foi estendido para aceitar conversões de configurações no local e do Adobe Managed Services Dispatcher em configurações do AEM as a Cloud Service compatíveis com o Dispatcher. Consulte [Recurso do Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) para obter mais detalhes.
 
-* O Conversor de Dispatcher para AEM foi regravado em ` node.js ` e integrado ao plug-in AIO-CLI.
+* O AEM Dispatcher Converter foi regravado em ` node.js ` e integrado ao plug-in AIO-CLI.

@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 37%
+source-wordcount: '1402'
+ht-degree: 33%
 
 ---
 
@@ -36,13 +36,17 @@ Antes de começar a implantar seu código, defina as configurações de pipeline
 
 ## Adicionar um novo pipeline de produção {#adding-production-pipeline}
 
-Depois de configurar seu programa e ter pelo menos um ambiente usando a interface do usuário do [!UICONTROL Cloud Manager], você estará pronto para adicionar um pipeline de não produção seguindo essas etapas.
+Depois de configurar seu programa e ter pelo menos um ambiente usando a interface do usuário do [!UICONTROL Cloud Manager], você estará pronto para adicionar um pipeline de produção seguindo essas etapas.
 
 >[!TIP]
 >
->Antes de configurar um pipeline de front-end, consulte a [Jornada de Criação rápida de sites para AEM](/help/journey-sites/quick-site/overview.md) para obter um guia completo sobre a ferramenta simples de Criação rápida de sites para AEM. Esta jornada pode ajudá-lo a simplificar o desenvolvimento de front-end do seu site AEM, permitindo que você personalize seu site rapidamente sem conhecimento de back-end com AEM.
+>Antes de configurar um pipeline de front-end, consulte a [Jornada de Criação rápida de sites do AEM](/help/journey-sites/quick-site/overview.md) para obter um guia completo sobre a ferramenta simples de Criação rápida de sites do AEM. Esta jornada pode ajudá-lo a simplificar o desenvolvimento de front-end do seu site do AEM, permitindo que você personalize seu site rapidamente sem conhecimento de back-end no AEM.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
+1. Entre no Cloud Manager em [experience.adobe.com](https://experience.adobe.com).
+1. Na seção **Acesso rápido**, clique em **Experience Manager**.
+1. No painel lateral esquerdo, clique em **Cloud Manager**.
+1. Selecione a organização desejada.
+1. No console **Meus Programas**, clique em um programa.
 
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
@@ -76,7 +80,7 @@ As etapas para concluir a criação do pipeline de produção variam de acordo c
 
 ### Configurar um pipeline de código de pilha completa {#full-stack-code}
 
-Um pipeline de código de pilha completa implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor AEM, juntamente com a configuração HTTPD/Dispatcher.
+Um pipeline de código de pilha completa implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor do AEM, juntamente com a configuração HTTPD/Dispatcher.
 
 >[!NOTE]
 >
@@ -106,23 +110,24 @@ Insira os primeiros caracteres do nome da ramificação e o recurso de preenchim
 
 1. Forneça caminhos a serem incluídos na Auditoria de experiência.
 
-   * Consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) para obter detalhes.
+   * Consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) para obter detalhes.
 
 1. Clique em **Salvar** para salvar o pipeline.
 
-Quando o pipeline é executado, os caminhos configurados para a Auditoria de experiência são enviados e avaliados com base em desempenho, acessibilidade, SEO, práticas recomendadas e testes de PWA. Para obter mais detalhes, consulte [Noções básicas sobre os resultados da auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md).
+Quando o pipeline é executado, os caminhos configurados para a Auditoria de experiência são enviados e avaliados com base em desempenho, acessibilidade, SEO, práticas recomendadas e testes do PWA. Para obter mais detalhes, consulte [Noções básicas sobre os resultados da auditoria de experiência](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
 O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipelines.md) no cartão **Pipelines** na página **Visão geral do programa**.
 
 ### Configurar um pipeline de implantação direcionada {#targeted-deployment}
 
-Uma implantação direcionada implanta o código somente em partes selecionadas do aplicativo AEM. Nessa implantação, você pode optar por **Incluir** um dos seguintes tipos de código:
+Uma implantação direcionada implanta o código somente para partes selecionadas do aplicativo AEM. Nessa implantação, você pode optar por **Incluir** um dos seguintes tipos de código:
 
-* **Configuração** - Defina as configurações de vários recursos no seu ambiente AEM.
-   * Consulte [Uso dos Pipelines de Configuração](/help/operations/config-pipeline.md) para obter uma lista de configurações com suporte, que inclui encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e várias configurações de CDN, além de gerenciá-las no repositório para que sejam implantadas corretamente.
-   * Ao executar um pipeline de implantação direcionada, as configurações são implantadas, desde que tenham sido salvas no ambiente, repositório e ramificação definidos no pipeline.
+* **Configuração** - Defina as configurações de vários recursos no seu ambiente do AEM.
+   * Consulte [Uso dos Pipelines de Configuração](/help/operations/config-pipeline.md) para obter uma lista de configurações com suporte, que incluem encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e várias configurações de CDN, além de gerenciá-las no repositório para que sejam implantadas corretamente.
+   * Ao executar um pipeline de implantação direcionada, as configurações são implantadas, desde que sejam salvas no ambiente, repositório e ramificação definidos no pipeline.
    * Em um dado momento, somente pode haver um pipeline de configuração por ambiente.
-* **Código de front-end** - Configure o JavaScript e o CSS para o front-end do aplicativo AEM.
+* **Configurar pipeline de configuração do Edge Delivery Services** - Os Pipelines de Configuração do Edge Delivery não têm ambientes de desenvolvimento, preparo e produção separados. No AEM as a Cloud Service, as alterações percorrem níveis de desenvolvimento, preparo e produção. Por outro lado, um Pipeline de configuração do Edge Delivery aplica sua configuração diretamente a todos os domínios do Edge Delivery Sites registrados no Cloud Manager. Para saber mais, consulte [Adicionar um pipeline de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+* **Código de front-end** - Configure o JavaScript e o CSS para o front-end do seu aplicativo AEM.
    * Com os pipelines de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ser acelerado.
    * Consulte o documento [Desenvolvimento de sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas para aproveitar ao máximo o potencial desse processo.
 * **Configuração da Camada da Web** - Configure as propriedades do Dispatcher para armazenar, processar e entregar páginas da Web ao cliente.

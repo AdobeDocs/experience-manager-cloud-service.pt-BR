@@ -1,17 +1,17 @@
 ---
-title: Uso de pipelines de configuração
+title: Usar Pipelines De Configuração
 description: Saiba como você pode usar pipelines de configuração para implantar diferentes configurações no AEM as a Cloud Service, como configurações de encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e várias configurações de CDN.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 1d29700d8cbb9cd439ec909687c34db06a8090e4
+source-git-commit: b0357c9fcc19d29c3d685e6b14369a6fcc6832e1
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1340'
 ht-degree: 2%
 
 ---
 
-# Uso de pipelines de configuração {#config-pipelines}
+# Usar pipelines de configuração {#config-pipelines}
 
 Saiba como você pode usar pipelines de configuração para implantar diferentes configurações no AEM as a Cloud Service, como configurações de encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e várias configurações de CDN.
 
@@ -21,18 +21,18 @@ Um pipeline de configuração do Cloud Manager implanta arquivos de configuraç�
 
 Para projetos do **Entrega de publicação**, os pipelines de configuração podem ser implantados via Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção. Os arquivos de configuração podem ser implantados em ambientes de desenvolvimento rápido (RDEs) usando a [ferramenta de linha de comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
-Os pipelines de configuração também podem ser implantados por meio do Cloud Manager para Projetos **Edge Delivery**.
+Os pipelines de configuração também podem ser implantados por meio do Cloud Manager para Projetos do **Edge Delivery**.
 
 As seções a seguir deste documento fornecem uma visão geral de informações importantes sobre como os pipelines de configuração podem ser usados e como as configurações para eles devem ser estruturadas. Ele descreve conceitos gerais compartilhados entre todos ou um subconjunto dos recursos compatíveis com os pipelines de configuração.
 
-* [Configurações com suporte](#configurations) - Uma lista de configurações que podem ser implantadas com pipelines de configuração
-* [Criação e gerenciamento de pipelines de configuração](#creating-and-managing) - Como criar um pipeline de configuração
-* [Sintaxe comum](#common-syntax) - Sintaxe compartilhada entre configurações
-* [Estrutura de pastas](#folder-structure) - Descreve a configuração de estrutura que os pipelines esperam para as configurações
-* [Variáveis de ambiente secretas](#secret-env-vars) - Exemplos de uso de variáveis de ambiente para não revelar segredos em suas configurações
-* [Variáveis de pipeline secretas](#secret-pipeline-vars) - Exemplos de uso de variáveis de ambiente para não divulgar segredos em suas configurações para projetos Edge Delivery Services
+* [Configurações com Suporte](#configurations) - Uma lista de configurações que podem ser implantadas com pipelines de configuração.
+* [Criar e gerenciar pipelines de configuração](#creating-and-managing) - Como criar um pipeline de configuração
+* [Sintaxe comum](#common-syntax) - Sintaxe compartilhada entre configurações.
+* [Estrutura de pasta](#folder-structure) - Descreve a configuração de estrutura que os pipelines esperam para as configurações.
+* [Variáveis de ambiente secretas](#secret-env-vars) - Exemplos de uso de variáveis de ambiente para não revelar segredos em suas configurações.
+* [Variáveis de pipeline secretas](#secret-pipeline-vars) - Exemplos de uso de variáveis de ambiente para não divulgar segredos em suas configurações para projetos Edge Delivery Services.
 
-## Configurações suportadas {#configurations}
+## Configurações compatíveis {#configurations}
 
 A tabela a seguir oferece uma lista abrangente dessas configurações com links para a documentação dedicada descrevendo sua sintaxe de configuração distinta e outras informações.
 
@@ -50,13 +50,13 @@ A tabela a seguir oferece uma lista abrangente dessas configurações com links 
 | [Tarefa de manutenção de limpeza de versão](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Otimizar o repositório do AEM declarando regras sobre quando as versões de conteúdo devem ser removidas | X |  |
 | [Tarefa de manutenção de limpeza de log de auditoria](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Otimizar o log de auditoria do AEM para aumentar o desempenho, declarando regras sobre quando os logs devem ser removidos | X |  |
 | [Encaminhamento de logs](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure os endpoints e as credenciais para encaminhar logs para vários destinos, incluindo Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk | X | X |
-| [Registrando uma ID de Cliente](/help/implementing/developing/open-api-based-apis.md) | `API` | Determine o escopo dos projetos da API do Adobe Developer Console para ambientes AEM específicos registrando a ID do cliente. Isso é necessário para o uso de APIs baseadas em OpenAPI que exigem autenticação | X |  |
+| [Registrando uma ID de Cliente](/help/implementing/developing/open-api-based-apis.md) | `API` | Escopo de projetos da API do Adobe Developer Console para um ambiente específico do AEM registrando a ID do cliente. Necessário para o uso de APIs baseadas em OpenAPI que exigem autenticação | X |  |
 
-## Criação e gerenciamento de pipelines de configuração {#creating-and-managing}
+## Criar e gerenciar pipelines de configuração {#creating-and-managing}
 
 Para obter informações sobre como criar e configurar os pipelines de configuração do **Entrega de publicação**, consulte [Pipelines de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Ao criar um pipeline de configuração no Cloud Manager, selecione uma **Implantação direcionada** em vez de **Código de pilha completa** ao configurar o pipeline. Como observado anteriormente, a configuração de RDEs é implantada usando a [ferramenta de linha de comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), em vez de um pipeline.
 
-Para obter informações sobre como criar e configurar pipelines de configuração do **Edge Delivery**, consulte o artigo [Adicionar um pipeline do Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+Para obter informações sobre como criar e configurar pipelines de configuração do **Edge Delivery**, consulte o artigo [Adicionar um pipeline de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
 
 ## Sintaxe comum {#common-syntax}
 
@@ -73,11 +73,11 @@ Cada arquivo de configuração começa com propriedades que se assemelham ao seg
 |---|---|---|
 | `kind` | Uma string que determina o tipo de configuração, como encaminhamento de logs, regras de filtro de tráfego ou transformações de solicitações | Obrigatório, sem padrão |
 | `version` | Uma string que representa a versão do esquema | Obrigatório, sem padrão |
-| `envTypes` | Essa matriz de cadeias de caracteres é uma propriedade filho do nó `metadata`. Para **Publicar Entrega**, os valores possíveis são dev, stage, prod ou qualquer combinação e determina para quais tipos de ambiente a configuração será processada. Por exemplo, se a matriz incluir apenas `dev`, a configuração não será carregada em ambientes de preparo ou produção, mesmo se a configuração for implantada lá. Para **Edge Delivery**, somente um valor de `prod` deve ser usado | Todos os tipos de ambiente, que é (dev, stage, prod) para Entrega de publicação ou apenas prod para Edge Delivery |
+| `envTypes` | Essa matriz de cadeias de caracteres é uma propriedade filho do nó `metadata`. Para **Publicar Entrega**, os valores possíveis são dev, stage, prod ou qualquer combinação e determina para quais tipos de ambiente a configuração é processada. Por exemplo, se a matriz incluir apenas `dev`, a configuração não será carregada em ambientes de preparo ou produção, mesmo se a configuração for implantada lá. Para **Edge Delivery**, somente um valor de `prod` deve ser usado. | Todos os tipos de ambiente, que é (dev, stage, prod) para Entrega de publicação ou apenas prod para Edge Delivery. |
 
 Você pode usar o utilitário `yq` para validar localmente a formatação YAML do seu arquivo de configuração (por exemplo, `yq cdn.yaml`).
 
-## Estrutura da pasta {#folder-structure}
+## Estrutura de pastas {#folder-structure}
 
 Uma pasta chamada `/config` ou semelhante deve estar na parte superior da árvore, com mais um arquivo YAML em algum lugar em uma árvore abaixo dela.
 
@@ -88,7 +88,7 @@ Por exemplo:
   cdn.yaml
 ```
 
-ou
+Ou
 
 ```text
 /config
@@ -104,7 +104,7 @@ As seções a seguir ilustram algumas estratégias para estruturar seus arquivos
 
 ### Um único arquivo de configuração para todos os ambientes {#single-file}
 
-A estrutura do arquivo será semelhante ao seguinte:
+A estrutura do arquivo é semelhante ao seguinte:
 
 ```text
 /config
@@ -121,7 +121,7 @@ Use essa estrutura quando a mesma configuração for suficiente para todos os am
      envTypes: ["dev", "stage", "prod"]
 ```
 
-Usando variáveis de ambiente (ou pipeline) do tipo secreto, é possível que as [propriedades secretas](#secret-env-vars) variem de acordo com o ambiente, conforme ilustrado pela referência `${{SPLUNK_TOKEN}}`
+Usando variáveis de ambiente (ou pipeline) do tipo secreto, é possível que as [propriedades secretas](#secret-env-vars) variem em cada ambiente, conforme ilustrado pela seguinte referência `${{SPLUNK_TOKEN}}`.
 
 ```yaml
 kind: "LogForwarding"
@@ -137,9 +137,9 @@ data:
       index: "AEMaaCS"
 ```
 
-### Um Arquivo Separado Por Tipo De Ambiente {#file-per-env}
+### Um arquivo separado por tipo de ambiente {#file-per-env}
 
-A estrutura do arquivo será semelhante ao seguinte:
+A estrutura do arquivo é semelhante ao seguinte:
 
 ```text
 /config
@@ -151,16 +151,15 @@ A estrutura do arquivo será semelhante ao seguinte:
   logForwarding-prod.yaml
 ```
 
-Use esta estrutura quando houver diferenças nos valores de propriedade. Nos arquivos, é de se esperar que o valor da matriz `envTypes` corresponda ao sufixo, por exemplo
-`cdn-dev.yaml` e `logForwarding-dev.yaml` com um valor de `["dev"]`, `cdn-stage.yaml` e `logForwarding-stage.yaml` com um valor de `["stage"]`, e assim por diante.
+Use esta estrutura quando houver diferenças nos valores de propriedade. Nos arquivos, é de se esperar que o valor da matriz `envTypes` corresponda ao sufixo. Por exemplo, `cdn-dev.yaml` e `logForwarding-dev.yaml` com um valor de `["dev"]`, `cdn-stage.yaml` e `logForwarding-stage.yaml` com um valor de `["stage"]`, e assim por diante.
 
-### Uma Pasta Por Ambiente {#folder-per-env}
+### Uma pasta por ambiente {#folder-per-env}
 
 Nesta estratégia, há uma pasta `config` separada por ambiente, com um pipeline separado declarado no Cloud Manager para cada uma.
 
 Essa abordagem é particularmente útil se você tiver vários ambientes de desenvolvimento, em que cada um tem valores de propriedade exclusivos.
 
-A estrutura do arquivo será semelhante ao seguinte:
+A estrutura do arquivo é semelhante ao seguinte:
 
 ```text
 /config/dev1
@@ -178,7 +177,8 @@ Uma variação dessa abordagem é manter uma ramificação separada por ambiente
 
 ### Edge Delivery Services {#yamls-for-eds}
 
-Os pipelines de configuração do Edge Delivery não têm ambientes de desenvolvimento, preparo e produção separados. Diferentemente dos ambientes de Entrega de publicação, em que as alterações avançam pelos níveis de desenvolvimento, preparo e produção, a configuração implantada por meio de um pipeline de configuração do Edge Delivery é aplicada diretamente a todos os mapeamentos de domínio registrados no Cloud Manager com um site do Edge Delivery.
+Os pipelines de configuração do Edge Delivery não têm ambientes de desenvolvimento, preparo e produção separados. Em ambientes de Entrega de publicação, as alterações avançam pelos níveis de desenvolvimento, preparo e produção. Por outro lado, um pipeline de configuração do Edge Delivery aplica a configuração diretamente a todos os mapeamentos de domínio registrados no Cloud Manager para um site do Edge Delivery.
+
 
 Assim, implante uma estrutura de arquivo simples como:
 
@@ -188,7 +188,7 @@ Assim, implante uma estrutura de arquivo simples como:
   logForwarding.yaml
 ```
 
-Se uma regra precisar ser diferente por Site do Edge Delivery, use a sintaxe *when* para distinguir as regras umas das outras. Por exemplo, observe que o domínio corresponde a dev.example.com no trecho abaixo, que pode ser diferenciado do domínio www.example.com.
+Se uma regra precisar diferir de acordo com o site do Edge Delivery, use a sintaxe *when* para distinguir as regras umas das outras. Por exemplo, observe que o domínio corresponde a dev.example.com no trecho abaixo, que pode ser diferenciado do domínio www.example.com.
 
 ```
 kind: "CDN"
@@ -215,7 +215,7 @@ Para que informações confidenciais não precisem ser armazenadas no controle d
 
 Observe que as variáveis de ambiente secretas são usadas para publicar projetos de entrega; consulte a seção Variáveis de pipeline secretas para projetos Edge Delivery Services.
 
-O trecho abaixo é um exemplo de como a variável de ambiente secreta `${{SPLUNK_TOKEN}}` é usada na configuração.
+O trecho a seguir é um exemplo de como a variável de ambiente secreta `${{SPLUNK_TOKEN}}` é usada na configuração.
 
 ```
 kind: "LogForwarding"
@@ -231,7 +231,7 @@ data:
       index: "AEMaaCS"
 ```
 
-Consulte o documento [Variáveis de ambiente do Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) para obter detalhes sobre como usar as variáveis de ambiente.
+Para obter detalhes sobre como usar variáveis de ambiente, consulte [Variáveis de ambiente do Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
 ## Variáveis de pipeline secretas {#secret-pipeline-vars}
 
@@ -239,5 +239,4 @@ Para Projetos Edge Delivery Services, use variáveis de pipeline do Cloud Manage
 
 A sintaxe é idêntica ao trecho mostrado na seção anterior.
 
-Consulte o documento [Variáveis de pipeline no Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) para obter detalhes sobre como usar variáveis de pipeline.
-
+Para obter detalhes sobre como usar variáveis de pipeline, consulte [Variáveis de pipeline no Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).

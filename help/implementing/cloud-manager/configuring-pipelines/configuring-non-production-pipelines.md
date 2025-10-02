@@ -6,10 +6,10 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: 07ed9bd6d9830bc9120b59cab43f834ef8620709
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 71%
+source-wordcount: '1466'
+ht-degree: 57%
 
 ---
 
@@ -26,7 +26,7 @@ Além de [pipelines de produção](#configuring-production-pipelines.md), que s�
 
 Existem dois tipos de pipelines de não produção:
 
-* **Pipelines de qualidade do código** - Esses executam verificações de qualidade do código em uma ramificação Git e executam as etapas de qualidade do código e compilação.
+* **Pipelines de qualidade do código**: executam verificações de qualidade de código em uma ramificação do Git e executam as etapas de qualidade de código e de criação.
 * **Pipelines de implantação** - Além de executar as etapas de compilação e qualidade do código como os pipelines de qualidade do código, esses pipelines implantam o código em um ambiente de não produção.
 
 >[!NOTE]
@@ -37,9 +37,11 @@ Existem dois tipos de pipelines de não produção:
 
 Depois de configurar seu programa e ter pelo menos um ambiente usando a interface do usuário do Cloud Manager, você estará pronto para adicionar um pipeline de não produção seguindo essas etapas.
 
-1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
-
-1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
+1. Entre no Cloud Manager em [experience.adobe.com](https://experience.adobe.com).
+1. Na seção **Acesso rápido**, clique em **Experience Manager**.
+1. No painel lateral esquerdo, clique em **Cloud Manager**.
+1. Selecione a organização desejada.
+1. No console **Meus Programas**, clique em um programa.
 
 1. Acesse o cartão **Pipelines** na tela inicial do Cloud Manager. Clique em **+Adicionar** e selecione **Adicionar pipeline de não produção**.
 
@@ -56,8 +58,8 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
 
    * **Acionador da implantação** - Você tem as seguintes opções ao definir os acionadores de implantação para iniciar o pipeline.
 
-      * **Manual** - Use essa opção para iniciar manualmente o pipeline.
-      * **Quando o Git é alterado**: essa opção inicia o pipeline de CI/CD sempre que confirmações são adicionadas à ramificação Git configurada. Com essa opção, ainda é possível iniciar o pipeline manualmente, conforme necessário.
+      * **Manual** - Use essa opção para iniciar o pipeline manualmente.
+      * **Sobre alterações do Git** - Essa opção inicia o pipeline de CI/CD sempre que confirmações são adicionadas à ramificação Git configurada. Com essa opção, ainda é possível iniciar o pipeline manualmente, conforme necessário.
 
 1. Se optar por criar um **pipeline de implantação**, você também precisará definir o **comportamento de falha para métricas importantes**.
 
@@ -78,7 +80,7 @@ As etapas para concluir a criação do pipeline de não produção variam de aco
 
 ### Código de pilha completa {#full-stack-code}
 
-Um pipeline de código de pilha completa implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor AEM, juntamente com a configuração HTTPD/Dispatcher.
+Um pipeline de código de pilha completa implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor do AEM, juntamente com a configuração HTTPD/Dispatcher.
 
 >[!NOTE]
 >
@@ -103,7 +105,7 @@ Para concluir a configuração do pipeline de não produção do código de pilh
       * **Teste funcional do produto**: executa [testes funcionais de produto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) no ambiente de desenvolvimento.
       * **Teste funcional personalizado**: executa [testes funcionais personalizados](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) no ambiente de desenvolvimento.
       * **Teste de interface personalizada**: executa [testes de interface personalizada](/help/implementing/cloud-manager/ui-testing.md) para aplicativos personalizados.
-      * **Auditoria de Experiência** - Executar [Auditoria de Experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+      * **Auditoria de Experiência** - Executar [Auditoria de Experiência](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
    ![Pipeline de pilha completa](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -113,19 +115,21 @@ O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipel
 
 ### Implantação direcionada {#targeted-deployment}
 
-Uma implantação direcionada implanta o código somente em partes selecionadas do aplicativo AEM. Nessa implantação, você pode optar por **Incluir** um dos seguintes tipos de código:
+Uma implantação direcionada implanta o código somente para partes selecionadas do aplicativo AEM. Nessa implantação, você pode optar por **Incluir** um dos seguintes tipos de código:
 
-* **Configuração** - Define as configurações de vários recursos no seu ambiente AEM.
-   * Consulte [Uso dos Pipelines de Configuração](/help/operations/config-pipeline.md) para obter uma lista de configurações com suporte, que inclui encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e várias configurações de CDN, além de gerenciá-las no repositório para que sejam implantadas corretamente.
-   * Ao executar um pipeline de implantação direcionada, as configurações serão implantadas, desde que sejam salvas no ambiente, repositório e ramificação definidos no pipeline.
+* **Configuração** - Defina as configurações de vários recursos no seu ambiente do AEM.
+   * Consulte [Uso dos Pipelines de Configuração](/help/operations/config-pipeline.md) para obter uma lista de configurações com suporte, que incluem encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e várias configurações de CDN, além de gerenciá-las no repositório para que sejam implantadas corretamente.
+   * Ao executar um pipeline de implantação direcionada, as configurações são implantadas, desde que sejam salvas no ambiente, repositório e ramificação definidos no pipeline.
    * Em um dado momento, somente pode haver um pipeline de configuração por ambiente.
-* **Código de front-end** - Configure o JavaScript e o CSS para o front-end do aplicativo AEM.
+* **Configurar pipeline de configuração do Edge Delivery Services** - Os Pipelines de Configuração do Edge Delivery não têm ambientes de desenvolvimento, preparo e produção separados. No AEM as a Cloud Service, as alterações percorrem níveis de desenvolvimento, preparo e produção. Por outro lado, um Pipeline de configuração do Edge Delivery aplica sua configuração diretamente a todos os domínios do Edge Delivery Sites registrados no Cloud Manager. Para saber mais, consulte [Adicionar um pipeline de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+* **Código de front-end** - Configure o JavaScript e o CSS para o front-end do seu aplicativo AEM.
    * Com os pipelines de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ser acelerado.
    * Consulte o documento [Desenvolvimento de sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas para aproveitar ao máximo o potencial desse processo.
 * **Configuração da Camada da Web** - Configure as propriedades do Dispatcher para armazenar, processar e entregar páginas da Web ao cliente.
    * Consulte o documento [Pipelines de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) para obter mais detalhes.
    * Se existir um pipeline de código da Web para o ambiente selecionado, essa seleção será desabilitada.
-   * Se você tiver um pipeline de pilha completa existente implantando em um ambiente, a criação de um pipeline de configuração no nível da Web para o mesmo ambiente fará com que a configuração existente no pipeline de pilha completa seja ignorada.
+   * Se um pipeline de pilha completa já for implantado em um ambiente, você ainda poderá criar um pipeline de configuração no nível da Web para esse mesmo ambiente. Quando você faz isso, o Cloud Manager ignora a configuração no nível da Web no pipeline de pilha completa.
+
 
 >[!NOTE]
 >
@@ -152,13 +156,13 @@ As etapas para concluir a criação do pipeline de implantação de destino e n�
    * **Ramificação Git**: essa opção define de qual ramificação o pipeline selecionado deve recuperar o código.
       * Insira os primeiros caracteres do nome da ramificação e utilize o preenchimento automático deste campo. O recurso encontra as ramificações correspondentes que você pode selecionar.
    * **Localização do código**: essa opção define o caminho na ramificação do repositório selecionado do qual o pipeline deve recuperar o código.
-   * **Pipeline** - Para pipelines de não produção de front-end, você tem a opção de habilitar a **[Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md)**.
+   * **Pipeline** - Para pipelines de não produção de front-end, você tem a opção de habilitar a **[Auditoria de experiência](/help/implementing/cloud-manager/reports/report-experience-audit.md)**.
 
    ![Configurar pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. Se você habilitou a Auditoria de Experiência, clique em **Continuar** para avançar para a guia **Auditoria de Experiência**, na qual será possível definir os caminhos que sempre devem ser incluídos na Auditoria de Experiência.
 
-   * Se você habilitou a **Auditoria de experiência**, consulte o documento [Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obter detalhes sobre como configurar.
+   * Se você habilitou a **Auditoria de experiência**, consulte o documento [Auditoria de experiência](/help/implementing/cloud-manager/reports/report-experience-audit.md) para obter detalhes sobre como configurar.
    * Caso contrário, pule esta etapa.
 
 1. Clique em **Salvar** para salvar o pipeline.
@@ -167,9 +171,9 @@ O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipel
 
 ## Ignorar pacotes do Dispatcher {#skip-dispatcher-packages}
 
-Se deseja que os pacotes do Dispatcher sejam criados como parte de seu pipeline, mas não que sejam publicados para criar um armazenamento, é possível desabilitar a publicação deles, o que pode reduzir a duração da execução do pipeline.
+Se quiser que os pacotes do Dispatcher sejam criados no pipeline, mas não forem carregados para criar armazenamento, desative a publicação. Isso pode reduzir o tempo de execução do pipeline.
 
-A configuração a seguir para desabilitar a publicação de pacotes do Dispatcher deve ser adicionada por meio do arquivo de projeto `pom.xml`. Ela se baseia em uma variável de ambiente, que serve como um sinalizador que pode ser definido no container de compilação do Cloud Manager para especificar quando os pacotes do Dispatcher devem ser ignorados.
+A configuração a seguir para desabilitar a publicação de pacotes do Dispatcher deve ser adicionada por meio do arquivo de projeto `pom.xml`. Defina uma variável de ambiente no contêiner de compilação do Cloud Manager para sinalizar quando ignorar os pacotes do Dispatcher. O pipeline lê esse sinalizador e os ignora adequadamente.
 
 ```xml
 <profile>

@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 38%
@@ -83,7 +83,7 @@ A fase **Teste de preparo** envolve as seguintes etapas:
 | Teste funcional do produto | O pipeline do Cloud Manager executa testes que são executados no ambiente de preparo.<br>Consulte também [Teste funcional do produto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Teste funcional personalizado | Essa etapa no pipeline é sempre executada e não pode ser ignorada. Se a compilação não produzir um JAR de teste, o teste será aprovado automaticamente.<br>Consulte também [Teste funcional personalizado](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing). |
 | Testes de interface do usuário personalizados | Um recurso opcional que executa automaticamente testes de interface do usuário criados para aplicativos personalizados.<br>Os testes de interface do usuário são baseados em Selenium e compactados em uma imagem do Docker para oferecer flexibilidade de linguagem e estruturas. Essa abordagem permite usar Java e Maven, Node e WebDriver.io, ou qualquer estrutura ou tecnologia baseada no Selenium.<br>Consulte também [Teste personalizado da interface do usuário](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing). |
-| Auditoria de experiência | Essa etapa no pipeline é sempre executada e não pode ser ignorada. Conforme um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após o teste funcional personalizado que executa as verificações.<ul><li>As páginas configuradas são enviadas ao serviço e avaliadas.</li><li>Os resultados são informativos e mostram as pontuações e as alterações entre as pontuações atual e anterior.</li><li>Essa informação é valiosa para determinar se há uma regressão introduzida com a implantação atual.</li></ul>Consulte [Noções básicas sobre os resultados da Auditoria de Experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
+| Auditoria de experiência | Essa etapa no pipeline é sempre executada e não pode ser ignorada. Conforme um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após o teste funcional personalizado que executa as verificações.<ul><li>As páginas configuradas são enviadas ao serviço e avaliadas.</li><li>Os resultados são informativos e mostram as pontuações e as alterações entre as pontuações atual e anterior.</li><li>Essa informação é valiosa para determinar se há uma regressão introduzida com a implantação atual.</li></ul>Consulte [Noções básicas sobre os resultados da Auditoria de Experiência](/help/implementing/cloud-manager/reports/report-experience-audit.md).</li></ul> |
 
 ![Teste de preparo](assets/stage-testing.png)
 
