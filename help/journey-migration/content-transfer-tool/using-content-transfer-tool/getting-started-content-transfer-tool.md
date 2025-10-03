@@ -1,5 +1,5 @@
 ---
-title: Introdução à ferramenta Transferência de conteúdo
+title: Introdução à ferramenta de transferência de conteúdo
 description: Saiba como começar a usar a ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
@@ -12,7 +12,7 @@ ht-degree: 14%
 ---
 
 
-# Introdução à ferramenta Transferência de conteúdo {#getting-started-content-transfer-tool}
+# Introdução à ferramenta de transferência de conteúdo {#getting-started-content-transfer-tool}
 
 
 ## Disponibilidade {#availability}
@@ -20,16 +20,16 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
 >title="Download"
->abstract="O Content Transfer Tool pode ser baixado como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM). Baixe a versão mais recente."
+>abstract="A ferramenta de transferência de conteúdo pode ser baixado como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM). Baixe a versão mais recente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=pt-BR" text="Notas de versão"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portal de distribuição de software"
 
-O Content Transfer Tool pode ser baixado como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do [Gerenciador de Pacotes](/help/implementing/developing/tools/package-manager.md) na sua instância de origem do Adobe Experience Manager (AEM). Baixe a versão mais recente. Para obter mais detalhes sobre a versão mais recente, consulte as [Notas de versão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
+A ferramenta de transferência de conteúdo pode ser baixado como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do [Gerenciador de Pacotes](/help/implementing/developing/tools/package-manager.md) na sua instância de origem do Adobe Experience Manager (AEM). Baixe a versão mais recente. Para obter mais detalhes sobre a versão mais recente, consulte as [Notas de versão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
 
 Somente a versão 2.0.0 e superior é compatível, e é aconselhável usar a versão mais recente.
 
 >[!NOTE]
->Baixe a ferramenta Transferência de conteúdo no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+>Baixe a ferramenta de transferência de conteúdo no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Conectividade de ambiente do Source {#source-environment-connectivity}
 
@@ -59,14 +59,14 @@ A instância do AEM de origem pode estar sendo executada por trás de um firewal
 >
 >Esse sinalizador é apenas para depurar problemas de SSL. Verifique se o sinalizador está desativado antes de executar a extração, pois pode exigir uma grande quantidade de espaço em disco. Isso poderia preencher a capacidade da unidade e causar falha no processo de extração.
 
-## Execução da ferramenta Transferência de conteúdo {#running-tool}
+## Execução da ferramenta de transferência de conteúdo {#running-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
->title="Execução do Content Transfer Tool"
->abstract="Saiba como usar o Content Transfer Tool para migrar o conteúdo para o AEM as a Cloud Service (Autor/Publicação)."
->additional-url="https://video.tv.adobe.com/v/327071/?quality=12&learn=on&captions=por_br" text=" Consulte a demonstração"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=pt-BR#migration" text="Tutorial: utilização do Content Transfer Tool"
+>title="Execução da ferramenta de transferência de conteúdo"
+>abstract="Saiba como usar a ferramenta de transferência de conteúdo para migrar o conteúdo para o AEM as a Cloud Service (Autor/Publicação)."
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Consulte a demonstração"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=pt-BR#migration" text="Tutorial: utilização da ferramenta de transferência de conteúdo"
 
 A seção a seguir se aplica à nova versão da ferramenta Transferência de conteúdo. Siga esta seção para saber como usar a ferramenta Transferência de conteúdo para migrar conteúdo para o AEM as a Cloud Service:
 
@@ -76,7 +76,7 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 >id="aemcloud_ctt_extraction_setup"
 >title="Fase de configuração da extração"
 >abstract="Saiba como criar e gerenciar um conjunto de migração e como copiar a chave de extração."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=pt-BR#migration" text="Tutorial: utilização do Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=pt-BR#migration" text="Tutorial: utilização da ferramenta de transferência de conteúdo"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
