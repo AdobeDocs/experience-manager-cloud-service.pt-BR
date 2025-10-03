@@ -3,14 +3,14 @@ title: Experimentação contextual no AEM as a Cloud Service
 description: Saiba como usar o plug-in de experimentação para adicionar recursos de experimentação ao seu site.
 feature: Administering
 role: Admin
-source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
+source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1799'
 ht-degree: 0%
 
 ---
 
-# Visão geral {#overview}
+# Experimentação contextual no AEM as a Cloud Service {#contextual-experimentation}
 
 >[!NOTE]
 >Atualmente, o recurso de experimentação contextual está disponível somente por meio do programa beta. Entre em contato com o suporte da Adobe ou com seu gerente de conta para obter acesso ao programa beta.
@@ -55,7 +55,7 @@ O [serviço de Telemetria Operacional](/help/sites-cloud/administering/operation
 
 ### Identificador do experimento {#experiment-identifier}
 
-Antes de começar, cada experimento deve ter seu próprio identificador para fins de rastreamento e análise. Um bom ponto de partida é criar um identificador bom e exclusivo para o experimento, que será a &quot;ID do experimento&quot;. Os experimentos geralmente são numerados linearmente ou correlacionados à sua ID de problema em um rastreador de problemas ou sistema de gerenciamento. As IDs de experimento geralmente usam um prefixo para o projeto, por exemplo: OPT-0134, EXP0004 ou CCX0076.
+Antes de começar, cada experimento deve ter seu próprio identificador para fins de rastreamento e análise. Um bom ponto de partida é criar um identificador bom e exclusivo para o experimento, que será a &quot;ID do experimento&quot;. Os experimentos geralmente são numerados linearmente ou correlacionados à sua ID de problema em um rastreador de problemas ou sistema de gerenciamento. As IDs de experimento geralmente usam um prefixo para o projeto, por exemplo: `OPT-0134`, `EXP0004` ou `CCX0076`.
 
 ### Criar sua página do Challenger {#create-challenger-page}
 
@@ -91,7 +91,7 @@ Consulte o exemplo abaixo:
 
 Para cada experimento, o tráfego é dividido entre todas as variantes (controle e desafiantes) e é automaticamente definido como uma distribuição par. Dessa forma, se você tem um desafiante, automaticamente haverá uma divisão de 50/50 entre o controle e o desafiante. Se você tem dois desafiantes, você automaticamente verá um terço do tráfego alocado para controlar e cada desafiante e assim por diante.
 
-É possível substituir a divisão de tráfego configurando os metadados. Para obter mais informações sobre como personalizar os metadados usados em seus experimentos, consulte a seguinte [página](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)
+É possível substituir a divisão de tráfego configurando os metadados. Para obter mais informações sobre como personalizar os metadados usados em seus experimentos, consulte a seguinte [página](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring).
 
 ### Pré-visualizar e preparar suas variantes de experimento {#preview-stage-experiment}
 
