@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 20%
+source-wordcount: '1953'
+ht-degree: 19%
 
 ---
 
@@ -112,6 +112,12 @@ Tocar ou clicar no alternador de aplicativos permite que você vá rapidamente p
 Selecione o ícone que representa seu usuário para acessar as configurações da conta. Se você não tiver uma imagem do usuário configurada, um ícone é atribuído aleatoriamente.
 
 ![Propriedades do usuário](assets/user-properties.png)
+
+Tocar ou clicar no ícone de conta abre um menu com as configurações do usuário. Essas configurações se aplicam ao Cloud Manager em geral e seus recursos são detalhados [nessa documentação.](/help/implementing/cloud-manager/navigation.md)
+
+![Alternador de ambiente](assets/environment-switcher.png)
+
+Para o Editor Universal, [se você tiver o serviço de visualização disponível,](/help/sites-cloud/authoring/sites-console/previewing-content.md) também terá uma opção para alternar entre os ambientes de produção e visualização sob o título **Configurações do Produto**.
 
 ### A barra de ferramentas do editor universal {#universal-editor-toolbar}
 
