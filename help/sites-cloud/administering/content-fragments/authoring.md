@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
+source-git-commit: 1fade922ac38340aaaee71794f96db738d492ed6
 workflow-type: tm+mt
-source-wordcount: '2823'
+source-wordcount: '2778'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,7 @@ Ao abrir o Editor de fragmento de conteúdo pela primeira vez, você vê quatro 
 * barra de ferramentas superior: para informações principais e ações
    * um link para o Console de fragmentos de conteúdo (ícone Início)
    * informações sobre o modelo e a pasta
-   * links para [Visualizar (se o Padrão de URL de Visualização Padrão estiver configurado para o modelo)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
+   * links para [Visualizar](#preview-content-fragment); se o Padrão de URL de Visualização Padrão estiver configurado para o modelo
    * [Publicar](#publish-content-fragment) e [Cancelar publicação](#unpublish-content-fragment) ações
    * uma opção para mostrar todas as **Referências principais** (ícone de link)
    * o fragmento **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** e as últimas informações salvas
@@ -267,7 +267,7 @@ O campo Várias linhas é aberto em tela cheia e:
 
   >[!CAUTION]
   >
-  >A sincronização só está disponível para copiar alterações *de **Main**&#x200B;para a variação*.
+  >A sincronização só está disponível para copiar alterações *de **Main**para a variação*.
   >
   >A transferência de alterações *de uma variação para **Main*** não está disponível como uma opção.
 
@@ -497,14 +497,7 @@ Para permitir que você colabore no produto e no contexto, a guia **Comentários
 
 ## Visualizar o fragmento {#preview-content-fragment}
 
-O editor de fragmento de conteúdo fornece aos autores a opção de visualizar suas edições em um aplicativo de front-end externo.
-
-Para usar esse recurso, primeiro é necessário:
-
-* Trabalhe com sua equipe de TI para configurar o aplicativo de front-end externo que renderizará o fragmento de conteúdo consumindo sua saída JSON.
-* Quando o aplicativo de front-end externo está configurado, o **Padrão de URL de Visualização Padrão** deve ser definido como uma propriedade [do Modelo de Fragmento de Conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties) apropriado.
-
-Quando a URL tiver sido definida, o botão **Visualizar** ficará ativo. Você pode selecionar esse botão para iniciar o aplicativo externo (em uma guia separada) para renderizar o fragmento de conteúdo.
+O editor de fragmento de conteúdo fornece aos autores a opção de visualizar suas edições em um aplicativo de front-end externo. Isso requer que o **[Padrão de URL de Visualização Padrão](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** esteja definido para ativar o botão **Visualizar** na barra de ferramentas superior do editor. Você pode selecionar esse botão para iniciar o aplicativo externo (em uma guia separada) para renderizar o fragmento de conteúdo.
 
 ## Publicar seu fragmento {#publish-content-fragment}
 

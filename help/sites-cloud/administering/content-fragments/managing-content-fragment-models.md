@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: baf9e56e65bc537e136310814f269a3a20a80dd3
+source-git-commit: a64e0ff18c1508a50400f1423543b3c907552d6a
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2459'
 ht-degree: 34%
 
 ---
@@ -132,20 +132,7 @@ Quando você seleciona um modelo específico, as propriedades desse modelo são 
 * **Título**
 * **Tags**
 * **Descrição**
-* **Visualizar padrão de URL**
-
-  Os Modelos de fragmentos do conteúdo permitem que os autores **Visualizem** o conteúdo em um aplicativo de front-end externo. Depois que o **Serviço de visualização** estiver configurado, adicione a URL para o aplicativo front-end.
-
-  O URL de visualização deve seguir este padrão:
-    `https://<preview_url>?param=${expression}`
-
-  As expressões disponíveis são:
-
-   * `${contentFragment.path}`
-   * `${contentFragment.model.path}`
-   * `${contentFragment.model.name}`
-   * `${contentFragment.variation}`
-   * `${contentFragment.id}`
+* **[Visualizar padrão de URL](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)**
 
 <!-- CHECK: currently under FT -->
 <!--
