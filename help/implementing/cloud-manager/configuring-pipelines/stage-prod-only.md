@@ -4,19 +4,21 @@ description: Saiba como dividir implantações de preparo e produção usando pi
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
 hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: f61183c43d9380900b92fe040098e2eb3155979c
+source-git-commit: 890d18778273ce60a676cb74fa8025d6b48dc70d
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1046'
 ht-degree: 48%
 
 ---
 
 # Dividir pipelines somente de estágio e somente de produção {#stage-prod-only}
+
+<!-- REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines" -->
 
 Você pode dividir implantações de preparo e produção usando pipelines dedicados.
 
