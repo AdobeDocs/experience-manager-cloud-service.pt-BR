@@ -1,15 +1,14 @@
 ---
 title: Experimentação contextual no AEM as a Cloud Service
-description: Saiba como usar o plug-in de experimentação para adicionar recursos de experimentação aos seus sites.
+description: Saiba como usar o plug-in de experimentação para adicionar recursos de experimentação ao seu site.
 feature: Administering
 role: Admin
-source-git-commit: 1bb86516328d1405c1761f3c8b0494cc9cb64553
+source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
-
 
 # Visão geral {#overview}
 
