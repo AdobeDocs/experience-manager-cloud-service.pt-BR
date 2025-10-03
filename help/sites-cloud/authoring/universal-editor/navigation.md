@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1954'
 ht-degree: 19%
 
 ---
@@ -117,7 +117,7 @@ Tocar ou clicar no ícone de conta abre um menu com as configurações do usuár
 
 ![Alternador de ambiente](assets/environment-switcher.png)
 
-Para o Editor Universal, [se você tiver o serviço de visualização disponível,](/help/sites-cloud/authoring/sites-console/previewing-content.md) também terá uma opção para alternar entre os ambientes de produção e visualização sob o título **Configurações do Produto**.
+Para o Editor Universal, sob o título **Configurações do Produto**, há uma opção para alternar entre a versão de produção atual do Editor Universal e a versão de visualização futura.
 
 ### A barra de ferramentas do editor universal {#universal-editor-toolbar}
 
