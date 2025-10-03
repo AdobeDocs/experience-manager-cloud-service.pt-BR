@@ -4,9 +4,9 @@ description: Entenda como visualizar seus fragmentos de conteúdo por uma varied
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 42dbf6138920c4f733d7dc74dfc81504dee1e0ae
+source-git-commit: 3781b494394405f69892686790c17ffa9c69f28b
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '394'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,8 @@ Você pode visualizar o fragmento:
 <!--
 * with a HTML template, using **[Preview]()** from the Content Fragments console
 -->
+
+É claro que você também pode visualizar seu fragmento no [editor de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 >[!IMPORTANT]
 >
@@ -67,7 +69,7 @@ Quando a URL tiver sido definida, o botão **[Visualizar](/help/sites-cloud/admi
 
 ## Visualizar instância {#preview-instance}
 
-Você pode **Publicar** e **Cancelar publicação**, seu fragmento na sua instância de Visualização (bem como na sua instância de Publicação).
+Você pode **Publicar** e **Cancelar publicação**, seu fragmento no **[Serviço de visualização](/help/headless/deployment/architecture.md)** (bem como na instância de Publicação).
 
 Você pode publicar o fragmento no editor ou no console.
 
