@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8ee3da55024c0f5246f6c194bc07172b4b71823a
+source-git-commit: 6cf380fd972888fa21f682b0e799cf5ab594e829
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 25%
+source-wordcount: '433'
+ht-degree: 24%
 
 ---
 
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 22758, lançada publicamente em quinta-feira, 1 de outubro de 2025. A versão de manutenção anterior era 22450.
 
-A ativação de recursos do 2025.10.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.10.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-22758}
 
@@ -31,9 +31,9 @@ A ativação de recursos do 2025.10.0 fornecerá o conjunto completo de recursos
 * GRANITE-56026: melhore as respostas do código de status da API de permissões.
 * GRANITE-61015: Pacote `org.apache.commons.io.channels` adicionado à lista pública exportada.
 * GRANITE-61167: O log Felix foi atualizado para a especificação OSGI mais recente.
-* GRANITE-61167: atualizar dependências felix.
+* GRANITE-61167: atualize várias dependências do Apache Felix.
 * GRANITE-61169: Melhore a verificação de cadeias de caracteres protegidas.
-* GRANITE-61622: atualizar dependências do sling.
+* GRANITE-61622: atualize várias dependências do Apache Sling.
 * GRANITE-61663: adicionar `com.adobe.granite.repository.indexdefs-1.0.2` ao início rápido.
 * GRANITE-61811: adicione `com.adobe.granite.repository-2.0.0` ao início rápido.
 * SITES-32014: Ouça eventos externos para atualizar registros de serviço.
@@ -73,4 +73,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.30.1 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
