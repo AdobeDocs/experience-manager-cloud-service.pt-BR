@@ -6,16 +6,20 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: integração da API no editor de regras, chame as melhorias no serviço
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 0%
+source-wordcount: '1040'
+ht-degree: 2%
 
 ---
 
 # Integração da API no Editor de regras
 
-<span>A integração da API no Editor de regras está no Programa de Primeiros Usuários. Você pode escrever para `aem-forms-ea@adobe.com` a partir de sua ID de email oficial para participar do programa de adoção antecipada e solicitar acesso à funcionalidade.</span>
+<span>A integração da API no Editor de regras está no Programa de Primeiros Usuários. Você pode escrever para `aem-forms-ea@adobe.com` com sua ID de email oficial para entrar no programa de primeiros usuários e solicitar acesso ao recurso.</span>
+
+>[!NOTE]
+>
+> O Editor de regras visuais oferece suporte à integração de API no Forms adaptável com base nos Componentes principais e no Edge Delivery Services Forms.
 
 O Editor de regras visuais no Adaptive Forms oferece suporte à integração direta de API sem criar um Modelo de dados de formulário. Você pode se conectar a um endpoint de API inserindo o URL da API (no formato JSON) ou importando a configuração por meio de um comando cURL. Depois de integrada, a ação **Invocar Serviço** pode ser usada para chamar a API.
 
