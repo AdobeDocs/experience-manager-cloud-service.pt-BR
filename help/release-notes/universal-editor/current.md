@@ -4,10 +4,10 @@ description: Estas são as notas de versão do Universal Editor 2025.10.02.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 1%
+source-wordcount: '209'
+ht-degree: 0%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 1%
 # Notas de versão do Universal Editor 2025.10.02 {#release-notes}
 
 Estas são as notas de versão da versão de 2 de outubro de 2025 do Universal Editor.
+
+>[!TIP]
+>
+>Se você deseja testar os recursos do Universal Editor **futuros** antes de eles serem lançados, consulte as [Notas de Versão de Visualização do Universal Editor.](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >
