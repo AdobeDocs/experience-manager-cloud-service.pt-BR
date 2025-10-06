@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
+source-git-commit: 90527b1a160e6bde35562d58407a9056ae1f0a3a
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 17%
@@ -156,7 +156,7 @@ Os seguintes comandos `openssl` podem ser usados para converter certificados nã
 
 ## Limitação do número de certificados SSL instalados {#limitations}
 
-A qualquer momento, a Cloud Manager oferece suporte a até 50 certificados instalados. Esses certificados podem ser associados a um ou mais ambientes em todo o programa e também incluir certificados expirados.
+A qualquer momento, a Cloud Manager oferece suporte a até 70 certificados instalados. Esses certificados podem ser associados a um ou mais ambientes em todo o programa e também incluir certificados expirados.
 
 Se tiver atingido o limite, revise os certificados e considere excluir os certificados expirados. Ou agrupe vários domínios no mesmo certificado, pois um certificado pode abranger vários domínios (até 100 SANs).
 
