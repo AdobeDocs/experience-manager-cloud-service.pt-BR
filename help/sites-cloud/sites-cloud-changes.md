@@ -5,17 +5,17 @@ exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 90%
+source-wordcount: '526'
+ht-degree: 88%
 
 ---
 
 
 # Alterações importantes no AEM Sites as a Cloud Service {#notable-changes}
 
-O AEM Sites as a Cloud Service oferece recursos de gerenciamento de experiência como parte da plataforma AEM as a Cloud Service nativa na nuvem. Além dos principais benefícios do AEM as a Cloud Service, como escalabilidade nativa em nuvem, tempo de atividade e estar sempre atualizado, o AEM Sites as a Cloud Service também várias alterações e adições específicas do Sites.
+O AEM Sites as a Cloud Service oferece recursos de gerenciamento de experiência como parte da plataforma AEM as a Cloud Service nativa na nuvem. Além dos principais benefícios do AEM as a Cloud Service, como escalabilidade nativa em nuvem, tempo de atividade e estar sempre atualizado, o AEM Sites as a Cloud Service também fornece várias alterações e adições específicas do Sites.
 
 >[!NOTE]
 >Este documento destaca as alterações importantes no AEM Sites. Para conhecer as alterações gerais no AEM as a Cloud Service e em outros módulos, consulte:
@@ -40,7 +40,11 @@ No AEM Cloud Service, as operações que tradicionalmente bloqueavam a interface
 * Mover páginas
 * Páginas de implantação
 
-O iniciador dessas ações pode verificar seu status em uma nova interface em `/mnt/overlay/dam/gui/content/asyncjobs.html`.
+<!--
+The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
+-->
+
+Você pode exibir o status de trabalhos assíncronos no [painel Operações em Segundo Plano](/help/operations/asynchronous-jobs.md).
 
 >[!NOTE]
 >
