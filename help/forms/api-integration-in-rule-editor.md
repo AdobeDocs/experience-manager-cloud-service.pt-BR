@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: integração da API no editor de regras, chame as melhorias no serviço
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
+source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1027'
 ht-degree: 2%
 
 ---
@@ -19,17 +19,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> O Editor de regras visuais oferece suporte à integração de API no Forms adaptável com base nos Componentes principais e no Edge Delivery Services Forms.
+> O Editor de Regras Visuais oferece suporte à integração de API no Forms Adaptável com base nos Componentes Principais e no [Edge Delivery Services Forms criado no Editor Universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 O Editor de regras visuais no Adaptive Forms oferece suporte à integração direta de API sem criar um Modelo de dados de formulário. Você pode se conectar a um endpoint de API inserindo o URL da API (no formato JSON) ou importando a configuração por meio de um comando cURL. Depois de integrada, a ação **Invocar Serviço** pode ser usada para chamar a API.
 
 Os campos de formulário podem ser mapeados diretamente para os parâmetros de entrada definidos na configuração da API. Da mesma forma, os parâmetros de saída podem ser mapeados para campos de formulário usando a opção **carga do evento** para a resposta da API correspondente.
 
 Além disso, o Editor de Regras Visuais permite que você defina **sucesso** e **manipuladores de falha** ao invocar um serviço. Os manipuladores de sucesso especificam as ações a serem executadas após uma chamada de API bem-sucedida, enquanto os manipuladores de falha definem como o formulário deve responder quando ocorrer um erro.
-
->[!NOTE]
->
-> A integração de API no Editor de Regras também se aplica ao [Edge Delivery Services Forms criado no Editor Universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Comparação: Métodos de integração de API
 
