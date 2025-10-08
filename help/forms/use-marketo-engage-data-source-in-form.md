@@ -5,9 +5,9 @@ keywords: Usar a fonte de dados do Marketo Engage no Adaptive Forms, Como conect
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '764'
 ht-degree: 5%
 
 ---
@@ -21,12 +21,6 @@ ht-degree: 5%
 Depois de criar a configuração do Cloud Service para integrar o Marketo Engage com o AEM Forms existente, você pode configurar a fonte de dados para formulários.
 
 A configuração da integração de dados permite que os usuários se conectem a várias fontes de dados ou esquemas. Integrar com a fonte de dados do Marketo Engage e usá-la em diferentes formulários facilita as operações nesses dados. Para explorar as fontes de dados prontas para uso com suporte para um Formulário adaptável, consulte o artigo [Configurar fontes de dados](/help/forms/configure-data-sources.md).
-
-## Considerações sobre a configuração da fonte de dados do Marketo Engage para formulários
-
-Considerações ao configurar a fonte de dados do Marketo Engage para formulários são:
-
-* Não é possível conectar o Edge Delivery Services Forms ao Marketo Engage.
 
 ## Pré-requisito para usar a fonte de dados do Marketo Engage para formulários
 
@@ -89,7 +83,7 @@ Como alternativa, você também pode editar as propriedades do Formulário adapt
 
 O Formulário adaptável agora está configurado com a fonte de dados da instância conectada do Marketo Engage. Agora, configure-a para enviar dados ao Adobe Marketo Engage.
 
->[!TAB Editor Universal]
+>[!TAB Universal Editor]
 
 Para configurar um Formulário adaptável criado no Universal Editor com a fonte de dados do Marketo Engage, execute as seguintes etapas:
 
