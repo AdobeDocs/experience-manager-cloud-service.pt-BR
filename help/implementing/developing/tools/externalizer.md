@@ -4,9 +4,9 @@ description: O Externalizador é um serviço OSGi que permite transformar progra
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,11 @@ Para referência, a configuração OSGi padrão para `com.day.cq.commons.impl.Ex
 >
 >Implantar um arquivo `com.day.cq.commons.impl.ExternalizerImpl.cfg.json` personalizado no AEM as a Cloud Service que omita qualquer um desses mapeamentos de domínio predefinidos pode resultar em um comportamento imprevisível do aplicativo.
 
-Para substituir os valores `preview` e `publish`, use as variáveis de ambiente do Cloud Manager conforme descrito no artigo [Configurar OSGi para o AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e definir as variáveis `AEM_CDN_DOMAIN_PUBLISH` e `AEM_CDN_DOMAIN_PREVIEW` predefinidas.
+Não defina ou substitua as variáveis de ambiente `EXTERNALIZER` (por exemplo, `AEM_EXTERNALIZER_AUTHOR`) no Cloud Manager. Em vez disso, se você precisar substituir os valores de domínio `publish` ou `preview`, defina e use as variáveis de ambiente `AEM_CDN_DOMAIN_PUBLISH` e `AEM_CDN_DOMAIN_PREVIEW`. Essas variáveis serão automaticamente atribuídas aos campos correspondentes na configuração do Externalizador durante a inicialização.
+
+<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
 
 ## Configurar o serviço externalizador {#configuring-the-externalizer-service}
 
@@ -74,7 +78,7 @@ Para definir um mapeamento de domínio para o serviço Externalizador:
 
    * **`scheme`** geralmente é http ou https, mas pode ser outro protocolo.
 
-      * A Adobe recomenda o uso de https para aplicar links https.
+      * A Adobe recomenda usar https para aplicar links https.
       * Ele é usado se o código do cliente não substituir o esquema ao solicitar a externalização de um URL.
 
    * **`server`** é o nome do host (seja um nome de domínio ou endereço ip).
@@ -91,7 +95,7 @@ Para definir um mapeamento de domínio para o serviço Externalizador:
 
    >[!NOTE]
    >
-   >Uma configuração personalizada permite que você adicione uma nova categoria, como `production`, `staging` ou até mesmo sistemas externos não-AEM, como `my-internal-webservice`. É útil evitar a codificação rígida desses URLs em diferentes locais na base de código de um projeto.
+   >Uma configuração personalizada permite adicionar uma nova categoria, como `production`, `staging` ou até mesmo sistemas externos não-AEM, como `my-internal-webservice`. É útil evitar a codificação rígida desses URLs em diferentes locais na base de código de um projeto.
 
 1. Clique em **Salvar** para salvar as alterações.
 
@@ -101,7 +105,7 @@ Esta seção mostra alguns exemplos de como o serviço Externalizador pode ser u
 
 >[!NOTE]
 >
->Nenhum link absoluto deve ser criado no contexto de HTML. Portanto, não use este utilitário nesses casos.
+>Nenhum link absoluto deve ser criado no contexto do HTML. Portanto, não use este utilitário nesses casos.
 
 * **Para externalizar um caminho com o domínio &#39;publicar&#39;:**
 
