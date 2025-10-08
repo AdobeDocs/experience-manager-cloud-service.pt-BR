@@ -2,7 +2,7 @@
 title: Perguntas frequentes sobre o Content Hub
 description: Obtenha respostas para algumas das perguntas mais frequentes do Centro de conteúdo.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+source-git-commit: bd8992792afddb2243736578acd24bc47efad842
 workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 1%
@@ -84,7 +84,7 @@ Existem algumas configurações de como os usuários são atribuídos ao [!DNL C
    >
    >O usuário atribuído aos perfis de produto Express e Assets em dois Consoles do Administrador precisa ter o mesmo endereço de email e usar uma conta corporativa **Enterprise ou School**, e não a conta **Personal**. A configuração ideal é ter ambos os Admin Consoles configurados como **Federated ID** com uma relação de confiança configurada entre eles, para que o usuário tenha uma experiência de logon único contínua. Alguns dos planos do Express (por exemplo, Equipes do Express) não oferecem suporte ao Federated ID/logon único.
 
-Além dos direitos de produto corretos, a integração do Adobe Express no Content Hub exige que o usuário atribuído tenha pelo menos [!UICONTROL Pode editar] permissões no ambiente de criação do Assets que viabiliza o Content Hub, em pelo menos **[!UICONTROL # /content/dam/hydroated-assets/]** hierarquia de pastas, onde os usuários do Content Hub podem salvar o conteúdo criado com o Express. Consulte [Gerenciamento de permissões](/help/security/touch-ui-principal-view.md) no modo de exibição de Administração (Interface para toque) ou um [gerenciamento de permissões simplificado no modo de exibição de Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Além dos direitos de produto corretos, a integração do Adobe Express no Content Hub exige que o usuário atribuído tenha pelo menos [!UICONTROL Pode editar] permissões no ambiente de criação do Assets que viabiliza o Content Hub, em pelo menos **[#UICONTROL /content/dam/hydroated-assets/]** hierarquia de pastas, onde os usuários do Content Hub podem salvar o conteúdo criado com o Express. Consulte [Gerenciamento de permissões](/help/security/touch-ui-principal-view.md) no modo de exibição de Administração (Interface para toque) ou um [gerenciamento de permissões simplificado no modo de exibição de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Posso configurar o Content Hub para que as diretrizes de marca da minha organização sejam exibidas como um link na página inicial? {#content-hub-setup-brand-guidelines}
 
