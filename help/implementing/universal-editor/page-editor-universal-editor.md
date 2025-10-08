@@ -4,9 +4,9 @@ description: O Editor de páginas permanece compatível com o Adobe, mas o Edito
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1067'
 ht-degree: 3%
 
 ---
@@ -60,7 +60,7 @@ Como a lacuna de recursos entre os dois editores está diminuindo constantemente
 | [Gerar variações](/help/generative-ai/generate-variations.md) | [!BADGE Indisponível]{type=Negative} |  | [!BADGE Disponível]{type=Positive} | [Disponível como uma extensão](/help/implementing/universal-editor/extending.md) |
 | Inserir novo bloco | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |
 | Reordenar bloco | [!BADGE Disponível]{type=Positive} | Possível com arrastar e soltar no contexto, mas não no painel lateral &quot;exibição em árvore&quot; | [!BADGE Disponível]{type=Positive} | Possível por meio do arrastar e soltar no painel lateral &quot;exibição em árvore&quot;, mas ainda não no contexto (planejado) |
-| Recortar/Copiar-Colar bloco | [!BADGE Disponível]{type=Positive} |  | [!BADGE Indisponível]{type=Negative} | Planejado |
+| Recortar/Copiar-Colar bloco | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |
 | Aplicar estilos | [!BADGE Disponível]{type=Positive} | Os estilos podem ser aplicados a componentes usando o [Sistema de Estilos.](/help/sites-cloud/authoring/page-editor/style-system.md) | [!BADGE Disponível]{type=Positive} | Os estilos podem ser aplicados usando propriedades regulares de componente (ou Fragmento de conteúdo). O mesmo seletor de estilo não está disponível no Editor universal, no entanto, usar um widget de multisseleção para um UX muito semelhante pode ser obtido. |
 | Aplicar layout | [!BADGE Disponível]{type=Positive} | Os sites devem implementar a [Grade responsiva do AEM](/help/implementing/developing/introduction/responsive-design.md) para permitir que os autores redimensionem componentes em três pontos de interrupção predefinidos. | [!BADGE Disponível]{type=Positive} | Os layouts podem ser aplicados usando propriedades regulares de componente (ou Fragmento de conteúdo). No entanto, a Grade responsiva não é compatível. |
 | Desfazer-Refazer | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |

@@ -4,10 +4,10 @@ description: Estas são as notas de versão do Universal Editor 2025.10.02.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 0%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
 
@@ -35,10 +35,6 @@ Se você estiver interessado em testar esses recursos futuros e compartilhar seu
 ### Novo RTE {#new-rte}
 
 O novo RTE do ProseMirror, com um seletor de páginas na caixa de diálogo de link, agora está disponível no painel direito. [Este RTE apresenta opções de configuração flexíveis.](/help/implementing/universal-editor/configure-rte.md)
-
-### Copiar e colar entre páginas {#copy-paste}
-
-Agora, copiar e colar são possíveis em várias páginas, além de dentro da mesma página.
 
 ## Outras melhorias {#other-improvements}
 
