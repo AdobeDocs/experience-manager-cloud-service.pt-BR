@@ -3,7 +3,7 @@ title: Gerenciar coleções no Content Hub
 description: Saiba como gerenciar coleções no Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
+source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 2%
@@ -193,11 +193,11 @@ Você pode marcar Coleções como Favoritas no Content Hub, facilitando sua orga
 
    ![Marcar coleções como favoritas](assets/mark-favorite-collection.png)
 
-   As coleções marcadas como Favoritos agora aparecem na guia **[!UICONTROL Meus Favoritos]**. Como alternativa, você pode remover as coleções de **[!UICONTROL Meus favoritos]**. Para fazer isso, clique em **[!UICONTROL Mais ações]** ![Ícone de mais ações](assets/do-not-localize/more-actions.png) e selecione **[!UICONTROL Remover dos favoritos]**.
+   As coleções marcadas como Favorito agora aparecem na guia **[!UICONTROL Meus Favoritos]**. Como alternativa, você pode remover as coleções de **[!UICONTROL Meus favoritos]**. Para fazer isso, clique em **[!UICONTROL Mais ações]** ![Ícone de mais ações](assets/do-not-localize/more-actions.png) e selecione **[!UICONTROL Remover dos favoritos]**.
 
    ![Remover coleção como favorita](assets/remove-favorite-collection.png)
 
 >[!NOTE]
 >
->[Fixar ou Desafixar a coleção](#pin-unpin-collection) e [Marcar coleções como Favoritas](#favorite-collection) são recursos de disponibilidade limitados. Você pode criar e enviar um caso de Suporte ao cliente da Adobe para habilitá-lo para a implantação.
+>[Fixar ou Desafixar a coleção](#pin-unpin-collection) e [Marcar coleções como Favoritas](#favorite-collection) são recursos de disponibilidade limitados. Você pode [criar e enviar](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) um caso de Suporte ao Cliente da Adobe para habilitá-lo para sua implantação.
 
