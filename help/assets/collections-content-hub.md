@@ -3,9 +3,9 @@ title: Gerenciar coleções no Content Hub
 description: Saiba como gerenciar coleções no Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
+source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -187,13 +187,13 @@ Os administradores do Content Hub podem fixar coleções no Content Hub para ace
 
 Você pode marcar Coleções como Favoritas no Content Hub, facilitando sua organização e recuperação. Depois de adicionadas, suas coleções favoritas ficam convenientemente disponíveis na guia Favoritos na página inicial do Content Hub. Além disso, você pode pesquisar ativos em Coleções favoritas. Para marcar coleções como Favoritos, siga estas etapas:
 
-1. Navegue pelas coleções que deseja fixar ou desfixar.
+1. Procure as coleções que deseja marcar como Favoritos.
 
 1. Clique em **[!UICONTROL Mais ações]** ![Ícone Mais ações](assets/do-not-localize/more-actions.png) e selecione **[!UICONTROL Adicionar aos Favoritos]** para marcar a coleção como Favorita.
 
    ![Marcar coleções como favoritas](assets/mark-favorite-collection.png)
 
-   As coleções marcadas como Favorito agora aparecem na guia **[!UICONTROL Meus Favoritos]**. Como alternativa, você pode remover as coleções de **[!UICONTROL Meus favoritos]**. Para fazer isso, clique em **[!UICONTROL Mais ações]** ![Ícone de mais ações](assets/do-not-localize/more-actions.png) e selecione **[!UICONTROL Remover dos favoritos]**.
+   As coleções marcadas como Favoritos agora são exibidas na guia **[!UICONTROL Meus Favoritos]**. Como alternativa, você pode remover as coleções de **[!UICONTROL Meus favoritos]**. Para fazer isso, clique em **[!UICONTROL Mais ações]** ![Ícone de mais ações](assets/do-not-localize/more-actions.png) e selecione **[!UICONTROL Remover dos favoritos]**.
 
    ![Remover coleção como favorita](assets/remove-favorite-collection.png)
 
