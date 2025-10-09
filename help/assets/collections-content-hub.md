@@ -3,10 +3,10 @@ title: Gerenciar coleções no Content Hub
 description: Saiba como gerenciar coleções no Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 3%
+source-wordcount: '1327'
+ht-degree: 2%
 
 ---
 
@@ -25,6 +25,8 @@ Uma coleção se refere a um conjunto de ativos que podem ser compartilhados ent
 * **Baixar**: baixe os ativos.
 * **Remover**: remover ativos específicos de uma coleção.
 * **Excluir**: excluir toda a coleção.
+* **Fixar/Desfixar**: Fixar ou desafixar a coleção.
+* **Favorito**: marcar coleção como favorita.
 
 Ele ajuda os usuários a acessar e gerenciar facilmente os diversos ativos disponíveis no [!DNL Content Hub].
 
@@ -40,7 +42,7 @@ Você pode optar por [criar uma nova coleção](#create-new-collection) ou [adic
 
 Execute as etapas abaixo para controlar o acesso ao criar coleções:
 
-1. Vá para a guia **[!DNL Collections]** e clique em **[!UICONTROL Criar Coleção]**. A janela Nova coleção é exibida.
+1. Vá para a guia **[!DNL Collections]** e clique em **[!UICONTROL Criar Coleção]**. Uma nova janela Coleta é exibida.
 
 1. Adicionar **[!UICONTROL Título]** e **[!UICONTROL Descrição]** à coleção.
 
@@ -163,5 +165,39 @@ Os ativos selecionados foram removidos com êxito da coleção.
 
 Somente administradores e criadores podem excluir uma coleção. Para excluir uma coleção, navegue até a guia **[!UICONTROL Coleções]** e clique na coleção que você precisa excluir. Clique no ícone ![excluir](assets/delete-icon.svg) para excluir a coleção.
 
+## Fixar ou desafixar coleção {#pin-unpin-collection}
 
+Os administradores do Content Hub podem fixar coleções no Content Hub para acesso rápido. As coleções fixadas são exibidas em uma seção Fixa dedicada na página inicial Coleções, facilitando o alcance de coleções importantes. Para obter acesso rápido, você pode fixar ou desfixar uma coleção executando as etapas abaixo:
+
+1. Navegue pelas coleções que deseja fixar ou desfixar.
+
+1. Clique em **[!UICONTROL Mais ações]** ![Ícone Mais ações](assets/do-not-localize/more-actions.png) e selecione **[!UICONTROL Fixar para acesso rápido]**. Uma caixa de confirmação é exibida.
+
+   ![fixar coleção](assets/pin-collection.png)
+
+1. Clique em **[!UICONTROL Fixar]** para confirmar. A mensagem de aviso é exibida ao fixar uma coleção privada.
+
+   ![Confirmar coleção de pinos](assets/confirm-pin-collection.png)
+
+   As coleções fixadas aparecem na parte superior para acesso rápido. Como alternativa, para desafixar a coleção, clique em **[!UICONTROL Mais ações]** ![Ícone de mais ações](assets/do-not-localize/more-actions.png) e selecione **[!UICONTROL Desafixar]**.
+
+   ![Exibir coleções fixadas](assets/pinned-collections.png)
+
+## Marcar coleções como favoritas {#favorite-collection}
+
+Você pode marcar Coleções como Favoritas no Content Hub, facilitando sua organização e recuperação. Depois de adicionadas, suas coleções favoritas ficam convenientemente disponíveis na guia Favoritos na página inicial do Content Hub. Além disso, você pode pesquisar ativos em Coleções favoritas. Para marcar coleções como Favoritos, siga estas etapas:
+
+1. Navegue pelas coleções que deseja fixar ou desfixar.
+
+1. Clique em **[!UICONTROL Mais ações]** ![Ícone Mais ações](assets/do-not-localize/more-actions.png) e selecione **[!UICONTROL Adicionar aos Favoritos]** para marcar a coleção como Favorita.
+
+   ![Marcar coleções como favoritas](assets/mark-favorite-collection.png)
+
+   As coleções marcadas como Favoritos agora aparecem na guia **[!UICONTROL Meus Favoritos]**. Como alternativa, você pode remover as coleções de **[!UICONTROL Meus favoritos]**. Para fazer isso, clique em **[!UICONTROL Mais ações]** ![Ícone de mais ações](assets/do-not-localize/more-actions.png) e selecione **[!UICONTROL Remover dos favoritos]**.
+
+   ![Remover coleção como favorita](assets/remove-favorite-collection.png)
+
+>[!NOTE]
+>
+>[Fixar ou Desafixar a coleção](#pin-unpin-collection) e [Marcar coleções como Favoritas](#favorite-collection) são recursos de disponibilidade limitados. Você pode criar e enviar um caso de Suporte ao cliente da Adobe para habilitá-lo para a implantação.
 
