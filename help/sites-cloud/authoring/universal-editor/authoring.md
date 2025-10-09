@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b30367d3892fb58d42533864ba9c354e355c7d7a
+source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
 workflow-type: tm+mt
-source-wordcount: '2495'
+source-wordcount: '2503'
 ht-degree: 10%
 
 ---
@@ -212,7 +212,7 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 
 ### Copiar e colar {#copy-paste}
 
-Você pode copiar e colar componentes que estão em [contêineres](/help/implementing/universal-editor/field-types.md#container) na mesma guia do navegador. Isso só será possível se o [contêiner de destino não tiver nenhum filtro definido.](/help/implementing/universal-editor/filtering.md)
+Você pode copiar e colar componentes que estão em [contêineres](/help/implementing/universal-editor/field-types.md#container) na mesma guia do navegador. Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam a colagem do componente.
 
 ![Ícone Copiar](assets/copy.png)
 ![Ícone Colar](assets/paste.png)
