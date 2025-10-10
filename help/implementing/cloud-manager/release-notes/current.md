@@ -4,9 +4,9 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.10.0 no Adobe 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f0b28245213d77c23259fb753376a6670b408e5e
+source-git-commit: 673e6a2403026e33c3bbd225b7296a1fb8877404
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1318'
 ht-degree: 4%
 
 ---
@@ -26,6 +26,10 @@ A data de lançamento do Cloud Manager 2025.10.0 no AEM as a Cloud Service é qu
 A próxima versão está planejada para sexta-feira, 6 de novembro de 2025.
 
 ## Novidades {#what-is-new}
+
+* **Pipelines dedicados somente a estágio e somente produção para implantação**
+
+  O Cloud Manager agora oferece pipelines dedicados de implantação somente de preparo e produção, fornecendo maior flexibilidade para gerenciar implantações em ambientes de preparo e produção de maneira independente. Consulte [Pipelines somente de estágio dividido e somente produção](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md).
 
 * **Serviço de Avaliação de Integridade da AEM Cloud**
 
@@ -116,13 +120,13 @@ Interessado? Envie um email para [beta_quickbuild_cmpipelines@adobe.com](mailto:
 
 Reverta rapidamente para uma implantação anterior se o código-fonte do cliente mais recente não estiver funcionando como esperado — não é necessário executar novamente o pipeline completo ou reverter as confirmações manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar o código-fonte do cliente a partir do cartão Ambientes](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *cartão Ambientes acima, mostrando a opção **Restaurar**>**Código anterior implantado**&#x200B;para um ambiente selecionado.*
+![Restaurar o código-fonte do cliente a partir do cartão Ambientes](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *cartão Ambientes acima, mostrando a opção **Restaurar**>**Código anterior implantado**para um ambiente selecionado.*
 
 ![Restaurar caixa de diálogo implantada de código anterior](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Na caixa de diálogo **Restaurar código anterior implantado**, revise a versão implantada no momento e a versão que deseja restaurar e clique em **Confirmar***.
 
 ![Restaurando a ativação](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-O *Cloud Manager reverte o ambiente para a compilação anterior, mantém o conteúdo e a configuração intactos e marca o ambiente **Restaurando**&#x200B;até que a implantação seja concluída.*
+O *Cloud Manager reverte o ambiente para a compilação anterior, mantém o conteúdo e a configuração intactos e marca o ambiente **Restaurando**até que a implantação seja concluída.*
 
 ![Versão do código Source em uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *A exibição de detalhes do Ambiente, como visto acima, agora também mostra a versão ativa do código-fonte em uso.*
 
@@ -172,7 +176,7 @@ Consulte [Adicionar repositórios externos no Cloud Manager](/help/implementing
 
 **Perguntas frequentes sobre o BYOG**
 
-| Pergunta | Resposta |
+| Interrogação | Resposta |
 |---|---|
 | *Como um projeto pode voltar para o repositório Git gerenciado pela Adobe, se necessário?* | É simples voltar atrás. [Atualize os pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) para apontar para o repositório do Adobe e remover o repositório externo se ele não for mais necessário. |
 | *É possível configurar repositórios diferentes para ambientes diferentes (por exemplo, não produção versus produção) para permitir testes em não produção primeiro?* | Sim, repositórios diferentes podem ser configurados para ambientes separados. Por exemplo, o pipeline de desenvolvimento ou qualidade do código pode apontar para um repositório externo enquanto o pipeline de produção permanece conectado ao repositório do Adobe. Verifique se o trabalho de sincronização entre os dois repositórios permanece ativo durante essa configuração. |
