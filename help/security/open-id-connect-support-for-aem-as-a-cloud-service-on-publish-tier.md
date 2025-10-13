@@ -4,7 +4,7 @@ description: Saiba como configurar o Open ID Connect (OIDC) para o AEM as a Clou
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
+source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Primeiro, precisamos configurar a conexão OIDC. É possível configurar várias
 
 Agora, configure o manipulador de autenticação OIDC. Várias conexões OIDC podem ser configuradas. Cada um tem de ter um nome diferente. Se eles compartilharem o mesmo [Provedor de Identidade Externo do OAK](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html), eles poderão compartilhar usuários.
 
-1. Crie o arquivo de configuração. Neste exemplo, usaremos `org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json`. O sufixo `azure` deve ser um identificador exclusivo. Consulte um exemplo do arquivo de configuração abaixo:
+1. Crie o arquivo de configuração. Neste exemplo, usaremos `org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json`. O sufixo `azure` deve ser um identificador exclusivo. Consulte um exemplo do arquivo de configuração abaixo:
 
    ```
    {
