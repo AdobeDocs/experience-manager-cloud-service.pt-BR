@@ -4,10 +4,10 @@ description: Saiba mais sobre como encaminhar logs para fornecedores de registro
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
+source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
 workflow-type: tm+mt
-source-wordcount: '2409'
-ht-degree: 2%
+source-wordcount: '2478'
+ht-degree: 1%
 
 ---
 
@@ -23,80 +23,70 @@ Os clientes com uma licença de com um fornecedor de registro em log ou que hosp
   <tbody>
     <tr>
       <th>Tecnologia de registro</th>
-      <th>Private Beta*</th>
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>CDN</th>
     </tr>
     <tr>
       <td>Amazon S3</td>
-      <td style="background-color: #ffb3b3;">Sim</td>
       <td>Sim</td>
       <td>Sim</td>
-      <td style="background-color: #ffb3b3;">Não</td>
+      <td style="background-color: #ffb3b3;">Futuro</td>
     </tr>
     <tr>
       <td>Armazenamento Azure Blob</td>
-      <td>Não</td>
       <td>Sim</td>
       <td>Sim</td>
       <td>Sim</td>
     </tr>
     <tr>
       <td>DataDog</td>
-      <td>Não</td>
       <td>Sim</td>
       <td>Sim</td>
       <td>Sim</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
-      <td style="background-color: #ffb3b3;">Sim</td>
       <td>Sim</td>
       <td>Sim</td>
-      <td style="background-color: #ffb3b3;">Não</td>
+      <td style="background-color: #ffb3b3;">Futuro</td>
     </tr>
     <tr>
       <td>Elasticsearch<br>OpenSearch</td>
-      <td>Não</td>
       <td>Sim</td>
       <td>Sim</td>
       <td>Sim</td>
     </tr>
     <tr>
       <td>HTTPS</td>
-      <td>Não</td>
       <td>Sim</td>
       <td>Sim</td>
       <td>Sim</td>
     </tr>
     <tr>
       <td>New Relic</td>
-      <td style="background-color: #ffb3b3;">Sim</td>
       <td>Sim</td>
       <td>Sim</td>
-      <td style="background-color: #ffb3b3;">Não</td>
+      <td style="background-color: #ffb3b3;">Futuro</td>
     </tr>
     <tr>
       <td>Splunk</td>
-      <td>Não</td>
       <td>Sim</td>
       <td>Sim</td>
       <td>Sim</td>
     </tr>
     <tr>
       <td>Lógica Sumo</td>
-      <td style="background-color: #ffb3b3;">Sim</td>
       <td>Sim</td>
       <td>Sim</td>
-      <td style="background-color: #ffb3b3;">Não</td>
+      <td style="background-color: #ffb3b3;">Futuro</td>
     </tr>
   </tbody>
 </table>
 
 >[!NOTE]
 >
-> Para tecnologias na Private Beta, envie um email para [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
+> Para as futuras Tecnologias de Log da CDN planejadas para o futuro, envie um email para [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para registrar o interesse.
 
 O encaminhamento de logs é configurado de maneira automatizada declarando uma configuração no Git e pode ser implantado por meio de pipelines de configuração do Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção. O arquivo de configuração pode ser implantado em RDEs (Rapid Development Environments, ambientes de desenvolvimento rápido) usando ferramentas de linha de comando.
 
@@ -247,6 +237,8 @@ Para logs CDN, você pode adicionar os endereços IP à lista de permissões, co
 >[!NOTE]
 >
 >Não é possível que os logs CDN apareçam a partir do mesmo endereço IP que os logs do AEM aparecem. Isso ocorre porque os logs são enviados diretamente do Fastly e não pelo AEM Cloud Service.
+>
+>Por esse motivo, não é possível usar o encaminhamento de logs com configurações VPN avançadas de rede.
 
 ## Configuração de destino de registro {#logging-destinations}
 
@@ -293,6 +285,9 @@ A política IAM deve permitir que o usuário use `s3:putObject`.  Por exemplo:
 ```
 
 Consulte a [Documentação da política de bucket do AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) para obter mais informações sobre como implementar o.
+
+>[!NOTE]
+>O suporte ao Log de CDN para o AWS S3 está planejado para o futuro. Envie um email para [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para registrar interesse.
 
 ### Armazenamento Azure Blob {#azureblob}
 
@@ -491,7 +486,7 @@ O encaminhamento de logs para o New Relic aproveita a API HTTPS do New Relic par
 >
 >O encaminhamento de logs para a New Relic só está disponível para contas da New Relic de propriedade do cliente.
 >
->Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
+>O suporte ao Log de CDN para a API de Log do New Relic está planejado para o futuro. Envie um email para [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para registrar interesse.
 >
 >O New Relic fornece endpoints específicos da região com base no local em que sua conta do New Relic é provisionada.  Consulte a [documentação do New Relic](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) para obter mais informações.
 
@@ -515,8 +510,7 @@ O atributo de escopo &quot;Logs de assimilação&quot; é necessário para o tok
 ```
 
 >[!NOTE]
->
-> Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
+>O suporte ao Log de CDN para a API de Log do Dynatrace está planejado para o futuro. Envie um email para [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para registrar interesse.
 
 ### Splunk {#splunk}
 
@@ -570,6 +564,8 @@ data:
 ```
 
 >[!NOTE]
+>O suporte ao Log de CDN para SumoLogic está planejado para o futuro. Envie um email para [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para registrar interesse.
+>
 > Você precisará de uma assinatura Sumo Logic Enterprise para aproveitar a funcionalidade do campo &quot;índice&quot;.  As assinaturas não empresariais terão seus logs roteados para a partição `sumologic_default` como padrão.  Consulte a [Documentação de Particionamento Lógico de Resumo](https://help.sumologic.com/docs/search/optimize-search-partitions/) para obter mais informações.
 
 ## Formatos de entrada de log {#log-formats}
