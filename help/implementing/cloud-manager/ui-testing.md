@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8703240a5b7b8ed751620f602470da45025f7b74
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '2698'
-ht-degree: 74%
+source-wordcount: '2601'
+ht-degree: 56%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Teste de interface do usuário"
->abstract="Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos. Os testes de interface são baseados no Selenium, compactados em uma imagem do Docker, para permitir uma variedade de opções de idiomas e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada a partir do Selenium)."
+>abstract="Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos. Os testes de interface do usuário são testes baseados em Selenium, compactados em uma imagem do Docker, para permitir uma grande variedade de opções de idioma e estruturas. Como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium."
 
 Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos.
 
@@ -26,13 +26,13 @@ Os testes de interface do usuário personalizados são um recurso opcional que p
 
 O AEM fornece um conjunto integrado de [quality gates (portais de qualidade) do Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantir atualizações tranquilas para aplicativos personalizados. Em especial, os portais de teste de TI já promovem a criação e a automação de testes personalizados usando as APIs do AEM.
 
-Os testes de interface são compactados em uma imagem do Docker para permitir uma variedade de opções de idiomas e estruturas (como Cypress, Selenium, Java e Maven, além do JavaScript). Além disso, um projeto de testes de interface do usuário pode ser facilmente gerado usando o [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview).
+Os testes de interface são compactados em uma imagem do Docker para permitir uma variedade de opções de idiomas e estruturas (como Cypress, Selenium, Java e Maven, além do JavaScript). Além disso, um projeto de testes de interface pode ser facilmente gerado usando o [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview).
 
-A Adobe incentiva o uso do Cypress, pois oferece recarregamento em tempo real e espera automática, o que ajuda a economizar tempo e melhorar a produtividade durante os testes. O Cypress também fornece uma sintaxe simples e intuitiva, facilitando a aprendizagem e o uso, até mesmo para aqueles que são novos em testes.
+A Adobe incentiva o uso do Cypress, pois oferece recarregamento em tempo real e espera automática, o que ajuda a economizar tempo e melhorar a produtividade durante os testes. O Cypress também fornece uma sintaxe simples e intuitiva, facilitando a aprendizagem e o uso, mesmo para usuários novatos em testes.
 
-Os testes de interface são executados como parte de uma porta de qualidade específica para cada pipeline do Cloud Manager que contém uma etapa de [**Teste de interface personalizada** ](/help/implementing/cloud-manager/deploy-code.md)nos [pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou, opcionalmente, nos [pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Quaisquer testes de interface, incluindo regressão e novas funcionalidades, permitem que erros sejam detectados e relatados.
+Os testes de interface do usuário são executados como um quality gate (portal de qualidade) na etapa [**Custom UI Testing**](/help/implementing/cloud-manager/deploy-code.md) (Teste de interface do usuário personalizado) - necessário em [pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md), opcional em [pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Quaisquer testes de interface, incluindo regressão e novas funcionalidades, permitem que erros sejam detectados e relatados.
 
-Diferentemente dos testes funcionais personalizados, que são testes HTTP escritos em Java, os testes de interface podem ser uma imagem do Docker com testes escritos em qualquer linguagem, desde que sigam as convenções definidas na seção [Compilação de testes de interface](#building-ui-tests).
+Diferentemente dos testes funcionais personalizados, que são testes HTTP escritos em Java, os testes de interface do usuário podem ser uma imagem do Docker. Os testes podem ser escritos em qualquer idioma, desde que sigam as convenções definidas na seção [Compilação de Testes de Interface do Usuário](#building-ui-tests).
 
 >[!TIP]
 >
@@ -50,9 +50,9 @@ Esta seção descreve as etapas necessárias para a configuração dos testes de
 
    * Para o Playwright, use o código de amostra do [repositório de Amostras de Teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
-   * Para Webdriver.IO, use o código de amostra do [repositório de Amostras de Teste de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
+   * Para Webdriver.IO, use o código de amostra do [repositório de Amostras de Teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
-   * Para o Selenium WebDriver, use o código de amostra do [repositório de Amostras de Teste de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+   * Para o Selenium WebDriver, use o código de amostra do [repositório de Amostras de Teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * Para outras linguagens de programação, consulte a seção [Criação de testes de interface](#building-ui-tests) deste documento para configurar o projeto de teste.
 
@@ -79,7 +79,7 @@ Para gerar um contexto de construção do Docker, você precisará de um módulo
 * Produza um arquivo que contenha um `Dockerfile` e qualquer outro arquivo necessário para criar a imagem do Docker em seus testes.
 * Marque o arquivo com o classificador `ui-test-docker-context`.
 
-A maneira mais simples de fazer isso é configurar o [Plug-in de compilação do Maven](https://maven.apache.org/plugins/maven-assembly-plugin/) para criar o arquivo de contexto de compilação do Docker e atribuir o classificador correto a ele.
+A maneira mais simples é configurar o [Plug-in de compilação do Maven](https://maven.apache.org/plugins/maven-assembly-plugin/) para criar o arquivo de contexto de compilação do Docker e atribuir o classificador correto a ele.
 
 Você pode compilar testes de interface do usuário com diferentes tecnologias e estruturas, mas esta seção presume que o projeto seja apresentado de uma maneira semelhante à descrita a seguir.
 
@@ -155,7 +155,7 @@ O descritor de compilação instrui o plug-in a criar um arquivamento do tipo `.
 
 O descritor de compilação também exclui alguns arquivos que podem ser gerados durante a execução local dos testes de interface do usuário. Isso garante que um arquivo menor seja gerado, e consequentemente, resulta em compilações mais rápidas.
 
-O arquivamento que contém o contexto de compilação do Docker é selecionado automaticamente pelo Cloud Manager, que criará a imagem do Docker contendo seus testes durante os pipelines de implantação. Eventualmente, o Cloud Manager executará a imagem do Docker para executar os testes de interface do usuário em seu aplicativo.
+O Cloud Manager seleciona automaticamente o arquivo de contexto de compilação do Docker e cria a imagem de teste durante os pipelines de implantação. Por fim, a Cloud Manager executa a imagem do Docker para executar os testes de interface do usuário em seu aplicativo.
 
 A compilação deve produzir zero ou um arquivamento. Se produzir zero arquivamento, a etapa de teste será aprovada por padrão. Se a compilação produzir mais de um arquivamento, o arquivamento selecionado será não determinístico.
 
@@ -186,7 +186,7 @@ Para incluir um arquivo `testing.properties` no artefato de compilação, adicio
 >
 >Se o projeto não incluir essa linha, edite o arquivo para aderir ao teste de interface do usuário.
 >
->O arquivo pode conter uma linha aconselhando a não editá-la. Isso se deve ao fato de ele ter sido introduzido em seu projeto antes da adesão ao teste de interface e não havia a intenção de que os clientes editassem o arquivo. Pode ser ignorado com segurança.
+>O arquivo pode conter uma linha aconselhando a não editá-la. O motivo é que ele está sendo introduzido em seu projeto antes da adesão ao teste de interface do usuário e os clientes não devem editar o arquivo. Você pode ignorar a recomendação com segurança.
 
 Se estiver usando os exemplos fornecidos pela Adobe:
 
@@ -200,7 +200,7 @@ Se estiver usando os exemplos fornecidos pela Adobe:
   fi
   ```
 
-* As amostras de teste Cypress e Java Selenium fornecidas pelo Adobe já têm o sinalizador de aceitação definido.
+* As amostras de teste Cypress e Java Selenium fornecidas pela Adobe já têm o sinalizador de aceitação definido.
 
 ## Gravação de testes da interface do usuário {#writing-ui-tests}
 
@@ -212,25 +212,25 @@ As seguintes variáveis de ambiente são passadas para a imagem do Docker em tem
 
 >[!NOTE]
 >
-> Esses valores serão definidos automaticamente durante a execução do pipeline - não há necessidade de defini-los manualmente como variáveis de pipeline.
+> Esses valores são definidos automaticamente durante a execução do pipeline; não há necessidade de defini-los manualmente como variáveis de pipeline.
 
 | Variável | Exemplos | Descrição | Estrutura de testes |
 |----------------------------|----------------------------------|----------------------------------------------------------------------------------------------------|---------------------|
-| `SELENIUM_BASE_URL` | `http://my-ip:4444` | A URL do servidor Selenium | Somente Selenium |
-| `SELENIUM_BROWSER` | `chrome` | A implementação do navegador usada pelo servidor Selenium | Somente Selenium |
-| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | O URL da instância do autor do AEM | Todos |
-| `AEM_AUTHOR_USERNAME` | `admin` | O nome de usuário para fazer logon na instância de autor do AEM | Todos |
-| `AEM_AUTHOR_PASSWORD` | `admin` | A senha para fazer logon na instância de autor do AEM | Todos |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | O URL da instância de publicação do AEM | Todos * |
-| `AEM_PUBLISH_USERNAME` | `admin` | O nome de usuário para fazer logon na instância de publicação do AEM | Todos * |
-| `AEM_PUBLISH_PASSWORD` | `admin` | A senha para fazer logon na instância de publicação do AEM | Todos * |
-| `REPORTS_PATH` | `/usr/src/app/reports` | O caminho onde o relatório XML dos resultados do teste deve ser salvo | Todos |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | O URL no qual o arquivo deve ser enviado para torná-lo acessível à estrutura de teste | Todos |
-| `PROXY_HOST` | `proxy-host` | O nome do host do Proxy HTTP interno a ser usado pela estrutura de teste | Todos, exceto Selenium |
-| `PROXY_HTTPS_PORT` | `8071` | A porta de escuta do servidor proxy para conexões HTTPS (pode estar vazia) | Todos, exceto Selenium |
-| `PROXY_HTTP_PORT` | `8070` | A porta de escuta do servidor proxy para conexões HTTP (pode estar vazia) | Todos, exceto Selenium |
-| `PROXY_CA_PATH` | `/path/to/root_ca.pem` | O caminho para o certificado CA a ser usado pela estrutura de testes | Todos, exceto Selenium |
-| `PROXY_OBSERVABILITY_PORT` | `8081` | A porta de verificação de integridade HTTP do servidor proxy | Todos, exceto Selenium |
+| `SELENIUM_BASE_URL` | `http://my-ip:4444` | URL do servidor Selenium | Somente Selenium |
+| `SELENIUM_BROWSER` | `chrome` | Implementação do navegador usada pelo servidor Selenium | Somente Selenium |
+| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | URL da instância do autor do AEM | Todos |
+| `AEM_AUTHOR_USERNAME` | `admin` | Nome de usuário para fazer logon na instância de autor do AEM | Todos |
+| `AEM_AUTHOR_PASSWORD` | `admin` | Senha para fazer logon na instância de autor do AEM | Todos |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | URL da instância de publicação do AEM | Todos * |
+| `AEM_PUBLISH_USERNAME` | `admin` | Nome de usuário para fazer logon na instância de publicação do AEM | Todos * |
+| `AEM_PUBLISH_PASSWORD` | `admin` | Senha para fazer logon na instância de publicação do AEM | Todos * |
+| `REPORTS_PATH` | `/usr/src/app/reports` | Caminho onde o relatório XML dos resultados do teste deve ser salvo | Todos |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | URL no qual o arquivo deve ser carregado para torná-lo acessível à estrutura de teste | Todos |
+| `PROXY_HOST` | `proxy-host` | Nome do host do proxy HTTP interno a ser usado pela estrutura de teste | Todos, exceto Selenium |
+| `PROXY_HTTPS_PORT` | `8071` | Porta de escuta do servidor proxy para conexões HTTPS (pode estar vazia) | Todos, exceto Selenium |
+| `PROXY_HTTP_PORT` | `8070` | Porta de escuta do servidor proxy para conexões HTTP (pode estar vazia) | Todos, exceto Selenium |
+| `PROXY_CA_PATH` | `/path/to/root_ca.pem` | Caminho para o certificado de CA a ser usado pela estrutura de testes | Todos, exceto Selenium |
+| `PROXY_OBSERVABILITY_PORT` | `8081` | Porta HTTP `healthcheck` do servidor proxy | Todos, exceto Selenium |
 | `PROXY_RETRY_ATTEMPTS` | `12` | Número sugerido de tentativas ao aguardar a prontidão do servidor proxy | Todos, exceto Selenium |
 | `PROXY_RETRY_DELAY` | `5` | Atraso sugerido entre tentativas de repetição ao aguardar a prontidão do servidor proxy | Todos, exceto Selenium |
 
@@ -238,9 +238,9 @@ As seguintes variáveis de ambiente são passadas para a imagem do Docker em tem
 
 Os exemplos de teste da Adobe fornecem funções auxiliares para acessar os parâmetros de configuração:
 
-* Cypress: use a função padrão `Cypress.env('VARIABLE_NAME')`
-* JavaScript: Consulte o módulo [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js)
-* Java: consulte a classe [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java)
+Cypress: use a função padrão `Cypress.env('VARIABLE_NAME')`
+<!-- BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
+* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class -->
 
 ### Gerar relatórios de teste {#generate-test-reports}
 
@@ -254,7 +254,7 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 >
 >Use asserções em vez de apenas registrar um erro no STDERR ou retornar um código de saída diferente de zero, caso contrário, o pipeline de implantação poderá continuar normalmente.
 >
->Se um proxy HTTP foi usado durante a execução de testes, os resultados incluirão um arquivo `request.log`.
+>Se um proxy HTTP foi usado durante a execução de testes, os resultados incluem um arquivo `request.log`.
 
 ### Pré-requisitos {#prerequisites}
 
@@ -269,13 +269,13 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 | Tipo | Valor | Descrição |
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | Quantidade de tempo de CPU reservado por execução de teste. |
-| Memória | 1Gi | Quantidade de memória alocada para o teste, valor em gibibytes. |
-| Tempo limite | 30 min | A duração após a qual o teste é concluído. |
-| Duração recomendada | 15 min | A Adobe recomenda gravar os testes para não demorar mais do que esse tempo. |
+| Memória | 1Gi | Quantidade de memória alocada para o teste. O valor está em gibibytes. |
+| Tempo limite | 30 min | Por quanto tempo o teste é executado. |
+| Duração recomendada | 15 min | A Adobe recomenda manter os testes dentro desse limite de tempo. |
 
 >[!NOTE]
 >
-> Caso precise de mais recursos, crie um chamado no Atendimento ao cliente e descreva o caso de uso. A Adobe verificará sua solicitação e fornecerá a assistência adequada.
+> Se precisar de mais recursos, crie um caso de Atendimento ao cliente e descreva seu caso de uso; a Adobe analisa sua solicitação e fornece a assistência apropriada.
 
 ## Detalhes específicos do Selenium
 
@@ -292,7 +292,8 @@ Antes de os testes começarem, é responsabilidade da imagem do Docker garantir 
 
 Quando o endpoint de status do Selenium responder com uma resposta positiva, os testes poderão ser iniciados.
 
-Os exemplos de teste de interface da Adobe lidam com isso por meio do script `wait-for-grid.sh`, que é executado na inicialização do Docker e inicia a execução do teste real somente depois que a grade está pronta.
+As amostras de teste da interface do usuário da Adobe usam `wait-for-grid.sh`. Ele é executado na inicialização do Docker e inicia testes somente depois que a grade está pronta.
+
 
 ### Capturar imagens de tela e vídeos {#capture-screenshots}
 
@@ -302,10 +303,11 @@ Os exemplos de teste fornecidos pela Adobe criam, por padrão, capturas de tela 
 
 Você pode usar as funções auxiliares para criar capturas de tela nos testes.
 
-* JavaScript: [comando takeScreenshot](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [comandos](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+<!-- BOTH URLS ARE 404
+* JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
+* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
 
-Se um arquivo de resultados de teste for criado durante a execução de um teste de interface, você poderá baixá-lo do Cloud Manager usando o botão `Download Details` na etapa [**Testes de interface personalizados**.](/help/implementing/cloud-manager/deploy-code.md)
+Se um arquivo de resultados de teste for criado durante uma execução de teste da interface, você poderá baixá-lo da Cloud Manager clicando no botão `Download Details` na [**etapa Teste da interface personalizado**](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Fazer upload de arquivos {#upload-files}
 
@@ -314,11 +316,14 @@ Os testes às vezes devem carregar arquivos no aplicativo que está sendo testad
 1. Faça upload do arquivo na URL especificado pela variável de ambiente `UPLOAD_URL`.
    * O upload deve ser realizado em uma solicitação POST com um formulário multipart.
    * O formulário multipart deve ter um único campo de arquivo.
-   * É equivalente a `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.
+   * Equivalente a `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.
    * Consulte a documentação e as bibliotecas da linguagem de programação usada na imagem do Docker para saber como executar essa solicitação HTTP.
-   * Os exemplos de teste da Adobe fornecem funções auxiliares para fazer o upload de arquivos:
-      * JavaScript: consulte o comando [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js).
-      * Java: consulte a classe [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java).
+
+   <!-- BOTH URLS ARE 404
+   * The Adobe test samples provide helper functions for uploading files:
+     * JavaScript: See the [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) command.
+     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class. -->
+
 1. Se o upload for bem-sucedido, a solicitação retornará uma resposta `200 OK` do tipo `text/plain`.
    * O conteúdo da resposta é um identificador de arquivo opaco.
    * Você pode usar esse identificador no lugar de um caminho de arquivo em um elemento `<input>` para testar os uploads de arquivo em seu aplicativo.
@@ -333,15 +338,15 @@ Os testes às vezes devem carregar arquivos no aplicativo que está sendo testad
 
 O ponto de entrada do contêiner Docker precisa verificar o valor da variável de ambiente `PROXY_HOST`.
 
-Se esse valor estiver vazio, nenhuma etapa adicional será necessária e os testes deverão ser executados sem o uso do proxy HTTP.
+Se esse valor estiver vazio, nenhuma etapa adicional será necessária e os testes deverão ser executados sem usar um proxy HTTP.
 
 Se não estiver vazio, o script de ponto de entrada precisa:
 
-1. Configure uma conexão proxy HTTP para executar testes de interface. Isso pode ser feito exportando a variável de ambiente `HTTP_PROXY` que é criada usando os seguintes valores:
+1. Configure uma conexão proxy HTTP para executar testes de interface exportando a variável de ambiente `HTTP_PROXY` criada com os seguintes valores:
    * Host do proxy, que é fornecido pela variável `PROXY_HOST`
-   * Porta de proxy, que é fornecida pela variável `PROXY_HTTPS_PORT` ou `PROXY_HTTP_PORT` (a variável com um valor não vazio será usada)
-2. Defina o certificado CA que será usado na conexão com o proxy HTTP. Sua localização é fornecida pela variável `PROXY_CA_PATH`.
-   * Isso pode ser feito exportando a variável de ambiente `NODE_EXTRA_CA_CERTS`.
+   * Porta de proxy, que é fornecida pela variável `PROXY_HTTPS_PORT` ou `PROXY_HTTP_PORT` (a variável com um valor não vazio é usada)
+2. Defina o certificado CA que é usado ao conectar-se ao proxy HTTP. Sua localização é fornecida pela variável `PROXY_CA_PATH`.
+   * Exportar a variável de ambiente `NODE_EXTRA_CA_CERTS`.
 3. Aguarde até que o proxy HTTP esteja pronto.
    * Para verificar a preparação, as variáveis de ambiente `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` e `PROXY_RETRY_DELAY` podem ser usadas.
    * Você pode verificar usando uma solicitação cURL, certificando-se de instalar o cURL em seu `Dockerfile`.
@@ -352,17 +357,17 @@ Um exemplo de implementação pode ser encontrado no ponto de entrada do módulo
 
 >[!NOTE]
 >
-> Esta seção só se aplica quando o dramaturgo é a infraestrutura de teste escolhida.
+> Esta seção só se aplica quando `Playwright` é a infraestrutura de teste escolhida.
 
 ### Configurar proxy HTTP
 
 >[!NOTE]
 >
-> Nos exemplos apresentados, supomos que o Chrome está sendo usado como um navegador de projeto.
+> Nos exemplos apresentados, o Adobe presume que o Chrome está sendo usado como um navegador de projetos.
 
 Semelhante ao Cypress, os testes precisam usar o proxy HTTP se uma variável de ambiente `PROXY_HOST` não vazia for fornecida.
 
-Para fazer isso, as seguintes modificações precisam ser feitas.
+Nesse caso, as seguintes edições precisam ser feitas.
 
 #### Dockerfile
 
@@ -379,7 +384,7 @@ RUN apt -y update \
 Inclua um script bash que, caso a variável de ambiente `PROXY_HOST` seja fornecida, faça o seguinte:
 
 1. Exportar variáveis relacionadas ao proxy, como `HTTP_PROXY` e `NODE_EXTRA_CA_CERTS`
-2. Use `certutil` para instalar o certificado de autoridade de certificação de proxy para chromium
+2. Use `certutil` para instalar o certificado CA de proxy para Chromium™.
 3. Aguarde até que o proxy HTTP esteja pronto (ou saia em caso de falha).
 
 Exemplo de implementação:
@@ -432,12 +437,12 @@ if (proxyServer !== '') {
 
 >[!NOTE]
 >
-> Um exemplo de implementação pode ser encontrado no Módulo de Teste de Amostra do Playwright no [GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-playwright/).
+> Um exemplo de implementação pode ser encontrado no Módulo de Teste de Amostra do Playwright no [GitHub](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
 
 ## Execução de testes locais de interface {#run-ui-tests-locally}
 
-Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recomendável executá-los localmente no [SDK do AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) ou em uma instância real do AEM as a Cloud Service.
+Antes de ativar testes de interface em um pipeline do Cloud Manager, a Adobe recomenda que você execute os testes de interface localmente no [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md). Ou execute em uma instância real do AEM as a Cloud Service.
 
 ### Exemplo de teste do Cypress {#cypress-sample}
 
@@ -473,13 +478,13 @@ Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recom
 >
 >Os arquivos de log são armazenados na pasta `target/` do repositório.
 >
->Para obter detalhes, consulte [Repositório de amostras de teste do AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+>Para obter detalhes, consulte o [repositório de Amostras de Teste do AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
 ### Exemplo de teste do JavaScript WebdriverIO {#javascript-sample}
 
-1. Abra um shell e navegue até a pasta `ui.tests` no repositório
+1. Abra um shell e navegue até a pasta `ui.tests` no seu repositório.
 
-1. Execute o comando abaixo para iniciar os testes usando o Maven
+1. Execute o seguinte comando para iniciar os testes usando o Maven.
 
    ```shell
    mvn verify -Pui-tests-local-execution \
@@ -493,11 +498,11 @@ Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recom
 
 >[!NOTE]
 >
->* Isso inicia uma instância independente do Selenium e executa os testes nela.
+>* Esse comando inicia uma instância independente do Selenium e executa os testes nela.
 >* Os arquivos de log são armazenados na pasta `target/reports` do repositório.
 >* Certifique-se de que sua máquina esteja executando a versão mais recente do Chrome, pois o teste baixa a versão mais recente do ChromeDriver automaticamente.
 >
->Para obter detalhes, consulte [Repositório de amostras de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
+>Para obter detalhes, consulte o [repositório de Amostras de Teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
 ### Amostra de teste do dramaturgo {#playwright-sample}
 
@@ -525,7 +530,7 @@ Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recom
 >
 >Os arquivos de log são armazenados na pasta `target/` do repositório.
 >
->Para obter detalhes, consulte [Repositório de amostras de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
+>Para obter detalhes, consulte o [repositório de Amostras de Teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
 
 ### Exemplo de teste do Java Selenium WebDriver {#java-sample}
@@ -547,4 +552,4 @@ Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recom
 >
 >Os arquivos de log são armazenados na pasta `target/reports` do repositório.
 >
->Para obter detalhes, consulte [Repositório de amostras de teste do AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>Para obter detalhes, consulte o [repositório de Amostras de Teste do AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

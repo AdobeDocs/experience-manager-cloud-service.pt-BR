@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '974'
-ht-degree: 94%
+source-wordcount: '976'
+ht-degree: 77%
 
 ---
 
@@ -23,7 +23,7 @@ Sim. Adicione o `maven-toolchains-plugin` com configurações adequadas para Jav
 
 O processo está documentado - consulte [Assistente de Criação de Projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
-Por exemplo, consulte o [código do projeto de amostra do wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+Por exemplo, consulte o [código do projeto de amostra do WKND](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Minha compilação falha com um erro sobre o maven-scr-plugin após alternar do Java™ 8 para o Java™ 11. O que posso fazer? {#build-fails-maven-scr-plugin}
 
@@ -43,13 +43,13 @@ Para compilações do Cloud Manager, `maven-enforcer-plugin` pode falhar com ess
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-Esse erro é um problema conhecido devido ao fato de o Cloud Manager usar uma versão do Java™ diferente da utilizada para compilar o código ao executar o comando maven. Basta omitir `requireJavaVersion` nas configurações do `maven-enforcer-plugin`.
+Esse erro é um problema conhecido porque a Cloud Manager usa uma versão diferente do Java™ para executar o comando Maven em comparação ao código de compilação. Basta omitir `requireJavaVersion` nas configurações do `maven-enforcer-plugin`.
 
 ## A verificação da qualidade do código falhou e a implantação está travada. Existe uma maneira de ignorar essa verificação? {#deployment-stuck}
 
-Sim. Todas as falhas de verificação de qualidade do código, exceto a classificação de segurança, são métricas não críticas; portanto, podem ser ignoradas como parte de um pipeline de implantação, expandindo os itens na interface do usuário de resultados.
+Sim. Todas as falhas de verificação de qualidade do código, exceto a classificação de segurança, são métricas não críticas. Como resultado, eles podem ser ignorados como parte de um pipeline de implantação expandindo os itens na interface do usuário de resultados.
 
-Um usuário com a função [Gerente de implantação, Gerente de projeto ou Proprietário da empresa](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) pode substituir os problemas, caso em que o pipeline continua, ou pode aceitar os problemas, caso em que o pipeline é interrompido com uma falha.
+Um usuário com a função [Gerente de Implantação, Gerente de Projeto ou Proprietário da Empresa](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) pode substituir os problemas. Nesse caso, o pipeline continua ou eles podem aceitar os problemas, caso em que o pipeline é interrompido com uma falha.
 
 Veja os documentos [Testes de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) e [Configuração de pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) para obter mais detalhes.
 
@@ -57,11 +57,11 @@ Veja os documentos [Testes de qualidade do código](/help/implementing/cloud-man
 
 Sim. Para implantações de desenvolvedores, os arquivos `pom.xml` da ramificação Git devem conter `-SNAPSHOT` no final do valor `<version>`.
 
-Esse valor permite que a implantação subsequente ainda seja instalada quando a versão não for alterada. Em implantações de desenvolvedores, nenhuma versão automática é adicionada ou gerada para a compilação maven.
+Esse valor permite que a implantação subsequente seja instalada ainda quando a versão não for alterada. Em implantações de desenvolvedores, nenhuma versão automática é adicionada ou gerada para a compilação maven.
 
 Você também pode definir a versão como `-SNAPSHOT` para compilações ou implantações de preparo ou de produção. O Cloud Manager define automaticamente um número de versão adequado e cria uma tag para você no Git. Se necessário, essa tag pode ser consultada posteriormente.
 
-Para obter mais detalhes sobre o manuseio de versão, consulte [Manuseio de Versão de Projeto Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Para obter mais detalhes sobre o manuseio de versão, consulte [Manuseio de versão de projeto Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Como funciona o controle de versão dos pacotes para implantações de preparo e produção? {#snapshot-version}
 
@@ -69,7 +69,7 @@ Em implantações de preparo e produção, uma versão automática é gerada - c
 
 Para o controle de versão personalizado em implantações de preparo e produção, defina uma versão maven adequada com três partes como `1.0.0`. Aumente a versão sempre que implantar na produção.
 
-O Cloud Manager adicionará automaticamente a versão às compilações de preparo e produção e criará uma ramificação Git. Nenhuma configuração adicional é necessária. Se você não definir uma versão do Maven conforme descrito anteriormente, a implantação ainda será bem-sucedida e uma versão será definida automaticamente.
+O Cloud Manager adicionará automaticamente a versão às compilações de preparo e produção e criará uma ramificação Git. Nenhuma configuração especial é necessária. Se você não definir uma versão do Maven conforme descrito anteriormente, a implantação ainda será bem-sucedida e uma versão será definida automaticamente.
 
 ## Minha compilação maven falha para implantações do Cloud Manager, mas é criada localmente sem erros. O que há de errado? {#maven-build-fail}
 
@@ -94,7 +94,7 @@ A solução é adicionar um script de [Configuração OSGi de RepositoryInitiali
 
 No erro do exemplo anterior, o pacote `myapp-base.ui.content-*.zip` inclui conteúdo em `/conf` e `/var/workflow`. Para que a implantação seja bem-sucedida, são necessárias permissões para `sling-distribution-importer` nesses caminhos.
 
-Veja este exemplo de uma configuração OSGi [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) que adiciona mais permissões ao usuário `sling-distribution-importer`.  A configuração adiciona permissões em `/var`. Essa configuração deve ser adicionada ao pacote do aplicativo em `/apps/myapp/config` (onde myapp é a pasta em que o código do aplicativo está armazenado).
+Veja este exemplo de uma configuração OSGi [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) que adiciona mais permissões ao usuário `sling-distribution-importer`.  A configuração adiciona permissões em `/var`. Essa configuração deve ser adicionada ao pacote do aplicativo em `/apps/myapp/config` (onde `myapp` é a pasta onde o código do aplicativo está armazenado).
 
 ## A implantação do My Cloud Manager falha na etapa de implantação do AEM as a Cloud Service e já adicionei uma configuração OSGi de RepositoryInitializer. O que mais posso fazer? {#build-failures}
 
@@ -109,7 +109,7 @@ Se [adicionar uma configuração OSGi de RepositoryInitializer](#cloud-manager-d
 
 * A implantação pode falhar devido a alguma outra falha durante a replicação dos pacotes de conteúdo (distribuição Sling) entre as instâncias de criação e publicação.
    * Siga estas etapas para simular o problema em uma configuração local.
-      1. Instale uma instância de criação e publicação localmente usando os jars mais recentes do SDK do AEM.
+      1. Instale um Autor e uma instância de Publicação localmente usando os jars mais recentes do AEM SDK.
       1. Faça logon na instância de criação.
       1. Vá para **Ferramentas** > **Implantação** > **Distribuição**.
       1. Distribua os pacotes de conteúdo que fazem parte da base de código e veja se a fila é bloqueada com um erro.

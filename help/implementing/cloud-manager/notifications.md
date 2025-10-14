@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 79%
+source-wordcount: '585'
+ht-degree: 73%
 
 ---
 
@@ -35,7 +35,7 @@ A guia **Avisos** inclui avisos de produto da Adobe. Os avisos dizem respeito ao
 
 ![Barra lateral de notificações](assets/notificaitons-announcements.png)
 
-Clique em uma notificação ou anúncio para exibir seus detalhes. As notificações vinculadas a atividades como implantações de pipeline levam você aos detalhes dessa atividade, como a janela de execução do pipeline.
+Clique em uma notificação ou anúncio para visualizar seus detalhes. As notificações vinculadas a atividades como implantações de pipeline levam você aos detalhes dessa atividade, como a janela de execução do pipeline.
 
 Clique na opção **Exibir tudo** na parte inferior do painel para exibir todos os avisos na caixa de entrada.
 
@@ -45,11 +45,9 @@ Clique na opção **Marcar tudo como lido** na parte inferior do painel para mar
 
 Você pode personalizar como recebe notificações e quais notificações recebe.
 
-Clique no ícone de engrenagem na parte superior da barra lateral de notificações.
+Clique no ícone de engrenagem na parte superior da barra lateral de notificações para abrir a janela **Preferências do Experience Cloud**. Aqui, você pode definir suas assinaturas de notificação e como recebe as notificações.
 
 ![Ícone Configurações de notificação](assets/notifications-configuration.png)
-
-Isso abre a janela **Preferências da Experience Cloud**, onde é possível definir suas assinaturas de notificação e como você recebe as notificações.
 
 ### Assinaturas {#subscriptions}
 
@@ -57,13 +55,13 @@ As assinaturas definem para quais produtos você recebe notificações e quais n
 
 ![Assinaturas de notificação](assets/notifications-subscriptions.png)
 
-Por padrão, você receberá todas as notificações para todos os produtos, tanto no aplicativo quanto por email. Clique na divisa ao lado de um nome de produto para revelar as opções detalhadas e definir os tipos de notificações que você recebe para esse produto. Ou marque ou desmarque as opções no nível do produto para marcar/desmarcar todas as opções do produto.
+Por padrão, você recebe todas as notificações para todos os produtos no aplicativo e por email. Clique na divisa ao lado do nome de um produto para exibir as opções detalhadas e definir os tipos de notificações que você recebe para esse produto. Ou marque ou desmarque as opções no nível do produto para marcar/desmarcar todas as opções do produto.
 
 ![Personalização de assinatura de notificação](assets/notifications-subscriptions-customize.png)
 
 ### Prioridade {#priority}
 
-Os alertas de prioridade serão marcados com uma tag **ALTA** e podem ser configurados para serem recebidos exclusivamente como alertas. Na seção **Prioridade**, você pode definir quais categorias se qualificam como notificações de prioridade.
+Os alertas de prioridade serão marcados com uma tag **ALTA**. Você pode configurá-los para serem recebidos exclusivamente como alertas. Na seção **Prioridade**, você pode definir quais categorias se qualificam como notificações de prioridade.
 
 ![Prioridade de notificação](assets/notifications-priority.png)
 
@@ -93,4 +91,4 @@ Por padrão, nenhum email é enviado. Você pode optar por receber emails:
 * Diariamente
 * Semanalmente
 
-Quando a opção **Notificações instantâneas** for escolhida, os emails serão enviados imediatamente para cada notificação. Para as opções **Resumo diário** e **Resumo semanal**, você pode escolher quando o resumo diário é enviado e em que dia e quando o resumo semanal é enviado.
+Quando você escolhe **Notificações instantâneas**, os emails são enviados imediatamente para cada notificação. Para as opções **Resumo diário** e **Resumo semanal**, você pode escolher quando o resumo diário é enviado e em que dia e quando o resumo semanal é enviado.

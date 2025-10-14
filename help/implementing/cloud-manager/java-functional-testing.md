@@ -5,9 +5,9 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f60dc00fc031fa7ef73a18daec9c6c0e5570b018
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 77%
 
 ---
@@ -34,9 +34,9 @@ Depois de obter o conteúdo da pasta `it.tests`, você poderá usá-la como base
 
 As mesmas ferramentas que a Adobe usa para gravar testes funcionais do produto podem ser usadas para gravar seus testes funcionais personalizados. Use os [testes funcionais do produto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) no GitHub como exemplo para gravar seus testes.
 
-O código do teste funcional personalizado é o código Java™ localizado na pasta `it.tests` do projeto. Ele deve produzir um único JAR com todos os testes funcionais. Se a compilação produzir mais de um JAR de teste, o JAR selecionado será não determinístico. Se produzir zero JAR de teste, a etapa de teste será aprovada por padrão. Consulte o [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) para ver exemplos de testes.
+O código do teste funcional personalizado é o código Java™ localizado na pasta `it.tests` do projeto. Ele deve produzir um único JAR com todos os testes funcionais. Se a compilação produzir mais de um JAR de teste, o JAR selecionado será não determinístico. Se produzir zero JAR de teste, a etapa de teste será aprovada por padrão. Consulte o [Arquétipo de Projetos AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests) para ver exemplos de testes.
 
-Os testes são executados na infraestrutura de testes mantida pela Adobe, incluindo pelo menos duas instâncias de autor, duas instâncias de publicação e uma configuração do Dispatcher. Essa configuração significa que seus testes funcionais personalizados são executados em toda a pilha do AEM.
+Os testes são executados na infraestrutura de testes mantida pela Adobe, incluindo pelo menos duas instâncias de criação, duas instâncias de publicação e uma configuração do Dispatcher. Essa configuração significa que seus testes funcionais personalizados são executados em toda a pilha do AEM.
 
 ### Estrutura de testes funcionais {#functional-tests-structure}
 
@@ -107,8 +107,8 @@ Consulte [`aem-testing-clients`repositório do GitHub](https://github.com/adobe/
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | Quantidade de tempo de CPU reservado por execução de teste |
 | Memória | 0.5 Gi | Quantidade de memória alocada no teste, valor em gibibytes. |
-| Tempo limite | 30 min | O limite de tempo após o qual o teste é interrompido. |
-| Duração recomendada | 15 min | A Adobe recomenda gravar os testes para não demorar mais do que esse tempo. |
+| Tempo limite | 30 min | O limite de tempo após o qual o teste pára. |
+| Duração recomendada | 15 min | A Adobe recomenda que a gravação dos testes não demore mais do que esse tempo. |
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ As próximas alterações na infraestrutura contida para a execução de testes 
 >[!NOTE]
 >
 >Essa alteração precisa ser executada antes de 6 de abril de 2024.
->Falha ao atualizar a biblioteca de dependência pode resultar em falhas de pipeline na etapa &quot;Teste funcional personalizado&quot;.
+>>Falha ao atualizar a biblioteca de dependência pode resultar em falhas de pipeline na etapa &quot;Teste funcional personalizado&quot;.
 
 ### Execução local de testes {#local-test-execution}
 
