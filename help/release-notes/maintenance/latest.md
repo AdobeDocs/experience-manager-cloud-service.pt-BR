@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6cf380fd972888fa21f682b0e799cf5ab594e829
+source-git-commit: 1a1eeb3b9aec839677baadf9bea67993a22f9519
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 24%
+source-wordcount: '546'
+ht-degree: 19%
 
 ---
 
@@ -16,55 +16,58 @@ ht-degree: 24%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 22758 {#22758}
+## Versão 22943 {#22943}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 22758, lançada publicamente em quinta-feira, 1 de outubro de 2025. A versão de manutenção anterior era 22450.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 22943, lançada publicamente em quarta-feira, 14 de outubro de 2025. A versão de manutenção anterior era 22758.
 
-A ativação de recursos do 2025.10.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.10.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-22758}
+### Aprimoramentos {#enhancements-22943}
 
-* ASSETS-56227: Renomear o modificador adobe-countdown-timer.
-* CNTBF-493: Pacote de fluxo de retorno de conteúdo de incremento versão para 2.0.28.
-* CQ-4361110: traduções para o Granite.
-* CQ-4361112: traduções mais recentes do AEM.
-* GRANITE-56026: melhore as respostas do código de status da API de permissões.
-* GRANITE-61015: Pacote `org.apache.commons.io.channels` adicionado à lista pública exportada.
-* GRANITE-61167: O log Felix foi atualizado para a especificação OSGI mais recente.
-* GRANITE-61167: atualize várias dependências do Apache Felix.
-* GRANITE-61169: Melhore a verificação de cadeias de caracteres protegidas.
-* GRANITE-61622: atualize várias dependências do Apache Sling.
-* GRANITE-61663: adicionar `com.adobe.granite.repository.indexdefs-1.0.2` ao início rápido.
-* GRANITE-61811: adicione `com.adobe.granite.repository-2.0.0` ao início rápido.
-* SITES-32014: Ouça eventos externos para atualizar registros de serviço.
-* SITES-34277: corrija o erro de bloqueio em fluxos de trabalho de tradução para páginas.
-* SKYOPS-108706: A versão atualizada alterna o pacote para a versão mais recente (armazenamento em cache etag).
-* SKYOPS-114210: Atualização para a versão mais recente do pacote aem.pss.service.
-* SKYOPS-116171: Atualização para Sling ResourceResolver 1.12.12.
-* SKYOPS-119811: Dispatcher-publish lançado 2.0.258.
+* ASSETS-57809: Atualização da definição de índice para damAssetLucene-13.
+* ASSETS-36521: fluxo de trabalho de recarregamento DM aprimorado para garantir pós-processamento consistente.
+* ASSETS-56400: adição de uma nova representação PNG de zoom OOTB para ativos com transparência.
+* ASSETS-55326: visualização de configuração da pasta de metadados de IA habilitada por meio de eventos HTTP.
+* ASSETS-56905: suporte à conexão com o Indesign via proxy.
+* ASSETS-48286: adicione propriedades CAI à Algolia para GenStudio.
+* ASSETS-48653: aplique a marca d&#39;água invisível na fase de pré-processamento.
+* ASSETS-55874: Migração da predefinição de imagem do scene7 para DMWithOpenapi.
+* SITES-30452: Melhorias na API de conteúdo para ASO no endpoint /content/definition.
 
-### Problemas corrigidos {#fixed-issues-22758}
+### Problemas corrigidos {#fixed-issues-22943}
 
-* GRANITE-61875: Corrigir acionadores para &quot;avaliação de expressão inválida&quot; - Os autores não podem salvar os Fragmentos de conteúdo e os ativos não são baixados.
-* SITES-22059: Corrija o erro JS nos componentes do Visualizador do PDF. String &quot;Visualização de arquivo não disponível&quot; deslocalizada no site Componentes principais > Visualizador do PDF.
-* GRANITE-59704: correção do htmllibmanager.debug que causava a falha do modo de edição.
-* GRANITE-61042: integre o FELIX-6796 (correção do ServiceTracker NPE) ao pacote do Console da Web AEM Felix.
-* GRANITE-61165: Workspace.copy() lançando RepositoryException.
-* GRANITE-61875: atualização do ui.commons para 5.10.50.
+* ASSETS-56301: Corrigida a exportação de metadados seletivos para incluir PredictedTags no CSV.
+* ASSETS-55543: Lógica de processamento assíncrona refatorada em um pacote reutilizável.
+* ASSETS-54789: NPE corrigido em ACLPermissionsValidator quando a ACL de DM está habilitada.
+* ASSETS-55888: representação de malware corrigido que aparece no painel de representações da interface do usuário.
+* GRANITE-62236: problema de localização de palavra-chave corrigido em pesquisas salvas de coleções inteligentes.
+* GRANITE-61875: correção do problema de hotfix de &quot;avaliação de expressão inválida&quot; que impedia o salvamento de fragmentos de conteúdo e downloads de ativos.
+* SITES-24074: navegação móvel oculta fixa recebendo foco durante a navegação da guia do teclado.
+* SITES-33611: Corrigido o problema de visão geral da Live Copy para mercados de alto volume.
 
-### Problemas conhecidos {#known-issues-22758}
+#### Guias do AEM {#guides-22943}
 
-Nenhum.
+* GUIDES-31421: Quando vários mapas ou tópicos DITA são abertos e um dos tópicos é fechado, o botão **>>**, que mostra todas as guias abertas, é sobreposto às guias abertas restantes na barra de guias.
+* GUIDES-33229: Ao gerar PDFs, as regras de filtragem em um arquivo DITAVAL serão ignoradas se qualquer nome de propriedade contiver um ponto.
+* GUIDES-33720: Ao aplicar zoom na tela da interface de tradução, o botão Enviar para tradução se move sob as reticências e se torna habilitado mesmo sem que nenhum ativo seja selecionado.
+* GUIDES-33590: Quando um revisor conclui uma tarefa de revisão ou o iniciador atualiza a tarefa de revisão sem inserir comentários, o email de notificação enviado exibe o comentário anterior mais recente.
 
-### Recursos e APIs obsoletos {#deprecated-22758}
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+
+### Recursos e APIs obsoletos {#deprecated-22943}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-22758}
+### Correções de segurança {#security-22943}
 
-A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda 13 vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
+A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda 14 vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
 
-### Tecnologias integradas {#embedded-tech-22758}
+### Aviso de mudança
+
+* Esta versão inclui as seguintes novas versões do índice de produtos:
+* **damAssetLucene-13**
+
+### Tecnologias integradas {#embedded-tech-22943}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
@@ -72,5 +75,5 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | API DO SLING DO AEM | 2.27.6 | [API Apache Sling API 2.27.6](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
-| Componentes principais do AEM | 2.30.1 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Componentes principais do AEM | 2.30.2 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
