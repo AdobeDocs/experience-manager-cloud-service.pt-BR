@@ -24,7 +24,7 @@ Saiba como editar [as propriedades de uma página](/help/sites-cloud/authoring/s
 
 É possível editar propriedades de página de vários locais no AEM.
 
-* [No ](#from-the-sites-console)
+* [No &#x200B;](#from-the-sites-console)
 * [No Editor de páginas](#from-the-page-editor)
 * [No Editor universal](#from-the-universal-editor)
 

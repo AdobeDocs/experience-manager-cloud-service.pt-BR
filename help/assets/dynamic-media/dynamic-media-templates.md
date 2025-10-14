@@ -189,7 +189,7 @@ Execute as seguintes etapas para formatar partes específicas de uma string:
    * **Propriedades da Fonte**: altere a família, a cor e o tamanho da fonte usando as respectivas opções de painel.
      ![formato-subcadeia](/help/assets/assets/format-substring.png)
 
-[Cada parte da cadeia de caracteres formatada é exibida como uma subsequência no seletor de subsequências, disponível no painel de parâmetros. Adicione parâmetros a essas partes formatadas para formatá-las dinamicamente usando a URL de entrega do modelo ](#substring-parameterisation).
+[Cada parte da cadeia de caracteres formatada é exibida como uma subsequência no seletor de subsequências, disponível no painel de parâmetros. Adicione parâmetros a essas partes formatadas para formatá-las dinamicamente usando a URL de entrega do modelo &#x200B;](#substring-parameterisation).
 
 ### Adicionar formas à tela de desenho {#add-shapes-to-the-canvas}
 

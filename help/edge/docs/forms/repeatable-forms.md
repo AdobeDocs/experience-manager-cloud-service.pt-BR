@@ -47,7 +47,7 @@ A criação de uma seção repetível em um formulário oferece aos usuários a 
 
    Abaixo da seção repetível, os usuários encontram um botão intuitivo **Adicionar**, que facilita a adição de várias seções com facilidade.
 
-   ![seção repetível, botão Adicionar, para adicionar várias seções ](/help/edge/assets/repeatable-section-example.png)
+   ![seção repetível, botão Adicionar, para adicionar várias seções &#x200B;](/help/edge/assets/repeatable-section-example.png)
 
 
 ## Definindo Repetições Mínimas e Máximas

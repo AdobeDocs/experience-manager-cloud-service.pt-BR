@@ -103,7 +103,7 @@ Quando você seleciona uma página de Live Copy, as seguintes ações estão dis
 O console **Status do relacionamento** tem duas guias que fornecem uma variedade de funcionalidades.
 
 * [Status do relacionamento](#relationship-status-tab)
-* [Live Copy ](#live-copy-tab)
+* [Live Copy &#x200B;](#live-copy-tab)
 
 ### Status do relacionamento {#relationship-status-tab}
 

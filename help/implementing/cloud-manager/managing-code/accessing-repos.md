@@ -66,4 +66,4 @@ O recurso **Acessar Informações do Repositório** também está disponível na
 
 Você pode revogar uma senha de acesso a qualquer momento.
 
-Para fazer isso, [crie um tíquete de suporte para esta solicitação](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&amp;support-tab=home#support). O ticket é tratado com alta prioridade e geralmente é revogado dentro de um dia.
+Para fazer isso, [crie um tíquete de suporte para esta solicitação](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&support-tab=home#support). O ticket é tratado com alta prioridade e geralmente é revogado dentro de um dia.

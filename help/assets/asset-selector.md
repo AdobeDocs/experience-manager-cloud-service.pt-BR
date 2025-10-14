@@ -106,7 +106,7 @@ A integração é feita importando o pacote do Seletor de ativos e conectando ao
 
 É possível integrar o Seletor de ativos a vários aplicativos, como:
 
-* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] ](#adobe-app-integration-vanilla)
+* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
 * [Integrar o Seletor de ativos a um aplicativo que não seja da Adobe](#adobe-non-app-integration)
 * [Integração do Dynamic Media com recursos OpenAPI](#adobe-app-integration-polaris)
 

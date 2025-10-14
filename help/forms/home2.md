@@ -195,7 +195,7 @@ Armazene e gerencie com segurança os envios de formulários e os documentos ger
 Armazene documentos gerados e envios de formulários no sistema de Gerenciamento de Ativos Digitais da AEM ou integre-os a repositórios de documentos externos como o [SharePoint](/help/forms/configure-submit-action-sharepoint.md), o [OneDrive](/help/forms/configure-submit-action-onedrive.md) ou o [Armazenamento de Blobs do Azure](/help/forms/configure-submit-action-azure-blob-storage.md).
 
 **Conformidade e Retenção**
-Implemente políticas de retenção de dados que estejam em conformidade com os requisitos normativos, incluindo GDPR, CCPA e HIPAA. [Os ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) processos de arquivamento automatizados garantem que os documentos sejam retidos por períodos obrigatórios e descartados com segurança quando apropriado.
+Implemente políticas de retenção de dados que estejam em conformidade com os requisitos normativos, incluindo GDPR, CCPA e HIPAA. [Os &#x200B;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) processos de arquivamento automatizados garantem que os documentos sejam retidos por períodos obrigatórios e descartados com segurança quando apropriado.
 
 **Segurança e Controle de Acesso**
 Aplique criptografia, assinaturas digitais e [controles de acesso com base em função](/help/forms/forms-groups-privileges-tasks.md) aos documentos arquivados. As trilhas de auditoria controlam o acesso aos documentos e as modificações para a emissão de relatórios de conformidade e a supervisão da segurança.

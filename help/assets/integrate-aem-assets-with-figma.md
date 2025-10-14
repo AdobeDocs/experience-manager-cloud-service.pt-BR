@@ -51,7 +51,7 @@ Quando o design do Figma estiver pronto, você poderá [exportar o ativo para o 
 
 ## Exportar ativos para o repositório [!DNL AEM Assets]{#export-figma-design-to-aem-assets-folder}
 
-[Acesse o painel ](#access-aem-assets-connector) do [!UICONTROL Conector Assets do Adobe Experience Manager (AEM)] na interface de design do [!DNL Figma] e execute as seguintes etapas para exportar seu design para o repositório do [!DNL AEM Assets]:
+[Acesse o painel &#x200B;](#access-aem-assets-connector) do [!UICONTROL Conector Assets do Adobe Experience Manager (AEM)] na interface de design do [!DNL Figma] e execute as seguintes etapas para exportar seu design para o repositório do [!DNL AEM Assets]:
 
 1. Navegue até a pasta de destino onde deseja salvar o design do [!DNL Figma]. Se você já estiver dentro de uma pasta, clique em Mais opções (![três pontos](/help/assets/assets/three-dots.svg)) no caminho da pasta para selecionar uma pasta de destino diferente.
 1. Opcional: agrupe ativos na tela para selecioná-los como uma única unidade para fazer upload em sua pasta.

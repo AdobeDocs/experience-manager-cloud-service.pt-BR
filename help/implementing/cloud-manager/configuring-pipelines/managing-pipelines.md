@@ -116,7 +116,7 @@ Com o Cloud Manager, você pode executar vários pipelines simultaneamente, melh
 **Para executar vários pipelines:**
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
-1. No menu do lado esquerdo, clique em ![Ícone do fluxo de trabalho ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
+1. No menu do lado esquerdo, clique em ![Ícone do fluxo de trabalho &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
 1. Na tabela na página **Pipeline**, marque as caixas de seleção ao lado dos pipelines que deseja executar.
 Se necessário, clique em ![Ícone de filtro, funil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filtros** para classificar pipelines por nome, ambiente ou tipo de código implantado, ou uma combinação dos três.
 1. Ao lado do canto superior direito da página, clique em **Executar selecionados (x)**.

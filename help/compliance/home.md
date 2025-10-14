@@ -17,8 +17,8 @@ ht-degree: 81%
 
 Confira estes links para obter uma visão geral dos tópicos de conformidade no Experience Manager as a Cloud Service.
 
-* [Regulamentos de disponibilidade para proteção e privacidade de dados do ](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Regulamentos de disponibilidade da base para proteção e privacidade de dados do ](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [Regulamentos de disponibilidade para proteção e privacidade de dados do &#x200B;](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Regulamentos de disponibilidade da base para proteção e privacidade de dados do &#x200B;](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
 * [Regulamentos de disponibilidade dos sites para proteção e privacidade de dados do Sites](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
 * [Diretrizes de acessibilidade da Web](/help/compliance/accessibility/web-accessibility.md)
 * [Um guia rápido para a WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)

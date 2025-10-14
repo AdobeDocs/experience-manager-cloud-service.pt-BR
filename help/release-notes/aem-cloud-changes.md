@@ -43,7 +43,7 @@ As principais diferenças encontram-se nas seguintes áreas:
 
 * [Remoção dos agentes de replicação e alterações relacionadas](#replication-agents)
 
-* [Remoção da interface clássica do usuário ](#classic-ui)
+* [Remoção da interface clássica do usuário &#x200B;](#classic-ui)
 
 * [Entrega do lado da publicação](#publish-side-delivery)
 

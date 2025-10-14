@@ -29,7 +29,7 @@ A integração é feita importando o pacote do Seletor de ativos e conectando ao
 
 É possível integrar o Seletor de ativos a vários aplicativos, como:
 
-* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] ](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] &#x200B;](/help/assets/integrate-asset-selector-adobe-app.md)
 * [Integrar o Seletor de ativos a um aplicativo que não seja da Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Integração do Dynamic Media com recursos OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 

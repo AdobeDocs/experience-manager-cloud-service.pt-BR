@@ -36,7 +36,7 @@ Vantagens de fornecer acesso limitado ao SharePoint Site:
 
 Siga as etapas abaixo para configurar o SharePoint Sites com acesso limitado usando escopos de autorização:
 
-1. [Crie um aplicativo com o ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [Crie um aplicativo com o &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [Definir o escopo de autorização na instância do AEM](#set-the-authorization-scope-at-aem-instance)
 
 ### Criar um aplicativo com a permissão limitada no portal do Azure

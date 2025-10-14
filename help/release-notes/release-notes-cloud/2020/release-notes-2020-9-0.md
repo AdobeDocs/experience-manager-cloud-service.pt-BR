@@ -23,7 +23,7 @@ A Data de Lançamento do [!DNL Adobe Experience Manager] as a Cloud Service 2020
 
 ### Novidades do [!DNL Sites] {#what-is-new-sites}
 
-* O SDK JavaScript do Editor de Aplicativos de Página Única (SPA) [ agora é open source](/help/implementing/developing/hybrid/reference-materials.md).
+* O SDK JavaScript do Editor de Aplicativos de Página Única (SPA) [&#x200B; agora é open source](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 

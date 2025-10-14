@@ -97,5 +97,5 @@ O Adobe Experience Manager pode ser configurado para acionar automaticamente os 
 >* [Introdução ao uso dos microsserviços de ativos](asset-microservices-configure-and-use.md)
 >* [Formatos de arquivo não suportados](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
->* Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
+>* Aplicativo de desktop do [[!DNL Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
 >* [Documentação do Apache Oak sobre acesso binário direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

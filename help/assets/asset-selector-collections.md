@@ -33,7 +33,7 @@ Além disso, também é possível personalizar a seleção de ativos na guia Col
 
 ## Exibir coleções {#view-collections}
 
-O Seletor de ativos permite exibir coleções em uma exibição de lista ![1&rbrace; ou em uma exibição de grade 3&rbrace;. ](assets/do-not-localize/list-view.png)![](assets/do-not-localize/grid-view.png) Consulte [tipos de exibição no Seletor de ativos](overview-asset-selector.md#types-of-view).
+O Seletor de ativos permite exibir coleções em uma exibição de lista ![1&rbrace; ou em uma exibição de grade 3&rbrace;. &#x200B;](assets/do-not-localize/list-view.png)![](assets/do-not-localize/grid-view.png) Consulte [tipos de exibição no Seletor de ativos](overview-asset-selector.md#types-of-view).
 
 ## Arraste e solte ativos na coleção {#collection-drag-and-drop}
 

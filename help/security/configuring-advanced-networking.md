@@ -59,7 +59,7 @@ Este artigo descreve cada uma dessas opções em detalhes e por que você pode u
 
 >[!CAUTION]
 >
->Se você já tiver sido provisionado com a tecnologia de saída dedicada herdada e quiser configurar uma dessas opções avançadas de rede, [contate o Atendimento ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&amp;lang=pt-BR#home).
+>Se você já tiver sido provisionado com a tecnologia de saída dedicada herdada e quiser configurar uma dessas opções avançadas de rede, [contate o Atendimento ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&lang=pt-BR#home).
 >
 >Tentar configurar redes avançadas com a tecnologia de saída herdada pode afetar a conectividade do site.
 

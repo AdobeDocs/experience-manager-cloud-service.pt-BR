@@ -262,7 +262,7 @@ Outro método para visualizar um ativo é selecionar o ativo da imagem e, em seg
 ![Visualizando um ativo com base na predefinição do visualizador Zoom Vertical Light](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Visualizando um ativo com base na predefinição do visualizador &quot;ZoomVertical_light&quot; selecionada. O ponteiro do mouse (`+`) foi movido sobre a inspeção para ampliar. Observe os botões URL e Incorporar._
 
-A representação acima está ativa. [Experimente](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
+A representação acima está ativa. [Experimente](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## Opcional - Saiba mais
 

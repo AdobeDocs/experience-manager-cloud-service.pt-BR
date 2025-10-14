@@ -157,7 +157,7 @@ Quanto ao conteúdo intermediário, é possível:
 
 ### Usar conteúdo associado     {#using-associated-content}
 
-Se tiver [conteúdo associado ](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses arquivos estarão disponíveis no painel lateral (após colocar o fragmento na página de conteúdo). O conteúdo associado é essencialmente uma fonte especial de conteúdo para [conteúdo intermediário](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Se tiver [conteúdo associado &#x200B;](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses arquivos estarão disponíveis no painel lateral (após colocar o fragmento na página de conteúdo). O conteúdo associado é essencialmente uma fonte especial de conteúdo para [conteúdo intermediário](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >

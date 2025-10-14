@@ -30,7 +30,7 @@ Os [!DNL Salesforce] serviços em nuvem e o Form Data Model (FDM) estão dispon�
 
 Antes de configurar os serviços de nuvem do [!DNL Salesforce], execute as seguintes tarefas:
 
-* [Criar um  [!DNL Salesforce] aplicativo](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5) habilitado para OAuth conectado. Ao criar o aplicativo conectado [!DNL Salesforce], especifique a URL de retorno de chamada no seguinte formato:
+* [Criar um  [!DNL Salesforce] aplicativo](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&type=5) habilitado para OAuth conectado. Ao criar o aplicativo conectado [!DNL Salesforce], especifique a URL de retorno de chamada no seguinte formato:
 
   ```
   https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html

@@ -66,8 +66,8 @@ Você pode usar o console [**Sites**](/help/sites-cloud/authoring/sites-console/
 
 No console **Sites**, há duas opções para publicação:
 
-* [Publicação rápida   ](#quick-publish)
-* [Gerenciar publicação   ](#manage-publication)
+* [Publicação rápida   &#x200B;](#quick-publish)
+* [Gerenciar publicação   &#x200B;](#manage-publication)
 
 ### Publicação rápida    {#quick-publish}
 
