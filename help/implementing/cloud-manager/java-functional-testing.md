@@ -131,7 +131,7 @@ As próximas alterações na infraestrutura contida para a execução de testes 
 >[!NOTE]
 >
 >Essa alteração precisa ser executada antes de 6 de abril de 2024.
->>Falha ao atualizar a biblioteca de dependência pode resultar em falhas de pipeline na etapa &quot;Teste funcional personalizado&quot;.
+>&#x200B;>Falha ao atualizar a biblioteca de dependência pode resultar em falhas de pipeline na etapa &quot;Teste funcional personalizado&quot;.
 
 ### Execução local de testes {#local-test-execution}
 
