@@ -148,10 +148,10 @@ Considere os seguintes exemplos de URLs do Quickview e as variáveis de miniatur
     <td><p>SKU única. Encontrado na sequência de consulta.</p> </td>
     <td><p>Os URLs de Quickview gravados incluem o seguinte:</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>A única parte variável na URL é o valor do parâmetro da cadeia de caracteres de consulta <code>productId=</code>, e é claramente um valor de SKU. Portanto, as miniaturas só precisam de campos SKU preenchidos com valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -167,9 +167,9 @@ Considere os seguintes exemplos de URLs do Quickview e as variáveis de miniatur
     <td><p>SKU e ID de categoria na cadeia de caracteres de consulta.</p> </td>
     <td><p>Os URLs de Quickview gravados incluem o seguinte:</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>Nesse caso, há duas partes variáveis no URL. A SKU está armazenada no parâmetro <code>prodId</code> e a ID da categoria está armazenada no parâmetro <code>category=</code>.</p> <p>Dessa forma, as definições de miniatura são pares. Isto é, um valor de SKU e uma variável extra chamada <code>categoryId</code>. Os pares resultantes são os seguintes:</p>
     <ul>
       <li>A SKU é <code>305466</code> e <code>categoryId</code> é <code>1100004</code></li>
@@ -234,7 +234,7 @@ Opcionalmente, é possível criar sua própria predefinição do visualizador de
 
 Uma predefinição interativa do visualizador de vídeo renderiza corretamente o vídeo e todos os segmentos de linha do tempo adicionados. Ela também usa um exemplo de Quickview padrão ao selecionar uma miniatura de produto no modo de Visualização, para que você possa testar a interatividade antes de publicar.
 
-Após salvar a predefinição do visualizador, seu estado é automaticamente definido como **Ativado **in na página Predefinições do visualizador. Esse estado significa que está visível no componente do Dynamic Media e sempre que você visualiza um vídeo com ele. Certifique-se de publicar manualmente a nova predefinição do visualizador.
+Após salvar a predefinição do visualizador, seu estado é automaticamente definido como **Ativado &#x200B;** in na página Predefinições do visualizador. Esse estado significa que está visível no componente do Dynamic Media e sempre que você visualiza um vídeo com ele. Certifique-se de publicar manualmente a nova predefinição do visualizador.
 
 Consulte [Criar uma predefinição do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) para criar sua própria predefinição interativa do visualizador de vídeo.
 
@@ -658,27 +658,27 @@ O processo de construção do URL do Quickview é oposto ao processo de identifi
   <tbody>
   <tr>
     <td><p>SKU única, encontrada na sequência de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td>SKU única, encontrada no caminho do URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td><p>SKU e ID de categoria na cadeia de caracteres de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   </tbody>
 </table>
