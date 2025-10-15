@@ -11,7 +11,7 @@ ht-degree: 94%
 
 # Integração com o Adobe Target{#integrating-with-adobe-target}
 
-Como parte da Adobe Experience Cloud, o [Adobe Target](https://business.adobe.com/products/target/adobe-target.html) permite aumentar a relevância do conteúdo por meio do direcionamento e da medição em todos os canais. O Adobe Target é usado pelos profissionais de marketing para projetar e executar testes online, criar segmentos de público instantaneamente (com base no comportamento) e automatizar o direcionamento de conteúdo e experiências online. O AEM as a Cloud Service adotou o fluxo de trabalho direcionado usado no Adobe Target Standard. Se você usa o Target, está familiarizado com o ambiente de edição de direcionamento no AEM as a Cloud Service.
+Como parte da Adobe Experience Cloud, o [Adobe Target](https://business.adobe.com/br/products/target/adobe-target.html) permite aumentar a relevância do conteúdo por meio do direcionamento e da medição em todos os canais. O Adobe Target é usado pelos profissionais de marketing para projetar e executar testes online, criar segmentos de público instantaneamente (com base no comportamento) e automatizar o direcionamento de conteúdo e experiências online. O AEM as a Cloud Service adotou o fluxo de trabalho direcionado usado no Adobe Target Standard. Se você usa o Target, está familiarizado com o ambiente de edição de direcionamento no AEM as a Cloud Service.
 
 Integre o AEM Sites com o Adobe Target para personalizar o conteúdo em suas páginas:
 

@@ -110,7 +110,7 @@ A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em 
    * Indicador visual para dados de produtos preparados no modo de criação para melhor visibilidade de alterações futuras
    * Novo componente de mapa de site para páginas de conteúdo e comércio
 
-* Suporte para a [Recomendação de produto do Adobe Commerce Sensei, habilitada pelo Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) na loja AEM usando recomendações predefinidas ou criadas dinamicamente
+* Suporte para a [Recomendação de produto do Adobe Commerce Sensei, habilitada pelo Adobe Sensei](https://business.adobe.com/br/products/magento/product-recommendations.html) na loja AEM usando recomendações predefinidas ou criadas dinamicamente
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 

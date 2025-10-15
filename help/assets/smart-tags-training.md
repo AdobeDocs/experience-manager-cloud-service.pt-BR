@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Treinamento de tags inteligentes
 
-O treinamento de tags inteligentes permite treinar suas tags para especificar os detalhes se as tags relevantes não estiverem lá. Ele usa uma estrutura artificialmente inteligente do [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. O [!DNL Experience Manager Assets] aplica tags inteligentes automaticamente a ativos carregados, por padrão.
+O treinamento de tags inteligentes permite treinar suas tags para especificar os detalhes se as tags relevantes não estiverem lá. Ele usa uma estrutura artificialmente inteligente do [Adobe Sensei](https://business.adobe.com/br/why-adobe/experience-cloud-artificial-intelligence.html) para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. O [!DNL Experience Manager Assets] aplica tags inteligentes automaticamente a ativos carregados, por padrão.
 
 ## Determinar o requisito do treinamento de tags inteligentes {#smart-tag-training-requirement}
 
