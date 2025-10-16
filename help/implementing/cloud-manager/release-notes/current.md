@@ -4,10 +4,10 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.10.0 no Adobe 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 673e6a2403026e33c3bbd225b7296a1fb8877404
+source-git-commit: 302248ade67683712bf1895fd8dfdd8853aae1ac
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 4%
+source-wordcount: '1428'
+ht-degree: 3%
 
 ---
 
@@ -110,6 +110,15 @@ Interessado no beta? Envie um email para [beta_exphubextensibility@adobe.com](ma
 
 Um novo modelo de build compila apenas os módulos alterados (em vez do repositório inteiro) usando o armazenamento em cache no nível do módulo para reduzir os tempos de compilação. Ela se aplica a pipelines de qualidade de código, pilha completa e somente estágio.
 
+![Caixa de diálogo Editar Pipeline de Não Produção mostrando as duas opções de Estratégia de Compilação que são Compilação Completa e Compilação Inteligente](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png) *Caixa de diálogo Editar Pipeline de Não Produção mostrando as duas opções de Estratégia de Compilação que são Compilação Completa e Compilação Inteligente.*
+
+Na caixa de diálogo **Adicionar/Editar Pipeline**, na guia **Código Source**, uma nova seção **Estratégia de Compilação** permite escolher uma das seguintes opções de compilação:
+
+* **Compilação Completa** — compila todos os módulos no repositório em cada execução.
+* **Compilação Inteligente** — cria apenas módulos que foram alterados desde a última confirmação, o que reduz o tempo geral de compilação.
+
+Você controla quais pipelines usam a **Compilação inteligente**. Durante a versão beta, essa opção aparece somente para os pipelines **Qualidade do Código** e **Implantação de Desenvolvimento**.
+
 Interessado? Envie um email para [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) com sua ID organizacional e ID do programa da Adobe.
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
@@ -120,13 +129,13 @@ Interessado? Envie um email para [beta_quickbuild_cmpipelines@adobe.com](mailto:
 
 Reverta rapidamente para uma implantação anterior se o código-fonte do cliente mais recente não estiver funcionando como esperado — não é necessário executar novamente o pipeline completo ou reverter as confirmações manualmente.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![Restaurar o código-fonte do cliente a partir do cartão Ambientes](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *cartão Ambientes acima, mostrando a opção **Restaurar**>**Código anterior implantado**&#x200B;para um ambiente selecionado.*
+![Restaurar o código-fonte do cliente a partir do cartão Ambientes](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *cartão Ambientes acima, mostrando a opção **Restaurar**>**Código anterior implantado**para um ambiente selecionado.*
 
 ![Restaurar caixa de diálogo implantada de código anterior](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
 *Na caixa de diálogo **Restaurar código anterior implantado**, revise a versão implantada no momento e a versão que deseja restaurar e clique em **Confirmar***.
 
 ![Restaurando a ativação](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
-O *Cloud Manager reverte o ambiente para a compilação anterior, mantém o conteúdo e a configuração intactos e marca o ambiente **Restaurando**&#x200B;até que a implantação seja concluída.*
+O *Cloud Manager reverte o ambiente para a compilação anterior, mantém o conteúdo e a configuração intactos e marca o ambiente **Restaurando**até que a implantação seja concluída.*
 
 ![Versão do código Source em uso](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *A exibição de detalhes do Ambiente, como visto acima, agora também mostra a versão ativa do código-fonte em uso.*
 
