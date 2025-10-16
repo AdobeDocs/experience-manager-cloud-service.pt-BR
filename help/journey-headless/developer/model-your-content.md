@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 65%
@@ -182,7 +182,7 @@ O AEM fornece os seguintes tipos de dados para você modelar o conteúdo:
 * Número
 * Booleano
 * Data e hora
-* Lista discriminada
+* Enumeração
 * Tags
 * Referência de fragmento / UUID de referência de fragmento
 * Referência de conteúdo / UUID de referência de conteúdo
@@ -218,7 +218,7 @@ Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutur
 
 Depois de criado, você pode editar seu modelo. Por exemplo:
 
-![Modelo de fragmentos do conteúdo](assets/cfm-model.png)
+![Modelo de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 >[!NOTE]
 >
@@ -256,12 +256,6 @@ Após selecionar o modelo apropriado, um fragmento de conteúdo é aberto para e
 
 ## Introdução a alguns exemplos {#getting-started-examples}
 
-<!--
-tbc...
-...and/or see the structures covered for the GraphQL samples...
-...will those (ever) be delivered as an official sample package?
--->
-
 Para ver uma estrutura básica de amostra, consulte Amostra da estrutura do fragmento de conteúdo.
 
 ## O que vem a seguir {#whats-next}
@@ -271,7 +265,7 @@ Agora que você aprendeu a modelar a estrutura e criar um conteúdo que é depen
 ## Recursos adicionais {#additional-resources}
 
 * [Trabalhar com fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md) - a página introdutória para fragmentos de conteúdo
-   * [Fragmentos de conteúdo no navegador de configuração](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - ativar a funcionalidade de fragmento de conteúdo no navegador de configuração
+   * [Fragmentos de conteúdo no navegador de configuração](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) - habilitar a funcionalidade de fragmento de conteúdo no navegador de configuração
    * [Modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - criação e edição dos modelos de fragmentos de conteúdo
    * [Gerenciamento de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md) - criação e criação de fragmentos de conteúdo; esta página leva você a outras seções detalhadas
 * [Esquemas GraphQL do AEM](access-your-content.md) - como o GraphQL trabalha com modelos

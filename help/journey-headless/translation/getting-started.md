@@ -5,10 +5,10 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: d05c510f9845c006dfb1c4d58438c9632c1325d8
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
@@ -35,7 +35,7 @@ Este documento ajuda você a entender como começar a traduzir conteúdo headles
 
 ## Requisitos e pré-requisitos {#requirements-prerequisites}
 
-Há vários requisitos antes de começar a traduzir o conteúdo do AEM headless.
+Há vários requisitos antes de começar a traduzir o conteúdo headless do AEM.
 
 ### Conhecimento {#knowledge}
 
@@ -81,17 +81,15 @@ O arquiteto de conteúdo funciona no início do projeto para definir essa estrut
 
 Como os Modelos de conteúdo definem a estrutura do seu conteúdo, é necessário saber quais campos de seus modelos devem ser traduzidos. Geralmente, você trabalha com o arquiteto de conteúdo para definir isso. Para navegar pelos campos de seus modelos de conteúdo, siga as etapas abaixo.
 
-1. Navegue até **Ferramentas** > **Geral** > **Modelos de fragmentos de conteúdo**.
+1. Navegue até o console de Fragmentos de conteúdo e selecione a guia para Modelos de fragmento de conteúdo.
 1. Os Modelos de fragmentos de conteúdo geralmente são armazenados em uma estrutura de pastas. Selecione a pasta do projeto.
-1. Os modelos estão listados. Selecione o modelo para ver os detalhes.
-   ![Modelos de fragmentos do conteúdo](assets/content-fragment-models.png)
+1. Os modelos estão listados. Selecione o modelo e abra o editor.
 1. O **Editor do modelo de fragmento de conteúdo** abre.
-   1. A coluna esquerda contém os campos do modelo. Essa coluna nos interessa.
-   1. A coluna direita contém os campos que podem ser adicionados ao modelo. Essa coluna pode ser ignorada.
-
-      ![Editor de modelos de fragmentos do conteúdo](assets/content-fragment-model-editor.png)
-1. Selecione um dos campos do modelo. O AEM o marca e os detalhes desse campo são mostrados na coluna direita.
-   ![Detalhe do Editor de modelo de fragmento de conteúdo](assets/content-fragment-model-editor-detail.png)
+   ![Editor de modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
+   1. O painel esquerdo lista os Tipos de dados possíveis.
+   1. O painel direito mostra as propriedades apropriadas ao campo selecionado.
+   * O painel do meio contém os campos que você criou e definiu - ou definirá.
+1. Selecione um dos campos do modelo. O AEM o marca e os detalhes desse campo são mostrados no painel direito.
 1. O arquiteto de conteúdo habilita o campo **Traduzível** em cada campo do Modelo de Conteúdo que deve ser traduzido.
 
 >[!TIP]
@@ -182,7 +180,7 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Entenda como o AEM armazena conteúdo headless.
 * Se familiarizar com as ferramentas de tradução do AEM.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando a seguir o documento [Configurar a integração de tradução](configure-connector.md), onde você aprende como conectar o AEM a um serviço de tradução.|
+Desenvolva esse conhecimento e continue sua jornada de tradução headless do AEM revisando a seguir o documento [Configurar a integração de tradução](configure-connector.md), onde você aprenderá a conectar o AEM a um serviço de tradução.|
 
 ## Recursos adicionais {#additional-resources}
 
@@ -193,4 +191,4 @@ Embora seja recomendável que você passe para a próxima parte da jornada de tr
 * [Configuração da estrutura de integração de tradução](/help/sites-cloud/administering/translation/integration-framework.md) - Saiba como configurar a Estrutura de integração de tradução para integrar-se a serviços de tradução de terceiros.
 * [Gerenciamento de projetos de tradução](/help/sites-cloud/administering/translation/managing-projects.md) - Saiba como criar e gerenciar projetos de tradução automática e humana no AEM.
 * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
-* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

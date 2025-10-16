@@ -6,10 +6,10 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: f9634228fed8c194f1bdcdc9a368d4c0492b7fd5
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 94%
+source-wordcount: '930'
+ht-degree: 89%
 
 ---
 
@@ -35,10 +35,6 @@ Este guia aborda os tópicos de implementação headless no AEM. Quando terminar
 * Tenha uma compreensão completa do que é entrega de conteúdo headless e seus benefícios.
 * Entenda os recursos headless do AEM e como eles trabalham juntos para proporcionar uma experiência headless.
 * Dê os primeiros passos para implementar seu primeiro projeto headless no AEM.
-
->[!TIP]
->
-> Se preferir **aprender na prática** e já tiver conhecimento do AEM, visite os tutoriais do AEM Headless, que são organizados pela API e pela estrutura e estão disponíveis na [Seção Recursos adicionais](#additional-resources) no final deste documento.
 
 ## Público-alvo {#audience}
 
@@ -78,21 +74,15 @@ Embora você possa ir diretamente para uma parte específica da jornada, muitos 
 
 Comece conferindo o próximo artigo: [Saiba mais sobre o desenvolvimento headless do CMS](learn-about.md),
 
-### Escolha sua própria aventura {#choose-your-path}
-
-Você prefere aprender em seu próprio ritmo? Confira estas opções:
-
-* Se quiser **saber mais sobre conceitos headless e as tecnologias AEM headless**, continue sua jornada AEM headless, ao revisar, em seguida, o documento [Como modelar seu conteúdo como modelos de conteúdo AEM](model-your-content.md), por meio do qual você aprende a modelar sua estrutura de conteúdo no AEM.
-* Se quiser **aprender na prática**, pule para o [Tutorial prático Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR), que o levará diretamente ao desenvolvimento AEM Headless, implementando um projeto simples para expor o conteúdo AEM headless.
-
 ## Recursos adicionais {#additional-resources}
 
 As jornadas de documentação mostram como o AEM soluciona um problema empresarial fornecendo uma narrativa que o orienta por processos e recursos relacionados. Uma jornada ilustra como vários recursos trabalham juntos para atender a uma única necessidade empresarial.
 
+Se você preferir aprender na prática e tiver conhecimento existente sobre o AEM, utilize nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos incorporados no AEM Headless. Consulte [Tutoriais para headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview).
+
 Confira essas jornadas adicionais para obter mais informações sobre como os eficientes recursos do AEM funcionam juntos.
 
 * O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutoriais do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Se quiser aprender na prática e já tiver conhecimento sobre o AEM, acompanhe nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos do AEM Headless.
 * [Jornada de tradução do AEM headless](/help/journey-headless/translation/overview.md) - essa jornada de documentação oferece uma ampla compreensão sobre a tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
 * [Jornada de criação headless](/help/journey-headless/author/overview.md) - comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e aprenda a modelar o conteúdo em seu primeiro projeto headless.
 * [Jornada do arquiteto headless](/help/journey-headless/architect/overview.md) - comece aqui para obter uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager as a Cloud Service e aprender como modelar o conteúdo para seu projeto.

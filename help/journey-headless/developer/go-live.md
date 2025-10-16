@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 88%
@@ -29,11 +29,6 @@ Este documento ajuda você a entender o pipeline de publicação headless do AEM
 * Proteger e dimensionar o aplicativo antes do lançamento
 * Monitorar o desempenho e depurar problemas
 
-<!-- Alexandru: this is a bit redundant, to review again later
-
-## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
-
--->
 Para preparar o aplicativo headless do AEM para o lançamento, siga as práticas recomendadas descritas abaixo.
 
 ## Proteger e dimensionar o aplicativo headless antes do lançamento {#secure-and-scale-before-launch}
@@ -127,15 +122,15 @@ Ou você já lançou seu primeiro projeto Headless do AEM ou agora tem todo o co
 
 ### Explore os Aplicativos de página única {#explore-spa}
 
-No entanto, isso não é tudo que o armazenamento headless do AEM oferece. Talvez você se lembre na [Parte de introdução da jornada](getting-started.md#integration-levels), discutimos brevemente como o AEM não só suporta entrega headless e modelos tradicionais de pilha completa, como também pode suportar modelos híbridos que combinam as vantagens de ambos.
+No entanto, isso não é tudo que o armazenamento headless do AEM oferece. Talvez você se lembre na [Parte de introdução da jornada](getting-started.md#integration-levels), discutimos brevemente como o AEM não só oferece suporte a entrega headless e modelos tradicionais de pilha completa, como também pode oferecer suporte a modelos híbridos que combinam as vantagens de ambos.
 
-Se esse tipo de flexibilidade for algo necessário para o seu projeto, continue com a parte adicional opcional da jornada, [Como criar aplicativos de página única (SPA) com AEM](create-spa.md).
+Se esse tipo de flexibilidade for algo que você precisa para seu projeto, continue para a parte adicional opcional da jornada, [Como criar aplicativos de página única (SPAs) com o AEM](create-spa.md).
 
 ## Recursos adicionais {#additional-resources}
 
 * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
-* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)
 * [Uma visão geral da implantação do AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Use o Cloud Manager para implantar seu código](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR)
 * [Integre o repositório Git do Cloud Manager a um repositório Git externo e implante um projeto para o AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=pt-BR)

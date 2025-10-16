@@ -5,10 +5,10 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 83%
+source-wordcount: '1733'
+ht-degree: 81%
 
 ---
 
@@ -63,16 +63,10 @@ Em seguida, você pode usar o Painel de navegação para acessar as áreas-chave
 
 O Painel de navegação pode ser aberto selecionando o ícone da Adobe na parte superior esquerda, seguido pelo ícone de uma pequena bússola.
 
-<!--
-The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
-
-![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
--->
-
 >[!NOTE]
 >Embora os Fragmentos de conteúdo sejam um recurso do AEM **Sites**, eles são salvos como **Ativos**. Este é um detalhe técnico que não deve afetar você, mas que pode ser útil.
 
-No console, é possível selecionar pastas no painel esquerdo para navegar até o seu Fragmento de conteúdo. Também é possível filtrar e/ou pesquisar.
+No console de Fragmentos de conteúdo, é possível selecionar pastas no painel esquerdo para navegar até o Fragmento de conteúdo. Também é possível filtrar e/ou pesquisar.
 
 ![Console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
@@ -80,20 +74,18 @@ No console, é possível selecionar pastas no painel esquerdo para navegar até 
 
 No console de **Fragmentos de conteúdo**, várias ações estão disponíveis para seus fragmentos de conteúdo na barra de ferramentas:
 
-<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
-
 * **Abrir no Assets**
 * **Criar**
 * A coluna **Referenciado por** também fornece um link direto para mostrar todas as referências principais desse fragmento, incluindo a referência a fragmentos de conteúdo, fragmentos de experiência e páginas.
 * Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
 
-Após a seleção do fragmento, todas as ações apropriadas estarão disponíveis:
-
-<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
+Após a seleção do fragmento, outras ações estarão disponíveis (conforme apropriado):
 
 * **Abrir**
 * **Publicar** (e **Desfazer publicação**)
+* **Gerenciar Marcas**
 * **Copiar**
+* **Substituir**
 * **Mover**
 * **Renomeie**
 * **Excluir**
@@ -101,26 +93,6 @@ Após a seleção do fragmento, todas as ações apropriadas estarão disponíve
 >[!NOTE]
 >
 >Ações como Publicar, Desfazer publicação, Excluir, Mover, Renomear e Copiar acionam um processo assíncrono. O progresso desse processo pode ser monitorado por meio da interface de processos assíncronos do AEM.
-
-<!--
-The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
-
-The Quick Actions are available for a single resource, see **Basel** in the example below:
-
-![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
-
-The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
-
-![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
-
-You can select the format for viewing your resources with the View Selector:
-
-![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
-
-You can view additional information about items using the Rail Selector. This also gives access to additional actions.
-
-![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
--->
 
 ## Criação de fragmentos de conteúdo {#authoring-content-fragments}
 
