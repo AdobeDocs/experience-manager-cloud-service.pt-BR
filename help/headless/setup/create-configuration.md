@@ -1,17 +1,17 @@
 ---
-title: Criação de uma configuração - Configuração do headless
+title: Criar uma configuração - Configuração do headless
 description: Crie uma configuração como uma primeira etapa para começar a usar o headless no AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 74%
+source-wordcount: '250'
+ht-degree: 68%
 
 ---
 
-# Criação de uma configuração - Configuração do headless {#creating-configuration}
+# Criar uma configuração - Configuração do headless {#create-configuration}
 
 Como primeiro passo para começar a usar o headless no AEM as a Cloud Service, é necessário criar uma configuração.
 
@@ -27,21 +27,7 @@ Se você estiver familiarizado com os [modelos de página em uma implementação
 
 Um administrador só precisaria criar uma configuração uma vez ou, muito raramente, quando um novo espaço de trabalho fosse necessário para organizar seus modelos de conteúdo. Para os propósitos deste guia de introdução, precisamos criar apenas uma configuração.
 
-1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Ferramentas > Geral > Navegador de configuração**.
-1. Forneça um **Título** e um **Nome** para sua configuração.
-   * O **Título** deve ser descritivo.
-   * O **Nome** se tornará o nome do nó no repositório.
-      * Ele será gerado automaticamente com base no título e ajustado conforme as [convenções de nomenclatura do AEM](/help/implementing/developing/introduction/naming-conventions.md).
-      * Ele pode ser ajustado, se necessário.
-1. Verifique as seguintes opções:
-   * **Modelos de fragmentos do conteúdo**
-   * **Consultas GraphQL persistidas**
-
-   ![Criar configuração](../assets/create-configuration.png)
-
-1. Selecionar **Criar**
-
-Você pode criar várias configurações, se necessário. As configurações também podem ser aninhadas.
+Para obter detalhes passo a passo, consulte [Habilitar a funcionalidade de fragmento de conteúdo no Navegador de Configuração](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 
 >[!NOTE]
 >

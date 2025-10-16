@@ -4,10 +4,10 @@ description: Saiba como usar fragmentos de conteúdo do AEM para projetar, criar
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 72%
+source-wordcount: '242'
+ht-degree: 62%
 
 ---
 
@@ -19,29 +19,17 @@ Saiba como usar fragmentos de conteúdo do AEM para projetar, criar, preparar e 
 
 [Agora que você criou uma pasta de ativos](create-assets-folder.md) onde você pode armazenar os fragmentos de conteúdo, é possível criar os fragmentos.
 
-Os fragmentos de conteúdo permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem que você deixe o conteúdo pronto para uso em vários locais e em vários canais.
-
-Fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no formato JSON.
+Os fragmentos de conteúdo contêm conteúdo estruturado e permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem que você deixe o conteúdo pronto para uso em vários locais e em vários canais.
 
 ## Como criar um fragmento de conteúdo {#how-to-create-a-content-fragment}
 
-Os autores de conteúdo criarão qualquer quantidade de fragmentos de conteúdo para representar o conteúdo que eles criam. Esta é sua principal tarefa no AEM. Para os propósitos deste guia de introdução, só será necessário criar um.
+Os autores de conteúdo criarão qualquer quantidade de fragmentos de conteúdo para representar o conteúdo que eles criam. Essa é a principal tarefa deles no AEM.
 
-1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Navegação** > **Fragmentos de conteúdo**.
+As etapas para criar um fragmento de conteúdo para uso:
 
-1. Selecione a [pasta criada anteriormente](create-assets-folder.md).
-1. Selecione **Criar**.
-1. A criação de um fragmento de conteúdo é apresentada como uma caixa de diálogo.
-Selecione o local e o modelo que deseja usar para criar o fragmento de conteúdo.
-
-   * Os modelos disponíveis dependem da [**Configuração na nuvem** que foi definida para a pasta de ativos](create-assets-folder.md) na qual você está criando o fragmento de conteúdo.
-   * Se o modelo não estiver disponível, verifique a configuração da pasta de ativos.
-
-   Adicione o Título, o Nome e, se necessário, a Descrição.
-
-   ![Caixa de diálogo Criar novo fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
-
-1. Selecione **Criar** ou **Criar e abrir**.
+* [Criar seu fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment)
+* [Criar o fragmento de conteúdo no novo editor](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
+* [Publicar seu fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor#publishing)
 
 Os fragmentos de conteúdo podem fazer referência a outros fragmentos de conteúdo, permitindo uma estrutura de conteúdo aninhada, se necessário.
 
@@ -53,4 +41,7 @@ Agora que você criou um fragmento de conteúdo, poderá seguir para a parte fin
 
 >[!TIP]
 >
->Para obter detalhes completos sobre o gerenciamento de fragmentos de conteúdo, consulte a [documentação sobre fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md).
+>Para obter detalhes completos sobre o gerenciamento de fragmentos de conteúdo, consulte:
+>
+>* [Gerenciamento dos fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md)
+>* [Criação de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md)

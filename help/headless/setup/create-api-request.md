@@ -4,9 +4,9 @@ description: Saiba como usar a API GraphQL para a entrega headless do conteúdo 
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '417'
 ht-degree: 85%
 
 ---
@@ -21,11 +21,7 @@ Saiba como usar a API GraphQL para a entrega headless do conteúdo do Fragmento 
 
 * A [API GraphQL](/help/headless/graphql-api/content-fragments.md) permite criar solicitações para acessar e fornecer Fragmentos de conteúdo. Essa API oferece o conjunto mais robusto de recursos para consultar e consumir conteúdo de Fragmentos de conteúdo.
    * Para usar a API, [defina e habilite os pontos de acesso no AEM](/help/headless/graphql-api/graphql-endpoint.md)e, se necessário, na [Interface GraphiQL instalada](/help/headless/graphql-api/graphiql-ide.md).
-* [A API REST do Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permite criar e modificar Fragmentos de conteúdo (e outros ativos).
-
->[!NOTE]
->
->As [OpenAPIs](/help/headless/content-fragment-openapis.md) de Fragmento de Conteúdo e de Modelo de Fragmento de Conteúdo também estão disponíveis.
+* Uma seleção de [APIs do AEM para Entrega e Gerenciamento de Conteúdo Estruturado](/help/headless/apis-headless-and-content-fragments.md) está disponível para uso com Fragmentos de Conteúdo.
 
 O restante deste guia terá como foco o acesso ao GraphQL e a entrega de Fragmentos de conteúdo.
 
@@ -33,19 +29,7 @@ O restante deste guia terá como foco o acesso ao GraphQL e a entrega de Fragmen
 
 Para que as APIs GraphQL possam ser usadas, é necessário criar um endpoint GraphQL.
 
-1. Navegue até **Ferramentas**, **Geral** e, em seguida, selecione **GraphQL**.
-1. Selecione **Criar**.
-1. A caixa de diálogo **Criar novo ponto de acesso de GraphQL** será aberta. Aqui, é possível especificar:
-   * **Nome**: nome do endpoint; é possível inserir qualquer texto.
-   * **Usar esquema do GraphQL fornecido por**: use a lista suspensa para selecionar a configuração necessária.
-1. Confirme com **Criar**.
-1. No console, um **Caminho** será exibido com base na configuração criada anteriormente. Esse caminho é usado para executar consultas do GraphQL.
-
-   ```
-   /content/cq:graphql/<configuration-name>/endpoint
-   ```
-
-Para obter mais detalhes sobre como habilitar endpoints do GraphQL, consulte [Gerenciar endpoints do GraphQL no AEM](/help/headless/graphql-api/graphql-endpoint.md).
+Para obter detalhes, consulte [Gerenciar pontos de extremidade do GraphQL no AEM](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Consultar conteúdo usando GraphQL com o GraphiQL
 
@@ -53,46 +37,7 @@ Os arquitetos da informação projetam consultas para seus pontos de acesso de c
 
 GraphiQL é um IDE, incluído no seu ambiente do AEM; ele se torna acessível/visível após [configurar seus pontos de acesso](#enable-graphql-endpoint).
 
-1. Faça logon no AEM as a Cloud Service e acesse a interface GraphiQL:
-
-   É possível acessar o editor de consultas por meio de:
-
-   * **Ferramentas** > **Geral** > **Editor de Consultas do GraphQL**
-   * diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
-
-1. O GraphiQL IDE é um editor de consultas no navegador para GraphQL. Você pode usá-lo para criar consultas para recuperar fragmentos de conteúdo e entregá-los como JSON sem periféricos.
-   * O menu suspenso no canto superior direito permite selecionar o endpoint.
-   * Um painel à esquerda lista as consultas persistentes (quando disponíveis)
-   * O painel central esquerdo permite criar a consulta.
-   * O painel central direito exibe os resultados.
-   * O Editor de consultas tem recursos de autocompletar código e teclas de atalho para executar a consulta com facilidade.
-
-   ![Editor do GraphiQL](../assets/graphiql.png)
-
-1. Supondo que o modelo criado era chamado `person` com os campos `firstName`, `lastName` e `position`, podemos criar uma consulta simples para recuperar o conteúdo do Fragmento de conteúdo.
-
-   ```text
-   query 
-   {
-     personList {
-       items {
-         _path
-         firstName
-         lastName
-         position
-       }
-     }
-   }
-   ```
-
-1. Insira a consulta no painel esquerdo.
-   ![Consulta do GraphiQL](../assets/graphiql-query.png)
-
-1. Clique no botão **Executar Consulta** ou use a tecla de atalho `Ctrl-Enter` e os resultados serão exibidos como JSON no painel direito.
-   ![Resultados do GraphiQL](../assets/graphiql-results.png)
-
-1. No canto superior direito da página, clique no link **Documentos** para mostrar a documentação contextual para que você possa criar suas consultas que se adaptem aos seus próprios modelos.
-   ![Documentação do GraphiQL](../assets/graphiql-documentation.png)
+Para obter detalhes, consulte [Uso do GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md).
 
 O GraphQL permite consultas estruturadas que podem direcionar não apenas conjuntos de dados específicos ou objetos de dados individuais, mas também fornecer elementos específicos dos objetos, resultados aninhados, oferecer suporte para variáveis de consulta e muito mais.
 

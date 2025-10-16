@@ -4,10 +4,10 @@ description: Use os modelos de fragmento de conteúdo do AEM para definir a estr
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 80%
+source-wordcount: '268'
+ht-degree: 77%
 
 ---
 
@@ -23,27 +23,11 @@ No entanto, primeiro será necessário criar uma pasta de ativos na qual você o
 
 As pastas de ativos são usadas para [organizar ativos de conteúdo tradicionais](/help/assets/manage-digital-assets.md), como imagens e vídeos, juntamente com fragmentos de conteúdo.
 
-## Como criar uma pasta de ativos {#how-to-create-an-assets-folder}
+## Criar e configurar uma pasta do Assets {#create-and-configure-an-assets-folder}
 
-Um administrador só precisaria criar pastas ocasionalmente para organizar o conteúdo, conforme ele fosse criado. Para os propósitos deste guia de introdução, precisamos criar apenas uma pasta.
+Um administrador só precisaria criar pastas ocasionalmente para organizar o conteúdo, conforme ele fosse criado. Use o console Assets para criar a nova pasta.
 
-1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Navegação > Assets > Arquivos**.
-1. Selecione **Criar > Pasta**.
-1. Forneça um **Título** e um **Nome** para sua pasta.
-   * O **Título** deve ser descritivo.
-   * O **Nome** se tornará o nome do nó no repositório.
-      * Ele será gerado automaticamente com base no título e ajustado conforme as [convenções de nomenclatura do AEM](/help/implementing/developing/introduction/naming-conventions.md).
-      * Ele pode ser ajustado, se necessário.
-
-   ![Criar pasta](../assets/assets-folder-create.png)
-1. Selecione a pasta criada passando o mouse sobre ela e tocando na marca de seleção. Em seguida, selecione **Propriedades** na barra de ferramentas (ou use o [atalho de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `p`).
-1. Na janela **Propriedades**, selecione a guia **Serviços em nuvem**.
-1. Para a **Configuração na Nuvem**, selecione a [configuração criada anteriormente](create-configuration.md).
-   ![Configurar pasta de ativos](../assets/assets-folder-configure.png)
-1. Selecione **Salvar e fechar**.
-1. Selecione **OK** na janela de confirmação.
-
-   ![Janela de confirmação](../assets/assets-folder-confirmation.png)
+Depois de criada, você precisa aplicar sua [configuração](/help/headless/setup/create-configuration.md) à pasta. Para obter detalhes, consulte [Aplicar a configuração à sua pasta](/help/sites-cloud/administering/content-fragments/setup.md#apply-the-configuration-to-your-folder).
 
 É possível criar subpastas adicionais dentro da pasta criada. As subpastas herdarão a **Configuração na nuvem** da pasta principal. Isso pode ser alterado, no entanto, se você quiser usar modelos de outra configuração.
 

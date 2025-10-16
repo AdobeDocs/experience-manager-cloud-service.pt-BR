@@ -4,7 +4,7 @@ description: Conheça as Práticas recomendadas para a configuração e uso do A
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 23%
@@ -13,7 +13,7 @@ ht-degree: 23%
 
 # Práticas recomendadas para a configuração e uso do AEM GraphQL com fragmentos de conteúdo{#best-practices-setup-use-aem-graphql-content-fragments}
 
-Essas diretrizes resumem as práticas recomendadas para instalar, configurar e usar o AEM com GraphQL e Fragmentos de conteúdo.
+Estas diretrizes resumem as práticas recomendadas para instalar, configurar e usar o AEM com GraphQL e Fragmentos de conteúdo.
 
 ## Introdução {#getting-started}
 
@@ -48,7 +48,7 @@ Para:
 * Testes
 * Produção
 
-### Armazenamento em cache do Dispatcher com AEM {#dispatcher-caching}
+### Armazenamento em cache do AEM Dispatcher {#dispatcher-caching}
 
 >[!NOTE]
 >Se o cache na Dispatcher estiver habilitado, a [configuração do CORS](#cors-setup) não será necessária e, portanto, poderá ser ignorada.
@@ -63,14 +63,14 @@ O armazenamento em cache de consultas persistentes não é ativado por padrão n
 
 Normalmente, o Dispatcher é configurado para:
 
-* Publish: produção
+* Publicar: produção
 
 ### Configuração do CORS {#cors-setup}
 
 >[!NOTE]
 >Se o armazenamento em cache no [AEM Dispatcher](#dispatcher-caching) estiver habilitado, a configuração do CORS não será necessária e, portanto, esta seção poderá ser ignorada.
 
-Para acessar o endpoint do GraphQL, uma política do CORS deve ser configurada e adicionada a um projeto AEM implantado no AEM por meio do Cloud Manager. Isso é feito adicionando um arquivo de configuração de CORS OSGi apropriado para os endpoints desejados.
+Para acessar o endpoint do GraphQL, uma política do CORS deve ser configurada e adicionada a um projeto do AEM que esteja implantado no AEM via Cloud Manager. Isso é feito adicionando um arquivo de configuração de CORS OSGi apropriado para os endpoints desejados.
 
 #### Detalhes {#details-cors-setup}
 
@@ -80,11 +80,11 @@ Para acessar o endpoint do GraphQL, uma política do CORS deve ser configurada e
 
 Normalmente, o CORS é configurado para:
 
-* Publish: produção
+* Publicar: produção
 
 ### Autenticação {#authentication}
 
-Um caso de uso fundamental para a entrega de fragmentos de conteúdo da API GraphQL do Adobe Experience Manager as a Cloud Service (AEM) é o de aceitar consultas remotas de aplicativos ou serviços de terceiros. Essas consultas remotas podem exigir acesso à API autenticado para garantir a entrega de conteúdo headless.
+Um caso de uso fundamental para a entrega de fragmentos de conteúdo da API do GraphQL do Adobe Experience Manager as a Cloud Service (AEM) é o de aceitar consultas remotas de aplicativos ou serviços de terceiros. Essas consultas remotas podem exigir acesso à API autenticado para garantir a entrega de conteúdo headless.
 
 #### Detalhes {#details-authentication}
 
@@ -137,7 +137,7 @@ As consultas do GraphQL e suas respostas JSON podem ser armazenadas em cache se 
 
 Uma CDN geralmente é configurada para:
 
-* Publish: produção
+* Publicar: produção
 
 ### Configurar e criar fragmentos de conteúdo {#cconfigure-create-content-fragments}
 
@@ -164,7 +164,7 @@ Para:
 * Testes
 * Produção
 
-## Uso do AEM GraphQL {#use-aem-graphql}
+## Utilização do AEM GraphQL {#use-aem-graphql}
 
 ### Otimizar as consultas do GraphQL {#optimize-graphql-queries}
 
@@ -180,13 +180,13 @@ Essas diretrizes são fornecidas para ajudar a evitar problemas de desempenho co
 
 ### Acessar o GraphQL pelos seus aplicativos {#access-graphql-from-your-apps}
 
-O CMS headless AEM oferece aos desenvolvedores a liberdade de criar e fornecer experiências excepcionais usando as linguagens, estruturas e ferramentas com as quais já estão familiarizados.
+O AEM headless CMS oferece aos desenvolvedores a liberdade de criar e fornecer experiências excepcionais usando as linguagens, estruturas e ferramentas com as quais já estão familiarizados.
 
 #### Detalhes {#details-your-apps}
 
-* [Instalar e usar o SDK do AEM para desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=pt-BR)
-* [Recursos para desenvolvedores sem periféricos do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* Exemplos, incluindo [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=pt-BR), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html?lang=pt-BR), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html?lang=pt-BR), entre outros
+* [Instalar e usar o AEM SDK para desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=pt-BR)
+* [Recursos do desenvolvedor sem periféricos do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* Exemplos, incluindo [React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html), [Next.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/next-js.html), [Node.js](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/server-to-server-app.html), entre outros
 
 #### Ambientes {#environments-your-apps}
 
@@ -207,4 +207,4 @@ Para obter mais detalhes sobre o AEM GraphQL e os fragmentos de conteúdo, consu
 
 * [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
 * [Uso do GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
-* [Recursos para desenvolvedores sem periféricos do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Recursos do desenvolvedor sem periféricos do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
