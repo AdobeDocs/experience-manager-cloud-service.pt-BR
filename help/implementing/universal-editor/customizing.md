@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para personalizar o Editor 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,26 @@ A opção **Visualizar** na janela de publicação pode, portanto, ser totalment
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## Desativar a publicação para o Live {#publish-live}
+
+Determinados workflows de criação podem impedir a publicação no serviço em tempo real.
+
+A opção **Live** na janela de publicação pode, portanto, ser totalmente suprimida em um aplicativo adicionando os seguintes metadados.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
+```
+
+## Desativar o cancelamento de publicação {#unpublish}
+
+Determinados workflows de criação exigem um processo de aprovação antes que a publicação do conteúdo seja desfeita. Nessas situações, a opção de desfazer a publicação não deve estar disponível para nenhum autor.
+
+Portanto, o botão **Cancelar publicação** pode ser totalmente suprimido em um aplicativo adicionando os seguintes metadados.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
 ```
 
 ## Desativar a página aberta {#open-page}
@@ -115,7 +135,7 @@ As condições podem ser definidas usando o [esquema JsonLogic](https://jsonlogi
 
 ## URLs de visualização personalizados {#custom-preview-urls}
 
-Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Para fazer isso, basta incluir o URL de visualização desejado em uma meta tag do aplicativo instrumentado, como no exemplo a seguir.
 
