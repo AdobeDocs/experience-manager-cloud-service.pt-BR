@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 30d128c914b1eea19fb324f6587a364da3ebba1d
+source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
 workflow-type: tm+mt
-source-wordcount: '4384'
-ht-degree: 65%
+source-wordcount: '4349'
+ht-degree: 64%
 
 ---
 
@@ -117,7 +117,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Severidade**: Crítica
 * **Desde**: Versão 2018.6.0
 
-Ao fazer solicitações HTTP em um aplicativo Experience Manager, é essencial configurar tempos limite apropriados para evitar o consumo desnecessário de thread.
+Ao fazer solicitações HTTP em um aplicativo do Experience Manager, é essencial configurar tempos limite apropriados para evitar o consumo desnecessário de thread.
 Por padrão, o Java™ HTTP Client (java.net.HttpUrlConnection) e o cliente Apache HTTP Components amplamente usado não impõem tempos limite, portanto, eles devem ser configurados manualmente. Como prática recomendada, os tempos limite devem ser definidos como 60 segundos ou menos.
 
 #### Código não compatível  {#non-compliant-code-2}
@@ -189,7 +189,7 @@ public void orDoThis () {
 ### Sempre fechar objetos ResourceResolver {#resourceresolver-objects-should-always-be-closed}
 
 * **Chave**: CQRules:CQBP-72
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Alta
 * **Desde**: Versão 2018.4.0
 
@@ -231,11 +231,11 @@ public void orDoThis(Session session) throws Exception {
 ### Não use caminhos de servlet do Sling para registrar servlets {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **Chave**: CQRules:CQBP-75
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Alta
 * **Desde**: Versão 2018.4.0
 
-Conforme descrito na [documentação do Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html), vincular os servlets por caminhos não é recomendado. Os servlets vinculados a caminhos não podem usar os controles de acesso JCR padrão e, como resultado disso, exigem maior rigor de segurança. Em vez de usar servlets vinculados a caminhos, é recomendado criar nós no repositório e registrar os servlets por tipo de recurso.
+Conforme descrito na [`Sling` documentação](https://sling.apache.org/documentation/the-sling-engine/servlets.html), vinculações de servlets por caminhos não são incentivadas. Os servlets vinculados a caminhos não podem usar os controles de acesso JCR padrão e, como resultado disso, exigem maior rigor de segurança. Em vez de usar servlets vinculados a caminhos, é recomendado criar nós no repositório e registrar os servlets por tipo de recurso.
 
 #### Código não compatível  {#non-compliant-code-5}
 
@@ -251,7 +251,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### As exceções capturadas devem ser registradas ou descartadas, mas não ambos {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **Chave**: CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Baixa
 * **Desde**: Versão 2018.4.0
 
@@ -293,7 +293,7 @@ public void orDoThis() throws MyCustomException {
 ### Evite instruções de log seguidas imediatamente por instruções de descarte {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **Chave**: CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Baixa
 * **Desde**: Versão 2018.4.0
 
@@ -319,10 +319,10 @@ public void doThis() throws Exception {
 ### Evite registrar no nível INFO ao manipular solicitações GET ou HEAD {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **Chave**: CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: baixa
 
-Em geral, o nível de log INFO deve ser usado para demarcar ações importantes e, por padrão, o Experience Manager é configurado para registrar no nível INFO ou superior. Os métodos GET e HEAD devem ser operações somente leitura e, portanto, não constituem ações importantes. Registrar no nível INFO em resposta a solicitações GET ou HEAD provavelmente criará um ruído significativo de log, dificultando a identificação de informações úteis em arquivos de log. Ao manipular solicitações GET ou HEAD, registre nos níveis AVISO ou ERRO se algo der errado. Use os níveis DEBUG ou TRACE se forem necessárias informações detalhadas de solução de problemas.
+Em geral, o nível de log INFO deve ser usado para demarcar ações importantes e, por padrão, o Experience Manager é configurado para registrar no nível INFO ou superior. Os métodos GET e HEAD devem ser operações somente leitura e, portanto, não constituem ações importantes. Registrar no nível INFO em resposta a solicitações GET ou HEAD provavelmente criará um ruído significativo de log, dificultando a identificação de informações úteis em arquivos de log. Ao manipular solicitações do GET ou do HEAD, registre nos níveis AVISO ou ERRO se algo der errado. Use os níveis DEBUG ou TRACE se forem necessárias informações detalhadas de solução de problemas.
 
 >[!NOTE]
 >
@@ -347,7 +347,7 @@ public void doGet() throws Exception {
 ### Não use Exception.getMessage() como o primeiro parâmetro de uma instrução de log  {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **Chave**: CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Baixa
 * **Desde**: Versão 2018.4.0
 
@@ -380,7 +380,7 @@ public void doThis() {
 ### Os logs em blocos de catch devem estar no nível AVISO ou ERRO {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **Chave**: CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Baixa
 * **Desde**: Versão 2018.4.0
 
@@ -413,7 +413,7 @@ public void doThis() {
 ### Não imprimir rastros de pilha no console {#do-not-print-stack-traces-to-the-console}
 
 * **Chave**: CQRules:CQBP-44---ExceptionPrintStackTrace
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Baixa
 * **Desde**: Versão 2018.4.0
 
@@ -446,7 +446,7 @@ public void doThis() {
 ### Não envie para a saída padrão ou fluxo de erro padrão {#do-not-output-to-standard-output-or-standard-error}
 
 * **Chave**: CQRules:CQBP-44—LogLevelConsolePrinters
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Baixa
 * **Desde**: Versão 2018.4.0
 
@@ -479,11 +479,11 @@ public void doThis() {
 ### Evite caminhos de bibliotecas e aplicativos codificados {#avoid-hardcoded-apps-and-libs-paths}
 
 * **Chave**: CQRules:CQBP-71
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Baixa
 * **Desde**: Versão 2018.4.0
 
-Caminhos que começam com `/libs` e `/apps` geralmente não devem ser codificados. Normalmente, esses caminhos são armazenados em relação ao caminho de pesquisa do Sling, que tem como padrão `/libs,/apps`. O uso do caminho absoluto pode gerar defeitos sutis que só aparecerão posteriormente no ciclo de vida do projeto.
+Caminhos que começam com `/libs` e `/apps` geralmente não devem ser codificados. Normalmente, esses caminhos são armazenados em relação ao caminho de pesquisa `Sling`, que tem como padrão `/libs,/apps`. O uso do caminho absoluto pode gerar defeitos sutis que só aparecerão posteriormente no ciclo de vida do projeto.
 
 #### Código não compatível  {#non-compliant-code-13}
 
@@ -504,18 +504,18 @@ public void doThis(Resource resource) {
 ### Não use o Sling Scheduler {#sonarqube-sling-scheduler}
 
 * **Chave**: CQRules:AMSCORE-554
-* **Tipo**: `Code Smell`/Compatibilidade Cloud Service
+* **Tipo**: `Code Smell`/Compatibilidade com Cloud Service
 * **Severidade**: Baixa
 * **Desde**: Versão 2020.5.0
 
-Não use o Sling Scheduler para tarefas que exigem uma execução garantida. Os processos agendados no Sling têm execução garantida e são mais adequados para ambientes clusterizados e não clusterizados.
+Não use o Agendador do `Sling` para tarefas que exigem execução garantida. Os processos agendados no Sling têm execução garantida e são mais adequados para ambientes clusterizados e não clusterizados.
 
-Consulte a documentação [Eventos e manuseio de processos do Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para saber mais sobre como os processos do Sling são tratados em ambientes clusterizados.
+Consulte [`Apache Sling` Evento e manuseio de trabalho](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para saber mais sobre como os trabalhos do Sling são tratados em ambientes clusterizados.
 
 ### Não use APIs obsoletas do Experience Manager {#sonarqube-aem-deprecated}
 
 * **Chave**: AMSCORE-553
-* **Tipo**: `Code Smell`/Compatibilidade Cloud Service
+* **Tipo**: `Code Smell`/Compatibilidade com Cloud Service
 * **Severidade**: Baixa
 * **Desde**: Versão 2020.5.0
 
@@ -532,9 +532,9 @@ No entanto, há casos em que uma API é descontinuada no contexto do Experience 
 * **Severidade**: baixa
 * **Desde**: Versão 2023.11
 
-O projeto Apache Sling não incentiva o uso da anotação `@Inject` no contexto de Modelos Sling, pois pode resultar em baixo desempenho quando combinado com `DefaultInjectionStrategy.OPTIONAL` (no nível de campo ou de classe). Em vez disso, injeções mais específicas (como `@ValueMapValue` ou `@OsgiInjector` anotações) devem ser usadas.
+O projeto `Apache Sling` não incentiva o uso da anotação `@Inject` no contexto de Modelos Sling, pois pode resultar em desempenho inadequado quando combinado com `DefaultInjectionStrategy.OPTIONAL` (no nível de campo ou de classe). Em vez disso, injeções mais específicas (como `@ValueMapValue` ou `@OsgiInjector` anotações) devem ser usadas.
 
-Consulte a [Documentação do Apache Sling](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) para obter mais informações sobre as anotações recomendadas e por que essa recomendação foi feita.
+Consulte a [`Apache Sling` documentação](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) para obter mais informações sobre as anotações recomendadas e por que essa recomendação foi feita.
 
 
 ### Reutilizar instâncias de um HTTPClient {#sonarqube-reuse-httpclient}
@@ -544,7 +544,7 @@ Consulte a [Documentação do Apache Sling](https://sling.apache.org/documentati
 * **Severidade**: baixa
 * **Desde**: Versão 2023.11
 
-Aplicativos AEM muitas vezes alcançam outros aplicativos usando o protocolo HTTP, e o Apache HttpClient é uma biblioteca frequentemente usada para atingir esse fim. Mas a criação desse objeto HttpClient vem com alguma sobrecarga, de modo que esses objetos devem ser reutilizados o máximo possível.
+Os aplicativos do AEM geralmente alcançam outros aplicativos usando o protocolo HTTP, e o Apache HttpClient é uma biblioteca usada com frequência para atingir esse fim. Mas a criação desse objeto HttpClient vem com alguma sobrecarga, de modo que esses objetos devem ser reutilizados o máximo possível.
 
 Essa regra verifica se esse objeto HttpClient não é privado em um método, mas global em um nível de classe, para que possa ser reutilizado. Nesse caso, o campo HttpClient deve ser definido no construtor da classe ou no método `activate()` (se essa classe for um componente/serviço OSGi).
 
@@ -579,7 +579,7 @@ A seção a seguir especifica as verificações do OakPAL executadas pelo Cloud 
 
 >[!NOTE]
 >
->O OakPAL é uma estrutura que valida pacotes de conteúdo usando um repositório Oak autônomo. Um Parceiro Experience Manager, que ganhou o prêmio Experience Manager Rockstar North America de 2019, o desenvolveu.
+>O OakPAL é uma estrutura que valida pacotes de conteúdo usando um repositório Oak autônomo. Um Parceiro da Experience Manager, que ganhou o prêmio Experience Manager Rockstar North America 2019, o desenvolveu.
 
 ### Os clientes não devem implementar ou estender APIs de produto anotadas com @ProviderType{#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -588,7 +588,7 @@ A seção a seguir especifica as verificações do OakPAL executadas pelo Cloud 
 * **Severidade**: Crítica
 * **Desde**: Versão 2018.7.0
 
-A API Experience Manager contém interfaces e classes Java™, que devem ser usadas apenas, mas não implementadas, pelo código personalizado. Por exemplo, somente o Experience Manager deve implementar a interface `com.day.cq.wcm.api.Page`.
+A API do Experience Manager contém interfaces e classes Java™, que devem ser usadas, mas não implementadas, apenas pelo código personalizado. Por exemplo, somente a Experience Manager deve implementar a interface `com.day.cq.wcm.api.Page`.
 
 Quando novos métodos são adicionados a essas interfaces, esses métodos adicionais não afetam o código existente que usa essas interfaces. Como resultado, a adição de novos métodos a essas interfaces é considerada compatível com versões anteriores. No entanto, se o código personalizado implementa uma dessas interfaces, ele apresenta um risco de compatibilidade com versões anteriores para o cliente.
 
@@ -611,7 +611,7 @@ public class DontDoThis implements Page {
 * **Severidade**: Limitante
 * **Desde**: 2021.8.0
 
-Vários índices do Oak prontos para uso no Experience Manager incluem uma configuração do Tika, e as personalizações desses índices devem incluir uma configuração do Tika. Essa regra verifica as personalizações do `damAssetLucene` e `lucene`, e o `graphqlConfig` indexa e gera um problema se o nó `tika` estiver ausente ou se o nó `tika` não tiver um nó secundário chamado `config.xml`.
+Vários índices do Oak prontos para uso no Experience Manager incluem uma configuração do Tika, e as personalizações desses índices devem incluir uma configuração do Tika. Essa regra verifica as personalizações do `damAssetLucene` e `lucene`, e o `graphqlConfig` indexa e gera um problema se o nó `tika` estiver ausente ou se o nó `tika` não tiver um nó filho chamado `config.xml`.
 
 Consulte a [documentação de indexação](/help/operations/indexing.md#preparing-the-new-index-definition) para obter mais informações sobre como personalizar as definições de índice.
 
@@ -802,7 +802,7 @@ Semelhante à regra [Os pacotes não devem conter configurações OSGi duplicada
 ### O modo de criação padrão não deve ser a interface clássica {#oakpal-default-authoring}
 
 * **Chave**: ClassicUIAuthoringMode
-* **Tipo**: `Code Smell`/Compatibilidade Cloud Service
+* **Tipo**: `Code Smell`/Compatibilidade com Cloud Service
 * **Severidade**: Baixa
 * **Desde**: Versão 2020.5.0
 
@@ -811,14 +811,14 @@ A configuração `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` do OSGi d
 ### Componentes com caixas de diálogo devem ter caixas de diálogo da interface para toque {#oakpal-components-dialogs}
 
 * **Chave**: ComponentWithOnlyClassicUIDialog
-* **Tipo**: `Code Smell`/Compatibilidade Cloud Service
+* **Tipo**: `Code Smell`/Compatibilidade com Cloud Service
 * **Severidade**: Baixa
 * **Desde**: Versão 2020.5.0
 
-Os componentes de Experience Manager que têm uma caixa de diálogo com interface clássica sempre devem ter uma caixa de diálogo com interface de toque correspondente. Ambos oferecem uma experiência de criação ideal compatível com o modelo de implantação de Cloud Service, em que a interface clássica não é mais compatível. Essa regra verifica os seguintes cenários:
+Os componentes do Experience Manager que têm uma caixa de diálogo com interface clássica sempre devem ter uma caixa de diálogo com interface de toque correspondente. Ambos oferecem uma experiência de criação ideal compatível com o modelo de implantação do Cloud Service, em que a interface clássica não é mais compatível. Essa regra verifica os seguintes cenários:
 
-* Um componente com uma caixa de diálogo da interface do usuário clássica (ou seja, um nó secundário `dialog`) deve ter uma caixa de diálogo da interface do usuário de toque correspondente (ou seja, um nó secundário `cq:dialog`).
-* Um componente com uma caixa de diálogo de design com interface clássica (ou seja, um nó `design_dialog`) deve ter uma caixa de diálogo de design com interface de toque correspondente (ou seja, um nó secundário `cq:design_dialog`).
+* Um componente com uma caixa de diálogo da interface do usuário clássica (ou seja, um nó filho`dialog`) deve ter uma caixa de diálogo da interface do usuário de toque correspondente (ou seja, um nó filho `cq:dialog`).
+* Um componente com uma caixa de diálogo de design com interface clássica (ou seja, um nó `design_dialog`) deve ter uma caixa de diálogo de design com interface de toque correspondente (ou seja, um nó filho `cq:design_dialog`).
 * Um componente com uma caixa de diálogo com interface clássica e uma caixa de diálogo de design com interface clássica deve ter uma caixa de diálogo com interface de toque e uma caixa de diálogo de design com interface de toque correspondentes.
 
 A documentação das Ferramentas de modernização do Experience Manager fornece a documentação e as ferramentas para converter componentes da interface clássica para a interface sensível ao toque. Consulte a [documentação das Ferramentas de modernização do Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) para obter mais detalhes.
@@ -826,11 +826,11 @@ A documentação das Ferramentas de modernização do Experience Manager fornece
 ### Os pacotes não devem misturar conteúdo mutável e imutável {#oakpal-packages-immutable}
 
 * **Chave**: ImmutableMutableMixedPackage
-* **Tipo**: `Code Smell`/Compatibilidade Cloud Service
+* **Tipo**: `Code Smell`/Compatibilidade com Cloud Service
 * **Severidade**: Baixa
 * **Desde**: Versão 2020.5.0
 
-Para serem compatíveis com o modelo de implantação do Cloud Service, os pacotes de conteúdo individuais devem ter conteúdo para áreas imutáveis do repositório (`/apps` e `/libs`) ou para a área mutável (tudo que não esteja em `/apps` ou `/libs`), mas não ambos. Por exemplo, um pacote que inclui `/apps/myco/components/text` e `/etc/clientlibs/myco` não é compatível com Cloud Service e causa um problema a ser relatado.
+Para serem compatíveis com o modelo de implantação do Cloud Service, os pacotes de conteúdo individuais devem ter conteúdo para áreas imutáveis do repositório (`/apps` e `/libs`) ou para a área mutável (tudo que não esteja em `/apps` ou `/libs`), mas não ambos. Por exemplo, um pacote que inclui `/apps/myco/components/text` e `/etc/clientlibs/myco` não é compatível com o Cloud Service e faz com que um problema seja relatado.
 
 >[!NOTE]
 >
@@ -841,7 +841,7 @@ Consulte a [Estrutura de projetos do Experience Manager](/help/implementing/deve
 ### Não usar agentes de replicação reversa {#oakpal-reverse-replication}
 
 * **Chave**: ReverseReplication
-* **Tipo**: `Code Smell`/Compatibilidade Cloud Service
+* **Tipo**: `Code Smell`/Compatibilidade com Cloud Service
 * **Severidade**: Baixa
 * **Desde**: Versão 2020.5.0
 
@@ -849,7 +849,7 @@ A compatibilidade com a replicação reversa não está disponível em implanta�
 
 Os clientes que usam replicação reversa devem entrar em contato com a Adobe para obter soluções alternativas.
 
-### Os recursos contidos nas bibliotecas de clientes ativadas por proxy devem estar em uma pasta chamada “resources” {#oakpal-resources-proxy}
+### Os recursos contidos nas bibliotecas de clientes habilitadas por proxy devem estar em uma pasta chamada “resources” {#oakpal-resources-proxy}
 
 * **Chave**: ClientlibProxyResource
 * **Tipo**: Erro
@@ -894,29 +894,29 @@ A ferramenta de migração do [repositório de ativos do Experience Manager as a
 ### Recomendamos o uso de modelos editáveis em vez de modelos estáticos {#oakpal-static-template}
 
 * **Chave**: StaticTemplateUsage
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell` 
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
 Embora o uso de modelos estáticos seja historicamente comum em projetos do Experience Manager, a Adobe recomenda usar modelos editáveis porque eles fornecem mais flexibilidade e são compatíveis com recursos adicionais não presentes em modelos estáticos. Mais informações podem ser encontradas no documento [Modelos de página](/help/implementing/developing/components/templates.md).
 
-A migração de modelos estáticos para editáveis pode ser amplamente automatizada usando as [Ferramentas de modernização de Experience Manager](https://opensource.adobe.com/aem-modernize-tools/).
+A migração de modelos estáticos para editáveis pode ser amplamente automatizada usando as [Ferramentas de modernização do Experience Manager](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### O uso de componentes básicos herdados não é recomendado {#oakpal-usage-legacy}
 
 * **Chave**: LegacyFoundationComponentUsage
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
 Os componentes fundamentais herdados (ou seja, localizados em `/libs/foundation`) foram descontinuados em várias versões do Experience Manager para incentivar o uso dos componentes principais. O uso dos componentes básicos como base para os componentes personalizados (seja por sobreposição ou herança) não é recomendado e deve ser convertido para os componentes principais correspondentes.
 
-[As Ferramentas de Modernização de Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) podem facilitar essa conversão.
+[As Ferramentas de Modernização do Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) podem facilitar essa conversão.
 
 ### Use apenas ordenações e nomes de modo de execução compatíveis {#oakpal-supported-runmodes}
 
 * **Chave**: SupportedRunmode
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
@@ -925,16 +925,16 @@ O Experience Manager as a Cloud Service utiliza uma política de nomeação rigo
 ### Os nós de definição do índice de pesquisa personalizado devem ser nós secundários diretos de `/oak:index` {#oakpal-custom-search}
 
 * **Chave**: OakIndexLocation
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
-O Experience Manager as a Cloud Service exige que as definições do índice de pesquisa personalizado (ou seja, nós do tipo `oak:QueryIndexDefinition`) sejam nós secundários diretos de `/oak:index`. Os índices em outros locais devem ser movidos para serem compatíveis com o Experience Manager as a Cloud Service. Mais informações sobre índices de pesquisa podem ser encontradas no documento [Pesquisa e indexação de conteúdo](/help/operations/indexing.md).
+O Experience Manager as a Cloud Service exige que as definições do índice de pesquisa personalizado (ou seja, nós do tipo `oak:QueryIndexDefinition`) sejam nós filhos diretos de `/oak:index`. Os índices em outros locais devem ser movidos para serem compatíveis com o Experience Manager as a Cloud Service. Mais informações sobre índices de pesquisa podem ser encontradas no documento [Pesquisa e indexação de conteúdo](/help/operations/indexing.md).
 
 ### Os nós de definição do índice de pesquisa personalizada devem ter uma compatVersion de 2 {#oakpal-custom-search-compatVersion}
 
 * **Chave**: IndexCompatVersion
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell` 
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
@@ -943,16 +943,16 @@ O Experience Manager as a Cloud Service exige que as definições do índice de 
 ### Os nós descendentes dos nós de definição do índice de pesquisa personalizado devem ser do tipo `nt:unstructured `{#oakpal-descendent-nodes}
 
 * **Chave**: IndexDescendantNodeType
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell` 
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
-Problemas difíceis de solucionar podem ocorrer quando um nó de definição do índice de pesquisa personalizado possui nós secundários desordenados. Para evitar essa situação, é recomendado que todos os nós descendentes de um nó `oak:QueryIndexDefinition` sejam do tipo `nt:unstructured`.
+Problemas difíceis de solucionar podem ocorrer quando um nó de definição do índice de pesquisa personalizado possui nós filhos desordenados. Para evitar essa situação, é recomendado que todos os nós descendentes de um nó `oak:QueryIndexDefinition` sejam do tipo `nt:unstructured`.
 
-### Os nós de definição do índice de pesquisa personalizado devem conter um nó secundário denominado “indexRules” que tenha tarefas derivadas {#oakpal-custom-search-index}
+### Os nós de definição do índice de pesquisa personalizado devem conter um nó filho denominado “indexRules” que tenha filhos {#oakpal-custom-search-index}
 
 * **Chave**: IndexRulesNode
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
@@ -961,7 +961,7 @@ Um nó de definição de índice de pesquisa personalizada corretamente definido
 ### Os nós de definição do índice de pesquisa personalizado devem seguir as convenções de nomeação {#oakpal-custom-search-definitions}
 
 * **Chave**: IndexName
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell` 
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
@@ -979,7 +979,7 @@ O Experience Manager as a Cloud Service exige que as definições do índice de 
 ### Os nós de definição do índice de pesquisa personalizado não devem conter uma propriedade denominada “seed” {#oakpal-property-name-seed}
 
 * **Chave**: IndexSeedProperty
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
@@ -988,7 +988,7 @@ O Experience Manager as a Cloud Service proíbe que as definições do índice d
 ### Os nós de definição do índice de pesquisa personalizado não devem conter uma propriedade denominada “reindex” {#oakpal-reindex-property}
 
 * **Chave**: IndexReindexProperty
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell` 
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
@@ -1033,7 +1033,7 @@ Cloud Service. Consulte o documento [Pesquisa e indexação de conteúdo](/help/
 ### Se a definição do índice de pesquisa personalizado contiver `compatVersion`, ele deverá ser definido como 2 {#oakpal-compatVersion}
 
 * **Chave**: IndexCompatVersion
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: Alta
 * **Desde**: versão 2022.1.0
 
@@ -1041,7 +1041,7 @@ Cloud Service. Consulte o documento [Pesquisa e indexação de conteúdo](/help/
 ### O nó de índice que especifica `includedPaths` também deve especificar `queryPaths` com os mesmos valores {#oakpal-included-paths-without-query-paths}
 
 * **Chave**: IndexIncludedPathsWithoutQueryPaths
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: baixa
 * **Desde**: versão 2023.1.0
 
@@ -1050,7 +1050,7 @@ Para índices personalizados, configure `includedPaths` e `queryPaths` com valor
 ### O nó de índice que especifica `nodeScopeIndex` no tipo de nó genérico também deve especificar `includedPaths` e `queryPaths` {#oakpal-full-text-on-generic-node-type}
 
 * **Chave**: IndexFulltextOnGenericType
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: baixa
 * **Desde**: versão 2023.1.0
 
@@ -1096,7 +1096,7 @@ O tipo de nó `nt:base` pode ser considerado &quot;genérico&quot;, pois todos o
 ### A propriedade queryLimitReads do mecanismo de consulta não deve ser substituída {#oakpal-query-limit-reads}
 
 * **Chave**: OverrideOfQueryLimitReads
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: baixa
 * **Desde**: versão 2023.1.0
 
@@ -1105,7 +1105,7 @@ Substituir o valor padrão pode resultar em leituras de página lentas, especial
 ### Várias versões ativas do mesmo índice {#oakpal-multiple-active-versions}
 
 * **Chave**: IndexDetectMultipleActiveVersionsOfSameIndex
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: baixa
 * **Desde**: versão 2023.1.0
 
@@ -1132,7 +1132,7 @@ Substituir o valor padrão pode resultar em leituras de página lentas, especial
 ### O nome das definições de índice totalmente personalizadas deve estar em conformidade com as diretrizes oficiais {#oakpal-fully-custom-index-name}
 
 * **Chave**: IndexValidFullyCustomName
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: baixa
 * **Desde**: versão 2023.1.0
 
@@ -1193,7 +1193,7 @@ Se a propriedade analisada não for explicitamente definida, seu valor padrão s
 ### Propriedade das tags {#tags-property}
 
 * **Chave**: IndexHasValidTagsProperty
-* **Tipo**: `Code Smell`
+* **Tipo**: `Code Smell`
 * **Severidade**: baixa
 * **Desde**: versão 2023.1.0
 
