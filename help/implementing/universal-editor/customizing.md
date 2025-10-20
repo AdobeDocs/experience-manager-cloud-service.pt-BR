@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para personalizar o Editor 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -20,69 +20,29 @@ Saiba mais sobre as diferentes opções para personalizar o Editor universal par
 >
 >O Editor Universal também oferece muitos [pontos de extensão](/help/implementing/universal-editor/extending.md), permitindo expandir sua funcionalidade para atender às necessidades do projeto.
 
-## Desabilitar publicação {#disable-publish}
+## Uso de tags de configuração do Meta {#meta-tags}
 
-Determinados workflows de criação exigem que o conteúdo seja revisado antes de ser publicado. Nessas situações, a opção de publicar não deve estar disponível para nenhum autor.
+Alguns fluxos de trabalho de criação podem exigir o uso de alguns recursos do Editor universal, e não de outros. Para dar suporte a esses casos diversos, metatags estão disponíveis para configurar ou desativar determinados recursos ou botões do editor.
 
-Portanto, o botão **Publicar** pode ser totalmente suprimido em um aplicativo adicionando os seguintes metadados.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish"/>
-```
-
-## Desativar publicação para visualização {#publish-preview}
-
-Alguns fluxos de trabalho de criação podem impedir a publicação no [serviço de visualização](/help/sites-cloud/authoring/sites-console/previewing-content.md) (se disponível).
-
-A opção **Visualizar** na janela de publicação pode, portanto, ser totalmente suprimida em um aplicativo adicionando os seguintes metadados.
+Use esta marca na seção `<head>` da página para desabilitar um ou mais recursos:
 
 ```html
-<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+<meta name="urn:adobe:aue:config:disable" content="..." />
 ```
 
-## Desativar a publicação para o Live {#publish-live}
+Se quiser desativar vários recursos, forneça uma lista de valores separados por vírgulas.
 
-Determinados workflows de criação podem impedir a publicação no serviço em tempo real.
+A seguir estão os valores com suporte para `content`, ou seja, os recursos que podem ser desabilitados com metatags.
 
-A opção **Live** na janela de publicação pode, portanto, ser totalmente suprimida em um aplicativo adicionando os seguintes metadados.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
-```
-
-## Desativar o cancelamento de publicação {#unpublish}
-
-Determinados workflows de criação exigem um processo de aprovação antes que a publicação do conteúdo seja desfeita. Nessas situações, a opção de desfazer a publicação não deve estar disponível para nenhum autor.
-
-Portanto, o botão **Cancelar publicação** pode ser totalmente suprimido em um aplicativo adicionando os seguintes metadados.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
-```
-
-## Desativar a página aberta {#open-page}
-
-O botão **Abrir Página** pode ser totalmente suprimido em um aplicativo adicionando os seguintes metadados.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
-```
-
-## Desabilitação do Botão Duplicar {#duplicate-button}
-
-Determinados fluxos de trabalho de criação podem precisar limitar a capacidade do autor de conteúdo de duplicar componentes. Você pode desabilitar o [ícone de duplicação](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) adicionando os seguintes metadados.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
-```
-
-## Desativação de Copiar e Colar {#copy-paste}
-
-Determinados fluxos de trabalho de criação podem precisar limitar a capacidade do autor de conteúdo de copiar e colar componentes. Você pode desabilitar os [ícones copiar e colar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) adicionando os seguintes metadados.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="copy"/>
-```
+| Valor do conteúdo | Descrição |
+|---|---|
+| `publish` | Desabilitar o [botão Publicar](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) |
+| `publish-live` | Desabilitar a [publicação](/help/sites-cloud/authoring/universal-editor/publishing.md) em tempo real |
+| `publish-preview` | Desabilitar publicação de visualização (se o [serviço de visualização](/help/sites-cloud/authoring/sites-console/previewing-content.md) estiver disponível) |
+| `unpublish` | Desabilita o [botão Cancelar publicação](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
+| `copy` | Desabilita os [botões copiar e colar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
+| `duplicate` | Desabilita o [botão duplicar](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
+| `header-open-page` | Desabilita o [botão Abrir página](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
 
 ## Alterando seu endpoint {#custom-endpoint}
 
@@ -135,7 +95,7 @@ As condições podem ser definidas usando o [esquema JsonLogic](https://jsonlogi
 
 ## URLs de visualização personalizados {#custom-preview-urls}
 
-Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Para fazer isso, basta incluir o URL de visualização desejado em uma meta tag do aplicativo instrumentado, como no exemplo a seguir.
 
