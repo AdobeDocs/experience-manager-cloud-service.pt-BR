@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ea85deb74f759f8e74d314df0ba081ea23cb5aab
+source-git-commit: a429ed24d6e724aa3cc7123982e8d4a24cbef5a9
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 14%
@@ -48,7 +48,7 @@ Se um pipeline estiver em execução, o gerenciamento de variáveis será bloque
    | --- | --- |
    | Nome | Um nome exclusivo da variável de configuração. Ela identifica a variável específica usada no pipeline. Ele deve seguir as seguintes convenções de nomenclatura:<ul><li>As variáveis só podem conter caracteres alfanuméricos e sublinhado (`_`).</li><li>Os nomes devem estar em maiúsculas.</li><li>Há um limite de 200 variáveis por pipeline.</li><li>Cada nome deve ter 100 caracteres ou menos.</li><li>Cada valor de variável `string` deve ter menos de 2048 caracteres.</li><li>Cada valor de tipo de variável `secretString` deve ter 500 caracteres ou menos.</li></ul> |
    | Valor | O valor que a variável contém. |
-   | Etapa aplicada | Obrigatório. A etapa no pipeline à qual a variável se aplica:<ul><li>**Compilação** - A variável é aplicada durante o processo de compilação.</li><li>**Teste funcional** - A variável é usada durante a etapa de teste funcional.</li><li>**Teste de interface** - A variável é usada durante a fase de teste de interface.</li>&lt;li&lt;**Implantar** - A variável é usada durante a etapa de implantação. Por exemplo, use essa variável para pipelines do Edge Delivery Services.</li></ul> |
+   | Etapa aplicada | Obrigatório. A etapa no pipeline à qual a variável se aplica:<ul><li>**Compilação** - A variável é aplicada durante o processo de compilação.</li><li>**Teste funcional** - A variável é usada durante a etapa de teste funcional.</li><li>**Teste de interface** - A variável é usada durante a fase de teste de interface.</li>&lt;li **Implantar** - A variável é usada durante a etapa de implantação. Por exemplo, use essa variável para pipelines do Edge Delivery Services.</li></ul> |
    | Tipo | Selecione se a variável for texto sem formatação ou criptografada como segredo. |
 
    ![Adicionar variável](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
