@@ -4,9 +4,9 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: efd96f179482dfe1f00bdce35e2824ac5cdf9813
+source-git-commit: 90763049036dbdadaaed93acb088877294f2d750
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1588'
 ht-degree: 8%
 
 ---
@@ -94,8 +94,7 @@ Um objeto de campo tem a seguinte definição de tipo.
 | `name` | `string` | Propriedade [ou caminho](#nesting) onde os dados devem ser mantidos | Sim |
 | `label` | `FieldLabel` | Rótulo do campo | Sim |
 | `description` | `FieldDescription` | Descrição do campo | Não |
-| `placeholder` | `string` | Espaço reservado para o campo | Não |
-| `value` | `FieldValue` | É um valor padrão, que serve como espaço reservado. Nenhuma atualização de conteúdo é orientada por esse valor. É apenas uma representação na interface do usuário. | Não |
+| `value` | `FieldValue` | Esse é um valor padrão, que serve como um espaço reservado. Nenhuma atualização de conteúdo é orientada por esse valor. É apenas uma representação na interface do usuário. | Não |
 | `valueType` | `ValueType` | Validação padrão, pode ser `string`, `string[]`, `number`, `date`, `boolean` | Não |
 | `required` | `boolean` | O campo é obrigatório? | Não |
 | `readOnly` | `boolean` | O campo é somente leitura | Não |
