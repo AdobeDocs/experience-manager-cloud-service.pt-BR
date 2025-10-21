@@ -4,9 +4,9 @@ description: Saiba como configurar o tráfego CDN declarando regras e filtros em
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
+source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
@@ -408,6 +408,8 @@ data:
           type: selectOrigin
           originName: example-com
           # skipCache: true
+          # headers:
+          #   Authorization: ${{AUTH_TOKEN}}
     origins:
       - name: example-com
         domain: www.example.com
@@ -423,11 +425,13 @@ data:
 A ação disponível é explicada na tabela abaixo.
 
 | Nome | Propriedades | Significado |
-|-----------|--------------------------|-------------|
+|---------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **selectOrigin** | originName | Nome de uma das origens definidas. |
-|     | skipCache (opcional, o padrão é falso) | Sinalizar se o armazenamento em cache deve ser usado para solicitações correspondentes a esta regra. Por padrão, as respostas serão armazenadas em cache de acordo com o cabeçalho de cache de resposta (por exemplo, Cache-Control ou Expires) |
+|                     | skipCache (opcional, o padrão é falso) | Sinalizar se o armazenamento em cache deve ser usado para solicitações correspondentes a esta regra. Por padrão, as respostas serão armazenadas em cache de acordo com o cabeçalho de cache de resposta (por exemplo, Cache-Control ou Expires) |
+|                     | cabeçalhos (opcional, o padrão é `{}`) | Pares de valores-chave que contêm cabeçalhos HTTP adicionais a serem enviados para o back-end selecionado quando a regra é acionada. Com chaves correspondentes a nomes de cabeçalho e valores correspondentes a valores de cabeçalho |
 | **selectAemOrigin** | originName | Nome de uma das origens predefinidas do AEM (valor com suporte: `static`). |
-|     | skipCache (opcional, o padrão é falso) | Sinalizar se o armazenamento em cache deve ser usado para solicitações correspondentes a esta regra. Por padrão, as respostas serão armazenadas em cache de acordo com o cabeçalho de cache de resposta (por exemplo, Cache-Control ou Expires) |
+|                     | skipCache (opcional, o padrão é falso) | Sinalizar se o armazenamento em cache deve ser usado para solicitações correspondentes a esta regra. Por padrão, as respostas serão armazenadas em cache de acordo com o cabeçalho de cache de resposta (por exemplo, Cache-Control ou Expires) |
+|                     | cabeçalhos (opcional, o padrão é `{}`) | Pares de valores-chave que contêm cabeçalhos HTTP adicionais a serem enviados para o back-end selecionado quando a regra é acionada. Com chaves correspondentes a nomes de cabeçalho e valores correspondentes a valores de cabeçalho |
 
 **Origens**
 
