@@ -4,7 +4,7 @@ description: O ContextHub fornece vários módulos de interface do usuário de a
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -40,7 +40,7 @@ O código-fonte está localizado em `/libs/granite/contexthub/code/ui/container/
 Configure o módulo de interface contexthub.base usando um objeto JavaScript no formato JSON. Inclua qualquer uma das seguintes propriedades para configurar os recursos do módulo da interface do usuário:
 
 * **imagem:** uma URL para uma imagem a ser exibida como ícone.
-* **Ícone:** O nome de uma classe [Ícone de interface do usuário do Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html). Se você especificar um valor para as propriedades icon e image, a imagem será usada.
+* **Ícone:** O nome de uma classe [Ícone de interface do usuário do Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon). Se você especificar um valor para as propriedades icon e image, a imagem será usada.
 * **título:** um título para o módulo de interface do usuário. O título é exibido quando o ponteiro é pausado sobre o ícone do módulo da interface do usuário.
 * **tela cheia:** um valor booliano que indica se o módulo de interface do usuário dá suporte ao modo de tela cheia. Use `true` para oferecer suporte à tela cheia e `false` para impedir o modo de tela cheia.
 * **modelo:** um modelo [Handlebars](https://handlebarsjs.com/) que especifica o conteúdo a ser renderizado na barra de ferramentas do ContextHub. Use no máximo duas `<p>` tags.
@@ -75,7 +75,7 @@ O exemplo a seguir configura um módulo de interface do usuário c`ontexthub.bas
 
 ## Tipo de módulo da interface do usuário contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
 
-O módulo de interface do usuário `contexthub.browserinfo` exibe informações sobre o navegador da Web cliente e o sistema operacional. As informações são obtidas do repositório surferinfo, com base no [candidato do repositório &lbrace;contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate).
+O módulo de interface do usuário `contexthub.browserinfo` exibe informações sobre o navegador da Web cliente e o sistema operacional. As informações são obtidas do repositório surferinfo, com base no [candidato do repositório {contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate).
 
 ![módulo contexthub.browserinfo](assets/browserinfo-module.png)
 

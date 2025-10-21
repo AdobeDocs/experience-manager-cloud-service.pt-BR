@@ -4,7 +4,7 @@ description: Saiba como configurar o Context Hub, uma estrutura para armazenar, 
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/implementin
 * **Console da Web:** Para mostrar a interface do usuário, selecione a propriedade Mostrar interface do usuário. Para ocultar a interface do usuário, desmarque a propriedade Ocultar interface do usuário.
 * **Nó JCR:** Para mostrar a interface do usuário, defina a propriedade booleana `com.adobe.granite.contexthub.show_ui` como `true`. Para ocultar a interface, defina a propriedade como `false`.
 
-Ao mostrar a interface do usuário do ContextHub, ela só é exibida em páginas em instâncias de autor do AEM. A interface do usuário não aparece em páginas de instâncias de publicação.
+Ao mostrar a interface do usuário do ContextHub, ela só é exibida nas páginas nas instâncias de autor do AEM. A interface do usuário não aparece em páginas de instâncias de publicação.
 
 ## Adição de modos e módulos da interface do usuário do ContextHub {#adding-contexthub-ui-modes-and-modules}
 
@@ -39,13 +39,13 @@ Os modos da interface são exibidos como uma série de ícones no lado esquerdo 
 
 ![Barra de ferramentas do ContextHub](assets/contexthub-toolbar.png)
 
-Os ícones são referências da [biblioteca de ícones da interface do Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
+Os ícones são referências da [biblioteca de ícones da interface do Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon).
 
 ### Adição de um modo de interface {#adding-a-ui-mode}
 
 Adicione um modo de interface do usuário para agrupar módulos do ContextHub relacionados. Ao criar o modo de interface do usuário, forneça o título e o ícone que aparecem na barra de ferramentas do ContextHub.
 
-1. No painel Experience Manager, selecione Ferramentas > Sites > Context Hub.
+1. No painel do Experience Manager, selecione Ferramentas > Sites > Context Hub.
 1. Selecione o Contêiner de configuração padrão.
 1. Selecione Configuração do Context Hub.
 1. Selecione o botão Criar e, em seguida, selecione Modo da interface do usuário do Context Hub.
@@ -55,7 +55,7 @@ Adicione um modo de interface do usuário para agrupar módulos do ContextHub re
 1. Forneça valores para as seguintes propriedades:
 
    * Título do modo da interface: o título que identifica o modo da interface
-   * Ícone de Modo: O seletor do [ícone da interface do Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) para usar, por exemplo, `coral-Icon--user`
+   * Ícone de Modo: O seletor do [ícone da interface do Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon) para usar, por exemplo, `coral-Icon--user`
    * Ativado: selecione para mostrar o modo de interface na barra de ferramentas do ContextHub
 
 1. Selecione Salvar.
@@ -78,7 +78,7 @@ As propriedades do módulo de interface do usuário incluem uma configuração d
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | Exibe estatísticas sobre tags de página | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | Exibe as informações de perfil do usuário atual, incluindo `authorizableID`, `displayName` e `familyName`. Você pode alterar o valor de `displayName` e `familyName`. | `profile` |
 
-1. No painel Experience Manager, selecione Ferramentas > Sites > ContextHub.
+1. No painel do Experience Manager, selecione Ferramentas > Sites > ContextHub.
 1. Selecione o Contêiner de configuração ao qual você deseja adicionar um módulo de interface.
 1. Selecione ou digite a Configuração do ContextHub à qual você deseja adicionar o módulo de interface do usuário.
 1. Selecione o modo da interface ao qual você está adicionando o módulo da interface.
@@ -107,7 +107,7 @@ O valor da propriedade Configuração Detalhada é um objeto `config` em formato
 
 ### Amostra de candidatos da loja {#sample-store-candidates}
 
-O AEM fornece as seguintes amostras de candidatos de armazenamento nas quais você pode basear uma loja.
+A AEM fornece os seguintes exemplos de candidatos a armazenamento nos quais você pode basear um armazenamento.
 
 | Tipo de armazenamento | Descrição |
 |---|---|
@@ -117,7 +117,7 @@ O AEM fornece as seguintes amostras de candidatos de armazenamento nas quais voc
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | Armazena dados de perfil do usuário atual |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | Armazena informações sobre o cliente, como informações do dispositivo, tipo de navegador e orientação da janela |
 
-1. No painel Experience Manager, selecione Ferramentas > Sites > ContextHub.
+1. No painel do Experience Manager, selecione Ferramentas > Sites > ContextHub.
 1. Selecione o container de configuração padrão.
 1. Selecionar configuração do Contexthub
 1. Para adicionar um armazenamento, selecione o ícone Create e selecione ContextHub Store Configuration.
@@ -214,7 +214,7 @@ Edite a configuração do ContextHub e verifique a opção **Debug**
 
 ### Via CRXDE {#via-crxde}
 
-Use CRXDE Lite para definir a propriedade `debug` como **true** em:
+Use o CRXDE Lite para definir a propriedade `debug` como **true** em:
 
 * `/conf/global/settings/cloudsettings` ou
 * `/conf/<site>/settings/cloudsettings`
@@ -252,4 +252,4 @@ O ContextHub pode ser desativado para impedir que carregue js/css e inicialize. 
 
 ou
 
-* Use CRXDE Lite para definir a propriedade `disabled` como **true** em `/conf/global/settings/cloudsettings/<configName>/contexthub`
+* Use o CRXDE Lite para definir a propriedade `disabled` como **true** em `/conf/global/settings/cloudsettings/<configName>/contexthub`
