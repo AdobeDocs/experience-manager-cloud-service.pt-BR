@@ -5,7 +5,8 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 6ee55bed8ca09470291e0488321732beed7bab42
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 24%
@@ -47,9 +48,9 @@ Quando você ativa o pipeline de front-end para um site, o AEM faz as seguintes 
 
 ## Requisitos {#requirements}
 
-O AEM pode adaptar automaticamente seu site existente para usar o pipeline de front-end. Para fazer esse fluxo de trabalho, seu site deve usar [v2 ou mais recente do Componente de Página dos Componentes Principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/wcm-components/page).
+O AEM pode adaptar automaticamente seu site existente para usar o pipeline de front-end. Para fazer esse fluxo de trabalho, seu site deve usar [v2 ou mais recente do Componente de Página dos Componentes Principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page).
 
-## Ativação do pipeline de front-end {#enabling}
+## Habilitação do pipeline de front-end {#enabling}
 
 {{add-cm-allowlist-frontend-pipeline}}
 
@@ -58,9 +59,9 @@ A habilitação do site é feita pelo console de Sites, usando o [painel Site](s
 1. Faça logon no AEM e navegue até o site através de **Navegação global** > **Sites**.
 1. Selecione seu site no console. Selecione a raiz do site e não qualquer página secundária.
 1. Com seu site selecionado, abra o [seletor de painéis](/help/sites-cloud/authoring/basic-handling.md#rail-selector) à esquerda e escolha **Site**.
-1. No painel **Site**, clique no botão **Ativar pipeline de front-end**.
+1. No painel **Site**, clique no botão **Habilitar pipeline de front-end**.
 
-   ![Ativar pipeline de front-end](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)
+   ![Habilitar pipeline de front-end](/help/sites-cloud/administering/assets/enable-front-end-pipeline.png)
 
 1. A AEM solicita sua confirmação com uma visão geral das alterações feitas. Confirme e o site estará adaptado.
 
@@ -76,7 +77,7 @@ O pipeline de front-end pode ser usado com o [recurso de domínios personalizado
 
 ### Arquivos de front-end estáticos {#static-files}
 
-Os ativos estáticos de front-end implantados por meio do pipeline de front-end serão, por padrão, atendidos a partir do domínio estático predefinido da Adobe.
+Os ativos estáticos de front-end implantados por meio do pipeline de front-end serão, por padrão, oferecidos pelo domínio estático predefinido da Adobe.
 
 Se você precisar de um domínio personalizado para ativos front-end, poderá instalar um domínio personalizado no nível de publicação e configurar o Dispatcher para rotear caminhos específicos (como `/static/`) para o local de hospedagem estática do Adobe. Este método requer a atualização das [regras do Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/dispatcher) para encaminhar e armazenar em cache corretamente as solicitações de ativos estáticos.
 
@@ -97,7 +98,7 @@ Se você quiser usar o recurso de domínios personalizados do Cloud Manager para
    * Esse valor também pode ser substituído manualmente, conforme necessário.
 1. Verifique sua configuração.
    1. Após a implantação, verifique se as páginas estão referenciando corretamente artefatos de tema do domínio personalizado.
-   1. Abra as ferramentas de desenvolvedor do seu navegador e inspecione os caminhos de arquivo `theme.css` e `theme.js` para confirmar se eles foram carregados do domínio correto.
+   1. Abra as ferramentas de desenvolvedor do seu navegador e inspecione os caminhos de arquivo do `theme.css` e do `theme.js` para confirmar se eles foram carregados do domínio correto.
 
 As páginas para o site fazem referência a artefatos de tema desse URL atualizado. O dispatcher encaminha solicitações desses recursos para o domínio estático.
 

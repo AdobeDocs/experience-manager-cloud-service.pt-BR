@@ -5,12 +5,14 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 88%
 
 ---
+
 
 # Jornada de criação rápida de site do AEM {#quick-site-creation-journey}
 
@@ -40,9 +42,9 @@ As jornadas de documentação foram projetadas com base nas práticas recomendad
 
 Se quiser saber como a Adobe recomenda resolver casos de negócios de sites com o AEM, as jornadas do AEM Sites são um ótimo ponto de partida.
 
-## Público {#audience}
+## Público-alvo {#audience}
 
-Esta jornada apresenta os requisitos, as etapas e a abordagem para personalizar temas do AEM Sites. Seu público principal é o desenvolvedor de front-end, que não precisa de conhecimento do AEM. No entanto, para ilustrar todo o processo, a jornada envolve admins que devem ter conhecimento básico sobre o AEM Sites e o Cloud Manager. Na prática, várias pessoas podem desempenhar várias funções e essa jornada considera as perspectivas de administradores e desenvolvedores de front-end.
+Esta jornada apresenta os requisitos, as etapas e a abordagem para personalizar temas do AEM Sites. Seu público-alvo principal é o desenvolvedor de front-end, que não precisa de conhecimento do AEM. No entanto, para ilustrar todo o processo, a jornada envolve admins que devem ter conhecimento básico sobre o AEM Sites e o Cloud Manager. Na prática, várias pessoas podem desempenhar várias funções e essa jornada considera as perspectivas de administradores e desenvolvedores de front-end.
 
 | Perfil | Descrição | Função na jornada |
 |---|---|---|

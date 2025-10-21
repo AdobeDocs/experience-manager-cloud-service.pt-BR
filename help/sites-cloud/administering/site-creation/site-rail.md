@@ -5,7 +5,8 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 076005e1ed1ca3303ed5843a3f27e0d707df5022
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 36%
@@ -28,7 +29,7 @@ O painel Site é usado para gerenciar informações relacionadas ao tema e ao mo
 * [Baixar fontes de tema](#downloading-theme-sources)
 * [Baixar recursos de modelo, como wireframes](#downloading-template-resources)
 * [Exibição e alteração de versões de temas](#theme-vrsions)
-* [Ativação do pipeline front-end](#enabling-the-front-end-pipeline)
+* [Habilitação do pipeline de front-end](#enabling-the-front-end-pipeline)
 
 >[!TIP]
 >
@@ -76,7 +77,7 @@ Se o AEM detectar que uma versão mais recente do tema foi implantada por meio d
 
 É possível usar o botão **Selecionar versão** para atualizar para a nova versão do tema.
 
-## Ativação do pipeline de front-end {#enabling-front-end-pipeline}
+## Habilitação do pipeline de front-end {#enabling-front-end-pipeline}
 
 Se o site não foi criado usando um modelo de site, não é possível usar o pipeline de front-end para personalizar e implantar seu tema.
 
@@ -84,6 +85,6 @@ No entanto, você pode ativar o pipeline de front-end para o site usando o paine
 
 Com o painel Site sendo exibido no console de sites, selecione a raiz do site para revelar informações de tema sobre ele e selecione **Habilitar pipeline de front-end**.
 
-![Ativação do pipeline de front-end](/help/sites-cloud/administering/assets/enable-fep.png)
+![Habilitação do pipeline de front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 
-Para obter mais informações, consulte o documento [Ativação do pipeline de front-end.](enable-front-end-pipeline.md)
+Para obter mais informações, consulte o documento [Habilitação do pipeline de front-end.](enable-front-end-pipeline.md)
