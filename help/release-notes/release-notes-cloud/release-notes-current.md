@@ -171,7 +171,7 @@ Dias de ativação, eventos ao vivo, pico de vendas — esses momentos não queb
 >[!NOTE]
 >
 >Disponível como um recurso de Disponibilidade limitada em 25 de setembro.
->>Envie um email para [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para ativá-lo em seus programas.
+>&#x200B;>Envie um email para [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para ativá-lo em seus programas.
 
 ### Nova versão das ferramentas de desenvolvedor do AEM para Eclipse {#aem-develeper-tools-for-eclipse}
 
