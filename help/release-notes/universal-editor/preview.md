@@ -3,9 +3,9 @@ title: Notas de versão de visualização do Universal Editor
 description: Estas são as notas de versão da versão de pré-visualização do Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 7d30aa28b2409cdcb70c5491ee2d2d381d090dad
+source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ Estas notas de versão do **preview** são fornecidas como conveniência, para q
 ## Novos recursos futuros {#what-is-new}
 
 * Copiar e colar entre guias do navegador agora é compatível.
+   * Limitado a entre guias que estão abertas ao mesmo tempo.
+   * Não há suporte para copiar o conteúdo e abrir uma nova guia.
 * Agora é possível desativar o botão Cancelar publicação com uma meta tag.
 
 ## Aprimoramentos futuros {#other-improvements}
