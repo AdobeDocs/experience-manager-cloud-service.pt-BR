@@ -4,10 +4,10 @@ description: Saiba como pesquisar e descobrir ativos na visualização do AEM As
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 82%
+source-wordcount: '2255'
+ht-degree: 83%
 
 ---
 
@@ -136,8 +136,6 @@ Alguns, se seus principais benefícios incluírem:
 * **Entende sinônimos**: fornece resultados para termos e frases relacionados, de modo que os usuários não precisam adivinhar a palavra-chave correta.
 
 * **Pesquisa sensível ao contexto**: reconhece a intenção por trás de uma consulta, não apenas as palavras.
-
-* **Pesquisa baseada em prompts baseados em texto**: o Experience Manager Assets aplica filtros ao conteúdo e exibe resultados apropriados automaticamente com base em prompts simples baseados em texto.
 
 >[!IMPORTANT]
 >
@@ -361,7 +359,7 @@ Admins também têm a opção de desabilitar a pesquisa contextual para usuário
 
 1. Navegue até **[!UICONTROL Configurações]** > **[!UICONTROL Configurações gerais]**.
 
-1. Na seção [!UICONTROL Pesquisa contextual], desative o botão **[!UICONTROL Habilitar pesquisa contextual para a organização]** para desabilitar o recurso de pesquisa contextual para todos os usuários da organização.
+1. Na seção [!UICONTROL Pesquisa contextual], desative o botão de alternância **[!UICONTROL Habilitar pesquisa contextual para a organização]** para desabilitar o recurso de pesquisa contextual para todos os usuários da organização.
 
 ### Feedback da pesquisa contextual {#contextual-search-feedback}
 
@@ -377,6 +375,6 @@ Se precisar fornecer feedback sobre o recurso de pesquisa contextual, clique no�
 
 * Forneça feedback sobre a documentação por meio das opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita.
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 

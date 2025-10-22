@@ -3,9 +3,9 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.8.0.
 feature: Release Information
 role: Admin
-source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1919'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -75,12 +75,12 @@ Torne o Dynamic Media com URLs OpenAPI mais legíveis por humanos, aproveitando 
 
 >[!NOTE]
 >
->Esse recurso estará disponível como um recurso de Disponibilidade limitada em 10 de setembro. Você pode [criar e enviar um caso de Suporte ao Cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para habilitá-lo para sua implantação.
+>Esse recurso está disponível como um recurso de Disponibilidade limitada. Consulte [este artigo](/help/assets/vanity-urls.md) para começar.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Componente de entrada de data e hora](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): um componente de data e hora está disponível, permitindo que os usuários selecionem data e hora usando uma interface de calendário e relógio ou inserindo valores manualmente em um formato com suporte.
-* [Tratamento de Erros Aprimorado para Carregamentos de Arquivos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): o componente de Anexo de Arquivo agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
+* [Componente de entrada de data e hora](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): um componente de data e hora está disponível, permitindo que os usuários selecionem data e hora usando uma interface de calendário e relógio ou inserindo valores manualmente em um formato com suporte.
+* [Tratamento de Erros Aprimorado para Carregamentos de Arquivos](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): o componente de Anexo de Arquivo agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
 * [Resposta de Erro Especificada para Ação de Envio Personalizada](/help/forms/custom-submit-action-troubleshooting.md): Quando uma ação de envio personalizada encontra um erro sem tratamento, o código de erro 502 é retornado. Isso ajuda a identificar que o problema está relacionado à ação de envio personalizada, facilitando a depuração.
 * [Excluindo campos ocultos do documento de registro](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): uma nova propriedade foi adicionada para permitir a exclusão de campos ocultos do documento de registro. Por padrão, essa opção não está selecionada e se aplica a todos os campos de formulário.
 
@@ -101,7 +101,7 @@ Torne o Dynamic Media com URLs OpenAPI mais legíveis por humanos, aproveitando 
 
 ### Recursos iniciais do usuário no AEM Forms
 
-* [Componente de assinatura assinável](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): agora você pode usar o componente de assinatura assinável para ajudar os usuários a adicionar suas assinaturas a um formulário, como em um formulário de contrato. O componente permite aos usuários desenhar sua assinatura diretamente no formulário usando um mouse, caneta ou tela sensível ao toque.
+* [Componente de assinatura assinável](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): agora você pode usar o componente de assinatura assinável para ajudar os usuários a adicionar suas assinaturas a um formulário, como em um formulário de contrato. O componente permite aos usuários desenhar sua assinatura diretamente no formulário usando um mouse, caneta ou tela sensível ao toque.
 * [Integração de API direta no Editor de regras](/help/forms/api-integration-in-rule-editor.md): o Adaptive Forms agora oferece suporte à integração de API direta no Editor de regras visuais sem exigir um Modelo de dados de formulário. Os autores podem configurar APIs usando uma importação de URL ou cURL, mapear parâmetros de entrada/saída e chamadas seguras com autenticação.
 
 <!--
@@ -216,7 +216,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
