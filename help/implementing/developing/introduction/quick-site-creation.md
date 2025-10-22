@@ -4,8 +4,8 @@ description: Saiba como a ferramenta de Criação rápida de sites usa modelos d
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 feature: Developing
 role: Admin, Architect, Developer
-recommendations: display, noCatalog
-source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+recommendations: noDisplay, noCatalog
+source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 4%
