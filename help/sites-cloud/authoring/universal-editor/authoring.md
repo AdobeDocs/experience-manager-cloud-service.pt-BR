@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
+source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
 workflow-type: tm+mt
-source-wordcount: '2503'
-ht-degree: 10%
+source-wordcount: '2534'
+ht-degree: 9%
 
 ---
 
@@ -212,7 +212,9 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 
 ### Copiar e colar {#copy-paste}
 
-Você pode copiar e colar componentes que estão em [contêineres](/help/implementing/universal-editor/field-types.md#container) na mesma guia do navegador. Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam a colagem do componente.
+Você pode copiar e colar componentes que estão em [ contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
+
+Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegador, desde que as guias já estejam abertas. Não é possível copiar um item e abrir uma nova guia do navegador para colá-lo.
 
 ![Ícone Copiar](assets/copy.png)
 ![Ícone Colar](assets/paste.png)
@@ -227,6 +229,8 @@ Você pode copiar e colar componentes que estão em [contêineres](/help/impleme
 >[!TIP]
 >
 >Use a tecla de atalho `Command-C` ou `Command-V` para copiar ou colar, respectivamente.
+
+
 
 ## Visualização de conteúdo {#previewing-content}
 

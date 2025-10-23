@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para personalizar o Editor 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
+source-git-commit: 5be00b5f0ae606a583a07126892bf51af3048a71
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ A seguir estão os valores com suporte para `content`, ou seja, os recursos que 
 | `publish` | Desabilite toda a funcionalidade de [publicação](/help/sites-cloud/authoring/universal-editor/publishing.md), ou seja, o [botão Publicar](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) e o [botão Cancelar publicação](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
 | `publish-live` | Desabilitar a [publicação](/help/sites-cloud/authoring/universal-editor/publishing.md) em tempo real |
 | `publish-preview` | Desabilitar publicação de visualização (se o [serviço de visualização](/help/sites-cloud/authoring/sites-console/previewing-content.md) estiver disponível) |
-| `unpublish` | Desabilitar o [botão Cancelar publicação](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) ([recurso de visualização](/help/release-notes/universal-editor/preview.md)) |
+| `unpublish` | Desabilitar o [botão Cancelar publicação](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
 | `copy` | Desabilita os [botões copiar e colar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
 | `duplicate` | Desabilita o [botão duplicar](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
 | `header-open-page` | Desabilita o [botão Abrir página](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
@@ -95,7 +95,7 @@ As condições podem ser definidas usando o [esquema JsonLogic](https://jsonlogi
 
 ## URLs de visualização personalizados {#custom-preview-urls}
 
-Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Para fazer isso, basta incluir o URL de visualização desejado em uma meta tag do aplicativo instrumentado, como no exemplo a seguir.
 
