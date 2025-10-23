@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service | Este artigo |
 
 <span class="preview"> Se você estiver no GovCloud e precisar se conectar a um locatário do GCC (Government Cloud Computing), envie um email em seu endereço oficial para aem-forms-ea@adobe.com para solicitar acesso por meio do Early Adoter Program. </span>
