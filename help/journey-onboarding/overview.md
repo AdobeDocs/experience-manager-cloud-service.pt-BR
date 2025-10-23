@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
 workflow-type: tm+mt
-source-wordcount: '1348'
-ht-degree: 54%
+source-wordcount: '1362'
+ht-degree: 53%
 
 ---
 
@@ -19,7 +19,9 @@ Parabéns por escolher o AEM as a Cloud Service! Este documento é o seu ponto d
 
 ## Introdução {#introduction}
 
-O Adobe Experience Manager é um conjunto eficiente de serviços de conteúdo de composição que fornecem rapidamente experiências personalizadas e altamente impactantes em qualquer canal, desbloqueando conteúdo para todos. O **Edge Delivery Services** é a mais recente inovação do Adobe Experience Manager, que permite uma velocidade extrema do conteúdo e oferece experiências excepcionais. Saiba como começar a usar o Edge Delivery Services, consultando a [Visão geral do Edge Delivery Services](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/overview). Para entender como usar o Edge Delivery Services, consulte a página [Tutorial do desenvolvedor](https://www.aem.live/developer/tutorial).
+O Adobe Experience Manager (AEM) oferece flexibilidade entre as abordagens de entrega de conteúdo e criação, permitindo que as equipes escolham o melhor modelo para suas necessidades.
+
+Use o [Edge Delivery Services](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/overview) para obter uma criação rápida e iterativa e alta velocidade de conteúdo, ou use o serviço de entrega de Publicação tradicional para um modelo de publicação empresarial robusto. Qualquer uma dessas abordagens permite que as organizações ofereçam experiências digitais excepcionais da maneira que melhor se adaptarem a elas. Para começar a usar o Edge Delivery Services, explore a [Visão geral do Edge Delivery Services](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/overview) e para saber mais sobre as opções de criação modernas, consulte o [Guia de Criação](https://www.aem.live/docs/authoring-guide).
 
 A integração é o processo durante o qual um administrador de sistema designado configura o AEM as a Cloud Service para sua organização. O processo inclui o provisionamento inicial de recursos da nuvem e a atribuição de usuários a funções com base em suas responsabilidades de trabalho. Como resultado, cada membro pode fazer logon e acessar os recursos do AEM as a Cloud Service.
 
@@ -58,7 +60,7 @@ Esses conceitos serão abordados em detalhes nesta jornada de integração. O ob
 
 Basicamente, começará com o pé direito seu novo projeto do AEM as a Cloud Service!
 
-## Público {#audience}
+## Público-alvo {#audience}
 
 A jornada de integração é escrita especificamente para o **administrador do sistema** de clientes novos no AEM as a Cloud Service e no AEM em geral. O administrador do sistema é o indivíduo com quem a Adobe entra em contato primeiro após a assinatura do contrato com a AEM as a Cloud Service. Normalmente, é a primeira pessoa a acessar e configurar os recursos no AEM as a Cloud Service. Se estiver lendo este tópico, é provável que seja o administrador do sistema.
 
@@ -81,7 +83,7 @@ Este guia de integração ilustra todo o processo de integração como administr
 
 Os artigos a seguir descrevem em detalhes os principais conceitos de integração e fornecem conhecimento fundamental sobre o AEM as a Cloud Service. Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se for novo na integração, a Adobe recomenda começar no início e avançar sequencialmente.
 
-| | Artigo | Descrição | Público |
+| | Artigo | Descrição | Público-alvo |
 | --- | --- | --- | --- |
 | 0 | Jornada de integração | Este documento | Administrador do sistema |
 | 1 | [Preparação para a integração](preparation.md) | Antes de começar o processo de integração, há várias etapas preparatórias que o administrador do sistema deve entender para fazer logon no sistema. | Administrador do sistema |
@@ -112,4 +114,4 @@ Se quiser saber o que a Adobe recomenda sobre como integrar sua equipe ao novo a
 
 A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo da jornada de integração.
 
-* [Integração com o AEM as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding) - este breve vídeo fornece uma visão geral do processo de integração do Cloud Service com o AEM.
+* [Integração com o AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding) - este breve vídeo fornece uma visão geral do processo de integração do Cloud Service com o AEM.

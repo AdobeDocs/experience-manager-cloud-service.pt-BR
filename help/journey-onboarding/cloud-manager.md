@@ -4,10 +4,10 @@ description: Saiba como acessar o Cloud Manager para poder configurar os recurso
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
+source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 57%
+source-wordcount: '820'
+ht-degree: 54%
 
 ---
 
@@ -48,24 +48,35 @@ Para que os membros da equipe com função de **Proprietário da empresa** possa
 
    ![Cloud Manager no console](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
-Ao entrar como administrador do sistema com a função **Proprietário da empresa**, você usa o Cloud Manager para ser usado pelos outros usuários com a função **Proprietário da empresa**. Você não recebe uma confirmação ou qualquer mensagem. Apenas fazer logon é suficiente.
+Um administrador do sistema com a função **Proprietário da empresa** deve entrar no Cloud Manager primeiro. Esta entrada inicial permite que outros usuários com a função **Proprietário da empresa** criem programas; nenhuma confirmação é exibida.
 
-Até você entrar no Cloud Manager como administrador do sistema com a função **Proprietário da empresa**, outros usuários com a função **Proprietário da empresa** não poderão criar programas no Cloud Manager. Essa regra é verdadeira mesmo se eles forem atribuídos às funções corretas.
+<!--
+By successfully signing in as a system administrator with the **Business Owner** role, you use Cloud Manager for use by the other users with the **Business Owner** role. You do not receive a confirmation or any message. Simply signing in is sufficient.
+
+Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles. -->
 
 ## Acessar o Cloud Manager {#navigate-cloud-manager}
 
-Usuários com a função **Proprietário da empresa** receberão um email de boas-vindas com um link para começar. Siga as etapas abaixo para acessar o Cloud Manager usando esse email de boas-vindas.
+1. Ir para [experience.adobe.com/experiencemanager](https://experience.adobe.com/experiencemanager).
+1. No painel lateral esquerdo, clique em **Cloud Manager**.
 
-1. No email de boas-vindas, clique em **Começar**, conforme mostrado na figura abaixo.
-   ![Exemplo de email](/help/journey-onboarding/assets/get-started-email.png)
+>[!NOTE]
+>
+>Dependendo das funções atribuídas no Cloud Manager e do estado do aplicativo, você verá telas diferentes ao usar a interface do usuário do Cloud Manager.
 
-1. Navegue até a página **Programas e produtos** do Cloud Manager.
+<!--
+Users with the **Business Owner** role receive a welcome email with a link to get started. Follow the steps below to navigate to Cloud Manager using this welcome email.
+
+1. From your welcome email, click **Get started**, as shown in the figure below.
+    ![Email example](/help/journey-onboarding/assets/get-started-email.png)
+
+1. Navigate to Cloud Manager's **Programs & Products** page.
 
    >[!TIP]
    >
-   >Você também pode navegar diretamente para a página de logon do Cloud Manager em `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Marque esta página para referência futura.
+   >You can also navigate directly to Cloud Manager's login page from `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Bookmark this page for future reference.
 
-1. Você será direcionado para a página de destino do Cloud Manager.
+1. You are directed to Cloud Manager's landing page. -->
 
 <!-- OLD
 Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
