@@ -33,7 +33,7 @@ Não se preocupe se você não estiver familiarizado com todos os termos usados 
 
 This video summarizes the onboarding process laid out in this journey and is intended as an option overview. All topics in the video are presented in detail within the journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431501/?captions=por_br&quality=12&learn=on)
 
 -->
 
