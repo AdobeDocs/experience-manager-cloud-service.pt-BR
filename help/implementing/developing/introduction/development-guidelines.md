@@ -4,7 +4,7 @@ description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Servi
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a352261034188cc66a0bc7f2472ef8340c778c13
+source-git-commit: c7ba218faac76c9f43d8adaf5b854676001344cd
 workflow-type: tm+mt
 source-wordcount: '2768'
 ht-degree: 4%
@@ -17,7 +17,7 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="Diretrizes de desenvolvimento do AEM as a Cloud Service"
 >abstract="Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS."
->additional-url="https://video.tv.adobe.com/v/345906?captions=por_br" text="Demonstração da estrutura do pacote"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Demonstração da estrutura do pacote"
 
 Este documento apresenta diretrizes para desenvolvimento no AEM as a Cloud Service e sobre maneiras importantes de diferir do AEM no local e do AEM no AMS.
 
@@ -41,13 +41,13 @@ Como exemplo em que o uso do sistema de arquivos não é compatível, a camada d
 
 ## Observação {#observation}
 
-Semelhante, com tudo o que está acontecendo de forma assíncrona, como a ação em eventos de observação, não é possível garantir que seja executado localmente e, portanto, deve ser usado com cuidado. Isso é verdadeiro para eventos JCR e eventos de recursos Sling. No momento em que uma alteração estiver ocorrendo, a instância poderá ser desativada e substituída por outra instância. Outras instâncias na topologia que estão ativas nesse momento podem reagir a esse evento. Nesse caso, no entanto, não será um evento local e pode até não haver líder ativo no caso de uma eleição de líder em andamento quando o evento for emitido.
+Da mesma forma, com tudo o que está acontecendo de forma assíncrona, como agir em eventos de observação, não é possível garantir que seja executado localmente e, portanto, deve ser usado com cuidado. Isso é verdadeiro para eventos JCR e eventos de recursos Sling. Quando uma alteração estiver ocorrendo, a instância poderá ser desativada e substituída por outra instância. Outras instâncias na topologia que estão ativas nesse momento podem reagir a esse evento. Nesse caso, no entanto, não será um evento local e pode até não haver líder ativo no caso de uma eleição de líder em andamento quando o evento for emitido.
 
 ## Tarefas de segundo plano e tarefas de longa duração {#background-tasks-and-long-running-jobs}
 
-O código executado como tarefas em segundo plano deve supor que a instância em que está sendo executada pode ser desativada a qualquer momento. Portanto, o código deve ser resiliente e, o mais importante, retomável. Isso significa que, se o código for executado novamente, ele não deverá começar do início novamente, mas sim próximo de onde parou. Embora esse não seja um requisito novo para esse tipo de código, no AEM as a Cloud Service é mais provável que uma instância seja desativada.
+O código executado como uma tarefa em segundo plano deve supor que a instância em que está sendo executada pode ser desativada a qualquer momento. Portanto, o código deve ser resiliente e, o mais importante, retomável. Isso significa que, se o código for executado novamente, ele não deverá começar do início novamente, mas sim próximo de onde parou. Embora esse não seja um requisito novo para esse tipo de código, no AEM as a Cloud Service é mais provável que ocorra uma interrupção de instância.
 
-Para minimizar o problema, se possível, a execução de trabalhos de longa duração deve ser evitada, e eles devem ser retomáveis no mínimo. Para executar esses trabalhos, use o Sling Jobs, que têm uma garantia de pelo menos uma vez e, portanto, se forem interrompidos, serão reexecutados o mais rápido possível. Mas elas provavelmente não devem recomeçar do início. Para agendar esses trabalhos, é melhor usar o agendador [Trabalhos do Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), pois isso garante novamente a execução de pelo menos uma vez.
+Para minimizar o problema, se possível, as tarefas de longa duração devem ser evitadas e devem ser retomadas no mínimo. Para executar esses trabalhos, use o Sling Jobs, que têm uma garantia de pelo menos uma vez e, portanto, se forem interrompidos, serão reexecutados o mais rápido possível. Mas elas provavelmente não devem recomeçar do início. Para agendar esses trabalhos, é melhor usar o agendador [Trabalhos do Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), pois isso garante novamente a execução de pelo menos uma vez.
 
 Não use o Sling Commons Scheduler para agendamento, pois a execução não pode ser garantida. É mais provável que ela esteja programada.
 
@@ -81,7 +81,7 @@ O AEM as a Cloud Service só oferece suporte à interface para toque para códig
 
 Os binários e bibliotecas nativos não devem ser implantados ou instalados em ambientes de nuvem.
 
-Além disso, o código não deve tentar baixar binários nativos ou extensões java nativas (por exemplo, JNI) no tempo de execução.
+Além disso, o código não deve tentar baixar binários nativos ou extensões Java nativas (por exemplo, JNI) no tempo de execução.
 
 ## Nenhum binário de transmissão por meio do AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -103,15 +103,15 @@ Os ambientes de produção são dimensionados mais alto para garantir uma opera�
 
 Os ambientes de desenvolvimento e os ambientes de desenvolvimento rápido devem se limitar ao desenvolvimento, à análise de erros e aos testes funcionais, e não foram projetados para processar altas cargas de trabalho nem grandes quantidades de conteúdo.
 
-Por exemplo, alterar uma definição de índice em um grande repositório de conteúdo em um ambiente de desenvolvimento pode resultar na reindexação, resultando em muito processamento. Os testes que exigem conteúdo substancial devem ser executados em ambientes de preparo.
+Por exemplo, alterar uma definição de índice em um grande repositório de conteúdo em um ambiente de desenvolvimento pode resultar em reindexação, resultando em muito processamento. Os testes que exigem conteúdo substancial devem ser executados em ambientes de preparo.
 
 ## Monitoramento e depuração {#monitoring-and-debugging}
 
 ### Logs {#logs}
 
-Para desenvolvimento local, entradas de logs são gravadas em arquivos locais na pasta `/crx-quickstart/logs`.
+Para desenvolvimento local, as entradas de log são gravadas em arquivos locais na pasta `/crx-quickstart/logs`.
 
-Em ambientes na nuvem, os desenvolvedores podem baixar logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+Em ambientes na nuvem, os desenvolvedores podem baixar logs por meio do Cloud Manager ou usar uma ferramenta de linha de comando para rastrear os logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Definindo o Nível de Log**
 
@@ -174,7 +174,7 @@ Os despejos de thread em ambientes na nuvem são coletados de forma contínua, m
 
 Para desenvolvimento local, os desenvolvedores têm acesso total ao CRXDE Lite (`/crx/de`) e ao AEM Web Console (`/system/console`).
 
-No desenvolvimento local (usando o SDK), o `/apps` e o `/libs` podem ser gravados diretamente, o que é diferente dos ambientes de Nuvem em que essas pastas de nível superior são imutáveis.
+No desenvolvimento local (usando o SDK), `/apps` e `/libs` podem ser gravados diretamente, o que é diferente dos ambientes em Nuvem, onde essas pastas de nível superior são imutáveis.
 
 ### Ferramentas de desenvolvimento do AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
@@ -189,7 +189,7 @@ Os clientes podem acessar o CRXDE lite no ambiente de desenvolvimento do nível 
 
 Em vez disso, o Navegador do repositório pode ser iniciado no AEM as a Cloud Service Developer Console, fornecendo uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização. Para obter mais informações, consulte o [Navegador do Repositório](/help/implementing/developing/tools/repository-browser.md).
 
-Um conjunto de ferramentas para depurar ambientes de desenvolvedor do AEM as a Cloud Service está disponível no AEM as a Cloud Service Developer Console para ambientes de RDE, desenvolvimento, preparo e produção. O url pode ser determinado ajustando os urls do serviço de Autor ou Publicação da seguinte maneira:
+Um conjunto de ferramentas para depurar ambientes de desenvolvedor do AEM as a Cloud Service está disponível no AEM as a Cloud Service Developer Console para ambientes de RDE, desenvolvimento, preparo e produção. O URL pode ser determinado ajustando os URLs de serviço do Autor ou de Publicação da seguinte maneira:
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -215,11 +215,11 @@ Também útil para depuração, o AEM as a Cloud Service Developer Console tem u
 
 ![Dev Console 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Para programas de produção, o acesso ao AEM as a Cloud Service Developer Console é definido pela &quot;Função do desenvolvedor - Cloud Manager&quot; no Adobe Admin Console, enquanto para programas de sandbox, o AEM as a Cloud Service Developer Console está disponível para qualquer usuário com um perfil de produto que dê acesso ao AEM as a Cloud Service. Para todos os programas, &quot;Cloud Manager - Função do desenvolvedor&quot; é necessário para despejos de status, e o navegador do repositório e os usuários também devem ser definidos no Perfil de produto Usuários do AEM ou Administradores do AEM, nos serviços de criação e publicação, para exibir dados de ambos os serviços. Para obter mais informações sobre como configurar permissões de usuário, consulte a [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=pt-BR).
+Para programas de produção, o acesso ao AEM as a Cloud Service Developer Console é definido pela &quot;Função do desenvolvedor - Cloud Manager&quot; no Adobe Admin Console, enquanto para programas de sandbox, o AEM as a Cloud Service Developer Console está disponível para qualquer usuário com um perfil de produto que dê acesso ao AEM as a Cloud Service. Para todos os programas, &quot;Cloud Manager - Função do desenvolvedor&quot; é necessário para despejos de status, e o navegador do repositório e os usuários também devem ser definidos no Perfil de produto Usuários do AEM ou Administradores do AEM, nos serviços de criação e publicação, para exibir dados de ambos os serviços. Para obter mais informações sobre como configurar permissões de usuário, consulte a [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Monitoramento de desempenho {#performance-monitoring}
 
-A Adobe monitora o desempenho dos aplicativos e toma medidas para resolver caso a deterioração seja observada. Atualmente, as métricas do aplicativo não podem ser observadas.
+A Adobe monitora o desempenho dos aplicativos e toma medidas para corrigir qualquer deterioração observada. Atualmente, as métricas do aplicativo não podem ser observadas.
 
 ## Enviar email {#sending-email}
 
@@ -235,17 +235,17 @@ Por padrão, as portas usadas para enviar email são desativadas. Para ativar um
 
 É recomendável configurar a rede avançada com um parâmetro `kind` definido como `flexiblePortEgress`, já que o Adobe pode otimizar o desempenho do tráfego de saída de porta flexível. Se um endereço IP de saída exclusivo for necessário, escolha um parâmetro `kind` de `dedicatedEgressIp`. Se você já tiver configurado a VPN por outros motivos, também poderá usar o endereço IP exclusivo fornecido por essa variação avançada de rede.
 
-Você deve enviar e-mails por meio de um servidor de e-mail em vez de diretamente para clientes de e-mail. Caso contrário, os emails poderão ser bloqueados.
+Você deve enviar um email por meio de um servidor de email, em vez de diretamente para clientes de email. Caso contrário, os emails poderão ser bloqueados.
 
 ### Envio de emails {#sending-emails}
 
-O [Serviço OSGI do Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=pt-BR#configuring-the-mail-service) deve ser usado e os emails devem ser enviados para o servidor de email indicado na solicitação de suporte, em vez de diretamente para os destinatários.
+O [Serviço OSGI do Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) deve ser usado, e os emails devem ser enviados para o servidor de email indicado na solicitação de suporte, em vez de diretamente para os destinatários.
 
 ### Configuração {#email-configuration}
 
-Os emails no AEM devem ser enviados usando o [Serviço OSGi do Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=pt-BR#configuring-the-mail-service).
+Os emails no AEM devem ser enviados usando o [Serviço OSGi do Day CQ Mail Service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Consulte a [documentação do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=pt-BR) para obter detalhes sobre como definir configurações de email. Para o AEM as a Cloud Service, observe os seguintes ajustes necessários para o serviço `com.day.cq.mailer.DefaultMailService OSGI`:
+Consulte a [documentação do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) para obter detalhes sobre como definir configurações de email. Para o AEM as a Cloud Service, observe os seguintes ajustes necessários para o serviço `com.day.cq.mailer.DefaultMailService OSGI`:
 
 * O nome de host do servidor SMTP deve ser definido como $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * A porta do servidor SMTP deve ser definida com o valor da porta proxy original definida no parâmetro portForwards usado na chamada de API ao configurar a rede avançada. Por exemplo, 30465 (em vez de 465)
