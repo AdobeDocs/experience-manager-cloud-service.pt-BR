@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2025.10.24
-description: Estas são as notas de versão do Universal Editor de 2025.10.24.
+title: Notas de versão do Universal Editor 2025.10.30
+description: Estas são as notas de versão do Universal Editor 2025.10.30.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
+source-git-commit: e3e571bef450ddc09eb30ab7d73b144ea521a87b
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
 
-# Notas de versão do Universal Editor 2025.10.24 {#release-notes}
+# Notas de versão do Universal Editor 2025.10.30 {#release-notes}
 
-Estas são as notas de versão do Universal Editor de 24 de outubro de 2025.
+Estas são as notas de versão do Universal Editor de 30 de outubro de 2025.
 
 >[!TIP]
 >
@@ -26,10 +26,8 @@ Estas são as notas de versão do Universal Editor de 24 de outubro de 2025.
 
 ## Novidades {#what-is-new}
 
-* [Copiar e colar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) entre guias do navegador agora é compatível.
-   * Limitado a entre guias que estão abertas ao mesmo tempo.
-   * Não há suporte para copiar o conteúdo e abrir uma nova guia.
-* Agora você pode desabilitar o botão Cancelar publicação com uma [metatag.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* [O novo RTE](#new-rte) agora pode inserir imagens.
+   * Este recurso está desabilitado OtB e precisa ser habilitado explicitamente por meio de uma [definição de filtro.](/help/implementing/universal-editor/configure-rte.md#toolbar)
 
 ## Recursos da adoção antecipada {#early-adopter}
 
@@ -41,6 +39,10 @@ O novo RTE do ProseMirror, com um seletor de páginas na caixa de diálogo de li
 
 ## Outras melhorias {#other-improvements}
 
-* A árvore de estrutura foi aprimorada.
-* Imagens vinculadas agora são compatíveis.
-* Melhorias nas operações desfazer/refazer.
+* Atualizar evento agora é informado se a ação foi desfeita.
+* A cadeia de caracteres `No results` agora depende da localidade do navegador nas marcas do Editor Universal.
+* Correção da quebra de linha extra no botão Publicar do Editor Universal.
+* Foi feita uma limpeza na API de patch.
+* O botão Selecionar conteúdo agora está visível no Safari.
+* Compilação RPM corrigida.
+* Atualização do CORS para evitar a atualização do texto editado novamente após salvar.
