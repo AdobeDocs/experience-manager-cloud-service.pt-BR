@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 6df762075346971aa10536c1f6c09fcd4272a19a
+source-git-commit: d97082c733b9bcae762f4ffbff012cfdbbada3bd
 workflow-type: tm+mt
-source-wordcount: '2920'
+source-wordcount: '2927'
 ht-degree: 36%
 
 ---
@@ -63,7 +63,9 @@ Aqui você pode ver três áreas principais:
    * Aqui você pode ocultar ou revelar a árvore de pastas
    * É possível selecionar uma ramificação específica da árvore
    * Ela pode ser redimensionada para mostrar pastas aninhadas
-   * Além dos Fragmentos de conteúdo, você pode exibir [Modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) ou [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md). Também é possível compactar ou expandir links para os painéis
+   * Além dos Fragmentos de conteúdo, você pode:
+      * Exibir [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) ou [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); também é possível compactar ou expandir links para os painéis
+      * Criar e gerenciar [Inicializações de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * O painel principal/direito; aqui, você pode:
    * Consulte a lista de todos os fragmentos de conteúdo na ramificação selecionada da árvore:
       * Os fragmentos de conteúdo da pasta selecionada e de todas as pastas derivadas serão mostrados:

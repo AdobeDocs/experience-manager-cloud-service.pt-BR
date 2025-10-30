@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
+source-git-commit: d1e5651dcad75df430e7055f4f8162e666d91f04
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2021'
 ht-degree: 35%
 
 ---
@@ -89,7 +89,7 @@ Esses Fragmentos de conteúdo podem ser reunidos para fornecer experiências em 
 
 Esta e as seguintes páginas abordam as tarefas de criação, configuração, manutenção e uso dos fragmentos de conteúdo:
 
-* [Ativar a funcionalidade de fragmento de conteúdo para sua instância](/help/sites-cloud/administering/content-fragments/setup.md)
+* [Habilitar a funcionalidade de fragmento de conteúdo para sua instância](/help/sites-cloud/administering/content-fragments/setup.md)
 * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - habilitando, criando e [definindo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) seus modelos
 * [Criar os fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#creating-a-content-fragment) (usando o Console de fragmentos de conteúdo)
 
@@ -103,6 +103,7 @@ Após a criação dos fragmentos, é possível:
 * [Analisar](/help/sites-cloud/administering/content-fragments/analysis.md) a estrutura do fragmento de conteúdo usando o editor
 * [Acesse os fragmentos com o GraphQL para entrega headless em seus aplicativos](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 * [Integrar e usar os fragmentos de conteúdo no Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+* Criar e gerenciar [Inicializações de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * [Ou use os fragmentos para a criação de página](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
@@ -216,7 +217,7 @@ Os ativos do Fragmento de conteúdo são compostos das seguintes partes (direta 
 
    * Blocos de texto, geralmente multilinha, que são delimitados como entidades individuais.
 
-   * Ativam o controle de conteúdo durante a criação da página.
+   * Habilitam o controle de conteúdo durante a criação da página.
 
 * **Metadados de fragmento**
 
@@ -245,7 +246,7 @@ Para criar fragmentos de conteúdo, você precisa:
 
 * **Modelo de conteúdo**
 
-   * É [ativado usando o Navegador de configuração](/help/sites-cloud/administering/content-fragments/setup.md).
+   * É [habilitado usando o Navegador de configuração](/help/sites-cloud/administering/content-fragments/setup.md).
    * São [criadas usando o Console de Fragmentos de Conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
    * Obrigatório para [criar um fragmento](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments).
    * Define a estrutura de um fragmento (título, elementos de conteúdo, definições de tag).

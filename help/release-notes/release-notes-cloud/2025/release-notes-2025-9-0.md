@@ -1,20 +1,18 @@
 ---
-title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.9.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.9.0.
 feature: Release Information
 role: Admin
-source-git-commit: 67a15a502dad883d5a370fedb16a5faca64ecf06
+source-git-commit: e41828b04a33cc36ee2fc8a4704d9c3cf352830b
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 9%
+source-wordcount: '2088'
+ht-degree: 8%
 
 ---
 
-# Notas de versão atuais do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2025.9.0 {#release-notes}
 
-A seção a seguir descreve as notas da versão de recurso atual (mais recente) do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as notas da versão de recursos do [!DNL Experience Manager] as a Cloud Service 2025.9.0.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2025.10.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 30 de outubro de 2025. O próximo lançamento de recursos (2025.10.0) está planejado para sexta-feira, 20 de novembro de 2025.
+A data de lançamento da versão atual (2025.9.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 25 de setembro de 2025. O próximo lançamento de recursos (2025.10.0) está planejado para sexta-feira, 30 de outubro de 2025.
 
 ## Notas da versão de manutenção {#maintenance}
 
@@ -46,11 +44,42 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Novos recursos no Experience Manager Sites {#new-sites}
+### Novos recursos no pré-lançamento do Experience Manager Sites {#prerelease-sites}
 
-* O [Editor de Modelos de Conteúdo para Fragmentos de Conteúdo do AEM](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) foi modernizado para alinhar-se a outras interfaces baseadas no Espectro React no AEM. Seu modelo de implementação e extensibilidade da interface do usuário agora é consistente com o Editor de fragmento de conteúdo e o Editor universal. O novo Editor de modelos agora é padrão quando aberto na nova interface do Administrador do modelo de conteúdo. A abertura de um modelo de conteúdo na interface para toque abre o editor da interface para toque e se oferece para experimentar o novo editor.
+O Editor de modelos de conteúdo para Fragmentos de conteúdo do AEM foi modernizado para se alinhar a outras interfaces baseadas no Espectro React no AEM. Seu modelo de implementação e extensibilidade da interface do usuário agora é consistente com o Editor de fragmento de conteúdo e o Editor universal. O novo Editor de modelos agora é padrão quando aberto na nova interface do Administrador do modelo de conteúdo. A abertura de um modelo de conteúdo na interface para toque abre o editor da interface para toque e se oferece para experimentar o novo editor.
 
-* [Inicializações para fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): a guia Inicializações do console de Fragmentos de conteúdo permite criar inicializações, listar todas as inicializações existentes, ver as propriedades principais e realizar ações com elas.
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+### Novos recursos na exibição do Assets {#new-features-assets-view}
+
+**Formatação de Texto Aprimorada com Subsequências em Modelos do Dynamic Media**
+
+Agora é possível aplicar formatação a substrings em camadas de texto de modelo do Dynamic Media. Uma palavra ou frase selecionada é tratada como uma camada separada, permitindo que você ajuste sua fonte, tamanho da fonte, cor e muito mais. A camada da substring é parametrizada para que você possa atualizá-la em tempo real usando o URL de entrega do template
+
+### Novos recursos no Dynamic Media com recursos OpenAPI {#new-features-dynamic-media-with-openapi}
+
+**URLs de entrega de ativos com marca e legíveis**
+
+Torne o Dynamic Media com URLs OpenAPI mais legíveis por humanos, aproveitando URLs personalizados no Dynamic Media com OpenAPI. Os URLs personalizados permitem substituir UUIDs longos, gerados pelo sistema e difíceis de memorizar nos URLs de entrega de ativos por identificadores curtos controlados pela marca. Isso torna os URLs personalizados mais curtos, mais fáceis de ler e compartilhar, e permite um melhor alinhamento com sua marca ou campanhas. Os URLs personalizados são resolvidos automaticamente para a UUID do ativo original no tempo de execução, sem interromper os fluxos de trabalho existentes.
+
+>[!NOTE]
+>
+>Esse recurso está disponível como um recurso de Disponibilidade limitada. Consulte este [artigo](/help/assets/vanity-urls.md) para começar.
+
+### Novos recursos no Content Hub {#new-features-content-hub}
+
+**Marcar coleções como favoritos**
+
+Agora é possível marcar coleções como Favoritos no Content Hub, facilitando sua organização e recuperação. Depois de adicionadas, suas coleções favoritas ficam convenientemente disponíveis na guia Favoritos na página inicial do Content Hub.
+
+
+**Fixar coleções para acesso rápido**
+
+Agora, os administradores do Content Hub podem fixar coleções no Content Hub para acesso rápido. As coleções fixadas são exibidas em uma seção Fixada dedicada na página inicial Coleções, facilitando o alcance de coleções importantes.
+
+>[!IMPORTANT]
+>
+>Esses recursos estão disponíveis como recursos de Disponibilidade limitada. Você pode [criar e enviar um caso de Suporte ao Cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para habilitá-lo para sua implantação.
 
 <!--
 
@@ -74,23 +103,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Novos recursos no Experience Manager Forms {#new-features-forms}
 
-**Editor Universal para Forms Adaptável e Fragmentos de Formulário**
+**Etapa de fluxo de trabalho Invocar modelo de dados de formulário para anexos da lista do SharePoint**
 
-O Editor universal agora oferece uma experiência de criação unificada para criar Forms adaptável e fragmentos de formulário reutilizáveis. Os autores podem projetar formulários visualmente, configurar ações de envio e integrar a validação do reCAPTCHA em um ambiente intuitivo do WYSIWYG.
+A etapa de fluxo de trabalho Chamar modelo de dados de formulário agora oferece suporte à manipulação de metadados do lado do fluxo de trabalho para matrizes de anexo codificadas em Base64 em Modelos de dados de formulário baseados em lista do SharePoint. Com esse aprimoramento, a etapa do fluxo de trabalho pode transmitir, armazenar e recuperar metadados, como nome do arquivo, tipo MIME e propriedades personalizadas para cada anexo. Esse recurso permite um gerenciamento de dados mais abrangente e facilita a integração contínua downstream. Para obter detalhes, consulte [Suporte aprimorado na etapa de fluxo de trabalho Chamar modelo de dados de formulário para anexos da Lista do SharePoint](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
 
-<!-- ### Pre-Release features in AEM Forms 
+### Recursos de pré-lançamento no AEM Forms
 
-**Rule Editor Enhancements**
+**Aprimoramentos do Editor de Regras**
 
-The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
+O Editor de regras agora oferece suporte à navegação aprimorada e permite o uso de expressões matemáticas e de função em parâmetros de entrada.
 
-**Enhanced Navigation with Event Payload Support**
- 
-The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+**Navegação aprimorada com suporte para carga do evento**
 
-**Function and Mathematical Expression Support in Input Parameters**
- 
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). -->
+A ação `Navigate To` nos manipuladores Invoke Service agora oferece suporte a `EVENT_PAYLOAD`, permitindo que os autores de formulários configurem ações de acompanhamento com base nas respostas do evento. Esse aprimoramento oferece maior flexibilidade ao projetar workflows pós-envio, garantindo transições mais suaves e experiências do usuário mais personalizadas. Para obter mais informações, consulte [Navegação aprimorada com Suporte à Carga do Evento](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+
+**Suporte a Função e Expressão Matemática nos Parâmetros de Entrada**
+
+Agora, os parâmetros de entrada suportam chamadas de função e expressões matemáticas, permitindo que os autores de formulários passem valores computados dinamicamente diretamente. Esse aprimoramento simplifica as configurações de regras, elimina a necessidade de campos extras e torna os formulários mais adaptáveis à lógica complexa e a cenários orientados por cálculo. Para obter mais informações, consulte [Suporte a Função e Expressão Matemática nos Parâmetros de Entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 ### Novos recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
@@ -98,23 +127,17 @@ O Programa de acesso antecipado da AEM Forms oferece uma oportunidade única par
 
 Essas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no Programa de Acesso Antecipado, consulte a [documentação do Programa de Acesso Antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### Aprimoramentos na comunicação interativa
+**Visualização do PDF no Editor de Comunicação Interativa**
 
-##### Bloqueio de modelo
+Os usuários podem visualizar PDFs de Comunicações interativas sem dados, com arquivos de dados JSON locais ou com dados de um modelo de dados, permitindo testes flexíveis orientados por dados. Para obter mais informações, consulte [Visualização do PDF no Editor de Comunicação Interativa](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-Bloqueie o conteúdo e os elementos de layout nos modelos para manter a integridade da marca e evitar modificações não autorizadas. Isso garante a consistência do design em todas as comunicações.
+**Suporte a fontes personalizadas na comunicação interativa**
 
-##### Suporte a estouro de conteúdo
+O recurso Fontes personalizadas permite que os usuários incorporem fontes personalizadas ou aprovadas pela organização nas Comunicações interativas, garantindo uma renderização de PDF consistente e com marca em todos os dispositivos e plataformas. Para obter mais informações, consulte [Suporte a Fontes Personalizadas na Comunicação Interativa](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
 
-Introdução da opção &quot;Permitir quebras de página no conteúdo&quot; para layouts com fluxo. Esse aprimoramento permite uma edição suave de várias páginas e um melhor gerenciamento de texto para documentos complexos.
+**Importar e Exportar Comunicações Interativas**
 
-##### Edição de arquivo XDP
-
-O editor de comunicação interativa agora é compatível com a edição de XDP, incluindo a integração de fragmentos. Agora é possível editar arquivos XDP em um navegador em vez do Forms Designer, que é executado somente na área de trabalho do Microsoft Windows.
-
-##### Numeração dinâmica de páginas
-
-Exiba automaticamente &quot;Número da página de ##&quot; nas páginas mestras para uma paginação clara e consistente em documentos de várias páginas.
+Esse recurso permite a migração e reutilização de Comunicações interativas em diferentes ambientes. Agora é possível exportar uma comunicação interativa juntamente com seus fragmentos e modelos de dados associados de um ambiente e importá-la para outro. Para obter mais informações, consulte [Importar e Exportar Comunicações Interativas](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
 
 <!--
 **Forms Optimization opportunities**
@@ -149,19 +172,11 @@ Dias de ativação, eventos ao vivo, pico de vendas — esses momentos não queb
 >Disponível como um recurso de Disponibilidade limitada em 25 de setembro.
 >>Envie um email para [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para ativá-lo em seus programas.
 
-### Encaminhamento de logs do AEM para mais destinos {#log-forwarding}
+### Nova versão das ferramentas de desenvolvedor do AEM para Eclipse {#aem-develeper-tools-for-eclipse}
 
-Agora é possível encaminhar logs do AEM para o Amazon S3, Sumo Logic, Dynatrace e sua própria conta do New Relic (não a conta fornecida pela Adobe). Observe que os logs do AEM (incluindo o Apache/Dispatcher) são compatíveis com esses destinos de log, mas não com os logs CDN.
+A versão 1.4.0 das Ferramentas de desenvolvedor do AEM para Eclipse foi lançada. Esta versão adiciona suporte para o Eclipse IDE 2022-12 ou mais recente e foi validada com a versão atual (2025-09). A ferramenta agora funciona com versões modernas do Arquétipo de projeto do AEM e incorpora melhorias da ferramenta Sling IDE 1.3.0.
 
-Consulte o conjunto completo de [destinos de encaminhamento de logs com suporte](/help/implementing/developing/introduction/log-forwarding.md).
-
-### Pipeline de configuração para o Edge Delivery Services {#config-pipeline-eds}
-
-Os Pipelines de configuração agora são compatíveis com sites criados com o Edge Delivery Services, expandindo esse recurso além da entrega de publicação do AEM Author e do AEM. Você pode usar Pipelines de configuração para gerenciar configurações como a configuração do CDN, incluindo regras de filtro de tráfego e seletores de origem. Consulte [Configurações com Suporte](/help/operations/config-pipeline.md#configurations).
-
-Os pipelines de configuração do Edge Delivery também são compatíveis com segredos por meio de variáveis de pipeline do Cloud Manager.
-
-Consulte [Adicionar pipeline de Edge Delivery](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+Instale a partir do [Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) e consulte a [página Ferramentas para desenvolvedores do AEM](https://eclipse.adobe.com) para obter mais detalhes.
 
 ### Futuras descontinuações da API Java {#java-api-deprecation}
 
@@ -199,18 +214,19 @@ OSGi properties:
 
 ### Descontinuação do Java 11 Runtime {#java11-runtime-deprecation}
 
-A Adobe atualizou os ambientes **Preparo** e **Produção** para o **tempo de execução do Java 21** de maior desempenho em 14 de outubro de 2025. A partir do final de janeiro, o AEM Cloud Service SDK e nenhum ambiente de nuvem funcionarão com o Java 11 runtime.
+O *Java 11 runtime* está obsoleto, e a maioria dos ambientes já foi atualizada para o **Java 21 runtime** de maior desempenho.
+
+Se seu ambiente não pôde ser atualizado devido a dependências sem suporte (consulte os [requisitos de tempo de execução do Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), você deve ter recebido um email do Adobe com as próximas etapas. Conforme descrito, a Adobe atualizou seus ambientes **Dev** e **RDE** em **18 de setembro de 2025** para que você possa validar seu site e processos e resolver quaisquer problemas. As atualizações para o **Estágio** e a **Produção** continuarão em **14 de outubro de 2025**.
 
 >[!NOTE]
 >
-> Para aproveitar as otimizações de desempenho e aprimoramentos de linguagem mais recentes, é recomendável criar com Java 17 ou Java 21 (preferencial). A construção com Java 8 e Java 11 permanece suportada por enquanto, mas será descontinuada em uma versão futura. Uma comunicação separada será emitida antes da desativação. Consulte a seção *requisitos de tempo de compilação* de [este artigo](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
->
+>A versão de tempo de execução é separada da versão de build do seu código. Embora recomendemos a criação com o Java 21, as builds do Java 11 ainda são aceitas por enquanto. Um aviso de descontinuação separado para builds do Java 11 será compartilhado no futuro.
 
 ### Aplicação da política de configuração de logs Java do AEM {#logconfig-policy}
 
 Conforme observado nas notas de versão de abril, os registros Java da AEM devem seguir um formato padrão para garantir um monitoramento confiável em todos os ambientes do cliente. Configurações de log personalizadas — como alterações na formatação de log, arquivos de saída ou níveis de log padrão — não são mais suportadas. Os registros devem permanecer direcionados aos arquivos padrão e os níveis de registro padrão para o código de produto do AEM devem ser preservados. Veja todos os detalhes no [Artigo sobre log](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-A partir de **20 de novembro**, todas as substituições de log personalizadas não suportadas serão ignoradas. Com base em nossa análise, a maioria dos clientes não será afetada e a Adobe entrou em contato com clientes cuja configuração atual pode ser afetada.
+A partir de **30 de outubro**, todas as substituições de log personalizadas não suportadas serão ignoradas. Com base em nossa análise, a maioria dos clientes não será afetada e a Adobe entrou em contato com clientes cuja configuração atual pode ser afetada.
 
 Revise e atualize todos os processos downstream que dependem do comportamento de log personalizado. Por exemplo:
 
@@ -254,25 +270,24 @@ Implante as versões de código para produção, mas restrinja-as somente ao tr�
 
 Envie um email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) para solicitar acesso e compartilhar feedback.
 
-
-### Respostas da IA - Respostas mais inteligentes e sensíveis ao contexto para o AEM Sites (Programa Beta) {#ai-answers-beta}
-
-As respostas de IA apresentam uma nova maneira de os visitantes interagirem com o conteúdo. Desenvolvido pela tecnologia Retrieval-Augmented Generation (RAG), ele usa seus dados gerenciados pela AEM para fornecer respostas precisas e consistentes com a marca, diretamente em suas experiências digitais.
-
-Como parte dessa versão beta, você pode explorar com segurança as Respostas da IA no ambiente do AEM Cloud Service. Essa abordagem permite validar o desempenho, a precisão e a experiência geral antes de disponibilizá-la para o público-alvo ao vivo. Depois de validado, você pode promover sua experiência em Respostas de IA para produção completa.
-
-Para solicitar acesso beta ou compartilhar seus comentários, contate [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
-
-
 ### Instantâneos para RDEs (Programa Alpha) {#rde-snapshot-program}
 
 Em alfa, os ambientes de desenvolvimento rápido (RDEs) agora oferecem suporte a um recurso para obter um instantâneo do estado atual do código e do conteúdo, que pode ser restaurado posteriormente. Isso pode ser útil ao sincronizar código que pode precisar ser revertido ou ao alternar entre o desenvolvimento de diferentes recursos. Também é possível restaurar apenas o conteúdo mutável como um ponto de partida conhecido para testes.
 
 Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) se houver interesse em fornecer feedback sobre esse recurso.
 
+### Encaminhamento de logs do AEM para mais destinos (programa Beta) {#log-forwarding-beta}
+
+Embora os logs possam ser baixados da Cloud Manager, muitas organizações acham útil transmitir esses logs para um destino de registro preferencial. O AEM já oferece suporte ao encaminhamento de logs do AEM e do CDN para o Armazenamento de Blobs do Azure, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. Esse recurso é configurado de maneira automatizada e implantado usando o Pipeline de configuração.
+
+Agora na versão beta, você pode encaminhar logs do AEM para o Amazon S3, Sumo Logic, Dynatrace e sua própria conta da New Relic (não a conta fornecida pela Adobe). Observe que os logs do AEM (incluindo o Apache/Dispatcher) são compatíveis com esses destinos de log, mas não com os logs CDN. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para acesso.
+
+Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/developing/introduction/log-forwarding.md).
+
 ### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
 Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+
 
 ## Guias do [!DNL Experience Manager] {#guides}
 

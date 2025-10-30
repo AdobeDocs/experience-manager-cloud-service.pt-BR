@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: a974859746ca20f1979b773668a66be0197f623d
 workflow-type: tm+mt
-source-wordcount: '2940'
+source-wordcount: '3019'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,17 @@ As Comunicações interativas na nuvem são uma solução poderosa para criar, g
 * **Fontes Personalizadas** incorpore fontes personalizadas ou aprovadas pela organização para garantir uma renderização consistente e com a marca PDF em todos os dispositivos.
 * **Importar e exportar:** migre e reutilize facilmente a comunicação interativa com seus fragmentos e modelos de dados entre ambientes.
 
+* **Bloqueio de Modelo**: bloqueia o conteúdo e os elementos de layout nos modelos para manter a integridade da marca e impedir modificações não autorizadas.
+
+* **Estouro de Conteúdo**: a opção &quot;Permitir quebras de página no conteúdo&quot; para layouts fluídos para uma edição suave de várias páginas e um melhor gerenciamento de texto para documentos complexos.
+
+* **Edição de arquivos XDP**: agora é possível editar arquivos XDP em um navegador em vez do Forms Designer que é executado somente na área de trabalho do Microsoft Windows.
+
+##### Numeração dinâmica de páginas
+
+Exiba automaticamente &quot;Número da página de ##&quot; nas páginas mestras para uma paginação clara e consistente em documentos de várias páginas.
+
+
 
 #### Casos de uso:
 
@@ -166,7 +177,7 @@ Pronto para começar? A documentação de [Introdução aos formulários HTML5](
 
 Acelere o desenvolvimento do AEM Forms Edge Delivery Services com a ferramenta AEM Forms CLI. Essa interface de linha de comando permite gerar instantaneamente o código e a fiação necessários para iniciar o desenvolvimento de componentes personalizados — sem chapas metálicas, sem complicações.
 
->[!VIDEO] (<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **Principais recursos:**
 
@@ -243,7 +254,7 @@ A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas 
 
 Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
 
-Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### APIs Doc Assurance
 
