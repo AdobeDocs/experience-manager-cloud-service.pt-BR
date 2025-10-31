@@ -3,9 +3,9 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.9.0.
 feature: Release Information
 role: Admin
-source-git-commit: e41828b04a33cc36ee2fc8a4704d9c3cf352830b
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2083'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -107,19 +107,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 A etapa de fluxo de trabalho Chamar modelo de dados de formulário agora oferece suporte à manipulação de metadados do lado do fluxo de trabalho para matrizes de anexo codificadas em Base64 em Modelos de dados de formulário baseados em lista do SharePoint. Com esse aprimoramento, a etapa do fluxo de trabalho pode transmitir, armazenar e recuperar metadados, como nome do arquivo, tipo MIME e propriedades personalizadas para cada anexo. Esse recurso permite um gerenciamento de dados mais abrangente e facilita a integração contínua downstream. Para obter detalhes, consulte [Suporte aprimorado na etapa de fluxo de trabalho Chamar modelo de dados de formulário para anexos da Lista do SharePoint](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
 
-### Recursos de pré-lançamento no AEM Forms
-
-**Aprimoramentos do Editor de Regras**
-
-O Editor de regras agora oferece suporte à navegação aprimorada e permite o uso de expressões matemáticas e de função em parâmetros de entrada.
-
-**Navegação aprimorada com suporte para carga do evento**
-
-A ação `Navigate To` nos manipuladores Invoke Service agora oferece suporte a `EVENT_PAYLOAD`, permitindo que os autores de formulários configurem ações de acompanhamento com base nas respostas do evento. Esse aprimoramento oferece maior flexibilidade ao projetar workflows pós-envio, garantindo transições mais suaves e experiências do usuário mais personalizadas. Para obter mais informações, consulte [Navegação aprimorada com Suporte à Carga do Evento](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-
-**Suporte a Função e Expressão Matemática nos Parâmetros de Entrada**
-
-Agora, os parâmetros de entrada suportam chamadas de função e expressões matemáticas, permitindo que os autores de formulários passem valores computados dinamicamente diretamente. Esse aprimoramento simplifica as configurações de regras, elimina a necessidade de campos extras e torna os formulários mais adaptáveis à lógica complexa e a cenários orientados por cálculo. Para obter mais informações, consulte [Suporte a Função e Expressão Matemática nos Parâmetros de Entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+<!-- ### Pre-Release features in AEM Forms -->
 
 ### Novos recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
@@ -127,17 +115,25 @@ O Programa de acesso antecipado da AEM Forms oferece uma oportunidade única par
 
 Essas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no Programa de Acesso Antecipado, consulte a [documentação do Programa de Acesso Antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
 
-**Visualização do PDF no Editor de Comunicação Interativa**
+* **Visualização do PDF no Editor de Comunicação Interativa**
 
-Os usuários podem visualizar PDFs de Comunicações interativas sem dados, com arquivos de dados JSON locais ou com dados de um modelo de dados, permitindo testes flexíveis orientados por dados. Para obter mais informações, consulte [Visualização do PDF no Editor de Comunicação Interativa](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
+  Os usuários podem visualizar PDFs de Comunicações interativas sem dados, com arquivos de dados JSON locais ou com dados de um modelo de dados, permitindo testes flexíveis orientados por dados. Para obter mais informações, consulte [Visualização do PDF no Editor de Comunicação Interativa](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-**Suporte a fontes personalizadas na comunicação interativa**
+* **Suporte a fontes personalizadas na comunicação interativa**
 
-O recurso Fontes personalizadas permite que os usuários incorporem fontes personalizadas ou aprovadas pela organização nas Comunicações interativas, garantindo uma renderização de PDF consistente e com marca em todos os dispositivos e plataformas. Para obter mais informações, consulte [Suporte a Fontes Personalizadas na Comunicação Interativa](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+  O recurso Fontes personalizadas permite que os usuários incorporem fontes personalizadas ou aprovadas pela organização nas Comunicações interativas, garantindo uma renderização de PDF consistente e com marca em todos os dispositivos e plataformas. Para obter mais informações, consulte [Suporte a Fontes Personalizadas na Comunicação Interativa](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
 
-**Importar e Exportar Comunicações Interativas**
+* **Importar e Exportar Comunicações Interativas**
 
-Esse recurso permite a migração e reutilização de Comunicações interativas em diferentes ambientes. Agora é possível exportar uma comunicação interativa juntamente com seus fragmentos e modelos de dados associados de um ambiente e importá-la para outro. Para obter mais informações, consulte [Importar e Exportar Comunicações Interativas](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+  Esse recurso permite a migração e reutilização de Comunicações interativas em diferentes ambientes. Agora é possível exportar uma comunicação interativa juntamente com seus fragmentos e modelos de dados associados de um ambiente e importá-la para outro. Para obter mais informações, consulte [Importar e Exportar Comunicações Interativas](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+
+* **Aprimoramentos do Editor de Regras**
+
+  O Editor de regras agora oferece suporte à navegação aprimorada e permite o uso de expressões matemáticas e de função em parâmetros de entrada.
+
+   * **Navegação aprimorada com Suporte a Carga de Evento**: a ação `Navigate To` nos manipuladores Chamar Serviço agora oferece suporte a `EVENT_PAYLOAD`, permitindo que os autores de formulários configurem ações de acompanhamento com base nas respostas do evento. Esse aprimoramento oferece maior flexibilidade ao projetar workflows pós-envio, garantindo transições mais suaves e experiências do usuário mais personalizadas. Para obter mais informações, consulte [Navegação aprimorada com Suporte à Carga do Evento](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
+
+   * **Suporte a Expressões Matemáticas e de Funções em Parâmetros de Entrada**: Os parâmetros de entrada agora oferecem suporte a chamadas de função e expressões matemáticas, permitindo que os autores de formulários passem valores computados dinamicamente diretamente. Esse aprimoramento simplifica as configurações de regras, elimina a necessidade de campos extras e torna os formulários mais adaptáveis à lógica complexa e a cenários orientados por cálculo. Para obter mais informações, consulte [Suporte a Função e Expressão Matemática nos Parâmetros de Entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 <!--
 **Forms Optimization opportunities**
@@ -170,7 +166,7 @@ Dias de ativação, eventos ao vivo, pico de vendas — esses momentos não queb
 >[!NOTE]
 >
 >Disponível como um recurso de Disponibilidade limitada em 25 de setembro.
->&#x200B;>Envie um email para [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para ativá-lo em seus programas.
+>>Envie um email para [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para ativá-lo em seus programas.
 
 ### Nova versão das ferramentas de desenvolvedor do AEM para Eclipse {#aem-develeper-tools-for-eclipse}
 
@@ -286,12 +282,12 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

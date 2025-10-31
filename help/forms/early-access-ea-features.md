@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: a974859746ca20f1979b773668a66be0197f623d
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '3019'
+source-wordcount: '3076'
 ht-degree: 0%
 
 ---
@@ -177,7 +177,7 @@ Pronto para começar? A documentação de [Introdução aos formulários HTML5](
 
 Acelere o desenvolvimento do AEM Forms Edge Delivery Services com a ferramenta AEM Forms CLI. Essa interface de linha de comando permite gerar instantaneamente o código e a fiação necessários para iniciar o desenvolvimento de componentes personalizados — sem chapas metálicas, sem complicações.
 
->[!VIDEO] (<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **Principais recursos:**
 
@@ -254,7 +254,7 @@ A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas 
 
 Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
 
-Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### APIs Doc Assurance
 
@@ -302,7 +302,11 @@ O armazenamento de PDFs no Armazenamento Azure Blob permite o gerenciamento cent
 
 ### Aprimoramentos no Editor de regras visuais
 
-* O Editor de regras visuais no Adaptive Forms agora oferece suporte à integração de API direta [sem exigir um Modelo de dados de formulário](/help/forms/api-integration-in-rule-editor.md). Você pode se conectar a um endpoint de API inserindo o URL JSON ou importando a configuração usando um comando cURL. Após a integração, a API pode ser invocada usando a ação `Invoke Service`.
+* [Integração com a API direta](/help/forms/api-integration-in-rule-editor.md): o Editor de regras visuais no Adaptive Forms agora oferece suporte à integração com a API direta sem exigir um Modelo de dados de formulário. Você pode se conectar a um endpoint de API inserindo o URL JSON ou importando a configuração usando um comando cURL. Após a integração, a API pode ser invocada usando a ação `Invoke Service`.
+
+* [Navegação aprimorada com suporte de carga do evento](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service): a ação **Navegar para** nos manipuladores Chamar serviço aceita `EVENT_PAYLOAD`, permitindo que os autores de formulários configurem ações de acompanhamento com base nas respostas do evento.
+
+* [Suporte a Expressões Matemáticas e de Funções em Parâmetros de Entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): Os parâmetros de entrada agora oferecem suporte a chamadas de função e expressões matemáticas, permitindo que os autores de formulários passem valores computados dinamicamente diretamente.
 
 ## Consulte também:
 
