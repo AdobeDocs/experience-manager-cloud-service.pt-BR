@@ -36,5 +36,5 @@ O recurso de fonte personalizada permite aprimorar a aparência das comunicaçõ
 
 >[!NOTE]
 >
-> Para obter etapas de configuração detalhadas, os usuários podem seguir o guia [Usar fontes personalizadas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> Para obter etapas de configuração detalhadas, os usuários podem seguir o guia [Usar fontes personalizadas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
 > &#x200B;>Após concluir as etapas e executar o pipeline, as fontes personalizadas estão disponíveis para uso diretamente no Editor de comunicação interativa.
