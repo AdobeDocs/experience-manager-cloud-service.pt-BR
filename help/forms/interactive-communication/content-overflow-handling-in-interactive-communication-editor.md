@@ -4,10 +4,7 @@ description: O manuseio de estouro de conteúdo no Editor de comunicação inter
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
@@ -27,8 +24,7 @@ ht-degree: 0%
 
 ## Introdução
 
-O recurso Manuseio de estouro de conteúdo no Editor de comunicação interativa melhora o comportamento do texto em layouts Fluxados e Posicionados.
-Ele garante uma continuidade perfeita do conteúdo para layouts fluídos e fornece alertas visuais para layouts posicionados, proporcionando aos autores melhor controle e flexibilidade ao projetar comunicações.
+O recurso Manuseio de estouro de conteúdo no Editor de comunicação interativa melhora o comportamento do texto em layouts Fluxados e Posicionados. Ele garante uma continuidade perfeita do conteúdo para layouts fluídos e fornece alertas visuais para layouts posicionados, proporcionando aos autores melhor controle e flexibilidade ao projetar comunicações.
 
 ## Principais recursos
 
