@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 77%
+source-wordcount: '832'
+ht-degree: 76%
 
 ---
 
@@ -110,10 +110,6 @@ Consulte [`aem-testing-clients`repositório do GitHub](https://github.com/adobe/
 | Tempo limite | 30 min | O limite de tempo após o qual o teste pára. |
 | Duração recomendada | 15 min | A Adobe recomenda que a gravação dos testes não demore mais do que esse tempo. |
 
->[!NOTE]
->
-> Caso precise de mais recursos, crie um chamado no Atendimento ao cliente e descreva seu caso de uso. A equipe da Adobe analisará sua solicitação e fornecerá a assistência apropriada.
-
 #### Dependências
 
 * aem-cloud-testing-clients:
@@ -131,7 +127,7 @@ As próximas alterações na infraestrutura contida para a execução de testes 
 >[!NOTE]
 >
 >Essa alteração precisa ser executada antes de 6 de abril de 2024.
->&#x200B;>Falha ao atualizar a biblioteca de dependência pode resultar em falhas de pipeline na etapa &quot;Teste funcional personalizado&quot;.
+>Falha ao atualizar a biblioteca de dependência pode resultar em falhas de pipeline na etapa &quot;Teste funcional personalizado&quot;.
 
 ### Execução local de testes {#local-test-execution}
 
