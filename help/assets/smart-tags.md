@@ -4,9 +4,9 @@ description: Adicione tags a ativos com um serviço de inteligência artificial 
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '2082'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ As Tags inteligentes são palavras-chave que não só aparecem no texto, mas tam
 
 Por exemplo, palavras organizadas alfabeticamente em um dicionário são mais fáceis de encontrar do que as dispersas aleatoriamente. A marcação serve um propósito semelhante. Ele organiza os ativos de acordo com a taxonomia comercial, garantindo que os mais relevantes apareçam nos resultados da pesquisa. Por exemplo, um fabricante de automóveis pode marcar imagens de carros com nomes de modelos, de modo que apenas imagens relevantes sejam exibidas ao projetar uma campanha promocional. Independentemente de marcar &quot;corredores&quot; ou &quot;tênis de corrida&quot;, os usuários não precisam se preocupar com erros de digitação, variações de ortografia ou termos de pesquisa alternativos - as Tags inteligentes reconhecem tudo isso.
 
-Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente do [Adobe Sensei](https://business.adobe.com/br/products/sensei/adobe-sensei.html) para aplicar automaticamente as Tags inteligentes aos ativos carregados, por padrão, juntamente com o texto alinhado à taxonomia comercial.
+Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente do [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) para aplicar automaticamente as Tags inteligentes aos ativos carregados, por padrão, juntamente com o texto alinhado à taxonomia comercial.
 
 ## Pré-requisitos e configuração {#smart-tags-prereqs-config}
 
@@ -30,7 +30,7 @@ As Tags Inteligentes são automaticamente provisionadas para [!DNL Adobe Experie
 A marcação inteligente habilitada do [!DNL Adobe Sensei] usa modelos de inteligência artificial para analisar conteúdo e adicionar marcas aos ativos. Dessa forma, reduz o tempo para que os usuários do DAM forneçam experiências avançadas aos clientes. As Tags inteligentes são exibidas em ordem decrescente de sua [pontuação de confiança](#confidence-score) nas propriedades do ativo.
 
 * **Ativos baseados em imagem**
-Para imagens, as Tags inteligentes se baseiam em algum aspecto visual. Imagens em muitos formatos são marcadas usando serviços de conteúdo inteligente. As Marcas Inteligentes são aplicadas aos [tipos de arquivos &#x200B;](#supported-file-formats) compatíveis que geram representações nos formatos JPG e PNG.
+Para imagens, as Tags inteligentes se baseiam em algum aspecto visual. Imagens em muitos formatos são marcadas usando serviços de conteúdo inteligente. As Marcas Inteligentes são aplicadas aos [tipos de arquivos ](#supported-file-formats) compatíveis que geram representações nos formatos JPG e PNG.
 
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets não marcado no DAM {#smart-tag-existing-assets}
 
-Os ativos existentes ou mais antigos no DAM não são marcados automaticamente com tags inteligentes. Você precisa [Reprocessar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=pt-BR#adjusting-load) o Assets manualmente para gerar Tags inteligentes para eles. Depois que o processo for concluído, navegue até a página [!UICONTROL Propriedades] de qualquer ativo contido na pasta. As marcas adicionadas automaticamente são vistas na seção [!UICONTROL Tags inteligentes] da guia [!UICONTROL Básico]. Essas Tags Inteligentes aplicadas são classificadas em ordem decrescente de [pontuação de confiança](#confidence-score).
+Os ativos existentes ou mais antigos no DAM não são marcados automaticamente com tags inteligentes. Você precisa [Reprocessar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) o Assets manualmente para gerar Tags inteligentes para eles. Depois que o processo for concluído, navegue até a página [!UICONTROL Propriedades] de qualquer ativo contido na pasta. As marcas adicionadas automaticamente são vistas na seção [!UICONTROL Tags inteligentes] da guia [!UICONTROL Básico]. Essas Tags Inteligentes aplicadas são classificadas em ordem decrescente de [pontuação de confiança](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -212,79 +212,6 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Whether you are tagging "runners" or "running" shoes, you do not need to worry about typos, wrong spellings, or alternative search terms as Smart Tags know it already!
 *  Helps your assets to become organized and categorized.
 -->
-
-## Aprimoramento da descoberta de conteúdo com metadados gerados por IA {#ai-smart-tags}
-
-Em vez de depender da entrada manual, a IA atribui tags descritivas automaticamente a ativos digitais. Essas tags geradas por IA melhoram a qualidade dos metadados, tornando os ativos mais fáceis de pesquisar, categorizar e recomendar. Essa abordagem não só aumenta a eficiência eliminando a marcação manual, mas também garante a consistência e a escalabilidade em grandes volumes de conteúdo digital. Por exemplo, se o ativo for uma imagem, a IA pode identificar objetos, cenas, emoções ou até mesmo logotipos de marca nele e gerar tags relevantes, como &quot;pôr do sol&quot;, &quot;praia&quot;, &quot;férias&quot; ou &quot;sorrir&quot;. O conteúdo gerado por IA pode aprimorar a pesquisa de ativos aproveitando técnicas de pesquisa semântica e léxica. Veja mais [Pesquisar Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
-
-![Marcas inteligentes aprimoradas](assets/enhanced-smart-tags1.png)
-
-### Como ativar metadados gerados por IA? {#enable-ai-generated-metadata}
-
-Para ativar os metadados gerados por IA:
-
-* A versão mínima necessária do AEM é `20626`.
-
-* Você deve assinar um contrato GenAI Rider. Para obter mais informações, entre em contato com o representante da Adobe.
-
-### Configurar títulos gerados por IA {#configure-ai-generated-titles}
-
-O AEM permite configurar a exibição de títulos de ativos na exibição Cartão ou na exibição em Lista na página Navegar pelos ativos. Você pode optar por exibir o título do ativo definido por você, o título gerado usando IA ou usar o título gerado por IA somente se não houver um título existente para o ativo.
-
-Para configurar títulos gerados por IA:
-
-1. Navegue até **[!UICONTROL Ferramentas > Assets > Configuração do Assets > Configuração do Smart Tag Enhancement]**.
-
-1. Selecione uma das seguintes opções:
-
-   * **Exibir Título de Controlador de Domínio (Padrão)**: especifique o título no campo **[!UICONTROL Título]**, disponível nas propriedades do ativo, para exibi-lo na exibição Cartão ou na exibição em Lista. Se o título do ativo não estiver definido, o AEM Assets exibirá o nome do arquivo.
-
-   * **Exibir título gerado pela IA**: exibe o título gerado pela IA e ignora o título especificado nas propriedades do ativo. Se o título gerado pela IA não estiver disponível para um ativo, o AEM Assets exibirá o título do ativo padrão disponível em suas propriedades.
-
-   * **Exibir o título gerado pela IA somente se o título do controlador de domínio não existir**: o AEM Assets exibe o título gerado pela IA somente se o título do ativo não estiver definido para um ativo.
-
-     ![Configurar títulos gerados por IA](assets/configure-title-ai-generated.png)
-
-### Uso de metadados gerados por IA {#using-ai-generated-smart-tags}
-
-<!--[!NOTE]
->
->The enhanced smart tags capability is available only for the newly uploaded assets.
--->
-
-Para usar o recurso aprimorado de tags inteligentes, execute as seguintes etapas:
-
-1. Na interface [!DNL Experience Manager], vá para a pasta desejada e clique em **[!UICONTROL Adicionar Assets]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> Os formatos de arquivo de imagem compatíveis são `png`, `jpg`, `jpeg`,`psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw` e `bmp`.
-
-1. Espere até que o ativo recém-carregado seja processado. Depois de concluído, vá para as propriedades do ativo.
-
-1. Vá para a guia **[!UICONTROL Gerado por IA]**. Se a versão [!DNL Experience Manager] for incompatível ou não for atualizada, essa guia não estará visível. Os seguintes campos estão lá:
-
-   * **[!UICONTROL Título gerado]:** o título fornece um título claro e conciso que captura a ideia principal de um ativo carregado, facilitando sua compreensão rápida. Ao adicionar um ativo, se você fornecer um título (em `dc:title`), ele será exibido na exibição de navegação dos ativos. Se deixado em branco, um título gerado pela IA será atribuído automaticamente.
-   * **[!UICONTROL Descrição gerada]:** A descrição fornece um resumo breve, mas informativo, sobre o que o ativo trata, ajudando os usuários e o módulo de pesquisa a compreender rapidamente sua relevância.
-   * **[!UICONTROL Palavras-chave geradas]:** são termos direcionados que representam os principais temas de um ativo, auxiliando na marcação e filtragem de conteúdo.
-
-1. [Opcional] Você pode adicionar outras marcas ou criar as suas próprias se achar que estão faltando marcas relevantes. Para fazer isso, escreva suas marcas no campo **[!UICONTROL Palavras-chave geradas]** e clique em **[!UICONTROL Salvar]**.
-
-### Desativar metadados gerados por IA {#disable-ai-generated-metadata}
-
-Você pode desativar os metadados gerados por IA no nível da pasta. Todas as pastas derivadas herdam as propriedades da pasta principal.
-
-Para desativar os metadados gerados por IA no nível da pasta:
-
-1. Navegue até **[!UICONTROL Adobe Experience Manager > Assets > Arquivos]**.
-
-1. Selecione a pasta e clique em **[!UICONTROL Propriedades]**.
-
-1. Na guia **[!UICONTROL Processamento de ativos]**, navegue até a pasta **[!UICONTROL Melhorias de tags inteligentes para imagens]**. Selecione um dos seguintes valores na lista suspensa:
-
-   * Herdada - A pasta herda as opções ativar ou desativar da pasta principal.
-
-   * Habilitar - Habilita os metadados gerados por IA para a pasta selecionada.
-
-   * Desativar - Desativa os metadados gerados por IA para a pasta selecionada.
-
-     ![Desabilitar metadados gerados por IA](assets/disable-ai-generated-metadata.png)
 
 ## Limitações e práticas recomendadas relacionadas às Tags inteligentes {#limitations-best-practices-smart-tags}
 

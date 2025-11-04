@@ -3,15 +3,20 @@ title: Aprimorar a descoberta de conteúdo com metadados gerados por IA na Exibi
 description: Saiba como aprimorar a descoberta de conteúdo com metadados gerados por IA na Exibição do administrador
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: d73ca2317d594b0d98bb9765796870cc28aa1158
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 0%
+source-wordcount: '646'
+ht-degree: 1%
 
 ---
 
 
 # Aprimoramento da descoberta de conteúdo com metadados gerados por IA {#ai-smart-tags}
+
+| IUs | Link do artigo |
+| -------- | ---------------------------- |
+| Visualização do Assets | [Clique aqui](/help/assets/ai-generated-metadata-assets-view.md) |
+| Exibição do administrador | Este artigo |
 
 Em vez de depender da entrada manual, a IA atribui tags descritivas automaticamente a ativos digitais. Essas tags geradas por IA melhoram a qualidade dos metadados, tornando os ativos mais fáceis de pesquisar, categorizar e recomendar. Essa abordagem não só aumenta a eficiência eliminando a marcação manual, mas também garante a consistência e a escalabilidade em grandes volumes de conteúdo digital. Por exemplo, se o ativo for uma imagem, a IA pode identificar objetos, cenas, emoções ou até mesmo logotipos de marca nele e gerar tags relevantes, como &quot;pôr do sol&quot;, &quot;praia&quot;, &quot;férias&quot; ou &quot;sorrir&quot;. O conteúdo gerado por IA pode aprimorar a pesquisa de ativos aproveitando técnicas de pesquisa semântica e léxica. Veja mais [Pesquisar Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
