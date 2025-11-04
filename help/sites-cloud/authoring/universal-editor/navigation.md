@@ -5,12 +5,13 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 19%
+source-wordcount: '1818'
+ht-degree: 18%
 
 ---
+
 
 # Acessar e navegar no editor universal {#navigating}
 
@@ -71,49 +72,17 @@ A interface do usuário do é dividida nessas áreas principais.
 >
 >O Editor Universal oferece várias [opções de personalização](/help/implementing/universal-editor/customizing.md) e [pontos de extensão](/help/implementing/universal-editor/extending.md) que podem ser modificadas e adicionadas à funcionalidade do editor. Por esse motivo, você pode ver opções diferentes das padrão documentadas aqui.
 
-### O cabeçalho da Experience Cloud {#experience-cloud-header}
+### Barra de navegação superior do Experience Platform {#experience-cloud-header}
 
-O cabeçalho da Experience Cloud está sempre presente na parte superior da tela. É uma âncora que informa onde você está na Experience Cloud e o ajuda a navegar por outros aplicativos da Experience Cloud.
+A barra de navegação superior do Experience Platform está sempre presente na parte superior da tela. É uma âncora que informa onde você está na Experience Cloud e o ajuda a navegar por outros aplicativos da Experience Cloud.
 
 ![O cabeçalho da Experience Cloud](assets/experience-cloud-header.png)
 
-#### Experience Manager {#experience-manager}
-
-Selecione o link do Adobe Experience Cloud à esquerda do cabeçalho para navegar até a raiz da solução da Experience Manager e acessar ferramentas como o [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), o [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) e a [Distribuição de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br).
-
-![Botão de navegação global](assets/global-navigation.png)
-
-#### Organização {#organization}
-
-Exibe a organização na qual você está conectado no momento. Selecione para alternar para outra organização se sua Adobe ID estiver associada a várias.
-
-![Indicador da organização](assets/organization.png)
-
-#### Centro de ajuda {#help}
-
-O ícone da central de ajuda fornece acesso rápido aos recursos de aprendizagem e suporte.
-
-![Ajuda](assets/help.png)
-
-#### Notificações {#notifications}
-
-Este ícone contém uma medalha com o número de [notificações](/help/implementing/cloud-manager/notifications.md) incompletas atribuídas atualmente.
-
-![Notificações](assets/notifications.png)
-
-#### Aplicativos {#solutions}
-
-Tocar ou clicar no alternador de aplicativos permite que você vá rapidamente para outras soluções da Experience Cloud.
-
-![Seletor de aplicativo](assets/solutions.png)
+Para obter detalhes sobre a barra de navegação superior do Experience Platform, consulte o [guia da interface do usuário do Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Conta {#user-properties}
 
-Selecione o ícone que representa seu usuário para acessar as configurações da conta. Se você não tiver uma imagem do usuário configurada, um ícone é atribuído aleatoriamente.
-
-![Propriedades do usuário](assets/user-properties.png)
-
-Tocar ou clicar no ícone de conta abre um menu com as configurações do usuário. Essas configurações se aplicam ao Cloud Manager em geral e seus recursos são detalhados [nessa documentação.](/help/implementing/cloud-manager/navigation.md)
+Tocar ou clicar no ícone de conta abre um menu com as configurações do usuário.
 
 ![Alternador de ambiente](assets/environment-switcher.png)
 
