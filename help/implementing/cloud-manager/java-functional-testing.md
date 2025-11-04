@@ -5,12 +5,13 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
+source-git-commit: 369e49e5a047bcfb41712aeb952a30ca90f7802f
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 76%
 
 ---
+
 
 # Teste funcional de Java™
 
@@ -102,7 +103,6 @@ Consulte [`aem-testing-clients`repositório do GitHub](https://github.com/adobe/
 
 1. A infraestrutura em container com escopo para testes funcionais apresenta os seguintes limites:
 
-
 | Tipo | Valor | Descrição |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | Quantidade de tempo de CPU reservado por execução de teste |
@@ -153,8 +153,6 @@ As propriedades do sistema são mostradas a seguir.
 | `sling.it.instance.adminUser.2` | Defina para publicar o usuário administrador. | `admin` |
 | `sling.it.instance.adminPassword.2` | Defina para publicar a senha do administrador. |                         |
 
-
-
 #### Execução de todos os testes usando Maven {#using-maven}
 
 1. Abra um shell e navegue até a pasta `it.tests` no seu repositório.
@@ -170,4 +168,3 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
-
