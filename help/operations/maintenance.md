@@ -47,14 +47,14 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis.
   <tr>
     <td>Remoção da versão</td>
     <td>Cliente</td>
-    <td>A limpeza de versão está desabilitada no momento por padrão, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a>.<br/><br/>A limpeza será em breve habilitada por padrão, com esses valores substituíveis.<br>
+    <td>A limpeza de versão está desabilitada no momento por padrão, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a>.<br/><br/>A limpeza será em breve habilitada por padrão, com esses valores substituíveis.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Limpeza do log de auditoria</td>
     <td>Cliente</td>
-    <td>A limpeza de log de auditoria está desabilitada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a>.<br/><br/>A limpeza será em breve habilitada por padrão, com esses valores substituíveis.<br>
+    <td>A limpeza de log de auditoria está desabilitada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a>.<br/><br/>A limpeza será em breve habilitada por padrão, com esses valores substituíveis.<br>
    </td>
    </td>
   </tr>
@@ -85,7 +85,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis.
     <td>Cliente</td>
     <td>
     <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
-    <p>Habilite a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_ProjectPurgeTask</code>) com as propriedades adequadas. Consulte a lista de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Propriedades OSGi</a> para <b>Configuração de Limpeza de Projetos Adobe</b> .</p>
+    <p>Habilite a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_ProjectPurgeTask</code>) com as propriedades adequadas. Consulte a lista de <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Propriedades OSGi</a> para <b>Configuração de Limpeza de Projetos Adobe</b> .</p>
   </td>
   </tr>
   </tbody>
