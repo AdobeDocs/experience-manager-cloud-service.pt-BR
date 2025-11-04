@@ -4,7 +4,7 @@ description: Adicione tags a ativos com um serviço de inteligência artificial 
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 1%
@@ -19,7 +19,7 @@ As Tags inteligentes são palavras-chave que não só aparecem no texto, mas tam
 
 Por exemplo, palavras organizadas alfabeticamente em um dicionário são mais fáceis de encontrar do que as dispersas aleatoriamente. A marcação serve um propósito semelhante. Ele organiza os ativos de acordo com a taxonomia comercial, garantindo que os mais relevantes apareçam nos resultados da pesquisa. Por exemplo, um fabricante de automóveis pode marcar imagens de carros com nomes de modelos, de modo que apenas imagens relevantes sejam exibidas ao projetar uma campanha promocional. Independentemente de marcar &quot;corredores&quot; ou &quot;tênis de corrida&quot;, os usuários não precisam se preocupar com erros de digitação, variações de ortografia ou termos de pesquisa alternativos - as Tags inteligentes reconhecem tudo isso.
 
-Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente do [Adobe Sensei](https://business.adobe.com/br/products/sensei/adobe-sensei.html) para aplicar automaticamente as Tags inteligentes aos ativos carregados, por padrão, juntamente com o texto alinhado à taxonomia comercial.
+Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente do [Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html) para aplicar automaticamente as Tags inteligentes aos ativos carregados, por padrão, juntamente com o texto alinhado à taxonomia comercial.
 
 ## Pré-requisitos e configuração {#smart-tags-prereqs-config}
 
@@ -30,7 +30,7 @@ As Tags Inteligentes são automaticamente provisionadas para [!DNL Adobe Experie
 A marcação inteligente habilitada do [!DNL Adobe Sensei] usa modelos de inteligência artificial para analisar conteúdo e adicionar marcas aos ativos. Dessa forma, reduz o tempo para que os usuários do DAM forneçam experiências avançadas aos clientes. As Tags inteligentes são exibidas em ordem decrescente de sua [pontuação de confiança](#confidence-score) nas propriedades do ativo.
 
 * **Ativos baseados em imagem**
-Para imagens, as Tags inteligentes se baseiam em algum aspecto visual. Imagens em muitos formatos são marcadas usando serviços de conteúdo inteligente. As Marcas Inteligentes são aplicadas aos [tipos de arquivos &#x200B;](#supported-file-formats) compatíveis que geram representações nos formatos JPG e PNG.
+Para imagens, as Tags inteligentes se baseiam em algum aspecto visual. Imagens em muitos formatos são marcadas usando serviços de conteúdo inteligente. As Marcas Inteligentes são aplicadas aos [tipos de arquivos ](#supported-file-formats) compatíveis que geram representações nos formatos JPG e PNG.
 
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
@@ -47,7 +47,7 @@ As Tags inteligentes são implementadas no AEM Assets usando o seguinte fluxo de
 
 1. Criar ou fazer upload de um ativo no AEM. As tags prontas para uso são geradas para imagem, vídeo e Assets baseada em texto.
 
-1. Se você descobrir que tags específicas não são geradas, poderá treinar suas tags do tipo imagem de acordo. Consulte o [Treinamento de tags inteligentes](#smart-tags-training.md).
+1. Se você descobrir que tags específicas não são geradas, poderá treinar suas tags do tipo imagem de acordo. Consulte o [Treinamento de tags inteligentes](/help/assets/smart-tags-training.md).
 
 ## Formatos de arquivo compatíveis com Tags inteligentes {#supported-file-formats}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets não marcado no DAM {#smart-tag-existing-assets}
 
-Os ativos existentes ou mais antigos no DAM não são marcados automaticamente com tags inteligentes. Você precisa [Reprocessar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=pt-BR#adjusting-load) o Assets manualmente para gerar Tags inteligentes para eles. Depois que o processo for concluído, navegue até a página [!UICONTROL Propriedades] de qualquer ativo contido na pasta. As marcas adicionadas automaticamente são vistas na seção [!UICONTROL Tags inteligentes] da guia [!UICONTROL Básico]. Essas Tags Inteligentes aplicadas são classificadas em ordem decrescente de [pontuação de confiança](#confidence-score).
+Os ativos existentes ou mais antigos no DAM não são marcados automaticamente com tags inteligentes. Você precisa [Reprocessar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) o Assets manualmente para gerar Tags inteligentes para eles. Depois que o processo for concluído, navegue até a página [!UICONTROL Propriedades] de qualquer ativo contido na pasta. As marcas adicionadas automaticamente são vistas na seção [!UICONTROL Tags inteligentes] da guia [!UICONTROL Básico]. Essas Tags Inteligentes aplicadas são classificadas em ordem decrescente de [pontuação de confiança](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -256,7 +256,7 @@ As Tags inteligentes são configuráveis e podem ser aplicadas em qualquer pasta
 
 +++**Como posso saber se a marcação precisa de treinamento?**
 
-Consulte [Determinando o requisito do treinamento de Tags inteligentes](#smart-tags-training.md#smart-tag-training-requirement).
+Consulte [Determinando o requisito do treinamento de Tags inteligentes](/help/assets/smart-tags-training.md#smart-tag-training-requirement).
 
 +++
 
