@@ -1,11 +1,11 @@
 ---
 title: Baixar ativos da Content Hub
-description: Saiba como baixar um ou vários ativos e suas representações no portal do Content Hub.
+description: Saiba como baixar um ou mais ativos e suas representações no portal do Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
+source-git-commit: f1d036b2e114730c4cce8df8848359e854943153
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -22,23 +22,35 @@ Consulte os [tipos de representações disponíveis no Content Hub](#types-of-re
 
 Para baixar um ou mais ativos e suas representações, execute as seguintes etapas:
 
-1. Para baixar um ativo, selecione ![download](/help/assets/assets/download-icon.svg), disponível no cartão de ativos, para visualizar o ativo, selecione as representações disponíveis e clique na opção **[!UICONTROL Download]** na caixa de diálogo, para baixar as representações selecionadas como um arquivo ZIP. Se a caixa de diálogo exibir uma licença de ativo (para ativo licenciado), aceite os termos e condições de licenciamento e clique em **[!UICONTROL Baixar]**.
-   ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+* Para baixar um único ativo e suas representações:
+   1. Selecione ![baixar](/help/assets/assets/download-icon.svg), disponível no cartão de ativos, para visualizar o ativo e suas representações disponíveis.
+   1. Selecione as representações disponíveis e clique na opção **[!UICONTROL Baixar]** na caixa de diálogo para baixar as representações selecionadas como um arquivo ZIP. Se a caixa de diálogo exibir uma licença de ativo (para ativo licenciado), aceite os termos e condições de licenciamento e clique em **[!UICONTROL Baixar]**.
+      ![baixar um ativo](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+Como alternativa, clique na miniatura do ativo e em ![baixar](/help/assets/assets/download-icon.svg) para selecionar e exibir as representações disponíveis na caixa de diálogo antes de baixá-las.
 
-   Como alternativa, clique na miniatura do ativo e selecione ![baixar](/help/assets/assets/download-icon.svg) para selecionar e exibir as representações disponíveis na caixa de diálogo antes de baixá-las.
+* Para baixar vários ativos e suas representações:
+   1. Selecione os ativos, clique em ![baixar](/help/assets/assets/download-icon.svg) **[!UICONTROL Baixar]** e veja a lista de ativos selecionados na caixa de diálogo **[!UICONTROL Baixar ativos]**. Clique em ![desmarcar](/help/assets/assets/Close.svg) ao lado de um ativo para desmarcá-lo da lista.
+   1. Selecione uma ou mais representações para baixá-las como um arquivo ZIP. Selecionar **[!UICONTROL Corte inteligente]** e **[!UICONTROL Representações estáticas]** baixa todas as representações estáticas e de corte inteligente disponíveis de cada ativo selecionado.
+   1. Opcional: desmarque **[!UICONTROL Criar uma pasta separada para cada ativo]** para baixar os ativos selecionados e suas representações como uma hierarquia simples em uma pasta no arquivo zip. Por padrão, o [!DNL Content Hub] baixa os ativos selecionados e suas representações em pastas separadas dentro de um arquivo zip.
 
-1. Para baixar vários ativos, selecione-os, clique em ![baixar](/help/assets/assets/download-icon.svg) **[!UICONTROL Baixar]** e consulte a lista de ativos selecionados na caixa de diálogo **[!UICONTROL Baixar ativos]**. Clique em ![desmarcar](/help/assets/assets/Close.svg) ao lado de um ativo para desmarcá-lo da lista. Selecione uma ou mais representações e clique em **[!UICONTROL Baixar]** para baixá-las como um único arquivo ZIP. Selecionar **[!UICONTROL Corte inteligente]** e **[!UICONTROL Representações estáticas]** baixa todas as representações estáticas e de corte inteligente disponíveis de cada ativo selecionado.
-   ![baixar vários ativos](/help/assets/assets/download-multiple-assets-CH.png)
+      >[!NOTE]
+      >
+      > * O Content Hub salva sua seleção (**[!UICONTROL Criar uma pasta separada para cada ativo]**) como sua preferência e a retém para downloads futuros.
+      > * A opção **[!UICONTROL Criar uma pasta separada para cada ativo]** está disponível somente para usuários [!DNL Content Hub] autenticados. [!DNL Content Hub] permite que usuários públicos baixem ativos como ativos individuais.
+
+   1. Clique em **[!UICONTROL Baixar]** para baixar os ativos selecionados e suas representações.
+      ![baixar vários ativos](/help/assets/assets/bulk-asset-download-content-hub.png)
+
 Você pode continuar usando o [!DNL Content Hub] enquanto o download está em andamento. O Content Hub não interrompe o fluxo de trabalho durante o processo de download.
-   ![baixar vários ativos](/help/assets/assets/download-assets-notification-ch.png)
+![baixar vários ativos](/help/assets/assets/download-assets-notification-ch.png)
 Se a caixa de diálogo **[!UICONTROL Baixar ativos]** exibir licenças de ativos, selecione cada licença no painel esquerdo (seção [!UICONTROL Documentos T&amp;C]) para visualizar a licença e exibir os ativos selecionados associados à licença no painel do meio da caixa de diálogo. Após examinar cada licença, selecione as execuções, clique em **[!UICONTROL Li e aceitei os termos e condições mencionados acima]** e selecione **[!UICONTROL Baixar]** para baixá-las.
-   ![baixar vários ativos](/help/assets/assets/download-multiple-licensed-assets-CH.png)
+![baixar vários ativos](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
-   >[!NOTE]
-   >
-   >* As representações serão exibidas somente se sua visibilidade for habilitada usando a Interface do Usuário [[!UICONTROL Configuração]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   >* Os usuários com acesso ao [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) podem exibir e baixar representações de corte dinâmico e inteligente.
-   >* A visualização da licença é exibida somente se o ativo for aprovado usando o ambiente de criação do [!DNL Assets as a Cloud Service]. Para obter mais informações, consulte [Gerenciar ativos licenciados no Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+>[!NOTE]
+>
+>* As representações serão exibidas somente se sua visibilidade for habilitada usando a Interface do Usuário [[!UICONTROL Configuração]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+>* Os usuários com acesso ao [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) podem exibir e baixar representações de corte dinâmico e inteligente.
+>* A visualização da licença é exibida somente se o ativo for aprovado usando o ambiente de criação do [!DNL Assets as a Cloud Service]. Para obter mais informações, consulte [Gerenciar ativos licenciados no Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
 
@@ -123,7 +135,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 ## Tipos de representações {#types-of-renditions}
 
-As representações de ativos são diferentes representações do arquivo original de um ativo. Isso pode incluir miniaturas, versões otimizadas para a Web ou dispositivos móveis, arquivos com marcas d&#39;água ou protegidos por DRM ou até mesmo elementos dinâmicos, como cortes inteligentes. Eles não precisam corresponder ao tipo de arquivo original. Em vez disso, servem para representar o ativo em vários casos de uso.
+As representações de ativos são diferentes representações do arquivo original de um ativo. Essas representações podem incluir miniaturas, versões otimizadas para Web ou dispositivos móveis, arquivos protegidos por marcas d&#39;água ou DRM ou até mesmo elementos dinâmicos, como cortes inteligentes. Eles não precisam corresponder ao tipo de arquivo original. Em vez disso, servem para representar o ativo em vários casos de uso.
 
 Saiba mais sobre [exibir e gerenciar representações em [!DNL Experience Manager Assets]](/help/assets/renditions.md).
 
@@ -133,7 +145,7 @@ Saiba mais sobre [exibir e gerenciar representações em [!DNL Experience Manage
 
 * [Representações dinâmicas](/help/assets/renditions.md#dynamic-renditions): as representações dinâmicas são versões personalizadas em tempo real de ativos para executar várias ações, como redimensionar imagens para diferentes resoluções de dispositivo ou recortar para ajustar várias taxas de proporção. Essas representações permitem oferecer experiências personalizadas e otimizadas para requisitos mais amplos. Representações dinâmicas de ativos são criadas no ambiente de autor [!DNL Adobe Experience Manager Assets]. Para obter informações sobre as etapas necessárias para habilitar representações dinâmicas, consulte [Habilitar representações dinâmicas](#enable-dynamic-media-renditions).
 
-* [Corte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): o corte inteligente se concentra exclusivamente na parte essencial de um ativo durante o processo de corte. O Corte inteligente do Dynamic Media aproveita a inteligência artificial fornecida pelo Adobe Sensei para rastrear o ponto de interesse, garantindo que nossos ativos tenham melhor aparência em todos os tamanhos de tela. O recorte inteligente [!DNL Adobe Experience Manager] exibe a largura e a altura das representações de um ativo junto com o título. Veja mais em [usando o Recorte inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [Corte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): o corte inteligente se concentra exclusivamente na parte essencial de um ativo durante o processo de corte. O Corte inteligente do Dynamic Media aproveita a inteligência artificial fornecida pelo Adobe Sensei para rastrear o ponto de interesse, garantindo que nossos ativos tenham melhor aparência em todos os tamanhos de tela. O recorte inteligente [!DNL Adobe Experience Manager] exibe a largura e a altura das representações de um ativo junto com o título. Veja mais em [usando o Recorte inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
   As representações de Recorte inteligente são exibidas e estão disponíveis para download somente se você tiver acesso ao [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). As representações de Recorte inteligente estão disponíveis somente para ativos de imagem.
 
