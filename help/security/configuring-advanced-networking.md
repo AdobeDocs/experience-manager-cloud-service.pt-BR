@@ -4,10 +4,10 @@ description: Saiba como configurar recursos avançados de rede, como VPN ou um e
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 08a73fcadf65e37b621fbbfba1e4e0b8a5e61b91
+source-git-commit: bfb39bd630c451b4649955af3c264bacefd1c477
 workflow-type: tm+mt
-source-wordcount: '5606'
-ht-degree: 19%
+source-wordcount: '5549'
+ht-degree: 18%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 19%
 
 Este artigo apresenta os recursos avançados de rede disponíveis no AEM as a Cloud Service. Esses recursos incluem autoatendimento e provisionamento de API de VPN, portas não padrão e endereços IP de saída dedicados.
 
-Além dessa documentação, também há uma série de tutoriais criados para orientá-lo em cada uma das opções avançadas de rede. Consulte [Rede avançada](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
+Além dessa documentação, também há uma série de tutoriais criados para orientá-lo em cada uma das opções avançadas de rede. Consulte [Rede avançada](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
 
 >[!IMPORTANT]
 >
 >Você pode configurar redes avançadas no AEM as a Cloud Service por meio da interface do usuário do Cloud Manager ou usando a API do Cloud Manager (por exemplo, cURL).
 >
->Este artigo se concentra no uso do método da interface do usuário do. Se preferir automatizar a configuração por meio da API, consulte o [tutorial sobre VPN (Virtual Private Network)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Este artigo se concentra no uso do método da interface do usuário do. Se preferir automatizar a configuração por meio da API, consulte o [tutorial sobre VPN (Virtual Private Network)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 >**Automatizando a rede avançada com a API**
 >Para automatizar a configuração avançada de rede (como criação de VPN), é possível usar a API do Cloud Manager:
@@ -44,7 +44,7 @@ Além dessa documentação, também há uma série de tutoriais criados para ori
 >   }'
 >```
 >
->Veja o tutorial completo e mais exemplos de API no [tutorial de VPN (Virtual Private Network)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Veja o tutorial completo e mais exemplos de API no [tutorial de VPN (Virtual Private Network)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 
 ## Visão geral {#overview}
@@ -59,7 +59,7 @@ Este artigo descreve cada uma dessas opções em detalhes e por que você pode u
 
 >[!CAUTION]
 >
->Se você já tiver sido provisionado com a tecnologia de saída dedicada herdada e quiser configurar uma dessas opções avançadas de rede, [contate o Atendimento ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&lang=pt-BR#home).
+>Se você já tiver sido provisionado com a tecnologia de saída dedicada herdada e quiser configurar uma dessas opções avançadas de rede, [contate o Atendimento ao Cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=pt-BR#home).
 >
 >Tentar configurar redes avançadas com a tecnologia de saída herdada pode afetar a conectividade do site.
 
@@ -242,7 +242,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## Endereço IP de saída dedicado {#dedicated-egress-ip-address}
 
-Um endereço IP dedicado pode melhorar a segurança ao ser integrado a fornecedores SaaS (como um fornecedor de CRM) ou outras integrações fora do AEM as a Cloud Service que oferecem uma inclui na lista de permissões de endereços IP. Incluir na lista de permissões Ao adicionar o endereço IP dedicado ao arquivo, isso garante que somente o tráfego do AEM Cloud Service possa fluir para o serviço externo. Essa abordagem está além do tráfego de qualquer outro IP permitido.
+Um endereço IP dedicado pode melhorar a segurança ao ser integrado a fornecedores SaaS (como um fornecedor de CRM) ou outras integrações fora da AEM as a Cloud Service que oferecem um incluo na lista de permissões de endereços IP. Adicionar o endereço IP dedicado ao incluo na lista de permissões garante que somente o tráfego do AEM Cloud Service possa fluir para o serviço externo. Essa abordagem está além do tráfego de qualquer outro IP permitido.
 
 O mesmo IP dedicado é aplicado a todos os ambientes em um programa e se aplica aos serviços Autor e Publicação.
 
@@ -595,19 +595,16 @@ O diagrama abaixo fornece uma representação visual de um conjunto de domínios
 <thead>
   <tr>
     <th>Padrão de domínio</th>
-    <th>Significado de saída (do AEM)</th>
-    <th>Significado de entrada (no AEM)</th>
+    <th>Descrição</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td><code>p{PROGRAM_ID}.external.adobeaemcloud.com</code></td>
-    <td>Endereço IP de saída dedicado para o tráfego flui para a Internet e não para redes privadas </td>
-    <td>As conexões da VPN seriam exibidas na CDN como provenientes desse IP. Para permitir que somente conexões da VPN entrem no AEM, configure o Cloud Manager para permitir somente esse IP e bloquear todo o resto. Consulte a seção "Restringir ingresso em conexões VPN" para obter mais detalhes.</td>
+    <td>Endereço IP de saída dedicado para o tráfego flui para a Internet e não para redes privadas.</td>
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
-    <td>N/A</td>
     <td>O IP do gateway de VPN no lado do AEM. Sua equipe de engenharia de rede pode usar esse IP para permitir somente conexões VPN, de um endereço IP específico, ao seu gateway de VPN. </td>
   </tr>
 </tbody>
