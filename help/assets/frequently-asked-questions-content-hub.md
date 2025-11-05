@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre o Content Hub
 description: Obtenha respostas para algumas das perguntas mais frequentes do Centro de conteúdo.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+source-git-commit: cc29a94e4193f7563bb83ad39aa459ea0ba9306a
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1635'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Habilitar o Content Hub em um programa de produção o implanta como parte da in
 
 Se não quiser fornecer o Content Hub aos usuários após a implantação, não atribua nenhum usuário ao perfil de produto do Content Hub no Admin Console. Consulte [Implantar Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile) para obter detalhes.
 
-## Como posso avaliar o Content Hub em minha organização, pois ele só está disponível para programas de produção/ambientes de criação de produção? {#how-can-i-evaluate-content-hub}
+## Como posso avaliar o Content Hub na minha organização? {#how-can-i-evaluate-content-hub}
 
 O Content Hub é um recurso que o Adobe fornece e mantém, e não tem nenhum código personalizado que exija validação típica via desenvolvimento/preparo/produção. Além disso, o acesso ao recurso para usuários é totalmente controlado pelo administrador, para que você possa avaliá-lo sem expô-lo a todos os usuários.
 
@@ -43,8 +43,6 @@ O Content Hub é um recurso que o Adobe fornece e mantém, e não tem nenhum có
 * Após a conclusão da avaliação, os usuários do AEM na instância do autor podem remover a aprovação de ativos de teste, aprovar ativos de produção para o Content Hub e, em seguida, o administrador do Admin Console pode adicionar todos os usuários que precisam de acesso ao Content Hub e conteúdo aprovado. Parabéns, seu Content Hub está disponível agora.
 
 Há um programa de acesso antecipado ao Content Hub em programas de sandbox e seus ambientes de produção de autor. Para obter mais informações, consulte [Introdução aos programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Para saber mais sobre o programa de acesso antecipado, entre em contato com a equipe de conta da Adobe.
-
-O Content Hub ainda não está disponível para ambientes que não sejam de produção (preparo e desenvolvimento). A disponibilidade esperada para ambientes de estágio/desenvolvimento do Assets Ultimate é março de 2025.
 
 ## Por que não vejo nenhum ativo depois de fazer logon no Content Hub? {#no-assets-in-content-hub}
 
@@ -84,7 +82,7 @@ Existem algumas configurações de como os usuários são atribuídos ao [!DNL C
    >
    >O usuário atribuído aos perfis de produto Express e Assets em dois Consoles do Administrador precisa ter o mesmo endereço de email e usar uma conta corporativa **Enterprise ou School**, e não a conta **Personal**. A configuração ideal é ter ambos os Admin Consoles configurados como **Federated ID** com uma relação de confiança configurada entre eles, para que o usuário tenha uma experiência de logon único contínua. Alguns dos planos do Express (por exemplo, Equipes do Express) não oferecem suporte ao Federated ID/logon único.
 
-Além dos direitos de produto corretos, a integração do Adobe Express no Content Hub exige que o usuário atribuído tenha pelo menos [!UICONTROL Pode editar] permissões no ambiente de criação do Assets que viabiliza o Content Hub, em pelo menos **[!UICONTROL # /content/dam/hydroated-assets/]** hierarquia de pastas, onde os usuários do Content Hub podem salvar o conteúdo criado com o Express. Consulte [Gerenciamento de permissões](/help/security/touch-ui-principal-view.md) no modo de exibição de Administração (Interface para toque) ou um [gerenciamento de permissões simplificado no modo de exibição de Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Além dos direitos de produto corretos, a integração do Adobe Express no Content Hub exige que o usuário atribuído tenha pelo menos [!UICONTROL Pode editar] permissões no ambiente de criação do Assets que viabiliza o Content Hub, em pelo menos **[#UICONTROL /content/dam/hydroated-assets/]** hierarquia de pastas, onde os usuários do Content Hub podem salvar o conteúdo criado com o Express. Consulte [Gerenciamento de permissões](/help/security/touch-ui-principal-view.md) no modo de exibição de Administração (Interface para toque) ou um [gerenciamento de permissões simplificado no modo de exibição de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Posso configurar o Content Hub para que as diretrizes de marca da minha organização sejam exibidas como um link na página inicial? {#content-hub-setup-brand-guidelines}
 

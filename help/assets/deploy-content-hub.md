@@ -3,9 +3,9 @@ title: Implantar [!DNL Content Hub]
 description: Saiba como implantar e ativar o Content Hub e fornecer acesso a usuários com diferentes tipos de privilégios (fazer upload de ativos, usuários do Adobe Express) e como fornecer privilégios de administrador aos usuários.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 772afa3fa409af63698585e139d1efdc026272d8
+source-git-commit: fbcfb88aa1b9510d1dc279475b26d85484ef3fe0
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1874'
 ht-degree: 2%
 
 ---
@@ -86,10 +86,38 @@ O Content Hub agora está ativado para o Experience Manager Assets as a Cloud Se
 
 >[!NOTE]
 >
->Você pode acessar e usar o Content Hub com até 250 usuários do Content Hub. Entre em contato com o representante da Adobe em caso de dúvidas adicionais.
+>Você pode acessar e usar o Content Hub com até 250 usuários limitados da Content Hub para o Assets Ultimate e 50 usuários do Content Hub para o Assets Prime. Entre em contato com o representante da Adobe em caso de dúvidas adicionais.
 
 
 Se você é novo no Experience Manager Assets, clique em **[!UICONTROL Adicionar programa]**, forneça os detalhes do programa (Nome do programa, configurar para produção) e clique em **[!UICONTROL Continuar]**. Você pode selecionar **[!UICONTROL Assets]** e **[!UICONTROL Content Hub]** na guia **[!UICONTROL Soluções e Complementos]**.
+
+### Ativar o Content Hub para ambientes inferiores {#enable-content-hub-lower-environments}
+
+Os seguintes créditos do Content Hub estão disponíveis para você com base na licença da AEM Assets:
+
+* Assets Ultimate: 3 créditos do Content Hub
+
+* Assets Prime: 1 crédito do Content Hub
+
+* Clientes existentes do Assets as a Cloud Service: 1 crédito do Content Hub
+
+Você utiliza um crédito para habilitar o Content Hub em cada ambiente, como produção, desenvolvimento ou preparo.
+
+Para ativar o Content Hub para ambientes inferiores:
+
+1. [Habilite o Content Hub para Experience Manager Assets usando o Cloud Manager](#enable-content-hub).
+
+1. Clique no cartão do programa para exibir a lista de ambientes disponíveis (Produção, Desenvolvimento ou Preparo).
+
+1. Clique no ambiente que você precisa ativar. A seção **[!UICONTROL Content Hub]** exibe `Content Hub is available for activation`.
+
+   ![Habilitar o Content Hub para ambientes inferiores](assets/enable-content-hub-lower-environments.png)
+
+1. Clique em **[!UICONTROL Clique para ativar]**. Clique em **[!UICONTROL Ativar]** novamente para confirmar.
+
+   O Content Hub está ativado para o ambiente selecionado.
+
+
 
 ### Instância do Content Hub e perfil de produto no Admin Console{#content-hub-instance-product-profile}
 
@@ -229,3 +257,17 @@ Para configurar usuários do Experience Manager Assets:
    >[!NOTE]
    >
    > Você não precisa ser adicionado ao [perfil de produto do Content Hub](#onboard-content-hub-users) para os usuários do Experience Manager Assets.
+
+## Ativar o Content Hub para clientes existentes do Assets as a Cloud Service {#enable-content-hub-exisitng-cs-customers}
+
+Os clientes existentes do Assets as a Cloud Service têm 250 usuários da Content Hub Limited incluídos na licença. Execute as seguintes etapas para habilitar o Content Hub:
+
+1. [Habilite o Content Hub para Experience Manager Assets usando o Cloud Manager](#enable-content-hub).
+
+1. [Integrar usuários limitados da Content Hub](#onboard-content-hub-users). Esses usuários podem acessar ativos disponíveis no portal, mas não podem adicionar novos ativos ou modificar ativos existentes.
+
+1. Se os usuários precisarem adicionar ativos ao portal do Content Hub, adicione-os ao perfil de produto `AEM Users`. Para obter mais informações, consulte [Integração de usuários do Content Hub com direitos para adicionar ativos](#onboard-content-hub-users-add-assets).
+
+1. Se os usuários precisarem acessar a Interface do Usuário da Configuração do Content Hub, adicione-os ao perfil de produto `AEM Administrators`. Para obter mais informações, consulte [Integrar administrador do Content Hub](#onboard-content-hub-administrator).
+
+Se os usuários não obtiverem os privilégios apropriados mesmo depois de adicioná-los aos perfis de produto relevantes, entre em contato com o representante da Adobe.
