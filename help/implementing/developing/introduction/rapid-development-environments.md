@@ -4,9 +4,9 @@ description: Saiba como usar Ambientes de desenvolvimento rápido para iteraçõ
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+source-git-commit: eb87467b1cd3338a409c2aeded74b3bb38d2e58c
 workflow-type: tm+mt
-source-wordcount: '5391'
+source-wordcount: '5446'
 ht-degree: 2%
 
 ---
@@ -19,13 +19,18 @@ Os RDEs permitem que os desenvolvedores implantem e revisem alterações rapidam
 
 Depois que as alterações forem testadas em um RDE, elas poderão ser implantadas em um ambiente de desenvolvimento de nuvem regular por meio do pipeline do Cloud Manager.
 
+Os ambientes de desenvolvimento e os ambientes de desenvolvimento rápido devem se limitar ao desenvolvimento, à análise de erros e aos testes funcionais, e não foram projetados para processar altas cargas de trabalho nem grandes quantidades de conteúdo.
+
+>[!NOTE]
+> Os ambientes de desenvolvimento rápido devem se limitar ao desenvolvimento, à análise de erros e aos testes funcionais, e não foram projetados para processar altas cargas de trabalho nem grandes quantidades de conteúdo.
+
 >[!NOTE]
 > Entre em contato com os desenvolvedores de RDE no [canal Discord](https://discord.com/channels/1131492224371277874/1245304281184079872) da Adobe. Sinta-se à vontade para fazer qualquer pergunta ou dar feedback sobre os tópicos RDE.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-Você pode ver vídeos adicionais demonstrando [como configurá-lo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [como usá-lo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) e o [ciclo de vida de desenvolvimento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) usando RDE.
+Você pode ver vídeos adicionais demonstrando [como configurá-lo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup), [como usá-lo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use) e o [ciclo de vida de desenvolvimento](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle) usando RDE.
 
 ## Introdução {#introduction}
 
@@ -179,7 +184,7 @@ Em ambientes em que nenhum usuário pode executar interativamente o comando de c
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * Sua própria ID da organização pode ser pesquisada usando o método documentado em [Exibir ID da organização](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
+   * Sua própria ID da organização pode ser pesquisada usando o método documentado em [Exibir ID da organização](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
 
 1. Em seguida, configure a ID do programa:
 
@@ -195,7 +200,7 @@ Em ambientes em que nenhum usuário pode executar interativamente o comando de c
 
    Essas etapas exigem que você seja membro do Perfil de Produto Cloud Manager **Developer - Cloud Service**. Consulte [Atribuir membros da equipe a perfis de produto do Cloud Manager - Atribuir o perfil de produto do desenvolvedor](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) para obter mais detalhes.
 
-Para obter mais informações e demonstração, assista ao tutorial em vídeo [como configurar um RDE (06:24)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
+Para obter mais informações e demonstração, assista ao tutorial em vídeo [como configurar um RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup).
 </details>
 
 ## Usar o RDE ao desenvolver um novo recurso {#using-rde-while-developing-a-new-feature}
@@ -524,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-Para obter mais informações e demonstração, consulte o tutorial em vídeo [como usar comandos RDE (10:01)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+Para obter mais informações e demonstração, consulte o tutorial em vídeo [como usar comandos RDE (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 
 ## Implantar em um RDE a partir de provedores Git externos {#deploy-to-rde}
@@ -1151,7 +1156,7 @@ Os desenvolvedores da Forms podem usar o AEM Forms Cloud Service Rapid Developme
 
 ## Tutorial RDE
 
-Para saber mais sobre o RDE no AEM as a Cloud Service, veja o tutorial em vídeo que demonstra [como configurá-lo, como usá-lo e o ciclo de vida do desenvolvimento (01:25)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/overview).
+Para saber mais sobre o RDE no AEM as a Cloud Service, veja o tutorial em vídeo que demonstra [como configurá-lo, como usá-lo e o ciclo de vida do desenvolvimento (01:25)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview).
 
 ## Solução de problemas {#troubleshooting}
 
