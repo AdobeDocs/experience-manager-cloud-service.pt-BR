@@ -16,13 +16,13 @@ ht-degree: 18%
 
 Este artigo apresenta os recursos avançados de rede disponíveis no AEM as a Cloud Service. Esses recursos incluem autoatendimento e provisionamento de API de VPN, portas não padrão e endereços IP de saída dedicados.
 
-Além dessa documentação, também há uma série de tutoriais criados para orientá-lo em cada uma das opções avançadas de rede. Consulte [Rede avançada](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
+Além dessa documentação, também há uma série de tutoriais criados para orientá-lo em cada uma das opções avançadas de rede. Consulte [Rede avançada](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
 
 >[!IMPORTANT]
 >
 >Você pode configurar redes avançadas no AEM as a Cloud Service por meio da interface do usuário do Cloud Manager ou usando a API do Cloud Manager (por exemplo, cURL).
 >
->Este artigo se concentra no uso do método da interface do usuário do. Se preferir automatizar a configuração por meio da API, consulte o [tutorial sobre VPN (Virtual Private Network)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Este artigo se concentra no uso do método da interface do usuário do. Se preferir automatizar a configuração por meio da API, consulte o [tutorial sobre VPN (Virtual Private Network)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 >**Automatizando a rede avançada com a API**
 >Para automatizar a configuração avançada de rede (como criação de VPN), é possível usar a API do Cloud Manager:
@@ -44,7 +44,7 @@ Além dessa documentação, também há uma série de tutoriais criados para ori
 >   }'
 >```
 >
->Veja o tutorial completo e mais exemplos de API no [tutorial de VPN (Virtual Private Network)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Veja o tutorial completo e mais exemplos de API no [tutorial de VPN (Virtual Private Network)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 
 ## Visão geral {#overview}
@@ -59,7 +59,7 @@ Este artigo descreve cada uma dessas opções em detalhes e por que você pode u
 
 >[!CAUTION]
 >
->Se você já tiver sido provisionado com a tecnologia de saída dedicada herdada e quiser configurar uma dessas opções avançadas de rede, [contate o Atendimento ao Cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=pt-BR#home).
+>Se você já tiver sido provisionado com a tecnologia de saída dedicada herdada e quiser configurar uma dessas opções avançadas de rede, [contate o Atendimento ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&lang=pt-BR#home).
 >
 >Tentar configurar redes avançadas com a tecnologia de saída herdada pode afetar a conectividade do site.
 
