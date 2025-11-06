@@ -2,10 +2,10 @@
 title: Criação de fragmentos de conteúdo
 description: Entenda como criar conteúdo para seus Fragmentos de conteúdo e crie variações desse conteúdo de acordo com a finalidade. Os fragmentos de conteúdo fornecem flexibilidade adicional para entrega headless e criação de página.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 117703794c84bebd659294a593ffd98f52ff89a2
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2778'
 ht-degree: 3%
@@ -267,7 +267,7 @@ O campo Várias linhas é aberto em tela cheia e:
 
   >[!CAUTION]
   >
-  >A sincronização só está disponível para copiar alterações *de **Main**&#x200B;para a variação*.
+  >A sincronização só está disponível para copiar alterações *de **Main**para a variação*.
   >
   >A transferência de alterações *de uma variação para **Main*** não está disponível como uma opção.
 

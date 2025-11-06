@@ -3,8 +3,8 @@ title: Adicionar seções repetíveis a um formulário
 description: Adicionar seções repetíveis a um formulário EDS
 feature: Edge Delivery Services
 exl-id: 062d5a88-48ca-421f-bf0d-1483e3cfee28
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 0%
@@ -47,7 +47,7 @@ A criação de uma seção repetível em um formulário oferece aos usuários a 
 
    Abaixo da seção repetível, os usuários encontram um botão intuitivo **Adicionar**, que facilita a adição de várias seções com facilidade.
 
-   ![seção repetível, botão Adicionar, para adicionar várias seções &#x200B;](/help/edge/assets/repeatable-section-example.png)
+   ![seção repetível, botão Adicionar, para adicionar várias seções ](/help/edge/assets/repeatable-section-example.png)
 
 
 ## Definindo Repetições Mínimas e Máximas

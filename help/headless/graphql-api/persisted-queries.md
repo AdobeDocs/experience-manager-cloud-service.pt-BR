@@ -4,7 +4,7 @@ description: Saiba como criar consultas persistentes de GraphQL no Adobe Experie
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 79%
@@ -277,11 +277,13 @@ Quando `CACHE_GRAPHQL_PERSISTED_QUERIES` é habilitado para a Dispatcher, os par
 Para evitar essa situação:
 
    * Habilitar `DispatcherNoCanonURL` no Dispatcher.
-Isso instruirá o Dispatcher a encaminhar o URL original para AEM, evitando codificações duplicadas.
+Isso instruirá o Dispatcher a encaminhar o URL original para o AEM, evitando codificações duplicadas.
 No entanto, no momento, essa configuração só funciona no nível `vhost`, portanto, se você já tiver configurações do Dispatcher para regravar URLs (por exemplo, ao usar URLs encurtadas), talvez precise de um `vhost` separado para URLs de consulta persistente.
 
    * Enviar `/` ou `\` caracteres sem codificação.
-Ao chamar a URL da consulta persistente, certifique-se de que todos os `/` ou `\` caracteres permaneçam não codificados no valor das variáveis de consulta persistente.
+
+     Ao chamar a URL da consulta persistente, certifique-se de que todos os `/` ou `\` caracteres permaneçam não codificados no valor das variáveis de consulta persistente.
+
      >[!NOTE]
      >
      >Essa opção só é recomendada para quando a solução `DispatcherNoCanonURL` não puder ser implementada por algum motivo.
@@ -305,9 +307,9 @@ Por padrão, o AEM invalidará o cache com base em uma definição de Time To Li
 
 {style="table-layout:auto"}
 
-### Instâncias do autor {#author-instances}
+### Instâncias de criação {#author-instances}
 
-Para instâncias de autor, os valores padrão são:
+Para instâncias de criação, os valores padrão são:
 
 * `max-age`  : 60
 * `s-maxage` : 60
@@ -386,7 +388,7 @@ Para gerenciar o cache globalmente, você pode [definir as configurações do OS
 
 >[!NOTE]
 >
->Para controle de cache, a configuração do OSGi é apropriada somente para instâncias de publicação. A configuração existe nas instâncias do autor, mas é ignorada.
+>Para controle de cache, a configuração do OSGi é apropriada somente para instâncias de publicação. A configuração existe nas instâncias de criação, mas é ignorada.
 
 >[!NOTE]
 >

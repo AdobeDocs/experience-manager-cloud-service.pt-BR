@@ -3,10 +3,10 @@ title: Personalização da criação de página
 description: Saiba mais sobre os mecanismos que o AEM as a Cloud Service fornece para personalizar a funcionalidade de criação de página.
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '936'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Consulte [Usando Bibliotecas do Lado do Cliente no AEM as a Cloud Service](/help
 
 As sobreposições são baseadas nas definições de nó e permitem sobrepor a funcionalidade padrão em `/libs` com sua própria funcionalidade personalizada em `/apps`.
 
-Ao criar uma sobreposição, uma cópia 1:1 do original não é necessária, pois a [fusão de recursos de sling](/help/implementing/developing/introduction/sling-resource-merger.md) permite a herança.
+Ao criar uma sobreposição, uma cópia do original :1 não é necessária, pois a [sling resource fusion](/help/implementing/developing/introduction/sling-resource-merger.md) permite a herança.
 
 Para obter mais informações, consulte o [conjunto de documentação JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
@@ -38,11 +38,11 @@ Para obter mais informações sobre sobreposições, consulte [Sobreposições p
 
 ## Adicionar nova camada (modo) {#add-new-layer-mode}
 
-Quando você está editando uma página, há vários [modos](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) disponíveis. Estes modos são implementados usando [camadas](/help/implementing/developing/introduction/ui-structure.md#layer). Eles permitem acesso a diferentes tipos de funcionalidade para o mesmo conteúdo de página. Os modos AEM padrão incluem Editar, Layout, Desenvolvedor, Timewarp, Status da Live Copy e Direcionamento.
+Quando você está editando uma página, há vários [modos](/help/sites-cloud/authoring/page-editor/introduction.md#page-modes) disponíveis. Estes modos são implementados usando [camadas](/help/implementing/developing/introduction/ui-structure.md#layer). Eles permitem acesso a diferentes tipos de funcionalidade para o mesmo conteúdo de página. Os modos padrão do AEM incluem Editar, Layout, Desenvolvedor, Timewarp, Status da Live Copy e Direcionamento.
 
 ### Exemplo de camada: status da Live Copy {#layer-example-live-copy-status}
 
-Uma instância AEM padrão fornece a camada MSM. Isso acessa os dados relacionados ao [gerenciamento multissite](/help/sites-cloud/administering/msm/overview.md) e os destaca na camada.
+Uma instância padrão do AEM fornece a camada MSM. Isso acessa os dados relacionados ao [gerenciamento multissite](/help/sites-cloud/administering/msm/overview.md) e os destaca na camada.
 
 Para vê-la em ação, edite qualquer cópia de idioma no [conteúdo de amostra do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e selecione o modo **Status da Live Copy**.
 
@@ -135,7 +135,7 @@ Veja a seguir um exemplo de definição de proporções de aspecto para o plug-i
 
 >[!NOTE]
 >
->As taxas de corte do AEM, conforme definidas pela propriedade `ratio`, estão definidas como **altura/largura**. Isso difere da definição convencional de largura/altura e é feita por motivos de compatibilidade legal. Os usuários da criação não estarão cientes de qualquer diferença desde que você defina a propriedade `name` claramente, pois ela é exibida na interface do usuário.
+>As taxas de corte AEM, conforme definidas pela propriedade `ratio`, estão definidas como **altura/largura**. Isso difere da definição convencional de largura/altura e é feita por motivos de compatibilidade legal. Os usuários da criação não estarão cientes de qualquer diferença desde que você defina a propriedade `name` claramente, pois ela é exibida na interface do usuário.
 
 #### Criação de um novo editor no local {#creating-a-new-in-place-editor}
 
@@ -178,7 +178,7 @@ O workflow predefinido, **Solicitação de ativação**:
 
 Para personalizar o comportamento nessa ativação, é possível sobrepor o fluxo de trabalho **Solicitação de ativação**:
 
-1. Em `/apps` sobreposição, o assistente `/libs/wcm/core/content/common/managepublicationwizard` de **Sites**
+1. Em `/apps` sobreposição, o assistente **de** Sites`/libs/wcm/core/content/common/managepublicationwizard`
 
    * Ele mesmo substitui a instância comum de `/libs/cq/gui/content/common/managepublicationwizard`.
 

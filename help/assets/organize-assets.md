@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 5%
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 Todos os ativos digitais, metadados e conteúdo dos documentos do Microsoft® Office e do PDF são extraídos e tornados pesquisáveis. A pesquisa permite uma filtragem sofisticada de ativos e respeita completamente as permissões apropriadas. Os metadados são abordados em detalhes em Metadados no Gerenciamento de ativos digitais.
@@ -100,7 +100,7 @@ Para obter mais informações, consulte os seguintes artigos:
 
 * [Editar metadados de ativos](meta-edit.md)
 * [Tags inteligentes no Assets](smart-tags.md)
-* [Adicionar predicado de tags ao painel de pesquisa](/help/assets/search-facets.md/#adding-a-tags-predicate)
+* [Adicionar predicado de tags ao painel de pesquisa](/help/assets/search-facets.md#adding-a-tags-predicate)
 
 ## Organizar como coleções {#organize-as-collections}
 

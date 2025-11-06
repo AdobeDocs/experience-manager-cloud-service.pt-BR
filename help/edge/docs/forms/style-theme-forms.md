@@ -3,8 +3,8 @@ title: Personalizar temas e estilos do Edge Delivery Services para AEM Forms
 description: Personalizar temas e estilos do Edge Delivery Services para AEM Forms
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-role: Admin, Architect, Developer
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 0%
@@ -240,7 +240,7 @@ Para menus suspensos, o elemento `select` é usado em vez de um elemento `input`
 
 Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estrutura HTML e estrutura CSS:
 
-+++ Estrutura HTML do grupo de rádio
++++ Estrutura HTML do grupo de rádio 
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -308,11 +308,11 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 }
 ```
 
-+++
++++ 
 
 ### Grupos de caixas de seleção
 
-+++ Estrutura HTML do grupo de caixas de seleção
++++ Estrutura HTML do grupo de caixas de seleção 
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -434,7 +434,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
      }
   ```
 
-+++
++++ 
 
 ### Componentes de painel/contêiner
 
@@ -480,7 +480,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 - Dentro do conjunto de campos, vários .Os elementos {Type}-wrapper (.text-wrapper e .password-wrapper, neste caso) representam campos de formulário individuais dentro do painel.
 - Cada invólucro contém um rótulo, campo de entrada e descrição, semelhantes aos exemplos anteriores.
 
-+++
++++ 
 
 +++ Exemplo de seletores CSS para componentes de Painel/Contêiner
 
@@ -608,7 +608,7 @@ Cada painel tem a mesma estrutura que o exemplo de painel único, com atributos 
 
 - IDs e nomes exclusivos: cada elemento no painel tem um ID exclusivo (por exemplo, name-1, email-1) e um atributo de nome com base no índice do painel (por exemplo, name=&quot;contacts[0].name&quot;). Isso permite a coleta de dados adequada quando vários painéis são enviados.
 
-+++
++++ 
 
 +++ Seletores de CSS para um painel repetível
 
@@ -698,7 +698,7 @@ Este seletor estimula todos os invólucros de campo em um painel repetível, man
 - Os atributos id e name do elemento de entrada correspondem ao nome do anexo de arquivo (claim_form).
 - A seção da lista de arquivos está inicialmente vazia. Ele é preenchido dinamicamente com o JavaScript quando os arquivos são carregados.
 
-+++
++++ 
 
 +++ Seletores de CSS para o componente de Anexo de arquivo
 
@@ -816,7 +816,7 @@ Você pode usar os Seletores de CSS para direcionar tipos de campo específicos 
 - Cada campo tem um rótulo correspondente, elemento de entrada e possíveis elementos adicionais, como espaços reservados e descrições.
 
 
-+++
++++ 
 
 
 +++ Exemplo de seletores CSS
@@ -864,7 +864,7 @@ Você também pode direcionar campos individuais por nome para aplicar estilos e
 </div>
 ```
 
-+++
++++ 
 
 +++ Exemplo de seletor de CSS
 
@@ -878,5 +878,5 @@ Você também pode direcionar campos individuais por nome para aplicar estilos e
 
 Este CSS destina-se a todos os elementos de entrada localizados em um elemento que tem a classe `field-otp`. A estrutura do HTML do seu formulário segue as convenções do Bloco de Forms adaptável, isso implica que há um container marcado com a classe &quot;field-otp&quot; que contém o campo com o nome &quot;otp&quot;.
 
-+++
++++ 
 

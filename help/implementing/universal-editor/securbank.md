@@ -3,8 +3,8 @@ title: Aplicativo de amostra do SecurBank para o editor universal
 description: Saiba mais sobre o Universal Editor com experiência prática usando o aplicativo SecurBank, projetado para mostrar a eficiência, a flexibilidade e a usabilidade do Universal Editor para acelerar a criação de conteúdo.
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -222,6 +222,7 @@ Saiba como as funções personalizadas usam campos e objetos globais para enviar
 
 A seguinte linha de código:
 `globals.functions.submitForm(globals.functions.exportData(), false);` é usado para enviar os dados do formulário após manipulação.
+
 * O primeiro argumento diz respeito aos dados a apresentar.
 * O segundo argumento representa se o formulário deve ser validado antes do envio. Ele é `optional` e definido como `true` por padrão.
 * O terceiro argumento é o `contentType` do envio, que também é opcional com o valor padrão como `multipart/form-data`. Os outros valores podem ser `application/json` e `application/x-www-form-urlencoded`.

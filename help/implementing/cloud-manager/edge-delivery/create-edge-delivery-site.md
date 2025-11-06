@@ -2,9 +2,9 @@
 title: Crie seu primeiro site do Edge Delivery com um clique
 description: Saiba como criar um site do Edge Delivery rapidamente no Cloud Manager com apenas um clique.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 0%

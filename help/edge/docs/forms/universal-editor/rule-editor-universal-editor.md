@@ -2,10 +2,10 @@
 title: Editor de regras para o Edge Delivery Services Forms
 description: Crie formulários dinâmicos e inteligentes usando o Editor de regras no Editor universal. Adicionar lógica condicional, cálculos e comportamentos interativos sem codificação.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 0%
@@ -310,7 +310,7 @@ Você criará um formulário que:
 
 1. **Abrir editor universal**:
    - Navegue até o console AEM Sites, selecione sua página, clique em **Editar**
-   - Verifique se o [Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=pt-BR) está configurado corretamente
+   - Verifique se o [Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) está configurado corretamente
 
 2. **Adicionar componentes de formulário nesta ordem**:
    - Título (H2): &quot;Formulário de cálculo de imposto&quot;
@@ -535,7 +535,7 @@ Figura: Adicionar funções personalizadas ao arquivo functions.js
 ![Função personalizada no editor de regras](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Figura: Seleção e configuração de funções personalizadas na interface do Editor de regras
 
->
+>[!NOTE]
 >
 > As melhorias no Editor de regras, incluindo regras personalizadas baseadas em eventos, suporte para variáveis dinâmicas e integração de API, também estão disponíveis para o Edge Delivery Services Forms. Para saber mais sobre esses aprimoramentos e como usá-los, consulte o artigo [Aprimoramentos do Editor de regras e Casos de uso](/help/forms/rule-editor-enhancements-use-cases.md).
 
@@ -732,7 +732,7 @@ O Forms se torna ferramentas eficientes para a coleta de dados, a qualificação
 
 **Recursos adicionais**:
 
-- [Documentação do Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=pt-BR) para contexto mais amplo
+- [Documentação do Editor Universal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) para contexto mais amplo
 - [guia do Extension Manager](/help/implementing/developing/extending/extension-manager.md) para habilitar recursos adicionais
 - [Edge Delivery Services forms](/help/edge/docs/forms/overview.md) para obter orientação abrangente sobre o desenvolvimento de formulários
 

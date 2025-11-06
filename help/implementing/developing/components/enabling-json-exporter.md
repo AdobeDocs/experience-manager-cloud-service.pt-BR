@@ -1,17 +1,17 @@
 ---
-title: Ativação de exportação em JSON para um componente
+title: Habilitação de exportação em JSON para um componente
 description: Os componentes podem ser adaptados para gerar a exportação JSON de seu conteúdo com base em uma estrutura de modelador.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 6%
 
 ---
 
-# Ativação de exportação em JSON para um componente {#enabling-json-export-for-a-component}
+# Habilitação de exportação em JSON para um componente {#enabling-json-export-for-a-component}
 
 Os componentes podem ser adaptados para gerar a exportação JSON de seu conteúdo com base em uma estrutura de modelador.
 
@@ -72,7 +72,7 @@ A interface do modelo deve ser anotada corretamente para definir quais métodos 
 
 ## Exemplo {#example}
 
-[Os Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) oferecem suporte à exportação JSON e podem ser usados como referência.
+[Os Componentes Principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) oferecem suporte à exportação JSON e podem ser usados como referência.
 
 Para obter um exemplo, consulte a implementação do Modelo Sling do Componente principal de imagem e sua interface anotada.
 
@@ -81,4 +81,4 @@ Para obter um exemplo, consulte a implementação do Modelo Sling do Componente 
 * [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [componente de Fragmento de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR)
+* [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e o [componente de Fragmento de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR)

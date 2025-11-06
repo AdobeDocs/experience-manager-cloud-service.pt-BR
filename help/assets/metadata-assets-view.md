@@ -1,11 +1,11 @@
 ---
 title: Como gerenciar metadados na visualização do Assets?
 description: Saiba como gerenciar metadados na visualização do Assets. Um melhor gerenciamento de metadados torna um ativo mais acessível, fácil de gerenciar e completo.
-role: User, Leader, Admin, Architect, Developer
+role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 81%
@@ -233,7 +233,7 @@ Execute as seguintes etapas para editar um formulário de metadados:
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

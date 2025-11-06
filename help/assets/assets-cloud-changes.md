@@ -2,9 +2,9 @@
 title: Alterações importantes no  [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Alterações importantes no [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] em comparação ao [!DNL Adobe Experience Manager] 6.5.
 feature: Release Information
-role: User, Leader, Architect, Admin
+role: User, Leader, Developer, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 8%
@@ -51,18 +51,18 @@ O [!DNL Experience Manager] as a [!DNL Cloud Service] apresenta muitos recursos 
 
 | Funcionalidade ou caso de uso | Status em [!DNL Experience Manager] como [!DNL Cloud Service] | Comentários |
 |-----|-----|-----|
-| [Detecção de ativos duplicados](/help/assets/detect-duplicate-assets.md) | Isso funciona de forma diferente | Consulte [como funcionou em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/managing/duplicate-detection). |
+| [Detecção de ativos duplicados](/help/assets/detect-duplicate-assets.md) | Isso funciona de forma diferente | Consulte [como funcionou em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/duplicate-detection). |
 | [Para representações somente de posicionamento (FPO)](/help/assets/configure-fpo-renditions.md) | Isso funciona de forma diferente | Os perfis de processamento usam microsserviços de ativos para gerar representações FPO. No Experience Manager 6.5, uma solução de terceiros, como [!DNL ImageMagick], estava disponível para gerar as representações. |
 | Writeback de metadados | Isso funciona de forma diferente | Desabilitado por padrão. Ative o iniciador do fluxo de trabalho correspondente, se necessário. Os microsserviços de ativos lidam com o write-back. |
 | Processamento de ativos carregados usando o Gerenciador de pacotes | Isso requer intervenção manual | Reprocessar manualmente usando a ação **[!UICONTROL Reprocessar Ativo]**. |
-| Detecção de tipo MIME | Não suportado. | Se você fizer upload de um ativo digital sem uma extensão ou com uma extensão incorreta, talvez ele não seja processado conforme desejado. Os usuários ainda podem armazenar os arquivos binários sem uma extensão no DAM. Consulte [Detecção de tipo MIME em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika). |
-| Geração de subativos para um ativo composto | Não suportado. | Casos de uso dependentes, como anotações, podem não ser cumpridos. Consulte [criação de subativos em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets). A visualização do PDF de alguns tipos de arquivos está disponível a partir da [versão 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
-| Editar imagens | Não suportado | A edição de ativos não é permitida no Experience Manager as a Cloud Service. Veja [como funcionou no Experience Manager 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images). |
-| Home page | Não suportado | Ver a [[!DNL Assets] experiência da Página Inicial [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/using/assets-home-page) |
-| Extrair ativos do arquivo ZIP | Não suportado | Consulte [Extração de ZIP em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip). |
+| Detecção de tipo MIME | Não suportado. | Se você fizer upload de um ativo digital sem uma extensão ou com uma extensão incorreta, talvez ele não seja processado conforme desejado. Os usuários ainda podem armazenar os arquivos binários sem uma extensão no DAM. Consulte [Detecção de tipo MIME em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika). |
+| Geração de subativos para um ativo composto | Não suportado. | Casos de uso dependentes, como anotações, podem não ser cumpridos. Consulte [criação de subativos em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets). A visualização do PDF de alguns tipos de arquivos está disponível a partir da [versão 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
+| Editar imagens | Não suportado | A edição de ativos não é permitida no Experience Manager as a Cloud Service. Veja [como funcionou no Experience Manager 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images). |
+| Home page | Não suportado | Ver a [[!DNL Assets] experiência da Página Inicial [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-home-page) |
+| Extrair ativos do arquivo ZIP | Não suportado | Consulte [Extração de ZIP em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip). |
 | Classificações do Assets | Não suportado | O widget de classificação no editor de esquema de metadados não é compatível. |
-| Filtro de disposição de conteúdo | Não suportado | Um caso de uso popular do `ContentDispositionFilter` é permitir que os administradores configurem o [!DNL Experience Manager] para fornecer arquivos do HTML e para abrir arquivos do PDF em linha, em vez de baixá-los. Nas instâncias de publicação, é possível gerenciar o descarte usando a configuração do Dispatcher. Nas instâncias de criação, o Adobe não recomenda a modificação do cabeçalho Disposição do conteúdo. Consulte [Filtro de Disposição de Conteúdo em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/security/content-disposition-filter). |
-| Modelo de sessão de fotos do produto | Não suportado | Consulte o [modelo de sessão de fotos do produto em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information). |
+| Filtro de disposição de conteúdo | Não suportado | Um caso de uso popular do `ContentDispositionFilter` é permitir que os administradores configurem o [!DNL Experience Manager] para fornecer arquivos do HTML e para abrir arquivos do PDF em linha, em vez de baixá-los. Nas instâncias de publicação, é possível gerenciar o descarte usando a configuração do Dispatcher. Nas instâncias de criação, o Adobe não recomenda a modificação do cabeçalho Disposição do conteúdo. Consulte [Filtro de Disposição de Conteúdo em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/content-disposition-filter). |
+| Modelo de sessão de fotos do produto | Não suportado | Consulte o [modelo de sessão de fotos do produto em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information). |
 | Tradução inteligente | Não suportado | Não há suporte para a tradução inteligente em [!DNL Experience Manager] como [!DNL Cloud Service]. |
 | WebDAV | Não suportado | Para obter alternativas, consulte [[!DNL Creative Cloud] Integração](/help/assets/aem-cc-integration-best-practices.md) ou [Material de referência do desenvolvedor](/help/assets/developer-reference-material-apis.md). |
 | IU Clássica | Não suportado | Somente uma interface de usuário habilitada para toque está disponível. |
@@ -93,4 +93,4 @@ O [!DNL Experience Manager] as a [!DNL Cloud Service] apresenta muitos recursos 
 >* [A arquitetura](/help/overview/architecture.md)
 >* [Alterações importantes](/help/release-notes/aem-cloud-changes.md)
 >* [Alterações importantes [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [Tutoriais em vídeo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/overview)
+>* [Tutoriais em vídeo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/overview)

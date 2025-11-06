@@ -3,10 +3,10 @@ title: Reutilizar ativos usando o MSM
 description: Use ativos em várias páginas/pastas derivadas e vinculadas a ativos principais. Os ativos permanecem sincronizados com uma cópia principal e, com alguns cliques, recebem as atualizações dos ativos principais.
 contentOwner: AG
 mini-toc-levels: 1
-role: User, Admin, Architect
+role: User, Admin, Developer
 feature: Asset Management
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3407'
 ht-degree: 10%
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html) |
 | AEM as a Cloud Service | Este artigo |
 
 A funcionalidade do Gerenciador de Vários Sites (MSM) no [!DNL Adobe Experience Manager] permite que os usuários reutilizem conteúdo criado uma vez e reutilizado em vários locais da Web. A mesma funcionalidade está disponível para ativos digitais com o nome MSM para [!DNL Assets]. Ao usar o MSM para [!DNL Assets], você pode:
@@ -263,7 +263,7 @@ Para cancelar a herança:
 
 1. Na caixa de diálogo Cancelar herança, confirme a ação com Sim.
 
-### Reativar herança {#reenable-inheritance}
+### Reabilitar herança {#reenable-inheritance}
 
 Para reativar a herança:
 

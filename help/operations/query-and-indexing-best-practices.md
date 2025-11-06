@@ -5,9 +5,9 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3088'
+source-wordcount: '3086'
 ht-degree: 40%
 
 ---
@@ -46,7 +46,7 @@ Por exemplo, se o conteúdo for armazenado em uma taxonomia semelhante a:
 /content/myUnstructuredContent/parentCategory/childCategory/contentPiece
 ```
 
-o nó `/content/myUnstructuredContent/parentCategory/childCategory` pode simplesmente ser recuperado e seus secundários podem ser analisados e usados para renderizar o componente.
+o nó `/content/myUnstructuredContent/parentCategory/childCategory` pode simplesmente ser recuperado e seus filhos podem ser analisados e usados para renderizar o componente.
 
 Além disso, ao lidar com um conjunto de resultados pequeno ou homogêneo, pode ser mais rápido percorrer o repositório e coletar os nós necessários, em vez de criar uma consulta para retornar o mesmo conjunto de resultados. Como consideração geral, as consultas devem ser evitadas sempre que possível.
 
@@ -69,7 +69,7 @@ A AEM as a Cloud Service fornece a [Ferramenta de Desempenho de Consulta](#query
 * Ela exibe consultas já executadas com suas características de desempenho relevantes e o plano de consulta.
 * Ela permite executar consultas ad-hoc em vários níveis, desde a exibição do plano de consulta até a execução da consulta completa.
 
-A Ferramenta de Desempenho da Consulta pode ser acessada por meio da [Developer Console no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries). A Ferramenta de desempenho de consulta da AEM as a Cloud Service fornece mais informações sobre os detalhes da execução da consulta na versão AEM 6.x.
+A Ferramenta de Desempenho da Consulta pode ser acessada por meio da [Developer Console no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries). A Ferramenta de desempenho de consulta da AEM as a Cloud Service fornece mais informações sobre os detalhes da execução da consulta do que a versão AEM 6.x.
 
 Este gráfico ilustra o fluxo geral de uso da Ferramenta de desempenho de consulta na otimização de consultas.
 
@@ -112,6 +112,7 @@ Consulte a seção [Consultas com conjuntos de resultados grandes](#queries-with
 ## Ferramenta de desempenho da consulta {#query-performance-tool}
 
 A Ferramenta de Desempenho de Consulta (localizada em `/libs/granite/operations/content/diagnosistools/queryPerformance.html` e disponível por meio da [Developer Console no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries)) fornece -
+
 * Uma lista de quaisquer &quot;Consultas lentas&quot;; atualmente definidas como aquelas lendo/digitalizando mais de 5000 linhas.
 * Uma lista de &quot;Consultas populares&quot;
 * A ferramenta &quot;Explicar consulta&quot; para entender como uma consulta específica será executada pelo Oak.
@@ -119,6 +120,7 @@ A Ferramenta de Desempenho de Consulta (localizada em `/libs/granite/operations/
 ![Ferramenta de Desempenho de Consulta](assets/query-performance-tool.png)
 
 As tabelas &quot;Consultas lentas&quot; e &quot;Consultas populares&quot; incluem -
+
 * A própria instrução de consulta.
 * Detalhes da última thread que executou a consulta, permitindo que a página ou o recurso do aplicativo que executa a consulta seja identificado.
 * Uma pontuação de &quot;Otimização de leitura&quot; para a consulta.
@@ -155,6 +157,7 @@ Para explicar uma consulta, faça o seguinte:
 
 Depois de selecionar `Explain`, o usuário verá um pop-up descrevendo o resultado da explicação da consulta (e da execução, se selecionada).
 Esse pop-up inclui detalhes de -
+
 * Os Índices Usados ao executar a consulta (ou nenhum índice se a consulta for executada usando [Travessia de Repositório](#repository-traversal)).
 * O tempo de execução (se a caixa de seleção `Include Execution Time` estiver marcada) e a contagem de resultados lidos (se as caixas de seleção `Read first page of results` ou `Include Node Count` estiverem marcadas).
 * O plano de execução, que permite a análise detalhada de como a consulta é executada - consulte [Lendo o Plano de Execução da Consulta](#reading-query-execution-plan) para saber como interpretar isso.
@@ -172,6 +175,7 @@ Considere a seguinte consulta -
 ```
 
 ...que contém -
+
 * 3 restrições
    * Nodetype (`dam:Asset`)
    * Caminho (descendentes de `/content/dam`)
@@ -191,6 +195,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 Esta seção do plano indica que:
+
 * Um índice é usado para executar esta consulta -
    * Nesse caso, o índice Lucene `/oak:index/damAssetLucene-9` será usado, portanto, as informações restantes estão na Sintaxe de consulta Lucene.
 * Todas as 3 restrições são tratadas pelo índice -
@@ -212,6 +217,7 @@ Considerando uma consulta diferente -
 ```
 
 ...que contém -
+
 * 3 restrições
    * Nodetype (`dam:Asset`)
    * Caminho (descendentes de `/content/dam`)
@@ -231,6 +237,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 ```
 
 Esta seção do plano indica que:
+
 * Somente 2 (das 3) restrições são tratadas pelo índice -
    * A restrição nodetype
       * implícito, porque `damAssetLucene-9` indexa somente nós do tipo dam:Asset.

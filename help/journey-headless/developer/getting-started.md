@@ -4,8 +4,8 @@ description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 87%
@@ -39,15 +39,15 @@ Este documento ajuda você a entender o AEM headless no contexto de seu próprio
 
 Antes de definir seu projeto headless no AEM, é importante entender alguns conceitos básicos do AEM.
 
-### Instância do autor {#author}
+### Instância de criação {#author}
 
-Em sua forma mais simples, o AEM consiste em uma instância de autor e uma [instância de publicação](#publish) que trabalham em conjunto para criar, gerenciar e publicar seu conteúdo.
+Em sua forma mais simples, o AEM consiste em uma instância de criação e uma [instância de publicação](#publish) que trabalham em conjunto para criar, gerenciar e publicar seu conteúdo.
 
-O conteúdo começa na instância do autor. É aqui que os autores de conteúdo criam o conteúdo. O ambiente de criação oferece várias ferramentas para que os autores criem, organizem e reutilizem o conteúdo.
+O conteúdo começa na instância de criação. É aqui que os autores de conteúdo criam o conteúdo. O ambiente de criação oferece várias ferramentas para que os autores criem, organizem e reutilizem o conteúdo.
 
 ### Instância de publicação {#publish}
 
-Depois que o conteúdo é criado na instância do autor, ele deve ser publicado para estar disponível a outros serviços para consumo. Uma instância de publicação contém todo o conteúdo que foi publicado.
+Depois que o conteúdo é criado na instância de criação, ele deve ser publicado para estar disponível a outros serviços para consumo. Uma instância de publicação contém todo o conteúdo que foi publicado.
 
 ### Serviço de visualização {#preview}
 
@@ -55,13 +55,13 @@ Antes de publicar na instância de publicação, você também pode publicar seu
 
 ### Replicação {#replication}
 
-Replicação é o ato de transferir conteúdo da instância do autor para a instância de publicação. Isso é feito automaticamente pelo AEM quando um autor ou outro usuário com direitos apropriados publica conteúdo.
+Replicação é o ato de transferir conteúdo da instância de criação para a instância de publicação. Isso é feito automaticamente pelo AEM quando um autor ou outro usuário com direitos apropriados publica conteúdo.
 
 ### Resumo das noções básicas do AEM {#aem-basics-summary}
 
 No nível mais simples, a criação de experiências digitais no AEM requer as seguintes etapas:
 
-1. Os autores de conteúdo criam o conteúdo headless na instância do autor.
+1. Os autores de conteúdo criam o conteúdo headless na instância de criação.
 1. Quando esse conteúdo estiver pronto, ele será replicado para a instância de publicação.
 1. As APIs podem ser chamadas para recuperar esse conteúdo.
 
@@ -114,7 +114,7 @@ Esse nível de integração baseia-se no primeiro nível, mas também permite qu
 
 Esse nível tem a vantagem de permitir que os autores de conteúdo criem conteúdo de forma flexível no AEM de uma maneira headful, com o conteúdo apresentado em contexto com um SPA externo incorporado, enquanto ainda entregam o conteúdo de forma headless.
 
-#### Nível 3: SPA incorporado e totalmente ativado no AEM - Modelo híbrido {#level-3}
+#### Nível 3: SPA incorporado e totalmente habilitado no AEM - Modelo híbrido {#level-3}
 
 Esse nível de integração baseia-se no nível dois, permitindo que a maioria do conteúdo no SPA externo seja editável no AEM.
 
@@ -180,7 +180,7 @@ Planeje a tradução bem no início do projeto. Considere o “especialista em t
 Crie um plano sobre qual tradução de conteúdo você precisa.
 
 * Você precisa só de línguas diferentes ou também de uma linguagem que se adapte em especificidades regionais?
-* Você precisa que o conteúdo de mídia avançada, como imagens e vídeos, sejam diferentes para locais diferentes?
+* Você precisa que o conteúdo de mídia avançada, como imagens e vídeos, sejam diferentes para localidades diferentes?
 
 Seja claro sobre o fluxo de trabalho de atualização de conteúdo. Qual é o processo de aprovação que o sistema deve oferecer suporte? Os fluxos de trabalho do AEM podem ser aproveitados para automatizar esse processo?
 
@@ -190,7 +190,7 @@ Consulte a seção [recursos adicionais](#additional-resources) para obter a doc
 
 ##### Aproveitar a hierarquia de conteúdo {#content-hierarchy}
 
-A hierarquia de pastas pode atender a duas principais preocupações com relação à gestão de conteúdo:
+A hierarquia de pastas pode atender a duas principais preocupações com relação ao gerenciamento de conteúdo:
 
 * [Tradução](#translation): o AEM gerencia a tradução de conteúdo mantendo cópias do conteúdo em pastas específicas da localidade.
 * Organização: as pastas são usadas para definir uma hierarquia de conteúdo necessária para atender às necessidades da tradução e gerenciar logicamente os fragmentos de conteúdo.
@@ -287,12 +287,12 @@ Embora seja recomendável seguir para a próxima parte da jornada de desenvolvim
 * Uma [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
 * O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 * [Tutoriais AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como utilizar as várias opções para fornecer conteúdo a endpoints headless com o AEM e escolha o que é certo para você.
-* [Gerenciamento de Conteúdo Headless Usando APIs GraphQL](https://experienceleague.adobe.com/pt-br?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=pt-BR#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. Autenticação via AdobeID é necessária.
+* [Gerenciamento de Conteúdo Headless Usando APIs GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=pt-BR#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. Autenticação via AdobeID é necessária.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Este projeto do GitHub inclui aplicativos exemplificativos que destacam APIs GraphQL do AEM.
 * [Conceitos de Criação](/help/sites-cloud/authoring/author-publish.md) - Documentação técnica do ambiente de criação do AEM, incluindo detalhes sobre a configuração de publicação do autor
 * [Publicar Páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - Documentação técnica para publicação de conteúdo no AEM
 * [Convenções de Nomenclatura](/help/implementing/developing/introduction/naming-conventions.md) - Documentação técnica das restrições de nomenclatura de página no AEM
-* [Gerenciador de Vários Sites e Tradução](/help/sites-cloud/administering/msm-and-translation.md) - Documentação técnica sobre os recursos avançados de tradução do AEM
+* [Gerenciador multisite e Tradução](/help/sites-cloud/administering/msm-and-translation.md) - Documentação técnica sobre os recursos avançados de tradução do AEM
 * [Fluxos de trabalho AEM](/help/sites-cloud/authoring/workflows/overview.md) - Documentação técnica sobre como automatizar fluxos de trabalho no AEM
 * [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md) - Documentação técnica dos Fragmentos de Conteúdo.
 * [Modelos de Fragmentos de Conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) - Documentação técnica dos Modelos de Fragmento de Conteúdo.

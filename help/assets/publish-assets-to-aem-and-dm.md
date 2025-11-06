@@ -4,7 +4,7 @@ description: A Publicação Rápida no  [!DNL Assets view] permite que você pub
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, [!DNL Dynamic Media]
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -42,18 +42,22 @@ Você pode publicar ativos no [!DNL AEM and Dynamic Media] enquanto carrega ativ
 Para publicar ativos ao carregá-los em uma pasta cujo [!DNL Dynamic Media Publish Mode] esteja definido como **[!UICONTROL Na ativação]**:
 
 1. Clique em **[!UICONTROL Adicionar Assets]** > **[!UICONTROL Procurar]** > **[!UICONTROL Procurar Arquivos]** para navegar até a pasta apropriada para carregar ativos. A seção **[!UICONTROL Opções de Publicação]** exibe o **[!UICONTROL Modo de Publicação DM]** como **[!UICONTROL Na Ativação]**.
+
    ![Carregar imagem na ativação](/help/assets/assets/upload-uactivation.svg)
-2. Selecione **[!UICONTROL Publicar no AEM e Dynamic Media]** e clique em **[!UICONTROL Carregar]**. Os ativos são publicados em [!DNL AEM and Dynamic Media] ao mesmo tempo. Para ver o status de publicação atualizado desses ativos, consulte [Verificar status de publicação](#check-publish-status).
+
+1. Selecione **[!UICONTROL Publicar no AEM e Dynamic Media]** e clique em **[!UICONTROL Carregar]**. Os ativos são publicados em [!DNL AEM and Dynamic Media] ao mesmo tempo. Para ver o status de publicação atualizado desses ativos, consulte [Verificar status de publicação](#check-publish-status).
 
 ### [!UICONTROL Modo de publicação do Dynamic Media] definido como [!UICONTROL Imediato] {#dynamic-media-publish-mode-set-to-immediate}
 
 Para publicar ativos ao carregá-los em uma pasta cujo [!UICONTROL Modo de publicação do Dynamic Media] esteja definido como **[!UICONTROL Imediato]**:
 
 1. Clique em **[!UICONTROL Adicionar Assets]** > **[!UICONTROL Procurar]** > **[!UICONTROL Procurar Arquivos]** para navegar até a pasta apropriada para carregar ativos. A seção **[!UICONTROL Opções de Publicação]** exibe o **[!UICONTROL Modo de Publicação DM]** como **[!UICONTROL Imediato]**.
-   ![imagem de carregamento de arquivo - modo imediato](/help/assets/assets/resized-image-pdf-svg-new.svg)
-Como o [!UICONTROL Modo de publicação do Dynamic Media] é **[!UICONTROL Imediato]**, os ativos carregados são publicados automaticamente no [!DNL Dynamic Media] quando você clica em **[!UICONTROL Carregar]**.
 
-2. Selecione **Publicar no AEM** para publicar os ativos carregados em [!DNL AEM] e clique em **[!UICONTROL Carregar]**.
+   ![imagem de carregamento de arquivo - modo imediato](/help/assets/assets/resized-image-pdf-svg-new.svg)
+
+   Como o [!UICONTROL Modo de publicação do Dynamic Media] é **[!UICONTROL Imediato]**, os ativos carregados são publicados automaticamente no [!DNL Dynamic Media] quando você clica em **[!UICONTROL Carregar]**.
+
+1. Selecione **Publicar no AEM** para publicar os ativos carregados em [!DNL AEM] e clique em **[!UICONTROL Carregar]**.
 
    Se você selecionar **Publicar no AEM**, os ativos serão publicados em [!DNL AEM and Dynamic Media], caso contrário, serão publicados em [!DNL Dynamic Media].
 
@@ -64,9 +68,10 @@ Como o [!UICONTROL Modo de publicação do Dynamic Media] é **[!UICONTROL Imedi
 Para publicar ativos durante o carregamento em uma pasta com [!UICONTROL Modo de publicação do Dynamic Media] definido como **[!UICONTROL Publicação seletiva]**:
 
 1. Clique em **[!UICONTROL Adicionar Assets]** > **[!UICONTROL Procurar]** > **[!UICONTROL Procurar Arquivos]** para navegar até a pasta apropriada para carregar ativos. A seção **[!UICONTROL Opções de Publicação]** exibe o **[!UICONTROL Modo de Publicação DM]** como **[!UICONTROL Publicação Seletiva]**.
-   ![modo de publicação seletiva de imagem de carregamento](/help/assets/assets/upload-selective.svg)
 
-2. Selecione **[!UICONTROL Publicar no AEM]**, **[!UICONTROL Publicar no Dynamic Media]**, ou ambos, de acordo com seus requisitos, e clique em **Carregar**.
+![modo de publicação seletiva de imagem de carregamento](/help/assets/assets/upload-selective.svg)
+
+1. Selecione **[!UICONTROL Publicar no AEM]**, **[!UICONTROL Publicar no Dynamic Media]**, ou ambos, de acordo com seus requisitos, e clique em **Carregar**.
 
    Os ativos são publicados em [!DNL AEM and Dynamic Media] com base na sua seleção.
 
@@ -77,10 +82,13 @@ Para publicar ativos durante o carregamento em uma pasta com [!UICONTROL Modo de
 Para publicar ativos usando a página de navegação de ativos:
 
 1. Clique em **[!UICONTROL Assets]** na seção **[!UICONTROL Assets Management]** disponível no painel esquerdo.
-2. Selecione um ou mais ativos ou pastas que você precisa publicar e clique em **[!UICONTROL Publicar]**.
-3. Selecione **[!UICONTROL AEM]** e clique em **[!UICONTROL Publicar]** para publicar ativos em [!DNL AEM and Dynamic Media].
+1. Selecione um ou mais ativos ou pastas que você precisa publicar e clique em **[!UICONTROL Publicar]**.
+1. Selecione **[!UICONTROL AEM]** e clique em **[!UICONTROL Publicar]** para publicar ativos em [!DNL AEM and Dynamic Media].
+
    ![navegação de ativos](/help/assets/assets/browse-uactivation-immediate.svg)
-Não é possível publicar uma pasta que tenha o Modo de Publicação [!DNL Dynamic Media] definido como **[!UICONTROL Publicação Seletiva]**. Todas as outras pastas ou ativos selecionados são publicados em [!DNL AEM and Dynamic Media] depois de selecionar [!DNL AEM].
+
+   Não é possível publicar uma pasta que tenha o Modo de Publicação [!DNL Dynamic Media] definido como **[!UICONTROL Publicação Seletiva]**. Todas as outras pastas ou ativos selecionados são publicados em [!DNL AEM and Dynamic Media] depois de selecionar [!DNL AEM].
+
    ![navegação de ativos](/help/assets/assets/browse-selective123.svg)
 
 ## Publicar ativos usando a página de resultados da pesquisa {#publish-assets-using-search-results-page}
@@ -88,10 +96,13 @@ Não é possível publicar uma pasta que tenha o Modo de Publicação [!DNL Dyna
 Para publicar ativos usando a página de resultados da pesquisa de ativos:
 
 1. Especifique os critérios na barra de pesquisa e clique no ícone de pesquisa para exibir os resultados.
-2. Selecione os ativos que você precisa publicar e clique em **[!UICONTROL Publicar].**
-3. Selecione [!DNL AEM, Dynamic Media] ou ambos de acordo com seus requisitos e clique em **[!UICONTROL Publicar]**.
+1. Selecione os ativos que você precisa publicar e clique em **[!UICONTROL Publicar].**
+1. Selecione [!DNL AEM, Dynamic Media] ou ambos de acordo com seus requisitos e clique em **[!UICONTROL Publicar]**.
+
    ![pesquisar imagem](/help/assets/assets/search-mode.svg)
-A opção de publicar em [!DNL Dynamic Media] na página de resultados da pesquisa depende do Modo de publicação [!DNL Dynamic Media] definido na pasta em que o ativo está disponível no repositório.
+
+   A opção de publicar em [!DNL Dynamic Media] na página de resultados da pesquisa depende do Modo de publicação [!DNL Dynamic Media] definido na pasta em que o ativo está disponível no repositório.
+
    >[!NOTE]
    >
    >Se você selecionar uma pasta e clicar em **[!UICONTROL Publicar]** na página de resultados da pesquisa, [!DNL Experience Manager Assets] exibirá uma opção para publicar ativos em [!DNL AEM] e não em [!DNL Dynamic Media], independentemente das [!DNL Dynamic Media] configurações de Modo de Publicação da pasta.
@@ -101,12 +112,16 @@ A opção de publicar em [!DNL Dynamic Media] na página de resultados da pesqui
 Para verificar o status publicado de um ativo ou de uma pasta:
 
 1. Clique em **[!UICONTROL Assets]** na seção **[!UICONTROL Assets Management]** disponível no painel esquerdo.
-2. Alterne para a exibição em Lista usando o Alternador de exibição. Você pode exibir propriedades de ativos, como [!UICONTROL publicação do AEM], [!UICONTROL Publicação do Dynamic Media], [!UICONTROL título], [!UICONTROL tamanho], [!UICONTROL dimensões] e assim por diante.\
+1. Alterne para a exibição em Lista usando o Alternador de exibição. Você pode exibir propriedades de ativos, como [!UICONTROL publicação do AEM], [!UICONTROL Publicação do Dynamic Media], [!UICONTROL título], [!UICONTROL tamanho], [!UICONTROL dimensões] e assim por diante.
+
    Se um ativo ou pasta não for publicado, o status das colunas **[!UICONTROL Publicação do AEM]** e **[!UICONTROL Publicação do Dynamic Media]** será exibido como **[!UICONTROL N/D]**.
+
    ![verificar status da publicação1](/help/assets/assets/check-publish-status1.png)
-Se você não conseguir exibir as colunas Publicar [!DNL AEM] e Publicar [!DNL Dynamic Media] na exibição em Lista:
+
+   Se você não conseguir exibir as colunas Publicar [!DNL AEM] e Publicar [!DNL Dynamic Media] no modo de exibição de Lista:
+
    1. Clique em ![configurações](/help/assets/assets/settings-icon.svg) e selecione as colunas **[!UICONTROL Publicação do AEM]** e **[!UICONTROL Publicação do Dynamic Media]** na caixa de diálogo **[!UICONTROL Colunas Configuráveis]**.
-   2. Clique em **[!UICONTROL Confirmar]**. [!DNL Experience Manager Assets] adiciona as colunas selecionadas à exibição de Lista.
+   1. Clique em **[!UICONTROL Confirmar]**. [!DNL Experience Manager Assets] adiciona as colunas selecionadas à exibição de Lista.
 
       ![verificar status da publicação2](/help/assets/assets/check-publish-status2.png)
 

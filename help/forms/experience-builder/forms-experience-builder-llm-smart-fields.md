@@ -4,14 +4,14 @@ description: Saiba como criar campos de formulário inteligentes com opções pr
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 0%
 
 ---
-
 
 # Campos inteligentes aprimorados por LLM no Forms Experience Builder {#llm-enhanced-smart-fields}
 
@@ -296,4 +296,3 @@ Combine o conhecimento sobre LLM com os dados de sua organização:
 * [Criação de formulários alimentados por IA](forms-experience-builder-prompt-examples-library.md)
 * [Criação de regras e lógica de negócios](forms-experience-builder-prompt-examples-library.md#rule-creation--business-logic)
 * [Envio e integração de formulários](form-submission-integration.md)
-

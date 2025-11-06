@@ -4,7 +4,7 @@ description: Saiba como usar o Analisador de práticas recomendadas para entende
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 37%
@@ -23,7 +23,7 @@ ht-degree: 37%
 
 Siga a seção abaixo para entender considerações importantes na execução do Analisador de práticas recomendadas (BPA):
 
-* O relatório do BPA é criado usando a saída do [Detector de Padrões](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=pt-BR) do Adobe Experience Manager (AEM). A versão do Detector de padrões usada pelo BPA está incluída no pacote de instalação do BPA.
+* O relatório do BPA é criado usando a saída do [Detector de Padrões](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html) do Adobe Experience Manager (AEM). A versão do Detector de padrões usada pelo BPA está incluída no pacote de instalação do BPA.
 
 * O BPA só pode ser executado pelo usuário **administrador** ou por um usuário do grupo **administradores**.
 
@@ -222,6 +222,7 @@ O valor &quot;\N&quot; em uma coluna para uma conclusão individual indica que n
 O BPA fornece uma interface HTTP que pode ser usada como alternativa à interface do usuário no AEM. A interface oferece suporte a comandos HEAD e GET. Ela pode ser usada para gerar o relatório do BPA e retorná-lo em um dos três formatos: JSON, CSV e valores separados por tabulação (TSV).
 
 As seguintes URLs estão disponíveis para acesso HTTP, em que `<host>` é o nome do host e da porta, se necessário, do servidor no qual o BPA está instalado:
+
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` para formato JSON
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` para formato CSV
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` para formato TSV
@@ -286,8 +287,8 @@ O valor dessa propriedade é o tempo de vida do cache em segundos. Um administra
 
 O BPA usa uma conta de usuário do serviço do sistema chamada `repository-reader-service` para executar o Detector de Padrões. Essa conta está disponível no AEM 6.2 e nas versões posteriores. No AEM 6.1, essa conta deve ser criada *antes* da instalação do BPA, executando as seguintes etapas:
 
-1. Siga as instruções em [Criar um novo usuário de serviço](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=pt-BR#creating-a-new-service-user) para criar um usuário. Defina a UserID como `repository-reader-service`, deixe o Caminho intermediário vazio e clique na marca de seleção verde.
+1. Siga as instruções em [Criar um novo usuário de serviço](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) para criar um usuário. Defina a UserID como `repository-reader-service`, deixe o Caminho intermediário vazio e clique na marca de seleção verde.
 
-2. Siga as instruções em [Gerenciar usuários e grupos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=pt-BR#managing-users-and-groups), especificamente as instruções para adicionar usuários a um grupo, para adicionar o usuário `repository-reader-service` ao grupo `administrators`.
+2. Siga as instruções em [Gerenciar usuários e grupos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), especificamente as instruções para adicionar usuários a um grupo, para adicionar o usuário `repository-reader-service` ao grupo `administrators`.
 
 3. Instale o pacote de BPA por meio do Gerenciador de pacotes na instância do AEM de origem. (Essa etapa adiciona a alteração de configuração necessária à configuração ServiceUserMapper do usuário de serviço do sistema `repository-reader-service`.)

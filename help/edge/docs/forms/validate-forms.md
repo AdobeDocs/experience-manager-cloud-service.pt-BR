@@ -5,8 +5,8 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 16e1d42a-42d0-4335-ba81-feedea7ed7d7
-role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
@@ -19,9 +19,9 @@ O bloco adaptável do Forms tem recursos de validação integrados. Essas valida
 
 ## Noções básicas sobre tipos de campo e validação
 
-O Bloco Forms Adaptável oferece suporte a uma variedade de [tipos de entrada HTML-5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input#input_types), incluindo texto, email, número, data e muito mais. Ele também acomoda [textarea](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea), select e fieldset, juntamente com recursos abrangentes de validação de entrada inerentes ao HTML-5.
+O Bloco Forms Adaptável oferece suporte a vários [tipos de entrada HTML-5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input#input_types), incluindo texto, email, número, data e muito mais. Também acomoda [textarea](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea), select e fieldset, juntamente com recursos abrangentes de validação de entrada inerentes ao HTML-5.
 
-O usa tipos de campo HTML para definir o tipo de dados que um usuário pode inserir. Tipos de campos diferentes têm regras de validação integradas diferentes:
+O usa tipos de campo do HTML para definir o tipo de dados que um usuário pode inserir. Tipos de campos diferentes têm regras de validação integradas diferentes:
 
 Email: esse tipo de campo valida automaticamente a entrada do usuário em relação a um formato de endereço de email comum. Os usuários que inserirem um email inválido verão uma mensagem de erro.
 Número: esse tipo de campo permite apenas entrada numérica. Os usuários que inserirem caracteres não numéricos receberão um erro.

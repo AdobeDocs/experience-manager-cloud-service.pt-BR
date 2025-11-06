@@ -7,10 +7,10 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 50%
+ht-degree: 55%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 50%
 
 >[!NOTE]
 >
-> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
+> A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -33,16 +33,15 @@ Você pode usar o componente **Assinatura Escrita** para desenhar (Rabiscar) ass
 ## Várias opções disponíveis na Janela de assinatura
 
 * **A:** Clique no ícone **Pincel de Tinta** para desenhar sua assinatura na tela.
-* **B:** Clique no ícone **Limpar** para limpar a assinatura na tela.
-* **C:** Clique no ícone **Geolocalização** para adicionar a geolocalização junto com a assinatura.
-* **D:** Clique no ícone **Teclado** para digitar seu nome na tela.
+* **B:** clique no ícone de **Limpar** para limpar a assinatura na tela.
+* **C:** clique no ícone de **Geolocalização** para adicionar a geolocalização junto com a assinatura.
+* **D:** clique no ícone de **Teclado** para digitar o seu nome na tela.
 
-Depois de selecionar o ícone Concluído ![aem_forms_save](assets/aem_forms_save.png) na janela Assinatura escritas, você não poderá editar a assinatura. No caso, se você quiser editar a assinatura, desconsidere a assinatura atual e assine novamente usando a opção Pincel/Teclado acima.
+Depois de selecionar o ícone Concluído ![aem_forms_save](assets/aem_forms_save.png) na janela Assinatura escritas, você não poderá editar a assinatura. Caso você queira editar a assinatura, desconsidere a assinatura atual e assine novamente com a opção de pincel/teclado acima.
 
 Você pode selecionar o ícone **Configurar** ![configurar](assets/configure.png) para definir a proporção da tela Assinatura Escrita.
+
 * Quando a proporção da tela Assinatura Escrita for menor que 1, as informações de localização geográfica serão adicionadas na parte inferior da tela Assinatura Escrita.
-
-
 * Quando a proporção da tela Assinatura Escrita for maior que 1, as informações de geolocalização serão adicionadas ao lado direito da tela Assinatura Escrita.
 
 
@@ -52,8 +51,7 @@ Você pode selecionar o ícone **Configurar** ![configurar](assets/configure.png
 
 >[!NOTE]
 >
->As assinaturas são sempre salvas em formato PNG.
->
+>As assinaturas são sempre salvas no formato PNG.
 
 ## Configurar um formulário adaptável para usar a assinatura à mão {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -96,9 +94,9 @@ Você pode personalizar facilmente o componente Assinatura Escrita para visitant
 
 ![Guia Conteúdo de ajuda](/help/forms/assets/scribblesig-help.png)
 
-* **Descrição curta**: uma descrição curta é uma breve explicação em texto que fornece informações adicionais ou esclarecimentos sobre a finalidade de um campo de formulário específico. Ela ajuda o usuário a entender qual tipo de dados deve ser inserido no campo e pode fornecer diretrizes ou exemplos para ajudar a garantir que as informações inseridas sejam válidas e atendam aos critérios desejados. Por padrão, as descrições curtas permanecem ocultas. Ative a opção **Sempre mostrar descrição curta** para exibi-la abaixo do componente.
+* **Descrição curta**: uma descrição curta é uma breve explicação em texto que fornece informações adicionais ou esclarecimentos sobre a finalidade de um campo de formulário específico. Ela ajuda o usuário a entender qual tipo de dados deve ser inserido no campo e pode fornecer diretrizes ou exemplos para ajudar a garantir que as informações inseridas sejam válidas e atendam aos critérios desejados. Por padrão, as descrições curtas permanecem ocultas. Habilite a opção **Sempre mostrar descrição curta** para exibi-la abaixo do componente.
 
-* **Sempre mostrar descrição curta**: ative essa opção para exibir a descrição curta abaixo do componente.
+* **Sempre mostrar descrição curta**: habilite essa opção para exibir a descrição curta abaixo do componente.
 
 * **Descrição longa** - Refere-se às informações ou orientações adicionais fornecidas ao usuário para ajudá-lo a preencher um campo de formulário corretamente. Ele é exibido quando o usuário clica no ícone de ajuda (i) colocado ao lado do componente. Ele fornece informações mais detalhadas do que o rótulo de um campo de formulário ou texto de espaço reservado e foi projetado para ajudar o usuário a entender os requisitos ou restrições do campo. Ele também pode oferecer sugestões ou exemplos para tornar o preenchimento do formulário mais fácil e preciso.
 
@@ -108,7 +106,7 @@ Você pode personalizar facilmente o componente Assinatura Escrita para visitant
 
 Na guia **Acessibilidade**, é possível definir os valores dos rótulos de [acessibilidade ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) do componente. Várias opções estão disponíveis para usar o texto para leitor de tela:
 
-* **Precedência de Reader de Tela** - Precedência de Reader de Tela refere-se ao texto adicional especificamente destinado a ser lido por tecnologias assistivas, como leitores de tela, usados por indivíduos com deficiência visual. Esse texto fornece uma descrição de áudio da finalidade do campo de formulário e pode incluir informações sobre o título do campo, a descrição, o nome e quaisquer mensagens relevantes (texto personalizado). O texto do leitor de tela ajuda a garantir que o formulário seja acessível a todos os usuários, incluindo aqueles com deficiências visuais, e fornece a eles uma compreensão completa do campo de formulário e de seus requisitos.
+* **Precedência de Screen Reader** - A Precedência de Screen Reader refere-se a um texto adicional especificamente destinado a ser lido por tecnologias assistivas, como leitores de tela, usados por indivíduos com deficiência visual. Esse texto fornece uma descrição de áudio da finalidade do campo de formulário e pode incluir informações sobre o título do campo, a descrição, o nome e quaisquer mensagens relevantes (texto personalizado). O texto do leitor de tela ajuda a garantir que o formulário seja acessível a todos os usuários, incluindo aqueles com deficiências visuais, e fornece a eles uma compreensão completa do campo de formulário e de seus requisitos.
 
    * **Texto personalizado**: selecione essa opção para usar o texto personalizado para rótulos de acessibilidade ARIA. Selecionar essa opção exibe a caixa de diálogo Texto personalizado. Você pode adicionar informações relevantes na caixa de diálogo Texto personalizado.
    * **Descrição curta**: selecione esta opção para usar a descrição para rótulos de acessibilidade ARIA.

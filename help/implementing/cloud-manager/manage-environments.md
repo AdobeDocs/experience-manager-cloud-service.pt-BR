@@ -4,8 +4,8 @@ description: Saiba mais sobre os tipos de ambientes que você pode criar e como 
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2489'
 ht-degree: 35%
@@ -182,7 +182,7 @@ Após a criação, será aplicada uma lista de permissões de IP padrão ao serv
 
 Um usuário com as permissões necessárias deve concluir as etapas a seguir antes de compartilhar a URL do serviço de visualização para garantir o acesso a ela.
 
-1. Crie uma Lista de permissões de IP apropriada, aplique-a ao serviço de visualização e desaplique imediatamente a inclui na lista de permissões `Preview Default [<envId>]`.
+1. Crie uma Lista de permissões IP apropriada, aplique-a ao serviço de visualização e desaplique imediatamente o incluo na lista de permissões `Preview Default [<envId>]`.
 
    Consulte [Aplicar e desaplicar Listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) para obter mais detalhes.
 
@@ -308,7 +308,7 @@ Uma nova guia é aberta no navegador com a página de logon do **Developer Conso
 
 Somente um usuário com a função **Desenvolvedor** terá acesso ao **Developer Console**. No entanto, para programas de sandbox, qualquer usuário com acesso ao programa de sandbox tem acesso ao **Developer Console**.
 
-Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obter mais detalhes.
+Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obter mais detalhes.
 
 Esta opção também está disponível na guia **Ambiente** da janela **Visão geral** ao clicar no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de um ambiente individual.
 

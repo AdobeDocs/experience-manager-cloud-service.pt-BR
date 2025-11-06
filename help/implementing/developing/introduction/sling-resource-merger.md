@@ -3,15 +3,15 @@ title: Uso da Fusão de recursos do Sling no Adobe Experience Manager as a Cloud
 description: O Sling Resource Merger fornece serviços para acessar e mesclar recursos
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 1%
 
 ---
 
-# Uso do Sling Resource Merger no AEM as a Cloud Service {#using-the-sling-resource-merger-in-aem}
+# Uso da Mesclagem de recursos do Sling no AEM as a Cloud Service {#using-the-sling-resource-merger-in-aem}
 
 ## Propósito {#purpose}
 
@@ -198,7 +198,7 @@ Eles, juntamente com a funcionalidade padrão, permitem:
       * tipo: `String[]`
       * value: uma lista dos nós filhos (conforme definido em `/libs`) a serem ocultados/ignorados
 
-      O curinga &ast; pode ser usado para ocultar/ignorar todos os nós filhos.
+      O curinga &amp;ast; pode ser usado para ocultar/ignorar todos os nós filhos.
 
 * **Reordenar nós**
 

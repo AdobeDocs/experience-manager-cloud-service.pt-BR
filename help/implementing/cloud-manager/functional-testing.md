@@ -4,8 +4,8 @@ description: Saiba mais sobre os três diferentes tipos de testes funcionais int
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 5%
@@ -58,7 +58,7 @@ O diagrama a seguir fornece uma exibição detalhada dos quality gates (portais 
 
 É recomendável fornecer os testes de unidade para seu aplicativo AEM, que são a base de cada estratégia de teste. Eles são destinados a funcionar rápido e frequentemente e dar feedback precoce e rápido. Eles são totalmente integrados aos fluxos de trabalho do desenvolvedor, ao seu próprio CI/CD e aos pipelines de implantação do AEM Cloud Service.
 
-Eles são implementados usando JUnit e executados com Maven. Consulte o [módulo principal do Arquétipo de Projeto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) para obter um exemplo de teste unitário para o AEM e a introdução.
+Eles são implementados usando JUnit e executados com Maven. Consulte o [módulo principal do Arquétipo de Projeto do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests) para obter um exemplo de teste unitário para o AEM e a introdução.
 
 ### Qualidade do código
 

@@ -2,7 +2,7 @@
 title: Gerenciamento de principais após a migração
 description: Saiba como configurar usuários e grupos no IMS e no AEM
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
-source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 4%
@@ -53,10 +53,11 @@ Para saber a quais grupos cada usuário deve pertencer, use o Relatório de Usu�
 A criação de uma coleção ou pasta privada do Assets também cria automaticamente alguns grupos para gerenciar o acesso a esse conteúdo do Assets.  Esses grupos são migrados se forem mencionados no conteúdo migrado, mas não estão configurados para vincular diretamente aos grupos IMS. No AEM, eles permanecem como &quot;grupos locais&quot; e não podem ser gerenciados por meio do IMS.
 
 Como esses grupos não estão no IMS, a ferramenta de upload em massa não pode ser usada para criar usuários como seus membros diretos.  Os usuários do IMS que também estão no AEM podem ser adicionados a esses grupos individualmente, mas fazer isso em massa requer uma etapa extra.  Esta é uma maneira de fazer isso:
+
 * Crie um novo grupo ou grupos no Admin Console/IMS para acessar coleções/pastas privadas e configure-os para o AEM.
 * Faça logon como membro dos grupos para que eles sejam criados na AEM.
 * Para as coleções ou pastas privadas migradas, use a interface do usuário do Assets para adicionar o novo grupo como editor/proprietário/visualizador.
 * Adicionar usuários (ou fazer upload em massa) ao(s) novo(s) grupo(s) no Admin Console.
 * Quando o usuário fizer logon pela primeira vez, o usuário do IMS será criado no AEM e ele deverá ter acesso ao(s) novo(s) grupo(s) e, portanto, à coleção original ou aos grupos de pastas privadas.
 
-Observação: para atribuição de usuários em massa, as etapas acima devem ser usadas para criar os usuários no IMS; os usuários que já existem no IMS não podem ser criados novamente por meio de carregamento em massa, embora o editor de itens em massa possa ser usado para fazer esses tipos de alterações (Consulte [Carregamento de usuário em massa do Admin Console](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html) em **Editar detalhes do usuário**).
+Observação: para atribuição de usuários em massa, as etapas acima devem ser usadas para criar os usuários no IMS; os usuários que já existem no IMS não podem ser criados novamente por meio de carregamento em massa, embora o editor de itens em massa possa ser usado para fazer esses tipos de alterações (Consulte [Carregamento de usuário em massa do Admin Console](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) em **Editar detalhes do usuário**).

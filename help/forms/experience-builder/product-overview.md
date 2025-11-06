@@ -5,16 +5,14 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 1%
 
 ---
-
-
-
 
 # Visão geral
 
@@ -59,7 +57,7 @@ O Experience Builder exige o ambiente de autor de produção do AEM Forms as a C
 
 | ![Editor Forms adaptável - Forms Experience Builder](/help/edge/docs/forms/assets/adaptive-forms-editor.gif "Editor Forms adaptável - Forms Experience Builder") | ![Editor Universal - Forms Experience Builder](/help/forms/assets/ue-forms-experience-builder.gif "Editor Universal - Forms Experience Builder") |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| *Editor Forms adaptável* | *Editor Universal* |
+| *Editor Forms adaptável* | *Universal Editor* |
 
 <!-- >
 

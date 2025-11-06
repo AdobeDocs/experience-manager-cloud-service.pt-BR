@@ -3,8 +3,8 @@ title: Adicionar o ContextHub a páginas e acessar lojas
 description: Adicione o ContextHub às suas páginas para ativar os recursos do ContextHub e vincular às bibliotecas de JavaScript do ContextHub
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 0%
@@ -43,12 +43,12 @@ Todos os tipos de armazenamento são extensões da classe [`ContextHub.Store.Cor
 Os armazenamentos do Context Hub usam um dos seguintes modos de persistência:
 
 * **Local:** usa o HTML5 localStorage para manter os dados. O armazenamento local é mantido no navegador em todas as sessões.
-* **Sessão:** usa HTML5 sessionStorage para manter os dados. O armazenamento de sessão é mantido pela duração da sessão do navegador e está disponível em todas as janelas do navegador.
+* **Sessão:** usa sessionStorage HTML5 para manter os dados. O armazenamento de sessão é mantido pela duração da sessão do navegador e está disponível em todas as janelas do navegador.
 * **Cookie:** usa o suporte nativo de cookies do navegador para armazenamento de dados. Os dados de cookie são enviados de e para o servidor em solicitações HTTP.
 * **Window.name:** usa a propriedade window.name para manter os dados.
 * **Memória:** usa um objeto JavaScript para persistir dados.
 
-Por padrão, o Context Hub usa o modo de persistência local. Se o navegador não suportar ou permitir HTML5 localStorage, a persistência de sessão será usada. Se o navegador não suportar ou permitir HTML5 sessionStorage, a persistência Window.name será usada.
+Por padrão, o Context Hub usa o modo de persistência local. Se o navegador não suportar ou permitir HTML5 localStorage, a persistência de sessão será usada. Se o navegador não suportar ou permitir sessionStorage HTML5, a persistência Window.name será usada.
 
 ### Armazenamento de dados {#store-data}
 

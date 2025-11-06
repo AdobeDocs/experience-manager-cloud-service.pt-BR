@@ -2,9 +2,9 @@
 title: Extensão do Universal Editor
 description: Saiba mais sobre as diferentes opções para estender os recursos do Universal Editor para atender às necessidades dos autores de conteúdo.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Se quiser explorar as possibilidades de criar suas próprias extensões, consult
 
 >[!TIP]
 >
->Se preferir aprender por exemplo, consulte o [tutorial de extensibilidade da interface do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
+>Se preferir aprender por exemplo, consulte o [tutorial de extensibilidade da interface do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
 
 [Usando o Extension Manager no AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), você pode habilitar ou desabilitar suas extensões por instância, acessar extensões primárias do Adobe, inclusive as do Universal Editor, e muito mais.
 

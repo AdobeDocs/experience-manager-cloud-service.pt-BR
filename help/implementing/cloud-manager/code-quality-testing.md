@@ -1,20 +1,20 @@
 ---
 title: Teste de qualidade do código
-description: Saiba como funciona o teste de qualidade do código dos pipelines e como ele pode melhorar a qualidade das suas implantações.
+description: Saiba como o teste de qualidade de código de pipelines funciona e como ele pode melhorar a qualidade de suas implantações.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
 # Teste de qualidade do código {#code-quality-testing}
 
-Saiba como funciona o teste de qualidade do código dos pipelines e como ele pode melhorar a qualidade das suas implantações.
+Saiba como o teste de qualidade de código de pipelines funciona e como ele pode melhorar a qualidade de suas implantações.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_codequalitytests"
@@ -29,13 +29,13 @@ Consulte [Configuração do pipeline de CI-CD](/help/implementing/cloud-manager/
 
 ## Regras de qualidade do código {#understanding-code-quality-rules}
 
-O teste de qualidade do código verifica o código-fonte para garantir que atenda a determinados critérios de qualidade. Uma combinação de SonarQube e exame em nível de pacote de conteúdo usando OakPAL implementa essa etapa. Há mais de 100 regras, que combinam regras do Java genéricas e regras específicas do AEM. Algumas regras específicas do AEM são baseadas nas práticas recomendadas pela Engenharia do AEM e são conhecidas como [regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+O teste de qualidade do código verifica o código-fonte para garantir que atenda a determinados critérios de qualidade. Uma combinação de SonarQube e exame em nível de pacote de conteúdo usando OakPAL implementa essa etapa. Há mais de 100 regras, que combinam regras Java genéricas e regras específicas do AEM. Algumas regras específicas da AEM são baseadas nas práticas recomendadas pela Engenharia da AEM e são conhecidas como [regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
-Você pode baixar a lista completa atual de regras [usando este link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+Você pode baixar a lista completa atual de regras [usando este link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 >[!IMPORTANT]
 >
->A partir de quinta-feira, 13 de fevereiro de 2025 (Cloud Manager 2025.2.0), a Qualidade do código Cloud Manager está usando uma versão atualizada do SonarQube 9.9 e uma lista atualizada de regras que você pode [baixar aqui](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
+>A partir de quinta-feira, 13 de fevereiro de 2025 (Cloud Manager 2025.2.0), a qualidade de código do Cloud Manager usará uma versão atualizada do SonarQube 9.9 e uma lista atualizada de regras que você pode [baixar aqui](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS-2024-12-0.xlsx).
 
 ### Classificações de três níveis {#three-tiered-gate}
 
@@ -57,7 +57,7 @@ Os resultados desta etapa são fornecidos como **Classificações**.
 
 A tabela a seguir resume as classificações e os limites de falha para cada uma das categorias: crítico, importante e informativo.
 
-| Nome | Definição | Categoria | Limite de falha |
+| Nome | Definição | Categoria | Limite de falhas |
 |--- |--- |--- |--- |
 | Classificação de segurança | A = Sem vulnerabilidades <br/>B = Pelo menos 1 vulnerabilidade baixa<br/> C = Pelo menos 1 vulnerabilidade alta <br/>D = Pelo menos 1 vulnerabilidade crítica <br/>E = Pelo menos 1 vulnerabilidade limitante | Crítico | &lt; B |
 | Classificação de confiabilidade | A = Sem erros <br/>B = Pelo menos 1 erro baixo <br/>C = Pelo menos 1 erro alto <br/>D = Pelo menos 1 erro crítico <br>E = Pelo menos 1 erro limitante | Crítico | &lt; D |

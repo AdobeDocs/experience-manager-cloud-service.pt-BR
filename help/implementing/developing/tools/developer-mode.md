@@ -5,8 +5,8 @@ description: O Modo de desenvolvedor abre um painel lateral com várias guias qu
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -31,8 +31,7 @@ Isso ajuda um desenvolvedor a:
 >
 >Modo de desenvolvedor:
 >
->* Não está disponível em dispositivos móveis ou janelas pequenas na área de trabalho (devido a restrições de espaço).
->  * Isso ocorre quando a largura é menor que 1024px.
+>* Não está disponível em dispositivos móveis ou janelas pequenas na área de trabalho (devido a restrições de espaço). Isso ocorre quando a largura é menor que 1024px.
 >* Está disponível somente para usuários que são membros do grupo `administrators`.
 
 ## Abrindo o Modo de Desenvolvedor {#opening-developer-mode}
@@ -56,7 +55,7 @@ Isso mostra uma árvore de componentes que:
 * Mostra o tempo computacional do lado do servidor necessário para renderizar o componente.
 * Permite expandir a árvore e selecionar componentes específicos dentro dela. A seleção fornece acesso aos detalhes do componente; como:
    * Caminho do repositório
-   * Links para scripts (acessados em CRXDE Lite)
+   * Links para scripts (acessados no CRXDE Lite)
    * Detalhes do componente como visto no [Console de Componentes](/help/sites-cloud/authoring/components-console.md)
 * Os componentes selecionados na árvore são indicados por uma borda azul no editor.
 

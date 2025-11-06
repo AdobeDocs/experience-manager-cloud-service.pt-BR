@@ -3,8 +3,8 @@ title: Tag de decoração
 description: Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro de si mesmo. Para desenvolvedores, o AEM oferece lógica simples e clara controlando as tags de decoração que envolvem componentes incluídos.
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 8%
@@ -15,8 +15,8 @@ ht-degree: 8%
 
 Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro de si mesmo. Isso serve principalmente a dois propósitos:
 
-* Um componente só pode ser editado quando encapsulado com um elemento HTML.
-* O elemento de encapsulamento é usado para aplicar classes de HTML que fornecem:
+* Um componente só pode ser editado quando envolvido com um elemento HTML.
+* O elemento de encapsulamento é usado para aplicar classes HTML que fornecem:
    * Informações de layout
    * Informações de estilo
 
@@ -39,9 +39,9 @@ As seguintes propriedades e nós podem ser aplicados aos componentes para contro
 
 * **`cq:noDecoration {boolean}`:** Essa propriedade pode ser adicionada a um componente e um valor verdadeiro força o AEM a não gerar elementos wrapper sobre o componente.
 * Nó **`cq:htmlTag`:** Este nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
-   * **`cq:tagName {String}`:** Isso pode ser usado para especificar uma marca de HTML personalizada a ser usada para envolver os componentes em vez do elemento DIV padrão.
+   * **`cq:tagName {String}`:** Pode ser usado para especificar uma marca HTML personalizada para ser usada para envolver os componentes em vez do elemento DIV padrão.
    * **`class {String}`:** Pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
-   * Outros nomes de propriedades são adicionados como atributos de HTML com o mesmo valor de string fornecido.
+   * Outros nomes de propriedade são adicionados como atributos do HTML com o mesmo valor de String fornecido.
 
 ## Controles de script {#script-controls}
 

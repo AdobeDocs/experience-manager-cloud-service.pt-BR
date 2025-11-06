@@ -3,8 +3,8 @@ title: Introdução ao Editor universal
 description: O Universal Editor é uma ferramenta de criação visual moderna projetada para capacitar sua organização de marketing a produzir experiências da Web impactantes.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 08997c760bf1d609dce1dd17de0c549a26083917
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 11%
@@ -49,9 +49,9 @@ O Universal Editor é compatível com as duas configurações principais do AEM 
 O Editor Universal é compatível com:
 
 * AEM as a Cloud Service (versão `2023.8.13099` ou superior)
-* [AEM 6.5 LTS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
    * Tanto no local quanto na hospedagem do AMS são compatíveis.
-* [AEM 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+* [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * Tanto no local quanto na hospedagem do AMS são compatíveis.
 
 Esta documentação é para usar o Editor universal com o AEM as a Cloud Service.
@@ -104,7 +104,7 @@ Para um profissional de marketing que deseja criar um conteúdo adaptado ao layo
 Ao explorar o Editor universal e prosseguir com a implementação em seus próprios projetos, lembre-se das limitações a seguir.
 
 * No máximo 25 recursos do AEM (Fragmentos de conteúdo, páginas, Fragmentos de experiência, Assets etc.) devem ser referenciados como instrumentação em uma única página.
-* O AEM as a Cloud Service, o [AEM 6.5 LTS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) e o [AEM 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) são os únicos back-end do AEM com suporte.
+* O AEM as a Cloud Service, o [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction) e o [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) são os únicos back-end do AEM com suporte.
 * A versão `2023.8.13099` ou superior é necessária para o AEM as a Cloud Service.
 * Os autores de conteúdo devem ter suas próprias contas individuais do Experience Cloud.
 * Como parte do AEM, o Editor Universal [oferece suporte aos mesmos navegadores de desktop que o AEM.](/help/overview/supported-platforms.md)

@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 5514aec10184d67c24d00d2ed783a154e6587035
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '10070'
-ht-degree: 2%
+source-wordcount: '10063'
+ht-degree: 1%
 
 ---
 
@@ -60,7 +60,6 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
    * Pré-visualizar e publicar ativos de vídeo
 
       * Visualize o vídeo de origem e as representações codificadas do vídeo, juntamente com suas miniaturas associadas:
-
         [Visualizar vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) ou [Visualizar ativos](/help/assets/dynamic-media/previewing-assets.md)
         [Gerenciar representações de vídeo](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -70,7 +69,6 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
    * Trabalhar com metadados de vídeo
 
       * Edite as propriedades do vídeo, como título, descrição, tags e campos de metadados personalizados:
-
         [Editar propriedades do vídeo](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Gerenciar metadados para ativos digitais](/help/assets/manage-metadata.md)
@@ -95,11 +93,9 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
    * Se você estiver usando um sistema WCM de terceiros, é possível vincular ou incorporar vídeos às suas páginas da Web.
 
       * Integrar vídeo usando o URL:
-
         [Vincular URLs ao aplicativo Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integrar vídeo usando o código integrado em uma página da Web:
-
         [Incorporar o visualizador de vídeo em uma página da Web](/help/assets/dynamic-media/embed-code.md).
 
    * [Gerar relatórios de vídeo](#viewing-video-reports).
@@ -135,7 +131,7 @@ Ao gerenciar vídeos únicos e Conjuntos de vídeos adaptados, os seguintes iten
 * Organize, navegue e pesquise vídeos com suporte completo a metadados para obter um gerenciamento eficiente dos ativos de vídeo.
 * Forneça Conjuntos de vídeos adaptados para a Web e para desktops, tablets e dispositivos móveis.
 
-O streaming de vídeo adaptável é suportado em várias plataformas iOS. Consulte o [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
+O streaming de vídeo adaptável é suportado em várias plataformas iOS. Consulte o [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -151,7 +147,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulte também [Visualizadores do Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizadores do Experience Manager Assets somente](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) no [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources).
+Consulte também [Visualizadores do Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizadores do Experience Manager Assets somente](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) no [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 ## Prática recomendada: uso do visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -163,7 +159,7 @@ No lado da reprodução do visualizador, ele detecta automaticamente o recurso d
 
 Você pode combinar em um único player a capacidade de projetar os componentes de reprodução usando HTML5 e CSS. Ele pode ter reprodução integrada e usar transmissão adaptável e progressiva, dependendo da capacidade do navegador. Toda essa funcionalidade significa que você pode estender o alcance do seu conteúdo de mídia avançada para usuários de desktop e dispositivos móveis e garantir uma experiência de vídeo simplificada.
 
-Consulte também [Visualizadores somente para Experience Manager Assets](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) no [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources).
+Consulte também [Visualizadores somente para Experience Manager Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) no [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
 
 ### Reprodução de vídeo em computadores desktop e dispositivos móveis usando o visualizador de vídeo do HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -183,7 +179,7 @@ O DASH é o padrão internacional e o HLS é um padrão da Apple. Ambos são usa
 
 O vídeo progressivo é fornecido ao baixar e armazenar o vídeo localmente no sistema de desktop de um usuário ou dispositivo móvel.
 
-A tabela a seguir descreve o dispositivo, o navegador e o método de reprodução de vídeos em computadores desktop e dispositivos móveis que usam o [Visualizador de Vídeo do Dynamic Media HTML5](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
+A tabela a seguir descreve o dispositivo, o navegador e o método de reprodução de vídeos em computadores desktop e dispositivos móveis que usam o [Visualizador de Vídeo do Dynamic Media HTML5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video).
 
 <table>
  <tbody>
@@ -318,7 +314,7 @@ A tabela a seguir descreve como os resultados da fórmula são convertidos em op
 | 1,78 | 16:9 |
 | 0,56 | 9:16 |
 
-Por exemplo, um vídeo com 1440 de largura × 1080 de altura tem uma proporção largura/altura de 1440/1080 ou 1,33. Nesse caso, você escolhe uma predefinição de codificação de vídeo com uma proporção 4:3 para codificar o arquivo de vídeo.
+Por exemplo, um vídeo com 1440 de largura × 1080 de altura tem uma proporção largura/altura de 1440/1080 ou 1,33. Nesse caso, você escolhe uma predefinição de codificação de vídeo com uma taxa de proporção de 4:3 para codificar o arquivo de vídeo.
 
 ### Taxa de bits {#bitrate}
 
@@ -460,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=pt-BR).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -605,7 +601,7 @@ As legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E 
    ![Criar opções de Legendas.](/help/assets/dynamic-media/assets/msma-createcaption.png)
    *O menu suspenso Criar Legenda oferece três opções: Carregar Arquivos, Converter faixas de áudio e Traduzir legenda.*
 
-+++**Opção 1:** *Tenho meus próprios arquivos de legenda pré-existentes que estão nos idiomas que desejo usar* (opção **[!UICONTROL Carregar Arquivos]**)
+   +++**Opção 1:** *Tenho meus próprios arquivos de legenda pré-existentes que estão nos idiomas que desejo usar* (opção **[!UICONTROL Carregar Arquivos]**)
 
    1. Próximo ao lado superior direito da página, clique em **[!UICONTROL Criar Legenda]** > **[!UICONTROL Carregar arquivos]**.
    1. Navegue até um ou mais arquivos `.vtt` preexistentes e selecione-os.
@@ -629,9 +625,9 @@ As legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E 
    1. Se você selecionou **[!UICONTROL Salvar e fechar]** na etapa anterior, em vez de selecionar **[!UICONTROL Salvar]**, ainda poderá ver o status de processamento dos arquivos carregados. Consulte [Exibir o status do ciclo de vida dos arquivos de legenda e trilha de áudio carregados](#lifecycle-status-video).
    1. Continue com a etapa 8.
 
-+++
+   +++
 
-+++**Opção 2:** *Desejo que a IA gere meus arquivos de legenda em vários idiomas* (opção **[!UICONTROL Converter faixas de áudio]**)
+   +++**Opção 2:** *Desejo que a IA gere meus arquivos de legenda em vários idiomas* (opção **[!UICONTROL Converter faixas de áudio]**)
 
    1. Próximo ao canto superior direito da página, clique em **[!UICONTROL Criar legenda]** > **[!UICONTROL Converter faixas de áudio]**.
 
@@ -663,9 +659,9 @@ As legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E 
       É possível alterar ou editar determinados metadados de legenda posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes de metadados são refletidos em URLs públicos em vídeos publicados.
    1. Continue com a etapa 8.
 
-+++
+   +++
 
-+++**Opção 3:** *O texto em um arquivo de legenda (`.vtt`) precisa ser corrigido, recarregado para substituir o arquivo `.vtt` antigo e, em seguida, fazer com que o AI traduza o arquivo corrigido* (opção **[!UICONTROL Traduzir legendas]**)
+   +++**Opção 3:** *O texto em um arquivo de legenda (`.vtt`) precisa ser corrigido, recarregado para substituir o arquivo `.vtt` antigo e, em seguida, fazer com que o AI traduza o arquivo corrigido* (opção **[!UICONTROL Traduzir legendas]**)
 
    1. Clique em **[!UICONTROL Criar legenda]** > **[!UICONTROL Traduzir legendas]**. Essa opção estará disponível se um ou mais arquivos de legenda já tiverem sido adicionados e processados.
 
@@ -698,7 +694,7 @@ As legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E 
 
    1. Continue com a etapa 8.
 
-+++
+   +++
 
 1. (Opcional) Visualize o vídeo antes da publicação para garantir que as legendas e o áudio funcionem conforme esperado. Consulte [Visualizar um vídeo com várias legendas e faixas de áudio](#preview-video-audio-subtitle).
 1. Publique o vídeo. Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
@@ -920,7 +916,7 @@ Consulte também [Acessibilidade no Dynamic Media](/help/assets/dynamic-media/ac
 
 O Dynamic Media pode converter arquivos de legenda para o formato JSON (JavaScript Object Notation). Essa conversão significa que você pode incorporar o texto JSON em uma página da Web como uma transcrição oculta, mas completa, do vídeo. Os mecanismos de pesquisa podem rastrear/indexar o conteúdo para facilitar a descoberta dos vídeos e fornecer aos clientes mais detalhes sobre o conteúdo do vídeo.
 
-Consulte [Veiculação de conteúdo estático (não imagem)](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obter mais informações sobre como usar a função JSON em uma URL.
+Consulte [Veiculação de conteúdo estático (não imagem)](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obter mais informações sobre como usar a função JSON em uma URL.
 
 **Para adicionar legendas a um vídeo:**
 
@@ -1539,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1568,7 +1564,7 @@ With multiple caption and audio track capability in Dynamic Media, you can easil
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case | 
+| Type | Use case |
 | --- | --- |
 | Captions | Multiple language support<br>Descriptive text for accessibility |
 | Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |

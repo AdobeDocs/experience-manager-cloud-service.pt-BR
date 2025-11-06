@@ -2,10 +2,10 @@
 title: Gerenciamento dos Fragmentos de conteúdo
 description: Saiba como gerenciar os fragmentos de conteúdo do AEM no console e no editor, criar conteúdo como base para o conteúdo headless ou criar páginas.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: d97082c733b9bcae762f4ffbff012cfdbbada3bd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2927'
 ht-degree: 36%

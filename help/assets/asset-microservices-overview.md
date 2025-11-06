@@ -3,9 +3,9 @@ title: Processar ativos usando microsserviços de ativos
 description: Processe seus ativos digitais usando microsserviços de processamento de ativos escaláveis e nativos da nuvem.
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
-role: Architect, Admin
+role: Developer, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 99%
@@ -67,11 +67,11 @@ Para obter mais informações, consulte [Fazer upload de ativos](add-assets.md).
 
 ## Adicionar pós-processamento de ativo personalizado {#add-custom-asset-post-processing}
 
-Embora a maioria dos clientes deva obter todas as suas necessidades de processamento de ativos dos microsserviços de ativos configuráveis, alguns podem precisar de processamento de ativos adicional. Isso é especialmente verdadeiro se os ativos precisarem ser processados com base nas informações provenientes de outros sistemas por meio de integrações. Em casos como esse, workflows personalizados de pós-processamento podem ser usados.
+Embora a maioria dos clientes deva obter todas as suas necessidades de processamento de ativos dos microsserviços de ativos configuráveis, alguns podem precisar de processamento de ativos adicional. Isso é especialmente verdadeiro se os ativos precisarem ser processados com base nas informações provenientes de outros sistemas por meio de integrações. Em casos como esse, fluxos de trabalho personalizados de pós-processamento podem ser usados.
 
 Os workflows de pós-processamento são modelos de fluxo de trabalho regulares do [!DNL Experience Manager], criados e gerenciados no Editor de fluxo de trabalho do [!DNL Experience Manager]. Os clientes podem configurar os workflows para realizar etapas de processamento adicionais em um ativo, incluindo o uso de etapas de fluxo de trabalho prontas para uso e workflows personalizados disponíveis.
 
-O Adobe Experience Manager pode ser configurado para acionar automaticamente os workflows de pós-processamento após a conclusão do processamento de ativos.
+O Adobe Experience Manager pode ser configurado para acionar automaticamente os fluxos de trabalho de pós-processamento após a conclusão do processamento de ativos.
 
 <!-- TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
 -->
@@ -97,5 +97,5 @@ O Adobe Experience Manager pode ser configurado para acionar automaticamente os 
 >* [Introdução ao uso dos microsserviços de ativos](asset-microservices-configure-and-use.md)
 >* [Formatos de arquivo não suportados](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
->* Aplicativo de desktop do [[!DNL Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
+>* Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
 >* [Documentação do Apache Oak sobre acesso binário direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

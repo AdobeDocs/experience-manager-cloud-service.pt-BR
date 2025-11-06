@@ -5,8 +5,8 @@ landing-page-description: Saiba mais sobre a entrega e implementação de conte�
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 89%

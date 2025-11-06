@@ -5,7 +5,7 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5357'
 ht-degree: 29%
@@ -106,7 +106,7 @@ A integração é feita importando o pacote do Seletor de ativos e conectando ao
 
 É possível integrar o Seletor de ativos a vários aplicativos, como:
 
-* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
+* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Integrar o Seletor de ativos a um aplicativo que não seja da Adobe](#adobe-non-app-integration)
 * [Integração do Dynamic Media com recursos OpenAPI](#adobe-app-integration-polaris)
 
@@ -915,7 +915,7 @@ Use o seguinte trecho de código para mostrar uma mensagem do sistema para o uso
 
 O Seletor de ativos permite adicionar um filtro seletor de tags. Ela é compatível com um grupo de tags que combina todas as tags relevantes a um grupo de tags específico. Além disso, permite selecionar tags adicionais correspondentes ao ativo que você está procurando. Além disso, você também pode definir os grupos de tags padrão no filtro de chamada contextual que são usados principalmente por você para que sejam acessíveis a você em qualquer lugar.
 
->
+>[!NOTE]
 >
 > * É necessário adicionar um trecho de código de invocação contextual para ativar o filtro de marcação na pesquisa.
 > * É obrigatório usar a propriedade de nome correspondente ao tipo de grupo de marcas `(property=xcm:keywords.id=)`.

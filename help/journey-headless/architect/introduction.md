@@ -4,8 +4,8 @@ description: Uma introdução ao uso dos recursos do Adobe Experience Manager as
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 77%
@@ -23,7 +23,7 @@ Este documento ajuda você a entender a entrega de conteúdo headless, como o AE
 
 ## Objetivo {#objective}
 
-* **Público**: iniciante
+* **Público-alvo**: iniciante
 * **Objetivo**: apresentar os conceitos e a terminologia relevantes para a Modelagem de conteúdo headless.
 
 ## Entregar conteúdo em pilha completa {#full-stack}
@@ -32,7 +32,7 @@ Desde a ascensão dos sistemas de gerenciamento de conteúdo (CMS) de larga esca
 
 ![O CMS clássico de pilha completa](/help/journey-headless/developer/assets/full-stack.png)
 
-Em um CMS de pilha completa, a funcionalidade para manipular conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
+Em uma CMS de pilha completa, a funcionalidade para manipular conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
 
 * Há um sistema para manter.
 * O conteúdo é gerenciado centralmente.
@@ -53,7 +53,7 @@ Quando falamos de um CMS headless, o CMS gerencia o conteúdo e continua a entre
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
-Os serviços de consumo, sejam experiências de RA, uma loja na Web, experiências móveis, aplicativos web progressivos (PWA) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
+Os serviços de consumo, sejam experiências de RA, um webshop, experiências móveis, aplicativos web progressivos (PWAs) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
 
 Omitir a interface simplifica o CMS ao remover a complexidade. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
 
@@ -87,6 +87,6 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
 
 * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
 
-* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 
-* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

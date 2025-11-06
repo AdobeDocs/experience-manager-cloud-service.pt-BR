@@ -3,12 +3,12 @@ title: Pipelines somente de preparo e somente de produção
 description: Saiba como dividir implantações de preparo e produção usando pipelines dedicados.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: 890d18778273ce60a676cb74fa8025d6b48dc70d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 48%

@@ -6,7 +6,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: b9328a22ff544f2c663868d33d7b06e02819f1d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2138'
 ht-degree: 33%
@@ -35,17 +35,23 @@ As propriedades de página podem controlar muitos aspectos de uma página, desde
 ### Título e tags {#title-tags}
 
 * **Título** - Define o metatítulo da página para fins de SEO, bem como o título exibido no conteúdo da página (a menos que seja substituído)
+
    * O título da página é mostrado em vários locais na interface do usuário do AEM, incluindo as exibições de cartão/lista do **Sites** no [Console do Sites.](/help/sites-cloud/authoring/sites-console/introduction.md)
    * Este campo é obrigatório.
+
 * **Marcas** - Define as metatags da página para fins de SEO
+
    * Você pode adicionar ou remover tags da página, atualizando a lista na caixa de seleção.
    * Use o menu suspenso para selecionar a partir de tags existentes.
    * Após selecionar uma tag, ela é listada abaixo da caixa de seleção. Você pode remover uma tag dessa lista usando o ícone “x”.
    * Uma tag totalmente nova pode ser inserida digitando o nome em uma caixa de seleção vazia.
+
       * A nova tag é criada ao pressionar Enter.
       * A nova tag será então exibida com uma pequena estrela à direita, indicando que é uma tag nova.
+
    * Um “x” é exibido ao passar o mouse sobre uma entrada de tag na caixa de seleção, e esse ícone pode ser usado para remover a tag desta página.
    * Para obter mais informações sobre marcas, consulte [Usando a Marca.](/help/sites-cloud/authoring/sites-console/tags.md)
+
 * **Ocultar na Navegação** - Indica se a página está visível ou oculta na navegação de página do site resultante
 
 ### Identidade visual {#branding}
@@ -53,9 +59,13 @@ As propriedades de página podem controlar muitos aspectos de uma página, desde
 Aplique uma identidade de marca consistente em todas as páginas, anexando uma descrição da marca a cada título de página. Essa funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior do [Componentes principais.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction)
 
 * **Descrição da marca**
+
    * **Sobrepor**: marque essa opção para definir a descrição da marca nesta página.
+
       * O valor é herdado por todas as páginas filhas, a menos que elas também tenham seus valores de **Sobreposição** definidos.
+
    * **Substituir valor** - o texto da descrição da marca a ser anexado ao título da página.
+
       * O valor é anexado ao título da página após um caractere de barra vertical, como `Cycling Tuscany | Always ready for the WKND`
 
 ### ID HTML {#html-id}
@@ -65,10 +75,14 @@ Aplique uma identidade de marca consistente em todas as páginas, anexando uma d
 ### Mais títulos e descrições {#more-titles}
 
 * **Título da página** - Um título a ser usado na página
+
    * Normalmente, é usado por componentes de título.
    * Se estiver vazio, a variável **Título** é usada.
+
 * **Título de Navegação** - Você pode especificar um título separado para usar na navegação (por exemplo, se desejar algo mais conciso).
+
    * Se estiver vazio, o **Título da página** será usado.
+
 * **Subtítulo** - Uma subtítulo para usar na página
 * **Descrição** - Sua descrição da página, a finalidade dela ou qualquer outro detalhe que desejar adicionar
 
@@ -95,13 +109,13 @@ Deixe esses campos (**Momento da ativação** e **Momento da desativação**) va
 >
 >Se quiser publicar conteúdo novo com todos os fluxos de trabalho associados ou remover totalmente (cancelar a publicação do conteúdo) do site, considere [gerenciar sua publicação.](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)
 
-### URL do Vanity {#vanity-url}
+### URL personalizado {#vanity-url}
 
 Essa propriedade permite inserir um URL personalizado para esta página, o que pode permitir que você tenha um URL mais curto e/ou mais expressivo. Por exemplo, se o URL personalizado estiver definido como `welcome` para a página identificada pelo caminho`/v1.0/startpage` para o site `http://example.com`, em seguida, `http://example.com/welcome`será o URL personalizado de `http://example.com/content/v1.0/startpage`
 
 >[!CAUTION]
 >
->URLs personalizadas:
+>URLs personalizados:
 >
 >* Deve ser única.
 >* Não é compatível com padrões de regex.
@@ -112,12 +126,12 @@ Essa propriedade permite inserir um URL personalizado para esta página, o que p
    * Selecione o ícone **Remover** para excluir a URL personalizada.
 * **Redirecionar URL personalizado** - Indica se você deseja que a página use a URL personalizado ou redirecione para a URL real da página
 
-## Avançado  {#advanced}
+## Avançado {#advanced}
 
 ### Configurações {#settings}
 
 * **Idioma** - o idioma da página
-* **Raiz de idioma** - deve ser marcado se a página for a raiz de uma cópia de idioma
+* **Raiz de idioma** - deve ser marcado se a página for a raiz de uma cópia no idioma de destino
 * **Redirecionar** - Indica a página para a qual esta página deve ser redirecionada automaticamente com o status `302 Found` do HTML
    * **Redirecionamento permanente** — quando marcado, a página redireciona para o caminho de destino fornecido junto com um status HTML `301 Moved Permanently`.
 * **Design**

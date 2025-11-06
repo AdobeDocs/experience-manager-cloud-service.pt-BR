@@ -3,10 +3,10 @@ title: Modelos editáveis
 description: Saiba mais sobre como os modelos editáveis são usados ao criar uma página, definir seu conteúdo inicial, conteúdo estruturado, políticas de criação e layout.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3442'
 ht-degree: 4%
 
 ---
@@ -177,12 +177,12 @@ Uma lista de todas as entradas permitidas é criada. Se alguma configuração se
 
 Para criar uma pasta, faça o seguinte:
 
-* Programaticamente ou com CRXDE Lite
+* Programaticamente ou com o CRXDE Lite
 * Usando o [Navegador de Configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Uso do CRXDE Lite {#using-crxde-lite}
 
-1. Uma nova pasta (em /conf) pode ser criada para sua instância de forma programática ou com o CRXDE Lite.
+1. Uma nova pasta (em /conf) pode ser criada para sua instância programaticamente ou com o CRXDE Lite.
 
    Deve ser utilizada a seguinte estrutura:
 
@@ -235,7 +235,7 @@ As pastas de modelo do [Tutorial WKND](/help/implementing/developing/introductio
 
 #### O grupo de autores de modelo {#the-template-authors-group}
 
-O grupo `template-authors` é o grupo usado para gerenciar o acesso a modelos e vem com o AEM como padrão, mas está vazio. Os usuários devem ser adicionados ao grupo para o projeto/site.
+O grupo `template-authors` é o grupo usado para gerenciar o acesso a modelos e vem como padrão com o AEM, mas está vazio. Os usuários devem ser adicionados ao grupo para o projeto/site.
 
 >[!CAUTION]
 >
@@ -316,7 +316,7 @@ Ao criar um template, você precisa especificar um tipo de template:
    * A política do nó raiz, que define os componentes permitidos no editor de modelo.
    * É recomendável definir os pontos de interrupção para a grade responsiva e a configuração do emulador móvel no no tipo de modelo.
 
-* O AEM fornece uma pequena seleção de tipos de modelo prontos para uso, como Página HTML5 e Página de formulário adaptável.
+* O AEM fornece uma pequena seleção de tipos de modelo prontos para uso, como Página do HTML5 e Página de formulário adaptável.
 
    * Exemplos adicionais são fornecidos como parte do [tutorial do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
@@ -501,7 +501,6 @@ As políticas de página permitem definir a [política de conteúdo](#content-po
    * Definindo a propriedade de status no nó `jcr:content`.
 
       * Por exemplo, em:
-
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Defina a propriedade:
@@ -514,7 +513,6 @@ As políticas de página permitem definir a [política de conteúdo](#content-po
 
    * [Defina os caminhos do Modelo Permitidos nas **Propriedades de Página**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) da página apropriada ou da página raiz de uma sub-ramificação.
    * Defina a propriedade:
-
      `cq:allowedTemplates`
 No nó `jcr:content` da ramificação necessária.
 
@@ -591,9 +589,9 @@ O diagrama a seguir descreve o processo de avaliação do modelo:
 
 >[!CAUTION]
 >
->O AEM oferece várias propriedades para controlar os modelos permitidos em **Sites**. No entanto, combiná-los pode levar a regras muito complexas que são difíceis de rastrear e gerenciar.
+>A AEM oferece várias propriedades para controlar os modelos permitidos em **Sites**. No entanto, combiná-los pode levar a regras muito complexas que são difíceis de rastrear e gerenciar.
 >
->Portanto, o Adobe recomenda que você comece de forma simples, definindo:
+>Portanto, a Adobe recomenda começar simples, definindo:
 >
 >* somente a propriedade `cq:allowedTemplates`
 >

@@ -3,8 +3,8 @@ title: Exemplos de tipos de módulo da interface do usuário do ContextHub
 description: O ContextHub fornece vários módulos de interface do usuário de amostra que você pode usar em suas soluções
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -75,7 +75,7 @@ O exemplo a seguir configura um módulo de interface do usuário c`ontexthub.bas
 
 ## Tipo de módulo da interface do usuário contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
 
-O módulo de interface do usuário `contexthub.browserinfo` exibe informações sobre o navegador da Web cliente e o sistema operacional. As informações são obtidas do repositório surferinfo, com base no [candidato do repositório &lbrace;contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate).
+O módulo de interface do usuário `contexthub.browserinfo` exibe informações sobre o navegador da Web cliente e o sistema operacional. As informações são obtidas do repositório surferinfo, com base no [candidato do repositório {contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate).
 
 ![módulo contexthub.browserinfo](assets/browserinfo-module.png)
 

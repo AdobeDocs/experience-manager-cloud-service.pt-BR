@@ -3,8 +3,8 @@ title: Usar regras para adicionar comportamento dinâmico a um formulário
 description: O Edge Delivery Services for AEM Forms foi criado para oferecer desempenho máximo, permitindo que você visualize o futuro da coleta de dados simplificada e do engajamento do usuário. Use regras para adicionar comportamento dinâmico aos formulários.
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Veja a seguir como usar uma regra para mostrar o campo de email na seleção de 
 
 1. Defina a propriedade `Value` do campo de caixa de seleção como `TRUE`.
 1. Defina a propriedade `Checked` do campo de caixa de seleção como `FALSE`. Isso garante que a caixa de seleção não esteja selecionada, por padrão.
-1. Defina a propriedade `Visible` do campo de email como `=[address of Checked property of the checkbox field] = true()`. Por exemplo `=Q11=TRUE()`. A fórmula é avaliada se a caixa de seleção estiver marcada ou não. Se a caixa de seleção estiver marcada, a fórmula será avaliada como TRUE. Se a caixa de seleção não estiver marcada, a fórmula será avaliada como FALSE.
+1. Defina a propriedade `Visible` do campo de email como `=[address of Checked property of the checkbox field] = true()`. Por exemplo, `=Q11=TRUE()`. A fórmula é avaliada se a caixa de seleção estiver marcada ou não. Se a caixa de seleção estiver marcada, a fórmula será avaliada como TRUE. Se a caixa de seleção não estiver marcada, a fórmula será avaliada como FALSE.
 
 
 

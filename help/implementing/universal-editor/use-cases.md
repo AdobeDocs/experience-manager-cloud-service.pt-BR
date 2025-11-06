@@ -3,8 +3,8 @@ title: Casos de uso do editor universal e caminhos de aprendizagem
 description: Saiba mais sobre os principais casos de uso do Universal Editor e como aprender sobre seu uso e como implementá-lo em seus próprios projetos.
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 0%

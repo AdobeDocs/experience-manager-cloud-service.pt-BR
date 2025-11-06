@@ -5,7 +5,7 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 5054b843a8bb6053bb6617e9efdfc16dd1eac6ca
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 56%
@@ -45,7 +45,7 @@ Os fragmentos de conteúdo também podem ser entregues no formato JSON, usando o
 
 Esta e as seguintes páginas abordam as tarefas de criação, configuração, manutenção e uso dos fragmentos de conteúdo:
 
-* [Ativar a funcionalidade de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+* [Habilitar a funcionalidade de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md) - habilitando, criando e definindo seus modelos
 * [Gerenciamento de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) - crie fragmentos de conteúdo; em seguida, edite, publique e faça referência
 * [Variações - Criação do conteúdo dos fragmentos](/help/assets/content-fragments/content-fragments-variations.md) — crie o conteúdo do fragmento e variações do Principal
@@ -87,6 +87,7 @@ Esses fragmentos de conteúdo podem ser reunidos para fornecer experiências em 
 >[!NOTE]
 >
 >**Fragmentos de conteúdo** e **[fragmentos de experiência](/help/sites-cloud/authoring/fragments/content-fragments.md)** são recursos diferentes no AEM:
+>
 >* Os **fragmentos de conteúdo** são conteúdos editoriais com definição e estrutura, mas sem design visual e/ou layout adicional. Eles podem ser usados para acessar dados estruturados, incluindo textos, números, datas, entre outros.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 >
@@ -188,7 +189,7 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
 
    * Nos modos [Rich Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) e [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown), um parágrafo pode ser formatado como um cabeçalho. Nesse caso, ele e o parágrafo a seguir pertencem como uma unidade.
 
-   * Ativam o controle de conteúdo durante a criação da página.
+   * Habilitam o controle de conteúdo durante a criação da página.
 
 * **Ativos inseridos em um fragmento (fragmentos de mídia mista)**
 
@@ -273,7 +274,7 @@ Para criar fragmentos de conteúdo, é necessário:
 
 * **Modelo de conteúdo**
 
-   * É [ativado usando o Navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+   * É [habilitado usando o Navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md).
    * É [criado usando Ferramentas](/help/assets/content-fragments/content-fragments-models.md).
    * Obrigatório para [criar um fragmento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Define a estrutura de um fragmento (título, elementos de conteúdo, definições de tag).

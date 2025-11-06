@@ -4,8 +4,8 @@ description: Saiba como adicionar um nome de domínio personalizado usando Confi
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 12%

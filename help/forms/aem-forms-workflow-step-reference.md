@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: Usar workflows do AEM, usando etapas atribuir tarefa, converter para etapa PDF/A, Gerar documento da etapa registrada, usar workflows, etapa Assinar documento, etapa Gerar saída impressa, Gerar saída não interativa do PDF
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '7409'
 ht-degree: 0%
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Este artigo |
 
-Você usa modelos de fluxo de trabalho. Um modelo ajuda a definir e executar uma série de etapas. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos. Você pode [incluir várias etapas do fluxo de trabalho do AEM em um modelo para obter a lógica de negócios](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem).
+Você usa modelos de fluxo de trabalho. Um modelo ajuda a definir e executar uma série de etapas. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos. Você pode [incluir várias etapas do fluxo de trabalho do AEM em um modelo para obter a lógica de negócios](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
 ## Etapas centradas no Forms {#forms-workflow-steps}
 
@@ -121,7 +121,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
     -->
 
 * **[!UICONTROL Atribuído]** > **[!UICONTROL Opções de atribuição]**: especifique o método para atribuir a tarefa a um usuário. Você pode atribuir a tarefa dinamicamente a um usuário ou grupo usando o script Seletor de participante ou atribuir a tarefa a um usuário ou grupo específico da AEM.
-* **[!UICONTROL Seletor de participantes]**: a opção estará disponível quando a opção **[!UICONTROL Dinamicamente para um usuário ou grupo]** estiver selecionada no campo Opções de atribuição. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Criação de uma etapa personalizada de Participante dinâmico do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR&CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Seletor de participantes]**: a opção estará disponível quando a opção **[!UICONTROL Dinamicamente para um usuário ou grupo]** estiver selecionada no campo Opções de atribuição. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Criação de uma etapa personalizada de Participante dinâmico do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Participantes]**: o campo está disponível quando a opção **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** é selecionada no campo **[!UICONTROL Seletor de Participantes]**. O campo permite selecionar usuários ou grupos para a opção RandomParticipantChooser.
 
@@ -177,6 +177,7 @@ A etapa Converter em PDF/A tem as seguintes propriedades:
 **[!UICONTROL Documento de Entrada]**: o documento de entrada pode ser relativo à carga útil, ter um caminho absoluto, pode ser fornecido como uma carga útil ou armazenado em uma variável do tipo de dados Documento.
 
 **[!UICONTROL Opções de Conversão]**: usando esta propriedade, as configurações para converter documentos do PDF em documentos do PDF/A são especificadas. Várias opções disponíveis nessa guia são:
+
 * **[!UICONTROL Conformidade]**: especifica o padrão com o qual o documento PDF/A de saída deve estar em conformidade. Ela é compatível com diferentes padrões da PDF, como PDF/A-1b, PDF/A-2b ou PDF/A-3b.
 * **[!UICONTROL Nível de Resultado]**: especifica o nível de resultado como PassFail, Summary ou Detailed para a saída de conversão.
 * **[!UICONTROL Espaço de cor]**: especifica o espaço de cor predefinido como S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED ou SWOP, que pode ser usado para arquivos PDF/A de saída.
@@ -189,7 +190,7 @@ A etapa Converter em PDF/A tem as seguintes propriedades:
 
 Use a etapa do email para enviar um email, por exemplo, um email com um Documento de Registro, um link de um Formulário Adaptável <!-- , link of an interactive communication--> ou um documento do PDF anexado. A etapa Enviar Email oferece suporte a [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Os emails do HTML são responsivos e se adaptam ao cliente de email dos recipients e ao tamanho da tela. Você pode usar um modelo de email do HTML para definir a aparência, o esquema de cores e o comportamento do email.
 
-A etapa de email usa o Day CQ Mail Service para enviar emails. Antes de usar a etapa de email, verifique se o serviço de email está configurado. Por padrão, o email suporta somente os protocolos HTTP e HTTPs. [Contate a equipe de suporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=pt-BR#sending-email) para habilitar as portas para enviar emails e habilitar o protocolo SMTP para o seu ambiente. A restrição ajuda a melhorar a segurança da plataforma.
+A etapa de email usa o Day CQ Mail Service para enviar emails. Antes de usar a etapa de email, verifique se o serviço de email está configurado. Por padrão, o email suporta somente os protocolos HTTP e HTTPs. [Contate a equipe de suporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) para habilitar as portas para enviar emails e habilitar o protocolo SMTP para o seu ambiente. A restrição ajuda a melhorar a segurança da plataforma.
 
 A etapa de email tem as seguintes propriedades:
 
@@ -255,11 +256,13 @@ O Document Description XML (DDX) é uma linguagem de marcação declarativa cujo
 A etapa Chamar DDX tem as seguintes propriedades:
 
 **[!UICONTROL Documentos de Entrada]**: usados para definir propriedades de um documento de entrada. Várias opções disponíveis nessa guia são:
+
 * **[!UICONTROL Especificar DDX Usando]**: especifica o documento de entrada relativo à carga útil, tem um caminho absoluto, pode ser fornecido como carga útil ou armazenado em uma variável do tipo de dados Documento.
 * **[!UICONTROL Criar Mapa a partir da Carga]**: adicione todos os documentos na pasta da carga ao Mapa do Documento de Entrada para a API de invocação no Assembler. O nome do nó de cada documento é usado como uma chave no mapa.
 * **[!UICONTROL Mapa do Documento de Entrada]**: A opção é usada para adicionar várias entradas usando o botão **[!UICONTROL ADICIONAR]**. Cada entrada representa a chave do documento no mapa e a origem do documento.
 
 **[!UICONTROL Opções de Ambiente]**: esta opção é usada para definir as configurações de processamento para invocar API. Várias opções disponíveis nessa guia são:
+
 * **[!UICONTROL Validar Somente]**: verifica a validade do documento DDX de entrada.
 * **[!UICONTROL Falha ao errar]**: valor booleano para indicar se o serviço de API de invocação falha, se houver ou não um erro. Por padrão, seu valor é definido como Falso.
 * **[!UICONTROL Primeiro número de Bates]**: especifica o número, que é de autoincrementação. Esse número de autoincrementação é exibido em cada página consecutiva automaticamente.
@@ -270,6 +273,7 @@ A etapa Chamar DDX tem as seguintes propriedades:
 >As opções de ambiente são mantidas em sincronia com as APIs HTTP.
 
 **[!UICONTROL Documentos de saída]**: especifica o local para salvar o arquivo de saída. Várias opções disponíveis nessa guia são:
+
 * **[!UICONTROL Salvar Saída na Carga]**: salva os documentos de saída na pasta da carga útil ou substitui a carga útil; caso a carga seja um arquivo.
 * **[!UICONTROL Mapa do Documento de Saída]**: especifica o local para salvar explicitamente cada arquivo de documento, adicionando uma entrada por documento. Cada entrada representa o documento e o local onde ele deve ser salvo. Se houver vários documentos de saída, essa opção será usada.
 

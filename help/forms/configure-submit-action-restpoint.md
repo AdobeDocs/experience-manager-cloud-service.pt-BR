@@ -5,10 +5,10 @@ keywords: Endpoint REST do AEM Forms, Enviar para endpoint REST, Postar dados no
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -125,17 +125,20 @@ Para publicar dados em um servidor externo, forneça um URL. O formato da URL é
 
 1. Clique em **[!UICONTROL Concluído]**.
 
->[!TAB Editor Universal]
+>[!TAB Universal Editor]
 
 Para configurar ações de envio com base na especificação da API aberta do Swagger para o formulário adaptável criado no Universal Editor são:
 
 1. Abra o Formulário adaptável para edição.
 1. Clique na extensão **Editar propriedades do formulário** no editor.
-A caixa de diálogo **Propriedades do Formulário** é exibida.
+
+   A caixa de diálogo **Propriedades do Formulário** é exibida.
+
    >[!NOTE]
    >
    > * Se você não vir o ícone **Editar Propriedades do Formulário** na interface do Universal Editor, habilite a extensão **Editar Propriedades do Formulário** na Extension Manager.
    > * Consulte o artigo [Destaques dos recursos do Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para saber como habilitar ou desabilitar extensões no Universal Editor.
+
 1. Clique na guia **Envio** e selecione a ação de envio **[!UICONTROL Enviar para o ponto de extremidade Rest]**.
 
    Para publicar dados em um servidor interno, forneça o caminho do recurso. Os dados são publicados no caminho do recurso. Por exemplo, `/content/restEndPoint`. Para essas solicitações de publicação, as informações de autenticação da solicitação de envio são usadas.

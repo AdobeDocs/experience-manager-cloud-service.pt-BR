@@ -4,8 +4,8 @@ description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba co
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 97%
@@ -43,7 +43,7 @@ O SDK do AEM é usado para criar e implantar código personalizado. Esta é a pr
 
 Diferente do SDK do AEM, o **SDK headless** do AEM é um conjunto de bibliotecas que podem ser usadas pelos clientes para interagir rápida e facilmente com APIs headless do AEM por HTTP.
 
-Para obter mais informações, consulte [SDK do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=pt-BR).
+Para obter mais informações, consulte [AEM Headless SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=pt-BR).
 
 ## Ferramentas de desenvolvimento adicionais {#additional-development-tools}
 
@@ -118,5 +118,5 @@ Continue sua jornada headless do AEM revisando o documento [Como ativar seu apli
 * [SDK headless do AEM para lado do servidor/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 * [SDK headless do AEM para Java™](https://github.com/adobe/aem-headless-client-java)
 * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
-* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

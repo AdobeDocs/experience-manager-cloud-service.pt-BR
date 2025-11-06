@@ -3,9 +3,9 @@ title: Roteamento de modelo SPA
 description: Para aplicativos de página única no AEM, o aplicativo é responsável pelo roteamento. Este documento descreve o mecanismo de encaminhamento, o contrato e as opções disponíveis.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -33,7 +33,7 @@ O `ModelRouter`, quando habilitado, encapsula as funções `pushState` e `replac
 
 ## Roteiro de Modelo Manual vs. Automático {#manual-vs-automatic-model-routing}
 
-O `ModelRouter` automatiza a busca de fragmentos do modelo. Mas, como qualquer ferramenta automatizada, há limitações. Quando necessário, o `ModelRouter` pode ser desabilitado ou configurado para ignorar caminhos usando metapropriedades (Consulte a seção Metapropriedades do [Componente de página do SPA](page-component.md)). Os desenvolvedores de front-end podem então implementar sua própria camada de roteamento de modelo, solicitando que `PageModelManager` carregue qualquer fragmento de modelo fornecido usando a função `getData()`.
+O `ModelRouter` automatiza a busca de fragmentos do modelo. Mas, como qualquer ferramenta automatizada, há limitações. Quando necessário, o `ModelRouter` pode ser desabilitado ou configurado para ignorar caminhos usando metapropriedades (Consulte a seção Propriedades do Meta do [Componente de página do SPA](page-component.md) documento). Os desenvolvedores de front-end podem então implementar sua própria camada de roteamento de modelo, solicitando que `PageModelManager` carregue qualquer fragmento de modelo fornecido usando a função `getData()`.
 
 >[!CAUTION]
 >

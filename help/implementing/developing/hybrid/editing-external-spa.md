@@ -3,9 +3,9 @@ title: Edição de um SPA externo no AEM
 description: Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância do AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2370'
 ht-degree: 1%
@@ -28,9 +28,9 @@ Este documento descreve as etapas recomendadas para fazer upload de um SPA indep
 Os pré-requisitos são simples.
 
 * Verifique se uma instância do AEM está sendo executada localmente.
-* Crie um projeto básico de SPA do AEM usando o [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR&#available-properties).
+* Crie um projeto básico de SPA do AEM usando o [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * O Forms é a base do projeto do AEM, que é atualizado para incluir o SPA externo.
-   * Para as amostras neste documento, o Adobe está usando o ponto de partida do [projeto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR#spa-editor).
+   * Para as amostras neste documento, o Adobe está usando o ponto de partida do [projeto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Tenha em mãos o SPA externo React funcional que deseja integrar.
 
 ## Fazer upload de SPA para projeto do AEM {#upload-spa-to-aem-project}
@@ -373,7 +373,7 @@ O componente RemotePage espera que a implementação forneça um manifesto de at
 O material de referência a seguir pode ser útil para entender os SPAs no contexto do AEM.
 
 * [Headful e Headless no AEM](/help/implementing/developing/headful-headless.md)
-* [O Arquétipo de Projetos AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview)
+* [O Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [O projeto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR)
 * [Introdução a SPAs no AEM usando o React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [Materiais de referência de SPA (referências de API)](/help/implementing/developing/hybrid/reference-materials.md)

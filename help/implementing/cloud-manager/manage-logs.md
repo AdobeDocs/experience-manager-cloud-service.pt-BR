@@ -4,8 +4,8 @@ description: Saiba como acessar e gerenciar logs para auxiliar seu processo de d
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 67%
@@ -101,5 +101,5 @@ Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud M
 
 Consulte os seguintes recursos adicionais para saber mais sobre arquivos de log no AEM as a Cloud Service:
 
-* [Arquivos de Log da AEM da Nuvem 5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [Depurando o AEM as a Cloud Service usando logs](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Arquivos de Log da AEM da Nuvem 5](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Depurando o AEM as a Cloud Service usando logs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

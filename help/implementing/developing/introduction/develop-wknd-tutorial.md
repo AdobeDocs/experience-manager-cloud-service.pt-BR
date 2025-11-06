@@ -3,9 +3,9 @@ title: Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND
 description: Novo no desenvolvimento no AEM? Precisa revisar as práticas recomendadas? Este é o lugar para começar. A meta deste tutorial de várias partes é ensinar a um desenvolvedor novo no AEM como implementar um site no AEM usando os padrões e tecnologias mais recentes.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 100%

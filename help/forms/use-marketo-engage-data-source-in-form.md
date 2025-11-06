@@ -5,7 +5,7 @@ keywords: Usar a fonte de dados do Marketo Engage no Adaptive Forms, Como conect
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 5%
@@ -109,8 +109,10 @@ O formulário agora está configurado com a fonte de dados da instância conecta
 **P: O que acontece quando você altera o conector do formulário?**\
 **A:** Se você alterar o conector do formulário, as associações existentes se tornarão inválidas.
 
-**P: Quais são as três operações disponíveis no Serviço de Chamada do Editor de Regras para formulários integrados com o Marketo Engage?**\
+**P: Quais são as três operações disponíveis no Serviço de Chamada do Editor de Regras para formulários integrados com o Marketo Engage?**
+
 **A:** As três operações prontas para uso disponíveis no **Invoke Service** para formulários integrados com o Marketo Engage são:
+
 * Sincronizar lead
 * Obter lead por ID
 * Obter cliente em potencial por tipo de filtro

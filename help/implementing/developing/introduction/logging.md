@@ -3,8 +3,8 @@ title: Logon no AEM as a Cloud Service
 description: Saiba como usar o Logging para AEM as a Cloud Service a fim de configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o registro de dados.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 2%
@@ -158,6 +158,7 @@ Configure o log Java para pacotes Java personalizados por meio de configuraçõe
 A alteração de outras propriedades de configuração OSGi do LogManager pode resultar em problemas de disponibilidade no AEM as a Cloud Service.
 
 Conforme observado em uma seção anterior, para garantir o monitoramento eficaz dos ambientes do cliente:
+
 * O nível de log da configuração de log padrão do AEM (Configuração de log do Apache Sling) não deve ser modificado de seu valor padrão de &quot;INFO&quot;.
 * É aceitável definir os níveis de log como DEBUG para pacotes individuais de código de produto (usando instâncias da fábrica de configuração OSGi &quot;Configuração do Apache Sling Logging Logger&quot;), mas usá-lo com moderação para evitar a degradação do desempenho e restaurar de volta para INFO quando não for mais necessário.
 * É aceitável ajustar os níveis de log para o código desenvolvido pelo cliente.
@@ -165,8 +166,10 @@ Conforme observado em uma seção anterior, para garantir o monitoramento eficaz
 * A saída do log deve permanecer direcionada ao arquivo padrão &quot;logs/error.log&quot;.
 
 Para esse fim, as alterações não devem ser feitas nas seguintes propriedades OSGi:
+
 * **Configuração do Log do Apache Sling** (PID: `org.apache.sling.commons.log.LogManager`) — *todas as propriedades*
 * **Configuração do Agente de Log do Apache Sling** (PID de Fábrica: `org.apache.sling.commons.log.LogManager.factory.config`):
+
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
@@ -210,7 +213,7 @@ A seguir estão exemplos das configurações de log recomendadas (usando o pacot
 
 ## Log de solicitação HTTP do AEM {#aem-http-request-logging}
 
-O registro de solicitações HTTP do AEM as a Cloud Service fornece informações sobre as solicitações HTTP feitas ao AEM e suas respostas HTTP em ordem de tempo. Esse log é útil para entender as solicitações HTTP feitas ao AEM e a ordem em que são processadas e respondidas.
+O registro de solicitações HTTP do AEM as a Cloud Service fornece ao insight as solicitações HTTP feitas ao AEM e suas respostas HTTP em ordem de tempo. Esse log é útil para entender as solicitações HTTP feitas ao AEM e a ordem em que são processadas e respondidas.
 
 A chave para entender esse log é mapear a solicitação HTTP e os pares de resposta por suas IDs, indicadas pelo valor numérico entre parênteses. Muitas vezes, as solicitações e suas respostas correspondentes têm outras solicitações HTTP e respostas interjetadas entre elas no log.
 

@@ -1,10 +1,10 @@
 ---
 title: Plug-in Maven do pacote de conteúdo do Adobe
-description: Usar o plug-in Maven do pacote de conteúdo para implantar aplicativos AEM
+description: Usar o plug-in Maven do pacote de conteúdo para implantar aplicativos do AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
@@ -13,17 +13,17 @@ ht-degree: 4%
 
 # Plug-in Maven do pacote de conteúdo do Adobe {#adobe-content-package-maven-plugin}
 
-Use o plug-in Adobe Content Package Maven para integrar tarefas de implantação e gerenciamento de pacotes em seus projetos Maven.
+Use o plug-in Maven do pacote de conteúdo do Adobe para integrar tarefas de implantação e gerenciamento de pacotes em seus projetos Maven.
 
-A implantação dos pacotes construídos no AEM é realizada pelo plug-in Adobe Content Package Maven e permite a automação das tarefas normalmente realizadas usando o AEM [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md)
+A implantação dos pacotes construídos no AEM é realizada pelo plug-in Maven do Pacote de conteúdo do Adobe e permite a automação das tarefas normalmente realizadas usando o [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) do AEM
 
 * Crie novos pacotes a partir de arquivos no sistema de arquivos.
-* Instale e desinstale pacotes no AEM.
-* Criar pacotes que já estão definidos no AEM.
-* Obtenha uma lista de pacotes que estão instalados no AEM.
+* Instalar e desinstalar pacotes no AEM.
+* Crie pacotes que já estão definidos no AEM.
+* Obtenha uma lista de pacotes instalados no AEM.
 * Remover um pacote do AEM.
 
-Este documento detalha como usar o Maven para gerenciar essas tarefas. No entanto, também é importante entender [como os projetos de AEM e seus pacotes são estruturados](#aem-project-structure).
+Este documento detalha como usar o Maven para gerenciar essas tarefas. No entanto, também é importante entender [como os projetos da AEM e seus pacotes estão estruturados](#aem-project-structure).
 
 >[!NOTE]
 >
@@ -33,15 +33,15 @@ Este documento detalha como usar o Maven para gerenciar essas tarefas. No entant
 >
 >A **criação** do pacote agora pertence ao [Plug-in Apache Jackrabbit FileVault Package Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/).
 >
->Este artigo descreve a **implantação** dos pacotes construídos para o AEM conforme executado pelo plug-in Adobe Content Package Maven.
+>Este artigo descreve a **implantação** dos pacotes construídos para o AEM conforme executado pelo plug-in Maven do pacote de conteúdo do Adobe.
 
 ## Pacotes e a estrutura do projeto AEM {#aem-project-structure}
 
-A AEM as a Cloud Service segue as práticas recomendadas mais recentes para o gerenciamento de pacotes e a estrutura do projeto, conforme implementado pelo Arquétipo de projeto AEM mais recente.
+A AEM as a Cloud Service segue as práticas recomendadas mais recentes para o gerenciamento de pacotes e a estrutura do projeto, conforme implementado pelo Arquétipo de projeto mais recente da AEM.
 
 >[!TIP]
 >
->Consulte o artigo [Estrutura de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) na documentação do AEM as a Cloud Service e da documentação do [Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR). Ambos são totalmente compatíveis com AEM 6.5.
+>Consulte o artigo [Estrutura de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) na documentação do AEM as a Cloud Service e da documentação do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Ambos são totalmente compatíveis com o AEM 6.5.
 
 ## Obter o plug-in Maven do pacote de conteúdo {#obtaining-the-content-package-maven-plugin}
 
@@ -86,7 +86,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### Proxies {#proxies}
 
-Metas que usam proxies para AEM usam a primeira configuração de proxy válida encontrada nas configurações Maven. Se nenhuma configuração de proxy for encontrada, nenhum proxy será usado. Consulte o parâmetro `useProxy` na seção [Parâmetros Comuns](#common-parameters).
+Metas que usam proxies para o AEM usam a primeira configuração de proxy válida encontrada nas configurações Maven. Se nenhuma configuração de proxy for encontrada, nenhum proxy será usado. Consulte o parâmetro `useProxy` na seção [Parâmetros Comuns](#common-parameters).
 
 ### Parâmetros comuns {#common-parameters}
 
@@ -96,12 +96,12 @@ Os parâmetros na tabela a seguir são comuns a todas as metas, exceto quando an
 |---|---|---|---|---|---|
 | `failOnError` | `boolean` | Não | `false` | Um valor de `true` causa falha na compilação quando ocorre um erro. Um valor de `false` faz com que a compilação ignore o erro. | Todas as metas exceto `package` |
 | `name` | `String` | `build`: Sim, `install`: Não, `rm`: Sim | `build`: Nenhum padrão, `install`: O valor da propriedade `artifactId` do projeto Maven | O nome do pacote no qual agir | Todas as metas exceto `ls` |
-| `password` | `String` | Sim | `admin` | A senha usada para autenticação com AEM | Todas as metas exceto `package` |
+| `password` | `String` | Sim | `admin` | A senha usada para autenticação com o AEM | Todas as metas exceto `package` |
 | `serverId` | `String` | Não | A ID do servidor da qual recuperar o nome de usuário e a senha para autenticação | Todas as metas exceto `package` |
-| `targetURL` | `String` | Sim | `http://localhost:4502/crx/packmgr/service.jsp` | O URL da API de serviço HTTP do gerenciador de pacotes AEM | Todas as metas exceto `package` |
+| `targetURL` | `String` | Sim | `http://localhost:4502/crx/packmgr/service.jsp` | O URL da API de serviço HTTP do gerenciador de pacotes do AEM | Todas as metas exceto `package` |
 | `timeout` | `int` | Não | `5` | O tempo limite da conexão para comunicação com o serviço do gerenciador de pacotes, em segundos | Todas as metas exceto `package` |
 | `useProxy` | `boolean` | Não | `true` | Um valor de `true` faz com que o Maven use a primeira configuração de proxy ativa encontrada para solicitações de proxy para o Gerenciador de pacotes. | Todas as metas exceto `package` |
-| `userId` | `String` | Sim | `admin` | O nome de usuário a ser autenticado com AEM | Todas as metas exceto `package` |
+| `userId` | `String` | Sim | `admin` | O nome de usuário a ser autenticado com o AEM | Todas as metas exceto `package` |
 | `verbose` | `boolean` | Não | `false` | Habilita ou desabilita o log detalhado | Todas as metas exceto `package` |
 
 ### build {#build}
@@ -209,10 +209,10 @@ O código POM a seguir adiciona apenas uma imagem em miniatura ao pacote. A imag
 </build>
 ```
 
-## Uso do Arquétipo de Projeto AEM para Gerar Projetos AEM {#using-archetypes}
+## Uso do Arquétipo de Projetos AEM para Gerar Projetos AEM {#using-archetypes}
 
-O Arquétipo de projeto AEM mais recente implementa a estrutura do pacote de práticas recomendadas para implementações locais e AMS e é recomendado para todos os projetos AEM.
+O Arquétipo de projeto do AEM mais recente implementa a estrutura do pacote de práticas recomendadas para implementações locais e do AMS e é recomendado para todos os projetos do AEM.
 
 >[!TIP]
 >
->Consulte o artigo [Estrutura de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) na documentação do AEM as a Cloud Service e da documentação do [Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR). Ambos são totalmente compatíveis com AEM 6.5.
+>Consulte o artigo [Estrutura de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) na documentação do AEM as a Cloud Service e da documentação do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Ambos são totalmente compatíveis com o AEM 6.5.

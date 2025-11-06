@@ -3,8 +3,8 @@ title: Criação de tags em aplicativos do AEM
 description: Trabalhar programaticamente com tags ou estender tags em um aplicativo AEM personalizado
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Criação de tags em aplicativos do AEM {#building-tagging-into-aem-applications}
 
-Para fins de trabalho programático com tags ou extensão de tags em um aplicativo AEM personalizado, este documento descreve o uso da
+Para trabalhar programaticamente com tags ou estender tags em um aplicativo AEM personalizado, este documento descreve o uso da
 
 * [API de marcação](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -155,7 +155,7 @@ A API do lado do servidor localizou métodos relacionados a `title`:
    * `createTagByTitle(String tagTitlePath, Locale locale)`
    * `resolveByTitle(String tagTitlePath, Locale locale)`
 
-No AEM, o idioma pode ser obtido no idioma da página ou no idioma do usuário.
+No AEM, o idioma pode ser obtido do idioma da página ou do idioma do usuário.
 
 Para marcação, a localização depende do contexto, pois a marca `titles` pode ser exibida no idioma da página, no idioma do usuário ou em qualquer outro idioma.
 
@@ -170,4 +170,4 @@ O finlandês agora está disponível na caixa de diálogo de marcas das propried
 
 >[!NOTE]
 >
->A nova língua deve ser uma das línguas reconhecidas pelo AEM. Ou seja, ele deve estar disponível como um nó abaixo de `/libs/wcm/core/resources/languages`.
+>O novo idioma deve ser um dos idiomas reconhecidos pela AEM. Ou seja, ele deve estar disponível como um nó abaixo de `/libs/wcm/core/resources/languages`.

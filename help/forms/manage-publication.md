@@ -7,7 +7,7 @@ feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manag
 role: User, Developer
 level: Intermediate
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: d8294c358bcc31b7c5e41e3103ec73adc05da6d9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 1%
@@ -20,6 +20,7 @@ ht-degree: 1%
 Como administrador do Adobe Experience Manager (AEM) Forms, você pode publicar formulários da sua instância de autor no Experience Manager Forms. Você também tem a opção de agendar a publicação de um formulário ou pasta para uma data ou hora posterior. Após a publicação, os usuários podem acessar e preencher os formulários.
 
 No Experience Manager Forms, você pode publicar um formulário usando um dos seguintes métodos:
+
 * [Opção Publicar](#publish-forms-using-the-publish-option)
 * [Opção Gerenciar publicação](#publish-forms-using-the-manage-publication-option)
 

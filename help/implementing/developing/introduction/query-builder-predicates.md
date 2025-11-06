@@ -3,8 +3,8 @@ title: Referência de predicado do construtor de consultas
 description: Referência de predicado para a API do Construtor de consultas no AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 1%
@@ -181,7 +181,7 @@ Um predicado somente de filtragem e não pode usar um índice de pesquisa. Não 
 
 ### idioma {#language}
 
-Esse predicado encontra páginas AEM em um idioma específico. Ela verifica a propriedade de idioma da página e o caminho da página, que geralmente inclui o idioma ou o local em uma estrutura de site de nível superior.
+Esse predicado encontra páginas do AEM em um idioma específico. Ela verifica a propriedade de idioma da página e o caminho da página, que geralmente inclui o idioma ou o local em uma estrutura de site de nível superior.
 
 Um predicado somente de filtragem e não pode usar um índice de pesquisa.
 

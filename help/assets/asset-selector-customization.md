@@ -3,7 +3,7 @@ title: Personalizar o aplicativo Seletor de ativos
 description: Use funções para personalizar o Seletor de ativos no aplicativo.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 21%
@@ -357,7 +357,7 @@ Use o seguinte trecho de código para mostrar uma mensagem do sistema para o uso
 
 O Seletor de ativos permite adicionar um filtro seletor de tags. Ela é compatível com um grupo de tags que combina todas as tags relevantes a um grupo de tags específico. Além disso, permite selecionar tags adicionais correspondentes ao ativo que você está procurando. Além disso, você também pode definir os grupos de tags padrão no filtro de chamada contextual que são usados principalmente por você para que sejam acessíveis a você em qualquer lugar.
 
->
+>[!NOTE]
 >
 > * É necessário adicionar um trecho de código de invocação contextual para ativar o filtro de marcação na pesquisa.
 > * É obrigatório usar a propriedade de nome correspondente ao tipo de grupo de marcas `(property=xcm:keywords.id=)`.

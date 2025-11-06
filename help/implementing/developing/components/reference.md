@@ -3,23 +3,23 @@ title: Guia de referência de componentes
 description: Um guia de referência do desenvolvedor para os detalhes dos componentes e sua estrutura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3481'
+source-wordcount: '3476'
 ht-degree: 1%
 
 ---
 
 # Guia de referência de componentes {#components-reference-guide}
 
-Os componentes são o núcleo da criação de uma experiência no AEM. Os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) simplificam a introdução a um conjunto de ferramentas de componentes robustos e prontos. O [Tutorial do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) orienta o desenvolvedor sobre como usar essas ferramentas e como criar componentes personalizados para criar um site de AEM.
+Os componentes são o núcleo da criação de uma experiência no AEM. Os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e o [Arquétipo de Projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) simplificam a introdução a um conjunto de ferramentas de componentes robustos e prontos. O [Tutorial do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) orienta o desenvolvedor sobre como usar essas ferramentas e como criar componentes personalizados para criar um site do AEM.
 
 >[!TIP]
 >
->Antes de fazer referência a este documento, verifique se você concluiu o [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e se está familiarizado com os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR).
+>Antes de fazer referência a este documento, verifique se você concluiu o [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e se está familiarizado com os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e o [Arquétipo de Projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
 
-Como o Tutorial WKND aborda a maioria dos casos de uso, este documento serve apenas como um complemento para esses recursos. Ele fornece especificações técnicas detalhadas sobre como os componentes são estruturados e configurados no AEM e não tem a intenção de ser um guia de introdução.
+Como o Tutorial WKND aborda a maioria dos casos de uso, este documento serve apenas como um complemento para esses recursos. Ele fornece especificações técnicas detalhadas sobre como os componentes são estruturados e configurados no AEM e não se destina a ser um guia de introdução.
 
 ## Visão geral {#overview}
 
@@ -34,12 +34,12 @@ Antes de começar a realmente configurar ou codificar seu componente, você deve
 * Seu componente exigirá lógica para selecionar/manipular o conteúdo?
    * A lógica deve ser mantida separada da camada da interface do usuário. O HTL foi projetado para ajudar a garantir que isso aconteça.
 * Seu componente precisará de formatação CSS?
-   * A formatação CSS deve ser mantida separada das definições de componentes. Defina convenções para nomear seus elementos de HTML para que você possa modificá-los por meio de arquivos CSS externos.
+   * A formatação CSS deve ser mantida separada das definições de componentes. Defina convenções para nomear seus elementos HTML de modo que você possa modificá-los por meio de arquivos CSS externos.
 * Que implicações de segurança o novo componente pode causar?
 
 ### Reutilizar componentes existentes {#reusing-components}
 
-Antes de investir tempo na criação de um componente totalmente novo, considere personalizar ou estender componentes existentes. [Os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) oferecem um conjunto de componentes flexíveis, robustos e bem testados, prontos para produção.
+Antes de investir tempo na criação de um componente totalmente novo, considere personalizar ou estender componentes existentes. [Os Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) oferecem um conjunto de componentes flexíveis, robustos e bem testados, prontos para produção.
 
 #### Extensão dos Componentes principais {#extending-core-components}
 
@@ -57,7 +57,7 @@ Isso significa que você só precisa redefinir as diferenças necessárias, em v
 
 ### Lógica de conteúdo e marcação de renderização  {#content-logic-and-rendering-markup}
 
-Seu componente é renderizado com [HTML](https://www.w3schools.com/htmL/html_intro.asp). Seu componente deve definir o HTML necessário para obter o conteúdo necessário e, em seguida, renderizá-lo conforme necessário nos ambientes do autor e de publicação.
+Seu componente é renderizado com [HTML](https://www.w3schools.com/htmL/html_intro.asp). Seu componente deve definir o HTML necessário para obter o conteúdo necessário e, em seguida, renderizá-lo conforme necessário, nos ambientes do autor e de publicação.
 
 É recomendável manter o código responsável pela marcação e renderização separado do código que controla a lógica usada para selecionar o conteúdo do componente.
 
@@ -65,13 +65,13 @@ Esta filosofia é suportada pelo [HTL](https://experienceleague.adobe.com/docs/e
 
 Essa lógica (opcional) pode ser implementada de diferentes maneiras e é invocada do HTL com comandos específicos:
 
-* Usando Java - [A API de uso Java do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=pt-BR) permite que um arquivo de HTL acesse métodos de ajuda em uma classe de Java personalizada. Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
-* Usando o JavaScript - [A API de uso do HTL JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=pt-BR) permite que um arquivo HTL acesse o código de ajuda gravado no JavaScript. Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
+* Usando Java - [A API de uso Java do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) permite que um arquivo de HTL acesse métodos de ajuda em uma classe de Java personalizada. Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
+* Usando o JavaScript - [A API de uso do HTL JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) permite que um arquivo HTL acesse o código de ajuda gravado no JavaScript. Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
 * Uso de bibliotecas do lado do cliente - sites modernos dependem muito do processamento do lado do cliente orientado por código JavaScript e CSS complexo. Consulte o documento [Usando Bibliotecas do Lado do Cliente no AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obter mais informações.
 
 ## Estrutura do componente {#structure}
 
-A estrutura de um componente AEM é poderosa e flexível. As principais partes são:
+A estrutura de um componente do AEM é poderosa e flexível. As principais partes são:
 
 * [Tipo de recurso](#resource-type)
 * [Definição de componente](#component-definition)
@@ -92,7 +92,7 @@ Essa é uma abstração que ajuda a garantir que, mesmo quando a aparência muda
 
 A definição de um componente pode ser dividida da seguinte forma:
 
-* Componentes de AEM baseados em [Sling](https://sling.apache.org/documentation.html).
+* Os componentes do AEM são baseados em [Sling](https://sling.apache.org/documentation.html).
 * Os componentes do AEM estão localizados em `/libs/core/wcm/components`.
 * Os componentes específicos do Projeto/Site estão localizados em `/apps/<myApp>/components`.
 * Os componentes padrão do AEM são definidos como `cq:Component` e têm os seguintes elementos-chave:
@@ -110,7 +110,7 @@ A definição de um componente pode ser dividida da seguinte forma:
    * Consulte a seção [Ícone do Componente](#component-icon) para obter detalhes.
 * **Nós-Filhos Vitais**:
    * `cq:editConfig (cq:EditConfig)` - Define as propriedades de edição do componente e habilita o componente para aparecer no Navegador de Componentes.
-      * Se o componente tiver uma caixa de diálogo, ele será exibido automaticamente no navegador de Componentes ou Sidekick, mesmo se cq:editConfig não existir.
+      * Se o componente tiver uma caixa de diálogo, ele será exibido automaticamente no navegador Componentes ou no Sidekick, mesmo se o cq:editConfig não existir.
    * `cq:childEditConfig (cq:EditConfig)` - Controla os aspectos da interface do usuário do autor para componentes filho que não definem seu próprio `cq:editConfig`.
    * `cq:dialog (nt:unstructured)` - Caixa de diálogo para este componente. Define a interface que permite ao usuário configurar o componente e/ou editar conteúdo.
    * `cq:design_dialog (nt:unstructured)` - Edição de design para este componente.
@@ -317,14 +317,14 @@ O comportamento de edição de um componente é configurado adicionando um nó `
    * `cq:inplaceEditing` (tipo de nó `cq:InplaceEditingConfig`): define uma configuração de edição no local para o componente
    * `cq:listeners` (tipo de nó `cq:EditListenersConfig`): define o que acontece antes ou depois de uma ação ocorrer no componente
 
-Há muitas configurações existentes no AEM. Você pode pesquisar facilmente por propriedades específicas ou nós filhos usando a Ferramenta de consulta em **CRXDE Lite**.
+Há muitas configurações existentes no AEM. Você pode pesquisar facilmente por propriedades específicas ou nós filhos usando a ferramenta Query no **CRXDE Lite**.
 
 ### Marcadores de posição do componente {#component-placeholders}
 
 Os componentes sempre devem renderizar algum HTML que esteja visível para o autor, mesmo quando o componente não tiver conteúdo. Caso contrário, ela pode desaparecer visualmente da interface do editor, tornando-se tecnicamente presente, mas invisível na página e no editor. Nesse caso, os autores não poderão selecionar e interagir com o componente vazio.
 
 Por esse motivo, os componentes devem renderizar um espaço reservado, desde que não renderizem nenhuma saída visível quando a página for renderizada no editor de páginas (quando o modo WCM for `edit` ou `preview`).
-A marcação de HTML típica de um espaço reservado é a seguinte:
+A marcação típica do HTML para um espaço reservado é a seguinte:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
@@ -339,7 +339,7 @@ O script HTL típico que renderiza o HTML de espaço reservado acima é o seguin
 
 No exemplo anterior, `isEmpty` é uma variável que só é verdadeira quando o componente não tem conteúdo e está invisível para o autor.
 
-Para evitar repetição, o Adobe recomenda que os implementadores de componentes usem um modelo HTL para esses espaços reservados, [como o fornecido pelos Componentes Principais](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
+Para evitar repetição, a Adobe recomenda que os implementadores de componentes usem um modelo HTL para esses espaços reservados, [como o fornecido pelos Componentes Principais](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
 
 O uso do modelo no link anterior é feito com a seguinte linha de HTL:
 
@@ -352,9 +352,9 @@ No exemplo anterior, `model.text` é a variável que só é verdadeira quando o 
 
 Um exemplo de uso deste modelo pode ser visto nos Componentes Principais, [como no Componente de Título](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27).
 
-### Configuração com nós filhos cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
+### Configurando com nós filhos cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
-#### Soltar o Assets em uma caixa de diálogo - cq:dropTargets {#cq-droptargets}
+#### Soltando o Assets em uma caixa de diálogo - cq:dropTargets {#cq-droptargets}
 
 O nó `cq:dropTargets` (tipo de nó `nt:unstructured`) define o destino de soltar que pode aceitar um soltar de um ativo arrastado do localizador de conteúdo. É um nó do tipo `cq:DropTargetConfig`.
 
@@ -383,7 +383,7 @@ A configuração a seguir habilita a edição no local do componente e define `p
         editorType="plaintext"/>
 ```
 
-### Manipulação de eventos de campo - cq:listeners {#cq-listeners}
+### Manipulando Eventos de Campo - cq:listeners {#cq-listeners}
 
 O método de manipulação de eventos em campos de diálogo é feito com ouvintes em uma [biblioteca do cliente](/help/implementing/developing/introduction/clientlibs.md) personalizada.
 

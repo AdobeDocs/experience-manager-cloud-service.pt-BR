@@ -4,8 +4,8 @@ description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba co
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 8a3ee333a0bd5904c43c424967a7b9c752fd38c2
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 29%
@@ -71,8 +71,8 @@ Você deve continuar a jornada headless do AEM revisando o documento [Como unir 
 * [Suporte a fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 * [Trabalho com fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md)
 * [Componentes principais do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction)
-* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR)
-* [Vídeo - Desenvolvimento do CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=pt-BR)
+* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+* [Vídeo - Desenvolvimento do CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
 * [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 * [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

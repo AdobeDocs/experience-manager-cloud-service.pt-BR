@@ -4,8 +4,8 @@ description: Saiba como publicar seu conteúdo traduzido e atualizar as traduç�
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 76%
@@ -18,7 +18,7 @@ Saiba como publicar seu conteúdo traduzido e atualizar as traduções como atua
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de tradução sem periféricos do AEM, [Traduzir conteúdo](configure-connector.md), você aprendeu a usar os Projetos de tradução do AEM para traduzir conteúdo sem periféricos. Agora você deve:
+No documento anterior da jornada de tradução headless do AEM, [Traduzir conteúdo](configure-connector.md), você aprendeu a usar os Projetos de tradução do AEM para traduzir conteúdo headless. Agora você deve:
 
 * Entender o que é um projeto de tradução.
 * Ser capaz de criar novos projetos de tradução.
@@ -46,7 +46,7 @@ Portanto, o AEM é fisicamente separado em duas instâncias.
 1. A instância do **autor** é o sistema no qual os autores e administradores de conteúdo trabalham para criar e gerenciar conteúdo.
 1. A instância de **publicação** é o sistema que entrega o conteúdo para os consumidores.
 
-Depois que o conteúdo é criado na instância do autor, ele deve ser transferido para a instância de publicação para que esteja disponível para consumo. O processo de transferência do autor para a publicação é chamado de **publicação**.
+Depois que o conteúdo é criado na instância de criação, ele deve ser transferido para a instância de publicação para que esteja disponível para consumo. O processo de transferência do autor para a publicação é chamado de **publicação**.
 
 ## Publicar seu conteúdo traduzido {#publishing}
 
@@ -117,7 +117,7 @@ Você vê que um novo cartão de tarefa foi adicionado ao projeto. Neste exemplo
 
 ![Tarefa de tradução adicional adicionada](assets/additional-translation-job.png)
 
-Observe que as estatísticas listadas no novo cartão (número de ativos e fragmentos de conteúdo) são diferentes. Isso ocorre porque o AEM reconhece o que mudou desde a última tradução e inclui apenas o conteúdo que deve ser traduzido. Isso inclui a nova tradução do conteúdo atualizado e a primeira tradução do novo conteúdo.
+Observe que as estatísticas listadas no novo cartão (número de ativos e fragmentos de conteúdo) são diferentes. Isso ocorre porque o AEM reconhece o que mudou desde a última tradução e inclui somente o conteúdo que deve ser traduzido. Isso inclui a nova tradução do conteúdo atualizado e a primeira tradução do novo conteúdo.
 
 A partir deste ponto, você [inicia e gerencia seu trabalho de tradução da mesma forma que fazia com o original](translate-content.md#using-translation-project).
 

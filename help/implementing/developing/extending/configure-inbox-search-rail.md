@@ -3,8 +3,8 @@ title: Como configurar filtros de pesquisa para a Caixa de entrada?
 description: Saiba como configurar filtros de pesquisa para itens da Caixa de entrada.
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 1%

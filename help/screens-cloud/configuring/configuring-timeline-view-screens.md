@@ -4,10 +4,10 @@ description: Esta página descreve como configurar uma visualização de linha d
 exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '813'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -36,7 +36,7 @@ As seções a seguir descrevem essas etapas em detalhes.
 ### Adicionar um comentário {#addcomment}
 
 Os comentários disponíveis por meio da linha do tempo permitem que os usuários criem um registro centralizado e histórico para discussões que ocorrem sobre o canal, o local ou qualquer pasta na tela.
-Os comentários fornecem uma maneira bem consolidada para os usuários de AEM discutirem uma maneira que pode ser persistente, permitindo que outros entendam as principais decisões.
+Os comentários fornecem uma maneira consolidada e agradável para os usuários do AEM discutirem uma maneira que pode ser persistente, permitindo que outros entendam as principais decisões.
 
 1. Navegue até o canal ao qual deseja adicionar um comentário.
 1. Selecione o canal.
@@ -52,6 +52,7 @@ As informações na linha do tempo são atualizadas para indicar que o comentár
 ### Salvar uma versão {#saveversion}
 
 O controle de versão cria um &quot;instantâneo&quot; de um canal em um ponto específico no tempo. Com o controle de versão, você pode executar as seguintes ações:
+
 * Crie uma versão de um canal.
 * Restaurar um canal para uma versão anterior; por exemplo:
    * para desfazer uma alteração feita na página.
@@ -123,7 +124,7 @@ Ao criar, é possível chamar fluxos de trabalho para realizar ações em seus c
 Ao aplicar o fluxo de trabalho, especifique as seguintes informações:
 
 * O fluxo de trabalho a ser aplicado.
-* Como opção, um título que ajuda a identificar a instância do fluxo de trabalho na Caixa de entrada de um usuário.
+* Opcionalmente, um título que ajude a identificar a instância do fluxo de trabalho na caixa de entrada de um usuário.
 * A carga do workflow.
 
 #### Início do fluxo de trabalho

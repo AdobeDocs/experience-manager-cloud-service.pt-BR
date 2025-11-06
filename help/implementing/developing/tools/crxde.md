@@ -1,19 +1,19 @@
 ---
 title: Uso do CRXDE Lite
-description: o CRXDE Lite faz parte do AEM quickstart e está disponível para você acessar e modificar o repositório em seus ambientes de desenvolvimento locais no navegador.
+description: O CRXDE Lite faz parte da inicialização rápida do AEM e está disponível para que você acesse e modifique o repositório em seus ambientes de desenvolvimento locais no navegador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1677'
 ht-degree: 1%
 
 ---
 
 # Uso do CRXDE Lite {#using-crxde-lite}
 
-o CRXDE Lite faz parte do AEM quickstart e está disponível para você acessar e modificar o repositório em seus ambientes de desenvolvimento locais no navegador. Com o CRXDE Lite, é possível editar arquivos, pastas, nós e propriedades. O repositório inteiro é acessível nesta interface fácil de usar.
+O CRXDE Lite faz parte da inicialização rápida do AEM e está disponível para que você acesse e modifique o repositório em seus ambientes de desenvolvimento locais no navegador. Com o CRXDE Lite, você pode editar arquivos, pastas, nós e propriedades. O repositório inteiro é acessível nesta interface fácil de usar.
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ Para começar a usar o CRXDE Lite:
 1. Digite seu **nome de usuário** e sua **senha**.
 1. Clique em **OK**.
 
-A interface do usuário do CRXDE Lite é exibida da seguinte maneira no seu navegador:
+A Interface do usuário do CRXDE Lite é exibida da seguinte maneira no seu navegador:
 
-![A interface de CRXDE Lite](assets/crxde-lite.png)
+![A interface do CRXDE Lite](assets/crxde-lite.png)
 
 >[!TIP]
 >
@@ -42,7 +42,7 @@ A interface do usuário do CRXDE Lite tem muitas partes e funções.
 
 ### Barra do seletor superior {#top-switcher-bar}
 
-A barra superior do alternador permite alternar rapidamente entre o CRXDE Lite e o [Gerenciador de pacotes](package-manager.md).
+A Barra do Alternador Superior permite alternar rapidamente entre o CRXDE Lite e o [Gerenciador de Pacotes](package-manager.md).
 
 ### Widget de caminho de nó {#node-path-widget}
 
@@ -64,7 +64,7 @@ O Filtro de Navegação em Árvore (o ícone binóculo ) permite filtrar os nós
 
 O **Painel de Edição** permite que você exiba o conteúdo do arquivo selecionado no momento no repositório. Cada arquivo aberto é representado como sua própria guia no painel.
 
-A guia **Página inicial** permite pesquisar conteúdo e/ou documentação e acessar a documentação do desenvolvedor e o suporte para Adobe.
+A guia **Página inicial** permite pesquisar conteúdo e/ou documentação e acessar a documentação do desenvolvedor e o suporte da Adobe.
 
 Clique duas vezes em um arquivo no **Painel do Explorer** para exibir seu conteúdo no **Painel de Edição**. Em seguida, você pode modificá-lo e salvar as alterações.
 
@@ -180,7 +180,7 @@ Para criar uma pasta com o CRXDE Lite:
 
 ## Criando um nó {#creating-a-node}
 
-Para criar um nó com CRXDE Lite:
+Para criar um nó com o CRXDE Lite:
 
 1. Abra o CRXDE Lite no navegador.
 1. No [**Painel do Explorer**](#explorer-pane), clique com o botão direito do mouse no nó em que deseja criar o novo nó, selecione **Criar** e **Criar Nó**.

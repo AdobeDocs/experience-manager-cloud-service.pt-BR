@@ -4,8 +4,8 @@ description: Uma introdução ao uso dos recursos do Adobe Experience Manager as
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: cc2e73da123d3e0676a8e175a18c1dc0bdff1daa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 94%
@@ -18,7 +18,7 @@ Nesta parte da [jornada do autor de conteúdo headless do AEM](overview.md), voc
 
 ## Objetivo {#objective}
 
-* **Público**: iniciante
+* **Público-alvo**: iniciante
 * **Objetivo**: apresentar os conceitos e terminologias relevantes para a criação headless.
 
 ## Sistema de gerenciamento de conteúdo (CMS) {#content-management-system}
@@ -80,7 +80,7 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
 
 * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
 
-* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)
 
 * Jornada do desenvolvedor AEM headless
    * [Saiba mais sobre o desenvolvimento headless do CMS](/help/journey-headless/developer/learn-about.md)

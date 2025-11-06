@@ -2,14 +2,14 @@
 title: Como o editor universal publica conteúdo
 description: Saiba como o Editor universal publica seu conteúdo, como ele difere do processo no Console de sites e considerações ao desenvolver seus próprios aplicativos para trabalhar com ele.
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 0ee6689460ac0ecc5c025fb6a940d69a16699c85
+role: Admin, Developer
+exl-id: 60f0bb4a-ee60-4f73-83ae-8568735474ad
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 25%
 
 ---
-
 
 # Como o editor universal publica conteúdo {#publishing}
 

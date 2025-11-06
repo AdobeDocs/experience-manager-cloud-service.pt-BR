@@ -2,13 +2,13 @@
 title: Adicionar um ambiente de teste especializado
 description: Saiba como os ambientes de teste especializados no Cloud Manager fornecem um espaço dedicado para validar recursos em condições próximas à produção, ideal para testes de estresse e verificações avançadas pré-implantação.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 badge: label="Beta privado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 7%
+source-wordcount: '511'
+ht-degree: 8%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->&#x200B;>O recurso descrito neste artigo só está disponível por meio do programa beta privado. Para se inscrever no beta privado, consulte [Ambiente de testes especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>O recurso descrito neste artigo só está disponível por meio do programa beta privado. Para se inscrever no beta privado, consulte [Ambiente de testes especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 O ambiente de teste especializado, ou DevXL, é um novo tipo de ambiente do Cloud Manager que você pode criar. Ele foi projetado para atender a casos de uso avançados, como testes de aceitação de usuários (UAT) e validação de desempenho. Diferentemente dos ambientes tradicionais de desenvolvimento, desenvolvimento rápido ou preparo, os ambientes DevXL operam fora do pipeline de implantação de produção. Dessa forma, eles oferecem maior flexibilidade e, ao mesmo tempo, mantêm um isolamento rigoroso para impedir a interferência nos workflows de produção.
 

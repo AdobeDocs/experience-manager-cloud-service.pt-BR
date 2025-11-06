@@ -3,8 +3,8 @@ title: Uso de bibliotecas do lado do cliente no AEM as a Cloud Service
 description: O AEM fornece Pastas de bibliotecas do lado do cliente, que permitem armazenar seu código do lado do cliente (clientlibs) no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 66916e3864811cc7b7d030787a413ceb5ce4d8b3
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2428'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Uso de bibliotecas do lado do cliente no AEM as a Cloud Service {#using-client-side-libraries}
 
-As experiências digitais dependem muito do processamento do lado do cliente orientado por códigos JavaScript e CSS complexos. As Bibliotecas do lado do cliente do AEM (clientlibs) permitem organizar e armazenar centralmente essas bibliotecas do lado do cliente no repositório. Juntamente com o [processo de compilação de front-end no arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=pt-BR), o gerenciamento do código de front-end para o seu projeto do AEM torna-se simples.
+As experiências digitais dependem muito do processamento do lado do cliente orientado por códigos JavaScript e CSS complexos. As Bibliotecas do lado do cliente do AEM (clientlibs) permitem organizar e armazenar centralmente essas bibliotecas do lado do cliente no repositório. Juntamente com o [processo de compilação de front-end no arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), o gerenciamento do código de front-end para o seu projeto do AEM torna-se simples.
 
 As vantagens de usar clientlibs no AEM incluem:
 
@@ -27,7 +27,7 @@ As bibliotecas de clientes são a solução integrada para fornecer CSS e JavaSc
 
 >[!TIP]
 >
->Os desenvolvedores de front-end que estão criando CSS e JavaScript para projetos do AEM também devem se familiarizar com o [Arquétipo de Projetos AEM e seu processo de compilação automatizado de front-end](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=pt-BR).
+>Os desenvolvedores de front-end que estão criando CSS e JavaScript para projetos do AEM também devem se familiarizar com o [Arquétipo de Projetos AEM e seu processo de compilação automatizado de front-end](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
 ## O que são bibliotecas do lado do cliente {#what-are-clientlibs}
 
@@ -37,7 +37,7 @@ A AEM coleta o CSS e o JavaScript do site em um único arquivo, em um local cent
 
 ## Desenvolvimento de front-end para o AEM as a Cloud Service {#fed-for-aemaacs}
 
-Todos os ativos de JavaScript, CSS e outros ativos de front-end devem ser mantidos no módulo [ui.frontend do Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=pt-BR). A flexibilidade do arquétipo permite usar suas ferramentas da Web modernas preferidas para criar e gerenciar esses recursos.
+Todos os ativos de JavaScript, CSS e outros ativos de front-end devem ser mantidos no módulo [ui.frontend do Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html). A flexibilidade do arquétipo permite usar suas ferramentas da Web modernas preferidas para criar e gerenciar esses recursos.
 
 O arquétipo pode então compilar os recursos em arquivos CSS e JS únicos, incorporando-os automaticamente em um `cq:clientLibraryFolder` no repositório.
 
@@ -92,7 +92,7 @@ Para que as bibliotecas de clientes em `/apps` sejam acessíveis, um servidor pr
 1. Se você precisar gerenciar recursos estáticos, crie uma subpasta chamada `resources` abaixo da pasta da biblioteca do cliente.
    * Se você armazenar recursos estáticos em qualquer lugar que não seja na pasta `resources`, eles não poderão ser referenciados em uma instância de publicação.
 1. Adicionar arquivos de origem à pasta da biblioteca.
-   * Isso normalmente é feito pelo processo de build de front-end do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=pt-BR).
+   * Isso normalmente é feito pelo processo de build de front-end do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * Você pode organizar os arquivos de origem em subpastas, se desejar.
 1. Selecione a pasta da biblioteca do cliente e clique em **Criar > Criar arquivo**.
 1. Na caixa Nome do arquivo, digite um dos seguintes nomes de arquivo e clique em OK:
@@ -127,7 +127,7 @@ As bibliotecas de clientes são carregadas por meio de um modelo auxiliar fornec
 
 Cada modelo auxiliar espera uma opção `categories` para fazer referência às bibliotecas de clientes desejadas. Essa opção pode ser uma matriz de valores de cadeias de caracteres ou uma cadeia contendo uma lista de valores separados por vírgula.
 
-[Consulte a documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=pt-BR#loading-client-libraries) para obter mais detalhes sobre como carregar clientlibs via HTL.
+[Consulte a documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries) para obter mais detalhes sobre como carregar clientlibs via HTL.
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}

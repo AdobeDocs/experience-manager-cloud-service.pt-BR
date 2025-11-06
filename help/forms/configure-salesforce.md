@@ -3,13 +3,13 @@ title: Como configurar modelos de dados de formulário prontos para uso do Sales
 description: Saiba como integrar o Salesforce ao Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
 
 ---
-
 
 # Configurar o Salesforce para o AEM Forms {#configure-azure-storage}
 
@@ -59,6 +59,7 @@ Execute as seguintes etapas para configurar o serviço de nuvem [!DNL Salesforce
 Um FDM (Modelo de Dados de Formulário) do [!DNL Salesforce] está disponível por padrão no Servidor do [!DNL AEM Forms] depois que você [configurou um projeto de desenvolvimento para o Forms com base no arquétipo do Experience Manager](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 Para acessar o Modelo de dados de formulário (FDM):
+
 1. Navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Integrações de Dados]**.
 1. Selecione o nome da pasta, o **[!UICONTROL Modelo de Dados do Salesforce]** e o ícone Editar ![Editar](assets/edit.png) para exibir o modelo de dados de formulário (FDM).
 

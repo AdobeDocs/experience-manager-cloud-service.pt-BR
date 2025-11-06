@@ -3,8 +3,8 @@ title: Personalização e extensão de fragmentos de conteúdo
 description: Um fragmento de conteúdo estende um ativo padrão. Saiba como personalizá-los.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Os fragmentos de conteúdo individuais são baseados em modelos de fragmento de 
 
 ### Integração do Sites com o Assets {#integration-of-sites-with-assets}
 
-O Gerenciamento de fragmentos de conteúdo (CFM) faz parte do Adobe Experience Manager (AEM) Assets como:
+O Gerenciamento de fragmento de conteúdo (CFM) faz parte do Adobe Experience Manager (AEM) Assets como:
 
 * Fragmentos de conteúdo são ativos.
 * Eles usam a funcionalidade existente do Assets.
@@ -63,7 +63,6 @@ Os fragmentos de conteúdo, com base em um modelo de fragmento de conteúdo, sã
 * Todo o conteúdo é armazenado no nó `jcr:content/data` do ativo:
 
    * Os dados do elemento são armazenados no subnó principal:
-
      `jcr:content/data/master`
 
    * As variações são armazenadas em um subnó que carrega o nome da variação:
@@ -99,9 +98,9 @@ Para integrar com o Assets Core:
 
 >[!CAUTION]
 >
->O componente de Fragmento de Conteúdo [faz parte dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR). Consulte [Desenvolvendo componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR) para obter mais detalhes.
+>O componente de Fragmento de Conteúdo [faz parte dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR). Consulte [Desenvolvendo componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obter mais detalhes.
 
-Os fragmentos de conteúdo podem ser referenciados a partir de páginas AEM, como qualquer outro tipo de ativo. O AEM fornece o **[componente principal do Fragmento do Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR)** - um componente [&#x200B; que permite incluir fragmentos de conteúdo em suas páginas](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). Você também pode estender este **[Componente principal do Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR)**.
+Os fragmentos de conteúdo podem ser referenciados a partir das páginas do AEM, como qualquer outro tipo de ativo. A AEM fornece o **[componente principal do Fragmento do Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR)** - um componente [ que permite incluir fragmentos de conteúdo em suas páginas](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page). Você também pode estender este **[Componente principal do Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)**.
 
 * O componente usa a propriedade `fragmentPath` para fazer referência ao fragmento de conteúdo real. A propriedade `fragmentPath` é tratada da mesma forma que as propriedades semelhantes de outros tipos de ativos; por exemplo, quando o fragmento de conteúdo é movido para outro local.
 
@@ -285,7 +284,7 @@ Consulte o link a seguir:
 >
 >Considere essas informações de fundo. Você não deve alterar nada aqui (pois está marcado como uma *área privada* no repositório), mas pode ajudar às vezes a entender como as coisas funcionam por baixo dos panos.
 
-A edição de um fragmento de conteúdo, que pode abranger várias visualizações (= páginas de HTML), é atômica. Como esses recursos atômicos de edição de várias visualizações não são um conceito típico de AEM, os fragmentos de conteúdo usam o que é chamado de *sessão de edição*.
+A edição de um fragmento de conteúdo, que pode abranger várias exibições (= páginas do HTML), é atômica. Como esses recursos atômicos de edição de várias visualizações não são um conceito típico do AEM, os fragmentos de conteúdo usam o que é chamado de *sessão de edição*.
 
 Uma sessão de edição é iniciada quando o usuário abre um fragmento de conteúdo no editor. A sessão de edição é concluída quando o usuário sai do editor selecionando **Salvar** ou **Cancelar**.
 

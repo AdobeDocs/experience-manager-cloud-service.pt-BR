@@ -3,9 +3,9 @@ title: Blueprint do SPA
 description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura SPA deve cumprir para que você possa implementar componentes SPA editáveis no AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 1%
@@ -71,7 +71,7 @@ A estrutura de conteúdo da página é armazenada no AEM. O modelo da página é
 
 Os componentes de SPA devem estar sincronizados com o modelo de página e ser atualizados de acordo com as alterações em seu conteúdo. Um padrão que usa componentes dinâmicos deve ser usado para instanciar componentes em tempo real, seguindo a estrutura do modelo de página fornecido.
 
-### Metacampos {#meta-fields}
+### Campos do Meta {#meta-fields}
 
 O modelo de página usa o Exportador de Modelo JSON, que é baseado na API [Modelo Sling](https://sling.apache.org/documentation/bundles/models.html). Os modelos do sling exportáveis expõem a seguinte lista de campos para permitir que as bibliotecas subjacentes interpretem o modelo de dados:
 

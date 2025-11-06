@@ -1,10 +1,10 @@
 ---
 title: Implementação de um avaliador de predicado personalizado no Construtor de consultas
-description: O Query Builder do AEM oferece uma maneira fácil e personalizável de consultar o repositório de conteúdo
+description: O Query Builder da AEM oferece uma maneira fácil e personalizável de consultar o repositório de conteúdo
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Este documento descreve como estender o [Construtor de Consultas](query-builder-
 
 ## Visão geral {#overview}
 
-O [Construtor de Consultas](query-builder-api.md) oferece uma maneira fácil de consultar o repositório de conteúdo. O AEM vem com [um conjunto de avaliadores de predicados](#query-builder-predicates.md) que ajudam você a consultar seus dados.
+O [Construtor de Consultas](query-builder-api.md) oferece uma maneira fácil de consultar o repositório de conteúdo. O AEM vem com [um conjunto de avaliadores de predicado](#query-builder-predicates.md) que ajudam você a consultar seus dados.
 
 No entanto, talvez você queira simplificar suas consultas implementando um avaliador de predicado personalizado que oculta alguma complexidade e garante uma semântica melhor.
 
@@ -101,7 +101,7 @@ O agrupamento de predicados de metadados de replicação com um avaliador de pre
 
 >[!TIP]
 >
->A configuração de novos projetos AEM, incluindo o uso do maven, é explicada em detalhes pelo [tutorial da WKND](develop-wknd-tutorial.md).
+>A configuração de novos projetos AEM, incluindo o uso de maven, é explicada em detalhes pelo [tutorial da WKND](develop-wknd-tutorial.md).
 
 Primeiro, é necessário atualizar as dependências do Maven do seu projeto. O `PredicateEvaluator` é parte do artefato `cq-search` e, portanto, deve ser adicionado ao seu arquivo pom Maven.
 

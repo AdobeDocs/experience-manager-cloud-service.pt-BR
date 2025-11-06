@@ -4,8 +4,8 @@ description: Saiba como a interface do Cloud Manager é organizada e como navega
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 4b09357276be8b57c72f830a39d98ab0a593efb1
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1595'
 ht-degree: 36%
@@ -67,7 +67,7 @@ A primeira é a barra de navegação superior do Experience Platform, que é man
 * O ![ícone Mostrar menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (menu Mostrar ou ocultar lateral) fornece acesso a uma variedade de guias que podem levá-lo a partes específicas de um programa individual. Ou você pode alternar entre o [Painel de Licenças](/help/implementing/cloud-manager/license-dashboard.md) e o console **[Meus Programas](#my-programs-console)**, dependendo do contexto.
 * O ![ícone de Campainha](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notificações](/help/implementing/cloud-manager/notifications.md)) fornece acesso a notificações e anúncios, entre outras coisas.
 
-Para obter mais detalhes sobre a barra de navegação superior do Experience Platform, consulte o [guia da interface do usuário do Adobe Experience Platform.](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Para obter mais detalhes sobre a barra de navegação superior do Experience Platform, consulte o [guia da interface do usuário do Adobe Experience Platform.](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Barra de ferramentas do programa {#program-toolbar}
 
@@ -122,7 +122,7 @@ Um cartão (ou linha em uma tabela) representa cada programa, fornecendo uma vis
 * Nome atribuído ao programa. A imagem acima mostra &quot;SecurBank Sample&quot; como o nome do programa.
 * Tipo de serviço:
    * **Experience Manager Cloud** — para programas do AEM as a Cloud Service
-   * **Experience Manager** — para [programas do AMS (Adobe Managed Services)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — para [programas do AMS (Adobe Managed Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
    * Sandbox
    * Produção
@@ -149,7 +149,7 @@ O ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_
 * Navegue até um ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [Ambiente](/help/implementing/cloud-manager/manage-environments.md) específico do programa
 * Abra o ![ícone de visão geral do programa](/help/implementing/cloud-manager/assets/program-overview.svg) [Visão geral do programa](#program-overview)
 * ![Ícone Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Editar o programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![Excluir ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Excluir um programa de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![Excluir ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[Excluir um programa de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >

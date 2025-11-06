@@ -2,9 +2,9 @@
 title: Personalizar tema e estilo para um Edge Delivery Services para AEM Forms
 description: Personalize efetivamente o tema e o estilo do AEM Forms fornecido pela Edge Delivery Services, garantindo uma experiência do usuário coesa e de marca.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 0%
@@ -252,7 +252,7 @@ O bloco adaptável do Forms segue padrões CSS específicos que garantem um esti
 }
 ```
 
-+++
++++ 
 
 +++ Padrões de personalização avançados
 

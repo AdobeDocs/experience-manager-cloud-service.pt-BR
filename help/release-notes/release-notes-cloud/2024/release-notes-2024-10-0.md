@@ -4,9 +4,9 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1663'
 ht-degree: 12%
 
 ---
@@ -19,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2022 ou 2023.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -44,13 +44,14 @@ Assista ao vídeo de Visão geral da versão de outubro de 2024 que exibe um res
 **Eventos de página modernizados**
 
 Os seguintes eventos de página do AEM Sites agora estão disponíveis como eventos de consumo externo baseados na Plataforma de eventos do AEM as a Cloud Service. Os eventos podem ser processados por meio do Adobe I/O para interagir com processos externos.
+
 * Página publicada
 * Página não publicada
 * Página excluída
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 
-**Gerar Variações**
+**Gerar variações**
 
 Aproveite a GenAI por meio do novo recurso do AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta da Adobe para consideração no programa.
 
@@ -108,7 +109,7 @@ Agora, os administradores podem controlar se precisam que os ativos expirados es
 
 * [Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável](/help/forms/save-core-component-based-form-as-draft.md): os usuários agora podem se beneficiar de um recurso de salvamento automático que salva automaticamente um formulário parcialmente preenchido como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
 
-* [Atualize facilmente os escopos do Adobe Sign](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): você pode modificar os escopos de uma configuração do Adobe Sign diretamente da página Configurações de nuvem do AEM, tornando mais rápido e fácil atualizar as configurações existentes.
+* [Atualize facilmente os escopos do Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): você pode modificar os escopos de uma configuração do Adobe Sign diretamente da página Configurações de nuvem do AEM, tornando mais rápido e fácil atualizar as configurações existentes.
 
 * [Suporte a função assíncrona para Forms Adaptável](/help/forms/using-async-funct-in-rule-editor.md): quando o Formulário Adaptável requer operações assíncronas, como aguardar processos externos ou recuperação de dados, você pode implementar essas operações com funções personalizadas e configurá-las no Editor de Regras.
 
@@ -120,7 +121,7 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 #### Assistente de IA do AEM Forms
 
-[A IA de geração para o Adaptive Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) oferece um nível totalmente novo de potência e facilidade aos seus processos de desenvolvimento de formulários. Ele permite que você construa formulários melhores mais rápido do que nunca.
+[A IA de geração para o Adaptive Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) oferece um nível totalmente novo de potência e facilidade aos seus processos de desenvolvimento de formulários. Ele permite que você construa formulários melhores mais rápido do que nunca.
 
 ![Assistente de IA de Geração, Forms Adaptável](/help/forms/assets/generative-ai-assistant.png)
 
@@ -156,7 +157,7 @@ Para controlar os envios de formulários do Coral ou do Foundation em locais esp
 1. **Adicionar Caminhos Permitidos**: especifica os caminhos em que as ações de formulário são permitidas.
 1. **Restringir comportamento**: determina o comportamento de caminhos restritos (caminhos não incluídos na lista de permissões). Você pode escolher entre duas opções:
    * **Pop-up** (padrão): exibe uma notificação pop-up.
-   * **Impedir**:Bloqueia o envio de formulários.
+   * **Impedir**:Blocks envio de formulário.
 
 >[!NOTE]
 >
@@ -194,7 +195,7 @@ Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Di
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

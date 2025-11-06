@@ -4,8 +4,8 @@ description: As variáveis de ambiente padrão podem ser configuradas e gerencia
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 28%
@@ -37,7 +37,7 @@ Casos de uso típicos para as variáveis de ambiente incluem:
 
 ## Adicionar uma variável de ambiente {#add-variables}
 
-Se você quiser adicionar várias variáveis, o Adobe recomenda que você adicione a primeira variável e, em seguida, use o ![ícone Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Adicionar** na caixa de diálogo **Configuração do ambiente** para adicionar as variáveis adicionais. Esse método significa que é possível adicioná-los com uma atualização ao ambiente.
+Se você quiser adicionar várias variáveis, a Adobe recomenda adicionar a primeira variável e usar o ![ícone Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Adicionar** na caixa de diálogo **Configuração do ambiente** para adicionar as variáveis adicionais. Esse método significa que é possível adicioná-los com uma atualização ao ambiente.
 
 Para adicionar, atualizar ou excluir variáveis de ambiente, você deve ser membro da [**função de Gerente de Implantação**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
 
@@ -59,7 +59,7 @@ Se você estiver adicionando uma variável de ambiente pela primeira vez, clique
    | --- | --- |
    | Nome | Um nome exclusivo da variável de configuração. Ela identifica a variável específica usada no ambiente. Ele deve seguir as seguintes convenções de nomenclatura:<ul><li>As variáveis só podem conter caracteres alfanuméricos e sublinhado (`_`).</li><li>Há um limite de 200 variáveis por ambiente.</li><li>Cada nome deve ter 100 caracteres ou menos.</li></ul> |
    | Valor | O valor que a variável contém. |
-   | Etapa aplicada | Selecione a qual serviço a variável se aplica. Selecione **Todos** para aplicar a variável a todos os serviços.<ul><li>**Tudo**</li><li>**Autor**</li><li>**Publish**</li><li>**Visualização**</li></ul> |
+   | Etapa aplicada | Selecione a qual serviço a variável se aplica. Selecione **Todos** para aplicar a variável a todos os serviços.<ul><li>**Tudo**</li><li>**Autor**</li><li>**Publicar**</li><li>**Visualização**</li></ul> |
    | Tipo | Selecione se a variável for normal ou um segredo. |
 
    ![Adição de uma variável](assets/add-variable.png)
@@ -78,7 +78,7 @@ Se você estiver adicionando uma variável de ambiente pela primeira vez, clique
 
 Depois de criar as variáveis de ambiente, você pode atualizá-las usando ![Adicionar/Atualizar - Ícone de círculo Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Adicionar/Atualizar** para abrir a caixa de diálogo **Configuração de Ambiente**.
 
-Se você deseja atualizar várias variáveis, a Adobe recomenda usar a caixa de diálogo **Configuração do ambiente** para atualizar todas as variáveis necessárias de uma só vez antes de clicar em **Salvar**. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
+Se você deseja atualizar várias variáveis, a Adobe recomenda usar a caixa de diálogo **Configuração do Ambiente** para atualizar todas as variáveis necessárias de uma só vez antes de clicar em **Salvar**. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
 
 **Para atualizar uma variável de ambiente:**
 
@@ -138,7 +138,7 @@ As variáveis de ambiente podem ser usadas em vários lugares da seguinte maneir
 | Onde as variáveis de ambiente podem ser usadas | Descrição |
 | --- | --- |
 | Autor, visualização e publicação | As variáveis e os segredos comuns do ambiente podem ser usados nos ambientes de criação, visualização e publicação. |
-| Dispatcher | Somente variáveis de ambiente regulares podem ser usadas com [a Dispatcher](https://experienceleague.adobe.com/br/docs/experience-manager-dispatcher/using/dispatcher).<ul><li>Não é possível usar segredos.</li><li>As variáveis de ambiente não podem ser usadas em diretivas `IfDefine`.</li><li>Valide o uso das variáveis de ambiente com o [Dispatcher localmente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) antes da implantação.</li></ul> |
+| Dispatcher | Somente variáveis de ambiente regulares podem ser usadas com [a Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/dispatcher).<ul><li>Não é possível usar segredos.</li><li>As variáveis de ambiente não podem ser usadas em diretivas `IfDefine`.</li><li>Valide o uso das variáveis de ambiente com o [Dispatcher localmente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) antes da implantação.</li></ul> |
 | Configurações do OSGi | As variáveis de ambiente comuns e os segredos podem ser usados em [Configurações OSGi](/help/implementing/deploying/configuring-osgi.md). |
 | Variáveis de pipeline | Além das variáveis de ambiente, também há variáveis de pipeline, que são expostas durante a fase de criação. Saiba mais sobre variáveis de pipeline em [Ambiente de compilação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables). |
 

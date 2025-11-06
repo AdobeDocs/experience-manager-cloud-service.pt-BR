@@ -3,11 +3,11 @@ title: Introdução ao Forms no AEM Edge Delivery Services
 description: Saiba como criar e fornecer formulários de alto desempenho no Adobe Experience Manager Edge Delivery Services, com ênfase na abordagem de criação do Editor universal.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '580'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 # Introdução ao Forms no AEM Edge Delivery Services
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 O Adobe Experience Manager (AEM) Edge Delivery Services (EDS) permite oferecer experiências da Web ultrarrápidas e altamente escaláveis. Este guia explica **como criar e publicar formulários para essas experiências**, com uma hierarquia de recomendação clara:
@@ -32,7 +32,7 @@ Ao final, você poderá escolher o método de criação correto, entender as op�
 
 | Equipe e requisitos | Método recomendado | Por que |
 |--------------------|--------------------|-----|
-| Profissionais de marketing/designers precisam de controle visual, lógica condicional ou integrações do AEM | **Editor Universal** | Arrastar e soltar, regras avançadas, envios para FSS ou AEM Publish |
+| Profissionais de marketing/designers precisam de controle visual, lógica condicional ou integrações do AEM | **Universal Editor** | Arrastar e soltar, regras avançadas, envios para FSS ou AEM Publish |
 | Autores de conteúdo já trabalhando no Word/Google Docs/Sheets; captura de dados simples em planilha/email | **Criação Baseada em Documento** | Ferramentas familiares, caminho mais rápido para formulários básicos |
 | Páginas do site criadas em **Document Authoring (DA)** | **Incorpore** um formulário UE ou Baseado em Doc na página do DA | O DA não cria formulários por conta própria |
 

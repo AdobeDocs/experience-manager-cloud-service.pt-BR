@@ -4,8 +4,8 @@ description: O Cloud Manager fornece um painel para facilitar a visualização d
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 23%
@@ -19,7 +19,7 @@ O Cloud Manager fornece um painel para facilitar a visualização dos direitos d
 
 >[!IMPORTANT]
 >
->O Painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no Painel de licenças.
+>O Painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no Painel de licenças.
 >
 >Para determinar o tipo de serviço que seu programa tem (AMS ou AEMaaCS), consulte [Navegação na interface do Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 

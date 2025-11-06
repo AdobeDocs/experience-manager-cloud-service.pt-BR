@@ -2,9 +2,9 @@
 title: Migração de grupo
 description: Visão geral da migração de grupo no AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1917'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 Como parte da jornada de transição para o Adobe Experience Manager (AEM) as a Cloud Service, os grupos devem ser migrados dos sistemas AEM existentes para o AEM as a Cloud Service. Essa tarefa é realizada pela ferramenta Transferência de conteúdo.
 
-Uma mudança importante do AEM as a Cloud Service é o uso totalmente integrado de Adobe IDs para acessar o nível do autor. Este processo requer o uso do [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para gerenciar usuários e grupos de usuários. As informações do perfil do usuário são centralizadas no Adobe Identity Management System (IMS), que fornece logon único em todos os aplicativos de nuvem da Adobe. Para obter mais detalhes, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=pt-BR#identity-management). Devido a essa alteração, os usuários são criados automaticamente no AEM quando fazem logon pela primeira vez por meio do IMS.  Assim, a CTT não migra os usuários para o sistema de nuvem.  Os usuários do IMS devem ser colocados em grupos do IMS, que podem ser grupos migrados ou novos grupos colocados nos grupos do AEM que receberam permissão para acessar o conteúdo do AEM que está sendo migrado.  Dessa forma, os usuários no sistema de nuvem terão o mesmo acesso que tinham em seu sistema do AEM de origem.
+Uma mudança importante do AEM as a Cloud Service é o uso totalmente integrado de Adobe IDs para acessar o nível do autor. Este processo requer o uso do [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) para gerenciar usuários e grupos de usuários. As informações do perfil do usuário são centralizadas no Adobe Identity Management System (IMS), que fornece logon único em todos os aplicativos de nuvem da Adobe. Para obter mais detalhes, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). Devido a essa alteração, os usuários são criados automaticamente no AEM quando fazem logon pela primeira vez por meio do IMS.  Assim, a CTT não migra os usuários para o sistema de nuvem.  Os usuários do IMS devem ser colocados em grupos do IMS, que podem ser grupos migrados ou novos grupos colocados nos grupos do AEM que receberam permissão para acessar o conteúdo do AEM que está sendo migrado.  Dessa forma, os usuários no sistema de nuvem terão o mesmo acesso que tinham em seu sistema do AEM de origem.
 
 ## Detalhes da migração de grupo {#group-migration-detail}
 
@@ -65,12 +65,14 @@ Com essa configuração desativada, os grupos não serão migrados e não haver�
 ## Relatório de migração principal e relatório do usuário {#principal-migration-report}
 
 Quando os grupos são incluídos durante a migração (o padrão), um Relatório de migração principal é salvo, descrevendo o que acontece com cada grupo durante a migração.  Para baixar este relatório após uma assimilação bem-sucedida:
+
 * No CAM, vá para Transferência de conteúdo e selecione Trabalhos de assimilação.
 * Clique nas reticências (...) na linha da Assimilação em questão e escolha &quot;Exibir resumo principal&quot;.
 * Na caixa de diálogo exibida, selecione &quot;Relatório de migração principal&quot; na lista suspensa em &quot;Baixar um arquivo...&quot; e clique no botão Download.
 * Salve o arquivo CSV resultante.
 
 Algumas das informações registradas por grupo são:
+
 * Se migrado, o caminho para a primeira ACL ou CUG que fez com que o grupo fosse migrado.
 * Se o grupo foi migrado anteriormente; se a assimilação atual foi uma assimilação não limpa, alguns grupos podem ter sido migrados durante uma assimilação anterior.
 * Se o grupo é um grupo integrado; esses grupos não são migrados porque estão sempre no ambiente do AEMaaCS de destino.
@@ -109,7 +111,7 @@ Consulte também [Gerenciar usuários](https://helpx.adobe.com/ca/enterprise/usi
 
 * Se a configuração **Apagar conteúdo existente na instância da nuvem antes de assimilar** estiver definida, os grupos transferidos anteriormente para a instância do Cloud Service serão excluídos junto com todo o repositório existente; um novo repositório será criado no qual o conteúdo será assimilado. Esse processo também redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino, e é verdadeiro para qualquer usuário adicionado ao grupo **administradores**. O usuário administrador deve ser adicionado novamente ao grupo **administradores** para recuperar o token de acesso para assimilação de CTT/CAM.
 * Quando assimilações que não são de limpeza são executadas (**Limpar conteúdo existente** não está definido), se o conteúdo não for transferido porque não foi alterado desde a transferência anterior, os grupos associados a esse conteúdo também não serão transferidos. Essa regra é verdadeira mesmo se os grupos tiverem sido alterados no sistema de origem. Isso ocorre porque os grupos só são migrados junto com o conteúdo ao qual estão associados. Por causa disso, nesse caso, os grupos que são membros de um grupo no sistema de origem não serão migrados, a menos que façam parte de um grupo diferente que está sendo migrado ou na ACL de conteúdo diferente que está sendo migrado. Para migrar esses grupos posteriormente, considere usar pacotes, excluir grupos do público-alvo e migrar novamente o conteúdo relevante ou migrar novamente usando uma assimilação de limpeza.
-* Durante uma assimilação que não é de limpeza, se um grupo existir com qualquer um dos mesmos dados restritos de exclusividade (rep:principalName, rep:authorizableId, jcr:uuid ou rep:externalId) na instância do AEM de origem e na instância do AEM Cloud Service de destino, o grupo em questão será _não_ migrado e o grupo existente anteriormente no sistema de nuvem permanecerá inalterado. Isso é registrado no Relatório de migração principal.
+* Durante uma assimilação sem limpeza, se um grupo existir com qualquer um dos mesmos dados com restrição de exclusividade (rep:principalName, rep:authorizableId, jcr:uuid ou rep:externalId) na instância do AEM de origem e na instância do AEM Cloud Service de destino, o grupo em questão será _não_ migrado e o grupo existente anteriormente no sistema de nuvem permanecerá inalterado. Isso é registrado no Relatório de migração principal.
 * Consulte [Migrando Grupos de Usuários Fechados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) para considerações adicionais sobre grupos usados em uma política de Grupo Fechado de Usuários (CUG).
 
 ## Resumo final e relatório

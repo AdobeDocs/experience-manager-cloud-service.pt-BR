@@ -4,8 +4,8 @@ description: Conheça as noções básicas da modelagem de conteúdo do seu CMS 
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 85%
@@ -59,7 +59,7 @@ Os Modelos de fragmentos de conteúdo fornecem vários mecanismos que permitem d
 Um Modelo de fragmento de conteúdo descreve uma entidade.
 
 >[!NOTE]
->A funcionalidade dos fragmentos de conteúdo deve estar ativada no navegador de configuração para que você possa criar novos modelos.
+>A funcionalidade dos fragmentos de conteúdo deve estar habilitada no navegador de configuração para que você possa criar novos modelos.
 
 >[!TIP]
 >
@@ -85,7 +85,7 @@ O AEM fornece os seguintes tipos de dados para você modelar o conteúdo:
 * Número
 * Booleano
 * Data e hora
-* Lista discriminada
+* Enumeração
 * Tags
 * Referência de fragmento
 * Referência de fragmento (UUID)

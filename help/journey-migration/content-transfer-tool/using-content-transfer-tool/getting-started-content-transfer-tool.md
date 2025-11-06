@@ -4,10 +4,10 @@ description: Saiba como começar a usar a ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 14%
+source-wordcount: '1653'
+ht-degree: 13%
 
 ---
 
@@ -65,7 +65,7 @@ A instância do AEM de origem pode estar sendo executada por trás de um firewal
 >id="aemcloud_ctt_demo"
 >title="Execução da ferramenta de transferência de conteúdo"
 >abstract="Saiba como usar a ferramenta de transferência de conteúdo para migrar o conteúdo para o AEM as a Cloud Service (Autor/Publicação)."
->additional-url="https://video.tv.adobe.com/v/327071/?quality=12&learn=on&captions=por_br" text=" Consulte a demonstração"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" Consulte a demonstração"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=pt-BR#migration" text="Tutorial: utilização da ferramenta de transferência de conteúdo"
 
 A seção a seguir se aplica à nova versão da ferramenta Transferência de conteúdo. Siga esta seção para saber como usar a ferramenta Transferência de conteúdo para migrar conteúdo para o AEM as a Cloud Service:
@@ -149,8 +149,10 @@ Para preencher o conjunto de migração criado no Cloud Acceleration Manager, in
       >A partir da versão CTT (3.0.24), novos recursos foram incluídos na ferramenta Transferência de conteúdo, aprimorando o processo de inclusão e exclusão de caminhos. Anteriormente, os caminhos precisavam ser selecionados um por um, o que era tedioso e demorado. Agora, os usuários podem incluir caminhos diretamente da interface do usuário ou fazer upload de um arquivo CSV de acordo com suas preferências.  O arquivo CSV deve ter um caminho por linha e sem vírgulas.
 
    1. **Caminhos a serem incluídos**: use o navegador de caminhos para selecionar os caminhos que precisam ser migrados. O seletor de caminhos aceita a entrada digitando ou selecionando. Os usuários podem selecionar apenas uma opção para incluir caminhos: na interface ou fazendo upload de um arquivo CSV.
+
       >[!IMPORTANT]
       >Os seguintes caminhos estão restritos ao criar um conjunto de migração:
+      >
       >* `/apps`
       >* `/libs`
       >* `/home`

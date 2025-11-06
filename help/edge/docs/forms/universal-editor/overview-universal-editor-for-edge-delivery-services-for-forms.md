@@ -2,9 +2,9 @@
 title: Editor universal do Edge Delivery Services para Forms
 description: Use o Universal Editor para Edge Delivery Services no Forms para criar o Adaptive Forms.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Com o Editor universal, você pode criar rapidamente formulários responsivos e 
 
 Quer você esteja gerenciando uma renderização leve do lado do cliente, garantindo compatibilidade entre navegadores ou seguindo padrões de acessibilidade rigorosos, o Universal Editor oferece uma solução simplificada para criar e gerenciar formulários.
 
-![Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 ## Principais recursos do Universal Editor para Edge Delivery Services para Forms
 

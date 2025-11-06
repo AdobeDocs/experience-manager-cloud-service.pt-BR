@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 18%
@@ -29,13 +29,14 @@ Assista ao vídeo Visão geral da versão de agosto de 2023 que exibe um resumo 
 
 ### Novos recursos no [!DNL Experience Manager Sites] {#sites-features}
 
-* O [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR) agora permite que os usuários exibam marcas e pesquisem por marcas aplicadas como metadados aos fragmentos de conteúdo. Os usuários não precisarão mais alternar para a interface do Assets para esse recurso, reduzindo a alternância de contexto e melhorando a eficiência.
+* O [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) agora permite que os usuários exibam marcas e pesquisem por marcas aplicadas como metadados aos fragmentos de conteúdo. Os usuários não precisarão mais alternar para a interface do Assets para esse recurso, reduzindo a alternância de contexto e melhorando a eficiência.
 
   ![Marcação no Console de Fragmentos de Conteúdo](/help/assets/content-fragments-console-tags.png)
 * O novo Editor de fragmento de conteúdo agora está disponível no AEM as a Cloud Service. Ele torna os autores de conteúdo mais produtivos, simplificando suas tarefas de criação e reduzindo a necessidade de alternar entre diferentes aplicativos durante a edição do conteúdo.
   ![Novo editor de fragmento de conteúdo](/help/release-notes/assets/newCFEditor.png)
 
 O novo editor de Fragmento de conteúdo fornece os seguintes benefícios que não estão disponíveis no editor original:
+
 * Salvamento automático para melhorar a eficiência da criação e evitar a perda acidental de edições.
 * Visualização hierárquica de um fragmento de conteúdo e suas referências usando a árvore de estrutura para navegação rápida em um fragmento profundamente estruturado.
   ![Árvore de estrutura no Editor de fragmento de conteúdo](/help/release-notes/assets/newCFEditor_StructureTree.png)
@@ -96,7 +97,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
   ![Guia Legendas e Faixas de áudio na página Propriedades de um ativo de vídeo selecionado.](/help/release-notes/assets/msma-aem-cs.png)*Guia Legendas e Faixas de áudio na página Propriedades de um ativo de vídeo selecionado.*
 
-* **Assets**: capacidade de selecionar arquivos ZIP gerenciados em Experience Manager e [extrair os arquivos diretamente em Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sem baixá-los.
+* **Assets**: capacidade de selecionar arquivos ZIP gerenciados no Experience Manager e [extrair os arquivos diretamente no Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sem baixá-los.
 
   ![Fixação de itens para grupos](/help/release-notes/assets/extract-archive.png)
 
@@ -110,22 +111,22 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### Recursos de pré-lançamento disponíveis em [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
-* **Adobe Analytics com Automação de Instalação do Experience Cloud para Forms**: agora é possível habilitar o Adobe Analytics com Automação de Instalação do Experience Cloud girando alguns botões. Ele permite conectar o AEM Forms as a Cloud Service com tags Experience Platform e o Adobe Analytics para capturar e rastrear as métricas de desempenho de seus formulários publicados.
+* **Adobe Analytics com Automação de Instalação do Experience Cloud para Forms**: agora é possível habilitar o Adobe Analytics com Automação de Instalação do Experience Cloud com alguns botões. Ela permite conectar o AEM Forms as a Cloud Service com tags da Experience Platform e Adobe Analytics para capturar e rastrear métricas de desempenho para seus formulários publicados.
 
-* **Modelo de relatório do Adobe Analytics para o Adaptive Forms**: o Forms as a Cloud Service fornece um relatório do Adobe Analytics OOTB. Ele ajuda você a entender facilmente o desempenho de seus formulários. As métricas no nível do formulário fornecem um insight sobre o desempenho do formulário em vários indicadores principais de desempenho (KPIs), como representações, visitantes, envios e tempo médio de preenchimento. Ao rastrear o comportamento do usuário e o feedback, você pode identificar áreas do formulário que estão causando confusão e orientar melhorias no design e na funcionalidade do formulário.
+* **Modelo de relatório do Adobe Analytics para o Adaptive Forms**: o Forms as a Cloud Service agora fornece um relatório do Adobe Analytics OOTB. Ele ajuda você a entender facilmente o desempenho de seus formulários. As métricas no nível do formulário fornecem uma insight sobre o desempenho do formulário em vários indicadores-chave de desempenho (KPIs), como representações, visitantes, envios e tempo médio de preenchimento. Ao rastrear o comportamento do usuário e o feedback, você pode identificar áreas do formulário que estão causando confusão e orientar melhorias no design e na funcionalidade do formulário.
 
   ![Relatório do adobe analytics de engajamento do usuário do formulário adaptável](/help/forms/assets/forms-analytics-report.png)
 
 * **[Fragmento de formulário no Adaptive Forms com base nos Componentes principais](/help/forms/adaptive-form-fragments-core-components.md)**: Diga adeus à duplicação, otimize seu inventário digital e melhore a colaboração à medida que você eleva sua experiência de criação de formulários com Fragmentos de formulário. Esses componentes reutilizáveis se integram perfeitamente em vários formulários, simplificando a criação de formulários consistentes e com aparência profissional. Os fragmentos de formulário garantem a reutilização, a padronização e a consistência da marca por meio da funcionalidade &quot;alterar uma vez e refletir em todos os lugares&quot;. Experimente maior capacidade de manutenção e eficiência, já que as atualizações feitas em um local são propagadas automaticamente em todos os formulários que utilizam esses fragmentos.
 
-* **[Etapa do fluxo de trabalho aprimorado do Adobe Sign](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: a etapa do fluxo de trabalho do Adobe Sign foi aprimorada para incluir o seguinte:
+* **[Etapa aprimorada do fluxo de trabalho do Adobe Sign](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)**: a etapa do fluxo de trabalho do Adobe Sign foi aprimorada para incluir o seguinte:
    * **Autenticação com base em ID do governo para o Adobe Sign**: a autenticação com base em ID do governo da Adobe Acrobat Sign oferece uma camada adicional de verificação, permitindo que os usuários autentiquem sua identidade usando IDs emitidas pelo governo (CNH, identificação nacional, passaporte). Ao usar documentos de identificação confiáveis, esse aprimoramento adiciona um nível extra de confiança ao processo de assinatura, tornando-o ideal para cenários que exigem maior segurança, conformidade e validação do usuário.
 
    * **Trilha de auditoria para documentos do Adobe Sign**: use o recurso de Trilha de auditoria para obter insights detalhados sobre o ciclo de vida dos documentos do Adobe Sign. Com a Trilha de auditoria, agora é possível manter um registro abrangente de todas as ações e interações relacionadas aos documentos. Isso inclui detalhes como quem visualizou, editou ou assinou o documento, além de carimbos de data e hora para cada evento. Esse aprimoramento é fundamental para manter a conformidade, resolver disputas e garantir a integridade de seus contratos digitais.
 
    * **Novas funções para destinatários do Contrato além apenas do Signatário**: a Adobe Acrobat Sign tem a opção de expandir as funções para destinatários do Contrato além apenas do Signatário para melhor corresponder aos requisitos de fluxo de trabalho. Quando habilitado, cada recipient em um Contrato tem sua função configurável individualmente, sendo que Signatário é o padrão.
 
-* **[Protect seus documentos com APIs do Document Assurance (Parte das APIs de Comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: as APIs do Document Assurance permitem proteger informações confidenciais ao assinar e criptografar os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
+* **[Proteger seus documentos com as APIs do Document Assurance (Parte das APIs de Comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: as APIs do Document Assurance permitem que você proteja informações confidenciais ao assinar e criptografar os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
 
 * **Suporte para Contagem de Páginas em APIs de Comunicação**: Agora, juntamente com a recuperação do documento por meio das APIs de Comunicação, você também pode receber as informações valiosas sobre o número de páginas contidas no documento.
 
@@ -150,7 +151,7 @@ Você pode enviar um email para `aem-forms-headless@adobe.com` utilizando sua ID
 
 Baixe logs CDN do Cloud Manager, que é útil para otimização da taxa de ocorrência do cache e maior visibilidade do fluxo de entrega de conteúdo. [Saiba mais sobre](/help/implementing/developing/introduction/logging.md#cdn-log) o formato de log da CDN. Esse recurso será gradualmente lançado para os clientes no início de setembro.
 
-### Programa de adoção antecipada das regras CDN e WAF {#waf-early-adopter}
+### Programa de adoção antecipada das Regras CDN e WAF {#waf-early-adopter}
 
 Filtrar o tráfego na CDN com base em:
 

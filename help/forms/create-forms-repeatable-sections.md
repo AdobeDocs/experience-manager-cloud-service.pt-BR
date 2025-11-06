@@ -1,10 +1,10 @@
 ---
 title: Como criar painéis repetíveis nos Componentes principais do formulário adaptável?
 description: Saiba como criar seções ou campos repetíveis em um Formulário adaptável.
-role: Architect, Developer, Admin, User
+role: Developer, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 Uma seção repetível se refere a uma parte de um formulário que pode ser duplicada ou repetida várias vezes para coletar informações de várias instâncias dos mesmos dados.
@@ -31,10 +31,10 @@ No final deste artigo, você aprenderá a:
 * Definir o número mínimo ou máximo de repetições para um componente de Formulário adaptável
 * Usar o editor de regras para configurar ações de adição ou exclusão para seções repetíveis
 
-Você pode usar os componentes de [Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br), [Guias Verticais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br) para tornar as seções de um Formulário adaptável repetíveis. Você pode adicionar componentes filhos a esses componentes para criar uma seção repetível em um formulário.
+Você pode usar os componentes de [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br), [Guias Verticais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br) para tornar as seções de um Formulário adaptável repetíveis. Você pode adicionar componentes filhos a esses componentes para criar uma seção repetível em um formulário.
 
 
-Os exemplos neste documento são baseados no componente [Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Você pode executar as etapas idênticas para tornar repetíveis os componentes do [Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br), [Guias Verticais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br).
+Os exemplos neste documento são baseados no componente [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Você pode executar as etapas idênticas para tornar repetíveis os componentes do [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br), [Guias Verticais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br).
 
 ## Adicionar ou excluir seções que podem ser repetidas em um formulário {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -153,7 +153,7 @@ O subformulário repetível é semelhante aos painéis repetíveis no Adaptive F
 1. Para especificar o número máximo de repetições do subformulário, selecione Máximo e digite um número na caixa associada. Se você não especificar um valor na caixa Máx., o número de repetições de subformulário será ilimitado.
 1. Para especificar um número definido de repetições de subformulário, independentemente da quantidade de dados, selecione Contagem inicial e digite um número na caixa associada. Se você selecionar essa opção e não houver dados disponíveis ou houver menos entradas de dados do que o valor de Contagem inicial especificado, instâncias vazias do subformulário ainda serão colocadas no formulário.
 1. Adicione dois botões no subformulário pai — um para adicionar a instância e outro para excluir a instância do subformulário repetível. Para obter etapas detalhadas, consulte [Criar uma ação](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. Agora, vincule o Modelo de formulário ao Formulário adaptável. Para obter etapas detalhadas, consulte [Criar um formulário adaptável com base em um modelo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=pt-BR#create-an-adaptive-form-based-on-an-xfa-form-template).
+1. Agora, vincule o Modelo de formulário ao Formulário adaptável. Para obter etapas detalhadas, consulte [Criar um formulário adaptável com base em um modelo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template).
 1. Use os botões criados na etapa 9 para adicionar e remover subformulários.
 
 O arquivo .zip anexado contém uma amostra de subformulário repetível.
@@ -162,7 +162,7 @@ O arquivo .zip anexado contém uma amostra de subformulário repetível.
 
 ## Usando configurações de repetição de um Esquema XML (XSD) {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-Você pode criar painéis repetíveis de um Esquema XML e da propriedade minOccours &amp; maxOccurs de qualquer elemento de tipo complexo. Para obter informações detalhadas sobre o Esquema XML, consulte [Criar formulários adaptáveis usando o Esquema XML como Modelo de Formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html?lang=pt-BR).
+Você pode criar painéis repetíveis de um Esquema XML e da propriedade minOccours &amp; maxOccurs de qualquer elemento de tipo complexo. Para obter informações detalhadas sobre o Esquema XML, consulte [Criar formulários adaptáveis usando o Esquema XML como Modelo de Formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html).
 
 No código a seguir, o painel `SampleType` usa a propriedade minOccours &amp; maxOccurs.
 

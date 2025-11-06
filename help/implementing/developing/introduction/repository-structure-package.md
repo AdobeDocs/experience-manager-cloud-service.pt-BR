@@ -3,8 +3,8 @@ title: Pacote de estrutura do repositório de projetos do AEM
 description: Os projetos Maven no Adobe Experience Manager as a Cloud Service exigem uma definição de Subpacote de estrutura do repositório, cujo único objetivo é definir as raízes do repositório JCR em que os subpacotes de código do projeto são implantados.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Pacote de estrutura do repositório de projetos do AEM
 
-Os projetos Maven para Adobe Experience Manager as a Cloud Service exigem uma definição de subpacote de estrutura de repositório cujo único objetivo é definir as raízes do repositório JCR em que os subpacotes de código do projeto são implantados. Esse método garante que a instalação de pacotes no Experience Manager as a Cloud Service seja automaticamente ordenada pelas dependências de recursos JCR. Dependências ausentes podem levar a cenários em que subestruturas seriam instaladas antes de suas estruturas principais e, portanto, seriam removidas inesperadamente, interrompendo a implantação.
+Os projetos Maven para Adobe Experience Manager as a Cloud Service exigem uma definição de subpacote de estrutura de repositório cujo único objetivo é definir as raízes do repositório JCR em que os subpacotes de código do projeto são implantados. Esse método garante que a instalação de pacotes no Experience Manager as a Cloud Service seja ordenada automaticamente pelas dependências de recurso JCR. Dependências ausentes podem levar a cenários em que subestruturas seriam instaladas antes de suas estruturas principais e, portanto, seriam removidas inesperadamente, interrompendo a implantação.
 
 Se o pacote de código for implantado em um local **não coberto** pelo pacote de código, quaisquer recursos ancestrais (recursos JCR mais próximos à raiz JCR) deverão ser enumerados no pacote de estrutura do repositório. Esse processo é necessário para estabelecer essas dependências.
 

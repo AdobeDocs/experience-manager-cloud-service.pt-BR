@@ -3,8 +3,8 @@ title: Mostrar uma mensagem de agradecimento personalizada após o envio do form
 description: Saiba como configurar páginas de agradecimento e redirecionamento para o Bloqueio do Forms para otimizar a experiência do usuário e simplificar as jornadas do usuário.
 feature: Edge Delivery Services
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%

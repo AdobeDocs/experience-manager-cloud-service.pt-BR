@@ -4,9 +4,9 @@ description: Saiba mais sobre os vários métodos de gerenciamento e edição de
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 10%
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 Este artigo descreve como gerenciar e editar ativos no [!DNL Adobe Experience Manager Assets]. Para gerenciar o [!DNL Content Fragments], consulte [[!DNL Content Fragments]](content-fragments/content-fragments.md) ativos.
@@ -59,10 +59,10 @@ Para extrair os arquivos ZIP, execute as seguintes etapas:
 
    ![extração do zip](assets/zip-extraction.png)
 
->[!NOTE]
->
->* O tamanho máximo de arquivo ZIP aceito é 15 GB.
->* É possível extrair no máximo três arquivos ZIP de uma vez.
+   >[!NOTE]
+   >
+   >* O tamanho máximo de arquivo ZIP aceito é 15 GB.
+   >* É possível extrair no máximo três arquivos ZIP de uma vez.
 
 ## Visualizar ativos {#previewing-assets}
 
@@ -70,7 +70,6 @@ Para visualizar um ativo, siga estas etapas.
 
 1. Na interface do usuário do Assets, navegue até o local do ativo que deseja visualizar.
 1. Selecione o ativo desejado para abri-lo.
-
 1. No modo de visualização, as opções de zoom estão disponíveis para [tipos de imagem com suporte](/help/assets/file-format-support.md) (com edição interativa).
 
    Para ampliar um ativo, selecione `+` (ou selecione a lupa no ativo). Para reduzir, selecione `-`. Ao ampliar, você pode observar de perto qualquer área da imagem com um movimento panorâmico. A seta para redefinir zoom leva você de volta à exibição original.
@@ -80,7 +79,6 @@ Para visualizar um ativo, siga estas etapas.
 ## Editar propriedades {#editing-properties}
 
 1. Navegue até o local do ativo cujos metadados você deseja editar.
-
 1. Selecione o ativo e selecione **[!UICONTROL Propriedades]** na barra de ferramentas para exibir as propriedades do ativo. Como alternativa, escolha a ação rápida **[!UICONTROL Propriedades]** no cartão de ativos.
 
    ![propriedades_ação_rápida](assets/properties_quickaction.png)
@@ -97,17 +95,17 @@ Para visualizar um ativo, siga estas etapas.
 
 1. Para desativar o ativo após uma duração específica, escolha a data/hora de desativação no seletor de datas ao lado do campo **[!UICONTROL Tempo de desativação]**. A data de desativação deve ser posterior à data de ativação de um ativo. Após o [!UICONTROL Tempo desligado], um ativo e suas representações não estarão disponíveis nem pela interface da Web do Assets nem pela API HTTP.
 
-   <!--![chlimage_1-218](assets/chlimage_1-218.png)
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)-->
+
 1. No campo **[!UICONTROL Marcas]**, selecione uma ou mais marcas. Para adicionar uma marca personalizada, digite o nome da marca na caixa e selecione a chave `Enter`. A nova marca foi salva em [!DNL Experience Manager].
 
    O YouTube exige que as tags sejam publicadas e tenham um link para o YouTube (se um link adequado puder ser encontrado).
 
    >[!NOTE]
    >
-   > Para criar tags, você deve ter permissão de gravação no caminho `/content/cq:tags/default` no repositório do CRX.
+   >Para criar tags, você deve ter permissão de gravação no caminho `/content/cq:tags/default` no repositório do CRX.
 
 1. Selecione **[!UICONTROL Salvar e fechar]**.
-
 1. Navegue até a interface do usuário do Assets. As propriedades de metadados editadas, incluindo título, descrição e tags, são exibidas no cartão de ativos na exibição Cartão e em colunas relevantes na exibição em Lista.
 
 <!-- TBD: Uncomment after verification for Dec release.
@@ -659,7 +657,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Para saber mais, veja como [navegar pelos ativos DAM usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#browse-search-preview-assets) e [como usar o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Para saber mais, veja como [navegar pelos ativos DAM usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [como usar o Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
 **Consulte também**
 

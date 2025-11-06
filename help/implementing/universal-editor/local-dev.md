@@ -3,8 +3,8 @@ title: Execução do seu próprio serviço de editor universal
 description: Saiba como executar seu próprio Universal Editor Service para desenvolvimento local ou como parte de sua própria infraestrutura.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 2%

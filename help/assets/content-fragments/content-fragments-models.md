@@ -3,9 +3,9 @@ title: Modelos de fragmentos do conteúdo (Assets - Fragmentos de conteúdo)
 description: Saiba como os modelos de fragmento de conteúdo servem como base para o conteúdo headless no AEM, permitindo criar fragmentos de conteúdo com conteúdo estruturado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
-role: User, Admin, Architect
+role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: 8c9c51c349317250ddf7ef07e1b545860fd18351
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3588'
 ht-degree: 69%
@@ -324,10 +324,10 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
 >O AEM tem proteção de recorrência para:
 >
 >* Referências do conteúdo
->  &#x200B;>  Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
+>  Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
 >
 >* Referências de fragmento no GraphQL
->  &#x200B;>  Se você criar uma consulta profunda que retorna vários fragmentos de conteúdo referenciados uns pelos outros, ele retornará um valor nulo na primeira ocorrência.
+>  Se você criar uma consulta profunda que retorna vários fragmentos de conteúdo referenciados uns pelos outros, ele retornará um valor nulo na primeira ocorrência.
 
 ### Referência de conteúdo {#content-reference}
 

@@ -3,8 +3,8 @@ title: Configuração de formulários de pesquisa
 description: Configuração do Search Forms para Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 O Adobe Experience Manager as a Cloud Service vem com um poderoso mecanismo de [Pesquisa](/help/sites-cloud/authoring/search.md).
 
-Em combinação com isso, também há um conjunto de opções predefinidas para ajudar você a filtrar seu conteúdo. Essas facetas predefinidas como **Data de Modificação**, **Status do Publish** ou **Status da Live Copy** são mantidas para ajudá-lo a detalhar rapidamente os recursos necessários.
+Em combinação com isso, também há um conjunto de opções predefinidas para ajudar você a filtrar seu conteúdo. Essas facetas predefinidas como **Data de Modificação**, **Status de Publicação** ou **Status da Live Copy** são mantidas para ajudá-lo a detalhar rapidamente os recursos necessários.
 
 ![uso de pesquisa e filtro](assets/csf-usage.png)
 
@@ -53,7 +53,7 @@ As configurações padrão (listadas alfabeticamente) disponíveis são:
 * **Editor de páginas (Pesquisa de páginas)**
 * **Editor de páginas (Pesquisa de parágrafos)**
 * **Editor de páginas (Pesquisa de produtos)**
-* **Editor de páginas (pesquisa no Scene7)**
+* **Editor de páginas (pesquisa do Scene7)**
 * **Editor de páginas (Pesquisa de vídeos)**
 * **Trilho de pesquisa do administrador de projetos**
 * **Trilho de pesquisa da tradução do projeto**
@@ -288,7 +288,7 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
    <td>
     <ul>
      <li>Rótulo do campo</li>
-     <li>Nome de propriedade do Publish*</li>
+     <li>Nome da propriedade de publicação*</li>
      <li>Nome de propriedade das páginas bloqueadas*</li>
      <li>Descrição</li>
     </ul> </td>
@@ -541,10 +541,10 @@ Efetivamente igual ao **Caminho de opções**, somente isso está no campo de pr
 * **Seleção única**
 Se marcadas, as opções são renderizadas como caixas de seleção que permitem apenas uma única seleção. Se for marcada por engano, uma caixa de seleção pode ser desmarcada.
 
-* **Nome(s) de Propriedade do Publish e da Live Copy**
+* **Nome(s) de Propriedade(s) de Publicação e Live Copy**
 Os rótulos das caixas de seleção Publicar e Live Copy para o predicado específico do Sites.
 
-* O &ast; nos rótulos de campo na guia **Configurações** significa que os campos são obrigatórios e, se deixado em branco, uma mensagem de erro será exibida.
+* O &amp;ast; nos rótulos de campo na guia **Configurações** significa que os campos são obrigatórios e, se deixado em branco, uma mensagem de erro será exibida.
 
 ## Configuração do Forms de pesquisa {#configuring-your-search-forms}
 

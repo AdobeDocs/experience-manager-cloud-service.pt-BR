@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 91%
@@ -46,6 +46,7 @@ Os autores desejam usar o AEM somente para criação, não para entrega ao cli
 >[!NOTE]
 >
 >**[Fragmentos de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md)** e **fragmentos de experiência** são recursos diferentes no AEM:
+>
 >* Os **fragmentos de conteúdo** são conteúdos editoriais com definição e estrutura, mas sem design visual e/ou layout adicional. Eles podem ser usados para acessar dados estruturados, incluindo textos, números, datas, entre outros.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 >
@@ -79,8 +80,8 @@ Fragmentos de experiência devem ser usados:
 ## Organizar os Fragmentos de experiência {#organizing-your-experience-fragments}
 
 Recomenda-se:
-* usar pastas para organizar os Fragmentos de experiência,
 
+* usar pastas para organizar os Fragmentos de experiência,
 * [configurar os modelos permitidos nessas pastas](#configure-allowed-templates-folder).
 
 A criação de pastas permite:

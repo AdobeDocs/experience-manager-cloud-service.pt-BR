@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2145'
 ht-degree: 4%
@@ -247,6 +247,7 @@ No entanto, conjuntos criados usando predefinições de conjunto de lotes, *não
      >[!NOTE]
      >
      >Se você excluir a imagem que o Experience Manager usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.
+
    * Para excluir um ativo, selecione-o e selecione **[!UICONTROL Excluir ativo]**.
    * Para aplicar uma predefinição, próximo ao canto superior direito da página, selecione **[!UICONTROL Predefinição]** e, em seguida, selecione uma predefinição do visualizador.
    * Para adicionar ou alterar uma miniatura, selecione o ícone de miniatura à direita do ativo. Navegue até a nova miniatura ou ativo de amostra, selecione-o e, em seguida, selecione **[!UICONTROL Selecionar]**.

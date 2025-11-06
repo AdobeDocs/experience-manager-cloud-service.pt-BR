@@ -3,8 +3,8 @@ title: Estendendo o as a Cloud Service [!DNL Adobe Experience Manager] usando o 
 description: Estendendo o as a Cloud Service [!DNL Adobe Experience Manager] usando o Adobe Developer App Builder.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -27,7 +27,7 @@ O App Builder fornece uma maneira de os clientes estenderem facilmente o Adobe E
 
 >[!NOTE]
 >
-> Para clientes do AEM 6.5 que desejam usar o App Builder, consulte [Extensão do Adobe Experience Manager 6.5 usando o Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=pt-BR).
+> Para clientes do AEM 6.5 que desejam usar o App Builder, consulte [Extensão do Adobe Experience Manager 6.5 usando o Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## Arquitetura {#architecture}
 

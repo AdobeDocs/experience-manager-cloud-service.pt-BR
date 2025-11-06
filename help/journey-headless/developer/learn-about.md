@@ -4,8 +4,8 @@ description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba ma
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 81%
@@ -14,7 +14,7 @@ ht-degree: 81%
 
 # Saiba mais sobre o desenvolvimento headless do CMS {#learn-about}
 
-Nesta parte da [Jornada de desenvolvedores sem periféricos de AEM](overview.md), saiba mais sobre a tecnologia sem periféricos e por que usá-la.
+Nesta parte da [Jornada do AEM Headless Developer](overview.md), conheça a tecnologia headless e por que usá-la.
 
 ## Objetivo {#objective}
 
@@ -65,7 +65,7 @@ Quando falamos de um CMS headless, o CMS gerencia o conteúdo e continua a entre
 
 ![CMS headless](assets/headless-cms.png)
 
-Os serviços de consumo, sejam experiências de RA, uma loja na Web, experiências móveis, aplicativos web progressivos (PWA) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
+Os serviços de consumo, sejam experiências de RA, um webshop, experiências móveis, aplicativos web progressivos (PWAs) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
 
 Omitir a interface simplifica o CMS ao remover a complexidade. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
 
@@ -91,7 +91,7 @@ Independentemente da API escolhida, ao definir um sistema headless com base em A
 
 Normalmente, o conteúdo é renderizado no lado do cliente. Isso normalmente significa que alguém chama seu conteúdo em um dispositivo móvel, o CMS fornece o conteúdo e, em seguida, o dispositivo móvel (do cliente) é responsável pela renderização do conteúdo que você disponibilizou. Se o dispositivo for antigo ou estiver lento, sua experiência digital também será lenta.
 
-A dissociação do conteúdo da apresentação significa que pode haver mais controle sobre essas preocupações de desempenho do lado do cliente. A renderização do lado do servidor (SSR) transfere a responsabilidade de renderizar o conteúdo do navegador do cliente para o servidor. Isso permite que você, como provedor do conteúdo, possa oferecer um nível de desempenho garantido para o seu público, se isso for necessário.
+A dissociação do conteúdo da apresentação significa que pode haver mais controle sobre essas preocupações de desempenho do lado do cliente. A renderização do lado do servidor (SSR) transfere a responsabilidade de renderizar o conteúdo do navegador do cliente para o servidor. Isso permite que você, como provedor do conteúdo, possa oferecer um nível de desempenho garantido para o seu público-alvo, se isso for necessário.
 
 ## Desafios organizacionais {#organization}
 
@@ -109,7 +109,7 @@ As experiências digitais continuarão a definir como as marcas interagem com os
 
 ## AEM e Headless {#aem-and-headless}
 
-À medida que você avança nesta jornada de desenvolvedor, aprenderá como o AEM suporta entrega headless junto com seus recursos de entrega de pilha completa.
+À medida que você avança nesta jornada de desenvolvedor, aprenderá como a AEM oferece suporte à entrega headless, juntamente com seus recursos de entrega de pilha completa.
 
 Como líder da indústria em gerenciamento de experiência digital, a Adobe percebe que a solução ideal para os desafios do mundo real que os criadores de experiências enfrentam raramente é uma escolha binária. É por isso que o AEM não apenas oferece suporte a ambos os modelos, mas também permite de forma única a combinação híbrida perfeita dos dois, misturando as vantagens da pilha completa e da tecnologia headless, para ajudá-lo a atender melhor os consumidores do seu conteúdo, onde quer que estejam.
 
@@ -123,11 +123,11 @@ Obrigado por começar a sua jornada headless do AEM. Agora que leu este document
 * Entender por que e quando o headless é necessário.
 * Possuir um conhecimento de alto nível sobre o uso dos conceitos headless e como eles se relacionam.
 
-Desenvolva esse conhecimento e continue sua jornada sem periféricos de AEM revisando a seguir o documento [Introdução ao AEM as a Cloud Service AEM sem periféricos](getting-started.md), no qual você aprende a configurar as ferramentas necessárias e como começar a pensar sobre como o aborda a entrega de conteúdo sem periféricos e seus pré-requisitos.
+Desenvolva esse conhecimento e prossiga com sua jornada do AEM headless revisando a seguir o documento [Introdução ao AEM headless as a Cloud Service](getting-started.md), onde você aprende a configurar as ferramentas necessárias e como começar a pensar sobre como o AEM aborda a entrega de conteúdo headless e seus pré-requisitos.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento headless revisando o documento [Introdução ao AEM headless as a Cloud Service](getting-started.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
+Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento headless revisando o documento [Introdução ao AEM Headless as a Cloud Service](getting-started.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
 
 * [Uma Introdução à Arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Compreender a estrutura do AEM as a Cloud Service
 * Uma [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)

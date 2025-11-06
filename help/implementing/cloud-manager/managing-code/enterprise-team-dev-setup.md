@@ -4,8 +4,8 @@ description: Saiba como configurar e dimensionar sua equipe de desenvolvimento c
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: cbeb3d8f5fa5cbf1839e1e8c5e651329b06e60a4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 40%
@@ -36,7 +36,7 @@ O código pode ser implantado em ambientes de desenvolvimento usando um pipeline
 
 O pipeline de produção primeiro implanta o código e a configuração no ambiente de preparo, testa o aplicativo e finalmente implanta no ambiente de produção.
 
-Um SDK do Cloud Service que é sempre atualizado com as melhorias mais recentes do AEM as a Cloud Service permite o desenvolvimento local diretamente usando o hardware local do desenvolvedor. Essa abordagem permite um desenvolvimento rápido com tempos de resposta muito baixos. Assim, os desenvolvedores podem permanecer em seus ambientes locais familiares e escolher entre uma grande variedade de ferramentas de desenvolvimento, além de enviar para ambientes de desenvolvimento ou produção, quando bem entenderem.
+Um Cloud Service SDK que é sempre atualizado com as melhorias mais recentes do AEM as a Cloud Service permite o desenvolvimento local diretamente usando o hardware local do desenvolvedor. Essa abordagem permite um desenvolvimento rápido com tempos de resposta muito baixos. Assim, os desenvolvedores podem permanecer em seus ambientes locais familiares e escolher entre uma grande variedade de ferramentas de desenvolvimento, além de enviar para ambientes de desenvolvimento ou produção, quando bem entenderem.
 
 A Cloud Manager oferece suporte a configurações flexíveis de várias equipes, que podem ser ajustadas para atender às necessidades de uma empresa. Para garantir implantações estáveis em várias equipes, o pipeline opinativo da Cloud Manager valida e testa o código de todas as equipes. Essa abordagem ajuda a evitar situações em que as alterações de uma equipe afetam a produção de todas as equipes.
 
@@ -44,7 +44,7 @@ A Cloud Manager oferece suporte a configurações flexíveis de várias equipes,
 
 Cada empresa tem requisitos diferentes, incluindo configuração de equipes, processos e fluxos de trabalho de desenvolvimento diferentes. A configuração descrita abaixo é usada pela Adobe para vários projetos que proporcionam experiências com base no AEM as a Cloud Service.
 
-Por exemplo, os aplicativos da Adobe Creative Cloud, como o Adobe Photoshop ou o Adobe Illustrator, incluem recursos de conteúdo, como tutoriais, amostras e guias disponíveis para os usuários finais. Os aplicativos clientes consomem conteúdo do AEM as a Cloud Service de forma headless. Eles fazem chamadas de API para o nível de publicação AEM Cloud para recuperar conteúdo estruturado como fluxos JSON. Além disso, a [Rede de Entrega de Conteúdo (CDN) no AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) é usada para fornecer conteúdo estruturado e não estruturado com desempenho ideal.
+Por exemplo, os aplicativos da Adobe Creative Cloud, como o Adobe Photoshop ou o Adobe Illustrator, incluem recursos de conteúdo, como tutoriais, amostras e guias disponíveis para os usuários finais. Os aplicativos clientes consomem conteúdo do AEM as a Cloud Service de forma headless. Eles fazem chamadas de API para o nível de publicação da AEM Cloud para recuperar o conteúdo estruturado como fluxos JSON. Além disso, a [Rede de Entrega de Conteúdo (CDN) no AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#content-delivery) é usada para fornecer conteúdo estruturado e não estruturado com desempenho ideal.
 
 As equipes que contribuem com esse projeto seguem o processo descrito a seguir.
 
@@ -54,7 +54,7 @@ A integração de um novo projeto exige a listagem no arquivo do projeto Maven d
 
 ![Diagrama do fluxo de trabalho](/help/implementing/cloud-manager/assets/team-setup1.png)
 
-O repositório Git de cada equipe é configurado usando o [Arquétipo de Projeto AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview) e, portanto, segue as práticas recomendadas para a criação de Projetos AEM. A única exceção é a configuração do Dispatcher, que é feita no repositório Git compartilhado conforme descrito acima.
+O repositório Git de cada equipe é configurado usando o [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview) e, portanto, segue as práticas recomendadas para a configuração de Projetos AEM. A única exceção é a configuração do Dispatcher, que é feita no repositório Git compartilhado conforme descrito acima.
 
 Cada equipe usa um fluxo de trabalho Git simplificado com duas ramificações + N, seguindo o modelo de fluxo Git:
 
@@ -87,13 +87,13 @@ Para o desenvolvimento local, é usado o [SDK do AEM as a Cloud Service](/help/i
 
 Os membros de cada equipe geralmente verificam o código do Git compartilhado para seu próprio código de projeto. Não é necessário conferir outros projetos, pois eles são independentes.
 
-![Checkout local e SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
+![Check-out local e SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
 Essa configuração do mundo real pode ser usada como um blueprint e personalizada para as necessidades de uma empresa. O conceito flexível de ramificação e mesclagem do Git permite variações dos fluxos de trabalho acima, personalizados para as necessidades de cada equipe. O AEM as a Cloud Service oferece suporte a todas essas variações sem prejudicar o valor principal do pipeline opinativo do Cloud Manager.
 
 >[!TIP]
 >
->Consulte [Trabalhar com vários repositórios Git da Source](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) para saber mais sobre essa configuração.
+>Consulte [Trabalhar com vários repositórios Git da Source](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) para saber mais sobre essa configuração.
 
 ### Considerações para uma configuração de várias equipes {#considerations}
 
@@ -101,7 +101,7 @@ Com o repositório Git da Cloud Manager e o pipeline de produção, o código de
 
 Por outro lado, sem esse sistema em vigor, como cada equipe pode implantar separadamente, há o risco de que uma atualização de uma única equipe possa levar a problemas de estabilidade na produção. Além disso, requer coordenação e tempo de inatividade planejado para lançar atualizações. Com um número cada vez maior de equipes, o esforço de coordenação torna-se muito mais complexo e rapidamente impossível de gerenciar.
 
-Se um problema for detectado nas portas de qualidade, a produção não será afetada e o problema poderá ser detectado e corrigido sem a necessidade de envolver o pessoal da Adobe. Sem o uso do Cloud Service ou a realização de testes frequentes em toda a implantação, as implantações parciais poderão causar paralisações que exigem uma solicitação de reversão ou até mesmo uma restauração completa a partir de um backup. Testes parciais também podem causar problemas adicionais que devem ser resolvidos posteriormente, exigindo coordenação e suporte do pessoal da Adobe.
+Se um problema for detectado nas portas de qualidade, a produção não será afetada e o problema poderá ser detectado e corrigido sem a necessidade de envolver o pessoal da Adobe. Sem o uso do Cloud Service ou a realização de testes frequentes em toda a implantação, as implantações parciais poderão causar paralisações que exigem uma solicitação de reversão ou até mesmo uma restauração completa a partir de um backup. Testes parciais também podem causar problemas adicionais que devem ser resolvidos posteriormente, exigindo coordenação e suporte da equipe da Adobe.
 
 >[!TIP]
 >

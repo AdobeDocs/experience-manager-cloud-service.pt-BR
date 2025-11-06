@@ -4,8 +4,8 @@ description: Saiba como configurar o Editor de Rich Text para criar sites acess�
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 1%
@@ -52,7 +52,7 @@ Com elementos estruturais disponíveis no RTE por meio das opções de formato d
 
 ## Uso do recurso de edição do Source {#use-of-the-source-edit-feature}
 
-Em alguns casos, os autores de conteúdo considerarão necessário examinar e ajustar o código-fonte HTML criado usando o RTE. Por exemplo, um conteúdo criado no RTE pode exigir mais marcação para garantir a conformidade com a WCAG 2.0. Isso pode ser feito com a opção [edição de origem](rich-text-editor.md#aboutplugins) do RTE. Você pode especificar o recurso [`sourceedit` no `misctools` plug-in](rich-text-editor.md#aboutplugins).
+Em alguns casos, os autores de conteúdo considerarão necessário examinar e ajustar o código-fonte do HTML criado usando o RTE. Por exemplo, um conteúdo criado no RTE pode exigir mais marcação para garantir a conformidade com a WCAG 2.0. Isso pode ser feito com a opção [edição de origem](rich-text-editor.md#aboutplugins) do RTE. Você pode especificar o recurso [`sourceedit` no `misctools` plug-in](rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >

@@ -1,10 +1,10 @@
 ---
 title: '[!DNL Experience Manager Assets] integração com  [!DNL Adobe Workfront]'
 description: Introdução à integração entre [!DNL Assets] e [!DNL Workfront]
-role: Admin, Leader, Architect
+role: Admin, Leader, Developer
 feature: Workfront Integrations and Apps
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 3%
@@ -15,12 +15,12 @@ ht-degree: 3%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html) |
 | AEM as a Cloud Service | Este artigo |
 
 O [!DNL Adobe Workfront] é um aplicativo de gerenciamento de trabalho que ajuda você a gerenciar todo o ciclo de vida do trabalho em um único local. A integração entre o [!DNL Workfront] e o [!DNL Adobe Experience Manager Assets] permite que as organizações melhorem a velocidade do conteúdo e o prazo para comercialização, conectando intrinsecamente o gerenciamento de trabalho e de ativos digitais. No contexto do gerenciamento de trabalho no Workfront, os usuários têm acesso aos documentos e imagens necessários.
 
-As ofertas da Adobe para [integrar [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] nativamente (com suporte ao Assets Essentials e ao Assets as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=pt-BR).
+As ofertas da Adobe para [integrar [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] nativamente (com suporte ao Assets Essentials e ao Assets as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
 
 Com a integração nativa do Experience Manager, é possível:
 

@@ -3,10 +3,10 @@ title: Personalização de Consoles
 description: Saiba mais sobre as diferentes opções que o AEM fornece para personalizar os consoles da sua instância de criação.
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ Consulte [Usando Bibliotecas do Lado do Cliente no AEM as a Cloud Service](/help
 
 ## Sobreposições {#overlays}
 
-As sobreposições são baseadas nas definições de nó e permitem sobrepor a funcionalidade padrão encontrada em `/libs` com sua própria funcionalidade personalizada em `/apps`. Ao criar uma sobreposição, uma cópia 1:1 do original não é necessária, pois [a fusão de recursos de sling](/help/implementing/developing/introduction/sling-resource-merger.md) permite a herança.
+As sobreposições são baseadas nas definições de nó e permitem sobrepor a funcionalidade padrão encontrada em `/libs` com sua própria funcionalidade personalizada em `/apps`. Ao criar uma sobreposição, uma cópia do original :1 não é necessária, pois [a fusão de recursos de sling](/help/implementing/developing/introduction/sling-resource-merger.md) permite a herança.
 
-As sobreposições podem ser usadas de várias maneiras para estender os consoles AEM. Vários exemplos são fornecidos nas seções a seguir.
+As sobreposições podem ser usadas de várias maneiras para estender os consoles do AEM. Vários exemplos são fornecidos nas seções a seguir.
 
 Consulte também [Sobreposições para Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
@@ -56,7 +56,7 @@ Consulte também [Sobreposições para Adobe Experience Manager as a Cloud Servi
    * Defina a seguinte propriedade:
 
       * **Nome**: `sling:orderBefore`
-      * **Tipo**: `String`
+      * **Tipo**: `String`
       * **Valor**: `column`
 
 ### Adicionar uma nova ação à barra de ferramentas {#add-a-new-action-to-the-toolbar}

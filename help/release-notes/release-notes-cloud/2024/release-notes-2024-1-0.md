@@ -4,9 +4,9 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: 9f5d97c6-6536-4593-acbf-cbe8bf9b5eeb
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1018'
 ht-degree: 24%
 
 ---
@@ -37,7 +37,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo de Visão geral da versão de janeiro de 2024 que exibe um resumo dos recursos adicionados na versão 2024.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448934?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -66,7 +66,7 @@ Estamos buscando ativamente feedback e novos casos de uso para extensões da int
 
 O Experience Manager Assets agora gera representações de pré-visualização de todos os tipos de vídeo compatíveis por padrão, sem exigir uma configuração de perfil de processamento
 
-### Visualização do Assets {#assets-view-features}
+### Visualização de ativos {#assets-view-features}
 
 **Tags inteligentes na lista de bloqueios**
 
@@ -112,7 +112,8 @@ Os [Ambientes de Desenvolvimento Rápido (RDEs)](/help/implementing/developing/i
 
 ### Programa de Primeiros usuários do mapeamento de domínio {#cdn-config-early-adopter}
 
-Além das [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md) recém-lançadas, que incluem as regras de Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de Configuração para declarar e implantar [outros tipos de configuração de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Participe do programa de adoção antecipada enviando um email para **aemcs-cdn-config-adopter@adobe.com** para obter acesso a:
+Além das [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md) recém-lançadas, que incluem as regras de Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de Configuração para declarar e implantar [outros tipos de configuração de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Participe do programa de adoção antecipada enviando um email a **`aemcs-cdn-config-adopter@adobe.com`** para obter acesso a:
+
 * Redirecionamentos do lado do cliente 301/302
 * solicitações de proxy na borda para origens arbitrárias
 * Transformações de URL

@@ -3,8 +3,8 @@ title: Visão geral do editor universal para desenvolvedores do AEM
 description: Se você for um desenvolvedor do AEM interessado em como o Editor universal funciona e como usá-lo no seu projeto, este documento fornecerá uma introdução completa, orientando você pela instrumentação do projeto WKND para trabalhar com o Editor universal.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 0%
@@ -20,13 +20,13 @@ Se você for um desenvolvedor do AEM interessado em como o Editor universal func
 
 Este documento serve como uma introdução do desenvolvedor sobre como o Universal Editor funciona e como instrumentar seu aplicativo para trabalhar com ele.
 
-Ele faz isso tomando um exemplo padrão com o qual a maioria dos desenvolvedores de AEM está familiarizada, os Componentes principais e o site WKND, e instrumenta alguns componentes de exemplo para serem editáveis usando o editor universal.
+Ele faz isso tomando um exemplo padrão com o qual a maioria dos desenvolvedores do AEM está familiarizada, os Componentes principais e o site WKND, e instrumenta alguns componentes de exemplo para serem editáveis usando o editor universal.
 
 >[!TIP]
 >
 >Este documento contém etapas extras para ilustrar como o Universal Editor funciona e tem como objetivo aprofundar a compreensão do desenvolvedor sobre o editor. Portanto, não é preciso a rota mais direta para instrumentar um aplicativo, mas o mais ilustrativo do Editor universal e como ele funciona.
 >
->Se você quiser começar a usar o mais rápido possível, consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md).
+>Se quiser começar a usar o mais rápido possível, consulte o documento [Introdução ao Universal Editor no AEM](/help/implementing/universal-editor/getting-started.md).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -39,19 +39,19 @@ Para acompanhar essa visão geral, você precisa do seguinte disponível.
 * [Um serviço do Editor Universal local](/help/implementing/universal-editor/local-dev.md) que está sendo executado para fins de desenvolvimento.
    * Direcione seu navegador para [aceitar o certificado autoassinado dos serviços locais](/help/implementing/universal-editor/local-dev.md#editing).
 
-Além da familiaridade geral com o desenvolvimento na web, este documento presume a familiaridade básica com o desenvolvimento do AEM. Se você não tiver experiência com desenvolvimento de AEM, considere revisar [o tutorial do WKND antes de continuar](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+Além da familiaridade geral com o desenvolvimento para web, este documento presume a familiaridade básica com o desenvolvimento para AEM. Se você não tiver experiência com o desenvolvimento do AEM, considere revisar [o tutorial do WKND antes de continuar](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-## Iniciar AEM e Entrar no Editor Universal {#sign-in}
+## Iniciar o AEM e fazer logon no editor universal {#sign-in}
 
-Se ainda não tiver feito isso, você deve ter sua instância de desenvolvimento local do AEM em execução com o WKND instalado e o HTTPS habilitado, conforme [detalhado nos pré-requisitos](#prerequisites). Esta visão geral pressupõe que sua instância está em execução em `https://localhost:8443`.
+Caso ainda não o tenha feito, você deve ter sua instância de desenvolvimento local do AEM em execução com o WKND instalado e o HTTPS habilitado como [detalhado nos pré-requisitos](#prerequisites). Esta visão geral pressupõe que sua instância está em execução em `https://localhost:8443`.
 
-1. Abra a página principal de idioma inglês da WKND no Editor de AEM.
+1. Abra a página principal em inglês do WKND no Editor do AEM.
 
    ```text
    https://localhost:8443/editor.html/content/wknd/language-masters/en.html
    ```
 
-1. No menu do editor **Informações da página**, selecione **Exibir como Publicado**. Isso abre a mesma página em uma nova guia com o Editor de AEM desativado.
+1. No menu do editor **Informações da página**, selecione **Exibir como Publicado**. Essa ação abre a mesma página em uma nova guia com o Editor do AEM desativado.
 
    ```text
    https://localhost:8443/content/wknd/language-masters/en.html?wcmmode=disabled
@@ -91,22 +91,22 @@ A opção X-Frame `sameorigin` impede a renderização de páginas AEM dentro de
 
 1. Salve as alterações.
 
-Agora, se você recarregar o Editor universal, verá que sua página AEM é carregada.
+Agora, ao recarregar o Editor universal, você verá que a página do AEM é carregada.
 
 >[!TIP]
 >
->* Consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) para obter mais detalhes sobre essa configuração OSGi.
+>* Consulte o documento [Introdução ao Universal Editor no AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) para obter mais detalhes sobre essa configuração OSGi.
 >* Consulte o documento [Configuração de OSGi para Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obter detalhes sobre OSGi no AEM.
 
 ## Manipular cookies do mesmo site {#samesite-cookies}
 
-Quando o Editor universal carrega sua página, ela é carregada na página de logon do AEM para garantir que você esteja autenticado para fazer alterações.
+Quando o Editor universal carrega sua página, ele é carregado para a página de logon da AEM para garantir que você esteja autenticado para fazer alterações.
 
 No entanto, você não pode fazer logon com êxito. Ao mostrar o console do navegador, você pode ver que o navegador bloqueou a entrada no quadro
 
 ![Entrada bloqueada](assets/dev-cross-origin.png)
 
-O cookie do token de logon é enviado ao AEM como um domínio de terceiros. Portanto, os cookies do mesmo site devem ser permitidos no AEM.
+O cookie do token de logon é enviado para a AEM como um domínio de terceiros. Portanto, os cookies do mesmo site devem ser permitidos no AEM.
 
 1. Abra o Gerenciador de configurações.
 
@@ -122,11 +122,11 @@ O cookie do token de logon é enviado ao AEM como um domínio de terceiros. Port
 
 1. Salve as alterações.
 
-Agora, se você recarregar o Editor universal, poderá entrar no AEM e sua página de destino será carregada.
+Agora, se você recarregar o Editor universal, poderá fazer logon no AEM e a página de destino será carregada.
 
 >[!TIP]
 >
->* Consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md#samesite-cookies) para obter mais detalhes sobre essa configuração OSGi.
+>* Consulte o documento [Introdução ao Universal Editor no AEM](/help/implementing/universal-editor/getting-started.md#samesite-cookies) para obter mais detalhes sobre essa configuração OSGi.
 >* Consulte o documento [Configuração de OSGi para Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obter detalhes sobre OSGi no AEM.
 
 ## O Editor Universal Conecta-se ao Quadro Remoto {#ue-connect-remote-frame}
@@ -183,7 +183,7 @@ No entanto, você provavelmente notou que não é possível interagir com a pág
 
    ![Editando o arquivo customheaderlibs.html](assets/dev-instrument-app.png)
 
-1. Adicione os metadados necessários para a conexão com sua instância de AEM local ao final do arquivo.
+1. Adicione os metadados necessários para a conexão com sua instância local do AEM ao final do arquivo.
 
    ```html
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
@@ -203,9 +203,9 @@ Agora, o Universal Editor não só pode carregar seu conteúdo com êxito da ins
 
 >[!TIP]
 >
->* Consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md#connection) para obter mais detalhes sobre os metadados de conexão.
+>* Consulte o documento [Introdução ao Universal Editor no AEM](/help/implementing/universal-editor/getting-started.md#connection) para obter mais detalhes sobre os metadados de conexão.
 >* Consulte o documento [Arquitetura do Editor Universal](/help/implementing/universal-editor/architecture.md#service) para obter mais detalhes sobre a estrutura do Editor Universal.
->* Consulte o documento [Desenvolvimento local de AEM com o Universal Editor](/help/implementing/universal-editor/local-dev.md) para obter mais detalhes sobre como se conectar a uma versão auto-hospedada do Universal Editor.
+>* Consulte o documento [Desenvolvimento local do AEM com o Universal Editor](/help/implementing/universal-editor/local-dev.md) para obter mais detalhes sobre como se conectar a uma versão auto-hospedada do Universal Editor.
 
 ## Componentes de instrumentação {#instrumenting-components}
 
@@ -304,25 +304,25 @@ Agora é possível editar o título do teaser em linha e as alterações são pe
 
 ![Título editado do teaser](assets/dev-edited-title.png)
 
-No entanto, se você recarregar o navegador, o título anterior será recarregado. Isso ocorre porque, embora o Editor universal saiba como se conectar à instância do AEM, ele ainda não pode se autenticar na instância do AEM para gravar as alterações no JCR.
+No entanto, se você recarregar o navegador, o título anterior será recarregado. Isso ocorre porque, embora o Editor universal saiba como se conectar à instância do AEM, ele ainda não pode se autenticar na instância do AEM para gravar alterações no JCR.
 
 Se você exibir a guia rede das ferramentas de desenvolvedor do navegador e pesquisar por `update`, verá que há um erro 401 ao tentar editar o título.
 
 ![Erro ao tentar editar o título](assets/dev-edit-error.png)
 
-Ao usar o Editor universal para editar o conteúdo AEM de produção, o Editor universal usa o mesmo token IMS usado para fazer logon no editor e autenticar no AEM para facilitar a gravação no JCR.
+Ao usar o Editor universal para editar o conteúdo de produção do AEM, o Editor universal usa o mesmo token IMS usado para fazer logon no editor e autenticar no AEM para facilitar a gravação no JCR.
 
-Quando você está desenvolvendo localmente, não é possível usar o provedor de identidade AEM, pois os tokens IMS são passados apenas para domínios de propriedade de Adobe. Você precisa fornecer manualmente uma maneira de autenticar, definindo explicitamente um cabeçalho de autenticação.
+Quando você está desenvolvendo localmente, não é possível usar o provedor de identidade da AEM, pois os tokens IMS são passados apenas para domínios de propriedade da Adobe. Você precisa fornecer manualmente uma maneira de autenticar, definindo explicitamente um cabeçalho de autenticação.
 
 1. Na interface do Universal Editor, clique no ícone **Cabeçalhos de Autenticação** na barra de ferramentas.
 
-1. Copie no cabeçalho de autenticação necessário para autenticar na instância de AEM local e clique em **Salvar**.
+1. Copie no cabeçalho de autenticação necessário para autenticar na instância do AEM local e clique em **Salvar**.
 
    ![Configurando cabeçalhos de autenticação](assets/dev-authentication-headers.png)
 
 1. Recarregue o Editor universal e edite o título do teaser.
 
-Não há mais erros relatados no console do navegador e as alterações são persistentes de volta à instância de desenvolvimento local do AEM.
+Não há mais erros relatados no console do navegador e as alterações são persistentes de volta na instância de desenvolvimento local do AEM.
 
 Se você investigar o tráfego nas ferramentas de desenvolvedor do navegador e procurar os eventos `update`, poderá ver os detalhes da atualização.
 
@@ -477,11 +477,11 @@ Cada grupo tem uma matriz de `components`.
 * `title` é o nome do componente.
 * `id` é o identificador exclusivo do componente, neste caso, um teaser.
 
-Cada componente tem uma definição de plug-in que define como o componente é mapeado para AEM.
+Cada componente tem uma definição de plug-in que define como o componente é mapeado para o AEM.
 
 * `aem` é o plug-in que gerencia a edição. Isso pode ser considerado o serviço que processa o componente.
 * `page` define que tipo de componente é, neste caso um componente de página padrão.
-* `resourceType` é o mapeamento para o componente AEM real.
+* `resourceType` é o mapeamento para o componente real do AEM.
 
 Cada componente deve ser mapeado para um `model` para definir os campos editáveis individuais.
 
@@ -522,7 +522,7 @@ Agora você está pronto para testar o painel de propriedades instrumentado para
 
    ![Painel de propriedades instrumentado](assets/dev-properties-rail-instrumented.png)
 
-Agora é possível editar o título do teaser em linha, como anteriormente, ou no painel de propriedades. Em ambos os casos, as alterações são persistentes de volta à instância de desenvolvimento local do AEM.
+Agora é possível editar o título do teaser em linha, como anteriormente, ou no painel de propriedades. Em ambos os casos, as alterações são persistentes de volta na instância de desenvolvimento local do AEM.
 
 ## Adicionar campos adicionais ao painel Propriedades {#add-fields}
 
@@ -568,7 +568,7 @@ Qualquer campo no JCR do componente pode ser exposto no Editor universal dessa m
 
 ## Resumo {#summary}
 
-Parabéns! Agora você pode instrumentar seus próprios aplicativos AEM para funcionar com o Editor Universal.
+Parabéns! Agora você pode instrumentar seus próprios aplicativos do AEM para funcionar com o Editor universal.
 
 Ao começar a instrumentar seu próprio aplicativo, lembre-se das etapas básicas executadas neste exemplo.
 
@@ -594,10 +594,10 @@ Você pode seguir essas mesmas etapas para instrumentar seu próprio aplicativo 
 
 Consulte os seguintes documentos para obter mais informações e detalhes sobre os recursos do Universal Editor.
 
-* Se você quiser começar a usar o mais rápido possível, consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md).
-* Consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) para obter mais detalhes sobre as configurações OSGi necessárias.
-* Consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md#connection) para obter mais detalhes sobre os metadados de conexão.
+* Se quiser começar a usar o mais rápido possível, consulte o documento [Introdução ao Universal Editor no AEM](/help/implementing/universal-editor/getting-started.md).
+* Consulte o documento [Introdução ao Universal Editor no AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) para obter mais detalhes sobre as configurações OSGi necessárias.
+* Consulte o documento [Introdução ao Universal Editor no AEM](/help/implementing/universal-editor/getting-started.md#connection) para obter mais detalhes sobre os metadados de conexão.
 * Consulte o documento [Arquitetura do Editor Universal](/help/implementing/universal-editor/architecture.md#service) para obter mais detalhes sobre a estrutura do Editor Universal.
-* Consulte o documento [Desenvolvimento local de AEM com o Universal Editor](/help/implementing/universal-editor/local-dev.md) para obter mais detalhes sobre como se conectar a uma versão auto-hospedada do Universal Editor.
+* Consulte o documento [Desenvolvimento local do AEM com o Universal Editor](/help/implementing/universal-editor/local-dev.md) para obter mais detalhes sobre como se conectar a uma versão auto-hospedada do Universal Editor.
 * Consulte o documento [Uso da Sling Resource Merger no Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) para obter mais detalhes sobre a sobreposição de nós.
 

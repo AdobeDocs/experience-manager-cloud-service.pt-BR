@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: b36add58-a2ba-4299-94be-e0026e9c553c
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 27%
@@ -108,6 +108,7 @@ Agora é possível encontrar conteúdo com facilidade selecionando uma imagem e 
 ### Programa de Primeiros usuários do mapeamento de domínio {#cdn-config-early-adopter}
 
 Além das [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md) recém-lançadas, que incluem as regras do Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de Configuração para declarar e implantar outros tipos de configuração CDN. Adoraríamos saber sobre seus casos de uso, incluindo:
+
 * Redirecionamentos do lado do cliente 301/302
 * solicitações de proxy na borda para origens arbitrárias
 * Transformações de URL

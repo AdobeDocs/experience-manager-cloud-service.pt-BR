@@ -6,7 +6,7 @@ keywords: Captcha&reg; serviço, Forms adaptável, desafio de CAPTCHA, Prevenç�
 feature: Adaptive Forms, Core Components
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 24%
@@ -20,6 +20,7 @@ ht-degree: 24%
 O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
 
 O AEM Forms as a Cloud Service é compatível com as seguintes soluções CAPTCHA:
+
 * [Captcha](#integrate-aem-forms-environment-with-hcaptcha-captcha)
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
 * [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
@@ -57,10 +58,8 @@ Para integrar o AEM Forms com o serviço hCaptcha®, execute as seguintes etapas
 
 1. Configure o Cloud Service:
    1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** e selecione **[!UICONTROL hCaptcha®]**.
-
       ![hCaptcha® na interface do usuário](assets/hcaptcha-in-ui.png)
    1. Selecione um Contêiner de configuração, criado ou atualizado, conforme descrito na seção anterior. Selecione **[!UICONTROL Criar]**.
-
       ![Captcha de Configuração®](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Título]**, **[!UICONTROL Nome]**, **[!UICONTROL Chave do Site]** e **[!UICONTROL Chave Secreta]** para o serviço hCaptcha® [obtido no Pré-requisito](#prerequisite). Selecione **[!UICONTROL Criar]**.
 
@@ -69,9 +68,9 @@ Para integrar o AEM Forms com o serviço hCaptcha®, execute as seguintes etapas
    >[!NOTE]
    > Os usuários não precisam modificar a [URL de validação do JavaScript do lado do cliente](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage) e a [URL de validação do lado do servidor](https://docs.hcaptcha.com/#verify-the-user-response-server-side), pois já estão pré-preenchidos para validação do hCaptcha®.
 
-   Após configurar o serviço hCAPTCHA, ele estará disponível para uso em um [Formulário adaptável com base nos Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/introduction).
+   Após configurar o serviço hCAPTCHA, ele estará disponível para uso em um [Formulário adaptável com base nos Componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
-## Usar o hCaptcha® em um Forms Core Components adaptável {#using-hCaptcha®-core-components}
+## Usar o Captcha® em um Forms Adaptive Core Components {#using-hCaptcha&reg;-core-components}
 
 1. Abra a instância do AEM Forms as a Cloud Service.
 1. Ir para **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.

@@ -2,12 +2,12 @@
 title: Configurar o conteúdo do Source
 description: Saiba como configurar a fonte de conteúdo para seu site do Edge Delivery. Use "fstab.yaml" com a arquitetura Helix 4 ou use o assistente guiado no Cloud Manager (ou a API do serviço de configuração) com a arquitetura Helix 5.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
-source-git-commit: 71618a5603328990603db2ee7554048c9020a883
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '580'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ O exemplo acima serve apenas para fins ilustrativos. O URL real deve apontar par
 
 As etapas variam de acordo com o sistema de origem que você usa.
 
-* **Unidade Google**
+* **Google Drive**
 
    1. Crie uma pasta Google Drive.
    1. Compartilhar a pasta com `helix@adobe.com`.

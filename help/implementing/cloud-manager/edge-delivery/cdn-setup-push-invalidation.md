@@ -3,12 +3,12 @@ title: Configurar a invalidação por push para um site do Edge Delivery
 description: Descubra como configurar a invalidação por push para um site do Edge Delivery para garantir atualizações de conteúdo eficientes e controle de cache.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 

@@ -5,7 +5,7 @@ keywords: Como configurar o SharePoint Site com acesso limitado?, Configurar o S
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Vantagens de fornecer acesso limitado ao SharePoint Site:
 
 Siga as etapas abaixo para configurar o SharePoint Sites com acesso limitado usando escopos de autorização:
 
-1. [Crie um aplicativo com o &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [Crie um aplicativo com o ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [Definir o escopo de autorização na instância do AEM](#set-the-authorization-scope-at-aem-instance)
 
 ### Criar um aplicativo com a permissão limitada no portal do Azure
@@ -46,6 +46,7 @@ Crie um aplicativo no [portal do Microsoft Azure](https://portal.azure.com/#home
 ![Site selecionado do SharePoint](/help/forms/assets/sharepoint-selected-site.png)
 
 Para obter informações sobre como recuperar `Client ID`, `Client Secret` e `Tenant ID` para `OAuth URL`, consulte a [Documentação da Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+
 * No portal do Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Substitua `[author-instance]` pela URL da sua instância de Autor.
 * Adicione o escopo de permissões `offline_access` e `Sites.Selected` na API gráfica do Microsoft para fornecer acesso restrito aos sites.
 * Para URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal do Microsoft® Azure.
@@ -91,6 +92,7 @@ Agora, você pode usar esta [configuração do SharePoint Sites para a ação de
 ## Bytes extras
 
 Para recuperar o valor de `SharePoint Site ID`:
+
 1. Vá para as [APIs do Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 1. No painel esquerdo, em `SharePoint Sites` APIs, clique em `Search for a SharePoint site by keyword`.
 1. Substitua o espaço reservado `contoso` pelo nome real do site do SharePoint para buscar a ID do site correspondente.

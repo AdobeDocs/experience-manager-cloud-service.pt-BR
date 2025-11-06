@@ -4,8 +4,8 @@ description: Configure o Editor de Rich Text para criar conteúdo no  [!DNL Adob
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 2c1b444d7b7dad94cc9ebda59783f9c6fde84a91
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 0%
@@ -159,7 +159,7 @@ Para obter configurações detalhadas dos plug-ins RTE, consulte [como ativar e 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-O [componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem vários plug-ins de RTE usando a interface do usuário como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento. Para obter mais informações, consulte [criar modelos de página](/help/sites-cloud/authoring/page-editor/templates.md) e a [documentação do desenvolvedor dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=pt-BR).
+O [componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem vários plug-ins de RTE usando a interface do usuário como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento. Para obter mais informações, consulte [criar modelos de página](/help/sites-cloud/authoring/page-editor/templates.md) e a [documentação do desenvolvedor dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >Para fins de referência, os componentes de Texto padrão (fornecidos como parte de uma instalação padrão) podem ser encontrados em:
 >
@@ -233,7 +233,7 @@ As opções disponíveis no fluxo de RTE downstream das configurações da inter
 * Se a configuração da interface do usuário do RTE tiver sido removida ou não ativar um item, a política de conteúdo não poderá configurá-lo.
 * Um autor tem acesso somente a essas funcionalidades, conforme disponibilizado pelas configurações da interface do usuário e pelas políticas de conteúdo.
 
-Como exemplo, você pode ver a [documentação do Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR#the-text-component-and-the-rich-text-editor).
+Como exemplo, você pode ver a [documentação do Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizar o mapeamento entre ícones e comandos da barra de ferramentas {#iconstoolbar}
 

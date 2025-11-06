@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Translation
 role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2615'
 ht-degree: 17%
@@ -16,7 +16,7 @@ ht-degree: 17%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 Ativos multilíngues são ativos com binários, metadados e tags em vários idiomas. Geralmente, binários, metadados e tags para ativos existem em um idioma, que são traduzidos para outros idiomas para uso em projetos multilíngues. O Adobe Experience Manager Assets permite automatizar fluxos de trabalho para traduzir ativos (incluindo binários, metadados e tags) para gerar ativos em outros idiomas para uso em projetos multilíngues.
@@ -30,11 +30,11 @@ Tradução automática de ativos no AEM: o serviço de tradução automática tr
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html?lang=pt-BR
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html?lang=pt-BR
-[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html?lang=pt-BR)
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html
+[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html)
 
-One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html?lang=pt-BR
+One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html
 
 -->
 
@@ -132,9 +132,11 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
 1. Selecione **[!UICONTROL Criar e traduzir]** na parte inferior.
 1. Na lista **[!UICONTROL Idiomas de Destino]**, selecione os idiomas para os quais deseja criar uma estrutura de pastas.
 1. Na lista **[!UICONTROL Projeto]**, selecione **[!UICONTROL Adicionar ao projeto de tradução existente]** para executar o fluxo de trabalho de tradução na pasta.
+
    >[!NOTE]
    >
    >Se você escolher a opção **[!UICONTROL Adicionar ao projeto de tradução existente]**, seu projeto de tradução será adicionado a um projeto pré-existente somente se as configurações do projeto corresponderem exatamente às configurações do projeto pré-existente. Caso contrário, um novo projeto será criado.
+
 1. Na lista **[!UICONTROL Projeto de tradução existente]**, selecione um projeto para adicionar o ativo para tradução.
 1. Selecione **[!UICONTROL Criar]**. Os ativos que serão traduzidos são adicionados à pasta de destino. A pasta atualizada está listada na seção **[!UICONTROL Cópias de idioma]**.
 1. Navegue até o console Projetos e abra o projeto de tradução existente adicionado a.
@@ -164,7 +166,7 @@ Se você usar essa opção, o conjunto de ativos será adicionado a um projeto d
 
 1. Na interface do usuário do Assets, selecione a pasta de origem em que você adicionou uma pasta de ativos.
 1. Abra o **[!UICONTROL painel de Referências]** e selecione **[!UICONTROL Cópias de Idioma]** em **[!UICONTROL Cópias]** para exibir a lista de cópias de idioma.
-1. Marque a caixa de seleção ao lado de **[!UICONTROL Cópias de idioma]**, que seleciona todas as cópias de idioma. Desmarque as outras cópias, exceto a cópia de idioma (cópias) correspondente às localidades para as quais você deseja traduzir.
+1. Marque a caixa de seleção ao lado de **[!UICONTROL Cópias de idioma]**, que seleciona todas as cópias de idioma. Desmarque as outras cópias, exceto a cópia no idioma de destino (cópias) correspondente às localidades para as quais você deseja traduzir.
 1. Selecione **[!UICONTROL Atualizar cópias de idioma]** na parte inferior.
 1. Na lista **[!UICONTROL Projeto]**, escolha **[!UICONTROL Adicionar ao projeto de tradução existente]**.
 1. Na lista **[!UICONTROL Projeto de tradução existente]**, selecione um projeto para adicionar o ativo para tradução.

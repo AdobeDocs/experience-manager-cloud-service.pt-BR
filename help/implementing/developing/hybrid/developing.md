@@ -3,9 +3,9 @@ title: Desenvolvimento de SPAs para o AEM
 description: Este artigo apresenta perguntas importantes a serem consideradas ao envolver um desenvolvedor de front-end para desenvolver um SPA para o AEM. Ele também fornece uma visão geral da arquitetura do AEM com relação aos SPAs que devem ser considerados ao implantar um SPA desenvolvido no AEM.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 8%
@@ -60,7 +60,7 @@ Qualquer roteamento estático funciona contra o [princípio de portabilidade](#p
 
 ## Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
+Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
 
 ## Modelos de design de SPA {#spa-design-models}
 

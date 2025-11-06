@@ -5,9 +5,9 @@ exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 58a0cb3fab9f3be1ff431aa5814797b6e6675265
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1997'
+source-wordcount: '1994'
 ht-degree: 91%
 
 ---
@@ -130,18 +130,18 @@ Agora é possível selecionar a nova configuração para edição.
 
    ![config-target-settings-dialog](assets/config-target-settings-dialog.png)
 
-   <!-- Can this still occur?
+<!-- 
+Can this still occur?
 
-   >[!NOTE]
-   >
-   >When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
-   >
-   >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
-   >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
-   >1. Set the property **disable** to **false**.
-   >1. Select **Save All**.
-
-   -->
+>[!NOTE]
+>
+>When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
+>
+>1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
+>1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+>1. Set the property **disable** to **false**.
+>1. Select **Save All**.
+-->
 
 1. Na caixa de diálogo **Configurações do Adobe Target**, forneça valores para essas propriedades.
 
@@ -157,46 +157,46 @@ Agora é possível selecionar a nova configuração para edição.
 
    * **Configuração da nuvem do A4T Analytics**: selecione a configuração da nuvem do Analytics usada para métricas e metas de atividade do Target. Isso é necessário se estiver usando o Adobe Analytics como fonte de relatórios ao direcionar conteúdo.
 
-     <!-- Is this needed?
-     If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
-     -->
+<!-- Is this needed?
+If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
+-->
 
-   * **Usar direcionamento preciso:** por padrão, essa caixa de seleção está marcada. Se selecionada, a configuração do Cloud Service aguardará o carregamento do contexto antes de carregar o conteúdo. Veja a observação a seguir.
+* **Usar direcionamento preciso:** por padrão, essa caixa de seleção está marcada. Se selecionada, a configuração do Cloud Service aguardará o carregamento do contexto antes de carregar o conteúdo. Veja a observação a seguir.
 
-   * **Sincronizar segmentos do Adobe Target:** selecione essa opção para baixar segmentos definidos no Target e usá-los no AEM. Selecione essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (O termo &quot;segmento&quot; do AEM é equivalente ao termo &quot;público-alvo&quot; do Target.)
+* **Sincronizar segmentos do Adobe Target:** selecione essa opção para baixar segmentos definidos no Target e usá-los no AEM. Selecione essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (O termo &quot;segmento&quot; do AEM é equivalente ao termo &quot;público-alvo&quot; do Target.)
 
-   * **Biblioteca do cliente:** o padrão é a AT.js (a mbox.js foi descontinuada)
+* **Biblioteca do cliente:** o padrão é a AT.js (a mbox.js foi descontinuada)
 
-     >[!NOTE]
-     >
-     >O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=pt-BR), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
-     >
-     >A mbox.js foi descontinuada e será removida em um estágio posterior.
-     >
-     >A Adobe recomenda usar a AT.js como a biblioteca de cliente, em vez da mbox.js.
-     >
-     >A AT.js oferece várias melhorias em relação à biblioteca mbox.js:
-     >
-     >* Tempos de carregamento de página aprimorados para implementações da Web
-     >* Segurança aprimorada
-     >* Melhores opções de implementação para aplicativos de página única
-     >* A AT.js contém os componentes que foram incluídos na target.js, portanto, a target.js não é mais chamada
-     >
-     >É possível selecionar AT.js ou mbox.js no menu suspenso **Biblioteca do cliente**.
+  >[!NOTE]
+  >
+  >O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
+  >
+  >A mbox.js foi descontinuada e será removida em um estágio posterior.
+  >
+  >A Adobe recomenda usar a AT.js como a biblioteca de cliente, em vez da mbox.js.
+  >
+  >A AT.js oferece várias melhorias em relação à biblioteca mbox.js:
+  >
+  >* Tempos de carregamento de página aprimorados para implementações da Web
+  >* Segurança aprimorada
+  >* Melhores opções de implementação para aplicativos de página única
+  >* A AT.js contém os componentes que foram incluídos na target.js, portanto, a target.js não é mais chamada
+  >
+  >É possível selecionar AT.js ou mbox.js no menu suspenso **Biblioteca do cliente**.
 
-   * **Usar o sistema de gerenciamento de tags para fornecer a biblioteca do cliente** - selecione essa opção para usar a biblioteca do cliente do Adobe Launch ou outro sistema de gerenciamento de tags (ou DTM, que foi descontinuado).
+* **Usar o sistema de gerenciamento de tags para fornecer a biblioteca do cliente** - selecione essa opção para usar a biblioteca do cliente do Adobe Launch ou outro sistema de gerenciamento de tags (ou DTM, que foi descontinuado).
 
-   * **AT.js personalizada**: procure e faça upload de sua AT.js personalizada. Deixe em branco para usar a biblioteca padrão.
+* **AT.js personalizada**: procure e faça upload de sua AT.js personalizada. Deixe em branco para usar a biblioteca padrão.
 
-     >[!NOTE]
-     >
-     >Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é ativado.
-     >
-     >Direcionamento preciso significa que a configuração do Cloud Service aguarda o contexto ser carregado antes de carregar o conteúdo. Como resultado, em termos de desempenho, o direcionamento preciso pode criar um atraso de alguns milissegundos antes de carregar o conteúdo.
-     >
-     >O direcionamento preciso é sempre ativado na instância do autor. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
-     >
-     >Se você ***já*** tiver criado componentes direcionados e alterar essa configuração, suas alterações não afetarão esses componentes. Você deve alterar esses componentes diretamente.
+  >[!NOTE]
+  >
+  >Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é habilitado.
+  >
+  >Direcionamento preciso significa que a configuração do Cloud Service aguarda o contexto ser carregado antes de carregar o conteúdo. Como resultado, em termos de desempenho, o direcionamento preciso pode criar um atraso de alguns milissegundos antes de carregar o conteúdo.
+  >
+  >O direcionamento preciso é sempre habilitado na instância de criação. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**`http://localhost:4502/etc/cloudservices.html`**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
+  >
+  >Se você ***já*** tiver criado componentes direcionados e alterar essa configuração, suas alterações não afetarão esses componentes. Você deve alterar esses componentes diretamente.
 
 1. Clique em **Conectar-se ao Adobe Target** para inicializar a conexão com o Target. Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** será exibida. Clique em **OK** na mensagem e, em seguida, em **OK** na caixa de diálogo.
 
@@ -241,7 +241,7 @@ Sua estrutura foi criada. Para replicar a estrutura para a instância de publica
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=pt-BR).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >

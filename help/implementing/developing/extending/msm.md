@@ -3,10 +3,10 @@ title: Extensão do gerenciador de vários sites
 description: Saiba como estender a funcionalidade do Gerenciador de vários sites.
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2336'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ A nova configuração de implantação está então disponível ao definir confi
 
 Para criar uma configuração de implantação:
 
-1. Abrir CRXDE Lite em `https://<host>:<port>/crx/de`.
+1. Abra o CRXDE Lite em `https://<host>:<port>/crx/de`.
 
 1. Navegue até `/apps/msm/<your-project>/rolloutconfigs`, a versão personalizada do seu projeto do `/libs/msm/wcm/rolloutconfigs`.
 
@@ -183,17 +183,14 @@ Para criar uma configuração de implantação:
 1. Adicione as seguintes propriedades a este nó:
 
    * **Nome**: `jcr:title`
-
      **Tipo**: `String`
      **Valor**: um título de identificação que aparecerá na interface
 
    * **Nome**: `jcr:description`
-
      **Tipo**: `String`
      **Valor**: uma descrição opcional.
 
    * **Nome**: `cq:trigger`
-
      **Tipo**: `String`
      **Valor**: o [Gatilho de Implantação](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) a ser usado
       * `rollout`
@@ -507,7 +504,7 @@ A seguinte classe `LiveActionFactory` implementa um `LiveAction` que registra me
    mvn -PautoInstallPackage clean install
    ```
 
-1. O arquivo AEM `error.log` deve indicar que o pacote foi iniciado, visível nos logs em `https://<host>:<port>/system/console/status-slinglogs`.
+1. O arquivo `error.log` do AEM deve indicar que o pacote foi iniciado, visível nos logs em `https://<host>:<port>/system/console/status-slinglogs`.
 
    ```text
    13.08.2013 14:34:55.450 *INFO* [OsgiInstallerImpl] com.adobe.example.msm.MyLiveActionFactory-bundle BundleEvent RESOLVED
@@ -639,7 +636,6 @@ Se uma propriedade de página está sujeita à implantação e, portanto, sujeit
       * **Tipo**: `String`
       * **Valor**: mantém o nome da propriedade em consideração e é comparável ao valor da propriedade `name`
          * Por exemplo, consulte
-
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Quando `cq-msm-lockable` for definido, quebrar/fechar a cadeia interagirá com o MSM da seguinte maneira:

@@ -3,9 +3,9 @@ title: Solução de problemas de certificado SSL
 description: Saiba como solucionar problemas de certificado SSL identificando causas comuns para que você possa manter conexões seguras.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 31%
@@ -60,7 +60,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 >
 >A saída desses dois comandos deve ser exatamente a mesma. Se você não conseguir localizar uma chave privada correspondente ao seu certificado `main/server`, será necessário rechavear o certificado gerando uma nova CSR e/ou solicitando um certificado atualizado do seu fornecedor de SSL.
 
-+++
++++ 
 
 +++**Remover certificados de cliente**
 
@@ -138,7 +138,7 @@ O Cloud Manager espera que o certificado SSL seja válido por pelo menos 90 dias
 
 +++
 
-+++**O certificado SAN incorreto é aplicado ao meu domínio
++++**Um certificado SAN incorreto é aplicado ao meu domínio
 
 ## Certificado SAN incorreto aplicado ao meu domínio {#wrong-san-cert}
 

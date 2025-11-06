@@ -4,7 +4,7 @@ description: Esta página descreve como criar e gerenciar canais no Screens as a
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 1%
@@ -22,13 +22,13 @@ Este documento ajuda você a entender a criação e o gerenciamento de canais pa
 
 * entender como criar canais para o Provedor de conteúdo do Screens
 * gerencie e edite o conteúdo em seus canais
-* gerencie a atribuição e o agendamento de ativação para seus canais no [Provedor de Serviços Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=pt-BR)
+* gerencie a atribuição e o agendamento de ativação para seus canais no [Provedor de Serviços Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
 
 ## Etapas para criar um novo canal de sequência no Screens as a Cloud Service {#create-new-channel}
 
 >[!NOTE]
 >**Pré-requisitos**
->Antes de iniciar esta seção do Guia, revise [Criação e gerenciamento de projetos no Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+>Antes de iniciar esta seção do Guia, leia [Criação e Gerenciamento de Projetos no Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 Siga as etapas abaixo para criar um canal de sequência no Screens as a Cloud Service:
 
@@ -114,6 +114,7 @@ Esse recurso permite definir um agendamento de ativação padrão para um canal 
    ![imagem](/help/screens-cloud/assets/display/Assignments3.png)
 
 Esse bloco exibe as seguintes informações:
+
 * Prioridade padrão do canal na exibição.
 * Datas de início e término da ativação quando o canal está agendado para reprodução.
 * Visualização sintética da recorrência (por hora/dia/semana/mês/ano e nome dado a essa recorrência).

@@ -2,10 +2,10 @@
 title: Lançamentos para fragmentos de conteúdo
 description: Saiba como usar Inicializações para fragmentos de conteúdo no Adobe Experience Manager as a Cloud Service. Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura, mantendo os fragmentos de conteúdo atuais.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 39ff527f0082a18f0853964172eabf438caa1098
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 1%

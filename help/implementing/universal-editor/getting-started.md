@@ -3,8 +3,8 @@ title: Introdução ao Editor universal no AEM
 description: Saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 8e1610e2835a9e85de2d2bffa6a883777c92fe96
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 37%
@@ -102,8 +102,8 @@ Você pode usar o prefixo `config` no URN da conexão para definir pontos de ext
 
 Se você não quiser usar o Universal Editor Service, que é hospedado pela Adobe, mas sua própria versão hospedada, poderá defini-lo em uma meta tag. Para substituir o ponto de extremidade de serviço padrão fornecido pelo Editor Universal, defina seu próprio ponto de extremidade de serviço:
 
-* Meta name - `urn:adobe:aue:config:service`
-* Conteúdo meta - `content="https://adobe.com"` (exemplo)
+* Nome do Meta - `urn:adobe:aue:config:service`
+* Conteúdo do Meta - `content="https://adobe.com"` (exemplo)
 
 ```html
 <meta name="urn:adobe:aue:config:service" content="<url>">
@@ -111,8 +111,8 @@ Se você não quiser usar o Universal Editor Service, que é hospedado pela Adob
 
 Se você quiser que apenas determinadas extensões sejam ativadas para uma página, poderá definir isso em uma meta tag. Para buscar extensões, defina os pontos de extremidade da extensão:
 
-* Nome meta: `urn:adobe:aue:config:extensions`
-* Conteúdo meta: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (exemplo)
+* Nome do Meta: `urn:adobe:aue:config:extensions`
+* Conteúdo do Meta: `content="https://adobe.com,https://anotherone.com,https://onemore.com"` (exemplo)
 
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">

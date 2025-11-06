@@ -4,8 +4,8 @@ description: Saiba como organizar seu conteúdo headless e como funcionam as fer
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 66cd28d43c56f2e8fc44674175aa9b70b7a72ed1
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 89%

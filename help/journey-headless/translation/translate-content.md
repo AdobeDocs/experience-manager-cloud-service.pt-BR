@@ -4,8 +4,8 @@ description: Use o conector de tradução para traduzir conteúdo headless.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 67%
@@ -171,7 +171,7 @@ Para adicionar conteúdo a uma tarefa de tradução:
 1. Selecione **Selecionar** para adicionar o conteúdo selecionado ao trabalho.
 1. Na caixa de diálogo **Traduzir**, especifique que deseja **Criar Cópia de Idioma**.
 
-   ![Criar cópia de idioma](assets/translate-copy-master.png)
+   ![Criar cópia no idioma de destino](assets/translate-copy-master.png)
 
 1. O conteúdo agora está incluído na tarefa.
 
@@ -245,11 +245,11 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Ser capaz de criar novos projetos de tradução.
 * Usar os projetos de tradução para traduzir o conteúdo headless.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando a seguir o documento [Conteúdo traduzido do Publish](publish-content.md), onde você aprende a publicar seu conteúdo traduzido e como atualizar essas traduções conforme o conteúdo da raiz do idioma mudar.
+Desenvolva esse conhecimento e continue sua jornada de tradução headless do AEM revisando a seguir o documento [Publicar conteúdo traduzido](publish-content.md), onde você aprende a publicar seu conteúdo traduzido e como atualizar essas traduções conforme o conteúdo da raiz do idioma mudar.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de tradução headless revisando o documento [Conteúdo traduzido do Publish](publish-content.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
+Embora seja recomendável seguir para a próxima parte da jornada de tradução headless revisando o documento [Publicar conteúdo traduzido](publish-content.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
 
 * [Gerenciamento de projetos de tradução](/help/sites-cloud/administering/translation/managing-projects.md) - Saiba mais sobre os detalhes de projetos de tradução e recursos adicionais, como fluxos de trabalho de tradução humana e projetos multilíngues.
 * [Ambiente e ferramentas de criação](/help/sites-cloud/authoring/path-selection.md#path-selection) - O AEM fornece vários mecanismos para organização e edição de conteúdo, incluindo um navegador de caminhos robusto.

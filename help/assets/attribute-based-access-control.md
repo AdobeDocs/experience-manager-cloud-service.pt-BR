@@ -3,7 +3,7 @@ title: Controle de acesso baseado em atributos
 description: Saiba como habilitar o controle de acesso baseado em atributos para definir regras baseadas em metadados e definir o nível de acesso aos ativos disponíveis no Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 82630f69399c077dc5c8ca40e7552cd479ea5bc5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%

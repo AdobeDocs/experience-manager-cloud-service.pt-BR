@@ -6,7 +6,7 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 1%
@@ -38,7 +38,7 @@ E agora, obtenha uma melhor pontuação do Google Core Web Vital para LCP (Large
 >* Largura de banda de rede
 >* DPR (Relação de pixels do dispositivo)
 >
->Para saber como é fácil usar o Instantâneo, reproduza o [Vídeo de treinamento do Instantâneo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos e 17 segundos).
+>Para saber como é fácil usar o Instantâneo, reproduza o [Vídeo de treinamento do Instantâneo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos e 17 segundos).
 
 A Smart Imaging se beneficia do aumento de desempenho de estar totalmente integrado ao melhor serviço premium de CDN (Content Delivery Network) da Adobe. Este serviço encontra a rota de Internet ideal entre servidores, redes e pontos de correspondência. Ele encontra uma rota que tem a menor latência e a menor taxa de perda de pacotes em vez de usar a rota padrão na Internet.
 
@@ -86,7 +86,7 @@ Ativar a Conversão de Formato de Navegador anexando `bfc=on` à URL da imagem c
 
 Você pode desativar o Smart Imaging anexando `bfc=off` ao URL da imagem.
 
-Consulte também [bfc](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) na API de disponibilização e renderização de imagens do Dynamic Media.
+Consulte também [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) na API de disponibilização e renderização de imagens do Dynamic Media.
 
 ### Sobre a otimização da proporção de pixels do dispositivo {#dpr}
 
@@ -279,7 +279,7 @@ Ao criar o caso de suporte, especifique quais recursos de Imagem inteligente voc
 
       * Listar todos os domínios relevantes, como *`company.com`* ou *`mycompany.scene7.com`*
       * A Imagem inteligente é compatível com domínios genéricos e personalizados.
-      * Para identificar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e entre na conta da sua empresa.
+      * Para identificar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e entre na conta da sua empresa.
 
          1. Navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]**.
          1. Procure o campo **[!UICONTROL Nome do Servidor Publicado]** para confirmar seu domínio.

@@ -4,7 +4,7 @@ description: Use o editor de rich text (RTE) para notas de rodapé em um formul�
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -30,11 +30,12 @@ As notas de rodapé são numeradas sequencialmente na ordem em que aparecem na p
 * Fornece informações adicionais que podem interromper o fluxo normal das informações principais.
 * Fornece informações entre parênteses ou permissões de copyright.
 
-No Adaptive Forms, a [!UICONTROL nota de rodapé] é usada para exibir as informações sobre como preencher ou usar o formulário. Para obter informações sobre como criar um Forms adaptável, consulte [Criando um Formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=pt-BR).
+No Adaptive Forms, a [!UICONTROL nota de rodapé] é usada para exibir as informações sobre como preencher ou usar o formulário. Para obter informações sobre como criar um Forms adaptável, consulte [Criando um Formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
 
 ## Nota de rodapé no Adaptive Forms {#using-footnote-adaptiveforms}
 
 Para adicionar uma nota de rodapé no Adaptive Forms, execute as seguintes etapas:
+
 1. Abra um Formulário adaptável no modo **Editar**.
 1. No navegador de componentes, arraste e solte o componente **[!UICONTROL Texto]** no Formulário adaptável.
 1. Selecione o componente **[!UICONTROL Texto]** que você adicionou e selecione ![cmppr](assets/configure-icon.svg) para editar suas propriedades.

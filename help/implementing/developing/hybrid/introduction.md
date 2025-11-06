@@ -3,9 +3,9 @@ title: Introdução e passo a passo do SPA
 description: Este artigo apresenta os conceitos de um SPA e aborda o uso de um SPA básico para criação, mostrando como ele está relacionado ao editor de SPA integrado do AEM.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 93%
@@ -94,10 +94,12 @@ Ao renderizar no lado do cliente, os elementos da página reagem mais rapidament
 >[!TIP]
 >
 >Para obter detalhes técnicos sobre como SPAs funcionam no AEM, consulte os artigos:
+>
 >* [Introdução a SPAs no AEM usando o React](getting-started-react.md)
 >* [Introdução a SPAs no AEM usando o Angular](getting-started-angular.md)
 >
 >Para uma análise mais detalhada do design, arquitetura e fluxo de trabalho técnico do editor de SPA, consulte o artigo:
+>
 >* [Visão geral do editor de SPA](editor-overview.md).
 
 ## Experiência de edição de conteúdo com SPA {#content-editing-experience-with-spa}
@@ -247,7 +249,7 @@ Na seção a seguir, exploraremos o contrato que permite que o editor de SPA rel
 
 ## Headful e Headless no AEM {#headful-headless}
 
-SPAs podem ser ativados com níveis flexíveis de integração no AEM, incluindo SPAs desenvolvidos e mantidos fora do AEM. Além disso, os SPAs podem ser usados no AEM e também no AEM para fornecer conteúdo a endpoints adicionais de forma headless.
+SPAs podem ser habilitados com níveis flexíveis de integração no AEM, incluindo SPAs desenvolvidos e mantidos fora do AEM. Além disso, os SPAs podem ser usados no AEM e também no AEM para fornecer conteúdo a endpoints adicionais de forma headless.
 
 >[!TIP]
 >

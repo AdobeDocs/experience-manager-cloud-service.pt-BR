@@ -4,7 +4,7 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) para
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 1%
@@ -338,13 +338,14 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
       * **Incluir objetos de formulário que não estão associados ao modelo de dados**: a configuração da propriedade inclui campos não associados do Formulário adaptável baseado em esquema no Documento de Registro.
 
-      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+        <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
       * **Ocultar descrição de painéis**: definir a propriedade exclui a descrição do painel/tabela do documento de registro. Aplicável para painel e tabela.
 
 
 
    1. **Propriedades do Campo de Formulário**:
+
       * **Para os componentes da Caixa de Seleção e do Botão de Opção, mostrar apenas os valores selecionados**: a configuração da propriedade exibe apenas os valores selecionados da caixa de seleção e do botão de opção em [!UICONTROL Documento de Registro].
       * **Separador para vários valores**: você pode escolher qualquer separador como vírgula ou quebra de linha para exibir vários valores.
       * **Alinhamento de Opções**: Você pode selecionar o alinhamento desejado (Horizontal, Vertical, Igual ao Formulário adaptável) para definir o alinhamento dos campos, como caixa de seleção ou botão de opção, a serem exibidos em [!UICONTROL Documento de Registro]. Por padrão, o alinhamento vertical é definido para os campos em [!UICONTROL Documento de registro]. Definir as propriedades das [!UICONTROL Propriedades do Campo de Formulário] de DoR substitui as propriedades definidas no [!UICONTROL Alinhamento de Itens] para os campos em um Formulário adaptável. Caso você selecione a opção [!UICONTROL Igual ao formulário adaptável], o alinhamento conforme configurado em uma instância de autor do formulário adaptável será usado para os campos [!UICONTROL Documento de registro].
@@ -353,6 +354,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
 
    1. **Propriedades da Página Mestra**:
+
       * **Imagem de logotipo**: você pode optar por usar a imagem de logotipo do Formulário adaptável, escolher uma do DAM ou carregar uma do seu computador.
       * **Título do Formulário**: Título do DoR.
       * **Texto do Cabeçalho**: texto que aparece na seção de cabeçalho do Documento de Registro.
@@ -362,21 +364,21 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
       ![Propriedades da Página Mestra](/help/forms/assets/dorpropertiesimg.png)
 
-   >[!NOTE]
-   >
-   >Se você estiver usando um modelo de Formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades de Cor de ênfase e Família de fontes funcionem, verifique se o seguinte está presente no modelo de Formulário adaptável no subformulário raiz:
+      >[!NOTE]
+      >
+      >Se você estiver usando um modelo de Formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades de Cor de ênfase e Família de fontes funcionem, verifique se o seguinte está presente no modelo de Formulário adaptável no subformulário raiz:
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+      ```xml
+      <proto>
+      <font typeface="Arial"/>
+      <fill>
+      <color value="4,166,203"/>
+      </fill>
+      <edge>
+      <color value="4,166,203"/>
+      </edge>
+      </proto>
+      ```
 
 1. Para salvar as alterações de identidade visual, selecione **[!UICONTROL Concluído]**.
 

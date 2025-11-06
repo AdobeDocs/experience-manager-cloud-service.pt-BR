@@ -5,8 +5,8 @@ description: O navegador do repositório fornece uma visualização somente leit
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 1%
@@ -17,11 +17,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->O Navegador do repositório está disponível nas versões AEM 6582 e superior.
+>O Navegador do repositório está disponível no AEM versões 6582 e superior.
 
 >[!INFO]
 >
->Você também pode assistir a [este clipe](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=pt-BR) para obter uma introdução rápida em vídeo sobre como usar o Navegador do Repositório para depurar o AEM as a Cloud Service.
+>Você também pode assistir a [este clipe](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) para obter uma introdução rápida em vídeo sobre como usar o Navegador do Repositório para depurar o AEM as a Cloud Service.
 
 ## Introdução {#introduction}
 
@@ -33,15 +33,15 @@ Acessível a partir do [AEM as a Cloud Service Developer Console](/help/implemen
 
 As seguintes condições devem ser atendidas para acessar o AEM as a Cloud Service Developer Console ou o Navegador do repositório
 
-Para acessar o AEM as a Cloud Service Developer Console, consulte [Acesso ao Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
+Para acessar o AEM as a Cloud Service Developer Console, consulte [Acesso ao Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
 Para acessar o Navegador do repositório, os requisitos são os mesmos do AEM as a Cloud Service Developer Console (especificados acima). Para exibir o conteúdo do Navegador do repositório de uma instância específica:
 
-* Instâncias de autor: usuários com o Perfil de Produto de Usuários AEM para a **Instância de autor** podem exibir o navegador do repositório com acesso mínimo de leitura; as permissões do usuário são respeitadas ao navegar pelo repositório. Os usuários com o Perfil de produto de administradores do AEM podem visualizar o navegador do repositório com acesso de leitura completo.
+* Instâncias de autor: usuários com o Perfil de Produto de Usuários do AEM para a **Instância de autor** podem exibir o navegador do repositório com acesso mínimo de leitura; as permissões do usuário são respeitadas ao navegar pelo repositório. Os usuários com o Perfil de produto de administradores do AEM podem exibir o navegador do repositório com acesso de leitura completo.
 
-* Instâncias do Publish: os usuários com o Perfil de Produto de Usuários AEM para a **instância do Publish** podem exibir o navegador do repositório com acesso mínimo de leitura. Sem esse conjunto de perfis de produto, os usuários navegarão como um usuário anônimo e alguns caminhos não serão exibidos devido a permissões limitadas.
+* Instâncias de publicação: os usuários com o Perfil de Produto de Usuários do AEM para a **Instância de publicação** podem exibir o navegador do repositório com acesso mínimo de leitura. Sem esse conjunto de perfis de produto, os usuários navegarão como um usuário anônimo e alguns caminhos não serão exibidos devido a permissões limitadas.
 
-Para obter mais informações sobre como configurar permissões de usuário, consulte a [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=pt-BR).
+Para obter mais informações sobre como configurar permissões de usuário, consulte a [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### Iniciar o navegador do repositório {#launching-the-repository-browser}
 
@@ -86,7 +86,7 @@ Para tornar esses locais visíveis, faça o seguinte.
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. Criar um perfil de produto para administradores de publicação. No exemplo abaixo, ele é chamado de **DEV - Publish de Administradores de AEM**
+1. Criar um perfil de produto para administradores de publicação. No exemplo abaixo, ele é chamado de **DEV - Publicação de administradores do AEM**
 
    ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
@@ -94,16 +94,16 @@ Para tornar esses locais visíveis, faça o seguinte.
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. Aguarde alguns minutos e abra o console **Autor de AEM**
+1. Aguarde alguns minutos e abra o console **Autor do AEM**
 1. Adicione o grupo correspondente ao novo perfil de produto como membro do grupo do administrador clicando em **Ferramentas - Segurança - Grupos no autor** e depois no grupo **administradores**. Em seguida, adicione o grupo como mostrado abaixo
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. Ative os **administradores** e o novo grupo **DEV - Administradores AEM Publish** para que eles fiquem disponíveis na publicação
+1. Ative os **administradores** e o novo grupo **DEV - Publicação de Administradores do AEM** para que eles fiquem disponíveis na publicação
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. Como prática de segurança recomendada, remova o novo grupo **DEV - Publish de Administradores de AEM** do grupo de administradores no **autor** para que o novo grupo seja isolado para publicação
+1. Como prática de segurança recomendada, remova o novo grupo **DEV - Publicação de Administradores do AEM** do grupo de administradores no **autor** para que o novo grupo seja isolado para publicação
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 

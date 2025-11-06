@@ -4,8 +4,8 @@ description: Aprenda conceitos headless, como eles são mapeados no AEM e a teor
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 81%
@@ -50,7 +50,7 @@ Quando falamos de um CMS headless, o CMS gerencia o conteúdo e continua a entre
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
-Os serviços de consumo, sejam experiências de RA, uma loja na Web, experiências móveis, aplicativos web progressivos (PWA) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
+Os serviços de consumo, sejam experiências de RA, uma loja na Web, experiências móveis, aplicativos web progressivos (PWAs) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
 
 Omitir a interface simplifica o CMS ao remover a complexidade. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
 
@@ -60,7 +60,7 @@ Além de oferecer ferramentas robustas para criar, gerenciar e fornecer páginas
 
 O poder do AEM permite que ele forneça conteúdo headless, em pilha completa ou em ambos os modelos ao mesmo tempo. Para o especialista em tradução, o mesmo conjunto de ferramentas de tradução pode ser aplicado a ambos os tipos de conteúdo, fornecendo uma abordagem unificada para a tradução do conteúdo.
 
-Mais adiante na jornada você aprenderá os detalhes de como o AEM traduz conteúdo, mas em um alto nível, o conceito é simples:
+Mais adiante na jornada, você aprenderá os detalhes de como o AEM traduz conteúdo, mas, em um alto nível, o conceito é simples:
 
 1. Definir uma conexão com um serviço de tradução, configurando a estrutura de integração de tradução.
 1. Definir qual conteúdo deve ser traduzido usando as regras de tradução.
@@ -78,8 +78,8 @@ Desenvolver esse conhecimento e continuar sua jornada de tradução headless do 
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de tradução headless revisando o documento [Introdução à tradução headless AEM](getting-started.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
+Embora seja recomendável seguir para a próxima parte da jornada de tradução headless revisando o documento [Introdução à tradução headless do AEM](getting-started.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
 
 * [MSM e tradução](/help/sites-cloud/administering/msm-and-translation.md) - os detalhes do Gerenciamento de vários sites do AEM e como ele trabalha com ferramentas de tradução
 * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
-* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

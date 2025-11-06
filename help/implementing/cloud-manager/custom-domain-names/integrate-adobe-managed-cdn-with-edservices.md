@@ -3,10 +3,10 @@ title: Integrar o Edge Delivery Services com a CDN gerenciada pela Adobe no Clou
 description: null
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -46,7 +46,7 @@ O Edge Delivery Services pode ser configurado usando uma das duas opções a seg
 |  | Opção de implantação | Documento principal | Recurso | Melhor para |
 | --- | --- | --- | --- | --- |
 | Opção 1 | *Com* um ambiente AEM as a Cloud Service (AEMaaCS) existente | [Configurar um proxy de um ambiente existente](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment) | O Pipeline de configuração está disponível, em geral, para ambientes AEMaaCS | Equipes que já executam o Sites no Cloud Manager e desejam um aumento rápido no desempenho de baixo risco. |
-| Opção 2 | *Sem* um ambiente AEMaaCS existente; conhecido como &quot;ambiente Edge&quot; independente. | [Configurar um site do Edge Delivery sem um ambiente existente](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | No momento, o Pipeline de configuração está disponível apenas para ambientes Edge por meio do programa limitado Beta.<br>Consulte [Adicionar Pipeline De Configuração Do Edge Delivery](help/implementing/cloud-manager/release-notes/current.md##add-eds-pipeline). | Novos builds ou migrações que desejam adotar a arquitetura completa da Edge Delivery e o roteamento granular. |
+| Opção 2 | *Sem* um ambiente AEMaaCS existente; conhecido como &quot;ambiente Edge&quot; independente. | [Configurar um site do Edge Delivery sem um ambiente existente](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment) | No momento, o Pipeline de configuração está disponível apenas para ambientes Edge por meio do programa limitado Beta.<br>Consulte [Adicionar Pipeline De Configuração Do Edge Delivery](/help/implementing/cloud-manager/release-notes/current.md#add-eds-pipeline). | Novos builds ou migrações que desejam adotar a arquitetura completa da Edge Delivery e o roteamento granular. |
 
 <!-- Ultimately this URL above will need to be updated on GA -->
 

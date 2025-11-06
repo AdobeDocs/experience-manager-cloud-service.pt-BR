@@ -6,13 +6,13 @@ version: Experience Manager as a Cloud Service
 activity: setup
 feature: Commerce Integration Framework
 topic: Commerce
-role: Architect, Developer
+role: Developer, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 1%
@@ -22,11 +22,11 @@ ht-degree: 1%
 
 # Componentes principais do AEM-CIF e integração com o Adobe Experience Platform {#aem-cif-aep-integration}
 
-Os componentes principais do [Commerce integration framework (CIF)](https://github.com/adobe/aem-core-cif-components) fornecem integração perfeita com o [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=pt-BR) para encaminhar eventos de vitrine e seus dados de interações do lado do cliente, como __adicionar ao carrinho__.
+Os componentes principais do [Commerce integration framework (CIF)](https://github.com/adobe/aem-core-cif-components) fornecem integração perfeita com o [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html) para encaminhar eventos de vitrine e seus dados de interações do lado do cliente, como __adicionar ao carrinho__.
 
 O projeto [Componentes principais do AEM CIF](https://github.com/adobe/aem-core-cif-components) fornece uma biblioteca do JavaScript chamada [conector do Adobe Experience Platform para o Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) para coletar dados do evento da loja da Commerce. Esses dados do evento são enviados para a Experience Platform, onde são usados em outros produtos da Adobe Experience Cloud, como o Adobe Analytics e o Adobe Target, para criar um perfil de 360 graus que cobre uma jornada do cliente. Conectando os dados do Commerce a outros produtos na Adobe Experience Cloud, você pode executar tarefas como analisar o comportamento do usuário em seu site, executar testes AB e criar campanhas personalizadas.
 
-Saiba mais sobre o conjunto de tecnologias da [Coleção de dados da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=pt-BR) que permite coletar dados de experiência do cliente de fontes do lado do cliente.
+Saiba mais sobre o conjunto de tecnologias da [Coleção de dados da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) que permite coletar dados de experiência do cliente de fontes do lado do cliente.
 
 ## Enviar dados do evento `addToCart` para o Experience Platform {#send-addtocart-to-aep}
 
@@ -38,7 +38,7 @@ As etapas a seguir mostram como enviar os dados do evento `addToCart` de página
 
 Use um ambiente de desenvolvimento local para concluir esta demonstração. Isso inclui uma instância do AEM em execução configurada e conectada a uma instância do Adobe Commerce. Revise os requisitos e as etapas para [configurar o desenvolvimento local com o AEM as a Cloud Service SDK.](/help/commerce-cloud/cif-storefront/develop.md)
 
-Você também precisa de acesso ao [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=pt-BR) e de permissões para criar o esquema, o conjunto de dados e as sequências de dados para a coleta de dados. Para obter mais informações, consulte [Gerenciamento de permissões.](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=pt-BR)
+Você também precisa de acesso ao [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html) e de permissões para criar o esquema, o conjunto de dados e as sequências de dados para a coleta de dados. Para obter mais informações, consulte [Gerenciamento de permissões.](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html)
 
 ## Configuração do AEM Commerce as a Cloud Service {#aem-setup}
 
@@ -366,7 +366,7 @@ Para definir a estrutura para dados de evento de comércio, você deve criar um 
 
 >[!TIP]
 >
->Consulte as [Noções básicas sobre a composição de esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=pt-BR) para obter mais informações.
+>Consulte as [Noções básicas sobre a composição de esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) para obter mais informações.
 
 ### Criar conjunto de dados {#create-dataset}
 
@@ -392,7 +392,7 @@ Para armazenar os dados do evento, você deve criar um Conjunto de dados que est
 
 >[!TIP]
 >
->Consulte a [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=pt-BR) para obter mais informações.
+>Consulte a [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) para obter mais informações.
 
 
 ### Criar sequência de dados {#create-datastream}
@@ -419,7 +419,7 @@ Conclua as etapas a seguir para criar uma sequência de dados na Experience Plat
 
 >[!TIP]
 >
->Consulte a [Visão geral da sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) para obter mais informações.
+>Consulte a [Visão geral da sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) para obter mais informações.
 
 ## Adicionar valor de sequência de dados à configuração do AEM Commerce {#add-aep-values-to-aem}
 
@@ -494,6 +494,6 @@ __Eventos XDM de Perfil :__
 Para obter mais informações, consulte os seguintes recursos:
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [[!DNL Data Connection] visão geral](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html?lang=pt-BR)
-- [[!DNL Data Connection] Eventos](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html?lang=pt-BR)
-- [visão geral do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=pt-BR)
+- [[!DNL Data Connection] visão geral](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+- [[!DNL Data Connection] Eventos](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/event-forwarding/events.html)
+- [visão geral do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

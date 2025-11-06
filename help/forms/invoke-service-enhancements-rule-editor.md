@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: chame os aprimoramentos do serviço no VRE, preenchendo as opções suspensas usando invocar serviço, Defina o painel repetível usando a saída de invocar serviço, Defina o painel usando a saída de invocar serviço, Use o parâmetro de saída de invocar serviço para validar outro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 1%
@@ -87,6 +87,7 @@ Crie um formulário `Get Information` que recupere valores com base na entrada i
 **Campos de formulário**
 
 Adicione os seguintes campos ao formulário:
+
 * **Inserir identificação do animal de estimação**: Caixa de texto
 * **Selecionar URLs de Fotos**: Lista Suspensa
 * **Marcas**: Painel
@@ -103,6 +104,7 @@ Adicione os seguintes campos ao formulário:
 **Configurando painéis**
 
 Defina os painéis como repetitivos com as seguintes restrições:
+
 * Valor mínimo: 1
 * Valor máximo: 4
 

@@ -3,8 +3,8 @@ title: Um guia rápido para a WCAG 2.1
 description: Um Guia rápido para as Diretrizes de acessibilidade de conteúdo da Web (WCAG) versão 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: bffc743b2d28c4c4815a17df75c04c8bfdc90a1e
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 95%
@@ -66,8 +66,8 @@ A WCAG 2.1 consiste em quatro princípios-chave para o design acessível, às ve
 1. **Robusto**: o conteúdo da Web está disponível da maneira desejada em uma ampla variedade de ambientes de navegação, incluindo ambientes de navegação herdados e emergentes?
 
 Para elaborar:
-* Cada **princípio** consiste em uma ou mais **diretrizes**.
 
+* Cada **princípio** consiste em uma ou mais **diretrizes**.
 * As diretrizes são redigidas como instruções, que são positivas (faça isso...) ou negativas (não faça isso...).
 * As diretrizes são numeradas de 1.1 a 4.1 e o primeiro número corresponde ao princípio principal.
 * Cada diretriz consiste em um ou mais **critérios de sucesso**.
@@ -85,6 +85,7 @@ Embora a WCAG 2.1 seja em si um documento estável e não mude, a maioria desses
 ### Recursos da WCAG 2.1 {#wcag-resources}
 
 Esta lista não está completa. Ela apresenta os recursos disponíveis:
+
 * [Um definição de todos os documentos relacionados à WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [Um resumo dos diferentes documentos](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 * [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)

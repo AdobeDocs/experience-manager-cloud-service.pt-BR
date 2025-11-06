@@ -2,9 +2,9 @@
 title: IA no AEM as a Cloud Service
 description: Saiba mais sobre IA no Adobe Experience Manager as a Cloud Service
 feature: Generative AI, AI Assistant, AI Tools
-role: Admin, Architect, Developer, User
+role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: a08abfb5fc156a9f480b0b4ea1003e7597126347
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 3%
@@ -62,6 +62,6 @@ Há muitos recursos disponíveis, incluindo:
 
 * [IA responsável na Adobe](https://www.adobe.com/trust/responsible-ai.html)
 
-* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/generative-ai)
+* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/generative-ai#aem)
+   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)

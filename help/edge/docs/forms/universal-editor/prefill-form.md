@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: preenchimento prévio de formulário adaptável, serviços de entrega de borda de formulários adaptáveis, preenchimento automático de formulário adaptável
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 1%
@@ -157,7 +157,7 @@ O Editor universal fornece duas opções de serviço de preenchimento prévio:
 
 1. Clique em **Criar** para abrir o assistente **Criar Formulário**
 
-   >
+   >[!NOTE]
    >
    > Você pode configurar a fonte de dados na guia **Dados** ou posterior editando as propriedades do formulário.
 

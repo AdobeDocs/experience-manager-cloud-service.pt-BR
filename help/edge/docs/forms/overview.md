@@ -3,8 +3,8 @@ title: Visão geral do Edge Delivery Services para AEM Forms
 description: Crie e forneça formulários de alto desempenho no Adobe Experience Manager Edge Delivery Services, com ênfase na abordagem de criação do Editor universal.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-role: Admin, Architect, Developer
-source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Ao final, você poderá escolher o método de criação correto, entender as op�
 
 | Equipe e requisitos | Método recomendado | Por que |
 |--------------------|--------------------|-----|
-| Profissionais de marketing/designers precisam de controle visual, lógica condicional ou integrações do AEM | **Editor Universal** | Arrastar e soltar, regras avançadas, envios para FSS ou AEM Publish |
+| Profissionais de marketing/designers precisam de controle visual, lógica condicional ou integrações do AEM | **Universal Editor** | Arrastar e soltar, regras avançadas, envios para FSS ou AEM Publish |
 | Autores de conteúdo já trabalhando no Word/Google Docs/Sheets; captura de dados simples em planilha/email | **Criação Baseada em Documento** | Ferramentas familiares, caminho mais rápido para formulários básicos |
 | Páginas do site criadas em **Document Authoring (DA)** | **Incorpore** um formulário UE ou Baseado em Doc na página do DA | O DA não cria formulários por conta própria |
 
@@ -50,7 +50,7 @@ Ao final, você poderá escolher o método de criação correto, entender as op�
 ### Editor universal
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 O [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) é uma ferramenta de criação visual, do tipo arrastar-e-soltar, para profissionais de marketing e designers que combina velocidade e poder de nível empresarial:

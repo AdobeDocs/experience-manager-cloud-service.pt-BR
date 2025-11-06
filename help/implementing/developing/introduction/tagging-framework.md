@@ -1,17 +1,17 @@
 ---
 title: Estrutura de marcação do AEM
-description: Marque o conteúdo e use a infraestrutura de Marcação AEM para categorizá-lo e organizá-lo.
+description: Marque o conteúdo e use a infraestrutura de Marcação do AEM para categorizá-lo e organizá-lo.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
 
-# A estrutura de marcação AEM {#aem-tagging-framework}
+# A estrutura de marcação do AEM {#aem-tagging-framework}
 
 A marcação permite que o conteúdo seja categorizado e organizado. As tags podem ser classificadas por um namespace e uma taxonomia. Para obter informações detalhadas sobre o uso de tags:
 
@@ -22,13 +22,13 @@ Este artigo se concentra na estrutura subjacente que oferece suporte à marcaç�
 
 ## Introdução {#introduction}
 
-Para marcar conteúdo e usar a infraestrutura de marcação AEM:
+Para marcar conteúdo e usar a infraestrutura de marcação da AEM:
 
 * A marca deve existir como um nó do tipo [`cq:Tag`](#cq-tag-node-type) no [nó raiz de taxonomia](#taxonomy-root-node).
 * O nó de conteúdo marcado `NodeType` deve incluir o mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 * O [`TagID`](#tagid) é adicionado à propriedade [`cq:tags`](#cq-tags-property) do nó de conteúdo e é resolvido para um nó do tipo [`cq:Tag`](#cq-tag-node-type).
 
-## cq:Tag Node Type {#cq-tag-node-type}
+## Tipo de nó cq:Tag {#cq-tag-node-type}
 
 A declaração de uma marca é capturada no repositório em um nó do tipo `cq:Tag.`
 
@@ -117,7 +117,7 @@ Uma prática típica inclui:
 * Permitir que usuários/autores leiam todos os namespaces que devem ser legíveis para eles (principalmente todos).
 * Permitir que usuários/autores gravem acesso aos namespaces em que as marcas devem ser definidas livremente por usuários/autores (`add_node` em `/content/cq:tags/some_namespace`)
 
-## Conteúdo Marcável : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## Conteúdo Marcável: CQ:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 Para que os desenvolvedores de aplicativos anexem a marcação a um tipo de conteúdo, o registro do nó ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) deve incluir o mixin `cq:Taggable` ou `cq:OwnerTaggable`.
 
@@ -125,7 +125,7 @@ O mixin `cq:OwnerTaggable`, que herda de `cq:Taggable`, destina-se a indicar que
 
 >[!NOTE]
 >
->É recomendável habilitar tags somente no nó de nível superior de um item de conteúdo agregado (ou em seu nó `jcr:content`). Os exemplos incluem:
+>É recomendável habilitar tags somente no nó de nível superior de um item de conteúdo agregado (ou em seu nó `jcr:content`). Por exemplo:
 >
 >* Páginas (`cq:Page`) onde o nó `jcr:content` é do tipo `cq:PageContent`, que inclui o mixin `cq:Taggable`.
 >* Assets (`cq:Asset`) onde o nó `jcr:content/metadata` sempre tem o mixin `cq:Taggable`.
@@ -134,7 +134,7 @@ O mixin `cq:OwnerTaggable`, que herda de `cq:Taggable`, destina-se a indicar que
 
 As definições de Tipo de nó existem no repositório como arquivos CND. A notação CND é definida como parte da [documentação JCR](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
-As definições essenciais para os Tipos de nós incluídos no AEM são as seguintes:
+As definições essenciais para os Tipos de nó incluídos no AEM são as seguintes:
 
 ```xml
 [cq:Tag] > mix:title, nt:base
@@ -157,7 +157,7 @@ A propriedade `cq:tags` é uma matriz `String` usada para armazenar um ou mais `
 
 >[!NOTE]
 >
->Para usar a funcionalidade de marcação AEM, os aplicativos personalizados desenvolvidos não devem definir propriedades de marca diferentes de `cq:tags`.
+>Para usar a funcionalidade de marcação do AEM, os aplicativos desenvolvidos e personalizados não devem definir propriedades de marca diferentes de `cq:tags`.
 
 ## Mover e mesclar tags {#moving-and-merging-tags}
 

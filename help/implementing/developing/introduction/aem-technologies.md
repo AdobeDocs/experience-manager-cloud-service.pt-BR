@@ -3,17 +3,17 @@ title: Fundamentos técnicos do AEM
 description: Uma visão geral dos fundamentos técnicos do AEM, incluindo como o AEM é estruturado e as tecnologias fundamentais, como JCR, Sling e OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 0%
+source-wordcount: '2129'
+ht-degree: 1%
 
 ---
 
 # Fundamentos técnicos do AEM {#aem-technical-foundations}
 
-O AEM é uma plataforma robusta criada com tecnologias comprovadas, escaláveis e flexíveis. Este documento fornece uma visão geral detalhada das várias partes que compõem o AEM e serve como um apêndice técnico para um desenvolvedor de AEM de pilha completa. Não se destina a ser um guia de introdução. Se você é novo no desenvolvimento do AEM, consulte [Introdução ao desenvolvimento do AEM Sites - Tutorial WKND](develop-wknd-tutorial.md) como primeiro passo.
+O AEM é uma plataforma robusta criada com tecnologias comprovadas, escaláveis e flexíveis. Este documento fornece uma visão geral detalhada das várias partes que compõem o AEM e serve como um apêndice técnico para um desenvolvedor de AEM de pilha completa. Não se destina a ser um guia de introdução. Se você é novo no desenvolvimento do AEM, consulte [Introdução ao desenvolvimento do AEM Sites - Tutorial WKND](develop-wknd-tutorial.md) como primeira etapa.
 
 >[!TIP]
 >
@@ -36,27 +36,27 @@ O repositório de conteúdo subjacente e as camadas de lógica de negócios são
 
 ## Repositório de conteúdo Java™ {#java-content-repository}
 
-O padrão Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), especifica uma maneira independente de fornecedor e de implementação para acessar conteúdo bidirecionalmente em nível granular em um repositório de conteúdo. O líder da especificação é da Adobe Research (Switzerland) AG.
+O padrão Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), especifica uma maneira independente de fornecedor e de implementação para acessar conteúdo bidirecionalmente em nível granular em um repositório de conteúdo. O lead da especificação é da Adobe Research (Switzerland) AG.
 
 O pacote [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), `javax.jcr.*` é usado para o acesso direto e manipulação de conteúdo do repositório.
 
-O AEM é baseado em um JCR.
+O AEM é criado com base em um JCR.
 
 ## Apache Jackrabbit Oak {#jackrabbit-oak}
 
 O [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/) é uma implementação de um repositório de conteúdo hierárquico escalável e de alto desempenho para uso como a base de sites de classe mundial modernos e outros aplicativos de conteúdo exigentes, em conformidade com o padrão JCR.
 
-O Jackrabbit Oak (também conhecido simplesmente como Oak) é a implementação do padrão JCR no qual o AEM é criado.
+Jackrabbit Oak (também conhecido simplesmente como Oak) é a implementação do padrão JCR no qual o AEM é construído.
 
 ## Processamento de solicitação do Sling {#sling-request-processing}
 
-O AEM é criado usando o [Sling](https://sling.apache.org/index.html), uma estrutura de aplicativo Web baseada em princípios REST que fornece desenvolvimento fácil de aplicativos orientados a conteúdo. O Sling usa um repositório JCR, como o Apache Jackrabbit Oak, como armazenamento de dados. O Sling contribuiu para a Apache Software Foundation - mais informações podem ser encontradas na Apache.
+O AEM foi criado usando o [Sling](https://sling.apache.org/index.html), uma estrutura de aplicativo Web baseada em princípios REST que fornece desenvolvimento fácil de aplicativos orientados a conteúdo. O Sling usa um repositório JCR, como o Apache Jackrabbit Oak, como armazenamento de dados. O Sling contribuiu para a Apache Software Foundation - mais informações podem ser encontradas na Apache.
 
 ### Introdução ao Sling {#introduction-to-sling}
 
 Usando o Sling, o tipo de conteúdo a ser renderizado não é a primeira consideração de processamento. Em vez disso, a principal consideração é se o URL resolve um objeto de conteúdo para o qual um script pode ser encontrado para executar a renderização. Esse processo oferece excelente suporte para que os autores de conteúdo da Web criem páginas que são facilmente personalizadas de acordo com suas necessidades.
 
-As vantagens dessa flexibilidade são evidentes em aplicativos com uma grande variedade de elementos de conteúdo diferentes, ou quando você precisa de páginas que possam ser facilmente personalizadas. Especificamente, ao implementar um sistema de Gerenciamento de conteúdo da Web como o AEM.
+As vantagens dessa flexibilidade são evidentes em aplicativos com uma grande variedade de elementos de conteúdo diferentes, ou quando você precisa de páginas que possam ser facilmente personalizadas. Especificamente, ao implementar um sistema de Gerenciamento de conteúdo da Web, como o AEM.
 
 Consulte [Descubra o Sling em 15 minutos](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) para conhecer as primeiras etapas de desenvolvimento com o Sling.
 
@@ -142,7 +142,7 @@ O caminho especificado por `sling:resourceType` pode ser:
 
 >[!TIP]
 >
->Os caminhos relativos são recomendados pelo Adobe à medida que aumentam a portabilidade.
+>Os caminhos relativos são recomendados pela Adobe, pois aumentam a portabilidade.
 
 Todos os scripts Sling são armazenados em subpastas de `/apps` (mutável, scripts de usuário) ou `/libs` (imutável, scripts de sistema), que são pesquisadas nesta ordem.
 
@@ -157,7 +157,7 @@ Usando o exemplo anterior, se `sling:resourceType` for `hr/jobs`, para:
 
 * Solicitações GET/HEAD e URLs terminando em `.html` (tipos de solicitação padrão, formato padrão)
    * O script é `/apps/hr/jobs/jobs.esp`; a última seção de `sling:resourceType` forma o nome do arquivo.
-* solicitações POST (todos os tipos de solicitação, exceto GET/HEAD, o nome do método deve estar em maiúsculas)
+* Solicitações POST (todos os tipos de solicitações, exceto GET/HEAD; o nome do método deve estar em maiúsculas)
    * POST é usado no nome do script.
    * O script é `/apps/hr/jobs/jobs.POST.esp`.
 * URLs em outros formatos, não terminando com `.html`
@@ -172,7 +172,7 @@ Usando o exemplo anterior, se `sling:resourceType` for `hr/jobs`, para:
    * Por exemplo, o script para `../content/corporate/jobs/developer.html` geraria uma pesquisa em `/apps/content/corporate/jobs/`.
    * O tipo de nó primário é usado.
 * Se nenhum script for encontrado, o script padrão será usado.
-   * A representação padrão é suportada como texto sem formatação (`.txt`), HTML (`.html`) e JSON (`.json`), e todas listam as propriedades do nó (adequadamente formatadas). A representação padrão da extensão `.res`, ou solicitações sem uma extensão de solicitação, é fazer spool do recurso (quando possível).
+   * A representação padrão tem suporte como texto sem formatação (`.txt`), HTML (`.html`) e JSON (`.json`), e todas listam as propriedades do nó (adequadamente formatadas). A representação padrão da extensão `.res`, ou solicitações sem uma extensão de solicitação, é fazer spool do recurso (quando possível).
 * Para o tratamento de erros http (códigos 403 ou 404), o Sling procura um script em:
    * O local `/apps/sling/servlet/errorhandler` para scripts personalizados
    * Ou o local do script padrão `/libs/sling/servlet/errorhandler/404.jsp`
@@ -245,7 +245,7 @@ Se você chamar a representação (o script) diretamente, ocultará o recurso de
 
 Usa o pacote da API do Sling, `org.apache.sling.*`, e bibliotecas de tags.
 
-### Referência a elementos existentes usando sling:include {#referencing-existing-elements-using-sling-include}
+### Referenciando elementos existentes usando sling:include {#referencing-existing-elements-using-sling-include}
 
 Uma consideração final é a necessidade de fazer referência aos elementos existentes nos scripts.
 
@@ -292,7 +292,7 @@ A lista a seguir fornece uma visão geral da estrutura que você vê no reposit�
 * `/content` - Conteúdo criado para o seu site.
 * `/etc`
 * `/home` - Informações de usuário e grupo.
-* `/libs` - Bibliotecas e definições que pertencem ao núcleo do AEM. As subpastas em `/libs` representam os recursos de AEM prontos para uso. O conteúdo em `/libs` não pode ser modificado. Os recursos específicos do seu site devem ser feitos em `/apps`.
+* `/libs` - Bibliotecas e definições que pertencem ao núcleo do AEM. As subpastas em `/libs` representam os recursos predefinidos do AEM. O conteúdo em `/libs` não pode ser modificado. Os recursos específicos do seu site devem ser feitos em `/apps`.
 * `/tmp` - Área de trabalho temporária.
 * `/var` - Arquivos que são alterados e atualizados pelo sistema; como logs de auditoria, estatísticas, manipulação de eventos.
 

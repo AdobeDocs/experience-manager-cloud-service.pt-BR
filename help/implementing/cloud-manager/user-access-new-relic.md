@@ -4,8 +4,8 @@ description: Saiba mais sobre o serviço de monitoramento de desempenho de aplic
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 39%
@@ -166,7 +166,7 @@ Se você concluir o processo de inscrição e não conseguir fazer logon em sua 
 Se você não receber um email do New Relic, faça o seguinte:
 
 * Verifique seus [filtros de spam](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
-* Se aplicável, [adicione o New Relic incluir na lista de permissões à sua pesquisa de email](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
+* Se aplicável, [adicione o New Relic ao seu incluo na lista de permissões de email](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
 * Se nenhuma das sugestões ajudar, forneça feedback sobre o tíquete de suporte.
 
 ## Notas de uso {#usage-notes}

@@ -6,10 +6,10 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -17,11 +17,12 @@ ht-degree: 2%
 
 <span class="preview"> O recurso está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
-O [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=pt-BR) automatiza o processo de repetição das mesmas tarefas, como fluxos de trabalho de aprovação de documentos, filtragem e classificação de email, permitindo que você se concentre em novas tarefas em vez de tarefas recorrentes. O Adobe Workfront Fusion inclui vários cenários. Um cenário consiste em uma série de módulos que executam a transferência de dados entre aplicativos e serviços da Web. Em um cenário, você adiciona várias etapas (módulos) para automatizar uma tarefa.
+O [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatiza o processo de repetição das mesmas tarefas, como fluxos de trabalho de aprovação de documentos, filtragem e classificação de email, permitindo que você se concentre em novas tarefas em vez de tarefas recorrentes. O Adobe Workfront Fusion inclui vários cenários. Um cenário consiste em uma série de módulos que executam a transferência de dados entre aplicativos e serviços da Web. Em um cenário, você adiciona várias etapas (módulos) para automatizar uma tarefa.
 
 Por exemplo, usando o Workfront Fusion, você pode criar um cenário para coletar dados com o Formulário adaptável, processar os dados e enviá-los a um armazenamento de dados para arquivamento. Depois que um cenário é configurado, o Workfront Fusion executa automaticamente as tarefas sempre que um usuário preenche um formulário, atualizando o armazenamento de dados perfeitamente.
 
 O AEM Forms as a Cloud Service fornece um conector OOTB para conectar e enviar um Formulário adaptável ao Adobe Workfront Fusion. O envio de um formulário para o Adobe Workfront Fusion pode oferecer várias vantagens:
+
 * Ela permitia a transferência contínua de dados de envios de formulários para fluxos de trabalho do Workfront Fusion.
 * Ele ajuda a automatizar várias tarefas acionadas por envios de formulários. Isso pode incluir iniciar projetos, atribuir tarefas a membros específicos da equipe, enviar notificações e atualizar status do projeto — tudo sem intervenção manual.
 * Todos os envios de formulários capturados no Workfront Fusion fornecem uma única fonte da verdade sobre as informações relacionadas ao projeto
@@ -37,8 +38,8 @@ O AEM Forms as a Cloud Service fornece um conector OOTB para conectar e enviar u
 
 Para estabelecer uma conexão entre o Workfront Fusion e o AEM Forms, é necessário o seguinte:
 
-* Uma [licença válida do Workfront e do Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=pt-BR).
-* Um usuário do AEM com direito de acessar o [Dev Console](https://my.cloudmanager.adobe.com/) para [recuperar as credenciais de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR).
+* Uma [licença válida do Workfront e do Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Um usuário do AEM com direito de acessar o [Dev Console](https://my.cloudmanager.adobe.com/) para [recuperar as credenciais de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrar o AEM Forms com o Adobe Workfront Fusion
 
@@ -105,7 +106,7 @@ Para adicionar uma conexão:
    >
    > O URL da instância é o endereço exclusivo da Web que aponta para uma instância específica do AEM Forms.
 
-   Você pode recuperar as [credenciais de serviço do Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR) necessárias para criar uma conexão.
+   Você pode recuperar as [credenciais de serviço do Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) necessárias para criar uma conexão.
 
 1. Substitua `ims-na1.adobelogin.com` no **ponto de extremidade IMS** pelo valor de **imsEndpoint** das credenciais de serviço no Console do desenvolvedor.
 
@@ -118,7 +119,7 @@ Para adicionar uma conexão:
    * Especifique **Segredo do Cliente** com o valor de **clientSecret** das credenciais de serviço no console do Desenvolvedor.
    * Especifique a **ID da Conta Técnica** com o valor de **id** das credenciais de serviço no Console do Desenvolvedor.
    * Especifique a **Org ID** com o valor de **org** das credenciais de serviço no console do Desenvolvedor.
-   * **Metascopos** com o valor de **metascopes** das credenciais de serviço no Console do desenvolvedor.
+   * **Escopos do Meta** com o valor de **metascopes** das credenciais de serviço no Console do desenvolvedor.
    * **Private Keys** com o valor de **privateKey** das credenciais de serviço no console do Desenvolvedor.
 
    >[!NOTE]
@@ -175,7 +176,7 @@ Para configurar a ação de envio de um Formulário adaptável com base nos Comp
 1. Selecione **[!UICONTROL Cenário do Workfront Fusion]** na lista suspensa.
 1. Clique em **[!UICONTROL Concluído]**.
 
->[!TAB Editor Universal]
+>[!TAB Universal Editor]
 
 Para configurar a ação de envio de um Formulário adaptável criado usando o Editor universal:
 

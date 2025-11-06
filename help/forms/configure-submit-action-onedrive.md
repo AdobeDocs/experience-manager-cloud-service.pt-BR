@@ -5,10 +5,10 @@ keywords: Integração do AEM Forms OneDrive, Conectar-se ao Microsoft OneDrive,
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ Para conectar o AEM Forms ao seu Microsoft® OneDrive Storage:
    >[!NOTE]
    >
    >* Por padrão, `forms-ootb-storage-adaptive-forms-submission` está presente no OneDrive Container.
-   > * Crie uma pasta como `forms-ootb-storage-adaptive-forms-submission`, se ainda não estiver presente, clicando em **Criar Pasta**.
+   >* Crie uma pasta como `forms-ootb-storage-adaptive-forms-submission`, se ainda não estiver presente, clicando em **Criar Pasta**.
 
 Agora, você pode usar esta configuração de armazenamento do OneDrive para a ação de envio em um Formulário adaptável.
 
@@ -106,7 +106,7 @@ Você também pode salvar o Documento de registro (DoR) no OneDrive.
 1. Selecione a **[!UICONTROL Configuração de Armazenamento]**, onde você deseja salvar seus dados.
 1. Clique em **[!UICONTROL Salvar]** para salvar as configurações de Envio.
 
->[!TAB Editor Universal]
+>[!TAB Universal Editor]
 
 Execute as seguintes etapas para usar a configuração de armazenamento do OneDrive em um Formulário adaptável criado no Universal Editor:
 

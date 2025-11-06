@@ -3,8 +3,8 @@ title: Regulamentos de proteção e privacidade de dados - Disponibilidade do AE
 description: Saiba mais sobre o suporte do Experience Manager as a Cloud Service Sites a vários Regulamentos de Proteção e Privacidade de Dados, incluindo o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia, e como estar em conformidade ao implementar um novo projeto do AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 974f85b91a629ea6d4f34e2066d242c42a04015b
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 90%
@@ -84,7 +84,7 @@ Para obter mais informações sobre como gerenciar solicitações de titulares d
 
 O AEM Sites inclui uma integração opcional com a Personalization Foundation by Target que usa a funcionalidade no Adobe Target On-Demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de titulares de dados relacionadas ao Adobe Target, consulte [Adobe Target - Privacidade e Regulamento Geral sobre a Proteção de Dados](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=pt-BR).
+Para obter mais informações sobre como gerenciar solicitações de titulares de dados relacionadas ao Adobe Target, consulte [Adobe Target - Privacidade e Regulamento Geral sobre a Proteção de Dados](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 

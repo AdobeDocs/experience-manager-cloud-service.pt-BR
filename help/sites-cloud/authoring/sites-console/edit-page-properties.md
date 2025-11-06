@@ -4,13 +4,13 @@ description: Saiba como editar as propriedades de uma página, alterar o comport
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 83e61ae4af3dcd76ad51722decd0032cceb737a5
+exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 24%
 
 ---
-
 
 # Editar as propriedades da página {#page-properties}
 
@@ -24,7 +24,7 @@ Saiba como editar [as propriedades de uma página](/help/sites-cloud/authoring/s
 
 É possível editar propriedades de página de vários locais no AEM.
 
-* [No &#x200B;](#from-the-sites-console)
+* [No ](#from-the-sites-console)
 * [No Editor de páginas](#from-the-page-editor)
 * [No Editor universal](#from-the-universal-editor)
 
@@ -87,14 +87,18 @@ Só é possível editar em massa as páginas que:
 A janela de edição de itens em massa é dividida na metade vertical:
 
 * O lado esquerdo é uma lista das páginas selecionadas para edição de itens em massa.
+
    * Você pode marcar/desmarcar as páginas conforme necessário.
    * Por padrão, todos são selecionados.
+
 * O direito é uma lista de [propriedades disponíveis para edição em massa.](/help/implementing/developing/extending/bulk-editor.md)
+
    * Assim como ao visualizar propriedades de uma única página, as propriedades são ordenadas em guias.
    * As propriedades que estão disponíveis em todas as páginas selecionadas e tenham sido explicitamente definidas como disponíveis para a edição de itens em massa estão visíveis.
    * Se você reduzir a seleção de página para uma página, em seguida, todas as propriedades ficarão visíveis.
    * Somente as propriedades com um valor comum são exibidas.
    * Quando o campo tem vários valores (por exemplo, Marcas), eles só serão exibidos quando *todos* forem comuns. Se apenas algumas forem comuns, elas só serão exibidas durante a edição.
+
 * Os campos que são comuns, mas têm valores diferentes em várias páginas, são indicados com um valor especial, como o texto `<Mixed Entries>`.
 
 É possível atualizar os valores nos campos disponíveis nas páginas selecionadas. Os novos valores são aplicados a todas as páginas selecionadas ao selecionar **Concluído**. Quando o campo tem vários valores (por exemplo, Tags), você pode anexar um novo valor ou remover um valor comum.

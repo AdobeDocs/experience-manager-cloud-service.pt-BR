@@ -5,8 +5,8 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Você pode acessar o Assistente de IA em três locais diferentes no AEM Forms:
 
    ![Ícone do Assistente de IA*](/help/edge/docs/forms/assets/adaptive-forms-editor.gif){width="75%"}
 
-3. **Editor Universal**
+3. **Universal Editor**
 
    - Navegue até: Adobe Experience Manager > Forms > Forms e documentos
    - Procure o ícone do Assistente do AI no lado esquerdo da interface
@@ -345,4 +345,4 @@ Ajude-nos a melhorar o Assistente de IA:
 
 ## Recursos relacionados
 
-[Assistente do AEM Forms AI - Biblioteca de prompts](help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+[Assistente do AEM Forms AI - Biblioteca de prompts](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)

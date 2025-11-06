@@ -1,10 +1,10 @@
 ---
 title: Regulamentos de proteção e privacidade de dados - Disponibilidade do Adobe Experience Manager as a Cloud Service
-description: Saiba mais sobre o suporte do Adobe Experience Manager as a Cloud Service para os vários Regulamentos de proteção e privacidade de dados e como estar em conformidade ao implementar um novo projeto do AEM as a Cloud Service. Esses regulamentos incluem o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia.
+description: Saiba mais sobre o suporte do Adobe Experience Manager as a Cloud Service para os vários Regulamentos de proteção e privacidade de dados e como estar em conformidade ao implementar um novo projeto do AEM as a Cloud Service. Esses regulamentos incluem o Regulamento Geral sobre a Proteção de Dados da UE (RGPD), a Lei de Privacidade do Consumidor da Califórnia.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 100%
@@ -40,13 +40,13 @@ Para ajudar os clientes do Adobe a cumprir esses regulamentos, a Adobe está for
 
 As instâncias do Adobe Experience Manager as a Cloud Service e os aplicativos que são executados nelas são de propriedade e operados por clientes da Adobe.
 
-Como consequência, as regulamentações de proteção de dados, como GDPR, CCPA e outras, são em grande parte de responsabilidade dos clientes.
+Como consequência, as regulamentações de proteção de dados, como RGPD, CCPA e outras, são em grande parte de responsabilidade dos clientes.
 
 Como uma breve introdução, os regulamentos relativos à privacidade e proteção de dados incluem novas regras que devem ser seguidas pelas funções de:
 
-* Entidades de Negócios (CCPA) e/ou Controladores de Dados (GDPR)
+* Entidades de Negócios (CCPA) e/ou Controladores de Dados (RGPD)
 
-* Fornecedores de serviços (CCPA) e/ou Processadores de dados (GDPR)
+* Fornecedores de serviços (CCPA) e/ou Processadores de dados (RGPD)
 
 As principais disposições desses regulamentos são as seguintes:
 
@@ -96,9 +96,9 @@ Consulte [Disponibilidade do AEM Sites para Regulamentos de proteção e privaci
 
 ## Integração do Adobe Experience Manager as a Cloud Service com o Adobe Target e o Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-As integrações do Adobe Experience Manager as a Cloud Service com o Adobe Target e o Adobe Analytics são implementadas com serviços prontos de proteção e privacidade de dados (por exemplo, GDPR). Nenhum dado pessoal do Adobe Target ou Adobe Analytics é armazenado no AEM em relação às integrações.
+As integrações do Adobe Experience Manager as a Cloud Service com o Adobe Target e o Adobe Analytics são implementadas com serviços prontos de proteção e privacidade de dados (por exemplo, RGPD). Nenhum dado pessoal do Adobe Target ou Adobe Analytics é armazenado no AEM em relação às integrações.
 Para obter mais informações, consulte:
 
-* [Adobe Target - Visão geral sobre a privacidade](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=pt-BR)
+* [Adobe Target - Visão geral sobre a privacidade](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
 
 * [Fluxo de trabalho da Privacidade de dados do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=pt-BR)

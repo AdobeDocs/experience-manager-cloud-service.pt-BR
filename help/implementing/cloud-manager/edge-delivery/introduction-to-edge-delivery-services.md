@@ -3,8 +3,8 @@ title: Introdução ao Edge Delivery Services no Cloud Manager
 description: Saiba como entregar seus projetos do Cloud Manager usando o Edge Delivery Services.
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 3%
@@ -87,7 +87,7 @@ A **lista de tarefas do Edge Delivery** no Cloud Manager é uma lista de verific
 | 8 | Configurar validação por push | Consulte [Configurar validação por push para um site do Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Publicação | Consulte a [Lista de verificação de ativação](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441566?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registrar um tíquete de suporte {#eds-support-ticket}
 

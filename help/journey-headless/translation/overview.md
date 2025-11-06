@@ -4,8 +4,8 @@ description: Comece aqui uma jornada guiada pela tradução de seu conteúdo hea
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 86%
@@ -18,9 +18,9 @@ Comece aqui uma jornada guiada pela tradução de seu conteúdo headless usando 
 
 ## Introdução {#introduction}
 
-A implementação headless está se tornando cada vez mais importante para fornecer experiências ao seu público, onde quer que ele esteja e independentemente do canal, da região ou do local.
+A implementação headless está se tornando cada vez mais importante para fornecer experiências ao público-alvo, onde quer que ele esteja e independentemente do canal, da região ou da localidade.
 
-A implementação headless dispensa o gerenciamento de páginas e componentes tradicional utilizado em soluções de pilha completa e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em relação ao canal, assim como na entrega entre canais. Com o uso das eficientes ferramentas de tradução do AEM, esses fragmentos reutilizáveis podem ser facilmente traduzidos e entregues ao seu público, onde quer que ele esteja.
+A implementação headless dispensa o gerenciamento de páginas e componentes tradicional utilizado em soluções de pilha completa e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em relação ao canal, assim como na entrega entre canais. Com o uso das eficientes ferramentas de tradução do AEM, esses fragmentos reutilizáveis podem ser facilmente traduzidos e entregues ao seu público-alvo, onde quer que ele esteja.
 
 Este guia conduz você através dos tópicos mais importantes sobre tradução headless, para que, ao concluí-lo, você:
 
@@ -35,13 +35,13 @@ Se você já está familiarizado com o AEM, headless e tradução, talvez já te
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de Documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema comercial do começo ao fim, mesmo que ele tenha o mínimo de conhecimento prévio sobre o tópico ou sobre o AEM.
 
 As jornadas de documentação foram projetadas com base nas práticas recomendadas, informadas pela última pesquisa da Adobe, na experiência comprovada de implementação dos consultores da Adobe e no feedback de projetos de clientes.
 
 Se quiser saber como a Adobe recomenda resolver casos de negócios headless com o AEM, inicie com as [Jornadas headless do AEM](/help/journey-documentation/documentation-journeys.md).
 
-## Público {#audience}
+## Público-alvo {#audience}
 
 Essa jornada foi criada para o perfil de um especialista em tradução, geralmente chamado de Gerente de projetos de tradução. Essa jornada apresenta os requisitos, as etapas e a abordagem para traduzir conteúdo headless no AEM. A jornada pode definir personas adicionais com as quais o especialista em tradução deve interagir, mas o ponto de vista da jornada é o do especialista em tradução.
 
@@ -62,7 +62,7 @@ As informações nesta jornada podem ser úteis para todos os perfis, mas alguma
 
 Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento básico sobre a tradução de conteúdo headless no AEM e oferecem links para a documentação técnica detalhada.
 
-Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo na tradução headless no AEM, a Adobe recomenda que você comece do início e avance sequencialmente.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo na tradução headless no AEM, a Adobe recomenda começar do início e avançar sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|
@@ -88,5 +88,5 @@ Como tal, as jornadas são projetadas para se sustentarem sozinhas. No entanto, 
 * [Jornada de desenvolvedores headless do AEM](/help/journey-headless/developer/overview.md): comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e como usá-las em seu primeiro projeto de desenvolvimento.
 * [Documentação técnica do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - se você já tiver uma sólida compreensão das tecnologias headless e do AEM, poderá consultar diretamente os nossos documentos técnicos detalhados.
    * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
-* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutoriais do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - se você prefere aprender na prática e tem conhecimento técnico, utilize nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos incorporados no AEM Headless.
+* [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutoriais do AEM Headless](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview) - se você prefere aprender na prática e tem conhecimento técnico, utilize nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos incorporados no AEM Headless.

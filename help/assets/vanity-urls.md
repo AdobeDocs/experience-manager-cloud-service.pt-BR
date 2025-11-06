@@ -3,21 +3,22 @@ title: Criar URLs personalizados usando o Dynamic Media com recursos OpenAPI
 description: Use os recursos OpenAPI do Dynamic Media para transformar seus URLs de entrega de ativos longos em URLs personalizados curtos e de marca. Um URL personalizado é uma versão curta, limpa, fácil de lembrar e legível do seu URL de entrega complexo. Você pode incluir o nome da sua marca, nomes de produtos e palavras-chave relevantes no URL personalizado para aumentar a visibilidade da sua marca e o envolvimento do usuário
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: d9223a8af5d531e66a91e9054201de765be50961
+exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 0%
 
 ---
 
-
 # Usar URLs personalizados{#vanity-urls}
 
 Use o [!DNL Dynamic Media with OpenAPI capabilities] para transformar suas URLs de entrega de ativos longos em URLs personalizadas curtas e de marca. Os URLs de entrega de ativos padrão incluem UUIDs de ativos gerados pelo sistema que tornam o URL de entrega complexo, difícil de lembrar e compartilhar. Substitua esses UUIDs de ativos por identificadores simples (IDs personalizadas) para gerar um URL personalizado. Um URL personalizado é uma versão curta, limpa e legível do URL de entrega complexo.
 
 Consulte os seguintes formatos de URL para entender a diferença entre eles:
+
 * [URL de entrega padrão](#standard-urls)
-* [URLs personalizadas](#vanity-url)
+* [URLs personalizados](#vanity-url)
 
 As URLs de entrega padrão usam `aaid` seguido por uma UUID, enquanto as URLs personalizadas usam `avid` seguido por um identificador personalizado (identificador personalizado).
 
@@ -39,7 +40,7 @@ A URL de entrega padrão inclui `aaid` (*identificador de ativo real*) após `ur
 
 No exemplo acima, `43341ab1-4086-44d2-b7ce-ee546c35613b` é a UUID.
 
-## URLs personalizadas{#vanity-url}
+## URLs personalizados{#vanity-url}
 
 Os URLs personalizados incluem um identificador personalizado no lugar da UUID do ativo e seguem o formato a seguir.
 
@@ -81,6 +82,7 @@ Para criar a URL personalizada, verifique se você já [aprovou os ativos para e
 ## Criar URLs personalizados{#create-vanity-urls}
 
 Execute as seguintes etapas para criar URLs personalizados:
+
 1. [Configurar metadados de ativos](#set-up-asset-metadata)
 1. [Criar e mapear a variável de ambiente do Cloud Manager](#map-cloud-manager-environment-variable)
 1. [Aprovar os ativos que exigem URL personalizado para entrega](/help/assets/manage-organize-assets-view.md#manage-asset-status)
@@ -89,18 +91,22 @@ Execute as seguintes etapas para criar URLs personalizados:
 ### Configurar metadados de ativos{#set-up-asset-metadata}
 
 Execute o seguinte para configurar a ID personalizada no formulário de metadados do ativo:
+
 1. Acesse a página de detalhes da pasta que contém seus ativos para entrega do [!DNL Dynamic Media with OpenAPI].
 1. [Edite esse formulário de metadados](/help/assets/metadata-assets-view.md#edit-metadata-forms) seguindo um destes procedimentos:
+
    * Adicione um novo campo de metadados e especifique a ID personalizada necessária como o valor desse campo.
    * Atualize o campo existente substituindo o valor de uma propriedade de metadados existente pela ID personalizada necessária. Conheça as [práticas recomendadas](#best-practices) para criar a ID personalizada.
-     ![ID personalizada](/help/assets/assets/vanity-id-metadata.png)
-Saiba mais sobre [esquemas de metadados](/help/assets/metadata-schemas.md).
 
-     >[!NOTE]
-     >
-     > * Use IDs personalizadas exclusivas para cada ativo. Sempre verifique se os ativos que compartilham o mesmo formulário de metadados têm IDs personalizadas exclusivas para DM com entrega de OpenAPI por meio de URLs personalizados. Se dois ativos compartilharem a mesma ID personalizada, o DM com OpenAPI fornecerá o ativo que recebeu essa ID mais recentemente, substituindo o direito anterior da ID por outro ativo.
-     >
-     > * Um único ativo pode ter várias IDs personalizadas. [Contate o suporte da Adobe](https://helpx.adobe.com/in/contact.html) e gere uma solicitação para gerar as IDs personalizadas necessárias.
+   ![ID personalizada](/help/assets/assets/vanity-id-metadata.png)
+
+   Saiba mais sobre [esquemas de metadados](/help/assets/metadata-schemas.md).
+
+   >[!NOTE]
+   >
+   > * Use IDs personalizadas exclusivas para cada ativo. Sempre verifique se os ativos que compartilham o mesmo formulário de metadados têm IDs personalizadas exclusivas para DM com entrega de OpenAPI por meio de URLs personalizados. Se dois ativos compartilharem a mesma ID personalizada, o DM com OpenAPI fornecerá o ativo que recebeu essa ID mais recentemente, substituindo o direito anterior da ID por outro ativo.
+   >
+   > * Um único ativo pode ter várias IDs personalizadas. [Contate o suporte da Adobe](https://helpx.adobe.com/in/contact.html) e gere uma solicitação para gerar as IDs personalizadas necessárias.
 
 Depois de configurar sua ID personalizada no formulário de metadados de ativos, [mapeie este campo de metadados para o mecanismo de entrega do sistema](#map-cloud-manager-environment-variable).
 
@@ -134,7 +140,7 @@ Quando o usuário clica na URL personalizada, o [!DNL Dynamic Media with OpenAPI
 
 ## Dimensionar usando URLs personalizados{#scale-using-vanity-url}
 
-O AEM as a Cloud Service permite que você [personalize os nomes DNS e CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) em seus endereços Web. Use esses recursos do AEMCS com suas URLs personalizadas para transformá-las em endereços da Web exclusivos que sejam limpos, descritivos, de marca, intuitivos e forneçam os [benefícios mencionados acima](#key-benefits).
+O AEM as a Cloud Service permite que você [personalize os nomes DNS e CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) em seus endereços Web. Use esses recursos do AEMCS com suas URLs personalizadas para transformá-las em endereços da Web exclusivos que sejam limpos, descritivos, de marca, intuitivos e forneçam os [benefícios mencionados acima](#key-benefits).
 
 Consulte o seguinte URL personalizado e seus componentes personalizáveis:
 
@@ -184,7 +190,7 @@ Consulte o seguinte URL personalizado e seus componentes personalizáveis:
 Execute as seguintes etapas para regravar as regras de CDN para delivery:
 
 1. Navegue até o repositório do AEM para criar um arquivo de configuração YAML.
-2. Execute as etapas na seção [configuração](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para definir regras CDN e implantar a configuração por meio do pipeline de configuração do Cloud Manager.
+2. Execute as etapas na seção [configuração](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) para definir regras CDN e implantar a configuração por meio do pipeline de configuração do Cloud Manager.
 Siga estas [práticas recomendadas](#best-practices) para criar seu caminho de domínio.
    [Saiba mais sobre as regras de regravação da CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 

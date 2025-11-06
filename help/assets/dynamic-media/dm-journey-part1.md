@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3615'
 ht-degree: 0%
@@ -284,8 +284,8 @@ _Dynamic Media Help topics_
 
 _Tutoriais do Dynamic Media_
 
-* [Usar Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR)
-* [Biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/pt-br?lang=en#recommended/solutions/experience-manager) (pesquisar no _Dynamic Media_)
+* [Usar Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (pesquisar no _Dynamic Media_)
 
 _Visualizadores do Dynamic Media_
 

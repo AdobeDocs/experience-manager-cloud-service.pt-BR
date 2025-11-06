@@ -1,10 +1,10 @@
 ---
 title: Folha de características do Sling
-description: Uma referência fácil do Sling para ajudá-lo a usar o SlingPostServlet, o manipulador padrão para suas solicitações de POST.
+description: Uma referência fácil do Sling ajuda você a usar o SlingPostServlet, o manipulador padrão para suas solicitações de POST.
 exl-id: 6ca374f4-5dc4-4322-bc36-5010bc2c7768
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 9%

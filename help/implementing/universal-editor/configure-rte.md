@@ -2,9 +2,9 @@
 title: Configuração do RTE para o Editor universal
 description: Entenda como você pode configurar o editor de rich text (RTE) no Editor universal.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 1%

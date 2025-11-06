@@ -2,10 +2,10 @@
 title: Entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL
 description: Saiba mais sobre os conceitos básicos da criação de um CMS headless no AEM usando fragmentos de conteúdo com GraphQL para entrega de conteúdo headless.
 feature: Content Fragments, GraphQL API
-role: Developer, Architect
+role: Developer
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 91%
@@ -81,7 +81,7 @@ Fragmentos de conteúdo:
 
 Esses [Modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md):
 
-* São usados para gerar os [Esquemas](https://graphql.org/learn/schema/), uma vez **Ativados**.
+* São usados para gerar os [Esquemas](https://graphql.org/learn/schema/), uma vez **Habilitados**.
 
 * Fornecem os tipos de dados e campos necessários para o GraphQL. Garantem que seu aplicativo solicite apenas o que é possível e receba o que é esperado.
 

@@ -1,10 +1,10 @@
 ---
 title: Estrutura da interface do AEM
-description: A interface do AEM tem vários princípios subjacentes e é composta de vários elementos-chave
+description: A interface do usuário do AEM tem vários princípios subjacentes e é composta por vários elementos-chave
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 3%
@@ -13,13 +13,13 @@ ht-degree: 3%
 
 # Estrutura da interface do AEM {#structure-of-the-aem-ui}
 
-A interface do AEM tem vários princípios subjacentes e é composta por vários elementos-chave:
+A interface do usuário do AEM tem vários princípios subjacentes e é composta por vários elementos-chave:
 
 ## Consoles {#consoles}
 
 ### Layout básico e redimensionamento {#basic-layout-and-resizing}
 
-A interface do usuário atende a dispositivos móveis e de desktop, embora, em vez de criar dois estilos, o AEM use um estilo que funciona para todas as telas e dispositivos.
+A interface do usuário atende aos dispositivos móveis e de desktop, embora, em vez de criar dois estilos, o AEM use um estilo que funciona para todas as telas e dispositivos.
 
 Todos os módulos usam o mesmo layout básico:
 
@@ -33,7 +33,7 @@ Por exemplo, quando a resolução é inferior a 1024 pixels (como em um disposit
 
 ### Barra do cabeçalho {#header-bar}
 
-![Barra de cabeçalho do AEM](assets/ui-header-bar.png)
+![barra de cabeçalho do AEM](assets/ui-header-bar.png)
 
 A barra de cabeçalho mostra elementos globais incluindo:
 
@@ -70,7 +70,7 @@ O padrão é **Somente conteúdo** (painel oculto).
 
 ![Painel esquerdo](assets/ui-left-rail.png)
 
-## Criação de página {#page-authoring}
+## Criação de páginas {#page-authoring}
 
 Ao criar páginas, as áreas estruturais são as seguintes.
 
@@ -144,7 +144,7 @@ Uma camada é um conjunto independente de funcionalidades que pode ser ativada p
 
 As camadas fornecem funcionalidade sofisticada para a página inteira, em vez de ações específicas em um componente individual.
 
-O AEM vem com várias camadas já implementadas para a criação de páginas; incluindo, por exemplo, camadas de edição, visualização e anotação.
+O AEM vem com várias camadas já implementadas para a criação de páginas, incluindo, por exemplo, editar, visualizar e anotar camadas.
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Para obter mais informações técnicas, consulte o [conjunto de documentação 
 
 ### Shell unificado {#unified-shell}
 
-Consulte [AEM as a Cloud Service no Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) se estiver usando o Unified Shell como a interface do usuário AEM.
+Consulte [AEM as a Cloud Service no Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) se estiver usando o Unified Shell como a interface do usuário do AEM.
 
 Se você precisar fazer, ou já tiver feito, qualquer personalização, o Unified Should pode ser desativado:
 
@@ -184,4 +184,4 @@ Se você precisar fazer, ou já tiver feito, qualquer personalização, o Unifie
 
    * em `/conf/global/setting/unifiedshell`
 
-      * definindo a propriedade `enable` de `Boolean` como `false`
+      * definindo a propriedade `Boolean` de `enable` como `false`

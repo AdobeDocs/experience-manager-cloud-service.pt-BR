@@ -3,9 +3,9 @@ title: Use a Biblioteca de mídia para o gerenciamento básico de ativos digitai
 description: '[!DNL Experience Manager Assets] e Biblioteca de mídia para gerenciamento de ativos.'
 contentOwner: AG
 feature: Asset Management, Publishing
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 7%
@@ -117,4 +117,4 @@ Você não pode usar marcas inteligentes, link [!DNL Asset], seletor [!DNL Asset
 >[!MORELIKETHIS]
 >
 >* [recursos DAM em [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=pt-BR)
->* [[!DNL Experience Manager] como uma [!DNL Cloud Service] descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] como uma [!DNL Cloud Service] descrição do produto](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

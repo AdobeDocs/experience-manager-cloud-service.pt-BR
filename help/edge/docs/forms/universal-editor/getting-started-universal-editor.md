@@ -2,10 +2,10 @@
 title: Introdução ao Edge Delivery Services para AEM Forms usando o Universal Editor
 description: Saiba como criar e publicar formulários de alto desempenho usando o Edge Delivery Services com criação no WYSIWYG do Universal Editor.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2608'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Para garantir uma experiência perfeita e bem-sucedida com o Edge Delivery Servi
 
 >[!TIP]
 >
-> Novo no AEM? Comece com o [Guia de Introdução do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=pt-BR).
+> Novo no AEM? Comece com o [Guia de Introdução do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html).
 
 ## Caminho A: criar um novo projeto com o Forms
 

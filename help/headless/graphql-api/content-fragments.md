@@ -4,7 +4,7 @@ description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Mana
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 73%
@@ -375,7 +375,7 @@ Para consultar metadados:
 >[!NOTE]
 >
 >**Diferença entre metadados normais e de matriz**
->&#x200B;>Lembre-se que `StringMetadata` e `StringArrayMetadata` se referem ao que é armazenado no repositório, não a como você os recupera.
+>Lembre-se que `StringMetadata` e `StringArrayMetadata` se referem ao que é armazenado no repositório, não a como você os recupera.
 >
 >Por exemplo, ao chamar o campo `stringMetadata`, você receberia uma matriz de todos os metadados que foram armazenados no repositório como um `String`; e ao chamar `stringArrayMetadata`, você receberia uma matriz de todos os metadados que foram armazenados no repositório como `String[]`.
 
@@ -770,6 +770,7 @@ A solução no GraphQL significa que você pode:
 >[!NOTE]
 >
 >Uma **Referência de conteúdo** pode ser usada para ativos do DAM e do Dynamic Media. A recuperação do URL apropriado usa parâmetros diferentes:
+>
 >* `_dynamicUrl` : um ativo DAM
 >* `_dmS7Url` : um ativo de mídia dinâmica
 > 
@@ -784,13 +785,17 @@ A estrutura e a sintaxe são:
 * `format`: uma lista discriminada com todos os formatos compatíveis com sua extensão: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL ou WEBPLY
 * `seoName`: uma string que é usada como nome de arquivo em vez do nome do nó
 * `crop`: uma subestrutura de quadro, se a largura ou a altura for omitida, elas serão usadas como o mesmo valor
+
    * `xOrigin`: a origem x do quadro (obrigatória)
    * `yOrigin`: a origem y do quadro (obrigatória)
    * `width`: a largura do quadro
    * `height`: a altura do quadro
+
 * `size`: uma subestrutura de dimensão; se a largura ou a altura for omitida, elas serão usadas como o mesmo valor
+
    * `width`: a largura da dimensão
    * `height`: a altura da dimensão
+
 * `rotation`: uma enumeração de todas as rotações compatíveis: R90, R180, R270
 * `flip`: uma enumeração de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: um número inteiro entre 1 e 100 que indica a porcentagem da qualidade da imagem
@@ -980,6 +985,7 @@ A solução no GraphQL significa que você pode:
 ### Exemplo de consulta para entrega de ativos do Dynamic Media por URL - Referência da imagem{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 Este é um exemplo de consulta:
+
 * por vários Fragmentos de conteúdo do tipo `team` e `person`, retornando um `ImageRef`
 
 ```graphql
@@ -1007,6 +1013,7 @@ query allTeams {
 ### Exemplo de consulta para entrega de ativos do Dynamic Media por URL - Várias referências{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 Este é um exemplo de consulta:
+
 * por vários Fragmentos de conteúdo do tipo `team` e `person`, retornando um `ImageRef`, `MultimediaRef` e `DocumentRef`:
 
 ```graphql
@@ -1209,10 +1216,11 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
    * Consulte [Exemplo de consulta para vários fragmentos de conteúdo de um determinado modelo e suas variações](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
+  >
   >O filtro `includeVariations` e o campo `_variation` gerado pelo sistema não podem ser usados juntos na mesma definição de consulta.
 
 * Se quiser usar um operador OR lógico:
-   * use ` _logOp: OR`
+   * use `_logOp: OR`
    * Consulte [Exemplo de consulta - Todas as pessoas cujo nome é “Jobs” ou “Smith”](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * O operador AND lógico também existe, mas está (muitas vezes) implícito

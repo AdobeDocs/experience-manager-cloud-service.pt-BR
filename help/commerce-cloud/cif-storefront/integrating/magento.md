@@ -6,7 +6,7 @@ exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 16%
@@ -54,6 +54,6 @@ A lógica de negócios e a comunicação de back-end com o Adobe Commerce para o
 
 Nos projetos, os Componentes principais do AEM CIF e os componentes do projeto personalizado podem recuperar facilmente o cliente configurado para uma loja da Adobe Commerce associada a uma página do AEM por meio da configuração com reconhecimento de contexto do Sling.
 
-## Pesquisar {#search}
+## Pesquisar
 
-A CIF fornece um [Componente principal de pesquisa](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) pronto para uso, que é uma experiência de pesquisa renderizada no lado do servidor com base na [API do Commerce GraphQL.](https://developer.adobe.com/commerce/webapi/graphql/) clientes do Commerce têm a opção de usar o [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=pt-BR). Siga este [link](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md) para saber mais sobre a integração CIF - Live Search.
+A CIF fornece um [Componente principal de pesquisa](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) pronto para uso, que é uma experiência de pesquisa renderizada no lado do servidor com base na [API do Commerce GraphQL.](https://developer.adobe.com/commerce/webapi/graphql/) clientes do Commerce têm a opção de usar o [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html). Siga este [link](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md) para saber mais sobre a integração CIF - Live Search.

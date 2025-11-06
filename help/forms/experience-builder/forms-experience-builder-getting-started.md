@@ -4,14 +4,14 @@ description: Aprenda os conceitos básicos para criar seu primeiro formulário a
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
 
 ---
-
 
 # Introdução ao Forms Experience Builder {#getting-started-forms-experience-builder}
 
@@ -62,10 +62,10 @@ Crie formulários usando descrições de linguagem natural de seus requisitos.
 **Exemplo:**
 
     Crie um formulário de feedback de cliente com:
-    &#x200B;- Classificação do produto (1-5 estrelas)
-    &#x200B;- Campo Comentário para feedback detalhado
-    &#x200B;- Email de cliente (opcional)
-    &#x200B;- Enviar notificação por email
+    - Classificação do produto (1-5 estrelas)
+    - Campo Comentário para feedback detalhado
+    - Email de cliente (opcional)
+    - Enviar notificação por email
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -75,7 +75,7 @@ Crie formulários usando descrições de linguagem natural de seus requisitos.
 
 Transforme documentos existentes em formulários digitais interativos.
 
-Antes de usar essa opção, carregue seu arquivo PDF ou uma imagem do formulário. O PDF pode ser um formulário do PDF baseado no AcroForm ou no XFA. Para [outros tipos de PDF forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), use a opção [Preparar Formulário](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) no Adobe Acrobat para convertê-los em um AcroForm
+Antes de usar essa opção, carregue seu arquivo PDF ou uma imagem do formulário. O PDF pode ser um formulário do PDF baseado no AcroForm ou no XFA. Para [outros tipos de PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents), use a opção [Preparar Formulário](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html) no Adobe Acrobat para convertê-los em um AcroForm
 
 **Quando usar:**
 
@@ -131,9 +131,9 @@ Incluir funcionalidade adicional:
 
     Adicionar dois menus suspensos
     
-    &#x200B;- surveyType com opções: &quot;Pergunta Geral&quot;, &quot;Solicitação de Suporte&quot;, &quot;Consulta de Vendas&quot;, &quot;Parceria&quot;
+    - surveyType com opções: &quot;Pergunta Geral&quot;, &quot;Solicitação de Suporte&quot;, &quot;Consulta de Vendas&quot;, &quot;Parceria&quot;
     
-    &#x200B;- urgênciaLevel com opções (Baixo, Medium, Alto)
+    - urgênciaLevel com opções (Baixo, Medium, Alto)
 
 
 ![Adição de componentes suspensos usando prompts de linguagem natural no forms experience builder](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
@@ -167,10 +167,10 @@ Use `@fieldName` para referenciar campos específicos:
 
 Descreva o que você deseja em inglês simples:
 
-    &#x200B;- Adicionar uma seção para informações da empresa
-    &#x200B;- Criar uma lista suspensa para seleção de departamento
-    &#x200B;- Incluir um carregamento de arquivo para retomada
-    &#x200B;- Configurar notificações por email quando o formulário for enviado
+    - Adicionar uma seção para informações da empresa
+    - Criar uma lista suspensa para seleção de departamento
+    - Incluir um carregamento de arquivo para retomada
+    - Configurar notificações por email quando o formulário for enviado
 
 ### Criar de forma incremental {#build-incrementally}
 
@@ -190,55 +190,55 @@ Comece simples e adicione complexidade gradualmente:
 **Formulário básico de contato:**
 
     Criar um formulário de contato com:
-    &#x200B;- Nome (obrigatório)
-    &#x200B;- Email (obrigatório, validado)
-    &#x200B;- Lista suspensa de assunto (Geral, Suporte, Vendas, Parceria)
-    &#x200B;- Mensagem (obrigatório, várias linhas)
-    &#x200B;- Botão Enviar
+    - Nome (obrigatório)
+    - Email (obrigatório, validado)
+    - Lista suspensa de assunto (Geral, Suporte, Vendas, Parceria)
+    - Mensagem (obrigatório, várias linhas)
+    - Botão Enviar
 
 **Formulário de feedback do cliente:**
 
     Crie um formulário de feedback de cliente com:
-    &#x200B;- Classificação do produto (1-5 estrelas)
-    &#x200B;- Campo Comentário para feedback detalhado
-    &#x200B;- Email de cliente (opcional)
-    &#x200B;- Enviar notificação por email
+    - Classificação do produto (1-5 estrelas)
+    - Campo Comentário para feedback detalhado
+    - Email de cliente (opcional)
+    - Enviar notificação por email
 
 ### Formulários de registro e integração {#registration-onboarding-forms}
 
 **Registro de usuário:**
 
     Crie um formulário de registro de usuário com:
-    &#x200B;- Informações pessoais (nome, email, telefone)
-    &#x200B;- Preferências da conta (boletim informativo, notificações)
-    &#x200B;- Aceitação dos termos e condições
-    &#x200B;- Criação de senha com validação de força
+    - Informações pessoais (nome, email, telefone)
+    - Preferências da conta (boletim informativo, notificações)
+    - Aceitação dos termos e condições
+    - Criação de senha com validação de força
 
 **Integração de funcionários:**
 
     Crie um formulário de integração de funcionário com:
-    &#x200B;- Detalhes pessoais e informações de contato
-    &#x200B;- Informações de emprego e data de início
-    &#x200B;- Carregamentos de documentos (currículo, ID, formulários de impostos)
-    &#x200B;- Seleção e preferências de benefícios
+    - Detalhes pessoais e informações de contato
+    - Informações de emprego e data de início
+    - Carregamentos de documentos (currículo, ID, formulários de impostos)
+    - Seleção e preferências de benefícios
 
 ### Formulários de pesquisa e avaliação {#survey-assessment-forms}
 
 **Pesquisa de satisfação do cliente:**
 
     Crie uma pesquisa de satisfação do cliente com:
-    &#x200B;- Classificação geral (escala 1-10)
-    &#x200B;- Classificações de categoria (produto, serviço, suporte)
-    &#x200B;- Seções de comentários abertas
-    &#x200B;- Informações demográficas (opcional)
+    - Classificação geral (escala 1-10)
+    - Classificações de categoria (produto, serviço, suporte)
+    - Seções de comentários abertas
+    - Informações demográficas (opcional)
 
 **Avaliação de habilidades:**
 
     Crie um formulário de avaliação de habilidades com:
-    &#x200B;- Categorias de habilidades com níveis de proficiência
-    &#x200B;- Duração da experiência para cada habilidade
-    &#x200B;- Informações de certificação e treinamento
-    &#x200B;- Autoavaliação e metas
+    - Categorias de habilidades com níveis de proficiência
+    - Duração da experiência para cada habilidade
+    - Informações de certificação e treinamento
+    - Autoavaliação e metas
 
 ## Teste e validação {#testing-validation}
 

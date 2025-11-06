@@ -3,9 +3,9 @@ title: Referências de desenvolvedor para  [!DNL Assets]
 description: O conteúdo de referências de desenvolvedor e APIs do [!DNL Assets] permite gerenciar ativos, incluindo arquivos binários, metadados, representações, comentários e informações [!DNL Content Fragments].
 contentOwner: AG
 feature: Assets HTTP API
-role: Developer, Architect, Admin
+role: Developer, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 4%
@@ -30,7 +30,7 @@ O [!DNL Assets] as a [!DNL Cloud Service] fornece várias APIs para interagir pr
 | × | Não suportado. Não use. |
 | - | Não disponível |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | APIs Java [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Serviço de computação do ativo](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=pt-BR) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=pt-BR#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR) |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | APIs Java [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Serviço de computação do ativo](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Binário original** |  |  |  |  |  |  |
 | Criar original | ✓ | × | - | × | × | - |

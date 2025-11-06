@@ -3,8 +3,8 @@ title: API do Construtor de consulta
 description: A funcionalidade do Construtor de consultas de compartilhamento de ativos é exposta por meio de uma API Java&trade; e uma API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # API do Construtor de consulta {#query-builder-api}
 
-O Query Builder oferece uma maneira fácil de consultar o repositório de conteúdo do AEM. A funcionalidade é exposta por meio de uma API Java™ e uma API REST. Este documento descreve essas APIs.
+O Construtor de consultas oferece uma maneira fácil de consultar o repositório de conteúdo do AEM. A funcionalidade é exposta por meio de uma API Java™ e uma API REST. Este documento descreve essas APIs.
 
 O construtor de consultas do lado do servidor ([`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) aceita uma descrição de consulta, cria e executa uma consulta XPath, filtra opcionalmente o conjunto de resultados e também extrai facetas, se desejado.
 
@@ -25,19 +25,19 @@ A API REST fornece acesso aos mesmos recursos por meio do HTTP, com respostas se
 
 >[!NOTE]
 >
->A API do QueryBuilder é criada usando a API JCR. Você também pode consultar o JCR do AEM usando a API JCR de um pacote OSGi. Para obter informações, consulte [Consulta de dados do Adobe Experience Manager usando a API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=pt-BR).
+>A API do QueryBuilder é criada usando a API JCR. Você também pode consultar o JCR do AEM usando a API JCR de um pacote OSGi. Para obter informações, consulte [Consulta de dados do Adobe Experience Manager usando a API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
 
 ## Sessão Gem {#gem-session}
 
-[Gems AEM Adobe Experience Manager](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=pt-BR) é uma série de aprofundamentos técnicos fornecidos por especialistas em Adobe.
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) é uma série de aprofundamentos técnicos fornecidos por especialistas da Adobe Experience Manager Adobe.
 
-Você pode [revisar a sessão dedicada ao construtor de consultas](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=pt-BR) para obter uma visão geral e usar a ferramenta.
+Você pode [revisar a sessão dedicada ao construtor de consultas](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) para obter uma visão geral e usar a ferramenta.
 
 ## Exemplos de consulta {#sample-queries}
 
 Essas amostras são fornecidas na notação de estilo das propriedades do Java™. Para usá-los com a API Java™, use um Java™ `HashMap` como na amostra de API a seguir.
 
-Para o Servlet JSON `QueryBuilder`, cada exemplo inclui um link de exemplo para uma instalação de AEM (no local padrão, `http://<host>:<port>`). Faça logon na instância do AEM antes de usar esses links.
+Para o Servlet JSON `QueryBuilder`, cada exemplo inclui um link de amostra para uma instalação do AEM (no local padrão, `http://<host>:<port>`). Faça logon na instância do AEM antes de usar esses links.
 
 >[!CAUTION]
 >
@@ -453,7 +453,7 @@ Ou, como alternativa, o servlet JSON do Construtor de consultas em
 
 O `path=/tmp` é apenas um exemplo.
 
-### Depuração geral do Recommendations {#general-debugging-recommendations}
+### Recomendações gerais de depuração {#general-debugging-recommendations}
 
 ### Obter XPath explicável por meio de registro {#obtain-explain-able-xpath-via-logging}
 
@@ -468,7 +468,7 @@ Explicar **todas** as consultas durante o ciclo de desenvolvimento em relação 
 
 ### Obter XPath explicável por meio do depurador do construtor de consultas {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-Use o depurador do Construtor de consultas AEM para gerar uma consulta XPath explicável.
+Use o depurador do Construtor de consultas do AEM para gerar uma consulta XPath explicável.
 
 ![Depurador do Construtor de Consultas](assets/query-builder-debugger.png)
 

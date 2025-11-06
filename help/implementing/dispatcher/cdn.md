@@ -4,7 +4,7 @@ description: Saiba como usar o CDN gerenciado pela AEM e como apontar seu própr
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 41e9b91d7edbe26bf764b9eac56f21c3c2e86a64
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 10%
@@ -68,7 +68,7 @@ Você pode configurar uma página de erro CDN para substituir a página padrão,
 
 A definição do TTL usando o cabeçalho HTTP Cache-Control é uma abordagem eficaz para equilibrar o desempenho da entrega de conteúdo e a atualização de conteúdo. No entanto, em cenários em que é essencial fornecer conteúdo atualizado imediatamente, pode ser útil limpar o cache do CDN diretamente.
 
-Leia sobre [configuração de um token de API de limpeza](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) e [limpeza do conteúdo CDN em cache](/help/implementing/dispatcher/cdn-cache-purge.md).
+Leia sobre [configuração de um token de API de limpeza](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) e [limpeza do conteúdo CDN em cache](/help/implementing/dispatcher/cdn-cache-purge.md).
 
 ### Autenticação básica na CDN {#basic-auth}
 

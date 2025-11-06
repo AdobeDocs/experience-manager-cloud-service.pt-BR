@@ -3,8 +3,8 @@ title: Chamadas do editor universal
 description: Saiba mais sobre os diferentes tipos de chamadas feitas ao seu aplicativo pelo Editor universal para ajudá-lo a depurar.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 1%
@@ -150,7 +150,7 @@ Uma chamada `add` ocorre quando você coloca um novo componente no aplicativo us
 
 Sua carga inclui um objeto `path` contendo onde o conteúdo deve ser adicionado.
 
-Ele também inclui um objeto `content` com objetos adicionais para detalhes específicos do ponto de extremidade do conteúdo a ser armazenado [para cada plug-in](/help/implementing/universal-editor/architecture.md). Por exemplo, se seu aplicativo tem como base o conteúdo do AEM e do Magento, a carga útil conteria um objeto de dados para cada sistema.
+Ele também inclui um objeto `content` com objetos adicionais para detalhes específicos do ponto de extremidade do conteúdo a ser armazenado [para cada plug-in](/help/implementing/universal-editor/architecture.md). Por exemplo, se o aplicativo for baseado no conteúdo do AEM e do Magento, a carga conteria um objeto de dados para cada sistema.
 
 >[!BEGINTABS]
 
@@ -310,7 +310,7 @@ Sua carga inclui o caminho do objeto que é removido.
 
 ## Publicação {#publish}
 
-Uma chamada `publish` ocorre quando você clica no botão **Publish** no Editor Universal para publicar o conteúdo que você editou.
+Uma chamada `publish` ocorre quando você clica no botão **Publicar** no Editor Universal para publicar o conteúdo que você editou.
 
 O Universal Editor repete o conteúdo e gera uma lista de referências que também devem ser publicadas.
 

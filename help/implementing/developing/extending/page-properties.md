@@ -3,8 +3,8 @@ title: Personalização de exibições das propriedades da página
 description: Saiba como as propriedades de página são visualizadas e editadas pelos autores.
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Os campos devem ser configurados especificamente se qualquer alteração for nec
 
 >[!TIP]
 >
->Consulte o [tutorial Extensão das propriedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=pt-BR) para obter um guia sobre como personalizar as propriedades de página.
+>Consulte o [tutorial Extensão das propriedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obter um guia sobre como personalizar as propriedades de página.
 
 ## Configuração das propriedades da página {#configuring-your-page-properties}
 
@@ -65,7 +65,7 @@ Por exemplo, por padrão, o assistente [**Criar página**](/help/sites-cloud/aut
 1. Aplique a propriedade do nó apropriada:
 
    * **Nome**: `cq:showOnCreate`
-   * **Tipo**: `Boolean`
+   * **Tipo**: `Boolean`
    * **Valor**: `false`
 
    A seção **Mais Títulos e Descrição** não será mais exibida no assistente **Criar Página**.

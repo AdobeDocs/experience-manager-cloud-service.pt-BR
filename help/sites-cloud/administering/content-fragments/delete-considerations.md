@@ -2,10 +2,10 @@
 title: Fragmentos de conteúdo - Considerações sobre a exclusão
 description: Analise essas considerações importantes antes de definir as políticas de exclusão de fragmentos de conteúdo no AEM. Os fragmentos de conteúdo são uma ferramenta eficiente para fornecer conteúdo headless, e as implicações de excluí-los devem ser cuidadosamente consideradas.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 46%
@@ -14,7 +14,7 @@ ht-degree: 46%
 
 # Excluir considerações para fragmentos de conteúdo {#delete-considerations-content-fragments}
 
-Analise essas considerações importantes antes de definir as políticas de exclusão de Fragmentos de conteúdo no AEM. Os fragmentos de conteúdo são uma ferramenta eficiente para fornecer conteúdo headless, e as implicações de excluí-los devem ser cuidadosamente consideradas.
+Analise essas considerações importantes antes de definir as políticas de exclusão de fragmentos de conteúdo no AEM. Os fragmentos de conteúdo são uma ferramenta eficiente para fornecer conteúdo headless, e as implicações de excluí-los devem ser cuidadosamente consideradas.
 
 ## Permissões — Excluir ou não excluir {#permissions-delete-or-not-delete}
 

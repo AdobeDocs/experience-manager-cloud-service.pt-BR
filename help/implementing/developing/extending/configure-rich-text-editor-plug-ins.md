@@ -5,10 +5,10 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '4303'
+source-wordcount: '4302'
 ht-degree: 2%
 
 ---
@@ -134,7 +134,7 @@ Para links, você também pode definir os protocolos que são aceitos automatica
 Para configurar quais formatos são permitidos ao colar texto em [!DNL Experience Manager] de outro programa:
 
 1. No componente, navegue até o nó `<rtePlugins-node>/edit`. Crie os nós se o nó não existir. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. Crie um nó sob o nó `edit` para manter as regras de colagem de HTML:
+1. Crie um nó sob o nó `edit` para manter as regras de colagem do HTML:
 
    * **Nome** `htmlPasteRules`
    * **Tipo** `nt:unstructured`
@@ -243,7 +243,7 @@ Em seguida, especifique o(s) local(is) da(s) folha(s) de estilos que deseja refe
 
 1. Salve todas as alterações.
 
-Ao usar o RTE em uma caixa de diálogo (interface clássica), é possível especificar folhas de estilos otimizadas para edição de rich text. Devido a restrições técnicas, o contexto CSS é perdido no editor, portanto, você pode emular esse contexto para melhorar a experiência WYSIWYG.
+Ao usar o RTE em uma caixa de diálogo (interface clássica), é possível especificar folhas de estilos otimizadas para edição de rich text. Devido a restrições técnicas, o contexto CSS é perdido no editor, portanto, você pode emular esse contexto para melhorar a experiência do WYSIWYG.
 
 O Editor de Rich Text usa um elemento DOM de contêiner com uma ID de `CQrte` que fornece estilos diferentes para exibição e edição:
 
@@ -436,7 +436,7 @@ Em uma instalação padrão do [!DNL Experience Manager], quando o plug-in `misc
 
    * **Nome** `entity`
    * **Tipo** `String`
-   * **Value** a representação de HTML do caractere necessário; por exemplo, `&189;` para a fração metade.
+   * **Value** a representação HTML do caractere necessário; por exemplo, `&189;` para a fração metade.
 
 1. Salve as alterações.
 
@@ -455,12 +455,10 @@ No CRXDE, depois que a propriedade é salva, o caractere representado é exibido
 1. Nesse nó (nomeado de acordo com o intervalo de caracteres especiais), adicione as duas propriedades a seguir:
 
    * **Nome** `rangeStart`
-
      **Tipo** `Long`
      **Value** a representação [Unicode](https://unicode.org/) (decimal) do primeiro caractere no intervalo
 
    * **Nome** `rangeEnd`
-
      **Tipo** `Long`
      **Valor** a representação (decimal) [Unicode](https://unicode.org/) do último caractere no intervalo
 
@@ -500,8 +498,8 @@ Normalmente, os estilos são aplicados em texto, mas um conjunto separado de est
    >* **Tipo** `String[]`
    >
    >* **Valor**(s) um ou ambos, conforme necessário:
-   >* `table` para permitir a edição das propriedades da tabela; incluindo os estilos.
-   >* `cellprops` para permitir a edição das propriedades da célula, incluindo os estilos.
+   >   * `table` para permitir a edição das propriedades da tabela; incluindo os estilos.
+   >   * `cellprops` para permitir a edição das propriedades da célula, incluindo os estilos.
 
 1. Defina o local das folhas de estilos CSS para referenciá-las. Consulte [Especificar o local da folha de estilos](#locationofstylesheet), pois é o mesmo que ao definir [estilos para texto](#textstyles). O local pode ser definido se você tiver definido outros estilos.
 1. No nó `table`, crie os seguintes nós, conforme necessário:
@@ -565,7 +563,7 @@ Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionário
 >
 >A mensagem &quot;Falha na verificação ortográfica.&quot; é visto se for tentada uma verificação para um idioma que não está instalado.
 
-Uma instalação de Experience Manager padrão inclui os dicionários para:
+Uma instalação padrão do Experience Manager inclui os dicionários para:
 
 * Inglês Americano (en_us)
 * Inglês Britânico (en_gb)
@@ -634,7 +632,7 @@ Quando o recuo está habilitado (padrão), você pode definir o tamanho do recuo
 1. No nó `lists`, crie o parâmetro `identSize`:
 
    * **Nome**: `identSize`
-   * **Tipo**: `Long`
+   * **Tipo**: `Long`
    * **Valor**: número de pixels necessários para a margem de recuo.
 
 ## Configurar a altura do espaço editável {#editablespace}
@@ -651,7 +649,7 @@ Você pode definir a altura do espaço editável mostrado na caixa de diálogo d
 
 ## Configurar estilos e protocolos para links {#linkstyles}
 
-Ao adicionar links em [!DNL Experience Manager], você pode definir os estilos de CSS a serem usados e os protocolos a serem aceitos automaticamente. Para configurar como os links são adicionados em [!DNL Experience Manager] a partir de outro programa, defina as regras de HTML.
+Ao adicionar links em [!DNL Experience Manager], você pode definir os estilos de CSS a serem usados e os protocolos a serem aceitos automaticamente. Para configurar como os links são adicionados em [!DNL Experience Manager] a partir de outro programa, defina as regras do HTML.
 
 1. Usando o CRXDE Lite, localize o componente de texto para o seu projeto.
 1. Crie um nó no mesmo nível que `<rtePlugins-node>`, ou seja, crie o nó sob o nó pai de `<rtePlugins-node>`:

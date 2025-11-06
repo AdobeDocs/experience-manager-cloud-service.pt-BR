@@ -4,9 +4,9 @@ description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo de form
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1927'
 ht-degree: 89%
 
 ---
@@ -1714,7 +1714,7 @@ Esta consulta interroga:
 
 Esta consulta interroga:
 
-* por Fragmentos de conteúdo do tipo `article` no local `fr`
+* por Fragmentos de conteúdo do tipo `article` na localidade `fr`
 
 **Exemplo de consulta**
 
@@ -1980,10 +1980,10 @@ Os fragmentos a seguir são usados para o modelo apropriado.
 
 | Nome | País | População | Categorias |
 |--- |--- |--- |--- |
-| Basileia | Suíça | 172258 | city:emea |
-| Berlim | Alemanha | 3669491 | city:capital<br>city:emea |
-| Bucareste | Romênia | 1821000 | city:capital<br>city:emea |
-| São Francisco | EUA | 883306 | city:beach<br>city:na |
-| San Jose | EUA | 102635 | city:na |
-| Stuttgart | Alemanha | 634830 | city:emea |
-| Zurique | Suíça | 415367 | city:capital<br>city:emea |
+| Basileia | Suíça | 172258 | cidade:emea |
+| Berlim | Alemanha | 3669491 | cidade:capital<br>cidade:emea |
+| Bucareste | Romênia | 1821000 | cidade:capital<br>cidade:emea |
+| São Francisco | EUA | 883306 | cidade:beach<br>cidade:na |
+| San Jose | EUA | 102635 | cidade:na |
+| Stuttgart | Alemanha | 634830 | cidade:emea |
+| Zurique | Suíça | 415367 | cidade:capital<br>cidade:emea |

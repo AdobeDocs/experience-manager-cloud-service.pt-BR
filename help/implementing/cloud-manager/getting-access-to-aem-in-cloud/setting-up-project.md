@@ -1,11 +1,11 @@
 ---
 title: Configuração do projeto
-description: Saiba como os projetos AEM são criados com o Maven e os padrões que você deve observar ao criar seu próprio projeto.
+description: Saiba como os projetos do AEM são compilados no Maven e os padrões que você deve observar ao criar seu próprio projeto.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 68%
@@ -14,11 +14,11 @@ ht-degree: 68%
 
 # Configuração do projeto {#project-setup}
 
-Saiba como os projetos AEM são criados com o Maven e os padrões que você deve observar ao criar seu próprio projeto.
+Saiba como os projetos do AEM são compilados no Maven e os padrões que você deve observar ao criar seu próprio projeto.
 
 ## Detalhes de configuração do projeto {#project-setup-details}
 
-Para criar e implantar com sucesso com o Cloud Manager, os projetos AEM precisam seguir as seguintes diretrizes:
+Para criar e implantar com sucesso com o Cloud Manager, os Projetos AEM precisam seguir as seguintes diretrizes:
 
 * Os projetos devem ser compilados usando o [Apache Maven](https://maven.apache.org).
 * Deve haver um arquivo `pom.xml` na raiz do repositório Git. Esse arquivo `pom.xml` pode fazer referência a tantos submódulos (que, por sua vez, podem ter outros submódulos, e assim por diante) quanto forem necessários.
@@ -110,7 +110,7 @@ Se você quiser gerar uma mensagem simples somente quando o build for executado 
 
 >[!NOTE]
 >
->Implante artefatos de repositórios Maven protegidos por senha com cuidado, pois a Cloud Manager não avalia esse código com suas [regras de qualidade do código](/help/implementing/cloud-manager/custom-code-quality-rules.md). Esse método deve ser reservado para situações raras e aplicado apenas a códigos não relacionados ao AEM. O Adobe aconselha incluir as fontes Java e todo o código-fonte do projeto, juntamente com o binário. Isso garante maior transparência e capacidade de manutenção em todo o processo de implantação.
+>Implante artefatos de repositórios Maven protegidos por senha com cuidado, pois a Cloud Manager não avalia esse código com suas [regras de qualidade do código](/help/implementing/cloud-manager/custom-code-quality-rules.md). Esse método deve ser reservado para situações raras e aplicado apenas a códigos não relacionados ao AEM. A Adobe aconselha incluir as fontes Java e todo o código-fonte do projeto junto com o binário. Isso garante maior transparência e capacidade de manutenção em todo o processo de implantação.
 
 **Para usar um repositório Maven protegido por senha no Cloud Manager:**
 

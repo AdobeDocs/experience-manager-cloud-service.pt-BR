@@ -3,8 +3,8 @@ title: Avaliação de integridade para ambientes de produção e preparo
 description: Saiba como usar a Avaliação de integridade da Cloud Manager. É possível digitalizar ambientes do AEM, executar e revisar relatórios, exibir detalhes de problemas, exportar PDFs e gerenciar execuções anteriores.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1406'
 ht-degree: 7%
@@ -126,9 +126,9 @@ Esta é a lista completa de antipadrões e problemas que a Avaliação de integr
 | Nome do padrão | Categoria | Tipo | Descrição | Impacto | Corrigido automaticamente? |
 | --- | --- | --- | --- | --- | --- |
 | Grupos personalizados do AEM com adições diretas do usuário | Segurança | Análise de conteúdo | Os usuários adicionavam diretamente aos grupos do AEM em vez de adicionar grupos IMS como membros. | O gerenciamento de permissões e a governança de segurança podem se tornar complicados. [Suporte IMS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/ims-support) | Não |
-| Nó de conteúdo JCR ausente em páginas | Estrutura do repositório | Análise de conteúdo | Nó `jcr:content` ausente na página. | Limitações funcionais no Experience Manager as a Cloud Service. [Detecção de padrão - ACV](https://experienceleague.adobe.com/pt-br/docs/experience-manager-pattern-detection/table-of-contents/acv) | Não |
-| Tipo de recurso Sling ausente em páginas | Estrutura do repositório | Análise de conteúdo | `sling:resourceType` ausente na página. | Limitações funcionais no Experience Manager as a Cloud Service. [Detecção de padrão - ACV](https://experienceleague.adobe.com/pt-br/docs/experience-manager-pattern-detection/table-of-contents/acv) | Não |
-| Páginas com contagem excessiva de nós | Desempenho | Análise de conteúdo | As páginas contêm um grande número de nós em sua estrutura. | Tempo de carregamento de página lento e experiência do usuário ruim. [Detecção de padrão - PCX](https://experienceleague.adobe.com/pt-br/docs/experience-manager-pattern-detection/table-of-contents/pcx) | Não |
+| Nó de conteúdo JCR ausente em páginas | Estrutura do repositório | Análise de conteúdo | Nó `jcr:content` ausente na página. | Limitações funcionais no Experience Manager as a Cloud Service. [Detecção de padrão - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | Não |
+| Tipo de recurso Sling ausente em páginas | Estrutura do repositório | Análise de conteúdo | `sling:resourceType` ausente na página. | Limitações funcionais no Experience Manager as a Cloud Service. [Detecção de padrão - ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | Não |
+| Páginas com contagem excessiva de nós | Desempenho | Análise de conteúdo | As páginas contêm um grande número de nós em sua estrutura. | Tempo de carregamento de página lento e experiência do usuário ruim. [Detecção de padrão - PCX](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | Não |
 | Excesso de instâncias de fluxo de trabalho em execução | Desempenho | Análise de conteúdo | Muitas instâncias de fluxo de trabalho estão em execução. | Degradação geral do desempenho do sistema. [Tarefas de manutenção](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/maintenance) | Não |
 | Instâncias de fluxo de trabalho concluídas e não removidas | Desempenho | Análise de conteúdo | As instâncias de fluxo de trabalho concluídas mais antigas não estão sendo removidas. | Redução da eficiência do sistema e aumento dos custos de armazenamento. [Tarefas de manutenção](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/maintenance) | Não |
 | Estatísticas de uso de fragmentos de conteúdo | Estatísticas | Análise de conteúdo | Rastreia o número de fragmentos de conteúdo em uso. | N/A | N/A |

@@ -1,10 +1,10 @@
 ---
 title: Editor de imagem
-description: O Editor de imagens é um componente central do AEM e pode ser usado por componentes para facilitar a manipulação de imagens por autores de conteúdo.
+description: O Editor de imagens é uma parte principal do AEM e pode ser usado por componentes para facilitar a manipulação de imagens por autores de conteúdo.
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Editor de imagem {#image-editor}
 
-O Editor de imagens é um componente central do AEM e pode ser usado por componentes para facilitar a manipulação de imagens por autores de conteúdo.
+O Editor de imagens é uma parte principal do AEM e pode ser usado por componentes para facilitar a manipulação de imagens por autores de conteúdo.
 
 ## Unidades relativas do mapa de imagem {#relative-units-for-image-map}
 
@@ -36,7 +36,7 @@ Exemplo:
 `[rect(0,0,10,10)"https://www.adobe.com"|"_self"|"alt"|(0,0,0.8,0.8)]`
 `[circle(10,10,10)"https://www.adobe.com"|"_self"|"alt"|(0.8,0.8,0.8)]`
 
-## Suporte para imagens SVG {#support-for-svg-images}
+## Suporte para imagens do SVG {#support-for-svg-images}
 
 Scalable Vetor Graphics (SVG) são compatíveis com o Editor de imagens.
 
@@ -44,13 +44,13 @@ Scalable Vetor Graphics (SVG) são compatíveis com o Editor de imagens.
 
 ## Habilitando plug-ins por tipo de MIME {#enabling-plugins-by-mime-type}
 
-Em determinadas situações, as ações de criação devem ser restritas para determinados tipos MIME, devido à falta de suporte no processamento do lado do servidor. Por exemplo, a edição de imagens de SVG pode não ser permitida.
+Em determinadas situações, as ações de criação devem ser restritas para determinados tipos MIME, devido à falta de suporte no processamento do lado do servidor. Por exemplo, editar imagens SVG pode não ser permitido.
 
 Os plug-ins no Editor de imagens podem ser ativados seletivamente pelo tipo MIME ao configurar uma propriedade `supportedMimeTypes` no nó de configuração do plug-in individual.
 
 ### Exemplo {#example}
 
-Como exemplo, digamos que a capacidade de recorte só seja permitida para imagens de GIF, JPEG, PNG, WEBP e TIFF.
+Como exemplo, digamos que a capacidade de recorte só seja permitida para imagens do GIF, JPEG, PNG, WEBP e TIFF.
 
 A propriedade `supportedMimeTypes` deve ser definida como uma cadeia de caracteres dos tipos MIME permitidos no nó de configuração do plug-in no nó `cq:editConfig` do componente de imagem.
 

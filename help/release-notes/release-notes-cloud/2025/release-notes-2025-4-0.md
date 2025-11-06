@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 11%
@@ -19,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo Visão geral da versão de abril de 2025 que exibe um resumo dos recursos adicionados na versão 2025.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464007?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -65,7 +65,7 @@ Além disso, os clientes que usam o AEM 6.5 devem estar cientes de que a pilha d
 
 A guia Largura de banda no painel de relatórios do Dynamic Media Classic não é mais compatível desde abril de 2025.
 
-Consulte [Largura de Banda e Armazenamento, Tipos de relatórios](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+Consulte [Largura de Banda e Armazenamento, Tipos de relatórios](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 ## Novos recursos no Assets View {#new-features-assets-view}
 
@@ -127,7 +127,7 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguem a especificação OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação são geradas pela criação de projetos do Adobe Developer Console e oferecem suporte a OAuth de servidor para servidor, aplicativo da Web e aplicativo de página única (SPA).
 
-[Consulte a lista completa](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) de APIs baseadas em OpenAPI, [saiba mais](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustre a configuração e o uso.
+[Consulte a lista completa](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) de APIs baseadas em OpenAPI, [saiba mais](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustre a configuração e o uso.
 
 Assista a este vídeo para saber como configurar uma API autenticada para uso posterior:
 
@@ -164,12 +164,14 @@ O Java 21 **runtime** de maior desempenho é implantado automaticamente quando u
 Para garantir o monitoramento eficaz dos ambientes do cliente, os registros Java da AEM devem manter um formato consistente e não devem ser substituídos por configurações personalizadas. A saída do registro deve permanecer direcionada aos arquivos padrão. Para o código de produto do AEM, os níveis de log padrão devem ser preservados. No entanto, é aceitável ajustar os níveis de log para o código desenvolvido pelo cliente.
 
 Para esse fim, as alterações não devem ser feitas às seguintes propriedades OSGi:
+
 * **Configuração do Log do Apache Sling** (PID: `org.apache.sling.commons.log.LogManager`) — *todas as propriedades*
 * **Configuração do Agente de Log do Apache Sling** (PID de Fábrica: `org.apache.sling.commons.log.LogManager.factory.config`):
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
 Em meados de maio, a AEM aplicará uma política em que qualquer modificação personalizada nessas propriedades será ignorada. Revise e ajuste seus processos downstream de acordo. Por exemplo, se você usar o recurso de encaminhamento de logs:
+
 * Se o destino de registro esperar um formato de registro personalizado (não padrão), talvez seja necessário atualizar as regras de assimilação.
 * Se as alterações nos níveis de log reduzirem a verbosidade do log, esteja ciente de que os níveis de log padrão podem resultar em um aumento significativo no volume de log.
 
@@ -198,7 +200,7 @@ Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@a
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

@@ -4,8 +4,8 @@ description: Saiba como você pode usar permissões personalizadas para criar pe
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
-role: Admin, Architect, Developer
-source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 38%
@@ -142,7 +142,7 @@ As seguintes permissões estão disponíveis para criar perfis personalizados.
 | Edição de repositório | Permitir que os usuários editem repositórios Git. |
 | Geração de códigos do repositório | Permitir que os usuários gerem um projeto do arquétipo. |
 | Gerenciar nome de domínio | Permitir que os usuários criem/editem/excluam nomes de domínio. |
-| Gerenciar Inclui na lista de permissões IP | Permitir que os usuários criem/editem/excluam a vinculação de inclui na lista de permissões de IP e de inclui na lista de permissões de IP. |
+| Gerenciar Incluo na lista de permissões IP | Permitir que os usuários criem/editem/excluam o incluo na lista de permissões IP e a associação do incluo na lista de permissões IP. |
 | Gerenciamento de infraestrutura de rede | Permitir que os usuários criem/editem/excluam a infraestrutura de rede. |
 | Gerenciamento de certificados SSL | Permitir que os usuários criem/editem/excluam certificados SSL. |
 | Gerenciamento de usuários da subconta do New Relic | Permitir que os usuários leiam/editem usuários de subcontas do New Relic. |

@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 feature: Release Information
 role: Admin
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 49%
@@ -43,7 +43,7 @@ Assista ao vídeo Visão geral da versão de julho de 2023 para ver um resumo do
 
 ### Novos recursos no pré-lançamento do [!DNL Experience Manager Sites] {#prerelease-sites}
 
-* O [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR) agora permite que os usuários exibam marcas e pesquisem por marcas aplicadas como metadados aos fragmentos de conteúdo. Os usuários não precisarão mais alternar para a interface do Assets para esse recurso, reduzindo a alternância de contexto e melhorando a eficiência.
+* O [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) agora permite que os usuários exibam marcas e pesquisem por marcas aplicadas como metadados aos fragmentos de conteúdo. Os usuários não precisarão mais alternar para a interface do Assets para esse recurso, reduzindo a alternância de contexto e melhorando a eficiência.
 
 ![Marcação no Console de Fragmentos de Conteúdo](/help/assets/content-fragments-console-tags.png)
 
@@ -63,7 +63,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 **Estrutura de inteligência artificial aprimorada para Tags inteligentes de imagem**
 
-O Experience Manager Assets agora usa uma estrutura de inteligência artificial aprimorada para Tags inteligentes de imagem. Essa inteligência de conteúdo resulta em melhor relevância e precisão das Tags inteligentes disponíveis para todos os ativos de imagem na assimilação.
+O Experience Manager Assets agora usa uma estrutura de inteligência artificial aprimorada para Tags inteligentes de imagem. Essa inteligência de conteúdo resulta em melhor relevância e precisão das Tags inteligentes disponíveis para todos os ativos de imagem na ingestão.
 
 **Configuração da exibição de colunas da exibição Lista de ativos**
 
@@ -84,7 +84,7 @@ Por padrão, o Assets Essentials agora classifica os resultados de pesquisa com 
 
 * **[React Components do Headless Forms](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: agora é possível visualizar e personalizar   Representações do formulário adaptável headless com os componentes do React fornecidos imediatamente. Esses componentes usam classes BEM dos Componentes principais do Forms adaptável para estilo, facilitando a personalização da aparência de acordo com suas necessidades específicas.
 
-* [**Criar Forms Adaptável com seções que podem ser repetidas**](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer com que os componentes de [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br), [Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br) baseados em Formulário Adaptável sejam repetidos para captura de vários registros de dados.  Essas seções repetíveis permitem fornecer várias entradas de dados facilmente. É útil quando as instâncias de dados necessárias são desconhecidas. Um preenchimento de formulário pode adicionar ou remover seções facilmente, tornando os formulários adaptáveis a diferentes cenários de entrada de dados e simplificando a coleta de várias ocorrências do mesmo registro de dados.
+* [**Criar Forms Adaptável com seções que podem ser repetidas**](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer com que os componentes de [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br), [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br) baseados em Formulário Adaptável sejam repetidos para captura de vários registros de dados.  Essas seções repetíveis permitem fornecer várias entradas de dados facilmente. É útil quando as instâncias de dados necessárias são desconhecidas. Um preenchimento de formulário pode adicionar ou remover seções facilmente, tornando os formulários adaptáveis a diferentes cenários de entrada de dados e simplificando a coleta de várias ocorrências do mesmo registro de dados.
 
 
 ### Recursos de pré-lançamento disponíveis em [!DNL Forms] {#pre-release-features-available-in-forms-channel}
@@ -112,9 +112,10 @@ Assine notificações por email que o alertam quando ocorrem incidentes crítico
 
 ![Captura de tela do Centro de Ações](/help/assets/assets/actions-center.png)
 
-### Programa de adoção antecipada das regras CDN e WAF {#waf-early-adopter}
+### Programa de adoção antecipada das Regras CDN e WAF {#waf-early-adopter}
 
 Filtrar o tráfego na CDN com base em:
+
 * cabeçalhos e propriedades de solicitação (por exemplo, endereço IP)
 * padrões de tráfego conhecidos por estarem associados a tráfego mal-intencionado
 
@@ -124,7 +125,7 @@ Saiba mais sobre o recurso no artigo [aqui](/help/security/traffic-filter-rules-
 
 ### Outras alterações de base {#other-foundation-changes}
 
-* Durante a semana de 7 de agosto, o AEM retornará o código de erro 429 em vez do código de erro 503 quando as solicitações para instâncias AEM excederem um nível saudável. [Saiba mais](/help/implementing/developing/introduction/development-guidelines.md).
+* Durante a semana de 7 de agosto, o AEM retornará o código de erro 429 em vez do código de erro 503 quando as solicitações para instâncias do AEM excederem um nível íntegro. [Saiba mais](/help/implementing/developing/introduction/development-guidelines.md).
 
 ## Notas da versão de manutenção {#maintenance}
 
