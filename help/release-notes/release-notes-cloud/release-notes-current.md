@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 247a501660475d2f3ae9cff735a1845094d02c82
+source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1666'
 ht-degree: 9%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,9 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Novos recursos no Experience Manager Sites {#new-sites}
 
-* O [Editor de Modelos de Conteúdo para Fragmentos de Conteúdo do AEM](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) foi modernizado para alinhar-se a outras interfaces baseadas no Espectro React no AEM. Seu modelo de implementação e extensibilidade da interface do usuário agora é consistente com o Editor de fragmento de conteúdo e o Editor universal. O novo Editor de modelos agora é padrão quando aberto na nova interface do Administrador do modelo de conteúdo. A abertura de um modelo de conteúdo na interface para toque abre o editor da interface para toque e se oferece para experimentar o novo editor.
+* [Inicializações para fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): os autores de conteúdo agora podem criar e agendar variações futuras de conteúdo estruturado usando Inicializações para fragmentos de conteúdo. O novo console de Fragmento de conteúdo permite criar, editar, gerenciar e programar Lançamentos de fragmentos de conteúdo como ramificações para conteúdo futuro que pode ser sincronizado com a ramificação de origem. Uma nova Visualização de comparação fornece uma visão geral clara de todas as alterações de conteúdo antes de confirmar um lançamento para publicação futura.
 
-* [Inicializações para fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): a guia Inicializações do console de Fragmentos de conteúdo permite criar inicializações, listar todas as inicializações existentes, ver as propriedades principais e realizar ações com elas.
+* O [Editor de Modelos de Conteúdo para Fragmentos de Conteúdo do AEM](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) foi modernizado para alinhar-se a outras interfaces baseadas no Espectro React no AEM. Seu modelo de implementação e extensibilidade da interface do usuário agora é consistente com o Editor de fragmento de conteúdo e o Editor universal. O novo Editor de modelos agora é padrão quando aberto na nova interface do Administrador do modelo de conteúdo. A abertura de um modelo de conteúdo na interface para toque abre o editor da interface para toque e se oferece para experimentar o novo editor.
 
 <!--
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -272,11 +272,11 @@ Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe
 
 ### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
