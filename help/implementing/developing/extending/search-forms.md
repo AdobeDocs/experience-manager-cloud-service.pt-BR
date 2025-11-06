@@ -544,7 +544,7 @@ Se marcadas, as opções são renderizadas como caixas de seleção que permitem
 * **Nome(s) de Propriedade(s) de Publicação e Live Copy**
 Os rótulos das caixas de seleção Publicar e Live Copy para o predicado específico do Sites.
 
-* O &amp;ast; nos rótulos de campo na guia **Configurações** significa que os campos são obrigatórios e, se deixado em branco, uma mensagem de erro será exibida.
+* O &ast; nos rótulos de campo na guia **Configurações** significa que os campos são obrigatórios e, se deixado em branco, uma mensagem de erro será exibida.
 
 ## Configuração do Forms de pesquisa {#configuring-your-search-forms}
 

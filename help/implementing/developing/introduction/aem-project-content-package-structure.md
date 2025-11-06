@@ -95,7 +95,7 @@ A estrutura de implantação de aplicativo recomendada é a seguinte:
 
 + O pacote `all` é um pacote de contêiner que APENAS inclui artefatos implantáveis, o arquivo Jar do pacote OSGI, `ui.apps`, `ui.config` e `ui.content` pacotes como incorporados. O pacote `all` não deve ter **nenhum conteúdo ou código** próprio, mas deve delegar toda a implantação no repositório em seus subpacotes ou arquivos Jar de pacote OSGi.
 
-  Agora os pacotes são incluídos usando a [ configuração incorporada do plug-in Maven ](#embeddeds)FileVault Package Maven, em vez da `<subPackages>` configuração.
+  Agora os pacotes são incluídos usando a [&#x200B; configuração incorporada do plug-in Maven &#x200B;](#embeddeds)FileVault Package Maven, em vez da `<subPackages>` configuração.
 
   Para implantações complexas do Experience Manager, pode ser desejável criar vários projetos/pacotes do `ui.apps`, `ui.config` e `ui.content` que representem sites ou locatários específicos no AEM. Se essa abordagem for feita, verifique se a divisão entre conteúdo mutável e imutável é respeitada, e se os pacotes de conteúdo necessários e os arquivos Jar do pacote OSGi estão incorporados como subpacotes no pacote de conteúdo do contêiner `all`.
 

@@ -75,7 +75,7 @@ O exemplo a seguir configura um módulo de interface do usuário c`ontexthub.bas
 
 ## Tipo de módulo da interface do usuário contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
 
-O módulo de interface do usuário `contexthub.browserinfo` exibe informações sobre o navegador da Web cliente e o sistema operacional. As informações são obtidas do repositório surferinfo, com base no [candidato do repositório {contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate).
+O módulo de interface do usuário `contexthub.browserinfo` exibe informações sobre o navegador da Web cliente e o sistema operacional. As informações são obtidas do repositório surferinfo, com base no [candidato do repositório &lbrace;contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate).
 
 ![módulo contexthub.browserinfo](assets/browserinfo-module.png)
 

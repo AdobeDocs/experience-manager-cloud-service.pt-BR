@@ -109,7 +109,7 @@ Ele pode transformar imagens, vídeos, documentos e outros formatos de arquivo e
 
 Os desenvolvedores podem usar o [!DNL Asset Compute Service] para [criar aplicativos personalizados](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application) para os casos de uso com suporte. O [!DNL Experience Manager] pode chamar esses aplicativos personalizados na interface do usuário usando perfis personalizados que os administradores configuram. [!DNL Asset Compute Service] dá suporte aos seguintes casos de uso de invocação de serviços externos:
 
-* Use a [!DNL Adobe Photoshop]API ImageCutout[ de ](https://developer.adobe.com/photoshop/photoshop-api-docs/) e salve o resultado como uma representação.
+* Use a [!DNL Adobe Photoshop]API ImageCutout[&#x200B; de &#x200B;](https://developer.adobe.com/photoshop/photoshop-api-docs/) e salve o resultado como uma representação.
 * Chame sistemas de terceiros para fazer alterações, por exemplo, um sistema PIM.
 * Use a API [!DNL Photoshop] para gerar uma variedade de representações com base no modelo do Photoshop.
 * Use a [API do Adobe Lightroom](https://developer.adobe.com/photoshop/photoshop-api-docs/) para otimizar os ativos assimilados e salvá-los como representações.

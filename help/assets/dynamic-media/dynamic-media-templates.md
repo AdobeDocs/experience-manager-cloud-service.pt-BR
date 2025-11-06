@@ -83,7 +83,7 @@ Saiba como criar um modelo [!DNL Dynamic Media] passo a passo neste vídeo.
 Atenda aos seguintes requisitos para criar um modelo [!DNL Dynamic Media] e gerar sua URL de entrega:
 
 1. Acesso a [!DNL Dynamic Media].
-1. Na página inicial do [!DNL Assets View], você tem uma pasta no **[!UICONTROL Dynamic Media Assets]** para salvar seu modelo. [Crie uma pasta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) no ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**para replicar essa pasta no**[!UICONTROL  Dynamic Media Assets ]**.
+1. Na página inicial do [!DNL Assets View], você tem uma pasta no **[!UICONTROL Dynamic Media Assets]** para salvar seu modelo. [Crie uma pasta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) no ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;para replicar essa pasta no&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**.
 1. [Sincronize as imagens disponíveis na sua [!DNL AEM Assets] instância com [!DNL Dynamic Media] para usá-las para criar o modelo](/help/assets/dynamic-media/config-dm.md).
 1. Publique as imagens que serão usadas na criação do modelo para gerar o URL de entrega do modelo após criá-lo. O URL do delivery pode ser usado em aplicativos downstream.
 1. Para usar uma fonte diferente da fonte padrão [!UICONTROL Adobe Sans F2] na camada de texto do modelo, [carregue e publique o arquivo de fonte no AEM e no Dynamic Media simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [Os formatos de arquivo de fonte com suporte são: AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Além disso, certifique-se de [reprocessar](/help/assets/reprocessing-assets-view.md) as fontes existentes para usá-las. Consulte [Fontes](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) para obter mais informações.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
@@ -189,7 +189,7 @@ Execute as seguintes etapas para formatar partes específicas de uma string:
    * **Propriedades da Fonte**: altere a família, a cor e o tamanho da fonte usando as respectivas opções de painel.
      ![formato-subcadeia](/help/assets/assets/format-substring.png)
 
-[Cada parte da cadeia de caracteres formatada é exibida como uma subsequência no seletor de subsequências, disponível no painel de parâmetros. Adicione parâmetros a essas partes formatadas para formatá-las dinamicamente usando a URL de entrega do modelo ](#substring-parameterisation).
+[Cada parte da cadeia de caracteres formatada é exibida como uma subsequência no seletor de subsequências, disponível no painel de parâmetros. Adicione parâmetros a essas partes formatadas para formatá-las dinamicamente usando a URL de entrega do modelo &#x200B;](#substring-parameterisation).
 
 ### Adicionar formas à tela de desenho {#add-shapes-to-the-canvas}
 
