@@ -62,9 +62,9 @@ Crie formulários usando descrições de linguagem natural de seus requisitos.
 **Exemplo:**
 
     Crie um formulário de feedback de cliente com:
-    - Classificação do produto (1-5 estrelas)
-    - Campo Comentário para feedback detalhado
-    - Email de cliente (opcional)
+    &#x200B;- Classificação do produto (1-5 estrelas)
+    &#x200B;- Campo Comentário para feedback detalhado
+    &#x200B;- Email de cliente (opcional)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -130,9 +130,9 @@ Incluir funcionalidade adicional:
 
     Adicionar dois menus suspensos
     
-    - surveyType com opções: &quot;Pergunta Geral&quot;, &quot;Solicitação de Suporte&quot;, &quot;Consulta de Vendas&quot;, &quot;Parceria&quot;
+    &#x200B;- surveyType com opções: &quot;Pergunta Geral&quot;, &quot;Solicitação de Suporte&quot;, &quot;Consulta de Vendas&quot;, &quot;Parceria&quot;
     
-    - urgênciaLevel com opções (Baixo, Medium, Alto)
+    &#x200B;- urgênciaLevel com opções (Baixo, Medium, Alto)
 
 
 ![Adição de componentes suspensos usando prompts de linguagem natural no forms experience builder](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
@@ -166,9 +166,9 @@ Use `@fieldName` para referenciar campos específicos:
 
 Descreva o que você deseja em inglês simples:
 
-    - Adicionar uma seção para informações da empresa
-    - Criar uma lista suspensa para seleção de departamento
-    - Incluir um carregamento de arquivo para retomada
+    &#x200B;- Adicionar uma seção para informações da empresa
+    &#x200B;- Criar uma lista suspensa para seleção de departamento
+    &#x200B;- Incluir um carregamento de arquivo para retomada
 
 ### Criar de forma incremental {#build-incrementally}
 
@@ -188,53 +188,53 @@ Comece simples e adicione complexidade gradualmente:
 **Formulário básico de contato:**
 
     Criar um formulário de contato com:
-    - Nome (obrigatório)
-    - Email (obrigatório, validado)
-    - Lista suspensa de assunto (Geral, Suporte, Vendas, Parceria)
-    - Mensagem (obrigatório, várias linhas)
+    &#x200B;- Nome (obrigatório)
+    &#x200B;- Email (obrigatório, validado)
+    &#x200B;- Lista suspensa de assunto (Geral, Suporte, Vendas, Parceria)
+    &#x200B;- Mensagem (obrigatório, várias linhas)
 
 **Formulário de feedback do cliente:**
 
     Crie um formulário de feedback de cliente com:
-    - Classificação do produto (1-5 estrelas)
-    - Campo Comentário para feedback detalhado
-    - Email de cliente (opcional)
+    &#x200B;- Classificação do produto (1-5 estrelas)
+    &#x200B;- Campo Comentário para feedback detalhado
+    &#x200B;- Email de cliente (opcional)
 
 ### Formulários de registro e integração {#registration-onboarding-forms}
 
 **Registro de usuário:**
 
     Crie um formulário de registro de usuário com:
-    - Informações pessoais (nome, email, telefone)
-    - Preferências da conta (boletim informativo, notificações)
-    - Aceitação dos termos e condições
-    - Criação de senha com validação de força
+    &#x200B;- Informações pessoais (nome, email, telefone)
+    &#x200B;- Preferências da conta (boletim informativo, notificações)
+    &#x200B;- Aceitação dos termos e condições
+    &#x200B;- Criação de senha com validação de força
 
 **Integração de funcionários:**
 
     Crie um formulário de integração de funcionário com:
-    - Detalhes pessoais e informações de contato
-    - Informações de emprego e data de início
-    - Carregamentos de documentos (currículo, ID, formulários de impostos)
-    - Seleção e preferências de benefícios
+    &#x200B;- Detalhes pessoais e informações de contato
+    &#x200B;- Informações de emprego e data de início
+    &#x200B;- Carregamentos de documentos (currículo, ID, formulários de impostos)
+    &#x200B;- Seleção e preferências de benefícios
 
 ### Formulários de pesquisa e avaliação {#survey-assessment-forms}
 
 **Pesquisa de satisfação do cliente:**
 
     Crie uma pesquisa de satisfação do cliente com:
-    - Classificação geral (escala 1-10)
-    - Classificações de categoria (produto, serviço, suporte)
-    - Seções de comentários abertas
-    - Informações demográficas (opcional)
+    &#x200B;- Classificação geral (escala 1-10)
+    &#x200B;- Classificações de categoria (produto, serviço, suporte)
+    &#x200B;- Seções de comentários abertas
+    &#x200B;- Informações demográficas (opcional)
 
 **Avaliação de habilidades:**
 
     Crie um formulário de avaliação de habilidades com:
-    - Categorias de habilidades com níveis de proficiência
-    - Duração da experiência para cada habilidade
-    - Informações de certificação e treinamento
-    - Autoavaliação e metas
+    &#x200B;- Categorias de habilidades com níveis de proficiência
+    &#x200B;- Duração da experiência para cada habilidade
+    &#x200B;- Informações de certificação e treinamento
+    &#x200B;- Autoavaliação e metas
 
 ## Teste e validação {#testing-validation}
 
