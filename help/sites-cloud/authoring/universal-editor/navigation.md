@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
+source-git-commit: 437b9bdf48fc8235ef90cac4a38c2a0b41f89a8f
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 18%
+source-wordcount: '1820'
+ht-degree: 17%
 
 ---
 
@@ -61,7 +61,7 @@ Depois que o aplicativo é instrumentado para funcionar com o Editor universal, 
 
 A interface do usuário do é dividida nessas áreas principais.
 
-* [O cabeçalho da Experience Cloud](#experience-cloud-header)
+* [A barra de navegação superior do Experience Platform](#experience-cloud-header)
 * [A barra de ferramentas do Editor universal](#universal-editor-toolbar)
 * [O editor](#editor)
 * [O painel de propriedades](#properties-rail)
@@ -78,7 +78,7 @@ A barra de navegação superior do Experience Platform está sempre presente na 
 
 ![O cabeçalho da Experience Cloud](assets/experience-cloud-header.png)
 
-Para obter detalhes sobre a barra de navegação superior do Experience Platform, consulte o [guia da interface do usuário do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Para obter detalhes sobre a barra de navegação superior do Experience Platform, consulte o [guia da interface do usuário do Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Conta {#user-properties}
 

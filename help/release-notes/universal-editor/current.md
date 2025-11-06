@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2025.10.30
-description: Estas são as notas de versão do Universal Editor 2025.10.30.
+title: Notas de versão do Universal Editor 2025.11.06
+description: Estas são as notas de versão do Universal Editor de 2025.11.06.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e3e571bef450ddc09eb30ab7d73b144ea521a87b
+source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
 
-# Notas de versão do Universal Editor 2025.10.30 {#release-notes}
+# Notas de versão do Universal Editor 2025.11.06 {#release-notes}
 
-Estas são as notas de versão do Universal Editor de 30 de outubro de 2025.
+Estas são as notas de versão da versão de 6 de novembro de 2025 do Universal Editor.
 
 >[!TIP]
 >
@@ -23,11 +23,6 @@ Estas são as notas de versão do Universal Editor de 30 de outubro de 2025.
 >[!TIP]
 >
 >Para obter as notas de versão atuais do Adobe Experience Manager as a Cloud Service, consulte [esta página](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
-## Novidades {#what-is-new}
-
-* [O novo RTE](#new-rte) agora pode inserir imagens.
-   * Este recurso está desabilitado OtB e precisa ser habilitado explicitamente por meio de uma [definição de filtro.](/help/implementing/universal-editor/configure-rte.md#toolbar)
 
 ## Recursos da adoção antecipada {#early-adopter}
 
@@ -39,10 +34,12 @@ O novo RTE do ProseMirror, com um seletor de páginas na caixa de diálogo de li
 
 ## Outras melhorias {#other-improvements}
 
-* Atualizar evento agora é informado se a ação foi desfeita.
-* A cadeia de caracteres `No results` agora depende da localidade do navegador nas marcas do Editor Universal.
-* Correção da quebra de linha extra no botão Publicar do Editor Universal.
-* Foi feita uma limpeza na API de patch.
-* O botão Selecionar conteúdo agora está visível no Safari.
-* Compilação RPM corrigida.
-* Atualização do CORS para evitar a atualização do texto editado novamente após salvar.
+* `og:title` campos de metadados agora podem ser excluídos corretamente.
+* Correção de um problema de navegação quando um usuário edita a barra de localização no editor do navegador de modo que essas alterações sejam refletidas corretamente e o editor e/ou aplicativo agora navega para a URL solicitada.
+* A resolução do modelo de campo foi corrigida e o editor usa o modelo do componente, se presente.
+* O componentId agora está incluído na ação /add.
+* A capacidade de excluir algumas propriedades de metadados que anteriormente não podiam ser removidas foi corrigida.
+* A busca bruta agora é condicionalmente feita para xwalk quando não está definida pelo plug-in do AEM.
+* O manuseio do MSM de fragmento de conteúdo com RTE foi corrigido.
+* O realce de imagem em uma imagem agora é compatível.
+
