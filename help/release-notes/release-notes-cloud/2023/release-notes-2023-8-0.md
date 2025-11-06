@@ -29,7 +29,7 @@ Assista ao vídeo Visão geral da versão de agosto de 2023 que exibe um resumo 
 
 ### Novos recursos no [!DNL Experience Manager Sites] {#sites-features}
 
-* O [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) agora permite que os usuários exibam marcas e pesquisem por marcas aplicadas como metadados aos fragmentos de conteúdo. Os usuários não precisarão mais alternar para a interface do Assets para esse recurso, reduzindo a alternância de contexto e melhorando a eficiência.
+* O [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR) agora permite que os usuários exibam marcas e pesquisem por marcas aplicadas como metadados aos fragmentos de conteúdo. Os usuários não precisarão mais alternar para a interface do Assets para esse recurso, reduzindo a alternância de contexto e melhorando a eficiência.
 
   ![Marcação no Console de Fragmentos de Conteúdo](/help/assets/content-fragments-console-tags.png)
 * O novo Editor de fragmento de conteúdo agora está disponível no AEM as a Cloud Service. Ele torna os autores de conteúdo mais produtivos, simplificando suas tarefas de criação e reduzindo a necessidade de alternar entre diferentes aplicativos durante a edição do conteúdo.

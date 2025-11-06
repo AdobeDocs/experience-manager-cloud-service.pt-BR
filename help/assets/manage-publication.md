@@ -163,18 +163,18 @@ Somente os ativos são publicados em [!DNL Dynamic Media]. No entanto, o comport
 
 O processo de publicação para **[!UICONTROL Imediato]** e **[!UICONTROL Na Ativação]** é consistente, no entanto, diferente para **[!UICONTROL Publicação Seletiva]**. Consulte [configurar publicação seletiva no nível da pasta no Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=pt-BR). Depois de configurar a publicação seletiva em uma pasta, siga um destes procedimentos:
 
-* [Publicar ativos seletivamente no Dynamic Media ou no Experience Manager usando Gerenciar publicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
-* [Cancelar a publicação seletiva de ativos do Dynamic Media ou do Experience Manager usando Gerenciar publicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
-* [Publicar ativos no Dynamic Media ou Experience Manager usando a Publicação rápida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
-* [Publicar ou cancelar a publicação seletiva de ativos por meio dos resultados da pesquisa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-unpublish-search-results)
+* [Publicar ativos seletivamente no Dynamic Media ou no Experience Manager usando Gerenciar publicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=pt-BR#selective-publish-manage-publication)
+* [Cancelar a publicação seletiva de ativos do Dynamic Media ou do Experience Manager usando Gerenciar publicação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=pt-BR#selective-unpublish-manage-publication)
+* [Publicar ativos no Dynamic Media ou Experience Manager usando a Publicação rápida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=pt-BR#quick-publish-aem-dm)
+* [Publicar ou cancelar a publicação seletiva de ativos por meio dos resultados da pesquisa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=pt-BR#selective-publish-unpublish-search-results)
 
 ## Publicar ativos no Brand Portal {#publish-assets-to-brand-portal}
 
 Você pode publicar ativos, pastas e coleções na instância [!DNL Experience Manager Assets Brand Portal].
 
-* [Publicar ativos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-assets-to-bp)
-* [Publicar pastas no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
-* [Publicar coleções no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-collections-to-brand-portal)
+* [Publicar ativos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=pt-BR#publish-assets-to-bp)
+* [Publicar pastas no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=pt-BR#publish-folders-to-brand-portal)
+* [Publicar coleções no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=pt-BR#publish-collections-to-brand-portal)
 
 ## Solicitar Publicação {#request-publication}
 

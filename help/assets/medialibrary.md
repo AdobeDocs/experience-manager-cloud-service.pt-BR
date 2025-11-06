@@ -117,4 +117,4 @@ Você não pode usar marcas inteligentes, link [!DNL Asset], seletor [!DNL Asset
 >[!MORELIKETHIS]
 >
 >* [recursos DAM em [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=pt-BR)
->* [[!DNL Experience Manager] como uma [!DNL Cloud Service] descrição do produto](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] como uma [!DNL Cloud Service] descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

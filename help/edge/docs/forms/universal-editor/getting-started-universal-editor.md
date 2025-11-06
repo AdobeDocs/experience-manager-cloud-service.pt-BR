@@ -70,7 +70,7 @@ Para garantir uma experiência perfeita e bem-sucedida com o Edge Delivery Servi
 
 >[!TIP]
 >
-> Novo no AEM? Comece com o [Guia de Introdução do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html).
+> Novo no AEM? Comece com o [Guia de Introdução do AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=pt-BR).
 
 ## Caminho A: criar um novo projeto com o Forms
 

@@ -15,7 +15,7 @@ ht-degree: 1%
 # Introdução ao Forms no AEM Edge Delivery Services
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features">pre-release channel</a>. </span>
 -->
 
 O Adobe Experience Manager (AEM) Edge Delivery Services (EDS) permite oferecer experiências da Web ultrarrápidas e altamente escaláveis. Este guia explica **como criar e publicar formulários para essas experiências**, com uma hierarquia de recomendação clara:

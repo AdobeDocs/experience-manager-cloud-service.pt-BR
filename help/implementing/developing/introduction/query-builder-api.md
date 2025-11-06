@@ -25,13 +25,13 @@ A API REST fornece acesso aos mesmos recursos por meio do HTTP, com respostas se
 
 >[!NOTE]
 >
->A API do QueryBuilder é criada usando a API JCR. Você também pode consultar o JCR do AEM usando a API JCR de um pacote OSGi. Para obter informações, consulte [Consulta de dados do Adobe Experience Manager usando a API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
+>A API do QueryBuilder é criada usando a API JCR. Você também pode consultar o JCR do AEM usando a API JCR de um pacote OSGi. Para obter informações, consulte [Consulta de dados do Adobe Experience Manager usando a API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=pt-BR).
 
 ## Sessão Gem {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html) é uma série de aprofundamentos técnicos fornecidos por especialistas da Adobe Experience Manager Adobe.
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=pt-BR) é uma série de aprofundamentos técnicos fornecidos por especialistas da Adobe Experience Manager Adobe.
 
-Você pode [revisar a sessão dedicada ao construtor de consultas](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html) para obter uma visão geral e usar a ferramenta.
+Você pode [revisar a sessão dedicada ao construtor de consultas](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=pt-BR) para obter uma visão geral e usar a ferramenta.
 
 ## Exemplos de consulta {#sample-queries}
 

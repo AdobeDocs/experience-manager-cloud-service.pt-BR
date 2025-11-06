@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # Guia de referência de componentes {#components-reference-guide}
 
-Os componentes são o núcleo da criação de uma experiência no AEM. Os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e o [Arquétipo de Projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) simplificam a introdução a um conjunto de ferramentas de componentes robustos e prontos. O [Tutorial do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) orienta o desenvolvedor sobre como usar essas ferramentas e como criar componentes personalizados para criar um site do AEM.
+Os componentes são o núcleo da criação de uma experiência no AEM. Os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e o [Arquétipo de Projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) simplificam a introdução a um conjunto de ferramentas de componentes robustos e prontos. O [Tutorial do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) orienta o desenvolvedor sobre como usar essas ferramentas e como criar componentes personalizados para criar um site do AEM.
 
 >[!TIP]
 >
->Antes de fazer referência a este documento, verifique se você concluiu o [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e se está familiarizado com os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e o [Arquétipo de Projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
+>Antes de fazer referência a este documento, verifique se você concluiu o [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e se está familiarizado com os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e o [Arquétipo de Projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR).
 
 Como o Tutorial WKND aborda a maioria dos casos de uso, este documento serve apenas como um complemento para esses recursos. Ele fornece especificações técnicas detalhadas sobre como os componentes são estruturados e configurados no AEM e não se destina a ser um guia de introdução.
 
@@ -65,8 +65,8 @@ Esta filosofia é suportada pelo [HTL](https://experienceleague.adobe.com/docs/e
 
 Essa lógica (opcional) pode ser implementada de diferentes maneiras e é invocada do HTL com comandos específicos:
 
-* Usando Java - [A API de uso Java do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) permite que um arquivo de HTL acesse métodos de ajuda em uma classe de Java personalizada. Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
-* Usando o JavaScript - [A API de uso do HTL JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) permite que um arquivo HTL acesse o código de ajuda gravado no JavaScript. Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
+* Usando Java - [A API de uso Java do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=pt-BR) permite que um arquivo de HTL acesse métodos de ajuda em uma classe de Java personalizada. Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
+* Usando o JavaScript - [A API de uso do HTL JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=pt-BR) permite que um arquivo HTL acesse o código de ajuda gravado no JavaScript. Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
 * Uso de bibliotecas do lado do cliente - sites modernos dependem muito do processamento do lado do cliente orientado por código JavaScript e CSS complexo. Consulte o documento [Usando Bibliotecas do Lado do Cliente no AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obter mais informações.
 
 ## Estrutura do componente {#structure}

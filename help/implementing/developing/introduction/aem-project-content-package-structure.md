@@ -15,7 +15,7 @@ ht-degree: 4%
 
 >[!TIP]
 >
->Familiarize-se com o [uso do Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) básico e com o [Plug-in FileVault Content Maven](/help/implementing/developing/tools/maven-plugin.md), pois este artigo se baseia nesses aprendizados e conceitos.
+>Familiarize-se com o [uso do Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) básico e com o [Plug-in FileVault Content Maven](/help/implementing/developing/tools/maven-plugin.md), pois este artigo se baseia nesses aprendizados e conceitos.
 
 Este artigo descreve as alterações necessárias para que os projetos do Adobe Experience Manager Maven sejam compatíveis com o AEM as a Cloud Service, garantindo que eles respeitem a divisão de conteúdo mutável e imutável. Além disso, as dependências são estabelecidas para criar implantações determinísticas e não conflitantes e são agrupadas em uma estrutura implantável.
 
@@ -72,7 +72,7 @@ A estrutura de implantação de aplicativo recomendada é a seguinte:
       + `/apps/settings`
    + ACLs (permissões)
       + Qualquer `rep:policy` para qualquer caminho em `/apps`
-   + [Scripts agrupados pré-compilados](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [Scripts agrupados pré-compilados](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html?lang=pt-BR)
 
 >[!NOTE]
 >

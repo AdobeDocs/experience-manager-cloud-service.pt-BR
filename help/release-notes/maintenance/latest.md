@@ -24,7 +24,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 22943, lançada publicamente em quarta-feira, 14 de outubro de 2025. A versão de manutenção anterior era 22758.
 
-A ativação de recursos do 2025.10.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.10.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-22943}
 
@@ -56,7 +56,7 @@ A ativação de recursos do 2025.10.0 fornece o conjunto completo de recursos pa
 * GUIDES-33720: Ao aplicar zoom na tela da interface de tradução, o botão Enviar para tradução se move sob as reticências e se torna habilitado mesmo sem que nenhum ativo seja selecionado.
 * GUIDES-33590: Quando um revisor conclui uma tarefa de revisão ou o iniciador atualiza a tarefa de revisão sem inserir comentários, o email de notificação enviado exibe o comentário anterior mais recente.
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Recursos e APIs obsoletos {#deprecated-22943}
 
@@ -80,4 +80,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.30.2 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |

@@ -17,7 +17,7 @@ ht-degree: 3%
 
 <span class="preview"> O recurso está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
-O [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatiza o processo de repetição das mesmas tarefas, como fluxos de trabalho de aprovação de documentos, filtragem e classificação de email, permitindo que você se concentre em novas tarefas em vez de tarefas recorrentes. O Adobe Workfront Fusion inclui vários cenários. Um cenário consiste em uma série de módulos que executam a transferência de dados entre aplicativos e serviços da Web. Em um cenário, você adiciona várias etapas (módulos) para automatizar uma tarefa.
+O [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=pt-BR) automatiza o processo de repetição das mesmas tarefas, como fluxos de trabalho de aprovação de documentos, filtragem e classificação de email, permitindo que você se concentre em novas tarefas em vez de tarefas recorrentes. O Adobe Workfront Fusion inclui vários cenários. Um cenário consiste em uma série de módulos que executam a transferência de dados entre aplicativos e serviços da Web. Em um cenário, você adiciona várias etapas (módulos) para automatizar uma tarefa.
 
 Por exemplo, usando o Workfront Fusion, você pode criar um cenário para coletar dados com o Formulário adaptável, processar os dados e enviá-los a um armazenamento de dados para arquivamento. Depois que um cenário é configurado, o Workfront Fusion executa automaticamente as tarefas sempre que um usuário preenche um formulário, atualizando o armazenamento de dados perfeitamente.
 
@@ -38,8 +38,8 @@ O AEM Forms as a Cloud Service fornece um conector OOTB para conectar e enviar u
 
 Para estabelecer uma conexão entre o Workfront Fusion e o AEM Forms, é necessário o seguinte:
 
-* Uma [licença válida do Workfront e do Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
-* Um usuário do AEM com direito de acessar o [Dev Console](https://my.cloudmanager.adobe.com/) para [recuperar as credenciais de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+* Uma [licença válida do Workfront e do Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=pt-BR).
+* Um usuário do AEM com direito de acessar o [Dev Console](https://my.cloudmanager.adobe.com/) para [recuperar as credenciais de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR).
 
 ## Integrar o AEM Forms com o Adobe Workfront Fusion
 
@@ -106,7 +106,7 @@ Para adicionar uma conexão:
    >
    > O URL da instância é o endereço exclusivo da Web que aponta para uma instância específica do AEM Forms.
 
-   Você pode recuperar as [credenciais de serviço do Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) necessárias para criar uma conexão.
+   Você pode recuperar as [credenciais de serviço do Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR) necessárias para criar uma conexão.
 
 1. Substitua `ims-na1.adobelogin.com` no **ponto de extremidade IMS** pelo valor de **imsEndpoint** das credenciais de serviço no Console do desenvolvedor.
 

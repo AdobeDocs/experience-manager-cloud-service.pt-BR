@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 A funcionalidade do Gerenciador de Vários Sites (MSM) no [!DNL Adobe Experience Manager] permite que os usuários reutilizem conteúdo criado uma vez e reutilizado em vários locais da Web. A mesma funcionalidade está disponível para ativos digitais com o nome MSM para [!DNL Assets]. Ao usar o MSM para [!DNL Assets], você pode:

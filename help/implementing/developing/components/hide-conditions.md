@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Uso de condições de ocultação {#using-hide-conditions}
 
-As condições de ocultação podem ser usadas para determinar se um recurso de componente é renderizado ou não. Um exemplo disso seria quando um autor de modelo configura o [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) do Componente principal no [editor de modelos](/help/sites-cloud/authoring/page-editor/templates.md) e decide desabilitar as opções para criar a lista com base em páginas secundárias. Desativar essa opção na caixa de diálogo de design define uma propriedade para que, quando o componente de lista for renderizado, a condição de ocultação seja avaliada e a opção para mostrar páginas secundárias não seja exibida.
+As condições de ocultação podem ser usadas para determinar se um recurso de componente é renderizado ou não. Um exemplo disso seria quando um autor de modelo configura o [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=pt-BR) do Componente principal no [editor de modelos](/help/sites-cloud/authoring/page-editor/templates.md) e decide desabilitar as opções para criar a lista com base em páginas secundárias. Desativar essa opção na caixa de diálogo de design define uma propriedade para que, quando o componente de lista for renderizado, a condição de ocultação seja avaliada e a opção para mostrar páginas secundárias não seja exibida.
 
 ## Visão geral {#overview}
 
@@ -51,7 +51,7 @@ Ao definir a expressão ocultar, lembre-se:
 
 ## Exemplo {#example}
 
-Exemplos de condições de ocultação podem ser encontrados em todo o AEM e nos [componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) em particular. Por exemplo, considere o [componente principal da lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) como implementado no [tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+Exemplos de condições de ocultação podem ser encontrados em todo o AEM e nos [componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) em particular. Por exemplo, considere o [componente principal da lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=pt-BR) como implementado no [tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 [Usando o editor de modelo](/help/sites-cloud/authoring/page-editor/templates.md), o autor do modelo pode definir na caixa de diálogo de design quais opções do componente de lista estão disponíveis para o autor da página. É possível habilitar ou desabilitar opções como permitir que a lista seja uma lista estática, uma lista de páginas secundárias, uma lista de páginas marcadas etc.
 

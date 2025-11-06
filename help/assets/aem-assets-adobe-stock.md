@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 O serviço [!DNL Adobe Stock] fornece aos designers e empresas acesso a milhões de fotos, vetores, ilustrações, vídeos, modelos e ativos 3D de alta qualidade, com curadoria e isentos de royalties para todos os seus projetos criativos.
@@ -535,6 +535,6 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 >[!MORELIKETHIS]
 >
->* [Tutorial em vídeo sobre o uso de ativos do Adobe Stock com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [ajuda do plano da empresa Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [PERGUNTAS FREQUENTES SOBRE O Adobe Stock](https://helpx.adobe.com/stock/faq.html)
+>* [Tutorial em vídeo sobre o uso de ativos do Adobe Stock com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=pt-BR)
+>* [ajuda do plano da empresa Adobe Stock](https://helpx.adobe.com/br/enterprise/using/adobe-stock-enterprise.html)
+>* [PERGUNTAS FREQUENTES SOBRE O Adobe Stock](https://helpx.adobe.com/br/stock/faq.html)

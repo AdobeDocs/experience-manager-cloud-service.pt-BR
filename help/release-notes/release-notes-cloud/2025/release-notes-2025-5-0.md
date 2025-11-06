@@ -19,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Acesse todas as suas [representações predefinidas do Dynamic Media e cortes in
 
 **Integração nativa do Dynamic Media com o AJO B2C&#x200B;**
 
-[Integração nativa do Experience Manager (AEM) Dynamic Media com o Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), permitindo que os profissionais de marketing incorporem facilmente os ativos do AEM Dynamic Media (representação e modelo DM) ao conteúdo do AJO e entreguem atualizações em tempo real e experiências hiperpersonalizadas em todos os canais.
+[Integração nativa do Experience Manager (AEM) Dynamic Media com o Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/combine/aem-dynamic), permitindo que os profissionais de marketing incorporem facilmente os ativos do AEM Dynamic Media (representação e modelo DM) ao conteúdo do AJO e entreguem atualizações em tempo real e experiências hiperpersonalizadas em todos os canais.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
@@ -258,7 +258,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

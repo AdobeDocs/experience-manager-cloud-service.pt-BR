@@ -19,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2022 ou 2023.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
   ![HTML Forms (Formulários Web baseados em XFA)](/help/forms/assets/html-forms-xfa-based-web-forms.png)
 
 
-* Suporte a Cadeia de Caracteres Codificada em **[Base64 para Anexo de Arquivo](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: o componente Anexo de Arquivo no Forms Adaptável baseado em Componentes Principais agora inclui uma opção para enviar arquivos anexados como cadeias de caracteres codificadas em Base64.
+* Suporte a Cadeia de Caracteres Codificada em **[Base64 para Anexo de Arquivo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: o componente Anexo de Arquivo no Forms Adaptável baseado em Componentes Principais agora inclui uma opção para enviar arquivos anexados como cadeias de caracteres codificadas em Base64.
 
 #### APIs de comunicações interativas e comunicação
 
@@ -147,7 +147,7 @@ intuitive and improving the mobile form-filling experience.
 
 ## Serviço de conversão automática de formulários
 
-* **[Converter o PDF forms em Componentes principais com base no Forms Adaptável](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: agora você pode usar o Serviço de Conversão Automatizada de Formulários para transformar formulários do PDF forms, AcroForms ou baseados em XFA em formulários do Forms Adaptável com base nos Componentes principais.
+* **[Converter o PDF forms em Componentes principais com base no Forms Adaptável](https://experienceleague.adobe.com/pt-br/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms)**: agora você pode usar o Serviço de Conversão Automatizada de Formulários para transformar formulários do PDF forms, AcroForms ou baseados em XFA em formulários do Forms Adaptável com base nos Componentes principais.
 
 >[!IMPORTANT]
 >
@@ -170,7 +170,7 @@ A [Etapa do Fluxo de Trabalho de Ativação da Árvore](/help/operations/replica
 
 Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguirão a especificação da OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação serão geradas ao criar projetos do Adobe Developer Console.
 
-Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) que ilustra a configuração e o uso.
+Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) que ilustra a configuração e o uso.
 
 Especificamente, os endpoints de API listados abaixo estão disponíveis como parte de um programa de adoção antecipada. Se estiver interessado, envie um email para [aem-apis@adobe.com](mailto:aem-apis@adobe.com) descrevendo como você pretende usá-los.
 
@@ -191,7 +191,7 @@ Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Di
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

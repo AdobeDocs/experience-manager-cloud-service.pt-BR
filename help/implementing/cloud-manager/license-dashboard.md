@@ -19,7 +19,7 @@ O Cloud Manager fornece um painel para facilitar a visualização dos direitos d
 
 >[!IMPORTANT]
 >
->O Painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no Painel de licenças.
+>O Painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no Painel de licenças.
 >
 >Para determinar o tipo de serviço que seu programa tem (AMS ou AEMaaCS), consulte [Navegação na interface do Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 

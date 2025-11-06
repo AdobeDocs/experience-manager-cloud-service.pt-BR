@@ -19,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2022 ou 2023.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ Agora, os administradores podem controlar se precisam que os ativos expirados es
 
 * [Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável](/help/forms/save-core-component-based-form-as-draft.md): os usuários agora podem se beneficiar de um recurso de salvamento automático que salva automaticamente um formulário parcialmente preenchido como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
 
-* [Atualize facilmente os escopos do Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): você pode modificar os escopos de uma configuração do Adobe Sign diretamente da página Configurações de nuvem do AEM, tornando mais rápido e fácil atualizar as configurações existentes.
+* [Atualize facilmente os escopos do Adobe Sign](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): você pode modificar os escopos de uma configuração do Adobe Sign diretamente da página Configurações de nuvem do AEM, tornando mais rápido e fácil atualizar as configurações existentes.
 
 * [Suporte a função assíncrona para Forms Adaptável](/help/forms/using-async-funct-in-rule-editor.md): quando o Formulário Adaptável requer operações assíncronas, como aguardar processos externos ou recuperação de dados, você pode implementar essas operações com funções personalizadas e configurá-las no Editor de Regras.
 
@@ -121,7 +121,7 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 #### Assistente de IA do AEM Forms
 
-[A IA de geração para o Adaptive Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) oferece um nível totalmente novo de potência e facilidade aos seus processos de desenvolvimento de formulários. Ele permite que você construa formulários melhores mais rápido do que nunca.
+[A IA de geração para o Adaptive Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) oferece um nível totalmente novo de potência e facilidade aos seus processos de desenvolvimento de formulários. Ele permite que você construa formulários melhores mais rápido do que nunca.
 
 ![Assistente de IA de Geração, Forms Adaptável](/help/forms/assets/generative-ai-assistant.png)
 
@@ -195,7 +195,7 @@ Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Di
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

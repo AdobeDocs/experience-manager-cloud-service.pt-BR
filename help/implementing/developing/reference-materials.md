@@ -59,7 +59,7 @@ Se uma API for fornecida pelo AEM, prefira-a ao Sling, JCR e OSGi. Se o AEM não
 
 >[!TIP]
 >
->Para obter detalhes sobre essas diretrizes, consulte o documento [Entender as práticas recomendadas da API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html).
+>Para obter detalhes sobre essas diretrizes, consulte o documento [Entender as práticas recomendadas da API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=pt-BR).
 
 ## Serviços e APIs de entrega e gerenciamento de conteúdo da AEM {#delivery-apis}
 
@@ -76,7 +76,7 @@ O AEM oferece componentes personalizáveis e opções de entrega de conteúdo.
 |  |  |
 | [API Assets](/help/assets/mac-api-assets.md) | Permite operações de criação, leitura, atualização e exclusão (CRUD) em ativos, incluindo binários, metadados, representações e comentários. Consulte API HTTP do AEM Assets |
 | [API HTTP de fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md) | Acessar conteúdo de fragmento de conteúdo diretamente pela API HTTP por meio de operações CRUD |
-| [API HTTP do Assets de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato exato de solicitações de ativos HTTP compatíveis |
+| [API HTTP do Assets de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=pt-BR) | Formato exato de solicitações de ativos HTTP compatíveis |
 
 >[!NOTE]
 >

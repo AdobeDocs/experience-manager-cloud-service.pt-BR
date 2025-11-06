@@ -30,7 +30,7 @@ Por exemplo, para usar a extensão com o AJO:
 
 >[!NOTE]
 >
->Consulte também [Integração com o AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
+>Consulte também [Integração com o AJO](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/integrations/aem-fragments).
 
 1. Abra o [Console de Fragmentos de Conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 

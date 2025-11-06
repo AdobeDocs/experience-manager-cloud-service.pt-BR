@@ -18,10 +18,10 @@ ht-degree: 0%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
-Você usa modelos de fluxo de trabalho. Um modelo ajuda a definir e executar uma série de etapas. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos. Você pode [incluir várias etapas do fluxo de trabalho do AEM em um modelo para obter a lógica de negócios](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
+Você usa modelos de fluxo de trabalho. Um modelo ajuda a definir e executar uma série de etapas. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos. Você pode [incluir várias etapas do fluxo de trabalho do AEM em um modelo para obter a lógica de negócios](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem).
 
 ## Etapas centradas no Forms {#forms-workflow-steps}
 
@@ -121,7 +121,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
     -->
 
 * **[!UICONTROL Atribuído]** > **[!UICONTROL Opções de atribuição]**: especifique o método para atribuir a tarefa a um usuário. Você pode atribuir a tarefa dinamicamente a um usuário ou grupo usando o script Seletor de participante ou atribuir a tarefa a um usuário ou grupo específico da AEM.
-* **[!UICONTROL Seletor de participantes]**: a opção estará disponível quando a opção **[!UICONTROL Dinamicamente para um usuário ou grupo]** estiver selecionada no campo Opções de atribuição. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Criação de uma etapa personalizada de Participante dinâmico do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Seletor de participantes]**: a opção estará disponível quando a opção **[!UICONTROL Dinamicamente para um usuário ou grupo]** estiver selecionada no campo Opções de atribuição. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Criação de uma etapa personalizada de Participante dinâmico do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Participantes]**: o campo está disponível quando a opção **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** é selecionada no campo **[!UICONTROL Seletor de Participantes]**. O campo permite selecionar usuários ou grupos para a opção RandomParticipantChooser.
 
@@ -190,7 +190,7 @@ A etapa Converter em PDF/A tem as seguintes propriedades:
 
 Use a etapa do email para enviar um email, por exemplo, um email com um Documento de Registro, um link de um Formulário Adaptável <!-- , link of an interactive communication--> ou um documento do PDF anexado. A etapa Enviar Email oferece suporte a [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Os emails do HTML são responsivos e se adaptam ao cliente de email dos recipients e ao tamanho da tela. Você pode usar um modelo de email do HTML para definir a aparência, o esquema de cores e o comportamento do email.
 
-A etapa de email usa o Day CQ Mail Service para enviar emails. Antes de usar a etapa de email, verifique se o serviço de email está configurado. Por padrão, o email suporta somente os protocolos HTTP e HTTPs. [Contate a equipe de suporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) para habilitar as portas para enviar emails e habilitar o protocolo SMTP para o seu ambiente. A restrição ajuda a melhorar a segurança da plataforma.
+A etapa de email usa o Day CQ Mail Service para enviar emails. Antes de usar a etapa de email, verifique se o serviço de email está configurado. Por padrão, o email suporta somente os protocolos HTTP e HTTPs. [Contate a equipe de suporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=pt-BR#sending-email) para habilitar as portas para enviar emails e habilitar o protocolo SMTP para o seu ambiente. A restrição ajuda a melhorar a segurança da plataforma.
 
 A etapa de email tem as seguintes propriedades:
 
