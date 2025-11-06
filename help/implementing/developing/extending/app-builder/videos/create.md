@@ -22,22 +22,22 @@ ht-degree: 0%
 
 Aprenda os fundamentos para criar seu primeiro projeto do App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339168/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342308/?captions=por_br&quality=12&learn=on)
 
 ## Configurar o ambiente de desenvolvimento local
 
 Saiba como configurar seu ambiente local para o desenvolvimento do App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342282/?captions=por_br&quality=12&learn=on)
 
 ## Inicializar o primeiro projeto
 
 Saiba como inicializar um projeto do App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342247/?captions=por_br&quality=12&learn=on)
 
 ## Criar, executar e testar o aplicativo
 
 Saiba como criar, executar e testar seu aplicativo do App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342241/?captions=por_br&quality=12&learn=on)

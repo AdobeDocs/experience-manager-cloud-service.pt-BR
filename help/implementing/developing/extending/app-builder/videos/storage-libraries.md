@@ -22,16 +22,16 @@ ht-degree: 0%
 
 Saiba mais sobre as opções de armazenamento da App Builder e por que o armazenamento é importante em um aplicativo App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339238/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343550/?captions=por_br&quality=12&learn=on)
 
 ## Uso da biblioteca de armazenamento de estado
 
 Saiba como instalar a biblioteca de armazenamento de estado no aplicativo App Builder e usá-la para gerenciar o estado.
 
->[!VIDEO](https://video.tv.adobe.com/v/339240/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343557/?captions=por_br&quality=12&learn=on)
 
 ## Uso da biblioteca de armazenamento de arquivos
 
 Saiba como instalar a biblioteca de armazenamento de arquivos no aplicativo do App Builder para salvar, recuperar e excluir dados.
 
->[!VIDEO](https://video.tv.adobe.com/v/339239/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343564/?captions=por_br&quality=12&learn=on)

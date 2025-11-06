@@ -22,10 +22,10 @@ ht-degree: 0%
 
 Saiba mais sobre a arquitetura orientada por eventos, eventos do Adobe I/O e eventos personalizados.
 
->[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343689/?captions=por_br&quality=12&learn=on)
 
 ## Criação de aplicativos App Builder orientados por eventos
 
->[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343696/?captions=por_br&quality=12&learn=on)
 
 Saiba como criar publicações que podem consumir eventos em um aplicativo do App Builder.

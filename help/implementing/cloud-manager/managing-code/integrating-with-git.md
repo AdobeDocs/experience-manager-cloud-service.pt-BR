@@ -30,7 +30,7 @@ Esta série de vídeos explora vários casos de uso ao integrar um repositório 
 
 A série de vídeos pressupõe conhecimento básico sobre Git e gerenciamento de controle de origem. Consulte os [recursos adicionais abaixo](#additional-resources) para obter mais detalhes sobre o Git.
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/)
+>[!VIDEO](https://video.tv.adobe.com/v/31192?captions=por_br)
 
 As etapas e convenções de nomenclatura descritas nesta série de vídeos representam algumas práticas recomendadas para trabalhar com um repositório Git gerenciado pelo cliente no Cloud Manager. Espera-se que as convenções e os fluxos de trabalho descritos sejam adaptados para casos de uso individuais.
 
@@ -38,31 +38,31 @@ As etapas e convenções de nomenclatura descritas nesta série de vídeos repre
 
 Neste vídeo, conheça as primeiras etapas para sincronizar um repositório Git gerenciado pelo cliente com o repositório Git do Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31191/?captions=por_br&quality=12)
 
 ## Estratégia básica de ramificação {#branching-strategy}
 
 Neste vídeo, conheça as estratégias básicas de ramificação.
 
->[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31190/?captions=por_br&quality=12)
 
 ## Desenvolvimento de ramificação de recursos {#feature-development}
 
 Use uma ramificação de recursos para isolar alterações de código em um repositório Git gerenciado pelo cliente e sincronizar com o repositório Git do Cloud Manager, a fim de usar um pipeline de não produção para testes de validação e qualidade de código.
 
->[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31189/?captions=por_br&quality=12)
 
 ## Implantação de produção {#production-deployment}
 
 Prepare o código para uma versão de produção em um repositório Git gerenciado pelo cliente e sincronize com o repositório Git do Cloud Manager para implantar em ambientes de preparo e produção.
 
->[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31188/?captions=por_br&quality=12)
 
 ## Sincronizar tags de versão {#sync-tags}
 
 Sincronize as tags de versão de um repositório git do Cloud Manager em um repositório git gerenciado pelo cliente para fornecer visibilidade do código que foi implementado nos ambientes de preparo e produção.
 
->[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/31187/?captions=por_br&quality=12)
 
 ## Recursos adicionais {#additional-resources}
 

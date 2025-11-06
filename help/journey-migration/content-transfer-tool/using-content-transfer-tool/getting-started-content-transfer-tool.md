@@ -65,7 +65,7 @@ A instância do AEM de origem pode estar sendo executada por trás de um firewal
 >id="aemcloud_ctt_demo"
 >title="Execução da ferramenta de transferência de conteúdo"
 >abstract="Saiba como usar a ferramenta de transferência de conteúdo para migrar o conteúdo para o AEM as a Cloud Service (Autor/Publicação)."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" Consulte a demonstração"
+>additional-url="https://video.tv.adobe.com/v/327071/?captions=por_br&quality=12&learn=on" text=" Consulte a demonstração"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=pt-BR#migration" text="Tutorial: utilização da ferramenta de transferência de conteúdo"
 
 A seção a seguir se aplica à nova versão da ferramenta Transferência de conteúdo. Siga esta seção para saber como usar a ferramenta Transferência de conteúdo para migrar conteúdo para o AEM as a Cloud Service:
