@@ -8,7 +8,7 @@ docset: aem65
 feature: Publishing,Dynamic Media
 role: User
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '2946'
 ht-degree: 3%
@@ -185,7 +185,7 @@ Você pode usar a **[!UICONTROL Publicação rápida]** para casos de ativação
 1. Selecione uma das opções a seguir na lista de menus **[!UICONTROL Publicação Rápida]**.
 
    | opção Publicação rápida | O que faz |
-   | --- | --- | 
+   | --- | --- |
    | Publicar no Experience Manager | Publica os ativos selecionados imediatamente no Experience Manager. |
    | Publicar no Brand Portal | Publica os ativos selecionados imediatamente no **[!UICONTROL Brand Portal]**.<br>Esta opção só estará disponível se a instância do Experience Manager Assets já tiver o **[!UICONTROL Brand Portal]** configurado. |
    | Publicar no Dynamic Media | Publica os ativos selecionados imediatamente no Dynamic Media.<br>Um ativo já deve estar sincronizado com o Dynamic Media. Se necessário, verifique se o **[!UICONTROL Modo de sincronização]** nas propriedades de uma pasta já está definido como **[!UICONTROL Sincronizar tudo nesta subárvore de pasta com o Dynamic Media]**. |
@@ -221,8 +221,8 @@ Como opção, você pode usar essas caixas de seleção com o predicado de pesqu
    | --- | --- | --- |
    | Publicação | Imediatamente ou Após ativação | Publicado no Experience Manager e no Dynamic Media. |
    | Publicação | Publicação seletiva | Publicado somente no Experience Manager. |
-   | Desfazer publicação | Imediatamente ou Após ativação | A publicação desse item no Experience Manager e no Dynamic Media foi desfeita. |
-   | Desfazer publicação | Publicação seletiva | Publicação cancelada somente no Experience Manager. |
+   | Desfazer a publicação | Imediatamente ou Após ativação | A publicação desse item no Experience Manager e no Dynamic Media foi desfeita. |
+   | Desfazer a publicação | Publicação seletiva | Publicação cancelada somente no Experience Manager. |
    | Publicar no Dynamic Media | Imediatamente ou Após ativação | Não publicado no Experience Manager, Dynamic Media ou ambos. |
    | Publicar no Dynamic Media | Publicação seletiva | Publicado somente no Dynamic Media. |
    | Desfazer publicação no Dynamic Media | Imediatamente ou Após ativação | Não ter a publicação desfeita do Experience Manager, Dynamic Media ou ambos. |
@@ -244,9 +244,9 @@ Como opção, você pode usar essas caixas de seleção com o predicado de pesqu
    | Imediatamente ou <br>Após a Ativação | Publicar no Dynamic Media | Nenhum |
    | Publicação seletiva | Publicação | Experience Manager |
    | Publicação seletiva | Publicar no Dynamic Media | Dynamic Media |
-   | Imediatamente ou <br>Após a Ativação | Desfazer publicação | Experience Manager e Dynamic Media |
+   | Imediatamente ou <br>Após a Ativação | Desfazer a publicação | Experience Manager e Dynamic Media |
    | Imediatamente ou <br>Após a Ativação | Desfazer publicação no Dynamic Media | Nenhum |
-   | Publicação seletiva | Desfazer publicação | Experience Manager |
+   | Publicação seletiva | Desfazer a publicação | Experience Manager |
    | Publicação seletiva | Desfazer publicação no Dynamic Media | Dynamic Media |
 
 1. Na página **[!UICONTROL Gerenciar Publicação - Escopo]**, siga um destes procedimentos:
@@ -267,7 +267,6 @@ Você pode usar a **[!UICONTROL Linha do Tempo]** com a **[!UICONTROL Exibição
 Quando você usa a **[!UICONTROL Exibição de Lista]**, uma coluna extra para o estado de publicação do **[!UICONTROL Dynamic Media]** é exibida.
    * Uma pasta configurada para sincronização com o Dynamic Media exibe a coluna **[!UICONTROL Dynamic Media]** por padrão.
    * Uma pasta *não* configurada para sincronização com o Dynamic Media não exibe a coluna Dynamic Media.
-
      ![Modo de Exibição de Lista e Linha do Tempo](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Solução de problemas de publicação seletiva {#selective-publish-troubleshoot}

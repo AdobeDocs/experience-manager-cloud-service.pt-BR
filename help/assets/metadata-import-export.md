@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 9%
@@ -32,7 +32,7 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
    | ---------------------- | ------- |
    | Tamanho do Lote | Número de ativos em um lote para o qual os metadados devem ser importados. O valor padrão é 50. O valor máximo é 100. |
    | Separador de campos | O valor padrão é `,` (uma vírgula). Você pode especificar qualquer outro caractere. |
-   | Delimitador de vários valores | Separador para valores de metadados. O valor padrão é `|`. |
+   | Delimitador de vários valores | Separador para valores de metadados. O valor padrão é `\|`. |
    | Inicializar fluxos de trabalho | Falso por padrão. Quando definido como `true` e as configurações padrão estão em vigor para o fluxo de trabalho DAM Metadata WriteBack (que grava metadados nos dados binários do XMP). Habilitar os fluxos de trabalho torna o sistema lento. |
    | Nome de coluna do caminho do ativo | Define o nome da coluna do arquivo CSV com ativos. |
 

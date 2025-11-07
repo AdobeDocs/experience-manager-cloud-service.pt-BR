@@ -1,13 +1,13 @@
 ---
 title: Solução de problemas do Dynamic Media
-description: Saiba mais sobre dicas de solução de problemas que você pode experimentar ao trabalhar com imagens, conjuntos e visualizadores no Dynamic Media.
+description: Saiba mais sobre como solucionar problemas de dicas que você pode experimentar ao trabalhar com imagens, conjuntos e visualizadores no Dynamic Media.
 contentOwner: Rick Brough
 feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
@@ -26,12 +26,12 @@ Veja a seguir algumas dicas e truques gerais para todos os ativos.
 
 ### Propriedades do status de sincronização do ativo {#asset-synchronization-status-properties}
 
-As seguintes propriedades do ativo podem ser revisadas no CRXDE Lite para confirmar a sincronização bem-sucedida do ativo do Adobe Experience Manager para o Dynamic Media:
+As seguintes propriedades de ativos podem ser revisadas no CRXDE Lite para confirmar a sincronização bem-sucedida do ativo do Adobe Experience Manager para o Dynamic Media:
 
 | **Propriedade** | **Exemplo** | **Descrição** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Indicador geral de que o nó está vinculado ao Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** ou texto de erro | Status do upload do ativo para o Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | Indicador geral de que o nó está vinculado ao Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** ou texto de erro | Status do upload do ativo para Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Deve ser preenchido para gerar URLs para ativo remoto do Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **sucesso** ou **falha:`<error text>`** | Status de sincronização de conjuntos (conjuntos de rotação, conjuntos de imagem e assim por diante), predefinições de imagem, predefinições do visualizador, atualizações de mapa de imagem para um ativo ou imagens que foram editadas. |
 
@@ -70,7 +70,7 @@ Se tiver problemas com imagens e conjuntos, consulte a seguinte orientação de 
     </ol> </td>
    <td><p>Atualizar página/navegar para outra página e voltar (o JSP do painel lateral deve ser recompilado)</p> <p>Se isso não funcionar:</p>
     <ul>
-     <li>Ativo do Publish.</li>
+     <li>Publicar ativo.</li>
      <li>Recarregue o ativo e publique-o.</li>
     </ul> </td>
   </tr>
@@ -134,12 +134,12 @@ Se tiver problemas com o vídeo, consulte a seguinte orientação para solução
    <td>O vídeo não está codificado</td>
    <td>
     <ul>
-     <li>Verifique se o Cloud Service Dynamic Media está configurado.</li>
+     <li>Verifique se o Dynamic Media Cloud Service está configurado.</li>
      <li>Verifique se um perfil de vídeo está associado à pasta de upload.</li>
     </ul> </td>
    <td>
     <ol>
-     <li>Verifique se a configuração do Dynamic Media em Cloud Service está definida corretamente.</li>
+     <li>Verifique se a configuração do Dynamic Media em Cloud Services está definida corretamente.</li>
      <li>Verifique se a pasta tem um perfil de vídeo. Além disso, verifique o perfil do vídeo.</li>
     </ol> </td>
   </tr>
@@ -167,7 +167,7 @@ Se tiver problemas com o vídeo, consulte a seguinte orientação para solução
  </tbody>
 </table>
 
-## Espectadores {#viewers}
+## Visualizadores {#viewers}
 
 Se tiver problemas com visualizadores, consulte as seguintes orientações para solução de problemas.
 
@@ -180,14 +180,14 @@ Se tiver problemas com visualizadores, consulte as seguintes orientações para 
 
    >[!NOTE]
    >
-   >Pode levar cerca de 10 minutos após a definição das configurações de nuvem do Dynamic Media para que os ativos do visualizador sejam sincronizados.
+   >Pode levar cerca de 10 minutos após a configuração das configurações de nuvem do Dynamic Media para que os ativos do visualizador sejam sincronizados.
 
 1. Se os ativos desativados permanecerem, selecione um dos botões **Listar todos os Assets** desativados para ver os detalhes.
 
 **Solução**
 
 1. Navegar até a lista de predefinições do visualizador nas ferramentas administrativas: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
-1. Selecione todas as predefinições do visualizador e selecione **Publish**.
+1. Selecione todas as predefinições do visualizador e selecione **Publicar**.
 1. Volte para o gerenciador de amostra e observe que a contagem de ativos desativados agora é zero.
 
 ### Problema: o trabalho artístico predefinido do visualizador retorna 404 da Pré-visualização nos detalhes do ativo ou Copiar URL/Código incorporado {#viewer-preset-404}
@@ -196,7 +196,7 @@ Se tiver problemas com visualizadores, consulte as seguintes orientações para 
 
 No CRXDE Lite, faça o seguinte:
 
-1. Navegue até a pasta `<sync-folder>/_CSS/_OOTB` dentro da pasta de sincronização do Dynamic Media (por exemplo, `/content/dam/_CSS/_OOTB`).
+1. Navegue até a pasta `<sync-folder>/_CSS/_OOTB` na pasta de sincronização do Dynamic Media (por exemplo, `/content/dam/_CSS/_OOTB`).
 1. Localize o nó de metadados do ativo problemático (por exemplo, `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
 1. Verifique a presença de `dam:scene7*` propriedades. Se o ativo foi sincronizado e publicado com êxito, você vê que o conjunto `dam:scene7FileStatus` é para **PublishComplete**.
 1. Tente solicitar o trabalho artístico diretamente da Dynamic Media, concatenando os valores das seguintes propriedades e literais de string:
@@ -216,7 +216,7 @@ Se o trabalho artístico de ativos de amostra ou predefinição do visualizador 
 1. Navegue até o CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
 1. Procure o pacote do visualizador na lista; ele começa com `cq-dam-scene7-viewers-content`.
 1. Selecione **Reinstalar**.
-1. Em Cloud Service, navegue até a página Configuração do Dynamic Media e abra a caixa de diálogo de configuração da sua configuração Dynamic Media - S7.
+1. Em Cloud Services, navegue até a página Configuração do Dynamic Media e abra a caixa de diálogo de configuração do Dynamic Media - S7.
 1. Não fazer alterações, selecione **Salvar**.
 Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ativos de amostra, o CSS de predefinição do visualizador e o trabalho artístico.
 
@@ -224,7 +224,7 @@ Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ati
 
 **Solução**
 
-1. No Experience Manager, selecione o logotipo Experience Manager para acessar o console de navegação global e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
+1. No Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
 1. No painel à esquerda, navegue até a pasta de conteúdo de amostra no seguinte local:
 
    `/content/dam/_DMSAMPLE`
@@ -235,6 +235,6 @@ Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ati
    `/conf/global/settings/dam/dm/presets/viewer`
 
 1. Exclua a pasta `viewer`.
-1. Próximo ao canto superior esquerdo da página de CRXDE Lite, selecione **[!UICONTROL Salvar tudo]**.
-1. No canto superior esquerdo da página de CRXDE Lite, selecione o ícone **Voltar à página inicial**.
-1. Recrie uma Configuração do Dynamic Media [no Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+1. Próximo ao canto superior esquerdo da página do CRXDE Lite, selecione **[!UICONTROL Salvar tudo]**.
+1. No canto superior esquerdo da página do CRXDE Lite, selecione o ícone **Voltar à página inicial**.
+1. Recrie uma [Configuração do Dynamic Media nos Serviços de Nuvem](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).

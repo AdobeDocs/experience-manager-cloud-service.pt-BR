@@ -3,7 +3,7 @@ title: Implantar [!DNL Content Hub]
 description: Saiba como implantar e ativar o Content Hub e fornecer acesso a usuários com diferentes tipos de privilégios (fazer upload de ativos, usuários do Adobe Express) e como fornecer privilégios de administrador aos usuários.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: fbcfb88aa1b9510d1dc279475b26d85484ef3fe0
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 2%
@@ -38,12 +38,12 @@ A tabela a seguir resume os tipos de usuários disponíveis do Content Hub, os p
 
 | Função do usuário | Usuários do Content Hub | Usuários do Content Hub com direito de adicionar ativos | Usuários do Content Hub com direitos de remixar ativos | Administradores do Content Hub |
 |---------------|----------|----------|-------------------------|---|
-| **Recursos** |
+| **Recursos** |  |  |  |  |
 | Acessar ativos aprovados pela marca no portal do Content Hub | ✓ | ✓ | ✓ | ✓ |
 | Fazer upload de ativos do portal do Content Hub | − | ✓ | ✓ | ✓ |
 | Usar a integração do Adobe Express para editar imagens | − | − | ✓ | − |
 | Acessar a interface de configuração do Content Hub | − | − | − | ✓ |
-| **O usuário precisa estar nesses perfis de produto (Admin Console)** |
+| **O usuário precisa estar nesses perfis de produto (Admin Console)** |  |  |  |  |
 | AEM > Instância de entrega > Usuários limitados da AEM Assets | ✓ | ✓ | ✓ | ✓ |
 | AEM > Instância do autor de produção > Usuários do AEM | − | ✓ | ✓ | − |
 | AEM > Instância do autor de produção > Administradores do AEM | − | − | − | ✓ |

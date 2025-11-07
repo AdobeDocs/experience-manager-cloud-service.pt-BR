@@ -4,7 +4,7 @@ description: Saiba como configurar o Open ID Connect (OIDC) para o AEM as a Clou
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 0%
@@ -156,7 +156,7 @@ Abaixo alguns dos atributos mais relevantes a serem configurados em DefaultSyncH
 | `user.dynamicMembership` | Recomendamos ativar a associação dinâmica de grupo | verdadeiro |
 | `user.enforceDynamicMembership` | Recomendamos ativar a imposição de associação de grupo dinâmico | verdadeiro |
 | `group.dynamicGroups` | Recomendamos ativar grupos dinâmicos | verdadeiro |
-| user.propertyMapping | A implementação fornecida de `UserInfoProcessor` sincroniza apenas algumas propriedades. Ele pode ser modificado e personalizado. | <code>&quot;profile/givenName=profile/given_name&quot;,</code><br><code>&quot;profile/familyName=profile/family_name&quot;,</code><br><code>&quot;rep:fullname=perfil/nome&quot;,</code><br><code>&quot;profile/email=profile/email&quot;,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>&quot;atualizar_token=atualizar_token&quot;</code> |  |
+| user.propertyMapping | A implementação fornecida de `UserInfoProcessor` sincroniza apenas algumas propriedades. Ele pode ser modificado e personalizado. | <code>&quot;profile/givenName=profile/given_name&quot;,</code><br><code>&quot;profile/familyName=profile/family_name&quot;,</code><br><code>&quot;rep:fullname=perfil/nome&quot;,</code><br><code>&quot;profile/email=profile/email&quot;,</code><br><code>&quot;access_token=access_token&quot;,</code><br><code>&quot;atualizar_token=atualizar_token&quot;</code> |
 | `user.membershipNestingDepth` | Retorna a profundidade máxima do aninhamento de grupos quando as relações de associação são sincronizadas. Um valor 0 desativa efetivamente a pesquisa de associação de grupo. Um valor igual a 1 adiciona apenas os grupos diretos de um usuário. Este valor não tem efeito ao sincronizar grupos individuais somente ao sincronizar uma ancestralidade de associação de usuários. | 1 |
 
 ### Configurar o módulo de logon externo {#configure-the-external-login-module}

@@ -4,7 +4,7 @@ description: Saiba como criar consultas persistentes de GraphQL no Adobe Experie
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 79%
@@ -301,7 +301,7 @@ Por padrão, o AEM invalidará o cache com base em uma definição de Time To Li
 | Tipo de cache | [Cabeçalho HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configuração OSGi | Cloud Manager |
 |--- |--- |--- |--- |--- |
 | Navegador | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
-| CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
+| CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` \|60 |
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 

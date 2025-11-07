@@ -1,18 +1,18 @@
 ---
-title: Reutilizar conteúdo - Gerenciador de vários sites e Live Copy
-description: 'Saiba mais sobre como reutilizar conteúdo com recursos avançados do AEM: as Live Copies e o Gerenciador de vários sites.'
+title: Reutilizar conteúdo - Gerenciador multisite e Live Copy
+description: 'Saiba mais sobre como reutilizar conteúdo com recursos avançados do AEM: as Live Copies e o Gerenciador multisite.'
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 91%
+source-wordcount: '2719'
+ht-degree: 90%
 
 ---
 
-# Reutilizar conteúdo: gerenciador de vários sites e Live Copy {#multi-site-manager-and-live-copy}
+# Reutilizar conteúdo: Gerenciador multisite e Live Copy {#multi-site-manager-and-live-copy}
 
 O Gerenciador de vários sites (MSM) permite utilizar o mesmo conteúdo de site em vários locais. O MSM usa a funcionalidade de Live Copy para alcançar isso.
 
@@ -115,7 +115,7 @@ O MSM é diretamente acessível por meio da interface usando várias opções do
 
 * **Criar Site** (**Sites**)
 
-   * O MSM ajuda você a gerenciar vários sites que compartilham conteúdo em comum. Por exemplo, sites geralmente são fornecidos para públicos internacionais, de modo que a maioria do conteúdo é comum em todos os países, com um subconjunto de conteúdo específico para cada país. O MSM permite [criar Live Copies que atualizam automaticamente um ou mais sites com base no seu site de origem](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Isso também ajuda a impor uma estrutura básica comum, usar o conteúdo em comum nos vários sites, manter uma aparência semelhante e concentrar os esforços no gerenciamento do conteúdo que realmente difere entre os sites. Criar um site dessa maneira:
+   * O MSM ajuda você a gerenciar vários sites que compartilham conteúdo em comum. Por exemplo, sites geralmente são fornecidos para públicos-alvos internacionais, de modo que a maioria do conteúdo é comum em todos os países, com um subconjunto de conteúdo específico para cada país. O MSM permite [criar Live Copies que atualizam automaticamente um ou mais sites com base no seu site de origem](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Isso também ajuda a impor uma estrutura básica comum, usar o conteúdo em comum nos vários sites, manter uma aparência semelhante e concentrar os esforços no gerenciamento do conteúdo que realmente difere entre os sites. Criar um site dessa maneira:
       * Requer uma configuração de blueprint predefinida para especificar a origem.
       * Cria uma Live Copy do conteúdo original (predefinido).
       * Fornece ao usuário o botão **Implantação**.
@@ -173,7 +173,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
 | Desconectar | Remove permanentemente o relacionamento dinâmico entre uma Live Copy e sua página de blueprint |  |
 | Redefinir | Redefina uma página de Live Copy para remover todos os cancelamentos de herança e retornar a página ao mesmo estado da página original | A redefinição afeta todas as alterações feitas nas propriedades da página, no sistema de parágrafo e nos componentes. |
 | Superficial | Uma Live Copy de uma única página |  |
-| Profundo | Uma Live Copy de uma página, junto com suas páginas secundárias |  |
+| Profundo | Uma Live Copy de uma página, junto com suas páginas filhas |  |
 
 >[!TIP]
 >
@@ -187,7 +187,7 @@ Uma Live Copy do MSM é uma cópia do conteúdo específico do site para o qual
 * A sincronização executa a transferência real do conteúdo quando alterações são feitas no conteúdo original.
 * Uma Live Copy pode ser considerada como:
    * Superficial: uma página única
-   * Profunda: a página, junto com suas páginas secundárias
+   * Profunda: a página, junto com suas páginas filhas
 * As regras de sincronização, chamadas de configurações de implantação, determinam quais propriedades são sincronizadas e quando a sincronização ocorre.
 
 No exemplo anterior, `/content/wknd/language-masters/en` é o site principal global em inglês. Para reutilizar o conteúdo deste site, são criadas Live Copies do MSM:
@@ -203,14 +203,14 @@ No exemplo anterior, `/content/wknd/language-masters/en` é o site principal glo
 >
 >Os diagramas e descrições nesta seção representam instantâneos de possíveis Live Copies. Eles não são abrangentes, mas fornecem uma visão geral e destacam características específicas.
 
-Inicialmente, ao criar uma Live Copy, as páginas originais selecionadas são refletidas em uma base de um por um na Live Copy. Depois disso, novos recursos (páginas e/ou parágrafos) também podem ser criados diretamente na Live Copy. Portanto, é útil estar ciente dessas variações e de como elas afetam a sincronização. As possíveis composições incluem:
+Inicialmente, ao criar uma Live Copy, as páginas originais selecionadas são refletidas em uma base de 1:1 na Live Copy. Depois disso, novos recursos (páginas e/ou parágrafos) também podem ser criados diretamente na Live Copy. Portanto, é útil estar ciente dessas variações e de como elas afetam a sincronização. As possíveis composições incluem:
 
 * [Live Copy com páginas que não são da Live Copy](#live-copy-with-non-live-copy-pages)
 * [Live Copies aninhadas](#nested-live-copies)
 
 A forma básica da Live Copy contém:
 
-* Páginas de Live Copy que refletem as páginas originais selecionadas em uma base de um por um.
+* Páginas de Live Copy que refletem as páginas originais selecionadas com base em 1:1.
 * Uma definição de configuração.
 * Um relacionamento dinâmico definido para cada recurso:
    * Vincular o recurso de Live Copy ao seu blueprint/origem.
@@ -283,7 +283,7 @@ Uma implantação é a ação central do MSM que sincroniza Live Copies com suas
 Uma configuração de implantação define quando e como uma Live Copy é sincronizada com o conteúdo original. Uma configuração de implantação consiste em um acionador e uma ou mais ações de sincronização:
 
 * **Acionador** - um acionador é um evento que ocasiona a sincronização da ação dinâmica, como a ativação de uma página de origem. O MSM define os acionadores que você pode usar.
-* **Ações de sincronização** - as ações de sincronização são executadas na Live Copy para sincronizá-la com a origem. Exemplos de ações são: copiar o conteúdo, ordenar nós secundários e ativar a página da Live Copy. O MSM fornece várias ações de sincronização.
+* **Ações de sincronização** - as ações de sincronização são executadas na Live Copy para sincronizá-la com a origem. Exemplos de ações são: copiar o conteúdo, ordenar nós filhos e ativar a página da Live Copy. O MSM fornece várias ações de sincronização.
 
 >[!NOTE]
 >

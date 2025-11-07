@@ -4,7 +4,7 @@ description: Usar o plug-in Maven do pacote de conteúdo para implantar aplicati
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
@@ -41,7 +41,7 @@ A AEM as a Cloud Service segue as práticas recomendadas mais recentes para o ge
 
 >[!TIP]
 >
->Consulte o artigo [Estrutura de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) na documentação do AEM as a Cloud Service e da documentação do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR). Ambos são totalmente compatíveis com o AEM 6.5.
+>Consulte o artigo [Estrutura de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) na documentação do AEM as a Cloud Service e da documentação do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Ambos são totalmente compatíveis com o AEM 6.5.
 
 ## Obter o plug-in Maven do pacote de conteúdo {#obtaining-the-content-package-maven-plugin}
 
@@ -97,7 +97,7 @@ Os parâmetros na tabela a seguir são comuns a todas as metas, exceto quando an
 | `failOnError` | `boolean` | Não | `false` | Um valor de `true` causa falha na compilação quando ocorre um erro. Um valor de `false` faz com que a compilação ignore o erro. | Todas as metas exceto `package` |
 | `name` | `String` | `build`: Sim, `install`: Não, `rm`: Sim | `build`: Nenhum padrão, `install`: O valor da propriedade `artifactId` do projeto Maven | O nome do pacote no qual agir | Todas as metas exceto `ls` |
 | `password` | `String` | Sim | `admin` | A senha usada para autenticação com o AEM | Todas as metas exceto `package` |
-| `serverId` | `String` | Não | A ID do servidor da qual recuperar o nome de usuário e a senha para autenticação | Todas as metas exceto `package` |
+| `serverId` | `String` | Não | A ID do servidor da qual recuperar o nome de usuário e a senha para autenticação | Todas as metas exceto `package` |  |
 | `targetURL` | `String` | Sim | `http://localhost:4502/crx/packmgr/service.jsp` | O URL da API de serviço HTTP do gerenciador de pacotes do AEM | Todas as metas exceto `package` |
 | `timeout` | `int` | Não | `5` | O tempo limite da conexão para comunicação com o serviço do gerenciador de pacotes, em segundos | Todas as metas exceto `package` |
 | `useProxy` | `boolean` | Não | `true` | Um valor de `true` faz com que o Maven use a primeira configuração de proxy ativa encontrada para solicitações de proxy para o Gerenciador de pacotes. | Todas as metas exceto `package` |
@@ -215,4 +215,4 @@ O Arquétipo de projeto do AEM mais recente implementa a estrutura do pacote de 
 
 >[!TIP]
 >
->Consulte o artigo [Estrutura de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) na documentação do AEM as a Cloud Service e da documentação do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR). Ambos são totalmente compatíveis com o AEM 6.5.
+>Consulte o artigo [Estrutura de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) na documentação do AEM as a Cloud Service e da documentação do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Ambos são totalmente compatíveis com o AEM 6.5.

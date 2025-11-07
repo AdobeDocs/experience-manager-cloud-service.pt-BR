@@ -4,7 +4,7 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) para
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 1%
@@ -262,7 +262,7 @@ A tabela a seguir descreve os componentes do formulário adaptável e os compone
 | Componente de formulário adaptável | Componente XFA correspondente | Notas |
 |---|---|---|
 | Imagem | Imagem | Os componentes TextDraw e Image, vinculados ou não, sempre aparecem no Documento de registro para um Formulário adaptável baseado em XSD, a menos que sejam excluídos usando as configurações do Documento de registro. |
-| Texto | Texto |
+| Texto | Texto |  |
 
 ### Tabelas {#tables}
 

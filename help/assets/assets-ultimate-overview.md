@@ -4,7 +4,7 @@ description: Saiba mais sobre os principais aspectos do Assets Ultimate, como be
 feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -91,13 +91,13 @@ A tabela a seguir resume os tipos de usuários disponíveis do AEM Assets, os pr
 
 | Função do usuário | Usuários limitados | Usuários do Collaborator | Usuários avançados | Administradores |
 |---------------|----------|----------|-------------------------|---|
-| **Recursos** |
+| **Recursos** |  |  |  |  |
 | Acessar ativos aprovados pela marca no portal do Content Hub | ✓ | ✓ | ✓ | ✓ |
 | Criar e editar ativos usando o Adobe Express e o Firefly integrados | − | ✓ | ✓ | ✓ |
 | Integração de ativos na organização com aplicativos da Adobe e não-Adobe | − | ✓ | ✓ | ✓ |
 | Acesse todos os recursos do AEM Assets, como o gerenciamento de ativos, metadados e a governança e a automação gerais | − | − | ✓ | ✓ |
 | Gerenciar permissões no conteúdo no ambiente de autor do AEM Assets | − | − | − | ✓ |
-| **O usuário precisa estar nesses perfis de produto (Admin Console)** |
+| **O usuário precisa estar nesses perfis de produto (Admin Console)** |  |  |  |  |
 | AEM > Instância de entrega > Usuários limitados da AEM Assets | ✓ | ✓ | ✓ | ✓ |
 | AEM > Instância do autor da produção > Usuários do AEM Assets Collaborator | − | ✓ | − | − |
 | AEM > Instância do autor de produção > Usuários avançados do AEM Assets | − | − | ✓ | − |
