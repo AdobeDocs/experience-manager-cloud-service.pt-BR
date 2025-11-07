@@ -73,7 +73,7 @@ Primeiro, observe a documentação que detalha as ferramentas básicas e comece 
 
 
 * Durante o planejamento, é uma boa ideia ter uma lista de áreas que devem ser refatoradas para serem compatíveis com o AEM as a Cloud Service. Você pode revisar as [Diretrizes de desenvolvimento](/help/implementing/developing/introduction/development-guidelines.md) para obter mais detalhes sobre como refatorar e otimizar o código para o Cloud Service.
-* Leia sobre como [Gerenciar configurações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) no AEM as a Cloud Service.
+* Leia sobre como [Gerenciar configurações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=pt-BR#what-is-a-configuration) no AEM as a Cloud Service.
 * Saiba como configurar um Ambiente de Desenvolvimento Local baixando o [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=pt-BR)
 * Por fim, familiarize-se com a [API Java do AEM as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
@@ -106,8 +106,8 @@ O Adobe fornece várias ferramentas para ajudar a acelerar algumas de suas taref
 
 * [Migração de fluxo de trabalho de ativos](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md), uma ferramenta usada para migrar automaticamente fluxos de trabalho de processamento de ativos
 * O [Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md), uma ferramenta que converte as configurações existentes do Dispatcher em um formato pronto para o AEM as a Cloud Service.
-* [Modernizador de repositório](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html), uma ferramenta que usa um projeto AEM Multimode como entrada e o converte em um AEM as a Cloud Service
-* [Conversor de Índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html), uma ferramenta que converte índices em um formulário compatível com o AEM as a Cloud Service
+* [Modernizador de repositório](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/repo-modernizer.html?lang=pt-BR), uma ferramenta que usa um projeto AEM Multimode como entrada e o converte em um AEM as a Cloud Service
+* [Conversor de Índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/moving/refactoring-tools/index-converter.html?lang=pt-BR), uma ferramenta que converte índices em um formulário compatível com o AEM as a Cloud Service
 * [Ferramentas de Modernização](/help/journey-migration/refactoring-tools/aem-modernization-tools.md), um conjunto de utilitários que podem ser usados para converter recursos herdados do AEM em recursos modernos e compatíveis do AEM as a Cloud Service.
 
 Depois de configurar o ambiente de desenvolvimento local, familiarize-se com o AEM as a Cloud Service SDK consultando a [documentação](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
@@ -134,7 +134,7 @@ Siga as práticas recomendadas nos documentos abaixo relacionados ao teste de qu
 
 A preparação do sistema de origem para migração envolve tarefas de nível de administrador do sistema e do AEM. Você pode começar verificando se o repositório de conteúdo está em um estado bem mantido verificando o status da tarefa [limpeza de revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=pt-BR) e a [coleta de lixo de armazenamento de dados](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=pt-BR). Se você estiver executando a versão 6.3 do AEM (já que a ferramenta Transferência de conteúdo é compatível da versão 6.3 em diante), é recomendável executar a compactação offline, seguida da coleta de Lixo do Data Store.
 
-[A verificação de consistência de dados](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html) é recomendada em todas as versões do AEM para garantir que o repositório de conteúdo esteja em bom estado para iniciar as atividades de migração.
+[A verificação de consistência de dados](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/consistency-check.html?lang=pt-BR) é recomendada em todas as versões do AEM para garantir que o repositório de conteúdo esteja em bom estado para iniciar as atividades de migração.
 
 É necessário acesso em nível de administrador do sistema para instalar e configurar o [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
 

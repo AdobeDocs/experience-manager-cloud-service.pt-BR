@@ -41,7 +41,7 @@ A AEM as a Cloud Service segue as práticas recomendadas mais recentes para o ge
 
 >[!TIP]
 >
->Consulte o artigo [Estrutura de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) na documentação do AEM as a Cloud Service e da documentação do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Ambos são totalmente compatíveis com o AEM 6.5.
+>Consulte o artigo [Estrutura de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) na documentação do AEM as a Cloud Service e da documentação do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR). Ambos são totalmente compatíveis com o AEM 6.5.
 
 ## Obter o plug-in Maven do pacote de conteúdo {#obtaining-the-content-package-maven-plugin}
 
@@ -215,4 +215,4 @@ O Arquétipo de projeto do AEM mais recente implementa a estrutura do pacote de 
 
 >[!TIP]
 >
->Consulte o artigo [Estrutura de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) na documentação do AEM as a Cloud Service e da documentação do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Ambos são totalmente compatíveis com o AEM 6.5.
+>Consulte o artigo [Estrutura de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) na documentação do AEM as a Cloud Service e da documentação do [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR). Ambos são totalmente compatíveis com o AEM 6.5.
