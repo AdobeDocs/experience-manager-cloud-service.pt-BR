@@ -4,9 +4,9 @@ description: O manuseio de estouro de conteúdo no Editor de comunicação inter
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,35 @@ ht-degree: 0%
 ## Introdução
 
 O recurso Manuseio de estouro de conteúdo no Editor de comunicação interativa melhora o comportamento do texto em layouts Fluxados e Posicionados. Ele garante uma continuidade perfeita do conteúdo para layouts fluídos e fornece alertas visuais para layouts posicionados, proporcionando aos autores melhor controle e flexibilidade ao projetar comunicações.
+
+![Localizar IC Doc](/help/forms/interactive-communication/assets/content-overflow.png)
+
+## Como usar a manipulação de estouro de conteúdo no Editor de comunicação interativa
+
+1. Abra o Editor de comunicação interativa
+Abra sua comunicação no Editor IC para começar a editar o layout e o conteúdo.
+
+1. Selecione o tipo de layout
+Escolha o layout desejado para seu subformulário, Fluxos ou Posicionados com base em como você deseja que o conteúdo se comporte.
+
+1. Para Layouts em Fluxo
+
+   1. Certifique-se de que a hierarquia de subformulário pai esteja definida como Fluxos.
+
+   1. No painel Propriedades, ative a opção Permitir quebras de página no conteúdo (visível somente se a opção &quot;Permitir quebras de página&quot; do subformulário pai estiver ativada).
+
+   1. Adicionar ou colar texto, quando o conteúdo exceder uma página, ele continuará automaticamente na próxima página.
+
+1. Para layouts posicionados
+
+   1. Adicionar ou editar texto dentro de um contêiner fixo.
+
+   1. Se o conteúdo exceder a altura do contêiner, uma borda vermelha aparecerá na parte inferior para indicar o excesso.
+
+   1. Redimensionar manualmente o container para acomodar o conteúdo extra.
+
+1. Visualizar a comunicação
+Use a opção Visualização do PDF para verificar como o conteúdo flui ou transborda entre páginas para ambos os tipos de layout.
 
 ## Principais recursos
 

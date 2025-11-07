@@ -1,10 +1,10 @@
 ---
-title: Objeto de campo numérico no Editor de comunicação interativa
-description: Objeto de campo numérico no Editor de comunicação interativa no AEM Forms para permitir que os autores coletem entradas numéricas dos usuários em um formato controlado.
+title: Componente de campo numérico no editor de comunicação interativa
+description: Componente de campo numérico no Editor de comunicação interativa no AEM Forms para permitir que os autores coletem entradas numéricas dos usuários em um formato controlado.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Objeto de campo numérico no Editor de comunicação interativa
+# Componente de campo numérico no editor de comunicação interativa
 
 >[!NOTE]
 >
@@ -130,6 +130,6 @@ Os autores podem colocar campos numéricos dentro de contêineres ou subformulá
 
 - Mantenha a aparência e a tipografia consistentes para corresponder às diretrizes da marca.
 
-O objeto **Campo Numérico** no editor de Comunicação Interativa é uma ferramenta precisa e confiável para coleta de dados baseada em dígitos. Com formatação robusta, controles de visibilidade e opções de vinculação de dados, ele garante que as entradas numéricas sejam capturadas de forma limpa e perfeitamente integradas a formulários digitais. Quando estilizado e configurado corretamente, ele melhora significativamente a usabilidade do formulário e a precisão geral dos dados.
+O componente **Campo Numérico** no editor de Comunicação Interativa é uma ferramenta precisa e confiável para coleta de dados baseada em dígitos. Com formatação robusta, controles de visibilidade e opções de vinculação de dados, ele garante que as entradas numéricas sejam capturadas de forma limpa e perfeitamente integradas a formulários digitais. Quando estilizado e configurado corretamente, ele melhora significativamente a usabilidade do formulário e a precisão geral dos dados.
 
 

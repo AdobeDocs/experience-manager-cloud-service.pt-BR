@@ -4,9 +4,9 @@ description: O Bloqueio de modelo no Editor de comunicação interativa fornece 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ ht-degree: 0%
 O recurso Bloqueio de modelo no Editor de IC (comunicação interativa) permite que os autores de modelo restrinjam modificações a elementos específicos de um modelo de comunicação. Isso garante a consistência do design, protege o conteúdo essencial e fiscaliza o controle em equipes que reutilizam modelos para criar comunicações personalizadas.
 
 Quando aplicados, os componentes bloqueados aparecem visualmente distintos e não podem ser modificados por autores downstream ou colaboradores, dependendo do tipo de bloqueio definido. Esse recurso ajuda a manter os padrões da marca, a integridade dos dados e a uniformidade do layout em todas as comunicações derivadas.
+
+![Localizar IC Doc](/help/forms/interactive-communication/assets/template-lock.png)
 
 ## &#x200B;2. Tipos de bloqueio
 
@@ -56,15 +58,29 @@ Quando aplicados, os autores não podem:
 
 - Redimensionar a largura ou a altura do elemento
 
-## &#x200B;3. Comportamento nas comunicações derivadas
+## &#x200B;3. Como usar o bloqueio de modelo no Editor de comunicação interativa
 
-- Quando uma comunicação é criada a partir de um modelo bloqueado, os elementos bloqueados aparecem como somente leitura no Editor IC para autores de comunicação.
+Siga as etapas abaixo para aplicar os Bloqueios de conteúdo ou layout no modelo de IC (Comunicação interativa):
 
-- Componentes com bloqueio de conteúdo não podem ter suas propriedades internas ou associações alteradas.
+1. Abra o seu modelo
+Abra ou crie um Modelo, siga o guia [Criar um Modelo de Comunicação Interativa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
-- Componentes com bloqueio de layout não podem ser movidos ou redimensionados.
+1. Selecione o componente
+Clique no componente (caixa de texto, imagem ou subformulário) que deseja restringir.
 
-Isso permite que os criadores de modelos mantenham o controle sobre o design e a estrutura e, ao mesmo tempo, permitam que outros usuários se concentrem em conteúdo variável e personalização orientada por dados.
+1. Opções de Bloqueio de Acesso
+No painel Propriedades, vá para a seção Bloqueio.
+
+1. Aplicar Bloqueios
+
+   1. Bloqueio de conteúdo: impede edições de texto, estilo e dados.
+
+   1. Bloqueio de layout: restringe a movimentação e o redimensionamento.
+
+   1. Você pode ativar ambos para proteção total.
+
+1. Salvar e verificar
+Salve o template e crie uma nova IC baseada nele para confirmar que os elementos bloqueados não podem ser modificados.
 
 ## &#x200B;4. Práticas recomendadas
 

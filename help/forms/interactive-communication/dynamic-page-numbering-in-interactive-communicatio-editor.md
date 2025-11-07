@@ -4,9 +4,9 @@ description: A Numeração dinâmica de páginas no Editor de comunicação inte
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,25 @@ ht-degree: 0%
 ## Introdução
 
 O recurso de Numeração dinâmica de páginas na Comunicação interativa (IC) permite que os autores exibam automaticamente números de página na saída do PDF. A numeração de páginas pode ser ativada no nível da página principal, garantindo uma numeração consistente em todas as páginas de design associadas. Isso ajuda a manter um rastreamento de página claro e um layout profissional em comunicações de várias páginas.
+
+![Localizar IC Doc](/help/forms/interactive-communication/assets/dynamic-page.png)
+
+## Como usar a numeração dinâmica de páginas no editor de comunicação interativa
+
+1. Abra o Editor de comunicação interativa
+Abra o projeto Comunicação interativa no Editor IC.
+
+1. Ir para página mestra
+A numeração de páginas pode ser habilitada somente na Página Mestra. Navegue até a página-mestre da sua comunicação.
+
+1. Ativar numeração de páginas
+No painel Propriedades, ative a opção Habilitar número de página. Isso adiciona automaticamente números de página a todas as páginas associadas.
+
+1. Personalizar posicionamento
+O componente Número de página pode ser colocado em qualquer lugar na tela depois de ser solto e personalizado livremente usando propriedades de texto padrão.
+
+1. Visualizar no PDF
+Os números de página são exibidos somente durante a visualização do PDF, exibindo a numeração dinâmica em cada página.
 
 ## Principais recursos
 

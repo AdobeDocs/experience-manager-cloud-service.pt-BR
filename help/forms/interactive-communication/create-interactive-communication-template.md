@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Os Modelos de comunicação interativa no AEM permitem que os usuários definam 
 
 ## Criar um modelo de comunicação interativa
 
-Para criar um fragmento de comunicação interativa, execute as seguintes etapas:
+Para criar um modelo de comunicação interativa, execute as seguintes etapas:
 
 1. Abra sua **instância do Forms as a Cloud Service do Adobe Experience Manager (AEM)**.
 
