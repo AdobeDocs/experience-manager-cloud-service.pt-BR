@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
+source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 9%
+source-wordcount: '1871'
+ht-degree: 8%
 
 ---
 
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -76,7 +76,19 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 **Editor Universal para Forms Adaptável e Fragmentos de Formulário**
 
-O Editor universal agora oferece uma experiência de criação unificada para criar Forms adaptável e fragmentos de formulário reutilizáveis. Os autores podem projetar formulários visualmente, configurar ações de envio e integrar a validação do reCAPTCHA em um ambiente intuitivo do WYSIWYG.
+O Editor universal agora oferece uma experiência de criação unificada para criar Forms adaptável e fragmentos de formulário reutilizáveis. Os autores podem criar formulários visualmente em um ambiente intuitivo do WYSIWYG, aproveitando extensões poderosas e recursos abrangentes de envio. O editor integra a validação do reCAPTCHA para maior segurança, fornece serviços de pré-preenchimento para reduzir a entrada manual e oferece suporte a design responsivo em todos os dispositivos.
+
+**Extensões Disponíveis:**
+
+* **Editor de regras**: o editor visual de regras permite que os autores de formulários adicionem comportamento dinâmico a campos de formulário sem codificação, suporte a regras orientadas por eventos, validação instantânea e tratamento de erros.
+* **Propriedades do formulário**: um assistente para ajudar os usuários a configurar ações de envio, serviço de preenchimento prévio, mensagem de agradecimento e outros comportamentos relacionados a formulários diretamente no editor.
+* **Source de Dados de Formulário e Referência de Ligação**: a extensão da fonte de dados permite que os autores de formulários adicionem componentes associados a um modelo de dados diretamente em um Formulário adaptável e selecione uma Referência de Ligação de uma seleção de árvore para todos os componentes.
+
+**Ações de Envio com Suporte:**
+
+O Editor universal oferece suporte a uma ampla variedade de fluxos de trabalho de envio, incluindo Ação de envio personalizada, Enviar para o Microsoft SharePoint, Enviar para o Microsoft OneDrive, Enviar para o Azure Blob Storage, Enviar para o endpoint REST, Chamar um fluxo de trabalho do AEM, Chamar um fluxo do Power Automate, Enviar para o Marketo Engage, Enviar para o Adobe Experience Platform (AEP), Enviar para planilha, Enviar usando o Modelo de dados de formulário (FDM), Enviar para o Workfront Fusion e Enviar email.
+
+Para obter detalhes completos, consulte a documentação do [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md). Para obter informações sobre como configurar ações de envio, consulte [Ação de envio do formulário adaptável](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 <!-- ### Pre-Release features in AEM Forms 
 
@@ -272,11 +284,11 @@ Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe
 
 ### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
