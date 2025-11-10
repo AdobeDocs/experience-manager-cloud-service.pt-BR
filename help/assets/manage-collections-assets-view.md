@@ -4,10 +4,10 @@ description: Uma coleção é um conjunto de ativos na exibição do Experience 
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 90%
+source-wordcount: '1084'
+ht-degree: 76%
 
 ---
 
@@ -37,6 +37,8 @@ Você pode executar as seguintes tarefas para gerenciar e usar coleções:
 * [Adicionar ativos a uma coleção](#add-assets-to-collection)
 
 * [Remover ativos de uma coleção](#remove-assets-from-collection)
+
+* [Pesquisar em coleções](#search-collection)
 
 * [Criar uma coleção inteligente](#create-smart-collection)
 
@@ -93,6 +95,32 @@ Para remover ativos de uma coleção:
 1. Clique na coleção e selecione os ativos que precisam ser removidos dela.
 
 1. Clique em **[!UICONTROL Remover]**.
+
+## Pesquisar em coleções {#search-collection}
+
+Você pode pesquisar em uma coleção para encontrar facilmente ativos relevantes. Para fazer isso, execute as seguintes etapas:
+
+* Navegue até **[!DNL Collections]**. Na barra de pesquisa, digite uma palavra-chave para localizar a coleção desejada. A barra de pesquisa exibe a localização da coleção selecionada.
+
+* Para refinar os resultados da pesquisa, abra **[!DNL Filters]** e verifique se **[!DNL Collections]** está selecionado em **[!DNL Asset Type]**.
+
+* Na lista suspensa **[!DNL Collection Visibility]**, escolha uma das seguintes opções:
+
+   * **[!DNL All]:** Exibe todas as coleções, independentemente da visibilidade.
+   * **[!DNL Public Collection]:** Mostra somente coleções que estão visíveis para todos os usuários.
+   * **[!DNL Private Collection]:** Mostra somente coleções que estão restritas ou visíveis para usuários ou grupos específicos.
+
+* Na lista suspensa [!DNL Collection Type], escolha uma das seguintes opções:
+
+   * **[!DNL All]:** Exibe coleções regulares e inteligentes.
+   * **[!DNL Collection]:** Mostra as coleções criadas manualmente em que os ativos são adicionados individualmente.
+   * **[!DNL Smart Collection]:** Mostra as coleções que incluem automaticamente ativos salvos em [Coleções inteligentes](#manage-smart-collection).
+
+* A lista suspensa **[!DNL Created Date]** permite filtrar coleções com base em quando elas foram criadas. Você pode especificar um intervalo de datas para localizar coleções criadas recentemente ou mais antigas.
+
+  ![Pesquisar coleção](assets/search-collection.png)
+
+Para obter mais informações, consulte [pesquisar ativos](search-assets-view.md), [filtrar resultados da pesquisa](search-assets-view.md#refine-search-results) ou [gerenciar pesquisas salvas](search-assets-view.md##saved-search).
 
 ## Gerenciar uma coleção inteligente {#manage-smart-collection}
 
@@ -192,15 +220,15 @@ Para excluir uma coleção:
 
 ## Gerenciar permissões para uma coleção privada{#manage-permissions-private-collection}
 
-Você pode permitir que administradores gerenciem os [níveis de acesso](https://experienceleague.adobe.com/pt-br/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) de coleções privadas disponíveis no repositório. É possível atribuir permissões como `Can View` e `Can Edit` a usuários ou a grupos de usuários. Você também pode delegar privilégios de gerenciamento de permissões a grupos de usuários. Usuários que criam coleções privadas são os proprietários dessas coleções. É possível usar a ação [!UICONTROL Gerenciar permissões] para conceder acesso a outras pessoas. Além disso, os administradores podem visualizar e gerenciar permissões das coleções privadas no repositório [!DNL Experience Manager].
+Você pode permitir que administradores gerenciem os [níveis de acesso](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) de coleções privadas disponíveis no repositório. É possível atribuir permissões como `Can View` e `Can Edit` a usuários ou a grupos de usuários. Você também pode delegar privilégios de gerenciamento de permissões a grupos de usuários. Usuários que criam coleções privadas são os proprietários dessas coleções. É possível usar a ação [!UICONTROL Gerenciar permissões] para conceder acesso a outras pessoas. Além disso, os administradores podem visualizar e gerenciar permissões das coleções privadas no repositório [!DNL Experience Manager].
 <!--
 >[!NOTE]
 >
 >Adobe does not recommend to assign permissions to users.
 -->
-Para mais informações sobre como atribuir as permissões disponíveis a grupos de usuários, consulte [Adicionar permissões a grupos de usuários](https://experienceleague.adobe.com/pt-br/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Para mais informações sobre como atribuir as permissões disponíveis a grupos de usuários, consulte [Adicionar permissões a grupos de usuários](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
-Para mais informações sobre o fluxo de trabalho completo, consulte [gerenciar permissões](https://experienceleague.adobe.com/pt-br/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Para mais informações sobre o fluxo de trabalho completo, consulte [gerenciar permissões](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Próximas etapas {#next-steps}
 
