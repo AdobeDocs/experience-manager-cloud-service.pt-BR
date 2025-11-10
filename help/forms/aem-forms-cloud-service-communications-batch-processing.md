@@ -4,9 +4,9 @@ description: Como criar comunicações personalizadas e orientadas à marca?
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1710'
 ht-degree: 2%
 
 ---
@@ -181,3 +181,4 @@ A documentação de referência da API fornece informações detalhadas sobre to
 >* [Arquitetura do AEM Forms as a Cloud Service para APIs de comunicação e Forms adaptável](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Processamento da comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Processamento de comunicação - APIs por demanda](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
