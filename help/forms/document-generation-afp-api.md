@@ -4,9 +4,9 @@ description: Saiba como usar a API de sincronização de saída AFP para recuper
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '253'
 ht-degree: 10%
 
 ---
@@ -39,12 +39,12 @@ Gera um arquivo AFP (Advanced Function Presentation) usando um modelo XDP e dado
 
 ### Autorização
 
-Você pode usar **BasicAuth** (credenciais de administrador) para ambientes locais ou a autorização **BearerAuth** para instâncias da AEM Cloud.
+Você pode usar o **BasicAuth** (credenciais de administrador) para ambientes locais ou a autorização **OAuth Server-to-Server** para instâncias da AEM Cloud.
 
 ### Solicitação
 
 **Ponto de extremidade:**
-`POST http://<server>:<port>/adobe/forms/document/generate/afp`
+[https://[publish-url].adobeaemcloud.com/adobe/forms/doc/v1/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post)
 
 ### Cabeçalhos
 
