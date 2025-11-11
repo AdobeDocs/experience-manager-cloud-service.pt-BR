@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: f9a767e3d5ae33cd46dc100c2ee59ec9ce8f63ac
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 2%
@@ -109,7 +109,7 @@ Conforme mencionado na seção [Variações de solicitações de conteúdo do Cl
 ### Técnicas de implementação para gerenciar solicitações de conteúdo {#implementation-techniques-to-manage-crs}
 
 * Certifique-se de que todas as respostas de Página não encontrada sejam entregues com o status HTTP 404.  Se forem retornados com um status 200, eles serão contabilizados nas solicitações de conteúdo.
-* Rotear a verificação de integridade ou as ferramentas de monitoramento para o URL /systems/probes/health, ou usar o método HEAD em vez do GET para evitar a ocorrência de solicitações de conteúdo.
+* Rotear a verificação de integridade ou as ferramentas de monitoramento para o URL /system/probes/health ou usar o método HEAD em vez do GET para evitar a ocorrência de solicitações de conteúdo.
 * Equilibre suas necessidades de atualização de conteúdo com o custo de licença da AEM para qualquer rastreador de pesquisa personalizado que você integrou ao seu site.  Um rastreador excessivamente agressivo pode consumir muitas solicitações de conteúdo.
 * Procure qualquer redirecionamento no lado do servidor (status 301 ou 302) em vez de no lado do cliente (status 200 com redirecionamento do javascript) para evitar duas solicitações de conteúdo separadas.
 * Combine ou reduza chamadas de API, que são respostas JSON do AEM que podem ser carregadas para renderizar a página.
