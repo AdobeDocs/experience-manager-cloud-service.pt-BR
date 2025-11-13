@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para estender os recursos d
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,6 @@ Como um serviço do Adobe Experience Cloud, a interface do usuário do Editor un
 * **[Extensão do Administrador do Site do AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: abra o Console Sites no local da página no Editor Universal
 * **[Extensão de Bloqueio de Página do AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: exibir e alterar o status de bloqueio de página do Editor Universal
 * **[Extensão de Fluxos de Trabalho do AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: iniciar fluxos de trabalho na página e conteúdo da página do Editor Universal
-* **[Extensão de Logon de Desenvolvimento do AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: autenticar facilmente em seu AEM SDK local ao desenvolver localmente
 * **[Gerar variações](/help/generative-ai/generate-variations-integrated-editor.md)**: use a inteligência artificial (AI) geradora para criar variações para o seu conteúdo diretamente no painel de propriedades.
 * **[Seletor de produto do AEM para Universal Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: integre dados do Adobe Commerce selecionando ou removendo dados do produto do editor.
 * **[Rascunhos de Conteúdo do Editor Universal](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: crie, edite e gerencie vários rascunhos de conteúdo.
@@ -51,7 +50,7 @@ Se quiser explorar as possibilidades de criar suas próprias extensões, consult
 
 >[!TIP]
 >
->Se preferir aprender por exemplo, consulte o [tutorial de extensibilidade da interface do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
+>Se preferir aprender por exemplo, consulte o [tutorial de extensibilidade da interface do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
 
 [Usando o Extension Manager no AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), você pode habilitar ou desabilitar suas extensões por instância, acessar extensões primárias do Adobe, inclusive as do Universal Editor, e muito mais.
 

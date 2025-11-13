@@ -4,9 +4,9 @@ description: Saiba como executar seu próprio Universal Editor Service para dese
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '981'
 ht-degree: 2%
 
 ---
@@ -160,5 +160,7 @@ Com o [Serviço do Editor Universal sendo executado localmente](#running-ue) e s
 
 1. Abra o navegador no `https://localhost:8000/ping`.
 1. Direcione o navegador para aceitar [seu certificado autoassinado](#ue-https).
-1. Quando o certificado autoassinado for confiável, você poderá editar a página usando o Serviço do Editor Universal local.
+1. Quando o certificado autoassinado for confiável, a página será carregada usando o Universal Editor Service local.
+1. Clique no [Logon de desenvolvedor local](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) na barra de ferramentas e autentique na sua instância do AEM local.
 
+Agora é possível editar páginas na instância de teste local do AEM usando o Universal Editor Service local.

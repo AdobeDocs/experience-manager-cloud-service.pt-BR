@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 437b9bdf48fc8235ef90cac4a38c2a0b41f89a8f
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1847'
 ht-degree: 17%
 
 ---
@@ -78,7 +78,7 @@ A barra de navegação superior do Experience Platform está sempre presente na 
 
 ![O cabeçalho da Experience Cloud](assets/experience-cloud-header.png)
 
-Para obter detalhes sobre a barra de navegação superior do Experience Platform, consulte o [guia da interface do usuário do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Para obter detalhes sobre a barra de navegação superior do Experience Platform, consulte o [guia da interface do usuário do Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Conta {#user-properties}
 
@@ -142,6 +142,12 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 Selecione o ícone de cabeçalhos de autenticação se precisar [definir um cabeçalho de autenticação personalizado para fins de desenvolvimento local](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Botão de configurações do cabeçalho de autenticação](assets/authentication-header-settings.png)
+
+#### Logon do desenvolvedor local {#local-developer-login}
+
+Selecione o ícone de login de desenvolvedor local se precisar autenticar facilmente no seu SDK do AEM local [durante o desenvolvimento local.](/help/implementing/universal-editor/local-dev.md)
+
+![Botão de logon de desenvolvedor local](assets/local-developer-login.png)
 
 #### Modo responsivo {#emulator}
 

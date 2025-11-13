@@ -3,9 +3,9 @@ title: Notas de versão de visualização do Universal Editor
 description: Estas são as notas de versão da versão de pré-visualização do Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
+source-git-commit: 87c0288356fd561dd15249e3da08850f7c5d031a
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Notas de versão de visualização do Universal Editor {#preview}
 
-Estas são as notas de versão da **versão de visualização** do Editor Universal. Estes recursos estão disponíveis atualmente no **ambiente de visualização** do Editor Universal. Esses recursos estão programados para serem lançados para disponibilização geral em 13 de novembro de 2025.
+Estas são as notas de versão da **versão de visualização** do Editor Universal. Estes recursos estão disponíveis atualmente no **ambiente de visualização** do Editor Universal. Esses recursos estão programados para serem lançados para disponibilização geral em 20 de novembro de 2025.
 
 Estas notas de versão do **preview** são fornecidas como conveniência, para que você saiba quais alterações do Universal Editor estão por vir e possa testá-las [alternando para o ambiente de visualização.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,12 +27,11 @@ Estas notas de versão do **preview** são fornecidas como conveniência, para q
 
 ## Novos recursos futuros {#what-is-new}
 
-* O menu contextual no cabeçalho do painel e no painel direito foi aprimorado.
-* os esquemas json agora são entregues para validação.
-* O logon do AEM do desenvolvedor agora é uma parte principal do Universal Editor e a extensão não é mais necessária.
+* As Notificações do Sistema foram migradas para uma nova interface do usuário.
 
 ## Aprimoramentos futuros {#other-improvements}
 
-* A forma como a árvore de estrutura se expande automaticamente por padrão foi ajustada.
-* Uma largura específica para o para o menu contextual foi adicionada.
-* Falhas do Serviço do Editor Universal devido a determinados `null` valores foram corrigidas.
+* O manuseio de valores de RTE foi simplificado.
+* Uma condição rara de corrida da barra de ferramentas foi resolvida.
+* Os interruptores de recursos não utilizados foram removidos.
+* As dependências foram atualizadas.

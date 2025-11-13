@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2025.11.06
-description: Estas são as notas de versão do Universal Editor de 2025.11.06.
+title: Notas de versão do Universal Editor 2025.11.13
+description: Estas são as notas de versão do Universal Editor de 2025.11.13.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
+source-git-commit: 87c0288356fd561dd15249e3da08850f7c5d031a
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 
-# Notas de versão do Universal Editor 2025.11.06 {#release-notes}
+# Notas de versão do Universal Editor 2025.11.13 {#release-notes}
 
-Estas são as notas de versão da versão de 6 de novembro de 2025 do Universal Editor.
+Estas são as notas de versão da versão de 13 de novembro de 2025 do Universal Editor.
 
 >[!TIP]
 >
@@ -23,6 +23,14 @@ Estas são as notas de versão da versão de 6 de novembro de 2025 do Universal 
 >[!TIP]
 >
 >Para obter as notas de versão atuais do Adobe Experience Manager as a Cloud Service, consulte [esta página](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
+## Novidades {#what-is-new}
+
+* As ações contextuais foram movidas para menus suspensos.
+* os esquemas json agora são entregues para validação.
+* [O logon de desenvolvedor local](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) agora é uma parte principal do Editor Universal e a extensão não é mais necessária.
+* O painel direito foi migrado para uma nova interface.
+* Os itens na árvore de conteúdo agora se expandem automaticamente.
 
 ## Recursos da adoção antecipada {#early-adopter}
 
@@ -34,12 +42,5 @@ O novo RTE do ProseMirror, com um seletor de páginas na caixa de diálogo de li
 
 ## Outras melhorias {#other-improvements}
 
-* `og:title` campos de metadados agora podem ser excluídos corretamente.
-* Correção de um problema de navegação quando um usuário edita a barra de localização no editor do navegador de modo que essas alterações sejam refletidas corretamente e o editor e/ou aplicativo agora navega para a URL solicitada.
-* A resolução do modelo de campo foi corrigida e o editor usa o modelo do componente, se presente.
-* O componentId agora está incluído na ação /add.
-* A capacidade de excluir algumas propriedades de metadados que anteriormente não podiam ser removidas foi corrigida.
-* A busca bruta agora é condicionalmente feita para xwalk quando não está definida pelo plug-in do AEM.
-* O manuseio do MSM de fragmento de conteúdo com RTE foi corrigido.
-* O realce de imagem em uma imagem agora é compatível.
-
+* Uma largura específica para o para o menu contextual foi adicionada.
+* Falhas do Serviço do Editor Universal devido a determinados `null` valores foram corrigidas.
