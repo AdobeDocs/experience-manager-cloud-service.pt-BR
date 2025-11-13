@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5474d0c4295cf8eb576cc416589727c67ffafac7
+source-git-commit: 39993d115d58d9dfe1f9328c5ceba0d30a78569d
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 9%
+source-wordcount: '1213'
+ht-degree: 8%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 9%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 23320 {#23320}
+## Versão 23385 {#23385}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 23320, lançada publicamente em quinta-feira, 12 de novembro de 2025. A versão de manutenção anterior era 22943.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 23385, lançada publicamente em sexta-feira, 13 de novembro de 2025. A versão de manutenção anterior era 22943.
 
-A ativação de recursos do 2025.11.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.11.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 >[!NOTE]
 >
->A versão 23122 foi tornada privada em 3 de novembro.
+>As versões 23320 e 23122 foram tornadas privadas.
 
-### Aprimoramentos {#enhancements-23320}
+### Aprimoramentos {#enhancements-23385}
 
 * CQ-4361363: traduções mais recentes do AEM e Granite.
 * FORMS-21594: Ativar o bloqueio de conteúdo e layout de modelo de comunicações interativas para autores de conteúdo.
@@ -61,7 +61,7 @@ A ativação de recursos do 2025.11.0 fornecerá o conjunto completo de recursos
 * SKYOPS-118390: Atualize o recurso JCR para 3.3.6.
 * SKYOPS-121082: atualização de versões de `org.apache.sling.discovery.standalone`, `org.apache.sling.jcr.packageinit` e `org.apache.sling.commons.fsclassloader` conjuntos de sling.
 
-### Problemas corrigidos {#fixed-issues-23320}
+### Problemas corrigidos {#fixed-issues-23385}
 
 * ASSETS-58926: Corrigir o recurso de miniatura de alteração de vídeo no DM.
 * ASSETS-58623: Corrija o npe no omnisearch quando a configuração existir.
@@ -88,35 +88,36 @@ A ativação de recursos do 2025.11.0 fornecerá o conjunto completo de recursos
 * SITES-35409: correção de um erro que impedia a republicação de fragmentos ajustados ao mover uma página.
 * SITES-15757: correção de um erro que impedia a republicação de páginas ajustadas ao mover uma página.
 * SITES-34638: correção de um erro em que as propriedades de páginas avô não eram incluídas ao criar novas versões.
+* SITES-35226: correção de uma regressão que fazia com que o seletor de ativos no editor de páginas falhasse no carregamento em determinadas circunstâncias.
 * SITES-35071: a exportação de CSV retorna resultados não filtrados quando o omnisearch usa a frase entre aspas.
 * SITES-32182: Edge Delivery com Universal Editor - corrija problemas de codificação com URLs que contêm parâmetros de solicitação já codificados.
 * SITES-34324: Edge Delivery com Universal Editor - corrija a renderização de links com um protocolo tel:.
 * SITES-35333: Edge Delivery com Universal Editor - corrija a seleção de representação de ativos para imagens nos metadados da página.
 * SITES-35549: Edge Delivery com Universal Editor - corrija entidades html de codificação dupla nos metadados da página.
 
-#### Guias do AEM {#guides-23320}
+#### Guias do AEM {#guides-23385}
 
 * GUIDES-33597: Se um elemento `prop` vazio sem atributos ou valores for adicionado a um arquivo DITAVAL, não será possível adicionar outros elementos `prop`.
 * GUIDES-33693: Ao fazer upload de uma imagem editada novamente por meio da interface do usuário do Experience Manager Guides, a representação original da imagem é atualizada, mas o conteúdo DITA associado continua a exibir a versão anterior da imagem.
 * GUIDES-35607: Logs de erro gerados ao carregar um ativo por meio da interface do Assets ou ao criar um novo arquivo a partir da interface do Editor. Use incorretamente o termo `predecessor` em vez de `successor` na mensagem de log.
 * GUIDES-37649: Ao publicar um mapa DITA usando a linha de base no AEM Sites (com mapeamento de componente herdado), os elementos do mapa com o atributo `processing-role = resource-only` também são publicados.
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 
-### Problemas conhecidos {#known-issues-23320}
+### Problemas conhecidos {#known-issues-23385}
 
 * FORMS-22633: Os envios de formulários podem falhar quando um código personalizado que depende das APIs do GuideBridge (`getData` ou `getDataXML`) estiver sendo usado. Se você enfrentar esse problema, entre em contato com o Suporte da Adobe para obter assistência.
 
-### Recursos e APIs obsoletos {#deprecated-23320}
+### Recursos e APIs obsoletos {#deprecated-23385}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-23320}
+### Correções de segurança {#security-23385}
 
 A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda 31 vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
 
-### Tecnologias integradas {#embedded-tech-23320}
+### Tecnologias integradas {#embedded-tech-23385}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
@@ -125,4 +126,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.30.2 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
