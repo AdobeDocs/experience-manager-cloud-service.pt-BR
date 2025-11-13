@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c58e4645ddc9390728d6ac5cf92588caaeffae01
+source-git-commit: 5474d0c4295cf8eb576cc416589727c67ffafac7
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1195'
 ht-degree: 9%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 23320, lançada publicamente em quinta-feira, 12 de novembro de 2025. A versão de manutenção anterior era 22943.
 
-A ativação de recursos do 2025.11.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.11.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 >[!NOTE]
 >
@@ -101,12 +101,12 @@ A ativação de recursos do 2025.11.0 fornecerá o conjunto completo de recursos
 * GUIDES-35607: Logs de erro gerados ao carregar um ativo por meio da interface do Assets ou ao criar um novo arquivo a partir da interface do Editor. Use incorretamente o termo `predecessor` em vez de `successor` na mensagem de log.
 * GUIDES-37649: Ao publicar um mapa DITA usando a linha de base no AEM Sites (com mapeamento de componente herdado), os elementos do mapa com o atributo `processing-role = resource-only` também são publicados.
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 
 ### Problemas conhecidos {#known-issues-23320}
 
-Nenhum.
+* FORMS-22633: Os envios de formulários podem falhar quando um código personalizado que depende das APIs do GuideBridge (`getData` ou `getDataXML`) estiver sendo usado. Se você enfrentar esse problema, entre em contato com o Suporte da Adobe para obter assistência.
 
 ### Recursos e APIs obsoletos {#deprecated-23320}
 
@@ -125,4 +125,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.30.2 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
