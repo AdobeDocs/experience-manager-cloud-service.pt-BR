@@ -85,7 +85,7 @@ Se você quiser apenas restaurar os dados que foram perdidos, danificados ou aci
 
    ![Restaurando a ativação](/help/operations/assets/restore-previous-code-deployed-restoring.png)
 
-1. Próximo ao canto superior direito da página, clique no ícone ![Sino ou Ícone Notificações ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notificações** para descobrir quando a restauração começa e termina.
+1. Próximo ao canto superior direito da página, clique no ícone ![Sino ou Ícone Notificações &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notificações** para descobrir quando a restauração começa e termina.
 
    ![Restaurar notificações de código anteriores ao iniciar a restauração e quando a restauração for concluída](/help/operations/assets/restore-previous-code-notifications.png)
    *Notificações para um trabalho de restauração de código anterior.*
