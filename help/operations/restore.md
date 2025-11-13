@@ -4,10 +4,10 @@ description: Saiba como restaurar conteúdo do backup no AEM as a Cloud Service 
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 23%
+source-wordcount: '1358'
+ht-degree: 24%
 
 ---
 
@@ -16,11 +16,13 @@ ht-degree: 23%
 
 Você pode restaurar o conteúdo do AEM as a Cloud Service a partir do backup usando o Cloud Manager.
 
-## Visão geral {#overview}
+
 
 O processo de restauração de autoatendimento do Cloud Manager copia dados de backups de sistema da Adobe e os restaura em seu ambiente original. Uma restauração é executada para retornar dados que foram perdidos, danificados ou acidentalmente excluídos à sua condição original.
 
-O processo de restauração afeta apenas o conteúdo, deixando o código e a versão do AEM inalterados. Você pode iniciar uma operação de restauração de ambientes individuais a qualquer momento. (Se você precisar restaurar o código-fonte implantado anteriormente de maneira fácil e rápida, sem precisar iniciar uma nova execução de pipeline, poderá usar [Restaurar o Código Anterior Implantado](/help/operations/restore-previous-code-deployed.md)).
+O processo de restauração afeta apenas o conteúdo, deixando o código e a versão do AEM inalterados. Você pode iniciar uma operação de restauração de ambientes individuais a qualquer momento.
+
+Se você precisar restaurar o código-fonte implantado anteriormente de maneira fácil e rápida, sem precisar iniciar uma nova execução de pipeline, poderá usar [Restaurar o Código Anterior Implantado](/help/operations/restore-previous-code-deployed.md).
 
 O Cloud Manager fornece dois tipos de backups, a partir dos quais você pode restaurar o conteúdo.
 

@@ -3,24 +3,27 @@ title: Restaure o código Source anterior implantado
 description: Saiba como restaurar um ambiente para sua última compilação bem-sucedida &ndash; nenhuma execução de pipeline é necessária.
 feature: Operations
 role: Admin
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 7968668766ae4c8a966bbde93aa2f2ac0c401659
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '578'
 ht-degree: 3%
 
 ---
 
 # Restaurar o código-fonte anterior implantado no AEM as a Cloud Service {#restore-previous-code-deployed}
 
+<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+
 >[!NOTE]
 >
->O recurso descrito neste artigo só está disponível por meio do programa beta. Para se inscrever no beta, consulte [Reversão de um clique para implantações de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
 
 Use **Restaurar o código anterior implantado** para reverter um ambiente instantaneamente para sua última compilação bem-sucedida; não é necessária a execução do pipeline.
 
 Você simplesmente abre o menu ![Mais ícone ou o ícone do menu de reticências](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) do ambiente selecionado e escolhe **Restaurar** > **Código anterior implantado** para reverter o código-fonte implantado mais recentemente em segundos.
+
+Consulte também [Restaurar conteúdo no AEM as a Cloud Service](/help/operations/restore.md).
 
 >[!TIP]
 >
@@ -32,7 +35,7 @@ Você simplesmente abre o menu ![Mais ícone ou o ícone do menu de reticências
 
 * Somente uma restauração é permitida por execução bem-sucedida do pipeline; para restaurar novamente, conclua outra execução bem-sucedida do pipeline.
 * Você tem **permissões de Criação** de Restauração de Ambiente. Para obter detalhes sobre o gerenciamento de permissões, consulte [Permissões personalizadas](/help/implementing/cloud-manager/custom-permissions.md).
-* Sua organização está inscrita no programa beta e o sinalizador de recurso está ativado.
+* O sinalizador de recurso que protege esse recurso está habilitado (ativado).
 * O programa é executado no AEM as a Cloud Service.
 * O último pipeline para esse ambiente foi concluído com êxito e executado há **menos de 30 dias**.
 * O status do ambiente é *Em execução* e nenhum pipeline está em andamento.
@@ -41,7 +44,7 @@ Você simplesmente abre o menu ![Mais ícone ou o ícone do menu de reticências
 
 >[!IMPORTANT]
 >
->A Adobe recomenda validar o procedimento em `Stage` *antes* usando-o em `Production` para reduzir riscos e garantir estabilidade.
+>Para ser usado pela primeira vez, a Adobe recomenda validar o procedimento em `Stage` *antes* usando-o em `Production` para reduzir riscos e garantir estabilidade.
 
 
 Se alguma verificação falhar, o Cloud Manager abre a caixa de diálogo a seguir, que lista uma ou mais condições não atendidas e desabilita a **Confirmação**, impedindo a restauração.
@@ -81,3 +84,8 @@ Se você quiser apenas restaurar os dados que foram perdidos, danificados ou aci
 1. O Cloud Manager reverte o ambiente para a compilação anterior, mantém o conteúdo e a configuração intactos e marca o ambiente **Restaurando** na página Ambientes até que a implantação seja concluída.
 
    ![Restaurando a ativação](/help/operations/assets/restore-previous-code-deployed-restoring.png)
+
+1. Próximo ao canto superior direito da página, clique no ícone ![Sino ou Ícone Notificações ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notificações** para descobrir quando a restauração começa e termina.
+
+   ![Restaurar notificações de código anteriores ao iniciar a restauração e quando a restauração for concluída](/help/operations/assets/restore-previous-code-notifications.png)
+   *Notificações para um trabalho de restauração de código anterior.*
