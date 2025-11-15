@@ -4,10 +4,10 @@ description: Saiba como pesquisar e descobrir ativos na visualização do AEM As
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 82%
+source-wordcount: '1887'
+ht-degree: 79%
 
 ---
 
@@ -118,33 +118,29 @@ Para remover filtros personalizados:
 
 1. Clique em **[!UICONTROL Confirmar]** para remover os filtros da interface.
 
-## Pesquisa semântica {#semantic-search}
+## Pesquisar com IA {#ai-search}
 
-A Pesquisa semântica é um recurso de pesquisa avançada que entende o significado e a intenção por trás da consulta de um usuário, em vez de depender de correspondências exatas de palavras-chave. Ele usa inteligência artificial (IA), processamento de linguagem natural (NLP) e aprendizado de máquina para fornecer resultados mais precisos e sensíveis ao contexto.
+A Pesquisa de IA é um recurso de pesquisa avançada que entende o significado e a intenção por trás da consulta de um usuário, em vez de depender de correspondências exatas de palavras-chave. Ele usa inteligência artificial (IA) e aprendizado de máquina para fornecer resultados mais precisos e com reconhecimento de contexto.
 
-Ao contrário da pesquisa tradicional baseada em palavras-chave, que procura termos exatos, a Pesquisa semântica interpreta as relações entre palavras, conceitos e intenção do usuário. Isso garante que os usuários encontrem o que procuram, mesmo que a consulta seja redigida de forma diferente, contenha erros de digitação ou esteja em outro idioma.
+Ao contrário da pesquisa tradicional baseada em palavras-chave, que procura termos exatos, a Pesquisa AI interpreta as relações entre palavras, conceitos e intenção do usuário. Isso garante que os usuários encontrem o que procuram, mesmo que a consulta seja redigida de forma diferente, contenha erros de digitação ou esteja em outro idioma.
 
 Alguns, se seus principais benefícios incluírem:
 
 * **Suporte multilíngue**: pesquise em vários idiomas sem exigir traduções exatas. Os usuários podem encontrar conteúdo relevante independentemente do idioma de consulta.
 
-* **Lida com erros ortográficos**: corrige automaticamente ou interpreta erros de digitação e de ortografia, garantindo resultados precisos mesmo com uma entrada imperfeita.
+* **Lida com erros ortográficos**: interpreta erros de digitação e de ortografia, garantindo resultados precisos mesmo com uma entrada imperfeita.
 
 * **Entende sinônimos**: fornece resultados para termos e frases relacionados, de modo que os usuários não precisam adivinhar a palavra-chave correta.
 
-* **Pesquisa sensível ao contexto**: reconhece a intenção por trás de uma consulta, não apenas as palavras.
+* **Pesquisa sensível ao contexto**: reconhece a intenção por trás de uma consulta, não apenas as palavras exatas.
 
->[!IMPORTANT]
->
-> Especifique três ou mais palavras para que a Pesquisa semântica exiba os resultados apropriados.
-
-### Exemplos para pesquisa semântica {#examples-semantic-search}
+### Exemplos para a pesquisa de IA {#examples-ai-search}
 
 **Exemplo de prompt**: *Mulher tomando café*
 
-A pesquisa tradicional baseada em palavras-chave procura correspondências exatas de metadados de ativos, como Mulher, Café e assim por diante, e retorna ativos que incluem essas palavras-chave.
+A pesquisa tradicional baseada em palavras-chave procura correspondências exatas de metadados de ativos, como `Woman`, `drinking`, `Coffee`, e retorna ativos que incluem todos esses termos nos metadados.
 
-No entanto, a Pesquisa Semântica procura palavras semelhantes, como `Girl`, `Lady` no caso de `Woman` e opções de café, como `Cappuccino` e `Latte` no caso de `Coffee`.
+No entanto, a Pesquisa de IA corresponde a palavras semelhantes, como `Girl`, `Lady` no caso de `Woman` e `Cappuccino` e `Latte` no caso de `Coffee`.
 
 Da mesma forma, você pode especificar este prompt em espanhol ou digitar incorretamente `Woman` como `Wman` e ainda obter os mesmos resultados.
 
@@ -280,89 +276,94 @@ Você pode visualizar o layout e a formatação da primeira página de pesquisa.
 
    ![Visualização da primeira página de pesquisa](/help/assets/assets/search-first-preview.gif)
 
-## Pesquisa contextual {#contextual-search}
 
-Também é possível pesquisar ativos disponíveis no repositório por meio de prompts de texto. O Experience Manager Assets transforma automaticamente esses prompts de texto em filtros de pesquisa e exibe os resultados da pesquisa. Você pode visualizar e modificar filtros automáticos usando o Painel de filtros para restringir ainda mais os resultados da pesquisa.
+<!--
 
-### Acessar a pesquisa contextual {#access-contextual-search}
+## Contextual Search {#contextual-search}
 
-Para acessar a pesquisa contextual no Experience Manager Assets:
+You can also search assets available in the repository by defining text prompts. Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
 
-1. Clique em **[!UICONTROL Pesquisar]** no painel esquerdo.
+### Access Contextual Search {#access-contextual-search}
 
-   ![Pesquisa contextual](assets/access-contextual-search.png)
+To access Contextual Search in Experience Manager Assets:
 
-1. Insira o prompt de texto na caixa de texto Pesquisar e clique em **[!UICONTROL Pesquisa contextual]**.
+1. Click **[!UICONTROL Search]** in the left pane.
 
-   ![Prompt de texto da pesquisa contextual](/help/assets/assets/wknd-contextual-search.png)
+   ![Contextual Search](assets/access-contextual-search.png)
 
-   O [!DNL Experience Manager Assets] exibe os resultados da pesquisa.
+1. Define the text prompt in the Search text box and click **[!UICONTROL Contextual Search]**.
 
-### Filtros compatíveis {#supported-filters}
+   ![Contextual Search text prompt](/help/assets/assets/wknd-contextual-search.png)
 
-A pesquisa contextual é compatível com os seguintes filtros prontos para uso. Baseie os prompts de texto nesses filtros para obter resultados de pesquisa apropriados.
+   [!DNL Experience Manager Assets] displays the search results.
 
-* Altura da imagem
+### Supported filters {#supported-filters}
 
-* Largura da imagem
+Contextual Search supports the following filters out-of-the-box. Base your text prompts on these filters to view appropriate search results.
 
-* Tipo de arquivo: imagem, documento, vídeo ou pasta.
+* Image height
 
-* Tipo MIME: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX ou XLSX
+* Image width
 
-* Data de criação
+* File type: image, document, video, or folder.
 
-* Data de modificação
+* MIME type: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX or XLSX
 
-* Data de expiração
+* Created date
 
-* Status do ativo: aprovado, rejeitado ou todos
+* Modified date
 
-* Ativos expirados
+* Expiration date
 
-### Exemplos de prompts de texto {#text-prompts-examples}
+* Asset status: Approved, Rejected, or all
 
-**Exemplo 1**
+* Expired assets
 
-**Prompt de texto**: imagens criadas neste mês.
+### Examples for the text prompts {#text-prompts-examples}
 
-O [!DNL Experience Manager Assets] aplica os seguintes filtros automaticamente e exibe os resultados da pesquisa:
+**Example 1**
 
-![Exemplo 1 de pesquisa contextual](assets/contextual-search-example1.png)
+**Text Prompt**: Images created this month.
 
-**Exemplo 2**
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-**Prompt de texto**: imagens com pelo menos 200px de altura e 100px de largura com praia e céu limpo.
+![Contextual Search Example 1](assets/contextual-search-example1.png)
 
-O [!DNL Experience Manager Assets] aplica os seguintes filtros automaticamente e exibe os resultados da pesquisa:
+**Example 2**
 
-![Exemplo 2 de pesquisa contextual](assets/contextual-search-example2.png)
+**Text prompt**: Images at least 200px tall and 100px wide with beach and clear sky.
 
-**Exemplo 3**
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-**Prompt de texto**: preciso de imagens de um céu azul com altura de 1500 e 2500 pixels, criadas no mês passado, que não tenham expirado nem sejam aprovadas.
+![Contextual Search Example 2](assets/contextual-search-example2.png)
 
-O [!DNL Experience Manager Assets] aplica os seguintes filtros automaticamente e exibe os resultados da pesquisa:
+**Example 3**
 
-![Exemplo 3 de pesquisa contextual](assets/contextual-search-example3.png)
+**Text prompt**: I need images of blue sky that are 1500 and 2500 pixel height and created in the past month that is not expired and approved.
 
-O vídeo a seguir ilustra o processo completo, desde o acesso à interface da pesquisa contextual até a definição de prompts de texto e a visualização dos resultados da pesquisa.
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
+
+![Contextual Search Example 3](assets/contextual-search-example3.png)
+
+The following video illustrates the end-to-end process from accessing the Contextual Search User Interface to defining text prompts, and viewing the search results.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-### Desabilitar pesquisa contextual {#disable-contextual-search}
+### Disable Contextual Search {#disable-contextual-search}
 
-Admins também têm a opção de desabilitar a pesquisa contextual para usuários da organização. Para desabilitá-la, siga estas etapas:
+Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
 
-1. Navegue até **[!UICONTROL Configurações]** > **[!UICONTROL Configurações gerais]**.
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
 
-1. Na seção [!UICONTROL Pesquisa contextual], desative o botão de alternância **[!UICONTROL Habilitar pesquisa contextual para a organização]** para desabilitar o recurso de pesquisa contextual para todos os usuários da organização.
+1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
 
-### Feedback da pesquisa contextual {#contextual-search-feedback}
+### Contextual Search feedback {#contextual-search-feedback}
 
-Se precisar fornecer feedback sobre o recurso de pesquisa contextual, clique no ![ícone Pesquisa contextual](assets/do-not-localize/Smock_Help_18_N.svg) e no ícone Feedback. Selecione o tipo de feedback, especifique o assunto e a descrição e clique em **[!UICONTROL Enviar]**.
+If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/Smock_Help_18_N.svg)  and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
 
-![Feedback da pesquisa contextual](assets/contextual-search-feedback.png)
+![Contextual Search feedback](assets/contextual-search-feedback.png)
+
+-->
 
 ## Próximas etapas {#next-steps}
 
@@ -372,7 +373,7 @@ Se precisar fornecer feedback sobre o recurso de pesquisa contextual, clique no�
 
 * Forneça feedback sobre a documentação por meio das opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita.
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 
 
