@@ -4,10 +4,10 @@ description: Saiba como usar o Cloud Acceleration Manager para assimilar conteú
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 54829a232b4b918a525b25f9bca475d7856faa46
+source-git-commit: 7c0703d746601742a28c3c98f35e69de70f25e05
 workflow-type: tm+mt
-source-wordcount: '3616'
-ht-degree: 12%
+source-wordcount: '3647'
+ht-degree: 11%
 
 ---
 
@@ -151,13 +151,13 @@ Esta mensagem indica que o Cloud Acceleration Manager não conseguiu acessar o s
 > O campo &quot;Token de migração&quot; é exibido porque, em alguns casos, a recuperação desse token é o que realmente não é permitido. Ao permitir que seja fornecido manualmente, ele pode permitir que o usuário inicie a assimilação rapidamente, sem nenhuma ajuda adicional. Se o token for fornecido e a mensagem ainda for exibida, a recuperação do token não foi o problema.
 
 * A AEM as a Cloud Service mantém o estado do ambiente e, ocasionalmente, deve reiniciar o serviço de migração por vários motivos normais. Se esse serviço estiver sendo reiniciado, ele não poderá ser acessado, mas estará disponível no futuro.
-* É possível que outro processo esteja sendo executado na instância. Por exemplo, se as [Atualizações de versão do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) estiverem aplicando uma atualização, o sistema pode estar ocupado e o serviço de migração pode ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
+* É possível que outro processo esteja sendo executado na instância. Por exemplo, se as [Atualizações de versão do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) estiverem aplicando uma atualização, o sistema pode estar ocupado e o serviço de migração pode ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
 * Se um [Incluo na lista de permissões IP tiver sido aplicado](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) por meio do Cloud Manager, ele impedirá que o Cloud Acceleration Manager acesse o serviço de migração. Um endereço IP não pode ser adicionado para assimilações porque seu endereço é dinâmico. Atualmente, a única solução é desabilitar o incluo na lista de permissões IP durante o processo de assimilação e indexação, adicionando temporariamente 0.0.0.0/0 ao incluo na lista de permissões enquanto o processo de assimilação e indexação está em execução.
 * Pode haver outros motivos que precisem de investigação. Se a assimilação ou indexação continuar a falhar, entre em contato com o Atendimento ao cliente da Adobe.
 
 ### Atualizações e assimilações de versão do AEM {#aem-version-updates-and-ingestions}
 
-[As Atualizações de Versão do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) são aplicadas automaticamente aos ambientes para mantê-los atualizados com a versão mais recente do AEM as a Cloud Service. Se a atualização for acionada quando uma assimilação for executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente.
+[As Atualizações de Versão do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) são aplicadas automaticamente aos ambientes para mantê-los atualizados com a versão mais recente do AEM as a Cloud Service. Se a atualização for acionada quando uma assimilação for executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente.
 
 Se as &quot;Atualizações de versão do AEM&quot; estiverem integradas no programa de destino, o processo de assimilação tentará desativar sua fila antes de ser iniciado. Quando a assimilação é concluída, o estado do atualizador de versão retorna ao estado em que estava antes de as assimilações começarem.
 
@@ -239,7 +239,7 @@ Essa é uma restrição MongoDB.
 
 Consulte a observação `Node property value in MongoDB` em [Pré-requisitos da Ferramenta de Transferência de Conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obter mais informações e um link para uma ferramenta Oak que possa ajudar a encontrar todos os nós grandes. Depois que todos os nós com tamanhos grandes forem corrigidos, execute a extração e a assimilação novamente.
 
-Para evitar possivelmente essa restrição, execute o [Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) na instância do AEM de origem e revise as descobertas apresentadas, especialmente o padrão [&quot;Estrutura de Repositório Sem Suporte&quot; (URS)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-pattern-detection/table-of-contents/urs).
+Para evitar possivelmente essa restrição, execute o [Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) na instância do AEM de origem e revise as descobertas apresentadas, especialmente o padrão [&quot;Estrutura de Repositório Sem Suporte&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 >[!NOTE]
 >
@@ -261,6 +261,10 @@ Para evitar possivelmente essa restrição, execute o [Analisador de Práticas R
 * `Mongo network error` - Às vezes, estabelecer uma conexão com MongoDB pode falhar, fazendo com que o processo de assimilação saia antes e relate-o como falho. Uma simples tentativa de assimilação deve ser feita.
 * `Mongo server selection error` - Este é um erro raro de tempo limite do lado do cliente mongo que pode ocorrer por vários motivos subjacentes. Uma nova tentativa provavelmente corrigirá o problema.
 * `Mongo took too long to start` - Em casos extremamente raros, o MongoDB local usado no fluxo de trabalho de assimilação pode falhar ao iniciar. Uma nova tentativa provavelmente corrigirá o problema.
+
+#### Problemas do AZCopy {#azcopy-issues}
+
+* `AZCopy critical failure` - Em casos raros, a ferramenta AZCopy usada para executar a etapa de pré-cópia da assimilação pode falhar inesperadamente. Uma nova tentativa de assimilação deve ser tentada nesse caso.
 
 ### Ingestão cancelada {#ingestion-rescinded}
 
