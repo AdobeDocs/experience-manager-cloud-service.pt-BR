@@ -77,11 +77,11 @@ Para obter detalhes sobre como gerenciar permissões, consulte [Permissões pers
 
 1. Liste todos os ambientes para o programa seguindo um destes procedimentos:
 
-   * No menu do lado esquerdo, em **Serviços**, clique ![em Ambientes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) de ícone **** de dados.
+   * No menu do lado esquerdo, em **Serviços**, clique ![em Ambientes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) de ícone **&#x200B;**&#x200B;de dados.
 
      ![Guia Ambientes](assets/environments-1.png)
 
-   * No menu lateral esquerdo, em Programa, clique **em Visão geral**, em seguida, no **ícone Ambientes** cartão, clique **no ícone** ![Fluxo de trabalho Exibir Tudo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg).****
+   * No menu lateral esquerdo, em Programa, clique **em Visão geral**, em seguida, no **ícone Ambientes** cartão, clique **no ícone** ![Fluxo de trabalho Exibir Tudo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg).**&#x200B;**
 
      ![Mostrar todas as opções](assets/environments-2.png)
 
