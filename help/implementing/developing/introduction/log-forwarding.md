@@ -4,7 +4,7 @@ description: Saiba mais sobre como encaminhar logs para fornecedores de registro
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 1%
@@ -111,8 +111,6 @@ Este artigo está organizado da seguinte maneira:
    ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -135,8 +133,6 @@ Os tokens na configuração (como `${{SPLUNK_TOKEN}}`) representam segredos que 
 ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -155,8 +151,6 @@ Outro cenário é desativar o encaminhamento dos logs CDN ou AEM (incluindo o Ap
 ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -218,8 +212,6 @@ O exemplo abaixo mostra como configurar o registro em uma porta HTTPS padrão co
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
@@ -254,9 +246,7 @@ O encaminhamento de logs para o Amazon S3 é compatível com logs do AEM e do Di
 
 ```yaml
 kind: "LogForwarding"
-version: "1.0"
-metadata:
-  envTypes: ["dev"]
+version: "1"
 data:
   awsS3:
     default:
@@ -294,8 +284,6 @@ Consulte a [Documentação da política de bucket do AWS](https://docs.aws.amazo
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   azureBlob:
     default:
@@ -364,8 +352,6 @@ Consulte os formatos de entrada de log em [Log para AEM as a Cloud Service](/hel
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   datadog:
     default:
@@ -392,8 +378,6 @@ data:
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   elasticsearch:
     default:
@@ -426,8 +410,6 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   https:
     default:
@@ -472,8 +454,6 @@ O encaminhamento de logs para o New Relic aproveita a API HTTPS do New Relic par
 ```yaml
   kind: "LogForwarding"
   version: "1"
-  metadata:
-    envTypes: ["dev"]
   data:
     newRelic:
       default:
@@ -499,8 +479,6 @@ O atributo de escopo &quot;Logs de assimilação&quot; é necessário para o tok
 ```yaml
   kind: "LogForwarding"
   version: "1"
-  metadata:
-    envTypes: ["dev"]
   data:
     dynatrace:
       default:
@@ -517,8 +495,6 @@ O atributo de escopo &quot;Logs de assimilação&quot; é necessário para o tok
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
@@ -552,8 +528,6 @@ Você precisará copiar a última seção da URL (sem a `/` anterior) e adicion�
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   sumoLogic:
     default:
