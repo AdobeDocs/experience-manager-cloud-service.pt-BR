@@ -4,7 +4,7 @@ description: Saiba como substituir a página de erro padrão hospedando arquivos
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -37,8 +37,6 @@ Exemplo de configuração:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   errorPages:
     spa:
@@ -93,6 +91,6 @@ Dessa forma, você aciona diretamente o manipulador de erros do CDN para testar 
 
 ### Tutorial
 
-Consulte o tutorial [páginas de erro da CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obter instruções passo a passo sobre como criar, implantar e testar as páginas de erro fornecidas pela CDN.
+Consulte o tutorial [páginas de erro da CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obter instruções passo a passo sobre como criar, implantar e testar as páginas de erro fornecidas pela CDN.
 
 
