@@ -4,7 +4,7 @@ description: Saiba como configurar credenciais e autenticação de CDN declarand
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '1939'
 ht-degree: 0%
@@ -46,8 +46,6 @@ Para obter mais informações sobre depuração e erros comuns, verifique [Erros
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   authentication:
     authenticators:
@@ -65,7 +63,7 @@ data:
 
 Consulte [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#common-syntax) para obter uma descrição das propriedades acima do nó `data`. O valor da propriedade `kind` deve ser *CDN* e a propriedade `version` deve ser definida como `1`.
 
-Consulte a etapa do tutorial [Configurar e implantar regra CDN de validação de cabeçalho HTTP](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obter mais detalhes.
+Consulte a etapa do tutorial [Configurar e implantar regra CDN de validação de cabeçalho HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obter mais detalhes.
 
 As propriedades adicionais incluem:
 
@@ -151,8 +149,6 @@ A sintaxe é descrita abaixo:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   authentication:
     authenticators:
@@ -187,7 +183,7 @@ As propriedades adicionais incluem:
 >[!NOTE]
 >A Chave de Limpeza deve ser configurada como uma [Variável de Ambiente Cloud Manager do tipo secreto](/help/operations/config-pipeline.md#secret-env-vars), antes da implantação da configuração que faz referência a ela. É recomendável usar uma chave aleatória exclusiva com comprimento mínimo de 32 bytes; por exemplo, a biblioteca criptográfica Open SSL pode gerar uma chave aleatória executando o comando openssl rand -hex 32
 
-Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focado na configuração de chaves de limpeza e na execução da limpeza do cache do CDN.
+Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focado na configuração de chaves de limpeza e na execução da limpeza do cache do CDN.
 
 ## Autenticação básica {#basic-auth}
 
@@ -203,8 +199,6 @@ A sintaxe é a seguinte:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   authentication:
     authenticators:
