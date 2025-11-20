@@ -91,6 +91,6 @@ Dessa forma, você aciona diretamente o manipulador de erros do CDN para testar 
 
 ### Tutorial
 
-Consulte o tutorial [páginas de erro da CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obter instruções passo a passo sobre como criar, implantar e testar as páginas de erro fornecidas pela CDN.
+Consulte o tutorial [páginas de erro da CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obter instruções passo a passo sobre como criar, implantar e testar as páginas de erro fornecidas pela CDN.
 
 
