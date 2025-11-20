@@ -4,9 +4,9 @@ description: Saiba como configurar o Open ID Connect (OIDC) para o AEM as a Clou
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 75c2dbc4f1d77de48764e5548637f95bee9264dd
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1986'
 ht-degree: 0%
 
 ---
@@ -68,11 +68,22 @@ Primeiro, precisamos configurar a conexão OIDC. É possível configurar várias
     "scopes":[
       "openid"
     ],
-    "baseUrl":"<https://login.microsoftonline.com/53279d7a-438f-41cd-a6a0-fdb09efc8891/v2.0>",
-    "clientId":"5199fc45-8000-473e-ac63-989f1a78759f",
+    "baseUrl":"<https://login.microsoftonline.com/tenant-id/v2.0>",
+    "clientId":"client-id-from-idp",
     "clientSecret":"xxxxxx"
    }
    ```
+
+Em alguns ambientes, o provedor de identidade (IdP) pode não expor um ponto de extremidade `.well-known` válido.
+Quando isso ocorre, os endpoints necessários podem ser definidos manualmente especificando as seguintes propriedades no arquivo de configuração.
+Neste modo de configuração, a propriedade `baseUrl` não deve ser definida.
+
+```
+"authorizationEndpoint": "https://idp-url/oauth2/v1/authorize",
+"tokenEndpoint": "https://idp-url/oauth2/v1/token",
+"jwkSetURL":"https://idp-url/oauth2/v1/keys",
+"issuer": "https://idp-url"
+```
 
 1. Configure as propriedades da seguinte maneira:
    * O **&quot;nome&quot;** pode ser definido pelo usuário
@@ -97,12 +108,12 @@ Agora, configure o manipulador de autenticação OIDC. Várias conexões OIDC po
 
 1. Em seguida, configure suas propriedades da seguinte maneira:
    * `path`: o caminho a ser protegido
-   * `callbackUri`: ao caminho a ser protegido, adicionando o sufixo: `/j_security_check`
+   * `callbackUri`: o caminho a ser protegido, adicionando o sufixo: `/j_security_check`. O mesmo callbackUri também deve ser configurado no IdP remoto como url de redirecionamento.
    * `defaultConnectionName`: configurar com o mesmo nome definido para a conexão OIDC na etapa anterior+
    * `pkceEnabled`: `true` Chave de Prova para Troca de Código (PKCE) no fluxo de código de Autorização
    * `idp`: o nome do [Provedor de Identidade Externo do OAK](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Observe que um OAK IDP diferente não pode compartilhar usuários ou grupos
 
-### Configurar SlingUserInfoProcessor
+### Configurar SlingUserInfoProcessor {#configure-slinguserinfoprocessor}
 
 1. Crie o arquivo de configuração. Neste exemplo, usaremos `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessor~azure.cfg.json`. O sufixo `azure` deve ser um identificador exclusivo. Consulte um exemplo do arquivo de configuração abaixo:
 
@@ -112,7 +123,8 @@ Agora, configure o manipulador de autenticação OIDC. Várias conexões OIDC po
       "groupsClaimName": "groups",
       "connection":"azure",
       "storeAccessToken": false,
-      "storeRefreshToken": false
+      "storeRefreshToken": false,
+      "idpNameInPrincipals": true
    }
    ```
 
@@ -122,6 +134,7 @@ Agora, configure o manipulador de autenticação OIDC. Várias conexões OIDC po
    * `connection`: configurar com o mesmo nome definido para a conexão OIDC na etapa anterior
    * `storeAccessToken`: verdadeiro se o token de acesso precisar ser armazenado no repositório. Por padrão, é falso. Defina como verdadeiro somente se o AEM precisar acessar recursos em nome do usuário armazenado em servidores externos protegidos pelo mesmo IdP.
    * `storeRefreshToken`: verdadeiro se o token de atualização deve ser armazenado no repositório. Por padrão, é falso. Defina-o como verdadeiro somente se o AEM precisar acessar recursos em nome do usuário armazenado em servidores externos protegidos pelo mesmo IdP e precisar atualizar o token do IdP.
+   * `idpNameInPrincipals`: quando definido como verdadeiro, o nome do IdP é adicionado como sufixo às entidades de segurança de usuário e grupo separadas por um &#39;;&#39;. Por exemplo, se o nome do IdP for `azure-idp` e o nome de usuário for `john.doe`, a entidade de segurança armazenada no oak será `john.doe;azure-idp`. Isso é útil quando vários IdPs são configurados no oak para evitar conflitos entre usuários ou grupos com o mesmo nome vindo de IdPs diferentes. Isso também pode ser definido para evitar conflitos com usuários ou grupos criados por outros manipuladores de autenticação, como o Saml.
 Observe que o token de acesso e o token de atualização são armazenados criptografados com a chave mestre do AEM.
 
 
@@ -133,20 +146,23 @@ Crie um arquivo chamado `org.apache.jackrabbit.oak.spi.security.authentication.e
 
 ```
 {
-  "user.expirationTime":"300s",
-  "user.membershipExpTime":"300s",
+  "user.expirationTime":"1h",
+  "user.membershipExpTime":"1h",
+  "group.expirationTime": "1d"
   "user.propertyMapping":[
-    "profile/familyName=profile/familyName",
-    "profile/givenName=profile/givenName",
-    "rep:fullname=cn",
+    "profile/givenName=profile/given_name",
+    "profile/familyName=profile/family_name",
+    "rep:fullname=profile/name",
     "profile/email=profile/email",
-    "oauth-tokens"
+    "access_token=access_token",
+    "refresh_token=refresh_token"
   ],
   "user.pathPrefix":"azure",
   "handler.name":"azure"
 }
 ```
 
+Durante o desenvolvimento, os tempos de expiração podem ser reduzidos a um valor mais baixo (por exemplo: 1s) para acelerar os testes de sincronização de usuários e grupos no oak.
 Abaixo alguns dos atributos mais relevantes a serem configurados em DefaultSyncHandler. Observe que a Associação de grupo dinâmico deve estar sempre habilitada nos Serviços em nuvem.
 
 | Nome da propriedade | Notas | Valor sugerido |
@@ -181,6 +197,37 @@ Por fim, é necessário configurar o Módulo de logon externo.
 
 O usuário é autenticado por um Token de ID e atributos adicionais são buscados no ponto de extremidade `userInfo` definido para o IdP. Se operações não padrão adicionais tiverem que ser executadas, uma implementação personalizada do [UserInfoProcessor](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java) será a implementação padrão do Sling.
 
+### Configurar ACL para grupos externos {#configure-acl-for-external-groups}
+
+Quando os usuários são autenticados por meio do OIDC, suas associações de grupo normalmente são sincronizadas do provedor de identidade externo.
+Esses grupos externos são criados dinamicamente no repositório do AEM, mas não são associados automaticamente a nenhuma entrada de controle de acesso.
+Para garantir que os usuários tenham as permissões apropriadas, as listas de controle de acesso (ACLs) devem ser explicitamente definidas para esses grupos.
+
+Duas abordagens principais estão disponíveis.
+
+### Opção 1 — Grupos locais
+
+O grupo externo pode ser adicionado como membro de um grupo local que já tem as ACLs necessárias.
+* O grupo externo deve existir no repositório, que ocorre automaticamente quando um usuário pertencente a esse grupo faz logon pela primeira vez.
+* Essa opção geralmente é preferida quando Grupos de usuários fechados (CUGs) estão em uso, pois o grupo local existe em ambos os ambientes, autor e publicação.
+
+### Opção 2 — ACLs diretas em grupos externos via RepoInit
+
+As ACLs podem ser aplicadas diretamente a grupos externos usando scripts RepoInit.
+* Essa abordagem é mais eficiente e é preferível quando os CUGs não são usados.
+* O exemplo a seguir mostra uma configuração RepoInit que atribui permissões de leitura a um grupo externo. A opção `ignoreMissingPrincipal` permite a criação da ACL mesmo se o grupo ainda não existir no repositório:
+
+  ```
+  {
+    "scripts":[
+      "set ACL for \"my-group;my-idp\"  (ACLOptions=ignoreMissingPrincipal)\r\n  allow jcr:read on /content/wknd/us/en/magazine\r\nend"
+    ]
+  }    
+  ```
+
+>[!NOTE]
+>A interface de permissões do AEM pode ser usada para inspecionar as ACLs atribuídas a entidades de grupo
+
 ## Exemplo: configurar a autenticação OIDC com o Azure Ative Diretory
 
 ### Configurar um novo Aplicativo no Azure Ative Diretory {#configure-a-new-application-in-azure-ad}
@@ -196,19 +243,19 @@ O usuário é autenticado por um Token de ID e atributos adicionais são buscado
 1. Siga as etapas documentadas anteriormente para criar os arquivos de configuração necessários. Abaixo um exemplo específico do Azure AD, onde:
    * Definimos o nome da conexão OIDC, Manipulador de autenticação e DefaultSyncHandler como: `azure`
    * A URL do site é: `www.mywebsite.com`
-   * Protegemos o caminho `/content/wknd/us/en/adventures`
+   * Protegemos o caminho `/content/wknd/us/en/adventures` que é acessível apenas a usuários autenticados membros do grupo `adventures`
    * O inquilino é: `tennat-id`,
    * ID do cliente: `client-id`,
    * O segredo é: `secret`,
    * Os grupos são enviados no Token de ID em uma declaração chamada: `groups`
 
-#### org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json
+### org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json
 
 ```
 {
   "name":"azure",
   "scopes":[
-    openid", "User.Read", "profile", "email
+    openid", "User.Read", "profile", "email"
   ],
   "baseUrl":"https://login.microsoftonline.com/tenant-id/v2.0",
   "clientId":"client-id",
@@ -216,7 +263,7 @@ O usuário é autenticado por um Token de ID e atributos adicionais são buscado
 }
 ```
 
-#### org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json
+### org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json
 
 ```
 {
@@ -229,7 +276,7 @@ O usuário é autenticado por um Token de ID e atributos adicionais são buscado
 }
 ```
 
-#### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory~azure.cfg.json
+### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory~azure.cfg.json
 
 ```
 {
@@ -238,12 +285,13 @@ O usuário é autenticado por um Token de ID e atributos adicionais são buscado
 }
 ```
 
-#### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json
+### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json
 
 ```
 {
-  "user.expirationTime":"1s",
-  "user.membershipExpTime":"1s",
+  "user.expirationTime":"1h",
+  "user.membershipExpTime":"1h",
+  "group.expirationTime": "1d"
   "user.propertyMapping":[
     "profile/givenName=profile/given_name",
     "profile/familyName=profile/family_name",
@@ -259,7 +307,17 @@ O usuário é autenticado por um Token de ID e atributos adicionais são buscado
 }
 ```
 
-#### org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json
+### org.apache.sling.jcr.repoinit.RepositoryInitializer~azure.cfg.json
+
+```
+{
+  "scripts":[
+    "set ACL for \"adventures;azure\"  (ACLOptions=ignoreMissingPrincipal)\r\n  allow jcr:read on /content/wknd/us/en/adventures\r\nend"
+  ]
+}
+```
+
+### org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json
 
 ```
 {
@@ -293,3 +351,15 @@ O nome de arquivo que precisa ser modificado é `org.apache.sling.auth.oauth_cli
   "storeRefreshToken": "false"
 }
 ```
+
+## Como migrar do Manipulador de autenticação Saml para o Manipulador de autenticação Oidc
+
+Quando o AEM já estiver configurado com um Manipulador de Autenticação SAML e os usuários estiverem presentes no repositório com a [sincronização de dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) habilitada, poderão ocorrer conflitos entre os usuários SAML originais e os novos usuários OIDC.
+
+1. Configure o [OidcAuthenticationHandler](#configure-oidc-authentication-handler) e habilite `idpNameInPrincipals` na configuração [SlingUserInfoProcessor](#configure-slinguserinfoprocessor)
+1. Configuração [ACL para grupos externos](#configure-acl-for-external-groups).
+1. Após o logon dos usuários, os usuários antigos criados pelo manipulador de autenticação saml podem ser excluídos.
+
+>[!NOTE]
+>Quando o Manipulador de Autenticação SAML estiver desabilitado e o Manipulador de Autenticação OIDC estiver habilitado, se a [sincronização de dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) não estiver habilitada, as sessões existentes se tornarão inválidas. Os usuários precisarão se autenticar novamente, o que resulta na criação de novos nós de usuário OIDC no repositório.
+
