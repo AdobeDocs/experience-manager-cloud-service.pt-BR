@@ -354,12 +354,12 @@ O nome de arquivo que precisa ser modificado é `org.apache.sling.auth.oauth_cli
 
 ## Como migrar do Manipulador de autenticação Saml para o Manipulador de autenticação Oidc
 
-Quando o AEM já estiver configurado com um Manipulador de Autenticação SAML e os usuários estiverem presentes no repositório com a [sincronização de dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) habilitada, poderão ocorrer conflitos entre os usuários SAML originais e os novos usuários OIDC.
+Quando o AEM já estiver configurado com um Manipulador de Autenticação SAML e os usuários estiverem presentes no repositório com a [sincronização de dados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) habilitada, poderão ocorrer conflitos entre os usuários SAML originais e os novos usuários OIDC.
 
 1. Configure o [OidcAuthenticationHandler](#configure-oidc-authentication-handler) e habilite `idpNameInPrincipals` na configuração [SlingUserInfoProcessor](#configure-slinguserinfoprocessor)
 1. Configuração [ACL para grupos externos](#configure-acl-for-external-groups).
 1. Após o logon dos usuários, os usuários antigos criados pelo manipulador de autenticação saml podem ser excluídos.
 
 >[!NOTE]
->Quando o Manipulador de Autenticação SAML estiver desabilitado e o Manipulador de Autenticação OIDC estiver habilitado, se a [sincronização de dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) não estiver habilitada, as sessões existentes se tornarão inválidas. Os usuários precisarão se autenticar novamente, o que resulta na criação de novos nós de usuário OIDC no repositório.
+>Quando o Manipulador de Autenticação SAML estiver desabilitado e o Manipulador de Autenticação OIDC estiver habilitado, se a [sincronização de dados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) não estiver habilitada, as sessões existentes se tornarão inválidas. Os usuários precisarão se autenticar novamente, o que resulta na criação de novos nós de usuário OIDC no repositório.
 
