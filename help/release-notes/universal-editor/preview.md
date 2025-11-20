@@ -3,9 +3,9 @@ title: Notas de versão de visualização do Universal Editor
 description: Estas são as notas de versão da versão de pré-visualização do Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 87c0288356fd561dd15249e3da08850f7c5d031a
+source-git-commit: 434bf669f4a060f2d79dcc57f94fbcff27a840e1
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Notas de versão de visualização do Universal Editor {#preview}
 
-Estas são as notas de versão da **versão de visualização** do Editor Universal. Estes recursos estão disponíveis atualmente no **ambiente de visualização** do Editor Universal. Esses recursos estão programados para serem lançados para disponibilização geral em 20 de novembro de 2025.
+Estas são as notas de versão da **versão de visualização** do Editor Universal. Estes recursos estão disponíveis atualmente no **ambiente de visualização** do Editor Universal. Esses recursos estão programados para serem lançados para disponibilização geral em 27 de novembro de 2025.
 
 Estas notas de versão do **preview** são fornecidas como conveniência, para que você saiba quais alterações do Universal Editor estão por vir e possa testá-las [alternando para o ambiente de visualização.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -27,11 +27,11 @@ Estas notas de versão do **preview** são fornecidas como conveniência, para q
 
 ## Novos recursos futuros {#what-is-new}
 
-* As Notificações do Sistema foram migradas para uma nova interface do usuário.
+* Um menu contextual agora está disponível na árvore estruturada ao clicar com o botão direito do mouse.
+* Uma tecla de atalho foi adicionada aos componentes duplicados.
 
 ## Aprimoramentos futuros {#other-improvements}
 
-* O manuseio de valores de RTE foi simplificado.
-* Uma condição rara de corrida da barra de ferramentas foi resolvida.
-* Os interruptores de recursos não utilizados foram removidos.
-* As dependências foram atualizadas.
+* Foi resolvido um problema em que o RTE não salvava corretamente na tela.
+* O recorte da árvore de pastas do seletor de conteúdo foi corrigido.
+* `componentId` agora é fornecido durante a ação de adição.
