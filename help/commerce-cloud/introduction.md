@@ -29,7 +29,7 @@ O AEM pode apoiá-lo com base na sua situação e preferências. Use a orientaç
 
 ### Usar O Edge Delivery Services (Recomendado) {#edge}
 
-Se a sua empresa deseja uma loja mais rápida e com a melhor IA na Web, e se os seus desenvolvedores desejam uma experiência avançada de desenvolvedor, use o [Edge Delivery Services.O ](../edge/overview.md) Edge Delivery Services atende a todas as necessidades atuais e futuras. Dependendo do back-end e da solução, você tem opções diferentes:
+Se a sua empresa deseja uma loja mais rápida e com a melhor IA na Web, e se os seus desenvolvedores desejam uma experiência avançada de desenvolvedor, use o [Edge Delivery Services.O &#x200B;](../edge/overview.md) Edge Delivery Services atende a todas as necessidades atuais e futuras. Dependendo do back-end e da solução, você tem opções diferentes:
 
 #### &#x200B;1. Integração com o Adobe Commerce as a Cloud Service {#acaacs}
 
