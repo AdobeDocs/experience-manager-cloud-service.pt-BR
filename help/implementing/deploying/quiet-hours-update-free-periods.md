@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="Disponibilidade limitada" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
+source-git-commit: 19ef83258bf2cf8fa69411977d40ebbb8ac6432b
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ Você pode configurar esses intervalos de tempo usando duas opções de agendame
 * **Horas de silêncio** - Você pode definir um intervalo de tempo diário (até 8 horas) em que as atualizações não ocorrerão.
 * **Atualizar períodos livres** - Você pode definir um período de 7 dias em que as atualizações não ocorrerão. Você pode ter até três períodos livres de atualização em um período de 12 meses.
 
-Os recursos de atualização de períodos livres e horários silenciosos são configurados com base em &quot;por programa&quot;.
+Os recursos de atualização de períodos livres e horários silenciosos são configurados com base em &quot;por programa&quot;. Lembre-se de que somente usuários com a &quot;função de usuário&quot; de **Proprietário da empresa** e **Gerente de implantação** podem exibir e usar esses recursos.
 
-Além disso, para obter informações sobre períodos programados de manutenção automática do AEM as a Cloud Service, consulte a página [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Além disso, para obter informações sobre períodos programados de manutenção automática do AEM as a Cloud Service, consulte a página [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ## Horas de silêncio {#quiet-hours}
 
@@ -76,3 +76,13 @@ Vá para **Atividades>Atualizações Automáticas>Opções de Atualização**.
 ![Atualizar Configuração de Períodos Livres](assets/update-free-periods.png)
 
 Um ícone **Ativo** será exibido próximo ao período livre de atualização ativo no momento e um ícone **Concluído** próximo aos períodos livres de atualização concluídos.
+
+## Períodos de Exclusão de Manutenção Planejada {#planned-maintenance}
+
+O Adobe tem vários períodos de exclusão de manutenção planejados. Esses períodos são definidos pela Adobe para minimizar os riscos em eventos críticos e geralmente ocorrem de duas a três vezes por ano. Você pode exibir o agendamento exato para os períodos de exclusão de manutenção na página [Roteiro da versão de manutenção](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+
+Para ajudar você a configurar os períodos sem atualização com precisão, os períodos de exclusão de manutenção também são exibidos na interface do usuário Período de silêncio e Atualizar períodos livres.
+
+![Períodos de Exclusão de Manutenção Planejados](assets/planned-maintenance.png)
+
+Observe que não é possível criar um período livre de atualização durante os períodos de exclusão.
