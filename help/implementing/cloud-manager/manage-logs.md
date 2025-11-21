@@ -1,19 +1,19 @@
 ---
-title: Acesso e gerenciamento de registros
+title: Acessar e gerenciar logs
 description: Saiba como acessar e gerenciar logs para auxiliar seu processo de desenvolvimento no AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 67%
+source-wordcount: '344'
+ht-degree: 64%
 
 ---
 
 
-# Acesso e gerenciamento de registros {#manage-logs}
+# Acessar e gerenciar logs {#manage-logs}
 
 Saiba como acessar e gerenciar logs para auxiliar seu processo de desenvolvimento no AEM as a Cloud Service.
 
@@ -21,9 +21,7 @@ Você pode acessar uma lista de arquivos de log disponíveis para o ambiente sel
 
 Os registros são retidos por sete dias.
 
-## Download de logs {#download-logs}
-
-Para baixar os logs, faça o seguinte:
+## Baixar logs {#download-logs}
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
@@ -101,5 +99,5 @@ Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud M
 
 Consulte os seguintes recursos adicionais para saber mais sobre arquivos de log no AEM as a Cloud Service:
 
-* [Arquivos de Log da AEM da Nuvem 5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [Depurando o AEM as a Cloud Service usando logs](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Arquivos de Log da AEM da Nuvem 5](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Depurando o AEM as a Cloud Service usando logs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

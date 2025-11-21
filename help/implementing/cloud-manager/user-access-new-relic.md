@@ -5,9 +5,9 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1817'
 ht-degree: 39%
 
 ---
@@ -43,7 +43,7 @@ Para um programa recém-criado, uma subconta do New Relic One é criada para voc
 
 >[!NOTE]
 >
->Um usuário na função de **Proprietário da empresa** ou **Gerente de implantação** deve estar conectado para gerenciar a subconta do New Relic One.
+>Um usuário com a função **Proprietário da empresa** deve estar conectado para gerenciar a subconta do New Relic One.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 

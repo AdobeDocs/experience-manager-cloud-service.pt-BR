@@ -1,40 +1,51 @@
 ---
 title: IA no AEM as a Cloud Service
 description: Saiba mais sobre IA no Adobe Experience Manager as a Cloud Service
-feature: Generative AI, AI Assistant, AI Tools
+feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 016d0f155278d6bde5dd09175ec179b10e6acb75
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '440'
 ht-degree: 3%
 
 ---
 
+
 # IA no AEM as a Cloud Service {#ai-in-aem-as-a-cloud-service}
 
-A IA é parte integrante do Adobe Experience Manager as a Cloud Service, sendo usada para ajudar os usuários a encontrar informações ou gerar experiências.
+A Inteligência artificial (IA) é parte integrante do Adobe Experience Manager as a Cloud Service, apoiando os usuários a encontrar informações ou gerar experiências.
 
 ## Assistente de IA {#ai-assistant}
 
 O [Assistente de IA no Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) oferece uma interface conversacional projetada para simplificar a localização de respostas para suas consultas relacionadas ao AEM.
 
+## IA de agente no AEM {#agentic-ai-in-aem}
+
+O AEM fornece um intervalo de [agentes comerciais](/help/ai-in-aem/agents/overview.md) para acelerar a criação de conteúdo e orquestrar alterações automaticamente:
+
+* [Agente de produção](/help/ai-in-aem/agents/production/overview.md)
+* [Agente de otimização de conteúdo](/help/ai-in-aem/agents/content-optimization/using.md)
+* [Agente de Descoberta](/help/ai-in-aem/agents/discovery/using.md)
+* [Agente de desenvolvimento](/help/ai-in-aem/agents/development/overview.md)
+* [Agente de governança](/help/ai-in-aem/agents/governance/overview.md)
+
 ## IA gerativa no AEM {#generative-ai-in-aem}
 
 A Adobe Generative AI for Adobe Experience Manager (AEM) as a Cloud Service permite que as marcas criem experiências de alto desempenho com a geração de cópia e imagem, tudo dentro da interface de edição. Com a IA gerativa, você pode criar conteúdo de forma autônoma que é:
 
-* Reconhecimento de marca - Crie conteúdo que incorpore tom de marca de voz, diretrizes de estilo e outros requisitos específicos.
-* Personalizado por público-alvo - Aproveite os insights de desempenho do conteúdo granular para personalizar o conteúdo para qualquer persona em todos os canais.
-* Específico da região - Vá além da tradução e adapte seu conteúdo com base em preferências regionais e padrões de comportamento.
-* Otimizado continuamente - Execute experimentos para determinar quais variações têm o melhor desempenho e use insights para melhorar o conteúdo futuro gerado pela IA.
+* **Com reconhecimento de marca** - Crie conteúdo que incorpore o tom da marca de voz, diretrizes de estilo e outros requisitos específicos.
+* **Personalizado por público-alvo** - Aproveite os insights de desempenho do conteúdo granular para personalizar o conteúdo para qualquer pessoa em todos os canais.
+* **Específico de região** - Vá além da tradução e adapte seu conteúdo com base em preferências regionais e padrões de comportamento.
+* **Otimizado continuamente** - Execute experimentos para determinar quais variações têm melhor desempenho e use insights para melhorar o conteúdo futuro gerado pela IA.
 
 A IA gerativa é usada em todo o AEM:
 
 * [Gerar variações - Integrado nos editores do AEM](/help/generative-ai/generate-variations-integrated-editor.md)
 
-  Gerar variações usa a Inteligência artificial (AI) gerativa para criar variações de conteúdo com base em sua entrada. Depois de criar variações, você pode usar o conteúdo no seu site e medir seu sucesso usando a funcionalidade de experimentação do Edge Delivery Services.
+  Gerar variações usa IA gerativa para criar variações de conteúdo com base em sua entrada. Depois de criar variações, você pode usar o conteúdo em seu site e também medir seu sucesso usando a funcionalidade de experimentação do Edge Delivery Services.
 
-   * E a versão anterior [Gerar Variações](/help/generative-ai/generate-variations.md)
+   * [A versão anterior Gerar Variações](/help/generative-ai/generate-variations.md) fora do editor permanece disponível.
 
      >[!NOTE]
      >
@@ -62,6 +73,6 @@ Há muitos recursos disponíveis, incluindo:
 
 * [IA responsável na Adobe](https://www.adobe.com/trust/responsible-ai.html)
 
-* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/generative-ai)
+* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/generative-ai#aem)
+   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
