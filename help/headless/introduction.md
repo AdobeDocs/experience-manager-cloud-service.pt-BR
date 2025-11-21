@@ -50,9 +50,9 @@ O AEM as a Cloud Service é uma ferramenta flexível para o modelo de implementa
 
 ## Primeiros passos {#first-steps}
 
-Há vários recursos disponíveis para oferecer uma introdução às funcionalidades headless do AEM. Cada guia é personalizado para diferentes casos de uso e públicos.
+Há vários recursos disponíveis para oferecer uma introdução às funcionalidades headless do AEM. Cada guia é personalizado para diferentes casos de uso e públicos-alvos.
 
-| Recurso | Descrição | Tipo | Público | Est. Hora |
+| Recurso | Descrição | Tipo | Público-alvo | Est. Hora |
 |---|---|---|---|---|
 | [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | **Para desenvolvedores novatos no AEM e em tecnologias headless**: comecem aqui para obter uma introdução abrangente ao AEM e seus recursos headless, desde a teoria do headless até a inauguração do seu primeiro projeto headless. | Guia | Desenvolvedores **novatos no AEM e no headless** | 1 hora |
 | [Configuração do headless](/help/headless/setup/introduction.md) | **Para usuários experientes do AEM** que precisam de um breve resumo dos principais recursos headless do AEM, confira esta visão geral de início rápido. | Configuração de referência | Desenvolvedores e administradores **com experiência no AEM** | 20 minutos |
