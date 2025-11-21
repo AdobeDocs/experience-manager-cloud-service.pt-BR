@@ -1,19 +1,19 @@
 ---
-title: Visão geral do agente de desenvolvimento de experiência
-description: Saiba como o Agente de desenvolvimento de experiência no AEM analisa pipelines com falha no Cloud Manager e cria logs para sugerir correções de código e acelerar a depuração.
-feature: Edge Delivery Services, Agentic AI
+title: Visão geral do agente de desenvolvimento
+description: Saiba como o Agente de desenvolvimento no AEM analisa pipelines com falha no Cloud Manager e cria logs para sugerir correções de código e acelerar a depuração.
+feature: Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 1f20d2825befa0345f9ebde3a9854cab591de0f6
+source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
 
 
-# Visão geral do Agente de desenvolvimento de experiência {#development-agent-overview}
+# Visão geral do agente de desenvolvimento {#development-agent-overview}
 
-O Agente de desenvolvimento de experiência ajuda os desenvolvedores e administradores do AEM a criar, depurar, implantar e otimizar o código com mais eficiência.
+O Agente de desenvolvimento ajuda os desenvolvedores e administradores do AEM a criar, depurar, implantar e otimizar o código com mais eficiência.
 
 Atualmente, o agente pode recuperar os status do pipeline e ajudar você a solucionar problemas de etapas de criação com falha, sugerindo correções e economizando tempo ao depurar implantações do AEM as a Cloud Service em ambientes de desenvolvimento, preparo e produção. Ele examina logs de compilação e código relacionado para recomendar uma correção que pode ser aplicada manualmente.
 
@@ -27,11 +27,11 @@ Atualmente, o agente pode recuperar os status do pipeline e ajudar você a soluc
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-## Acessar o agente de desenvolvimento de experiência por meio do Cloud Manager {#how-to-access-the-agent}
+## Acessar o agente de desenvolvimento por meio do Cloud Manager {#how-to-access-the-agent}
 
-Você acessa o Agente de desenvolvimento de experiência por meio do Assistente de IA encontrado nas interfaces do usuário, incluindo o Cloud Manager ou o Experience Hub.
+Você acessa o Agente de desenvolvimento por meio do Assistente de IA encontrado nas interfaces do usuário, incluindo o Cloud Manager ou o Experience Hub.
 
-**Para acessar o Agente de Desenvolvimento de Experiência por meio do Cloud Manager:**
+**Para acessar o Agente de Desenvolvimento por meio do Cloud Manager:**
 
 1. Para começar, clique em [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) para abrir sua home page.
 
@@ -73,7 +73,7 @@ Você acessa o Agente de desenvolvimento de experiência por meio do Assistente 
 
 ## Permissões {#permissions}
 
-O trabalho de solução de problemas de pipeline do Agente de desenvolvimento de experiência requer a função Cloud Manager - Desenvolvedor ou a função Cloud Manager - Gerente de programa.
+O trabalho de solução de problemas do pipeline do Agente de desenvolvimento exige a função Cloud Manager - Desenvolvedor ou a função Cloud Manager - Gerente de programas.
 
 
 
