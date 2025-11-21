@@ -3,9 +3,9 @@ title: Habilidade de criação de comunicação
 description: Saiba mais sobre a habilidade de criação de comunicação do agente de produção de experiência e como usar a linguagem natural para criar comunicações interativas.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 As Comunicações interativas são documentos personalizados, orientados por dados, criados para correspondência de negócios, como demonstrativos de conta, documentos de política, contas, kits de boas-vindas e avisos de benefícios. Ao contrário dos formulários que coletam entradas de usuários, as Comunicações interativas geram documentos de saída com conteúdo dinâmico e específico do destinatário.
 
-A habilidade de criação de comunicação é um recurso do Agente de produção de experiência projetado para desenvolver comunicações interativas usando interações de linguagem natural. Ele permite que os usuários criem correspondência personalizada e orientada por dados sem os processos manuais tradicionais. Essa habilidade elimina a complexidade do design de comunicação ao interpretar prompts conversacionais e gerar automaticamente estruturas de documento, layouts e vinculações de dados apropriadas. A habilidade é revelada pelo assistente de IA e pelo Experience Hub.
+A habilidade de criação de comunicação é um recurso do Agente de produção de experiência projetado para desenvolver comunicações interativas usando prompts de linguagem natural. Essa habilidade gera automaticamente correspondência personalizada e orientada por dados para impressão (no formato PDF). A habilidade é revelada pelo Assistente de IA.
 
 Alguns dos principais benefícios da habilidade de criação de comunicação incluem:
 
@@ -23,13 +23,16 @@ Alguns dos principais benefícios da habilidade de criação de comunicação in
 * **Correspondência consistente e sobre marcas**: crie comunicações que sigam a identidade visual, os modelos e as diretrizes de estilo de sua organização usando modelos e estilos aprovados.
 * **Barreira técnica mais baixa**: permite que usuários empresariais criem comunicações facilmente, sem precisar de conhecimento técnico avançado ou de produtos profundos.
 
-## Casos de uso e prompts de amostra {#use-cases-prompts}
+## Recursos {#capabilities}
 
-A habilidade de criação de comunicações permite criar correspondência sobre as marcas, enviando seus requisitos em linguagem simples.
+* **Criar comunicações personalizadas com prompt de texto sem formatação**: você pode criar documentos de comunicação para impressão (no formato PDF) enviando seus requisitos em linguagem sem formatação. O agente gera automaticamente estruturas de documentos, layouts e associações de dados apropriadas com base na descrição de sua linguagem natural.
 
-Será solicitado que você especifique o modelo, indique o caminho de sua preferência para salvar a comunicação e forneça os detalhes da fonte de dados. Com base nessas seleções, a habilidade de criação de comunicação gera automaticamente o documento apropriado.
+* **Criar a partir de modelos**: você pode usar modelos organizacionais aprovados para garantir a consistência da marca e os padrões de conformidade. O agente utiliza seus modelos e diretrizes de estilo existentes para criar correspondência na marca que atenda aos requisitos normativos.
 
-### Exemplos de prompts {#sample-prompts}
+* **Importar e converter documentos existentes em comunicações interativas**: você pode importar e transformar documentos existentes em comunicações interativas. O agente analisa o conteúdo carregado para detectar campos, preservar layouts e criar correspondência orientada por dados com recursos de conteúdo dinâmico. Os formatos compatíveis incluem PDFs, arquivos XDP, imagens (JPG, PNG) e modelos desenhados à mão.
+
+
+## Exemplos de prompts {#sample-prompts}
 
 * *Criar um extrato de conta bancária com tabela de histórico de transações e gráfico de saldo*
 * *Gerar um resumo do portfólio de investimentos com gráficos de desempenho e detalhamento de ativos*
@@ -47,6 +50,8 @@ Será solicitado que você especifique o modelo, indique o caminho de sua prefer
 ## Próximas etapas {#refine-with-ic-editor}
 
 Depois de criar sua estrutura de comunicação inicial usando o Assistente de IA ou o Experience Hub, você pode usar o Editor de comunicações interativas para refinar e aprimorar seu documento:
+
+* **Editar campos usando prompts de linguagem natural**: você pode adicionar, atualizar e remover campos facilmente e suas propriedades em documentos usando prompts. O agente interpreta as instruções e faz as modificações apropriadas na estrutura do documento e nas configurações de campo.
 
 * **Criação de componente incremental**: adicione ou modifique componentes individuais, como texto, imagens, gráficos, tabelas e códigos de barras, por meio do editor visual.
 
