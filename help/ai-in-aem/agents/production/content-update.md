@@ -3,10 +3,10 @@ title: Habilidade de atualização de conteúdo
 description: Saiba o que é a habilidade de atualização de conteúdo do Agente de produção de experiência e o que ele pode fazer por você.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 2%
+source-wordcount: '862'
+ht-degree: 1%
 
 ---
 
@@ -37,15 +37,17 @@ Abra o Assistente de IA em experience.adobe.com e comece a interagir especifican
 
 ![Agente de Descoberta de Acesso](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
-<!--
-### Sample Prompts {#sample-prompts}
+### Exemplos de Prompts {#sample-prompts}
 
-To initiate content updates you can give a wide range of natural language prompts. You also need to specify the public facing URL of the page you want to update:
+Para iniciar atualizações de conteúdo, você pode fornecer uma grande variedade de solicitações em linguagem natural. Você também precisa especificar o URL voltado para o público da página que deseja atualizar. Por exemplo:
 
-* Change your headlines
+* modifique a seguinte página https://www.your-url.com/sale Atualize o cabeçalho principal para &quot;Black Friday Mega Sale - Até 70% Off&quot;, Altere o cronômetro da contagem regressiva para mostrar &quot;Termina em 48 Horas&quot;, Remover &quot;Inscreva-se para obter atualizações&quot;, Altere todos os botões &quot;Comprar agora&quot; para &quot;Agarrar o acordo&quot;
 
-  * On your-URL change the headline from X to Y
--->
+* https://www.your-url.com/laptops/your-laptop-model Atualizar cópia do banner para "Salvar 300 USD Hoje Somente", Atualizar preço de 1.299 USD para 999 USD, Remover banner de opção de financiamento
+
+* https://www.your-url.com/your-sneaker Atualizar status do estoque de "Baixo estoque" para "Voltar no estoque - Quantidades limitadas", Alterar o seletor de tamanho para realçar os tamanhos disponíveis em verde, Remover o selo "Em breve"
+
+* https://www.your-url.com/your-sneaker Atualizar as imagens do produto para mostrar novas colorways
 
 >[!NOTE]
 >
@@ -109,7 +111,7 @@ No caso de um comando `process` para acionar atualizações, as respostas podem 
 
 ### Ativação {#activation}
 
-Para ativar e obter acesso ao Agente de produção com Jira, é necessário enviar um email para a Adobe. Para começar, você pode entrar em contato com:
+Para ativar e obter acesso ao Agente de produção de experiência com Jira, você precisa enviar um email para a Adobe. Para começar, você pode entrar em contato com:
 
 * `experience-production-agent@adobe.com`
 * ou entre em contato com a equipe de conta
