@@ -3,15 +3,19 @@ title: Habilidade de criação de comunicação
 description: Saiba mais sobre a habilidade de criação de comunicação do agente de produção de experiência e como usar a linguagem natural para criar comunicações interativas.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 
 # Habilidade de criação de comunicação {#ic-creation-skill}
+
+>[!NOTE]
+>
+> A habilidade de Criação de comunicações está atualmente em alfa. Se você deseja participar, envie uma solicitação de seu endereço de email oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
 
 As Comunicações interativas são documentos personalizados, orientados por dados, criados para correspondência de negócios, como demonstrativos de conta, documentos de política, contas, kits de boas-vindas e avisos de benefícios. Ao contrário dos formulários que coletam entradas de usuários, as Comunicações interativas geram documentos de saída com conteúdo dinâmico e específico do destinatário.
 
@@ -39,7 +43,9 @@ Alguns dos principais benefícios da habilidade de criação de comunicação in
 * *Criar uma comunicação do arquivo de imagem em https://[aem-author-url]/path/to/image/file*
 * Crie uma carta usando o arquivo do PDF em https://[aem-author-url]/path/to/pdf/file
 
+
 ## Refine sua comunicação {#refine-with-ic-editor}
+
 
 Depois de criar sua estrutura de comunicação inicial usando o Assistente de IA, você pode usar o Editor de comunicações interativas para refinar e aprimorar seu documento. No Editor de comunicações interativas, você pode fornecer prompts em linguagem natural para:
 
@@ -65,4 +71,3 @@ Depois de criar sua estrutura de comunicação inicial usando o Assistente de IA
 * *Altere o espaçamento entre linhas da seção de termos e condições para 1.5*
 
 Para obter mais informações sobre os recursos do editor de Comunicação Interativa, consulte [Documentação de Comunicações Interativas](/help/forms/introduction-to-interactive-communication.md).
-
