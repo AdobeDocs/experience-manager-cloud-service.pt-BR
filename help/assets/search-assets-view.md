@@ -4,10 +4,10 @@ description: Saiba como pesquisar e descobrir ativos na visualização do AEM As
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 79%
+source-wordcount: '1938'
+ht-degree: 77%
 
 ---
 
@@ -145,6 +145,19 @@ No entanto, a Pesquisa de IA corresponde a palavras semelhantes, como `Girl`, `L
 Da mesma forma, você pode especificar este prompt em espanhol ou digitar incorretamente `Woman` como `Wman` e ainda obter os mesmos resultados.
 
 ![Pesquisa semântica no modo de exibição Assets](assets/semantic-search.png)
+
+### Ativar ou desativar a pesquisa de IA na exibição do Assets {#enable-disable-ai-search}
+
+Execute as seguintes etapas para ativar ou desativar a Pesquisa de IA:
+
+1. Navegue até **[!UICONTROL Configurações]** >> **[!UICONTROL Configurações Gerais]** e selecione a guia **[!UICONTROL Pesquisa]**.
+
+1. Na seção **[!UICONTROL Pesquisa]**, selecione **[!UICONTROL Pesquisa de IA]** para habilitar a Pesquisa de IA ou **[!UICONTROL Palavra-chave]** para desabilitá-la.
+
+   ![Pesquisa semântica no modo de exibição Assets](/help/assets/assets/enable-disable-ai-search.png)
+
+1. Clique em **[!UICONTROL Salvar]**.
+
 
 ## Pesquisar ativos usando o [!DNL Adobe Firefly] {#search-firefly}
 
@@ -373,7 +386,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Forneça feedback sobre a documentação por meio das opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita.
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 
 

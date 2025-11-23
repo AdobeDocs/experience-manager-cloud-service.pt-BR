@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '6089'
+source-wordcount: '5969'
 ht-degree: 5%
 
 ---
@@ -147,9 +147,9 @@ Você pode melhorar a relevância de palavras-chave para ativos específicos par
 1. Na caixa **[!UICONTROL Promover Pesquisa]**, especifique uma palavra-chave para a qual deseja impulsionar a pesquisa da imagem e clique em **[!UICONTROL Adicionar]**. Você pode especificar várias palavras-chave da mesma maneira.
 1. Clique em **[!UICONTROL Salvar e fechar]**. O ativo que você promoveu para essa palavra-chave aparece entre os principais resultados da pesquisa.
 
-Você pode usar isso a seu favor aumentando a classificação de alguns ativos nos resultados da pesquisa para a palavra-chave direcionada. Veja o vídeo de exemplo abaixo. Para obter informações detalhadas, consulte [pesquisar em [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=pt-BR).
+Você pode usar isso a seu favor aumentando a classificação de alguns ativos nos resultados da pesquisa para a palavra-chave direcionada. Veja o vídeo de exemplo abaixo. Para obter informações detalhadas, consulte [pesquisar em [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3418848/?captions=por_br&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vídeo: Entenda como os resultados da pesquisa são classificados e como a classificação pode ser influenciada.*
 
@@ -253,11 +253,11 @@ Com o Adobe Asset Link, os profissionais de criação agora podem acessar o cont
 
 ### Pesquisar ativos no aplicativo de desktop [!DNL Experience Manager] {#desktop-app}
 
-Os profissionais da Creative usam o aplicativo de desktop para tornar o [!DNL Experience Manager Assets] facilmente pesquisável e disponível em seu desktop local (Win ou Mac). A criação pode revelar facilmente os ativos desejados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente. As alterações são salvas novamente no [!DNL Experience Manager] com uma nova versão criada no repositório. O aplicativo oferece suporte a pesquisas básicas usando uma ou mais palavras-chave, curingas `*` e `?` e o operador `AND`. Consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#browse-search-preview-assets) no aplicativo de desktop.
+Os profissionais da Creative usam o aplicativo de desktop para tornar o [!DNL Experience Manager Assets] facilmente pesquisável e disponível em seu desktop local (Win ou Mac). A criação pode revelar facilmente os ativos desejados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente. As alterações são salvas novamente no [!DNL Experience Manager] com uma nova versão criada no repositório. O aplicativo oferece suporte a pesquisas básicas usando uma ou mais palavras-chave, curingas `*` e `?` e o operador `AND`. Consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) no aplicativo de desktop.
 
 ### Pesquisar ativos no [!DNL Brand Portal] {#brand-portal}
 
-Os usuários e profissionais de marketing de linha de negócios usam o Brand Portal para compartilhar com eficiência e segurança os ativos digitais aprovados com suas equipes internas estendidas, parceiros e revendedores. Consulte [pesquisar ativos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=pt-BR).
+Os usuários e profissionais de marketing de linha de negócios usam o Brand Portal para compartilhar com eficiência e segurança os ativos digitais aprovados com suas equipes internas estendidas, parceiros e revendedores. Consulte [pesquisar ativos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
 ### Pesquisar [!DNL Adobe Stock] imagens {#adobe-stock1}
 
@@ -400,44 +400,23 @@ No entanto, a Pesquisa de IA corresponde a palavras semelhantes, como `Girl`, `L
 Da mesma forma, você pode especificar este prompt em espanhol ou digitar incorretamente `Woman` como `Wman` e ainda obter os mesmos resultados.
 
 
+### Ativar ou desativar a pesquisa de IA no modo de exibição de Administração {#enable-disable-ai-search}
+
+Execute as seguintes etapas para ativar ou desativar a Pesquisa de IA na exibição de Administrador:
+
+1. Navegue até **[!UICONTROL Ferramentas]** >> **[!UICONTROL Assets]** >> **[!UICONTROL Configurações do Assets]** >> **[!UICONTROL Configuração do Assets Omnisearch]**.
+
+1. Na seção **[!UICONTROL Pesquisa]**, selecione **[!UICONTROL Pesquisa de IA]** para habilitar a Pesquisa de IA ou **[!UICONTROL Palavra-chave]** para desabilitá-la.
+
+   ![Habilitar ou desabilitar a Pesquisa de IA](/help/assets/assets/enable-ai-search-admin-view.png)
+
+1. Clique em **[!UICONTROL Salvar]**.
+
 ## Tarefas de configuração e administração relacionadas à funcionalidade de pesquisa {#configadmin}
 
 ### Pesquisar configurações de índice {#searchindex}
 
 A descoberta de ativos depende da indexação de conteúdo do DAM, incluindo os metadados. A detecção de ativos mais rápida e precisa depende da indexação otimizada e das configurações apropriadas. Consulte [indexação](/help/operations/indexing.md).
-
-### Pesquisa visual ou por semelhança {#configvisualsearch}
-
-A pesquisa visual usa Tags inteligentes. Depois de configurar a funcionalidade de marcação inteligente, siga estas etapas.
-
-1. No CRXDE [!DNL Experience Manager], no nó `/oak:index/lucene`, adicione as seguintes propriedades e valores e salve as alterações.
-
-   * Propriedade `costPerEntry` do tipo `Double` com o valor `10`.
-
-   * Propriedade `costPerExecution` do tipo `Double` com o valor `2`.
-
-   * Propriedade `refresh` do tipo `Boolean` com o valor `true`.
-
-   Essa configuração permite pesquisas no índice apropriado.
-
-1. Para criar o índice Lucene, no CRXDE, em `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, crie o nó chamado `imageFeatures` do tipo `nt-unstructured`. No nó `imageFeatures`,
-
-   * Adicione a propriedade `name` do tipo `String` com o valor `jcr:content/metadata/imageFeatures/haystack0`.
-
-   * Adicione a propriedade `nodeScopeIndex` do tipo `Boolean` com o valor de `true`.
-
-   * Adicione a propriedade `propertyIndex` do tipo `Boolean` com o valor de `true`.
-
-   * Adicione a propriedade `useInSimilarity` do tipo `Boolean` com o valor `true`.
-
-   Salve as alterações.
-
-1. Acesse `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` e adicione a propriedade `similarityTags` do tipo `Boolean` com o valor de `true`.
-1. Aplique Tags inteligentes aos ativos no repositório do [!DNL Experience Manager]. Consulte [como configurar tags inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=pt-BR#configuring).
-1. No CRXDE, no nó `/oak-index/damAssetLucene`, defina a propriedade `reindex` como `true`. Salve as alterações.
-1. (Opcional) Se você tiver personalizado o formulário de pesquisa, copie o nó `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` para `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Salve as alterações.
-
-Para obter informações relacionadas, consulte [entender as tags inteligentes na Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=pt-BR) e [como gerenciar tags inteligentes](/help/assets/smart-tags.md).
 
 ### Metadados obrigatórios {#mandatorymetadata}
 
@@ -578,5 +557,5 @@ Navegue até o local da pasta dos ativos exibidos nos resultados da pesquisa. Se
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] guia de implementação de pesquisa](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=pt-BR)
->* [Configuração avançada para impulsionar os resultados da pesquisa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=pt-BR)
+>* [[!DNL Experience Manager] guia de implementação de pesquisa](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [Configuração avançada para impulsionar os resultados da pesquisa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
