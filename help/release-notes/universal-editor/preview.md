@@ -3,9 +3,9 @@ title: Notas de versão de visualização do Universal Editor
 description: Estas são as notas de versão da versão de pré-visualização do Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 434bf669f4a060f2d79dcc57f94fbcff27a840e1
+source-git-commit: b060b77954471124a5062fa4b08e905052bc9010
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,7 @@ Estas notas de versão do **preview** são fornecidas como conveniência, para q
 
 ## Novos recursos futuros {#what-is-new}
 
+* Os cabeçalhos de autorização foram desabilitados em favor do [logon de desenvolvedor local.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
 * Um menu contextual agora está disponível na árvore estruturada ao clicar com o botão direito do mouse.
 * Uma tecla de atalho foi adicionada aos componentes duplicados.
 
