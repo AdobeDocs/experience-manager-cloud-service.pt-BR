@@ -4,7 +4,7 @@ description: Saiba como entregar seus projetos do Cloud Manager usando o Edge De
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 3%
@@ -73,7 +73,7 @@ Uma Edge Delivery Services pode ser adicionada de várias maneiras diferentes, d
 
 A **lista de tarefas do Edge Delivery** no Cloud Manager é uma lista de verificação de tarefas de integração criada para orientá-lo na integração e no gerenciamento do seu site do Edge Delivery até a [Ativação](/help/journey-onboarding/go-live-checklist.md).
 
-![Lista de tarefas do site do Edge Delivery no Cloud Manager.](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Lista de tarefas do site do Edge Delivery no Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Tarefa | Descrição |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ A **lista de tarefas do Edge Delivery** no Cloud Manager é uma lista de verific
 | 8 | Configurar validação por push | Consulte [Configurar validação por push para um site do Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 9 | Publicação | Consulte a [Lista de verificação de ativação](https://www.aem.live/docs/go-live-checklist). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441566?captions=por_br&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registrar um tíquete de suporte {#eds-support-ticket}
 

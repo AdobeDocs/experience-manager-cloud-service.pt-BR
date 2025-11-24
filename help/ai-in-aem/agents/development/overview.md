@@ -1,11 +1,11 @@
 ---
 title: Visão geral do agente de desenvolvimento
 description: Saiba como o Agente de desenvolvimento no AEM analisa pipelines com falha no Cloud Manager e cria logs para sugerir correções de código e acelerar a depuração.
-feature: Agentic AI
+feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 1%
 
 ---
@@ -81,8 +81,8 @@ O trabalho de solução de problemas do pipeline do Agente de desenvolvimento ex
 
 | Prompt | Resultado |
 | --- | --- |
-| *Listar meus pipelines com falha para o Programa Principal.* | Embora os resultados possam variar, esse prompt deve produzir uma tabela de pipelines com falha, com uma sugestão de acompanhamento para fazer referência a um pipeline específico a ser analisado. |
-| *Analise meu pipeline com falha chamado &quot;Pipeline de Desenvolvimento&quot;.* | Esse prompt deve resultar em uma análise do pipeline que falhou com sugestões para corrigir. |
+| *Listar meus pipelines com falha para o Programa Principal.* | Embora os resultados possam variar, esse prompt gera uma tabela de pipelines com falha, com uma sugestão de acompanhamento para fazer referência a um pipeline específico a ser analisado. |
+| *Analise meu pipeline com falha chamado &quot;Pipeline de Desenvolvimento&quot;.* | Esse prompt resulta em uma análise do pipeline que falhou com sugestões para corrigir. |
 
 ## Recursos fora do escopo {#out-of-scope-features}
 
