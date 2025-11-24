@@ -3,9 +3,9 @@ title: Habilidade de atualização de conteúdo
 description: Saiba o que é a habilidade de atualização de conteúdo do Agente de produção de experiência e o que ele pode fazer por você.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
+source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---
@@ -109,9 +109,9 @@ No caso de um comando `process` para acionar atualizações, as respostas podem 
 
   ![Exemplo de Jira usando a habilidade de atualização de conteúdo do Agente de Produção de Experiência](assets/content-update-jira-example.png)
 
-### Ativação {#activation}
+## Ativação {#activation}
 
-Para ativar e obter acesso ao Agente de produção de experiência com Jira, você precisa enviar um email para a Adobe. Para começar, você pode entrar em contato com:
+Para ativar e obter acesso ao Experience Production Agent, é necessário entrar em contato com a Adobe. Para começar, você pode entrar em contato com:
 
 * `experience-production-agent@adobe.com`
 * ou entre em contato com a equipe de conta
