@@ -3,9 +3,9 @@ title: Visão geral do Experience Production Agent
 description: Saiba como o Agente de produção de experiência no AEM ajuda a acelerar a criação de conteúdo e a orquestrar alterações automaticamente.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
+source-git-commit: c3757aff37a9896a7aaaa91a2d3a352a9f9e96d2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '352'
 ht-degree: 3%
 
 ---
@@ -62,28 +62,3 @@ Para ativar e obter acesso ao Experience Production Agent, é necessário entrar
 
 * `experience-production-agent@adobe.com`
 * ou entre em contato com a equipe de conta
-
-Para acelerar o processo, é útil fornecer as seguintes informações:
-
-* Para AEM as a Cloud Service
-   * É necessário fornecer:
-      * ID da organização
-      * `product_id`
-      * `profile_id`
-
-   * Esses valores podem ser encontrados usando as seguintes etapas:
-      * Seu administrador precisa visitar <https://adminconsole.adobe.com/>
-      * Selecionar **Adobe Experience Manager as a Cloud Service**
-      * Selecione a instância apropriada do AEM
-      * Selecionar o perfil que permite operações de leitura e gravação para o conteúdo em questão
-      * Pegue o URL do navegador
-      * Extrair `product_id` e `profile_id` do URL.
-Por exemplo, <https://adminconsole.adobe.com/products/profiles/users>
-
-* Criação de documentos do Edge Delivery
-   * Forneça as seguintes informações à sua equipe do Adobe:
-      * Domínios relevantes
-      * Informações relevantes do Github:
-         * Org
-         * Acordo de recompra
-         * Ramificação
