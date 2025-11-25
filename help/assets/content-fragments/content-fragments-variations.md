@@ -5,9 +5,9 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
+source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2571'
 ht-degree: 50%
 
 ---
@@ -417,7 +417,7 @@ Eles são adicionados como referência no local atual no fragmento.
 
 Herança é o mecanismo em que o conteúdo pode ser enviado automaticamente de um fragmento para outro. Campos herdados e variações podem ser o produto do [Gerenciamento de vários sites](/help/assets/content-fragments/content-fragments-msm.md).
 
-Você pode cancelar (e depois reativar) a herança. Dependendo do contexto, isso pode estar disponível para uma variação ou um campo individual, se o fragmento fizer parte de uma live copy.
+Você pode cancelar (e depois reabilitar) a herança. Dependendo do contexto, isso pode estar disponível para uma variação ou um campo individual, se o fragmento fizer parte de uma live copy.
 
 ![Um fragmento de conteúdo que mostra a relação de herança](/help/assets/content-fragments/assets/cfm-variations-inheritance.png)
 
@@ -429,7 +429,7 @@ Por exemplo:
 
 * Reativar herança (se a herança já estiver cancelada)
 
-  ![Botão Reativar herança](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
+  ![Botão Reabilitar herança](/help/assets/content-fragments/assets/editing-reenable-inheritance.png)
 
 <!--
 * Rollout action is also available in Live Copy source
@@ -444,6 +444,12 @@ Por exemplo:
 As variações permitem selecionar o conteúdo **Principal** e alterá-lo de acordo com a finalidade (se necessário).
 
 **Para criar uma variação:**
+
+>[!NOTE]
+>
+>As variações adicionam tempo de processamento a um Fragmento de conteúdo, no ambiente de criação e no momento da entrega também. É recomendável manter o número de variações em um mínimo gerenciável.
+>
+>Uma prática recomendada é não exceder dez variações por Fragmento de conteúdo.
 
 1. Abra o fragmento e verifique se o painel lateral está visível.
 1. Selecione **Variações** na barra de ícones, no painel lateral.
@@ -502,7 +508,7 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 
 >[!CAUTION]
 >
->A sincronização só está disponível para copiar alterações *do **Principal**&#x200B;para a variação*.
+>A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
 >
 >Somente o elemento atual da variação será sincronizado.
 >
