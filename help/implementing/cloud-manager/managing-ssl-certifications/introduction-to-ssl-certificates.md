@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 17%
+source-wordcount: '1263'
+ht-degree: 15%
 
 ---
 
@@ -154,11 +154,17 @@ Os seguintes comandos `openssl` podem ser usados para converter certificados nã
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## Limitação do número de certificados SSL instalados {#limitations}
+## Limitações {#limitations}
+
+### Número de certificados SSL instalados {#number-installed-ssl-certs}
 
 A qualquer momento, a Cloud Manager oferece suporte a até 70 certificados instalados. Esses certificados podem ser associados a um ou mais ambientes em todo o programa e também incluir certificados expirados.
 
 Se tiver atingido o limite, revise os certificados e considere excluir os certificados expirados. Ou agrupe vários domínios no mesmo certificado, pois um certificado pode abranger vários domínios (até 100 SANs).
+
+### Vamos Criptografar limites de taxa para certificados de DV gerenciados pela Adobe
+
+Os certificados DV gerenciados pela Adobe dependem de Let&#39;s Encrypt. Além do limite do Cloud Manager em certificados instalados, o Let&#39;s Encrypt aplica seus próprios limites de taxa. Um limite de chave é **Novos certificados por conjunto exato de identificadores**: até 5 certificados podem ser emitidos para o mesmo conjunto de nomes de host em qualquer período de 7 dias. Se esse limite for atingido, o Cloud Manager mostrará o erro Let&#39;s Encrypt correspondente e não poderá criar mais certificados para esse conjunto de nomes de host até que a janela de limite de taxa seja redefinida. Para obter os valores mais recentes e outros limites relacionados, consulte a [documentação Vamos criptografar limites de taxa](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## Saiba mais {#learn-more}
 
