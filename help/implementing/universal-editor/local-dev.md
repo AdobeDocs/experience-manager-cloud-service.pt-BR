@@ -4,9 +4,9 @@ description: Saiba como executar seu próprio Universal Editor Service para dese
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Developer
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 0df573a3d869f2718983b4e661a86c769b4d3f1a
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '979'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Saiba como executar seu próprio Universal Editor Service para desenvolvimento l
 
 >[!NOTE]
 >
->Os Serviços locais do Universal Editor não são necessários ou compatíveis para projetos que usam a criação do AEM com o Edge Delivery Services.
+>Os Serviços locais do Universal Editor não são necessários para projetos que usam a criação do AEM com o Edge Delivery Services.
 
 ## Visão geral {#overview}
 
