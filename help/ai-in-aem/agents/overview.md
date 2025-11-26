@@ -3,7 +3,7 @@ title: Visão geral dos agentes no AEM
 description: Saiba mais sobre os Agentes disponíveis no AEM para acelerar a criação de conteúdo e orquestrar alterações automaticamente.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: f981e7ed9f4bbd26226facf37c343f16a9e99263
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -32,11 +32,11 @@ O [Experience Production Agent](/help/ai-in-aem/agents/production/overview.md) a
 
 ## Agente de otimização de conteúdo {#content-optimization-agent}
 
-O [Agente de Otimização de Conteúdo](/help/ai-in-aem/agents/content-optimization/using.md) transforma o modo como os usuários refinam e adaptam ativos aplicando instruções de linguagem natural para criar variações prontas para canal. O agente interpreta a intenção do usuário e executa tarefas de edição complexas automaticamente para executar tarefas, incluindo a geração de novas representações, o ajuste de propriedades visuais, a alteração de planos de fundo ou a preparação de ativos para canais digitais específicos.
+O [Agente de Otimização de Conteúdo](/help/ai-in-aem/agents/content-optimization/overview.md) transforma o modo como os usuários refinam e adaptam ativos aplicando instruções de linguagem natural para criar variações prontas para canal. O agente interpreta a intenção do usuário e executa tarefas de edição complexas automaticamente para executar tarefas, incluindo a geração de novas representações, o ajuste de propriedades visuais, a alteração de planos de fundo ou a preparação de ativos para canais digitais específicos.
 
 ## Agente de Descoberta {#discovery-agent}
 
-O [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md) fornece conteúdo do AEM para uma experiência de descoberta simplificada e livre de cliques. Ele faz pesquisas de forma inteligente em Assets, Fragmentos de conteúdo e Forms adaptável para fornecer materiais relevantes, como imagens, vídeos, documentos PDF, artigos e modelos de formulário.
+O [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md) fornece conteúdo do AEM para uma experiência de descoberta simplificada e livre de cliques. Ele faz pesquisas de forma inteligente em Assets, Fragmentos de conteúdo e Forms adaptável para fornecer materiais relevantes, como imagens, vídeos, documentos PDF, artigos e modelos de formulário.
 
 ## Agente de desenvolvimento {#development-agent}
 
