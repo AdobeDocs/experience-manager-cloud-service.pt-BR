@@ -3,9 +3,9 @@ title: Habilidade de criação de comunicação
 description: Saiba mais sobre a habilidade de criação de comunicação do agente de produção de experiência e como usar a linguagem natural para criar comunicações interativas.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
+source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -71,3 +71,39 @@ Depois de criar sua estrutura de comunicação inicial usando o Assistente de IA
 * *Altere o espaçamento entre linhas da seção de termos e condições para 1.5*
 
 Para obter mais informações sobre os recursos do editor de Comunicação Interativa, consulte [Documentação de Comunicações Interativas](/help/forms/introduction-to-interactive-communication.md).
+
+## Ativação {#activation}
+
+Para habilitar o Agente de produção de experiência para sua organização, a ativação deve ser iniciada por meio do Adobe. Comece o processo fazendo um contato via:
+
+* Email: `experience-production-agent@adobe.com`
+* Ou entre em contato com a equipe de conta designada da Adobe.
+
+Para ter uma experiência de integração eficiente, prepare e forneça os seguintes detalhes:
+
+Para **AEM as a Cloud Service**, compartilhe os seguintes identificadores:
+
+* ID da organização
+* `product_id`
+* `profile_id`
+
+O administrador do AEM pode localizá-los ao:
+
+1. Navegando para <https://adminconsole.adobe.com/>
+1. Selecionando **Adobe Experience Manager as a Cloud Service**
+1. Escolha da instância apropriada do AEM em seu ambiente
+1. Seleção de um perfil com permissões de leitura/gravação para conteúdo relevante
+1. Copiando o URL completo do navegador desta página
+1. Extraindo os valores `product_id` e `profile_id` da URL\
+   (por exemplo, uma URL como `https://adminconsole.adobe.com/products/profiles/users` contém esses parâmetros).
+
+Para a **Criação de documentos do Edge Delivery**, forneça à sua equipe do Adobe:
+
+* Domínios para seu ambiente Edge Delivery Services
+* Detalhes do GitHub correspondentes:
+   * Organização (Org.)
+   * Repositório (Repo)
+   * Ramificação
+
+Fornecer informações completas e precisas agiliza o processo de ativação e garante o provisionamento oportuno do agente de produção de experiência.
+
