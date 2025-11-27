@@ -3,9 +3,9 @@ title: Habilidade de criação de formulários
 description: Saiba mais sobre a habilidade de criação de formulários do Agente de produção de experiência e como usar a linguagem natural para criar formulários do zero.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
+source-git-commit: 01fce6fcdf1c8ada0422a84fccb9a89f395e2a0e
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -62,33 +62,8 @@ Para habilitar o Agente de produção de experiência para sua organização, a 
 * Email: `experience-production-agent@adobe.com`
 * Ou entre em contato com a equipe de conta designada da Adobe.
 
-Para ter uma experiência de integração eficiente, prepare e forneça os seguintes detalhes:
+Ao entrar em contato com o, forneça sua ID da organização da AEM as a Cloud Service.
 
-Para **AEM as a Cloud Service**, compartilhe os seguintes identificadores:
-
-* ID da organização
-* `product_id`
-* `profile_id`
-
-O administrador do AEM pode localizá-los ao:
-
-1. Navegando para <https://adminconsole.adobe.com/>
-1. Selecionando **Adobe Experience Manager as a Cloud Service**
-1. Escolha da instância apropriada do AEM em seu ambiente
-1. Seleção de um perfil com permissões de leitura/gravação para conteúdo relevante
-1. Copiando o URL completo do navegador desta página
-1. Extraindo os valores `product_id` e `profile_id` da URL\
-   (por exemplo, uma URL como `https://adminconsole.adobe.com/products/profiles/users` contém esses parâmetros).
-
-Para a **Criação de documentos do Edge Delivery**, forneça à sua equipe do Adobe:
-
-* Domínios para seu ambiente Edge Delivery Services
-* Detalhes do GitHub correspondentes:
-   * Organização (Org.)
-   * Repositório (Repo)
-   * Ramificação
-
-Fornecer informações completas e precisas agiliza o processo de ativação e garante o provisionamento oportuno do agente de produção de experiência.
 
 <!-- 
 #### Import and convert {#import-and-convert}
