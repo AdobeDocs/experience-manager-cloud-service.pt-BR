@@ -77,4 +77,4 @@ Para ativar a listagem de formulários para o componente Rascunho e Envio, adici
  </tbody>
 </table>
 
-Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no nó /content/forms/fp na instância de Publicação. Você pode adicionar seu provedor de armazenamento personalizado. Para obter detalhes, consulte [Armazenamento personalizado para componentes de Rascunhos e Envios](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).
+Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no nó /content/forms/fp na instância de Publicação. Você pode adicionar seu provedor de armazenamento personalizado. Para obter detalhes, consulte [Armazenamento personalizado para componentes de Rascunhos e Envios](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms).
