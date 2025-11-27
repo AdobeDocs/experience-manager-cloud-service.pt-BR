@@ -3,14 +3,12 @@ title: Habilitar o registro para formulários HTML5
 description: O utilitário logger habilita o registro em log de um formulário e ajuda a depurar problemas relacionados ao formulário.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 4%
@@ -30,7 +28,7 @@ Execute as seguintes etapas para configurar registros do lado do servidor:
 
 1. Ir para `https://'[server]:[port]'/system/console/configMgr`. Localize e abra a opção *Configuração do log do Apace Sling*. Uma caixa de diálogo é exibida:
 
-   ![&#x200B; Caixa de diálogo de opção de configuração do agente de log do Apace Sling &#x200B;](assets/logconfig.png)
+   ![ Caixa de diálogo de opção de configuração do agente de log do Apace Sling ](assets/logconfig.png)
 
    Opção de configuração do logger de log do Apace Sling
 
@@ -172,9 +170,9 @@ Por exemplo:
 >[!NOTE]
 >
 >O nível de log padrão para cada categoria de log a (xfa), b (xfaView) e c (xfaPerf) é 2 (ERROR). Da mesma forma, para a configuração de log: 2-b6, os níveis de log para categorias diferentes são:
->&#x200B;>a (xfa): 2 (erro de nível padrão)
->&#x200B;>b (xfaView): 6 (TRACE especificado pelo usuário)
->&#x200B;>a (xfaPerf): 2 (ERRO de nível padrão)
+>a (xfa): 2 (erro de nível padrão)
+>b (xfaView): 6 (TRACE especificado pelo usuário)
+>a (xfaPerf): 2 (ERRO de nível padrão)
 
 ### Habilitando o registro usando o Configuration Manager {#enabling-logging-using-configuration-manager}
 

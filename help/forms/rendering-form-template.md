@@ -2,14 +2,13 @@
 title: Modelo de formulário de renderização para formulários HTML5
 description: Os perfis de formulários do HTML5 estão associados às renderizações de perfil. Os Renderizadores de perfil são páginas JSP responsáveis por gerar a representação HTML do formulário chamando o serviço OSGi da Forms.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: HTML5 Forms,Mobile Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 1%
@@ -25,7 +24,7 @@ ht-degree: 1%
 
 Os formulários HTML5 têm a noção de **Perfis** que são expostos como pontos de extremidade REST para habilitar a Renderização Móvel de Modelos de Formulário. Estes perfis associaram o **Renderizador de Perfil**. Elas são páginas JSP responsáveis por gerar a representação do formulário no HTML, chamando o serviço OSGi do Forms. O caminho JCR do nó de Perfil determina o URL do ponto final de renderização. O ponto final de renderização padrão do formulário apontando para o perfil &#39;padrão&#39; é semelhante a:
 
-https://&lt;*host*>:&lt;*porta*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*caminho da pasta que contém o formulário xdp*>&amp;modelo=&lt;*nome do xdp*>
+https://<*host*>:<*porta*>/content/xfaforms/profiles/default.html?contentRoot=<*caminho da pasta que contém o formulário xdp*>&modelo=<*nome do xdp*>
 
 Por exemplo, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

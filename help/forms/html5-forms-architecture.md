@@ -3,18 +3,16 @@ title: Arquitetura dos formulários HTML5
 description: O HTML5 Forms é implantado como um pacote na instância incorporada do AEM e expõe a funcionalidade como ponto de acesso REST sobre HTTP/S usando a arquitetura RESTful Apache Sling.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -36,7 +34,7 @@ O [Apache Sling](https://sling.apache.org/) é centrado em recursos. Ele usa um 
 
 Para obter detalhes sobre o ponto de extremidade REST e os parâmetros de solicitação com suporte, consulte [Renderizando Modelo de Formulário](/help/forms/rendering-form-template.md).
 
-Quando um usuário faz uma solicitação de um dispositivo cliente, como um navegador iOS ou Android™, o Sling primeiro resolve o nó de perfil com base no URL da solicitação. Deste Nó de Perfil, ele lê **sling:resourceSuperType** e **sling:resourceType** para determinar todos os scripts disponíveis que podem lidar com essa solicitação de Renderização de Formulário. Em seguida, ele usa seletores de solicitação Sling juntamente com o método de solicitação para identificar o script mais adequado para lidar com essa solicitação. Quando a solicitação atinge uma JSP de renderizador de perfil, a JSP chama o serviço OSGi do Forms.
+Quando um usuário faz uma solicitação de um dispositivo cliente, como um navegador iOS ou Android™, o Sling primeiro resolve o nó de perfil com base no URL da solicitação. Deste Nó de perfil, lê-se **sling:resourceSuperType** e **sling:resourceType** para determinar todos os scripts disponíveis que podem lidar com esta solicitação de Renderização de formulário. Em seguida, ele usa seletores de solicitação Sling juntamente com o método de solicitação para identificar o script mais adequado para lidar com essa solicitação. Quando a solicitação atinge uma JSP de renderizador de perfil, a JSP chama o serviço OSGi do Forms.
 
 Para obter mais detalhes sobre a resolução do script sling, consulte [Folha de características do AEM Sling](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) ou [Decomposição do URL do Apache Sling](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 

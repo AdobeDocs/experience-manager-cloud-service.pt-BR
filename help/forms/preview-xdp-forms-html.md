@@ -1,14 +1,12 @@
 ---
 title: Gerar visualização HTML5 de um formulário XDP
 description: A guia Visualizar HTML no LiveCycle Designer pode ser usada para visualizar formulários conforme eles aparecem em um navegador.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 0%
@@ -90,7 +88,7 @@ O **modo protegido** está ativado, por padrão. Mantenha-o ativado para os ambi
    >
    >Verifique se o servidor do AEM Forms está ativo e em execução. A visualização do HTML se conecta ao servidor do CRX para *gerar* uma visualização.
 
-   ![Opções do AEM Forms Designer &#x200B;](assets/server_options.png)
+   ![Opções do AEM Forms Designer ](assets/server_options.png)
 
    Opções do AEM Forms Designer
 
@@ -120,9 +118,9 @@ Testar o formulário usando uma fonte de dados de amostra garante que os dados e
 
 1. Selecione **Arquivo > Propriedades do formulário**.
 
-1. Clique na guia **Visualizar** e, na caixa Arquivo de dados, digite o caminho completo para o arquivo de dados de teste. Você também pode usar o botão Procurar para navegar até o arquivo.
+2. Clique na guia **Visualizar** e, na caixa Arquivo de dados, digite o caminho completo para o arquivo de dados de teste. Você também pode usar o botão Procurar para navegar até o arquivo.
 
-1. Clique em **OK**. Na próxima vez que você visualizar o formulário na guia **Visualizar HTML**, os valores de dados do arquivo XML de amostra aparecerão nos respectivos objetos.
+3. Clique em **OK**. Na próxima vez que você visualizar o formulário na guia **Visualizar HTML**, os valores de dados do arquivo XML de amostra aparecerão nos respectivos objetos.
 
 ## Visualizar formulários em um repositório {#html-preview-of-forms-in-forms-manager}
 

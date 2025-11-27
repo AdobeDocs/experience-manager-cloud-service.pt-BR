@@ -2,16 +2,15 @@
 title: Criação de um perfil personalizado para formulários HTML5
 description: Um perfil do HTML5 Forms é um nó de recurso no Apache Sling. Ele representa uma versão personalizada do serviço de renderização de formulários do HTML5.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: HTML5 Forms,Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
