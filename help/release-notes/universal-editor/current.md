@@ -27,7 +27,7 @@ Estas são as notas de versão da versão de 4 de dezembro de 2025 do editor uni
 ## Novidades {#what-is-new}
 
 * Os cabeçalhos de autorização foram desabilitados em favor do [logon de desenvolvedor local.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
-* Um menu contextual agora está disponível na árvore estruturada [ ao clicar com o botão direito do mouse.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* Um menu contextual agora está disponível na árvore estruturada [&#x200B; ao clicar com o botão direito do mouse.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
 * Uma tecla de atalho foi adicionada a [componentes duplicados.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
 
 ### Novo RTE {#new-rte}
