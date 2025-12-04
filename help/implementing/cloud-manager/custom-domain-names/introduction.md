@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 15da86656733074afccef85910cc8ea0109933e6
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 37%
+source-wordcount: '749'
+ht-degree: 35%
 
 ---
 
@@ -29,6 +29,10 @@ O Adobe Experience Manager as a Cloud Service é provisionado com um nome de dom
 Cada site tem um endereço numérico exclusivo, legível por máquina, associado a ele, como `184.33.123.64`. O Sistema de Nomes de Domínio (DNS) é o que permite ter domínios personalizados e de marca anexados aos sites, traduzindo endereços numéricos em endereços possíveis de memorizar, como `wknd.com`.
 
 É uma boa prática ter um nome de domínio para seu site que possa ser memorizado pelos seus clientes e reflita a sua marca.
+
+>[!IMPORTANT]
+>
+> Domínios padrão em adobeaemcloud.com **não devem ser usados** para fornecer conteúdo importante para fins de SEO. Os domínios e subdomínios adobeaemcloud.com não podem ser indexados por mecanismos de pesquisa, pois eles atendem a um [robots.txt padrão](https://cdn.adobeaemcloud.com/robots.txt) que impede o rastreamento e a indexação. Em vez disso, use seu próprio domínio personalizado para distribuir um robots.txt personalizado.
 
 Você pode comprar um nome de domínio de um registrador de nomes de domínio, de uma empresa ou organização que gerencia e vende nomes de domínio. Registros de nomes de domínio gerenciam nomes de domínio em servidores DNS.
 

@@ -4,9 +4,9 @@ description: Saiba como adicionar um site do Edge Delivery ao seu programa de pr
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7c990e7e42477120c7ce0720bdb6dc7d03308f92
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '581'
 ht-degree: 3%
 
 ---
@@ -58,6 +58,12 @@ Próximo ao canto superior direito da página, clique no ícone ![Link ou Adicio
    | **3** | Crie uma solicitação de pull no repositório Git para as alterações recém-criadas e mescle-a com `main` para confirmar o código. |
 
 1. Clique em **Verificar**.
+
+   >[!NOTE]
+   >
+   >Se o site do Edge Delivery Services usar a autenticação Helix, o desafio de verificação não estará acessível. Desabilite temporariamente a autenticação, conclua a verificação do site e reative a autenticação.
+
+
 
 Quando o repositório é verificado, seu status na tabela de sites do Edge Delivery é atualizado. Um círculo verde com uma marca de seleção branca indica o status.
 
