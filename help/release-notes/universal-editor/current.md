@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2025.11.20
-description: Estas são as notas de versão do Universal Editor de 2025.11.20.
+title: Notas de versão do Universal Editor 2025.12.04
+description: Estas são as notas de versão do Universal Editor de 2025.12.04.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e36ff1c7c3f03124941c464cc340deef0cdd403b
+source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '166'
 ht-degree: 1%
 
 ---
 
 
-# Notas de versão do Universal Editor 2025.11.20 {#release-notes}
+# Notas de versão do Universal Editor 2025.12.04 {#release-notes}
 
-Estas são as notas de versão do Universal Editor de 20 de novembro de 2025.
+Estas são as notas de versão da versão de 4 de dezembro de 2025 do editor universal.
 
 >[!TIP]
 >
@@ -26,11 +26,9 @@ Estas são as notas de versão do Universal Editor de 20 de novembro de 2025.
 
 ## Novidades {#what-is-new}
 
-* As Notificações do Sistema foram migradas para uma nova interface do usuário.
-
-## Recursos da adoção antecipada {#early-adopter}
-
-Se você estiver interessado em testar esses recursos futuros e compartilhar seu feedback, envie um email para o Gerente de sucesso do cliente da Adobe a partir do endereço de email associado à sua Adobe ID.
+* Os cabeçalhos de autorização foram desabilitados em favor do [logon de desenvolvedor local.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
+* Um menu contextual agora está disponível na árvore estruturada [ ao clicar com o botão direito do mouse.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* Uma tecla de atalho foi adicionada a [componentes duplicados.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
 
 ### Novo RTE {#new-rte}
 
@@ -38,7 +36,6 @@ O novo RTE do ProseMirror, com um seletor de páginas na caixa de diálogo de li
 
 ## Outras melhorias {#other-improvements}
 
-* O manuseio de valores de RTE foi simplificado.
-* Uma condição rara de corrida da barra de ferramentas foi resolvida.
-* Os interruptores de recursos não utilizados foram removidos.
-* As dependências foram atualizadas.
+* Foi resolvido um problema em que o RTE não salvava corretamente na tela.
+* O recorte da árvore de pastas do seletor de conteúdo foi corrigido.
+* `componentId` agora é fornecido durante a ação de adição.
