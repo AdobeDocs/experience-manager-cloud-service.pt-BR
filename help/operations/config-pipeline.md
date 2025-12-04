@@ -4,9 +4,9 @@ description: Saiba como você pode usar pipelines de configuração para implant
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e0626c57f233ac3814355d7efe7db010897d72b
+source-git-commit: ac04829b63ca5e2fee71f6c71d0730f21c576382
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1405'
 ht-degree: 2%
 
 ---
@@ -49,6 +49,7 @@ A tabela a seguir oferece uma lista abrangente dessas configurações com links 
 | [Autenticação básica](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declarar os nomes de usuário e senhas para uma caixa de diálogo de autenticação básica que protege determinados URLs. | X | X |
 | [Tarefa de manutenção de limpeza de versão](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Otimizar o repositório do AEM declarando regras sobre quando as versões de conteúdo devem ser removidas | X |  |
 | [Tarefa de manutenção de limpeza de log de auditoria](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Otimizar o log de auditoria do AEM para aumentar o desempenho, declarando regras sobre quando os logs devem ser removidos | X |  |
+| [Tarefa de manutenção de limpeza de fluxo de trabalho](/help/operations/maintenance.md) | `MaintenanceTasks` | Minimize o número de instâncias de fluxo de trabalho para ajudar a aumentar o desempenho do mecanismo de fluxo de trabalho.<br><br>Consulte também [Limpeza Regular de Instâncias de Fluxo de Trabalho](/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances) | X |  |
 | [Encaminhamento de logs](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure os endpoints e as credenciais para encaminhar logs para vários destinos, incluindo Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk | X | X |
 | [Registrando uma ID de Cliente](/help/implementing/developing/open-api-based-apis.md) | `API` | Escopo de projetos da API do Adobe Developer Console para um ambiente específico do AEM registrando a ID do cliente. Necessário para o uso de APIs baseadas em OpenAPI que exigem autenticação | X |  |
 
