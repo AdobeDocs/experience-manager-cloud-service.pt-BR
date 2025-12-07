@@ -3,9 +3,9 @@ title: Aprimorar a descoberta de conteúdo com metadados gerados por IA na Exibi
 description: Saiba como aprimorar a descoberta de conteúdo com metadados gerados por IA na Exibição do administrador
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '594'
 ht-degree: 1%
 
 ---
@@ -28,15 +28,13 @@ Para ativar os metadados gerados por IA:
 
 * A versão mínima necessária do AEM é `20626`.
 
-* Você deve assinar um contrato GenAI Rider. Para obter mais informações, entre em contato com o representante da Adobe.
-
 ## Configurar títulos gerados por IA {#configure-ai-generated-titles}
 
 O AEM permite configurar a exibição de títulos de ativos na exibição Cartão ou na exibição em Lista na página Navegar pelos ativos. Você pode optar por exibir o título do ativo definido por você, o título gerado usando IA ou usar o título gerado por IA somente se não houver um título existente para o ativo.
 
 Para configurar títulos gerados por IA:
 
-1. Navegue até **[!UICONTROL Ferramentas > Assets > Configuração do Assets > Configuração do Smart Tag Enhancement]**.
+1. Navegue até **[!UICONTROL Ferramentas > Assets > Configurações do Assets > Configuração de aprimoramento de tag inteligente]**.
 
 1. Selecione uma das seguintes opções:
 
@@ -71,20 +69,12 @@ Para usar o recurso aprimorado de tags inteligentes, execute as seguintes etapas
 
 ## Desativar metadados gerados por IA {#disable-ai-generated-metadata}
 
-Você pode desativar os metadados gerados por IA no nível da pasta. Todas as pastas derivadas herdam as propriedades da pasta principal.
+Para desativar os metadados gerados por IA:
 
-Para desativar os metadados gerados por IA no nível da pasta:
+1. Navegue até **[!UICONTROL Ferramentas > Assets > Configurações do Assets > Configuração de aprimoramento de tag inteligente]**.
 
-1. Navegue até **[!UICONTROL Adobe Experience Manager > Assets > Arquivos]**.
+1. Selecione **[!UICONTROL Desabilitar Aprimoramentos de Marca Inteligente]**.
 
-1. Selecione a pasta e clique em **[!UICONTROL Propriedades]**.
+1. Clique em **[!UICONTROL Salvar]**.
 
-1. Na guia **[!UICONTROL Processamento de ativos]**, navegue até a pasta **[!UICONTROL Melhorias de tags inteligentes para imagens]**. Selecione um dos seguintes valores na lista suspensa:
-
-   * Herdada - A pasta herda as opções ativar ou desativar da pasta principal.
-
-   * Habilitar - Habilita os metadados gerados por IA para a pasta selecionada.
-
-   * Desativar - Desativa os metadados gerados por IA para a pasta selecionada.
-
-     ![Desabilitar metadados gerados por IA](assets/disable-ai-generated-metadata.png)
+Os metadados gerados pela IA são desativados para os novos ativos ou pastas que você carrega no AEM Assets. Os ativos ou pastas existentes que têm campos de metadados gerados por IA já gerados ainda continuam a exibir esses campos.

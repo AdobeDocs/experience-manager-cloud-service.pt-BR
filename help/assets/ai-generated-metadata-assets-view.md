@@ -1,9 +1,9 @@
 ---
 title: Aprimorar a descoberta de conteúdo com metadados gerados por IA
 description: Saiba como aprimorar a descoberta de conteúdo com metadados gerados por IA
-source-git-commit: e5b4d7692c9c57ba3e9c76940f28d72ad14d9fc0
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,6 @@ Para ativar os metadados gerados por IA:
 
 * A versão mínima necessária do AEM é `20626`.
 
-* Você deve assinar um contrato GenAI Rider. Para obter mais informações, entre em contato com o representante da Adobe.
 
 ## Uso de metadados gerados por IA {#using-ai-generated-smart-tags}
 

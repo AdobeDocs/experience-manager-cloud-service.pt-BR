@@ -4,9 +4,9 @@ description: Saiba mais sobre o recurso de Extensibilidade da Interface do Usuá
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,17 @@ Atenda aos seguintes requisitos para começar a adicionar o componente de extens
 1. Configure seu aplicativo usando a CLI da AIO para gerar a estrutura básica de extensão e o código necessário. Consulte [geração de código para [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/) para obter informações detalhadas.
 1. Teste suas extensões localmente para garantir que elas funcionem conforme o esperado antes da implantação. Execute sua extensão em um ambiente totalmente isolado ou com isolamento parcial e conecte sua extensão à produção [!DNL AEM Assets View] para teste. Consulte [Solução de problemas - [!DNL AEM Assets View] extensibilidade](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) para obter informações detalhadas.
 
-## Personalizar ações rápidas e a barra de ações na exibição do Assets {#customize-quick-actions-and-actions-bar}
+## Personalizar ações na exibição do Assets {#customize-actions-assets-view}
 
-É possível personalizar as ações exibidas ao selecionar um ou mais ativos (Barra de ações) na exibição do Assets. A visualização Assets também permite personalizar as ações exibidas ao clicar em Mais opções (...) no cartão de ativos. Para obter mais informações, consulte [Exibição de Navegação](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+A visualização AEM Assets permite personalizar as seguintes ações na visualização Procurar:
+
+* Personalize as ações exibidas ao selecionar um ou mais ativos na Barra de ações.
+
+* Personalize as ações exibidas ao clicar em Mais opções (...) no cartão de ativos.
+
+* Personalize as ações disponíveis no menu Cabeçalho.
+
+Para obter mais informações, consulte [Exibição de Navegação](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
 
 ## Abrir caixas de diálogo personalizadas na exibição do Assets {#open-custom-dialogs-assets-view}
 

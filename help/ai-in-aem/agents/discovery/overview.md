@@ -3,9 +3,9 @@ title: Visão geral do Discovery Agent
 description: Saiba como usar o Discovery Agent para fornecer conteúdo relevante do AEM sob demanda por meio de solicitações naturais e conversacionais para obter uma experiência de descoberta simplificada e sem cliques.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 0a23cdf1cbc7738d843438b8d1aad358101c918e
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1265'
 ht-degree: 1%
 
 ---
@@ -92,13 +92,13 @@ Exemplos de prompts:
 * Mostrar ativos modificados após `Nov 1 2025` na pasta `WKND`.
 * Listar `lifestyle` imagens na pasta `WKND`.
 
-**Descoberta de ativos baseada em resolução e formato**
+**Descoberta de ativos baseada em formato**
 
-O Discovery Agent pode identificar ativos que atendem a requisitos específicos de qualidade, como formato de arquivo ou resolução mínima, permitindo que os usuários localizem rapidamente os visuais do produto que estão prontos para entrega e reutilização de alta qualidade em todos os canais.
+O Discovery Agent pode identificar ativos que atendem a requisitos específicos de qualidade, como formato de arquivo, permitindo que os usuários localizem rapidamente os visuais do produto que estão prontos para entrega e reutilização de alta qualidade em todos os canais.
 
 Exemplo de prompt:
 
-Encontre imagens PNG da embalagem do produto com pelo menos 2000 px de largura.
+Localizar imagens PNG da embalagem do produto.
 
 **Descoberta de conteúdo com base em orientação**
 

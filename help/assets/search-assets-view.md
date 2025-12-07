@@ -4,10 +4,10 @@ description: Saiba como pesquisar e descobrir ativos na visualização do AEM As
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 77%
+source-wordcount: '1621'
+ht-degree: 74%
 
 ---
 
@@ -50,73 +50,77 @@ Você pode filtrar os resultados da pesquisa com base nos seguintes parâmetros.
 
 E possível classificar os ativos pesquisados em ordem crescente ou decrescente de `Name`, `Relevance`, `Size`, `Modified` e `Created`. Os ativos pesquisados são classificados com base em `Relevance`, por padrão.
 
-## Gerenciar filtros personalizados {#custom-filters}
+<!--
+  
+## Manage custom filters {#custom-filters}
 
-**Permissões necessárias:** `Can Edit`, `Owner` ou Administrador.
+**Permissions required:**  `Can Edit`, `Owner`, or Administrator.
 
-A visualização Assets também permite adicionar filtros personalizados à interface. É possível aplicar esses filtros personalizados além dos [filtros padrão](#refine-search-results) para refinar os resultados da pesquisa.
+Assets view also enable you to add custom filters to the user interface. You can then apply those custom filters in addition to the [standard filters](#refine-search-results) to refine your search results.
 
-A visualização Assets fornece os seguintes filtros personalizados:
+Assets view provides the following custom filters:
 
 <table>
     <tbody>
      <tr>
-      <th><strong>Nome do filtro personalizado</strong></th>
-      <th><strong>Descrição</strong></th>
+      <th><strong>Custom filter name</strong></th>
+      <th><strong>Description</strong></th>
      </tr>
      <tr>
-      <td>Título</td>
-      <td>Filtrar ativos usando o título do ativo. O título especificado nos critérios de pesquisa que diferenciam maiúsculas e minúsculas deve corresponder ao título exato do ativo a ser exibido nos resultados.</td>
+      <td>Title</td>
+      <td>Filter assets using the asset title. The title that you specify in the case-sensitive search criteria must match the exact title of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>Nome</td>
-      <td>Filtre ativos usando o nome do arquivo de ativo. O nome especificado nos critérios de pesquisa que diferenciam maiúsculas e minúsculas deve corresponder ao nome exato do arquivo do ativo a ser exibido nos resultados.</td>
+      <td>Name</td>
+      <td>Filter assets using the asset file name. The name that you specify in the case-sensitive search criteria must match the exact file name of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>Tamanho do ativo</td>
-      <td>Filtre ativos definindo um intervalo de tamanho, em bytes, nos critérios de pesquisa para um ativo ser exibido nos resultados.</td>
+      <td>Asset Size</td>
+      <td>Filter assets by defining a size range, in bytes, in the search criteria for an asset to display in the results.</td>
      </tr>
      <tr>
-      <td>Tags previstas</td>
-      <td>Filtrar ativos usando a tag inteligente de ativos. O nome da tag inteligente especificada nos critérios de pesquisa que diferenciam maiúsculas e minúsculas deve corresponder ao nome exato da tag inteligente do ativo a ser exibido nos resultados. Não é possível especificar várias tags inteligentes nos critérios de pesquisa.</td>
+      <td>Predicted Tags</td>
+      <td>Filter assets using the asset smart tag. The smart tag name that you specify in the case-sensitive search criteria must match the exact smart tag name of the asset to display in the results. You cannot specify multiple smart tags in search criteria.</td>
      </tr>    
     </tbody>
    </table>
 
-<!--
+   <!--
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. For example, if you define <b>ma*</b> as the search criteria, Assets view displays assets with title, such as, market, marketing, man, manchester, and so on in the results.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. You can specify multiple smart tags separated by a comma in the search criteria.
 
-   -->
+   
 
-### Adicionar filtros personalizados {#add-custom-filters}
+### Add custom filters {#add-custom-filters}
 
-Para adicionar filtros personalizados:
+To add custom filters:
 
-1. Clique em **[!UICONTROL Filtros]**.
+1. Click **[!UICONTROL Filters]**. 
 
-1. Na seção **[!UICONTROL Filtros personalizados]**, clique em **[!UICONTROL Editar]** ou **[!UICONTROL Adicionar filtros]**.
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]** or **[!UICONTROL Add Filters]**.
 
-   ![Adicionar filtros personalizados](assets/add-custom-filters.png)
+   ![Add custom filters](assets/add-custom-filters.png)
 
-1. Na caixa de diálogo **[!UICONTROL Gerenciamento de filtros personalizados]**, selecione os filtros que precisam ser adicionados à lista de filtros existente. Selecionar **[!UICONTROL Filtros personalizados]** para selecionar todos os filtros.
+1. On the **[!UICONTROL Custom filters management]** dialog box, select the filters that you need to add to the existing list of filters. Select **[!UICONTROL Custom Filters]** to select all filters.
 
-1. Clique em **[!UICONTROL Confirmar]** para adicionar os filtros à interface.
+1. Click **[!UICONTROL Confirm]** to add the filters to the user interface.
 
-### Remover filtros personalizados {#remove-custom-filters}
+### Remove custom filters {#remove-custom-filters}
 
-Para remover filtros personalizados:
+To remove custom filters:
 
-1. Clique em **[!UICONTROL Filtros]**.
+1. Click **[!UICONTROL Filters]**. 
 
-1. Na seção **[!UICONTROL Filtros personalizados]**, clique em **[!UICONTROL Editar]**.
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]**.
 
-1. Na caixa de diálogo **[!UICONTROL Gerenciamento de filtros personalizados]**, desmarque os filtros que precisam ser removidos da lista de filtros existente.
+1. On the **[!UICONTROL Custom filters management]** dialog box, deselect the filters that you need to remove from the existing list of filters.
 
-1. Clique em **[!UICONTROL Confirmar]** para remover os filtros da interface.
+1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface.
+
+-->
 
 ## Pesquisar com IA {#ai-search}
 
@@ -193,13 +197,17 @@ Para gerar novos ativos usando o [!DNL Adobe Firefly]:
 
 1. Clique em **Salvar como novo ativo** para salvar o(s) ativo(s).
 
-### Upload de ativos {#upload-assets-firefly}
+<!--
 
-Para fazer upload do ativo gerado para o repositório de ativos:
+### Upload assets {#upload-assets-firefly}
 
-1. Clique em **[!UICONTROL Fazer upload]**.
-1. Selecione a pasta de ativos para a qual você deseja fazer upload do ativo e clique em **[!UICONTROL Selecionar pasta]**.
-   ![Faça o upload do ativo](assets/upload-asset-firefly.jpg)
+To upload the generated asset to the assets repository:
+
+1. Click **[!UICONTROL Upload]**.
+1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
+ ![Upload asset](assets/upload-asset-firefly.jpg)
+
+ -->
 
 ## Pesquisas salvas {#saved-search}
 
@@ -386,7 +394,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Forneça feedback sobre a documentação por meio das opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita.
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 
 
