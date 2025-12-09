@@ -7,12 +7,13 @@ hide: true
 index: false
 hidefromtoc: true
 exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
-source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
+source-git-commit: 3a4119cfddda5d2d55f9a74848afe59eb0c1b709
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 2%
 
 ---
+
 
 # Comunicações interativas
 
@@ -25,7 +26,6 @@ Ao contrário do AEM Forms Desktop Designer, que só pode ser instalado em compu
 ![Editor de Comunicação Interativa](/help/forms/assets/ic-editor.png)
 
 De instituições financeiras gerando demonstrativos de conta a agências governamentais simplificando avisos de benefícios, as Comunicações interativas são a ferramenta ideal para criar correspondência de alta qualidade, segura e em conformidade legal com facilidade e eficiência.
-
 
 ## Principais recursos
 

@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 1%
+source-wordcount: '291'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 1%
 
 Um Fragmento de comunicação interativa permite que os usuários criem blocos de conteúdo modulares e reutilizáveis, como cabeçalhos, rodapés ou avisos de isenção de responsabilidade padrão que podem ser usados em vários documentos de comunicação. Esses fragmentos ajudam a manter a consistência, reduzir o trabalho repetitivo e acelerar o processo de design ao criar comunicações personalizadas e integradas aos dados.
 
-## Pré-requisitos
-
-* [Certifique-se de que o autor é membro do grupo de formulários-usuários](/help/forms/setup-forms-cloud-service.md#configure-users)
+>[!NOTE]
+>
+> [O autor deve ser membro do grupo &quot;usuários de formulários&quot;](/help/forms/setup-forms-cloud-service.md#configure-users)
 
 ## Criar um fragmento de comunicação interativa
 
@@ -41,7 +41,7 @@ Para criar um fragmento de comunicação interativa, execute as seguintes etapas
 
 1. Ao selecionar o Fragmento de comunicação interativa, é exibida uma tela onde você define os detalhes principais do fragmento, como título, nome, descrição, modelo de dados (uma representação estruturada de dados de back-end) e tags.
 
-   Para saber mais, consulte o [Guia de Configuração do Modelo de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
+   Para saber mais, consulte o [Guia de Configuração do Modelo de Dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
    ![Localizar IC Docu](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

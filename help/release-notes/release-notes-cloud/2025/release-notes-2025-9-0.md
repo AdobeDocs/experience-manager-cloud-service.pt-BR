@@ -3,7 +3,7 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.9.0.
 feature: Release Information
 role: Admin
-source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
+source-git-commit: ecc32b6b501be4a53bf26f170e501dc1407d1a57
 workflow-type: tm+mt
 source-wordcount: '2083'
 ht-degree: 8%
@@ -18,7 +18,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -117,15 +117,15 @@ Essas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 * **Visualização do PDF no Editor de Comunicação Interativa**
 
-  Os usuários podem visualizar PDFs de Comunicações interativas sem dados, com arquivos de dados JSON locais ou com dados de um modelo de dados, permitindo testes flexíveis orientados por dados. Para obter mais informações, consulte [Visualização do PDF no Editor de Comunicação Interativa](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
+  Os usuários podem visualizar PDFs de Comunicações interativas sem dados, com arquivos de dados JSON locais ou com dados de um modelo de dados, permitindo testes flexíveis orientados por dados. Para obter mais informações, consulte [Visualização do PDF no Editor de Comunicação Interativa](/help/forms/interactive-communication/generate-pdf-preview.md).
 
 * **Suporte a fontes personalizadas na comunicação interativa**
 
-  O recurso Fontes personalizadas permite que os usuários incorporem fontes personalizadas ou aprovadas pela organização nas Comunicações interativas, garantindo uma renderização de PDF consistente e com marca em todos os dispositivos e plataformas. Para obter mais informações, consulte [Suporte a Fontes Personalizadas na Comunicação Interativa](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+  O recurso Fontes personalizadas permite que os usuários incorporem fontes personalizadas ou aprovadas pela organização nas Comunicações interativas, garantindo uma renderização de PDF consistente e com marca em todos os dispositivos e plataformas. Para obter mais informações, consulte [Suporte a Fontes Personalizadas na Comunicação Interativa](/help/forms/interactive-communication/add-custom-fonts.md).
 
 * **Importar e Exportar Comunicações Interativas**
 
-  Esse recurso permite a migração e reutilização de Comunicações interativas em diferentes ambientes. Agora é possível exportar uma comunicação interativa juntamente com seus fragmentos e modelos de dados associados de um ambiente e importá-la para outro. Para obter mais informações, consulte [Importar e Exportar Comunicações Interativas](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+  Esse recurso permite a migração e reutilização de Comunicações interativas em diferentes ambientes. Agora é possível exportar uma comunicação interativa juntamente com seus fragmentos e modelos de dados associados de um ambiente e importá-la para outro. Para obter mais informações, consulte [Importar e Exportar Comunicações Interativas](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md).
 
 * **Aprimoramentos do Editor de Regras**
 
@@ -166,7 +166,7 @@ Dias de ativação, eventos ao vivo, pico de vendas — esses momentos não queb
 >[!NOTE]
 >
 >Disponível como um recurso de Disponibilidade limitada em 25 de setembro.
->&#x200B;>Envie um email para [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para ativá-lo em seus programas.
+>Envie um email para [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para ativá-lo em seus programas.
 
 ### Nova versão das ferramentas de desenvolvedor do AEM para Eclipse {#aem-develeper-tools-for-eclipse}
 
@@ -282,12 +282,12 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

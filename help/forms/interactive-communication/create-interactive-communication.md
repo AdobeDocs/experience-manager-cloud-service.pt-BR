@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 0%
@@ -27,7 +27,7 @@ A comunicação interativa permite criar, gerenciar e fornecer comunicações pe
 
 Imagine que você precise enviar um extrato bancário, uma apólice de seguro ou uma conta de serviços públicos a milhares de clientes. Cada um tem o mesmo layout, mas dados personalizados. A comunicação interativa (IC) torna isso possível com eficiência.
 
-![Localizar IC Docu](/help/forms/interactive-communication/assets/introimg.png)
+![Localizar IC Docu](/help/forms/interactive-communication/assets/introduction.png)
 
 A produção manual desses documentos pode ser demorada e geralmente resulta em inconsistências, especialmente quando a personalização e a integração de dados são necessárias. Com o Editor de comunicação interativa, os usuários podem simplificar o processo de criação da comunicação interativa.
 
