@@ -113,7 +113,7 @@ Escolha uma das plataformas compatíveis:
 
 >[!TIP]
 >
->**Novo no Edge Delivery Services?** Comece com o [Tutorial de introdução](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para configurar a base do seu projeto.
+>**Novo no Edge Delivery Services?** Comece com o [Tutorial de introdução](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para configurar a base do seu projeto.
 
 ## Métodos de configuração
 
@@ -133,7 +133,7 @@ O Serviço de envio da Forms oferece duas abordagens de configuração. Escolha 
 
 Antes de configurar qualquer método, verifique se a base do projeto do AEM está pronta:
 
-1. **Crie ou atualize seu projeto do AEM** com o Bloco Adaptive Forms mais recente ([Tutorial de Introdução](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
+1. **Crie ou atualize seu projeto do AEM** com o Bloco Adaptive Forms mais recente ([Tutorial de Introdução](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
 
 2. **Atualize`fstab.yaml`** na raiz do seu projeto:
 
@@ -166,7 +166,7 @@ Crie a estrutura do formulário usando o Google Sheets ou o Microsoft Excel.
 1. **Abra a plataforma de planilha** (Google Sheets ou Microsoft Excel)
 2. **Criar uma nova planilha** para o projeto de formulário
 3. **Nomeie sua planilha** (deve ser `helix-default` ou `shared-aem`)
-4. **Defina sua estrutura de formulário** usando o [guia de criação de formulário](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **Defina sua estrutura de formulário** usando o [guia de criação de formulário](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Definição de Formulário](/help/forms/assets/form-submission-definition.png)
 *Exemplo: definição de formulário com tipos de campo, rótulos e regras de validação*
@@ -567,7 +567,7 @@ Solutions:
 **Canais de suporte:**
 
 - **Documentação da API:** [Referência do desenvolvedor](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
-- **Suporte da comunidade:** [Comunidade da Adobe Experience League](https://experienceleaguecommunities.adobe.com/)
+- **Suporte da comunidade:** [Comunidade da Adobe Experience League](https://experienceleaguecommunities.adobe.com/?profile.language=pt)
 
 +++
 
@@ -578,7 +578,7 @@ Agora que você tem o Serviço de envio do Forms configurado, explore estes tóp
 
 +++ Aprimorar seu Forms
 
-- **[Criar Forms Avançado](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Adicionar validação, lógica condicional e estilo personalizado
+- **[Criar Forms Avançado](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Adicionar validação, lógica condicional e estilo personalizado
 - **[Guia de Componentes de Formulário](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - Explorar tipos de campos de formulário disponíveis
 
 +++
