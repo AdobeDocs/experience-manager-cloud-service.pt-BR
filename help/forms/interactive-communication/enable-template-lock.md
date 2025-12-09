@@ -63,7 +63,7 @@ Quando aplicados, os autores não podem:
 Siga as etapas abaixo para aplicar os Bloqueios de conteúdo ou layout no modelo de IC (Comunicação interativa):
 
 1. Abra o seu modelo
-Abra ou crie um Modelo, siga o guia [Criar um Modelo de Comunicação Interativa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Abra ou crie um Modelo, siga o guia [Criar um Modelo de Comunicação Interativa](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. Selecione o componente
 Clique no componente (caixa de texto, imagem ou subformulário) que deseja restringir.
