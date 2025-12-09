@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: 0f372f4ddc0ff323a3beedacc84a8a59de8e6d2a
 workflow-type: tm+mt
-source-wordcount: '2390'
+source-wordcount: '2376'
 ht-degree: 0%
 
 ---
@@ -247,8 +247,6 @@ O painel Propriedades do formulário inclui as seguintes seções:
 
 >[!IMPORTANT]
 >
-> **Recurso de Acesso Antecipado:** o Editor de Regras requer acesso especial. Contate [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para habilitar este recurso.
->
 > **Saiba Mais:** Consulte o [Guia do Editor de Regras](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) para obter instruções detalhadas.
 
 #### **Configurações do Cabeçalho de Autenticação**
@@ -354,7 +352,7 @@ O **Painel de Propriedades** (lado direito) é o seu centro de controle para cri
 
     ![Gerar variações](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**Saiba Mais:** [Gerar Guia De Variações](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**Saiba Mais:** [Gerar Guia De Variações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **Rascunhos de Conteúdo**
 
