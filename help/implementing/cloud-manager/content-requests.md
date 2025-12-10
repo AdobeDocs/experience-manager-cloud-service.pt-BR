@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
+source-git-commit: c5f4a3502153ff3c7e9fbce164a9c9b63196b547
 workflow-type: tm+mt
-source-wordcount: '1976'
+source-wordcount: '1968'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ As tabelas a seguir listam os tipos de solicitações de conteúdo incluídas e 
 
 | Tipo de solicitação | Solicitação de conteúdo | Descrição |
 | --- | --- | --- |
-| Código HTTP 100-299 | Incluído | Inclui solicitações bem-sucedidas que retornam conteúdo completo ou parcial do HTML ou JSON.<br>Código HTTP 206: essas solicitações fornecem apenas uma parte do conteúdo completo. Por exemplo, um vídeo ou uma imagem grande. As solicitações de conteúdo parcial são incluídas quando entregam parte de uma resposta HTML ou JSON usada na renderização do conteúdo da página. |
+| Código HTTP 100-299 | Incluído | Inclui solicitações bem-sucedidas que retornam conteúdo completo ou parcial do HTML ou JSON.<br>Código HTTP 206: essas solicitações fornecem apenas uma parte do conteúdo completo. As solicitações parciais são incluídas quando entregam parte de uma resposta HTML ou JSON usada na renderização do conteúdo da página. |
 | Bibliotecas HTTP para automação | Incluído | Solicitações feitas por ferramentas ou bibliotecas que recuperam o conteúdo da página. Exemplos incluem o seguinte: <br>· Amazon CloudFront<br>· Apache Http Client<br>· Axios<br>· Azureus<br>· Curl<br>· Busca de Nó GitHub<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Solicitações Python<br>· Reator Netty<br>· Wget<br>· WinHTTP<br>· HTTP<br>· Busca de Nó GitHub<br>· Netty de Reator<br> |
 | Ferramentas de monitoramento e verificação de integridade | Incluído | Solicitações usadas para monitorar a integridade ou a disponibilidade de páginas.<br>Consulte [Tipos de solicitações de conteúdo excluídas](#excluded-content-request).<br>Os exemplos incluem o seguinte:<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatível; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">` solicitações | Incluído | Quando os clientes fazem pré-carregamento ou pré-busca de conteúdo (por exemplo, com `<link rel="prefetch">`), o sistema conta essas solicitações do lado do servidor. Observe que essa abordagem pode aumentar o tráfego, dependendo de quantas dessas páginas são buscadas previamente. |
