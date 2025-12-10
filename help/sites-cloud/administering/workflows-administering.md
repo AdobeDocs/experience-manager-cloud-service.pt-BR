@@ -48,7 +48,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 
    >[!NOTE]
    >
-   > Para manter a integridade da instância de fluxo de trabalho, siga as práticas recomendadas de [limpeza regular de instâncias de fluxo de trabalho](#regular-purging-of-workflow-instances) ou as [práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
+   > Para manter a integridade da instância de fluxo de trabalho, siga as práticas recomendadas de [limpeza regular de instâncias de fluxo de trabalho](#regular-purging-of-workflow-instances) ou as [práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=pt-BR).
 
 ## Pesquisar instâncias de fluxo de trabalho {#search-workflow-instances}
 
