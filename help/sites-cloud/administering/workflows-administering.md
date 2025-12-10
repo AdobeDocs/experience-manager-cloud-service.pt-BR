@@ -112,7 +112,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 Quando um fluxo de trabalho falha, o AEM fornece o console **Falhas**, que permite investigar e tomar as medidas apropriadas após tratar a causa original:
 
 * **Detalhes da falha**
-Abre uma janela para mostrar a **Mensagem de Falha**, **Etapa e **Pilha de Falhas**.
+Abre uma janela para mostrar a **Mensagem de Falha**, **Etapa e &#x200B;** Pilha de Falhas**.
 
 * **Abrir histórico**
 Mostra detalhes do histórico do fluxo de trabalho.
