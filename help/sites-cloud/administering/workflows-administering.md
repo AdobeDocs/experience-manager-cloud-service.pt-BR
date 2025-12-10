@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 98%
+source-wordcount: '1282'
+ht-degree: 90%
 
 ---
 
@@ -33,26 +33,22 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 1. **Fluxos de trabalho em execução** mostra o número de fluxos de trabalho em execução e o status deles. por exemplo, nas imagens fornecidas, são mostrados o número de **fluxos de trabalho em execução** e o **status** da instância do AEM:
 
    * **Status: íntegro**
-
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Status: não íntegro**
-
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. Para obter os **detalhes do status** de instâncias de fluxo de trabalho, clique em **Detalhes** e as seguintes informações serão exibidas: **número de instâncias de fluxos de trabalho em execução**, **instâncias de fluxos de trabalho concluídos**, **instâncias de fluxos de trabalho interrompidos**, **instâncias de fluxos de trabalho com falha**, entre outros. por exemplo, abaixo estão as imagens fornecidas que mostram os **Detalhes do status** com:
 
    * **Detalhes do status: Íntegro**
-
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Detalhes do status: não íntegro**
-
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > Para manter a integridade da instância de fluxo de trabalho, siga as práticas recomendadas de [limpeza regular de instâncias de fluxo de trabalho](#regular-purging-of-workflow-instances) ou as [práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=pt-BR).
+   > Para manter a integridade da instância de fluxo de trabalho, siga as práticas recomendadas de [limpeza regular de instâncias de fluxo de trabalho](#regular-purging-of-workflow-instances) ou as [práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Pesquisar instâncias de fluxo de trabalho {#search-workflow-instances}
 
@@ -116,7 +112,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 Quando um fluxo de trabalho falha, o AEM fornece o console **Falhas**, que permite investigar e tomar as medidas apropriadas após tratar a causa original:
 
 * **Detalhes da falha**
-Abre uma janela para mostrar a **Mensagem de Falha**, **Etapa e &#x200B;** Pilha de Falhas**.
+Abre uma janela para mostrar a **Mensagem de Falha**, **Etapa e **Pilha de Falhas**.
 
 * **Abrir histórico**
 Mostra detalhes do histórico do fluxo de trabalho.
@@ -150,39 +146,14 @@ Para configurar o serviço, você pode definir os arquivos de configuração do 
 >Como o serviço é de fábrica, o nome do nó `sling:OsgiConfig` requer um sufixo identificador. Por exemplo:
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
-<table>
- <tbody>
-  <tr>
-   <th>Nome da propriedade (console da Web)</th>
-   <th>Nome da propriedade OSGi</th>
-   <th>Descrição</th>
-  </tr>
-  <tr>
-   <td>Nome da tarefa</td>
-   <td>scheduledpurge.name</td>
-   <td>Um nome descritivo para a limpeza agendada.</td>
-  </tr>
-  <tr>
-   <td>Status do fluxo de trabalho</td>
-   <td>scheduledpurge.workflowStatus</td>
-   <td><p>O status das instâncias de fluxo de trabalho a serem removidas. Os seguintes valores são válidos:</p>
-    <ul>
-     <li>CONCLUÍDO: as instâncias de fluxo de trabalho concluídas são removidas.</li>
-     <li>EM EXECUÇÃO: as instâncias de fluxo de trabalho em execução são removidas.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Modelos a remover</td>
-   <td>scheduledpurge.modelIds</td>
-   <td><p>A ID dos modelos de fluxo de trabalho a serem removidos. A ID é o caminho para o nó do modelo, por exemplo:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Não especifique nenhum valor para remover instâncias de todos os modelos de fluxo de trabalho.</p> <p>Para especificar vários modelos, clique no botão + no console da Web. </p> </td>
-  </tr>
-  <tr>
-   <td>Idade do fluxo de trabalho</td>
-   <td>scheduledpurge.daysold</td>
-   <td>A idade das instâncias de fluxo de trabalho a serem removidas, em dias.</td>
-  </tr>
- </tbody>
-</table>
+| Nome da propriedade (console da Web) | Nome da propriedade OSGi | Descrição |
+|--- |--- |--- |
+| Nome da tarefa  | `scheduledpurge.name` | Um nome descritivo para a limpeza agendada. |
+| Status do fluxo de trabalho | `scheduledpurge.workflowStatus` | O status das instâncias de fluxo de trabalho a serem removidas. Os seguintes valores são válidos:<br><br>- CONCLUÍDO: as instâncias de fluxo de trabalho concluídas são removidas.<br>- EM EXECUÇÃO: as instâncias de fluxo de trabalho em execução são removidas. |
+| Modelos a remover | `scheduledpurge.modelIds` | A ID dos modelos de fluxo de trabalho a serem removidos.<br>A ID é o caminho para o nó do modelo, por exemplo:<br> `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br> Não especifique nenhum valor para remover instâncias de todos os modelos de fluxo de trabalho.<br>Para especificar vários modelos, clique no botão `+` no Console da Web. |
+| Idade do fluxo de trabalho | `scheduledpurge.daysold` | A idade das instâncias de fluxo de trabalho a serem removidas, em dias. |
+| Pacote de carga do fluxo de trabalho | `scheduledpurge.purgePackagePayload` | Indica se o pacote de carga deve ser limpo; `true` ou `false`. |
+
 
 ## Configuração do tamanho máximo da caixa de entrada {#setting-the-maximum-size-of-the-inbox}
 
@@ -204,7 +175,7 @@ Os dados processados por fluxos de trabalho são armazenados no armazenamento fo
 
 No nível do modelo de fluxo de trabalho, um sinalizador é fornecido para indicar que o modelo e suas instâncias de tempo de execução têm acesso ao armazenamento externo de metadados. As variáveis de fluxo de trabalho não serão mantidas no JCR para as instâncias de fluxo de trabalho cujos modelos foram marcados para armazenamento externo.
 
-A propriedade *userMetadataPersistenceEnabled* será armazenada no *nó jcr:content* do modelo de fluxo de trabalho. Esse sinalizador será mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
+A propriedade *userMetadataPersistenceEnabled* está armazenada no nó *jcr:content* do modelo de fluxo de trabalho. Esse sinalizador é mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
 
 A ilustração abaixo mostra como definir o sinalizador em um fluxo de trabalho.
 
