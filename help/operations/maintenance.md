@@ -4,10 +4,10 @@ description: Saiba mais sobre as tarefas de manutenção no AEM as a Cloud Servi
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
+source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 30%
+source-wordcount: '2054'
+ht-degree: 29%
 
 ---
 
@@ -29,6 +29,8 @@ Em versões anteriores do AEM, você podia configurar as tarefas de manutenção
 >
 >A Adobe se reserva o direito de substituir as definições de configuração da tarefa de manutenção de um cliente para atenuar problemas como degradação de desempenho.
 
+### Tarefas de manutenção {#maintenance-tasks}
+
 A tabela a seguir ilustra as tarefas de manutenção disponíveis.
 
 <table style="table-layout:auto">
@@ -47,14 +49,14 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis.
   <tr>
     <td>Remoção da versão</td>
     <td>Cliente</td>
-    <td>A limpeza de versão está desabilitada no momento por padrão, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a>.<br/><br/>A limpeza será em breve habilitada por padrão, com esses valores substituíveis.<br>
+    <td>A limpeza de versão está desabilitada no momento por padrão, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a>.<br/><br/>A limpeza será em breve habilitada por padrão, com esses valores substituíveis.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Limpeza do log de auditoria</td>
     <td>Cliente</td>
-    <td>A limpeza de log de auditoria está desabilitada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a>.<br/><br/>A limpeza será em breve habilitada por padrão, com esses valores substituíveis.<br>
+    <td>A limpeza de log de auditoria está desabilitada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a>.<br/><br/>A limpeza será em breve habilitada por padrão, com esses valores substituíveis.<br>
    </td>
    </td>
   </tr>
@@ -85,11 +87,15 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis.
     <td>Cliente</td>
     <td>
     <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
-    <p>Habilite a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_ProjectPurgeTask</code>) com as propriedades adequadas. Consulte a lista de <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Propriedades OSGi</a> para <b>Configuração de Limpeza de Projetos Adobe</b> .</p>
+    <p>Habilite a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_ProjectPurgeTask</code>) com as propriedades adequadas. Consulte a lista de <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Propriedades OSGi</a> para <b>Configuração de Limpeza de Projetos Adobe</b> .</p>
   </td>
   </tr>
   </tbody>
 </table>
+
+### Configurações da janela de manutenção {#maintenance-window-configurations}
+
+A tabela a seguir ilustra as configurações disponíveis da janela de manutenção.
 
 <table style="table-layout:auto">
  <tbody>
@@ -138,15 +144,15 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis.
     </tbody>
 </table>
 
-**Localizações**:
+### Localizações {#locations}
 
 * Diariamente - /apps/settings/granite/operations/maintenance/granite_daily
 * Semanalmente - /apps/settings/granite/operations/maintenance/granite_weekly
 * Mensalmente - /apps/settings/granite/operations/maintenance/granite_monthly
 
-**Exemplos de código**:
+### Amostras de código {#code-samples}
 
-Exemplo de código 1 (diariamente)
+**Amostra de código 1 (diariamente)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -161,7 +167,7 @@ Exemplo de código 1 (diariamente)
  />
 ```
 
-Exemplo de código 2 (semanalmente)
+**Amostra de código 2 (semanalmente)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -176,7 +182,7 @@ Exemplo de código 2 (semanalmente)
    windowStartTime="14:30"/>
 ```
 
-Exemplo de código 3 (mensalmente)
+**Amostra de código 3 (mensalmente)**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -220,54 +226,54 @@ Declare um arquivo de configuração e implante-o conforme descrito nas etapas a
 > 
 >Da mesma forma, depois de implantar o nó de expurgação do log de auditoria no arquivo de configuração, você deve mantê-lo declarado e não removê-lo.
 
-**1** Crie um arquivo com o nome `mt.yaml` ou similar.
+1. Crie um arquivo com o nome `mt.yaml` ou similar.
 
-**2** Coloque o arquivo em algum lugar em uma pasta de nível superior chamada `config` ou semelhante, conforme descrito em [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#folder-structure).
+1. Coloque o arquivo em algum lugar em uma pasta de nível superior chamada `config` ou similar, conforme descrito em [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#folder-structure).
 
-**3** - Declarar propriedades no arquivo de configuração, que incluem:
+1. Declare as propriedades no arquivo de configuração, que incluem:
 
-* algumas propriedades acima do nó de dados — consulte [Uso de Pipelines de Configuração](/help/operations/config-pipeline.md#common-syntax) para obter uma descrição. O valor da propriedade `kind` deve ser *MaintenanceTasks* e a versão deve ser definida como *1*.
+   * algumas propriedades acima do nó de dados — consulte [Uso de Pipelines de Configuração](/help/operations/config-pipeline.md#common-syntax) para obter uma descrição. O valor da propriedade `kind` deve ser *MaintenanceTasks* e a versão deve ser definida como *1*.
 
-* um objeto de dados com objetos `versionPurge` e `auditLogPurge`.
+   * um objeto de dados com objetos `versionPurge` e `auditLogPurge`.
 
-Consulte as definições e a sintaxe dos objetos `versionPurge` e `auditLogPurge` abaixo.
+   Consulte as definições e a sintaxe dos objetos `versionPurge` e `auditLogPurge` abaixo.
 
-Estruture a configuração semelhante ao seguinte exemplo:
+   Estruture a configuração semelhante ao seguinte exemplo:
 
-```
-kind: "MaintenanceTasks"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  versionPurge:
-    maximumVersions: 15
-    maximumAgeDays: 20
-    paths: ["/content"]
-    minimumVersions: 1
-    retainLabelledVersions: false
-  auditLogPurge:
-    rules:
-      - replication:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
-      - pages:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
-      - dam:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
-```
+   ```
+   kind: "MaintenanceTasks"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     versionPurge:
+       maximumVersions: 15
+       maximumAgeDays: 20
+       paths: ["/content"]
+       minimumVersions: 1
+       retainLabelledVersions: false
+     auditLogPurge:
+       rules:
+         - replication:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+         - pages:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+         - dam:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+   ```
 
-Lembre-se de que para que a configuração seja válida:
+   Lembre-se de que para que a configuração seja válida:
 
-* todas as propriedades devem ser definidas. Não há padrões herdados.
-* os tipos (números inteiros, strings, booleanos etc.) nas tabelas de propriedades abaixo devem ser respeitados.
+   * todas as propriedades devem ser definidas. Não há padrões herdados.
+   * os tipos (números inteiros, strings, booleanos etc.) nas tabelas de propriedades abaixo devem ser respeitados.
 
-**4** - Criar um pipeline de configuração no Cloud Manager, conforme descrito no [artigo sobre o pipeline de configuração](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Crie um pipeline de configuração no Cloud Manager, conforme descrito no [artigo sobre configuração de pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Remoção da versão {#version-purge}
 
@@ -308,7 +314,6 @@ As colunas que indicam *padrão* indicam os valores padrão no futuro, quando os
 | maximumVersions | 5 | 0 (sem limite) | Sim | Número inteiro | Qualquer versão anterior à n-ésima versão mais recente é removida. Se o valor for 0, a limpeza não será executada com base no número de versões. |
 | minimumVersions | 1 | 1 | Sim | Número inteiro | O número mínimo de versões que são mantidas independentemente da idade. Observe que pelo menos 1 versão é sempre mantida; seu valor deve ser 1 ou superior. |
 | keepLabelledVersioned | falso | falso | Sim | booleano | Determina se as versões rotuladas explicitamente serão excluídas da limpeza. Para obter uma melhor otimização do repositório, é recomendável definir esse valor como false. |
-
 
 **Interações de propriedade**
 
@@ -366,7 +371,6 @@ Os ambientes criados antes da limpeza padrão estarem habilitados terão os valo
 As propriedades permitidas estão listadas abaixo.
 
 As colunas que indicam *padrão* indicam os valores padrão no futuro, quando os padrões são aplicados; *TBD* reflete uma ID de ambiente que ainda não foi determinada.
-
 
 | Propriedades | padrão futuro para envs>TBD | padrão futuro para envs&lt;=TBD | obrigatório | tipo | Valores |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
