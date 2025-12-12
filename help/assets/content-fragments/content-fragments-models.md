@@ -5,14 +5,14 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 69%
+source-wordcount: '3604'
+ht-degree: 68%
 
 ---
 
-# Modelos de fragmentos do conteúdo {#content-fragment-models}
+# Modelos de fragmentos de conteúdo {#content-fragment-models}
 
 Os modelos de fragmento de conteúdo no AEM definem a estrutura do conteúdo para os seus [fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md), servindo como base para o seu conteúdo headless.
 
@@ -22,6 +22,10 @@ Para usar modelos de fragmento de conteúdo, você pode:
 1. [Criar](#creating-a-content-fragment-model) e [configurar](#defining-your-content-fragment-model) os modelos de fragmento de conteúdo
 1. [Habilitar os Modelos de fragmento de conteúdo](#enabling-disabling-a-content-fragment-model) para uso ao criar Fragmentos de conteúdo
 1. [Autorizar os modelos de fragmento de conteúdo nas pastas de ativos necessárias](#allowing-content-fragment-models-assets-folder) ao configurar as **Políticas**.
+
+>[!NOTE]
+>
+>Esteja ciente das [Práticas recomendadas](/help/assets/content-fragments/content-fragments.md) ao trabalhar com os modelos de fragmento de conteúdo e fragmentos de conteúdo.
 
 >[!NOTE]
 >
@@ -488,7 +492,7 @@ Para configurar as **políticas** para **modelos de fragmento de conteúdo permi
 
 Os modelos de fragmento de conteúdo permitidos para uma pasta são resolvidos da seguinte maneira:
 
-* As **políticas** para **modelos de fragmento do conteúdo permitidos**.
+* As **políticas** para **modelos de fragmento de conteúdo permitidos**.
 * Se estiver vazia, tente determinar a política usando as regras de herança.
 * Se a cadeia de herança não fornecer um resultado, verifique a configuração de **Cloud Services** dessa pasta (diretamente e, em seguida, por herança).
 * Se nenhuma das opções acima fornecer resultados, então não há modelos permitidos para essa pasta.
@@ -501,7 +505,7 @@ Os modelos de fragmento de conteúdo permitidos para uma pasta são resolvidos d
 
 Para excluir um modelo de fragmento de conteúdo:
 
-1. Navegue até **Ferramentas**, **Geral** e, em seguida, abra os **Modelos de fragmentos do conteúdo**.
+1. Navegue até **Ferramentas**, **Geral** e, em seguida, abra os **Modelos de fragmentos de conteúdo**.
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
 1. Selecione seu modelo e, em seguida, **Excluir** na barra de ferramentas.
@@ -516,7 +520,7 @@ Os modelos de fragmento de conteúdo precisam ser publicados quando/antes de qua
 
 Para publicar um modelo de fragmento de conteúdo:
 
-1. Navegue até **Ferramentas**, **Geral** e, em seguida, abra os **Modelos de fragmentos do conteúdo**.
+1. Navegue até **Ferramentas**, **Geral** e, em seguida, abra os **Modelos de fragmentos de conteúdo**.
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
 1. Selecione seu modelo e, em seguida, **Publicar** na barra de ferramentas.
@@ -532,7 +536,7 @@ Os modelos de fragmento de conteúdo podem ter sua publicação desfeita se não
 
 Para desfazer a publicação de um modelo de fragmento de conteúdo:
 
-1. Navegue até **Ferramentas**, **Geral** e, em seguida, abra os **Modelos de fragmentos do conteúdo**.
+1. Navegue até **Ferramentas**, **Geral** e, em seguida, abra os **Modelos de fragmentos de conteúdo**.
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
 1. Selecione seu modelo e, em seguida, **Desfazer publicação** na barra de ferramentas.

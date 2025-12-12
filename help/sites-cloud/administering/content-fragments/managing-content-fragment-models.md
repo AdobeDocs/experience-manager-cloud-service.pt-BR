@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2475'
 ht-degree: 34%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 34%
 No console de Fragmentos de conteúdo, é possível gerenciar os Modelos de fragmento de conteúdo e [abrir o editor](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) para definir a estrutura.
 
 Os modelos de fragmento de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service definem a estrutura do conteúdo dos seus [fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md). Esses fragmentos podem ser usados como base para o conteúdo headless ou para a criação de páginas.
+
+>[!NOTE]
+>
+>Esteja ciente das [Práticas recomendadas](/help/sites-cloud/administering/content-fragments/overview.md) ao trabalhar com os modelos de fragmento de conteúdo e fragmentos de conteúdo.
 
 >[!NOTE]
 >
@@ -309,7 +313,7 @@ Para configurar as **políticas** para **modelos de fragmento de conteúdo permi
 
 Os modelos de fragmento de conteúdo permitidos para uma pasta são resolvidos da seguinte maneira:
 
-* As **políticas** para **modelos de fragmento do conteúdo permitidos**.
+* As **políticas** para **modelos de fragmento de conteúdo permitidos**.
 * Se estiver vazia, tente determinar a política usando as regras de herança.
 * Se a cadeia de herança não fornecer um resultado, verifique a configuração de **Cloud Services** dessa pasta (diretamente e, em seguida, por herança).
 * Se nenhuma das opções acima fornecer resultados, então não há modelos permitidos para essa pasta.

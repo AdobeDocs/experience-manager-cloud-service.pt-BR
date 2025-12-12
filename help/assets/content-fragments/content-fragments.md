@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
 workflow-type: tm+mt
-source-wordcount: '2247'
-ht-degree: 56%
+source-wordcount: '2576'
+ht-degree: 49%
 
 ---
 
@@ -323,3 +323,47 @@ O projeto WKND inclui:
 
 * Fragmentos de conteúdo (e outro conteúdo) disponíveis em:
   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+
+## Práticas recomendadas {#best-practices}
+
+Os fragmentos de conteúdo podem ser usados para formar estruturas complexas. O Adobe oferece recomendações para práticas recomendadas ao definir e usar modelos e fragmentos.
+
+### Mantenha a simplicidade {#keep-it-simple}
+
+Ao modelar conteúdo estruturado no AEM, mantenha as estruturas de conteúdo o mais simples possível para garantir um desempenho sólido do sistema e governança simplificada.
+
+### Número de Modelos {#number-of-models}
+
+Crie quantos modelos de conteúdo forem necessários, mas não mais.
+
+Muitos modelos complicam a governança e podem retardar as consultas do GraphQL. Um pequeno conjunto de modelos, máximo de baixas dezenas, é geralmente suficiente. Se você se aproximar das altas dezenas ou mais, reconsidere sua estratégia de modelagem.
+
+### Aninhamento de modelos e fragmentos (muito importante) {#nesting-models-and-fragments}
+
+Evite o aninhamento profundo ou excessivo de fragmentos de conteúdo usando Referências do fragmento de conteúdo, que permitem que os fragmentos façam referência a outros fragmentos, às vezes em vários níveis.
+
+O uso intenso de referências de Fragmento de conteúdo pode afetar significativamente o desempenho do sistema, a capacidade de resposta da interface do usuário e a execução de consultas do GraphQL. Faça com que o aninhamento seja mantido em não mais de dez níveis.
+
+### Número de Campos e Tipos de Dados por Modelo {#number-of-data-fields-and-types-per-model}
+
+Inclua apenas os campos e tipos de dados que um modelo realmente precisa.
+
+Modelos muito complexos levam a fragmentos muito complexos que podem dificultar a criação e reduzir o desempenho do editor.
+
+### Campos de Rich Text {#rich-text-fields}
+
+Use campos Rich Text (o Tipo de Dados **Texto de várias linhas**) levando em consideração.
+
+Limitar o número de campos Rich Text por modelo. Além disso, a quantidade de texto armazenado em cada fragmento e a quantidade de formatação do HTML. Um conteúdo de rich text muito grande pode afetar negativamente o desempenho do sistema.
+
+### Número de variações {#number-of-variations}
+
+Crie quantas variações de fragmento forem necessárias, mas não mais.
+
+As variações adicionam tempo de processamento a um Fragmento de conteúdo, no ambiente de criação e no momento da entrega também. É recomendável manter o número de variações em um mínimo gerenciável.
+
+Uma prática recomendada é não exceder dez variações por Fragmento de conteúdo.
+
+### Teste antes da produção {#test-before-production}
+
+Na dúvida, crie um protótipo das estruturas de conteúdo desejadas antes de implantá-las na produção. A prova de conceito antecipada, juntamente com testes adequados, técnicos e de aceitação do usuário, podem ajudar a evitar problemas posteriormente ao enfrentar prazos na produção.
