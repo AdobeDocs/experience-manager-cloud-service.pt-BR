@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para personalizar o Editor 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ A seguir estão os valores com suporte para `content`, ou seja, os recursos que 
 | `copy` | Desabilita os [botões copiar e colar](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
 | `duplicate` | Desabilita o [botão duplicar](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
 | `header-open-page` | Desabilita o [botão Abrir página](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
+| `dev-login` | Desabilita o [botão de logon do desenvolvedor](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) |
 
 ## Alterando seu endpoint {#custom-endpoint}
 
@@ -95,7 +96,7 @@ As condições podem ser definidas usando o [esquema JsonLogic](https://jsonlogi
 
 ## URLs de visualização personalizados {#custom-preview-urls}
 
-Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Para fazer isso, basta incluir o URL de visualização desejado em uma meta tag do aplicativo instrumentado, como no exemplo a seguir.
 

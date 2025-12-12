@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 87368be0b4c934bb4d4799833a90edfee72348e6
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2625'
 ht-degree: 9%
 
 ---
@@ -75,11 +75,15 @@ As alterações são salvas automaticamente quando o foco sai do campo editado.
 
 #### O painel Propriedades {#properties-rail}
 
-O [painel de propriedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) mostra um item para o texto selecionado. Toque na entrada para abrir uma caixa de diálogo apresentando uma tela maior para editar o texto.
+O [painel de propriedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) mostra uma entrada para o componente de rich text selecionado.
+
+![Componente de rich text no painel de propriedades](assets/rich-text-properties-panel.png)
+
+Toque na entrada para abrir uma caixa de diálogo apresentando uma tela maior para editar o rich text.
 
 ![Caixa de diálogo de edição de rich text](assets/rich-text-canvas.png)
 
-Toque ou clique em **Cancelar** ou **Concluído** para descartar ou salvar as alterações, respectivamente.
+Toque ou clique em **Cancelar** ou **Concluído** para descartar ou salvar as alterações, respectivamente. Você também pode pressionar a tecla Escape para salvar as alterações e fechar a caixa de diálogo.
 
 #### Opções de formatação de rich text {#formatting-options}
 
@@ -92,8 +96,15 @@ O editor de rich text (RTE) do Editor universal permite que o autor aplique a fo
 * Sobrescrito
 * Subscrito
 * Lista com marcadores
-* Lista numerada
+   * Use a tecla tab para recuar, shift+tab para recuar para a esquerda
+* Lista ordenada
+   * Use a tecla tab para recuar, shift+tab para recuar para a esquerda
 * Link
+* Desvincular
+* Imagem
+* Remover toda a formatação
+
+As tabelas existentes podem ser editadas usando o RTE, mas não é possível criar novas tabelas.
 
 O RTE pode ser configurado para ocultar opções ou mostrar opções adicionais, dependendo das necessidades dos autores. Consulte o documento [Configurando o RTE para o Editor Universal](/help/implementing/universal-editor/configure-rte.md) para obter mais informações.
 
@@ -212,7 +223,7 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 
 ### Copiar e colar {#copy-paste}
 
-Você pode copiar e colar componentes que estão em [&#x200B; contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
+Você pode copiar e colar componentes que estão em [ contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
 
 Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegador, desde que as guias já estejam abertas. Não é possível copiar um item e abrir uma nova guia do navegador para colá-lo.
 
@@ -230,7 +241,11 @@ Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegado
 >
 >Use a tecla de atalho `Command-C` ou `Command-V` para copiar ou colar, respectivamente.
 
+## Opções de contexto {#context-options}
 
+Ao editar no local, o editor oferecerá opções relevantes ao contexto com um clique com o botão direito do mouse, como duplicação, exclusão ou cópia de componentes.
+
+![Menu de opções de contexto](assets/context-options-menu.png)
 
 ## Visualização de conteúdo {#previewing-content}
 

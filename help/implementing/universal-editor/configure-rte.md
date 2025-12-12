@@ -4,9 +4,9 @@ description: Entenda como você pode configurar o editor de rich text (RTE) no E
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
+source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -176,6 +176,44 @@ As ações de imagem oferecem suporte ao empacotamento de elementos de imagem pa
 * `wrapInPicture`: `false` (padrão) - Gerar elementos `<img>` simples
 * `wrapInPicture`: `true` - Encapsular imagens em `<picture>` elementos para design responsivo
 
+### Configuração de recuo {#indentation}
+
+O recuo tem uma configuração de nível de recurso que controla o escopo do comportamento de recuo, além de configurações de ação individuais para atalhos e rótulos.
+
+```json
+{
+  "actions": {
+    // Feature-level configuration
+    "indentation": {
+      "scope": "all"  // Controls what content can be indented (default: "all")
+    },
+
+    // Individual action configurations
+    "indent": {
+      "shortcut": "Tab",           // Custom keyboard shortcut
+      "label": "Increase Indent"   // Custom button label
+    },
+    "outdent": {
+      "shortcut": "Shift-Tab",     // Custom keyboard shortcut
+      "label": "Decrease Indent"   // Custom button label
+    }
+  }
+}
+```
+
+#### Opções de Escopo de Recuo {#indentation-options}
+
+* `scope`: `all` (padrão) - O recuo/recuo à esquerda se aplica a todo o conteúdo:
+   * Listas: aninhar/aninhar itens de lista
+   * Parágrafos e cabeçalhos: aumentar/diminuir o nível de recuo geral
+* `scope`: `lists` - O recuo/recuo à esquerda se aplica somente aos itens da lista:
+   * Listas: aninhar/aninhar itens de lista
+   * Parágrafos e cabeçalhos: Nenhum recuo (botões desativados para esses)
+
+>[!NOTE]
+>
+>O aninhamento de lista com as teclas Tab/Shift+Tab funciona independentemente das configurações gerais de recuo.
+
 ### Outras ações {#other}
 
 Todas as outras ações oferecem suporte à personalização básica. As seções a seguir estão disponíveis.
@@ -307,6 +345,35 @@ Use o `wrapInParagraphs: true` quando precisar:
 * Vários parágrafos por item de lista
 * Estilo consistente em nível de bloco
 
+### `wrapInPicture`{#wrapinpicture}
+
+A opção `wrapInPicture` para imagens controla a estrutura HTML gerada para o conteúdo da imagem.
+
+#### wrapInPicture: falso (padrão) {#wrapinpicture-false}
+
+```html
+<img src="image.jpg" alt="Description" />
+```
+
+#### wrapInPicture: verdadeiro {#wrapinpicture-true}
+
+```html
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+```
+
+Use o `wrapInPicture: true` quando precisar:
+
+* Suporte de imagem responsiva com `<source>` elementos.
+* Recursos de direção de arte.
+* À prova de obsolescência para recursos de imagem avançados.
+* Estrutura de elemento de imagem consistente.
+
+>[!NOTE]
+>
+>Quando o `wrapInPicture: true` está habilitado, as imagens podem ser aprimoradas com elementos `<source>` adicionais para diferentes consultas de mídia e formatos, tornando-as mais flexíveis para oferecer design responsivo.
+
 ### Opções de direcionamento de link {#link-target}
 
 A opção `hideTarget` para links controla se o atributo `target` está incluído em links gerados e se a caixa de diálogo para criação de links inclui um campo para seleção de destino.
@@ -318,11 +385,60 @@ A opção `hideTarget` para links controla se o atributo `target` está incluíd
 <a href="https://example.com" target="_blank">External link</a>
 ```
 
-### `hideTarget: true` {#hideTarget-true}
+#### `hideTarget: true` {#hideTarget-true}
 
 ```html
 <a href="https://example.com">Link text</a>
 ```
+
+### Desativação de links em imagens {#disableforimages}
+
+A opção `disableForImages` para links controla se os usuários podem criar links em imagens e elementos de imagem. Isso se aplica aos elementos `<img>` embutidos e aos elementos `<picture>` de nível de bloco.
+
+#### `disableForImages: false` (default) {#disableforimages-false}
+
+Os usuários podem selecionar imagens e envolvê-las em links.
+
+```html
+<!-- Inline image with link -->
+<a href="https://example.com">
+  <img src="image.jpg" alt="Description" />
+</a>
+
+<!-- Block-level picture with link -->
+<a href="https://example.com">
+  <picture>
+    <img src="image.jpg" alt="Description" />
+  </picture>
+</a>
+```
+
+#### disableForImages: true {#disableforimages-true}
+
+O botão de link é desativado quando uma imagem ou imagem é selecionada. Os usuários só podem criar links em conteúdo de texto.
+
+```html
+<!-- Images remain standalone without links -->
+<img src="image.jpg" alt="Description" />
+
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+
+<!-- Links work normally on text -->
+<a href="https://example.com">Link text</a>
+```
+
+Use `disableForImages: true` quando quiser:
+
+* Mantenha a consistência visual evitando imagens vinculadas.
+* Simplifique a estrutura do conteúdo separando imagens da navegação.
+* Imponha políticas de conteúdo que restrinjam a vinculação de imagens.
+* Reduza a complexidade de acessibilidade em seu conteúdo.
+
+>[!NOTE]
+>
+>Essa configuração afeta apenas a capacidade de criar novos links em imagens. Ela não remove links existentes de imagens no conteúdo.
 
 ### Opções de tag {#tag}
 
