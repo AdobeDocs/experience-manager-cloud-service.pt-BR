@@ -3,28 +3,31 @@ title: Adicionar um ambiente de teste especializado
 description: Saiba como os ambientes de teste especializados no Cloud Manager fornecem um espaço dedicado para validar recursos em condições próximas à produção, ideal para testes de estresse e verificações avançadas pré-implantação.
 feature: Cloud Manager, Developing
 role: Admin, Developer
-badge: label="Beta privado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 837f1d0eb0bd0f8cf8c0e283db823255f4e53ae1
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '522'
 ht-degree: 8%
 
 ---
 
 # Adicionar um ambiente de teste especializado{#add-special-test-enviro}
 
+<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+-->
+
 >[!NOTE]
 >
->&#x200B;>O recurso descrito neste artigo só está disponível por meio do programa beta privado. Para se inscrever no beta privado, consulte [Ambiente de testes especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>Os ambientes de teste especializados agora estão disponíveis para compra. Entre em contato com seu representante da Adobe para fazer um pedido.
 
-O ambiente de teste especializado, ou DevXL, é um novo tipo de ambiente do Cloud Manager que você pode criar. Ele foi projetado para atender a casos de uso avançados, como testes de aceitação de usuários (UAT) e validação de desempenho. Diferentemente dos ambientes tradicionais de desenvolvimento, desenvolvimento rápido ou preparo, os ambientes DevXL operam fora do pipeline de implantação de produção. Dessa forma, eles oferecem maior flexibilidade e, ao mesmo tempo, mantêm um isolamento rigoroso para impedir a interferência nos workflows de produção.
 
-O DevXL foi criado para refletir o tamanho, a escalabilidade e as configurações de um ambiente de preparo típico. Essa abordagem garante que os testes executados em DevXL possam fornecer insights realistas sobre como o código e o conteúdo são executados em condições semelhantes à produção. O ambiente também oferece suporte à cópia direta de conteúdo da produção ou do preparo. Ele também mantém a paridade com ambientes de desenvolvimento em termos de workflows de implantação, controles de acesso e configurações de rede.
+O ambiente de teste especializado é um novo tipo de ambiente do Cloud Manager que você pode criar. Ele foi projetado para atender a casos de uso avançados, como testes de aceitação de usuários (UAT) e validação de desempenho. Diferentemente dos ambientes tradicionais de desenvolvimento, desenvolvimento rápido ou preparo, os ambientes de teste especializados operam fora do pipeline de implantação de produção. Dessa forma, eles oferecem maior flexibilidade e, ao mesmo tempo, mantêm um isolamento rigoroso para impedir a interferência nos workflows de produção.
 
-## Principais recursos e configurações {#key-features}
+Um ambiente de teste especializado é criado para refletir o tamanho, a escalabilidade e as configurações de um ambiente de preparo típico. Essa abordagem garante que os testes executados no ambiente de testes especializado possam gerar insights realistas sobre como o código e o conteúdo são executados em condições semelhantes à produção. O ambiente também oferece suporte à cópia direta de conteúdo da produção ou do preparo. Ele também mantém a paridade com ambientes de desenvolvimento em termos de workflows de implantação, controles de acesso e configurações de rede.
 
-| Categoria | Comportamento DevXL |
+## Principais recursos e configurações de um ambiente de teste especializado {#key-features}
+
+| Categoria | Comportamento |
 | --- | --- |
 | Propósito | Testes de UAT e desempenho. |
 | Tipo de pipeline | Não está no pipeline de produção. |
@@ -38,7 +41,7 @@ O DevXL foi criado para refletir o tamanho, a escalabilidade e as configuraçõe
 | `IP Allow List` | Igual ao ambiente de desenvolvimento. |
 | Rede | Igual ao ambiente de desenvolvimento (Serviços, Nome do domínio, Certificados SSL, Rede avançada). |
 
-Consulte também [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md)
+Consulte também [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md).
 
 ## Adicionar um ambiente de teste especializado {#add-specialized-testing-environment}
 
@@ -55,7 +58,7 @@ Para adicionar ou editar um ambiente, o usuário deve ser membro da função **P
    * No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, no cartão **Ambientes**, clique em **Adicionar Ambiente**.
 Se a opção **Adicionar Ambiente** estiver esmaecida (desabilitada), talvez seja devido à falta de permissões ou dependente dos recursos licenciados.
 
-   ![Cartão Ambientes](assets/no-environments.png)
+     ![Cartão Ambientes](assets/no-environments.png)
 
    * No painel lateral esquerdo, clique em ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes** e, na página Ambientes, próximo ao canto superior direito, clique em **Adicionar ambiente**.
 
@@ -66,10 +69,16 @@ Se a opção **Adicionar Ambiente** estiver esmaecida (desabilitada), talvez sej
    * Clique em **Ambiente de teste especializado**.
    * Forneça um ambiente **Nome**. O nome do ambiente não pode ser alterado depois que o ambiente é criado.
    * (Opcional) Forneça uma **Descrição** para o ambiente.
-   * Selecione uma **Região principal** na lista suspensa. Depois de criada, a região primária do ambiente DevXL (por exemplo, *Estados Unidos (Oeste dos EUA)*) é bloqueada e não pode ser alterada.
+   * Selecione uma **Região principal** na lista suspensa. Depois de criada, a região principal do Ambiente de testes especializados (por exemplo, *Reino Unido (Sul)*) está bloqueada e não pode ser alterada.
 
-   ![Caixa de diálogo Adicionar ambiente com o botão de opção Ambiente de teste especializado selecionado](assets/specialized-test-environment.png)
+     ![Caixa de diálogo Adicionar ambiente com o botão de opção Ambiente de teste especializado selecionado](assets/specialized-test-environment.png)
 
 1. Clique em **Salvar**.
 
    A página **Visão geral** agora exibe seu novo ambiente no cartão **Ambientes**. Agora você pode configurar pipelines para seu novo ambiente.
+
+## Recursos adicionais {#additional-resources}
+
+* Vídeo: [Noções básicas sobre tipos de ambiente no AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md)
+
