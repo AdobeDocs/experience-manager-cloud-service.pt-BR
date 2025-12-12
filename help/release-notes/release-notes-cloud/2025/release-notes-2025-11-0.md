@@ -1,20 +1,18 @@
 ---
-title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.11.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.11.0.
 feature: Release Information
 role: Admin
-source-git-commit: 6d86413449dbde8566f0f653071a2f29ab9c13ab
+source-git-commit: 2cc6f1bea3fc9cd56a20048db0ce5357dbb5ee0e
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 10%
+source-wordcount: '1461'
+ht-degree: 11%
 
 ---
 
-# Notas de versão atuais do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2025.11.0 {#release-notes}
 
-A seção a seguir descreve as notas da versão de recurso atual (mais recente) do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as notas da versão de recursos do [!DNL Experience Manager] as a Cloud Service 2025.11.0.
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2025.12.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 11 de dezembro de 2025. O próximo lançamento de recursos (2026.1.0) está planejado para sexta-feira, 29 de janeiro de 2026.
+A data de lançamento da versão atual (2025.11.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 20 de novembro de 2025. O próximo lançamento de recursos (2025.12.0) está planejado para sexta-feira, 11 de dezembro de 2025.
 
 ## Notas da versão de manutenção {#maintenance}
 
@@ -46,7 +44,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## Agentes no AEM {#agents-in-aem}
 
-O AEM fornece diversos agentes que permitem acelerar a criação de conteúdo e orquestrar alterações automaticamente. Para obter mais informações, consulte [Visão geral dos agentes no AEM](/help/ai-in-aem/agents/overview.md).
+O AEM fornece diversos agentes que permitem acelerar a criação de conteúdo e orquestrar alterações automaticamente. Para obter mais informações, consulte [Visão geral dos agentes](/help/ai-in-aem/agents/overview.md).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -111,7 +109,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Futuras descontinuações da API Java {#java-api-deprecation}
 
-Várias APIs obsoletas foram marcadas para remoção em 31 de agosto e, portanto, não devem mais ser referenciadas. Você receberá notificações da Central de ações se o uso obsoleto da API for detectado no código e, após 29 de janeiro, avisos serão exibidos durante os builds do Cloud Manager para reforçar a importância de remover o uso. Consulte o [artigo de descontinuação](/help/release-notes/deprecated-removed-features.md#aem-apis) para obter detalhes completos, mas, para conveniência, essas APIs estão listadas abaixo:
+Várias APIs obsoletas foram marcadas para remoção em 31 de agosto e, portanto, não devem mais ser referenciadas. Você receberá notificações da Central de ações se o uso obsoleto da API for detectado no código e, após 3 de dezembro, avisos serão exibidos durante os builds do Cloud Manager para reforçar a importância de remover o uso. Consulte o [artigo de descontinuação](/help/release-notes/deprecated-removed-features.md#aem-apis) para obter detalhes completos, mas, para conveniência, essas APIs estão listadas abaixo:
 
 +++ Expanda para ver as descontinuações da API Java
 
@@ -156,7 +154,7 @@ A Adobe atualizou os ambientes **Preparo** e **Produção** para o **tempo de ex
 
 Conforme observado nas notas de versão de abril, os registros Java da AEM devem seguir um formato padrão para garantir um monitoramento confiável em todos os ambientes do cliente. Configurações de log personalizadas — como alterações na formatação de log, arquivos de saída ou níveis de log padrão — não são mais suportadas. Os registros devem permanecer direcionados aos arquivos padrão e os níveis de registro padrão para o código de produto do AEM devem ser preservados. Veja todos os detalhes no [Artigo sobre log](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-A partir de **29 de janeiro**, todas as substituições de log personalizadas não suportadas serão ignoradas. Com base em nossa análise, a maioria dos clientes não será afetada e a Adobe entrou em contato com clientes cuja configuração atual pode ser afetada.
+A partir de **10 de dezembro**, todas as substituições de log personalizadas não suportadas serão ignoradas. Com base em nossa análise, a maioria dos clientes não será afetada e a Adobe entrou em contato com clientes cuja configuração atual pode ser afetada.
 
 Revise e atualize todos os processos downstream que dependem do comportamento de log personalizado. Por exemplo:
 
@@ -198,6 +196,15 @@ A autenticação da Edge permite restringir o acesso às páginas do Edge Delive
 
 Se estiver interessado, envie um email para [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) com uma breve descrição do caso de uso e suas dúvidas.
 
+<!--
+#### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
+
 #### Implantações de produção canária para testar o código antes de aceitar o tráfego direto (programa Beta) {#canary-beta}
 
 Valide uma build de produção com tráfego de teste somente interno antes de expô-la aos usuários finais. Entregar para produção, rotear apenas tráfego canário (usando um cabeçalho especial), monitorar o comportamento e promover para tráfego ativo ou reverter, sem afetar os clientes.
@@ -215,17 +222,17 @@ Estamos nos preparando para lançar o Programa Beta de Respostas de IA e agora c
 
 Para solicitar participação ou receber atualizações, contate [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
-#### Instantâneos para RDEs (Programa Beta) {#rde-snapshot-program}
-
-Na versão beta, os ambientes de desenvolvimento rápido (RDEs) agora oferecem suporte a um recurso para obter um instantâneo do estado atual do código e do conteúdo, que pode ser restaurado posteriormente. Isso pode ser útil ao sincronizar código que pode precisar ser revertido ou ao alternar entre o desenvolvimento de diferentes recursos. Também é possível restaurar apenas o conteúdo mutável como um ponto de partida conhecido para testes.
-
-Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) se houver interesse em usar esse recurso e fornecer feedback sobre ele.
-
-#### Acelere o desenvolvimento do AEM com IA (Programa Alpha) {#ai-dev-alpha}
+#### Acelere o desenvolvimento do AEM com IA (Programa Alpha)  {#ai-dev-alpha}
 
 As equipes do AEM Java-stack estão usando cada vez mais o desenvolvimento assistido por IA em ferramentas como Cursor, Claude Code, Visual Studio e IntelliJ para acelerar a entrega de recursos e melhorar a qualidade do código. Estamos reunindo experiências reais para ajudar a moldar os futuros recursos de IA compatíveis com o Adobe.
 
 Compartilhe o que está trabalhando para a sua equipe — e o que você gostaria que a Adobe fornecesse — enviando um email para [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+
+#### Instantâneos para RDEs (Programa Alpha) {#rde-snapshot-program}
+
+Em alfa, os ambientes de desenvolvimento rápido (RDEs) agora oferecem suporte a um recurso para obter um instantâneo do estado atual do código e do conteúdo, que pode ser restaurado posteriormente. Isso pode ser útil ao sincronizar código que pode precisar ser revertido ou ao alternar entre o desenvolvimento de diferentes recursos. Também é possível restaurar apenas o conteúdo mutável como um ponto de partida conhecido para testes.
+
+Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) se houver interesse em fornecer feedback sobre esse recurso.
 
 #### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
