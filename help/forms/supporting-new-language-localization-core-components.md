@@ -407,7 +407,7 @@ Essas etapas orientam você na pré-visualização de um Formulário adaptável 
 
 * Tratamento de novos campos:
 
-   * **Tradução Automática**: se estiver usando tradução automática, você precisará recriar o dicionário e executar novamente o projeto de tradução[ depois de adicionar novos campos a um Formulário Adaptável existente. ](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) Os novos campos adicionados após o projeto de tradução inicial permanecem não traduzidos.
+   * **Tradução Automática**: se estiver usando tradução automática, você precisará recriar o dicionário e executar novamente o projeto de tradução[&#x200B; depois de adicionar novos campos a um Formulário Adaptável existente. &#x200B;](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) Os novos campos adicionados após o projeto de tradução inicial permanecem não traduzidos.
 
    * **Tradução humana**: para fluxos de trabalho de tradução humana, exporte o dicionário usando a interface do usuário em `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Atualize o dicionário para os novos campos e faça upload da versão revisada.
 
