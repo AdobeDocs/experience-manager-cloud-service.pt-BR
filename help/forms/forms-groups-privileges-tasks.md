@@ -15,10 +15,10 @@ ht-degree: 22%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
-Você pode [criar grupos](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) e atribuir políticas e [usuários](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) aos grupos. Essas políticas controlam as permissões dos usuários que fazem parte do grupo.
+Você pode [criar grupos](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=pt-BR#accessing) e atribuir políticas e [usuários](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=pt-BR#accessing) aos grupos. Essas políticas controlam as permissões dos usuários que fazem parte do grupo.
 
 Depois de configurar o as a Cloud Service [!DNL AEM Forms], os grupos listados na tabela abaixo, como [!DNL forms-users] e forms-power-user, estarão automaticamente disponíveis para atribuição:
 

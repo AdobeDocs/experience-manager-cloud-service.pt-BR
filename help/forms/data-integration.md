@@ -15,7 +15,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 
