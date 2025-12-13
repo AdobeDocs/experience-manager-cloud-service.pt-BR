@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2154'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,19 @@ ht-degree: 2%
 | Componentes de fundação | [Clique aqui](supporting-new-language-localization.md) |
 | Componentes principais | Este artigo |
 
-<span class="preview"> O recurso de suporte a idiomas da direita para a esquerda está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso de suporte a idiomas da direita para a esquerda está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 O AEM Forms oferece suporte imediato para as localidades de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR). Você também pode adicionar suporte para mais locais, como Hindi(hi_IN). Você também pode apresentar o Adaptive Forms em um idioma da Direita para a Esquerda (RTL), como árabe, persa e urdu, adicionando esses locais.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
+
+## Aplicabilidade e casos de uso
+
+### Seguros
+
+## O AEM Forms oferece suporte a casos de uso de seguros multilíngues?
+
+Sim. O AEM Forms oferece suporte a experiências de formulário multilíngues, o que é importante para seguradoras que operam em regiões e idiomas.
 
 ## Como o AEM Forms determina a localidade de um formulário adaptável?
 
@@ -117,7 +125,7 @@ Para adicionar suporte a novos locais a um formulário adaptável com base em co
 
    **Onde encontrar essas informações?**
 
-   Para obter instruções passo a passo sobre como localizar esses detalhes, consulte o artigo da Adobe Experience League &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git)&quot;.
+   Para obter as instruções passo a passo sobre como localizar esses detalhes, consulte o artigo &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot; da Adobe Experience League.
 
    **Seu projeto está pronto!**
 
@@ -140,7 +148,7 @@ Para adicionar suporte a novos locais a um formulário adaptável com base em co
      [AEMaaCS project directory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. 
      ```
 
-     Substitua `<appid>` pela ID do aplicativo específica do seu projeto. Você pode encontrar `<appid>` para seu projeto AEM no arquivo `archetype.properties`.
+     Substitua `<appid>` pela ID do aplicativo específica do seu projeto. Você pode encontrar `<appid>` para seu Projeto AEM no arquivo `archetype.properties`.
 
      ![Propriedades do Arquétipo](/help/forms/assets/archetype-properties.png)
 
@@ -347,7 +355,7 @@ Esta etapa se aplica somente às localidades diferentes das seguintes comumente 
 
 1. Salve o arquivo.
 
-### Implante a localidade recém-criada no ambiente AEM
+### Implante a localidade recém-criada no ambiente do AEM
 
 Agora você está pronto para usar o novo local com sua Forms adaptável. Você pode
 
@@ -365,7 +373,7 @@ Agora você está pronto para usar o novo local com sua Forms adaptável. Você 
       mvn -PautoInstallPackage clean install
       ```
 
-* Implante o AEM as a Cloud Service, [diretório do projeto AEMaaCS], no seu ambiente Cloud Service. Para implantar no ambiente de Cloud Service:
+* Implante o AEM as a Cloud Service, [diretório do projeto AEMaaCS], no seu ambiente Cloud Service. Para implantar no ambiente do Cloud Service:
 
    1. Confirme suas alterações:
 
@@ -373,16 +381,16 @@ Agora você está pronto para usar o novo local com sua Forms adaptável. Você 
 
    1. Implante o código atualizado:
 
-      Acione uma implantação do seu código por meio do [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline). Isso cria e implanta automaticamente o código atualizado com o novo suporte de localidade.
+      Acione uma implantação do seu código por meio do [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Isso cria e implanta automaticamente o código atualizado com o novo suporte de localidade.
 
-      Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline).
+      Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 
 ## Visualizar um formulário adaptável com a localidade recém-adicionada
 
 Essas etapas orientam você na pré-visualização de um Formulário adaptável com a localidade recém-adicionada:
 
-1. Faça logon na instância as a Cloud Service do AEM Forms.
+1. Faça logon na sua instância do AEM Forms as a Cloud Service.
 1. Ir para **Forms** > **Forms e Documentos**.
 1. Selecione um formulário adaptável e clique em **Adicionar dicionário** e o assistente **Adicionar dicionário ao projeto de tradução** será exibido.
 1. Especifique o **Título do Projeto** e selecione os **Idiomas de Destino** no menu suspenso do assistente **Adicionar Dicionário ao Projeto de Tradução**.
@@ -393,13 +401,13 @@ Essas etapas orientam você na pré-visualização de um Formulário adaptável 
 
 ## Práticas recomendadas para oferecer suporte à nova localização {#best-practices}
 
-* O Adobe recomenda criar um projeto de tradução após criar um Formulário adaptável. Isso simplifica o processo de localização.
-* Quando os componentes Caixa numérica e Seletor de data são convertidos em um local específico, podem ocorrer problemas de formatação. Para atenuar isso, uma opção **Idioma** foi incorporada à caixa de diálogo Configurar do [componente seletor de datas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) e do [componente Caixa Numérica](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* A Adobe recomenda criar um projeto de tradução após criar um Formulário adaptável. Isso simplifica o processo de localização.
+* Quando os componentes Caixa numérica e Seletor de data são convertidos em um local específico, podem ocorrer problemas de formatação. Para atenuar isso, uma opção **Idioma** foi incorporada à caixa de diálogo Configurar do [componente seletor de datas](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) e do [componente Caixa Numérica](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Tratamento de novos campos:
 
-   * **Tradução Automática**: se estiver usando tradução automática, você precisará recriar o dicionário e executar novamente o projeto de tradução[&#128279;](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) depois de adicionar novos campos a um Formulário Adaptável existente.  Os novos campos adicionados após o projeto de tradução inicial permanecem não traduzidos.
+   * **Tradução Automática**: se estiver usando tradução automática, você precisará recriar o dicionário e executar novamente o projeto de tradução[ depois de adicionar novos campos a um Formulário Adaptável existente. ](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) Os novos campos adicionados após o projeto de tradução inicial permanecem não traduzidos.
 
    * **Tradução humana**: para fluxos de trabalho de tradução humana, exporte o dicionário usando a interface do usuário em `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Atualize o dicionário para os novos campos e faça upload da versão revisada.
 

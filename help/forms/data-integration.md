@@ -1,13 +1,13 @@
 ---
 title: Como conectar um banco de dados ao  [!DNL AEM Forms] as a Cloud Service?
-description: Recupere e salve dados em serviços Web RESTful, serviços Web baseados em SOAP e serviços OData de um Formulário adaptável ou um Fluxo de trabalho AEM.
+description: Recupere e salve dados em serviços Web RESTful, serviços Web baseados em SOAP e serviços OData de um Formulário adaptável ou de um Fluxo de trabalho do AEM.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 3%
+source-wordcount: '668'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -45,6 +45,26 @@ Depois de criar um modelo de dados de formulário (FDM), você pode usá-lo para
 * Preencher previamente o Forms adaptável a partir de fontes de dados configuradas
 * Chamar serviços/operações de fonte de dados usando regras do Formulário adaptável
 * Gravar dados do Formulário adaptável enviados nas fontes de dados
+
+## Aplicabilidade e casos de uso
+
+### Seguros
+
+## O AEM Forms pode ser usado para aplicações de apólices de seguro?
+
+Sim. O AEM Forms pode ser usado para criar formulários de inscrição de seguro digital que coletam informações do candidato, validam entradas e se integram a sistemas de subscrições de back-end.
+
+## O AEM Forms oferece suporte à subscrições de workflows?
+
+Sim, com fluxos de trabalho e integrações. O AEM Forms oferece suporte a processos orientados por fluxo de trabalho e integrações de back-end que permitem que os dados do aplicativo fluam para sistemas de tomada firme e decisão.
+
+## O AEM Forms pode se integrar a sistemas centrais de seguros?
+
+Sim. O AEM Forms oferece suporte à integração usando as APIs REST e SOAP, permitindo que ele se conecte a sistemas de administração de políticas, sistemas de gerenciamento de solicitações e CRMs.
+
+## A AEM Forms pode gravar dados de formulário nos sistemas de seguros?
+
+Sim. O AEM Forms oferece suporte à gravação de dados em sistemas de back-end como parte do envio de formulários e da execução de fluxos de trabalho.
 
 ## Introdução à integração de dados {#get-started-with-data-integration}
 

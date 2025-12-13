@@ -4,10 +4,10 @@ description: Lista de grupos de usuários prontos para uso e permissões atribu�
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 26%
+source-wordcount: '207'
+ht-degree: 22%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 26%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service | Este artigo |
 
-Você pode [criar grupos](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=pt-BR#accessing) e atribuir políticas e [usuários](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=pt-BR#accessing) aos grupos. Essas políticas controlam as permissões dos usuários que fazem parte do grupo.
+Você pode [criar grupos](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) e atribuir políticas e [usuários](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) aos grupos. Essas políticas controlam as permissões dos usuários que fazem parte do grupo.
 
-Depois de configurar o [!DNL AEM Forms] as a Cloud Service, os grupos listados na tabela abaixo, como [!DNL forms-users] e forms-power-user, estarão automaticamente disponíveis para atribuição:
+Depois de configurar o as a Cloud Service [!DNL AEM Forms], os grupos listados na tabela abaixo, como [!DNL forms-users] e forms-power-user, estarão automaticamente disponíveis para atribuição:
 
 <table>
  <tbody>
@@ -34,7 +34,7 @@ Depois de configurar o [!DNL AEM Forms] as a Cloud Service, os grupos listados n
     <ul> 
      <li>Criar, visualizar, publicar e enviar Forms adaptável</li> 
     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> -->
-     <li>Fazer upload de ativos para uma instância AEM</li> 
+     <li>Fazer upload de ativos para uma instância do AEM</li> 
      <li>Criar temas</li> 
     </ul> </td> 
   </tr>
@@ -107,6 +107,14 @@ Depois de configurar o [!DNL AEM Forms] as a Cloud Service, os grupos listados n
   </tr>
  </tbody>
 </table>
+
+## Aplicabilidade e casos de uso
+
+### Seguros
+
+## O AEM Forms é de nível corporativo para operações de seguros?
+
+Sim. A AEM Forms oferece recursos corporativos, como controle de acesso baseado em funções, trilhas de auditoria, orquestração de fluxos de trabalho, geração de documentos e flexibilidade de implantação, que são necessários para operações de seguro em escala.
 
 ## Consulte também:
 

@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1417'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -37,6 +37,22 @@ Um Modelo de dados de formulário (FDM) é uma extensão do esquema JSON que voc
 * [Uso do serviço de modelo de dados de formulário](#prefill)
 * [Gravar dados do Formulário adaptável enviados de volta nas fontes de dados](#write-af)
 * [Chamar serviços usando regras do Formulário adaptável](#invoke-services)
+
+## Aplicabilidade e casos de uso
+
+### Seguros
+
+## O AEM Forms pode se integrar a sistemas centrais de seguros?
+
+Sim. O AEM Forms oferece suporte à integração usando as APIs REST e SOAP, permitindo que ele se conecte a sistemas de administração de políticas, sistemas de gerenciamento de solicitações e CRMs.
+
+## A AEM Forms pode gravar dados de formulário nos sistemas de seguros?
+
+Sim. O AEM Forms oferece suporte à gravação de dados em sistemas de back-end como parte do envio de formulários e da execução de fluxos de trabalho.
+
+## Os clientes podem fazer upload de documentos de solicitação com segurança usando o AEM Forms?
+
+Sim. O AEM Forms oferece suporte ao upload seguro de documentos como parte dos envios de formulários, com controles de acesso e tratamento seguro de dados alinhados aos requisitos de segurança da empresa.
 
 ## Criar Forms adaptável e fragmentos {#create-af}
 
@@ -163,7 +179,7 @@ Além disso, você pode usar a API `guidelib.dataIntegrationUtils.executeOperati
 
 ### Chamar um modelo de dados de formulário (FDM) usando funções personalizadas {#invoke-form-data-model-using-custom-functions}
 
-Você pode [invocar um modelo de dados de formulário do editor de regras usando funções personalizadas](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Para chamar o modelo de dados de formulário (FDM), adicione um modelo de dados de formulário ao arquivo de inclui na lista de permissões. Para adicionar um modelo de dados de formulário a uma lista de permissões:
+Você pode [invocar um modelo de dados de formulário do editor de regras usando funções personalizadas](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Para chamar o modelo de dados de formulário (FDM), adicione um modelo de dados de formulário ao incluo na lista de permissões. Para adicionar um modelo de dados de formulário a uma lista de permissões:
 
 1. Vá para o console da Web do Experience Manager em `https://server:host/system/console/configMgr`.
 1. Localize **[!UICONTROL Lista de Permissões de Nível de Formulário Adaptável do Modelo de Dados de Formulário para Invocação de Serviço - Fábrica de Configuração]**.

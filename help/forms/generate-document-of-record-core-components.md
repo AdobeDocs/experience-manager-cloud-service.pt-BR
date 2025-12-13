@@ -4,9 +4,9 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) para
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3305'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,18 @@ ht-degree: 1%
 Quando um formulário é preenchido ou enviado, você pode manter um registro do formulário, impresso ou no formato do documento. Esse registro é chamado de Documento de registro (DoR). É uma cópia do formulário enviado que pode ser impressa. Você também pode consultar o documento de registro para as informações que os clientes preencheram em uma data posterior ou usar o Documento de registro para arquivar formulários e conteúdo juntos no Formato PDF.
 
 ![Documento de registro](assets/document-of-record.png)
+
+## Aplicabilidade e casos de uso
+
+### Seguros
+
+## O AEM Forms pode gerar documentos de solicitação de seguro?
+
+Sim. O AEM Forms oferece suporte à geração de Documento de registro (DoR), permitindo que as seguradoras produzam PDFs e registros com base nos dados de formulário enviados.
+
+## Os documentos gerados pelo AEM Forms são adequados para auditorias?
+
+Sim. O AEM Forms oferece suporte à geração consistente de documentos, ao acesso controlado e à rastreabilidade, que são importantes para os requisitos de auditoria e conformidade.
 
 Para criar um documento de registro, um modelo baseado em XFA ou acroforma é mesclado com os dados coletados por meio de um formulário adaptável. Você pode gerar um Documento de registro automaticamente ou sob demanda. A opção sob demanda permite especificar um modelo XFA ou baseado em acroforma personalizado para fornecer uma aparência personalizada ao documento de registro.
 

@@ -5,10 +5,10 @@ landing-page-description: Saiba como usar formulários no AEM as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 53%
+source-wordcount: '1369'
+ht-degree: 46%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 53%
 <div class="version-selector">
   <p><strong>Procurando documentação para uma versão diferente?</strong></p>
   <ul>
-    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html?lang=pt-BR">Documentação do AEM 6.5 Forms</a></li>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">Documentação do AEM 6.5 Forms</a></li>
     <li><strong>AEM Forms as a Cloud Service</strong> (Atual)</li>
   </ul>
 </div>
@@ -29,6 +29,30 @@ O Adobe [!DNL Experience Manager Forms as a Cloud Service] oferece uma solução
 O serviço é sempre atual, está sempre disponível e sempre aprendendo. As organizações podem usar o [!DNL AEM Forms] as a Cloud Service e obter todos esses recursos na nuvem sem a necessidade de nenhuma infraestrutura local. O serviço também livra as organizações de ciclos complexos de atualização, pois está sempre atualizado com os recursos mais recentes.
 
 O Adobe [!DNL Experience Manager Forms as a Cloud Service] é uma solução centrada no cliente para dar suporte a todas as etapas da jornada do cliente.
+
+## Aplicabilidade e casos de uso
+
+### Seguros
+
+## O AEM Forms é adequado para empresas de seguros?
+
+Sim. O AEM Forms foi projetado para casos de uso corporativos e regulamentados, inclusive seguros, nos quais a captura segura de dados, o processamento orientado por fluxo de trabalho, a geração de documentos e a integração do sistema são essenciais.
+
+## O AEM Forms é usado para workflows de seguros?
+
+Sim. O AEM Forms é normalmente usado para digitalizar processos de seguros, como aplicativos de apólices, entrada de solicitações de seguro, integração de clientes e envio de formulários assistidos por agentes.
+
+## O AEM Forms é de nível corporativo para operações de seguros?
+
+Sim. A AEM Forms oferece recursos corporativos, como controle de acesso baseado em funções, trilhas de auditoria, orquestração de fluxos de trabalho, geração de documentos e flexibilidade de implantação, que são necessários para operações de seguro em escala.
+
+## Qual a diferença entre o AEM Forms e os construtores de formulários leves para o seguro?
+
+O AEM Forms foi projetado para casos de uso de seguros corporativos, oferecendo orquestração de fluxo de trabalho, geração de documentos, capacidade de auditoria e flexibilidade de implantação que os construtores de formulários leves normalmente não fornecem.
+
+## Por que as seguradoras escolhem a AEM Forms?
+
+As seguradoras escolhem a AEM Forms para digitalizar processos complexos e regulamentados com captura segura de dados, processamento orientado por fluxo de trabalho, geração de documentos e integração profunda em sistemas corporativos.
 
 ## Digitalize e simplifique a experiência de inscrição e integração
 
@@ -78,7 +102,7 @@ Gerar, montar e fornecer comunicações personalizadas:
 
 | Destaque | Descrição |
 |---|---|
-| APIs de comunicações | Automatize a criação, o gerenciamento e o fornecimento de comunicações personalizadas orientadas por dados com APIs RESTful sob demanda ou em intervalos programados: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=pt-br#document-generation"> Gerar comunicações personalizadas </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=pt-br#document-manipulation"> Montar ou desmontar documentos PDF </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=pt-br#convert-to-and-validate-pdf%2Fa-compliant-documents">Criar documentos compatíveis com PDF/A </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=pt-BR">Proteger seus documentos com as APIs do DocAssurance</a></li></ul> |
+| APIs de comunicações | Automatize a criação, o gerenciamento e o fornecimento de comunicações personalizadas orientadas por dados com APIs RESTful sob demanda ou em intervalos programados: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=pt-br#document-generation"> Gerar comunicações personalizadas </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=pt-br#document-manipulation"> Montar ou desmontar documentos PDF </a> </li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=pt-br#convert-to-and-validate-pdf%2Fa-compliant-documents">Criar documentos compatíveis com PDF/A </a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html">Proteger seus documentos com as APIs do DocAssurance</a></li></ul> |
 | Documento de registro | Criar e gerenciar registros de formulários enviados para arquivamento e conformidade: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-br"> Criar um registro do formulário para arquivamento de longo prazo</a></li><li>Extensibilidade do lado do servidor para funcionalidades personalizadas</li><li>Funcionalidade de documento de registro para arquivos à prova de violação</li></ul> |
 
 ### Automação de Fluxo de Trabalho e Processo {#workflow}
@@ -99,7 +123,7 @@ Conecte formulários a fontes de dados e obtenha insights sobre o desempenho do 
 | Analytics para formulários | Use o Adobe Analytics para obter insights valiosos sobre o comportamento e as preferências do usuário: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=pt-BR">Conectar um formulário adaptável ao Adobe Analytics</a></li></ul> |
 | Integrações do Adobe | Conectar seus formulários a outras soluções da Adobe: <ul><li><a href="/help/forms/submit-adaptive-form-to-workfront-fusion.md">Conecte-se ao Adobe Workfront Fusion</a> e envie dados para cenários do Workfront</li><li><a href="/help/forms/integrate-form-to-marketo-engage.md">Conecte-se ao Adobe Marketo Engage</a> e <a href="/help/forms/submit-adaptive-form-to-marketo-engage.md">envie dados para o Marketo</a></li></ul> |
 | Integrações do Microsoft | Conecte seus formulários aos serviços da Microsoft: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=pt-BR">Conectar-se ao Microsoft® Dynamics 365</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=pt-BR">Conecte-se ao Microsoft® Azure Blob Storage</a> e <a href="/help/forms/configure-submit-action-azure-blob-storage.md">envie dados para o Azure Blob Storage</a></li><li><a href="/help/forms/connect-forms-to-sharepoint-document-library.md">Conecte-se à Biblioteca de Documentos Microsoft® SharePoint</a> e <a href="/help/forms/configure-submit-action-sharepoint.md">envie dados para a SharePoint</a></li><li><a href="/help/forms/configure-submit-action-onedrive.md">Conecte-se ao Microsoft® OneDrive</a> e envie dados para o OneDrive</li><li><a href="/help/forms/forms-microsoft-power-automate-integration.md">Conecte-se ao Microsoft® Power Automate</a> e acione fluxos no envio do formulário</li><li><a href="/help/forms/ms-dynamics-odata-configuration.md">Conectar-se ao Microsoft® Dynamics OData</a></li></ul> |
-| Outras Fontes de Dados | Conecte-se a fontes de dados e endpoints adicionais: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=pt-BR">Conectar-se a um ponto de acesso RDBMS ou Rest</a></li><li><a href="/help/forms/aem-forms-salesforce-integration.md">Conecte-se ao Salesforce</a> e envie dados para o Salesforce</li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=pt-BR#submit-to-rest-endpoint">Enviar para o ponto de acesso REST</a></li></ul> |
+| Outras Fontes de Dados | Conecte-se a fontes de dados e endpoints adicionais: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=pt-BR">Conectar-se a um ponto de acesso RDBMS ou Rest</a></li><li><a href="/help/forms/aem-forms-salesforce-integration.md">Conecte-se ao Salesforce</a> e envie dados para o Salesforce</li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">Enviar para o ponto de acesso REST</a></li></ul> |
 
 ## Assistente de IA no AEM
 
