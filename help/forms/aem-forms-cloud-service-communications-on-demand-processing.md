@@ -6,7 +6,7 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: cb69041ff59ba1ff586e8c1c71090cc2eb9ad453
+source-git-commit: 9401d96bcf5375dc20c33055343a5b895b4e9107
 workflow-type: tm+mt
 source-wordcount: '2573'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Verifique se você tem os direitos de acesso e as permissões necessários antes
 
 >[!NOTE]
 >
-> Para saber mais sobre atribuição de funções e concessão de acesso a usuários, consulte o artigo [Adicionar usuários e funções](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Para saber mais sobre atribuição de funções e concessão de acesso a usuários, consulte o artigo [Adicionar usuários e funções](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Acesso ao Cloud Manager**
 
@@ -187,7 +187,7 @@ Exemplo: `https://publish-p43162-e177398.adobeaemcloud.com`
 
 >[!NOTE]
 >
-> Para ver como acessar o Ambiente de acesso do AEM Cloud Service e o Ponto de extremidade do AEM Forms, consulte [Documentação de gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR).
+> Para ver como acessar o Ambiente de acesso do AEM Cloud Service e o Ponto de extremidade do AEM Forms, consulte [Documentação de gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
 ### Etapa 4: configuração de acesso à API
 
