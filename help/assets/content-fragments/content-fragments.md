@@ -5,9 +5,9 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2610'
 ht-degree: 49%
 
 ---
@@ -352,9 +352,15 @@ Modelos muito complexos levam a fragmentos muito complexos que podem dificultar 
 
 ### Campos de Rich Text {#rich-text-fields}
 
-Use campos Rich Text (o Tipo de Dados **Texto de várias linhas**) levando em consideração.
+Use campos Rich Text (o Tipo de Dados **Texto de várias linhas**) considerando:
 
-Limitar o número de campos Rich Text por modelo. Além disso, a quantidade de texto armazenado em cada fragmento e a quantidade de formatação do HTML. Um conteúdo de rich text muito grande pode afetar negativamente o desempenho do sistema.
+* Campos
+
+  Limitar o número de campos Rich Text por modelo. Por motivos de desempenho, não é recomendável ter mais de dez campos de Rich Text em um modelo. Se necessário, é recomendável usar [fragmentos de conteúdo aninhados](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content).
+
+* Conteúdo
+
+  Você também deve limitar a quantidade de texto armazenado em cada fragmento e a quantidade de formatação do HTML. Um conteúdo de rich text muito grande pode afetar negativamente o desempenho do sistema.
 
 ### Número de variações {#number-of-variations}
 
