@@ -5,15 +5,15 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
 workflow-type: tm+mt
-source-wordcount: '2601'
-ht-degree: 56%
+source-wordcount: '2664'
+ht-degree: 53%
 
 ---
 
 
-# Teste de interface do usuário {#ui-testing}
+# Teste de interface {#ui-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
@@ -40,7 +40,7 @@ Diferentemente dos testes funcionais personalizados, que são testes HTTP escrit
 > 
 >A Adobe também fornece exemplos de módulos de teste de interface com base em JavaScript com WebdriverIO (consulte [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) e Java com WebDriver (consulte o [repositório de Amostras de testes do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
 
-## Introdução aos testes de interface  {#get-started-ui-tests}
+## Introdução aos testes de interface do usuário {#get-started-ui-tests}
 
 Esta seção descreve as etapas necessárias para a configuração dos testes de interface para execução no Cloud Manager.
 
@@ -62,7 +62,7 @@ Esta seção descreve as etapas necessárias para a configuração dos testes de
 
 1. Confirmar seu código no repositório do Cloud Manager e executar um pipeline do Cloud Manager.
 
-## Compilação de testes de interface do usuário {#building-ui-tests}
+## Criação de testes de interface {#building-ui-tests}
 
 Um projeto Maven gera um contexto de compilação do Docker. Este contexto de construção do Docker descreve como criar uma imagem do Docker que contenha os testes de interface, que o Cloud Manager usa para gerar uma imagem do Docker contendo os testes de interface reais.
 
@@ -159,7 +159,7 @@ O Cloud Manager seleciona automaticamente o arquivo de contexto de compilação 
 
 A compilação deve produzir zero ou um arquivamento. Se produzir zero arquivamento, a etapa de teste será aprovada por padrão. Se a compilação produzir mais de um arquivamento, o arquivamento selecionado será não determinístico.
 
-### Adesão do cliente {#customer-opt-in}
+### Aceitação do cliente {#customer-opt-in}
 
 Para que o Cloud Manager compile e execute seus testes de interface, é necessário aderir a esse recurso adicionando um arquivo ao repositório.
 
@@ -182,11 +182,11 @@ Para incluir um arquivo `testing.properties` no artefato de compilação, adicio
 [...]
 ```
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Se o projeto não incluir essa linha, edite o arquivo para aderir ao teste de interface do usuário.
 >
->O arquivo pode conter uma linha aconselhando a não editá-la. O motivo é que ele está sendo introduzido em seu projeto antes da adesão ao teste de interface do usuário e os clientes não devem editar o arquivo. Você pode ignorar a recomendação com segurança.
+>O arquivo pode conter uma linha que diz, *NÃO MODIFICAR*.&quot; É simplesmente um aviso herdado de modelos/amostras mais antigos e *não* impede que você faça as edições de aceitação necessárias para os testes de interface do usuário do Cloud Manager. Você pode ignorar a recomendação com segurança. Ou seja, você pode editar `assembly-ui-test-docker-context.xml` e `pom.xml` em *seu projeto* seguindo as etapas de aceitação (por exemplo, para incluir `testing.properties`).
 
 Se estiver usando os exemplos fornecidos pela Adobe:
 
@@ -202,7 +202,7 @@ Se estiver usando os exemplos fornecidos pela Adobe:
 
 * As amostras de teste Cypress e Java Selenium fornecidas pela Adobe já têm o sinalizador de aceitação definido.
 
-## Gravação de testes da interface do usuário {#writing-ui-tests}
+## Gravar testes de interface do usuário {#writing-ui-tests}
 
 Esta seção descreve as convenções que a imagem do Docker que contém seus testes de interface do usuário deve seguir. A imagem do Docker é criada a partir do contexto de compilação do Docker descrito na seção anterior.
 
@@ -270,8 +270,11 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | Quantidade de tempo de CPU reservado por execução de teste. |
 | Memória | 1Gi | Quantidade de memória alocada para o teste. O valor está em gibibytes. |
-| Tempo limite | 30 min | Por quanto tempo o teste é executado. |
+| Tempo-limite | 30 min | Por quanto tempo o teste é executado. |
 | Duração recomendada | 15 min | A Adobe recomenda manter os testes dentro desse limite de tempo. |
+
+* Se o Autor/Publicação de destino estiver protegido pelo incluir na lista de permissões incluo na lista de permissões de IP, a infraestrutura de teste da interface do usuário do pipeline deverá ser ou os testes da interface do usuário poderão falhar com 403 Proibido.
+Consulte também [Falha de teste de interface do usuário no AEMaaCS devido ao Incluir na lista de permissões de IP](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introdução a Incluis na lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
@@ -440,11 +443,11 @@ if (proxyServer !== '') {
 > Um exemplo de implementação pode ser encontrado no Módulo de Teste de Amostra do Playwright no [GitHub](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
 
-## Execução de testes locais de interface {#run-ui-tests-locally}
+## Executar testes de IU localmente {#run-ui-tests-locally}
 
 Antes de ativar testes de interface em um pipeline do Cloud Manager, a Adobe recomenda que você execute os testes de interface localmente no [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md). Ou execute em uma instância real do AEM as a Cloud Service.
 
-### Exemplo de teste do Cypress {#cypress-sample}
+### Amostra de ensaio de cipreste {#cypress-sample}
 
 1. Abra um shell e navegue até a pasta `ui.tests/test-module` no repositório
 
@@ -480,7 +483,7 @@ Antes de ativar testes de interface em um pipeline do Cloud Manager, a Adobe rec
 >
 >Para obter detalhes, consulte o [repositório de Amostras de Teste do AEM](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
-### Exemplo de teste do JavaScript WebdriverIO {#javascript-sample}
+### Amostra de teste do JavaScript WebdriverIO {#javascript-sample}
 
 1. Abra um shell e navegue até a pasta `ui.tests` no seu repositório.
 
@@ -504,7 +507,7 @@ Antes de ativar testes de interface em um pipeline do Cloud Manager, a Adobe rec
 >
 >Para obter detalhes, consulte o [repositório de Amostras de Teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
-### Amostra de teste do dramaturgo {#playwright-sample}
+### Exemplo de teste de dramaturgo {#playwright-sample}
 
 1. Abra um shell e navegue até a pasta `ui.tests` no repositório
 
@@ -533,7 +536,7 @@ Antes de ativar testes de interface em um pipeline do Cloud Manager, a Adobe rec
 >Para obter detalhes, consulte o [repositório de Amostras de Teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
 
-### Exemplo de teste do Java Selenium WebDriver {#java-sample}
+### Amostra de teste do Java Selenium WebDriver {#java-sample}
 
 1. Abra um shell e navegue até a pasta `ui.tests/test-module` no repositório
 

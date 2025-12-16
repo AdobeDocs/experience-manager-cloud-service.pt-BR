@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 31%
 
 ---
@@ -130,7 +130,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++
 
-+++**Validade do certificado
++++Validade do certificado
 
 ## Validade do certificado {#validity}
 
@@ -138,7 +138,7 @@ O Cloud Manager espera que o certificado SSL seja válido por pelo menos 90 dias
 
 +++
 
-+++**Um certificado SAN incorreto é aplicado ao meu domínio
++++Certificado SAN incorreto aplicado ao meu domínio
 
 ## Certificado SAN incorreto aplicado ao meu domínio {#wrong-san-cert}
 
@@ -146,8 +146,8 @@ Digamos que você queira vincular `dev.yoursite.com` e `stage.yoursite.com` ao s
 
 Para configurar a CDN para esses domínios, você precisa de um certificado instalado para cada um, para instalar um certificado que cubra o `*.yoursite.com` para seus domínios de não produção e outro que também cubra o `*.yoursite.com` para seus domínios de produção.
 
-Essa configuração é válida. No entanto, ao atualizar um dos certificados, como ambos abrangem a mesma entrada SAN, a CDN instalará o certificado mais recente em todos os domínios aplicáveis, o que pode parecer inesperado.
+Essa configuração é válida. No entanto, quando você atualiza um dos certificados, ambos ainda abrangem a mesma entrada SAN. Como resultado, a CDN instala o certificado mais recente em todos os domínios aplicáveis, o que pode parecer inesperado.
 
-Embora isso possa ser inesperado, não é um erro e é o comportamento padrão do CDN subjacente. Se você tiver dois ou mais certificados SAN que abranjam a mesma entrada de domínio SAN, se esse domínio for coberto por um certificado e o outro for atualizado, o último será instalado para o domínio.
+Embora esse cenário possa ser inesperado, não é um erro e é o comportamento padrão do CDN subjacente. Se você tiver dois ou mais certificados SAN que abranjam a mesma entrada de domínio SAN, a CDN instalará o certificado atualizado mais recentemente para esse domínio. Essa situação acontece mesmo quando outro certificado já cobre a mesma entrada de domínio.
 
 +++
