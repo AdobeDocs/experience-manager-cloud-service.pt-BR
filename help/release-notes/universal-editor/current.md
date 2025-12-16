@@ -4,7 +4,7 @@ description: Estas são as notas de versão do Universal Editor 2025.12.11.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Estas são as notas de versão da versão de 12 de dezembro de 2025 do Universal
 
 * O suporte foi adicionado às tabelas existentes no [editor de rich text.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 * A chave da guia foi habilitada para aninhar listas no [editor de rich text.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* O recurso de logon de desenvolvedor agora pode ser desabilitado por meio da [meta tag `dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* O recurso de logon de desenvolvedor agora pode ser desabilitado por meio da [meta tag `aem-dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
 * Um clique com o botão direito na seção de sobreposição agora exibe um menu de [opções contextuais.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
 * O [recuo com escopo](/help/implementing/universal-editor/configure-rte.md#indentation) agora tem suporte no [editor de rich text.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
