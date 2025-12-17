@@ -5,9 +5,9 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
+source-git-commit: 770318fd14e28c8406650eb563df36fe88227359
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2662'
 ht-degree: 53%
 
 ---
@@ -186,7 +186,7 @@ Para incluir um arquivo `testing.properties` no artefato de compilação, adicio
 >
 >Se o projeto não incluir essa linha, edite o arquivo para aderir ao teste de interface do usuário.
 >
->O arquivo pode conter uma linha que diz, *NÃO MODIFICAR*.&quot; É simplesmente um aviso herdado de modelos/amostras mais antigos e *não* impede que você faça as edições de aceitação necessárias para os testes de interface do usuário do Cloud Manager. Você pode ignorar a recomendação com segurança. Ou seja, você pode editar `assembly-ui-test-docker-context.xml` e `pom.xml` em *seu projeto* seguindo as etapas de aceitação (por exemplo, para incluir `testing.properties`).
+>O arquivo pode conter uma linha que diz, *NÃO MODIFICAR*. É simplesmente um aviso herdado de modelos/amostras mais antigos e *não* impede que você faça as edições de aceitação necessárias para os testes de interface do usuário do Cloud Manager. Você pode ignorar a recomendação com segurança; você pode editar `assembly-ui-test-docker-context.xml` e `pom.xml` em *seu projeto* seguindo as etapas de aceitação (por exemplo, para incluir `testing.properties`).
 
 Se estiver usando os exemplos fornecidos pela Adobe:
 
@@ -274,7 +274,7 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 | Duração recomendada | 15 min | A Adobe recomenda manter os testes dentro desse limite de tempo. |
 
 * Se o Autor/Publicação de destino estiver protegido pelo incluir na lista de permissões incluo na lista de permissões de IP, a infraestrutura de teste da interface do usuário do pipeline deverá ser ou os testes da interface do usuário poderão falhar com 403 Proibido.
-Consulte também [Falha de teste de interface do usuário no AEMaaCS devido ao Incluir na lista de permissões de IP](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introdução a Incluis na lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Consulte também [Falha de teste de interface do usuário no AEMaaCS devido ao Incluir na lista de permissões de IP](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introdução a Incluis na lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
