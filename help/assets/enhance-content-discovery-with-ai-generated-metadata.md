@@ -3,9 +3,9 @@ title: Aprimorar a descoberta de conteúdo com metadados gerados por IA na Exibi
 description: Saiba como aprimorar a descoberta de conteúdo com metadados gerados por IA na Exibição do administrador
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '669'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,9 @@ Para usar o recurso aprimorado de tags inteligentes, execute as seguintes etapas
 
 ## Desativar metadados gerados por IA {#disable-ai-generated-metadata}
 
-Para desativar os metadados gerados por IA:
+Você pode desativar os metadados gerados por IA para o ambiente do AEM as a Cloud Service ou desativá-los no nível da pasta.
+
+Para desativar os metadados gerados pela IA para o ambiente do AEM as a Cloud Service:
 
 1. Navegue até **[!UICONTROL Ferramentas > Assets > Configurações do Assets > Configuração de aprimoramento de tag inteligente]**.
 
@@ -78,3 +80,15 @@ Para desativar os metadados gerados por IA:
 1. Clique em **[!UICONTROL Salvar]**.
 
 Os metadados gerados pela IA são desativados para os novos ativos ou pastas que você carrega no AEM Assets. Os ativos ou pastas existentes que têm campos de metadados gerados por IA já gerados ainda continuam a exibir esses campos.
+
+### Desativar metadados gerados por IA para pastas {#disable-ai-generated-metadata-folder-level}
+
+Para desativar os metadados gerados por IA no nível da pasta:
+
+1. Selecione a pasta e clique em **[!UICONTROL Propriedades]**.
+
+1. Selecione a guia **[!UICONTROL Processamento de ativos]**.
+
+1. Na seção **[!UICONTROL Aprimoramentos de Tags Inteligentes para imagens]**, selecione **[!UICONTROL Desabilitar]** no menu suspenso.
+
+1. Clique em **[!UICONTROL Salvar e fechar]** para desabilitar os metadados gerados pela IA para a pasta selecionada.

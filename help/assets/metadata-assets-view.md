@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 81%
+source-wordcount: '2235'
+ht-degree: 79%
 
 ---
 
@@ -115,6 +115,10 @@ Assista a este vídeo para ver a sequência de etapas:
 Depois que um formulário é criado, ele é aplicado automaticamente quando os usuários carregam um ativo do tipo MIME correspondente.
 
 Para reutilizar um formulário existente para criar um novo formulário, selecione um formulário de metadados, clique em **[!UICONTROL Copiar]** na barra de ferramentas, forneça um nome e clique em **[!UICONTROL Confirmar]**. É possível editar um formulário de metadados para alterá-lo. Quando você altera um formulário, ele é usado para ativos carregados após a alteração. Isso não altera os ativos existentes.
+
+>[!IMPORTANT]
+>
+>O formulário de metadados padrão também tem a guia **[!UICONTROL Campanha]**, que compreende os campos somente leitura de vários valores **[!UICONTROL Nome da Campanha]**, **[!UICONTROL Canais]** e **[!UICONTROL Região]**. O é um recurso de disponibilidade limitada. Você pode ativá-lo criando um tíquete de suporte.
 
 ### Componentes de propriedade {#property-components}
 
@@ -233,7 +237,7 @@ Execute as seguintes etapas para editar um formulário de metadados:
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

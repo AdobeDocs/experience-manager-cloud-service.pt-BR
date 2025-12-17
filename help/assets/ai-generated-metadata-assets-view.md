@@ -1,7 +1,7 @@
 ---
 title: Aprimorar a descoberta de conteúdo com metadados gerados por IA
 description: Saiba como aprimorar a descoberta de conteúdo com metadados gerados por IA
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -43,4 +43,4 @@ Para usar o recurso aprimorado de tags inteligentes, execute as seguintes etapas
 
 1. [Opcional] Você pode adicionar outras marcas ou criar as suas próprias se achar que estão faltando marcas relevantes. Para fazer isso, escreva suas marcas no campo **[!UICONTROL Palavras-chave geradas]** e clique em **[!UICONTROL Salvar]**.
 
-Para obter informações sobre como desabilitar metadados gerados por IA, consulte [Desabilitar metadados gerados por IA](/help/assets/smart-tags.md#disable-ai-generated-metadata).
+Para obter informações sobre como desabilitar metadados gerados por IA, consulte [Desabilitar metadados gerados por IA](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata).
