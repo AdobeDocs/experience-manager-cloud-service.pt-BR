@@ -5,9 +5,9 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+source-git-commit: 67f9ec20667639458d8a6b142df3fc76ff574f26
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2236'
 ht-degree: 79%
 
 ---
@@ -118,7 +118,7 @@ Para reutilizar um formulário existente para criar um novo formulário, selecio
 
 >[!IMPORTANT]
 >
->O formulário de metadados padrão também tem a guia **[!UICONTROL Campanha]**, que compreende os campos somente leitura de vários valores **[!UICONTROL Nome da Campanha]**, **[!UICONTROL Canais]** e **[!UICONTROL Região]**. O é um recurso de disponibilidade limitada. Você pode ativá-lo criando um tíquete de suporte.
+>O formulário de metadados padrão também tem a guia **[!UICONTROL Campanha]**, que compreende os campos somente leitura de vários valores **[!UICONTROL Nome da Campanha]**, **[!UICONTROL Canais]** e **[!UICONTROL Região]**. É um recurso de disponibilidade limitada. Você pode ativá-lo criando um tíquete de suporte.
 
 ### Componentes de propriedade {#property-components}
 
@@ -237,7 +237,7 @@ Execute as seguintes etapas para editar um formulário de metadados:
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
