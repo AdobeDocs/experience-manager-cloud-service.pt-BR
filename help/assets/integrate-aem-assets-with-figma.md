@@ -40,13 +40,13 @@ Como alternativa, acesse o [[!DNL Adobe Experience Manager (AEM) Assets Connecto
 
 >[!NOTE]
 >
-> [Contate o Suporte da Adobe](https://helpx.adobe.com/contact.html) para obter ajuda se você vir uma mensagem de **[!UICONTROL Erro de Rede]** depois de fazer logon no ambiente [!DNL AEM].
+> [Contate o Suporte da Adobe](https://helpx.adobe.com/br/contact.html) para obter ajuda se você vir uma mensagem de **[!UICONTROL Erro de Rede]** depois de fazer logon no ambiente [!DNL AEM].
 
 ## Importar [!DNL AEM] ativos para a tela [!DNL Figma]{#import-aem-assets-into-figma-workflow}
 
 [Acesse o [!UICONTROL painel &#x200B;] do Assets do Adobe Experience Manager (AEM)](#access-aem-assets-connector) na interface de design do [!DNL Figma] e faça o seguinte:
 
-1. Pesquise ativos no painel [!UICONTROL Conector do Assets do Adobe Experience Manager (AEM)]. Para obter mais informações, consulte [usando o Seletor de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Pesquise ativos no painel [!UICONTROL Conector do Assets do Adobe Experience Manager (AEM)]. Para obter mais informações, consulte [usando o Seletor de ativos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Arraste e solte o ativo na tela ou selecione o ativo e clique em **[!UICONTROL Selecionar]** para trazer o ativo para a tela.
 
