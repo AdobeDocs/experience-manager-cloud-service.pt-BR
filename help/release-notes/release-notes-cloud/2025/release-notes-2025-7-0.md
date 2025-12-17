@@ -3,9 +3,10 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.7.0.
 feature: Release Information
 role: Admin
-source-git-commit: 7787a195cc9ae39f8ac759da03c88a9f1e61226d
+exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
+source-git-commit: 76ccdf13f56d7020ef266bc54bebbcc6eff1067d
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2273'
 ht-degree: 7%
 
 ---
@@ -18,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -38,7 +39,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -86,7 +87,7 @@ O Content Hub agora inclui uma opção **Mostrar tudo** nos filtros, permitindo 
 
 Aproveite o upload automatizado de novos arquivos e pastas, as operações aprimoradas de arquivos, a detecção mais inteligente de ativos e a integração perfeita com o AEM — tornando o gerenciamento de conteúdo mais rápido, claro e intuitivo.
 
-Para obter a lista completa de recursos, consulte as [Notas de Versão do Aplicativo de Desktop](https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/release-notes).
+Para obter a lista completa de recursos, consulte as [Notas de Versão do Aplicativo de Desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Novos recursos no Dynamic Media com recursos OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -107,7 +108,7 @@ Todas as solicitações de imagem do OpenAPI agora aproveitam totalmente o Smart
 
 O [Editor Universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) agora oferece suporte à criação de Fragmentos de formulário adaptáveis e reutilizáveis do Forms. Os autores podem criar formulários visualmente, configurar ações de envio e adicionar a validação do reCAPTCHA, tudo em um ambiente de criação simplificado do WYSIWYG. Esse recurso acelera a criação de formulários, melhora a consistência e melhora a proteção contra spam e abuso automatizado.
 
-![Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
 **Serviço de envio do Forms para o Edge Delivery Services Forms**
@@ -222,7 +223,7 @@ Propriedades OSGi:
 
 ### Descontinuação do Java 11 Runtime {#java11-runtime-deprecation}
 
-O **Java 11 runtime*- agora está obsoleto, e a maioria dos ambientes já foi atualizada para o &#x200B;** Java 21 runtime** de maior desempenho.
+O **Java 11 runtime*- agora está obsoleto, e a maioria dos ambientes já foi atualizada para o **Java 21 runtime** de maior desempenho.
 
 Se seu ambiente não pôde ser atualizado devido a dependências sem suporte (consulte [requisitos de tempo de execução do Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), você deve ter recebido um email da Adobe com as próximas etapas específicas. Verifique se todas as atualizações necessárias foram concluídas até **28 de agosto de 2025** para que seu ambiente possa ser atualizado sem interrupções.
 
@@ -241,18 +242,20 @@ Revise e atualize todos os processos downstream que dependem do comportamento de
 
 ### Limpeza padrão de versões anteriores e logs de auditoria {#mt-defaults}
 
-Atualmente, as versões de conteúdo e os logs de auditoria têm suas *tarefas de manutenção de limpeza — desativadas por padrão e, portanto, nenhum dado é removido, a menos que seja configurado explicitamente.
+Atualmente, as versões de conteúdo e logs de auditoria têm suas *tarefas de manutenção de limpeza* associadas desabilitadas por padrão e, portanto, nenhum dado é removido, a menos que seja configurado explicitamente.
 
-No entanto, para otimizar o desempenho do repositório, a limpeza será ativada por padrão em uma data futura anunciada, seguindo estas diretrizes:
+No entanto, para otimizar o desempenho do repositório, a limpeza será ativada por padrão em uma data futura anunciada.
+
+Para obter mais detalhes, consulte o [artigo sobre Tarefas de manutenção](/help/operations/maintenance.md#defaults).
 
 #### Versões de conteúdo {#mt-content}
 
-* **Novos ambientes*- (criado após uma data futura (a ser comunicado posteriormente)
-   * Versões com mais de **30 dias*- serão excluídas periodicamente.
+* **Novos ambientes** (criados após uma data futura, a ser comunicada posteriormente):
+   * As versões com mais de 30 dias serão excluídas periodicamente.
    * As cinco versões mais recentes nos últimos 30 dias são mantidas, juntamente com a versão mais recente e a versão atual, independentemente da idade.
 
-* **Ambientes existentes*- (criados antes desta data futura):
-   * Versões com mais de **7 anos*- serão excluídas periodicamente.
+* **Ambientes existentes** (criados antes desta data futura):
+   * As versões com mais de 7 anos serão excluídas periodicamente.
    * Todas as versões nos últimos 7 anos são mantidas.
    * Esse alto limite padrão impede a remoção não intencional de dados recentes. No entanto, é recomendável configurar valores mais baixos para otimizar o desempenho do repositório.
 
@@ -260,18 +263,16 @@ No entanto, para otimizar o desempenho do repositório, a limpeza será ativada 
 
 #### Log de auditoria {#mt-auditlogs}
 
-* **Novos ambientes*- (criado após uma data futura, que será comunicada separadamente):
-   * Logs de replicação, DAM e auditoria de página com mais de **7 dias*- serão excluídos periodicamente.
+* **Novos ambientes** (criados após uma data futura, que serão comunicados separadamente):
+   * A replicação, o DAM e os logs de auditoria de página com mais de 7 dias serão excluídos periodicamente.
    * Todos os eventos são registrados por padrão.
 
-* **Ambientes existentes*- (criados antes desta data futura):
-   * Logs de replicação, DAM e auditoria de página com mais de **7 anos*- serão excluídos periodicamente.
+* **Ambientes existentes** (criados antes desta data futura):
+   * A replicação, o DAM e os logs de auditoria de página com mais de 7 anos serão excluídos periodicamente.
    * Todos os eventos são registrados por padrão.
    * Esse alto limite padrão impede a remoção não intencional de dados recentes. No entanto, é recomendável configurar valores mais baixos para otimizar o desempenho do repositório.
 
 * Você pode modificar esses padrões por meio da configuração YAML, implantada usando o pipeline de configuração.
-
-Para obter mais detalhes, consulte o [artigo sobre Tarefas de manutenção](/help/operations/maintenance.md#defaults).
 
 ### Computação Edge (Programa Alpha) {#edge-computing}
 
@@ -310,7 +311,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
