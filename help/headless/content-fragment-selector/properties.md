@@ -3,9 +3,9 @@ title: Propriedades do seletor de fragmentos de conteúdo de front-end micro par
 description: Propriedades para configurar o Seletor de fragmento de conteúdo de micro front-end para pesquisar, localizar e recuperar fragmentos de conteúdo do aplicativo.
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
+source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1073'
 ht-degree: 3%
 
 ---
@@ -20,22 +20,28 @@ Você pode usar as seguintes propriedades para personalizar como o Seletor de fr
 
 | Propriedade | Tipo | Obrigatório | Padrão | Descrição |
 |--- |--- |--- |--- |--- |
-| `imsToken` | string | Não | | Token IMS usado para autenticação. |
-| `repoId` | string | Não | | ID do repositório usada para autenticação. |
-| `orgId` | string | Sim | | ID da organização usada para autenticação. |
-| `locale` | string | Não | | Dados da localidade. |
-| `env` | Ambiente | Não | | Ambiente de implantação do Seletor de fragmento de conteúdo. |
-| `filters` | FiltroDeFragmentos | Não | | Filtros a serem aplicados na lista de fragmentos de conteúdo. Por padrão, os fragmentos em `/content/dam` serão exibidos. Valor padrão: `{ folder: "/content/dam" }` |
-| `isOpen` | booleano | Sim | `false` | Sinalizador para acionar a abertura ou o fechamento do seletor. |
-| `onDismiss` | () => void | Sim | | Função a ser chamada quando **Dispensar** for selecionado. |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | Sim | | Função a ser chamada quando **Select** for usado após selecionar um ou mais Fragmentos de Conteúdo. <br><br>A função receberá:<br><ul><li> os fragmentos de conteúdo selecionados com campos `id` e `path`</li><li>e nomes de domínio relacionados à ID de programa e à ID de ambiente do repositório, que têm o status `ready` e a Publicação `tier`</li></ul><br>Se não houver nomes de domínio, ele usará a instância de Publicação como um domínio de fallback. |
-| `theme` | &quot;claro&quot; ou &quot;escuro&quot; | Não | | Tema do Seletor de fragmentos de conteúdo. O tema padrão é definido como o tema do ambiente UnifiedShell. |
-| `selectionType` | &quot;único&quot; ou &quot;múltiplo&quot; | Não | `single` | Tipo de seleção que pode ser usado para restringir a seleção do Seletor de fragmentos. |
-| `dialogSize` | &quot;fullscreen&quot; ou &quot;fullscreenTakeover&quot; | Não | `fullscreen` | Propriedade opcional para controlar o tamanho do diálogo. |
-| `waitForImsToken` | booleano | Não | `false` | Indica se o Seletor de Fragmento de Conteúdo é renderizado no contexto do fluxo SUSI e precisa aguardar o `imsToken` estar pronto. |
-| `imsAuthInfo` | ImsAuthInfo | Não | | Objeto que contém as informações de autenticação IMS do usuário conectado. |
-| `runningInUnifiedShell` | booleano | Não | | Indica se o Seletor de fragmento de conteúdo está em execução no UnifiedShell ou independente. |
-| `readonlyFilters` | CampoFiltrosSomenteLeituraRecurso | Não | | Filtros somente leitura que podem ser aplicados à lista de conteúdo - e não podem ser removidos. |
+| `ref` | RefSeletorFragmento | | | Referência à instância `ContentFragmentSelector`, permitindo acesso à funcionalidade fornecida, como `reload`. |
+| `imsToken` | string | Não | | Token IMS usado para autenticação. Se não for fornecido, o fluxo de logon do IMS será iniciado. |
+| `repoId` | string | Não | | ID do repositório usada para o Seletor de fragmentos. Quando fornecido, o seletor se conecta automaticamente ao repositório especificado e a lista suspensa de repositórios fica oculta. Se não for fornecido, o usuário poderá selecionar um repositório na lista de repositórios disponíveis aos quais tem acesso. |
+| `defaultRepoId` | string | Não | | ID do repositório que será selecionado por padrão quando o seletor de repositório for exibido. Usado apenas quando `repoId` não é fornecido. Se `repoId` estiver definido, o seletor de repositório ficará oculto e esse valor será ignorado. |
+| `orgId` | string | Não | | ID da organização usada para autenticação. Se não for fornecido, o usuário poderá selecionar um repositório de diferentes organizações às quais tem acesso. Se o usuário não tiver acesso a nenhum repositório ou organização, o conteúdo não será carregado. |
+| `locale` | string | Não | &quot;en-US&quot; | Localidade. |
+| `env` | string | Não | | Ambiente de implantação. Consulte o tipo `Env` para obter os nomes de ambiente permitidos. |
+| `filters` | FiltroDeFragmentos | Não | `{ folder: "/content/dam" }` | Filtros a serem aplicados à lista de fragmentos de conteúdo. Por padrão, os fragmentos em `/content/dam` serão exibidos. |
+| `isOpen` | booleano | Não | `false` | Sinalizador para controlar se o seletor está aberto ou fechado. |
+| `noWrap` | booleano | Não | `false` | Determina se o Seletor de fragmentos é renderizado sem uma caixa de diálogo de encapsulamento. Quando definido como `true`, o Seletor de fragmento é inserido diretamente no contêiner pai. Útil para integrar o seletor em layouts ou fluxos de trabalho personalizados. |
+| `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | Não | | A função de retorno de chamada é acionada sempre que a seleção de fragmentos de conteúdo é alterada. Fornece os fragmentos selecionados no momento, o nome do domínio, as informações do locatário, a ID do repositório e os repositórios de entrega. |
+| `onDismiss` | () => void | Não | | Função de retorno de chamada acionada quando a ação de descarte é executada (por exemplo, fechar o seletor). |
+| `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | Não | | A função de retorno de chamada é acionada quando o usuário confirma sua seleção. Recebe os fragmentos de conteúdo selecionados, o nome do domínio, as informações do locatário, a ID do repositório e os repositórios de entrega. |
+| `theme` | &quot;claro&quot; ou &quot;escuro&quot; | Não | | Tema para o Seletor de fragmentos. Por padrão, é definido como o tema de ambiente unifiedShell. |
+| `selectionType` | &quot;único&quot; ou &quot;múltiplo&quot; | Não | `single` | O tipo de seleção pode ser usado para restringir a seleção do Seletor de fragmentos. |
+| `dialogSize` | &quot;fullscreen&quot; ou &quot;fullscreenTakeover&quot; | Não | `fullscreen` | Prop opcional para controlar o tamanho do diálogo. |
+| `runningInUnifiedShell` | booleano | Não | | Se DestinationSelector está em execução no UnifiedShell ou autônomo. |
+| `readonlyFilters` | CampoFiltrosSomenteLeituraRecurso[] | Não | | Filtros somente leitura aplicados à lista de fragmentos de conteúdo. Esses filtros não podem ser removidos pelo usuário. |
+| `selectedFragments` | IdentificadorFragmentoConteúdo[] | Não | `[]` | Seleção inicial de fragmentos de conteúdo a serem pré-selecionados quando o seletor é aberto. |
+| `hipaaEnabled` | booleano | Não | `false` | Indica se a conformidade com a HIPAA está habilitada. |
+| `inventoryView` | TipodeVisualizaçãodeInventário | Não | `table` | Tipo de exibição padrão de estoque a ser usado no seletor. |
+| `inventoryViewToggleEnabled` | booleano | Não | `false` | Indica se a opção de exibição de estoque está habilitada, permitindo que o usuário alterne entre as exibições de tabela e grade. |
 
 ## Propriedades de ImsAuthProps {#imsauthprops-properties}
 
