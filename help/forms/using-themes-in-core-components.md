@@ -425,7 +425,7 @@ Os temas do formulário adaptável são usados como parte de um modelo de formul
 Para definir a versão do Node.js para 20 usando a configuração de pipeline:
 
 1. Vá para a seção **Pipelines** e localize seu pipeline de front-end.
-2. No lado direito do pipeline, clique no menu de três pontos **** e, na lista suspensa, selecione **Exibir/Editar variáveis**.
+2. No lado direito do pipeline, clique no menu de três pontos **&#x200B;**&#x200B;e, na lista suspensa, selecione **Exibir/Editar variáveis**.
 3. Na caixa de diálogo **Configuração de variáveis**, preencha os campos da seguinte maneira:
    * **NOME** - NODE_VERSION
    * **VALOR** - 20
