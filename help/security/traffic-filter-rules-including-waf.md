@@ -4,9 +4,9 @@ description: Configuração das regras de filtro de tráfego, incluindo as regra
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: d967706a000edc8c06193d1a8a39a1931fffbb99
 workflow-type: tm+mt
-source-wordcount: '4582'
+source-wordcount: '4610'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ As regras de filtro de tráfego podem ser usadas para bloquear ou permitir solic
 
 Muitas dessas regras de filtro de tráfego estão disponíveis para todos os clientes do AEM as a Cloud Service Sites e do Forms. Chamadas de *regras padrão de filtro de tráfego*, elas operam principalmente em propriedades de solicitação e cabeçalhos de solicitação, incluindo IP, nome de host, caminho e agente de usuário. As regras padrão de filtro de tráfego incluem regras de limite de taxa para proteção contra picos de tráfego.
 
-Uma subcategoria de regras de filtro de tráfego requer uma licença de Segurança aprimorada ou uma licença de Proteção WAF-DDoS. Essas regras poderosas são conhecidas como regras de filtro de tráfego do WAF (ou *regras do WAF*) e têm acesso aos [Sinalizadores do WAF](#waf-flags-list) descritos mais adiante neste artigo.
+Uma subcategoria de regras de filtro de tráfego requer uma licença de Segurança estendida (anteriormente chamada de Proteção WAF-DDoS) ou Segurança estendida para a área de saúde (anteriormente chamada de Segurança aprimorada). Essas regras poderosas são conhecidas como regras de filtro de tráfego do WAF (ou *regras do WAF*) e têm acesso aos [Sinalizadores do WAF](#waf-flags-list) descritos mais adiante neste artigo.
 
 As regras de filtro de tráfego podem ser implantadas por meio de pipelines de configuração do Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção. O arquivo de configuração pode ser implantado em RDEs (Rapid Development Environments, ambientes de desenvolvimento rápido) usando ferramentas de linha de comando.
 
@@ -59,7 +59,7 @@ Por padrão, o Adobe toma medidas para evitar a degradação do desempenho devid
 
 Os clientes podem tomar medidas proativas para atenuar os ataques à camada do aplicativo (camada 7), configurando regras em várias camadas do fluxo de entrega de conteúdo.
 
-Por exemplo, na camada do Apache, os clientes podem configurar o [módulo do Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou o [ModSecurity](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) para limitar o acesso a determinado conteúdo.
+Por exemplo, na camada do Apache, os clientes podem configurar o [módulo do Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou o [ModSecurity](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) para limitar o acesso a determinado conteúdo.
 
 Como este artigo descreve, as regras de filtro de tráfego podem ser implantadas na CDN Gerenciada pela Adobe, usando os [pipelines de configuração](/help/operations/config-pipeline.md) da Cloud Manager. Além das *regras padrão de filtro de tráfego* baseadas em propriedades como endereço IP, caminho e cabeçalhos ou regras baseadas na definição de limites de taxa, os clientes também podem licenciar uma subcategoria poderosa de regras de filtro de tráfego chamada *regras do WAF*.
 
@@ -111,7 +111,7 @@ Veja a seguir um processo completo recomendado de alto nível para criar as regr
 
 Você pode configurar *regras de filtro de tráfego* para corresponder a padrões como IPs, agente de usuário, cabeçalhos de solicitação, nome do host, localização geográfica e url.
 
-Os clientes que licenciam a oferta de Segurança aprimorada ou Segurança de proteção WAF-DDoS também podem configurar uma categoria especial de regras de filtro de tráfego chamada *regras de filtro de tráfego do WAF* (ou *regras do WAF*) que fazem referência a um ou mais [sinalizadores do WAF](#waf-flags-list).
+Os clientes que licenciam a oferta de Segurança estendida (anteriormente chamada de Proteção WAF-DDoS) ou Segurança estendida para a área de saúde (anteriormente chamada de Segurança aprimorada) também podem configurar uma categoria especial de regras de filtro de tráfego chamada *Regras de filtro de tráfego do WAF* (ou *Regras WAF* para abreviar) que faz referência a um ou mais [sinalizadores WAF](#waf-flags-list).
 
 Este é um exemplo de um conjunto de regras de filtro de tráfego, que também inclui uma regra WAF.
 
@@ -430,7 +430,7 @@ Os limites de taxa são avaliados com base no tráfego que atinge a borda, no tr
 
 **Exemplo 1**
 
-Essa regra bloqueia um cliente por 5 milissegundos quando ele excede uma média de 60 solic./seg (por POP CDN) nos últimos 10 segundos:
+Essa regra bloqueia um cliente por 5 minutos quando ele excede uma média de 60 solic./seg. (por POP CDN) nos últimos 10 segundos:
 
 ```
 kind: "CDN"
@@ -641,7 +641,7 @@ A ferramenta do painel pode ser clonada diretamente do [repositório GitHub AEMC
 
 ## Regras iniciais recomendadas {#recommended-starter-rules}
 
-A Adobe sugere começar com as regras de filtro de tráfego abaixo e, em seguida, refinar ao longo do tempo. As *Regras padrão* estão disponíveis com uma licença do Sites ou do Forms, enquanto as *regras do WAF* exigem uma licença de Segurança Aprimorada ou Proteção WAF-DDoS.
+A Adobe sugere começar com as regras de filtro de tráfego abaixo e, em seguida, refinar ao longo do tempo. As *Regras padrão* estão disponíveis com uma licença do Sites ou do Forms, enquanto as *regras do WAF* exigem uma licença de Segurança Estendida (anteriormente chamada de Proteção WAF-DDoS) ou Segurança Estendida para a Assistência Médica (anteriormente chamada de Segurança Aprimorada).
 
 ### Regras padrão recomendadas {#recommended-nonwaf-starter-rules}
 
@@ -777,7 +777,7 @@ Antes de julho de 2025, a Adobe recomendou as regras do WAF listadas abaixo, que
 
 ## Tutorial {#tutorial}
 
-Trabalhe com [uma série de tutoriais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) para obter conhecimento prático e experiência sobre regras de filtro de tráfego, incluindo regras do WAF.
+Trabalhe com [uma série de tutoriais](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) para obter conhecimento prático e experiência sobre regras de filtro de tráfego, incluindo regras do WAF.
 
 Os tutoriais incluem:
 
