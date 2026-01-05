@@ -3,7 +3,7 @@ title: Visão geral do agente de desenvolvimento
 description: Saiba como o Agente de desenvolvimento no AEM analisa pipelines com falha no Cloud Manager e cria logs para sugerir correções de código e acelerar a depuração.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
+source-git-commit: 3e565ba0cd53d9064a9aed20f4d6663781759b63
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
@@ -16,6 +16,8 @@ ht-degree: 1%
 O Agente de desenvolvimento ajuda os desenvolvedores e administradores do AEM a criar, depurar, implantar e otimizar o código com mais eficiência.
 
 Atualmente, o agente pode recuperar os status do pipeline e ajudar você a solucionar problemas de etapas de criação com falha, sugerindo correções e economizando tempo ao depurar implantações do AEM as a Cloud Service em ambientes de desenvolvimento, preparo e produção. Ele examina logs de compilação e código relacionado para recomendar uma correção que pode ser aplicada manualmente.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
