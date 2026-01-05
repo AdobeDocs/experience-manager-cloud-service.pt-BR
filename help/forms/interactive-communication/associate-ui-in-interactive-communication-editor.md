@@ -4,9 +4,9 @@ description: Descubra a interface do usuário associada no Editor de comunicaç�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
+source-git-commit: 234b6dc747bbba21e9249d526bf894860572dfe5
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ O autor pode seguir as etapas abaixo para configurar e publicar uma Comunicaçã
 
 >[!NOTE]
 >
-> Componentes compatíveis para associado: Campo de data, Campo numérico, Campo de texto.
+> Componentes compatíveis para associar: Campo de data, Campo numérico, Campo de texto, DateTimeField, DateField, Caixa de seleção, Botão de opção, Suspenso.
 
 ### Criar a IC
 
