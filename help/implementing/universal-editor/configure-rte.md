@@ -4,9 +4,9 @@ description: Entenda como você pode configurar o editor de rich text (RTE) no E
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
+source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,13 @@ Entenda como você pode configurar o editor de rich text (RTE) no Editor univers
 O Editor universal fornece um editor de rich text (RTE) no local e no painel de propriedades para permitir que os autores apliquem alterações de formatação à medida que editam seu texto.
 
 Este RTE é configurável com o uso de [filtros de componente.](/help/implementing/universal-editor/filtering.md) Este documento descreve quais opções de configuração estão disponíveis junto com exemplos.
+
+>[!NOTE]
+>
+>Quando você inicia um projeto do Universal Editor, todos os recursos de rich text compatíveis com o back-end (AEM com Edge Delivery ou implementação headless) são ativados automaticamente.
+>
+>* Você pode desativar as opções desnecessárias.
+>* Ativar opções que não são compatíveis com seu tipo de projeto não é suportado.
 
 ## Estrutura de configuração {#structure}
 
