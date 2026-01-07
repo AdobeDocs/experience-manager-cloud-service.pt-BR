@@ -4,7 +4,7 @@ description: Se você for um desenvolvedor do AEM interessado em como o Editor u
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 392fdb0a0c1982f9be59cb530e86f13aeea3316b
 workflow-type: tm+mt
 source-wordcount: '3179'
 ht-degree: 0%
@@ -118,7 +118,7 @@ O cookie do token de logon é enviado para a AEM como um domínio de terceiros. 
 
    ![Propriedade OSGi para cookies do mesmo site](assets/dev-cross-origin-osgi.png)
 
-1. Altere a propriedade **atributo SameSite do cookie de token de logon** para `None`.
+1. Altere a propriedade **atributo SameSite do cookie de token de logon** para `Partitioned`.
 
 1. Salve as alterações.
 
