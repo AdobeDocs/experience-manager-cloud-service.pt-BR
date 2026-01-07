@@ -4,9 +4,9 @@ description: Saiba mais sobre os diferentes eventos que o Editor universal envia
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: ac361c31b116466cc9a718640c1de4e4ef396fba
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '530'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Os eventos incluem a carga da solicitação e da resposta e são acionados assim
 
 ## Eventos de atualização de conteúdo {#content-events}
 
-### aue:content-add {#content-add}
+### aue&amp;dois pontos;content-add {#content-add}
 
 O evento `aue:content-add` é disparado quando um novo componente é adicionado a um contêiner.
 
@@ -53,7 +53,7 @@ A carga é o conteúdo do serviço do Universal Editor, com conteúdo de fallbac
 }
 ```
 
-### aue:content-details {#content-details}
+### aue&amp;dois pontos;content-details {#content-details}
 
 O evento `aue:content-details` é disparado quando um componente é carregado no painel de propriedades.
 
@@ -70,7 +70,7 @@ A carga é o conteúdo do componente e, opcionalmente, seu schema.
 }
 ```
 
-### aue:content-move {#content-move}
+### aue&amp;dois pontos;movimentação de conteúdo {#content-move}
 
 O evento `aue:content-move` é disparado quando um componente é movido.
 
@@ -89,7 +89,7 @@ A carga é o componente, contêiner de origem e contêiner de destino.
 }
 ```
 
-### aue:content-patch {#content-patch}
+### aue&amp;dois pontos;content-patch {#content-patch}
 
 O evento `aue:content-patch` é disparado quando os dados de um componente são atualizados no painel de propriedades.
 
@@ -108,7 +108,7 @@ A carga é uma correção JSON das propriedades atualizadas.
 }
 ```
 
-### aue:content-remove {#content-remove}
+### aue&amp;dois pontos;remoção de conteúdo {#content-remove}
 
 O evento `aue:content-remove` é disparado quando um componente é removido de um contêiner.
 
@@ -124,7 +124,7 @@ A carga é a ID do item do componente removido.
 }
 ```
 
-### aue:content-update {#content-update}
+### aue&amp;dois pontos;content-update {#content-update}
 
 O evento `aue:content-update` é disparado quando as propriedades de um componente são atualizadas no contexto.
 
@@ -180,7 +180,7 @@ Carga de resposta
 
 ## Eventos da interface do usuário {#ui-events}
 
-### aue:ui-preview {#ui-preview}
+### aue&amp;dois pontos;ui-preview {#ui-preview}
 
 O evento `aue:ui-preview` é disparado quando o modo de edição da página é alterado para **Visualização**.
 
@@ -192,7 +192,7 @@ A carga está vazia para este evento.
 }
 ```
 
-### aue:ui-edit {#ui-edit}
+### aue&amp;dois pontos;ui-edit {#ui-edit}
 
 O evento `aue:ui-edit` é disparado quando o modo de edição da página é alterado para **Editar**.
 
@@ -204,7 +204,7 @@ A carga está vazia para este evento.
 }
 ```
 
-### aue:ui-viewport-change {#ui-viewport-change}
+### aue&amp;dois pontos;ui-viewport-change {#ui-viewport-change}
 
 O evento `aue:ui-viewport-change` é acionado quando o tamanho do visor é alterado.
 
@@ -219,7 +219,7 @@ A carga são as dimensões da janela de visualização.
 }
 ```
 
-### aue:initialized {#initialized}
+### aue&amp;dois pontos;inicializado {#initialized}
 
 O evento `aue:initialized` é disparado para informar à página remota que ele foi carregado com êxito no Editor Universal.
 
@@ -257,4 +257,3 @@ A carga está vazia para este evento.
 ## Recursos adicionais {#additional-resources}
 
 * [Chamadas do editor universal](/help/implementing/universal-editor/calls.md)
-
