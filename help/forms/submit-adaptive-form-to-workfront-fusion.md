@@ -6,9 +6,9 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1437'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 <span class="preview"> O recurso está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
-O [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=pt-BR) automatiza o processo de repetição das mesmas tarefas, como fluxos de trabalho de aprovação de documentos, filtragem e classificação de email, permitindo que você se concentre em novas tarefas em vez de tarefas recorrentes. O Adobe Workfront Fusion inclui vários cenários. Um cenário consiste em uma série de módulos que executam a transferência de dados entre aplicativos e serviços da Web. Em um cenário, você adiciona várias etapas (módulos) para automatizar uma tarefa.
+O [Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html) automatiza o processo de repetição das mesmas tarefas, como fluxos de trabalho de aprovação de documentos, filtragem e classificação de email, permitindo que você se concentre em novas tarefas em vez de tarefas recorrentes. O Adobe Workfront Fusion inclui vários cenários. Um cenário consiste em uma série de módulos que executam a transferência de dados entre aplicativos e serviços da Web. Em um cenário, você adiciona várias etapas (módulos) para automatizar uma tarefa.
 
 Por exemplo, usando o Workfront Fusion, você pode criar um cenário para coletar dados com o Formulário adaptável, processar os dados e enviá-los a um armazenamento de dados para arquivamento. Depois que um cenário é configurado, o Workfront Fusion executa automaticamente as tarefas sempre que um usuário preenche um formulário, atualizando o armazenamento de dados perfeitamente.
 
@@ -38,8 +38,8 @@ O AEM Forms as a Cloud Service fornece um conector OOTB para conectar e enviar u
 
 Para estabelecer uma conexão entre o Workfront Fusion e o AEM Forms, é necessário o seguinte:
 
-* Uma [licença válida do Workfront e do Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=pt-BR).
-* Um usuário do AEM com direito de acessar o [Dev Console](https://my.cloudmanager.adobe.com/) para [recuperar as credenciais de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR).
+* Uma [licença válida do Workfront e do Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html).
+* Um usuário do AEM com direito de acessar o [Dev Console](https://my.cloudmanager.adobe.com/) para [recuperar as credenciais de serviço](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
 
 ## Integrar o AEM Forms com o Adobe Workfront Fusion
 
@@ -88,7 +88,7 @@ Para adicionar um webhook:
 
 >[!NOTE]
 >
-> Certifique-se de que a Conta Técnica é membro do grupo **forms-users**; caso contrário, a adição de um webhook falhará.
+> Certifique-se de que a Conta Técnica é membro do grupo **forms-users**; caso contrário, a adição de um webhook falhará. Para adicionar a conta técnica ao grupo de usuários-formulários no AEM, [clique aqui](#add-technical-account-to-the-forms-users-group).
 
 #### Adicionar uma conexão a um webhook {#add-connection}
 
@@ -106,7 +106,7 @@ Para adicionar uma conexão:
    >
    > O URL da instância é o endereço exclusivo da Web que aponta para uma instância específica do AEM Forms.
 
-   Você pode recuperar as [credenciais de serviço do Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR) necessárias para criar uma conexão.
+   Você pode recuperar as [credenciais de serviço do Console do desenvolvedor](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html) necessárias para criar uma conexão.
 
 1. Substitua `ims-na1.adobelogin.com` no **ponto de extremidade IMS** pelo valor de **imsEndpoint** das credenciais de serviço no Console do desenvolvedor.
 
@@ -197,6 +197,27 @@ A caixa de diálogo **Propriedades do Formulário** é exibida.
 1. Clique em **[!UICONTROL Salvar&amp;Fechar]**.
 
 >[!ENDTABS]
+
+## Adicionar conta técnica ao grupo de formulários-usuários
+
+Para adicionar a conta técnica ao grupo `forms-users` no AEM, execute as seguintes etapas:
+
+1. Vá para **Ferramentas** > **Segurança** > **Usuários**.
+1. Na lista de usuários, localize o email da conta técnica da sua organização. Por exemplo, vamos pesquisar pelo usuário como `Workfront-test`.
+1. Clique no usuário para exibir seus detalhes.
+1. Nos detalhes do usuário, selecione a guia **Grupos**.
+1. Selecione `forms-users` na lista suspensa **[!UICONTROL Selecionar Grupo]**.
+1. Clique em **Salvar e fechar**.
+
+![Adicionar conta técnica ao grupo](/help/forms/assets/add-technical-account.png)
+
+Você também pode verificar a associação do Grupo para o usuário:
+
+1. Vá para **Ferramentas** > **Segurança** > **Grupos**.
+1. Procure o grupo `forms-users`.
+1. Abra o grupo, vá para a guia **Membros** e confirme se o usuário aparece na lista de membros do grupo.
+
+![verificar-grupo](/help/forms/assets/verify-group.png)
 
 ## Práticas recomendadas {#best-practices}
 

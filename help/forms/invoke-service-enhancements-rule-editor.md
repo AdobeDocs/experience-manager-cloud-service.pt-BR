@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: chame os aprimoramentos do serviço no VRE, preenchendo as opções suspensas usando invocar serviço, Defina o painel repetível usando a saída de invocar serviço, Defina o painel usando a saída de invocar serviço, Use o parâmetro de saída de invocar serviço para validar outro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1860'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,8 @@ Estas são algumas das vantagens de usar a operação Chamar serviço no editor 
 O editor visual de regras permite criar regras para manipuladores de sucesso e falha para operações de **Chamar Serviço** com base nas respostas de saída. A imagem abaixo mostra o **Invocar Serviço** no editor de regras visuais para um Formulário Adaptável:
 
 ![Invocar manipuladores de serviço](/help/forms/assets/invoke-service-rule-editor.png)
+
+### Adicionando Manipulador de Sucesso e Manipulador de Falhas
 
 Para adicionar manipulador de êxito ou falha, clique em **[!UICONTROL Adicionar manipulador de sucesso]** ou **[!UICONTROL Adicionar manipulador de falha]**, respectivamente.
 
@@ -160,6 +162,10 @@ Para fazer isso, crie uma regra na caixa de texto `Pet ID` para invocar o servi�
 
 ![Definir valor suspenso](/help/forms/assets/set-dropdownoption.png)
 
+>[!NOTE]
+>
+> Consulte a seção [Adicionando Manipulador de Êxito e Manipulador de Falha](#adding-success-handler-and-failure-handler) para saber como definir manipuladores de sucesso e falha.
+
 #### Saída
 
 Digite `101` na caixa de texto `Pet ID` para preencher dinamicamente as opções suspensas com base no valor inserido.
@@ -181,6 +187,10 @@ Crie uma regra na caixa de texto `Pet ID` para invocar o serviço `getPetById`. 
 
 ![Criar regra para o painel repetível](/help/forms/assets/create-rule-repeatable-panel.png)
 
+>[!NOTE]
+>
+> Consulte a seção [Adicionando Manipulador de Êxito e Manipulador de Falha](#adding-success-handler-and-failure-handler) para saber como definir manipuladores de sucesso e falha.
+
 #### Saída
 
 Digite `101` na caixa de texto `Pet ID` para preencher o painel repetível dinamicamente com base no valor de entrada.
@@ -199,6 +209,10 @@ Este caso de uso demonstra como definir dinamicamente o valor de um painel com b
 #### Implementação
 
 Crie uma regra na caixa de texto `Pet ID` para invocar o serviço `getPetById`. Em **[!UICONTROL Adicionar Manipulador de Êxito]**, adicione outra resposta de manipulador de êxito. Defina o valor da caixa de texto `categoryname` como `category.name` na regra.
+
+>[!NOTE]
+>
+> Consulte a seção [Adicionando Manipulador de Êxito e Manipulador de Falha](#adding-success-handler-and-failure-handler) para saber como definir manipuladores de sucesso e falha.
 
 ![Criar regra para o painel repetível](/help/forms/assets/set-panel-values.png)
 
