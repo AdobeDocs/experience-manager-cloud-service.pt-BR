@@ -3,7 +3,7 @@ title: Gerenciar coleções no Content Hub
 description: Saiba como gerenciar coleções no Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
+source-git-commit: 69140e717ebc25284f715f73a3abb0b36b66deb2
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 2%
@@ -136,7 +136,7 @@ Saiba como [baixar um ativo do [!DNL Content Hub]](download-assets-content-hub.m
 
 ## Compartilhar ativos disponíveis em uma coleção {#share-assets-available-within-collection}
 
-Você também pode compartilhar os ativos disponíveis em uma coleção. [habilite o compartilhamento de link público no Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing). Navegue até a guia **[!UICONTROL Coleções]**. Selecione o ícone ![compartilhar](assets/share.svg) no cartão de coleção. O link de compartilhamento é copiado. Você pode compartilhar o link copiado com o recipient. Saiba mais sobre o [compartilhamento de ativos no [!DNL Content Hub]](share-assets-content-hub.md).
+Você também pode compartilhar os ativos disponíveis em uma coleção. [habilite o compartilhamento de link público no Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub). Navegue até a guia **[!UICONTROL Coleções]**. Selecione o ícone ![compartilhar](assets/share.svg) no cartão de ativos. O link de compartilhamento é copiado. Você pode compartilhar o link copiado com o recipient. Saiba mais sobre o [compartilhamento de ativos no [!DNL Content Hub]](share-assets-content-hub.md).
 
 O Content Hub Collections fornece ferramentas de governança abrangentes para um gerenciamento eficiente de ativos, incluindo permissões de compartilhamento personalizáveis e recursos de colaboração. Do acesso somente leitura ao controle administrativo completo, essas configurações suportam controle fino sobre a distribuição de ativos. Ao compartilhar um ativo individualmente ou como parte de uma coleção, o escopo do acesso é determinado pelo nível de acesso atual da coleção atribuído ao usuário. Como alternativa, não é possível compartilhar uma coleção privada.
 
