@@ -22,8 +22,8 @@ A autenticação de servidor para servidor do OAuth permite acesso seguro e base
 
 Antes de começar, verifique se os seguintes pré-requisitos foram atendidos:
 
-* Verifique se você tem [acesso ao Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) específico para o ambiente que usa.
-* [Atribua a função de Administrador do Sistema ou Desenvolvedor no Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) para habilitar o acesso ao Adobe Developer Console.
+* Verifique se você tem [acesso ao Adobe Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/access-rights) específico para o ambiente que usa.
+* [Atribua a função de Administrador do Sistema ou Desenvolvedor no Adobe Admin Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) para habilitar o acesso ao Adobe Developer Console.
 
 ## Como gerar um token de acesso usando a autenticação de servidor para servidor do OAuth?
 
@@ -182,7 +182,7 @@ Gerar tokens de acesso manualmente no Adobe Developer Console:
 
 >[!TAB Para Produção]
 
-Gerar tokens de forma programática usando a API do [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Gerar tokens de forma programática usando a API do [Adobe IMS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenciais necessárias:**
 

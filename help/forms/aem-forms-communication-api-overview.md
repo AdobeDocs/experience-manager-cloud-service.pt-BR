@@ -22,7 +22,7 @@ As APIs do AEM Forms são estruturadas e acessadas por meio de dois consoles pri
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - O Adobe Developer Console é o gateway para APIs, Eventos, Tempo de Execução e App Builder da Adobe.
 
-* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - O AEM Developer Console fornece acesso a detalhes, configurações, contas técnicas e credenciais de serviço no nível do ambiente para oferecer suporte a tarefas operacionais e de integração.
+* [AEM Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - O AEM Developer Console fornece acesso a detalhes, configurações, contas técnicas e credenciais de serviço no nível do ambiente para oferecer suporte a tarefas operacionais e de integração.
 
 APIs diferentes suportam [métodos de autenticação](#authentication-methods) diferentes.
 
