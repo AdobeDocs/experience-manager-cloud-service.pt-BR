@@ -6,9 +6,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: 77da2f4ddcd9074a79883f18a33b6fe50e32b266
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2396'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Verifique se você tem os direitos de acesso e as permissões necessários antes
 
 >[!NOTE]
 >
-> Para saber mais sobre atribuição de funções e concessão de acesso a usuários, consulte o artigo [Adicionar usuários e funções](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Para saber mais sobre atribuição de funções e concessão de acesso a usuários, consulte o artigo [Adicionar usuários e funções](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Acesso ao Repositório Git**
 
@@ -112,7 +112,7 @@ Você pode visualizar ou acessar os detalhes do Ambiente do AEM Cloud Service us
 
 >[!ENDTABS]
 
-#### &#x200B;4. Encontrar o terminal do AEM Forms
+#### 1.4. Encontrar o terminal do AEM Forms
 
 Na página de detalhes do **Ambiente**, anote a instância da URL do AEM.
 
@@ -120,7 +120,7 @@ Na página de detalhes do **Ambiente**, anote a instância da URL do AEM.
 
 >[!NOTE]
 >
-> Para ver como acessar o Ambiente de acesso do AEM Cloud Service e o Ponto de extremidade do AEM Forms, consulte [Documentação de gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR).
+> Para ver como acessar o Ambiente de acesso do AEM Cloud Service e o Ponto de extremidade do AEM Forms, consulte [Documentação de gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
 ### Etapa 2: clonar repositório Git
 
@@ -259,7 +259,7 @@ Gerar tokens de acesso manualmente no Adobe Developer Console:
 
 >[!TAB Para Produção]
 
-Gerar tokens de forma programática usando a API do [Adobe IMS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Gerar tokens de forma programática usando a API do [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenciais necessárias:**
 
@@ -369,6 +369,11 @@ Veja a seguir uma explicação sobre os parâmetros de configuração:
 
 ### Etapa 5: configurar o pipeline de configuração
 
+#### 5.1 Fazer logon no Adobe Cloud Manager
+
+1. Navegue até [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+2. Faça logon com sua Adobe ID
+
 #### 5.1 Localize o cartão Pipelines
 
 1. Localize o cartão **Pipelines** na página Visão geral do programa
@@ -441,7 +446,7 @@ e. Clique em **&quot;Salvar&quot;** para criar o pipeline
 
 ### Etapa 6: implantar configuração
 
-Agora que o pipeline foi criado, implante sua configuração `api.yaml`:
+Agora que o pipeline foi criado, implante sua configuração `api.yaml`
 
 #### 6.1 Da Visão geral dos pipelines
 
