@@ -4,10 +4,10 @@ description: Use os modelos de fragmento de conteúdo do AEM para definir a estr
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 77%
+source-wordcount: '267'
+ht-degree: 72%
 
 ---
 
@@ -19,7 +19,7 @@ Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fra
 
 [Agora que você criou modelos de fragmento de conteúdo](create-content-model.md) que definem a estrutura desejada para os fragmentos de conteúdo futuros, você provavelmente está animado para criar alguns fragmentos.
 
-No entanto, primeiro será necessário criar uma pasta de ativos na qual você os armazenará.
+No entanto, primeiro é necessário criar uma pasta de ativos na qual você os armazenará.
 
 As pastas de ativos são usadas para [organizar ativos de conteúdo tradicionais](/help/assets/manage-digital-assets.md), como imagens e vídeos, juntamente com fragmentos de conteúdo.
 

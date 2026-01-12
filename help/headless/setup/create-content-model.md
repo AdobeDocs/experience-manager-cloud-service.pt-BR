@@ -4,9 +4,9 @@ description: Defina a estrutura do conteúdo que será criado e veiculado usando
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '230'
 ht-degree: 50%
 
 ---
@@ -19,7 +19,7 @@ Defina a estrutura do conteúdo que será criado e veiculado usando os recursos 
 
 [Agora que você criou uma configuração](create-configuration.md), é possível usá-la para criar modelos de fragmento de conteúdo.
 
-Os modelos de fragmento de conteúdo definem a estrutura dos dados e do conteúdo que você irá criar e gerenciar no AEM. Eles servem como uma espécie de andaime para o conteúdo. Ao optar por criar o conteúdo, os autores escolherão entre os modelos de fragmento de conteúdo definidos, que os orientarão na criação do conteúdo.
+Os Modelos de fragmento de conteúdo definem a estrutura dos dados e do conteúdo que você irá criar e gerenciar no AEM. Eles servem como uma espécie de andaime para o conteúdo. Ao optar por criar o conteúdo, os autores escolherão entre os modelos de fragmento de conteúdo definidos, que os orientarão na criação do conteúdo.
 
 ## Como criar um modelo de fragmento de conteúdo {#how-to-create-a-content-fragment-model}
 
