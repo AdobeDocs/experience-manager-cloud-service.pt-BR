@@ -5,9 +5,9 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: e2716b7f9612d5769c422a0fc2915a604ea40de5
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2772'
 ht-degree: 26%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 26%
 
 > **Disponibilidade de Versão**
 >
-> * **AEM 6.5**: [Visão Geral dos Serviços de Documento da AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=pt-BR)
+> * **AEM 6.5**: [Visão Geral dos Serviços de Documento da AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**: Este artigo
 
 ## Introdução
@@ -91,6 +91,10 @@ A API de geração de documento retorna o documento PDF ou o documento AFP gerad
 
 <span class="preview"> O carregamento dos PDFs gerados usando a API de geração de documentos para o recurso de Armazenamento Azure Blob está no [Programa Early Adoter](/help/forms/early-access-ea-features.md). Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
+>
+>
+> As APIs de geração de documento incluem endpoints de geração de saída em lote e síncronos. Essas APIs oferecem suporte à autenticação de servidor para servidor usando JWT ou OAuth, dependendo do endpoint. Para saber mais sobre as APIs de Geração de Documentos, [clique aqui](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis).
+
 #### Criar documento PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) {#create-PS-PCL-ZPL-documents}
 
 Você pode usar APIs de geração de documentos para criar um documento PostScript (PS), Printer Command Language (PCL) e Zebra Printing Language (ZPL) com base em um design de formulário XDP ou documento do PDF. Essas APIs ajudam a mesclar um design de formulário com dados de formulário para gerar um documento. Você pode salvar o documento em um arquivo e desenvolver um processo personalizado para enviá-lo a uma impressora.
@@ -104,6 +108,10 @@ Você pode usar APIs de geração de documentos para criar documentos separados 
 ## Manipulação de documentos
 
 As APIs de manipulação de documento de comunicações (transformação de documento) ajudam a combinar e reorganizar documentos do PDF. Normalmente, você cria um DDX e o envia para APIs de manipulação de documentos para montar ou reorganizar um documento. O [Documento DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) fornece instruções sobre como usar os documentos de origem para produzir um conjunto de documentos necessários. A documentação de referência do DDX fornece informações detalhadas sobre todas as operações compatíveis.
+
+>
+>
+> As APIs de manipulação de documentos oferecem suporte à autenticação de servidor para servidor usando JWT. Para saber mais sobre APIs de Manipulação de Documentos, [clique aqui](/help/forms/aem-forms-communication-api-overview.md#document-manipulation-apis).
 
 ### Principais recursos de manipulação de documentos
 
@@ -144,7 +152,10 @@ O serviço de Extração de documentos oferece a capacidade de obter as propried
 * Extraia os direitos de uso ativados em um documento do PDF, os usuários recuperam os direitos de uso ativados ou desativados em um documento do PDF para extensibilidade do Adobe Acrobat Reader.
 * Para obter as informações de metadados presentes em um documento do PDF, os metadados são informações sobre o documento (conforme diferenciado do conteúdo do documento, como texto e gráficos). A Adobe Extensible Metadata Platform (XMP) é um padrão para manipular metadados de documentos. O serviço Utilitários da XMP pode recuperar metadados XMP de documentos do PDF e exportar metadados XMP para documentos do PDF.
 
-A [documentação de referência da API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fornece informações detalhadas sobre todos os parâmetros, métodos de autenticação e os serviços fornecidos pelas APIs. A documentação de referência da API também está disponível no formato .yaml. É possível baixar o .yaml e carregá-lo no Postman para verificar a funcionalidade das APIs.
+>
+>
+> As APIs de extração de documentos são compatíveis com autenticação de servidor para servidor usando OAuth. Para saber mais sobre as APIs de Extração de Documentos, [clique aqui](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis).
+>
 
 ## Conversão de documentos
 
@@ -157,6 +168,10 @@ As APIs de conversão de documento de comunicações ajudam a Converter um docum
 <span class="preview"> O recurso Converter PDF em XDP está no Early Adoter Program. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 Converte um documento PDF em um arquivo XDP. Para que um documento do PDF seja convertido com êxito em um arquivo XDP, o documento do PDF deve conter um fluxo XFA no dicionário.
+
+>
+>
+> As APIs de conversão de documento oferecem suporte à autenticação de servidor para servidor usando OAuth. Para saber mais sobre APIs de Conversão de Documentos, [clique aqui](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apiss).
 
 ## Assurance do documento {#doc-assurance}
 
@@ -174,6 +189,10 @@ As APIs de assinatura permitem que sua organização proteja a segurança e a pr
 * Excluir o campo de assinatura especificado de um documento do PDF
 
 <span class="preview"> Remova a assinatura do campo de assinatura especificado e exclua o campo de assinatura especificado, de um documento do PDF, que estão disponíveis no programa de adoção antecipada. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+
+>
+>
+> As APIs do Assurance de documentos oferecem suporte à autenticação de servidor para servidor usando OAuth. Para saber mais sobre as APIs do Document Assurance, [clique aqui](/help/forms/aem-forms-communication-api-overview.md#document-assurance-apis).
 
 ### APIs de criptografia
 

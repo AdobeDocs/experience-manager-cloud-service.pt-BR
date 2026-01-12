@@ -3,18 +3,15 @@ title: Como configurar APIs síncronas das comunicações do Forms?
 description: Configurar ambiente de desenvolvimento para APIs síncronas de comunicações interativas para o Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 77da2f4ddcd9074a79883f18a33b6fe50e32b266
+source-git-commit: a0db7a0a2dc82c9857b34b79fe3b3b6f3e179372
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2417'
 ht-degree: 1%
 
 ---
 
 
-# Configurar o acesso de servidor a servidor do OAuth para APIs síncronas do AEM Forms Communications
+# Configurar o acesso de servidor a servidor do OAuth para as APIs de comunicações do AEM Forms
 
 Este guia fornece instruções para configurar e chamar APIs síncronas do AEM Forms Communications que são acessadas por meio do Adobe Developer Console usando a autenticação de servidor para servidor do OAuth.
 
@@ -22,23 +19,28 @@ Este guia fornece instruções para configurar e chamar APIs síncronas do AEM F
 
 Para configurar um ambiente para executar e testar as APIs de comunicações do AEM Forms, verifique se você tem o seguinte:
 
+### Atualizar ambiente do AEM as a Cloud Service
+
+* [AEM versão 2024.10.18459.20241031T210302Z ou posterior](#update-aem-instance)
+* Atualizar perfis de produto se o ambiente tiver sido criado antes de novembro de 2024
+
 ### Acesso e permissões
 
 Verifique se você tem os direitos de acesso e as permissões necessários antes de começar a configurar as APIs de comunicações.
 
 **Permissões de usuário e função**
 
-- Função de desenvolvedor atribuída na Adobe Admin Console
-- Permissão para criar projetos no Adobe Developer Console
+* Função de desenvolvedor atribuída na Adobe Admin Console
+* Permissão para criar projetos no Adobe Developer Console
 
 >[!NOTE]
 >
-> Para saber mais sobre atribuição de funções e concessão de acesso a usuários, consulte o artigo [Adicionar usuários e funções](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Para saber mais sobre atribuição de funções e concessão de acesso a usuários, consulte o artigo [Adicionar usuários e funções](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Acesso ao Repositório Git**
 
-- Acesso ao repositório Git do Cloud Manager
-- Credenciais do Git para clonagem e envio de alterações
+* Acesso ao repositório Git do Cloud Manager
+* Credenciais do Git para clonagem e envio de alterações
 
 >[!NOTE]
 >
@@ -46,8 +48,8 @@ Verifique se você tem os direitos de acesso e as permissões necessários antes
 
 ### Gerar token de acesso usando o Adobe Developer Console (ADC)
 
-- Gere o token de acesso por meio do Adobe Developer Console usando a autenticação de servidor para servidor do OAuth.
-- Recuperar ID do cliente da Adobe Developer Console
+* Gere o token de acesso por meio do Adobe Developer Console usando a autenticação de servidor para servidor do OAuth.
+* Recuperar ID do cliente da Adobe Developer Console
 
 >[!NOTE]
 >
@@ -55,11 +57,11 @@ Verifique se você tem os direitos de acesso e as permissões necessários antes
 
 ### Ferramentas de desenvolvimento
 
-- **Node.js** para executar aplicativos de exemplo
-- Última versão do **Git**
-- Acesso a **Terminal/Linha de comando**
-- **Editor de texto ou IDE** para editar arquivos de configuração (Código VS, IntelliJ etc.)
-- **Postman** ou ferramenta semelhante para teste de API
+* **Node.js** para executar aplicativos de exemplo
+* Última versão do **Git**
+* Acesso a **Terminal/Linha de comando**
+* **Editor de texto ou IDE** para editar arquivos de configuração (Código VS, IntelliJ etc.)
+* **Postman** ou ferramenta semelhante para teste de API
 
 >[!NOTE]
 >
@@ -120,7 +122,7 @@ Na página de detalhes do **Ambiente**, anote a instância da URL do AEM.
 
 >[!NOTE]
 >
-> Para ver como acessar o Ambiente de acesso do AEM Cloud Service e o Ponto de extremidade do AEM Forms, consulte [Documentação de gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR).
+> Para ver como acessar o Ambiente de acesso do AEM Cloud Service e o Ponto de extremidade do AEM Forms, consulte [Documentação de gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
 ### Etapa 2: clonar repositório Git
 
@@ -259,13 +261,13 @@ Gerar tokens de acesso manualmente no Adobe Developer Console:
 
 >[!TAB Para Produção]
 
-Gerar tokens de forma programática usando a API do [Adobe IMS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Gerar tokens de forma programática usando a API do [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenciais necessárias:**
 
-- ID do cliente
-- Segredo do cliente
-- Escopos (normalmente: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
+* ID do cliente
+* Segredo do cliente
+* Escopos (normalmente: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
 
 **Ponto de Extremidade do Token:**
 
@@ -340,16 +342,16 @@ Para permitir que a ID do cliente do projeto ADC se comunique com a instância d
 
 Veja a seguir uma explicação sobre os parâmetros de configuração:
 
-- **kind**: sempre definido como `"API"` (identifica como uma configuração de API)
-- **versão**: versão da API, normalmente `"1"` ou `"1.0"`
-- **envTypes**: matriz de tipos de ambiente à qual esta configuração se aplica
-   - `["dev"]` - Somente ambientes de desenvolvimento
-   - `["stage"]` - Somente ambientes de preparo
-   - `["prod"]` - Somente ambientes de produção
-- **allowedClientIDs**: IDs do cliente com permissão para acessar sua instância do AEM
-   - **author**: IDs de Cliente para a camada de autor
-   - **publicar**: IDs de cliente para camada de publicação
-   - **visualização**: IDs de cliente para camada de visualização
+* **kind**: sempre definido como `"API"` (identifica como uma configuração de API)
+* **versão**: versão da API, normalmente `"1"` ou `"1.0"`
+* **envTypes**: matriz de tipos de ambiente à qual esta configuração se aplica
+   * `["dev"]` - Somente ambientes de desenvolvimento
+   * `["stage"]` - Somente ambientes de preparo
+   * `["prod"]` - Somente ambientes de produção
+* **allowedClientIDs**: IDs do cliente com permissão para acessar sua instância do AEM
+   * **author**: IDs de Cliente para a camada de autor
+   * **publicar**: IDs de cliente para camada de publicação
+   * **visualização**: IDs de cliente para camada de visualização
 
 ![Adicionando arquivo de configuração](/help/forms/assets/create-api-yaml-file.png)
 
@@ -383,9 +385,9 @@ Veja a seguir uma explicação sobre os parâmetros de configuração:
 
 #### 5.2 Selecionar tipo de pipeline
 
-- **Para Ambientes De Desenvolvimento**: Selecione **&quot;Adicionar Pipeline De Não Produção&quot;**. Os pipelines de não produção são para ambientes de desenvolvimento e preparo
+* **Para Ambientes De Desenvolvimento**: Selecione **&quot;Adicionar Pipeline De Não Produção&quot;**. Os pipelines de não produção são para ambientes de desenvolvimento e preparo
 
-- **Para Ambientes De Produção**: Selecione **&quot;Adicionar Pipeline De Produção&quot;**. Pipelines de produção exigem aprovações adicionais
+* **Para Ambientes De Produção**: Selecione **&quot;Adicionar Pipeline De Produção&quot;**. Pipelines de produção exigem aprovações adicionais
 
 >[!NOTE]
 >
@@ -397,22 +399,22 @@ Na guia **Configuração**:
 
 a. **Tipo de pipeline**
 
-- Selecionar **&quot;Pipeline de Implantação&quot;**
+* Selecionar **&quot;Pipeline de Implantação&quot;**
 
 b. **Nome do pipeline**
 
-- Forneça um nome descritivo. Por exemplo, nomeie o pipeline como `api-config-pipieline`
+* Forneça um nome descritivo. Por exemplo, nomeie o pipeline como `api-config-pipieline`
 
 c. **Acionador da implantação**
 
-- **Manual**: implantar somente quando acionado manualmente (recomendado para configuração inicial)
-- **Sobre Alterações do Git**: implantação automática quando as alterações são enviadas para a ramificação
+* **Manual**: implantar somente quando acionado manualmente (recomendado para configuração inicial)
+* **Sobre Alterações do Git**: implantação automática quando as alterações são enviadas para a ramificação
 
 d. **Comportamento de Falhas de Métricas Importantes**
 
-- **Perguntar sempre**: solicitar ação em caso de falhas (padrão)
-- **Falha imediata**: falha automática no pipeline em falhas de métrica
-- **Continuar imediatamente**: continuar apesar das falhas
+* **Perguntar sempre**: solicitar ação em caso de falhas (padrão)
+* **Falha imediata**: falha automática no pipeline em falhas de métrica
+* **Continuar imediatamente**: continuar apesar das falhas
 
 e. Clique em **&quot;Continuar&quot;** para prosseguir para a guia **Código Source**
 
@@ -424,21 +426,21 @@ Na guia **Source Code**:
 
 a. **Tipo de implantação**
 
-- Selecione **&quot;Implantação direcionada&quot;**
+* Selecione **&quot;Implantação direcionada&quot;**
 
 b. **Opções de implantação**
 
-- Selecione **&quot;Config&quot;** (implantar somente arquivos de configuração). Informa ao Cloud Manager que é uma implantação de configuração.
+* Selecione **&quot;Config&quot;** (implantar somente arquivos de configuração). Informa ao Cloud Manager que é uma implantação de configuração.
 
 c. **Selecionar Ambiente de Implantação Elegível**
 
-- Escolha o ambiente em que deseja implantar a configuração. Nesse caso, é um ambiente `dev`.
+* Escolha o ambiente em que deseja implantar a configuração. Nesse caso, é um ambiente `dev`.
 
 d. **Definir Detalhes do Código Source**
 
-- **Repositório**: selecione o repositório que contém seu arquivo `api.yaml`. Por exemplo, selecione o repositório `AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY`.
-- **Ramificação Git**: selecione sua ramificação. Por exemplo, nesse caso nosso código é implantado na ramificação `main`.
-- **Localização do Código**: Insira o caminho para o diretório `config`. Como o `api.yaml` está na pasta `config` da raiz, digite `/config`
+* **Repositório**: selecione o repositório que contém seu arquivo `api.yaml`. Por exemplo, selecione o repositório `AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY`.
+* **Ramificação Git**: selecione sua ramificação. Por exemplo, nesse caso nosso código é implantado na ramificação `main`.
+* **Localização do Código**: Insira o caminho para o diretório `config`. Como o `api.yaml` está na pasta `config` da raiz, digite `/config`
 
 e. Clique em **&quot;Salvar&quot;** para criar o pipeline
 
@@ -462,9 +464,9 @@ Agora que o pipeline foi criado, implante sua configuração `api.yaml`
 
 #### 6.3 Verificar implantação bem-sucedida
 
-- Aguarde a conclusão do pipeline.
-   - Se for bem-sucedido, o status mudará para &quot;Sucesso&quot; (marca de seleção verde ✓).
-   - Se falhar, o status mudará para &quot;Fail&quot; (vermelho ✗). Clique em **Baixar logs** para exibir os detalhes do erro.
+* Aguarde a conclusão do pipeline.
+   * Se for bem-sucedido, o status mudará para &quot;Sucesso&quot; (marca de seleção verde ✓).
+   * Se falhar, o status mudará para &quot;Fail&quot; (vermelho ✗). Clique em **Baixar logs** para exibir os detalhes do erro.
 
      ![Êxito do pipeline](/help/forms/assets/pipeline-suceess.png)
 
@@ -500,10 +502,10 @@ A interface do Swagger fornece uma interface interativa para APIs de teste sem g
    ![Enviar API](/help/forms/assets/api-send.png)
 
 6. Verifique a resposta na guia **Resposta**:
-   - Se o código de resposta for `200`, significa que o PDF foi criado com êxito.
-   - Se o código de resposta for `400`, significa que os parâmetros da solicitação são inválidos ou malformados.
-   - Se o código de resposta for `500`, significa que há um erro interno do servidor.
-   - Se o código de resposta for `403`, significa que há um erro de autorização.
+   * Se o código de resposta for `200`, significa que o PDF foi criado com êxito.
+   * Se o código de resposta for `400`, significa que os parâmetros da solicitação são inválidos ou malformados.
+   * Se o código de resposta for `500`, significa que há um erro interno do servidor.
+   * Se o código de resposta for `403`, significa que há um erro de autorização.
 
    Nesse caso, o código de resposta é `200`, isso significa que o PDF foi gerado com êxito:
 
@@ -523,11 +525,11 @@ Desenvolva um aplicativo Node.js para gerar um formulário do PDF preenchível a
 
 **Pré-requisitos**
 
-- Node.js instalado em seu sistema
-- Instância ativa do AEM as a Cloud Service
-- Token de portador para autenticação de API do Adobe Developer Console
-- Arquivo XDP de Exemplo: [ClosingForm.xdp](/help/forms/assets/ClosingForm.xdp)
-- Arquivo XML de Exemplo: [ClosingForm.xml](/help/forms/assets/ClosingForm.xml)
+* Node.js instalado em seu sistema
+* Instância ativa do AEM as a Cloud Service
+* Token de portador para autenticação de API do Adobe Developer Console
+* Arquivo XDP de Exemplo: [ClosingForm.xdp](/help/forms/assets/ClosingForm.xdp)
+* Arquivo XML de Exemplo: [ClosingForm.xml](/help/forms/assets/ClosingForm.xml)
 
 Para desenvolver o aplicativo Node.js, siga o passo a passo do desenvolvimento:
 
@@ -721,57 +723,57 @@ Você pode abrir o [PDF](/help/forms/assets/create-pdf.png) gerado para exibi-lo
 
 **Sintomas:**
 
-- As solicitações de API retornam `403 Forbidden`
-- Mensagem de erro: *Acesso não autorizado*
+* As solicitações de API retornam `403 Forbidden`
+* Mensagem de erro: *Acesso não autorizado*
 
 **Causa possível:**
 
-- ID do cliente não registrada na configuração `api.yaml` da instância do AEM
+* ID do cliente não registrada na configuração `api.yaml` da instância do AEM
 
 #### Problema 2: Erro 401 não autorizado
 
 **Sintomas:**
 
-- As solicitações de API retornam `401 Unauthorized`
-- Mensagem de erro: *Token inválido ou expirado*
+* As solicitações de API retornam `401 Unauthorized`
+* Mensagem de erro: *Token inválido ou expirado*
 
 **Causas possíveis:**
 
-- Token de acesso expirado (válido por apenas 24 horas)
-- ID do cliente e segredo do cliente incorretos ou incompatíveis
+* Token de acesso expirado (válido por apenas 24 horas)
+* ID do cliente e segredo do cliente incorretos ou incompatíveis
 
 #### Problema 3: Erro 404 não encontrado
 
 **Sintomas:**
 
-- As solicitações de API retornam `404 Not Found`
-- Mensagem de erro: *Recurso não encontrado* ou *Ponto de extremidade de API não encontrado*
+* As solicitações de API retornam `404 Not Found`
+* Mensagem de erro: *Recurso não encontrado* ou *Ponto de extremidade de API não encontrado*
 
 **Causa possível:**
 
-- Parâmetro de bucket incorreto (não corresponde ao identificador de instância do AEM)
+* Parâmetro de bucket incorreto (não corresponde ao identificador de instância do AEM)
 
 #### Problema 4: Falha na implantação do pipeline
 
 **Sintomas:**
 
-- Falha na execução do Pipeline de configuração
-- Os logs de implantação mostram erros relacionados a `api.yaml`
+* Falha na execução do Pipeline de configuração
+* Os logs de implantação mostram erros relacionados a `api.yaml`
 
 **Causas possíveis:**
 
-- Sintaxe YAML inválida (problemas de recuo, aspas ou formato de matriz)
-- `api.yaml` foi colocado no diretório incorreto
-- ID do cliente malformada ou incorreta na configuração
-- Segredo do cliente inválido
+* Sintaxe YAML inválida (problemas de recuo, aspas ou formato de matriz)
+* `api.yaml` foi colocado no diretório incorreto
+* ID do cliente malformada ou incorreta na configuração
+* Segredo do cliente inválido
 
 #### Problema 5: Falha na execução das APIs de comunicação do Forms
 
 **Sintomas:**
 
-- As solicitações de API retornam erros indicando recursos incompatíveis ou indisponíveis.
-- A geração do PDF usando XDP e XML não funciona.
-- A implantação do pipeline é concluída com êxito, mas as chamadas de API de tempo de execução falham.
+* As solicitações de API retornam erros indicando recursos incompatíveis ou indisponíveis.
+* A geração do PDF usando XDP e XML não funciona.
+* A implantação do pipeline é concluída com êxito, mas as chamadas de API de tempo de execução falham.
 
 **Causa possível:**
 
@@ -789,4 +791,4 @@ Para atualizar a instância do AEM para localizar Detalhes do ambiente:
 
 ## Artigos relacionados
 
-- Para saber como configurar o ambiente para Batch (APIs assíncronas), consulte [Processamento em Lote das Comunicações do AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
+* Para saber como configurar o ambiente para Batch (APIs assíncronas), consulte [Processamento em Lote das Comunicações do AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
