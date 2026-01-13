@@ -3,7 +3,7 @@ title: Visão geral do agente de desenvolvimento
 description: Saiba como o Agente de desenvolvimento no AEM analisa pipelines com falha no Cloud Manager e cria logs para sugerir correções de código e acelerar a depuração.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3e565ba0cd53d9064a9aed20f4d6663781759b63
+source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
@@ -17,7 +17,7 @@ O Agente de desenvolvimento ajuda os desenvolvedores e administradores do AEM a 
 
 Atualmente, o agente pode recuperar os status do pipeline e ajudar você a solucionar problemas de etapas de criação com falha, sugerindo correções e economizando tempo ao depurar implantações do AEM as a Cloud Service em ambientes de desenvolvimento, preparo e produção. Ele examina logs de compilação e código relacionado para recomendar uma correção que pode ser aplicada manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478012?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -77,8 +77,6 @@ Você acessa o Agente de desenvolvimento por meio do Assistente de IA encontrado
 
 O trabalho de solução de problemas do pipeline do Agente de desenvolvimento exige a função Cloud Manager - Desenvolvedor ou a função Cloud Manager - Gerente de programas.
 
-
-
 ## Exemplos de prompts {#sample-prompts}
 
 | Prompt | Resultado |
@@ -93,4 +91,3 @@ A solução de problemas do pipeline opera na etapa de build do pipeline de pilh
 Consulte [Logs de Acesso e Download](/help/implementing/cloud-manager/manage-logs.md).
 
 A solução de problemas de pipeline não é compatível com programas que usam BYOGIT (Bring Your Own Git, Traga seu próprio Git).
-
