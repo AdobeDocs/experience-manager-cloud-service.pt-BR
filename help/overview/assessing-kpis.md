@@ -1,10 +1,10 @@
 ---
-title: Acesso a KPIs
-description: Saiba como acessar seus KPIs e definir o processo de relatórios
+title: KPIs de avaliação
+description: Saiba como avaliar seus KPIs e definir o processo de relatórios
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 2a3c93d1a2e214a584fca5ede9a9189143d04889
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 94%
@@ -29,7 +29,7 @@ Em um estudo de 2018, a IDC analisou o valor comercial que grandes empresas das 
 
 Para obter os mesmos benefícios, sua organização deve ter metas claras para a implementação do Experience Manager. E você precisa ter KPIs que ajudem todos a se concentrarem nessas metas.
 
-## Acesso a KPIs
+## KPIs de avaliação
 
 Ao avaliar seus KPIs, verifique se:
 
