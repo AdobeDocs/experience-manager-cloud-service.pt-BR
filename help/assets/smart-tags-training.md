@@ -1,19 +1,19 @@
 ---
-title: 'Adicionar marcas automáticas a ativos com o serviço inteligente  [!DNL Adobe Sensei] '
-description: Adicione tags a ativos com um serviço artificialmente inteligente que aplica tags comerciais contextuais e descritivas.
+title: 'Adicionar marcas automáticas a ativos com o serviço inteligente  [!DNL Adobe AI] '
+description: Adicione tags a ativos com um serviço de inteligência artificial que aplica tags comerciais contextuais e descritivas.
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: a579e2e25ecff93f6f1487ec0bcd317df09751cf
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1510'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
 # Treinamento de tags inteligentes
 
-O treinamento de tags inteligentes permite treinar suas tags para especificar os detalhes se as tags relevantes não estiverem lá. Ele usa uma estrutura artificialmente inteligente do [Adobe Sensei](https://business.adobe.com/br/why-adobe/experience-cloud-artificial-intelligence.html) para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. O [!DNL Experience Manager Assets] aplica tags inteligentes automaticamente a ativos carregados, por padrão.
+O treinamento de tags inteligentes permite treinar suas tags para especificar os detalhes se as tags relevantes não estiverem lá. Ele usa uma estrutura artificialmente inteligente da [IA do Adobe](https://business.adobe.com/ai/adobe-genai.html) para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. O [!DNL Experience Manager Assets] aplica tags inteligentes automaticamente a ativos carregados, por padrão.
 
 ## Determinar o requisito do treinamento de tags inteligentes {#smart-tag-training-requirement}
 
@@ -118,7 +118,7 @@ Verifique se as imagens no conjunto de treinamento estão em conformidade com as
 >[!NOTE]
 >
 >É possível usar as mesmas imagens para treinar modelos de tags diferentes. No entanto, não associe uma imagem a mais de uma tag em um modelo de tag. É possível marcar a mesma imagem com tags diferentes pertencentes a modelos de tags diferentes.
->&#x200B;>Não é possível desfazer o treinamento. As diretrizes acima devem ajudá-lo a escolher boas imagens para treinar.
+>Não é possível desfazer o treinamento. As diretrizes acima devem ajudá-lo a escolher boas imagens para treinar.
 
 ## Treine o modelo para suas tags personalizadas {#train-model}
 
@@ -161,15 +161,15 @@ Para verificar se o serviço de Tags inteligentes é treinado em suas tags no co
 >[!NOTE]
 >
 >E se eu desejar transferir o treinamento de Tags inteligentes de uma instância para outra por meio de uma exportação?
->&#x200B;>Não é necessário exportar o treinamento de Tags inteligentes se o ambiente pertencer à mesma Organização IMS. Ele é compartilhado automaticamente. Se o ambiente estiver entre organizações IMS, não há como compartilhar ou exportar o treinamento de Tags inteligentes.
+>Não é necessário exportar o treinamento de Tags inteligentes se o ambiente pertencer à mesma Organização IMS. Ele é compartilhado automaticamente. Se o ambiente estiver entre organizações IMS, não há como compartilhar ou exportar o treinamento de Tags inteligentes.
 
 ## Limitações e práticas recomendadas relacionadas às tags inteligentes {#limitations-smart-tags-training}
 
 * Para treinar o modelo, use as imagens mais apropriadas. O treinamento não pode ser revertido ou o modelo de treinamento não pode ser removido. A precisão da marcação depende do treinamento atual, portanto, faça isso com cuidado.
-* Não é possível treinar o serviço que aplica Tags inteligentes a vídeos usando vídeos específicos. Funciona com as configurações padrão [!DNL Adobe Sensei].
+* Não é possível treinar o serviço que aplica Tags inteligentes a vídeos usando vídeos específicos. Funciona com as configurações padrão [!DNL Adobe AI].
 
 
 >[!NOTE]
 >
 >A capacidade das Tags inteligentes de treinar em suas tags e aplicá-las em outras imagens depende da qualidade de imagens usadas para treinamento.
->&#x200B;>Para obter melhores resultados, a Adobe recomenda usar imagens visualmente semelhantes para treinar o serviço para cada tag.
+>Para obter melhores resultados, a Adobe recomenda usar imagens visualmente semelhantes para treinar o serviço para cada tag.

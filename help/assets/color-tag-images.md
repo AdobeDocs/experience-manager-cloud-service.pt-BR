@@ -4,9 +4,9 @@ description: O Adobe Experience Manager Assets permite distinguir cores em uma i
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1243'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 ![Banner de Marcação de Cores](assets/banner-image.png)
 
-O Adobe Experience Manager (AEM) Assets usa os recursos de IA do Adobe Sensei para distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação. Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem.
+O Adobe Experience Manager (AEM) Assets usa os recursos de IA do Adobe para distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação. Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem.
 
 Você pode configurar o número de cores, dentro de um intervalo de um a 40, que são marcados em uma imagem para que você possa pesquisar imagens com base nessas cores posteriormente. O Experience Manager Assets aplica as tags com base na cobertura de cor de uma imagem. Também é possível configurar o formato de exibição de uma tag de cor.
 

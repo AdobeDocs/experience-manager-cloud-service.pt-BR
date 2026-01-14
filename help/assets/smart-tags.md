@@ -1,10 +1,10 @@
 ---
-title: 'Adicionar marcas automáticas a ativos com o serviço inteligente  [!DNL Adobe Sensei] '
+title: 'Adicionar marcas automáticas a ativos com o serviço inteligente  [!DNL Adobe AI] '
 description: Adicione tags a ativos com um serviço de inteligência artificial que aplica tags comerciais contextuais e descritivas.
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 1%
@@ -19,7 +19,7 @@ As Tags inteligentes são palavras-chave que não só aparecem no texto, mas tam
 
 Por exemplo, palavras organizadas alfabeticamente em um dicionário são mais fáceis de encontrar do que as dispersas aleatoriamente. A marcação serve um propósito semelhante. Ele organiza os ativos de acordo com a taxonomia comercial, garantindo que os mais relevantes apareçam nos resultados da pesquisa. Por exemplo, um fabricante de automóveis pode marcar imagens de carros com nomes de modelos, de modo que apenas imagens relevantes sejam exibidas ao projetar uma campanha promocional. Independentemente de marcar &quot;corredores&quot; ou &quot;tênis de corrida&quot;, os usuários não precisam se preocupar com erros de digitação, variações de ortografia ou termos de pesquisa alternativos - as Tags inteligentes reconhecem tudo isso.
 
-Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente do [Adobe Sensei](https://business.adobe.com/br/products/sensei/adobe-sensei.html) para aplicar automaticamente as Tags inteligentes aos ativos carregados, por padrão, juntamente com o texto alinhado à taxonomia comercial.
+Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente da [IA do Adobe](https://business.adobe.com/ai/adobe-genai.html) para aplicar automaticamente as Tags inteligentes aos ativos carregados, por padrão, juntamente com o texto alinhado à taxonomia comercial.
 
 ## Pré-requisitos e configuração {#smart-tags-prereqs-config}
 
@@ -27,15 +27,15 @@ As Tags Inteligentes são automaticamente provisionadas para [!DNL Adobe Experie
 
 ## Fluxo de trabalho de Tags inteligentes {#smart-tags-workflow}
 
-A marcação inteligente habilitada do [!DNL Adobe Sensei] usa modelos de inteligência artificial para analisar conteúdo e adicionar marcas aos ativos. Dessa forma, reduz o tempo para que os usuários do DAM forneçam experiências avançadas aos clientes. As Tags inteligentes são exibidas em ordem decrescente de sua [pontuação de confiança](#confidence-score) nas propriedades do ativo.
+A marcação inteligente habilitada do [!DNL Adobe AI] usa modelos de inteligência artificial para analisar conteúdo e adicionar marcas aos ativos. Dessa forma, reduz o tempo para que os usuários do DAM forneçam experiências avançadas aos clientes. As Tags inteligentes são exibidas em ordem decrescente de sua [pontuação de confiança](#confidence-score) nas propriedades do ativo.
 
 * **Ativos baseados em imagem**
-Para imagens, as Tags inteligentes se baseiam em algum aspecto visual. Imagens em muitos formatos são marcadas usando serviços de conteúdo inteligente. As Marcas Inteligentes são aplicadas aos [tipos de arquivos &#x200B;](#supported-file-formats) compatíveis que geram representações nos formatos JPG e PNG.
+Para imagens, as Tags inteligentes se baseiam em algum aspecto visual. Imagens em muitos formatos são marcadas usando serviços de conteúdo inteligente. As Marcas Inteligentes são aplicadas aos [tipos de arquivos ](#supported-file-formats) compatíveis que geram representações nos formatos JPG e PNG.
 
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
 * **Ativos baseados em vídeo**
-Para ativos baseados em vídeo, a marcação é habilitada por padrão no [!DNL Adobe Experience Manager] como um [!DNL Cloud Service]. Da mesma forma que tags baseadas em imagem e texto, os vídeos também são marcados automaticamente ao carregar novos vídeos ou reprocessar os existentes. O [!DNL Adobe Sensei] gera dois conjuntos de marcas para um vídeo: um conjunto corresponde a objetos, cenas e atributos nesse vídeo, enquanto o outro conjunto está relacionado a ações como beber, correr e correr. Marque também [recusar a marcação inteligente de vídeo](#opt-out-video-smart-tagging).
+Para ativos baseados em vídeo, a marcação é habilitada por padrão no [!DNL Adobe Experience Manager] como um [!DNL Cloud Service]. Da mesma forma que tags baseadas em imagem e texto, os vídeos também são marcados automaticamente ao carregar novos vídeos ou reprocessar os existentes. O [!DNL Adobe AI] gera dois conjuntos de marcas para um vídeo: um conjunto corresponde a objetos, cenas e atributos nesse vídeo, enquanto o outro conjunto está relacionado a ações como beber, correr e correr. Marque também [recusar a marcação inteligente de vídeo](#opt-out-video-smart-tagging).
 
 * **Ativos baseados em texto**
 Para os ativos com suporte, o [!DNL Experience Manager] já extrai o texto, que é indexado e usado para procurar os ativos. No entanto, as Tags inteligentes com base em palavras-chave no texto fornecem uma faceta de pesquisa dedicada, estruturada e de maior prioridade. O último ajuda a melhorar a descoberta de ativos em comparação a um índice de pesquisa.
@@ -74,7 +74,7 @@ As Tags inteligentes são implementadas no AEM Assets usando o seguinte fluxo de
 
 ## Preparação de um ativo para a marcação inteligente pronta para uso
 
-Ao [carregar ativos](add-assets.md#upload-assets) para [!DNL Adobe Experience Manager] como [!DNL Cloud Service], os ativos carregados são processados. Após concluir o processamento, consulte a guia [!UICONTROL Básico] da página [!UICONTROL Propriedades] do ativo. As Tags inteligentes são adicionadas automaticamente aos ativos em [!UICONTROL Tags inteligentes]. Os microsserviços de ativos usam [!DNL Adobe Sensei] para criar essas Tags inteligentes.
+Ao [carregar ativos](add-assets.md#upload-assets) para [!DNL Adobe Experience Manager] como [!DNL Cloud Service], os ativos carregados são processados. Após concluir o processamento, consulte a guia [!UICONTROL Básico] da página [!UICONTROL Propriedades] do ativo. As Tags inteligentes são adicionadas automaticamente aos ativos em [!UICONTROL Tags inteligentes]. Os microsserviços de ativos usam [!DNL Adobe AI] para criar essas Tags inteligentes.
 
 ![As Tags inteligentes são adicionadas aos vídeos e visualizadas na guia Básico das Propriedades do ativo](assets/smart-tags-added-to-videos.png)
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## Assets não marcado no DAM {#smart-tag-existing-assets}
 
-Os ativos existentes ou mais antigos no DAM não são marcados automaticamente com tags inteligentes. Você precisa [Reprocessar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=pt-BR#adjusting-load) o Assets manualmente para gerar Tags inteligentes para eles. Depois que o processo for concluído, navegue até a página [!UICONTROL Propriedades] de qualquer ativo contido na pasta. As marcas adicionadas automaticamente são vistas na seção [!UICONTROL Tags inteligentes] da guia [!UICONTROL Básico]. Essas Tags Inteligentes aplicadas são classificadas em ordem decrescente de [pontuação de confiança](#confidence-score).
+Os ativos existentes ou mais antigos no DAM não são marcados automaticamente com tags inteligentes. Você precisa [Reprocessar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) o Assets manualmente para gerar Tags inteligentes para eles. Depois que o processo for concluído, navegue até a página [!UICONTROL Propriedades] de qualquer ativo contido na pasta. As marcas adicionadas automaticamente são vistas na seção [!UICONTROL Tags inteligentes] da guia [!UICONTROL Básico]. Essas Tags Inteligentes aplicadas são classificadas em ordem decrescente de [pontuação de confiança](#confidence-score).
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -113,7 +113,7 @@ The default threshold for action and object tags in [!DNL Adobe Experience Manag
 
 To add the confidence score OSGI configuration to the project deployed to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] through [!DNL Cloud Manager]:
 
-In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` with the following contents:
+In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.aisdk.AISdkImpl.cfg.json` with the following contents:
 
 ```json
 {
@@ -224,7 +224,7 @@ Esses modelos nem sempre são perfeitos para identificar tags. A versão atual d
    * Aspectos não visuais e abstratos. Por exemplo, o ano ou a temporada de lançamento de um produto, humor ou emoção evocados por uma imagem e uma conotação subjetiva de um vídeo.
    * Diferenças visuais refinadas em produtos, como camisas com e sem coleiras ou logotipos de produtos pequenos incorporados nos produtos.
 
-* Somente os vídeos com tamanho menor que 300 MB são marcados automaticamente. O serviço [!DNL Adobe Sensei] ignora arquivos de vídeo maiores.
+* Somente os vídeos com tamanho menor que 300 MB são marcados automaticamente. O serviço [!DNL Adobe AI] ignora arquivos de vídeo maiores.
 * Para pesquisar arquivos com Tags Inteligentes (regular ou aprimorado), use a pesquisa [!DNL Assets] (pesquisa de texto completo). Não há predicado de pesquisa separado para Tags inteligentes.
 * Em comparação às tags gerais, os ativos marcados usando a taxonomia comercial são mais fáceis de identificar e recuperar por pesquisas baseadas em tags.
 
@@ -232,7 +232,7 @@ Esses modelos nem sempre são perfeitos para identificar tags. A versão atual d
 
 +++**Como as Tags inteligentes melhoram a experiência de pesquisa de um ativo?**
 
-[!DNL Adobe] A Sensei marca os ativos automaticamente depois de carregá-los. O processo automatizado é executado tão rápido no back-end que você verá tags adicionadas em seus ativos após alguns segundos após a conclusão do upload.
+A IA do [!DNL Adobe] marca os ativos automaticamente depois que você os carrega. O processo automatizado é executado tão rápido no back-end que você verá tags adicionadas em seus ativos após alguns segundos após a conclusão do upload.
 
 +++
 

@@ -1,17 +1,17 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0.
-description: as a Cloud Service Notas de versão do [!DNL Adobe Experience Manager] para 2020.7.0.
+description: Notas de versão do as a Cloud Service [!DNL Adobe Experience Manager] para 2020.7.0.
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 74%
 
 ---
 
-# Notas de versão para [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
+# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.7.0.
 
@@ -27,28 +27,28 @@ Os conectores do [!DNL Experience Manager] as a Cloud Service para o [!DNL Adobe
 
 * Uma nova implementação da interface do usuário substitui a implementação com base na interface clássica.
 
-* Os diálogos da interface do usuário foram simplificados, deixando a criação da estrutura para mapeamento variável e outras configurações para o [!DNL Adobe Launch]. Consulte [Integração do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html?lang=pt-BR) e [Integração do Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html?lang=pt-BR).
+* Os diálogos da interface do usuário foram simplificados, deixando a criação da estrutura para mapeamento variável e outras configurações para o [!DNL Adobe Launch]. Consulte [Integração do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) e [Integração do Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html).
 
 * As configurações agora são armazenadas em `/conf` e não em `/etc/cloudsettings` no repositório do Experience Manager.
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## as a Cloud Service [!DNL Adobe Experience Manager Assets] {#assets}
 
 ### Novidades do [!DNL Assets] {#what-is-new-assets}
 
-* O [!DNL Asset Compute Service] é um serviço dimensionável e extensível para processar ativos. Os administradores podem configurar o [!DNL Experience Manager] para chamar aplicativos personalizados criados com o [!DNL Asset Compute Service]. Os desenvolvedores podem usar o serviço para criar aplicativos personalizados especializados que atendam a casos de uso complexos. Este serviço da Web pode gerar miniaturas para diferentes tipos de arquivos, renderizações de imagem de alta qualidade de formatos de arquivo de Adobe, codificar vídeos (no futuro), extrair metadados, extrair texto completo como precursor para indexação e executar um ativo por meio de todos os serviços do [!DNL Sensei] disponíveis. consulte [usar microsserviços de ativos e perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).
+* O [!DNL Asset Compute Service] é um serviço dimensionável e extensível para processar ativos. Os administradores podem configurar o [!DNL Experience Manager] para chamar aplicativos personalizados criados com o [!DNL Asset Compute Service]. Os desenvolvedores podem usar o serviço para criar aplicativos personalizados especializados que atendam a casos de uso complexos. Este serviço da Web pode gerar miniaturas para diferentes tipos de arquivos, renderizações de imagem de alta qualidade de formatos de arquivo do Adobe, codificar vídeos (no futuro), extrair metadados, extrair texto completo como precursor para indexação e executar um ativo por meio de todos os serviços do [!DNL AI] disponíveis. consulte [usar microsserviços de ativos e perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).
 
 * A configuração inicial do [!DNL Dynamic Media] no [!DNL Experience Manager] as a Cloud Service foi aprimorada para ficar mais robusta. Agora, ela informa o progresso dos processos aos administradores.
 
 * A publicação de ativos no [!DNL Dynamic Media] está mais simples e robusta e agora faz parte do pipeline de processamento de ativos global usando microsserviços de ativos e melhorando o back-end de publicação em lote.
 
-* As etapas de fluxo de trabalho que não são compatíveis com uma implantação do Cloud Service agora são marcadas com um aviso no editor de [!UICONTROL modelo de fluxo de trabalho]. Além disso, ao executar os workflows existentes no ambiente do Cloud Service, as etapas do workflow incompatíveis são ignoradas.
+* As etapas de fluxo de trabalho que não são compatíveis com uma implantação do Cloud Service agora são marcadas com um aviso no editor de [!UICONTROL modelo de fluxo de trabalho]. Além disso, ao executar os fluxos de trabalho existentes no ambiente do Cloud Service, as etapas do fluxo de trabalho incompatíveis são ignoradas.
 
 * Os modelos de fluxo de trabalho criados pelos clientes implantados em `/conf/global` no projeto Git associado ao ambiente em [!DNL Cloud Manager] são implantados automaticamente em `/var` e, portanto, disponibilizados em [!DNL Experience Manager]. Os modelos de fluxo de trabalho do produto em `/libs` que foram alterados pelo cliente não são implantados automaticamente em `/var`.
 
 ### Erros corrigidos {#assets-bugs-fixed}
 
 * O assistente Mover ativo não carrega como esperado os ativos que estão incluídos em Coleções. (CQ-4296756)
-* Os valores de `dam:size` e `dam:sha1` são excluídos do writeback XMP. (CQ-4237355)
+* Os valores de `dam:size` e `dam:sha1` são excluídos do write-back do XMP. (CQ-4237355)
 * Ao cancelar a publicação de ativos em massa, [!DNL Brand Portal] gera um erro sugerindo que o URI da solicitação é muito longo. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
@@ -57,18 +57,18 @@ Os conectores do [!DNL Experience Manager] as a Cloud Service para o [!DNL Adobe
 
 O AEM Commerce agora está disponível no Cloud Service.
 
-Consulte [Introdução ao AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=pt-BR) para obter mais detalhes.
+Consulte [Introdução ao AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html) para obter mais detalhes.
 
 ## Componentes principais {#core-components}
 
 ### Novidades {#what-is-new-core-components}
 
-A versão 2.11.0 dos [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) agora está disponível como parte do AEM Sites, incluindo:
+A versão 2.11.0 dos [Componentes principais do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) agora está disponível como parte do AEM Sites, incluindo:
 
 * Introdução de um novo [Visualizador de PDF](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
-* O suporte para Accelerated Mobile Pages (AMP) dos Componentes principais já está disponível. As páginas AMP ajudam a produzir experiências mais rápidas para o cliente, fazendo a transição da página de maneira instantânea ao entrar no site a partir de um resultado de pesquisa do Google para dispositivos móveis, o que melhora a participação do usuário e o SEO.
-Consulte [Suporte ao AMP para os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=pt-BR) para obter mais detalhes.
+* O suporte para Accelerated Mobile Pages (AMP) dos Componentes principais já está disponível. As páginas AMP ajudam a produzir experiências mais rápidas para o cliente, fazendo a transição da página de maneira instantânea ao entrar no site a partir de um resultado de pesquisa do Google para dispositivos móveis, o que melhora o engajamento do usuário e o SEO.
+Consulte [Suporte ao AMP para os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) para obter mais detalhes.
 
 * Compatibilidade com a versão 1.0.2 da [Camada de dados do cliente da Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR).
 
@@ -139,7 +139,7 @@ Siga esta seção para saber mais sobre as novidades e as atualizações do Clou
 
 * Não foi possível executar a versão anterior do CRA no Adobe Experience Manager (AEM) 6.1. Foi adicionado suporte direto para permitir usuários no grupo de administradores.
 
-  Consulte [Instalando o CRA no AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=pt-BR#installing-on-aem61) para obter mais detalhes.
+  Consulte [Instalando o CRA no AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) para obter mais detalhes.
 
 * O carimbo de data e hora de expiração exibido no relatório de resumo estava incorreto.
 

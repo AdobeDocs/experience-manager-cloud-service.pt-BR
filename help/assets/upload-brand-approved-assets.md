@@ -3,7 +3,7 @@ title: Carregar os ativos aprovados pela sua marca para  [!DNL Content Hub]
 description: Saiba como fazer upload dos ativos aprovados pela sua marca para o Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: dc0f6b5faf75fb7303611e3f25febe89b43a834d
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 7%
@@ -27,7 +27,7 @@ Para aprimorar ainda mais a pesquisa de ativos, o Content Hub permite:
 
 * Gere automaticamente mais propriedades para cada ativo após o upload bem-sucedido, como tamanho do arquivo, formato, resolução e algumas outras propriedades.
 
-* Use a inteligência artificial fornecida pelo [Adobe Sensei](https://www.adobe.com/br/sensei.html) para aplicar automaticamente marcas relevantes a todos os ativos carregados. Essas tags, devidamente chamadas de Tags inteligentes, aumentam a velocidade do conteúdo de seus projetos, ajudando você a encontrar ativos relevantes rapidamente.
+* Use a inteligência artificial fornecida pela [IA do Adobe](https://business.adobe.com/ai/adobe-genai.html) para aplicar automaticamente tags relevantes a todos os ativos carregados. Essas tags, devidamente chamadas de Tags inteligentes, aumentam a velocidade do conteúdo de seus projetos, ajudando você a encontrar ativos relevantes rapidamente.
 
 Carregue apenas os ativos aprovados pela sua marca [para a Content Hub](/help/assets/approve-assets.md).
 

@@ -4,10 +4,10 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 95%
+source-wordcount: '1059'
+ht-degree: 93%
 
 ---
 
@@ -36,13 +36,13 @@ Assista ao vídeo [Visão geral da versão de dezembro de 2021](https://video.tv
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
-* O Corte inteligente e a Amostra de imagens do Dynamic Media agora são potencializados pelos serviços mais recentes do Sensei, que gera cortes e amostras aprimoradas. Além disso, um aprimoramento foi iniciado para gerar conteúdo de corte diferente, para a mesma proporção, mas em diferentes resoluções. Além disso, as edições manuais são preservadas no reprocessamento, se não houver alteração na largura e na altura do Perfil de imagem.
+* O Corte inteligente e a Amostra de imagens do Dynamic Media agora são potencializados pelos serviços mais recentes de IA da Adobe, que geram melhores cortes e amostras. Além disso, um aprimoramento foi iniciado para gerar conteúdo de corte diferente, para a mesma proporção, mas em diferentes resoluções. Além disso, as edições manuais são preservadas no reprocessamento, se não houver alteração na largura e na altura do Perfil de imagem.
 
 ### Novos recursos no canal de pré-lançamento do [!DNL Assets] {#assets-prerelease-features}
 
 * [!DNL Dynamic Media] - Agora você pode usar a interface do Dynamic Media do AEM para definir as Configurações gerais e a Configuração de publicação, em vez de precisar passar pelo aplicativo de desktop do Dynamic Media Classic.
 
-* O [!DNL Dynamic Media] agora é compatível com a assimilação, visualização, reprodução e publicação de vídeos MXF. As funcionalidades de Anotação e vídeo que pode ser comprado ainda não são suportados para vídeos MXF.
+* O [!DNL Dynamic Media] agora é compatível com a ingestão, visualização, reprodução e publicação de vídeos MXF. As funcionalidades de Anotação e vídeo que pode ser comprado ainda não são suportados para vídeos MXF.
 
 * Após configurar uma conexão entre implantações remotas do DAM e do Sites, os ativos no DAM remoto são disponibilizados na implantação do Sites. Agora é possível executar as operações [atualizar, excluir, renomear e mover](/help/assets/use-assets-across-connected-assets-instances.md) nos ativos ou pastas do DAM remoto. As atualizações, com algum atraso, estão disponíveis automaticamente na implantação do Sites.
 
@@ -73,7 +73,7 @@ Assista ao vídeo [Visão geral da versão de dezembro de 2021](https://video.tv
 
 * Os autores podem criar Commerce Product Recommendations ad-hoc usando tipos de recomendações adicionais
 
-* Suporte a cartões-presente na AEM Storefront
+* Suporte a cartões-presente na vitrine do AEM
 
 ## Cloud Manager {#cloud-manager}
 
@@ -89,7 +89,7 @@ A próxima versão está planejada para 9 de dezembro de 2021.
 * Os usuários agora podem aproveitar os novos pipelines de front-end para implantar exclusivamente o código de front-end de forma acelerada. Consulte [Pipelines de front-end do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para saber mais.
 
   >[!IMPORTANT]
-  >Você deve estar usando o AEM versão `2021.10.5933.20211012T154732Z` ou superior para usar novos pipelines de front-end.
+  >Você deve estar no AEM versão `2021.10.5933.20211012T154732Z` ou superior para usar novos pipelines de Front-End.
 
 * A duração do pipeline de qualidade de código é significativamente reduzida ao executar a análise de código de uma maneira mais eficiente, sem a necessidade de criar uma imagem completa do AEM. Esta alteração será gradual durante as semanas que se seguem ao lançamento.
 
@@ -101,7 +101,7 @@ A próxima versão está planejada para 9 de dezembro de 2021.
 
 * O cabeçalho de resposta `x-request-id` agora está visível na API Playground em [www.adobe.io](https://www.adobe.io/). Esse cabeçalho é útil ao enviar problemas de atendimento ao cliente para solução de problemas.
 
-* Como usuário, vejo que o cartão Pipeline com zero pipeline me fornece a orientação apropriada.
+* Como usuário, vejo que o cartão do pipeline com zero pipelines me fornece a orientação apropriada.
 
 * Uma nova Página de atividade agora está disponível, em que atividades como pipeline e execuções de código podem ser visualizadas junto a seus detalhes associados. Com o tempo, as atividades listadas nesta página se expandirão em escopo junto com os detalhes fornecidos.
 

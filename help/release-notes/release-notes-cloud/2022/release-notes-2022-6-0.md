@@ -4,16 +4,16 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 79%
+source-wordcount: '632'
+ht-degree: 75%
 
 ---
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 {#release-notes}
 
-A seção a seguir descreve as Notas de versão do recurso para a versão 2022.6.0 do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as Notas de versão do recurso para a versão 2022.6.0 do as a Cloud Service [!DNL Experience Manager].
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Assista ao vídeo de Visão geral da versão de junho de 2022 para ver um resumo
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
-Agora, o Experience Manager Assets usa os recursos de IA do Adobe Sensei para [distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação](/help/assets/color-tag-images.md). Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem. Você pode configurar o número de cores, dentro de um intervalo de um a 40, que são marcados em uma imagem para que você possa pesquisar imagens com base nessas cores posteriormente.
+Agora, o Experience Manager Assets usa os recursos de IA do Adobe para [distinguir cores em uma imagem e aplicá-las automaticamente como marcas na assimilação](/help/assets/color-tag-images.md). Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem. Você pode configurar o número de cores, dentro de um intervalo de um a 40, que são marcados em uma imagem para que você possa pesquisar imagens com base nessas cores posteriormente.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -86,7 +86,7 @@ Agora, o Experience Manager Assets usa os recursos de IA do Adobe Sensei para [d
 
 ### Novidades {#what-is-new-demos}
 
-* Novo modelo de conteúdo e comércio do WKND, que estende o WKND por meio de uma experiência de compra E2E com catálogo de produtos, carrinho de compras, finalização e conta pessoal. Esse modelo usa a CIF e os Componentes principais da CIF. Portanto, é necessário instalar o complemento CIF. Você pode encontrar detalhes no blog da CIF [aqui](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
+* Novo modelo de conteúdo e comércio do WKND, que estende o WKND por meio de uma experiência de compra E2E com catálogo de produtos, carrinho de compras, check-out e conta pessoal. Esse modelo usa a CIF e os Componentes principais da CIF. Portanto, é necessário instalar o complemento CIF. Você pode encontrar detalhes no blog da CIF [aqui](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e).
 
 ![Loja WKND](/help/assets/CIF/wknd_shop.png)
 

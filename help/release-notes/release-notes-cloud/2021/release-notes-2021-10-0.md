@@ -4,10 +4,10 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 69%
+ht-degree: 67%
 
 ---
 
@@ -46,7 +46,7 @@ Assista ao vídeo [Visão geral da versão de outubro de 2021](https://video.tv.
 
 ### Novo recurso no canal de pré-lançamento do [!DNL Assets] {#assets-prerelease-features}
 
-* O Recorte inteligente e a Amostra de imagens do [!DNL Dynamic Media] agora são potencializados pelos serviços mais recentes da Sensei, que geram melhores recortes e amostras. Além disso, um aprimoramento foi iniciado para gerar conteúdo de corte diferente, para a mesma proporção, mas em diferentes resoluções. Além disso, as edições manuais são preservadas no reprocessamento, se não houver alteração na largura e na altura do Perfil de imagem.
+* O Recorte inteligente e a Amostra de imagens do [!DNL Dynamic Media] agora são potencializados pelos serviços de IA mais recentes, que geram melhores recortes e amostras. Além disso, um aprimoramento foi iniciado para gerar conteúdo de corte diferente, para a mesma proporção, mas em diferentes resoluções. Além disso, as edições manuais são preservadas no reprocessamento, se não houver alteração na largura e na altura do Perfil de imagem.
 
 * As Tags inteligentes são aplicadas automaticamente aos ativos usando microsserviços de ativos, em vez dos Serviços de conteúdo inteligente. O modelo subjacente é atualizado para melhorar os resultados da marcação e reduzir a polarização. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -66,7 +66,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * **Externalizar dados do fluxo de trabalho do AEM para processamento seguro**: Você pode armazenar dados de fluxos de trabalho em andamento do AEM (dados de variáveis de fluxo de trabalho do AEM) que contêm elementos de Dados pessoais sensíveis (SPD) em um repositório gerenciado pelo cliente para processamento seguro. Os elementos de dados e as variáveis de fluxo de trabalho não são armazenados no repositório do AEM e são buscados sob demanda de um repositório gerenciado pelo cliente durante o processamento do fluxo de trabalho.
 
-### Recursos do Beta de [!DNL Forms] {#what-is-new-forms-oct2021-beta}
+### Recursos do Beta de [!DNL Forms]  {#what-is-new-forms-oct2021-beta}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=pt-BR) ajudam a combinar um modelo e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modos síncronos e em lote. As APIs permitem criar aplicativos que possibilitam a você:
 
@@ -81,13 +81,13 @@ Você pode enviar um email a [!DNL formscsbeta@adobe.com] para se cadastrar no p
 
 * O complemento CIF é compatível com a versão mais recente do Commerce v2.4.3 com novas APIs e esquemas do GraphQL
 
-* Os autores podem adicionar links para páginas de produtos e catálogos em campos de texto usando o editor de rich text (RTE). Um ícone CIF foi adicionado à barra de ferramentas do RTE, que abre os seletores para pesquisar e selecionar rapidamente o produto ou categoria sem sair do contexto.
+* Os autores podem adicionar links para páginas de produtos e catálogos em campos de texto usando o editor de rich text (RTE). Um ícone do CIF foi adicionado à barra de ferramentas do RTE, que abre os seletores para pesquisar e selecionar rapidamente o produto ou categoria sem sair do contexto.
 
-* O carrinho de compras pop-up e o check-out foram substituídos por páginas dedicadas de carrinho de compras e check-out para AEM. Os componentes nessas páginas são criados usando os componentes Peregrine extensíveis do Adobe Commerce
+* O carrinho de compras pop-up e o check-out foram substituídos por páginas dedicadas de carrinho de compras e check-out do AEM. Os componentes nessas páginas são criados usando os componentes Peregrine extensíveis do Adobe Commerce
 
 * Os comerciantes podem ocultar determinadas categorias de catálogo de produtos na navegação usando o back-end do Commerce. O componente principal de Navegação do CIF respeita a configuração de backend de comércio &quot;incluir no menu&quot; para mostrar/ocultar categorias na navegação
 
-* AEM Storefront Venia retorna o erro HTTP 404 se a página de categoria ou produto não for encontrada
+* O AEM Storefront Venia retorna o erro HTTP 404 se a página de categoria ou produto não for encontrada
 
 ## Cloud Manager {#cloud-manager}
 
@@ -115,7 +115,7 @@ A próxima versão está planejada para 9 de dezembro de 2021.
 
 * O cabeçalho de resposta `x-request-id` agora está visível na API Playground em [www.adobe.io](https://www.adobe.io/). Esse cabeçalho é útil ao enviar problemas de atendimento ao cliente para solução de problemas.
 
-* Como usuário, vejo que o cartão Pipeline com zero pipeline me fornece a orientação apropriada.
+* Como usuário, vejo que o cartão do pipeline com zero pipelines me fornece a orientação apropriada.
 
 * Uma nova Página de atividade agora está disponível, em que atividades como pipeline e execuções de código podem ser visualizadas junto a seus detalhes associados. Com o tempo, as atividades listadas nesta página se expandirão em escopo junto com os detalhes fornecidos.
 
@@ -148,13 +148,13 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.10.0 é 14
 
 * Em preparação para algumas alterações futuras, os pipelines de implantação existentes agora serão referenciados e rotulados na interface do usuário como **Pipelines de pilha** completa.
 
-* O cartão Pipeline foi atualizado para exibir uma única face integrada que mostra os pipelines de produção e não produção, e o usuário agora pode selecionar Executar/Pausar/Retomar diretamente do menu de ação associado a cada pipeline.
+* O cartão do pipeline foi atualizado para exibir uma única face integrada que mostra os pipelines de produção e não produção, e o usuário agora pode selecionar Executar/Pausar/Retomar diretamente do menu de ação associado a cada pipeline.
 
 * Um usuário com a função Gerente de implantação agora pode excluir o pipeline de produção de maneira automatizada por meio da interface do usuário.
 
 * A adição e a edição de experiências de pipeline foram atualizadas para usar modais modernos e familiares.
 
-* Os usuários do Cloud Manager agora podem enviar feedback diretamente da interface do usuário por meio do botão **Feedback** na parte superior direita da página de aterrissagem.
+* Os usuários do Cloud Manager agora podem enviar feedback diretamente da interface do usuário por meio do botão **Feedback** na parte superior direita da página de destino.
 
 * Os gráficos de SLA anuais agora podem ser baixados na interface do usuário do Cloud Manager.
 

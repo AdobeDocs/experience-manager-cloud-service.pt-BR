@@ -4,16 +4,16 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 67%
+source-wordcount: '799'
+ht-degree: 64%
 
 ---
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 {#release-notes}
 
-A seção a seguir descreve as Notas de versão do recurso para a versão 2022.5.0 do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as Notas de versão do recurso para a versão 2022.5.0 do as a Cloud Service [!DNL Experience Manager].
 
 >[!NOTE]
 >
@@ -47,11 +47,11 @@ Assista ao vídeo de visão geral da versão de maio de 2022, que exibe um resum
 
 * O recurso [Imagem inteligente do Dynamic Media](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) agora é compatível com o formato de arquivo AVIF — melhore ainda mais o Google Core Web Vital (maior renderização de conteúdo) com o AVIF, que fornece 20% de redução de tamanho em relação ao WebP. No total, o AVIF fornece uma redução média de até 41% no tamanho do JPEG (em algumas imagens, esse valor pode chegar a 76%).
 
-* O [!UICONTROL Experience Manager Assets Brand Portal] agora executa trabalhos automáticos a cada 12 horas para excluir todos os ativos do Brand Portal AEM publicados no. Como resultado, não é necessário excluir manualmente os ativos na pasta Contribuição para manter o tamanho da pasta abaixo do limite. Consulte [Novidades no Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR).
+* O [!UICONTROL Experience Manager Assets Brand Portal] agora executa trabalhos automáticos a cada 12 horas para excluir todos os ativos do Brand Portal publicados no AEM. Como resultado, não é necessário excluir manualmente os ativos na pasta Contribuição para manter o tamanho da pasta abaixo do limite. Consulte [Novidades no Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR).
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Assets] {#prerelease-features-assets}
 
-Agora, o Experience Manager Assets usa recursos de IA do Adobe Sensei para [distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação](/help/assets/color-tag-images.md). Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem. Você pode configurar o número de cores, dentro de um intervalo de um a 40, que são marcados em uma imagem para que você possa pesquisar imagens com base nessas cores posteriormente.
+Agora, o Experience Manager Assets usa os recursos de IA do Adobe para [distinguir cores em uma imagem e aplicá-las automaticamente como marcas na assimilação](/help/assets/color-tag-images.md). Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem. Você pode configurar o número de cores, dentro de um intervalo de um a 40, que são marcados em uma imagem para que você possa pesquisar imagens com base nessas cores posteriormente.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -72,7 +72,7 @@ Agora, o Experience Manager Assets usa recursos de IA do Adobe Sensei para [dist
 
 <!-- Image was not found during PR validation despite correct path   ![Enable wantlist](/help/assets/CIF/enable-wishlist.png) -->
 
-* Suporte para componentes adicionais de comércio de marketing: os componentes podem ser configurados para mostrar uma chamada para ação de adição ao carrinho e de lista de desejos
+* Suporte para componentes adicionais de comércio de marketing: os componentes podem ser configurados para mostrar um call-to-action de lista de desejos e de adição ao carrinho
 
   ![Atalho do Editor de sites para o cockpit de produtos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 

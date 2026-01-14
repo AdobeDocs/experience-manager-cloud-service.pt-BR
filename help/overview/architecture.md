@@ -4,9 +4,9 @@ description: Introdução à arquitetura do Adobe Experience Manager as a Cloud 
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '2711'
+source-wordcount: '2710'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 >id="intro_aem_cloudservice_architecture"
 >title="Introdução à arquitetura do AEM as a Cloud Service"
 >abstract="Nesta guia, é possível visualizar a nova arquitetura do AEM as a Cloud Service e compreender as alterações. O AEM virou uma arquitetura dinâmica com um número variável de imagens, portanto é importante reservar um tempo para entender a arquitetura da nuvem."
->additional-url="https://video.tv.adobe.com/v/346185?captions=por_br" text="Visão geral da arquitetura"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Visão geral da arquitetura"
 
 O Adobe Experience Manager (AEM) as a Cloud Service oferece um conjunto de serviços combináveis para a criação e o gerenciamento de experiências de alto impacto.
 
@@ -141,7 +141,7 @@ Há outros serviços adjacentes:
 * O serviço de Telemetria Operacional:
    * É responsável por coletar as métricas principais de uma experiência do cliente (como exibições de página, sinais vitais da Web principais, eventos de conversão) e responder a consultas associadas (por exemplo, exibições de página principais de um determinado domínio nos últimos sete dias).
 * O serviço Assets Compute:
-   * É responsável pelo processamento de imagens, vídeos e documentos carregados; por exemplo, arquivos PDF e Adobe Photoshop. O processamento pode usar o Adobe Sensei para extrair metadados de imagem e vídeo (como tags descritivas ou tons de cores primários) e gerar representações (como tamanhos ou formatos diferentes), com acesso a APIs como as APIs do Adobe Photoshop e do Adobe Lightroom.
+   * É responsável pelo processamento de imagens, vídeos e documentos carregados; por exemplo, arquivos PDF e Adobe Photoshop. O processamento pode usar a IA do Adobe para extrair metadados de imagem e vídeo (como tags descritivas ou tons de cores primários) e gerar representações (como tamanhos ou formatos diferentes), com acesso a APIs como as APIs do Adobe Photoshop e do Adobe Lightroom.
 * O Identity Management Service (IMS):
    * É o local central responsável por gerenciar e autenticar usuários e grupos de usuários para um determinado aplicativo do Adobe Experience Cloud (por exemplo, o nível de criação do Cloud Manager ou do AEM).
    * É acessado pela Adobe Admin Console.
@@ -239,4 +239,4 @@ A arquitetura mais recente do AEM as a Cloud Service apresenta algumas mudanças
 * Edge Delivery Services:
    * [Visão geral do AEM as a Cloud Service - com o Edge Delivery Services](/help/edge/overview.md)
    * [Utilização do Edge Delivery Services](/help/edge/overview.md)
-   * [Explore a arquitetura subjacente e as partes importantes do AEM as a Cloud Service com o Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=pt-BR)
+   * [Explore a arquitetura subjacente e as partes importantes do AEM as a Cloud Service com o Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

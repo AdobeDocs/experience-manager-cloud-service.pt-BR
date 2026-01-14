@@ -1,13 +1,13 @@
 ---
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.6.0
-description: as a Cloud Service Notas de versão do [!DNL Adobe Experience Manager] para 2020.6.0.
+description: Notas de versão do as a Cloud Service [!DNL Adobe Experience Manager] para 2020.6.0.
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 92%
+source-wordcount: '1938'
+ht-degree: 91%
 
 ---
 
@@ -25,7 +25,7 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do AEM
 
 ### Novidades {#whats-new-2020.6.0}
 
-A versão 2.9.0 dos [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) agora está disponível como parte do AEM Sites, incluindo:
+A versão 2.9.0 dos [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) agora está disponível como parte do AEM Sites, incluindo:
 
 * Integração entre a [Camada de dados do cliente Adobe](https://github.com/adobe/adobe-client-data-layer) e os Componentes principais
 * Atributos de ID HTML configuráveis para todos os componentes
@@ -50,9 +50,9 @@ A versão 2.9.0 dos [Componentes principais](https://experienceleague.adobe.com/
 
 ## Novidades nos componentes de base do AEM as a Cloud Service {#foundations}
 
-Os tempos de compilação de um projeto AEM melhorarão com a remoção de todas as referências ao repositório remoto `https://downloads.experiencecloud.adobe.com/content/maven/public` no pom.xml do projeto AEM.
+Os tempos de compilação de um projeto do AEM melhorarão com a remoção de todas as referências ao repositório remoto `https://downloads.experiencecloud.adobe.com/content/maven/public` no pom.xml do projeto AEM.
 
-O Jar da API do SDK do AEM as a Cloud Service, que anteriormente estava hospedado nesse local, agora está localizado no Maven Central, que é o repositório de artefatos padrão do Maven.
+O Jar da API SDK do AEM as a Cloud Service, que anteriormente estava hospedado nesse local, agora está localizado no Maven Central, que é o repositório de artefatos padrão do Maven.
 
 ## Novidades do Cloud Manager {#cloud-manager}
 
@@ -68,7 +68,7 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 
   Consulte [Exclusão de um programa de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=pt-BR) para obter mais detalhes.
 
-* Há notas explicativas na página de aterrissagem para informar e instruir o usuário sobre a navegação básica.
+* Há notas explicativas na página de destino para informar e instruir o usuário sobre a navegação básica.
 
 * Há notas explicativas na página **Visão geral de programas** para informar e instruir o usuário sobre a navegação básica dentro do Cloud Manager.
 
@@ -76,13 +76,13 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 
 * Os Programas de sandbox agora são identificados por meio de um selo **Sandbox**, que é exibido no cartão do programa na página de destino e também ao lado do nome do programa na página **Visão geral de programas**.
 
-* Os usuários que estiverem exercendo a função SysAdmin agora têm acesso com um só clique ao local do Admin Console onde podem gerenciar funções ou permissões de usuários para o Cloud Manager. Agora há um botão **Gerenciar acesso** na página de aterrissagem, ao lado do botão **Adicionar programa**.
+* Os usuários que estiverem exercendo a função SysAdmin agora têm acesso com um só clique ao local do Admin Console onde podem gerenciar funções ou permissões de usuários para o Cloud Manager. Agora há um botão **Gerenciar acesso** na página de destino, ao lado do botão **Adicionar programa**.
 
   Consulte [Tarefas do administrador do sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=pt-BR#sysadmin-tasks) para obter mais detalhes.
 
-* Agora os usuários com a função administrador do sistema têm acesso à instância do autor diretamente do Cloud Manager com apenas um clique.
+* Agora os usuários com a função administrador do sistema têm acesso à instância de criação diretamente do Cloud Manager com apenas um clique.
 
-  Consulte [Gerenciamento do acesso à instância do autor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=pt-BR#manage-access-aem) para saber mais.
+  Consulte [Gerenciamento do acesso à instância de criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=pt-BR#manage-access-aem) para saber mais.
 
 * O log da etapa Criar agora inclui a lista de artefatos descobertos, incluindo pacotes de conteúdo ignorados.
 
@@ -106,20 +106,20 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 
 ## Novidades do [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-**Experiência do usuário guiada para tags inteligentes aprimoradas, viabilizada pelo Adobe Sensei**
+**Experiência do usuário guiada para tags inteligentes aprimoradas, viabilizada pela IA do Adobe**
 
-As tags inteligentes aprimoradas permitem que as organizações treinem modelos de marcação inteligente para reconhecer imagens com base em tags comerciais específicas de clientes, além de tags inteligentes genéricas.
+As tags inteligentes aprimoradas permitem que as organizações treinem modelos de tags inteligentes para reconhecer imagens com base em tags comerciais específicas de clientes, além de tags inteligentes genéricas.
 
 Esta versão oferece uma experiência do usuário nova e guiada que ajuda a configurar o treinamento de tags inteligentes para conjuntos de tags específicos do cliente e treiná-las com ativos que devem ser reconhecidos e marcados no futuro. Agora, a experiência está mais intuitiva.
 Treine as tags inteligentes aprimoradas para uma experiência mais intuitiva. Consulte [como adicionar tags inteligentes a ativos](/help/assets/smart-tags.md).
 
-**Suporte para assimilação, pré-visualização e entrega de conteúdo 3D**
+**Suporte para ingestão, pré-visualização e entrega de conteúdo 3D**
 
 Agora, as organizações podem armazenar e usar arquivos 3D no AEM Assets. O usuário pode fazer upload, pré-visualizar e usar vários arquivos principais em 3D, incluindo arquivos OBJ, STL, GLTF e GLB. Com a adição do [!DNL Dynamic Media], você pode configurar e entregar experiências em 3D usando URLs ou visualizadores agnósticos. Isso inclui um visualizador 3D do [!DNL Dynamic Media], um componente de visualizador 3D do Sites e a capacidade de fornecer arquivos 3D pelo [!DNL Dynamic Media] (RA/RV). Consulte [Trabalho com ativos 3D no Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Suporte do Adobe Asset Link para o Adobe XD**
 
-Com a versão mais recente, o [!DNL Experience Manager Assets] oferece suporte para um novo plug-in do [!DNL Adobe Asset Link], lançado com o [!DNL Adobe XD] v29.3. A integração permite que os designers acessem e usem ativos do [!DNL Experience Manager] em seus projetos, sem a necessidade de deixar o [!DNL Adobe XD]. Consulte a [documentação do Adobe Asset Link para o Adobe XD](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link-for-xd.html).
+Com a versão mais recente, o [!DNL Experience Manager Assets] oferece suporte para um novo plug-in do [!DNL Adobe Asset Link], lançado com o [!DNL Adobe XD] v29.3. A integração permite que os designers acessem e usem ativos do [!DNL Experience Manager] em seus projetos, sem a necessidade de deixar o [!DNL Adobe XD]. Consulte a [documentação do Adobe Asset Link para o Adobe XD](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html).
 
 Com esse lançamento, usuários criativos e designers agora podem trabalhar com ativos gerenciados no [!DNL AEM Assets], usando o [!DNL Adobe Asset Link] em diversos aplicativos para desktop da Creative Cloud, incluindo [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator] e [!DNL InDesign].
 
@@ -143,7 +143,7 @@ Os elementos da interface do usuário são amigáveis para leitores de tela, sã
 
 * Na interface do Assets, as configurações de visualização não podem ser acessadas pelo teclado. (CQ-4289038)
 
-* A relação de luminosidade é inferior a 3:1 para os ícones de classificação de cor amarela. Isso não é útil para usuários com visão limitada e sem percepção de cor. As estrelas de classificação são exibidas na guia no modo de visualização de ativos ou cartões
+* A taxa de luminosidade é menor que 3:1 para os ícones de classificação de cor amarela. Isso não é útil para usuários com visão limitada e sem percepção de cor. As estrelas de classificação são exibidas na guia no modo de visualização de ativos ou cartões
 
 * A cor e o contraste de alguns elementos da interface do usuário são atualizados para que os usuários com visão limitada ou usuários sem percepção de cor possam distinguir esses elementos da interface do usuário. Por exemplo, a cor dos ícones de classificação de estrelas na seção [!UICONTROL Classificação] da guia [!UICONTROL Avançado], em [!UICONTROL Propriedades] de um ativo e em uma visualização de cartão é alterada para obter o contraste apropriado. (CQ-4295106)
 

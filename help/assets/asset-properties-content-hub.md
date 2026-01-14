@@ -3,9 +3,9 @@ title: Visualizar ativo e suas propriedades em  [!DNL the Content Hub]
 description: Saiba como visualizar ativos e propriedades no [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 45e731d2286b07db5852138ae1ac914a56b13a6a
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '635'
 ht-degree: 8%
 
 ---
@@ -109,9 +109,9 @@ Algumas propriedades dos ativos exibidos em [!DNL Content Hub] são derivadas, o
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **Tags inteligentes:** o [!DNL The Content Hub] usa os serviços de conteúdo inteligente da Adobe Sensei para treinar ativos usando o algoritmo de reconhecimento na estrutura baseada em tags. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. As Tags inteligentes aumentam a velocidade do conteúdo de seus projetos, ajudando você a encontrar ativos relevantes rapidamente. As tags inteligentes são um exemplo de informações de ativos que não estão contidas na imagem. O [!DNL Experience Manager Assets] aplica tags inteligentes automaticamente a ativos, por padrão.
+* **Tags inteligentes:** o [!DNL The Content Hub] usa os serviços de conteúdo inteligente da IA do Adobe para treinar ativos usando o algoritmo de reconhecimento na estrutura baseada em tags. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. As Tags inteligentes aumentam a velocidade do conteúdo de seus projetos, ajudando você a encontrar ativos relevantes rapidamente. As tags inteligentes são um exemplo de informações de ativos que não estão contidas na imagem. O [!DNL Experience Manager Assets] aplica tags inteligentes automaticamente a ativos, por padrão.
 
-* **Marcas de cores:** [Marcas de cores](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=pt-BR) ajudam a reconhecer um ativo usando cores identificadas automaticamente em um ativo com os recursos Sensei AI da Adobe.
+* **Marcas de cores:** [Marcas de cores](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) ajudam a reconhecer um ativo usando cores identificadas automaticamente em um ativo por meio dos recursos de IA da Adobe.
 
 * Data de upload
 

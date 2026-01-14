@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '3694'
 ht-degree: 6%
@@ -94,7 +94,7 @@ A tabela a seguir identifica as práticas recomendadas ao codificar perfis para 
 
 ## Sobre o uso de recorte inteligente em Perfis de vídeo {#about-smart-crop-video}
 
-O recorte inteligente para vídeo é um recurso opcional disponível em Perfis de vídeo. É uma ferramenta que usa o Adobe Sensei para detectar e recortar automaticamente o ponto focal em qualquer vídeo adaptável ou vídeo progressivo que você tenha carregado, independentemente do tamanho.
+O recorte inteligente para vídeo é um recurso opcional disponível em Perfis de vídeo. É uma ferramenta que usa a IA do Adobe para detectar e recortar automaticamente o ponto focal em qualquer vídeo adaptável ou vídeo progressivo que você tenha carregado, independentemente do tamanho.
 
 Os formatos de vídeo compatíveis com o corte inteligente incluem MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -104,7 +104,7 @@ O tamanho máximo suportado do arquivo de vídeo para corte inteligente é o seg
 * 30 quadros por segundo (FPS).
 * Tamanho do arquivo de 300 MB.
 
-O Adobe Sensei é limitado a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o vídeo tiver um FPS mais alto, a duração máxima de vídeo compatível diminuirá. Por exemplo, um vídeo de 60 FPS deve ter dois minutos e meio de duração para ser compatível com o Adobe Sensei e o recorte inteligente.
+A IA do Adobe é limitada a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o vídeo tiver um FPS mais alto, a duração máxima de vídeo compatível diminuirá. Por exemplo, um vídeo de 60 FPS deve ter dois minutos e meio de duração para ser compatível com a IA do Adobe e o recorte inteligente.
 
 ![Recorte inteligente para vídeo](assets/smart-crop-video.png)
 

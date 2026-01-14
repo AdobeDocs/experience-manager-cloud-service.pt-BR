@@ -2,9 +2,9 @@
 title: Introdução ao Assets as a Cloud Service para gerenciamento de ativos digitais no AEM
 description: Introdução ao Assets as a Cloud Service para gerenciamento de ativos digitais no AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '5078'
+source-wordcount: '5075'
 ht-degree: 8%
 
 ---
@@ -57,11 +57,11 @@ Use estes links para acessar a documentação detalhada sobre estas ferramentas 
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/get-started">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
    <img alt="Usar o aplicativo de desktop do AEM" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/get-started">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
       <strong>Usar aplicativo de desktop do AEM</strong>
       </a>
    </div>
@@ -86,9 +86,9 @@ Use estes links para acessar a documentação detalhada sobre estas ferramentas 
 
 >[!TAB Recursos alimentados por IA]
 
-**Tags inteligentes**: as Tags inteligentes usam a estrutura artificialmente inteligente do Adobe Sensei para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. Por padrão, o AEM aplica tags inteligentes automaticamente a ativos carregados.
+**Tags inteligentes**: as Tags inteligentes usam a estrutura artificialmente inteligente da IA do Adobe para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. Por padrão, o AEM aplica tags inteligentes automaticamente a ativos carregados.
 
-**Marcação e pesquisa inteligente baseadas em cores**: o AEM Assets usa os recursos de IA da Adobe Sensei para distinguir cores em uma imagem e aplicar essas características como marcas automaticamente na assimilação. Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem.
+**Marcação e pesquisa inteligente baseadas em cores**: o AEM Assets usa os recursos de IA da Adobe para distinguir cores em uma imagem e aplicar essas características como marcas automaticamente na assimilação. Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem.
 
 **Metadados gerados por IA**: o AEM Assets usa IA para gerar metadados automaticamente, incluindo Título, Descrição e Palavras-chave. Esses campos gerados pela IA melhoram a precisão dos metadados, tornando os ativos mais fáceis de pesquisar, categorizar e recomendar. Essa abordagem não só aumenta a eficiência eliminando a marcação manual, mas também garante a consistência e a escalabilidade em grandes volumes de conteúdo digital.
 
@@ -193,7 +193,7 @@ Use estes links para acessar a documentação detalhada sobre estas ferramentas 
 
 **Smart Imaging**: o Smart Imaging oferece um desempenho ainda melhor de entrega de ativos de imagem, otimizando automaticamente o formato de imagem e o tamanho do arquivo com base na capacidade do navegador do cliente. Ele funciona com suas predefinições de imagem existentes e usa inteligência na entrega. Essa inteligência reduz ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador e da conexão de rede.
 
-**Recorte inteligente**: um recurso de IA do Adobe Sensei, para detectar automaticamente o ponto focal em qualquer imagem ou vídeo, e recortar para mantê-lo. Ele captura o ponto de interesse desejado, independentemente do tamanho da tela e, portanto, elimina tarefas manuais tediosas e fornece imagens e vídeos de alta qualidade e carregamento rápido que ficam bem em qualquer dispositivo ou tela.
+**Recorte inteligente**: um recurso de IA do Adobe, para detectar automaticamente o ponto focal em qualquer imagem ou vídeo, e recortar para mantê-lo. Ele captura o ponto de interesse desejado, independentemente do tamanho da tela e, portanto, elimina tarefas manuais tediosas e fornece imagens e vídeos de alta qualidade e carregamento rápido que ficam bem em qualquer dispositivo ou tela.
 
 **Legendas de vídeo geradas por IA**: as legendas de vídeo geradas por IA no Adobe Dynamic Media usam inteligência artificial para gerar legendas automaticamente para conteúdo de vídeo. Esse recurso foi projetado para melhorar a acessibilidade e a experiência do usuário, fornecendo legendas precisas. As legendas são geradas a partir do áudio original, todas as faixas de áudio adicionais ou legendas extras são fornecidas na guia `Captions and Audio` da página de propriedades do vídeo. Com suporte para mais de 60 idiomas, as legendas podem ser revisadas e visualizadas antes da publicação do vídeo.
 <table>
@@ -213,11 +213,11 @@ Use estes links para acessar a documentação detalhada sobre estas ferramentas 
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
    <img alt="Corte inteligente" src="./assets/smart-cropping.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
       <strong>Recorte inteligente</strong>
       </a>
    </div>
@@ -270,11 +270,11 @@ O AEM Assets fornece recursos que ajudam você a encontrar rapidamente o ativo c
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=pt">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Práticas recomendadas de gerenciamento de metadados" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=pt">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Práticas recomendadas de gerenciamento de metadados</strong>
       </a>
    </div>
@@ -297,7 +297,7 @@ O AEM Assets fornece recursos que ajudam você a encontrar rapidamente o ativo c
 </td>
 </table>
 
-**Tags inteligentes**: as Tags inteligentes usam a estrutura artificialmente inteligente do Adobe Sensei para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. Por padrão, o AEM aplica tags inteligentes automaticamente a ativos carregados.
+**Tags inteligentes**: as Tags inteligentes usam a estrutura artificialmente inteligente da IA do Adobe para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. Por padrão, o AEM aplica tags inteligentes automaticamente a ativos carregados.
 
 **Pesquisar ativos**: depois que os metadados corretos estiverem em vigor, o AEM Assets permitirá que você pesquise usando vários operadores, curingas, consultas avançadas e filtros personalizados.
 
@@ -520,7 +520,7 @@ O AEM Assets pode se integrar perfeitamente a vários aplicativos Adobe e não A
 
 * **Integração com o Adobe Workfront**: [!DNL Adobe Workfront] é um aplicativo de gerenciamento de trabalho que ajuda você a gerenciar todo o ciclo de vida do trabalho em um único local. A integração entre o [!DNL Workfront] e o [!DNL Adobe Experience Manager Assets] permite que as organizações melhorem a velocidade do conteúdo e o prazo para comercialização, conectando intrinsecamente o gerenciamento de trabalho e de ativos digitais. No contexto do gerenciamento de trabalho no Workfront, os usuários têm acesso aos documentos e imagens necessários.
 
-  Ofertas do Adobe para [integrar [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] nativamente](https://experienceleague.adobe.com/pt-br/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
+  Ofertas do Adobe para [integrar [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] nativamente](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
 
 * **Integração com o Figma**: o AEM Assets integra-se nativamente com o Figma, o que permite que os designers acessem os ativos armazenados diretamente no AEM Assets na Interface do Usuário do Figma. Você pode colocar conteúdo gerenciado no AEM Assets na tela do Figma e depois salvar conteúdo novo ou editado no repositório do AEM Assets. Para acessar o AEM Assets Connector disponível na página da Comunidade Figma, clique [aqui](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
@@ -586,11 +586,11 @@ Se você já tiver um site do [!DNL Edge Delivery Services], consulte a document
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Integração com o Adobe Journey Optimizer" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>Integração com o Adobe Journey Optimizer</strong>
       </a>
    </div>
@@ -599,11 +599,11 @@ Se você já tiver um site do [!DNL Edge Delivery Services], consulte a document
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
    <img alt="Integração com o Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
       <strong>Integração com o Commerce</strong>
       </a>
    </div>
@@ -704,7 +704,7 @@ O Dynamic Media oferece os seguintes recursos principais:
 
 * **Conjuntos de vídeos adaptados**: um Conjunto de vídeos adaptados agrupa versões do mesmo vídeo codificadas em taxas de bits e formatos diferentes. Você começa com seu vídeo original, o qual você carrega no sistema. O Dynamic Media dimensiona ou transcodifica automaticamente esse vídeo em vários vídeos. Em seguida, no momento do delivery, ele determina de forma inteligente qual tela de vídeo, qual qualidade e qual formato usar, além de fornecê-la ao telefone, tablet ou computador desktop.
 
-* **Recorte inteligente**: um recurso de IA do Adobe Sensei, para detectar automaticamente o ponto focal em qualquer imagem ou vídeo, e recortar para mantê-lo. Ele captura o ponto de interesse desejado, independentemente do tamanho da tela e, portanto, elimina tarefas manuais tediosas e fornece imagens e vídeos de alta qualidade e carregamento rápido que ficam bem em qualquer dispositivo ou tela.
+* **Recorte inteligente**: um recurso de IA do Adobe, para detectar automaticamente o ponto focal em qualquer imagem ou vídeo, e recortar para mantê-lo. Ele captura o ponto de interesse desejado, independentemente do tamanho da tela e, portanto, elimina tarefas manuais tediosas e fornece imagens e vídeos de alta qualidade e carregamento rápido que ficam bem em qualquer dispositivo ou tela.
 
 * **Modelos do Dynamic Media**: crie modelos personalizáveis em tempo real para seus banners e folhetos usando os modelos do Dynamic Media, um editor de modelos do WYSIWYG. Publique seu modelo do Dynamic Media e use-o nos aplicativos downstream. Um modelo do Dynamic Media inclui camadas de imagem e texto. Adicione parâmetros às camadas de imagem e texto do modelo e use URLs do Dynamic Media para reposicionar e redimensionar a camada e atualizar seu conteúdo em tempo real.
 
