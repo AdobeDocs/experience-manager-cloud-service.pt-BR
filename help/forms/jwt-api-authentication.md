@@ -3,9 +3,9 @@ title: Como configurar a autenticação JWT (JSON Web Token)?
 description: Saiba como configurar a autenticação JWT (JSON Web Token) para o Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ A autenticação de servidor para servidor JWT no AEM Forms, especialmente para 
 Antes de começar, verifique se os seguintes pré-requisitos foram atendidos:
 
 * Verifique se você tem acesso ao [Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) específico do ambiente que usa.
-* Atribua a função de [Administrador do Sistema ou Desenvolvedor para acessar o Adobe Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Atribua a função de [Administrador do Sistema ou Desenvolvedor para acessar o Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Como gerar um token de acesso usando credenciais JWT?
 
@@ -106,7 +106,7 @@ Siga as etapas abaixo, que mostram como gerar um token de acesso a partir das cr
 
 >[!NOTE]
 >
-> Para saber mais sobre as credenciais de serviço e como gerar um token de acesso usando a API do Adobe IMS, [clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
+> Para saber mais sobre as credenciais de serviço e como gerar um token de acesso usando a API do Adobe IMS, [clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 Agora você pode usar o token de acesso gerado para fazer uma chamada de API para ambientes de desenvolvimento, preparo ou produção.
 
@@ -168,3 +168,10 @@ Saiba como definir o ambiente para APIs de comunicações síncronas (sob demand
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
 
+>[!MORELIKETHIS]
+>
+>* [Introdução às Comunicações do AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitetura do AEM Forms as a Cloud Service para APIs de comunicação e Forms adaptável](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Processamento da comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [API de Comunicações do Forms - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

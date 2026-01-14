@@ -3,7 +3,7 @@ title: APIs de comunicações do AEM Forms - Visão geral
 description: Visão geral das APIs de comunicações do AEM Forms, incluindo métodos de autenticação e referência completa da API
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 4%
@@ -19,7 +19,7 @@ As APIs do AEM Forms são estruturadas e acessadas por meio de dois consoles pri
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - O Adobe Developer Console é o gateway para APIs, Eventos, Tempo de Execução e App Builder da Adobe.
 
-* [AEM Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - O AEM Developer Console fornece acesso a detalhes, configurações, contas técnicas e credenciais de serviço no nível do ambiente para oferecer suporte a tarefas operacionais e de integração.
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - O AEM Developer Console fornece acesso a detalhes, configurações, contas técnicas e credenciais de serviço no nível do ambiente para oferecer suporte a tarefas operacionais e de integração.
 
 APIs diferentes suportam [métodos de autenticação](#authentication-methods) diferentes.
 
@@ -185,4 +185,4 @@ Saiba como definir o ambiente para APIs de comunicações síncronas (sob demand
 >* [Arquitetura do AEM Forms as a Cloud Service para APIs de comunicação e Forms adaptável](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Processamento da comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
->* [Processamento de comunicação - APIs por demanda](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [API de Comunicações do Forms - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

@@ -5,9 +5,9 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: e2716b7f9612d5769c422a0fc2915a604ea40de5
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2789'
 ht-degree: 26%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 26%
 
 > **Disponibilidade de Versão**
 >
-> * **AEM 6.5**: [Visão Geral dos Serviços de Documento da AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=pt-BR)
+> * **AEM 6.5**: [Visão Geral dos Serviços de Documento da AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**: Este artigo
 
 ## Introdução
@@ -298,10 +298,12 @@ Após a integração, para ativar o recurso de comunicações para o ambiente Fo
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
-## Recursos adicionais {#see-also}
-
-* [Processamento de comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
-* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [Arquitetura do AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-architecture.md)
-* [Documentação de referência da API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-* [Recursos anteriores do programa do adotante](/help/forms/early-access-ea-features.md)
+>[!MORELIKETHIS]
+>
+>* [Introdução às Comunicações do AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitetura do AEM Forms as a Cloud Service para APIs de comunicação e Forms adaptável](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Processamento da comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [API de Comunicações do Forms - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [Documentação de referência da API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+>* [Recursos iniciais do programa de adoção](/help/forms/early-access-ea-features.md)

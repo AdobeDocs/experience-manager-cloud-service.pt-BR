@@ -1,12 +1,12 @@
 ---
-title: Como usar o Forms as a Cloud Service para mesclar dados com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript?
+title: Como usar o Forms as a Cloud Service para unir dados com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript?
 description: Mesclar dados automaticamente com modelos XDP e PDF ou gerar saída nos formatos PCL, ZPL e PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '725'
 ht-degree: 6%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 6%
 
 # Usar processamento síncrono {#sync-processing-introduction}
 
-As APIs de comunicações do Forms as a Cloud Service permitem criar, montar e fornecer comunicações personalizadas e orientadas à marca, como correspondências comerciais, documentos, declarações, cartas de processamento de solicitações, avisos de benefícios, cartas de processamento de solicitações, faturas mensais e kits de boas-vindas. Você pode usar APIs de comunicações para combinar um modelo (XFA ou PDF) com os dados do cliente para gerar documentos nos formatos PDF, PS, PCL, DPL, IPL e ZPL.
+Forms as a Cloud Service - As APIs de comunicações permitem criar, montar e fornecer comunicações personalizadas e orientadas à marca, como correspondências comerciais, documentos, declarações, cartas de processamento de solicitações, avisos de benefícios, cartas de processamento de solicitações, faturas mensais e kits de boas-vindas. Você pode usar APIs de comunicações para combinar um modelo (XFA ou PDF) com os dados do cliente para gerar documentos nos formatos PDF, PS, PCL, DPL, IPL e ZPL.
 
-Considere um cenário em que você tem um ou mais modelos e vários registros de dados XML para cada modelo. Você pode usar APIs de comunicações para gerar um documento de impressão para cada registro. <!-- You can also combine the records into a single document. --> O resultado é um documento PDF não interativo. Um documento PDF não interativo não permite que os usuários insiram dados em seus campos.
+Considere um cenário em que você tem um ou mais modelos e vários registros de dados XML para cada modelo. Você pode usar APIs de comunicações para gerar um documento de impressão para cada registro. <!-- You can also combine the records into a single document. --> O resultado é um documento não interativo do PDF. Um documento não interativo do PDF não permite que os usuários insiram dados em seus campos.
 
-O Forms as a Cloud Service - Communications fornece APIs sob demanda e em lote (APIs assíncronas) para a geração programada de documentos:
+Forms as a Cloud Service - Comunicações fornece APIs sob demanda e em lote (APIs assíncronas) para a geração agendada de documentos:
 
 * As APIs síncronas são adequadas para casos de uso de geração de documento de registro único, latência baixa e sob demanda. Essas APIs são mais adequadas para casos de uso baseados em ações do usuário. Por exemplo, gerar um documento após um usuário preencher um formulário.
 
@@ -43,20 +43,23 @@ Uma operação síncrona é um processo de geração de documentos de maneira li
 
 As operações de API de locatário único oferecem suporte a dois tipos de autenticação:
 
-* **Autenticação básica**: a autenticação básica é um esquema de autenticação simples incorporado ao protocolo HTTP. O cliente envia solicitações HTTP com o cabeçalho de Autorização que contém a palavra Básico seguida por um espaço e uma string codificada em base64 username:password. Por exemplo, para autorizar como administrador / administrador, o cliente envia o nome de usuário &rbrack; da cadeia de caracteres codificada em &lbrack;base64 Básico: [senha da cadeia de caracteres codificada em base64].
+* **Autenticação básica**: a autenticação básica é um esquema de autenticação simples incorporado ao protocolo HTTP. O cliente envia solicitações HTTP com o cabeçalho de Autorização que contém a palavra Básico seguida por um espaço e um nome de usuário de cadeia de caracteres codificado em base64 :password. Por exemplo, para autorizar como administrador / administrador, o cliente envia o nome de usuário [ da cadeia de caracteres codificada em ]base64 Básico: [senha da cadeia de caracteres codificada em base64].
 
-* **Autenticação baseada em token:** a autenticação baseada em token usa um token de acesso (token de autenticação de portador) para fazer solicitações ao Experience Manager as a Cloud Service. O AEM Forms as a Cloud Service fornece APIs para recuperar com segurança o token de acesso. Para recuperar e usar o token para autenticar uma solicitação:
+* **Autenticação baseada em token:** a autenticação baseada em token usa um token de acesso (token de autenticação do portador) para fazer solicitações ao Experience Manager as a Cloud Service. O AEM Forms as a Cloud Service fornece APIs para recuperar com segurança o token de acesso. Para recuperar e usar o token para autenticar uma solicitação:
 
-   1. Experience Manager [Recupere a credencial as a Cloud Service do Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR).
-   1. [Instalar o Experience Manager as a Cloud Service credential em seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR). (Servidor de Aplicativos, Servidor Web ou outros servidores que não sejam AEM) configurados para enviar solicitações ao (efetuar chamadas) Cloud Service.
-   1. [Gerar um token JWT e trocá-lo com APIs do Adobe IMS por um token de acesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR).
-   1. Execute a API de Experience Manager com o token de acesso como um token de autenticação de portador.
-   1. [Defina as permissões apropriadas para o usuário da conta técnica no ambiente de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR#configure-access-in-aem).
+   1. [Recupere a credencial do Experience Manager as a Cloud Service da Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [Instale a credencial do Experience Manager as a Cloud Service em seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Servidor de Aplicativos, Servidor Web ou outros servidores que não sejam da AEM) configurados para enviar solicitações ao (efetuar chamadas) Cloud Service.
+   1. [Gerar um token JWT e trocá-lo com APIs do Adobe IMS por um token de acesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. Execute a API do Experience Manager com o token de acesso como um token de autenticação de portador.
+   1. [Defina as permissões apropriadas para o usuário da conta técnica no ambiente do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
   >[!NOTE]
   >
   >A Adobe recomenda usar a autenticação baseada em token em um ambiente de produção.
 
+  >[!IMPORTANT]
+  >
+  > Para obter mais informações, consulte [Autenticação de servidor para servidor OAuth](/help/forms/oauth-api-authetication.md) e [Autenticação de servidor para servidor JWT](/help/forms/jwt-api-authentication.md).
 <!-- 
 
 ### Authenticate a multi-tenant API
@@ -123,14 +126,14 @@ While it is possible to do the entire JWT generation and exchange process in cus
 
 Para usar APIs síncronas, é necessário o seguinte:
 
-* Usuários com privilégios de administrador de Experience Manager
+* Usuários com privilégios de administrador do Experience Manager
 * Faça upload de modelos e outros ativos para sua instância do Experience Manager Forms Cloud Service
 
 ### (Somente para APIs de geração de documento) Faça upload de modelos e outros ativos para sua instância do Experience Manager
 
-Uma organização normalmente tem vários modelos. Por exemplo, um modelo para demonstrativos de cartão de crédito, demonstrativos de benefícios e aplicações de reivindicação. Faça upload de todos esses modelos XDP e PDF para sua instância Experience Manager. Para fazer upload de um modelo:
+Uma organização normalmente tem vários modelos. Por exemplo, um modelo para demonstrativos de cartão de crédito, demonstrativos de benefícios e aplicações de reivindicação. Faça upload de todos esses modelos XDP e PDF para sua instância do Experience Manager. Para fazer upload de um modelo:
 
-1. Abra a instância do Experience Manager.
+1. Abra sua instância do Experience Manager.
 1. Vá até Forms > Forms e Documentos
 1. Clique em Criar > Pasta e crie uma pasta. Abra a pasta.
 1. Clique em Criar > Upload de arquivo e faça upload dos modelos.
@@ -143,11 +146,12 @@ A [documentação de referência da API](https://developer.adobe.com/experience-
 
 >[!NOTE]
 >
->Somente membros do grupo de usuários de formulários podem acessar APIs de comunicações.
+> Saiba mais sobre as etapas detalhadas para chamar APIs de comunicação do AEM Forms. Consulte o artigo [Chamar APIs de comunicação do AEM Forms usando a autenticação de servidor para servidor OAuth](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md).
 
 >[!MORELIKETHIS]
 >
->* [Introdução às Comunicações as a Cloud Service do AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Introdução às Comunicações do AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitetura do AEM Forms as a Cloud Service para APIs de comunicação e Forms adaptável](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Processamento da comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [API de Comunicações do Forms - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

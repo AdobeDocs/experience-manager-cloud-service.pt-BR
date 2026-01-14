@@ -3,15 +3,15 @@ title: Como configurar APIs síncronas das comunicações do Forms?
 description: Configurar ambiente de desenvolvimento para APIs síncronas de comunicações interativas para o Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: a0db7a0a2dc82c9857b34b79fe3b3b6f3e179372
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2428'
 ht-degree: 1%
 
 ---
 
 
-# Configurar o acesso de servidor a servidor do OAuth para as APIs de comunicações do AEM Forms
+# Chamar APIs do AEM Forms Communications usando a autenticação de servidor para servidor do OAuth
 
 Este guia fornece instruções para configurar e chamar APIs síncronas do AEM Forms Communications que são acessadas por meio do Adobe Developer Console usando a autenticação de servidor para servidor do OAuth.
 
@@ -35,7 +35,7 @@ Verifique se você tem os direitos de acesso e as permissões necessários antes
 
 >[!NOTE]
 >
-> Para saber mais sobre atribuição de funções e concessão de acesso a usuários, consulte o artigo [Adicionar usuários e funções](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Para saber mais sobre atribuição de funções e concessão de acesso a usuários, consulte o artigo [Adicionar usuários e funções](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Acesso ao Repositório Git**
 
@@ -122,7 +122,7 @@ Na página de detalhes do **Ambiente**, anote a instância da URL do AEM.
 
 >[!NOTE]
 >
-> Para ver como acessar o Ambiente de acesso do AEM Cloud Service e o Ponto de extremidade do AEM Forms, consulte [Documentação de gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR).
+> Para ver como acessar o Ambiente de acesso do AEM Cloud Service e o Ponto de extremidade do AEM Forms, consulte [Documentação de gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
 ### Etapa 2: clonar repositório Git
 
@@ -261,7 +261,7 @@ Gerar tokens de acesso manualmente no Adobe Developer Console:
 
 >[!TAB Para Produção]
 
-Gerar tokens de forma programática usando a API do [Adobe IMS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Gerar tokens de forma programática usando a API do [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenciais necessárias:**
 
@@ -789,6 +789,10 @@ Para atualizar a instância do AEM para localizar Detalhes do ambiente:
 
    ![Atualizar ambiente](/help/forms/assets/update-env.png)
 
-## Artigos relacionados
-
-* Para saber como configurar o ambiente para Batch (APIs assíncronas), consulte [Processamento em Lote das Comunicações do AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
+>[!MORELIKETHIS]
+>
+>* [Introdução às Comunicações do AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitetura do AEM Forms as a Cloud Service para APIs de comunicação e Forms adaptável](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Processamento da comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [API de Comunicações do Forms - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
