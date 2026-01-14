@@ -148,7 +148,7 @@ Para fazer upload de um número maior de arquivos, use uma das abordagens a segu
 
 A ferramenta é fornecida somente para o grupo de administradores para ser usada na assimilação em larga escala de ativos dos armazenamentos de dados do Azure ou S3. Veja um vídeo que aborda a configuração e a assimilação.
 
->[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341393/?captions=por_br&quality=12&learn=on)
 
 A imagem a seguir ilustra os vários estágios ao assimilar ativos para a Experience Manager de um armazenamento de dados:
 
