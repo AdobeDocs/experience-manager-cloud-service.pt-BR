@@ -29,7 +29,7 @@ Você também pode optar por concluir o processamento adicional nos ativos carre
 |---------------------|----------------|-----------------|
 | [Interface do usuário do Console do Assets](#upload-assets) | Upload ocasional, facilidade de pressionar e arrastar, upload localizador. Não use o para fazer upload de muitos ativos. | Todos os usuários |
 | [Carregar API](#upload-using-apis) | Para decisões dinâmicas durante o upload. | Desenvolvedor |
-| Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Assimilação de ativos em baixo volume, mas não para migração. | Administrador, profissional de marketing |
+| Aplicativo de desktop do [[!DNL Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Assimilação de ativos em baixo volume, mas não para migração. | Administrador, profissional de marketing |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | Útil quando profissionais de criação e marketing trabalham em ativos nos aplicativos de desktop [!DNL Creative Cloud] compatíveis. | Creative, Profissional de marketing |
 | [Assimilação de ativos em massa](#asset-bulk-ingestor) | Recomendado para migrações em grande escala e assimilações ocasionais em massa. Somente para armazenamentos de dados compatíveis. | Administrador, Desenvolvedor |
 
@@ -416,7 +416,7 @@ Os detalhes técnicos das APIs e do protocolo de carregamento, bem como os links
 
 >[!MORELIKETHIS]
 >
->* Aplicativo de desktop do [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
+>* Aplicativo de desktop do [[!DNL Adobe Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
 >* [Sobre [!DNL Adobe Asset Link]](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentação](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
 >* [Referência técnica para o carregamento do ativo](developer-reference-material-apis.md#asset-upload)

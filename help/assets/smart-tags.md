@@ -30,7 +30,7 @@ As Tags Inteligentes são automaticamente provisionadas para [!DNL Adobe Experie
 A marcação inteligente habilitada do [!DNL Adobe AI] usa modelos de inteligência artificial para analisar conteúdo e adicionar marcas aos ativos. Dessa forma, reduz o tempo para que os usuários do DAM forneçam experiências avançadas aos clientes. As Tags inteligentes são exibidas em ordem decrescente de sua [pontuação de confiança](#confidence-score) nas propriedades do ativo.
 
 * **Ativos baseados em imagem**
-Para imagens, as Tags inteligentes se baseiam em algum aspecto visual. Imagens em muitos formatos são marcadas usando serviços de conteúdo inteligente. As Marcas Inteligentes são aplicadas aos [tipos de arquivos ](#supported-file-formats) compatíveis que geram representações nos formatos JPG e PNG.
+Para imagens, as Tags inteligentes se baseiam em algum aspecto visual. Imagens em muitos formatos são marcadas usando serviços de conteúdo inteligente. As Marcas Inteligentes são aplicadas aos [tipos de arquivos &#x200B;](#supported-file-formats) compatíveis que geram representações nos formatos JPG e PNG.
 
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
