@@ -47,11 +47,11 @@ As operações de API de locatário único oferecem suporte a dois tipos de aute
 
 * **Autenticação baseada em token:** a autenticação baseada em token usa um token de acesso (token de autenticação do portador) para fazer solicitações ao Experience Manager as a Cloud Service. O AEM Forms as a Cloud Service fornece APIs para recuperar com segurança o token de acesso. Para recuperar e usar o token para autenticar uma solicitação:
 
-   1. [Recupere a credencial do Experience Manager as a Cloud Service da Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [Instale a credencial do Experience Manager as a Cloud Service em seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Servidor de Aplicativos, Servidor Web ou outros servidores que não sejam da AEM) configurados para enviar solicitações ao (efetuar chamadas) Cloud Service.
-   1. [Gerar um token JWT e trocá-lo com APIs do Adobe IMS por um token de acesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [Recupere a credencial do Experience Manager as a Cloud Service da Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR).
+   1. [Instale a credencial do Experience Manager as a Cloud Service em seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR). (Servidor de Aplicativos, Servidor Web ou outros servidores que não sejam da AEM) configurados para enviar solicitações ao (efetuar chamadas) Cloud Service.
+   1. [Gerar um token JWT e trocá-lo com APIs do Adobe IMS por um token de acesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR).
    1. Execute a API do Experience Manager com o token de acesso como um token de autenticação de portador.
-   1. [Defina as permissões apropriadas para o usuário da conta técnica no ambiente do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. [Defina as permissões apropriadas para o usuário da conta técnica no ambiente do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR#configure-access-in-aem).
 
   >[!NOTE]
   >

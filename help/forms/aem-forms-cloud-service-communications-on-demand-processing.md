@@ -35,7 +35,7 @@ Verifique se você tem os direitos de acesso e as permissões necessários antes
 
 >[!NOTE]
 >
-> Para saber mais sobre atribuição de funções e concessão de acesso a usuários, consulte o artigo [Adicionar usuários e funções](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
+> Para saber mais sobre atribuição de funções e concessão de acesso a usuários, consulte o artigo [Adicionar usuários e funções](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
 
 **Acesso ao Repositório Git**
 
@@ -122,7 +122,7 @@ Na página de detalhes do **Ambiente**, anote a instância da URL do AEM.
 
 >[!NOTE]
 >
-> Para ver como acessar o Ambiente de acesso do AEM Cloud Service e o Ponto de extremidade do AEM Forms, consulte [Documentação de gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
+> Para ver como acessar o Ambiente de acesso do AEM Cloud Service e o Ponto de extremidade do AEM Forms, consulte [Documentação de gerenciamento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR).
 
 ### Etapa 2: clonar repositório Git
 
@@ -261,7 +261,7 @@ Gerar tokens de acesso manualmente no Adobe Developer Console:
 
 >[!TAB Para Produção]
 
-Gerar tokens de forma programática usando a API do [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Gerar tokens de forma programática usando a API do [Adobe IMS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenciais necessárias:**
 
