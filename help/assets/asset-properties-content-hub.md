@@ -111,7 +111,7 @@ Algumas propriedades dos ativos exibidos em [!DNL Content Hub] são derivadas, o
 
 * **Tags inteligentes:** o [!DNL The Content Hub] usa os serviços de conteúdo inteligente da IA do Adobe para treinar ativos usando o algoritmo de reconhecimento na estrutura baseada em tags. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. As Tags inteligentes aumentam a velocidade do conteúdo de seus projetos, ajudando você a encontrar ativos relevantes rapidamente. As tags inteligentes são um exemplo de informações de ativos que não estão contidas na imagem. O [!DNL Experience Manager Assets] aplica tags inteligentes automaticamente a ativos, por padrão.
 
-* **Marcas de cores:** [Marcas de cores](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) ajudam a reconhecer um ativo usando cores identificadas automaticamente em um ativo por meio dos recursos de IA da Adobe.
+* **Marcas de cores:** [Marcas de cores](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=pt-BR) ajudam a reconhecer um ativo usando cores identificadas automaticamente em um ativo por meio dos recursos de IA da Adobe.
 
 * Data de upload
 

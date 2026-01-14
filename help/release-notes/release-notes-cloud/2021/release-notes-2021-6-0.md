@@ -155,7 +155,7 @@ A data de lançamento do AEM Screens as a Cloud Service é 24 de junho de 2021.
 ### Novidades {#what-is-new-screens-june}
 
 >[!NOTE]
->Consulte o [Guia do AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) para obter o conhecimento básico necessário para instalar, configurar e executar com êxito o Screens as a Cloud Service e criar um link para a documentação técnica de conceitos detalhados.
+>Consulte o [Guia do AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=pt-BR) para obter o conhecimento básico necessário para instalar, configurar e executar com êxito o Screens as a Cloud Service e criar um link para a documentação técnica de conceitos detalhados.
 
 * O gerenciamento de registro de dispositivos em massa significa que o provisionamento de grandes quantidades de dispositivos de reprodução é mais rápido e eficiente.
 
@@ -184,7 +184,7 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.5.4 é 28 
 
 ### Novidades {#what-is-new-ctt-latest}
 
-* Suporte para uma etapa [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) opcional adicionada para uso com a CTT. A etapa de pré-cópia pode ser usada para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo quando a instância do AEM de origem é configurada para usar um armazenamento de dados do Amazon S3 ou do Azure Blob.
+* Suporte para uma etapa [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=pt-BR) opcional adicionada para uso com a CTT. A etapa de pré-cópia pode ser usada para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo quando a instância do AEM de origem é configurada para usar um armazenamento de dados do Amazon S3 ou do Azure Blob.
 
 * A grade de proteção foi adicionada à CTT para impedir que os usuários interrompam uma assimilação e corrompam os dados quando eles atingirem o ponto crítico durante a fase de assimilação.
 

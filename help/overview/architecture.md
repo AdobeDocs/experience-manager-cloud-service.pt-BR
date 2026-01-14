@@ -239,4 +239,4 @@ A arquitetura mais recente do AEM as a Cloud Service apresenta algumas mudanças
 * Edge Delivery Services:
    * [Visão geral do AEM as a Cloud Service - com o Edge Delivery Services](/help/edge/overview.md)
    * [Utilização do Edge Delivery Services](/help/edge/overview.md)
-   * [Explore a arquitetura subjacente e as partes importantes do AEM as a Cloud Service com o Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
+   * [Explore a arquitetura subjacente e as partes importantes do AEM as a Cloud Service com o Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=pt-BR)

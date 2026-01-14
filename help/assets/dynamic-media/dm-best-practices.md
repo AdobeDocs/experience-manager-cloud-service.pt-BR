@@ -46,7 +46,7 @@ Alguns dos principais princípios do Dynamic Media incluem:
 * **Biblioteca do visualizador de experiência**: personalize visualizadores de experiência da marca e imagens e vídeos. Esses visualizadores se integram perfeitamente às suas experiências digitais.
 * **Suporte a formatos emergentes:** O Dynamic Media permite a entrega de experiências panorâmicas e 3D.
 
-Ao explorar a [Jornada do Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), revisar a lista consolidada de práticas recomendadas abaixo pode ajudá-lo a aproveitar ao máximo seus recursos. Adapte essas práticas recomendadas do Dynamic Media aos requisitos específicos do contexto e do projeto para que você possa otimizar suas experiências em canais e dispositivos.
+Ao explorar a [Jornada do Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), revisar a lista consolidada de práticas recomendadas abaixo pode ajudá-lo a aproveitar ao máximo seus recursos. Adapte essas práticas recomendadas do Dynamic Media aos requisitos específicos do contexto e do projeto para que você possa otimizar suas experiências em canais e dispositivos.
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -94,9 +94,9 @@ Use o componente de Imagem v3 para recorte inteligente para aprimorar a apresent
 Inclua somente o arquivo JavaScript do visualizador primário na página. Evite fazer referência a arquivos JavaScript adicionais que a lógica de tempo de execução do visualizador pode baixar. Especificamente, não vincule diretamente à biblioteca `Utils.js` do HTML5 SDK a partir do caminho de contexto `/s7viewers` (conhecido como inclusão consolidada do SDK). A lógica do visualizador gerencia o local de `Utils.js` ou bibliotecas de visualizadores de tempo de execução semelhantes, que podem mudar entre versões. A Adobe não retém versões anteriores do visualizador secundário do no servidor, portanto, referenciá-las diretamente pode quebrar a funcionalidade do visualizador em atualizações futuras.
 * **Diretrizes de Inserção:**
 Use a documentação para incorporar diretrizes específicas a cada visualizador.
-Quer saber mais? Ir para [Visualizadores do AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+Quer saber mais? Ir para [Visualizadores do AEM Assets](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
 * **Tutorial e exemplos do SDK:**
-Revise o [Tutorial do Visualizador do SDK](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) e os [exemplos de aplicativos do HTML5 SDK](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) para obter um entendimento completo das APIs de componentes do SDK.
+Revise o [Tutorial do Visualizador do SDK](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/c-tutorial) e os [exemplos de aplicativos do HTML5 SDK](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) para obter um entendimento completo das APIs de componentes do SDK.
 
 
 ## Preparar ativos para entrega
@@ -132,7 +132,7 @@ Quer saber mais? Vá para [Práticas recomendadas para otimizar a qualidade das 
 
 Como a percepção da qualidade da imagem varia de pessoa para pessoa, às vezes, uma abordagem sistemática da experimentação é essencial para alcançar resultados desejáveis. O Adobe Experience Manager auxilia esse processo com mais de 100 comandos do Dynamic Media para aprimoramento da imagem.
 
-Quer saber mais? Assista ao [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos, 17 segundos).
+Quer saber mais? Assista ao [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos, 17 segundos).
 
 Para avaliar o impacto desses diferentes comandos na qualidade da imagem, você pode fazer upload de uma imagem no Dynamic Media, usar a interface da ferramenta no URL especificado e aplicar os comandos que deseja experimentar.
 
@@ -154,7 +154,7 @@ O Recorte inteligente é um recurso do Dynamic Media que usa a IA do Adobe, a IA
 
 Uma prática recomendada é criar um Perfil de imagem com Recorte inteligente. No perfil, é possível definir vários tamanhos de tela e permitir que a IA do Adobe faça o resto, garantindo que suas imagens e vídeos sejam sempre otimizados para o dispositivo do visualizador.
 
-Quer saber mais? Assista ao [Uso do Corte Inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutos, 35 segundos) e [Uso do Corte Inteligente do Dynamic Media para Vídeo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minutos, 22 segundos).
+Quer saber mais? Assista ao [Uso do Corte Inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutos, 35 segundos) e [Uso do Corte Inteligente do Dynamic Media para Vídeo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minutos, 22 segundos).
 
 ### Melhorar as classificações da SEO
 
@@ -182,7 +182,7 @@ Saiba como você pode transformar condicionalmente URLs com base em vários fato
 Quer saber mais? Ir para [Usar conjuntos de regras para transformar URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
 * **Imagem Inteligente e Recorte Inteligente:**
 Use os recursos de Imagem inteligente e Recorte inteligente no Dynamic Media para fornecer imagens otimizadas e responsivas. Isso não só melhora o tempo de carregamento da página, como também contribui positivamente para as classificações de SEO.
-Quer saber mais? Vá para [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) ou assista [Usando o Smart Crop com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutos, 35 segundos).
+Quer saber mais? Vá para [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) ou assista [Usando o Smart Crop com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutos, 35 segundos).
 
 Lembre-se de que essas práticas recomendadas se alinham bem com as práticas recomendadas de SEO de imagem da Google. Essas práticas enfatizam a importância de fornecer contexto e clareza aos mecanismos de pesquisa por meio de convenções de nomenclatura adequadas, dados estruturados e entrega de imagem otimizada.
 
@@ -224,7 +224,7 @@ Se você deseja sobrepor um logotipo ou ícone em uma imagem existente, o Dynami
 | **Carregar e publicar o logotipo ou a imagem de ícone** | Em seguida, faça upload e publique a imagem que deseja sobrepor sobre a imagem base. Esta imagem deve ser um PNG transparente com o logotipo ou ícone que você deseja sobrepor.<br>Esta é a imagem PNG transparente de um objeto estrela com efeitos de transparência que será sobreposta:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
 | **Aplicar a URL do Dynamic Media** | Agora, crie um URL do Dynamic Media que combine a imagem base com a imagem de logotipo ou ícone. Você pode usar comandos de URL para obter esse efeito.<br>A estrutura da URL é semelhante a esta:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>onde o ativo<ul><li> `hotspotRetailBaseImage` é a imagem base.</li><li> `starxp` é a imagem de logotipo/ícone.</li><li> `layer=1` especifica que o logotipo ou ícone deve ser colocado sobre a imagem base.</li><li> `scale=1.25` ajusta o tamanho do logotipo/ícone.</li><li> `posN=0.33,-.25` determina a posição do logotipo/ícone em relação à imagem base.</li><li> `fmt=png` garante que a saída esteja no formato PNG.</li></ul> |
 
-O que aprender mais? Vá para [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) para obter mais detalhes sobre o comando `src` e outros comandos de URL do Dynamic Media.
+O que aprender mais? Vá para [src](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) para obter mais detalhes sobre o comando `src` e outros comandos de URL do Dynamic Media.
 
 
 #### Sobreposição de texto promocional
@@ -276,7 +276,7 @@ Derivado da imagem original, enfatizando a sala.
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
 
 Fique à vontade para explorar essas variações de acordo com suas necessidades específicas.
-Deseja saber mais sobre os comandos disponíveis em um URL? Vá para [Referência de comando](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+Deseja saber mais sobre os comandos disponíveis em um URL? Vá para [Referência de comando](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
 ### Entregar imagens do GIF
 
@@ -320,7 +320,7 @@ Use o URL fornecido para vincular diretamente ao vídeo. Use o hiperlink adequad
    * **Inserir o vídeo:**
 Copie o código incorporado fornecido e cole-o na HTML da página da Web onde deseja que o vídeo apareça. Isso permite que o vídeo seja reproduzido diretamente no site.
 
-Quer saber mais? Ir para [Vídeo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
+Quer saber mais? Ir para [Vídeo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
 ### Configurar vídeos para obter qualidade e engajamento ideais
 
