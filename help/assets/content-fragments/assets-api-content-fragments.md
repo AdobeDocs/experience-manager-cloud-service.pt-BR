@@ -4,9 +4,9 @@ description: Saiba mais sobre o suporte a Fragmentos de conteúdo na API HTTP do
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+source-git-commit: f55299d7054a9e1f8e1356cb975dfeee162ec202
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1856'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html) |
 | AEM as a Cloud Service | Este artigo |
 
 >[!CAUTION]
@@ -53,7 +53,7 @@ A API permite operar o Adobe Experience Manager as a Cloud Service como um CMS h
 
 Por exemplo, [Aplicativos de Página Única (SPA)](/help/implementing/developing/hybrid/introduction.md), baseados em estrutura ou personalizados, exigem conteúdo fornecido pela API HTTP, geralmente no formato JSON.
 
-Embora os [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) forneçam uma API personalizável que possa atender às operações de Leitura necessárias para essa finalidade e cuja saída em JSON possa ser personalizada, eles exigem o know-how do AEM WCM (Web Content Management) para implementação. Isso ocorre porque eles devem ser hospedados em páginas baseadas em modelos dedicados do AEM. Nem todas as organizações de desenvolvimento de SPA têm acesso direto a esse conhecimento.
+Embora os [Componentes principais do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) forneçam uma API personalizável que possa atender às operações de Leitura necessárias para essa finalidade e cuja saída em JSON possa ser personalizada, eles exigem o know-how do AEM WCM (Web Content Management) para implementação. Isso ocorre porque eles devem ser hospedados em páginas baseadas em modelos dedicados do AEM. Nem todas as organizações de desenvolvimento de SPA têm acesso direto a esse conhecimento.
 
 É quando a API REST do Assets pode ser usada. Ele permite que os desenvolvedores acessem ativos (por exemplo, imagens e fragmentos de conteúdo) diretamente, sem a necessidade de primeiro incorporá-los em uma página e entregar seu conteúdo no formato JSON serializado.
 
@@ -87,6 +87,7 @@ Ele usa o ponto de extremidade `/api/assets` e requer o caminho do ativo para ac
 Por exemplo, para acessar `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
+>
 >O acesso por:
 >
 >* `/api/assets` **não** precisa da utilização do seletor `.model`.
@@ -170,8 +171,8 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >
 >Para obter mais informações, consulte:
 >
->* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR)
->* [Vídeo - Desenvolvendo para CORS com AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=pt-BR)
+>* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Vídeo - Desenvolvendo para CORS com AEM (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 Em ambientes com requisitos de autenticação específicos, o OAuth é recomendado.
@@ -269,7 +270,7 @@ O conteúdo associado não é exposto.
 
 O uso pode variar dependendo se você está usando um ambiente de Autor ou Publicação do AEM, juntamente com o caso de uso específico.
 
-* Recomenda-se que a criação esteja associada a uma instância de Autor ([&#x200B; e, no momento, não há como replicar um fragmento para publicar usando esta API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
+* Recomenda-se que a criação esteja associada a uma instância de Autor ([ e, no momento, não há como replicar um fragmento para publicar usando esta API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
 * A entrega é possível de ambos os ambientes, pois o AEM apresenta o conteúdo solicitado somente no formato JSON.
 
    * O armazenamento e a entrega de uma instância do autor do AEM devem ser suficientes para aplicativos de biblioteca de mídia protegidos pelo firewall.
@@ -383,4 +384,4 @@ Consulte esta página para obter referências detalhadas de API:
 Para obter mais informações, consulte:
 
 * [Documentação da API HTTP do Assets](/help/assets/mac-api-assets.md)
-* [Sessão do AEM Gem: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=pt-BR)
+* [Sessão do AEM Gem: OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)
