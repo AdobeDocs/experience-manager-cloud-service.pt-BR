@@ -270,7 +270,7 @@ O conteúdo associado não é exposto.
 
 O uso pode variar dependendo se você está usando um ambiente de Autor ou Publicação do AEM, juntamente com o caso de uso específico.
 
-* Recomenda-se que a criação esteja associada a uma instância de Autor ([ e, no momento, não há como replicar um fragmento para publicar usando esta API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
+* Recomenda-se que a criação esteja associada a uma instância de Autor ([&#x200B; e, no momento, não há como replicar um fragmento para publicar usando esta API](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)).
 * A entrega é possível de ambos os ambientes, pois o AEM apresenta o conteúdo solicitado somente no formato JSON.
 
    * O armazenamento e a entrega de uma instância do autor do AEM devem ser suficientes para aplicativos de biblioteca de mídia protegidos pelo firewall.
