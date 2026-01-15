@@ -4,9 +4,9 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1604'
 ht-degree: 8%
 
 ---
@@ -94,7 +94,7 @@ Um objeto de campo tem a seguinte definição de tipo.
 | `name` | `string` | Propriedade [ou caminho](#nesting) onde os dados devem ser mantidos | Sim |
 | `label` | `FieldLabel` | Rótulo do campo | Sim |
 | `description` | `FieldDescription` | Descrição do campo | Não |
-| `value` | `FieldValue` | Esse é um valor padrão, que serve como um espaço reservado. Nenhuma atualização de conteúdo é orientada por esse valor. É apenas uma representação na interface do usuário. | Não |
+| `value` | `FieldValue` | Esse é um valor padrão, que serve como um espaço reservado. Se nenhum valor for definido, o Editor Universal manterá o que for definido como `value` na definição do modelo. Isso garante que o que você vê corresponda ao que é persistente no back-end. | Não |
 | `valueType` | `ValueType` | Validação padrão, pode ser `string`, `string[]`, `number`, `date`, `boolean` | Não |
 | `required` | `boolean` | O campo é obrigatório? | Não |
 | `readOnly` | `boolean` | O campo é somente leitura | Não |
@@ -123,7 +123,7 @@ A seguir estão os tipos de componentes possíveis para usar em campos de render
 | [Booleano](#boolean) | `boolean` |
 | [Grupo de caixas de seleção](#checkbox-group) | `checkbox-group` |
 | [Container](#container) | `container` |
-| [Fragmento do conteúdo](#content-fragment) | `aem-content-fragment` |
+| [Fragmento de conteúdo](#content-fragment) | `aem-content-fragment` |
 | [Data e hora](#date-time) | `date-time` |
 | [Fragmento de experiência](#experience-fragment) | `aem-experience-fragment` |
 | [Multisseleção](#multiselect) | `multiselect` |

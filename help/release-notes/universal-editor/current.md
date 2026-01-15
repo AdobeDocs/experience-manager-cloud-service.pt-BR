@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2025.12.12
-description: Estas são as notas de versão do Universal Editor 2025.12.11.
+title: Notas de versão do Universal Editor 2026.01.15
+description: Estas são as notas de versão do Universal Editor de 2026.01.15.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
 
 
-# Notas de versão do Universal Editor 2025.12.12 {#release-notes}
+# Notas de versão do Universal Editor 2026.01.15 {#release-notes}
 
-Estas são as notas de versão da versão de 12 de dezembro de 2025 do Universal Editor.
+Estas são as notas de versão da versão de 15 de janeiro de 2026 do Editor universal.
 
 >[!TIP]
 >
@@ -26,11 +26,10 @@ Estas são as notas de versão da versão de 12 de dezembro de 2025 do Universal
 
 ## Novidades {#what-is-new}
 
-* O suporte foi adicionado às tabelas existentes no [editor de rich text.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* A chave da guia foi habilitada para aninhar listas no [editor de rich text.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* O recurso de logon de desenvolvedor agora pode ser desabilitado por meio da [meta tag `aem-dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
-* Um clique com o botão direito na seção de sobreposição agora exibe um menu de [opções contextuais.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
-* O [recuo com escopo](/help/implementing/universal-editor/configure-rte.md#indentation) agora tem suporte no [editor de rich text.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* Foi adicionado suporte para configuração e persistência de [valores padrão de campos de modelo.](/help/implementing/universal-editor/field-types.md)
+   * Se nenhum valor for definido, o Editor Universal manterá o que for definido como `value` na definição do modelo.
+   * Isso garante que o que você vê corresponda ao que é persistente no back-end.
+   * Esta é uma mudança radical.
 
 ## Recursos da adoção antecipada {#early-adopter}
 
@@ -40,13 +39,6 @@ Se você estiver interessado em testar os recursos futuros listados abaixo e com
 
 ## Outras melhorias {#other-improvements}
 
-* O painel de propriedades agora é sincronizado quando vários campos são alterados em contexto.
-* O seletor de Fragmento de conteúdo agora é aberto conforme esperado nas instâncias do AEM 6.5.
-* A tecla Escape agora fecha as caixas de diálogo no editor de rich text.
-* A ação **Remover componente** agora só está disponível quando um componente é selecionado.
-* O editor de Fragmento de conteúdo correto (antigo ou novo) agora é aberto com base na instância usada (se o nome do host for o padrão do AEM as a Cloud Service, use o novo editor e, em seguida, use o editor herdado).
-* A validação do filtro é adicionada à ação duplicar.
-* Títulos longos agora são truncados no painel de propriedades.
-* Os arrays gerenciadores de vários sites com mais de 10 valores agora são manipulados corretamente.
-* Os erros de conflito ao criar vários componentes com o mesmo nome agora são manipulados corretamente.
-* Foi adicionado gerenciamento de matriz de vários sites com valores >10.
+* A limpeza de dados agora é executada corretamente na alteração de conteúdo.
+* Agora há suporte para várias operações na atualização de extensões.
+* O botão Fechar para logon de desenvolvedor agora se comporta conforme esperado.
