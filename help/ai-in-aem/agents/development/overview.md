@@ -3,9 +3,9 @@ title: Visão geral do agente de desenvolvimento
 description: Saiba como o Agente de desenvolvimento no AEM analisa pipelines com falha no Cloud Manager e cria logs para sugerir correções de código e acelerar a depuração.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
+source-git-commit: d10eb260195e402a6347ad40ddb851baf5949c83
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ O Agente de desenvolvimento ajuda os desenvolvedores e administradores do AEM a 
 
 Atualmente, o agente pode recuperar os status do pipeline e ajudar você a solucionar problemas de etapas de criação com falha, sugerindo correções e economizando tempo ao depurar implantações do AEM as a Cloud Service em ambientes de desenvolvimento, preparo e produção. Ele examina logs de compilação e código relacionado para recomendar uma correção que pode ser aplicada manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478012?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -28,6 +28,8 @@ Atualmente, o agente pode recuperar os status do pipeline e ajudar você a soluc
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
+
+Email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) com comentários ou solicitações para acessar este agente.
 
 ## Acessar o agente de desenvolvimento por meio do Cloud Manager {#how-to-access-the-agent}
 
@@ -81,13 +83,13 @@ O trabalho de solução de problemas do pipeline do Agente de desenvolvimento ex
 
 | Prompt | Resultado |
 | --- | --- |
+| *Solucionar problemas do meu pipeline com falha* | Executa uma análise do motivo pelo qual um pipeline falhou; se não estiver claro a qual pipeline está sendo referenciado, perguntas adicionais serão feitas ao usuário. |
 | *Listar meus pipelines com falha para o Programa Principal.* | Embora os resultados possam variar, esse prompt gera uma tabela de pipelines com falha, com uma sugestão de acompanhamento para fazer referência a um pipeline específico a ser analisado. |
-| *Analise meu pipeline com falha chamado &quot;Pipeline de Desenvolvimento&quot;.* | Esse prompt resulta em uma análise do pipeline que falhou com sugestões para corrigir. |
+| *Analise meu pipeline com falha chamado &quot;Pipeline de Desenvolvimento&quot;.* | Esse prompt resulta em uma análise do pipeline que falhou com sugestões para corrigir. Se houver várias falhas, serão feitas perguntas adicionais ao usuário. |
+| *Solução de problemas de execução de pipeline 1234567* | Ao fornecer uma ID de execução exata do pipeline, uma análise de pipeline é executada. |
 
 ## Recursos fora do escopo {#out-of-scope-features}
 
 A solução de problemas do pipeline opera na etapa de build do pipeline de pilha completa. Para outros tipos e etapas de pipeline, depure as falhas baixando e inspecionando os logs.
 
 Consulte [Logs de Acesso e Download](/help/implementing/cloud-manager/manage-logs.md).
-
-A solução de problemas de pipeline não é compatível com programas que usam BYOGIT (Bring Your Own Git, Traga seu próprio Git).
