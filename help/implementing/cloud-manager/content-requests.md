@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: c5f4a3502153ff3c7e9fbce164a9c9b63196b547
+source-git-commit: 7bf48596f64dd9682fa2fb3e5d5db513a8a7fbdc
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '2054'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ Consulte o [Painel de Licenças](/help/implementing/cloud-manager/license-dashbo
 
 ## Regras de coleção do lado do servidor {#serverside-collection}
 
-O AEM as a Cloud Service aplica regras de coleção do lado do servidor para contar solicitações de conteúdo. Essas regras excluem bots conhecidos (como rastreadores de mecanismo de pesquisa) e um conjunto de serviços de monitoramento que fazem ping regular no site. Outro tráfego do tipo sintético ou de monitoramento que não esteja nessa lista de exclusão é contado como solicitações de conteúdo faturável.
+O AEM as a Cloud Service aplica regras de coleção do lado do servidor para contar solicitações de conteúdo. Essas regras excluem bots conhecidos (como rastreadores de mecanismo de pesquisa), incluindo rastreadores AI/LLM reconhecidos, e um conjunto de serviços de monitoramento que fazem ping regular no site. Outro tráfego do tipo sintético, automatizado ou de monitoramento que não esteja nessa lista de exclusão é contado como solicitações de conteúdo faturável.
 
 As tabelas a seguir listam os tipos de solicitações de conteúdo incluídas e excluídas, com breves descrições de cada uma.
 
@@ -77,7 +77,7 @@ As tabelas a seguir listam os tipos de solicitações de conteúdo incluídas e 
 | Tipo de solicitação | Solicitação de conteúdo | Descrição |
 | --- | --- | --- |
 | Código HTTP 100-299 | Incluído | Inclui solicitações bem-sucedidas que retornam conteúdo completo ou parcial do HTML ou JSON.<br>Código HTTP 206: essas solicitações fornecem apenas uma parte do conteúdo completo. As solicitações parciais são incluídas quando entregam parte de uma resposta HTML ou JSON usada na renderização do conteúdo da página. |
-| Bibliotecas HTTP para automação | Incluído | Solicitações feitas por ferramentas ou bibliotecas que recuperam o conteúdo da página. Exemplos incluem o seguinte: <br>· Amazon CloudFront<br>· Apache Http Client<br>· Axios<br>· Azureus<br>· Curl<br>· Busca de Nó GitHub<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Solicitações Python<br>· Reator Netty<br>· Wget<br>· WinHTTP<br>· HTTP<br>· Busca de Nó GitHub<br>· Netty de Reator<br> |
+| Bibliotecas HTTP para automação | Incluído | Solicitações feitas por ferramentas ou bibliotecas que recuperam o conteúdo da página. Exemplos incluem o seguinte: <br>· Amazon CloudFront<br>· Apache Http Client<br>· Axios<br>· Azureus<br>· Curl<br>· Busca de Nó GitHub<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Solicitações Python<br>· Reator Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br>· GitHub Node Fetch<br>· Reator Netty<br>Ele também pode incluir agentes personalizados ou automação orientada por IA quando o tráfego não é classificado como um bot conhecido.<br><br> |
 | Ferramentas de monitoramento e verificação de integridade | Incluído | Solicitações usadas para monitorar a integridade ou a disponibilidade de páginas.<br>Consulte [Tipos de solicitações de conteúdo excluídas](#excluded-content-request).<br>Os exemplos incluem o seguinte:<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatível; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">` solicitações | Incluído | Quando os clientes fazem pré-carregamento ou pré-busca de conteúdo (por exemplo, com `<link rel="prefetch">`), o sistema conta essas solicitações do lado do servidor. Observe que essa abordagem pode aumentar o tráfego, dependendo de quantas dessas páginas são buscadas previamente. |
 | Tráfego que bloqueia os relatórios do Adobe Analytics ou do Google Analytics | Incluído | É mais comum que os visitantes de sites tenham software de privacidade instalado (bloqueadores de anúncios e assim por diante) que afetam a precisão do Google Analytics ou do Adobe Analytics. O AEM as a Cloud Service conta as solicitações no primeiro ponto de entrada na infraestrutura operada pela Adobe e não no lado do cliente. |
@@ -97,10 +97,11 @@ Consulte também [Painel de licenças](/help/implementing/cloud-manager/license-
 | URL para os clientes monitorarem o programa Cloud Service | Excluído | A Adobe recomenda que você use a URL para monitorar a disponibilidade ou a verificação de integridade externamente.<br><br>`/system/probes/health` |
 | Serviço de aquecimento do pod do AEM as a Cloud Service | Excluído | Agente: skyline-service-warmup/1.* |
 | Mecanismos de pesquisa, redes sociais e bibliotecas HTTP conhecidos (marcados pelo Fastly) | Excluído | Serviços conhecidos que visitam o site regularmente para atualizar seu índice de pesquisa ou serviço:<br><br>Exemplos:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot Google<br>· AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br>· Claudebot |
+| Crawlers de AI/LLM bem conhecidos (marcados pelo Fastly) | Excluído | Solicitações de rastreadores AI/LLM reconhecidos que são identificados como bots conhecidos (por exemplo, por `User-Agent` ou outros sinais de classificação de bot). Essas solicitações não são faturáveis.<br><br>Se um agente de IA não for identificado como um bot conhecido (por exemplo, ele usa um navegador genérico `User-Agent`), suas solicitações poderão ser contadas como solicitações de conteúdo faturável. |
 | Excluir chamadas do Commerce integration framework | Excluído | As solicitações feitas ao AEM que são encaminhadas para o Commerce integration framework — a URL começa com `/api/graphql` — para evitar dupla contagem, elas não são faturáveis para o Cloud Service. |
 | Excluir `manifest.json` | Excluído | O manifesto não é uma chamada de API. Está aqui para fornecer informações sobre como instalar sites da Web em um desktop ou telefone celular. O Adobe não deve contar a solicitação JSON para `/etc.clientlibs/*/manifest.json` |
 | Excluir `favicon.ico` | Excluído | Embora o conteúdo retornado não deva ser HTML ou JSON, alguns cenários, como fluxos de autenticação SAML, foram observados para retornar favicons como HTML. Como resultado, os favicons são explicitamente excluídos da contagem. |
-| Fragmento de experiência (XF) - Reutilização do mesmo domínio | Excluído | Solicitações feitas a caminhos XF (como `/content/experience-fragments/...`) de páginas hospedadas no mesmo domínio (conforme identificado pelo cabeçalho Referenciador correspondente ao host da solicitação).<br><br> Exemplo: uma página inicial em `aem.customer.com` que obtém um XF para um banner ou cartão do mesmo domínio.<br><br>· A URL corresponde a /content/experience-fragments/...<br>· O domínio referenciador corresponde a `request_x_forwarded_host`<br><br>**Observação:** Se o caminho do Fragmento de Experiência for personalizado (por exemplo, usando `/XFrags/...` ou qualquer caminho fora de `/content/experience-fragments/`), a solicitação não será excluída e poderá ser contada, mesmo que seja do mesmo domínio. Recomendamos usar a estrutura de caminho XF padrão do Adobe para garantir que a lógica de exclusão se aplique corretamente. |
+| Fragmento de experiência (XF) - Reutilização do mesmo domínio | Excluído | Solicitações feitas a caminhos XF (como `/content/experience-fragments/...`) de páginas hospedadas no mesmo domínio (conforme identificado pelo cabeçalho Referenciador correspondente ao host da solicitação).<br><br> Exemplo: uma página inicial em `aem.customer.com` que obtém um XF para um banner ou cartão do mesmo domínio.<br><br>· A URL corresponde a /content/experience-fragments/...<br>· O domínio do referenciador corresponde a `request_x_forwarded_host`<br><br>**Observação:** Se o caminho do Fragmento da Experiência for personalizado (por exemplo, usando `/XFrags/...` ou qualquer caminho fora de `/content/experience-fragments/`), a solicitação não será excluída e poderá ser contada, mesmo que seja do mesmo domínio. A Adobe recomenda usar a estrutura de caminho XF padrão do Adobe para garantir que a lógica de exclusão se aplique corretamente. |
 
 ## Gerenciamento de solicitações de conteúdo {#managing-content-requests}
 
@@ -108,16 +109,16 @@ Conforme mencionado na seção [Variações de solicitações de conteúdo do Cl
 
 ### Técnicas de implementação para gerenciar solicitações de conteúdo {#implementation-techniques-to-manage-crs}
 
-* Certifique-se de que todas as respostas de Página não encontrada sejam entregues com o status HTTP 404.  Se forem retornados com um status 200, eles serão contabilizados nas solicitações de conteúdo.
+* Certifique-se de que todas as respostas de Página não encontrada sejam entregues com o status HTTP 404.  Se forem retornados com um status 200, eles serão incluídos nas solicitações de conteúdo.
 * Rotear a verificação de integridade ou as ferramentas de monitoramento para o URL /system/probes/health ou usar o método HEAD em vez do GET para evitar a ocorrência de solicitações de conteúdo.
 * Equilibre suas necessidades de atualização de conteúdo com o custo de licença da AEM para qualquer rastreador de pesquisa personalizado que você integrou ao seu site.  Um rastreador excessivamente agressivo pode consumir muitas solicitações de conteúdo.
-* Procure qualquer redirecionamento no lado do servidor (status 301 ou 302) em vez de no lado do cliente (status 200 com redirecionamento do javascript) para evitar duas solicitações de conteúdo separadas.
+* Trate qualquer redirecionamento como do lado do servidor (status 301 ou 302) em vez de do lado do cliente (status 200 com redirecionamento do JavaScript) para evitar duas solicitações de conteúdo separadas.
 * Combine ou reduza chamadas de API, que são respostas JSON do AEM que podem ser carregadas para renderizar a página.
-* Certifique-se de que o agente do usuário do navegador seja passado corretamente para o AEM para aproveitar a regra de exclusão de solicitação de conteúdo de &quot;mecanismo de pesquisa conhecido&quot; descrita acima.  Às vezes, o agente de usuário de origem é perdido com determinadas implementações headless ou configurações de CDN que podem impedir a exclusão e levar a solicitações de conteúdo mais altas do que se o agente de usuário fosse passado.
+* Certifique-se de que o agente do usuário do navegador seja passado corretamente para o AEM. Isso aproveita a regra de exclusão de solicitação de conteúdo do &quot;mecanismo de pesquisa conhecido&quot; descrita acima.  Às vezes, o agente de usuário de origem é perdido com determinadas implementações headless ou configurações de CDN. Se isso acontecer, poderá impedir a exclusão e levar a solicitações de conteúdo mais altas do que se o agente do usuário tivesse sido transmitido.
 
 ### Regras de filtro de tráfego para gerenciar solicitações de conteúdo {#traffic-filter-rules-to-manage-crs}
 
-* Um padrão de bot comum é usar um agente de usuário vazio.  Será necessário analisar os padrões de implementação e tráfego para ver se o agente de usuário vazio é útil ou não.  Se você quiser bloquear esse tráfego, a [sintaxe](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) recomendada é:
+* Um padrão de bot comum é usar um agente de usuário vazio.  Revise sua implementação e padrões de tráfego para ver se o agente de usuário vazio é útil ou não.  Se você quiser bloquear esse tráfego, a [sintaxe](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) recomendada é:
 
 ```
 trafficFilters:
@@ -130,4 +131,4 @@ trafficFilters:
       action: block
 ```
 
-* Alguns bots atingem um site muito fortemente um dia e desaparecem no seguinte.  Isso pode frustrar qualquer tentativa de bloquear um endereço IP ou agente do usuário específico.  Uma abordagem genérica é introduzir uma [regra de limite de taxa](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Revise os [exemplos](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) e crie uma regra que corresponda à sua tolerância para uma taxa rápida de solicitações.  Revise a sintaxe [Estrutura de Condição](/help/security/traffic-filter-rules-including-waf.md#condition-structure) para quaisquer exceções que você queira permitir para um limite de taxa genérico.
+* Alguns bots atingem um site muito fortemente um dia e desaparecem no seguinte. Essa funcionalidade pode impedir qualquer tentativa de bloquear um endereço IP ou agente do usuário específico.  Uma abordagem genérica é introduzir uma [regra de limite de taxa](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Revise os [exemplos](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) e crie uma regra que corresponda à sua tolerância para uma taxa rápida de solicitações.  Revise a sintaxe de [Estrutura de Condição](/help/security/traffic-filter-rules-including-waf.md#condition-structure) para quaisquer exceções que você queira permitir para um limite de taxa genérico.
