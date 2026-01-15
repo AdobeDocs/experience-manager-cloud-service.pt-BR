@@ -4,7 +4,7 @@ description: Saiba mais sobre os diferentes tipos de chamadas feitas ao seu apli
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 1%
@@ -27,7 +27,7 @@ No entanto, para o desenvolvedor, entender essas chamadas e o que elas fazem pod
 * A **Carga** da chamada contém detalhes do que está sendo atualizado pelo editor, incluindo a identificação do que deve ser atualizado e como atualizá-lo.
 * A **Resposta** inclui detalhes sobre o que exatamente foi atualizado pelo serviço de edição. Isso facilita a atualização do conteúdo no editor. Em certos casos, como uma chamada `move`, a página inteira deve ser atualizada.
 
-Depois que uma chamada é concluída com sucesso, são acionados eventos que incluem a carga da solicitação e da resposta, que pode ser personalizada para seu próprio aplicativo. Consulte o documento [Eventos do editor universal](/help/implementing/universal-editor/events.md) para obter mais detalhes.
+Depois que uma chamada é concluída com sucesso, são acionados eventos que incluem a carga da solicitação e da resposta, que pode ser personalizada para seu próprio aplicativo. Consulte o documento [Eventos do editor universal](/help/implementing/universal-editor/events-universal-editor.md) para obter mais detalhes.
 
 Veja a seguir uma lista dos tipos de chamadas que o Editor universal faz para o seu aplicativo, juntamente com amostras de cargas e respostas.
 
@@ -384,5 +384,5 @@ O Universal Editor repete o conteúdo e gera uma lista de referências que tamb�
 
 ## Recursos adicionais {#additional-resources}
 
-* [Eventos Universais do Editor](/help/implementing/universal-editor/events.md)
+* [Eventos Universais do Editor](/help/implementing/universal-editor/events-universal-editor.md)
 
