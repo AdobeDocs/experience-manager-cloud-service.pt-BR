@@ -5,22 +5,26 @@ exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
 feature: Developing
 role: Admin, Developer
 index: false
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1ca3d69f776811a1346c531b8727f2a4c2683bd1
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 2%
+source-wordcount: '112'
+ht-degree: 5%
 
 ---
 
 
 # Aprofundamentos de SPA {#spa-deep-dives}
 
-O SDK do Editor SPA do AEM foi apresentado em uma série de sessões do AEM Gems. [Adobe Experience Manager Gems](https://helpx.adobe.com/br/experience-manager/kt/eseminars/gems/aem-index.html) é uma série de aprofundamentos técnicos fornecidos por especialistas da Adobe. Apresentada por engenheiros da Adobe, esta série pode servir como um ótimo guia para obter uma compreensão mais profunda do SDK do AEM SPA Editor em um nível inferior.
+[Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) é uma série de aprofundamentos técnicos fornecidos por especialistas da Adobe. Apresentada por engenheiros da Adobe, essa série pode servir como um ótimo guia para obter uma compreensão mais profunda dos recursos do AEM.
 
 {{ue-over-spa}}
 
-## Sessões Gem {#gem-sessions}
+O SDK do Editor SPA do AEM foi apresentado em uma série de sessões do AEM Gems. Eles foram removidos porque o Editor de SPA foi descontinuado.
 
-* **[Editor SPA do AEM](https://experienceleague.adobe.com/pt-br/docs/events/experience-manager-gems-recordings/gems2018/aem-spa-editor)** - Uma visão geral iniciante do Editor SPA. Se você estiver apenas começando a usar SPAs no AEM, comece aqui.
-* **[Aprofundamento do SDK do Editor de SPA - Parte 1 - React](https://experienceleague.adobe.com/pt-br/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-react)** - Aprofundamento do desenvolvimento de Aplicativos de Página Única que podem ser criados com o Editor de Páginas do AEM. Abordagem de considerações e recomendações sobre a estrutura de projetos, revisão de todas as camadas que compõem a arquitetura de um projeto, a função dos componentes do AEM e do SPA, estrutura e campos JSON principais do objeto de modelo e muito mais.
-* **[Aprofundamento do SDK do Editor de SPA - Parte 2 - Angular](https://experienceleague.adobe.com/pt-br/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-angular)** - Aprofundamento do desenvolvimento de Aplicativos de Página Única que podem ser criados com o Editor de Páginas do AEM. Abordagem de considerações e recomendações sobre a estrutura de projetos, revisão de todas as camadas que compõem a arquitetura de um projeto, a função dos componentes do AEM e do SPA, estrutura e campos JSON principais do objeto de modelo e muito mais.
+<!--
+## Gem Sessions {#gem-sessions}
+
+* **[AEM SPA Editor](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2018/aem-spa-editor)** - A beginner's overview of the SPA Editor. If are just getting started with SPAs in AEM, start here.
+* **[SPA Editor SDK Deep Dive - Part 1 - React](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-react)** - A deep dive into the development of Single Page Applications that can be authored using the AEM Page Editor. Covering considerations and recommendations about the structure of projects, review of all the layers that compose the architecture of a project, the role of AEM and SPA components, structure and key JSON fields of the model object, and more!
+* **[SPA Editor SDK Deep Dive - Part 2 - Angular](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2018/spa-editor-sdk-deep-dive-angular)** - A deep dive into the development of Single Page Applications that can be authored using the AEM Page Editor. Covering considerations and recommendations about the structure of projects, review of all the layers that compose the architecture of a project, the role of AEM and SPA components, structure and key JSON fields of the model object, and more!
+-->
