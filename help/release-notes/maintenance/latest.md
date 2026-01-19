@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
+source-git-commit: be61c21e111e1655921325a35da6fa88545fb39f
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1095'
 ht-degree: 9%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 9%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 23862 {#23862}
+## Versão 23963 {#23963}
 
->[!CAUTION]
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 23963, lançada publicamente em terça-feira, 19 de janeiro de 2026. A versão de manutenção anterior era 23482.
+
+A ativação de recursos do 2026.1.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+
+>[!NOTE]
 >
-> A versão 23862 foi tornada privada. Uma nova versão de manutenção será fornecida em breve.
+>A versão 23862 foi tornada privada.
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 23862, lançada publicamente em quarta-feira, 23 de dezembro de 2025. A versão de manutenção anterior era 23482.
-
-A ativação de recursos do 2026.1.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
-
-### Aprimoramentos {#enhancements-23862}
+### Aprimoramentos {#enhancements-23963}
 
 * CQ-4361812: adição de suporte para param folderPath opcional na api rest. Descrição: Um novo projeto de tradução é criado pela API e será colocado dentro do caminho especificado pelo parâmetro `folderPath` opcional, caso contrário, assumirá como padrão o caminho do projeto raiz `/content/projects`.
 * FORMS-21960: adição de suporte para edição de tela no local para Comunicações interativas, semelhante a forms-spa.
@@ -50,13 +50,14 @@ A ativação de recursos do 2026.1.0 fornecerá o conjunto completo de recursos 
 * SITES-37794: Edge Delivery com Universal Editor: assistente de criação de página simplificada.
 * SITES-36963: Migrar endpoint de público-alvo/segmento para a API v3 do Target para suporte do Workspace.
 
-### Problemas corrigidos {#fixed-issues-23862}
+### Problemas corrigidos {#fixed-issues-23963}
 
 * CQ-4361831: o problema corrigido que causava genai_dropdown_span não está definido.
 * CQ-4360895: correção da contagem de status de trabalho de tradução imprecisa no projeto durante atualizações simultâneas.
 * CQ-4361599: correção de ignorar Fragmentos de conteúdo de Trabalhos de tradução após a atualização de 2025.7.
 * CQ-4360747: trabalhos de tradução repetíveis corrigidos criam cargas vazias e acionam com muita frequência (NullPointerException em ScheduleRepeatTranslationProject).
 * CQ-4359994: correção de inconsistência de tipo de campo destinationLanguage para projeto único e multilíngue.
+* FORMS-23557: Causas de atualização do Rhino `*.js` não podem ser instanciadas corretamente pela API de Uso.
 * SITES-38153: corrija o provedor de referência de publicação cf para referências baseadas em uuid.
 * SITES-37594: melhorias de desempenho para a funcionalidade de modelo por tags.
 * SITES-37337: FragmentCreateProcessor: forneça detalhes adicionais do erro nos logs.
@@ -93,19 +94,19 @@ A ativação de recursos do 2026.1.0 fornecerá o conjunto completo de recursos 
 * SITES-37349: Edge Delivery com Universal Editor: renderiza vários campos com entradas únicas como uma lista com um único item de lista.
 * SITES-36148: Edge Delivery com editor universal: corrija o rótulo de uso de dados para vários campos compostos.
 
-### Problemas conhecidos {#known-issues-23862}
+### Problemas conhecidos {#known-issues-23963}
 
 Nenhum.
 
-### Recursos e APIs obsoletos {#deprecated-23862}
+### Recursos e APIs obsoletos {#deprecated-23963}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-23862}
+### Correções de segurança {#security-23963}
 
 A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda 23 vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
 
-### Tecnologias integradas {#embedded-tech-23862}
+### Tecnologias integradas {#embedded-tech-23963}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
@@ -114,4 +115,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.30.2 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
