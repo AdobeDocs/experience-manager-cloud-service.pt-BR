@@ -4,9 +4,9 @@ description: Suporte OAuth2 para o serviço de email no Adobe Experience Manager
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: f924c2ee18017c7cf7b7cbdca5ce26174b2457ab
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '668'
 ht-degree: 81%
 
 ---
@@ -30,7 +30,8 @@ Para obter mais informações sobre o Serviço de email do AEM as a Cloud Servic
 
 1. Preencha as informações de acordo com suas necessidades e clique em **Registrar**.
 1. Vá para o aplicativo criado e selecione **Permissões de API**.
-1. Clique em **Adicionar permissão** > **Permissão de gráfico** > **Permissões delegadas**.
+<!-- Alexandru: removing as a result of CQDOC-20609 
+1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**. -->
 1. Selecione as permissões abaixo para seu aplicativo e clique em **Adicionar permissão**:
 
    >[!NOTE]
@@ -82,7 +83,6 @@ Em seguida, gere o token de atualização, que faz parte da configuração OSGi 
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --header 'Cookie: buid=0.ARgAep0nU49DzUGmoP2wnvyIkcQjsx26HEpOnvHS0akqXQgYAAA.AQABAAEAAAD--DLA3VO7QrddgJg7Wevry9XPJSKbGVlPt5NWYxLtTl3K1W0LwHXelrffApUo_K02kFrkvmGm94rfBT94t25Zq4bCd5IM3yFOjWb3V22yDM7-rl112sLzbBQBRCL3QAAgAA; esctx=AQABAAAAAAD--DLA3VO7QrddgJg7Wevr4a8wBjYcNbBXRievdTOd15caaeAsQdXeBAQA3tjVQaxmrOXFGkKaE7HBzsJrzA-ci4RRpor-opoo5gpGLh3pj_iMZuqegQPEb1V5sUVQV8_DUEbBv5YFV2eczS5EAhLBAwAd1mHx6jYOL8LwZNDFvd2-MhVXwPd6iKPigSuBxMogAA; x-ms-gateway-slice=estsfd; stsservicecookie=estsfd; fpc=Auv6lTuyAP1FuOOCfj9w0U_5vR5dAQAAALDXP9gOAAAAwIpkkQEAAACT2T_YDgAAAA' \
    --data-urlencode 'client_id=<clientID>' \
-   --data-urlencode 'scope=https://outlook.office.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access' \
    --data-urlencode 'redirect_uri=http://localhost' \
    --data-urlencode 'grant_type=authorization_code' \
    --data-urlencode 'client_secret=<clientSecret>' \
@@ -150,7 +150,7 @@ Antes de continuar a configurar o OAuth no lado do AEM, valide o accessToken e o
    * `email`
    * `profile`
 1. Criar um arquivo de propriedade OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
-em `/apps/<my-project>/osgiconfig/config` com a sintaxe abaixo. Os valores `smtp.host` e `smtp.port` refletem a configuração avançada de rede, conforme descrito na seção [Tutorial do serviço de email](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/examples/email-service).
+em `/apps/<my-project>/osgiconfig/config` com a sintaxe abaixo. Os valores `smtp.host` e `smtp.port` refletem a configuração avançada de rede, conforme descrito na seção [Tutorial do serviço de email](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service).
 
    ```
    {
