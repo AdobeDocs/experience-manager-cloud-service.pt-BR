@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 958c166585ac7eeb667d73744403558b2dc5ce94
+source-git-commit: bc9fa030aeab4f2dddafc2241fade7b5d0689926
 workflow-type: tm+mt
-source-wordcount: '3339'
+source-wordcount: '3312'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | Este artigo |
 
 ## Visão geral {#overview}
@@ -41,7 +41,7 @@ Se você criou o componente Adaptive Forms Foundation ou formulários simples co
 * **Marcação:** as páginas do AEM Sites permitem [atribuir marcas ou rótulos a uma página, um ativo ou outro conteúdo](/help/implementing/developing/introduction/tagging-framework.md). Tags são rótulos de palavras-chave ou metadados que fornecem uma maneira de categorizar e organizar o conteúdo com base em critérios específicos. É possível atribuir uma ou mais tags a páginas, ativos ou qualquer outro conteúdo no AEM para melhorar a pesquisa e a categorização dos ativos.
 * **Bloquear e desbloquear conteúdo:** o AEM Sites permite que os usuários [controlem o acesso e as modificações nas páginas](/help/sites-cloud/authoring/page-editor/edit-content.md) no ambiente do AEM Sites. Quando uma página é bloqueada, significa que ela está protegida contra alterações ou edições não autorizadas por outros usuários. Somente o usuário que bloqueou o conteúdo ou um administrador designado pode desbloqueá-lo para permitir modificações.
 
-Além disso, o Adaptive Forms no Editor de Páginas do AEM usa [Componentes principais do Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR#features). Esses Componentes principais fornecem métodos padrão e mais fáceis para estilizar e personalizar os componentes, idênticos aos [Componentes WCM do AEM Sites](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction).
+Além disso, o Adaptive Forms no Editor de Páginas do AEM usa [Componentes principais do Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Esses Componentes principais fornecem métodos padrão e mais fáceis para estilizar e personalizar os componentes, idênticos aos [Componentes WCM do AEM Sites](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction).
 
 
 ## Como criar ou adicionar um formulário adaptável na página do AEM Sites ou no Fragmento de experiência do AEM? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -72,9 +72,9 @@ Você pode aproveitar ao máximo esse recurso utilizando as seguintes opções:
 
 Antes de começar a criar ou um formulário adaptável, ative os Componentes principais do Forms adaptável e adicione as bibliotecas de clientes do Forms adaptáveis à sua página do AEM Sites:
 
-### Ativar os Componentes principais adaptáveis do Forms para o ambiente do AEM Cloud Service
+<!--### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
 
-Instale os componentes principais adaptáveis do Forms mais recentes até o momento para ativar o ambiente do AEM Cloud Service.
+Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment. -->
 
 ### Adicionar bibliotecas de clientes Forms adaptáveis à sua página do AEM Sites ou experiência
 
@@ -82,7 +82,7 @@ Instale os componentes principais adaptáveis do Forms mais recentes até o mome
 
 Para ativar a funcionalidade completa do componente de Contêiner adaptável do Forms, adicione as bibliotecas de clientes Customheaderlibs e Customfooterlibs à sua página do AEM Sites usando o pipeline de implantação. Para adicionar as bibliotecas:
 
-1. Acesse e clone seu [Repositório Git do AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=pt-BR).
+1. Acesse e clone seu [Repositório Git do AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
 1. Abra a pasta Repositório Git do AEM Cloud Service em um editor de texto de plano. Por exemplo, Microsoft Visual Code.
 1. Abra o arquivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` e adicione o seguinte código ao arquivo:
 
@@ -121,7 +121,7 @@ Para ativar a funcionalidade completa do componente de Contêiner adaptável do 
        </sly> 
    ```
 
-1. [Execute o pipeline de implantação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=pt-BR) para implantar as bibliotecas de clientes no seu ambiente do AEM as a Cloud Service.
+1. [Execute o pipeline de implantação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) para implantar as bibliotecas de clientes no seu ambiente do AEM as a Cloud Service.
 
 >[!NOTE]
 >
