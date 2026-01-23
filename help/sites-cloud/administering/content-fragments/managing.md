@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b3e1d3a3770531728d696be125f074881f179573
 workflow-type: tm+mt
-source-wordcount: '2927'
+source-wordcount: '2937'
 ht-degree: 36%
 
 ---
@@ -72,7 +72,7 @@ Aqui você pode ver três áreas principais:
          * A localização é indicada pela navegação estrutural; elas também podem ser usadas para alterar a localização:
       * [As informações são mostradas sobre cada fragmento](#information-content-fragments)
          * [Você pode selecionar quais colunas mostrar](#select-columns-console)
-      * [Vários campos de informação](#information-content-fragments) sobre um Fragmento do conteúdo fornecem links. Dependendo do campo, eles podem:
+      * [Vários campos de informação](#information-content-fragments) sobre um fragmento de conteúdo fornecem links. Dependendo do campo, eles podem:
          * Abrir o fragmento apropriado no editor
          * Mostrar informações sobre referências
          * Mostrar informações sobre versões de idioma do fragmento
@@ -403,6 +403,10 @@ Você pode publicar os fragmentos de conteúdo nos seguintes serviços:
 >Se o fragmento for baseado em um modelo, é preciso certificar-se de que o [modelo foi publicado](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
 >
 >Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
+
+>[!TIP]
+>
+>Os fragmentos de conteúdo podem ser [publicados no Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
 
 ### Publicação {#publishing}
 
