@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 9%
@@ -36,7 +36,7 @@ A integração do AEM Commerce as a Cloud Service é um processo de duas etapas:
 
 A primeira etapa de integração é realizada pela Adobe. Para obter mais detalhes sobre preços e provisionamento, entre em contato com seu representante de vendas.
 
-Depois de provisionado com o complemento CIF, ele é aplicado a todos os programas Cloud Manager existentes. Caso não tenha um Programa Cloud Manager, é necessário criar um. Para obter mais detalhes, consulte [Configurar o programa.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=pt-BR)
+Depois de provisionado com o complemento CIF, ele é aplicado a todos os programas Cloud Manager existentes. Caso não tenha um Programa Cloud Manager, é necessário criar um. Para obter mais detalhes, consulte [Configurar o programa.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)
 
 A segunda etapa é o autoatendimento para cada ambiente do AEM as a Cloud Service. Há algumas configurações adicionais que você deve fazer após o provisionamento inicial do complemento CIF.
 
@@ -57,11 +57,11 @@ Há duas opções para configurar o endpoint:
 
 ### Por meio da interface do usuário do Cloud Manager (padrão) {#cm-ui}
 
->[!VIDEO](https://video.tv.adobe.com/v/343274?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 Essa configuração pode ser feita usando uma caixa de diálogo na página Detalhes do ambiente. Ao visualizar esta página para um programa habilitado para Commerce, um botão será exibido se o endpoint não estiver configurado no momento:
 
-![Informações do Ambiente CM](/help/commerce-cloud/cif-storefront/assets/commerce-cmui.png)
+![Informações de Ambiente de CM](/help/commerce-cloud/cif-storefront/assets/commerce-cmui.png)
 
 Clicar nesse botão abre uma caixa de diálogo:
 
@@ -69,7 +69,7 @@ Clicar nesse botão abre uma caixa de diálogo:
 
 Depois que o ponto de extremidade e, opcionalmente, um cabeçalho de autorização para suporte ao catálogo em etapas forem definidos, o ponto de extremidade será exibido na página de detalhes. Clicar no ícone Editar para abrir a mesma caixa de diálogo, na qual você pode editar o endpoint, se necessário.
 
-![Informações do Ambiente CM](/help/commerce-cloud/cif-storefront/assets/commerce-cmui-done.png)
+![Informações de Ambiente de CM](/help/commerce-cloud/cif-storefront/assets/commerce-cmui-done.png)
 
 ### Por meio da CLI do Adobe I/O  {#adobe-cli}
 

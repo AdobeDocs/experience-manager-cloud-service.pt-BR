@@ -5,7 +5,7 @@ thumbnail: introducing-aem-commerce.jpg
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 3f18f976-ff8a-4726-b4c5-db4e19ae7cee
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 61%
@@ -62,7 +62,7 @@ O CIF oferece suporte a padrões de integração padronizados com base nas prát
    * Sem acesso aos dados preparados
    * Necessidade de dados e experiências do produto em tempo real
 * A crescente maturidade digital resulta na necessidade de gerenciamento de experiência
-* &#x200B;
+* 
    * A CIF é fornecida com recursos de gerenciamento da experiência do produto que podem ser incorporados de forma incremental, sem esforço adicional da TI.
 * Pronto para omnicanal
    * O CIF oferece suporte a várias tecnologias de ponto de contato (lado do servidor, híbrido, lado do cliente) com padrões, aceleradores e componentes principais.

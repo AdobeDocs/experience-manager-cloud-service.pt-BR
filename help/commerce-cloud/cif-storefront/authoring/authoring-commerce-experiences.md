@@ -4,7 +4,7 @@ description: Saiba como criar e criar experiências relacionadas ao comércio co
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Os componentes mostrarão um indicador visual se a data usada for preparada.
 
 ![Indicador de preparo](../assets/authoring/staged-indicator.png)
 
-## Omnisearch {#omnisearch}
+## Pesquisa unificada {#omnisearch}
 
 Usar o Omnisearch é uma maneira fácil de os profissionais encontrarem dados de conteúdo e catálogo de produtos do AEM usando a pesquisa em texto completo. O Omnisearch executará a pesquisa de texto completo no AEM e no back-end de comércio para encontrar objetos de catálogo de produtos no back-end de comércio e no conteúdo do AEM. Os resultados do AEM também incluem conteúdo que foi marcado com dados de produto/categoria.
 
