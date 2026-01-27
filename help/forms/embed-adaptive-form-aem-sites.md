@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: bc9fa030aeab4f2dddafc2241fade7b5d0689926
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3280'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -73,23 +73,20 @@ Você pode aproveitar esse recurso usando as seguintes opções:
 
 ## Requisitos para incorporar um formulário adaptável na página do AEM Sites ou no Fragmento de experiência do AEM {#before-you-start-embedding-an-adaptive-form}
 
-Antes de começar a incorporar um novo Formulário Adaptável ou um Formulário Adaptável pré-existente usando o **[!UICONTROL Forms Adaptável - Incorporado(v2)]**, habilite os **Componentes Principais do Forms Adaptável** e adicione as **Bibliotecas de Clientes do Forms Adaptável** à sua página do AEM Sites:
+Antes de começar a incorporar um novo Formulário adaptável ou um Formulário adaptável pré-existente usando o **[!UICONTROL Forms adaptável - Incorporado(v2)]**, adicione as **Bibliotecas de clientes do Forms adaptáveis** à sua página do AEM Sites:
 
-<!--### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
-
-Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.-->
 
 ### Adicionar bibliotecas de clientes do Forms adaptáveis à sua página do AEM Sites ou Fragmento de experiência
 
-Quando a opção **[!UICONTROL Quando o formulário cobre toda a largura de uma página]** é selecionada na caixa de diálogo de configuração **[!UICONTROL Contêineres de Formulário]** e o Adaptive Forms usando Componentes Principais é usado, é necessário incluir as bibliotecas de clientes na página do Site correspondente.
+Quando a opção **[!UICONTROL Quando o formulário cobre toda a largura de uma página]** é selecionada na caixa de diálogo de configuração **[!UICONTROL Contêineres de Formulário]** e o Adaptive Forms são usados, é necessário incluir as bibliotecas de clientes na página do Site correspondente.
 
-![Quando o formulário cobre toda a largura de uma página, a opção é selecionada e o formulário adaptável com os componentes principais é usado](/help/forms/assets/overlaycorecomponent.gif)
+![Quando o formulário cobre toda a largura de uma página, a opção é selecionada e o formulário adaptável é usado](/help/forms/assets/overlaycorecomponent.gif)
 
 **Caso 1: Usando Componentes de Página de Sites Separados**
 
 Adicione as bibliotecas de clientes **Customheaderlibs** e **Customfooterlibs** à sua página do AEM Sites usando o pipeline de implantação. Para adicionar as bibliotecas de clientes:
 
-1. Acesse e clone seu [Repositório Git do AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=pt-BR).
+1. Acesse e clone seu [Repositório Git do AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
 2. Abra a pasta Repositório Git do AEM Cloud Service em um editor de texto de plano. Por exemplo, Microsoft® Visual Code.
 3. Abra o arquivo `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` e adicione o seguinte código ao arquivo:
 
@@ -127,7 +124,7 @@ Adicione as bibliotecas de clientes **Customheaderlibs** e **Customfooterlibs** 
        </sly> 
    ```
 
-7. [Execute o pipeline de implantação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=pt-BR) para implantar as bibliotecas de clientes no seu ambiente do AEM as a Cloud Service.
+7. [Execute o pipeline de implantação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) para implantar as bibliotecas de clientes no seu ambiente do AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -280,16 +277,16 @@ Um quadro integrado (iframe) é um elemento do HTML que carrega um formulário a
 
    * Se a caixa de seleção **[!UICONTROL Formulário cobrir toda a largura do quadro]** estiver marcada, um Formulário adaptável ocupará toda a largura do contêiner no qual ele é colocado. Nesse caso, um iframe não é usado para renderizar o formulário. O layout e o design de um Formulário adaptável se adaptam para abranger toda a largura do contêiner, tornando-o responsivo e capaz de se ajustar a diferentes tamanhos de tela. Essa opção permite incorporar vários Forms adaptáveis em uma página do AEM Sites.
 
-     >[!NOTE]
-     >
-     > Para incorporar vários formulários em uma página do AEM Sites, marque a caixa de seleção **[!UICONTROL Formulário abrange toda a largura do quadro]**.
-
+         >[!NOTE]
+         >
+         > Para inserir vários formulários em uma página do AEM Sites, marque a caixa de seleção **[!UICONTROL Formulário abrange toda a largura do quadro]**.
+     
    * Se a caixa de seleção **[!UICONTROL Formulário cobre toda a largura do quadro]** não estiver marcada, um Formulário adaptável não cobrirá toda a largura do contêiner. Em vez disso, um iframe é usado para renderizar o formulário, que não pode ser estendido além de uma largura específica. Essa abordagem é útil quando um Formulário adaptável tem limites definidos e deve coexistir com outros componentes do AEM ao lado dele no contêiner. Se essa opção não estiver marcada, permitirá que apenas uma Forms adaptável na página do AEM Sites seja incorporada sem um iframe.
 
-     >[!NOTE]
-     >
-     > A página do AEM Sites oferece suporte a apenas um Formulário adaptável para existir sem um iframe. Para adicionar mais Forms adaptável usando o componente **[!UICONTROL Forms adaptável - Incorporado]**, selecione a opção **[!UICONTROL Formulário cobre toda a largura do quadro]**.
-
+         >[!NOTE]
+         >
+         > A página do AEM Sites oferece suporte a apenas um Formulário adaptável para que exista sem um iframe. Para adicionar mais Forms adaptável usando o componente **[!UICONTROL Forms adaptável - Incorporado]**, selecione a opção **[!UICONTROL Formulário cobre toda a largura do quadro]**.
+     
 * **Altura**: especifique a altura do container. Deixe em branco para redimensionar automaticamente o contêiner.
 * **Biblioteca do cliente CSS**: especifique o caminho para uma biblioteca do cliente CSS.
 
@@ -386,5 +383,5 @@ Lembre-se dos seguintes pontos ao incorporar o Adaptive Forms nas páginas do AE
 
 ## Consulte também {#see-also}
 
-* [Criar Forms adaptável independente baseado em Componente principal](/help/forms/creating-adaptive-form-core-components.md)
-* [Criar componente principal baseado no Formulário adaptável diretamente em uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Criar um formulário independente](/help/forms/creating-adaptive-form-core-components.md)
+* [Criar um formulário diretamente em uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

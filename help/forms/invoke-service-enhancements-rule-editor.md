@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: chame os aprimoramentos do serviço no VRE, preenchendo as opções suspensas usando invocar serviço, Defina o painel repetível usando a saída de invocar serviço, Defina o painel usando a saída de invocar serviço, Use o parâmetro de saída de invocar serviço para validar outro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '1860'
+source-wordcount: '1835'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,6 @@ Abaixo estão os pré-requisitos que você deve atender antes de usar **Chamar S
 
 * Verifique se você configurou uma fonte de dados. Para obter instruções sobre como configurar uma fonte de dados, [clique aqui](/help/forms/configure-data-sources.md).
 * Crie um modelo de dados de formulário usando a fonte de dados configurada. Para obter orientação sobre como criar um Modelo de dados de formulário, [clique aqui](/help/forms/create-form-data-models.md).
-* Certifique-se de que os Componentes principais estejam habilitados para o seu ambiente. Instale os componentes principais adaptáveis do Forms mais recentes até o momento para ativar o ambiente do AEM Cloud Service.
 
 ## Explorar o serviço de chamada por meio de diferentes casos de uso
 

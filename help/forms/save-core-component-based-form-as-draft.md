@@ -4,9 +4,9 @@ description: Saiba como salvar os Componentes principais com base no Formulário
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1351'
 ht-degree: 1%
 
 ---
@@ -14,17 +14,13 @@ ht-degree: 1%
 
 # Salvar formulários como rascunhos e listá-los na página Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Considere um usuário que começa a preencher um formulário, mas precisa pausar e retornar posteriormente. O AEM oferece uma opção `save-as-draft`, permitindo que o usuário salve o formulário como rascunho para conclusão futura. Para facilitar isso, o AEM fornece o componente de **Rascunhos e envios** do Forms Portal pronto para uso, que exibe rascunhos e envios em páginas do AEM Sites. O componente lista formulários que foram salvos como rascunhos para conclusão posterior, bem como aqueles que foram enviados. Somente os usuários conectados podem editar os rascunhos ou exibir os formulários enviados. No entanto, se um usuário anônimo navegar pela lista de formulários usando o componente **Pesquisa e Listagem** e salvar um formulário como rascunho, ele não será listado pelo componente **Rascunhos e Envios**. Para visualizar rascunhos e envios, os usuários devem estar conectados no momento do envio do formulário.
 
 ![Ícone Rascunhos](assets/drafts-component.png)
 
 ## Pré-requisitos
-
-* Instale os componentes principais adaptáveis do Forms mais recentes até o momento para ativar o ambiente do AEM Cloud Service.
-
-  Depois de implantar os Componentes principais mais recentes em seu ambiente, os componentes do Forms Portal ficam acessíveis em seu ambiente de criação.
 
 * [Configurar o Armazenamento do Azure e o Conector de Armazenamento Unificado para Rascunhos e Envios do componente do Portal da Forms](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
@@ -68,7 +64,7 @@ O componente **Rascunhos e Envios** precisa de uma configuração de armazenamen
 
 >[!NOTE]
 >
-> Se você precisar configurar uma opção de armazenamento, diferente do Azure, escreva para aem-forms-ea@adobe.com de seu endereço de email oficial com seus requisitos detalhados.
+> Se você precisar configurar uma opção de armazenamento diferente do Azure, escreva para <aem-forms-ea@adobe.com> a partir do seu endereço de email oficial com os seus requisitos detalhados.
 
 Depois de configurar com êxito o Armazenamento do Azure e o Conector de Armazenamento Unificado para armazenar os rascunhos e formulários enviados, adicione o componente **Rascunhos e envios** na página AEM Sites.
 

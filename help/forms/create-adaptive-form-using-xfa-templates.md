@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 11%
+source-wordcount: '683'
+ht-degree: 12%
 
 ---
 
@@ -31,9 +31,7 @@ Algumas das vantagens de criar formulários com base em modelos de formulário X
 
 ## Pré-requisitos
 
-Você precisa do seguinte para criar um formulário adaptável com base nos Componentes principais usando modelos de formulário XFA ou arquivos XDP:
 
-* Instale os componentes principais adaptáveis do Forms mais recentes até o momento para ativar o ambiente do AEM Cloud Service.
 * Recomenda-se o conhecimento das seguintes áreas:
    * Criação de um formulário adaptável
    * XFA (XML Forms Architecture, arquitetura XML do)
