@@ -36,7 +36,7 @@ A integração do AEM Commerce as a Cloud Service é um processo de duas etapas:
 
 A primeira etapa de integração é realizada pela Adobe. Para obter mais detalhes sobre preços e provisionamento, entre em contato com seu representante de vendas.
 
-Depois de provisionado com o complemento CIF, ele é aplicado a todos os programas Cloud Manager existentes. Caso não tenha um Programa Cloud Manager, é necessário criar um. Para obter mais detalhes, consulte [Configurar o programa.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)
+Depois de provisionado com o complemento CIF, ele é aplicado a todos os programas Cloud Manager existentes. Caso não tenha um Programa Cloud Manager, é necessário criar um. Para obter mais detalhes, consulte [Configurar o programa.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=pt-BR)
 
 A segunda etapa é o autoatendimento para cada ambiente do AEM as a Cloud Service. Há algumas configurações adicionais que você deve fazer após o provisionamento inicial do complemento CIF.
 
