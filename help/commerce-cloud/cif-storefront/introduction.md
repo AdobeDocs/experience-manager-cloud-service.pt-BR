@@ -62,7 +62,7 @@ O CIF oferece suporte a padrões de integração padronizados com base nas prát
    * Sem acesso aos dados preparados
    * Necessidade de dados e experiências do produto em tempo real
 * A crescente maturidade digital resulta na necessidade de gerenciamento de experiência
-* 
+* &#x200B;
    * A CIF é fornecida com recursos de gerenciamento da experiência do produto que podem ser incorporados de forma incremental, sem esforço adicional da TI.
 * Pronto para omnicanal
    * O CIF oferece suporte a várias tecnologias de ponto de contato (lado do servidor, híbrido, lado do cliente) com padrões, aceleradores e componentes principais.
