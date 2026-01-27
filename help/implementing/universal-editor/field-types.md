@@ -4,9 +4,9 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1617'
 ht-degree: 8%
 
 ---
@@ -103,6 +103,10 @@ Um objeto de campo tem a seguinte definição de tipo.
 | `multi` | `boolean` | O campo é um campo múltiplo<br/>Observe que o aninhamento de contêineres não é permitido para campos múltiplos no painel de propriedades | Não |
 | `validation` | `ValidationType` | Regra ou regras de validação para o campo | Não |
 | `raw` | `unknown` | Dados brutos que podem ser usados pelo componente | Não |
+
+>[!NOTE]
+>
+>O sublinhado (`_`) não é permitido em nomes de campo ao usar os plug-ins [`aem` ou `xwalk`.](/help/implementing/universal-editor/component-definition.md#plugins)
 
 ### Nome Campo e aninhamento {#nesting}
 
