@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 88%
+source-wordcount: '559'
+ht-degree: 79%
 
 ---
 
 # Markdown {#markdown}
 
-Quando você está [criando](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) os fragmentos de conteúdo, talvez tenha [campos de texto de várias linhas](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) definidos com o **Tipo Padrão** do **Markdown**. O editor de fragmento de conteúdo usa a sintaxe *markdown* para permitir que você grave conteúdo facilmente para a criação de páginas e entrega headless:
+Quando você está [criando](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) fragmentos de conteúdo, pode ter [campos de texto de várias linhas](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) definidos com o **Tipo Padrão** do **Markdown**. O editor de fragmento de conteúdo usa a sintaxe *markdown* para permitir que você grave conteúdo facilmente para a criação de páginas e entrega headless:
 
 ![Campo de texto de várias linhas do Markdown no editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -32,7 +32,7 @@ Você pode definir:
 
 ## Notação de cabeçalho {#heading-notation}
 
-Para criar um cabeçalho, coloque uma hashtag (#) na frente dele. Uma hashtag (#) é usada para a tag H1, duas hashtags (##) para a tag H2 e assim por diante. Você pode usar até 6 hashtags. Por exemplo:
+Para criar um cabeçalho, coloque uma hashtag (#) na frente dele. Uma hashtag (#) indica uma H1, duas hashtags (##) para uma H2 e assim por diante. Você pode usar até 6 hashtags. Por exemplo:
 
     `## This is an H2`
 
@@ -66,7 +66,7 @@ Estes são exemplos de links integrados:
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -130,7 +130,7 @@ Você pode ter citações de bloco aninhadas. Por exemplo:
 
 É possível criar listas ordenadas e não ordenadas.
 
-Para criar uma lista não ordenada, use o símbolo &ast; antes dos itens na lista. Por exemplo:
+Para criar uma lista não ordenada, use o símbolo &amp;ast; antes dos itens na lista. Por exemplo:
 
     `* item in list`
 
@@ -182,7 +182,7 @@ Os blocos de código geralmente são usados para ilustrar código-fonte. É poss
 
 ## Escapes de barra invertida {#backslash-escapes}
 
-Você pode usar o escape de barra invertida para gerar caracteres literais, que têm significado especial na formatação da sintaxe. Por exemplo, se você deseja cercar uma palavra com asteriscos literais (em vez de uma tag HTML &lt;em>), você pode usar barras invertidas antes dos asteriscos, desta forma:
+Você pode usar o escape de barra invertida para gerar caracteres literais que também têm significado especial na formatação da sintaxe. Por exemplo, se você deseja cercar uma palavra com asteriscos literais (em vez de uma tag HTML &lt;em> ), você pode usar barras invertidas antes dos asteriscos, desta forma:
 
     `\\*literal asterisks\\*`
 
