@@ -3,9 +3,9 @@ title: Visão geral do Discovery Agent
 description: Saiba como usar o Discovery Agent para fornecer conteúdo relevante do AEM sob demanda por meio de solicitações naturais e conversacionais para obter uma experiência de descoberta simplificada e sem cliques.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: d0c683d20f8932683d3d0aa11a67be92d35b725c
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1280'
 ht-degree: 1%
 
 ---
@@ -170,3 +170,6 @@ Especifique detalhes concisos nos prompts em seu idioma, para que o agente possa
 
 * Use os metadados específicos da sua organização, como categorias (tênis de corrida, eletrônicos), estações (outono, primavera), eventos (sexta-feira preta, lançamento de produto) e canais (Web, email, impressão) para filtrar ainda mais o conteúdo.
 
+## Limitações   {#limitations-discovery-agent}
+
+O Discovery Agent aceita solicitações baseadas em dimensão somente para tipos de formato de imagem e SVG. Por exemplo, `Find images wider than 1080px`.
