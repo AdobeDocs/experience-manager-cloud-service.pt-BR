@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 2923a79a69ae537eaad591035e4fce9f3c593b23
 workflow-type: tm+mt
-source-wordcount: '3194'
-ht-degree: 34%
+source-wordcount: '3434'
+ht-degree: 32%
 
 ---
 
@@ -29,6 +29,16 @@ Durante a janela de tempo de desativação, a Adobe lembrará os clientes das a�
 >
 >Em alguns casos, a remoção de um recurso pode ser necessária antes da implantação de uma nova build do Cloud Manager ou da atualização para a versão mais recente do AEM as a Cloud Service.
 
+>[!IMPORTANT]
+>  Várias [APIs obsoletas](#aem-apis) estão direcionando a remoção em **26 de fevereiro de 2026**. Revise estas datas e impactos principais:
+>
+> * **A partir de 26 de janeiro de 2026**: os emails de notificação da Central de Ações são enviados **semanalmente por ambiente** como um lembrete para remover o uso dessas APIs.
+> * **26 de fevereiro de 2026**: os pipelines do Cloud Manager que contêm código usando essas APIs **pausarão** durante a etapa **Qualidade do Código**. Um Gerente de implantação, Gerente de projeto ou Proprietário da empresa pode substituir o problema para permitir que o pipeline continue.
+> * **26 de março de 2026**: os pipelines de Cloud Manager que contêm código usando essas APIs **falharão** durante a etapa **Qualidade do Código**, **bloqueando implantações** de novos códigos até que o uso seja removido.
+> * **30 de abril de 2026**: os ambientes que ainda usam essas APIs podem **não receber mais atualizações críticas de versões do Adobe**.
+>
+> Para evitar bloqueios de implantação, remova o uso da API antes de 26 de março de 2026.
+
 ## Funcionalidade obsoleta {#deprecated-features}
 
 A funcionalidade na tabela abaixo foi anunciada como obsoleta, mas ainda não foi removida.  O uso da funcionalidade deve cessar antes da data de remoção do público alvo ou você corre o risco de ter problemas relacionados a desempenho, disponibilidade e segurança.
@@ -48,8 +58,8 @@ A funcionalidade na tabela abaixo foi anunciada como obsoleta, mas ainda não fo
 | [!DNL Assets] | Transcodificação FFmpeg de vídeos. | Para gerar miniaturas do FFmpeg, use os [Microserviços de ativos](/help/assets/asset-microservices-overview.md). Para a transcodificação FFmpeg, use o [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Interface de replicação em árvore na guia &quot;Distribuir&quot; dos agentes de replicação (remoção após 30 de setembro de 2021) | [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Etapa do Fluxo de Trabalho de Ativação da Árvore](/help/operations/replication.md#tree-activation) se aproxima. |
 | [!DNL Foundation] | A guia Distribuir da tela do administrador do agente de replicação e a API de replicação não podem replicar pacotes de conteúdo maiores que 10 MB. | [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Etapa do Fluxo de Trabalho de Ativação da Árvore](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | As integrações que usam credenciais geradas de projetos da Adobe Developer Console estão perdendo gradualmente o suporte às credenciais da Conta de serviço (JWT). A partir de 1º de maio de 2024, novas credenciais de Conta de serviço (JWT) não poderão ser criadas no Adobe Developer Console. As credenciais da Conta de serviço (JWT) existentes permanecem utilizáveis para integrações configuradas até 1º de janeiro de 2025, quando param de funcionar, exigindo que os clientes migrem para as credenciais de servidor para servidor do OAuth. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) para credenciais OAuth de servidor para servidor. |
-| [!DNL Foundation] | Fluxo de trabalho da árvore de conteúdo de publicação e a etapa relacionada do Fluxo de trabalho da árvore de conteúdo de publicação, que foi usada para replicações de hierarquias de conteúdo. | Use a [Etapa &#x200B;](/help/operations/replication.md#tree-activation) do Fluxo de Trabalho de Ativação da Árvore, que tem melhor desempenho. |
+| [!DNL Foundation] | As integrações que usam credenciais geradas de projetos da Adobe Developer Console estão perdendo gradualmente o suporte às credenciais da Conta de serviço (JWT). A partir de 1º de maio de 2024, novas credenciais de Conta de serviço (JWT) não poderão ser criadas no Adobe Developer Console. As credenciais da Conta de serviço (JWT) existentes permanecem utilizáveis para integrações configuradas até 1º de janeiro de 2025, quando param de funcionar, exigindo que os clientes migrem para as credenciais de servidor para servidor do OAuth. [Saiba mais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) para credenciais OAuth de servidor para servidor. |
+| [!DNL Foundation] | Fluxo de trabalho da árvore de conteúdo de publicação e a etapa relacionada do Fluxo de trabalho da árvore de conteúdo de publicação, que foi usada para replicações de hierarquias de conteúdo. | Use a [Etapa ](/help/operations/replication.md#tree-activation) do Fluxo de Trabalho de Ativação da Árvore, que tem melhor desempenho. |
 | [!DNL Foundation] | Utilização da interface do usuário do para compactar/minificar bibliotecas de clientes do JavaScript. A Adobe não planeja atualizar ainda mais a biblioteca YUI. | A Adobe recomenda que os clientes mudem para o Google Closure Compiler (GCC) para sua implementação. |
 
 ## Funcionalidade removida {#removed-features}
@@ -59,7 +69,7 @@ Esta seção lista as funcionalidades que foram removidas.
 | Área | Destaque | Substituição | Data definida para remoção |
 | ------------ | ------------------ | ----------- | ------------------- |
 | Interface do usuário | A interface clássica é removida da interface do usuário do produto. Algumas caixas de diálogo da interface clássica estão disponíveis para alguns recursos selecionados, como o Verificador de links, a Limpeza de versão e algumas configurações do Cloud Service. As próximas [atualizações do produto](/help/release-notes/home.md) podem remover ainda mais a disponibilidade da interface clássica. | Interface do usuário padrão | Removido |
-| [!DNL Dynamic Media] | As integrações anteriores com o [Dynamic Media Classic](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) e o [Dynamic Media Hybrid mode](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) não estão disponíveis no [!DNL Experience Manager] as a [!DNL Cloud Service]. | Use o [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornecido com o [!DNL Experience Manager] as a [!DNL Cloud Service]. | Removido |
+| [!DNL Dynamic Media] | As integrações anteriores com o [Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) e o [Dynamic Media Hybrid mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) não estão disponíveis no [!DNL Experience Manager] as a [!DNL Cloud Service]. | Use o [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornecido com o [!DNL Experience Manager] as a [!DNL Cloud Service]. | Removido |
 | [!DNL Sites] | Portal Director e Portlet Component | Estes recursos foram descontinuados no [!DNL Experience Manager] 6.4 e agora foram removidos do [!DNL Experience Manager]. | Removido |
 | [!DNL Sites] | Importador de design | Este recurso foi removido porque as seções imutáveis do repositório do [!DNL Experience Manager] não estão acessíveis no tempo de execução. | Removido |
 | [!DNL Assets] | O compartilhamento do [!DNL Assets] com os serviços Assets Core Service e Creative Cloud não está disponível. | Para integração com a [!DNL Adobe Creative Cloud], use o [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html). | Removido |
@@ -73,6 +83,17 @@ Esta seção lista as funcionalidades que foram removidas.
 ## APIs obsoletas {#aem-apis}
 
 As APIs na tabela abaixo (clique para expandir e ver) foram anunciadas como obsoletas, mas ainda não foram removidas.  O uso dessas APIs deve terminar antes da data de remoção do público-alvo, caso contrário você corre o risco de ter problemas relacionados a desempenho, disponibilidade e segurança. Algumas APIs fazem referência à seção Diretrizes de remoção de API abaixo.
+
+>[!IMPORTANT]
+> Várias APIs estão agendadas para remoção em **26 de fevereiro de 2026**. Revise estas datas e impactos principais:
+>
+> * **A partir de 26 de janeiro de 2026**: os emails de notificação da Central de Ações são enviados **semanalmente por ambiente** como um lembrete para remover o uso dessas APIs.
+> * **26 de fevereiro de 2026**: os pipelines do Cloud Manager que contêm código usando essas APIs **pausarão** durante a etapa **Qualidade do Código**. Um Gerente de implantação, Gerente de projeto ou Proprietário da empresa pode substituir o problema para permitir que o pipeline continue.
+> * **26 de março de 2026**: os pipelines de Cloud Manager que contêm código usando essas APIs **falharão** durante a etapa **Qualidade do Código**, **bloqueando implantações** de novos códigos até que o uso seja removido.
+> * **30 de abril de 2026**: os ambientes que ainda usam essas APIs podem **não receber mais atualizações críticas de versões do Adobe**.
+>
+> Para evitar bloqueios de implantação, remova o uso da API antes de 26 de março de 2026.
+
 
 <details>
   <summary>Expanda para ver a lista de APIs obsoletas.</summary>
@@ -88,100 +109,100 @@ As APIs na tabela abaixo (clique para expandir e ver) foram anunciadas como obso
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
     <td>Use as interfaces Auth Core/Auth Core SPI do Sling como alternativa. <a href="#org.apache.sling.commons.auth">Consulte as notas de remoção abaixo.</a></td>
     <td>2015</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
   <tr>
 <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>Os pacotes Eclipse Jetty e Felix Http Jetty não são mais suportados. <a href="#org.eclipse.jetty">Consulte as notas de remoção abaixo.</a></td>
     <td>27/05/2021</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
     <td>O uso dessa API não é compatível com o AEM as a Cloud Service. <a href="#com.mongodb">Consulte as notas de remoção abaixo.</a></td>
     <td>27/05/2021</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
    <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
     <td>Esta API está obsoleta porque o Apache Abdera é um projeto inativo desde 2017. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Consulte as notas de remoção abaixo.</a></td>
     <td>29/07/2021</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
     <td>Esta API está obsoleta porque o Apache Abdera é um projeto inativo desde 2017. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Consulte as notas de remoção abaixo.</a></td>
     <td>08/04/2019</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
     <td>O quadro de permissões Apache Felix Http não é mais suportado. Migre seu código para o OSGi Http Whiteboard. <a href="#org.apache.felix.http.whiteboard">Consulte as notas de remoção abaixo.</a></td>
     <td>27/01/2022</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
     <td>Essa API está obsoleta. Migre seu código para as APIs XML fornecidas pelo JDK.</td>
     <td>27/01/2022</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
     <td>O AEM as a Cloud Service não oferece suporte a essa API de log back interna. <a href="#ch.qos.logback">Consulte as notas de remoção abaixo.</a></td>
     <td>27/01/2022</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
     <td>O AEM as a Cloud Service não é compatível com essa API de log4j interna. <a href="#org.slf4j">Consulte as notas de remoção abaixo.</a></td>
     <td>27/01/2022</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>O Apache Log4j 1 chegou ao fim da vida útil em 2015 e não é mais compatível. <a href="#org.apache.log4j">Consulte as notas de remoção abaixo.</a></td>
     <td>27/01/2022</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>As bibliotecas principais do Google Guava estão obsoletas no Cloud Service. <a href="#com.google.common">Consulte as notas de remoção abaixo.</a></td>
     <td>15/05/2023</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.event</td>
     <td>O AEM as a Cloud Service não é compatível com essa API slf4j interna. <a href="#org.slf4j">Consulte as notas de remoção abaixo.</a></td>
     <td>11/04/2022</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr> 
     <tr>
     <td>com.drew.*</td>
     <td>A extração de metadados de imagens e vídeos deve ser feita via Asset Compute no Cloud Service ou via Apache POI ou Apache Tika.</td>
     <td>17/09/2024</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
     <td>Essa API é somente para uso interno.</td>
     <td>23/09/2024</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
     <td>Essa API é somente para uso interno.</td>
     <td>23/09/2024</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
   <tr>
 <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
     <td>O Felix web console não é suportado em ambientes em nuvem. <a href="#org.apache.felix.webconsole">Consulte as notas de remoção abaixo.</a></td>
     <td>30/04/2021</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>
 <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>O uso desta API não é compatível com o AEM as a Cloud Service.</td>
     <td>31/10/2022</td>
-    <td>31/08/2025</td>
+    <td>26/02/2026</td>
   </tr>  
   <tr>
     <td>org.apache.sling.runmode</td>
@@ -438,7 +459,7 @@ As seções abaixo refletem a superfície de configuração OSGi do AEM as a Clo
 
 O código do cliente pode configurar qualquer configuração OSGi não listada.
 
-Essas regras são validadas durante o processo de criação do Cloud Manager. Regras adicionais podem ser adicionadas ao longo do tempo e a data de aplicação esperada é anotada na tabela. Espera-se que os clientes cumpram essas regras até a data de aplicação prevista. O não cumprimento das regras após a data de remoção gera erros no processo de criação do Cloud Manager. Os projetos Maven devem incluir o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) para sinalizar erros de configuração OSGI durante o desenvolvimento local do SDK.
+Essas regras são validadas durante o processo de criação do Cloud Manager. Regras adicionais podem ser adicionadas ao longo do tempo e a data de aplicação esperada é anotada na tabela. Espera-se que os clientes cumpram essas regras até a data de aplicação prevista. O não cumprimento das regras após a data de remoção gera erros no processo de criação do Cloud Manager. Os projetos Maven devem incluir o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) para sinalizar erros de configuração OSGI durante o desenvolvimento local do SDK.
 
 Informações adicionais sobre a configuração OSGI podem ser encontradas em [este local](/help/implementing/deploying/configuring-osgi.md).
 
