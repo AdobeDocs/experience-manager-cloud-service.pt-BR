@@ -3,9 +3,9 @@ title: Visão geral dos agentes no AEM
 description: Saiba mais sobre os Agentes disponíveis no AEM para acelerar a criação de conteúdo e orquestrar alterações automaticamente.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 0d9b0ce334e06064ef54532bced6a5e93696ebf1
+source-git-commit: a68f4d38e698ce500ea556b334f46f848e9f7f7d
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Esses agentes estão disponíveis no Adobe Experience Manager (AEM) as a Cloud S
 
 >[!IMPORTANT]
 >
->Para usar os agentes que devem ser inscritos no Programa Beta. Você pode encontrar mais informações sobre o Programa Beta de Agentes da AEM [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
+>Para usar os agentes que devem ser inscritos no Programa Beta. Você pode encontrar mais informações sobre o Programa Beta de Agentes da AEM [aqui](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs).
 
 ## Agente de produção de experiência {#experience-production-agent}
 
