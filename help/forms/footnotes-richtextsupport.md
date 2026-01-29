@@ -28,7 +28,7 @@ As notas de rodapé são numeradas sequencialmente na ordem em que aparecem na p
 * Fornece informações adicionais que podem interromper o fluxo normal das informações principais.
 * Fornece informações entre parênteses ou permissões de copyright.
 
-No Adaptive Forms, a [!UICONTROL nota de rodapé] é usada para exibir as informações sobre como preencher ou usar o formulário. Para obter informações sobre como criar um Forms adaptável, consulte [Criando um Formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
+No Adaptive Forms, a [!UICONTROL nota de rodapé] é usada para exibir as informações sobre como preencher ou usar o formulário. Para obter informações sobre como criar um Forms adaptável, consulte [Criando um Formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=pt-BR).
 
 ## Nota de rodapé no Adaptive Forms {#using-footnote-adaptiveforms}
 
