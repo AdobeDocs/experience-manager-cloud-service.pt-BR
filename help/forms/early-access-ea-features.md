@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a2f686e7917d47138bdb9dcd4b5245732635bed7
 workflow-type: tm+mt
-source-wordcount: '3068'
+source-wordcount: '3096'
 ht-degree: 0%
 
 ---
@@ -259,7 +259,7 @@ A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas 
 
 Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
 
-Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### APIs Doc Assurance
 
@@ -312,6 +312,8 @@ O armazenamento de PDFs no Armazenamento Azure Blob permite o gerenciamento cent
 * [Navegação aprimorada com suporte de carga do evento](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service): a ação **Navegar para** nos manipuladores Chamar serviço aceita `EVENT_PAYLOAD`, permitindo que os autores de formulários configurem ações de acompanhamento com base nas respostas do evento.
 
 * [Suporte a Expressões Matemáticas e de Funções em Parâmetros de Entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): Os parâmetros de entrada agora oferecem suporte a chamadas de função e expressões matemáticas, permitindo que os autores de formulários passem valores computados dinamicamente diretamente.
+
+* [Recuperar valores de propriedade de uma matriz JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): chame uma API com uma função personalizada para extrair valores de uma matriz JSON e associá-los diretamente aos campos de formulário.
 
 ## Consulte também:
 

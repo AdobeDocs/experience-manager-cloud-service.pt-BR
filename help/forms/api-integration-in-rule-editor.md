@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: integração da API no editor de regras, chame as melhorias no serviço
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
+source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1034'
 ht-degree: 2%
 
 ---
@@ -123,6 +123,10 @@ Por exemplo, quando o usuário abre **País de cidadania**, a lista de países �
 
 Da mesma forma, o **País de Emissão de Passaporte** e o **País de Destino** usam a mesma chamada de API, garantindo dados consistentes e atualizados em todos os três campos.
 
+>
+>
+> Você pode [recuperar valores de propriedade de uma matriz JSON invocando uma API e usando uma função personalizada](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). Essa abordagem permite extrair valores e vinculá-los diretamente aos campos de formulário.
+
 ## Implementação do mecanismo de repetição para falhas de API
 
 Quando uma solicitação de API falha, geralmente é útil repetir a solicitação antes de relatar um erro ao usuário. Você pode implementar um mecanismo de pesquisa e tentativa gravando o código personalizado no arquivo **function.js**.
@@ -195,10 +199,6 @@ function retryHandler(requestFn) {
 ```
 
 No código acima, a função **retryHandler** gerencia solicitações de API com tentativas automáticas em caso de falha. Ele executa uma função de solicitação (requestFn) e tenta a solicitação até duas vezes, adicionando metadados para cada tentativa.
-
->[!NOTE]
->
-> Para obter etapas detalhadas sobre como adicionar funções personalizadas, consulte o artigo [Introdução a Funções personalizadas para Forms adaptável com base em Componentes principais](/help/forms/create-and-use-custom-functions.md).
 
 ## Perguntas frequentes
 

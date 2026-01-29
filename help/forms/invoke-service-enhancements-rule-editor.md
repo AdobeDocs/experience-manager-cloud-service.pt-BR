@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: chame os aprimoramentos do serviço no VRE, preenchendo as opções suspensas usando invocar serviço, Defina o painel repetível usando a saída de invocar serviço, Defina o painel usando a saída de invocar serviço, Use o parâmetro de saída de invocar serviço para validar outro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '2150'
 ht-degree: 1%
 
 ---
@@ -171,6 +171,10 @@ Digite `101` na caixa de texto `Pet ID` para preencher dinamicamente as opções
 
 ![Resultado](/help/forms/assets/output1.png)
 
+> 
+>
+> As opções suspensas também podem ser preenchidas dinamicamente chamando um serviço, analisando a resposta JSON e aplicando funções personalizadas. Para obter mais detalhes, consulte [esta seção](#retrieve-property-values-from-a-json-array).
+
 ### Caso de uso 2: definir painel repetível usando a saída de Chamar serviço
 
 Este caso de uso demonstra como preencher painéis repetíveis dinamicamente com base na saída de um **Chamar serviço**.
@@ -269,6 +273,123 @@ Opcionalmente, configure um manipulador de falhas para exibir uma mensagem de er
 Quando o botão **Enviar** é clicado, o serviço de API `redirect-api` é chamado. Após o sucesso, o usuário será redirecionado para a página **Fale Conosco**.
 
 ![Saída de carga do evento](/help/forms/assets/output5.gif)
+
+## Recuperar valores de propriedade de uma matriz JSON
+
+O Adaptive Forms oferece suporte à chamada de um serviço, ao processamento de respostas JSON e ao preenchimento dinâmico de campos de formulário. Esta seção descreve como extrair valores de propriedade de uma matriz JSON e vinculá-los a campos de formulário.
+
+### Exemplo de resposta JSON
+
+O exemplo a seguir representa as regiões de vendas dos EUA e a lista de representantes de vendas:
+
+
+```json
+[
+  {
+    "region": "East",
+    "salesPerson": "Emily Carter"
+  },
+  {
+    "region": "South",
+    "salesPerson": "Michael Brown"
+  },
+  {
+    "region": "Midwest",
+    "salesPerson": "Sophia Martinez"
+  },
+  {
+    "region": "Southwest",
+    "salesPerson": "David Johnson"
+  },
+  {
+    "region": "West",
+    "salesPerson": "Linda Walker"
+  }
+]
+```
+
+### Função personalizada para extrair valores de propriedade
+
+<span class="preview"> Este é um recurso pioneiro. Se você estiver interessado, envie um email rápido do seu endereço comercial para mailto:aem-forms-ea@adobe.com para solicitar acesso ao recurso</a>. </span>
+
+Use a seguinte função personalizada para extrair valores de propriedade da matriz JSON.
+
+```js
+/**
+ * Returns an array of values for a specific property from an array of objects.
+ *
+ * @name getPropertyValues
+ * @param {Object[]} jsonArray An array of objects
+ * @param {string} propertyName The property whose values should be extracted
+ * @returns {Array} An array containing the values of the specified property
+ *
+ */
+
+function getPropertyValues(jsonArray, propertyName)
+{
+    return jsonArray.map((obj) => obj[propertyName]);
+
+}
+```
+
+A função personalizada aceita:
+
+* **jsonArray**: matriz JSON retornada do serviço
+* **propertyName**: propriedade para extrair o valor
+
+A função personalizada retorna uma matriz simples de valores.
+
+>[!NOTE]
+>
+> Para obter etapas detalhadas sobre como adicionar funções personalizadas, consulte o artigo [Introdução a Funções personalizadas para Forms adaptável com base em Componentes principais](/help/forms/create-and-use-custom-functions.md).
+
+
+### Usar a função no Editor de regras
+
+Para recuperar o valor específico da matriz JSON:
+
+```
+event.payload.invokeServiceResponse.rawPayloadBody
+```
+
+O exemplo a seguir demonstra como preencher um formulário `Sales Department` usando esta resposta.
+
+Por exemplo, vamos criar um formulário `Sales Department` que inclua os menus suspensos `Select Region` e `Select Sales Representative`.
+
+**Etapa 1: chamar o serviço na inicialização do formulário**
+
+```
+WHEN
+    Form is initialized
+THEN
+    Invoke Service → salesdeptinfo
+```
+
+>[!NOTE]
+>
+> Para saber como integrar a API sem criar um Modelo de dados de formulário no Editor de regras visuais, [clique aqui](/help/forms/api-integration-in-rule-editor.md).
+
+**Etapa 2: Preencher a lista suspensa de Região**
+
+Adicione um Manipulador de sucesso para a chamada de serviço e configure a seguinte ação:
+
+```
+Set enum → Region dropdown
+getPropertyValues(
+    event.payload.invokeServiceResponse.rawPayloadBody,
+    "region"
+)
+```
+
+Esta regra lê a matriz JSON, extrai os valores de propriedade `region` e atribui os valores à lista suspensa `Select Region`.
+
+Da mesma forma, configure a ação para a lista suspensa `Select Sales Representative` no Manipulador de sucesso.
+
+![Carga do evento para a matriz JSON](/help/forms/assets/event-payload.png)
+
+Quando o formulário carrega, os dados JSON são retornados e a função personalizada extrai os valores de propriedade e a lista suspensa é preenchida automaticamente:
+
+![Formulário de carga do evento](/help/forms/assets/event-payload-form.png)
 
 ## Perguntas frequentes
 
