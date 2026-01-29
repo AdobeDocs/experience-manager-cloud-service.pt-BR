@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2710'
 ht-degree: 9%
 
 ---
@@ -33,17 +33,25 @@ Para isso, o editor universal oferece aos autores de conteúdo uma interface int
 
 ## Editar o conteúdo {#editing-content}
 
-A edição de conteúdo é simples e intuitiva. À medida que você passa o mouse sobre o conteúdo no editor, o conteúdo editável é realçado com um contorno azul fino.
+A edição de conteúdo é simples e intuitiva. Ao passar o mouse sobre o conteúdo no editor, o conteúdo editável é realçado com um contorno fino e azul-claro e um selo.
 
-![O conteúdo editável é destacado por uma caixa azul](assets/editable-content.png)
+![O conteúdo editável está realçado por uma caixa azul-claro](assets/editable-content.png)
+
+Tocar ou clicar no conteúdo destacado é selecionado e o contorno fino e azul-claro se torna um contorno azul-escuro com um símbolo.
+
+![O conteúdo selecionado está realçado por uma caixa azul escura](assets/selected-content.png)
 
 >[!TIP]
 >
 >Por padrão, tocar ou clicar em um conteúdo o seleciona para edição. Se você deseja navegar pelo seu conteúdo seguindo os links, alterne para o [modo de visualização.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-Dependendo do conteúdo selecionado, você pode ter diferentes opções de edição no local e outras informações e opções para o conteúdo no painel de propriedades [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Dependendo do conteúdo selecionado, você pode ter diferentes opções de edição no local, bem como informações e opções adicionais para o conteúdo no painel de propriedades [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
-Cada parte do conteúdo editável está identificada com o tipo de conteúdo. Dependendo do conteúdo, você pode clicar neste selo para obter acesso rápido para editar ações.
+### Menu de contexto {#context-menu}
+
+Cada parte do conteúdo editável está identificada com o tipo de conteúdo.
+
+Você pode clicar neste selo para obter acesso rápido a um menu de contexto com ações de edição. Clicar com o botão direito do mouse em um item editável não selecionado o seleciona automaticamente e também abre o menu de contexto.
 
 ![Opções de selo editáveis](assets/editable-badge.png)
 
@@ -53,7 +61,7 @@ Cada parte do conteúdo editável está identificada com o tipo de conteúdo. De
 
 ![Editar o conteúdo](assets/editing-content.png)
 
-O contorno azul fino se transforma em um contorno azul pesado para indicar a seleção e a exibição de um cursor. Faça as alterações e pressione Enter/Return ou selecione fora da caixa de texto para salvar as alterações.
+O contorno fino e azul claro se transforma em um contorno azul escuro para indicar a seleção e um cursor é exibido. Faça as alterações e pressione Enter/Return ou selecione fora da caixa de texto para salvar as alterações.
 
 Quando você seleciona o componente de texto, seus detalhes são mostrados no painel de propriedades [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Também é possível editar o texto no painel.
 
@@ -69,9 +77,9 @@ Além disso, os detalhes do seu texto estão disponíveis no painel de proprieda
 
 Para sua conveniência, as opções de formatação e os detalhes do texto estão disponíveis em dois lugares.
 
-#### O Menu de Contexto {#context-menu}
+#### O Menu de Contexto Rich Text {#rich-text-context-menu}
 
-O menu de contexto é aberto acima do bloco de rich text e oferece opções básicas de formatação no contexto. Devido a limitações de espaço, algumas opções podem estar ocultas atrás do botão de reticências.
+Um menu de contexto é aberto acima do bloco de rich text e oferece opções básicas de formatação no contexto. Devido a limitações de espaço, algumas opções podem estar ocultas atrás do botão de reticências.
 
 ![Menu de contexto de rich text](assets/rich-text-context-menu.png)
 
@@ -227,7 +235,7 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 
 ### Copiar e colar {#copy-paste}
 
-Você pode copiar e colar componentes que estão em [&#x200B; contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
+Você pode copiar e colar componentes que estão em [ contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
 
 Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegador, desde que as guias já estejam abertas. Não é possível copiar um item e abrir uma nova guia do navegador para colá-lo.
 

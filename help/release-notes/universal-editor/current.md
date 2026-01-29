@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2026.01.22
-description: Estas são as notas de versão do Universal Editor de 2026.01.22.
+title: Notas de versão do Universal Editor 2026.01.29
+description: Estas são as notas de versão do Universal Editor de 2026.01.29.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 83653ef9938e02b58d3c82ebd6395773f293f1a4
+source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 0%
+source-wordcount: '198'
+ht-degree: 1%
 
 ---
 
 
-# Notas de versão do Universal Editor 2026.01.22 {#release-notes}
+# Notas de versão do Universal Editor 2026.01.29 {#release-notes}
 
-Estas são as notas de versão do editor universal de 22 de janeiro de 2026.
+Estas são as notas de versão da versão de 29 de janeiro de 2026 do Editor universal.
 
 >[!TIP]
 >
@@ -26,11 +26,12 @@ Estas são as notas de versão do editor universal de 22 de janeiro de 2026.
 
 ## Novidades {#what-is-new}
 
-* Rótulos (como visualizações de texto curtas) foram adicionados aos blocos de texto em [a Árvore de Conteúdo.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* TextArea agora é compatível com campos de texto sem formatação.
-* O endpoint de configuração agora é usado para recursos de interface do usuário.
-* Agora há suporte para TextArea de Fragmentos de conteúdo.
-* A API de Notificação do Sistema agora está exposta às extensões.
+* O método Remover componente foi exposto a `editorActions`.
+* O método de cópia de componente foi exposto a `editorActions`.
+* O método de movimentação de componentes foi exposto a `editorActions`.
+* O método Adicionar Componente foi exposto a `editorActions`.
+* As definições foram expostas à [extensibilidade.](/help/implementing/universal-editor/extending.md)
+* A versão 2.0 da API de criação de documentos foi lançada.
 
 ## Recursos da adoção antecipada {#early-adopter}
 
@@ -40,12 +41,6 @@ Se você estiver interessado em testar os recursos futuros listados abaixo e com
 
 ## Outras melhorias {#other-improvements}
 
-* Correção de um problema com o layout da tela de desenho ao navegar pela barra de localização.
-* Os espaços em branco à esquerda foram limpos no RTE.
-* A edição em linha foi restaurada ao inserir.
-* O rótulo de arrastar foi revertido para não mostrar todo o conteúdo.
-* Problemas de acessibilidade do navegador foram resolvidos.
-* `selectEditables([])` agora é usado para desmarcar todos os componentes via extensibilidade.
-* A tabela de metadados agora é criada no local correto.
-* Correção de um problema em que os recursos de Fragmento de conteúdo copiados apontavam para `/data/undefined`.
-
+* A extensibilidade `content` foi renomeada para `details` para seguir o esquema da API.
+* O comportamento do menu contextual foi aprimorado.
+* Correção de um erro ao clicar no selo de um item editável para que o menu de contexto abra corretamente.
