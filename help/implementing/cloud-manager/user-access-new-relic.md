@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
+source-git-commit: c91ace39d34864b88f1e07fcc7d427f347f9ed31
 workflow-type: tm+mt
-source-wordcount: '1817'
-ht-degree: 39%
+source-wordcount: '1789'
+ht-degree: 37%
 
 ---
 
@@ -29,13 +29,11 @@ Quando um novo programa de produção é criado, a subconta do New Relic One ass
 
 O APM da New Relic One para AEM as a Cloud Service inclui muitos recursos.
 
-* Acesso direto a uma conta dedicada do New Relic One
+* Acesso direto a uma conta dedicada do New Relic One.
 
-* O agente APM instrumentado da New Relic One que mostra chamadas de método exatas com números de linha, incluindo dependências externas e bancos de dados
+* Agente APM do New Relic One que mostra chamadas de método exato com números de linha, incluindo dependências externas e bancos de dados.
 
-* Otimização integral do desempenho ao combinar métricas principais do monitoramento ao nível de infraestrutura e do monitoramento de aplicativos (Adobe Experience Manager)
-
-* A AEM as a Cloud Service expõe MBeans do Java Management Extensions (JMX) e verificações de integridade diretamente no New Relic Insights, permitindo uma inspeção detalhada do desempenho do aplicativo e das métricas de integridade.
+* Otimização holística do desempenho ao combinar métricas principais do monitoramento em nível de infraestrutura e do monitoramento de aplicativos (Adobe Experience Manager).
 
 ## Ativar a subconta do New Relic One {#activate-sub-account}
 
