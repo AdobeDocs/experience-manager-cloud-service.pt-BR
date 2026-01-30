@@ -3,9 +3,9 @@ title: Uso do MCP com o AEM as a Cloud Service
 description: Saiba como usar o Protocolo de contexto de modelo com o AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 03ce511a28cf0fbbdd6e49d63736107720ef017b
+source-git-commit: 3ff5ef0be78f5f5a61c81c8ab0388b56fa134047
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -74,9 +74,8 @@ Cada aplicativo fornece sua própria experiência de configuração, mas as etap
 
 ## Visão geral da configuração {#setup-overview}
 
-A configuração do MCP para AEM envolve três partes principais:
+A configuração do MCP para AEM envolve duas partes principais:
 
-1. **Uma configuração única no AEM por um administrador**, permitindo que aplicativos clientes MCP específicos acessem os servidores MCP da AEM
 1. **Configuração em cada aplicativo cliente MCP** para que o aplicativo saiba como se conectar aos servidores MCP do AEM e executar o logon OAuth
 1. **Selecione o Servidor MCP** antes de começar a solicitar, para que o cliente MCP saiba como usá-lo.
 
