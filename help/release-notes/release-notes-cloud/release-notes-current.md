@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e4bab603da7022d868ce729309945649aa44d0fb
+source-git-commit: 46a5a8f48a139ca1be13b400552569dc40fedcdd
 workflow-type: tm+mt
-source-wordcount: '2195'
+source-wordcount: '2161'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -83,25 +83,30 @@ Consulte [programas beta do Cloud Manager](/help/implementing/cloud-manager/rele
 
 ### Servidor MCP de conteúdo {#content-MCP}
 
-Aplicativos de chat (por exemplo, ChatGPT) e IDEs modernos (por exemplo, Cursor) podem usar o protocolo de contexto de modelo (MCP) para permitir que um modelo de linguagem grande (LLM) chame ferramentas expostas por um servidor MCP. Em vez de escrever código em relação a especificações de API de baixo nível, você pode descrever o que deseja em linguagem natural e fazer com que o LLM traduza essa intenção nas chamadas de API apropriadas. E, em alguns casos, um prompt pode ser mais conveniente do que navegar em uma interface do usuário.
+O AEM Cloud Service agora inclui **Servidores MCP de conteúdo**, fornecendo uma maneira padronizada para experiências alimentadas por IA funcionarem com conteúdo do AEM por meio de ferramentas compatíveis com MCP.
 
-Por exemplo, você pode solicitar ChatGPT: *Edit /en/coffee.html no AEM: altere o texto Frescopa Coffee no conteúdo para algo que uma criança de 20 anos gostaria.*
+Desenvolvedores e usuários avançados trabalhando em aplicativos de bate-papo e plataformas de agentes podem conectar o AEM a compilações e automações personalizadas, de modo que o trabalho de conteúdo se torne parte dos fluxos de trabalho comerciais completos.
 
-A AEM fornece dois Servidores MCP de Conteúdo —**somente leitura** e **leitura/gravação** — com ferramentas para trabalhar com **Páginas**, **Fragmentos de Conteúdo** e **Assets**. Estes servidores podem ser usados dos seguintes clientes MCP: **ChatGPT**, **Claude**, **Cursor** e **Microsoft Copilot Studio**.
+A AEM fornece dois servidores:
+
+1. **Servidor MCP de Conteúdo Somente Leitura** - para recuperar conteúdo com segurança
+1. **Servidor MCP de Conteúdo de Leitura/Gravação** - para fazer alterações no conteúdo
+
+Esses servidores MCP incluem ferramentas para trabalhar com **Páginas**, **Fragmentos de Conteúdo** e **Assets**, e podem ser usados a partir dos seguintes clientes MCP: **ChatGPT**, **Claude**, **Cursor** e **Microsoft Copilot Studio**.
 
 Saiba mais em [Uso do MCP com o AEM Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). Para perguntas ou comentários, envie um email para [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Pesquisa de IA**
+**Pesquisa com IA**
 
-A Pesquisa de IA apresenta uma experiência de pesquisa inteligente e com reconhecimento de contexto que vai além da correspondência tradicional de palavras-chave, entendendo o significado e a intenção por trás das consultas do usuário. Alimentado por IA e aprendizado de máquina, ele fornece resultados mais precisos mesmo quando as consultas são redigidas de forma diferente, contêm erros ortográficos, usam sinônimos ou são enviadas em idiomas diferentes, ajudando os usuários a encontrar conteúdo relevante mais rapidamente com menos esforço.
+A pesquisa com IA apresenta uma experiência de pesquisa inteligente e com reconhecimento de contexto que vai além da correspondência tradicional de palavras-chave, entendendo o significado e a intenção por trás das consultas do usuário. Alimentado por IA e aprendizado de máquina, ele fornece resultados mais precisos mesmo quando as consultas são redigidas de forma diferente, contêm erros ortográficos, usam sinônimos ou são enviadas em idiomas diferentes, ajudando os usuários a encontrar conteúdo relevante mais rapidamente com menos esforço.
 
-Para obter mais informações, consulte a Pesquisa de IA no [modo de exibição do Assets](/help/assets/search-assets-view.md#ai-search) e no [modo de exibição de Administrador](/help/assets/search-assets.md#ai-search).
+Para obter mais informações, consulte Pesquisa com IA em [modo de exibição do Assets](/help/assets/search-assets-view.md#ai-search) e [modo de exibição de Administrador](/help/assets/search-assets.md#ai-search).
 
 **Versão 3.0.1 do Aplicativo de Desktop**
 
-[Aplicativo de desktop 3.0.1 (20 de dezembro de 2025)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/release-notes) melhora a confiabilidade, o desempenho e a estabilidade em fluxos de trabalho importantes. Esta versão garante uma nomenclatura de pasta consistente, corrigindo problemas de sincronização com o AEM Author, permite o uso ininterrupto do aplicativo durante transferências ativas, melhora a capacidade de resposta da interface do usuário por meio de processamento assíncrono, otimiza transferências de arquivos grandes com paginação e resolve problemas de estabilidade, incluindo reinicializações e falhas do servidor do Author durante uploads e downloads de pastas grandes.
+[Aplicativo de desktop 3.0.1 (20 de dezembro de 2025)](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes) melhora a confiabilidade, o desempenho e a estabilidade em fluxos de trabalho importantes. Esta versão garante uma nomenclatura de pasta consistente, corrigindo problemas de sincronização com o AEM Author, permite o uso ininterrupto do aplicativo durante transferências ativas, melhora a capacidade de resposta da interface do usuário por meio de processamento assíncrono, otimiza transferências de arquivos grandes com paginação e resolve problemas de estabilidade, incluindo reinicializações e falhas do servidor do Author durante uploads e downloads de pastas grandes.
 
 **Adobe Asset Link CEP versão 2026.01.0**
 
@@ -298,11 +303,11 @@ Envie um email para [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@ado
 
 #### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
