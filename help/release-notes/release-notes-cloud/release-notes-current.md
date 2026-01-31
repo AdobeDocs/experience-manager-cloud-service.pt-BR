@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 46a5a8f48a139ca1be13b400552569dc40fedcdd
+source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2145'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -106,7 +106,7 @@ Para obter mais informações, consulte Pesquisa com IA em [modo de exibição d
 
 **Versão 3.0.1 do Aplicativo de Desktop**
 
-[Aplicativo de desktop 3.0.1 (20 de dezembro de 2025)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/release-notes) melhora a confiabilidade, o desempenho e a estabilidade em fluxos de trabalho importantes. Esta versão garante uma nomenclatura de pasta consistente, corrigindo problemas de sincronização com o AEM Author, permite o uso ininterrupto do aplicativo durante transferências ativas, melhora a capacidade de resposta da interface do usuário por meio de processamento assíncrono, otimiza transferências de arquivos grandes com paginação e resolve problemas de estabilidade, incluindo reinicializações e falhas do servidor do Author durante uploads e downloads de pastas grandes.
+[Aplicativo de desktop 3.0.1 (20 de dezembro de 2025)](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes) melhora a confiabilidade, o desempenho e a estabilidade em fluxos de trabalho importantes. Esta versão garante uma nomenclatura de pasta consistente, corrigindo problemas de sincronização com o AEM Author, permite o uso ininterrupto do aplicativo durante transferências ativas, melhora a capacidade de resposta da interface do usuário por meio de processamento assíncrono, otimiza transferências de arquivos grandes com paginação e resolve problemas de estabilidade, incluindo reinicializações e falhas do servidor do Author durante uploads e downloads de pastas grandes.
 
 **Adobe Asset Link CEP versão 2026.01.0**
 
@@ -115,43 +115,16 @@ Para obter mais informações, consulte Pesquisa com IA em [modo de exibição d
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- ### Pre-Release features in AEM Forms 
+* [Melhorias no Espaço Reservado para Nota de Rodapé no Adaptive Forms (Componentes de Base)](/help/forms/footnotes-richtextsupport.md):
+   * A renderização da nota de rodapé foi refinada para oferecer suporte à formatação de várias linhas por meio de quebras de linha, permitindo uma apresentação mais clara e expressiva do conteúdo da nota de rodapé.
+   * As notas de rodapé permanecem agora persistentemente visíveis no espaço reservado para notas de rodapé, independentemente da visibilidade dos painéis associados, garantindo um acesso consistente às informações críticas.
 
-**Rule Editor Enhancements**
-
-The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
-
-**Enhanced Navigation with Event Payload Support**
- 
-The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-
-**Function and Mathematical Expression Support in Input Parameters**
- 
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). -->
 
 ### Novos recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
-O Programa de acesso antecipado da AEM Forms oferece uma oportunidade única para você obter acesso exclusivo a inovações de última geração e ajudar a moldar seu desenvolvimento.
+* [Recuperar valores de uma matriz JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): recursos de integração de dados ampliados agora permitem que APIs sejam chamadas por meio de funções personalizadas para extrair valores de matrizes JSON com eficiência e vinculá-los diretamente aos campos do Formulário adaptável. Esse aprimoramento simplifica o consumo de dados, minimiza o mapeamento manual e suporta experiências de formulário mais dinâmicas e orientadas por dados.
 
-Essas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no Programa de Acesso Antecipado, consulte a [documentação do Programa de Acesso Antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
-
-#### Aprimoramentos na comunicação interativa
-
-##### Bloqueio de modelo
-
-Bloqueie o conteúdo e os elementos de layout nos modelos para manter a integridade da marca e evitar modificações não autorizadas. Isso garante a consistência do design em todas as comunicações.
-
-##### Suporte a estouro de conteúdo
-
-Introdução da opção &quot;Permitir quebras de página no conteúdo&quot; para layouts com fluxo. Esse aprimoramento permite uma edição suave de várias páginas e um melhor gerenciamento de texto para documentos complexos.
-
-##### Edição de arquivo XDP
-
-O editor de comunicação interativa agora é compatível com a edição de XDP, incluindo a integração de fragmentos. Agora é possível editar arquivos XDP em um navegador em vez do Forms Designer, que é executado somente na área de trabalho do Microsoft Windows.
-
-##### Numeração dinâmica de páginas
-
-Exiba automaticamente &quot;Número da página de ##&quot; nas páginas mestras para uma paginação clara e consistente em documentos de várias páginas.
+* **Chamar a Interface do Usuário Associada em uma instância de Publicação**: o suporte estendido agora está disponível para invocar a Interface do Usuário Associada diretamente em instâncias de Publicação. Esse recurso define a configuração necessária, a estrutura de carga e o fluxo de chamada, simplificando a integração e acelerando a implantação entre ambientes.
 
 <!--
 **Forms Optimization opportunities**
@@ -303,11 +276,11 @@ Envie um email para [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@ado
 
 #### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

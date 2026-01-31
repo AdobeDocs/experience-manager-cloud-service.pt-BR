@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: a2f686e7917d47138bdb9dcd4b5245732635bed7
+source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
 workflow-type: tm+mt
-source-wordcount: '3096'
+source-wordcount: '3133'
 ht-degree: 0%
 
 ---
@@ -127,6 +127,8 @@ As Comunicações interativas na nuvem são uma solução poderosa para criar, g
 * **Estouro de Conteúdo**: a opção &quot;Permitir quebras de página no conteúdo&quot; para layouts fluídos para uma edição suave de várias páginas e um melhor gerenciamento de texto para documentos complexos.
 
 * **Edição de arquivos XDP**: agora é possível editar arquivos XDP em um navegador em vez do Forms Designer que é executado somente na área de trabalho do Microsoft Windows.
+
+* **Chamar a Interface do Usuário Associada em uma instância de Publicação**: agora é possível invocar a Interface do Usuário Associada diretamente em instâncias de Publicação. Esse recurso define a configuração necessária, a estrutura de carga e o fluxo de chamada, simplificando a integração e acelerando a implantação entre ambientes.
 
 ##### Numeração dinâmica de páginas
 
@@ -259,7 +261,7 @@ A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas 
 
 Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
 
-Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### APIs Doc Assurance
 
