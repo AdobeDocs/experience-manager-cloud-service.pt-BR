@@ -4,9 +4,9 @@ description: Saiba mais sobre os principais aspectos do Assets Prime, como benef
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 504464ed1277c1d9629ae1f96892ebaa5ef701c8
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1100'
 ht-degree: 1%
 
 ---
@@ -36,8 +36,6 @@ O Assets as a Cloud Service Prime inclui um DAM leve que permite executar vário
   >[!NOTE]
   >
   >O Dynamic Media com recursos de OpenAPI, que fornecem acesso a modificadores básicos de imagem como girar, cortar (manual apenas - sem recorte inteligente), virar, altura, largura, qualidade, formato e transmissão de vídeo adaptável, também está disponível com o Assets Prime. Entre em contato com a equipe de conta da Adobe para saber mais.
-
-1. [Criar um novo programa](/help/journey-onboarding/create-program.md).
 
 No entanto, à medida que suas necessidades de DAM aumentam e você precisa de mais recursos, como extensibilidade da interface, automação orientada por API e implantação de código personalizado, você deve considerar a atualização para o [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
 
