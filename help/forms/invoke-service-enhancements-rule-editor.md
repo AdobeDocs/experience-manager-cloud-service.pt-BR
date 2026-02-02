@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: chame os aprimoramentos do serviço no VRE, preenchendo as opções suspensas usando invocar serviço, Defina o painel repetível usando a saída de invocar serviço, Defina o painel usando a saída de invocar serviço, Use o parâmetro de saída de invocar serviço para validar outro campo.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
+source-git-commit: 17dfa6e28d2510484731a736c1cf7fda22961e66
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
@@ -276,6 +276,8 @@ Quando o botão **Enviar** é clicado, o serviço de API `redirect-api` é chama
 
 ## Recuperar valores de propriedade de uma matriz JSON
 
+<span class="preview"> Este é um recurso pioneiro. Se você estiver interessado, envie um email rápido do seu endereço comercial para mailto:aem-forms-ea@adobe.com para solicitar acesso ao recurso</a>. </span>
+
 O Adaptive Forms oferece suporte à chamada de um serviço, ao processamento de respostas JSON e ao preenchimento dinâmico de campos de formulário. Esta seção descreve como extrair valores de propriedade de uma matriz JSON e vinculá-los a campos de formulário.
 
 ### Exemplo de resposta JSON
@@ -309,8 +311,6 @@ O exemplo a seguir representa as regiões de vendas dos EUA e a lista de represe
 ```
 
 ### Função personalizada para extrair valores de propriedade
-
-<span class="preview"> Este é um recurso pioneiro. Se você estiver interessado, envie um email rápido do seu endereço comercial para mailto:aem-forms-ea@adobe.com para solicitar acesso ao recurso</a>. </span>
 
 Use a seguinte função personalizada para extrair valores de propriedade da matriz JSON.
 
