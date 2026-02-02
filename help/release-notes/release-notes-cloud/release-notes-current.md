@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
+source-git-commit: 6dfc3fe7e939794a7881a5c24c51ccc43f9af348
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 6%
+source-wordcount: '2126'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -106,7 +106,7 @@ Para obter mais informações, consulte Pesquisa com IA em [modo de exibição d
 
 **Versão 3.0.1 do Aplicativo de Desktop**
 
-[Aplicativo de desktop 3.0.1 (20 de dezembro de 2025)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/release-notes) melhora a confiabilidade, o desempenho e a estabilidade em fluxos de trabalho importantes. Esta versão garante uma nomenclatura de pasta consistente, corrigindo problemas de sincronização com o AEM Author, permite o uso ininterrupto do aplicativo durante transferências ativas, melhora a capacidade de resposta da interface do usuário por meio de processamento assíncrono, otimiza transferências de arquivos grandes com paginação e resolve problemas de estabilidade, incluindo reinicializações e falhas do servidor do Author durante uploads e downloads de pastas grandes.
+[Aplicativo de desktop 3.0.1 (20 de dezembro de 2025)](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes) melhora a confiabilidade, o desempenho e a estabilidade em fluxos de trabalho importantes. Esta versão garante uma nomenclatura de pasta consistente, corrigindo problemas de sincronização com o AEM Author, permite o uso ininterrupto do aplicativo durante transferências ativas, melhora a capacidade de resposta da interface do usuário por meio de processamento assíncrono, otimiza transferências de arquivos grandes com paginação e resolve problemas de estabilidade, incluindo reinicializações e falhas do servidor do Author durante uploads e downloads de pastas grandes.
 
 **Adobe Asset Link CEP versão 2026.01.0**
 
@@ -115,16 +115,20 @@ Para obter mais informações, consulte Pesquisa com IA em [modo de exibição d
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Melhorias no Espaço Reservado para Nota de Rodapé no Adaptive Forms (Componentes de Base)](/help/forms/footnotes-richtextsupport.md):
-   * A renderização da nota de rodapé foi refinada para oferecer suporte à formatação de várias linhas por meio de quebras de linha, permitindo uma apresentação mais clara e expressiva do conteúdo da nota de rodapé.
-   * As notas de rodapé permanecem agora persistentemente visíveis no espaço reservado para notas de rodapé, independentemente da visibilidade dos painéis associados, garantindo um acesso consistente às informações críticas.
+**Aprimoramentos no Espaço Reservado para Nota de Rodapé do Adaptive Forms (Componentes de Base)**
 
+* Adição do [suporte a várias linhas com quebras de linha](/help/forms/footnotes-richtextsupport.md), permitindo uma apresentação mais clara e expressiva do conteúdo da nota de rodapé.
+* As notas de rodapé agora permanecem persistentemente visíveis no espaço reservado para notas de rodapé, independentemente da visibilidade dos painéis associados, garantindo um acesso consistente às informações críticas.
 
 ### Novos recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
-* [Recuperar valores de uma matriz JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): recursos de integração de dados ampliados agora permitem que APIs sejam chamadas por meio de funções personalizadas para extrair valores de matrizes JSON com eficiência e vinculá-los diretamente aos campos do Formulário adaptável. Esse aprimoramento simplifica o consumo de dados, minimiza o mapeamento manual e suporta experiências de formulário mais dinâmicas e orientadas por dados.
+**Recuperar valores de uma matriz JSON**
 
-* **Chamar a Interface do Usuário Associada em uma instância de Publicação**: o suporte estendido agora está disponível para invocar a Interface do Usuário Associada diretamente em instâncias de Publicação. Esse recurso define a configuração necessária, a estrutura de carga e o fluxo de chamada, simplificando a integração e acelerando a implantação entre ambientes.
+Recursos de função personalizada expandidos para [extrair valores de matrizes JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array), recebidos por meio de uma chamada de API, e vinculá-los diretamente aos campos de Formulário adaptável. Agora é possível desenvolver lógica e regras de negócios com mapeamento manual mínimo de dados.
+
+**Executar a Interface do Usuário Associada em uma instância de Publicação**
+
+Agora você pode executar a [Interface do Usuário para Associação](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md) diretamente nas instâncias de Publicação. Isso permite que seus agentes acessem a Interface do usuário do Associate e personalizem facilmente as comunicações com seus clientes.
 
 <!--
 **Forms Optimization opportunities**
@@ -276,11 +280,11 @@ Envie um email para [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@ado
 
 #### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
