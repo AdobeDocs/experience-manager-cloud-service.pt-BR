@@ -37,11 +37,11 @@ Antes de integrar a Interface do usuário do Associate ao seu aplicativo, verifi
 - Comunicação interativa criada e publicada no AEM
 - Navegador com suporte a pop-up ativado
 - Usuários associados devem fazer parte do grupo **forms-associates**
-- Autenticação configurada - [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- Autenticação configurada - [SAML 2.0](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
 
 >[!NOTE]
 >
-> Para Associar Interface, configurações SAML adicionais são necessárias além da configuração padrão explicada no artigo [Autenticação SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consulte a seção [Configurações SAML adicionais para interface do usuário associada](#additional-saml-configurations-for-associate-ui) para obter detalhes.
+> Para Associar Interface, configurações SAML adicionais são necessárias além da configuração padrão explicada no artigo [Autenticação SAML 2.0](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consulte a seção [Configurações SAML adicionais para interface do usuário associada](#additional-saml-configurations-for-associate-ui) para obter detalhes.
 
 ### Configurações SAML adicionais para Associar IU
 
