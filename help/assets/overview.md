@@ -2,10 +2,10 @@
 title: Introdução ao Assets as a Cloud Service para gerenciamento de ativos digitais no AEM
 description: Introdução ao Assets as a Cloud Service para gerenciamento de ativos digitais no AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d49bfaf7ca028b2386342d33fd68e566b8a2be1f
 workflow-type: tm+mt
-source-wordcount: '5075'
-ht-degree: 8%
+source-wordcount: '5626'
+ht-degree: 7%
 
 ---
 
@@ -57,11 +57,11 @@ Use estes links para acessar a documentação detalhada sobre estas ferramentas 
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/get-started">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
    <img alt="Usar o aplicativo de desktop do AEM" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/get-started">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
       <strong>Usar aplicativo de desktop do AEM</strong>
       </a>
    </div>
@@ -86,9 +86,9 @@ Use estes links para acessar a documentação detalhada sobre estas ferramentas 
 
 >[!TAB Recursos alimentados por IA]
 
-**Tags inteligentes**: as Tags inteligentes usam a estrutura artificialmente inteligente da IA do Adobe para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. Por padrão, o AEM aplica tags inteligentes automaticamente a ativos carregados.
+**Tags inteligentes**: as Tags inteligentes usam a estrutura artificialmente inteligente do Adobe AI para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. Por padrão, o AEM aplica tags inteligentes automaticamente a ativos carregados.
 
-**Marcação e pesquisa inteligente baseadas em cores**: o AEM Assets usa os recursos de IA da Adobe para distinguir cores em uma imagem e aplicar essas características como marcas automaticamente na assimilação. Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem.
+**Marcação e pesquisa inteligente baseadas em cores**: a AEM Assets usa os recursos do Adobe AI para distinguir cores em uma imagem e aplicar essas características como marcas automaticamente na assimilação. Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem.
 
 **Metadados gerados por IA**: o AEM Assets usa IA para gerar metadados automaticamente, incluindo Título, Descrição e Palavras-chave. Esses campos gerados pela IA melhoram a precisão dos metadados, tornando os ativos mais fáceis de pesquisar, categorizar e recomendar. Essa abordagem não só aumenta a eficiência eliminando a marcação manual, mas também garante a consistência e a escalabilidade em grandes volumes de conteúdo digital.
 
@@ -108,7 +108,6 @@ Use estes links para acessar a documentação detalhada sobre estas ferramentas 
       <em>Saiba como aplicar marcas inteligentes automaticamente a ativos carregados.</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/color-tag-images.md">
@@ -193,7 +192,7 @@ Use estes links para acessar a documentação detalhada sobre estas ferramentas 
 
 **Smart Imaging**: o Smart Imaging oferece um desempenho ainda melhor de entrega de ativos de imagem, otimizando automaticamente o formato de imagem e o tamanho do arquivo com base na capacidade do navegador do cliente. Ele funciona com suas predefinições de imagem existentes e usa inteligência na entrega. Essa inteligência reduz ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador e da conexão de rede.
 
-**Recorte inteligente**: um recurso de IA do Adobe, para detectar automaticamente o ponto focal em qualquer imagem ou vídeo, e recortar para mantê-lo. Ele captura o ponto de interesse desejado, independentemente do tamanho da tela e, portanto, elimina tarefas manuais tediosas e fornece imagens e vídeos de alta qualidade e carregamento rápido que ficam bem em qualquer dispositivo ou tela.
+**Recorte inteligente**: um recurso do Adobe AI, para detectar automaticamente o ponto focal em qualquer imagem ou vídeo, e recortar para mantê-lo. Ele captura o ponto de interesse desejado, independentemente do tamanho da tela e, portanto, elimina tarefas manuais tediosas e fornece imagens e vídeos de alta qualidade e carregamento rápido que ficam bem em qualquer dispositivo ou tela.
 
 **Legendas de vídeo geradas por IA**: as legendas de vídeo geradas por IA no Adobe Dynamic Media usam inteligência artificial para gerar legendas automaticamente para conteúdo de vídeo. Esse recurso foi projetado para melhorar a acessibilidade e a experiência do usuário, fornecendo legendas precisas. As legendas são geradas a partir do áudio original, todas as faixas de áudio adicionais ou legendas extras são fornecidas na guia `Captions and Audio` da página de propriedades do vídeo. Com suporte para mais de 60 idiomas, as legendas podem ser revisadas e visualizadas antes da publicação do vídeo.
 <table>
@@ -213,11 +212,11 @@ Use estes links para acessar a documentação detalhada sobre estas ferramentas 
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
    <img alt="Corte inteligente" src="./assets/smart-cropping.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
       <strong>Recorte inteligente</strong>
       </a>
    </div>
@@ -270,11 +269,11 @@ O AEM Assets fornece recursos que ajudam você a encontrar rapidamente o ativo c
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=pt">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Práticas recomendadas de gerenciamento de metadados" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=pt">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Práticas recomendadas de gerenciamento de metadados</strong>
       </a>
    </div>
@@ -297,7 +296,7 @@ O AEM Assets fornece recursos que ajudam você a encontrar rapidamente o ativo c
 </td>
 </table>
 
-**Tags inteligentes**: as Tags inteligentes usam a estrutura artificialmente inteligente da IA do Adobe para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. Por padrão, o AEM aplica tags inteligentes automaticamente a ativos carregados.
+**Tags inteligentes**: as Tags inteligentes usam a estrutura artificialmente inteligente do Adobe AI para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. Por padrão, o AEM aplica tags inteligentes automaticamente a ativos carregados.
 
 **Pesquisar ativos**: depois que os metadados corretos estiverem em vigor, o AEM Assets permitirá que você pesquise usando vários operadores, curingas, consultas avançadas e filtros personalizados.
 
@@ -375,7 +374,6 @@ Você também pode manter versões de ativos, definir o status dos ativos e defi
       <em>Saiba como executar algumas tarefas básicas e avançadas de gerenciamento de ativos.</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/my-workspace-assets-view.md">
@@ -520,7 +518,7 @@ O AEM Assets pode se integrar perfeitamente a vários aplicativos Adobe e não A
 
 * **Integração com o Adobe Workfront**: [!DNL Adobe Workfront] é um aplicativo de gerenciamento de trabalho que ajuda você a gerenciar todo o ciclo de vida do trabalho em um único local. A integração entre o [!DNL Workfront] e o [!DNL Adobe Experience Manager Assets] permite que as organizações melhorem a velocidade do conteúdo e o prazo para comercialização, conectando intrinsecamente o gerenciamento de trabalho e de ativos digitais. No contexto do gerenciamento de trabalho no Workfront, os usuários têm acesso aos documentos e imagens necessários.
 
-  Ofertas do Adobe para [integrar [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] nativamente](https://experienceleague.adobe.com/pt-br/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
+  Ofertas do Adobe para [integrar [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] nativamente](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
 
 * **Integração com o Figma**: o AEM Assets integra-se nativamente com o Figma, o que permite que os designers acessem os ativos armazenados diretamente no AEM Assets na Interface do Usuário do Figma. Você pode colocar conteúdo gerenciado no AEM Assets na tela do Figma e depois salvar conteúdo novo ou editado no repositório do AEM Assets. Para acessar o AEM Assets Connector disponível na página da Comunidade Figma, clique [aqui](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
@@ -586,11 +584,11 @@ Se você já tiver um site do [!DNL Edge Delivery Services], consulte a document
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Integração com o Adobe Journey Optimizer" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>Integração com o Adobe Journey Optimizer</strong>
       </a>
    </div>
@@ -599,11 +597,11 @@ Se você já tiver um site do [!DNL Edge Delivery Services], consulte a document
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
    <img alt="Integração com o Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
       <strong>Integração com o Commerce</strong>
       </a>
    </div>
@@ -627,6 +625,123 @@ Se você já tiver um site do [!DNL Edge Delivery Services], consulte a document
 </table>
 
 +++
+
+>[!TAB Agentes de IA]
+
+## Agentes de IA {#ai-agents}
+
+A AEM as a Cloud Service fornece **Agentes** inteligentes para aprimorar o gerenciamento de conteúdo, a otimização e a governança. Esses agentes permitem que os usuários descubram conteúdo rapidamente, otimizem campanhas e garantam a conformidade em todos os ativos digitais.
+
+**Agente de Descoberta**
+
+O Discovery Agent fornece conteúdo do AEM sob demanda por meio de solicitações naturais e conversacionais para uma experiência de detecção simplificada e sem cliques. Ele pesquisa de forma inteligente no **Assets, Fragmentos de conteúdo e Forms adaptável** para fornecer conteúdo relevante, como imagens, vídeos, PDFs, artigos e modelos de formulário. Usando a linguagem natural, você pode pesquisar sem criar consultas complexas ou aplicar filtros na interface do AEM Assets. Com base em seu prompt, o agente retorna resultados preparados juntamente com metadados de ativos e URLs de entrega, prontos para serem incorporados em outros aplicativos.
+
+Alguns dos principais benefícios do Discovery Agent incluem:
+
+* **Descoberta de Conteúdo Unificada**: acesse todos os tipos de conteúdo do AEM, como imagens, vídeos, documentos do PDF, artigos e formulários em uma única interface conversacional.
+* **Planejamento de campanha mais rápido** Colete rapidamente visuais e formulários para campanhas de marketing em canais de email, Web e sociais.
+* **Produtividade aprimorada:** reduza o tempo gasto na navegação de repositórios ou na filtragem de metadados por meio de pesquisa automatizada e baseada em intenções.
+* **Utilização consistente do conteúdo:** garante a reutilização de ativos e fragmentos aprovados, mantendo a consistência da marca entre canais.
+
+**Habilidades:** descoberta de conteúdo em linguagem natural, descoberta de ativos com base em marcas, descoberta de conteúdo com base em pastas, descoberta de ativos com base em formato e orientação\
+**Personalidades:** Gerentes de campanha, Comerciantes de canal, Bibliotecários DAM, Agências e Parceiros\
+**Acessar:** pelo Assistente de IA na AEM
+
+**Casos de Uso Comuns/Avisos de Exemplo:**
+
+* Mostrar imagens marcadas como &quot;escritório&quot; na pasta WKND.
+* Listar todos os fragmentos de conteúdo publicados para bebidas WKND.
+* Localize formulários para candidatar-se a um cargo.
+* Mostrar ativos com a pessoa na orientação paisagem.
+
+**Agente de Otimização de Conteúdo**
+
+O **Agente de Otimização de Conteúdo** ajuda a refinar e adaptar ativos usando prompts de linguagem natural. Ele pode gerar novas representações, ajustar visuais, alterar planos de fundo e criar variações prontas para canais automaticamente. Funciona com o Discovery Agent e o **Dynamic Media com OpenAPI** para otimização contínua.
+
+**Principais benefícios:**
+
+* **Transformação de ativos sem esforço:** redimensionar, ajustar a nitidez, recolorir ou espelhar imagens.
+* **Saídas otimizadas para canal:** gere representações para Instagram, banners da Web e outros canais de marketing.
+* **Aprimoramentos do Creative em escala:** aplique alterações ou sobreposições em segundo plano para fluxos de trabalho de alto volume.
+
+**Acessar:** pelo Assistente de IA na AEM.
+
+**Prompts de Exemplo:**
+
+* `Create a 2000px JPEG rendition.`
+* `Sharpen the image.`
+* `Change background color to #ff8932.`
+* `Create a rendition for an Instagram story.`
+
+**Limitações:** algumas otimizações não têm suporte para ativos PNG.
+
+**Agente de governança**
+
+O agente de governança ajuda a garantir conformidade, consistência da marca e aplicação de políticas em todo o conteúdo do AEM. Ele identifica o conteúdo que não atende aos metadados, à acessibilidade ou às diretrizes corporativas.
+
+Alguns dos principais benefícios do Agente de governança incluem:
+
+* **Monitoramento de Conformidade:** Detecta violações de política no conteúdo.
+* **Imposição de metadados:** garante que os ativos tenham metadados necessários para governança.
+* **Consistência da marca**: sinaliza o conteúdo que não atende aos padrões corporativos.
+
+**Habilidades:** verificações de conformidade com políticas, validação de metadados, auditoria de acessibilidade, alertas automatizados para violações\
+**Personalidades:** administradores de DAM, executivos de conformidade, gerentes de marca\
+**Acessar:** pelo Assistente de IA da AEM
+
+**Casos de Uso Comuns/Avisos de Exemplo:**
+
+* Validar metadados para todos os ativos na pasta WKND.
+* Identifique os ativos que faltam nas diretrizes da marca.
+* Auditoria de conteúdo publicado para conformidade de acessibilidade.
+
+<table>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="Visão geral do Discovery Agent" src="./assets/discovery-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <strong>Visão Geral do Discovery Agent</strong>
+      </a>
+   </div>
+   <p>
+      <em>Visão geral do Discovery Agent e seus recursos de descoberta de conteúdo conversacional.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <img alt="Visão geral da otimização de conteúdo" src="./assets/content-optimization-agent.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <strong>Visão geral do Content Otimization Agent</strong>
+      </a>
+   </div>
+   <p>
+      <em>Visão geral do Agente de Otimização de Conteúdo e dos fluxos de trabalho de otimização com suporte.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <img alt="Visão geral do agente de governança" src="./assets/governance-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <strong>Visão Geral do Agente de Governança</strong>
+      </a>
+   </div>
+   <p>
+      <em>Visão geral do Agente de Governança para conformidade e imposição de política.</em>
+   </p>
+</td>
+</table>
+
+### **Como acessar agentes no AEM**
+
+Os agentes podem ser acessados por meio do **Assistente de IA** no AEM Cloud Service. Faça logon em [experience.adobe.com](https://experience.adobe.com/) e interaja com o Assistente de IA usando prompts de linguagem natural.
 
 >[!TAB Ativação de ativos]
 
@@ -704,7 +819,7 @@ O Dynamic Media oferece os seguintes recursos principais:
 
 * **Conjuntos de vídeos adaptados**: um Conjunto de vídeos adaptados agrupa versões do mesmo vídeo codificadas em taxas de bits e formatos diferentes. Você começa com seu vídeo original, o qual você carrega no sistema. O Dynamic Media dimensiona ou transcodifica automaticamente esse vídeo em vários vídeos. Em seguida, no momento do delivery, ele determina de forma inteligente qual tela de vídeo, qual qualidade e qual formato usar, além de fornecê-la ao telefone, tablet ou computador desktop.
 
-* **Recorte inteligente**: um recurso de IA do Adobe, para detectar automaticamente o ponto focal em qualquer imagem ou vídeo, e recortar para mantê-lo. Ele captura o ponto de interesse desejado, independentemente do tamanho da tela e, portanto, elimina tarefas manuais tediosas e fornece imagens e vídeos de alta qualidade e carregamento rápido que ficam bem em qualquer dispositivo ou tela.
+* **Recorte inteligente**: um recurso do Adobe AI para detectar automaticamente o ponto focal em qualquer imagem ou vídeo e recortar para mantê-lo. Ele captura o ponto de interesse desejado, independentemente do tamanho da tela e, portanto, elimina tarefas manuais tediosas e fornece imagens e vídeos de alta qualidade e carregamento rápido que ficam bem em qualquer dispositivo ou tela.
 
 * **Modelos do Dynamic Media**: crie modelos personalizáveis em tempo real para seus banners e folhetos usando os modelos do Dynamic Media, um editor de modelos do WYSIWYG. Publique seu modelo do Dynamic Media e use-o nos aplicativos downstream. Um modelo do Dynamic Media inclui camadas de imagem e texto. Adicione parâmetros às camadas de imagem e texto do modelo e use URLs do Dynamic Media para reposicionar e redimensionar a camada e atualizar seu conteúdo em tempo real.
 
