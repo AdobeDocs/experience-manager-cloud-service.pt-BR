@@ -30,7 +30,7 @@ Uma coleção se refere a um conjunto de ativos que podem ser compartilhados ent
 
 Ele ajuda os usuários a acessar e gerenciar facilmente os diversos ativos disponíveis no [!DNL Content Hub].
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445305/?captions=por_br&learn=on){transcript=true}
 
 ## Pré-requisitos {#prerequisites}
 

@@ -28,7 +28,7 @@ Alguns dos principais benefícios do controle de acesso baseado em atributos inc
 
 * Reduz o número de duplicatas - melhora a integridade do ativo. São necessárias duplicatas em permissões baseadas em pastas quando os mesmos ativos são compartilhados com grupos diferentes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475419/?captions=por_br&learn=on&enablevpops){transcript=true}
 
 ## Como ativar o controle de acesso baseado em atributos? {#enable-attribute-based-access-control}
 

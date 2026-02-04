@@ -27,7 +27,7 @@ A Importação em massa na visualização do AEM Assets fornece a capacidade de 
 * Dropbox
 * OneDrive
 
->[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3451964/?captions=por_br&learn=on){transcript=true}
 
 ## Pré-requisitos {#prerequisites}
 
