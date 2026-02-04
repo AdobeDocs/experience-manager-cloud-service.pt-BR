@@ -2,7 +2,7 @@
 title: Editar imagens no Content Hub usando o Adobe Express
 description: Editar imagens no Content Hub usando o Adobe Express
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 2%
@@ -12,6 +12,8 @@ ht-degree: 2%
 # Editar imagens no Content Hub {#edit-images-content-hub}
 
 O Content Hub permite criar novo conteúdo com o Adobe Express. Você pode editar o conteúdo existente com ferramentas fáceis de usar, produzir variações na marca com modelos e elementos da marca e criar novo conteúdo com os recursos mais recentes da GenAI da Adobe Firefly.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435003/?learn=on){transcript=true}
 
 ## Pré-requisitos {#prereqs-edit-image-content-hub}
 
@@ -27,7 +29,7 @@ Para editar imagens usando o Content Hub:
 
 1. Clique em **[!DNL Open in Adobe Express]**, disponível no cartão de ativos da imagem que você precisa editar. Como alternativa, clique na imagem para abrir seus detalhes e clique no logotipo [!DNL Adobe Express]. O editor incorporado do Adobe Express é carregado sem sair do Content Hub.
 
-   Você pode aproveitar a funcionalidade [!DNL Adobe Express] para executar todas as ações relacionadas à edição de imagens, como [redimensionar imagem](https://helpx.adobe.com/br/express/using/resize-image.html), [remover ou alterar a cor de fundo](https://helpx.adobe.com/br/express/using/remove-background.html), [recortar imagem](https://helpx.adobe.com/br/express/using/crop-image.html), combinar a imagem com a imagem ou o texto gerado pela IA e muito mais.
+   Você pode aproveitar a funcionalidade [!DNL Adobe Express] para executar todas as ações relacionadas à edição de imagens, como [redimensionar imagem](https://helpx.adobe.com/express/using/resize-image.html), [remover ou alterar a cor de fundo](https://helpx.adobe.com/express/using/remove-background.html), [recortar imagem](https://helpx.adobe.com/express/using/crop-image.html), combinar a imagem com a imagem ou o texto gerado pela IA e muito mais.
 
 1. Faça as modificações e clique em **[!UICONTROL Salvar]** para salvar o ativo editado em um dos tipos de formato:
 

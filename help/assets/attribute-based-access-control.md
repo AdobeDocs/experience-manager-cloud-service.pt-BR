@@ -3,7 +3,7 @@ title: Controle de acesso baseado em atributos
 description: Saiba como habilitar o controle de acesso baseado em atributos para definir regras baseadas em metadados e definir o nível de acesso aos ativos disponíveis no Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -27,6 +27,8 @@ Alguns dos principais benefícios do controle de acesso baseado em atributos inc
 * Permite que os administradores façam upload de ativos e determinem retroativamente as estruturas de permissão
 
 * Reduz o número de duplicatas - melhora a integridade do ativo. São necessárias duplicatas em permissões baseadas em pastas quando os mesmos ativos são compartilhados com grupos diferentes.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## Como ativar o controle de acesso baseado em atributos? {#enable-attribute-based-access-control}
 

@@ -4,10 +4,10 @@ description: Saiba como importar ativos em massa usando a nova interface do Asse
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 87%
+source-wordcount: '1874'
+ht-degree: 88%
 
 ---
 
@@ -26,6 +26,8 @@ A Importação em massa na visualização do AEM Assets fornece a capacidade de 
 * Google Cloud
 * Dropbox
 * OneDrive
+
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## Pré-requisitos {#prerequisites}
 
@@ -200,7 +202,7 @@ Para validar a conexão com a fonte de dados, clique no ![Ícone mais](assets/do
 
 ## Faça uma execução de prática antes de executar uma importação {#dry-run-bulk-import}
 
-Clique no ![Ícone mais](assets/do-not-localize/more-icon.svg) correspondente ao nome da configuração e clique em **[!UICONTROL Execução de prática]** para solicitar uma execução de teste para a tarefa de importação em massa. O Experience Manager Assets exibe os seguintes detalhes sobre a tarefa de importação em massa:
+Clique no ![Ícone mais](assets/do-not-localize/more-icon.svg) correspondente ao nome da configuração e clique em **[!UICONTROL Execução de prática]** para solicitar uma execução de teste para o processo de importação em massa. O Experience Manager Assets exibe os seguintes detalhes sobre o processo de importação em massa:
 
 ![Verificação de integridade da importação em massa](assets/bulk-import-dry-run.png)
 
@@ -224,8 +226,4 @@ Clique no ![ícone Mais](assets/do-not-localize/more-icon.svg) correspondente ao
 
 ## Navegue até os ativos após a execução de uma importação em massa {#view-assets-after-bulk-import}
 
-Para exibir o local de destino no Assets onde os ativos são importados após a execução das tarefas de importação em massa, clique no ![Ícone de mais](assets/do-not-localize/more-icon.svg) correspondente ao nome da configuração e clique em **[!UICONTROL Exibir ativos]**.
-
-## Vídeo: Importar ativos em massa usando a visualização do Assets
-
->[!VIDEO](https://video.tv.adobe.com/v/3428012)
+Para exibir o local de destino no Assets onde os ativos são importados após a execução do processo de importação em massa, clique no ![Ícone de mais](assets/do-not-localize/more-icon.svg) correspondente ao nome da configuração e clique em **[!UICONTROL Exibir ativos]**.

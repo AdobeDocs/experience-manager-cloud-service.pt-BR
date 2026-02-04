@@ -3,7 +3,7 @@ title: Implantar [!DNL Content Hub]
 description: Saiba como implantar e ativar o Content Hub e fornecer acesso a usuários com diferentes tipos de privilégios (fazer upload de ativos, usuários do Adobe Express) e como fornecer privilégios de administrador aos usuários.
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 2%
@@ -20,7 +20,7 @@ Este artigo fornece um fluxo de trabalho completo para fornecer aos usuários ac
 
 Assista a este vídeo para saber como ativar o Content Hub para Experience Manager Assets:
 
->[!VIDEO](https://video.tv.adobe.com/v/3469851)
+>[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
 
 As variações de privilégios no Content Hub incluem:
 
@@ -33,6 +33,10 @@ As variações de privilégios no Content Hub incluem:
 * [Usuários do Content Hub com direitos de remixar ativos para novas variações](#onboard-content-hub-users-remix-assets): [Integração do Adobe Express](/help/assets/edit-images-content-hub.md) (se você tiver direitos ao Adobe Express) além de acessar ativos aprovados pela marca no portal do Content Hub.
 
 * [Usuários do Experience Manager Assets](#experience-manager-assets-users): capacidade de aprovar ativos no Experience Manager Assets as a Cloud Service para disponibilizá-los no Content Hub.
+
+>[!NOTE]
+>
+>Você pode acessar e usar o Content Hub com até 250 usuários limitados da Content Hub para o Assets Ultimate e 50 usuários do Content Hub para o Assets Prime. Entre em contato com o representante da Adobe em caso de dúvidas adicionais.
 
 A tabela a seguir resume os tipos de usuários disponíveis do Content Hub, os privilégios que eles têm e os perfis de produtos necessários para obter esses privilégios:
 
@@ -83,11 +87,6 @@ Para ativar o Content Hub para Experience Manager Assets:
 1. Clique em **[!UICONTROL Atualizar]**.
 
 O Content Hub agora está ativado para o Experience Manager Assets as a Cloud Service. Depois de ativar o Content Hub em um ambiente de Produção, não é possível desativá-lo no autoatendimento.
-
->[!NOTE]
->
->Você pode acessar e usar o Content Hub com até 250 usuários limitados da Content Hub para o Assets Ultimate e 50 usuários do Content Hub para o Assets Prime. Entre em contato com o representante da Adobe em caso de dúvidas adicionais.
-
 
 Se você é novo no Experience Manager Assets, clique em **[!UICONTROL Adicionar programa]**, forneça os detalhes do programa (Nome do programa, configurar para produção) e clique em **[!UICONTROL Continuar]**. Você pode selecionar **[!UICONTROL Assets]** e **[!UICONTROL Content Hub]** na guia **[!UICONTROL Soluções e Complementos]**.
 
