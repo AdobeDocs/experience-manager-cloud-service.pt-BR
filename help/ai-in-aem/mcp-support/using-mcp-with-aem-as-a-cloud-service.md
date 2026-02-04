@@ -3,9 +3,9 @@ title: Uso do MCP com o AEM as a Cloud Service
 description: Saiba como usar o Protocolo de contexto de modelo com o AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 3ff5ef0be78f5f5a61c81c8ab0388b56fa134047
+source-git-commit: 243fbd007235949fc03852658f606d483ef9ce4d
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2064'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Muitas equipes do AEM agora trabalham em IDEs e aplicativos baseados em chat, como Cursor, ChatGPT, Anthropic Claude e Microsoft Copilot Studio. Esses aplicativos oferecem suporte ao protocolo MCP, que permite que os aplicativos exponham ferramentas de back-end a LLMs (Large Language Models, modelos de linguagem grande) de maneira padronizada.
+Muitas equipes do Adobe Experience Manager (AEM) agora trabalham em ambientes de desenvolvimento integrado (IDEs) e aplicativos baseados em chat, como Cursor, ChatGPT, Anthropic Claude e Microsoft Copilot Studio. Esses aplicativos oferecem suporte ao protocolo MCP, que permite que os aplicativos exponham ferramentas de back-end a LLMs (Large Language Models, modelos de linguagem grande) de maneira padronizada.
 
 Com a integração do MCP do AEM, diferentes perfis podem colaborar em torno do mesmo conteúdo:
 
@@ -119,19 +119,19 @@ Abaixo estão exemplos de como isso ocorre em cada aplicativo compatível em um 
 
 **GPTchat**
 
-![Configurar ChatGPT Etapa 1](assets/chatgpt-1.png)
+![Configurar ChatGPT - Configurações](assets/chatgpt-1.png)
 
-![Configurar ChatGPT Etapa 2](assets/chatgpt-2.png)
+![Configurar ChatGPT - Aplicativos e Conectores - Configurações Avançadas](assets/chatgpt-2.png)
 
-![Configurar ChatGPT Etapa 3](assets/chatgpt-3.png)
+![Configurar ChatGPT - Aplicativos e Conectores - Modo de desenvolvedor](assets/chatgpt-3.png)
 
-![Configurar ChatGPT Etapa 4](assets/chatgpt-4.png)
+![Configurar ChatGPT - Aplicativos e Conectores - Criar aplicativo](assets/chatgpt-4.png)
 
-![Configurar ChatGPT Etapa 5](assets/chatgpt-5.png)
+![Configurar ChatGPT - Aplicativos e Conectores - Novo Aplicativo](assets/chatgpt-5.png)
 
-![Configurar ChatGPT Etapa 6](assets/chatgpt-6.png)
+![Configurar ChatGPT - Aplicativos e Conectores - Serviço MCP de Conteúdo do AEM](assets/chatgpt-6.png)
 
-![Configurar ChatGPT Etapa 7](assets/chatgpt-7.png)
+![Configurar ChatGPT - Solicitar Serviço MCP de Conteúdo do AEM](assets/chatgpt-7.png)
 
 * Adicione o(s) URL(s) do servidor MCP do AEM na área em que as conexões ou ferramentas do MCP estão configuradas
 * Acionar a conexão e fazer logon com sua Adobe ID quando redirecionado
@@ -141,19 +141,19 @@ Abaixo estão exemplos de como isso ocorre em cada aplicativo compatível em um 
 
 **Claude**
 
-![Configurar Claude Etapa 1](assets/claude-1.png)
+![Configurar Claude - Configurações](assets/claude-1.png)
 
-![Configurar Claude Etapa 2](assets/claude-2.png)
+![Configurar Claude - Conectores](assets/claude-2.png)
 
-![Configurar Etapa Claude 3](assets/claude-3.png)
+![Configurar Claude - Conectores - Adicionar conector personalizado](assets/claude-3.png)
 
-![Configurar Claude Etapa 4](assets/claude-4.png)
+![Configurar Claude - Conectores - Conectar conector personalizado](assets/claude-4.png)
 
-![Configurar Claude Etapa 5](assets/claude-5.png)
+![Configurar Claude - Conectores - Configurar conector personalizado](assets/claude-5.png)
 
-![Configurar Etapa 6](assets/claude-6.png) do Claude
+![Configurar Claude - Conectores - Permissões da ferramenta de conector personalizado](assets/claude-6.png)
 
-![Configurar Claude Etapa 7](assets/claude-7.png)
+![Configurar Claude - perguntar ao Serviço AEM Content MCP](assets/claude-7.png)
 
 * Na configuração do MCP do Claude, registre o(s) URL(s) do servidor MCP do AEM
 * Conclua o fluxo de logon do Adobe
@@ -163,15 +163,15 @@ Abaixo estão exemplos de como isso ocorre em cada aplicativo compatível em um 
 
 **Cursor**
 
-![Configurar Etapa 1](assets/cursor-1.png) do Cursor
+![Configurar Cursor - Configurações](assets/cursor-1.png)
 
-![Configurar Etapa 2](assets/cursor-2.png) do Cursor
+![Configurar Cursor - Ferramentas e MCP - Adicionar MCP Personalizado](assets/cursor-2.png)
 
-![Configurar Etapa 3](assets/cursor-3.png) do Cursor
+![Configurar Cursor - Adicionar configurações de MCP personalizadas](assets/cursor-3.png)
 
-![Configurar Etapa 4](assets/cursor-4.png) do Cursor
+![Configurar Cursor - Conectar](assets/cursor-4.png)
 
-![Configurar Etapa 5](assets/cursor-5.png) do Cursor
+![Configurar Cursor - perguntar novo serviço](assets/cursor-5.png)
 
 * Nas configurações de MCP do cursor, crie uma nova entrada de servidor MCP com o(s) URL(s) MCP do AEM
 * Autentique com seu Adobe ID quando solicitado
@@ -180,25 +180,25 @@ Abaixo estão exemplos de como isso ocorre em cada aplicativo compatível em um 
 
 **Microsoft Copilot Studio**
 
-![Configurar Copilot Etapa 1](assets/copilot-1.png)
+![Configurar Copilot - Agentes](assets/copilot-1.png)
 
-![Configurar Copilot Etapa 2](assets/copilot-2.png)
+![Configurar Copilot - Adicionar ferramenta](assets/copilot-2.png)
 
-![Configurar a Etapa 3](assets/copilot-3.png) do Copilot
+![Configurar Copilot - Adicionar ferramenta - Protocolo de Contexto de Modelo](assets/copilot-3.png)
 
-![Configurar a Etapa 4](assets/copilot-4.png) do Copilot
+![Configurar Copilot - Adicionar um servidor de Protocolo de Contexto de Modelo (visualização)](assets/copilot-4.png)
 
-![Configurar Copilot Etapa 5](assets/copilot-5.png)
+![Configurar Copilot - Adicionar ferramenta - Criar nova conexão](assets/copilot-5.png)
 
-![Configurar a Etapa 6](assets/copilot-6.png) do Copilot
+![Configurar Copilot - Adicionar ferramenta - Adicionar e configurar](assets/copilot-6.png)
 
-![Configurar etapa 7](assets/copilot-7.png) do Copilot
+![Configurar Copilot - Adicionar ferramenta - Configurar](assets/copilot-7.png)
 
-![Configurar a Etapa 8](assets/copilot-8.png) do Copilot
+![Configurar Copilot - Testar conexão](assets/copilot-8.png)
 
-![Configurar a Etapa 9](assets/copilot-9.png) do Copilot
+![Configurar Copilot - Gerenciar Conexões](assets/copilot-9.png)
 
-![Configurar a Etapa 10 do Copilot](assets/copilot-10.png)
+![Configurar Copilot - Agente de Teste](assets/copilot-10.png)
 
 * Criar um novo agente
 * Navegue até a seção de ferramentas e clique em **Adicionar ferramenta**
