@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a842a5f0bd5561563a86f6f0b6e8abf8cfd679ec
+source-git-commit: f01a98604e045c48ab7167122aee3b2468db6d52
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '988'
 ht-degree: 11%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 11%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 24222 {#24222}
+## Versão 24288 {#24288}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 24222, lançada publicamente em quarta-feira, 3 de fevereiro de 2026. A versão de manutenção anterior era 23963.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 24288, lançada publicamente em quinta-feira, 4 de fevereiro de 2026. A versão de manutenção anterior era 23963.
 
-A ativação de recursos do 2026.2.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2026.2.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-24222}
+>[!NOTE]
+>
+>A versão 24222 foi tornada privada.
+
+### Aprimoramentos {#enhancements-24288}
 
 * CNTBF-604: criar nova versão do pacote de fluxo de retorno de conteúdo.
 * CQ-4361592: Suporte a Add TypeHint para criação e atualização de projetos.
@@ -58,7 +62,7 @@ A ativação de recursos do 2026.2.0 fornecerá o conjunto completo de recursos 
 * SKYOPS-125574: Atualização de pacotes de ferramentas CA netcentric no Quickstart.
 * SKYOPS-126150: Melhore o comando superior do script gerador de despejos de thread.
 
-### Problemas corrigidos {#fixed-issues-24222}
+### Problemas corrigidos {#fixed-issues-24288}
 
 * FORMS-23687: Corrigir falha de validação do SSV quando a regra contém é usada sem o valor padrão.
 * GRANITE-48472: erro de localização ao alterar a senha na guia Editar configurações do usuário.
@@ -75,10 +79,11 @@ A ativação de recursos do 2026.2.0 fornecerá o conjunto completo de recursos 
 * GRANITE-63293: Corrija o campo de caminho obrigatório perdendo o asterisco obrigatório após a primeira criação.
 * GRANITE-63360: corrija as informações incorretas exibidas quando vários caminhos forem selecionados.
 * SITES-36242: Reduza o GraphQL para executar regex para corrigir o desvio do filtro do dispatcher.
+* SITES-40122: Correção da integração do Edge Delivery com o ImsService de distribuição de conteúdo.
 * SKYOPS-84379: Use a ferramenta FACT mais recente para alternar corretamente a coleta de recursos por RDEs.
 * SKYOPS-121216: Reverter atualização para bibliotecas Jackson 2.20.0.
 
-#### Guias do AEM {#guides-24222}
+#### Guias do AEM {#guides-24288}
 
 * GUIDES-38198 : Ao atualizar uma equação de MathML em linha usando a opção Editar MathML do menu de contexto, o valor atualizado não é refletido até que a página seja atualizada.
 * GUIDES-38276: Não é possível remover rótulos de versão do painel Histórico de versão na interface do Assets.
@@ -86,13 +91,13 @@ A ativação de recursos do 2026.2.0 fornecerá o conjunto completo de recursos 
 * GUIDES-37837: Ao tentar salvar um tópico ou mapa, a operação pode falhar intermitentemente com um erro Falha ao salvar arquivo, especialmente durante tarefas de processamento intensivo de ativos ou fluxos de trabalho de tradução em execução em segundo plano.
 * GUIDES-27774: O relatório Lista interrompida está incluindo incorretamente links externos, `keyrefs` válidos e palavras-chave resolvidas corretamente dentro do escopo do mapa atual.
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problemas conhecidos {#known-issues-24222}
+### Problemas conhecidos {#known-issues-24288}
 
 Nenhum.
 
-### Recursos e APIs obsoletos {#deprecated-24222}
+### Recursos e APIs obsoletos {#deprecated-24288}
 
 * AEMSRE-2896: corrija o tratamento personalizado da configuração do logmanager.
 * GRANITE-62802: remover a dependência `commons-lang` obsoleta de `granite.auth.saml`.
@@ -109,11 +114,11 @@ Nenhum.
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-24222}
+### Correções de segurança {#security-24288}
 
 A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda 10 vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
 
-### Tecnologias integradas {#embedded-tech-24222}
+### Tecnologias integradas {#embedded-tech-24288}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
@@ -122,4 +127,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.30.2 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
