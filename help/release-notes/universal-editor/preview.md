@@ -3,10 +3,10 @@ title: Notas de versão de visualização do Universal Editor
 description: Estas são as notas de versão da versão de pré-visualização do Universal Editor.
 feature: Release Information
 role: Admin
-source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
+source-git-commit: b03ad4a29c55e6789b82d2da76708c6e31613c5e
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '170'
+ht-degree: 0%
 
 ---
 
@@ -27,8 +27,10 @@ Estas notas de versão do **preview** são fornecidas como conveniência, para q
 
 ## Novos recursos futuros {#what-is-new}
 
-* A ser definido
+* Os links do Dynamic Media agora são compatíveis.
 
 ## Aprimoramentos futuros {#other-improvements}
 
-* A ser definido
+* Foi corrigido um problema com URLs incorretas para vídeos.
+* Criar vários componentes com o mesmo nome não retorna mais um 409.
+* A tela headless agora mantém atualizações subsequentes de um campo no container.
