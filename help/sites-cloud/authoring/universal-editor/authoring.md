@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
+source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
 workflow-type: tm+mt
-source-wordcount: '2710'
+source-wordcount: '2835'
 ht-degree: 9%
 
 ---
@@ -202,7 +202,32 @@ O componente selecionado foi excluído.
 >
 >Use a tecla de atalho `Shift+Backspace` para excluir o componente selecionado de seu contêiner.
 
-### Reorganização de componentes {#reordering-components}
+### Reorganização e movimentação de componentes {#reordering-components}
+
+Você pode mover e reordenar componentes usando o menu de contexto ou a árvore de conteúdo.
+
+#### Mover componentes com o menu de contexto {#move-context-menu}
+
+1. Clique com o botão direito em um componente ou clique no selo do componente selecionado para abrir o [menu de contexto.](#context-menu)
+1. Selecione a opção de movimentação desejada.
+   * Mover para a parte superior
+   * Mover para cima
+   * Mover para baixo
+   * Mover para a parte inferior
+     ![Mover opções no menu de contexto](assets/move-options-in-conext-menu.png)
+
+O componente é movido no editor e na árvore de conteúdo.
+
+>[!TIP]
+>
+>Use as teclas de atalho `Command-U` ou `Shift-Command-U` para mover para cima ou para cima, respectivamente.
+>Use as teclas de atalho `Command-J` ou `Shift-Command-J` para mover para baixo ou para baixo, respectivamente.
+
+>[!NOTE]
+>
+>As opções do menu de contexto só podem mover componentes em seus contêineres. Se desejar mover componentes entre contêineres, [use a árvore de conteúdo.](#reorder-content-tree)
+
+#### Reordenar componentes com a árvore de conteúdo {#reorder-content-tree}
 
 1. Se ainda não estiver no [modo de árvore de conteúdo](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), alterne para ele.
 1. Selecione um componente de container na árvore de conteúdo ou no editor.
@@ -235,7 +260,7 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 
 ### Copiar e colar {#copy-paste}
 
-Você pode copiar e colar componentes que estão em [&#x200B; contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
+Você pode copiar e colar componentes que estão em [ contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
 
 Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegador, desde que as guias já estejam abertas. Não é possível copiar um item e abrir uma nova guia do navegador para colá-lo.
 

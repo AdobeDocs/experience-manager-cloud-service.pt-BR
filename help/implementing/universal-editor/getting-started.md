@@ -4,10 +4,10 @@ description: Saiba como obter acesso ao Editor universal e começar a instrument
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: f73316b16b0fb90e225b954ba614008d734b8918
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 37%
+source-wordcount: '1018'
+ht-degree: 36%
 
 ---
 
@@ -118,20 +118,25 @@ Se você quiser que apenas determinadas extensões sejam ativadas para uma pági
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
-## Defina para quais caminhos de conteúdo ou `sling:resourceType`s o Editor Universal deve ser aberto. (Opcional) {#content-paths}
+## Defina para quais caminhos de conteúdo ou `sling:resourceType`s o Editor Universal deve ser aberto e como. (Opcional) {#content-paths}
 
-Se você tiver um projeto existente do AEM usando o [editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md), quando os autores de conteúdo editarem as páginas, as páginas serão abertas automaticamente com o editor de páginas. Você pode definir qual editor do AEM deve abrir com base nos caminhos de conteúdo ou no `sling:resourceType`, tornando a experiência perfeita para seus autores, independentemente de qual editor é necessário para o conteúdo selecionado.
+Se você tiver um projeto existente do AEM usando o [editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md), quando os autores de conteúdo editarem as páginas, as páginas serão abertas automaticamente com o editor de páginas. Você pode definir qual editor do AEM deve abrir com base nos caminhos de conteúdo ou no `sling:resourceType` e como ele deve ser aberto, tornando a experiência perfeita para seus autores, independentemente de qual editor é necessário para o conteúdo selecionado.
 
 1. Abra o Gerenciador de configurações.
 
    `http://<host>:<port>/system/console/configMgr`
 
-1. Localize o **Serviço de URL do Editor Universal** na lista e clique em **Editar os valores de configuração**.
+1. Localize **`Universal Editor URL Service`** na lista e clique em **Editar os valores de configuração**.
 
 1. Defina para quais caminhos de conteúdo ou `sling:resourceType`s o Editor Universal deve ser aberto.
 
-   * No campo **Mapeamento de Abertura do Editor Universal**, forneça os caminhos para os quais o Editor Universal está aberto.
-   * No **Sling:resourceTypes que deve ser aberto pelo Editor Universal**, forneça uma lista de recursos que são abertos diretamente pelo Editor Universal.
+   * No campo **`mappings`**, forneça os caminhos para os quais o Editor Universal está aberto.
+   * No campo **`resourcetypes`**, forneça uma lista de recursos que são abertos diretamente pelo Editor Universal.
+
+1. Defina como o editor deve ser aberto.
+
+   * Marque a opção **`aemdomain`** para abrir o editor no seu domínio do AEM, como `https://author-pXX-eYYY.adobeaemcloud.com...`, caso contrário, ele será aberto em `https://experience.adobe.com...`.
+   * Marque a opção **`editorreleasepreview`** para abrir automaticamente o Universal Editor no [ambiente de visualização](/help/release-notes/universal-editor/preview.md); caso contrário, ele será aberto no ambiente de versão atual.
 
 1. Clique em **Salvar**.
 

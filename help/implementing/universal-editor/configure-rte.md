@@ -4,9 +4,9 @@ description: Entenda como você pode configurar o editor de rich text (RTE) no E
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
+source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,28 @@ O recuo tem uma configuração de nível de recurso que controla o escopo do com
 >[!NOTE]
 >
 >O aninhamento de lista com as teclas Tab/Shift+Tab funciona independentemente das configurações gerais de recuo.
+
+### Colar como texto {#paste-as-text}
+
+A ação do editor `paste_text` habilita um fluxo de trabalho padrão de colagem como texto simples.
+
+* **Atalho padrão:** Mod-Shift-v (Cmd+Shift+V no macOS, Ctrl+Shift+V no Windows/Linux)
+* **Comportamento:** Cola de texto/sem formatação (a formatação de origem é ignorada)
+   * Em listas, novas linhas criam novos itens de lista.
+
+```json
+{
+  "toolbar": {
+    "editor": ["removeformat", "paste_text"]
+  },
+  "actions": {
+    "paste_text": {
+      "shortcut": "Mod-Shift-v",
+      "label": "Paste as Text"
+    }
+  }
+}
+```
 
 ### Outras ações {#other}
 

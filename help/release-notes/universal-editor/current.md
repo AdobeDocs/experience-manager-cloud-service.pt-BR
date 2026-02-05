@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2026.01.29
-description: Estas são as notas de versão do Universal Editor de 2026.01.29.
+title: Notas de versão do Universal Editor 2026.02.05
+description: Estas são as notas de versão do Universal Editor de 2026.02.05.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
+source-git-commit: d832d202eaf7f74293e2d15cc470b0226e883e13
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '157'
 ht-degree: 1%
 
 ---
 
 
-# Notas de versão do Universal Editor 2026.01.29 {#release-notes}
+# Notas de versão do Universal Editor 2026.02.05 {#release-notes}
 
-Estas são as notas de versão da versão de 29 de janeiro de 2026 do Editor universal.
+Estas são as notas de versão da versão de 5 de fevereiro de 2026 do Editor universal.
 
 >[!TIP]
 >
@@ -26,12 +26,8 @@ Estas são as notas de versão da versão de 29 de janeiro de 2026 do Editor uni
 
 ## Novidades {#what-is-new}
 
-* O método Remover componente foi exposto a `editorActions`.
-* O método de cópia de componente foi exposto a `editorActions`.
-* O método de movimentação de componentes foi exposto a `editorActions`.
-* O método Adicionar Componente foi exposto a `editorActions`.
-* As definições foram expostas à [extensibilidade.](/help/implementing/universal-editor/extending.md)
-* A versão 2.0 da API de criação de documentos foi lançada.
+* A ação de mover agora está disponível no [menu de contexto.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
+* O RTE agora oferece suporte a [colar como texto.](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
 
 ## Recursos da adoção antecipada {#early-adopter}
 
@@ -41,6 +37,4 @@ Se você estiver interessado em testar os recursos futuros listados abaixo e com
 
 ## Outras melhorias {#other-improvements}
 
-* A extensibilidade `content` foi renomeada para `details` para seguir o esquema da API.
-* O comportamento do menu contextual foi aprimorado.
-* Correção de um erro ao clicar no selo de um item editável para que o menu de contexto abra corretamente.
+* A opção Publicar para visualização estava habilitada para o AEM 6.5 ao usar o plug-in [`xwalk`.](/help/implementing/universal-editor/component-definition.md#plugins)

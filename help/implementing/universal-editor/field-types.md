@@ -4,9 +4,9 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
+source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1637'
 ht-degree: 8%
 
 ---
@@ -138,6 +138,7 @@ A seguir estão os tipos de componentes possíveis para usar em campos de render
 | [Selecionar](#select) | `select` |
 | [Guia](#tab) | `tab` |
 | [Texto](#text) | `text` |
+| [Área de texto](#textarea) | `textarea` |
 
 #### Tag do AEM {#aem-tag}
 
@@ -906,5 +907,33 @@ O texto permite uma única linha de entrada de texto.  Inclui tipos de validaç�
 >[!TAB Captura de tela]
 
 ![Captura de tela do tipo de componente de texto](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
+
+#### Área de texto {#textarea}
+
+A área de texto permite várias linhas de entrada de texto.
+
+>[!BEGINTABS]
+
+>[!TAB Amostra]
+
+```json
+{
+  "id": "longertext",
+  "fields": [
+    {
+      "component": "textarea",
+      "name": "textarea",
+      "label": "Text Area",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Captura de tela]
+
+![Captura de tela do tipo de componente textarea](assets/component-types/textarea.png)
 
 >[!ENDTABS]
