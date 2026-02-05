@@ -17,7 +17,7 @@ O Agente de desenvolvimento ajuda os desenvolvedores e administradores do AEM a 
 
 Atualmente, o agente pode recuperar os status do pipeline e ajudar você a solucionar problemas de etapas de criação com falha, sugerindo correções e economizando tempo ao depurar implantações do AEM as a Cloud Service em ambientes de desenvolvimento, preparo e produção. Ele examina logs de compilação e código relacionado para recomendar uma correção que pode ser aplicada manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478012?captions=por_br&quality=12&learn=on)
 
 >[!IMPORTANT]
 >
