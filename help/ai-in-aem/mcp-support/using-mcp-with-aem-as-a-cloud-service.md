@@ -3,7 +3,7 @@ title: Uso do MCP com o AEM as a Cloud Service
 description: Saiba como usar o Protocolo de contexto de modelo com o AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 243fbd007235949fc03852658f606d483ef9ce4d
+source-git-commit: a5eeb2cedb16f7d0ba0b31e838b3b9fa27b0bf3f
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Essa etapa é executada por cada usuário (ou por um administrador do aplicativo
 
 Abaixo estão exemplos de como isso ocorre em cada aplicativo compatível em um alto nível.
 
-**GPTchat**
+### ChatGPT {#chatgpt}
 
 ![Configurar ChatGPT - Configurações](assets/chatgpt-1.png)
 
@@ -139,7 +139,7 @@ Abaixo estão exemplos de como isso ocorre em cada aplicativo compatível em um 
 
   *&quot;Usando as ferramentas AEM MCP configuradas, liste todos os sites em nosso ambiente de criação.&quot;*
 
-**Claude**
+### Claude {#claude}
 
 ![Configurar Claude - Configurações](assets/claude-1.png)
 
@@ -161,7 +161,7 @@ Abaixo estão exemplos de como isso ocorre em cada aplicativo compatível em um 
 * Verifique se o servidor MCP está selecionado antes de iniciar a conversa
 * Peça a Claude para executar tarefas relacionadas ao AEM; Claude selecionará as ferramentas do AEM expostas pelo servidor MCP com base em seu prompt.
 
-**Cursor**
+### Cursor {#cursor}
 
 ![Configurar Cursor - Configurações](assets/cursor-1.png)
 
@@ -178,7 +178,7 @@ Abaixo estão exemplos de como isso ocorre em cada aplicativo compatível em um 
 * Como opção, ative ou desative ferramentas individuais clicando nos nomes das ferramentas. Todas as ferramentas são ativadas por padrão.
 * Use o editor ou o chat do cursor para chamar as ferramentas do AEM como parte dos fluxos de trabalho de desenvolvimento ou conteúdo.
 
-**Microsoft Copilot Studio**
+### Microsoft Copilot Studio {#microsoft-copilot-studio}
 
 ![Configurar Copilot - Agentes](assets/copilot-1.png)
 
