@@ -3,9 +3,9 @@ title: Visão geral do agente de desenvolvimento
 description: Saiba como o Agente de desenvolvimento no AEM analisa pipelines com falha no Cloud Manager e cria logs para sugerir correções de código e acelerar a depuração.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: d10eb260195e402a6347ad40ddb851baf5949c83
+source-git-commit: 30b715d4e43bf83016622e3cf13f100062a1c08d
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '561'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ O Agente de desenvolvimento ajuda os desenvolvedores e administradores do AEM a 
 
 Atualmente, o agente pode recuperar os status do pipeline e ajudar você a solucionar problemas de etapas de criação com falha, sugerindo correções e economizando tempo ao depurar implantações do AEM as a Cloud Service em ambientes de desenvolvimento, preparo e produção. Ele examina logs de compilação e código relacionado para recomendar uma correção que pode ser aplicada manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478012?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -29,7 +29,7 @@ Atualmente, o agente pode recuperar os status do pipeline e ajudar você a soluc
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-Email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) com comentários ou solicitações para acessar este agente.
+Para acessar este agente, consulte as [notas de versão](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) para obter instruções sobre como se inscrever no programa beta e certifique-se de indicar seu interesse no Agente de Desenvolvimento. Você também pode enviar um feedback específico do agente de desenvolvimento por email para [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com).
 
 ## Acessar o agente de desenvolvimento por meio do Cloud Manager {#how-to-access-the-agent}
 
