@@ -26,7 +26,7 @@ Antes de integrar a Interface do usuário do Associate ao seu aplicativo, verifi
 
 - Comunicação interativa criada e publicada
 - Navegador com suporte a pop-up ativado
-- Os [usuários associados devem fazer parte do grupo ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) de forms-associates
+- Os [usuários associados devem fazer parte do grupo &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) de forms-associates
 - Autenticação configurada usando qualquer [mecanismo de autenticação com suporte do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (por exemplo, SAML 2.0, OAuth ou manipuladores de autenticação personalizados)
 
 >[!NOTE]
