@@ -26,13 +26,13 @@ Antes de integrar a Interface do usuário do Associate ao seu aplicativo, verifi
 
 - Comunicação interativa criada e publicada
 - Navegador com suporte a pop-up ativado
-- Os [usuários associados devem fazer parte do grupo &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) de forms-associates
-- Autenticação configurada usando qualquer [mecanismo de autenticação com suporte do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (por exemplo, SAML 2.0, OAuth ou manipuladores de autenticação personalizados)
+- Os [usuários associados devem fazer parte do grupo &#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) de forms-associates
+- Autenticação configurada usando qualquer [mecanismo de autenticação com suporte do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/authentication/authentication) (por exemplo, SAML 2.0, OAuth ou manipuladores de autenticação personalizados)
 
 >[!NOTE]
 >
 >- Este artigo demonstra a configuração de autenticação usando o SAML 2.0 com a [Microsoft Entra ID (Azure AD) como o Provedor de Identidade](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
->- Para Associar Interface, configurações SAML adicionais são necessárias além da configuração padrão explicada no artigo [Autenticação SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consulte a seção [Configurações SAML adicionais para interface do usuário associada](#additional-saml-configurations-for-associate-ui) para obter detalhes.
+>- Para Associar Interface, configurações SAML adicionais são necessárias além da configuração padrão explicada no artigo [Autenticação SAML 2.0](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consulte a seção [Configurações SAML adicionais para interface do usuário associada](#additional-saml-configurations-for-associate-ui) para obter detalhes.
 
 ### Configurações SAML adicionais para Associar IU
 
