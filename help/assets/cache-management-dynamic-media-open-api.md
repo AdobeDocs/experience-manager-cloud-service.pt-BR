@@ -2,9 +2,10 @@
 title: Gerenciamento de cache no Dynamic Media com APIs abertas
 description: Gerenciamento de cache no Dynamic Media com APIs abertas
 role: User
-source-git-commit: 89f21f96a741acbd6458c3777227548fbc89e525
+exl-id: 203a5291-edb5-4900-8b0a-32e1ebae5395
+source-git-commit: 8c9e59108d28ee02a4609c58bf7a2543783f47e2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ O cache prolongado no Dynamic Media com APIs abertas consiste em [Cache de Camad
 
 ## Armazenamento em cache da camada CDN {#cdn-layer-caching}
 
-As respostas da entrega de ativos são armazenadas em cache na [CDN Gerenciada pela Adobe](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) por um período estendido para maximizar o desempenho e minimizar a carga na origem. Esse armazenamento em cache é totalmente gerenciado pela Adobe para garantir uma experiência de alta qualidade consistente para os usuários finais. A duração do cache é intencionalmente otimizada para desempenho e não pode ser personalizada pelos usuários para manter a confiabilidade e a entrega eficiente do conteúdo em todos os clientes.
+As respostas da entrega de ativos são armazenadas em cache na [CDN Gerenciada pela Adobe](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) por um período estendido para maximizar o desempenho e minimizar a carga na origem. Esse armazenamento em cache é totalmente gerenciado pela Adobe para garantir uma experiência de alta qualidade consistente para os usuários finais. A duração do cache é intencionalmente otimizada para desempenho e não pode ser personalizada pelos usuários para manter a confiabilidade e a entrega eficiente do conteúdo em todos os clientes.
 
 Todos os URLs de entrega são armazenados em cache na borda do (Fastly) por um período estendido para garantir o desempenho ideal. Os objetos do delivery em cache incluem representações estáticas, vídeos, binários de imagem original e imagens transformadas dinamicamente, como ativos redimensionados ou reformatados gerados por meio de parâmetros de URL. <!--The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.-->
 
@@ -27,7 +28,7 @@ As respostas de entrega de ativos incluem um cabeçalho `Cache-Control` com um p
 
 ### Personalizando Cabeçalhos de Controle de Cache {#customizing-cache-control-headers}
 
-Aumentar o tempo de cache para valores ativos além da configuração padrão aumenta a probabilidade de veicular conteúdo obsoleto, o que pode atrasar a visibilidade das atualizações de conteúdo na experiência do usuário final. Se você precisar modificar o comportamento do controle de cache para seu caso de uso específico, poderá configurar regras de CDN personalizadas para ajustar cabeçalhos de resposta. Isso permite que você defina diferentes durações de cache com base em seus requisitos. Consulte [Regras personalizadas de CDN da AEM para cabeçalhos de resposta](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
+Aumentar o tempo de cache para valores ativos além da configuração padrão aumenta a probabilidade de veicular conteúdo obsoleto, o que pode atrasar a visibilidade das atualizações de conteúdo na experiência do usuário final. Se você precisar modificar o comportamento do controle de cache para seu caso de uso específico, poderá configurar regras de CDN personalizadas para ajustar cabeçalhos de resposta. Isso permite que você defina diferentes durações de cache com base em seus requisitos. Consulte [Regras personalizadas de CDN da AEM para cabeçalhos de resposta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
 
 ```
 responseTransformations:
@@ -53,7 +54,7 @@ Sempre que um ativo é atualizado, excluído ou modificado (qualquer alteração
 
 ### Limpeza manual de cache {#manual-cache-purging}
 
-Quando houver necessidade de limpar manualmente o conteúdo em cache, você poderá fazer isso usando os recursos de invalidação de cache do AEM. Para obter instruções detalhadas sobre como limpar URLs de cache específicos, consulte [Invalidação de cache do AEM CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
+Quando houver necessidade de limpar manualmente o conteúdo em cache, você poderá fazer isso usando os recursos de invalidação de cache do AEM. Para obter instruções detalhadas sobre como limpar URLs de cache específicos, consulte [Invalidação de cache do AEM CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
 
 ## Perguntas frequentes{#faq-cache-management}
 
@@ -101,7 +102,7 @@ O armazenamento em cache prolongado com invalidação de cache ativo orientada p
 
 +++ **Posso recusar o armazenamento em cache de longa duração do meu repositório?**
 
-Você pode entrar em contato com o [Suporte da Adobe](https://helpx.adobe.com/in/contact.html) explicando a lógica, e a Adobe entrará em contato com você para discussão.
+Para recusar o armazenamento em cache prolongado, contate o [Suporte da Adobe](https://helpx.adobe.com/in/contact.html) e forneça os motivos para sua solicitação.
 
 +++
 
