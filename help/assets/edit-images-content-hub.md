@@ -29,7 +29,7 @@ Para editar imagens usando o Content Hub:
 
 1. Clique em **[!DNL Open in Adobe Express]**, disponível no cartão de ativos da imagem que você precisa editar. Como alternativa, clique na imagem para abrir seus detalhes e clique no logotipo [!DNL Adobe Express]. O editor incorporado do Adobe Express é carregado sem sair do Content Hub.
 
-   Você pode aproveitar a funcionalidade [!DNL Adobe Express] para executar todas as ações relacionadas à edição de imagens, como [redimensionar imagem](https://helpx.adobe.com/br/express/using/resize-image.html), [remover ou alterar a cor de fundo](https://helpx.adobe.com/br/express/using/remove-background.html), [recortar imagem](https://helpx.adobe.com/express/using/crop-image.html), combinar a imagem com a imagem ou o texto gerado pela IA e muito mais.
+   Você pode aproveitar a funcionalidade [!DNL Adobe Express] para executar todas as ações relacionadas à edição de imagens, como [redimensionar imagem](https://helpx.adobe.com/br/express/using/resize-image.html), [remover ou alterar a cor de fundo](https://helpx.adobe.com/br/express/using/remove-background.html), [recortar imagem](https://helpx.adobe.com/br/express/using/crop-image.html), combinar a imagem com a imagem ou o texto gerado pela IA e muito mais.
 
 1. Faça as modificações e clique em **[!UICONTROL Salvar]** para salvar o ativo editado em um dos tipos de formato:
 
