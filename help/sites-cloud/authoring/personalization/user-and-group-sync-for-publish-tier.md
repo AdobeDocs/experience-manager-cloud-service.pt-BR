@@ -5,10 +5,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 3cc787fe9a0be9a687f7c20744d93f1df4b76f87
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 64%
+source-wordcount: '1487'
+ht-degree: 58%
 
 ---
 
@@ -32,7 +32,7 @@ Há duas abordagens para a implementação do registro, conforme descrito abaixo
 
 ### AEM Managed {#aem-managed-registration}
 
-Pode-se escrever um código de registro personalizado que contenha, no mínimo, o nome de usuário e a senha do usuário, e que crie um registro de usuário no AEM, que pode ser usado para autenticação durante o logon. As etapas a seguir são normalmente usadas para criar esse mecanismo de registro:
+Pode-se escrever um código de registro personalizado que contenha, no mínimo, o nome de usuário e a senha do usuário. Isso criará um registro de usuário no AEM, que pode ser usado para autenticação durante o logon. As etapas a seguir são normalmente usadas para criar esse mecanismo de registro:
 
 1. Exibir um componente personalizado do AEM que coleta informações de registro
 1. Após o envio, um usuário de serviço devidamente provisionado é usado para:
@@ -76,7 +76,7 @@ Os clientes podem se integrar a um IdP (provedor de identidade), que autentica o
 
 **BASEADA EM SAML**
 
-Os clientes podem usar a autenticação baseada em SAML por meio de seu IdP de SAML preferencial. Ao usar um IdP com AEM, o IdP é responsável por autenticar as credenciais do usuário e intermediar a autenticação do usuário com AEM, criar o registro do usuário no AEM conforme necessário e gerenciar a associação de grupo do usuário no AEM, conforme descrito pela asserção do SAML.
+Os clientes podem usar a autenticação baseada em SAML por meio de seu IdP de SAML preferencial. Ao usar um IdP com o AEM, ele é responsável por autenticar as credenciais do usuário e intermediar a autenticação do usuário com o AEM, criar o registro do usuário no AEM conforme necessário e gerenciar a associação de grupo do usuário no AEM, conforme descrito pela asserção do SAML.
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ A interface `com.adobe.granite.auth.oauth.provider` pode ser implementada com o 
 
 **Pré-requisito:**
 
-Como prática recomendada, sempre confie no idP (Identity Provider, Provedor de identidade) como um único ponto de verdade ao armazenar dados específicos do usuário. Se as informações adicionais do usuário forem armazenadas no repositório local, que não faz parte do idP, habilite a [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao Cliente indicando o programa e os ambientes apropriados. Além da [sincronização de dados](#data-synchronization-data-synchronization), no caso do provedor de autenticação SAML, verifique se a [associação de grupo dinâmico](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) está habilitada.
+Como prática recomendada, sempre confie no idP (Identity Provider, Provedor de identidade) como um único ponto de verdade ao armazenar dados específicos do usuário. Se as informações adicionais do usuário forem armazenadas no repositório local, que não faz parte do idP, habilite a [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao Cliente indicando o programa e os ambientes apropriados. Além da [sincronização de dados](#data-synchronization-data-synchronization), no caso do provedor de autenticação SAML, verifique se a [associação de grupo dinâmico](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) está habilitada.
 
 ### Sessões adesivas e tokens encapsulados {#sticky-sessions-and-encapsulated-tokens}
 
@@ -109,7 +109,7 @@ Existem várias abordagens para dados persistentes, dependendo da natureza desse
 As informações do perfil do usuário podem ser escritas e lidas de duas maneiras:
 
 * Pelo uso do servidor com a interface `com.adobe.granite.security.user` do UserPropertiesManager, que colocará os dados sob o nó do usuário em `/home/users`. Certifique-se de que as páginas exclusivas por usuário não sejam armazenadas em cache.
-* Pelo lado do cliente usando o ContextHub, conforme descrito na [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=pt-BR#personalization).
+* Pelo lado do cliente usando o ContextHub, conforme descrito na [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
 **Pré-requisito:**
 
@@ -129,7 +129,7 @@ uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apro
 
 ## Permissões (grupos de usuários fechados) {#permissions-closed-user-groups}
 
-As políticas de acesso da camada Publish, também chamadas de Grupos de Usuários Fechados (CUGs), são definidas no autor AEM, consulte [Criação de um Grupo de Usuários Fechado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=pt-BR#applying-your-closed-user-group-to-content-pages). Para restringir determinadas seções ou páginas de um site para alguns usuários, aplique os CUGs conforme necessário usando o autor do AEM, conforme descrito aqui, e replique-os no nível de publicação.
+As políticas de acesso do nível de publicação, também chamadas de Grupos de Usuários Fechados (CUGs), são definidas no autor do AEM, consulte [Criação de um Grupo de Usuários Fechado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Para restringir determinadas seções ou páginas de um site para alguns usuários, aplique os CUGs conforme necessário usando o autor do AEM, conforme descrito aqui, e replique-os no nível de publicação.
 
 * Se os usuários fizerem logon com autenticação através de um provedor de identidade (IdP) usando SAML, o manipulador de autenticação identificará as associações de grupo do usuário (que devem corresponder aos CUGs no nível de publicação) e manterá a associação entre o usuário e o grupo por meio de um registro de repositório
 * Se o logon for realizado sem a integração de um IdP, um código personalizado poderá aplicar os mesmos relacionamentos de estrutura do repositório.
@@ -149,6 +149,22 @@ Ao contrário de outras soluções do AEM, a sincronização de usuários e asso
 >[!IMPORTANT]
 >
 >Teste a implementação em escala antes de habilitar a sincronização de dados no ambiente de produção. Dependendo do caso de uso e dos dados persistentes, podem ocorrer alguns problemas de consistência e latência.
+
+### Requisitos de código personalizado e migração {#custom-code-and-migration-requirements}
+
+Os requisitos a seguir se aplicam apenas nos casos em que o código personalizado é usado para criar usuários locais ou grupos locais. Quando a Sincronização de dados está ativada, esse código personalizado deve ser atualizado para criar usuários externos e grupos externos com associação de grupo dinâmico.
+
+**Etapas Necessárias:**
+
+* **Modificações no código personalizado**: qualquer lógica personalizada responsável por criar usuários ou grupos deve ser atualizada para:
+
+   * Criar usuários externos definindo a propriedade `rep:externalId`
+   * Criar grupos externos definindo a propriedade `rep:externalId`
+   * Implementar a associação de grupo dinâmica usando a propriedade `rep:externalPrincipalNames`, em vez de usar relações diretas entre usuário e grupo
+
+* **Migração de dados pré-existentes**: todos os usuários e grupos locais existentes precisam ser migrados para o modelo de identidade externo para que a Sincronização de Dados seja habilitada em ambientes de produção.
+
+Para obter orientação técnica detalhada sobre como atualizar implementações personalizadas e migrar usuários e grupos existentes, consulte [Migrando para Identidade Externa e Associação de Grupo Dinâmico](/help/security/migrating-to-external-identity.md).
 
 ## Considerações sobre cache {#cache-considerations}
 
