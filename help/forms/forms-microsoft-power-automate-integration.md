@@ -5,10 +5,10 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: conecte formulários do AEM para automatizar o poder, automatizar o poder AEM Forms, integrar automatizar o poder ao Adaptive Forms, enviar dados do Adaptive Forms para o Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 03f92d950744e653e4ef509bac3c3b4709477e41
+source-git-commit: 64b6ce166baa892fcddd13c2e9c8b5e7e0053815
 workflow-type: tm+mt
-source-wordcount: '1546'
-ht-degree: 5%
+source-wordcount: '1635'
+ht-degree: 4%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service | Este artigo |
 
 <span class="preview"> Se você estiver no GovCloud e precisar se conectar a um locatário do GCC (Government Cloud Computing), envie um email em seu endereço oficial para aem-forms-ea@adobe.com para solicitar acesso por meio do Early Adoter Program. </span>
@@ -140,6 +140,14 @@ Clique em `Add permissions` para salvar as permissões.
 1. Na página Publicar, selecione **[!UICONTROL Todas as configurações]** e selecione **[!UICONTROL Publicar]**. Publique as configurações de nuvem do Power Automate Dataverse e do Power Automate Flow Service.
 
 Sua instância do Forms as a Cloud Service agora está conectada com o Microsoft® Power Automate. Agora é possível enviar dados do Adaptive Forms para um fluxo do Power Automate.
+
+>[!IMPORTANT]
+>
+>Os tokens usados para a conexão do Microsoft® Power Automate expiram após 90 dias.
+>
+> Para manter a integração funcionando, reautentique e republique as configurações de nuvem do Microsoft® Power Automate Dataverse e do Microsoft® Power Automate Flow Service antes ou quando o token expirar, use as etapas documentadas em [Publicar as configurações do Microsoft® Power Automate Dataverse e do Microsoft® Power Automate Flow Service Cloud](#publish-microsoft-power-automate-dataverse-cloud-configuration).
+>
+> Para obter detalhes sobre as políticas de duração do token, consulte a [documentação do Microsoft Entra sobre duração do token configurável](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens). Se o token não for renovado, os envios de formulário para o Power Automate podem falhar.
 
 ## Use a ação Chamar um fluxo do Microsoft® Power Automate para enviar dados a um fluxo do Power Automate {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 

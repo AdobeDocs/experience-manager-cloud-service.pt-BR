@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 64b6ce166baa892fcddd13c2e9c8b5e7e0053815
 workflow-type: tm+mt
-source-wordcount: '6649'
+source-wordcount: '6682'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componentes de base) | Este artigo |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/rule-editor-core-components.md) |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## Visão geral {#overview}
 
@@ -538,7 +538,7 @@ Para gravar regras, execute as seguintes etapas:
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -556,6 +556,10 @@ While writing JavaScript code in the rule editor, the following visual cues help
 -->
 
 #### Funções personalizadas no editor de regras {#custom-functions}
+
+>[!NOTE]
+>
+> As funções personalizadas devem ser compatíveis com o ECMAScript 5 (ES5). O Foundation Forms é compatível apenas com ES5; o uso de versões mais recentes do ECMAScript (ES6 e superior) não é compatível e pode resultar em erros ou comportamento inesperado.
 
 Além das funções prontas para uso como *Soma de* que estão listadas em Saída de funções, você pode gravar funções personalizadas das quais precisa com frequência. Certifique-se de que a função que você grava esteja acompanhada pelo `jsdoc` acima dela.
 
@@ -642,7 +646,7 @@ Por exemplo, você deseja adicionar uma função personalizada que calcula a ár
 
 Para criar uma biblioteca do cliente e adicioná-la ao repositório do CRX, execute as seguintes etapas:
 
-1. Crie uma biblioteca do cliente. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=pt-BR#developing).
+1. Crie uma biblioteca do cliente. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. No CRXDE, adicione uma propriedade `categories` com o valor de tipo de cadeia de caracteres como `customfunction` à pasta `clientlib`.
 
    >[!NOTE]
