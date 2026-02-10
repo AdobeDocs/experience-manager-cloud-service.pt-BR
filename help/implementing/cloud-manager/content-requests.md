@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 7bf48596f64dd9682fa2fb3e5d5db513a8a7fbdc
+source-git-commit: 4ddf90277a24e3ec30ebdd8a9c09b69f80825655
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: '2084'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ As solicitações de conteúdo são medidas independentemente de a resposta ter 
 
 <!-- REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website engagement. -->
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement. -->
 
 ### Variações de solicitações de conteúdo do Cloud Service {#content-requests-variances}
 
@@ -97,9 +97,9 @@ Consulte também [Painel de licenças](/help/implementing/cloud-manager/license-
 | URL para os clientes monitorarem o programa Cloud Service | Excluído | A Adobe recomenda que você use a URL para monitorar a disponibilidade ou a verificação de integridade externamente.<br><br>`/system/probes/health` |
 | Serviço de aquecimento do pod do AEM as a Cloud Service | Excluído | Agente: skyline-service-warmup/1.* |
 | Mecanismos de pesquisa, redes sociais e bibliotecas HTTP conhecidos (marcados pelo Fastly) | Excluído | Serviços conhecidos que visitam o site regularmente para atualizar seu índice de pesquisa ou serviço:<br><br>Exemplos:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot Google<br>· AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br>· Claudebot |
-| Crawlers de AI/LLM bem conhecidos (marcados pelo Fastly) | Excluído | Solicitações de rastreadores AI/LLM reconhecidos que são identificados como bots conhecidos (por exemplo, por `User-Agent` ou outros sinais de classificação de bot). Essas solicitações não são faturáveis.<br><br>Se um agente de IA não for identificado como um bot conhecido (por exemplo, ele usa um navegador genérico `User-Agent`), suas solicitações poderão ser contadas como solicitações de conteúdo faturável. |
+| Rastreadores de IA/LLM bem conhecidos (marcados pelo Fastly) | Excluído | Solicitações de rastreadores de AI/LLM reconhecidos que são identificados como bots conhecidos (por exemplo, por `User-Agent` ou outros sinais de classificação de bot). Essas solicitações não são faturáveis.<br><br>Exemplos desses bots excluídos incluem: ChatGPT, Gmail Image Proxy, Baidu Spider, Outbrain, Yahoo! Mail Proxy, aiHitBot, Mail.Ru Bot, DomainStatsBot, Rainmeter, MetaInspector e Yahoo Gemini.<br><br>Se um agente de IA não for identificado como um bot conhecido (por exemplo, ele usa um navegador genérico `User-Agent`), suas solicitações poderão ser contadas como solicitações de conteúdo faturável. |
 | Excluir chamadas do Commerce integration framework | Excluído | As solicitações feitas ao AEM que são encaminhadas para o Commerce integration framework — a URL começa com `/api/graphql` — para evitar dupla contagem, elas não são faturáveis para o Cloud Service. |
-| Excluir `manifest.json` | Excluído | O manifesto não é uma chamada de API. Está aqui para fornecer informações sobre como instalar sites da Web em um desktop ou telefone celular. O Adobe não deve contar a solicitação JSON para `/etc.clientlibs/*/manifest.json` |
+| Bibliotecas de clientes (/etc.clientlibs/*) — Excluídas | Excluído | As solicitações em /etc.clientlibs/* são ativos da biblioteca do cliente no nível da plataforma e arquivos de configuração de tempo de execução usados pela AEM. Essas solicitações não fornecem conteúdo ou dados comerciais criados pelo cliente e, portanto, não contam como Solicitações de conteúdo. |
 | Excluir `favicon.ico` | Excluído | Embora o conteúdo retornado não deva ser HTML ou JSON, alguns cenários, como fluxos de autenticação SAML, foram observados para retornar favicons como HTML. Como resultado, os favicons são explicitamente excluídos da contagem. |
 | Fragmento de experiência (XF) - Reutilização do mesmo domínio | Excluído | Solicitações feitas a caminhos XF (como `/content/experience-fragments/...`) de páginas hospedadas no mesmo domínio (conforme identificado pelo cabeçalho Referenciador correspondente ao host da solicitação).<br><br> Exemplo: uma página inicial em `aem.customer.com` que obtém um XF para um banner ou cartão do mesmo domínio.<br><br>· A URL corresponde a /content/experience-fragments/...<br>· O domínio do referenciador corresponde a `request_x_forwarded_host`<br><br>**Observação:** Se o caminho do Fragmento da Experiência for personalizado (por exemplo, usando `/XFrags/...` ou qualquer caminho fora de `/content/experience-fragments/`), a solicitação não será excluída e poderá ser contada, mesmo que seja do mesmo domínio. A Adobe recomenda usar a estrutura de caminho XF padrão do Adobe para garantir que a lógica de exclusão se aplique corretamente. |
 
