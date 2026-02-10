@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f01a98604e045c48ab7167122aee3b2468db6d52
+source-git-commit: 18f270e92bcf41b45946491dbbbde306c2352416
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 11%
+source-wordcount: '999'
+ht-degree: 10%
 
 ---
 
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 24288, lançada publicamente em quinta-feira, 4 de fevereiro de 2026. A versão de manutenção anterior era 23963.
 
-A ativação de recursos do 2026.2.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2026.2.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 >[!NOTE]
 >
@@ -91,11 +91,11 @@ A ativação de recursos do 2026.2.0 fornecerá o conjunto completo de recursos 
 * GUIDES-37837: Ao tentar salvar um tópico ou mapa, a operação pode falhar intermitentemente com um erro Falha ao salvar arquivo, especialmente durante tarefas de processamento intensivo de ativos ou fluxos de trabalho de tradução em execução em segundo plano.
 * GUIDES-27774: O relatório Lista interrompida está incluindo incorretamente links externos, `keyrefs` válidos e palavras-chave resolvidas corretamente dentro do escopo do mapa atual.
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problemas conhecidos {#known-issues-24288}
 
-Nenhum.
+* SITES-40408: o endpoint do GraphQL retorna 404 devido às regras de regravação personalizadas do dispatcher.
 
 ### Recursos e APIs obsoletos {#deprecated-24288}
 
@@ -127,4 +127,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.30.2 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
