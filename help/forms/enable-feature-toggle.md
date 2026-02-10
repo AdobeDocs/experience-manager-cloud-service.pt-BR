@@ -3,9 +3,10 @@ title: Ativar a alternância de recursos para integrar os recursos de pré-lanç
 description: O Feature Toggle é uma funcionalidade do AEM que permite aos administradores ativar novos recursos em um ambiente de tempo de execução.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: User, Developer
-source-git-commit: cc4fccc51f487170bf6c14e4b302a8d5912c33a0
+exl-id: 3ad1370a-a399-4fbe-8168-c3a1cee06336
+source-git-commit: c1d62f0dd5a25da7fbeef537e1c28fa8421f42cd
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '404'
 ht-degree: 1%
 
 ---
@@ -34,7 +35,7 @@ Antes de ativar a alternância de recursos na configuração do AEM SDK, verifiq
 
 * O usuário é membro do grupo `forms-users`.
 
-* Navegue até `http://<author-instance-url>:portnumber/system/console/bundles` e verifique se o pacote **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** está presente ou não. Caso não esteja presente, [baixe o pacote do link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+* Navegue até `http://<author-instance-url>:portnumber/system/console/bundles` e verifique se o pacote **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** está presente ou não. Caso não esteja presente, [baixe o pacote do link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]s/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.8.jar).
 
   ![Alternância de recursos](/help/forms/assets/aem-web-console-bundle.png)
 
@@ -82,4 +83,3 @@ Os interruptores de recursos são gerenciados por tempo de execução e são mai
 >[!NOTE]
 >
 > Para ativar o recurso de alternância para o ambiente de produção, entre em contato com a equipe de suporte da Adobe.
-
