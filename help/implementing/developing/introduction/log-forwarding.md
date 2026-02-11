@@ -4,9 +4,9 @@ description: Saiba mais sobre como encaminhar logs para fornecedores de registro
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 41605c0feb5b8cf651ecb2971a05fde12bcb86d8
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2482'
 ht-degree: 1%
 
 ---
@@ -224,7 +224,7 @@ data:
       advancedNetworking: true
 ```
 
-Para logs CDN, você pode adicionar os endereços IP à lista de permissões, conforme descrito em [Documentação do Fastly - Lista de IP Públicos](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se essa lista de endereços IP compartilhados for muito grande, considere enviar tráfego para um servidor https ou Azure Blob Store (que não seja da Adobe), em que a lógica possa ser gravada para enviar os logouts de um IP conhecido para seu destino final.
+Para logs CDN, você pode adicionar os endereços IP à lista de permissões, conforme descrito em [Documentação do Fastly - Lista de IP Públicos](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se essa lista de endereços IP compartilhados for muito grande, considere enviar tráfego para um servidor https ou para um Azure Blob Store (que não seja da Adobe), em que a lógica possa ser gravada para enviar os logs de um IP conhecido para o destino final.
 
 >[!NOTE]
 >
@@ -297,8 +297,8 @@ data:
 Um token SAS deve ser usado para autenticação. Ela deve ser criada na página Shared access signature, em vez de na página Shared access token, e deve ser configurada com estas configurações:
 
 * Serviços permitidos: o blob deve ser selecionado.
-* Recursos permitidos: o objeto deve ser selecionado.
-* Permissões permitidas: Gravar, Adicionar, Criar devem ser selecionadas.
+* Recursos permitidos: o objeto e o contêiner devem ser selecionados.
+* Permissões permitidas: Ler, Gravar, Adicionar, Listar, Criar devem ser selecionadas.
 * Uma data/hora de início e expiração válidas.
 
 Esta é uma captura de tela de um exemplo de configuração de token SAS:
@@ -307,7 +307,7 @@ Esta é uma captura de tela de um exemplo de configuração de token SAS:
 
 Se os registros pararem de ser entregues depois de antes funcionarem corretamente, verifique se o token SAS configurado ainda é válido, pois pode ter expirado.
 
-#### Logs CDN do Armazenamento de Blobs do Azure {#azureblob-cdn}
+#### Logs CDN do armazenamento de blobs da Azure {#azureblob-cdn}
 
 Cada um dos servidores de log distribuídos globalmente produzirá um novo arquivo a cada poucos segundos, na pasta `aemcdn`. Depois de criado, o arquivo não será mais anexado ao. O formato do nome do arquivo é AAAA-MM-DDThh:mm:ss.sss-uniqueid.log. Por exemplo, 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
 
@@ -332,7 +332,7 @@ aemcdn/
 
 Cada arquivo contém várias entradas de log json, cada uma em uma linha separada. Os formatos de entrada de log estão descritos em [Logs para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md), e cada entrada de log também inclui as propriedades adicionais mencionadas na seção [Formatos de Entrada de Log](#log-formats) abaixo.
 
-#### Logs do AEM do Armazenamento de Azure Blob {#azureblob-aem}
+#### Registros AEM do Azure Blob Storage {#azureblob-aem}
 
 Os logs do AEM (incluindo o Apache/Dispatcher) aparecem abaixo de uma pasta com a seguinte convenção de nomenclatura:
 
