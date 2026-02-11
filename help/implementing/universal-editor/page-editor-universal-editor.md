@@ -4,9 +4,9 @@ description: O Editor de páginas permanece compatível com o Adobe, mas o Edito
 feature: Developing
 role: Admin, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1a04bebf073ac10100dede9b5e9f835665588cf3
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1085'
 ht-degree: 3%
 
 ---
@@ -74,10 +74,11 @@ Como a lacuna de recursos entre os dois editores está diminuindo constantemente
 | Simulação de dispositivo | [!BADGE Disponível]{type=Positive} | [Dispositivos configurados podem ser simulados](/help/sites-cloud/administering/responsive-layout.md), mas o usuário não pode inserir manualmente dimensões de tela diferentes para simular. | [!BADGE Disponível]{type=Positive} | [Qualquer dimensão de tela a ser simulada pode ser inserida manualmente](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator), mas os pontos de interrupção padrão não podem ser configurados. |
 | [Bloqueio de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | Respeita o status de bloqueio definido no Console Sites com a extensão disponível para bloquear/desbloquear páginas do editor |
 | [Propriedades da página](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | Disponível pelo Administrador do site, com extensão para também acessar as propriedades das páginas do editor |
-| Propriedades de vários campos | [!BADGE Disponível]{type=Positive} |  | [!BADGE Indisponível]{type=Negative} | Planejado |
+| Propriedades de vários campos | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |
 | [DAM remoto](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |
 | [Controle de versão da página](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |
-| [TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) e [Exibição de comparação](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Indisponível]{type=Negative} | Planejado |
+| [Visualização de comparação](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Parcialmente Disponível]{type=Caution} | Disponível para casos de uso do Edge Delivery Services, mas não para headless |
+| [DistorçãoDeTempo](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Indisponível]{type=Negative} | Planejadas, versões ainda disponíveis no console Sites |
 | Exibir no admin | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | Disponível como uma extensão para páginas |
 | Exibir status da página | [!BADGE Disponível]{type=Positive} |  | [!BADGE Indisponível]{type=Negative} | Disponível no console Sites |
 | Extensibilidade | [!BADGE Disponível]{type=Positive} | Como sobreposições do AEM | [!BADGE Disponível]{type=Positive} | Como pontos de extensão claramente definidos usando o App Builder e muito pouco conhecimento específico do AEM |
