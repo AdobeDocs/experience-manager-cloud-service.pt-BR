@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: 98465743f73f38e2a766657dda8c9ff18ecea856
+source-git-commit: f587a30da747ae3d53848ef5bb30c32a9b5d78e1
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Os modelos garantem a consistência da marca e economizam tempo para tipos de co
 
 1. Abra a instância do AEM Forms as a Cloud Service.
 1. Vá para **Forms > Forms e Documentos**, clique em **Criar > Comunicação Interativa**.
-1. No formulário de criação, **selecione** um modelo habilitado no seletor de modelos.
+1. No formulário de criação, **selecione** um modelo habilitado no seletor.
 1. Preencha outros detalhes como Título, Nome, Autor etc.
 1. Clique em **Criar** para criar sua comunicação com a estrutura de modelo selecionada.
 1. Ele abre o Editor IC, onde você pode começar a projetar sua comunicação.
