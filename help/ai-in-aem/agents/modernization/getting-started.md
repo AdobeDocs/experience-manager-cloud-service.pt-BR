@@ -3,9 +3,10 @@ title: Introdução ao Agente de modernização de experiência
 description: Saiba mais sobre as primeiras etapas para se tornar produtivo rapidamente com o Agente de modernização de experiência usando o Console de modernização de experiência.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c80ce5a9fc5f208fd910d5cef72225085248fb4d
+exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
+source-git-commit: 76c0f41acb5c2e4e0f0a292f8205b0b9de5cda81
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ Saiba mais sobre as primeiras etapas para se tornar produtivo rapidamente com o 
 
 1. Selecione um repositório do [Edge Delivery Services](/help/edge/overview.md) para usar com o Console de Modernização de Experiência.
    * Pode ser um projeto Edge Delivery Services existente ou você pode criar um novo seguindo o [tutorial do desenvolvedor](https://www.aem.live/developer/tutorial) usando o [repositório padronizado.](https://github.com/adobe/aem-boilerplate)
-1. Verifique se o [aplicativo GitHub do AEMY](https://github.com/apps/aem-aemy) está instalado no repositório.
+1. Verifique se o [Conector de código do AEM](https://github.com/apps/aem-code-connector) está instalado no repositório.
    * Isso permite que o console inspecione o código.
 1. Verifique se o [aplicativo GitHub da Sincronização de Código do AEM](https://github.com/apps/aem-code-sync) está instalado no repositório.
    * Isso permite que o Edge Delivery Services sincronize seu código.
@@ -41,7 +42,7 @@ O console solicita um repositório ao fazer logon pela primeira vez.
 ![Primeira tela de entrada do console](assets/first-sign-on.png)
 
 1. Clique em **Conectar repositório**.
-1. O aplicativo AEMY será aberto em uma nova guia do navegador. Clique em **Autorizar AEM AEMY**.
+1. Isso abre o aplicativo Conector de código AEM em uma nova guia do navegador. Clique em **Autorizar Conector de Código AEM**.
 1. De volta ao console, selecione **Proprietário**, **Repositório** e **Seleção de ramificação** e clique em **Fazer check-out para o espaço de trabalho**.
    ![Conectando ao projeto GitHub](assets/connect-to-github-project.png)
 1. Quando solicitado a **Substituir espaço de trabalho existente**, clique em **Substituir espaço de trabalho**.
