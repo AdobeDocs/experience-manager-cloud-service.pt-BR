@@ -4,9 +4,9 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] as
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: d2dd076d93981b1d44f39adc5880220445494e71
 workflow-type: tm+mt
-source-wordcount: '3177'
+source-wordcount: '3189'
 ht-degree: 9%
 
 ---
@@ -29,7 +29,7 @@ Você também pode optar por concluir o processamento adicional nos ativos carre
 |---------------------|----------------|-----------------|
 | [Interface do usuário do Console do Assets](#upload-assets) | Upload ocasional, facilidade de pressionar e arrastar, upload localizador. Não use o para fazer upload de muitos ativos. | Todos os usuários |
 | [Carregar API](#upload-using-apis) | Para decisões dinâmicas durante o upload. | Desenvolvedor |
-| Aplicativo de desktop do [[!DNL Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR) | Assimilação de ativos em baixo volume, mas não para migração. | Administrador, profissional de marketing |
+| Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Assimilação de ativos em baixo volume, mas não para migração. | Administrador, profissional de marketing |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | Útil quando profissionais de criação e marketing trabalham em ativos nos aplicativos de desktop [!DNL Creative Cloud] compatíveis. | Creative, Profissional de marketing |
 | [Assimilação de ativos em massa](#asset-bulk-ingestor) | Recomendado para migrações em grande escala e assimilações ocasionais em massa. Somente para armazenamentos de dados compatíveis. | Administrador, Desenvolvedor |
 
@@ -127,8 +127,13 @@ Para reter o ativo duplicado em [!DNL Assets], clique em **[!UICONTROL Manter]**
 
 Para atender às convenções de nomenclatura de arquivo específicas da sua organização, a caixa de diálogo [!UICONTROL Carregar Assets] permite que você especifique nomes longos para os arquivos carregados. Os seguintes caracteres (lista separada por espaços de) não são suportados:
 
-* Caracteres inválidos para o nome do ativo: `* / : [ \\ ] | # % { } ? &`
+* Caracteres inválidos para o nome do ativo: `* / : [ \\ ] | # % { } ? &` ou `;=` (um ponto e vírgula seguido por um sinal de igual)
 * Caracteres inválidos para o nome da pasta de ativos: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
+Exemplos de nomes de arquivo inválidos:
+
+* `JPG_JD_small file ~!)$@;(-_=+^',..jpg`
+* `JPG_JD_small file ~!)$@;=(-_+^',..jpg`
 
 ## Fazer upload de ativos em massa {#bulk-upload}
 
@@ -141,14 +146,14 @@ A assimilação de ativos em massa pode lidar com muitos ativos com eficiência.
 Para fazer upload de um número maior de arquivos, use uma das abordagens a seguir. Além disso, consulte os [casos de uso e métodos](#upload-methods-comparison)
 
 * [APIs de carregamento de ativos](developer-reference-material-apis.md#asset-upload): use um script ou ferramenta de carregamento personalizado que use APIs para adicionar outras manipulações de ativos (por exemplo, traduzir metadados ou renomear arquivos), se necessário.
-* [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR): útil para profissionais criativos e profissionais de marketing que carregam ativos de seu sistema de arquivos local. Use-o para fazer upload de pastas aninhadas disponíveis localmente.
+* [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): útil para profissionais criativos e profissionais de marketing que carregam ativos de seu sistema de arquivos local. Use-o para fazer upload de pastas aninhadas disponíveis localmente.
 * [Ferramenta de assimilação em massa](#asset-bulk-ingestor): use para assimilação de grandes quantidades de ativos ocasionalmente ou inicialmente ao implantar [!DNL Experience Manager].
 
 ### Ferramenta Importação de ativos em massa {#asset-bulk-ingestor}
 
-A ferramenta é fornecida somente para o grupo de administradores para ser usada na assimilação em larga escala de ativos dos armazenamentos de dados do Azure ou S3. Veja um vídeo que aborda a configuração e a assimilação.
+A ferramenta é fornecida somente para o grupo de administradores para ser usada na assimilação em larga escala de ativos de armazenamentos de dados Azure ou S3. Veja um vídeo que aborda a configuração e a assimilação.
 
->[!VIDEO](https://video.tv.adobe.com/v/341393/?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 A imagem a seguir ilustra os vários estágios ao assimilar ativos para a Experience Manager de um armazenamento de dados:
 
@@ -156,7 +161,7 @@ A imagem a seguir ilustra os vários estágios ao assimilar ativos para a Experi
 
 **Pré-requisitos**
 
-Uma conta ou um bucket de armazenamento externo do Azure ou da AWS é necessário para usar esse recurso.
+É necessária uma conta ou bucket de armazenamento externo da Azure ou da AWS para usar esse recurso.
 
 >[!NOTE]
 >
@@ -177,7 +182,7 @@ Para configurar a ferramenta Importação em massa, siga estas etapas:
 
 1. Selecione o tipo de fonte de dados na lista suspensa **[!UICONTROL Importar Source]**.
 
-1. Forneça os valores para criar uma conexão com a fonte de dados. Por exemplo, se você selecionar **Armazenamento Azure Blob** como fonte de dados, especifique os valores para a conta de armazenamento do Azure, contêiner Azure Blob e chave de acesso do Azure.
+1. Forneça os valores para criar uma conexão com a fonte de dados. Por exemplo, se você selecionar **Armazenamento de blobs do Azure** como fonte de dados, especifique os valores para a conta de armazenamento do Azure, o contêiner de blobs do Azure e a chave de acesso do Azure.
 
 1. Selecione o modo de autenticação necessário na lista suspensa. A **Chave de Acesso do Azure** fornece acesso total à conta de armazenamento do Azure, enquanto o **Token SAS do Azure** permite que o administrador limite os recursos do token usando permissões e políticas de expiração.
 
@@ -197,7 +202,7 @@ Para configurar a ferramenta Importação em massa, siga estas etapas:
 
 1. Defina um local no DAM onde os ativos devem ser importados usando o campo **[!UICONTROL Pasta de destino do Assets]**. Por exemplo, `/content/dam/imported_assets`.
 
-1. (Opcional) Especifique o arquivo de metadados a ser importado, fornecido em formato CSV no campo **[!UICONTROL Arquivo de metadados]**. Especifique o arquivo CSV no local do blob de origem e consulte o caminho ao configurar a ferramenta Importação em massa. O formato de arquivo CSV referenciado neste campo é igual ao formato de arquivo CSV quando você [Importa e exporta metadados de ativos em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=pt-BR). Se você selecionar a opção **Excluir arquivo de origem após a importação**, filtre arquivos CSV usando os campos **Excluir** ou **Incluir Tipo MIME** ou **Filtrar por Caminho/Arquivo**. Você pode usar uma expressão regular para filtrar arquivos CSV nesses campos.
+1. (Opcional) Especifique o arquivo de metadados a ser importado, fornecido em formato CSV no campo **[!UICONTROL Arquivo de metadados]**. Especifique o arquivo CSV no local do blob de origem e consulte o caminho ao configurar a ferramenta Importação em massa. O formato de arquivo CSV referenciado neste campo é igual ao formato de arquivo CSV quando você [Importa e exporta metadados de ativos em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Se você selecionar a opção **Excluir arquivo de origem após a importação**, filtre arquivos CSV usando os campos **Excluir** ou **Incluir Tipo MIME** ou **Filtrar por Caminho/Arquivo**. Você pode usar uma expressão regular para filtrar arquivos CSV nesses campos.
 
 1. Clique em **[!UICONTROL Salvar]** para salvar a configuração.
 
@@ -352,7 +357,7 @@ O Experience Manager exibe o histórico de tarefas. Na página Histórico do tra
 Além da interface de usuário do navegador da Web, o [!DNL Experience Manager] oferece suporte a outros clientes na área de trabalho. Eles também fornecem experiência de upload sem a necessidade de acessar o navegador da Web.
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) fornece acesso aos ativos do [!DNL Experience Manager] em aplicativos de desktop da Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Você pode carregar o documento aberto no momento no [!DNL Experience Manager] diretamente da interface do usuário do Adobe Asset Link nesses aplicativos de desktop.
-* O [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR) simplifica o trabalho com ativos no desktop, independentemente do tipo de arquivo ou aplicativo nativo que os manipula. É útil fazer upload de arquivos em hierarquias de pastas aninhadas a partir do sistema de arquivos local, pois o upload do navegador só suporta o upload de listas de arquivos simples.
+* O [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifica o trabalho com ativos no desktop, independentemente do tipo de arquivo ou aplicativo nativo que os manipula. É útil fazer upload de arquivos em hierarquias de pastas aninhadas a partir do sistema de arquivos local, pois o upload do navegador só suporta o upload de listas de arquivos simples.
 
 ## Processar ativos quando carregados {#process-when-uploaded}
 
@@ -416,7 +421,7 @@ Os detalhes técnicos das APIs e do protocolo de carregamento, bem como os links
 
 >[!MORELIKETHIS]
 >
->* Aplicativo de desktop do [[!DNL Adobe Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
+>* Aplicativo de desktop do [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
 >* [Sobre [!DNL Adobe Asset Link]](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentação](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
 >* [Referência técnica para o carregamento do ativo](developer-reference-material-apis.md#asset-upload)
