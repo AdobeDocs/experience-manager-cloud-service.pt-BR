@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
+source-git-commit: 689daf210bc0d867a0cafad32abac4aa178927ff
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '2838'
 ht-degree: 9%
 
 ---
@@ -114,6 +114,7 @@ O editor de rich text (RTE) do Editor universal permite que o autor aplique a fo
 * Link
 * Desvincular
 * Imagem
+* Colar como texto
 * Remover toda a formatação
 
 As tabelas existentes podem ser editadas usando o RTE, mas não é possível criar novas tabelas.
@@ -260,7 +261,7 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 
 ### Copiar e colar {#copy-paste}
 
-Você pode copiar e colar componentes que estão em [&#x200B; contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
+Você pode copiar e colar componentes que estão em [ contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
 
 Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegador, desde que as guias já estejam abertas. Não é possível copiar um item e abrir uma nova guia do navegador para colá-lo.
 
