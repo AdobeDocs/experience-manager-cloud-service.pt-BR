@@ -343,7 +343,7 @@ Esta seção lista APIs que foram descontinuadas e removidas. Algumas APIs fazem
 
 Esta seção reflete a orientação de remoção de APIs para várias APIs nas tabelas acima.
 
-Para identificar quais APIs Java obsoletas seu código está usando, integre o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) ao seu projeto Maven e execute-o localmente. O relatório lista todos os usos de API obsoletos detectados e indica qual pacote OSGi está fazendo referência a cada API. Consulte [este tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) para saber como usar o plug-in Maven.
+Para identificar quais APIs Java obsoletas seu código está usando, integre o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) ao seu projeto Maven e execute-o localmente. O relatório lista todos os usos de API obsoletos detectados e indica qual pacote OSGi está fazendo referência a cada API. Consulte [este tutorial](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) para saber como usar o plug-in Maven.
 
 Embora você deva corrigir todas as APIs obsoletas ao longo do tempo, priorize quaisquer APIs listadas na tabela API obsoleta com uma data de remoção do Target de 26 de fevereiro de 2026 (ou anterior). No relatório do AEM Analyzer, essas APIs podem aparecer com uma data de remoção efetiva em 31/8/2025.
 
