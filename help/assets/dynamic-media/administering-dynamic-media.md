@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 8a8f3d7b17d79791a3ebf6b583ffcccfcf214470
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 8%
+source-wordcount: '284'
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 {{work-with-dynamic-media}}
 
-[O Dynamic Media](https://business.adobe.com/br/products/experience-manager/assets/dynamic-media.html) ajuda você a gerenciar ativos fornecendo merchandising visual avançado e ativos de marketing sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, o Dynamic Media gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.
+[O Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ajuda você a gerenciar ativos fornecendo merchandising visual avançado e ativos de marketing sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, o Dynamic Media gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -45,3 +45,20 @@ Consulte também os seguintes tópicos:
 >**Se estiver atualizando:**
 >
 >* Depois de ativar e executar o Adobe [!DNL Experience Manager], todos os ativos carregados terão o Dynamic Media automaticamente habilitado (a menos que ele tenha sido explicitamente desabilitado pelo administrador do sistema). Se você estiver em uma instância atualizada do [!DNL Experience Manager] e for novo no Dynamic Media, provavelmente precisará reprocessar seus ativos para torná-los habilitados para o Dynamic Media. Consulte [Reprocessar ativos em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+
+## Atualização de DNS única necessária para renovações de certificado do Dynamic Media {#dns-update-dynamic-media-certificate-renewals}
+
+Se o domínio usar um registro DNS da CAA (Autorização de autoridade de certificação), você deverá autorizar a DigiCert a permitir a renovação contínua dos certificados TLS/SSL usados pelos nomes de host do Dynamic Media.
+
+Adicione o seguinte registro CAA na raiz (apex) do seu domínio:
+
+```
+<yourdomain> CAA 0 issue "digicert.com"
+```
+
+Esta é uma mudança única.
+
+Você pode verificar se um registro CAA existe usando as ferramentas do provedor de DNS ou um [utilitário de pesquisa CAA](https://caatest.co.uk/).
+
+Se um registro CAA existir e a DigiCert não for autorizada, a renovação do certificado falhará quando o certificado atual expirar, o que pode causar tempo de inatividade para a entrega de imagens e vídeos. Se não houver um registro CAA para o seu domínio, nenhuma ação será necessária.
