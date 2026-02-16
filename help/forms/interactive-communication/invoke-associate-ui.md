@@ -4,15 +4,13 @@ description: Saiba como integrar a interface do usuário do AEM Forms Associate 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-hidefromtoc: true
-source-git-commit: b76f6dfe2462cec187d549234e9050f8ca9a8cdf
+exl-id: f946ccea-86d0-4086-8208-9583b8206244
+source-git-commit: 749ad181c7e9e59a0601e0eddd85b0bd0e761f08
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1074'
 ht-degree: 1%
 
 ---
-
 
 # Integrar a interface do usuário do Associate no seu aplicativo
 
@@ -26,13 +24,13 @@ Antes de integrar a Interface do usuário do Associate ao seu aplicativo, verifi
 
 - Comunicação interativa criada e publicada
 - Navegador com suporte a pop-up ativado
-- Os [usuários associados devem fazer parte do grupo &#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) de forms-associates
-- Autenticação configurada usando qualquer [mecanismo de autenticação com suporte do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/authentication/authentication) (por exemplo, SAML 2.0, OAuth ou manipuladores de autenticação personalizados)
+- Os [usuários associados devem fazer parte do grupo ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups) de forms-associates
+- Autenticação configurada usando qualquer [mecanismo de autenticação com suporte do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (por exemplo, SAML 2.0, OAuth ou manipuladores de autenticação personalizados)
 
 >[!NOTE]
 >
 >- Este artigo demonstra a configuração de autenticação usando o SAML 2.0 com a [Microsoft Entra ID (Azure AD) como o Provedor de Identidade](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings).
->- Para Associar Interface, configurações SAML adicionais são necessárias além da configuração padrão explicada no artigo [Autenticação SAML 2.0](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consulte a seção [Configurações SAML adicionais para interface do usuário associada](#additional-saml-configurations-for-associate-ui) para obter detalhes.
+>- Para Associar Interface, configurações SAML adicionais são necessárias além da configuração padrão explicada no artigo [Autenticação SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0). Consulte a seção [Configurações SAML adicionais para interface do usuário associada](#additional-saml-configurations-for-associate-ui) para obter detalhes.
 
 ### Configurações SAML adicionais para Associar IU
 
@@ -115,7 +113,11 @@ Esta seção o orienta durante a inicialização da Interface do usuário do Ass
 
 Para testar e entender rapidamente como funciona a integração da Interface de usuário associada, use a seguinte página de exemplo do HTML. Copie esse código em um arquivo HTML e abra-o no navegador.
 
-Este exemplo fornece uma interface de formulário simples, onde você pode inserir seus detalhes de Comunicação interativa e iniciar a Interface do usuário Associar com um único clique.
+>[!NOTE]
+>
+> Este exemplo de HTML requer uma IC ID e um serviço de Preenchimento prévio. Você pode testá-lo usando sua ID de IC e o serviço de Preenchimento prévio de amostra &quot;FdmTestData&quot;.&quot;
+
+A amostra do HTML fornece uma interface de formulário simples, onde você pode inserir seus detalhes de Comunicação interativa e iniciar a Interface do usuário Associada com um único clique.
 
 ```html
 <!DOCTYPE html>
@@ -438,21 +440,28 @@ Agora você está pronto para iniciar a Interface do usuário do Associate usand
 
 1. **Insira a ID de IC**: no campo **ID de IC**, insira o identificador da sua Comunicação Interativa publicada. Este é o único campo obrigatório.
 
-2. **Configurar serviço de preenchimento prévio** (opcional): se você quiser preencher previamente a IC com dados dinâmicos, insira o nome do serviço de Modelo de Dados de Formulário no campo **Serviço de Preenchimento Prévio**. Por exemplo, use `FdmTestData` para dados de exemplo ou `IC-FDM` para dados de teste.
+1. **Configurar serviço de preenchimento prévio**: se quiser preencher previamente a IC com dados dinâmicos, insira o nome do serviço do Modelo de dados de formulário no campo **Serviço de preenchimento prévio**. Por exemplo, use `FdmTestData` para dados de exemplo.
 
-3. **Adicionar Parâmetros de Serviço** (opcional): no campo **Parâmetros de Serviço (JSON)**, insira um objeto JSON com os parâmetros exigidos pelo serviço de preenchimento prévio. Por exemplo:
+   ![Exemplo de interface do HTML](/help/forms/assets/samplehtmlui.png)
+
+1. **Clique em Iniciar Interface do Usuário Associada**: clique no botão **Iniciar Interface do Usuário Associada**. Uma nova janela do navegador é aberta com a Interface do usuário Associate, pré-carregada com sua Comunicação interativa.
+
+Insira os dados e a Interface do usuário associada será exibida conforme mostrado abaixo:
+
+![Associar interface](/help/forms/assets/associateui.png)
+
+>[!NOTE]
+>
+> Se a janela não abrir, verifique se o navegador permite pop-ups para este site.
+
+
+<!--**Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
    ```json
    {"customerId": "101", "accountNumber": "ACC-98765"}
    ```
 
-4. **Definir Opções do PDF** (opcional): no campo **Opções (JSON)**, configure as opções de renderização, como localidade, anexos ou configurações de acessibilidade.
-
-5. **Clique em Iniciar Interface do Usuário Associada**: clique no botão **Iniciar Interface do Usuário Associada**. Uma nova janela do navegador é aberta com a Interface do usuário Associate, pré-carregada com sua Comunicação interativa.
-
->[!NOTE]
->
-> Se a janela não abrir, verifique se o navegador permite pop-ups para este site.
+  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
 
 ## Resolução de problemas
 
