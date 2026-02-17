@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: b3e1d3a3770531728d696be125f074881f179573
+source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 30%
+source-wordcount: '2402'
+ht-degree: 27%
 
 ---
 
@@ -122,7 +122,6 @@ Após a criação dos fragmentos, é possível:
 >* [Criação de página com fragmentos de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* As [OpenAPIs](/help/headless/content-fragment-openapis.md) de Fragmento de Conteúdo e de Modelo de Fragmento de Conteúdo também estão disponíveis.
 
-
 ## Principais e variações {#main-and-variations}
 
 As variações são um recurso importante dos fragmentos de conteúdo do AEM. Eles permitem criar e editar cópias do conteúdo **Principal** para uso em canais e cenários específicos, tornando a entrega de conteúdo headless e a criação de página ainda mais flexíveis.
@@ -143,7 +142,7 @@ As variações são um recurso importante dos fragmentos de conteúdo do AEM. El
 
 * **Variações**
 
-   * Representações de texto de fragmento específicas para fins editoriais; podem estar relacionadas a canais, mas não é obrigatório. Também podem ser para modificações locais ad hoc.
+   * Representações de texto de fragmento específicas para fins editoriais; podem estar relacionadas a um canal, mas isso não é obrigatório; também podem ser para modificações locais ad hoc.
    * São criadas como cópias de **Principal**, mas podem ser editadas conforme necessário; geralmente há sobreposição de conteúdo entre as próprias variações.
    * Podem ser definidas durante a criação do fragmento; no painel esquerdo.
    * São armazenadas no fragmento para ajudar a evitar a dispersão de cópias de conteúdo.
@@ -193,7 +192,7 @@ Os fragmentos de conteúdo são:
 
    * O [Componente principal do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR) está disponível para autores de página. Ele permite referenciar e entregar o fragmento de conteúdo necessário nos formatos HTML ou JSON.
 
-Fragmentos de conteúdo são uma estrutura de conteúdo que:
+Fragmentos de conteúdo são estruturas de conteúdo que:
 
 * Não possuem layout ou design (a formatação de texto é possível para campos de texto).
 * São independentes do mecanismo de entrega (como a página ou canal).
@@ -249,10 +248,10 @@ Os ativos do Fragmento de conteúdo são compostos das seguintes partes (direta 
 
 Para criar fragmentos de conteúdo, você precisa:
 
-* **Modelo de conteúdo**
+* um **Modelo de fragmento de conteúdo**
 
-   * É [habilitado usando o Navegador de configuração](/help/sites-cloud/administering/content-fragments/setup.md).
-   * São [criadas usando o Console de Fragmentos de Conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
+   * [está habilitado usando o Navegador de Configuração](/help/sites-cloud/administering/content-fragments/setup.md).
+   * É [criado usando o Console de Fragmentos de Conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
    * Obrigatório para [criar um fragmento](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments).
    * Define a estrutura de um fragmento (título, elementos de conteúdo, definições de tag).
    * As definições do modelo de fragmento de conteúdo exigem um título e um elemento de dados; todo o resto é opcional.
@@ -271,7 +270,7 @@ Para usar os Fragmentos de conteúdo para a entrega de conteúdo headless, tamb�
 
 Para usar os Fragmentos de conteúdo para a criação de páginas, também é necessário:
 
-* Um **Componente de Fragmento de Conteúdo**
+* um **Componente de Fragmento de Conteúdo**
 
    * Fundamental para entregar o fragmento no formato HTML e/ou JSON.
    * Obrigatório para [fazer referência ao fragmento em uma página](/help/sites-cloud/authoring/fragments/content-fragments.md).
@@ -372,9 +371,12 @@ Use campos Rich Text (o Tipo de Dados **Texto de várias linhas**) considerando:
 
 Crie quantas variações de fragmento forem necessárias, mas não mais.
 
-As variações adicionam tempo de processamento a um Fragmento de conteúdo, no ambiente de criação e no momento da entrega também. É recomendável manter o número de variações em um mínimo gerenciável.
+As variações adicionam tempo de processamento a um Fragmento de conteúdo, no ambiente de criação e no momento da entrega também.
 
-Uma prática recomendada é não exceder dez variações por Fragmento de conteúdo.
+É recomendável que você:
+
+* manter o número de variações em um mínimo gerenciável
+* não exceda dez variações por fragmento de conteúdo
 
 ### Teste antes da produção {#test-before-production}
 

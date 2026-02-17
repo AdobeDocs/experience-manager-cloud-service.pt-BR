@@ -5,10 +5,10 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 2815d75cd2ec7df47e53ab5c648e2de026702074
+source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
 workflow-type: tm+mt
-source-wordcount: '2610'
-ht-degree: 49%
+source-wordcount: '2627'
+ht-degree: 46%
 
 ---
 
@@ -134,13 +134,13 @@ Os fragmentos de conteúdo são:
 
 * Acessíveis por meio da [API GraphQL do AEM](/help/headless/graphql-api/content-fragments.md).
 
-Fragmentos de conteúdo são uma estrutura de conteúdo que:
+Fragmentos de conteúdo são estruturas de conteúdo que:
 
 * Não ter layout ou design (alguma formatação de texto é possível no modo Rich Text).
 * Contêm uma ou mais [partes constituintes](#constituent-parts-of-a-content-fragment).
 * [Contém ou pode ser conectado a imagens](#fragments-with-visual-assets).
-* É usado [conteúdo intermediário](#in-between-content-when-page-authoring-with-content-fragments) quando referenciado em uma página.
-* Eles são independentes do mecanismo de delivery (ou seja, página, canal).
+* São usados como [conteúdo intermediário](#in-between-content-when-page-authoring-with-content-fragments) quando referenciados em uma página.
+* São independentes do mecanismo de entrega (ou seja, a página ou canal).
 
 ### Fragmentos com ativos visuais {#fragments-with-visual-assets}
 
@@ -185,7 +185,7 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
 
 * **Parágrafos de fragmento**
 
-   * Blocos de texto, geralmente multilinha, que são delimitados como entidades individuais.
+   * Blocos de texto, geralmente multilinhas, que são delimitados como entidades individuais.
 
    * Nos modos [Rich Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) e [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown), um parágrafo pode ser formatado como um cabeçalho. Nesse caso, ele e o parágrafo a seguir pertencem como uma unidade.
 
@@ -246,7 +246,7 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
 
 * **Variações**
 
-   * Representações de texto de fragmento específicas para um objetivo editorial; podem estar relacionadas a canais, mas não é obrigatório. Também podem ser para modificações locais ad hoc.
+   * Representações de texto de fragmento específicas para um objetivo editorial; podem estar relacionadas a um canal, mas isso não é obrigatório; também podem ser para modificações locais ad hoc.
    * São criadas como cópias de **Mestre**, mas podem ser editadas conforme necessário. Há sobreposição de conteúdo entre as próprias variações.
    * Podem ser definidas durante a criação do fragmento.
    * São armazenadas no fragmento para ajudar a evitar a dispersão de cópias de conteúdo.
@@ -270,22 +270,22 @@ Conteúdo intermediário:
 
 ### Exigido por fragmentos {#required-by-fragments}
 
-Para criar fragmentos de conteúdo, é necessário:
+Para criar um fragmento de conteúdo, é necessário:
 
-* **Modelo de conteúdo**
+* um **Modelo de fragmento de conteúdo**
 
-   * É [habilitado usando o Navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+   * [está habilitado usando o Navegador de Configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md).
    * É [criado usando Ferramentas](/help/assets/content-fragments/content-fragments-models.md).
    * Obrigatório para [criar um fragmento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Define a estrutura de um fragmento (título, elementos de conteúdo, definições de tag).
-   * As definições do modelo de conteúdo exigem um título e um elemento de dados; todo o resto é opcional.
+   * A definição do modelo requer um título e um elemento de dados; todo o resto é opcional.
    * O modelo pode definir o conteúdo padrão, se aplicável.
-   * Os autores não podem alterar a estrutura definida ao criar o conteúdo do fragmento.
+   * Os autores não podem alterar a estrutura definida ao criar o conteúdo do fragmento, embora possam abrir o editor de modelo no editor de fragmento.
    * As alterações feitas em um modelo após a criação de fragmentos de conteúdo dependentes podem afetar esses fragmentos de conteúdo.
 
 Para usar os Fragmentos de conteúdo para a criação de páginas, também é necessário:
 
-* **Componente Fragmento de Conteúdo**
+* o **Componente Fragmento de Conteúdo**
 
    * Fundamental para entregar o fragmento no formato HTML, JSON ou ambos.
    * Obrigatório para [fazer referência ao fragmento em uma página](/help/sites-cloud/authoring/fragments/content-fragments.md).
@@ -366,9 +366,12 @@ Use campos Rich Text (o Tipo de Dados **Texto de várias linhas**) considerando:
 
 Crie quantas variações de fragmento forem necessárias, mas não mais.
 
-As variações adicionam tempo de processamento a um Fragmento de conteúdo, no ambiente de criação e no momento da entrega também. É recomendável manter o número de variações em um mínimo gerenciável.
+As variações adicionam tempo de processamento a um Fragmento de conteúdo, no ambiente de criação e no momento da entrega também.
 
-Uma prática recomendada é não exceder dez variações por Fragmento de conteúdo.
+É recomendável que você:
+
+* manter o número de variações em um mínimo gerenciável
+* não exceda dez variações por fragmento de conteúdo
 
 ### Teste antes da produção {#test-before-production}
 
