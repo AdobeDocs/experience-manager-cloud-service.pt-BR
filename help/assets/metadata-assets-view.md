@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 8819dc84887f79e047b4beffd18e03dee3ee45a3
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 79%
+source-wordcount: '2268'
+ht-degree: 77%
 
 ---
 
@@ -43,7 +43,7 @@ Depois que admins configuram o formulário de metadados, outros campos podem ser
 
 ## Tags inteligentes {#smart-tags}
 
-O [!DNL Experience Manager Assets] usa a inteligência artificial fornecida pela [IA do Adobe](https://business.adobe.com/ai/adobe-genai.html) para aplicar automaticamente tags relevantes a todos os ativos carregados. Essas tags, devidamente chamadas de Tags inteligentes, aumentam a velocidade do conteúdo de seus projetos, ajudando você a encontrar ativos relevantes rapidamente. As tags inteligentes são um exemplo de metadados que não estão contidos na imagem.
+O [!DNL Experience Manager Assets] usa a inteligência artificial fornecida pelo [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) para aplicar automaticamente marcas relevantes a todos os ativos carregados. Essas tags, devidamente chamadas de Tags inteligentes, aumentam a velocidade do conteúdo de seus projetos, ajudando você a encontrar ativos relevantes rapidamente. As tags inteligentes são um exemplo de metadados que não estão contidos na imagem.
 
 As tags inteligentes são aplicadas em tempo quase real e geradas com base no conteúdo da imagem. Ao fazer upload de um ativo, a interface exibe [!UICONTROL Processando] na miniatura do ativo por algum tempo. Após concluir o processamento, é possível [visualizar os metadados](#view-metadata) e as tags inteligentes.
 
@@ -100,7 +100,9 @@ Para criar um formulário de metadados, siga estas etapas:
 
    ![opção de formulários de metadados na barra lateral esquerda](assets/metadata-form-new.png)
 
-   *Figura: a interface de criação do formulário de metadados com a opção de adicionar componentes e de pré-visualizar o formulário.*
+   Entenda a [interface de usuário de um Formulário de Metadados](cascading-metadata-assets-view.md#build-metadata-forms).
+
+   <!--*Figure: Metadata form creation interface with options to add components and option to preview the form.*-->
 
 1. Para cada componente, forneça um nome nas **[!UICONTROL Configurações]** do painel direito e um mapeamento com as propriedades compatíveis.
 1. Opcionalmente, para um componente, selecione **[!UICONTROL Obrigatório]** para tornar o campo de metadados obrigatório e selecione **[!UICONTROL Somente leitura]** para transformá-lo em um campo não editável na página [!UICONTROL Detalhes] do ativo.
@@ -140,6 +142,9 @@ Veja abaixo uma visão geral de cada tipo de propriedade e como eles são armaze
 | Tags | Adicione uma marca de valores armazenados no Gerenciamento de Taxonomia (mapeado para xcm:tags). |
 | Palavras-chave | Adicionar palavras-chave de forma livre (mapeadas para dc:subject). |
 | Tags inteligentes | Adicione para aumentar os recursos de pesquisa inserindo tags de metadados automaticamente. |
+| Publicação | Adiciona o status de publicação do ativo. |
+| Link | Ele armazena um endereço da Web que aponta para um recurso online, como uma página da Web, imagem ou referência externa. |
+| Avaliação | Ele adiciona um valor categórico que indica a qualidade de um ativo. |
 
 ### Atribuir formulário de metadados a uma pasta {#assign-metadata-form-folder}
 
@@ -237,7 +242,7 @@ Execute as seguintes etapas para editar um formulário de metadados:
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
