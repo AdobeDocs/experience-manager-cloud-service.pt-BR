@@ -1,24 +1,24 @@
 ---
-title: Tags de marcação do HTML compatíveis no documento de registro
-description: O guia de referência para tags de marcação do HTML agora é compatível com a geração de documentos de registro, incluindo considerações sobre acessibilidade e comportamento de renderização
+title: Tags de marcação do HTML compatíveis no Submission PDF (antigo Documento de registro)
+description: Guia de referência para tags de marcação do HTML compatíveis ao gerar um PDF de envio (antigo Documento de registro), incluindo considerações sobre comportamento de renderização e acessibilidade.
 feature: Adaptive Forms
 role: Developer, User
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
+source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 7%
+source-wordcount: '454'
+ht-degree: 5%
 
 ---
 
 
-# Tags de marcação do HTML compatíveis no documento de registro
+# Tags de marcação do HTML compatíveis no Submission PDF (antigo Documento de registro)
 
 ## O que esta referência abrange?
 
-O AEM Forms agora é compatível com tags de marcação do HTML em campos de rich text ao gerar PDFs do Documento de registro (DoR). Este guia explica quais tags de marcação do HTML você pode usar com segurança no Adaptive Forms e como elas são renderizadas nos documentos gerados.
+O AEM Forms agora é compatível com tags de marcação do HTML em campos de rich text ao gerar uma PDF do PDF de envio (antigo Documento de registro). Este guia explica quais tags de marcação do HTML você pode usar com segurança no Adaptive Forms e como elas são renderizadas na PDF de envio gerada.
 
-Se você adicionar conteúdo de rich text (como formatação em negrito, listas ou links) aos formulários, é importante entender quais tags são compatíveis e quais podem ser as limitações. Essa referência ajuda a escolher as tags apropriadas para garantir que o conteúdo seja exibido corretamente e permaneça acessível no Documento de registro.
+Se você adicionar conteúdo de rich text (como formatação em negrito, listas ou links) aos formulários, é importante entender quais tags são compatíveis e quais podem ser as limitações. Essa referência ajuda a escolher as tags apropriadas para garantir que o conteúdo seja exibido corretamente e permaneça acessível no PDF de envio.
 
 ## Antes de começar
 
@@ -27,18 +27,18 @@ Se você adicionar conteúdo de rich text (como formatação em negrito, listas 
 Familiarize-se com:
 
 - Sintaxe básica de marcação do HTML
-- [Fundamentos do documento de registro](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Fundamentos do PDF de envio (antigo Documento de registro)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - Princípios de acessibilidade e diretrizes da WCAG
 - Requisitos de acessibilidade do PDF
 - Componentes de formulário adaptável que aceitam marcação HTML
 
 ### Considerações
 
-O Documento de registro (DoR) pode ser um PDF com tags, o que ajuda a garantir a acessibilidade e a estrutura adequada para tecnologias assistivas. Para habilitar a saída do PDF marcada, [defina a propriedade XCI `config/present/pdf/tagged` como `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Depois de gerar sua PDF, é importante verificar se as tags de acessibilidade foram aplicadas corretamente. Você pode usar o [Adobe Acrobat para verificar as marcas de acessibilidade](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) e garantir que seu documento atenda aos padrões de acessibilidade.
+O PDF de envio (antigo Documento de registro) pode ser um PDF marcado, o que ajuda a garantir a acessibilidade e a estrutura adequada para tecnologias assistivas. Para habilitar a saída do PDF marcada, [defina a propriedade XCI `config/present/pdf/tagged` como `true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Depois de gerar sua PDF, é importante verificar se as tags de acessibilidade foram aplicadas corretamente. Você pode usar o [Adobe Acrobat para verificar as marcas de acessibilidade](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html) e garantir que seu documento atenda aos padrões de acessibilidade.
 
 ### Novidades
 
-O suporte a rich text no Documento de registro é um aprimoramento recente. Anteriormente, o conteúdo rich text aparecia como texto simples em documentos gerados. Esse novo recurso permite que o conteúdo formatado seja renderizado corretamente nas saídas do PDF.
+O suporte a rich text no Submission PDF é um aprimoramento recente. Anteriormente, o conteúdo rich text aparecia como texto simples em documentos gerados. Esse novo recurso permite que o conteúdo formatado seja renderizado corretamente nas saídas do PDF.
 
 ## Referência de suporte a tags do HTML
 
@@ -46,7 +46,7 @@ O suporte a rich text no Documento de registro é um aprimoramento recente. Ante
 
 Essas tags são totalmente compatíveis com a criação adequada de nós de acessibilidade:
 
-| Tag do HTML | Descrição | Suporte ao documento de registro | Acessibilidade | Exemplo |
+| Tag do HTML | Descrição | Suporte ao PDF para envio | Acessibilidade | Exemplo |
 |----------|-------------|-------------|---------------|---------|
 | `<p>` | Parágrafo | Sim | Totalmente suportado - Corrigir nó `<P>` | `<p>This is a paragraph.</p>` |
 | `<br/>` | Quebra de linha | Sim | Totalmente suportado - no nó `<P>` | `<p>Line 1<br/>Line 2</p>` |
@@ -135,7 +135,7 @@ Essas tags não são compatíveis e não serão renderizadas corretamente:
 ## Conteúdo relacionado
 
 
-- [Gerar documento de registro para Formulários adaptáveis](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-- [Gerar documento de registro dos Componentes principais](/help/forms/generate-document-of-record-core-components.md)
-- [Documento de personalização do modelo de registro](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
+- [Gerar PDF de envio (antigo Documento de registro) para o Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [Gerar PDF de envio para Componentes principais](/help/forms/generate-document-of-record-core-components.md)
+- [Personalização do modelo de PDF de envio](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
 
