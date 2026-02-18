@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
-source-git-commit: 6173fc8a42525dcde435289da8ef8a533ea96de6
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '595'
-ht-degree: 74%
+ht-degree: 67%
 
 ---
 
@@ -38,7 +38,7 @@ Você pode definir:
 
 ## Notação de cabeçalho {#heading-notation}
 
-Para criar um cabeçalho, coloque uma hashtag (#) na frente dele. Uma hashtag (#) é usada para a tag H1, duas hashtags (##) para a tag H2 e assim por diante. Você pode usar até 6 hashtags. Por exemplo:
+Para criar um cabeçalho, coloque um símbolo de hash (#) na frente dele. Um símbolo de hash (#) é usado para um H1, dois símbolos de hash (##) para um H2 e assim por diante. Você pode usar até seis símbolos de hash. Por exemplo:
 
     `## This is an H2`
 
@@ -116,17 +116,13 @@ Onde &quot;id&quot; é o nome de uma referência de imagem definida. As referên
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 Você pode ter citações de bloco aninhadas. Por exemplo:
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -136,7 +132,7 @@ Você pode ter citações de bloco aninhadas. Por exemplo:
 
 É possível criar listas ordenadas e não ordenadas.
 
-Para criar uma lista não ordenada, use o símbolo &ast; antes dos itens na lista. Por exemplo:
+Para criar uma lista não ordenada, use o símbolo &amp;ast; (asterisco) antes dos itens na lista. Por exemplo:
 
     `* item in list`
 
