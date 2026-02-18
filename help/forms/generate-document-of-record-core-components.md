@@ -4,9 +4,9 @@ description: Saiba como gerar um PDF de envio a partir de envios de formulário 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ab11addd98629499726c011cc0faca5666de26fb
+source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
 workflow-type: tm+mt
-source-wordcount: '3233'
+source-wordcount: '3208'
 ht-degree: 1%
 
 ---
@@ -166,12 +166,10 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
   Select the option to create an Adaptive Form without a form model. When the option is selected, the Document of Record is automatically generated for your Adaptive Form.
 
 * **[Associate form template as a Document of Record template](creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)**
-  
   Select the option to use an XFA Form as a template for Document of Record. 
 
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
-  
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -354,8 +352,6 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
       * **Ocultar descrição de painéis**: definir a propriedade exclui a descrição do painel/tabela da PDF de Envio. Aplicável para painel e tabela.
 
-
-
    1. **Propriedades do Campo de Formulário**:
 
       * **Para os componentes da Caixa de Seleção e do Botão de Opção, mostrar apenas os valores selecionados**: a configuração da propriedade exibe apenas os valores selecionados da caixa de seleção e do botão de opção em [!UICONTROL Documento de Registro].
@@ -363,35 +359,33 @@ Para localizar as informações de marca inseridas na guia Documento de registro
       * **Alinhamento de Opções**: Você pode selecionar o alinhamento desejado (Horizontal, Vertical, Igual ao Formulário adaptável) para definir o alinhamento dos campos, como caixa de seleção ou botão de opção, a serem exibidos em [!UICONTROL Documento de Registro]. Por padrão, o alinhamento vertical é definido para os campos em [!UICONTROL Documento de registro]. Definir as propriedades das [!UICONTROL Propriedades do Campo de Formulário] de DoR substitui as propriedades definidas no [!UICONTROL Alinhamento de Itens] para os campos em um Formulário adaptável. Caso você selecione a opção [!UICONTROL Igual ao formulário adaptável], o alinhamento conforme configurado em uma instância de autor do formulário adaptável será usado para os campos [!UICONTROL Documento de registro].
       * **Número de opções de alinhamento horizontal**:You pode definir o número de opções a serem exibidas no PDF de Envio para o alinhamento horizontal.
 
-
-
    1. **Propriedades da Página Mestra**:
 
       * **Imagem de logotipo**: você pode optar por usar a imagem de logotipo do Formulário adaptável, escolher uma do DAM ou carregar uma do seu computador.
       * **Título do Formulário**: Título do DoR.
-* **Texto do Cabeçalho**: texto que aparece na seção de cabeçalho do PDF de Envio.
-* **Rótulo do aviso**: Rótulo do aviso.
-* **Aviso de isenção de responsabilidade**: texto que especifica o escopo dos direitos e obrigações no PDF de Envio.
-* **Texto do aviso**: texto do aviso.
+      * **Texto do Cabeçalho**: texto que aparece na seção de cabeçalho do PDF de Envio.
+      * **Rótulo do aviso**: Rótulo do aviso.
+      * **Aviso de Isenção de Responsabilidade**: texto que especifica o escopo de direitos e obrigações no PDF de Envio.
+      * **Texto do aviso**: texto do aviso.
 
-      &lt;!—![Propriedades da Página Mestra](/help/forms/assets/dorpropertiesimg.png)—>
-     
-     >[!NOTE]
-     >
-     >Se estiver usando um modelo de Formulário Adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades de Cor de Destaque e Família de Fontes funcionem, verifique se o seguinte está presente no modelo de Formulário Adaptável sob o subformulário raiz:
-     
-     &quot;xml
-     &lt;proto>
-     &lt;font typeface=&quot;Arial&quot;/>
-     &lt;fill>
-     &lt;color value=&quot;4,166,203&quot;/>
-     &lt;/fill>
-     &lt;edge>
-     &lt;color value=&quot;4,166,203&quot;/>
-     &lt;/edge>
-     &lt;/proto 
-&quot;    
-  
+      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
+
+      >[!NOTE]
+      >
+      >Se você estiver usando um modelo de Formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades de Cor de ênfase e Família de fontes funcionem, verifique se o seguinte está presente no modelo de Formulário adaptável no subformulário raiz:
+
+      ```xml
+      <proto>
+      <font typeface="Arial"/>
+      <fill>
+      <color value="4,166,203"/>
+      </fill>
+      <edge>
+      <color value="4,166,203"/>
+      </edge>
+      </proto>
+      ```
+
 1. Para salvar as alterações de identidade visual, selecione **[!UICONTROL Concluído]**.
 
 >[!NOTE]
@@ -444,4 +438,5 @@ A configuração do componente Documento de registro está disponível em suas p
 
 **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
 
-!->>
+-->
+
