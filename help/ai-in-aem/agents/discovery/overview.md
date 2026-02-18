@@ -3,13 +3,13 @@ title: Visão geral do Discovery Agent
 description: Saiba como usar o Discovery Agent para fornecer conteúdo relevante do AEM sob demanda por meio de solicitações naturais e conversacionais para obter uma experiência de descoberta simplificada e sem cliques.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d0c683d20f8932683d3d0aa11a67be92d35b725c
+exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
+source-git-commit: 5488fdb1ffc9c65ef2b569627f9a2ef414181290
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 1%
 
 ---
-
 
 # Agente de Descoberta {#discovery-agent}
 
@@ -30,6 +30,8 @@ Alguns dos principais benefícios do Discovery Agent incluem:
 >As respostas geradas por IA podem ser imprecisas ou enganosas. Verifique as correções e respostas sugeridas.
 >
 >Consulte também [Diretrizes de usuário da IA gerativa da Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479983)
 
 ## Habilidades {#skills-discovery-agent}
 
