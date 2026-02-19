@@ -32,8 +32,8 @@ Crie uma Comunicação interativa (IC) em um ambiente e reutilize-a em outro exp
 
 +++&#x200B;1. Como exportar a comunicação interativa
 
-1.1. Selecione uma IC (Comunicação Interativa) [criada.
-](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication)
+1.1. Selecione uma IC (Comunicação Interativa) [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication)criada.
+
 1.2. Clique na opção **Baixar** para exportá-lo como um arquivo ZIP.
 1.3. O arquivo ZIP baixado inclui a IC junto com seu **modelo**, **fragmentos** e **modelo de dados** selecionados.
 
