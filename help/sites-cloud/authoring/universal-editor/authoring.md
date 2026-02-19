@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 689daf210bc0d867a0cafad32abac4aa178927ff
+source-git-commit: 3a76f7dde028eb2ba50a7bca344b347d585cc9ea
 workflow-type: tm+mt
-source-wordcount: '2838'
-ht-degree: 9%
+source-wordcount: '2902'
+ht-degree: 8%
 
 ---
 
@@ -101,23 +101,30 @@ Toque ou clique em **Cancelar** ou **Concluído** para descartar ou salvar as al
 
 O editor de rich text (RTE) do Editor universal permite que o autor aplique a formatação de texto padrão. Por padrão, as seguintes opções estão disponíveis.
 
-* Parágrafo (h1, h2, h3, etc.)
-* Negrito
-* Itálico
-* Sublinhado
-* Sobrescrito
-* Subscrito
-* Lista com marcadores
-   * Use a tecla tab para recuar, shift+tab para recuar para a esquerda
-* Lista ordenada
-   * Use a tecla tab para recuar, shift+tab para recuar para a esquerda
-* Link
-* Desvincular
-* Imagem
-* Colar como texto
-* Remover toda a formatação
-
-As tabelas existentes podem ser editadas usando o RTE, mas não é possível criar novas tabelas.
+* **Estilo de parágrafo**
+   * Parágrafos, h1-h6, código
+* **Negrito**
+* **Itálico**
+* **Sublinhado**
+* **Tachado**
+* **Sobrescrito**
+* **Subscrito**
+* **Lista de marcadores**
+   * Use a tecla Tab para recuar, e shift+tab para recuar para a esquerda.
+* **Lista ordenada**
+   * Use a tecla Tab para recuar, e shift+tab para recuar para a esquerda.
+* **Link**
+   * Especifique um URL ou use o Navegador de conteúdo para selecionar um caminho no AEM.
+* **Desvincular**
+   * Remover link do texto selecionado.
+* **Imagem**
+   * Especifique uma URL ou use o [seletor de ativos](/help/assets/overview-asset-selector.md#using-asset-selector) para selecionar um ativo da AEM.
+* **Tabela**
+   * Use o menu suspenso para inserir uma nova tabela do número selecionado de colunas e linhas ou inserir e remover novas colunas/linhas.
+* **Colar como texto**
+   * Remova a formatação do texto na área de transferência antes de colá-lo no Editor Universal.
+* **Remover toda a formatação**
+   * Remova todas as opções de formatação do texto selecionado.
 
 O RTE pode ser configurado para ocultar opções ou mostrar opções adicionais, dependendo das necessidades dos autores. Consulte o documento [Configurando o RTE para o Editor Universal](/help/implementing/universal-editor/configure-rte.md) para obter mais informações.
 
@@ -261,7 +268,7 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 
 ### Copiar e colar {#copy-paste}
 
-Você pode copiar e colar componentes que estão em [&#x200B; contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
+Você pode copiar e colar componentes que estão em [ contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
 
 Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegador, desde que as guias já estejam abertas. Não é possível copiar um item e abrir uma nova guia do navegador para colá-lo.
 

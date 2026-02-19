@@ -4,9 +4,9 @@ description: Entenda como você pode configurar o editor de rich text (RTE) no E
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -87,9 +87,29 @@ A configuração da barra de ferramentas controla quais opções de edição est
 }
 ```
 
-## Configuração de ações {#actions}
+## Configuração de ação {#action}
 
 A configuração de ações permite personalizar o comportamento e a aparência de ações de edição individuais. Estas são as seções disponíveis.
+
+### Opções de ação comum {#common-action-options}
+
+A maioria das ações apoia as seguintes opções comuns:
+
+* `shortcut?`: cadeia de caracteres - substitui o atalho de teclado padrão para a ação (se houver)
+* `label?`: cadeia de caracteres - substitui o rótulo usado para a ação na interface
+* `hideInline?`: booleano - Quando `true`, oculta esta ação da barra de ferramentas do editor RTE no contexto (em linha)
+
+```json
+{
+  "actions": {
+    "bold": {
+      "label": "Bold",
+      "shortcut": "Mod-B",
+      "hideInline": true
+    }
+  }
+}
+```
 
 ### Ações de formato {#format}
 
@@ -134,6 +154,56 @@ As ações de lista oferecem suporte à quebra automática de conteúdo para con
   }
 }
 ```
+
+### Ações de tabela {#table-actions}
+
+As ações de tabela oferecem suporte ao encapsulamento de conteúdo para controlar a estrutura do HTML em células de tabela:
+
+```json
+{
+  "actions": {
+    "table": {
+      "wrapInParagraphs": false, // <td>content</td> (default)
+      "shortcut": "Mod-Alt-T",   // Custom shortcut
+      "label": "Insert Table"    // Custom label
+    }
+  }
+}
+```
+
+#### Opções de Configuração de Tabela {#table-configuration-options}
+
+* `wrapInParagraphs`: `false` (padrão) - As células da tabela contêm conteúdo de texto não ajustado
+* `wrapInParagraphs`: `true` - Células de tabela quebram conteúdo em marcas de parágrafo
+
+Amostras:
+
+Quando `wrapInParagraphs`: `false`:
+
+```html
+<!-- Single line -->
+<td>Cell content</td>
+
+<!-- Multiple paragraphs get <br> separation -->
+<td>Line 1<br />Line 2</td>
+```
+
+Quando `wrapInParagraphs`: `true`:
+
+```html
+<!-- Single paragraph -->
+<td><p>Cell content</p></td>
+
+<!-- Multiple paragraphs preserved -->
+<td>
+  <p>Line 1</p>
+  <p>Line 2</p>
+</td>
+```
+
+>[!NOTE]
+>
+>Ao desempacotar parágrafos (`wrapInParagraphs`: `false`), o higienizador insere automaticamente `<br>` tags entre vários parágrafos para preservar as quebras de linha visuais. Isso segue os padrões do HTML e a prática comum nos principais editores de rich text.
 
 ### Ações do link {#link}
 
@@ -487,3 +557,20 @@ Os atalhos usam o formato `Mod-Key`(s) onde:
 
 * `Mod` = `Cmd` no Mac, `Ctrl` no Windows/Linux
 * Exemplos: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+
+## HTML não compatível {#unsupported-html}
+
+Por padrão, tags HTML desconhecidas são removidas quando analisadas pelo editor. Para preservá-los, opt-in por meio da opção de configuração `unsupportedHtml`:
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true, // preserve unknown HTML tags (default: false)
+};
+```
+
+| Valor | Comportamento |
+|---|---|
+| `false` (default) | Tags desconhecidas do HTML são descartadas durante a análise. |
+| `true` | Tags desconhecidas do HTML são colocadas em um nó de bloco não compatível personalizado para que o conteúdo possa ser enviado com segurança. |
+
+Quando habilitado, o editor renderiza nós sem suporte com uma classe `rte-unsupported-block`. Os aplicativos do consumidor devem fornecer o estilo dessa classe (por exemplo, borda, preenchimento, plano de fundo). O rótulo da tag dentro do bloco usa `rte-unsupported-label`, que também pode ser personalizado.
