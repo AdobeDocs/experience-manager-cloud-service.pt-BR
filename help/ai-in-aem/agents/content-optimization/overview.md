@@ -4,7 +4,7 @@ description: Saiba como usar o Agente de otimização de conteúdo para transfor
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: 36cc0cd44a77554c58cec13d6478271d5ee4165c
+source-git-commit: af85d06d95cf2676cc558071ac8dfe54b67dc8f1
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 0%
@@ -30,6 +30,8 @@ Alguns dos principais benefícios da otimização de conteúdo incluem:
 >As respostas geradas por IA podem ser imprecisas ou enganosas. Verifique as correções e respostas sugeridas.
 >
 >Consulte também [Diretrizes de usuário da IA gerativa da Adobe Experience Cloud](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480078)
 
 ## Pré-requisitos {#prerequisites-content-optimization-agent}
 
