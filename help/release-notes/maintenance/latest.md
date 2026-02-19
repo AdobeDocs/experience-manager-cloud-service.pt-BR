@@ -4,7 +4,7 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a58225edb8ca49db9743db6c9c5b08c786fa0144
+source-git-commit: c1e175128ab6e4b483e3940d9bd86a06540ef40f
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 13%
@@ -18,9 +18,9 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 ## Versão 24464 {#release-24464}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 24464, lançada publicamente em quarta-feira, 17 de fevereiro de 2026. A versão de manutenção anterior era 24288.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 24464, lançada publicamente em quinta-feira, 18 de fevereiro de 2026. A versão de manutenção anterior era 24288.
 
-A ativação de recursos do 2026.2.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2026.2.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-24464}
 
@@ -110,5 +110,5 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.30.4 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
 
