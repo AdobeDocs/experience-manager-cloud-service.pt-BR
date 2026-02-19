@@ -3,9 +3,11 @@ title: Experimentação contextual no AEM as a Cloud Service
 description: Saiba como usar o plug-in de experimentação para adicionar recursos de experimentação ao seu site.
 feature: Administering
 role: Admin
-source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
+exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
+source-git-commit: eed3a4866e3018b2ff6bc6e5c201523ab271c35f
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -33,7 +35,7 @@ Para sites executados no Adobe Experience Manager, há o **plug-in de experiment
 
 O plug-in de experimentação é usado no contexto do [Edge Delivery Services](/help/edge/overview.md), portanto, você precisará de uma conta do Github, um repositório de conteúdo como o SharePoint ou o Google Drive, e também do [AEM Sidekick](https://www.aem.live/docs/sidekick). Consulte também a [página Introdução - Tutorial do desenvolvedor do editor universal](https://www.aem.live/developer/tutorial) e [Introdução - Tutorial do desenvolvedor](https://www.aem.live/developer/tutorial).
 
-Após tudo configurado, **assista a este vídeo** intitulado [Experimentação instantânea](https://business.adobe.com/br/products/experience-manager/sites/testing-optimization.html) para obter uma breve demonstração sobre como funciona o plug-in de experimentação.
+Após tudo configurado, **assista a este vídeo** intitulado [Experimentação instantânea](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) para obter uma breve demonstração sobre como funciona o plug-in de experimentação.
 
 ## Termos usados com frequência {#frequently-used-terms}
 
