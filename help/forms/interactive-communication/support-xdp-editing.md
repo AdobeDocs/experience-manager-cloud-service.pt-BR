@@ -4,23 +4,19 @@ description: A Edição de XDP compatível com o Editor de comunicações intera
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 8dd024aa-d0c1-4e8b-b9f2-ad67c20cdd88
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 0%
+source-wordcount: '393'
+ht-degree: 1%
 
 ---
-
 
 # Suporte à edição de XDP no Editor de comunicação interativa
 
 >[!NOTE]
 >
 > O recurso de comunicação interativa está disponível no programa dos primeiros usuários. Envie um email de seu endereço comercial para `aem-forms-ea@adobe.com` para solicitar acesso.
-
->[!IMPORTANT]
->
-> **Documentação sujeita a alterações**: esta biblioteca de prompts está sendo testada no momento em relação ao produto e está sujeita a atualizações e revisões. Os prompts, exemplos e práticas recomendadas podem mudar à medida que o Forms Experience Builder continua a evoluir durante o programa de adoção antecipada.
 
 ## Introdução
 
@@ -76,4 +72,3 @@ Os autores podem **arrastar e soltar** esses fragmentos diretamente na tela. As 
 - Use o controle de versão para gerenciar atualizações entre dependências de XDP e fragmento.
 
 - Valide as associações de dados após a edição para confirmar a renderização correta.
-

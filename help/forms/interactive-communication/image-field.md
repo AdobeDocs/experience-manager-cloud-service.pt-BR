@@ -4,23 +4,19 @@ description: Componente de Campo de imagem no Editor de comunicação interativa
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
-
 
 # Componente de Campo de imagem no Editor de comunicação interativa
 
 >[!NOTE]
 >
 > O recurso de comunicação interativa está disponível no programa dos primeiros usuários. Envie um email de seu endereço comercial para `aem-forms-ea@adobe.com` para solicitar acesso.
-
->[!IMPORTANT]
->
-> **Documentação sujeita a alterações**: esta biblioteca de prompts está sendo testada no momento em relação ao produto e está sujeita a atualizações e revisões. Os prompts, exemplos e práticas recomendadas podem mudar à medida que o Forms Experience Builder continua a evoluir durante o programa de adoção antecipada.
 
 ## &#x200B;1. Introdução
 
@@ -111,7 +107,3 @@ Os autores podem colocar o campo em subformulários ou contêineres de layout pa
 - Vincular o campo a um caminho de esquema significativo se a integração com o back-end
 
 O componente de Campo de imagem no editor de comunicação interativa é um componente versátil que melhora a interatividade dos formulários, permitindo uploads de conteúdo visual. Quando projetado com estilo, validação e vinculação de dados, ele oferece suporte a uma experiência do usuário contínua e à captura de dados eficiente para envios baseados em imagem.
-
-
-
-

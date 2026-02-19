@@ -4,23 +4,19 @@ description: Visualização do PDF no Editor de comunicação interativa com dif
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '327'
 ht-degree: 0%
 
 ---
-
 
 # Visualização do PDF no Editor de comunicação interativa
 
 >[!NOTE]
 >
 > O recurso de comunicação interativa está disponível no programa dos primeiros usuários. Envie um email de seu endereço comercial para `aem-forms-ea@adobe.com` para solicitar acesso.
-
->[!IMPORTANT]
->
-> **Documentação sujeita a alterações**: esta biblioteca de prompts está sendo testada no momento em relação ao produto e está sujeita a atualizações e revisões. Os prompts, exemplos e práticas recomendadas podem mudar à medida que o Forms Experience Builder continua a evoluir durante o programa de adoção antecipada.
 
 O recurso de visualização do PDF permite que os usuários visualizem as Comunicações interativas de três maneiras diferentes: sem dados, com dados locais baseados em JSON ou com dados de amostra do modelo de dados configurado.
 
@@ -50,7 +46,7 @@ Visualize comunicações interativas sem dados, dados locais ou dados de amostra
 
 +++&#x200B;2. Visualizar com dados JSON locais
 
-2.1. Prepare um arquivo JSON estruturado. Para referência, você pode copiar os dados de amostra do esquema JSON [(FDM)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) usado para a comunicação.
+2.1. Prepare um arquivo JSON estruturado. Para referência, você pode copiar os dados de amostra do esquema JSON [(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) usado para a comunicação.
 
 2.2. No Editor IC, vá para **Visualização do PDF** > Usando Dados Locais.
 
@@ -69,4 +65,3 @@ Visualize comunicações interativas sem dados, dados locais ou dados de amostra
 ![Localizar IC Docu](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
-

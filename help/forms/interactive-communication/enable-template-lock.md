@@ -4,23 +4,19 @@ description: O Bloqueio de modelo no Editor de comunicação interativa fornece 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
-
 
 # Bloqueio de modelo no Editor de comunicações interativas
 
 >[!NOTE]
 >
 > O recurso de comunicação interativa está disponível no programa dos primeiros usuários. Envie um email de seu endereço comercial para `aem-forms-ea@adobe.com` para solicitar acesso.
-
->[!IMPORTANT]
->
-> **Documentação sujeita a alterações**: esta biblioteca de prompts está sendo testada no momento em relação ao produto e está sujeita a atualizações e revisões. Os prompts, exemplos e práticas recomendadas podem mudar à medida que o Forms Experience Builder continua a evoluir durante o programa de adoção antecipada.
 
 ## &#x200B;1. Introdução
 
@@ -63,7 +59,7 @@ Quando aplicados, os autores não podem:
 Siga as etapas abaixo para aplicar os Bloqueios de conteúdo ou layout no modelo de IC (Comunicação interativa):
 
 1. Abra o seu modelo
-Abra ou crie um Modelo, siga o guia [Criar um Modelo de Comunicação Interativa](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+Abra ou crie um Modelo, siga o guia [Criar um Modelo de Comunicação Interativa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. Selecione o componente
 Clique no componente (caixa de texto, imagem ou subformulário) que deseja restringir.

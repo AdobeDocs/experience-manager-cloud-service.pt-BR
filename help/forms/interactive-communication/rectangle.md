@@ -4,23 +4,19 @@ description: O componente de Retângulo no Editor de comunicação interativa no
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
-
 
 # Componente de Retângulo no Editor de comunicação interativa
 
 >[!NOTE]
 >
 > O recurso de comunicação interativa está disponível no programa dos primeiros usuários. Envie um email de seu endereço comercial para `aem-forms-ea@adobe.com` para solicitar acesso.
-
->[!IMPORTANT]
->
-> **Documentação sujeita a alterações**: esta biblioteca de prompts está sendo testada no momento em relação ao produto e está sujeita a atualizações e revisões. Os prompts, exemplos e práticas recomendadas podem mudar à medida que o Forms Experience Builder continua a evoluir durante o programa de adoção antecipada.
 
 ## &#x200B;1. Introdução
 
@@ -112,5 +108,3 @@ Os retângulos podem ser combinados com outros elementos de layout, como subform
 - Ocultar retângulos se eles forem necessários apenas para fins de design durante a edição, mas não forem necessários na saída final.
 
 O componente Retângulo é uma ferramenta não interativa mas poderosa no Editor IC. Quando estilizado e posicionado de maneira eficaz, ele melhora a precisão do layout, o fluxo visual e a experiência do usuário sem adicionar complexidade à vinculação de dados ou à interatividade.
-
-

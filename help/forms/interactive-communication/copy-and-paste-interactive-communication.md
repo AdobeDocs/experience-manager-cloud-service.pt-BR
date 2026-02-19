@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: fe99fc4ddc1e2b3bdd1b2a5b583f2b4cb681dee9
+exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
-
 
 # Copiar e colar no Editor de comunicações interativas
 
 >[!NOTE]
 >
 > O recurso de comunicação interativa está disponível no programa dos primeiros usuários. Envie um email de seu endereço comercial para `aem-forms-ea@adobe.com` para solicitar acesso.
-
->[!IMPORTANT]
->
-> **Documentação sujeita a alterações**: esta biblioteca de prompts está sendo testada no momento em relação ao produto e está sujeita a atualizações e revisões. Os prompts, exemplos e práticas recomendadas podem mudar à medida que o Forms Experience Builder continua a evoluir durante o programa de adoção antecipada.
 
 O recurso Copiar e colar no editor de IC (Comunicação interativa) permite que os autores dupliquem uma Comunicação interativa existente e a reutilizem em uma pasta ou local diferente. Esse recurso ajuda as equipes a trabalhar com eficiência, permitindo várias variações de uma IC sem modificar a versão original.
 
@@ -88,4 +84,3 @@ Depois de colar a Comunicação interativa:
 - Revise as associações de dados e os canais de saída após a cópia para garantir a correção.
 
 O recurso Copiar e Colar na comunicação interativa simplifica a reutilização e a personalização, permitindo que os autores dupliquem os ICs existentes e os modifiquem independentemente. Ele permite um desenvolvimento mais rápido, experimentação mais segura e entrega de comunicação consistente — sem arriscar alterações na comunicação interativa original.
-

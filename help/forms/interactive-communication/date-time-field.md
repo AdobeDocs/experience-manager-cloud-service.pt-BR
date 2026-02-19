@@ -4,23 +4,19 @@ description: Componente de campo de data/hora no Editor de comunicação interat
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
-
 
 # Componente de Campo de data/hora no Editor de comunicação interativa
 
 >[!NOTE]
 >
 > O recurso de comunicação interativa está disponível no programa dos primeiros usuários. Envie um email de seu endereço comercial para `aem-forms-ea@adobe.com` para solicitar acesso.
-
->[!IMPORTANT]
->
-> **Documentação sujeita a alterações**: esta biblioteca de prompts está sendo testada no momento em relação ao produto e está sujeita a atualizações e revisões. Os prompts, exemplos e práticas recomendadas podem mudar à medida que o Forms Experience Builder continua a evoluir durante o programa de adoção antecipada.
 
 ## &#x200B;1. Introdução
 
@@ -141,4 +137,3 @@ Os autores podem combinar o campo com contêineres de layout, validações ou re
 - Vincule o campo a um caminho de esquema válido para garantir a captura e o processamento adequados dos dados.
 
 O componente Campo de data/hora no editor de comunicação interativa é um componente eficiente e fácil de usar que simplifica a entrada com base no tempo. Com a configuração correta de estilo, manuseio de dados e controles de layout, ele permite experiências de formulário limpas, confiáveis e intuitivas para usuários e sistemas de back-end.
-

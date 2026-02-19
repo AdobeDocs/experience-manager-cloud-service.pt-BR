@@ -4,23 +4,19 @@ description: O componente Caixa de seleção no Editor de comunicação interati
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
-
 
 # Componente de Caixa de seleção no Editor de comunicação interativa
 
 >[!NOTE]
 >
 > O recurso de comunicação interativa está disponível no programa dos primeiros usuários. Envie um email de seu endereço comercial para `aem-forms-ea@adobe.com` para solicitar acesso.
-
->[!IMPORTANT]
->
-> **Documentação sujeita a alterações**: esta biblioteca de prompts está sendo testada no momento em relação ao produto e está sujeita a atualizações e revisões. Os prompts, exemplos e práticas recomendadas podem mudar à medida que o Forms Experience Builder continua a evoluir durante o programa de adoção antecipada.
 
 ## &#x200B;1. Introdução
 
@@ -123,5 +119,3 @@ As caixas de seleção podem ser colocadas dentro de grades ou painéis de layou
 - Use regras de visibilidade quando as caixas de seleção dependerem de entradas ou condições anteriores.
 
 O componente Caixa de seleção no editor de comunicação interativa é um componente simples, mas essencial para entradas binárias. Com suporte para estilo, presença condicional e vinculação de dados flexível, ele desempenha um papel fundamental no aprimoramento da interatividade e do controle do usuário em formulários digitais inteligentes. Quando implementadas com rótulos elaborados, estilo consistente e integração de dados significativa, as caixas de seleção contribuem significativamente para uma experiência de formulário suave e intuitiva.
-
-

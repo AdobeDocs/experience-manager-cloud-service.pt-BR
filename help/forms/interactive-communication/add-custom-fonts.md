@@ -4,23 +4,19 @@ description: Adicionar fontes personalizadas no Editor de comunicações interat
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
-
 
 # Adicionar fontes personalizadas ao Editor de comunicações interativas
 
 >[!NOTE]
 >
 > O recurso de comunicação interativa está disponível no programa dos primeiros usuários. Envie um email de seu endereço comercial para `aem-forms-ea@adobe.com` para solicitar acesso.
-
->[!IMPORTANT]
->
-> **Documentação sujeita a alterações**: esta biblioteca de prompts está sendo testada no momento em relação ao produto e está sujeita a atualizações e revisões. Os prompts, exemplos e práticas recomendadas podem mudar à medida que o Forms Experience Builder continua a evoluir durante o programa de adoção antecipada.
 
 O recurso de fonte personalizada permite aprimorar a aparência das comunicações interativas, permitindo o uso de fontes personalizadas ou aprovadas pela organização. Com esse recurso, é possível empacotar e incorporar fontes no ambiente AEM Forms as a Cloud Service, garantindo uma renderização consistente do PDF em dispositivos e plataformas.
 
@@ -36,5 +32,5 @@ O recurso de fonte personalizada permite aprimorar a aparência das comunicaçõ
 
 >[!NOTE]
 >
-> Para obter etapas de configuração detalhadas, os usuários podem seguir o guia [Usar fontes personalizadas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> Para obter etapas de configuração detalhadas, os usuários podem seguir o guia [Usar fontes personalizadas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
 >Após concluir as etapas e executar o pipeline, as fontes personalizadas estão disponíveis para uso diretamente no Editor de comunicação interativa.
