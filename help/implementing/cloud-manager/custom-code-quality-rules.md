@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 629cf9d88531b2e95627917ca139eed1fbddf09d
 workflow-type: tm+mt
-source-wordcount: '4349'
-ht-degree: 64%
+source-wordcount: '4427'
+ht-degree: 63%
 
 ---
 
@@ -49,16 +49,16 @@ Os métodos `Thread.stop()` e `Thread.interrupt()` podem gerar problemas difíce
 ```java
 public class DontDoThis implements Runnable {
   private Thread thread;
- 
+
   public void start() {
     thread = new Thread(this);
     thread.start();
   }
- 
+
   public void stop() {
     thread.stop();  // UNSAFE!
   }
- 
+
   public void run() {
     while (true) {
         somethingWhichTakesAWhileToDo();
@@ -73,16 +73,16 @@ public class DontDoThis implements Runnable {
 public class DoThis implements Runnable {
   private Thread thread;
   private boolean keepGoing = true;
- 
+
   public void start() {
     thread = new Thread(this);
     thread.start();
   }
- 
+
   public void stop() {
     keepGoing = false;
   }
- 
+
   public void run() {
     while (this.keepGoing) {
         somethingWhichTakesAWhileToDo();
@@ -110,7 +110,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-### As solicitações HTTP devem sempre ter um tempo limite de soquete e conexão {#http-requests-should-always-have-socket-and-connect-timeouts}
+### As solicitações HTTP devem sempre ter um tempo-limite de soquete e conexão {#http-requests-should-always-have-socket-and-connect-timeouts}
 
 * **Chave**: CQRules:ConnectionTimeoutMechanism
 * **Tipo**: Erro
@@ -125,7 +125,7 @@ Por padrão, o Java™ HTTP Client (java.net.HttpUrlConnection) e o cliente Apac
 ```java
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
- 
+
 public void dontDoThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
@@ -136,15 +136,15 @@ public void dontDoThis() {
 public void dontDoThisEither() {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
- 
+
   BufferedReader in = new BufferedReader(new InputStreamReader(
     urlConnection.getInputStream()));
- 
+
   String inputLine;
   while ((inputLine = in.readLine()) != null) {
     logger.info(inputLine);
   }
- 
+
   in.close();
 }
 ```
@@ -154,7 +154,7 @@ public void dontDoThisEither() {
 ```java
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
- 
+
 public void doThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
@@ -162,9 +162,9 @@ public void doThis() {
     .setSocketTimeout(5000)
     .build();
   builder.setDefaultRequestConfig(requestConfig);
- 
+
   HttpClient httpClient = builder.build();
-   
+
   // do something with the client
 }
 
@@ -173,15 +173,15 @@ public void orDoThis () {
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);
   urlConnection.setReadTimeout(5000);
- 
+
   BufferedReader in = new BufferedReader(new InputStreamReader(
     urlConnection.getInputStream()));
- 
+
   String inputLine;
   while ((inputLine = in.readLine()) != null) {
     logger.info(inputLine);
   }
- 
+
   in.close();
 }
 ```
@@ -511,6 +511,17 @@ public void doThis(Resource resource) {
 Não use o Agendador do `Sling` para tarefas que exigem execução garantida. Os processos agendados no Sling têm execução garantida e são mais adequados para ambientes clusterizados e não clusterizados.
 
 Consulte [`Apache Sling` Evento e manuseio de trabalho](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para saber mais sobre como os trabalhos do Sling são tratados em ambientes clusterizados.
+
+### Não use APIs obsoletas do Experience Manager {#sonarqube-aem-api-deprecated}
+
+* **Chave**: java:S1874
+* **Tipo**: `Vulnerability` ou `Bug`/Compatibilidade com o Cloud Service
+* **Gravidade**: Informações, Menor ou Maior
+* **Desde**: versão 2026.1.0
+
+A superfície da API do Experience Manager está em constante revisão para identificar APIs para as quais o uso precisa ser interrompido. Essa API está obsoleta e marcada com uma data de remoção.
+
+Quanto mais próxima for a data de remoção, maior será a gravidade da violação dessa regra. O uso dessa API deve ser substituído por uma alternativa segura.
 
 ### Não use APIs obsoletas do Experience Manager {#sonarqube-aem-deprecated}
 
@@ -1082,7 +1093,7 @@ O tipo de nó `nt:base` pode ser considerado &quot;genérico&quot;, pois todos o
   - evaluatePathRestrictions: true
   - tags: [visualSimilaritySearch]
   - type: lucene
-  - includedPaths: ["/content/dam/"] 
+  - includedPaths: ["/content/dam/"]
   - queryPaths: ["/content/dam/"]
     + indexRules
       - jcr:primaryType: nt:unstructured
