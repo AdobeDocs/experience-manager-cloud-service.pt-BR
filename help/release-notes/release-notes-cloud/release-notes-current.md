@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: b42a713bb66d55c991dc1a341987d79b083c6ccd
+source-git-commit: cf45f9e6d89e0a166c09989b0fc8e793a54ce9ff
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1886'
 ht-degree: 9%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo de Visão geral da versão de janeiro de 2026 que exibe um resumo dos recursos adicionados na versão 2026.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479794/?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
 
 ## Programas do AEM Beta {#aem-beta-programs}
@@ -53,7 +53,7 @@ Os programas beta do Adobe Experience Manager (AEM) são uma maneira de os clien
 Obter acesso antecipado aos recursos que a Adobe está desenvolvendo permite que clientes e parceiros forneçam feedback e modelem o desenvolvimento de produtos. Também os ajuda a se preparar para adotar novos recursos antes da disponibilidade geral.
 
 **Programas beta atuais**
-As seções a seguir listam os programas beta e Explorer ativos.
+As seções a seguir listam os programas beta ativos.
 
 <!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
@@ -105,7 +105,7 @@ Para obter mais informações, consulte Pesquisa com IA em [modo de exibição d
 
 **Versão 3.0.1 do Aplicativo de Desktop**
 
-[Aplicativo de desktop 3.0.1 (20 de dezembro de 2025)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/release-notes) melhora a confiabilidade, o desempenho e a estabilidade em fluxos de trabalho importantes. Esta versão garante uma nomenclatura de pasta consistente, corrigindo problemas de sincronização com o AEM Author, permite o uso ininterrupto do aplicativo durante transferências ativas, melhora a capacidade de resposta da interface do usuário por meio de processamento assíncrono, otimiza transferências de arquivos grandes com paginação e resolve problemas de estabilidade, incluindo reinicializações e falhas do servidor do Author durante uploads e downloads de pastas grandes.
+[Aplicativo de desktop 3.0.1 (20 de dezembro de 2025)](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes) melhora a confiabilidade, o desempenho e a estabilidade em fluxos de trabalho importantes. Esta versão garante uma nomenclatura de pasta consistente, corrigindo problemas de sincronização com o AEM Author, permite o uso ininterrupto do aplicativo durante transferências ativas, melhora a capacidade de resposta da interface do usuário por meio de processamento assíncrono, otimiza transferências de arquivos grandes com paginação e resolve problemas de estabilidade, incluindo reinicializações e falhas do servidor do Author durante uploads e downloads de pastas grandes.
 
 **Adobe Asset Link CEP versão 2026.01.0**
 
@@ -272,11 +272,11 @@ Envie um email para [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@ado
 
 #### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
