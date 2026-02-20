@@ -4,7 +4,7 @@ description: Saiba como adicionar um repositório externo no Cloud Manager. O Cl
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 23%
@@ -17,16 +17,10 @@ ht-degree: 23%
 
 Saiba como adicionar um repositório externo no Cloud Manager. O Cloud Manager oferece suporte à integração com repositórios GitHub Enterprise, GitLab e Bitbucket.
 
-Os clientes agora também podem integrar seus repositórios Git do Azure DevOps no Cloud Manager, com suporte para repositórios DevOps do Azure modernos e repositórios VSTS herdados (Visual Studio Team Services).
+Os clientes agora também podem integrar seus repositórios Git do Azure DevOps no Cloud Manager, com suporte para repositórios Azure DevOps modernos e VSTS herdados (Visual Studio Team Services).
 
 * Para usuários do Edge Delivery Services, o repositório integrado pode ser usado para sincronizar e implantar o código do site.
 * Para usuários do AEM as a Cloud Service e do Adobe Managed Services (AMS), o repositório pode ser vinculado a pipelines de pilha completa e de front-end.
-
-<!--
->[!NOTE]
->
->The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts). -->
-
 
 ## Configurar um repositório externo
 
@@ -125,7 +119,7 @@ Consulte também [Gerenciar tokens de acesso](/help/implementing/cloud-manager/m
 | Opção de token de acesso | Descrição |
 | --- | --- |
 | **Usar token de acesso já existente** | Se você já forneceu um token de acesso ao repositório para sua organização e tem acesso a vários repositórios, você pode selecionar um token. Use a lista suspensa **Nome do token** para escolher o token que deseja aplicar ao repositório. Caso contrário, adicione um novo token de acesso. |
-| **Adicionar novo token de acesso** | <ul><li>No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<li>Crie um token de acesso do repositório usando a [documentação do Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Permissões necessárias para o PAT (Token de acesso pessoal) do Azure DevOps.<br>Essas permissões permitem que o Cloud Manager acesse o conteúdo do repositório, gerencie solicitações de pull e configure ou reaja a eventos de webhook.<br>Ao criar a senha de aplicativo no Azure DevOps, verifique se ela inclui as seguintes permissões de senha de aplicativo necessárias:<ul><li>Código (Leitura)</li><li>Código (Status)</li><li>Solicitação de pull Threads (leitura e gravação)</li></ul></li></li></ul></ul></ul><ul><li>No campo **Token de acesso**, cole o token que acabou de criar. |
+| **Adicionar novo token de acesso** | <ul><li>No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<li>Crie um token de acesso do repositório usando a [documentação do Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Permissões necessárias para o PAT (Personal Access Token) DevOps da Azure.<br>Essas permissões permitem que o Cloud Manager acesse o conteúdo do repositório, gerencie solicitações de pull e configure ou reaja a eventos de webhook.<br>Ao criar a senha de aplicativo no Azure DevOps, verifique se ela inclui as seguintes permissões de senha de aplicativo necessárias:<ul><li>Código (Leitura)</li><li>Código (Status)</li><li>Solicitação de pull Threads (leitura e gravação)</li></ul></li></li></ul></ul></ul><ul><li>No campo **Token de acesso**, cole o token que acabou de criar. |
 
 Após a validação, o repositório externo estará pronto para ser usado e vinculado a um pipeline.
 
@@ -302,7 +296,7 @@ Usa o status de confirmação para rastrear o progresso da validação da PR. No
 
 >[!TAB DevOps do Azure]
 
-O Azure DevOps rastreia a validação de solicitação de pull por meio de verificações de status. Quando o Cloud Manager executa a validação de solicitação de pull, ele adiciona verificações de status que aparecem na interface de solicitação de pull do Azure DevOps.
+O Azure DevOps rastreia a validação da solicitação de pull por meio de verificações de status. Quando o Cloud Manager executa a validação de solicitação de pull, ele adiciona verificações de status que aparecem na interface de solicitação de pull do Azure DevOps.
 
 Durante a validação da qualidade do código, uma verificação de status mostra que o processo está em andamento:
 
@@ -316,7 +310,7 @@ Se a validação falhar, informações detalhadas sobre o erro serão fornecidas
 
 ![Validação de DevOps do Azure de solicitações de pull com webhooks-3](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
 
-Para comentários e comentários sobre a solicitação de pull, o Cloud Manager adiciona comentários diretamente à solicitação de pull no Azure DevOps com detalhes de validação e todas as ações necessárias necessárias necessárias.
+Para comentários e comentários sobre solicitação de pull, o Cloud Manager adiciona comentários diretamente à solicitação de pull no Azure DevOps com detalhes de validação e todas as ações necessárias necessárias.
 
 ![Validação de DevOps do Azure de solicitações de pull com webhooks-4](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
