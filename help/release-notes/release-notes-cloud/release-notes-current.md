@@ -38,7 +38,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo de Visão geral da versão de janeiro de 2026 que exibe um resumo dos recursos adicionados na versão 2026.1.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479794/?captions=por_br&quality=12)
 
 
 ## Programas do AEM Beta {#aem-beta-programs}
