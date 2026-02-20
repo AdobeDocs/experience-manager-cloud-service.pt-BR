@@ -4,9 +4,9 @@ description: Saiba mais sobre os Agentes disponíveis no AEM para acelerar a cri
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: 5e1ae1de0bdeada01f03f3549ab9295ddef139ea
+source-git-commit: b42a713bb66d55c991dc1a341987d79b083c6ccd
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,6 @@ Esses agentes estão disponíveis no Adobe Experience Manager (AEM) as a Cloud S
 >
 >* No momento, eles não estão disponíveis para o AEM 6.5 nem para o AEM 6.5 LTS.
 >* Eles não estão disponíveis no AEM no local nem no Managed Services.
-
->[!IMPORTANT]
->
->Para usar os agentes que você precisa se inscrever no programa Explorer. Você pode encontrar mais informações sobre o Programa AEM Agents Explorer [aqui](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs).
 
 ## Agente de produção de experiência {#experience-production-agent}
 
