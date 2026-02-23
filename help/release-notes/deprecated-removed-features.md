@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 998615f7ba20fb77e05f8aa9a58bc1b61500cc3e
+source-git-commit: f2e707b9689eb99b4b91eae705d7daa8449a9d44
 workflow-type: tm+mt
 source-wordcount: '3842'
 ht-degree: 28%
@@ -35,10 +35,10 @@ Durante a janela de tempo de desativação, a Adobe lembrará os clientes das a�
 >
 >* **A partir de 26 de janeiro de 2026**: os emails de notificação da Central de Ações são enviados **semanalmente por ambiente** como um lembrete para remover o uso dessas APIs.
 >* **26 de fevereiro de 2026**: os pipelines do Cloud Manager que contêm código usando essas APIs **pausarão** durante a etapa **Qualidade do Código**. Um Gerente de implantação, Gerente de projeto ou Proprietário da empresa pode substituir o problema para permitir que o pipeline continue.
->* **26 de março de 2026**: os pipelines de Cloud Manager que contêm código usando essas APIs **falharão** durante a etapa **Qualidade do Código**, **bloqueando implantações** de novos códigos até que o uso seja removido.
+>* **30 de março de 2026**: os pipelines do Cloud Manager que contêm código usando essas APIs **falharão** durante a etapa **Qualidade do Código**, **bloqueando implantações** de novos códigos até que o uso seja removido.
 >* **30 de abril de 2026**: os ambientes que ainda usam essas APIs podem **não receber mais atualizações críticas de versões do Adobe**.
 >
->Para evitar bloqueios de implantação, remova o uso da API antes de 26 de março de 2026.
+>Para evitar bloqueios de implantação, remova o uso da API antes de 30 de março de 2026.
 
 ## Funcionalidade obsoleta {#deprecated-features}
 
@@ -59,8 +59,8 @@ A funcionalidade na tabela abaixo foi anunciada como obsoleta, mas ainda não fo
 | [!DNL Assets] | Transcodificação FFmpeg de vídeos. | Para gerar miniaturas do FFmpeg, use os [Microserviços de ativos](/help/assets/asset-microservices-overview.md). Para a transcodificação FFmpeg, use o [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Interface de replicação em árvore na guia &quot;Distribuir&quot; dos agentes de replicação (remoção após 30 de setembro de 2021) | [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Etapa do Fluxo de Trabalho de Ativação da Árvore](/help/operations/replication.md#tree-activation) se aproxima. |
 | [!DNL Foundation] | A guia Distribuir da tela do administrador do agente de replicação e a API de replicação não podem replicar pacotes de conteúdo maiores que 10 MB. | [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Etapa do Fluxo de Trabalho de Ativação da Árvore](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | As integrações que usam credenciais geradas de projetos da Adobe Developer Console estão perdendo gradualmente o suporte às credenciais da Conta de serviço (JWT). A partir de 1º de maio de 2024, novas credenciais de Conta de serviço (JWT) não poderão ser criadas no Adobe Developer Console. As credenciais da Conta de serviço (JWT) existentes permanecem utilizáveis para integrações configuradas até 1º de janeiro de 2025, quando param de funcionar, exigindo que os clientes migrem para as credenciais de servidor para servidor do OAuth. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) para credenciais OAuth de servidor para servidor. |
-| [!DNL Foundation] | Fluxo de trabalho da árvore de conteúdo de publicação e a etapa relacionada do Fluxo de trabalho da árvore de conteúdo de publicação, que foi usada para replicações de hierarquias de conteúdo. | Use a [Etapa &#x200B;](/help/operations/replication.md#tree-activation) do Fluxo de Trabalho de Ativação da Árvore, que tem melhor desempenho. |
+| [!DNL Foundation] | As integrações que usam credenciais geradas de projetos da Adobe Developer Console estão perdendo gradualmente o suporte às credenciais da Conta de serviço (JWT). A partir de 1º de maio de 2024, novas credenciais de Conta de serviço (JWT) não poderão ser criadas no Adobe Developer Console. As credenciais da Conta de serviço (JWT) existentes permanecem utilizáveis para integrações configuradas até 1º de janeiro de 2025, quando param de funcionar, exigindo que os clientes migrem para as credenciais de servidor para servidor do OAuth. [Saiba mais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) para credenciais OAuth de servidor para servidor. |
+| [!DNL Foundation] | Fluxo de trabalho da árvore de conteúdo de publicação e a etapa relacionada do Fluxo de trabalho da árvore de conteúdo de publicação, que foi usada para replicações de hierarquias de conteúdo. | Use a [Etapa ](/help/operations/replication.md#tree-activation) do Fluxo de Trabalho de Ativação da Árvore, que tem melhor desempenho. |
 | [!DNL Foundation] | Utilização da interface do usuário do para compactar/minificar bibliotecas de clientes do JavaScript. A Adobe não planeja atualizar ainda mais a biblioteca YUI. | A Adobe recomenda que os clientes mudem para o Google Closure Compiler (GCC) para sua implementação. |
 | [!DNL Foundation] | Suporte para com.adobe.granite.oauth.server | Integração do Adobe IMS |
 
@@ -71,7 +71,7 @@ Esta seção lista as funcionalidades que foram removidas.
 | Área | Destaque | Substituição | Data definida para remoção |
 | ------------ | ------------------ | ----------- | ------------------- |
 | Interface do usuário | A interface clássica é removida da interface do usuário do produto. Algumas caixas de diálogo da interface clássica estão disponíveis para alguns recursos selecionados, como o Verificador de links, a Limpeza de versão e algumas configurações do Cloud Service. As próximas [atualizações do produto](/help/release-notes/home.md) podem remover ainda mais a disponibilidade da interface clássica. | Interface do usuário padrão | Removido |
-| [!DNL Dynamic Media] | As integrações anteriores com o [Dynamic Media Classic](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) e o [Dynamic Media Hybrid mode](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) não estão disponíveis no [!DNL Experience Manager] as a [!DNL Cloud Service]. | Use o [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornecido com o [!DNL Experience Manager] as a [!DNL Cloud Service]. | Removido |
+| [!DNL Dynamic Media] | As integrações anteriores com o [Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) e o [Dynamic Media Hybrid mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) não estão disponíveis no [!DNL Experience Manager] as a [!DNL Cloud Service]. | Use o [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornecido com o [!DNL Experience Manager] as a [!DNL Cloud Service]. | Removido |
 | [!DNL Sites] | Portal Director e Portlet Component | Estes recursos foram descontinuados no [!DNL Experience Manager] 6.4 e agora foram removidos do [!DNL Experience Manager]. | Removido |
 | [!DNL Sites] | Importador de design | Este recurso foi removido porque as seções imutáveis do repositório do [!DNL Experience Manager] não estão acessíveis no tempo de execução. | Removido |
 | [!DNL Assets] | O compartilhamento do [!DNL Assets] com os serviços Assets Core Service e Creative Cloud não está disponível. | Para integração com a [!DNL Adobe Creative Cloud], use o [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html). | Removido |
@@ -90,10 +90,10 @@ As APIs na tabela abaixo (clique para expandir e ver) foram anunciadas como obso
 >
 > * **A partir de 26 de janeiro de 2026**: os emails de notificação da Central de Ações são enviados **semanalmente por ambiente** como um lembrete para remover o uso dessas APIs.
 > * **26 de fevereiro de 2026**: os pipelines do Cloud Manager que contêm código usando essas APIs **pausarão** durante a etapa **Qualidade do Código**. Um Gerente de implantação, Gerente de projeto ou Proprietário da empresa pode substituir o problema para permitir que o pipeline continue.
-> * **26 de março de 2026**: os pipelines de Cloud Manager que contêm código usando essas APIs **falharão** durante a etapa **Qualidade do Código**, **bloqueando implantações** de novos códigos até que o uso seja removido.
-> * **30 de abril de 2026**: os ambientes que ainda usam essas APIs podem **não receber mais atualizações críticas de versões do Adobe**.
+> * **30 de março de 2026**: os pipelines do Cloud Manager que contêm código usando essas APIs **falharão** durante a etapa **Qualidade do Código**, **bloqueando implantações** de novos códigos até que o uso seja removido.
+> * **4 de maio de 2026**: os ambientes que ainda usam essas APIs podem **não receber mais atualizações críticas de versões do Adobe**.
 >
-> Para evitar bloqueios de implantação, remova o uso da API antes de 26 de março de 2026.
+> Para evitar bloqueios de implantação, remova o uso da API antes de 30 de março de 2026.
 
 
 <details>
@@ -343,7 +343,7 @@ Esta seção lista APIs que foram descontinuadas e removidas. Algumas APIs fazem
 
 Esta seção reflete a orientação de remoção de APIs para várias APIs nas tabelas acima.
 
-Para identificar quais APIs Java obsoletas seu código está usando, integre o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) ao seu projeto Maven e execute-o localmente. O relatório lista todos os usos de API obsoletos detectados e indica qual pacote OSGi está fazendo referência a cada API. Consulte [este tutorial](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) para saber como usar o plug-in Maven.
+Para identificar quais APIs Java obsoletas seu código está usando, integre o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) ao seu projeto Maven e execute-o localmente. O relatório lista todos os usos de API obsoletos detectados e indica qual pacote OSGi está fazendo referência a cada API. Consulte [este tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) para saber como usar o plug-in Maven.
 
 Embora você deva corrigir todas as APIs obsoletas ao longo do tempo, priorize quaisquer APIs listadas na tabela API obsoleta com uma data de remoção do Target de 26 de fevereiro de 2026 (ou anterior). No relatório do AEM Analyzer, essas APIs podem aparecer com uma data de remoção efetiva em 31/8/2025.
 
@@ -477,7 +477,7 @@ As seções abaixo refletem a superfície de configuração OSGi do AEM as a Clo
 
 O código do cliente pode configurar qualquer configuração OSGi não listada.
 
-Essas regras são validadas durante o processo de criação do Cloud Manager. Regras adicionais podem ser adicionadas ao longo do tempo e a data de aplicação esperada é anotada na tabela. Espera-se que os clientes cumpram essas regras até a data de aplicação prevista. O não cumprimento das regras após a data de remoção gera erros no processo de criação do Cloud Manager. Os projetos Maven devem incluir o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) para sinalizar erros de configuração OSGI durante o desenvolvimento local do SDK.
+Essas regras são validadas durante o processo de criação do Cloud Manager. Regras adicionais podem ser adicionadas ao longo do tempo e a data de aplicação esperada é anotada na tabela. Espera-se que os clientes cumpram essas regras até a data de aplicação prevista. O não cumprimento das regras após a data de remoção gera erros no processo de criação do Cloud Manager. Os projetos Maven devem incluir o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) para sinalizar erros de configuração OSGI durante o desenvolvimento local do SDK.
 
 Informações adicionais sobre a configuração OSGI podem ser encontradas em [este local](/help/implementing/deploying/configuring-osgi.md).
 
