@@ -55,7 +55,7 @@ Com esses mecanismos de grade responsivos, você pode:
 
 ## Ativar o emulador {#enabling-emulator}
 
-O [Arquétipo de Projeto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) e o [Modelo de Site Padrão](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) já estão habilitados para usar o emulador. Se você desenvolveu seu próprio conteúdo não baseado nos Componentes principais ou no arquétipo, consulte o documento [Design responsivo](/help/implementing/developing/introduction/responsive-design.md) para obter detalhes sobre como desenvolver seus componentes enquanto aproveita esses recursos.
+O [Arquétipo de Projeto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) e o [Modelo de Site Padrão](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) já estão habilitados para usar o emulador. Se você desenvolveu seu próprio conteúdo não baseado nos Componentes principais ou no arquétipo, consulte o documento [Design responsivo](/help/implementing/developing/introduction/responsive-design.md) para obter detalhes sobre como desenvolver seus componentes enquanto aproveita esses recursos.
 
 ## Ativar modo de layout para o site {#activate-layout-mode-for-your-site}
 

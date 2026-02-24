@@ -47,7 +47,7 @@ Os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experi
 
 Eles são criados usando as práticas recomendadas do AEM e são a base da experiência de criação do AEM. Os componentes principais podem ser facilmente estendidos pelos desenvolvedores para atender às necessidades específicas do projeto.
 
-Junto com os Componentes principais do WCM, você também pode usar os [Componentes principais de formulários adaptáveis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Esses Componentes principais fornecem métodos padrão e mais fáceis de [criar ou adicionar formulários a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+Junto com os Componentes principais do WCM, você também pode usar os [Componentes principais de formulários adaptáveis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR#features). Esses Componentes principais fornecem métodos padrão e mais fáceis de [criar ou adicionar formulários a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Configuração de modelos {#configuring-templates}
 
