@@ -4,10 +4,11 @@ description: Saiba mais sobre as noções básicas de acesso e navegação no Ed
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: cca471c5511e7df57d2156d39649194f7a18a79c
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1880'
 ht-degree: 17%
 
 ---
@@ -78,7 +79,7 @@ A barra de navegação superior do Experience Platform está sempre presente na 
 
 ![O cabeçalho da Experience Cloud](assets/experience-cloud-header.png)
 
-Para obter detalhes sobre a barra de navegação superior do Experience Platform, consulte o [guia da interface do usuário do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+Para obter detalhes sobre a barra de navegação superior do Experience Platform, consulte o [guia da interface do usuário do Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Conta {#user-properties}
 

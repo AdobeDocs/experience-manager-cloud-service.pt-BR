@@ -3,12 +3,13 @@ title: Entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL
 description: Saiba mais sobre os conceitos básicos da criação de um CMS headless no AEM usando fragmentos de conteúdo com GraphQL para entrega de conteúdo headless.
 feature: Content Fragments, GraphQL API
 role: Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 3aa7073a-6c6b-47b7-99d8-bba2d9a00af5
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 91%
+source-wordcount: '742'
+ht-degree: 90%
 
 ---
 
@@ -64,7 +65,7 @@ A implementação da API GraphQL do AEM é baseada nas [bibliotecas GraphQL do J
 Os [fragmentos de conteúdo](#content-fragments) podem ser usados como base para o GraphQL em consultas do AEM, pois:
 
 * Permitem projetar, criar, preparar e publicar conteúdo independente de páginas.
-* Os [Modelos de fragmentos do conteúdo](#content-fragments-models) fornecem a estrutura necessária por meio de tipos de dados definidos.
+* Os [Modelos de fragmentos de conteúdo](#content-fragments-models) fornecem a estrutura necessária por meio de tipos de dados definidos.
 * A [referência do fragmento](#fragment-references), disponível ao definir um modelo, pode ser usada para definir camadas adicionais de estrutura.
 
 ![Fragmentos de conteúdo para uso com GraphQL](assets/cf-contentdelivery-cf-use-with-graphql.png "Fragmentos de conteúdo para uso com GraphQL")
@@ -77,7 +78,7 @@ Fragmentos de conteúdo:
 
 * Baseiam-se em um [Modelo de fragmento de conteúdo](#content-fragments-models), que predefine a estrutura do fragmento resultante.
 
-### Modelos de fragmentos do conteúdo {#content-fragments-models}
+### Modelos de fragmentos de conteúdo {#content-fragments-models}
 
 Esses [Modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md):
 

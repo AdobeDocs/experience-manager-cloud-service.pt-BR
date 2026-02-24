@@ -1,14 +1,15 @@
 ---
 title: Trabalhar com fluxos de trabalho de projeto
 description: Vários fluxos de trabalho de projeto estão disponíveis imediatamente.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 96%
+source-wordcount: '455'
+ht-degree: 95%
 
 ---
 
@@ -18,9 +19,9 @@ Os fluxos de trabalho de projeto disponíveis prontos para uso incluem o seguint
 
 * **Fluxo de trabalho para aprovação de projeto** - Esse fluxo de trabalho permite atribuir conteúdo a um usuário, bem como analisá-lo e aprová-lo.
 * **Solicitar inicialização** - um fluxo de trabalho que solicita uma inicialização.
-* **Solicitar página de aterrissagem** - esse fluxo de trabalho solicita uma página de aterrissagem.
+* **Solicitar página de destino** - esse fluxo de trabalho solicita uma página de destino.
 * **Solicitar email** - Fluxo de trabalho para solicitar um email.
-* **Criar e traduzir cópia do DAM e Criar cópia de idioma do DAM** - cria binários, metadados e tags traduzidos para arquivos e pastas.
+* **Criar e traduzir cópia do DAM e Criar cópia no idioma de destino do DAM** - cria binários, metadados e tags traduzidos para arquivos e pastas.
 
 Dependendo do modelo de projeto selecionado, há determinados fluxos de trabalho disponíveis:
 
@@ -28,18 +29,18 @@ Dependendo do modelo de projeto selecionado, há determinados fluxos de trabalho
 |---|:-:|:-:|
 | Fluxo de trabalho de aprovação de projeto | x |  |
 | Solicitar inicialização | x |  |
-| Solicitar página de aterrissagem | x |  |
+| Solicitar página de destino | x |  |
 | Solicitar email | x | |
-| Criar cópia de idioma do DAM&ast; |  | x |
-| Criar e traduzir cópia de idioma do DAM;&ast; |   | x |
+| Criar cópia no idioma de destino do DAM&amp;ast; |  | x |
+| Criar e traduzir cópia no idioma de destino do DAM;&amp;ast; |   | x |
 
 >[!NOTE]
 >
->&ast; Esses fluxos de trabalho não são iniciados no bloco **Fluxo de trabalho** em Projetos. Consulte [Criação de cópias de idioma para arquivos](/help/sites-cloud/administering/translation/managing-projects.md).
+>&amp;ast; Esses fluxos de trabalho não são iniciados no bloco **Fluxo de trabalho** em Projetos. Consulte [Criação de cópias de idioma para arquivos](/help/sites-cloud/administering/translation/managing-projects.md).
 
 As etapas para iniciar e concluir fluxos de trabalho são as mesmas, independentemente do fluxo de trabalho escolhido. Somente as etapas são alteradas.
 
-Um fluxo de trabalho é iniciado diretamente em Projetos (exceto para Criar Cópia de Idioma do DAM ou Criar e Traduzir Cópia de Idioma do DAM). Informações sobre quaisquer tarefas pendentes em um projeto estão listadas no bloco **Tarefas**. As notificações para tarefas que precisam ser concluídas são exibidas ao lado do ícone do usuário.
+Um fluxo de trabalho é iniciado diretamente em Projetos (exceto para Criar cópia no idioma de destino do DAM ou Criar e Traduzir cópia no idioma de destino do DAM). Informações sobre quaisquer tarefas pendentes em um projeto estão listadas no bloco **Tarefas**. As notificações para tarefas que precisam ser concluídas são exibidas ao lado do ícone do usuário.
 
 Para obter mais informações sobre como trabalhar com fluxos de trabalho no AEM, consulte o seguinte:
 
@@ -71,6 +72,6 @@ Esse fluxo de trabalho permite solicitar um lançamento.
 
 1. Clique em **Criar**. O fluxo de trabalho é iniciado. O fluxo de trabalho aparece na lista **Fluxos de trabalho** (clique nas reticências **...** no bloco **Fluxos de trabalho** para acessar essa lista).
 
-## Criar (e traduzir) fluxo de trabalho de cópia de idioma para ativos {#create-and-translate-language-copy-workflow-for-assets}
+## Criar (e traduzir) fluxo de trabalho de cópia no idioma de destino para ativos {#create-and-translate-language-copy-workflow-for-assets}
 
-Os fluxos de trabalho **Criar cópia de idioma** e **Criar e traduzir cópia de idioma** são abordados detalhadamente na seção [Criar cópias de idioma para arquivos](/help/assets/translate-assets.md).
+Os fluxos de trabalho **Criar cópia no idioma de destino** e **Criar e traduzir cópia no idioma de destino** são abordados detalhadamente na seção [Criar cópias de idioma para arquivos](/help/assets/translate-assets.md).

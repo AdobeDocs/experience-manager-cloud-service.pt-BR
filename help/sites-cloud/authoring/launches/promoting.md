@@ -1,14 +1,15 @@
 ---
 title: Promoção de inicializações
 description: É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 98%
+source-wordcount: '818'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 98%
 É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar. Quando uma página de lançamento é promovida, a página de origem correspondente é substituída pelo conteúdo da página promovida. As seguintes opções estão disponíveis ao promover uma página de lançamento:
 
 * Promover somente a página atual ou todo o lançamento.
-* Promover as páginas secundárias da página atual.
+* Promover as páginas filhas da página atual.
 * Promover o lançamento completo ou somente as páginas alteradas.
 * Excluir o lançamento após promovê-lo.
 
@@ -135,8 +136,8 @@ Use modelos de fluxo de trabalho para executar o processamento em massa das pág
 1. Quando autores(as) promovem as páginas de lançamento, elas são armazenadas no pacote de fluxo de trabalho.
 1. Inicie um modelo de fluxo de trabalho usando o pacote como o conteúdo.
 
-Para iniciar um fluxo de trabalho automaticamente quando as páginas forem promovidas, configure um ativador de fluxo de trabalho para o nó do pacote. <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
+Para iniciar um fluxo de trabalho automaticamente quando as páginas forem promovidas, configure um inicializador de fluxo de trabalho para o nó do pacote. <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
 
-Por exemplo, você pode gerar solicitações de ativação de página automaticamente quando autores(as) promoverem páginas de lançamento. Configure um iniciador de fluxo de trabalho para iniciar o fluxo de trabalho Solicitar ativação quando o nó do pacote for modificado.
+Por exemplo, você pode gerar solicitações de ativação de página automaticamente quando autores(as) promoverem páginas de lançamento. Configure um inicializador de fluxo de trabalho para iniciar o fluxo de trabalho Solicitar ativação quando o nó do pacote for modificado.
 
 ![Fluxo de trabalho de promoção](/help/sites-cloud/authoring/assets/launches-create-workflow.png)

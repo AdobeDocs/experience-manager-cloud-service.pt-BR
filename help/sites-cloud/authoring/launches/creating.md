@@ -1,14 +1,15 @@
 ---
 title: Criação de inicializações
 description: É possível criar um lançamento para permitir a atualização de uma nova versão de páginas da Web para ativação futura.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 94%
+source-wordcount: '1106'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 94%
 Crie um lançamento para permitir a atualização de uma nova versão de páginas da Web para ativação futura. Ao criar a inicialização, especifique um título e a página de origem:
 
 * O título é exibido no painel [Referências](/help/sites-cloud/authoring/sites-console/console-side-panel.md#references), onde os autores podem acessá-lo para trabalhar nele.
-* As páginas secundárias da página de origem são incluídas no lançamento por padrão. Você pode usar somente a página de origem, se desejar.
+* As páginas filhas da página de origem são incluídas no lançamento por padrão. Você pode usar somente a página de origem, se desejar.
 * Por padrão, [Live Copy](/help/sites-cloud/administering/msm/overview.md) atualiza automaticamente as páginas de lançamento à medida que as páginas de origem são alteradas. É possível especificar que uma cópia estática seja criada para impedir alterações automáticas.
 
 Como opção, especifique a **Data de inicialização** (e a hora) para definir quando as páginas de inicialização devem ser promovidas e ativadas. No entanto, a **Data de inicialização** só funciona em combinação com o sinalizador **Pronto para produção** (consulte [Editar uma configuração de inicialização](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)); para que as ações realmente ocorram automaticamente, ambas devem ser definidas.
@@ -73,7 +74,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 
    * **Incluir subpáginas**:
 
-      * Especifique se você deseja criar a inicialização com ou sem as páginas secundárias.  Por padrão, essas subpáginas são incluídas.
+      * Especifique se você deseja criar a inicialização com ou sem as páginas filhas.  Por padrão, essas subpáginas são incluídas.
 
    Continue clicando em **Próximo**.
 

@@ -1,13 +1,14 @@
 ---
 title: Participar de fluxos de trabalho
 description: Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execute uma atividade em uma página ou ativo.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1513'
 ht-degree: 77%
 
 ---
@@ -39,10 +40,10 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
    * O nome do(s) fluxo(s) de trabalho que está sendo aplicado(s) à página; por exemplo, Solicitação de ativação.
    * Quaisquer ações disponíveis para o usuário atual para a etapa atual do fluxo de trabalho, por exemplo, Concluir, Delegar, Exibir detalhes.
    * O número de fluxos de trabalho aos quais a página está sujeita. É possível:
-      * use as setas para a esquerda/direita para navegar pelas informações de status dos vários workflows.
+      * use as setas para a esquerda/direita para navegar pelas informações de status dos vários fluxos de trabalho.
       * selecione no número real para abrir uma lista suspensa de todos os workflows aplicáveis e selecione o workflow que deseja exibir na barra de status.
 
-  ![Página com vários workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+  ![Página com vários fluxos de trabalho](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
   >[!NOTE]
   >

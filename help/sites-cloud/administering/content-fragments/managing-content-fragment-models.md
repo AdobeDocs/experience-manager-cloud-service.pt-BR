@@ -4,10 +4,11 @@ description: Saiba como gerenciar modelos de fragmento de conteúdo; eles servem
 feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2481'
 ht-degree: 34%
 
 ---

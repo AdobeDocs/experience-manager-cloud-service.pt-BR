@@ -1,14 +1,15 @@
 ---
 title: Exportar para CSV
 description: Exportar informações sobre suas páginas para um arquivo CSV em seu sistema local
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 90%
+source-wordcount: '203'
+ht-degree: 88%
 
 ---
 
@@ -41,8 +42,8 @@ O assistente **Criar exportação de arquivos CSV** permite selecionar:
       * Tempo na página
 * Profundidade
    * Caminho principal
-   * Apenas secundários diretos
-   * Níveis adicionais de secundários
+   * Apenas filhos diretos
+   * Níveis adicionais de filhos
    * Níveis
 
 O arquivo `export.csv` resultante pode ser aberto no Excel ou qualquer outro aplicativo compatível.

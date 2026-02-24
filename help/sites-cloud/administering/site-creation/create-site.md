@@ -3,12 +3,13 @@ title: Criação de um site
 description: Saiba como usar o AEM para criar um site usando modelos de site para definir o estilo e a estrutura de seu site.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 52%
+source-wordcount: '732'
+ht-degree: 51%
 
 ---
 
@@ -29,7 +30,7 @@ Reserve tempo para considerar a finalidade do site e o conteúdo planejado com b
 
 Como a estrutura do site é muito importante para o sucesso dele, é conveniente ter estruturas predefinidas disponíveis para implantar rapidamente um novo site com base em um conjunto de padrões existentes. Os modelos de site são uma maneira de combinar conteúdos básicos de sites em um pacote conveniente e reutilizável.
 
-Os modelos de site geralmente contêm o conteúdo básico e a estrutura do site, bem como informações de estilo para iniciar o novo site rapidamente. Esses modelos são bastante eficientes pois podem ser reutilizados e personalizados. E como é possível ter vários modelos disponíveis na sua instância do AEM, você tem a flexibilidade de criar sites diferentes para atender a várias necessidades comerciais.
+Os modelos de site geralmente contêm o conteúdo básico e a estrutura do site, bem como informações de estilo para iniciar o novo site rapidamente. Esses modelos são bastante eficientes pois podem ser reutilizados e personalizados. E como é possível ter vários modelos disponíveis na sua instância do AEM, você tem a flexibilidade de criar sites diferentes para atender a várias necessidades empresariais.
 
 >[!TIP]
 >

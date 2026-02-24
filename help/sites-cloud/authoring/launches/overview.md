@@ -1,13 +1,14 @@
 ---
 title: Lançamentos para páginas
 description: Saiba como usar Inicializações para páginas no Adobe Experience Manager as a Cloud Service. Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura, mantendo as páginas atuais.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 20ad1d468ac0d8ec3933477f954120debe4e9240
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1033'
 ht-degree: 72%
 
 ---
@@ -73,7 +74,7 @@ Eles permitem:
       * Publicar o conteúdo das páginas de origem (após promover de volta).
       * Promover todas as páginas ou somente as páginas modificadas.
    * Automaticamente - isso envolve o seguinte:
-      * O campo **Data de lançamento** (**Data de ativação**):**&#x200B;** pode ser definida ao criar ou editar um lançamento.
+      * O campo **Data de lançamento** (**Data de ativação**):**** pode ser definida ao criar ou editar um lançamento.
       * O sinalizador **Pronto para produção** : só pode ser definido ao editar um lançamento.
       * Se o sinalizador **Pronto para produção** estiver definido, a inicialização será executada automaticamente nas páginas de produção na **Data** do **Lançamento**(**Data de ativação**) especificada. Após a promoção, as páginas de produção são publicadas automaticamente.\
         Se nenhuma data tiver sido definida, o sinalizador não terá efeito.

@@ -1,13 +1,14 @@
 ---
 title: Criação e gerenciamento de ofertas (console Ofertas)
 description: Use o console Ofertas para criar ofertas que você possa usar em experiências de atividades
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1357'
 ht-degree: 82%
 
 ---

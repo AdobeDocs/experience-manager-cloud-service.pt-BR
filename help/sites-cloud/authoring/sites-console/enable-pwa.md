@@ -1,21 +1,22 @@
 ---
-title: Ativação de recursos do aplicativo web progressivo
+title: Habilitação de recursos progressivos do aplicativo web
 description: O AEM Sites permite que o autor de conteúdo ative recursos de aplicativo web progressivo para qualquer site por meio de uma configuração simples, sem necessidade de desenvolver código.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 index: false
-source-git-commit: 19a16bbfc23806f8bc655c0d19713df500e3b12b
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1902'
 ht-degree: 61%
 
 ---
 
-# Ativação de recursos do aplicativo web progressivo {#enabling-pwa}
+# Habilitação de recursos progressivos do aplicativo web {#enabling-pwa}
 
-Por meio de uma configuração simples, um autor de conteúdo agora pode ativar recursos do aplicativo web progressivo (PWA) para experiências criadas no AEM Sites.
+Por meio de uma configuração simples, um autor de conteúdo agora pode habilitar recursos do aplicativo web progressivo (PWA) para experiências criadas no AEM Sites.
 
 >[!CAUTION]
 >
@@ -43,7 +44,7 @@ Com o PWA, o usuário tem uma cópia local do site, dando uma experiência semel
 
 >[!NOTE]
 >
->Aplicativos Web progressivos são uma tecnologia em evolução, e o suporte para instalação de aplicativos locais e outros recursos [&#x200B; depende do navegador usado](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
+>Aplicativos Web progressivos são uma tecnologia em evolução, e o suporte para instalação de aplicativos locais e outros recursos [ depende do navegador usado](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -103,7 +104,7 @@ Dependendo do seu projeto, talvez você queira incluir diferentes tipos de exten
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 ```
 
-## Ativar o PWA no seu site {#enabling-pwa-for-your-site}
+## Habilitar o PWA no seu site {#enabling-pwa-for-your-site}
 
 Com [os pré-requisitos](#prerequisites) atendidos, é fácil para um autor de conteúdo habilitar os recursos do PWA em um site. Veja a seguir um esboço básico de como fazer isso. As opções individuais são detalhadas na seção [Opções Detalhadas](#detailed-options).
 
@@ -111,10 +112,10 @@ Com [os pré-requisitos](#prerequisites) atendidos, é fácil para um autor de c
 1. No menu principal, selecione **Navegação** > **Sites**.
 1. Selecione o projeto do seu site e selecione [**Propriedades**](/help/sites-cloud/authoring/sites-console/page-properties.md) ou use a tecla de atalho `p`.
 1. Selecione a guia **Aplicativo web progressivo** e configure as propriedades aplicáveis. No mínimo, você deseja:
-   1. Selecionar a opção **Ativar o PWA**.
+   1. Selecionar a opção **Habilitar PWA**.
    1. Definir o **URL de inicialização**.
 
-      ![Ativar PWA](../assets/pwa-enable.png)
+      ![Habilitar PWA](../assets/pwa-enable.png)
 
    1. Faça upload de um ícone PNG de 512x512 no DAM e faça referência a ele como o ícone do aplicativo.
 

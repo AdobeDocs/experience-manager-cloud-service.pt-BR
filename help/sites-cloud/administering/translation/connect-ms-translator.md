@@ -3,11 +3,12 @@ title: Conectar ao Microsoft Translator
 description: Saiba como conectar o AEM ao Microsoft Translator pronto para uso para automatizar seu fluxo de trabalho de tradução.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '299'
 ht-degree: 52%
 
 ---
@@ -18,7 +19,7 @@ O AEM fornece um conector integrado para o [Microsoft Translator](https://www.mi
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM AEM, ideais para aqueles sem experiência com o ou com a tradução.
+>Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência com o AEM ou com a tradução.
 
 | Propriedade | Descrição |
 |---|---|
@@ -29,7 +30,7 @@ O AEM fornece um conector integrado para o [Microsoft Translator](https://www.mi
 
 O procedimento a seguir cria uma configuração do Microsoft Translator.
 
-1. No [painel de navegação](/help/sites-cloud/authoring/basic-handling.md#first-steps), selecione **Ferramentas** > **Cloud Service** > **Cloud Service de tradução**.
+1. No [painel de navegação](/help/sites-cloud/authoring/basic-handling.md#first-steps), selecione **Ferramentas** > **Serviços em Nuvem** > **Serviços de Tradução em Nuvem**.
 1. Navegue até o local em que deseja criar a configuração. Normalmente, isso fica na raiz do site ou pode ser uma configuração global padrão.
 1. Selecione o botão **Criar**.
 1. Defina sua configuração.

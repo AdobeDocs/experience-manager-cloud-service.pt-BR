@@ -1,13 +1,14 @@
 ---
 title: Sua caixa de entrada
 description: Saiba como usar as notificações que chegam em sua Caixa de entrada para gerenciar suas tarefas.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '916'
 ht-degree: 88%
 
 ---

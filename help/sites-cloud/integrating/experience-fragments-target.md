@@ -1,14 +1,15 @@
 ---
 title: Exportar fragmentos de experiência para o Adobe Target
 description: Saiba como exportar fragmentos de experiência para o Adobe Target, testar e personalizar experiências.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 95%
+source-wordcount: '2198'
+ht-degree: 93%
 
 ---
 
@@ -54,8 +55,8 @@ Os fragmentos de experiência podem ser exportados para o espaço de trabalho pa
 >Para obter mais informações, consulte o seguinte:
 >
 >* [Desenvolvimento do Adobe Target](https://developers.adobetarget.com/)
->* [Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
->* [Adobe Target - como usar os fragmentos de experiência do Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=pt-BR)
+>* [Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction)
+>* [Adobe Target - como usar os fragmentos de experiência do Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
 >* [AEM 6.5 - configuração manual da integração com o Adobe Target - criação de uma configuração da nuvem do Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=pt-BR#creating-a-target-cloud-configuration)
 
 ## Pré-requisitos {#prerequisites}
@@ -64,7 +65,7 @@ Várias ações são necessárias:
 
 1. Você precisa [integrar o AEM ao Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-1. Os fragmentos de experiência são exportados da instância do autor do AEM, portanto, é necessário [Configurar o Externalizador de links do AEM](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer) na instância do autor para garantir que todas as referências do fragmento de experiência sejam externalizadas para entrega na Web.
+1. Os fragmentos de experiência são exportados da instância de criação do AEM, portanto, é necessário [Configurar o Externalizador de links do AEM](/help/implementing/developing/extending/experience-fragments.md#configuring-the-aem-link-externalizer) na instância de criação para garantir que todas as referências do fragmento de experiência sejam externalizadas para entrega na Web.
 
    >[!NOTE]
    >
@@ -86,7 +87,7 @@ As opções necessárias podem ser selecionadas nas **Propriedades da página** 
 
    >[!NOTE]
    >
-   >Se você adicionar a configuração da nuvem à pasta principal do fragmento de experiência, a configuração será herdada pelas pastas secundárias.
+   >Se você adicionar a configuração da nuvem à pasta principal do fragmento de experiência, a configuração será herdada pelas pastas filhas.
    >
    >Se você adicionar a configuração da nuvem ao próprio fragmento de experiência, a configuração será herdada por todas as variações.
 
@@ -192,13 +193,13 @@ Agora é possível selecionar a nova configuração para edição.
 
    * **Usar direcionamento preciso:** por padrão, essa caixa de seleção está marcada. Se selecionada, a configuração do Cloud Service aguardará o carregamento do contexto antes de carregar o conteúdo. Veja a observação a seguir.
 
-   * **Sincronizar segmentos do Adobe Target:** selecione essa opção para baixar segmentos definidos no Target e usá-los no AEM. Selecione essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (O termo AEM de &quot;segmento&quot; é equivalente ao termo &quot;público-alvo&quot; do Target.)
+   * **Sincronizar segmentos do Adobe Target:** selecione essa opção para baixar segmentos definidos no Target e usá-los no AEM. Selecione essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (O termo &quot;segmento&quot; do AEM é equivalente ao termo &quot;público-alvo&quot; do Target.)
 
    * **Biblioteca do cliente:** o padrão é a AT.js (a mbox.js foi descontinuada)
 
      >[!NOTE]
      >
-     >O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=pt-BR), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
+     >O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
      >
      >A mbox.js foi descontinuada e será removida em um estágio posterior.
      >
@@ -219,11 +220,11 @@ Agora é possível selecionar a nova configuração para edição.
 
      >[!NOTE]
      >
-     >Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é ativado.
+     >Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é habilitado.
      >
      >Direcionamento preciso significa que a configuração do Cloud Service aguarda o contexto ser carregado antes de carregar o conteúdo. Como resultado, em termos de desempenho, o direcionamento preciso pode criar um atraso de alguns milissegundos antes de carregar o conteúdo.
      >
-     >O direcionamento preciso é sempre ativado na instância do autor. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
+     >O direcionamento preciso é sempre habilitado na instância de criação. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
      >
      >Se você ***já*** tiver criado componentes direcionados e alterar essa configuração, suas alterações não afetarão esses componentes. Você deve alterar esses componentes diretamente.
 
@@ -270,7 +271,7 @@ Sua estrutura foi criada. Para replicar a estrutura para a instância de publica
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=pt-BR).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -335,7 +336,7 @@ Para exportar um fragmento de experiência do AEM para o Target (depois de espec
    >
    >Se o fragmento de experiência já tiver sido exportado, selecione **Atualizar no Adobe Target**.
 
-1. Selecione **Exportar sem publicar** ou **Publish**, conforme necessário.
+1. Selecione **Exportar sem publicar** ou **Publicar**, conforme necessário.
 
    >[!NOTE]
    >

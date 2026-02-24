@@ -1,13 +1,14 @@
 ---
 title: Diferencial de páginas
 description: O recurso de diferencial de páginas permite a comparação conveniente lado a lado de duas páginas com suas diferenças destacadas.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '641'
 ht-degree: 85%
 
 ---

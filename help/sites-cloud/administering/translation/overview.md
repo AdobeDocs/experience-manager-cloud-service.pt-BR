@@ -3,25 +3,26 @@ title: Tradução de conteúdo para sites multilíngues
 description: Obtenha uma visão geral de como traduzir conteúdo para sites multilíngues.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 82%
+source-wordcount: '294'
+ht-degree: 81%
 
 ---
 
 # Tradução de conteúdo para sites multilíngues {#translating-content-for-multilingual-sites}
 
-Automatize a tradução de conteúdo e ativos da página para criar e manter sites multilíngues. Para automatizar workflows de tradução, você integra provedores de serviços de tradução ao AEM e cria projetos para traduzir o conteúdo em vários idiomas. O AEM permite workflows de tradução humana e de máquina.
+Automatize a tradução de conteúdo e ativos da página para criar e manter sites multilíngues. Para automatizar fluxos de trabalho de tradução, você integra provedores de serviços de tradução ao AEM e cria projetos para traduzir o conteúdo em vários idiomas. O AEM permite fluxos de trabalho de tradução humana e de máquina.
 
 * **Tradução humana:** o conteúdo é enviado para seu provedor de tradução e traduzido por tradutores profissionais. Quando concluído, o conteúdo traduzido é retornado e importado para o AEM. Quando seu provedor de tradução é integrado ao AEM, o conteúdo é enviado automaticamente entre o AEM e o provedor de tradução.
 * **Tradução automática:** o serviço de tradução automática traduz imediatamente seu conteúdo.
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM AEM, ideais para aqueles sem experiência com o ou com a tradução.
+>Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência com o AEM ou com a tradução.
 
 A tradução de conteúdo envolve as seguintes etapas:
 

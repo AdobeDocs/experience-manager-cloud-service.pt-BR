@@ -1,13 +1,14 @@
 ---
 title: Registro, logon e perfil do usuário
 description: Saiba mais sobre registro, logon, dados do usuário e sincronização de grupos no AEM as a Cloud Service
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 3cc787fe9a0be9a687f7c20744d93f1df4b76f87
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1493'
 ht-degree: 58%
 
 ---
@@ -92,7 +93,7 @@ A interface `com.adobe.granite.auth.oauth.provider` pode ser implementada com o 
 
 **Pré-requisito:**
 
-Como prática recomendada, sempre confie no idP (Identity Provider, Provedor de identidade) como um único ponto de verdade ao armazenar dados específicos do usuário. Se as informações adicionais do usuário forem armazenadas no repositório local, que não faz parte do idP, habilite a [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao Cliente indicando o programa e os ambientes apropriados. Além da [sincronização de dados](#data-synchronization-data-synchronization), no caso do provedor de autenticação SAML, verifique se a [associação de grupo dinâmico](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) está habilitada.
+Como prática recomendada, sempre confie no idP (Identity Provider, Provedor de identidade) como um único ponto de verdade ao armazenar dados específicos do usuário. Se as informações adicionais do usuário forem armazenadas no repositório local, que não faz parte do idP, habilite a [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao Cliente indicando o programa e os ambientes apropriados. Além da [sincronização de dados](#data-synchronization-data-synchronization), no caso do provedor de autenticação SAML, verifique se a [associação de grupo dinâmico](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) está habilitada.
 
 ### Sessões adesivas e tokens encapsulados {#sticky-sessions-and-encapsulated-tokens}
 
@@ -109,7 +110,7 @@ Existem várias abordagens para dados persistentes, dependendo da natureza desse
 As informações do perfil do usuário podem ser escritas e lidas de duas maneiras:
 
 * Pelo uso do servidor com a interface `com.adobe.granite.security.user` do UserPropertiesManager, que colocará os dados sob o nó do usuário em `/home/users`. Certifique-se de que as páginas exclusivas por usuário não sejam armazenadas em cache.
-* Pelo lado do cliente usando o ContextHub, conforme descrito na [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=pt-BR#personalization).
+* Pelo lado do cliente usando o ContextHub, conforme descrito na [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
 **Pré-requisito:**
 
@@ -129,7 +130,7 @@ uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apro
 
 ## Permissões (grupos de usuários fechados) {#permissions-closed-user-groups}
 
-As políticas de acesso do nível de publicação, também chamadas de Grupos de Usuários Fechados (CUGs), são definidas no autor do AEM, consulte [Criação de um Grupo de Usuários Fechado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=pt-BR#applying-your-closed-user-group-to-content-pages). Para restringir determinadas seções ou páginas de um site para alguns usuários, aplique os CUGs conforme necessário usando o autor do AEM, conforme descrito aqui, e replique-os no nível de publicação.
+As políticas de acesso do nível de publicação, também chamadas de Grupos de Usuários Fechados (CUGs), são definidas no autor do AEM, consulte [Criação de um Grupo de Usuários Fechado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Para restringir determinadas seções ou páginas de um site para alguns usuários, aplique os CUGs conforme necessário usando o autor do AEM, conforme descrito aqui, e replique-os no nível de publicação.
 
 * Se os usuários fizerem logon com autenticação através de um provedor de identidade (IdP) usando SAML, o manipulador de autenticação identificará as associações de grupo do usuário (que devem corresponder aos CUGs no nível de publicação) e manterá a associação entre o usuário e o grupo por meio de um registro de repositório
 * Se o logon for realizado sem a integração de um IdP, um código personalizado poderá aplicar os mesmos relacionamentos de estrutura do repositório.

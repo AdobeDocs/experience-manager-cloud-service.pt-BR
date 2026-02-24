@@ -1,14 +1,15 @@
 ---
-title: Solucionar problemas do AEM durante a criação
+title: 'Solucionar problemas do AEM durante a criação  '
 description: Alguns problemas que você pode encontrar ao usar o AEM
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 66%
+source-wordcount: '241'
+ht-degree: 65%
 
 ---
 

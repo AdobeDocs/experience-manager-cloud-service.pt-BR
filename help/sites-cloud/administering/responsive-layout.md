@@ -1,14 +1,15 @@
 ---
 title: Configurar o contêiner de layout e o modo de layout
 description: Saiba como configurar o contêiner de layout e o modo de layout para ativar layouts responsivos para seus autores de conteúdo.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 2%
+source-wordcount: '1383'
+ht-degree: 3%
 
 ---
 
@@ -54,7 +55,7 @@ Com esses mecanismos de grade responsivos, você pode:
 
 ## Ativar o emulador {#enabling-emulator}
 
-O [Arquétipo de Projeto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) e o [Modelo de Site Padrão](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) já estão habilitados para usar o emulador. Se você desenvolveu seu próprio conteúdo não baseado nos Componentes principais ou no arquétipo, consulte o documento [Design responsivo](/help/implementing/developing/introduction/responsive-design.md) para obter detalhes sobre como desenvolver seus componentes enquanto aproveita esses recursos.
+O [Arquétipo de Projeto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) e o [Modelo de Site Padrão](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) já estão habilitados para usar o emulador. Se você desenvolveu seu próprio conteúdo não baseado nos Componentes principais ou no arquétipo, consulte o documento [Design responsivo](/help/implementing/developing/introduction/responsive-design.md) para obter detalhes sobre como desenvolver seus componentes enquanto aproveita esses recursos.
 
 ## Ativar modo de layout para o site {#activate-layout-mode-for-your-site}
 
@@ -158,7 +159,7 @@ Os dois exemplos a seguir ilustram a definição:
 
 #### CSS para pontos de interrupção usando MENOS {#css-for-breakpoints-using-less}
 
-O AEM usa MENOS para gerar partes do CSS necessário, que precisam ser incluídas em seus projetos.
+O AEM usa MENOS para gerar partes do CSS necessário, que precisam ser incluídas nos projetos.
 
 Você deve criar uma [biblioteca do cliente](/help/implementing/developing/introduction/clientlibs.md) para fornecer configurações adicionais e chamadas de função. A seguinte extração MENOS é um exemplo do mínimo que você deve adicionar ao seu projeto:
 
@@ -194,7 +195,7 @@ A definição da grade base pode ser encontrada em:
 
 #### Considerações sobre estilo {#styling-considerations}
 
-Os componentes mantidos em um contêiner responsivo são redimensionados (juntamente com seus respectivos elementos DOM de HTML) de acordo com o tamanho da grade responsiva. Portanto, nessas circunstâncias, é recomendável evitar (ou atualizar) definições de elementos DOM de largura fixa (contidos).
+Os componentes mantidos em um contêiner responsivo são redimensionados (juntamente com seus respectivos elementos DOM do HTML) de acordo com o tamanho da grade responsiva. Portanto, nessas circunstâncias, é recomendável evitar (ou atualizar) definições de elementos DOM de largura fixa (contidos).
 
 Por exemplo:
 
@@ -244,6 +245,6 @@ Você pode configurar o número de colunas disponíveis para cada instância esp
 
 ### Grades Responsivas Aninhadas {#nested-responsive-grids}
 
-A prática recomendada do Adobe é manter a estrutura o mais plana possível.
+A prática recomendada pela Adobe é manter a estrutura a mais plana possível.
 
 Quando não for possível evitar o uso de grades responsivas aninhadas, consulte o documento do desenvolvedor [Design responsivo.](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids)

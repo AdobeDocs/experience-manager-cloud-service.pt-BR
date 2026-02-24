@@ -1,14 +1,15 @@
 ---
 title: Aplicação de fluxos de trabalho a páginas
-description: Ao criar, é possível invocar fluxos de trabalho para atuar em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
+description: Ao criar, é possível chamar fluxos de trabalho para atuar em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 83%
+source-wordcount: '660'
+ht-degree: 82%
 
 ---
 
@@ -123,14 +124,14 @@ Você pode especificar detalhes:
 
    * Um recurso existente para ver ações adicionais:
 
-      * A opção **Incluir tarefas derivadas** especifica que as tarefas derivadas desse recurso sejam incluídas no fluxo de trabalho.
+      * A opção **Incluir filhos** especifica que os filhos desse recurso sejam incluídas no fluxo de trabalho.
 Uma caixa de diálogo é aberta para permitir que você refine a seleção de acordo com:
 
-         * Incluir somente tarefas derivadas imediatas.
+         * Incluir somente filhos imediatas.
          * Incluir somente as páginas modificadas.
          * Incluir somente páginas já publicadas.
 
-        As tarefas derivadas especificadas são adicionadas à lista de recursos aos quais o fluxo de trabalho será aplicado.
+        Os filhos especificados são adicionadas à lista de recursos aos quais o fluxo de trabalho será aplicado.
 
       * A opção **Remover seleção** remove o recurso do fluxo de trabalho.
 

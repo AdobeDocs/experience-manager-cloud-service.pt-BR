@@ -1,13 +1,14 @@
 ---
 title: Layout responsivo
-description: O AEM permite que você tenha um layout responsivo para suas páginas usando o componente Contêiner de layout.
+description: O AEM permite criar um layout responsivo para suas páginas usando o componente de Contêiner de layout.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1795'
 ht-degree: 76%
 
 ---
@@ -143,7 +144,7 @@ Um **Contêiner de layout** é um sistema de parágrafos que:
 
 >[!NOTE]
 >
->Se ainda não estiver disponível, o **Contêiner de layout** deve ser ativado explicitamente para um sistema/página de parágrafo[&#128279;](/help/sites-cloud/administering/responsive-layout.md).
+>Se ainda não estiver disponível, o **Contêiner de layout** deve ser ativado explicitamente para um sistema/página de parágrafo[.](/help/sites-cloud/administering/responsive-layout.md)
 
 1. O **Contêiner de layout** está disponível como um componente padrão no [Navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Aqui, você pode arrastá-lo até o local desejado na página, onde poderá ver o espaço reservado **Arrastar componentes aqui**.
 1. Em seguida, você pode adicionar componentes ao container de layout. Esses componentes conterão o conteúdo real:
@@ -188,7 +189,7 @@ Para configurar o layout de uma grade responsiva implementada com o Contêiner d
 O modo **Layout** pode ser iniciado de duas maneiras.
 
 * Ao usar o [modo de menu na barra de ferramentas](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) e escolher o modo **Layout**
-   * Selecione o modo **Layout** da mesma maneira que você alternaria para o modo de **Edição** ou o modo de **Segmentação**.
+   * Selecione o modo **Layout** da mesma maneira que você alternaria para o modo de **Edição** ou o modo de **Direcionamento**.
    * O modo **Layout** permanece persistente e você não sai do modo **Layout** até que você selecione outro modo por meio do seletor de modo.
 * Ao [editar um componente individual](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout).
    * Ao usar a opção **Layout** no menu de ação rápida do componente, é possível alternar para o modo **Layout**.

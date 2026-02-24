@@ -3,12 +3,13 @@ title: Habilitar o pipeline de front-end
 description: Saiba como você pode ativar o pipeline de front-end para sites de criação tradicionais do AEM existentes com entrega de publicação para usar temas de site e personalizá-lo mais rapidamente.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '936'
 ht-degree: 24%
 
 ---
@@ -48,7 +49,7 @@ Quando você ativa o pipeline de front-end para um site, o AEM faz as seguintes 
 
 ## Requisitos {#requirements}
 
-O AEM pode adaptar automaticamente seu site existente para usar o pipeline de front-end. Para fazer esse fluxo de trabalho, seu site deve usar [v2 ou mais recente do Componente de Página dos Componentes Principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/wcm-components/page).
+O AEM pode adaptar automaticamente seu site existente para usar o pipeline de front-end. Para fazer esse fluxo de trabalho, seu site deve usar [v2 ou mais recente do Componente de Página dos Componentes Principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page).
 
 ## Habilitação do pipeline de front-end {#enabling}
 

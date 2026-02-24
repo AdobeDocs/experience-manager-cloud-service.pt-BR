@@ -1,13 +1,14 @@
 ---
 title: Trabalhar com versões de páginas
 description: Saiba como criar, comparar e restaurar versões de suas páginas no AEM.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ebbf38563be65c28384276f7a0baa100f9f384b2
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1626'
 ht-degree: 90%
 
 ---
@@ -250,4 +251,4 @@ O Timewarp se esforça ao máximo para reproduzir uma página em um ponto seleci
 
 >[!CAUTION]
 >
->O Timewarp foi criado como ferramenta para auxiliar os autores a compreender e criar conteúdo. Ele não se destina a ser um registro de auditoria ou a fins legais.
+>O Timewarp foi criado como ferramenta para auxiliar os autores a compreender e criar conteúdo. Ele não se destina a ser um log de auditoria ou a fins legais.

@@ -1,13 +1,14 @@
 ---
 title: Guia de início rápido para criação
 description: Comece aqui para obter um guia rápido de alto nível para começar a criar conteúdo usando o console de sites.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '755'
 ht-degree: 3%
 
 ---
@@ -25,11 +26,11 @@ Comece aqui para obter um guia rápido de alto nível para começar a criar cont
 
 Se você deseja criar novo conteúdo ou exibir e gerenciar seu conteúdo existente, a visão geral central para você é o console do **Sites**.
 
-Ao fazer logon pela primeira vez no AEM, você chega à tela de navegação global. Basta tocar ou clicar em **Sites** para abrir o console **Sites**.
+Ao fazer logon pela primeira vez no AEM, você acessa a tela de navegação global. Basta tocar ou clicar em **Sites** para abrir o console **Sites**.
 
 ![Navegação global](assets/getting-started-global-navigation.png)
 
-Para acessar a navegação global a partir de qualquer outro local no AEM, toque ou clique no link **Adobe Experience Manager** na parte superior esquerda de qualquer tela do AEM, que abre uma sobreposição suspensa da navegação global.
+Para acessar a navegação global de qualquer outro local no AEM, toque ou clique no link **Adobe Experience Manager** na parte superior esquerda de qualquer tela do AEM, o que abrirá uma sobreposição suspensa da navegação global.
 
 Uma vez no console do **Sites**, seu conteúdo é simples de navegar e é apresentado em uma exibição de coluna por padrão.
 
@@ -96,11 +97,11 @@ Para mover ou copiar uma página, selecione-a no console e, na barra de ferramen
 
 ## Publicar conteúdo {#publishing}
 
-Quando terminar de fazer as alterações desejadas no conteúdo usando o console do **Sites**, você poderá publicar o conteúdo. Selecione o conteúdo que deseja publicar e toque ou clique no ícone **Publish rápido** na barra de ferramentas.
+Quando terminar de fazer as alterações desejadas no conteúdo usando o console do **Sites**, você poderá publicar o conteúdo. Selecione o conteúdo que deseja publicar e toque ou clique no ícone **Publicação rápida** na barra de ferramentas.
 
 ![Publicação rápida](assets/getting-started-quick-publish.png)
 
-Confirme a publicação com outro toque ou clique em **Publish** na caixa de diálogo.
+Confirme a publicação com outro toque ou clique em **Publicar** na caixa de diálogo.
 
 ## Recursos adicionais {#additional-resources}
 

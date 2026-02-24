@@ -3,11 +3,12 @@ title: Configuração da estrutura de integração de tradução
 description: Saiba como configurar a estrutura de integração de tradução para integrar-se com serviços de tradução de terceiros.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1453'
 ht-degree: 67%
 
 ---
@@ -24,13 +25,13 @@ Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, cons
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM AEM, ideais para aqueles sem experiência com o ou com a tradução.
+>Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência com o AEM ou com a tradução.
 
 ## Conexão com um provedor de serviços de tradução {#connecting-to-a-translation-service-provider}
 
 Crie uma configuração de nuvem que conecte o AEM ao seu provedor de serviços de tradução.
 
-O AEM inclui a capacidade de [conectar-se ao Microsoft® Translator](connect-ms-translator.md) por padrão. Outros fornecedores de tecnologia de tradução com conectores AEM que são membros do programa de parceiro Adobe Exchange podem ser encontrados [aqui](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
+O AEM inclui a capacidade de [conectar-se ao Microsoft® Translator](connect-ms-translator.md) por padrão. Outros fornecedores de tecnologia de tradução com conectores do AEM que são membros do programa de parceria da Adobe Exchange podem ser encontrados [aqui](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
 
 Depois de instalar um pacote de conectores, é possível criar uma configuração de nuvem para o conector. Normalmente, você deve fornecer suas credenciais para autenticação com o serviço de tradução. Para obter informações sobre como adicionar uma configuração de nuvem para o conector do Microsoft® Translator, consulte [Integração com o Microsoft® Translator](connect-ms-translator.md).
 
@@ -58,7 +59,7 @@ Após configurar uma estrutura de integração de tradução, é possível [asso
 
 Uma única configuração da estrutura controla como o conteúdo e os ativos da página são traduzidos. Para criar uma configuração de tradução:
 
-1. No [menu de navegação global](/help/sites-cloud/authoring/basic-handling.md#global-navigation), selecione **Ferramentas > Cloud Service e Cloud Service de tradução**.
+1. No [menu de navegação global](/help/sites-cloud/authoring/basic-handling.md#global-navigation), selecione **Ferramentas > Serviços em nuvem e Serviços de tradução em nuvem**.
 1. Navegue até o local em que deseja criar a configuração na estrutura de conteúdo. Isso é geralmente baseado em um site específico, mas pode ser global.
 1. Forneça as seguintes informações nos campos e selecione **Criar**.:
    1. Selecione o **Tipo de configuração** no menu suspenso.

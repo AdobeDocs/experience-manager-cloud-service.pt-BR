@@ -1,13 +1,14 @@
 ---
 title: Administração de tags
-description: Saiba como administrar tags no AEM para organizar seu conteúdo.
+description: Saiba como administrar tags na AEM para organizar seu conteúdo.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2206'
 ht-degree: 1%
 
 ---
@@ -33,10 +34,10 @@ As tags oferecem recursos robustos para organização e gerenciamento de conteú
 
 * As tags podem ser agrupadas em vários namespaces.
    * Os namespaces podem ser considerados hierarquias que permitem a criação de taxonomias.
-   * Essas taxonomias são globais por todo o AEM.
+   * Essas taxonomias são globais no AEM.
 * As tags podem ser aplicadas por autores e usadas por visitantes do site.
 * Independentemente do criador, todas as formas de tags são disponibilizadas para seleção, tanto ao atribuir a uma página quanto ao pesquisar.
-* As marcas são usadas pelo [Componente de Lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=pt-BR) para gerar listas dinâmicas com base nas marcas selecionadas.
+* As marcas são usadas pelo [Componente de Lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) para gerar listas dinâmicas com base nas marcas selecionadas.
 
 ## Requisitos da tag {#requirements}
 
@@ -52,7 +53,7 @@ Existem alguns detalhes técnicos que devem ser considerados ao criar e gerencia
    * Uma tag que não é uma tag container é chamada de tag folha.
    * Um namespace de tag pode ser uma tag folha ou container.
 
-Para obter mais detalhes técnicos sobre como as tags funcionam, consulte [Estrutura de Marcação de AEM](/help/implementing/developing/introduction/tagging-framework.md).
+Para obter mais detalhes técnicos sobre como as tags funcionam, consulte a [Estrutura de Marcação da AEM](/help/implementing/developing/introduction/tagging-framework.md).
 
 ## Console de marcação {#tagging-console}
 
@@ -76,7 +77,7 @@ Há várias etapas para criar e usar tags para organizar seu conteúdo.
 
 1. [Crie um namespace para suas marcas](#creating-namespaces) (ou escolha uma existente para reutilizar).
 1. [Criar uma nova marca](#creating-tags).
-1. [Publish a marca](#publishing-tags).
+1. [Publicar a marca](#publishing-tags).
 
 ### Criação de namespaces {#creating-namespaces}
 
@@ -89,7 +90,7 @@ Um namespace é usado para organizar outras tags. Ela pode ser considerada a tag
 1. Forneça as informações necessárias.
 
    * **Título** - Um título para o namespace exibido ao usuário na interface do usuário (opcional)
-   * **Nome** - Se um nome não for especificado, um nome de nó válido será criado a partir do **Título**. Consulte o documento [Estrutura de Marcação com AEM](/help/implementing/developing/introduction/tagging-framework.md#tagid) para obter mais informações.
+   * **Nome** - Se um nome não for especificado, um nome de nó válido será criado a partir do **Título**. Consulte o documento [Estrutura de Marcação do AEM](/help/implementing/developing/introduction/tagging-framework.md#tagid) para obter mais informações.
    * **Descrição** - Uma descrição do namespace (opcional)
 
 1. Depois de inserir as informações necessárias, selecione **Criar**.
@@ -134,17 +135,17 @@ Assim como ocorre com a criação de qualquer outro conteúdo no AEM, depois de 
 
 1. Para publicar uma marca, abra o [console de marcação](#tagging-console).
 
-1. Selecione a(s) tag(s) que deseja publicar e, na barra de ferramentas, selecione **Publish**.
+1. Selecione a(s) tag(s) que deseja publicar e, na barra de ferramentas, selecione **Publicar**.
 
    ![Selecionando marcas no console](assets/select-tags.png)
 
-1. A caixa de diálogo **Marca Publish** solicita uma confirmação para publicar as marcas selecionadas. Selecione **Publicar**.
+1. A caixa de diálogo **Publicar Marca** solicita uma confirmação para publicar as marcas selecionadas. Selecione **Publicar**.
 
-   ![O modal de confirmação da Marca do Publish](assets/publish-tag.png)
+   ![O modal de confirmação da Marca de Publicação](assets/publish-tag.png)
 
 1. A ação de publicação foi confirmada com uma caixa de diálogo **Sucesso**.
 
-   ![Caixa de diálogo de êxito de marca do Publish](assets/publish-tag-success.png)
+   ![Caixa de diálogo de êxito de publicação de marca](assets/publish-tag-success.png)
 
 As tags selecionadas são colocadas em fila para publicação. Semelhante ao conteúdo da página, somente as tags selecionadas são publicadas, independentemente de terem ou não subtags.
 
@@ -160,7 +161,7 @@ Há várias ações que você pode realizar nas tags e nos namespaces existentes
 
 * [Propriedades da exibição](#viewing-tag-properties)
 * [Editar](#editing-tags)
-* [Desfazer publicação](#unpublishing-tags)
+* [Desfazer a publicação](#unpublishing-tags)
 * [Referências](#viewing-tag-references)
 * [Mover](#moving-tags)
 * [Mesclar](#merging-tags)
@@ -220,11 +221,11 @@ Para desativar a tag na instância do autor e removê-la da instância de public
 
 1. A caixa de diálogo **Cancelar Publicação da Marca** solicita uma confirmação para publicar as marcas selecionadas. Selecione **Publicar**.
 
-   ![O modal de confirmação da Marca do Publish](assets/unpublish-tag.png)
+   ![O modal de confirmação da Marca de Publicação](assets/unpublish-tag.png)
 
 1. A ação de cancelamento da publicação foi confirmada com uma caixa de diálogo **Sucesso**.
 
-   ![Caixa de diálogo de êxito de marca do Publish](assets/unpublish-tag-success.png)
+   ![Caixa de diálogo de êxito de publicação de marca](assets/unpublish-tag-success.png)
 
 As tags selecionadas são colocadas em fila para cancelamento da publicação. Se a tag selecionada for uma tag container, todas as tags secundárias serão desativadas no ambiente de criação e removidas do ambiente de publicação.
 
@@ -291,7 +292,7 @@ Se sua taxonomia de tags tiver duplicatas ou tags semelhantes, pode ser útil me
 
 1. Selecione **Enviar**.
 
-A tag selecionada no console é mesclada à tag especificada na caixa de diálogo. Quando uma tag referenciada é movida ou mesclada, a tag não é fisicamente excluída, de modo que é possível manter referências. Consulte [Estrutura de Marcação AEM](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) para obter mais informações.
+A tag selecionada no console é mesclada à tag especificada na caixa de diálogo. Quando uma tag referenciada é movida ou mesclada, a tag não é fisicamente excluída, de modo que é possível manter referências. Consulte a [Estrutura de Marcação do AEM](/help/implementing/developing/introduction/tagging-framework.md#moving-and-merging-tags) para obter mais informações.
 
 ### Exclusão de tags {#deleting-tags}
 
@@ -305,7 +306,7 @@ Se a taxonomia de marcação for alterada e uma tag ou um namespace for desneces
 
    ![O modal de confirmação Excluir Marca](assets/delete-tag.png)
 
-1. O AEM verifica se a tag não está sendo referenciada.
+1. A AEM verifica se a tag não está sendo referenciada.
 
    1. Se nenhuma referência for encontrada, o AEM solicitará a confirmação final para excluir. Selecionar **Excluir**
 
@@ -376,8 +377,8 @@ Para páginas de conteúdo, o idioma escolhido para a tag é obtido do idioma da
 
 No entanto, no ambiente de criação, o AEM usa a configuração de idioma do usuário. Portanto, no console de marcação, para a marca `Animals`, `Animaux` será exibido para um usuário que define o idioma como francês em suas propriedades de usuário.
 
-Para adicionar um novo idioma à caixa de diálogo, consulte o documento [Criando Marcação em Aplicativos AEM](/help/implementing/developing/introduction/tagging-applications.md#adding-a-new-language-to-the-edit-tag-dialog)
+Para adicionar um novo idioma à caixa de diálogo, consulte o documento [Criando Marcações em Aplicativos AEM](/help/implementing/developing/introduction/tagging-applications.md#adding-a-new-language-to-the-edit-tag-dialog)
 
 >[!TIP]
 >
->Se quiser saber mais sobre os recursos de localização do AEM, consulte [Tradução de conteúdo para sites multilíngues](/help/sites-cloud/administering/translation/overview.md).
+>Se quiser saber mais sobre os recursos de localização do AEM, consulte [Tradução de Conteúdo para Sites Multilíngues](/help/sites-cloud/administering/translation/overview.md).

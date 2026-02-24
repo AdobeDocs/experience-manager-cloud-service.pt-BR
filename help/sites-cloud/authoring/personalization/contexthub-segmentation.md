@@ -1,13 +1,14 @@
 ---
 title: Configuração da segmentação com o ContextHub
 description: Saiba como configurar a segmentação usando o ContextHub.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1659'
 ht-degree: 87%
 
 ---
@@ -26,9 +27,9 @@ O AEM permite personalizar facilmente as experiências dos usuários. Ela també
 
 O console [Públicos-alvo](audiences.md) é usado para gerenciar segmentos do ContextHub, bem como públicos-alvo da sua conta do Adobe Target. Esta documentação abrange o gerenciamento de segmentos para o ContextHub.
 
-Para acessar seus segmentos, na navegação global, selecione **Navegação > Personalização > Públicos**. Selecione sua configuração (por exemplo, Site WKND) para ver os segmentos:
+Para acessar seus segmentos, na navegação global, selecione **Navegação > Personalização > Públicos-alvos**. Selecione sua configuração (por exemplo, Site WKND) para ver os segmentos:
 
-![Gerenciamento de públicos](../assets/contexthub-segmentation-audiences.png)
+![Gerenciamento de públicos-alvos](../assets/contexthub-segmentation-audiences.png)
 
 ## Editor do segmento  {#segment-editor}
 
@@ -215,7 +216,6 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 1. A pasta aparecerá na lista de segmentos.
    * A forma como você classifica as colunas afetará onde a nova pasta aparece na lista.
    * Você pode selecionar os cabeçalhos de coluna para ajustar sua classificação.
-
      ![A nova pasta](../assets/contexthub-folder.png)
 
 ### Modificar pastas existentes {#modify-folders}

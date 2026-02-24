@@ -3,11 +3,12 @@ title: Criação e sincronização de Live Copies
 description: Saiba como criar e sincronizar Live Copies para reutilizar seu conteúdo no site.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4270'
+source-wordcount: '4276'
 ht-degree: 94%
 
 ---
@@ -140,7 +141,7 @@ Para criar uma Live Copy:
 
    >[!NOTE]
    >
-   >Uma caixa de diálogo de erro pode ser exibida com a mensagem “Falha ao enviar o formulário”. Isso acontece devido a um tempo limite de rede. No entanto, o processo para criar a live copy está em execução em segundo plano. Aguarde alguns minutos e verifique se as páginas da live copy foram criadas corretamente.
+   >Uma caixa de diálogo de erro pode ser exibida com a mensagem “Falha ao enviar o formulário”. Isso acontece devido a um tempo-limite de rede. No entanto, o processo para criar a live copy está em execução em segundo plano. Aguarde alguns minutos e verifique se as páginas da live copy foram criadas corretamente.
 
 ### Criação de uma Live Copy de um site a partir de uma configuração de blueprint {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -183,7 +184,7 @@ Para criar uma Live Copy de um site a partir de uma configuração de blueprint:
 
 ### Criação de uma Live Copy dentro de uma Live Copy (configuração do blueprint) {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
-Ao criar uma Live Copy dentro da Live Copy existente (criada usando uma configuração de blueprint), é possível inserir qualquer cópia de idioma ou capítulos que não foram incluídos quando a Live Copy foi originalmente criada.
+Ao criar uma Live Copy dentro da Live Copy existente (criada usando uma configuração de blueprint), é possível inserir qualquer cópia no idioma de destino ou capítulos que não foram incluídos quando a Live Copy foi originalmente criada.
 
 ## Monitorar a Live Copy {#monitoring-your-live-copy}
 
@@ -400,7 +401,7 @@ Suspender a herança da Live Copy para uma página é uma ação temporária. Um
 
 ![Retomar herança](../assets/resume-inheritance.png)
 
-Quando você reativa a herança, a página não é sincronizada automaticamente com a origem. Você pode solicitar uma sincronização, se necessário:
+Quando você reabilita a herança, a página não é sincronizada automaticamente com a origem. Você pode solicitar uma sincronização, se necessário:
 
 * Na caixa de diálogo **Retomar**/**Reverter**; por exemplo:
 
@@ -410,7 +411,7 @@ Quando você reativa a herança, a página não é sincronizada automaticamente 
 
 >[!NOTE]
 >
->Quando você reativa a herança, a página não é sincronizada automaticamente com a origem. Se isso for necessário, é possível solicitar manualmente uma sincronização no momento da retomada ou posteriormente.
+>Quando você reabilita a herança, a página não é sincronizada automaticamente com a origem. Se isso for necessário, é possível solicitar manualmente uma sincronização no momento da retomada ou posteriormente.
 
 #### Retomar a herança nas propriedades da página {#resuming-inheritance-from-page-properties}
 
@@ -472,7 +473,7 @@ Cancele a herança da Live Copy de um componente para que ele não seja mais sin
 
 >[!NOTE]
 >
->Quando você reativa a herança, o componente não é sincronizado automaticamente com a origem. Você pode solicitar manualmente uma sincronização, se necessário.
+>Quando você reabilita a herança, o componente não é sincronizado automaticamente com a origem. Você pode solicitar manualmente uma sincronização, se necessário.
 
 Cancelar a herança para alterar o conteúdo do componente ou excluir o componente:
 
@@ -488,11 +489,11 @@ Cancelar a herança para alterar o conteúdo do componente ou excluir o componen
 
    A barra de ferramentas do componente é atualizada para incluir todos os comandos de edição (apropriados).
 
-### Ativar novamente a herança de um componente {#re-enabling-inheritance-for-a-component}
+### Habilitar novamente a herança de um componente {#re-enabling-inheritance-for-a-component}
 
 Para habilitar a herança de um componente, selecione o ícone **Reabilitar herança** na barra de ferramentas do componente.
 
-![Ícone Reativar herança](../assets/re-enable-inheritance-icon.png)
+![Ícone Reabilitar herança](../assets/re-enable-inheritance-icon.png)
 
 ### Alterar a ordem dos componentes em uma página de Live Copy {#changing-the-order-of-components-on-a-live-copy-page}
 
@@ -516,7 +517,7 @@ Use o procedimento a seguir para cancelar a herança do sistema de parágrafo.
 
 Por padrão, as propriedades de página de uma página de Live Copy são herdadas da página de origem e não são editáveis.
 
-Você pode cancelar a herança de uma propriedade quando precisar alterar o valor da propriedade para a Live Copy. Um ícone de link indica que a herança está ativada para a propriedade.
+Você pode cancelar a herança de uma propriedade quando precisar alterar o valor da propriedade para a Live Copy. Um ícone de link indica que a herança está habilitada para a propriedade.
 
 ![Propriedades herdadas da página](../assets/properties-inherited.png)
 
@@ -528,7 +529,7 @@ Posteriormente, você pode reativar a herança de uma propriedade, se necessári
 
 >[!NOTE]
 >
->Quando você reativa a herança, a propriedade da página de Live Copy não é sincronizada automaticamente com a propriedade de origem. Você pode solicitar manualmente uma sincronização, se necessário.
+>Quando você reabilita a herança, a propriedade da página de Live Copy não é sincronizada automaticamente com a propriedade de origem. Você pode solicitar manualmente uma sincronização, se necessário.
 
 1. Abra as propriedades da página de Live Copy usando a opção **Propriedades de exibição** do console **Sites** ou do ícone **Informações da página** na barra de ferramentas da página.
 1. Para cancelar a herança de uma propriedade, selecione o ícone de link que aparece à direita da propriedade.

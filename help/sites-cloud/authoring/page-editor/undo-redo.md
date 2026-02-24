@@ -1,14 +1,15 @@
 ---
 title: Limitações de Desfazer e Refazer
-description: Saiba mais sobre as limitações das opções desfazer e refazer no editor de páginas AEM.
+description: Saiba mais sobre as limitações das opções desfazer e refazer no editor de páginas do AEM.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 87773f47-5116-4966-9ba4-5deedb7c4fa6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 92%
+source-wordcount: '313'
+ht-degree: 91%
 
 ---
 

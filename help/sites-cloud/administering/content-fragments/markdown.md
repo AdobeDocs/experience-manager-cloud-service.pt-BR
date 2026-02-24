@@ -3,11 +3,12 @@ title: Markdown
 description: Entenda como o editor de Fragmento de conteúdo usa a sintaxe de Markdown para permitir que você crie conteúdo facilmente para a criação de páginas e entrega headless.
 feature: Content Fragments
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '565'
 ht-degree: 72%
 
 ---
@@ -126,7 +127,7 @@ Você pode ter citações de bloco aninhadas. Por exemplo:
 
 É possível criar listas ordenadas e não ordenadas.
 
-Para criar uma lista não ordenada, use o símbolo &ast; (asterisco) antes dos itens na lista. Por exemplo:
+Para criar uma lista não ordenada, use o símbolo &amp;ast; (asterisco) antes dos itens na lista. Por exemplo:
 
     `* item in list`
 

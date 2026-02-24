@@ -3,12 +3,13 @@ title: Práticas recomendadas do MSM
 description: Conheça as práticas recomendadas compiladas pelas equipes de engenharia e consultoria da Adobe para ajudar a começar a usar o Gerenciamento de vários sites do AEM.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 91%
+source-wordcount: '1420'
+ht-degree: 90%
 
 ---
 
@@ -49,7 +50,7 @@ Em geral, a regra de implantação no MSM em relação à sincronização de com
 * Os componentes são implementados sincronizando os recursos contidos no blueprint.
 * Os contêineres sincronizam somente o recurso atual.
 
-Isso significa que os componentes são tratados como um agregado e, em uma implantação, o próprio componente e todos os seus componentes secundários são substituídos por aqueles nos blueprints. Isso significa que, se um recurso for adicionado localmente a esse componente, ele será perdido no conteúdo do blueprint durante a implantação.
+Isso significa que os componentes são tratados como um agregado e, em uma implantação, o próprio componente e todos os seus componentes filhos são substituídos por aqueles nos blueprints. Isso significa que, se um recurso for adicionado localmente a esse componente, ele será perdido no conteúdo do blueprint durante a implantação.
 
 Para suportar o aninhamento de componentes de modo que os componentes adicionados localmente sejam mantidos em uma implantação, o componente deve ser declarado como um contêiner.
 

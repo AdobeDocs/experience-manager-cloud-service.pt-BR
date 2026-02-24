@@ -1,14 +1,15 @@
 ---
 title: Trabalhar com tarefas
 description: As tarefas representam itens de trabalho a serem realizados no conteúdo e são usadas nos projetos para determinar a percentagem de conclusão das tarefas atuais
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 95%
+source-wordcount: '579'
+ht-degree: 94%
 
 ---
 

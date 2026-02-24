@@ -1,13 +1,14 @@
 ---
 title: Editar conteúdo da página com o editor de páginas do AEM
 description: O editor de página do AEM é uma ferramenta avançada de criação de conteúdo.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1634'
 ht-degree: 34%
 
 ---
@@ -256,7 +257,7 @@ Você pode cancelar e reativar a herança. Dependendo do componente, essas opç�
 
 * **Reativar herança** se a herança já estiver cancelada
 
-  ![Botão Reativar herança](assets/edit-content-re-enable-inheritance.png)
+  ![Botão Reabilitar herança](assets/edit-content-re-enable-inheritance.png)
 
 * A **Implantação** também está disponível no blueprint ou na origem da Live Copy
 

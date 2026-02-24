@@ -1,13 +1,14 @@
 ---
-title: Pesquisar
+title: 'Pesquisar  '
 description: Encontre seu conteúdo mais rapidamente com a pesquisa abrangente
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '498'
 ht-degree: 83%
 
 ---
@@ -62,7 +63,7 @@ Para pesquisar e filtrar os recursos:
    * Pesquisas salvas
    * Diretório de pesquisa
    * Tags
-   * Critérios de pesquisa, por exemplo, Datas modificadas, Status do Publish, Status da Live Copy
+   * Critérios de pesquisa, por exemplo, datas modificadas, status de publicação, status da Live Copy
 
    >[!NOTE]
    >

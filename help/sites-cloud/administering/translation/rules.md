@@ -3,11 +3,12 @@ title: Identificação de conteúdo a ser traduzido
 description: Saiba como as regras de tradução identificam o conteúdo que precisa ser traduzido.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1294'
 ht-degree: 88%
 
 ---
@@ -18,7 +19,7 @@ As regras de tradução identificam o conteúdo a ser traduzido para páginas, c
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM AEM, ideais para aqueles sem experiência com o ou com a tradução.
+>Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência com o AEM ou com a tradução.
 
 ## Fragmentos de conteúdo e regras de tradução {#content-fragments}
 
@@ -59,7 +60,7 @@ Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, cons
 
 ## Sintaxe de regra para páginas, componentes e ativos {#rule-syntax-for-pages-components-and-assets}
 
-Uma regra é um elemento `node` com um ou mais elementos `property` secundários e zero ou mais elementos `node` secundários:
+Uma regra é um elemento `node` com um ou mais elementos filhos `property` e zero ou mais elementos `node` filhos:
 
 ```xml
 <node path="content path">
@@ -73,12 +74,12 @@ Uma regra é um elemento `node` com um ou mais elementos `property` secundários
 Cada um desses elementos `node` têm as seguintes características:
 
 * O atributo `path` contém o caminho para o nó raiz da ramificação à qual as regras se aplicam.
-* Os elementos `property` secundários identificam as propriedades do nó a serem traduzidas para todos os tipos de recursos:
+* Os elementos `property` filhos identificam as propriedades do nó a serem traduzidas para todos os tipos de recursos:
    * O atributo `name` contém o nome da propriedade.
    * O atributo opcional `translate` é igual a `false` se a propriedade não for traduzida. Por padrão, o valor é `true`. Esse atributo é útil ao substituir regras anteriores.
-* Os elementos `node` secundários identificam as propriedades do nó a serem traduzidas para tipos de recursos específicos:
+* Os elementos `node` filhos identificam as propriedades do nó a serem traduzidas para tipos de recursos específicos:
    * O atributo `resourceType` contém o caminho que é resolvido para o componente que implementa o tipo de recurso.
-   * Os elementos `property` secundários identificam a propriedade do nó a ser traduzida. Use este nó da mesma forma que os elementos `property` secundários para regras de nó.
+   * Os elementos `property` filhos identificam a propriedade do nó a ser traduzida. Use este nó da mesma forma que os elementos `property` filhos para regras de nó.
 
 A seguinte regra de exemplo faz com que o conteúdo de todas as propriedades `text` seja traduzido para todas as páginas abaixo do nó `/content`. A regra é válida para qualquer componente que armazene conteúdo em uma propriedade `text`, como o componente de texto.
 
@@ -122,7 +123,7 @@ O exemplo a seguir extrai imagens do componente de imagem:
 
 ## Substituição de regras {#overriding-rules}
 
-O arquivo `translation_rules.xml` consiste de um elemento `nodelist` com vários elementos `node` secundários. O AEM lê a lista de nós de cima para baixo. Quando várias regras têm como alvo o mesmo nó, a regra que está mais abaixo no arquivo é usada. Por exemplo, as seguintes regras fazem com que todo o conteúdo das propriedades `text` seja traduzido, exceto para a ramificação `/content/mysite/en` de páginas:
+O arquivo `translation_rules.xml` consiste de um elemento `nodelist` com vários elementos `node` filhos. O AEM lê a lista de nós de cima para baixo. Quando várias regras têm como alvo o mesmo nó, a regra que está mais abaixo no arquivo é usada. Por exemplo, as seguintes regras fazem com que todo o conteúdo das propriedades `text` seja traduzido, exceto para a ramificação `/content/mysite/en` de páginas:
 
 ```xml
 <nodelist>
@@ -187,7 +188,7 @@ Há quatro atributos que você pode alterar por meio da interface:
 
 **`isDeep`** é aplicável em filtros de nó e é verdadeiro por padrão. Ele verifica se o nó (ou seus antecessores) contém essa propriedade com o valor da propriedade especificado no filtro. Se for falso, ele só verifica o nó atual.
 
-Por exemplo, os nós secundários são adicionados a uma tarefa de tradução mesmo quando o nó principal tem a propriedade `draftOnly` definida como verdadeira para sinalizar o conteúdo de rascunho. Aqui, o atributo `isDeep` entra em ação e verifica se os nós principais têm a propriedade `draftOnly` definida como verdadeira e exclui os nós secundários.
+Por exemplo, os nós filhos são adicionados a um trabalho de tradução mesmo quando o nó pai tem a propriedade `draftOnly` definida como verdadeira para sinalizar o conteúdo de rascunho. Aqui, o atributo `isDeep` entra em ação e verifica se os nós principais têm a propriedade `draftOnly` definida como verdadeira e exclui os nós filhos.
 
 No editor, você pode marcar/desmarcar **isDeep** na guia **Filtros**.
 
@@ -203,7 +204,7 @@ Este é um exemplo do XML resultante quando **isDeep** está desmarcado na inter
 
 ### herdar {#inherit}
 
-**`inherit`** é aplicável às propriedades. Por padrão, todas as propriedades são herdadas, mas se você quiser que alguma propriedade não seja herdada pelo nó secundário, poderá marcá-la como falsa para que seja aplicada somente a esse nó específico.
+**`inherit`** é aplicável às propriedades. Por padrão, todas as propriedades são herdadas, mas se você quiser que alguma propriedade não seja herdada pelo nó filho, poderá marcá-la como falsa para que seja aplicada somente a esse nó específico.
 
 Na interface, você pode marcar/desmarcar **Herdar** na guia **Propriedades**.
 

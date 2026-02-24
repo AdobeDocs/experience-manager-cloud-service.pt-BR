@@ -3,12 +3,13 @@ title: Modelos de site
 description: Saiba como os modelos de site do AEM podem ser usados para predefinir a estrutura do site e o conteúdo inicial para permitir que você crie sites rapidamente.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 71%
+source-wordcount: '493'
+ht-degree: 70%
 
 ---
 
@@ -23,7 +24,7 @@ Saiba como os modelos de site do AEM podem ser usados para predefinir a estrutur
 
 Os modelos de site geralmente contêm o conteúdo base do site, a estrutura e as informações de estilo do site, conhecidas como [tema do site](site-themes.md), para iniciar um novo site rapidamente. Admins selecionam um modelo no qual basearão o site [durante o processo de criação.](create-site.md)
 
-Esses modelos são bastante eficientes pois podem ser reutilizados e personalizados. E como é possível ter vários modelos disponíveis na sua instância do AEM, você tem a flexibilidade de criar sites diferentes para atender a várias necessidades comerciais.
+Esses modelos são bastante eficientes pois podem ser reutilizados e personalizados. E como é possível ter vários modelos disponíveis na sua instância do AEM, você tem a flexibilidade de criar sites diferentes para atender a várias necessidades empresariais.
 
 >[!NOTE]
 >

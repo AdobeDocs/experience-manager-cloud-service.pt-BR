@@ -1,13 +1,14 @@
 ---
 title: Atalhos de teclado para Consoles
 description: Economize tempo ao criar usando estes atalhos de teclado
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '384'
 ht-degree: 61%
 
 ---
@@ -50,7 +51,7 @@ As teclas modificadoras usadas para os atalhos de teclado variam de acordo com o
 
 ## Atalhos de teclado e dos navegadores {#browsers-and-keyboard-shortcuts}
 
-O AEM evita atalhos comuns já usados por navegadores populares, no entanto, o comportamento padrão do navegador não é substituído por atalhos AEM.
+O AEM evita atalhos comuns já usados por navegadores populares, no entanto, o comportamento padrão do navegador não é substituído pelos atalhos do AEM.
 
 Além disso, os atalhos de teclado são os mesmos para todos os locais e layouts de teclado.
 
@@ -62,7 +63,7 @@ Além disso, os atalhos de teclado são os mesmos para todos os locais e layouts
 
 >[!CAUTION]
 >
->Atalhos de teclado do AEM podem interferir com leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
+>Os atalhos de teclado do AEM podem interferir em leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
 >
 >A Adobe recomenda [desabilitar os atalhos de teclado do AEM](#deactivating-keyboard-shortcuts) ao usar um leitor de tela.
 

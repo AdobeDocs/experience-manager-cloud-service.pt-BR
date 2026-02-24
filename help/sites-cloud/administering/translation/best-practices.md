@@ -3,11 +3,12 @@ title: Práticas recomendadas de tradução
 description: Saiba mais sobre as práticas recomendadas compiladas pelas equipes de engenharia e consultoria da Adobe para ajudá-lo a trabalhar com projetos de tradução.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '878'
 ht-degree: 95%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 95%
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM AEM, ideais para aqueles sem experiência com o ou com a tradução.
+>Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência com o AEM ou com a tradução.
 
 ## Geral {#general}
 
@@ -36,7 +37,7 @@ Criar ou expandir uma presença global na Web pode ser um processo complexo, mas
 * Use uma convenção de nomenclatura de site de idioma/país que siga os **[padrões W3C](/help/sites-cloud/authoring/page-editor/accessible-content.md)**.
 * Determine como o conteúdo será distribuído por regiões e países. Considere quais países compartilham idiomas. É recomendável criar matrizes de idioma, uma camada de páginas não ativadas em que o conteúdo traduzido pode ser revisado, modificado e depois enviado ou extraído para um site de país que compartilha esse idioma.
 * Há duas abordagens para a criação de matrizes de idioma: usar cópias de idioma ou usar o MSM e as Live Copies.
-   * A abordagem de cópia de idioma é a utilizada pela estrutura de integração de tradução pronta para uso do AEM e, portanto, é a maneira mais fácil de começar. A estrutura fornece uma interface que, inicialmente, facilita a propagação e tradução de alterações de conteúdo do idioma principal (por exemplo, inglês) para outros idiomas principais. No entanto, à medida que o projeto cresce, a automação do fluxo de trabalho torna-se cada vez mais necessária para gerenciar a tradução do crescente número de páginas e/ou idiomas.
+   * A abordagem de cópia no idioma de destino é a utilizada pela estrutura de integração de tradução pronta para uso do AEM e, portanto, é a maneira mais fácil de começar. A estrutura fornece uma interface que, inicialmente, facilita a propagação e tradução de alterações de conteúdo do idioma principal (por exemplo, inglês) para outros idiomas principais. No entanto, à medida que o projeto cresce, a automação do fluxo de trabalho torna-se cada vez mais necessária para gerenciar a tradução do crescente número de páginas e/ou idiomas.
    * A abordagem do MSM/Live Copy pode ser uma alternativa para casos de uso avançados, em que os sites são maiores e mais complexos. Uma governança forte e a automação do fluxo de trabalho são necessárias desde o início para lidar com os complexos relacionamentos de herança entre as matrizes em inglês e de outros idiomas, além de reduzir o risco de sobrepor traduções existentes. Esse manuseio pode ser realizado com a ajuda de alguns conectores de tradução. Consulte [MSM e sites multilíngues](/help/sites-cloud/administering/msm/best-practices.md#msm-and-multilingual-websites) para obter mais informações.
 * Se sua matriz de idioma tiver variações globais, uma opção seria usar o MSM para criar uma Live Copy a partir da matriz global para usar na tradução. Por exemplo, se a criação global for realizada em uma matriz de inglês dos EUA, crie uma matriz de inglês internacional como uma Live Copy e como base de tradução para outros idiomas.
 * Use o MSM para criar sites de países a partir das matrizes de idioma traduzidas e implantar conteúdo em sites que compartilhem o mesmo idioma. Por exemplo, a matriz de idioma francês pode ser distribuída para sites da França, Bélgica e Suíça.

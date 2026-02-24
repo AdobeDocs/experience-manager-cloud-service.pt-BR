@@ -1,13 +1,14 @@
 ---
 title: Uso de tags
 description: As tags são um método rápido e fácil de classificar conteúdo em um site
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '566'
 ht-degree: 93%
 
 ---
@@ -22,14 +23,14 @@ As tags são um método rápido e fácil de classificar conteúdo em um site. As
 ## Dez razões para usar marcação {#ten-reasons-to-use-tagging}
 
 1. **Organização do conteúdo** - a marcação facilita a vida dos autores, pois eles podem organizar rapidamente o conteúdo com pouco esforço.
-1. **Organização de tags** - enquanto tags organizam conteúdo, taxonomias/espaços de nome hierárquicos organizam tags.
+1. **Organização de tags** - enquanto tags organizam conteúdo, taxonomias/namespaces hierárquicos organizam tags.
 1. **Tags profundamente organizadas** - com a capacidade de criar tags e subtags, é possível expressar sistemas taxonômicos inteiros, abrangendo termos, subtermos e seus relacionamentos. É possível criar uma segunda (ou terceira) hierarquia de conteúdo em paralelo à oficial.
-1. **Marcação controlada** - a marcação pode ser controlada com a aplicação de permissões a tags e/ou espaços de nome para controlar a criação e a aplicação de tags.
+1. **Marcação controlada** - a marcação pode ser controlada com a aplicação de permissões a tags e/ou namespaces para controlar a criação e a aplicação de tags.
 1. **Marcação flexível** - tags têm muitos nomes e faces: tags, termos de taxonomia, categorias, rótulos e muito mais. Elas são flexíveis em seu modelo de conteúdo e na maneira como podem ser usadas. Por exemplo, ao estruturar dados demográficos de direcionamento, categorizar e classificar conteúdo ou criar uma hierarquia de conteúdo secundário.
 1. **Pesquisas aprimoradas** - o componente de pesquisa padrão no AEM inclui amplamente tags criadas e tags aplicadas, às quais é possível aplicar filtros para restringir os resultados apenas àqueles que são relevantes.
 1. **Habilitação de SEO** - aplicadas como propriedades de página aparecerão automaticamente nas metatags da página, tornando-a visível para os mecanismos de pesquisa.
 1. **Sofisticação simples** - tags podem ser criadas simplesmente a partir de uma palavra e com o toque de um botão. Posteriormente, um título, uma descrição e um número ilimitado de etiquetas podem ser adicionadas para fornecer mais semântica à tag.
-1. **Consistência básica** - o sistema de marcação é um componente central do AEM e é usado por todos os recursos do AEM para categorizar o conteúdo. Além disso, a API de marcação está disponível para os desenvolvedores criarem aplicativos ativados para marcação com acesso às mesmas taxonomias.
+1. **Consistência básica** - o sistema de marcação é um componente central do AEM e é usado por todos os recursos do AEM para categorizar o conteúdo. Além disso, a API de marcação está disponível para os desenvolvedores criarem aplicativos habilitados para marcação com acesso às mesmas taxonomias.
 1. **Combina estrutura e flexibilidade** - AEM é ideal para trabalhar com informações estruturadas, devido ao aninhamento de páginas e caminhos. Ela é igualmente eficiente ao trabalhar com informações não estruturadas, devido à pesquisa integrada de texto completo. A marcação combina os pontos fortes da estrutura e da flexibilidade.
 
 Ao projetar a estrutura de conteúdo para um site e o esquema de metadados para ativos, considere a abordagem mais leve e acessível oferecida pela marcação.

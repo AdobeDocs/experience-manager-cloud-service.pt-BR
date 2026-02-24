@@ -1,18 +1,19 @@
 ---
-title: Criação de conteúdo direcionado usando o modo Direcionar
+title: Criação de conteúdo direcionado usando o modo Direcionamento
 description: O modo de direcionamento e o componente do Target fornecem ferramentas para a criação de conteúdo para experiências
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '5282'
-ht-degree: 87%
+source-wordcount: '5288'
+ht-degree: 86%
 
 ---
 
-# Criação de conteúdo direcionado usando o modo Direcionar {#authoring-targeted-content-using-targeting-mode}
+# Criação de conteúdo direcionado usando o modo Direcionamento {#authoring-targeted-content-using-targeting-mode}
 
 Crie conteúdo direcionado usando o modo de Direcionamento do AEM. O modo de direcionamento e o componente do Target fornecem ferramentas para a criação de conteúdo para experiências:
 
@@ -73,7 +74,7 @@ Para alternar para o modo de direcionamento:
 1. Abra a página para a qual deseja criar conteúdo direcionado.
 1. Na barra de ferramentas na parte superior da página, selecione o menu suspenso de modo para revelar os tipos disponíveis.
 
-   ![Modo Direcionar](../assets/targeted-mode.png)
+   ![Modo Direcionamento](../assets/targeted-mode.png)
 
 1. Selecione **Direcionamento**. As opções de direcionamento são exibidas na parte superior da página.
 
@@ -220,7 +221,7 @@ Para renomear experiências usando o modo de direcionamento:
 Para editar os públicos-alvo usando o modo de direcionamento:
 
 1. Selecione a seta ao lado do nome da experiência.
-1. Clique em **Editar público** e selecione um novo público.
+1. Clique em **Editar público-alvo** e selecione um novo público-alvo.
 1. Clique em **OK**.
 
 #### Duplicar experiências usando o modo de direcionamento {#duplicating-experiences-using-targeting-mode}
@@ -228,7 +229,7 @@ Para editar os públicos-alvo usando o modo de direcionamento:
 Para copiar experiências usando o modo de direcionamento:
 
 1. Selecione a seta ao lado do nome da experiência.
-1. Clique em **Duplicar** e escolha o público.
+1. Clique em **Duplicar** e escolha o público-alvo.
 1. Renomeie a experiência, se desejar, e clique em **OK**.
 
 ### Criar ofertas usando o modo de direcionamento {#creating-offers-using-targeting-mode}
@@ -265,7 +266,7 @@ Execute o seguinte procedimento depois de [iniciar o processo de direcionamento]
 
    ![Botão Direcionar](../assets/targeted-target-button.png)
 
-   O conteúdo do componente é a oferta para a experiência padrão. Quando um componente é direcionado, seu nó padrão é replicado para cada experiência. Isso é necessário para editar o nó de conteúdo correto durante a criação da experiência. Para essas experiências diferentes do padrão,[&#x200B; adicione uma oferta personalizada](#adding-a-custom-offer) ou[&#x200B; adicione uma oferta da biblioteca](#adding-an-offer-from-an-offer-library).
+   O conteúdo do componente é a oferta para a experiência padrão. Quando um componente é direcionado, seu nó padrão é replicado para cada experiência. Isso é necessário para editar o nó de conteúdo correto durante a criação da experiência. Para essas experiências diferentes do padrão,[ adicione uma oferta personalizada](#adding-a-custom-offer) ou[ adicione uma oferta da biblioteca](#adding-an-offer-from-an-offer-library).
 
 #### Criação de uma oferta adicionando um componente de Direcionamento {#creating-an-offer-by-adding-a-target-component}
 
@@ -410,11 +411,11 @@ A etapa Direcionar do [processo de direcionamento](#the-targeting-process-create
 
 ### Se estiver usando o direcionamento do AEM ou o Adobe Target (direcionamento de experiência) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
-Os públicos são exibidos no lado esquerdo do diagrama de mapeamento e as experiências, no lado direito.
+Os públicos-alvos são exibidos no lado esquerdo do diagrama de mapeamento e as experiências, no lado direito.
 
-![Mapeamento de públicos](../assets/targeted-diagram.png)
+![Mapeamento de públicos-alvos](../assets/targeted-diagram.png)
 
-Defina um público usando um segmento. A configuração da nuvem para a página determina os segmentos que estão disponíveis para você. Quando a página não está associada a uma configuração de nuvem do Adobe Target, os segmentos do AEM estarão disponíveis para definir públicos-alvo. Quando a página está associada a uma configuração de nuvem do Adobe Target, você usará segmentos do Target.
+Defina um público-alvo usando um segmento. A configuração da nuvem para a página determina os segmentos que estão disponíveis para você. Quando a página não está associada a uma configuração de nuvem do Adobe Target, os segmentos do AEM estarão disponíveis para definir públicos-alvo. Quando a página está associada a uma configuração de nuvem do Adobe Target, você usará segmentos do Target.
 
 Para obter informações sobre mecanismos de direcionamento, consulte [Mecanismo de direcionamento](/help/sites-cloud/authoring/personalization/overview.md#targeting-engine).
 
@@ -470,9 +471,9 @@ As seguintes métricas de sucesso estão disponíveis (usadas somente para publi
 
 | Métrica | Descrição | Opções |
 |---|---|---|
-| Conversão | A porcentagem de visitantes que clicaram em qualquer parte da experiência que está sendo testada. Uma conversão pode ser contada uma vez por visitante ou cada vez que um visitante conclui uma conversão. A métrica de conversão é definida como uma das seguintes opções | Visualizou uma página — é possível definir qual página o público visualizou selecionando “URL é” e, em seguida, definindo o URL ou vários URLs, ou selecionando “URL contém” e adicionando um caminho ou palavra-chave. Visualizou uma mbox — é possível definir a mbox visualizada pelo público inserindo o nome da mbox. É possível inserir várias mboxes clicando em Adicionar uma mbox. |
+| Conversão | A porcentagem de visitantes que clicaram em qualquer parte da experiência que está sendo testada. Uma conversão pode ser contada uma vez por visitante ou cada vez que um visitante conclui uma conversão. A métrica de conversão é definida como uma das seguintes opções | Visualizou uma página — é possível definir qual página o público-alvo visualizou selecionando “URL é” e, em seguida, definindo o URL ou vários URLs, ou selecionando “URL contém” e adicionando um caminho ou palavra-chave. Visualizou uma mbox — é possível definir a mbox visualizada pelo público-alvo inserindo o nome da mbox. É possível inserir várias mboxes clicando em Adicionar uma mbox. |
 | Receita | Receita gerada pela visita. Você pode escolher entre as métricas de receita listadas. Para qualquer uma dessas opções, a visualização de uma mbox indica que a meta foi atingida. É possível definir a mbox ou várias mboxes. | Receita por visitante (RPV), Valor médio de pedido (AOV), Vendas totais, Pedidos |
-| Envolvimento | Você pode medir três tipos de envolvimento | Exibições de página, Pontuação personalizada, Tempo no site |
+| Envolvimento | Você pode medir três tipos de engajamento | Exibições de página, Pontuação personalizada, Tempo no site |
 
 Além disso, há configurações avançadas que permitem determinar como contar as métricas de sucesso. As opções incluem contagem da métrica por impressão ou uma vez por visitante, além de escolher se deseja manter o usuário na atividade ou removê-lo.
 
@@ -523,7 +524,7 @@ Para definir metas e configurações se estiver usando o Adobe Target:
 
    ![Fonte dos relatórios](../assets/targeted-reporting-source.png)
 
-1. Na área **Métrica de meta**, em **Meu objetivo principal**, selecione a métrica de sucesso que deseja rastrear - Conversão, Receita, Participação - e insira como essa métrica é medida (ou que ação o público-alvo executa para indicar que um objetivo foi atingido). Consulte a definição das métricas de objetivo na tabela anterior e consulte a [documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=pt-BR) sobre métricas de sucesso.
+1. Na área **Métrica de meta**, em **Meu objetivo principal**, selecione a métrica de sucesso que deseja rastrear - Conversão, Receita, Engajamento- e insira como essa métrica é medida (ou que ação o público-alvo executa para indicar que um objetivo foi atingido). Consulte a definição das métricas de objetivo na tabela anterior e consulte a [documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=pt-BR) sobre métricas de sucesso.
 
    Você pode renomear a meta ao clicar nos três pontos no canto superior direito e selecionar **Renomear**.
 
@@ -570,7 +571,7 @@ Se algum conteúdo inesperado aparecer na página ao carregar um perfil, verifiq
 
 >[!NOTE]
 >
->Se estiver usando o teste A/B ao simular experiências, elas serão mostradas com base na porcentagem de tráfego. Isso é controlado pelo Adobe Target, o que pode levar a resultados inesperados para os autores. (A atividade _author é sincronizada com configurações específicas que permitem a reavaliação durante a simulação). Os autores podem precisar atualizar para ver as outras experiências com base nas suas configurações de tráfego.
+>Se estiver usando o teste A/B ao simular experiências, elas serão mostradas com base na porcentagem de tráfego. Isso é controlado pelo Adobe Target, o que pode levar a resultados inesperados para os autores. (A atividade _author é sincronizada com configurações específicas que permitem a reavaliação durante a simulação.) Os autores podem precisar atualizar para ver as outras experiências com base em suas configurações de tráfego.
 
 Para simular a experiência do visitante, use as seguintes ferramentas:
 
@@ -623,7 +624,7 @@ Se você selecionar Adobe Target como mecanismo:
 
 | Opção | Descrição |
 |---|---|
-| Destinação exata | Habilitar o direcionamento preciso informa ao componente para esperar que os dados do contexto do cliente ou do hub de contexto estejam disponíveis antes de enviar a solicitação para o Adobe Target. Pode aumentar o tempo de carregamento. Ao criar, o direcionamento preciso está sempre ativado. Se você marcar a caixa de seleção de Direcionamento preciso, a mbox executará primeiro um mboxDefine e depois um mboxUpdate, o que resultará em uma solicitação de Ajax quando os dados estiverem disponíveis. Se você não marcar a caixa de seleção de Direcionamento preciso, a mbox executará um mboxCreate, que resultará em uma solicitação síncrona de imediato (neste caso, nem todos os dados de contexto podem estar disponíveis). Observação: ativar ou desativar o direcionamento preciso em um componente específico não afeta as configurações definidas globalmente. Sempre é possível substituir as configurações globais selecionando Direcionamento preciso no componente. |
+| Direcionamento exato | Habilitar o direcionamento preciso informa ao componente para esperar que os dados do contexto do cliente ou do hub de contexto estejam disponíveis antes de enviar a solicitação para o Adobe Target. Pode aumentar o tempo de carregamento. Ao criar, o direcionamento preciso está sempre habilitado. Se você marcar a caixa de seleção de Direcionamento preciso, a mbox executará primeiro um mboxDefine e depois um mboxUpdate, o que resultará em uma solicitação de Ajax quando os dados estiverem disponíveis. Se você não marcar a caixa de seleção de Direcionamento preciso, a mbox executará um mboxCreate, que resultará em uma solicitação síncrona de imediato (neste caso, nem todos os dados de contexto podem estar disponíveis). Observação: habilitar ou desabilitar o direcionamento preciso em um componente específico não afeta as configurações definidas globalmente. Sempre é possível substituir as configurações globais selecionando Direcionamento preciso no componente. |
 | Incluir segmentos resolvidos | Selecionar essa caixa de seleção inclui todos os segmentos resolvidos na chamada da mbox e quaisquer parâmetros configurados na página e na estrutura. Somente funciona em situações com a API XML na qual você está sincronizando os segmentos do AEM. Se você tiver segmentos no AEM que não são manipulados pelo Adobe Target (como segmentos de script), essa opção permite resolver o segmento no AEM e enviar informações para o Adobe Target de que o segmento está ativo. |
 | Parâmetros herdados de contexto | Lista os parâmetros de contexto herdados da estrutura do Adobe Target, se houver, associados à página selecionada. |
 | Parâmetros de contexto | Selecione Adicionar campo para configurar parâmetros de contexto adicionais (mesma opção disponível na estrutura do Target). Os parâmetros de contexto adicionados ao componente se aplicam somente a ele, não a outros componentes, como ocorre ao adicionar parâmetros de contexto diretamente à estrutura. |

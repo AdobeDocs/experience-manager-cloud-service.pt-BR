@@ -3,11 +3,12 @@ title: Fragmentos de conteúdo - Considerações sobre a exclusão
 description: Analise essas considerações importantes antes de definir as políticas de exclusão de fragmentos de conteúdo no AEM. Os fragmentos de conteúdo são uma ferramenta eficiente para fornecer conteúdo headless, e as implicações de excluí-los devem ser cuidadosamente consideradas.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '456'
 ht-degree: 46%
 
 ---
@@ -22,7 +23,7 @@ A capacidade de excluir conteúdo é uma ferramenta poderosa, mas também perigo
 
 Com relação às permissões de exclusão, os fragmentos de conteúdo devem ser considerados em dois níveis:
 
-1. **O fragmento do conteúdo como uma única entidade.**
+1. **O fragmento de conteúdo como uma única entidade.**
 
    * **Caso de uso**: um usuário que deve editar/atualizar um Fragmento de conteúdo - **e excluir um fragmento inteiro**.
    * **Permissões**: a permissão de exclusão pode ser atribuída por meio do gerenciamento de usuários e/ou grupos.

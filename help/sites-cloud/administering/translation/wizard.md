@@ -1,24 +1,25 @@
 ---
-title: Assistente de cópia de Idioma
-description: Saiba mais sobre como usar o Assistente de cópia de idioma no AEM.
+title: Assistente de cópia no idioma de destino
+description: Saiba mais sobre como usar o Assistente de cópia no idioma de destino no AEM.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '276'
 ht-degree: 46%
 
 ---
 
-# Assistente de cópia de Idioma {#language-copy-wizard}
+# Assistente de cópia no idioma de destino {#language-copy-wizard}
 
-O Assistente de cópia de idioma é uma experiência guiada para criar e instrumentar a estrutura de conteúdo multilíngue. O assistente simplifica e agiliza a criação de uma cópia de idioma.
+O Assistente de cópia no idioma de destino é uma experiência guiada para criar e instrumentar a estrutura de conteúdo multilíngue. O assistente simplifica e agiliza a criação de uma cópia no idioma de destino.
 
 >[!TIP]
 >
->Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM AEM, ideais para aqueles sem experiência com o ou com a tradução.
+>Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência com o AEM ou com a tradução.
 
 >[!NOTE]
 >
@@ -28,7 +29,7 @@ Para acessar o assistente:
 
 1. No console de sites, selecione uma página, selecione **Criar** e selecione **Cópia de idioma**.
 
-   ![Criar cópia de idioma a partir do assistente](../assets/language-copy-wizard.png)
+   ![Criar cópia no idioma de destino a partir do assistente](../assets/language-copy-wizard.png)
 
 1. O assistente é aberto na etapa **Selecionar Source**, que permite adicionar/remover páginas. Também há a opção de incluir ou excluir as subpáginas. Selecione as páginas que deseja incluir e selecione **Próximo**.
 

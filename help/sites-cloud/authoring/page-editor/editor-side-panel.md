@@ -1,20 +1,21 @@
 ---
 title: Painel lateral do Editor de páginas
-description: Saiba como usar o painel lateral no editor de sites AEM para adicionar componentes e ativos à sua página.
+description: Saiba como usar o painel lateral no editor de sites do AEM para adicionar componentes e ativos à sua página.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1128'
 ht-degree: 38%
 
 ---
 
 # Painel lateral do Editor de páginas {#side-panel}
 
-Saiba como usar o painel lateral no editor de sites AEM para adicionar componentes e ativos à sua página.
+Saiba como usar o painel lateral no editor de sites do AEM para adicionar componentes e ativos à sua página.
 
 ## Modos do painel lateral {#modes}
 
@@ -30,7 +31,7 @@ Ao abrir o painel lateral, ele deslizará do lado esquerdo e você poderá selec
 
 ## Navegador de componentes   {#components-browser}
 
-[Componentes](/help/implementing/developing/components/overview.md) são os blocos de construção usados para criar conteúdo com o editor de páginas AEM. Você coloca vários componentes em uma página e configura as opções para criar a página de conteúdo.
+[Componentes](/help/implementing/developing/components/overview.md) são os blocos de construção usados para criar conteúdo com o editor de páginas do AEM. Você coloca vários componentes em uma página e configura as opções para criar a página de conteúdo.
 
 O navegador de componentes mostra todos os componentes que estão disponíveis para uso em sua página atual. Elas podem ser arrastadas para o local apropriado e, em seguida, editadas para adicionar o conteúdo.
 

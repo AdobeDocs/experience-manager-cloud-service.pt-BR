@@ -1,13 +1,14 @@
 ---
 title: Projetos
 description: Os projetos permitem agrupar recursos em uma entidade cujo ambiente comum e compartilhado facilita o gerenciamento de projetos
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1259'
 ht-degree: 96%
 
 ---
@@ -18,7 +19,7 @@ Os projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compa
 
 >[!CAUTION]
 >
->Para que os usuários em projetos possam ver outros usuários/grupos enquanto usam a funcionalidade Projetos (como criar projetos, criar tarefas/workflows, ver e gerenciar a equipe), eles precisam ter acesso de leitura a `/home/users` e `/home/groups`. A maneira mais fácil de implementar é fornecer ao grupo **projetos-usuários** acesso de leitura a `/home/users` e `/home/groups`.
+>Para que os usuários em projetos possam ver outros usuários/grupos enquanto usam a funcionalidade Projetos (como criar projetos, criar tarefas/fluxos de trabalho, ver e gerenciar a equipe), eles precisam ter acesso de leitura a `/home/users` e `/home/groups`. A maneira mais fácil de implementar é fornecer ao grupo **projetos-usuários** acesso de leitura a `/home/users` e `/home/groups`.
 
 Como usuário, será possível fazer o seguinte:
 
@@ -112,13 +113,13 @@ Os membros da equipe podem ser atribuídos a esse bloco e excluídos dele (ou te
 
 ![Adicionar membros da equipe ao projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-### Tarefa de tradução {#translation-job}
+### Trabalho de tradução {#translation-job}
 
-O bloco de Tarefa de Tradução é onde você inicia uma tradução e também onde você vê o status das suas traduções. Para configurar a tradução, consulte [Criação de projetos de tradução](/help/assets/translate-assets.md).
+O bloco de Processo de tradução é onde você inicia uma tradução e também onde você vê o status das suas traduções. Para configurar a tradução, consulte [Criação de projetos de tradução](/help/assets/translate-assets.md).
 
 ![Trabalho de tradução](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Clique nas reticências na parte inferior do cartão **Tarefa de tradução** para ver os ativos no fluxo de tarefa de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
+Clique nas reticências na parte inferior do cartão **Trabalho de tradução** para ver os ativos no fluxo de trabalho de tradução. A lista de tarefas de tradução também exibe entradas para metadados e tags de ativos. Essas entradas indicam que metadados e tags de ativos também são traduzidos.
 
 ![Detalhes do trabalho de tradução](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
@@ -158,7 +159,7 @@ O bloco Tarefas permite monitorar o status de qualquer tarefa relacionada ao pro
 
 O AEM acompanha três modelos diferentes prontos para uso:
 
-* Um projeto simples - Uma amostra de referência para qualquer projeto que não se encaixe em outras categorias (uma categoria genérica). Ele inclui três funções básicas (Proprietários, Editores e Observadores) e quatro fluxos de trabalho (Aprovação de projeto, Solicitar lançamento, Solicitar página de aterrissagem e Solicitar email).
+* Um projeto simples - Uma amostra de referência para qualquer projeto que não se encaixe em outras categorias (uma categoria genérica). Ele inclui três funções básicas (Proprietários, Editores e Observadores) e quatro fluxos de trabalho (Aprovação de projeto, Solicitar lançamento, Solicitar página de destino e Solicitar email).
 * Um projeto de mídia - Um projeto de amostra de referência para atividades de mídia. Ele inclui várias funções de projeto relacionadas a mídia (Fotógrafos, Editores, Redatores, Designers, Proprietários e Observadores). Ele também solicita o fluxo de trabalho de cópia para solicitar e revisar o texto.
 * Um [projeto de tradução](/help/sites-cloud/administering/translation/overview.md) - Uma amostra de referência para o gerenciamento de atividades relacionadas a tradução. Ele inclui três funções básicas (Proprietários, Editores e Observadores). Também inclui dois fluxos de trabalho que são acessados na interface de usuário de Fluxos de trabalho.
 

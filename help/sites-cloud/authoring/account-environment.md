@@ -1,13 +1,14 @@
 ---
-title: Configurar o ambiente da sua conta
+title: 'Configurar o ambiente da sua conta  '
 description: O Adobe Experience Manager (AEM) fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de Autor.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '507'
 ht-degree: 60%
 
 ---
@@ -90,7 +91,7 @@ Cada usuário pode definir suas próprias propriedades preferenciais.
 
   Essa opção habilita os atalhos de teclado. Por padrão, eles são ativados, mas podem ser desativados se, por exemplo, um usuário tiver determinados requisitos de acessibilidade.
 
-* **Ativar a Página inicial dos ativos**
+* **Habilitar a Página inicial dos ativos**
 
   Essa opção só estará disponível se o administrador do sistema tiver ativado a experiência da Página inicial da Assets para toda a organização.
 

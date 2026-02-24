@@ -1,13 +1,14 @@
 ---
 title: Visualização de páginas usando dados do ContextHub
 description: A barra de ferramentas do ContextHub exibe os dados dos armazenamentos do ContextHub, permite alterar esses dados e é útil para visualizar o conteúdo
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '366'
 ht-degree: 25%
 
 ---
@@ -25,7 +26,7 @@ O ContextHub instala vários modos de interface e módulos de interface do usuá
 
 ## Revelação da barra de ferramentas do ContextHub {#revealing-the-contexthub-toolbar}
 
-A barra de ferramentas do ContextHub está disponível no modo Visualização. A barra de ferramentas está disponível somente nas instâncias do autor e somente se o administrador a tiver ativado.
+A barra de ferramentas do ContextHub está disponível no modo Visualização. A barra de ferramentas está disponível somente nas instâncias de criação e somente se o administrador a tiver habilitado.
 
 ![A barra de ferramentas do ContextHub](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 

@@ -1,13 +1,14 @@
 ---
 title: Conflitos de implantação
-description: Saiba como gerenciar e resolver conflitos de implementação do Multi Site Manager.
+description: Saiba como gerenciar e resolver conflitos de implementação do Gerenciador multisite (MSM).
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '925'
 ht-degree: 61%
 
 ---
@@ -118,7 +119,7 @@ Os manipuladores de conflito personalizados podem:
 
 ### Comportamento quando o manuseio de conflitos é desativado {#behavior-when-conflict-handling-deactivated}
 
-Se você [desativar o tratamento de conflitos](#rollout-manager-and-conflict-handling) manualmente, o AEM não executa nenhuma ação em páginas em conflito. As páginas não conflitantes são implantadas conforme esperado.
+Se você [desativar manualmente a manipulação de conflitos](#rollout-manager-and-conflict-handling), o AEM não executa nenhuma ação em páginas em conflito. As páginas não conflitantes são implantadas conforme esperado.
 
 >[!CAUTION]
 >

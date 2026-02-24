@@ -1,11 +1,12 @@
 ---
 title: Criar conteúdo acessível para o Adobe Experience Manager as a Cloud Service (Conformidade com WCAG 2.1)
 description: Usar o AEM as a Cloud Service para ajuda a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: da192447ddc6edbca339c9a985f95dc063183cd3
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
 source-wordcount: '13672'
 ht-degree: 92%
@@ -195,7 +196,7 @@ As legendas podem ser:
 
 Use legendas ocultas sempre que possível, pois elas oferecem ao usuário a opção de visualizar legendas. 
 
-Para as legendas ocultas, você deve criar e fornecer um arquivo de legenda sincronizada em um formato adequado (como [SMIL](https://www.w3.org/AudioVideo/)), junto com o arquivo de vídeo (os detalhes sobre como proceder estão fora do escopo desse guia, mas há links fornecidos para alguns tutoriais em [Mais informações - Legendas (pré-gravadas) (1.2.2)](#more-information-captions-prerecorded)). Certifique-se de fornecer uma nota ou ativar o recurso de legenda no player de vídeo para informar aos usuários que legendas estão disponíveis para o vídeo.
+Para as legendas ocultas, você deve criar e fornecer um arquivo de legenda sincronizada em um formato adequado (como [SMIL](https://www.w3.org/AudioVideo/)), junto com o arquivo de vídeo (os detalhes sobre como proceder estão fora do escopo desse guia, mas há links fornecidos para alguns tutoriais em [Mais informações - Legendas (pré-gravadas) (1.2.2)](#more-information-captions-prerecorded)). Certifique-se de fornecer uma nota ou habilitar o recurso de legenda no player de vídeo para informar aos usuários que legendas estão disponíveis para o vídeo.
 
 Se você precisar usar legendas abertas, incorpore o texto à faixa de vídeo. Isso pode ser feito usando aplicativos de edição de vídeo que permitem a sobreposição de títulos no vídeo.
 
@@ -314,7 +315,7 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
 
 É possível verificar se as suas páginas da web têm a estrutura adequada usando os seguintes elementos, quando aplicável:
 
-* **Cabeçalhos:** contanto que os recursos de acessibilidade do RTE estejam ativados, o AEM oferece três níveis de cabeçalho de página. É possível usá-los para identificar seções e subseções de conteúdo. O cabeçalho 1 é o nível mais alto, o Cabeçalho 3 o mais baixo. O administrador do sistema pode configurar o sistema para permitir o uso de mais níveis de cabeçalho.
+* **Cabeçalhos:** contanto que os recursos de acessibilidade do RTE estejam habilitados, o AEM oferece três níveis de cabeçalho de página. É possível usá-los para identificar seções e subseções de conteúdo. O cabeçalho 1 é o nível mais alto, o Cabeçalho 3 o mais baixo. O administrador do sistema pode configurar o sistema para permitir o uso de mais níveis de cabeçalho.
 
 * **Listas**: você pode usar HTML para especificar três tipos diferentes de listas:
    * O elemento `<ul>` é usado para listas *desordenadas* (com marcadores). Os itens da lista individual são identificados usando o elemento `<li>`. No RTE, use o ícone **Lista de marcadores**.
@@ -364,7 +365,7 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
 
   >[!NOTE]
   >
-  >O atributo de ID não está disponível em uma instalação predefinida. Ele pode ser ativado configurando regras de HTML e o serializador no RTE.
+  >O atributo de ID não está disponível em uma instalação predefinida. Ele pode ser habilitado configurando regras de HTML e o serializador no RTE.
 
   Por exemplo, na tabela abaixo os cabeçalhos e IDs são combinados para fazer uma associação programática para usuários de tecnologia assistiva.
 
@@ -477,7 +478,7 @@ As cores são uma forma eficaz de melhorar o apelo estético das páginas da web
 
 Por exemplo, um indivíduo com daltonismo vermelho-verde não conseguirá distinguir entre tons de verde e vermelho. É possível que ele veja as duas cores como uma terceira cor (por exemplo, marrom). Nesse caso, o indivíduo não conseguirá distinguir entre vermelho, verde e marrom.
 
-Além disso, a cor pode não ser observada por indivíduos que usam navegadores somente de texto, dispositivos com visor monocromático ou que utilizam uma impressão em preto e branco da página.
+Além disso, a cor pode não ser observada por pessoas que usam navegadores somente de texto, dispositivos com visor monocromático ou que utilizam uma impressão em preto e branco da página.
 
 Uma outra consideração é o estado *seleted* para um elemento de interface (por exemplo, guias, botões de alternância, entre outros), que deve ser transmitido de alguma forma que não seja apenas com cor e além de apenas uma apresentação visual. Para esses elementos, o uso adicional de padrões, formas e informações programáticas é útil ao criar uma experiência do usuário totalmente inclusiva que não depende de um sentido específico.
 
@@ -523,8 +524,8 @@ Siga as orientações em [Como cumprir o Critério de sucesso 1.4.2](https://www
 
 * Critério de Sucesso 1.4.3
 * Nível AA
-* Contraste (mínimo): a apresentação visual de texto e imagens de texto tem uma relação de contraste de pelo menos 4.5:1, exceto nos seguintes casos:
-   * Texto grande: os textos e imagens de texto em grande escala têm uma relação de contraste de pelo menos 3:1.
+* Contraste (Mínimo): a apresentação visual de texto e imagens de texto tem uma taxa de contraste de pelo menos 4,5:1, exceto para o seguinte:
+   * Texto Grande: o texto em grande escala e as imagens de texto em grande escala têm uma taxa de contraste de pelo menos 3:1.
    * Incidental: o texto ou as imagens de texto que fazem parte de um componente de interface de usuário inativo, que são [meramente decorativos](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), e não estão visíveis para ninguém ou que são parte de uma imagem que inclui outro conteúdo visual significativo, não têm requisito de contraste.
    * Logotipos: o texto que faz parte de um logotipo ou marca comercial não tem requisito de contraste.
 
@@ -547,9 +548,9 @@ Indivíduos com certas deficiências visuais podem não conseguir distinguir ent
 
 Verifique se o texto está suficientemente contrastado com o plano de fundo. As relações de contraste dependem do tamanho e do estilo do texto em questão:
 
-* Para texto com menos de 18 pontos (ou 14 pontos em negrito) em tamanho, a relação de contraste entre o texto/imagens de texto e o plano de fundo deve ser, pelo menos, 4.5:1.
-* Para textos com pelo menos 18 pontos (ou 14 pontos em negrito) de tamanho, a relação de contraste deve ser de pelo menos 3:1.
-* Se um plano de fundo for estampado, a área ao redor de qualquer texto deverá ser sombreada para que a proporção de 4.5:1 ou 3:1 seja mantida.
+* Para texto com menos de 18 pontos (ou 14 pontos em negrito) em tamanho, a relação de contraste entre o texto/imagens de texto e o plano de fundo deve ser de pelo menos 4,5:1.
+* Para texto com pelo menos 18 pontos (ou 14 pontos em negrito) em tamanho, a taxa de contraste deve ser de pelo menos 3:1.
+* Se um plano de fundo for padronizado, o plano de fundo ao redor de qualquer texto deverá ser sombreado para que a proporção 4.5:1 ou 3:1 seja mantida.
 
 >[!NOTE]
 >
@@ -850,7 +851,7 @@ Os links devem ser redigidos de forma consistente ao longo das páginas, especia
 No momento da escrita, há algumas questões relacionadas ao uso de atributos de título para garantir que links semelhantes apresentados em uma página forneçam informações exclusivas sobre o destino (por exemplo, “leia mais” geralmente se refere a vários destinos diferentes):
 
 * O texto contido no atributo de título está disponível apenas para usuários de mouse como um pop-up de dica de ferramenta e não pode ser acessado de forma consistente por usuários móveis ou que usam o teclado.
-* Os leitores de tela podem ler atributos de título, mas essa funcionalidade pode não estar ativada por padrão. Portanto, os usuários podem não estar cientes de que existe um atributo de título.
+* Os leitores de tela podem ler atributos de título, mas essa funcionalidade pode não estar habilitada por padrão. Portanto, os usuários podem não estar cientes de que existe um atributo de título.
 * É complicado alterar a aparência do texto do título, o que significa que, para algumas pessoas, ele pode ser difícil ou impossível de ler.
 
 Portanto, embora o atributo de título possa ser usado para fornecer contexto adicional a um link, esteja ciente de suas limitações e não o use como alternativa para um texto de link apropriado.
@@ -878,7 +879,7 @@ Embora seja recomendado fornecer um texto de link que identifique a sua finalida
 * Sempre que uma lista de links estiver contida em um conjunto de cabeçalhos e o próprio cabeçalho fornecer o contexto adequado.
 * Sempre que uma lista de links estiver contida em um link aninhado e o item de lista principal acima do link aninhado fornecer o contexto adequado.
 
-Algumas vezes, quando existem vários links em uma página (cada um dos quais fornecendo a direção de um link em detalhes complexos, mas necessários), pode ser apropriado fornecer uma versão alternativa da página da web que mostre exatamente o mesmo conteúdo, mas sem um texto de link tão detalhado.
+Algumas vezes, quando existem vários links em uma página (cada um dos quais fornecendo a direção de um link em detalhes complexos, mas necessários), pode ser apropriado fornecer uma versão alternativa da página da web que exiba exatamente o mesmo conteúdo, mas sem um texto de link tão detalhado.
 
 Alternativamente, scripts podem ser usados de forma que uma quantidade mínima de texto seja fornecida no próprio link. Porém, ao ativar um controle apropriado posicionado na parte superior da página, o texto do link será *expandido* para fornecer mais detalhes. Uma abordagem semelhante é usar o CSS para *ocultar* o link completo de usuários deficientes visuais, mas ainda exibi-lo na íntegra para os usuários de leitores de tela. Isso está fora do escopo deste documento, mas mais informações sobre como fazer isso podem ser encontradas na seção [Mais Informações - Finalidade do Link (Em Contexto) (2.4.4)](#more-information-link-purpose-in-context).
 
@@ -1258,7 +1259,7 @@ Um mecanismo que está disponível para revisar, confirmar e corrigir informaç�
 
 #### Propósito - Prevenção de erros (legal, financeiro, dados) (3.3.4) {#purpose-error-prevention-legal-financial-data}
 
-O propósito deste Critério de sucesso é ajudar os usuários portadores de deficiências a evitarem consequências graves como resultado de um erro ao executar uma ação que não pode ser revertida. Por exemplo, a compra de passagens não reembolsáveis ou a apresentação de uma ordem de compra de ações numa conta de corretagem são transações financeiras com graves consequências. Se um usuário tiver cometido um engano sobre a data da viagem aérea, ele poderá terminar com uma passagem com o dia errado que não pode ser trocada. Se o usuário tiver cometido um erro no número de ações a serem compradas, poderia acabar comprando mais ações do que o esperado. Ambos os tipos de erros envolvem transações que ocorrem imediatamente e não podem ser alteradas depois, e podem ser muito caras. Da mesma forma, pode ser um erro irrecuperável se os usuários modificarem ou excluírem involuntariamente os dados armazenados em um banco de dados que precisarão acessar posteriormente, como todo o perfil de viagem em um site de serviços de viagens. No que se refere à modificação ou exclusão de dados &#39;controláveis pelo usuário&#39;, a intenção é evitar a perda em massa de dados, como a exclusão de um arquivo ou registro. Não é a intenção exigir uma confirmação de cada comando save ou a simples criação ou edição de documentos, registros ou outros dados.
+O propósito deste Critério de sucesso é ajudar os usuários portadores de deficiências a evitarem consequências graves como resultado de um erro ao executar uma ação que não pode ser revertida. Por exemplo, a compra de passagens não reembolsáveis ou a apresentação de um pedido de compra de ações numa conta de corretagem são transações financeiras com graves consequências. Se um usuário tiver cometido um engano sobre a data da viagem aérea, ele poderá terminar com uma passagem com o dia errado que não pode ser trocada. Se o usuário tiver cometido um erro no número de ações a serem compradas, poderia acabar comprando mais ações do que o esperado. Ambos os tipos de erros envolvem transações que ocorrem imediatamente e não podem ser alteradas depois, e podem ser muito caras. Da mesma forma, pode ser um erro irrecuperável se os usuários modificarem ou excluírem involuntariamente os dados armazenados em um banco de dados que precisarão acessar posteriormente, como todo o perfil de viagem em um site de serviços de viagens. No que se refere à modificação ou exclusão de dados &#39;controláveis pelo usuário&#39;, a intenção é evitar a perda em massa de dados, como a exclusão de um arquivo ou registro. Não é a intenção exigir uma confirmação de cada comando save ou a simples criação ou edição de documentos, registros ou outros dados.
 
 Os usuários portadores de deficiências podem ter mais probabilidade de cometer erros. As pessoas com deficiências de leitura podem transpor números e letras, e aquelas com deficiências motoras podem apertar as teclas por engano. Ser capaz de reverter ações permite que os usuários corrijam um erro que possa resultar em consequências graves. A capacidade de revisar e corrigir informações permite que os usuários detectem um erro antes de tomar uma ação com consequências graves.
 

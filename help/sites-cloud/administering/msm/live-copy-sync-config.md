@@ -3,11 +3,12 @@ title: Configurar a sincronização da Live Copy
 description: Saiba mais sobre as poderosas opções de sincronização da Live Copy disponíveis e como você pode configurá-las e personalizá-las para atender às necessidades do seu projeto.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2420'
 ht-degree: 90%
 
 ---
@@ -163,7 +164,7 @@ Por exemplo, um blueprint usa o site de [tutorial WKND](/help/implementing/devel
 
 ### Definir as configurações de implementação de uma página de Live Copy {#setting-the-rollout-configurations-for-a-live-copy-page}
 
-Defina uma página de Live Copy com as configurações de implantação a serem usadas quando a página de origem for implementada. As páginas secundárias herdam a configuração por padrão. Ao definir a configuração de implantação a ser usada, você substituirá a configuração que a página de Live Copy herdará da página principal.
+Defina uma página de Live Copy com as configurações de implantação a serem usadas quando a página de origem for implementada. As páginas filhas herdam a configuração por padrão. Ao definir a configuração de implantação a ser usada, você substituirá a configuração que a página de Live Copy herdará da página principal.
 
 Também é possível definir as configurações de implantação para uma página de Live Copy ao [criar a Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-page).
 
@@ -175,7 +176,7 @@ Também é possível definir as configurações de implantação para uma págin
 
    ![Herança da Live Copy da página principal](../assets/live-copy-inherit.png)
 
-1. Se necessário, ajuste o sinalizador **Herança da Live Copy**. Se essa opção for marcada, a configuração da Live Copy terá efeito em todas as tarefas derivadas.
+1. Se necessário, ajuste o sinalizador **Herança da Live Copy**. Se essa opção for marcada, a configuração da Live Copy terá efeito em todos os filhos.
 
 1. Limpe a propriedade **Herdar configurações de implantação da página principal** e selecione uma ou mais configurações de implantação na lista.
 

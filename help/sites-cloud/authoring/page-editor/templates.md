@@ -1,13 +1,14 @@
 ---
 title: Modelos para criar páginas que são editáveis com o editor de páginas
 description: Você pode usar o Editor de modelos para criar modelos que seus autores de conteúdo podem usar para criar páginas que são editáveis com o Editor de páginas.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4415'
+source-wordcount: '4421'
 ht-degree: 77%
 
 ---
@@ -167,7 +168,7 @@ Para definir a miniatura do modelo:
 
 Para poder usar um modelo ao criar uma página é necessário:
 
-* [Ativar o modelo](#enabling-a-template-template-author) para disponibilizá-lo para o uso na criação de páginas.
+* [Habilitar o modelo](#enabling-a-template-template-author) para disponibilizá-lo para o uso na criação de páginas.
 * [Permitir o modelo](#allowing-a-template-author) para especificar as ramificações de conteúdo nas quais o modelo pode ser usado.
 
 #### Habilitar um modelo - Autor do modelo {#enabling-a-template-template-author}
@@ -210,7 +211,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 
 À medida que o modelo for referenciado quando a página for renderizada, o modelo totalmente configurado deverá ser publicado, para estar disponível no ambiente de publicação.
 
-Modelos do Publish usando o **[Console de Modelos](/help/sites-cloud/administering/templates-console.md)**.
+Publicar modelos usando o **[Console de Modelos](/help/sites-cloud/administering/templates-console.md)**.
 
 ## Editar modelos - Autores do modelo   {#editing-templates-template-authors}
 
@@ -401,7 +402,7 @@ Por exemplo, para um componente de imagem, é possível definir as proporções 
 
 >[!CAUTION]
 >
->No AEM, as proporções de corte estão definidas como **altura/largura**. Isso difere da definição convencional de largura/altura e é feita por motivos de compatibilidade legal. Os usuários da criação de página não estarão cientes de qualquer diferença desde que você defina o **Nome** claramente, uma vez que este é exibido na interface do usuário.
+>Na AEM, as taxas de corte estão definidas como **altura/largura**. Isso difere da definição convencional de largura/altura e é feita por motivos de compatibilidade legal. Os usuários da criação de página não estarão cientes de qualquer diferença desde que você defina o **Nome** claramente, uma vez que este é exibido na interface do usuário.
 
 >[!NOTE]
 >
@@ -647,4 +648,4 @@ Ao criar modelos, você deve considerar:
    >O AEM emite avisos explícitos ao alterar o status de bloqueio de componentes em modelos que não são mais rascunhos.
 
 1. [Criar suas próprias pastas](#creating-a-template-folder-admin) para modelos específicos do site.
-1. [Publish seus modelos](#publishing-a-template-template-author) do **[console Modelos]**(/help/sites-cloud/administering/templates-console.md).
+1. [Publique seus modelos](#publishing-a-template-template-author) do **[console Modelos]**(/help/sites-cloud/administering/templates-console.md).

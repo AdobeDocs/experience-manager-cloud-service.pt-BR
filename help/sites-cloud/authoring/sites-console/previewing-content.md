@@ -1,14 +1,15 @@
 ---
 title: Visualização de conteúdo
 description: Saiba como usar o serviço de visualização do AEM para visualizar o conteúdo antes de ele ser publicado.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b93bcb5d26a63babf0b81c92a4fd85d358bfbea7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 65%
+source-wordcount: '312'
+ht-degree: 64%
 
 ---
 
@@ -21,7 +22,7 @@ Ele facilita a visualização de experiências de página que de outra forma nã
 
 >[!IMPORTANT]
 >
->O acesso ao ambiente de Pré-visualização requer a configuração de um arquivo de inclui na lista de permissões IP. Para obter detalhes, consulte [Acessar o serviço de visualização](/help/implementing/cloud-manager/manage-environments.md#access-preview-service#access-preview-service).
+>O acesso ao ambiente de Pré-visualização requer a configuração de um incluo na lista de permissões IP. Para obter detalhes, consulte [Acessar o serviço de visualização](/help/implementing/cloud-manager/manage-environments.md#access-preview-service#access-preview-service).
 >
 >Para obter mais detalhes sobre todos os ambientes, consulte [Gerenciar Ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 

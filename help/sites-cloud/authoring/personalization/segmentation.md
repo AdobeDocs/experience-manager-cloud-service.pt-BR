@@ -1,13 +1,14 @@
 ---
 title: Noções sobre segmentação
 description: A segmentação é uma consideração importante ao criar uma campanha
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '542'
 ht-degree: 72%
 
 ---
@@ -48,7 +49,7 @@ Ao discutir segmentação, a seguinte terminologia é usada:
    * Receita
    * Tamanho da família
    * Estado civil
-   * Sexo
+   * Gênero
    * Local
 * **Características derivadas** - Algumas características demográficas são difíceis de determinar sem registro, mas podem ser derivadas pela combinação de características comportamentais e demográficas.
    * Por exemplo, a combinação do URL de referência (como uma característica comportamental) com os dados demográficos (adquiridos de ferramentas como o [Google Ad Planner](https://www.google.com/adplanner/)) permite aos proprietários do site obterem características demográficas de seus visitantes.

@@ -1,14 +1,15 @@
 ---
 title: Componentes
 description: Os componentes são o bloco de construção fundamental de criação das páginas de conteúdo no AEM
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 89%
+source-wordcount: '341'
+ht-degree: 88%
 
 ---
 
@@ -42,11 +43,11 @@ O console [Componentes](/help/sites-cloud/authoring/components-console.md) forne
 
 ## Componentes principais  {#core-components}
 
-Os [&#128279;](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction)Componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
+Os [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
 
 Eles são criados usando as práticas recomendadas do AEM e são a base da experiência de criação do AEM. Os componentes principais podem ser facilmente estendidos pelos desenvolvedores para atender às necessidades específicas do projeto.
 
-Junto com os Componentes principais do WCM, você também pode usar os [Componentes principais de formulários adaptáveis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR#features). Esses Componentes principais fornecem métodos padrão e mais fáceis de [criar ou adicionar formulários a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+Junto com os Componentes principais do WCM, você também pode usar os [Componentes principais de formulários adaptáveis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Esses Componentes principais fornecem métodos padrão e mais fáceis de [criar ou adicionar formulários a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Configuração de modelos {#configuring-templates}
 

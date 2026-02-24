@@ -1,13 +1,14 @@
 ---
 title: Publicar páginas por meio do console Sites
 description: Saiba como publicar e desfazer a publicação de suas páginas usando o Console Sites.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1641'
 ht-degree: 73%
 
 ---
@@ -66,8 +67,8 @@ Você pode usar o console [**Sites**](/help/sites-cloud/authoring/sites-console/
 
 No console **Sites**, há duas opções para publicação:
 
-* [Publicação rápida   &#x200B;](#quick-publish)
-* [Gerenciar publicação   &#x200B;](#manage-publication)
+* [Publicação rápida   ](#quick-publish)
+* [Gerenciar publicação   ](#manage-publication)
 
 ### Publicação rápida    {#quick-publish}
 
@@ -188,7 +189,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
    >
    >A etapa **Fluxos de trabalho** é mostrada com base nos direitos que seu usuário pode ou não ter. Para obter detalhes, consulte a nota anterior nesta página sobre privilégios de publicação e Gerenciamento de acesso a fluxos de trabalho e [Aplicação de fluxos de trabalho a páginas](/help/sites-cloud/authoring/workflows/applying.md).
 
-   Os recursos são agrupados pelos workflows acionados e cada um recebe opções para:
+   Os recursos são agrupados pelos fluxos de trabalho acionados e cada um recebe opções para:
 
    * Defina o título do fluxo de trabalho.
    * Manter o pacote de fluxo de trabalho, desde que o fluxo de trabalho tenha suporte para vários recursos.

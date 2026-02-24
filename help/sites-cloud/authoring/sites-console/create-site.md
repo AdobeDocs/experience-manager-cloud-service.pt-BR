@@ -3,12 +3,13 @@ title: Criação de um novo site
 description: Saiba como os administradores usam o AEM para criar um site usando modelos de site para definir o estilo e a estrutura de seu site.
 feature: Administering, Authoring
 role: Admin, User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
 solution: Experience Manager Sites
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 67%
+source-wordcount: '131'
+ht-degree: 65%
 
 ---
 

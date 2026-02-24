@@ -4,11 +4,12 @@ description: Saiba mais sobre a extensão de referências externas do AJO do fra
 feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 0%
+source-wordcount: '295'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +31,7 @@ Por exemplo, para usar a extensão com o AJO:
 
 >[!NOTE]
 >
->Consulte também [Integração com o AJO](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/integrations/aem-fragments).
+>Consulte também [Integração com o AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
 
 1. Abra o [Console de Fragmentos de Conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
