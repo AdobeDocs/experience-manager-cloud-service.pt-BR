@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: c07c1f7e412e0c68338121d49781e33356f6c640
+source-git-commit: 012ce93f65d26d7f59fc874d1b225fbd458cf098
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2598'
 ht-degree: 5%
 
 ---
@@ -60,7 +60,7 @@ As predefinições de imagem definem como o Dynamic Media fornece imagens, inclu
 
 ### Geração de representação no AEM as a Cloud Service{#rendition-generation-in-aemaacs}
 
-No AEM as a Cloud Service, as representações são geradas usando os [Microsserviços de ativos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#). O fluxo de trabalho do Ativo de atualização do DAM não está disponível para personalização no Cloud Service.
+No AEM as a Cloud Service, as representações são geradas usando os [Microsserviços de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#). O fluxo de trabalho do Ativo de atualização do DAM não está disponível para personalização no Cloud Service.
 
 As considerações importantes incluem o seguinte:
 
@@ -68,11 +68,11 @@ As considerações importantes incluem o seguinte:
 * As alterações em um perfil de processamento afetam os ativos recém-carregados. Os ativos existentes devem ser reprocessados se novas representações forem necessárias.
 * A personalização do modelo de fluxo de trabalho não é compatível com o AEM as a Cloud Service para geração de representação.
 
-As predefinições de imagem fazem referência às representações disponíveis no momento do delivery. Verifique se as representações necessárias existem antes de configurar ou usar predefinições de imagem.
+As predefinições de imagem fazem referência às representações disponíveis no momento do delivery. Verifique se as representações necessárias existem antes de configurar ou usar as Predefinições de imagem.
 
 **Para controlar quais representações são geradas:**
 
-1. Crie ou edite um [Perfil de Processamento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
+1. Crie ou edite um [Perfil de Processamento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
 2. Configure as definições de representação necessárias.
 3. Aplique o perfil de processamento à pasta apropriada.
 
@@ -191,7 +191,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 1. Select **[!UICONTROL Save]** to save the changes to the workflow.
 -->
 
-### Aumentar ou diminuir o número de predefinições de imagens exibidas {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+## Aumentar ou diminuir o número de predefinições de imagens exibidas {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 As predefinições de imagem criadas estão disponíveis como representações dinâmicas ao visualizar ativos. O Experience Manager mostra várias representações dinâmicas ao visualizar um ativo de **[!UICONTROL Exibição detalhada > Representações]**. É possível aumentar ou diminuir o limite de representações exibidas.
 
@@ -210,7 +210,7 @@ As predefinições de imagem criadas estão disponíveis como representações d
 1. Na propriedade limit, altere o número para o número desejado, por exemplo, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Selecione **[!UICONTROL Salvar tudo]**.
 
-### Criar predefinições de imagem {#creating-image-presets}
+## Criar predefinições de imagem {#creating-image-presets}
 
 Criar predefinições de imagem para aplicar configurações de forma consistente nas imagens ao visualizar ou publicar.
 
@@ -243,7 +243,7 @@ Consulte o [formato de arquivo do InDesign (INDD)](#indesign-indd-file-format).
 
 1. Selecione **[!UICONTROL Salvar]**.
 
-### Criação de uma predefinição de imagem responsiva {#creating-a-responsive-image-preset}
+## Criar uma predefinição de imagem responsiva {#creating-a-responsive-image-preset}
 
 Para criar uma Predefinição de imagem responsiva, execute as etapas em [Criar predefinições de imagem](#creating-image-presets). Ao inserir a altura e a largura na janela **[!UICONTROL Editar predefinição de imagem]**, apague os valores e deixe-os em branco.
 
@@ -267,7 +267,7 @@ Ao criar ou editar Predefinições de imagem, você tem as opções descritas ne
 
 * **[!UICONTROL Nitidez: Modo De Reamostragem]** - Selecione **[!UICONTROL Sharp2]**.
 
-#### Opções da guia Básico {#basic-tab-options}
+### Opções da guia Básico {#basic-tab-options}
 
 | Texto | Descrição |
 | --- | --- |
@@ -276,7 +276,7 @@ Ao criar ou editar Predefinições de imagem, você tem as opções descritas ne
 | **Formato** | Escolha um formato no menu.<br>Escolher **JPEG** oferece as seguintes outras opções:<br>· **Qualidade** - A escala de qualidade do JPEG é de 1 a 100. A escala fica visível quando você arrasta o controle deslizante.<br>· **Habilitar Redução de Resolução de Crominância do JPG** - Como o olho é menos sensível a informações de cores de alta frequência do que a luminosidade de alta frequência, as imagens do JPEG dividem as informações da imagem em componentes de luminosidade e cor. Quando uma imagem do JPEG é compactada, o componente de luminosidade é deixado com a resolução total, enquanto os componentes de cor têm uma resolução mais baixa para calcular a média de grupos de pixels. A redução da resolução reduz o volume de dados para metade ou um terço com impacto mínimo na qualidade aparente. A redução da resolução não é aplicável a imagens em tons de cinza. Essa técnica reduz a quantidade de compactação útil para imagens com alto contraste (por exemplo, imagens com texto sobreposto).<br><br>Escolher **GIF** ou **GIF com alfa** fornece estas opções adicionais de **Quantização de Cores do GIF**:<br>· **Tipo** - Selecionar **Adaptável** (padrão), **Web** ou **Macintosh**. Se você selecionar **GIF com Alpha**, a opção Macintosh não estará disponível.<br>· **Pontilhamento** - Selecionar **Difuso** ou **Desativado**.<br>· **Número de Cores** - Insira um número de 2 a 256.<br>· **Lista de Cores** - Insira uma lista separada por vírgulas. Por exemplo, para branco, cinza e preto, digite `000000,888888,ffffff`.<br><br>Escolher **PDF**, **TIFF** ou **TIFF com alfa** fornece esta opção adicional:<br>· **Compactação** - Selecione um algoritmo de compactação. As opções de algoritmo para o PDF são **None**, **Zip** e **Jpeg**; para o TIFF, são **None**, **LZW**, **Jpeg** e **Zip**; e para o TIFF com Alpha são **None**, **LZW** e **Zip**.<br><br>Escolher **PNG**, **PNG com Alpha** ou **EPS** não fornece opções adicionais. |
 | **Nitidez** | Selecione **Habilitar Nitidez Simples** para aplicar um filtro de nitidez básico à imagem depois de todo o dimensionamento. A nitidez pode ajudar a compensar o desfoque que pode ocorrer ao exibir uma imagem de tamanho diferente. |
 
-#### Opções da guia Avançadas {#advanced-tab-options}
+### Opções da guia Avançadas {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -326,7 +326,7 @@ Ao criar ou editar Predefinições de imagem, você tem as opções descritas ne
     </ul>
     <div>
       A nitidez é descrita em
-     <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Usando nitidez de imagem com vídeo do Experience Manager Dynamic Media</a>, no tópico da Ajuda <a href="https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Nitidez de uma imagem</a> online e em <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=pt-BR">Práticas recomendadas para nitidez de imagens no Dynamic Media Classic</a> baixáveis do PDF.
+     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Usando nitidez de imagem com vídeo do Experience Manager Dynamic Media</a>, no tópico da Ajuda <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Nitidez de uma imagem</a> online e em <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Práticas recomendadas para nitidez de imagens no Dynamic Media Classic</a> baixáveis do PDF.
     </div> </td>
   </tr>
   <tr>
@@ -346,7 +346,7 @@ Ao criar ou editar Predefinições de imagem, você tem as opções descritas ne
   </tr>
   <tr>
    <td><strong>Modificador de imagem</strong></td>
-   <td><p>Além das configurações de imagem comuns disponíveis na interface, o Dynamic Media oferece suporte a várias modificações de imagem avançadas que você pode especificar no campo <strong>Modificadores de imagem</strong>. Estes parâmetros são definidos na <a href="https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">referência de comando do Protocolo do Servidor de Imagens</a>.</p> <p>Importante: a seguinte funcionalidade listada na API não é compatível:</p>
+   <td><p>Além das configurações de imagem comuns disponíveis na interface, o Dynamic Media oferece suporte a várias modificações de imagem avançadas que você pode especificar no campo <strong>Modificadores de imagem</strong>. Estes parâmetros são definidos na <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">referência de comando do Protocolo do Servidor de Imagens</a>.</p> <p>Importante: a seguinte funcionalidade listada na API não é compatível:</p>
     <ul>
      <li>Modelos básicos e comandos de renderização de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
      <li>Comandos de localização: <code>locale=</code> e <code>req=xlate</code></li>
@@ -361,9 +361,9 @@ Ao criar ou editar Predefinições de imagem, você tem as opções descritas ne
  </tbody>
 </table>
 
-### Definir opções de Predefinição de imagem com modificadores de imagem {#defining-image-preset-options-with-image-modifiers}
+## Definir opções de Predefinição de imagem com modificadores de imagem {#defining-image-preset-options-with-image-modifiers}
 
-Além das opções disponíveis nas guias Básico e Avançado, é possível definir modificadores de imagem para oferecer mais opções ao definir Predefinições de imagem. A Renderização de Imagens depende da API de Renderização de Imagens do Dynamic Media e é definida em detalhes na [Referência do Protocolo HTTP](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
+Além das opções disponíveis nas guias Básico e Avançado, é possível definir modificadores de imagem para oferecer mais opções ao definir Predefinições de imagem. A Renderização de Imagens depende da API de Renderização de Imagens do Dynamic Media e é definida em detalhes na [Referência do Protocolo HTTP](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
 
 A seguir estão alguns exemplos básicos do que você pode fazer com modificadores de imagem.
 
@@ -371,7 +371,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 >
 >Alguns modificadores de imagem [não podem ser usados no Experience Manager](#advanced-tab-options).
 
-* [op_invert](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - Inverte cada componente de cor para um efeito de imagem negativo.
+* [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - Inverte cada componente de cor para um efeito de imagem negativo.
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -379,7 +379,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - Aplica um filtro de desfoque à imagem.
+* [op_blur](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - Aplica um filtro de desfoque à imagem.
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -395,7 +395,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) - Diminui ou aumenta o brilho.
+* [op_brightness](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) - Diminui ou aumenta o brilho.
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -403,7 +403,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) - Ajusta a opacidade da imagem. Permite diminuir a opacidade do primeiro plano.
+* [opac](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) - Ajusta a opacidade da imagem. Permite diminuir a opacidade do primeiro plano.
 
   ```xml {.line-numbers}
   opac=29
@@ -411,7 +411,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### Editar predefinições de imagem {#modifying-image-presets}
+## Editar predefinições de imagem {#modifying-image-presets}
 
 1. No Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Predefinições de imagem]**.
 
@@ -420,11 +420,11 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 1. Selecione uma predefinição e, em seguida, **[!UICONTROL Editar]**. A janela **[!UICONTROL Editar predefinição de imagem]** é aberta.
 1. Faça alterações e selecione **[!UICONTROL Salvar]** para salvar as alterações ou **[!UICONTROL Cancelar]** para cancelar as alterações.
 
-### Publicar predefinições de imagem {#publishing-image-presets}
+## Publicar predefinições de imagem {#publishing-image-presets}
 
 As predefinições de imagem são publicadas automaticamente.
 
-### Excluir predefinições de imagem {#deleting-image-presets}
+## Excluir predefinições de imagem {#deleting-image-presets}
 
 1. No Experience Manager, selecione o logotipo Experience Manager para acessar o console de navegação global e selecione o ícone Ferramentas.
 1. Navegue até **[!UICONTROL Assets]** > **[!UICONTROL Predefinições de imagem]**.
