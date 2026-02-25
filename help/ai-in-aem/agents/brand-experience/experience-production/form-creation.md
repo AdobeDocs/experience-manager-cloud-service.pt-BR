@@ -4,9 +4,9 @@ description: Saiba mais sobre o trabalho de criação de formulários do Brand E
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -54,15 +54,9 @@ Depois de criar a estrutura do formulário inicial usando o Assistente de IA, é
 
 Para obter mais informações, consulte a [documentação do Forms Experience Builder.](/help/forms/experience-builder/product-overview.md)
 
-
 ## Ativação {#activation}
 
-Para habilitar o trabalho de criação de formulário para sua organização, a ativação deve ser iniciada por meio do Adobe. Comece o processo fazendo um contato via:
-
-* Email: `experience-production-agent@adobe.com`
-* Ou entre em contato com a equipe de conta designada da Adobe.
-
-Ao entrar em contato com o, forneça sua ID da organização da AEM as a Cloud Service.
+Você pode explorar os Agentes da AEM por meio do [Playground](https://www.aem.live/developer/aem-playground) ou conectar-se com seu CSM ou TAM para discutir o acesso por meio da SKU do Agente.
 
 <!-- 
 #### Import and convert {#import-and-convert}
