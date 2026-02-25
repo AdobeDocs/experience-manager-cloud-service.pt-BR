@@ -32,7 +32,7 @@ O trabalho pode recuperar os status do pipeline e ajudar você a solucionar prob
 
 Para acessar este trabalho, consulte as [notas de versão](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) para obter instruções sobre como se inscrever no programa beta, certificando-se de indicar seu interesse no trabalho de desenvolvimento. Você também pode enviar um feedback específico do trabalho de desenvolvimento por email para [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Siga um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) para saber como usar o Agente de Desenvolvimento para solucionar falhas de pipeline.
+[Siga um tutorial](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) para saber como usar o Agente de Desenvolvimento para solucionar falhas de pipeline.
 
 ## Acessar o trabalho de desenvolvimento por meio do Cloud Manager {#how-to-access-the-job}
 
