@@ -4,9 +4,9 @@ description: Saiba como configurar o Open ID Connect (OIDC) para o AEM as a Clou
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: 75c2dbc4f1d77de48764e5548637f95bee9264dd
+source-git-commit: c9b0f68751bbec69ff0d2a09aa3b7df31d35de3a
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '2153'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Agora, configure o manipulador de autenticação OIDC. Várias conexões OIDC po
 
 ### Configurar SlingUserInfoProcessor {#configure-slinguserinfoprocessor}
 
-1. Crie o arquivo de configuração. Neste exemplo, usaremos `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessor~azure.cfg.json`. O sufixo `azure` deve ser um identificador exclusivo. Consulte um exemplo do arquivo de configuração abaixo:
+1. Crie o arquivo de configuração. Neste exemplo, usaremos `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json`. O sufixo `azure` deve ser um identificador exclusivo. Consulte um exemplo do arquivo de configuração abaixo:
 
    ```
    {
@@ -208,12 +208,14 @@ Duas abordagens principais estão disponíveis.
 ### Opção 1 — Grupos locais
 
 O grupo externo pode ser adicionado como membro de um grupo local que já tem as ACLs necessárias.
+
 * O grupo externo deve existir no repositório, que ocorre automaticamente quando um usuário pertencente a esse grupo faz logon pela primeira vez.
 * Essa opção geralmente é preferida quando Grupos de usuários fechados (CUGs) estão em uso, pois o grupo local existe em ambos os ambientes, autor e publicação.
 
 ### Opção 2 — ACLs diretas em grupos externos via RepoInit
 
 As ACLs podem ser aplicadas diretamente a grupos externos usando scripts RepoInit.
+
 * Essa abordagem é mais eficiente e é preferível quando os CUGs não são usados.
 * O exemplo a seguir mostra uma configuração RepoInit que atribui permissões de leitura a um grupo externo. A opção `ignoreMissingPrincipal` permite a criação da ACL mesmo se o grupo ainda não existir no repositório:
 
@@ -331,11 +333,11 @@ As ACLs podem ser aplicadas diretamente a grupos externos usando scripts RepoIni
 
 ### Informações adicionais sobre grupos do Azure AD {#additional-information-about-azure-ad-groups}
 
-Para configurar um grupo para o aplicativo corporativo no Portal do Microsoft Azure, você precisa pesquisar o aplicativo em: **Aplicativos Corporativos** e adicionar os grupos: <!-- Alexandru: this bit cound be clearer-->
+Para configurar um grupo para o aplicativo empresarial no Microsoft Azure Portal, você precisa pesquisar o aplicativo em: **Aplicativos empresariais** e adicionar os grupos: <!-- Alexandru: this bit cound be clearer-->
 
 ![Adição de grupo OIDC](/help/security/assets/oidc-ad-additional-info.png)
 
-Para habilitar a declaração de grupo no Token de Id, adicione a declaração na seção **Configuração de Token** do Portal do Microsoft Azure: <!-- Alexandru: this bit cound be clearer as well-->
+Para habilitar a declaração de grupo no Token de Id, adicione a declaração na seção **Configuração de Token** do Portal Azure do Microsoft: <!-- Alexandru: this bit cound be clearer as well-->
 
 ![ID do Token de Declaração OIDC](/help/security/assets/oidc-claim-id-token.png)
 
@@ -352,14 +354,58 @@ O nome de arquivo que precisa ser modificado é `org.apache.sling.auth.oauth_cli
 }
 ```
 
+## Personalizar redirecionamento após autenticação {#custom-redirect-after-authentication}
+
+Por padrão, após a autenticação OIDC bem-sucedida, os usuários são redirecionados de volta para o URL solicitado originalmente. No entanto, você pode personalizar esse comportamento usando o parâmetro de consulta `redirect`.
+
+### Uso do parâmetro de redirecionamento
+
+Ao iniciar a autenticação, você pode especificar uma URL de redirecionamento personalizada adicionando o parâmetro `redirect` à sua solicitação de autenticação:
+
+```
+/content/wknd/us/en/adventures?redirect=/content/wknd/us/en/welcome
+```
+
+Neste exemplo, após a autenticação bem-sucedida, o usuário será redirecionado para `/content/wknd/us/en/welcome` em vez da página solicitada originalmente.
+
+### Restrições de segurança
+
+Por motivos de segurança, o parâmetro `redirect` tem as seguintes restrições:
+
+* **Deve ser um caminho relativo**: a URL de redirecionamento deve começar com `/` (por exemplo, `/content/mysite/dashboard`)
+* **Nenhum redirecionamento entre sites**: URLs absolutas (por exemplo, `https://external-site.com`) não são permitidas
+* **Nenhuma URL relativa a protocolo**: URLs iniciadas com `//` são rejeitadas para impedir redirecionamentos relativos a protocolo
+
+Se um URL de redirecionamento inválido for fornecido, a autenticação falhará com um erro.
+
+### Exemplo de casos de uso
+
+1. **Página de boas-vindas após o logon**: redirecionar usuários para uma página de boas-vindas personalizada após o primeiro logon
+
+   ```
+   /content/mysite/secure-area?redirect=/content/mysite/welcome
+   ```
+
+2. **Redirecionamento do painel**: direciona os usuários para um painel específico após a autenticação
+
+   ```
+   /content/mysite/login?redirect=/content/mysite/user/dashboard
+   ```
+
+3. **Deep linking**: permitir que os usuários autentiquem e acessem um recurso específico
+
+   ```
+   /content/mysite/protected?redirect=/content/mysite/protected/specific-document
+   ```
+
 ## Como migrar do Manipulador de autenticação Saml para o Manipulador de autenticação Oidc
 
-Quando o AEM já estiver configurado com um Manipulador de Autenticação SAML e os usuários estiverem presentes no repositório com a [sincronização de dados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) habilitada, poderão ocorrer conflitos entre os usuários SAML originais e os novos usuários OIDC.
+Quando o AEM já estiver configurado com um Manipulador de Autenticação SAML e os usuários estiverem presentes no repositório com a [sincronização de dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) habilitada, poderão ocorrer conflitos entre os usuários SAML originais e os novos usuários OIDC.
 
 1. Configure o [OidcAuthenticationHandler](#configure-oidc-authentication-handler) e habilite `idpNameInPrincipals` na configuração [SlingUserInfoProcessor](#configure-slinguserinfoprocessor)
 1. Configuração [ACL para grupos externos](#configure-acl-for-external-groups).
 1. Após o logon dos usuários, os usuários antigos criados pelo manipulador de autenticação saml podem ser excluídos.
 
 >[!NOTE]
->Quando o Manipulador de Autenticação SAML estiver desabilitado e o Manipulador de Autenticação OIDC estiver habilitado, se a [sincronização de dados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) não estiver habilitada, as sessões existentes se tornarão inválidas. Os usuários precisarão se autenticar novamente, o que resulta na criação de novos nós de usuário OIDC no repositório.
+>Quando o Manipulador de Autenticação SAML estiver desabilitado e o Manipulador de Autenticação OIDC estiver habilitado, se a [sincronização de dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) não estiver habilitada, as sessões existentes se tornarão inválidas. Os usuários precisarão se autenticar novamente, o que resulta na criação de novos nós de usuário OIDC no repositório.
 
