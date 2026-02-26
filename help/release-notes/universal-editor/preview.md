@@ -4,12 +4,13 @@ description: Estas são as notas de versão da versão de pré-visualização do
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 8ebc8184e642f26c004df88a16eece2563780437
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
+
 
 # Notas de versão de visualização do Universal Editor {#preview}
 
@@ -25,12 +26,11 @@ Estas notas de versão do **preview** são fornecidas como conveniência, para q
 >
 >O conteúdo da versão real, bem como a data de lançamento, estão sujeitos a alterações.
 
-## Aprimoramentos futuros {#other-improvements}
+## Recursos futuros {#upcoming-features}
 
-* O editor não padroniza mais o conteúdo como `{}` antes que o conteúdo chegue, evitando a perda de dados em determinadas situações.
-* As alterações não são mais perdidas ao editar no painel esquerdo e selecionar outro item na janela do editor.
-* A importação css manual não é mais necessária ao usar `headless-canvas`.
-* Para fins do CORS, os endpoints corretos são usados para preparo, pré-visualização e produção.
-* A descrição foi adicionada a todos os campos de esquema.
-* Atualizações de vários campos nos Fragmentos de conteúdo agora são compatíveis com edições em contexto.
-* A persistência de dados quando o campo está em foco se tornou mais robusta.
+* Um seletor de componentes agora está disponível no menu de contexto.
+* Um seletor de cores para o RTE agora está disponível.
+
+## Aprimoramentos futuros {#upcoming-improvements}
+
+* As opções de alinhamento, direção de texto e recuo agora estão [habilitadas por padrão no RTE](/help/implementing/universal-editor/configure-rte.md), desde que o back-end dê suporte a elas.
