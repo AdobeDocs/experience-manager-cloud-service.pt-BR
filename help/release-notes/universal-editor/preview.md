@@ -4,9 +4,9 @@ description: Estas são as notas de versão da versão de pré-visualização do
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 8ebc8184e642f26c004df88a16eece2563780437
+source-git-commit: 6b4c4b92bb726da2f7222dfa0e223aa3d0309c8f
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Estas notas de versão do **preview** são fornecidas como conveniência, para q
 
 ## Recursos futuros {#upcoming-features}
 
-* Um seletor de componentes agora está disponível no menu de contexto.
+* O seletor de componentes tem um novo design.
 * Um seletor de cores para o RTE agora está disponível.
 
 ## Aprimoramentos futuros {#upcoming-improvements}
