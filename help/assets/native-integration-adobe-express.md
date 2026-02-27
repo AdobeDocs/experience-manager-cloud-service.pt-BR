@@ -4,9 +4,9 @@ description: Use o Supervisor de conteúdo para detectar e acessar o AEM Assets 
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 54e66597d60621743cb39ef0b8edb21b6eea6c8d
+source-git-commit: 6d80567106fe7c32d8073ca093f895ff28500413
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2581'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ Clique no ícone de ![visualização](assets/do-not-localize/preview-icon.svg) p
 
 ![Visualizar representações do Dynamic Media](assets/native-express-dynamic-media-preview.png)
 
-Clique em **[!UICONTROL Adicionar Modificadores]**, especifique um modificador na caixa de texto e pressione Enter para aplicar a transformação às representações em tempo real. Da mesma forma, é possível adicionar vários modificadores a uma representação e pré-visualizar essas transformações. Arraste e solte o ativo da visualização na tela. A representação após a aplicação desses modificadores não é salva. Consulte a lista de modificadores com suporte para [Dynamic Media Scene7](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) e [Dynamic Media com OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Clique em **[!UICONTROL Adicionar Modificadores]**, especifique um modificador na caixa de texto e pressione Enter para aplicar a transformação às representações em tempo real. Da mesma forma, é possível adicionar vários modificadores a uma representação e pré-visualizar essas transformações. Arraste e solte o ativo da visualização na tela. A representação após a aplicação desses modificadores não é salva. Consulte a lista de modificadores com suporte para [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) e [Dynamic Media com OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 >[!IMPORTANT]
 > 
@@ -244,34 +244,23 @@ Como prática recomendada, a Adobe recomenda especificar valores no restante dos
 
 7. Clique em **[!UICONTROL Carregar]** para carregar o(s) ativo(s) para o AEM Assets.
 
-   <table> 
-    <tbody>
-     <tr>
-      <th><strong>Formatos compatíveis</strong></th>
-      <th><strong>Tamanho</strong></th>
-     </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL JPEG]</td>
-        <td> 65 MP (por exemplo, 8K x 8K ou 16K x 4K) </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL PNG]</td>
-        <td> 65 MP (por exemplo, 8K x 8K ou 16K x 4K) </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL SVG]</td>
-        <td> Máximo de 250 KB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL MP4]</td>
-        <td> 3840 X 3840 pixels, máximo de 200 MB</td>
-    </tr>
-    <tr>
-      <td colspan="2"> <i> O tamanho do ativo deve ser menor que 80 MB para dispositivos desktop e 40 MB para dispositivos móveis. </i></td>
-   </tr>
-    </tbody>
-   </table>
+   >[!NOTE]
+   >
+   > Se você estiver salvando ativo(s) no repositório de delivery do Content Hub, o Nome do projeto ou da campanha será um campo obrigatório. Nesse caso, também não é necessário selecionar uma pasta de destino, pois ela é derivada automaticamente dos metadados.
+
+## Formatos de arquivo compatíveis {#supported-file-formats-import-assets}
+
+O Adobe Express oferece suporte nativo aos formatos disponíveis em [Revisar os requisitos mínimos de imagem](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). No entanto, o AEM Assets oferece suporte aos seguintes tipos de formato:
+
+| Formato compatível | Máximo de dimensões/resolução | Tamanho máximo do arquivo |
+|------------------|---------------------------------------------|---------------|
+| JPEG | 65 MP (por exemplo, 8K × 8K ou 16K × 4K) | Desktop de 80 MB, 40 MB para portáteis |
+| PNG | 65 MP (por exemplo, 8K × 8K ou 16K × 4K) | Desktop de 80 MB, 40 MB para portáteis |
+| SVG | — | 250 KB |
+| MP4 | 3840 × 3840 pixels | 200 MB |
+| PSD | 65 MP (por exemplo, 8K × 8K ou 16K × 4K) | Desktop de 80 MB, 40 MB para portáteis |
+| PDF | — | — |
+
 
 ## Limitações {#limitations}
 
