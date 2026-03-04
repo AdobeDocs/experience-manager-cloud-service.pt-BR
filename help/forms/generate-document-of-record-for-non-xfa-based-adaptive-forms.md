@@ -4,9 +4,9 @@ description: Saiba como gerar um PDF de envio a partir de envios de formulário 
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
+source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
 workflow-type: tm+mt
-source-wordcount: '4117'
+source-wordcount: '4202'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artigo |
 
 ## Visão geral {#overview}
@@ -367,6 +367,12 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
       ![Propriedades do Campo de Formulário](/help/forms/assets/formfieldpropertiesdor.png)
 
+      **Exibir rótulos para a lista suspensa de várias seleções**
+
+      <span class="preview"> Esse recurso está disponível por meio do programa de acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+      O PDF de envio agora exibe os rótulos de exibição selecionados para componentes suspensos de seleção múltipla em vez de valores armazenados internos. Por exemplo, se um usuário selecionar &quot;Califórnia&quot; e &quot;Nova York&quot; em uma lista suspensa, a PDF de envio mostrará os rótulos selecionados em vez dos valores internos, como `CA` e `NY`.
+
    3. **Propriedades da Página Mestra**:
       * **Imagem de logotipo**: você pode optar por usar a imagem de logotipo do Formulário adaptável, escolher uma do DAM ou carregar uma do seu computador.
       * **Título do Formulário**: Título do DoR.
@@ -377,9 +383,10 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
       ![Propriedades da Página Mestra](/help/forms/assets/masterpagepropertiesdor.png)
 
-   >[!NOTE]
+   <!--
+   [!NOTE]
    >
-   >Se você estiver usando um modelo de Formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades de Cor de ênfase e Família de fontes funcionem, verifique se o seguinte está presente no modelo de Formulário adaptável no subformulário raiz:
+   >If you are using an Adaptive Form template created with a version of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your Adaptive Form template under the root subform:
 
    ```xml
    <proto>
@@ -391,7 +398,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
    <color value="4,166,203"/>
    </edge>
    </proto>
-   ```
+   ```-->
 
 1. Para salvar as alterações de identidade visual, selecione **[!UICONTROL Concluído]**.
 
@@ -524,6 +531,11 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. O Forms as 
 1. Localize e abra a configuração **[!UICONTROL Forms adaptável e Canal da Web de comunicação interativa]**.
 1. Especifique o caminho do arquivo XCI e clique em **[!UICONTROL Salvar]**.
 
+
+## Perguntas frequentes {#faq}
+
+**P: as alterações não estão aparecendo no PDF de Envio.**
+**Ans:** Abra o formulário no editor do Adaptive Forms, faça uma pequena edição (por exemplo, ajuste um rótulo de campo ou reordene um campo) e salve o formulário. Isso gera novamente o modelo de PDF de envio e as alterações aparecem no próximo PDF gerado.
 
 ## Consulte também {#see-also}
 

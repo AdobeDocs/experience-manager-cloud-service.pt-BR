@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
+source-git-commit: 800bbd2adf423b4eb00e91b7bb4dd26a37a2e032
 workflow-type: tm+mt
-source-wordcount: '3133'
+source-wordcount: '3229'
 ht-degree: 0%
 
 ---
@@ -261,7 +261,7 @@ A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas 
 
 Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
 
-Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### APIs Doc Assurance
 
@@ -316,6 +316,14 @@ O armazenamento de PDFs no Armazenamento Azure Blob permite o gerenciamento cent
 * [Suporte a Expressões Matemáticas e de Funções em Parâmetros de Entrada](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): Os parâmetros de entrada agora oferecem suporte a chamadas de função e expressões matemáticas, permitindo que os autores de formulários passem valores computados dinamicamente diretamente.
 
 * [Recuperar valores de propriedade de uma matriz JSON](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): chame uma API com uma função personalizada para extrair valores de uma matriz JSON e associá-los diretamente aos campos de formulário.
+
+### Suporte ao controle de versão no Forms Manager
+
+O Forms Manager agora é compatível com o controle de versão do Adaptive Forms (Componentes principais e Componentes de base), fragmentos de formulário, temas, modelos XDP e ativos binários. Você pode criar versões, exibir o histórico e restaurar estados anteriores no console Forms e Documentos. Consulte [Gerenciar versões de formulário no Forms Manager](/help/forms/manage-form-versions-forms-manager.md).
+
+### Acessibilidade aprimorada para componentes de formulário
+
+Os Componentes principais do Forms adaptável apresentam marcação semântica compatível com WCAG para grupos de caixas de seleção, grupos de botões de opção e painéis. Esses componentes agora usam elementos `<fieldset>` e `<legend>` para estabelecer relações significativas entre rótulos de grupo e suas opções para tecnologias assistivas. Consulte o [Suporte a conjuntos de campos e legendas no Forms Adaptável](/help/forms/creating-accessible-adaptive-forms.md#fieldset-legend-accessibility).
 
 ## Consulte também:
 

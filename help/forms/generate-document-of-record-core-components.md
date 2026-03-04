@@ -4,14 +4,14 @@ description: Saiba como gerar um PDF de envio a partir de envios de formulário 
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 24068cb5219b81dc85769137e985cfa60486dd9e
+source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
 workflow-type: tm+mt
-source-wordcount: '3208'
+source-wordcount: '3314'
 ht-degree: 1%
 
 ---
 
-# Gerar um PDF de envio (antigo Documento de registro) para o Adaptive Forms (Componentes principais)
+# Gerar um PDF de envio (documento de registro) para o Forms adaptável (componentes principais)
 
 ## Visão geral {#overview}
 
@@ -359,6 +359,12 @@ Para localizar as informações de marca inseridas na guia Documento de registro
       * **Alinhamento de Opções**: Você pode selecionar o alinhamento desejado (Horizontal, Vertical, Igual ao Formulário adaptável) para definir o alinhamento dos campos, como caixa de seleção ou botão de opção, a serem exibidos em [!UICONTROL Documento de Registro]. Por padrão, o alinhamento vertical é definido para os campos em [!UICONTROL Documento de registro]. Definir as propriedades das [!UICONTROL Propriedades do Campo de Formulário] de DoR substitui as propriedades definidas no [!UICONTROL Alinhamento de Itens] para os campos em um Formulário adaptável. Caso você selecione a opção [!UICONTROL Igual ao formulário adaptável], o alinhamento conforme configurado em uma instância de autor do formulário adaptável será usado para os campos [!UICONTROL Documento de registro].
       * **Número de opções de alinhamento horizontal**:You pode definir o número de opções a serem exibidas no PDF de Envio para o alinhamento horizontal.
 
+      **Exibir rótulos para a lista suspensa de várias seleções**
+
+      <span class="preview"> Esse recurso está disponível por meio do programa de acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+      O PDF de envio agora exibe os rótulos de exibição selecionados para componentes suspensos de seleção múltipla em vez de valores armazenados internos. Por exemplo, se um usuário selecionar &quot;Califórnia&quot; e &quot;Nova York&quot; em uma lista suspensa, a PDF de envio mostrará os rótulos selecionados em vez dos valores internos, como `CA` e `NY`. Cada opção selecionada aparece em uma linha separada em vez de em valores separados por vírgula, consistente com o comportamento no [Forms Adaptável baseado em Componentes de Base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+
    1. **Propriedades da Página Mestra**:
 
       * **Imagem de logotipo**: você pode optar por usar a imagem de logotipo do Formulário adaptável, escolher uma do DAM ou carregar uma do seu computador.
@@ -367,24 +373,6 @@ Para localizar as informações de marca inseridas na guia Documento de registro
       * **Rótulo do aviso**: Rótulo do aviso.
       * **Aviso de Isenção de Responsabilidade**: texto que especifica o escopo de direitos e obrigações no PDF de Envio.
       * **Texto do aviso**: texto do aviso.
-
-      <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
-
-      >[!NOTE]
-      >
-      >Se você estiver usando um modelo de Formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades de Cor de ênfase e Família de fontes funcionem, verifique se o seguinte está presente no modelo de Formulário adaptável no subformulário raiz:
-
-      ```xml
-      <proto>
-      <font typeface="Arial"/>
-      <fill>
-      <color value="4,166,203"/>
-      </fill>
-      <edge>
-      <color value="4,166,203"/>
-      </edge>
-      </proto>
-      ```
 
 1. Para salvar as alterações de identidade visual, selecione **[!UICONTROL Concluído]**.
 
@@ -428,6 +416,11 @@ A configuração do componente Documento de registro está disponível em suas p
 **Configurações de nível de formulário**
 
 * **Incluir campos desatados em DoR:** A configuração da propriedade inclui campos desatados do Formulário adaptável baseado em esquema no Submission PDF. Por padrão, é verdadeiro.
+
+## Perguntas frequentes {#faq}
+
+**P: as alterações não estão aparecendo no PDF de Envio.**
+**Ans:** Abra o formulário no editor do Adaptive Forms, faça uma pequena edição (por exemplo, ajuste um rótulo de campo ou reordene um campo) e salve o formulário. Isso gera novamente o modelo de PDF de envio e as alterações aparecem no próximo PDF gerado.
 
 ## Consulte também {#see-also}
 
