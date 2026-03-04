@@ -4,7 +4,7 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5f37aea31823e45298cf1cb57461d01b4634b5cf
+source-git-commit: 4b05f571904384521b79dbaf0fa5f4a3a75fef2b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 6%
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 24678, lançada publicamente em quinta-feira, 4 de março de 2026. A versão de manutenção anterior era 24464.
 
-A ativação de recursos do 2026.3.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2026.3.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-24678}
 
@@ -68,7 +68,7 @@ Adição da opção Fieldset no painel, que permite aos usuários organizar e ag
 * CQ-4361634: fragmentos de experiência corrigidos não selecionáveis ou que estão sendo adicionados ao projeto de tradução.
 * CQ-4362072: corrigido o fluxo de trabalho de tradução do AEMaaCS - DE > A etapa ES falha ao adicionar página ao projeto de tradução.
 * FORMS-23741: Os usuários tiveram problemas em que as etapas de upload de InvokeDDX e Ativo não eram executadas em cascata, exigindo duas execuções de fluxo de trabalho separadas. Isso afetou o ambiente de produção usando o AEM as a Cloud Service com o complemento Sites e Forms.
-* FORMS-23877: os usuários tiveram problemas com funções personalizadas que não carregavam em tempo de execução ao criar formulários diretamente nas páginas do Sites usando uma versão mais antiga do componente principal.
+* FORMS-23877: os usuários tiveram problemas com funções personalizadas que não carregavam em tempo de execução ao criar formulários diretamente nas páginas do Sites usando uma versão mais antiga dos Componentes principais.
 * FORMS-24038: os usuários tiveram problemas com o botão de navegação quando mais guias foram adicionadas dinamicamente.
 * FORMS-23721: correção de um problema em que os padrões de validação configurados para entradas de texto na caixa de diálogo de edição não eram persistentes. Anteriormente, o valor do padrão era salvo, mas não era mantido ou exibido na interface do usuário, resultando em confusão para os autores do formulário.
 * FORMS-23456: os usuários tiveram anúncios incorretos de leitores de tela em dispositivos móveis para linhas de cabeçalho ocultas em uma tabela ao usar o componente Tabela no Adaptive Forms. Um cabeçalho de tabela oculto foi anunciado fora de contexto, causando confusão para usuários que dependem do iOS VoiceOver e do Android TalkBack.
@@ -95,7 +95,7 @@ Adição da opção Fieldset no painel, que permite aos usuários organizar e ag
 * SITES-17531: cadeia de caracteres codificada &quot;Visualização de corte inteligente&quot; no Editor de páginas > Imagem > Corte inteligente.
 * SITES-31575: a dica de ferramenta Informações não está totalmente visível no Editor de páginas > Componente Carrossel > Propriedades.
 * SITES-34215: o componente JS de preenchimento automático gera um erro de validação imediato no campo de caminho necessário na guia da caixa de diálogo.
-* SITES-35218: alguns componentes principais do AEM não renderizam a tag alt vazia corretamente.
+* SITES-35218: alguns Componentes principais do AEM não renderizam a tag alt vazia corretamente.
 * SITES-37114: Dica de ferramenta &quot;Habilitar suporte para UID do catálogo&quot; truncada na guia &quot;Configurações do CIF&quot;.
 * SITES-36138: consulta sem índice detectada (incidente).
 * SITES-37682: Substituição de tipo de conteúdo em `/libs/cq/Page/Page.css.jsp` e `/libs/cq/Page/Page.js.jsp.`
@@ -127,5 +127,5 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.30.4 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
 
