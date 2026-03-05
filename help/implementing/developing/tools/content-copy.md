@@ -4,10 +4,10 @@ description: A ferramenta de cópia de conteúdo permite que os usuários copiem
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 86205946b7c4b7173448eca728f4495ab7e35064
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 31%
+source-wordcount: '1502'
+ht-degree: 28%
 
 ---
 
@@ -22,7 +22,7 @@ A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mu
 
 Os dados atuais e reais são valiosos para fins de teste, validação e aceitação do usuário. A ferramenta de cópia de conteúdo permite copiar o conteúdo de um ambiente de produção do AEM as a Cloud Service para um ambiente de preparo, desenvolvimento ou [Ambiente de desenvolvimento rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) para esses testes.
 
-O conteúdo a ser copiado é definido por um conjunto de conteúdo. Um conjunto de conteúdo consiste em uma lista de caminhos JCR que contêm o conteúdo mutável a ser copiado de um ambiente de serviço de criação de origem para um ambiente de serviço de criação de destino no mesmo programa Cloud Manager. Os seguintes caminhos são permitidos em um conjunto de conteúdo.
+Um conjunto de conteúdo define o conteúdo a ser copiado. Um conjunto de conteúdo consiste em uma lista de caminhos JCR. Esses caminhos contêm o conteúdo mutável a ser copiado de um ambiente de serviço de criação de origem para um ambiente de serviço de criação de destino, tudo dentro do mesmo programa do Cloud Manager. Os seguintes caminhos são permitidos em um conjunto de conteúdo:
 
 ```text
 /content
@@ -34,7 +34,7 @@ O conteúdo a ser copiado é definido por um conjunto de conteúdo. Um conjunto 
 
 Ao copiar o conteúdo, o ambiente de origem é a fonte de verdade.
 
-* Se o conteúdo tiver sido modificado no ambiente de destino, ele será substituído pelo conteúdo na origem, se os caminhos forem os mesmos.
+* Se os caminhos de origem e destino corresponderem, o conteúdo da origem substituirá o conteúdo modificado no ambiente de destino.
 * Se os caminhos forem diferentes, o conteúdo da origem será mesclado com o conteúdo do destino.
 
 ## Permissões {#permissions}
@@ -48,7 +48,7 @@ Para usar a ferramenta de cópia de conteúdo, determinadas permissões são nec
 
 Para obter mais detalhes sobre permissões e como defini-las, consulte [Perfis de produto e de equipe do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
-## Criação de um conjunto de conteúdo {#create-content-set}
+## Criar um conjunto de conteúdo {#create-content-set}
 
 Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve ser definido. Depois de definido, os conjuntos de conteúdo podem ser reutilizados para copiar conteúdo. Siga estas etapas para criar um conjunto de conteúdo.
 
@@ -75,8 +75,8 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
 
 1. Se você precisar refinar ou restringir seu conjunto de conteúdo, os subcaminhos poderão ser excluídos.
 
-   1. Na lista de caminhos incluídos, clique em **Adicionar subcaminhos de exclusão** ao lado do caminho que você deseja restringir.
-   1. Insira o subcaminho a ser excluído abaixo do caminho selecionado.
+   1. Na lista de caminhos incluídos, clique na opção **Adicionar subcaminhos de exclusão** ao lado do caminho que você deseja restringir.
+   1. Insira o subcaminho a ser excluído do caminho selecionado.
    1. Selecione **Excluir Caminho**.
    1. Selecione **Adicionar subcaminhos de exclusão** novamente para adicionar outros caminhos a serem excluídos conforme necessário.
       * Os caminhos excluídos devem ser relativos ao caminho incluído.
@@ -97,32 +97,34 @@ O conjunto de conteúdo agora pode ser usado para copiar conteúdo entre ambient
 
 ## Editar um conjunto de conteúdo {#edit-content-set}
 
-Para esse processo, as etapas são semelhantes às da criação de conteúdo. Em vez de clicar em **Adicionar conjunto de conteúdo**, selecione um conjunto existente no console e selecione **Editar** no menu de reticências.
+1. Para esse processo, as etapas são semelhantes às da criação de conteúdo. Em vez de clicar em **Adicionar conjunto de conteúdo**, selecione um conjunto existente no console e selecione **Editar** no menu de reticências.
 
 ![Editar conjunto de conteúdo](assets/edit-content-set.png)
 
-Ao editar o conjunto de conteúdo, você pode expandir os caminhos configurados para revelar os subcaminhos excluídos.
+1. Ao editar o conjunto de conteúdo, você pode expandir os caminhos configurados para revelar os subcaminhos excluídos.
 
 ## Copiar conteúdo {#copy-content}
 
-Após criar um conjunto de conteúdo, você pode usá-lo para copiar o conteúdo. Siga estas etapas para poder copiar o conteúdo.
+Depois que um conjunto de conteúdo é criado, você pode usá-lo para copiar conteúdo.
 
 >[!NOTE]
 > Não use a cópia de conteúdo em um ambiente enquanto uma operação de [transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) estiver em execução nesse ambiente.
 
-1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
+**Para copiar conteúdo:**
 
-1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
 
-1. Acesse a página **Conjuntos de conteúdo** na tela **Ambientes**.
+1. Na página **Visão geral**, navegue até **Ambientes** > **Conjuntos de conteúdo**.
 
-1. Selecione um conjunto de conteúdo no console e clique em **Copiar conteúdo** no menu de reticências.
+1. No console, selecione um conjunto de conteúdo.
+
+1. No menu de reticências, clique em **Copiar conteúdo**.
 
    ![Cópia de conteúdo](assets/copy-content.png)
 
    >[!NOTE]
    >
-   >Um ambiente pode não ser selecionável se:
+   >Um ambiente pode não ser selecionável se qualquer uma das opções a seguir for verdadeira:
    >
    >* O usuário não tiver as permissões apropriadas.
    >* O ambiente tiver um pipeline em execução ou uma operação de cópia de conteúdo em andamento.
@@ -136,11 +138,14 @@ Após criar um conjunto de conteúdo, você pode usá-lo para copiar o conteúdo
       * Produção
       * Estágios
       * Desenvolvimento/RDE
-   * Por padrão, a cópia de conteúdo entre programas está desativada. No entanto, mediante solicitação do cliente, ele pode ser habilitado, o que disponibilizará um campo de entrada adicional **Programa de destino**.
+   * Por padrão, a cópia de conteúdo entre programas está desativada. No entanto, mediante solicitação do cliente, ela pode ser habilitada, o que disponibiliza um campo de entrada adicional de **Programa de destino**.
 
-1. Se necessário, você também pode optar por **Incluir listas de controle de acesso** no seu processo de cópia.
+1. (Opcional) Se desejar, defina o seguinte:
 
-1. Selecione **Copiar**.
+   * **Incluir Listas de Controle de Acesso** - Selecione se deseja copiar as permissões de controle de acesso do conteúdo junto com o conteúdo.
+   * **Apagar** - Selecione para excluir o conteúdo existente no destino antes de iniciar a importação, para que você possa começar do zero e evitar conflitos com o conteúdo pré-existente. Se você deixar **Apagar** desmarcado, o Cloud Manager importará o novo conteúdo para cima do conteúdo de destino existente. Um prompt de confirmação é exibido antes do início do apagamento e o Cloud Manager registra a ação de apagamento e os detalhes de importação para rastreabilidade.
+
+1. Clique em **Copiar**.
 
 O processo de cópia será iniciado. O status do processo de cópia é exibido no console do conjunto de conteúdo selecionado.
 
@@ -161,13 +166,13 @@ Você pode monitorar o status dos processos de cópia na página **Atividade de 
 Depois de começar a copiar o conteúdo, o processo poderá ter um dos status a seguir.
 
 | Status | Descrição |
-|---|---|
-| Em andamento | A operação de cópia de conteúdo está em andamento |
-| Falhou | A operação de cópia de conteúdo falhou |
-| Concluído | A operação de cópia de conteúdo foi concluída com sucesso |
-| Cancelado | O usuário cancela uma operação de cópia de conteúdo após iniciá-la |
+| --- | --- |
+| Em andamento | A operação de cópia de conteúdo está em andamento. |
+| Falhou | A operação de cópia de conteúdo falhou. |
+| Concluído | A operação de cópia de conteúdo foi concluída com sucesso. |
+| Cancelado | Um usuário cancela uma operação de cópia de conteúdo após iniciá-la. |
 
-### Cancelando um Processo de Cópia {#canceling}
+### Cancelar um processo de cópia {#canceling}
 
 Se você precisar abortar uma operação de cópia de conteúdo após iniciá-la, é possível cancelá-la opcionalmente.
 
@@ -181,15 +186,19 @@ Para fazer isso, na página **Atividade de cópia de conteúdo**, selecione a a�
 >
 >Se o ambiente estiver em tal estado devido ao cancelamento, entre em contato com o Atendimento ao cliente da Adobe para obter assistência.
 
-### Acesso aos logs {#accessing-logs}
+### Logs de acesso {#accessing-logs}
 
 Você pode verificar os logs dos ambientes de origem e de destino para qualquer processo de cópia de conteúdo concluído.
 
-Para fazer isso, na página **Atividade de Conteúdo de Cópia**, selecione a ação **Logs** no menu de reticências do processo de cópia para o qual você deseja revisar os logs e escolher para qual ambiente.
+**Para acessar logs:**
+
+1. Na página **Atividade de Conteúdo de Cópia**, no menu de reticências, clique em **Logs** para o processo de cópia que deseja examinar. Em seguida, selecione o ambiente.
 
 ![Acessando logs para o processo de cópia de conteúdo](assets/copy-content-logs.png)
 
-Os logs são baixados no computador local. Se o download não começar, verifique as configurações do bloqueador de pop-ups.
+Os logs são baixados no computador local.
+
+1. Se o download não começar, verifique as configurações do bloqueador de pop-ups.
 
 ## Limitações {#limitations}
 
@@ -205,4 +214,4 @@ A ferramenta de cópia de conteúdo tem as seguintes limitações.
 * A ferramenta de cópia de conteúdo não tem recurso de controle de versão e não pode detectar automaticamente o conteúdo modificado ou criado no ambiente de origem em um conjunto de conteúdo desde a última operação de cópia de conteúdo.
    * Se quiser atualizar o ambiente de destino somente com alterações de conteúdo, você deverá criar um conjunto de conteúdo desde a última operação de cópia de conteúdo. Em seguida, especifique os caminhos na instância de origem em que as alterações foram feitas desde a última operação de cópia de conteúdo.
 * As informações da versão não são incluídas em uma cópia de conteúdo.
-* [Os modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) podem especificar campos de referência baseados em IDs universalmente exclusivas (UUID). Esses UUIDs são específicos do repositório, portanto, a ferramenta de cópia de conteúdo recalculará esses UUIDs no ambiente de destino ao copiar os fragmentos de conteúdo.
+* [Os modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) podem especificar campos de referência baseados em IDs universalmente exclusivas (UUID). Esses UUIDs são específicos do repositório, portanto, a ferramenta de cópia de conteúdo recalcula esses UUIDs no ambiente de destino ao copiar os fragmentos de conteúdo.
