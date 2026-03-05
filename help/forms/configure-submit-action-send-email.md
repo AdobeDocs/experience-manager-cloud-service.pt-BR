@@ -5,9 +5,9 @@ keywords: como enviar um email para um formulário adaptável, Ação enviar de 
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: 79046330f5c3fe3b19ac35200ef0750f28ba31c4
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '953'
 ht-degree: 1%
 
 ---
@@ -56,6 +56,11 @@ Para configurar uma Ação de envio de email para o componente de base:
 1. Adicione um template de email para configurar a ação de envio de email.
    * Você pode especificar o caminho para o modelo de email externo salvo nos ativos do AEM usando a opção **[!UICONTROL Caminho do Modelo Externo]**.
    * Você também pode adicionar um modelo de email personalizado para o envio do formulário na caixa de texto **[!UICONTROL Modelo de email]**.
+
+   >[!NOTE]
+   >
+   > Você também pode habilitar **[!UICONTROL Usar Modelo do HTML]** para enviar emails usando um layout personalizado do HTML em vez do modelo padrão. Quando esta opção estiver habilitada, especifique o arquivo HTML no campo **Caminho do Modelo Externo**. Esse recurso está disponível por meio do programa Acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+
 1. [Opcional] A Ação de Envio **[!UICONTROL Enviar Email]** fornece a opção de incluir anexos e um [Documento de Registro (DoR)](generate-document-of-record-core-components.md) no email.
 1. Clique em **[!UICONTROL Concluído]**.
 
@@ -76,10 +81,15 @@ Para configurar a Ação de envio de envio de email para o Componente principal:
 1. Adicione um template de email para configurar a ação de envio de email.
    * Você pode especificar o caminho para o modelo de email externo salvo nos ativos do AEM usando a opção **[!UICONTROL Caminho do Modelo Externo]**.
    * Você também pode adicionar um modelo de email personalizado para o envio do formulário na caixa de texto **[!UICONTROL Modelo de email]**.
+
+   >[!NOTE]
+   >
+   > Você também pode habilitar **[!UICONTROL Usar Modelo do HTML]** para enviar emails usando um layout personalizado do HTML em vez do modelo padrão. Quando esta opção estiver habilitada, especifique o arquivo HTML no campo **Caminho do Modelo Externo**. Esse recurso está disponível por meio do programa Acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+
 1. [Opcional] A Ação de Envio **[!UICONTROL Enviar Email]** fornece a opção de incluir anexos e um [Documento de Registro (DoR)](generate-document-of-record-core-components.md) no email.
 1. Clique em **[!UICONTROL Concluído]**.
 
->[!TAB Editor Universal]
+>[!TAB Universal Editor]
 
 Para configurar a Ação de envio Enviar email no Universal Editor:
 
@@ -104,6 +114,7 @@ A caixa de diálogo **Propriedades do Formulário** é exibida.
 1. Adicione um template de email para configurar a ação de envio de email.
    * Você pode especificar o caminho para o modelo de email externo salvo nos ativos do AEM usando a opção **[!UICONTROL Caminho do Modelo Externo]**.
    * Você também pode adicionar um modelo de email personalizado para o envio do formulário na caixa de texto **[!UICONTROL Modelo de email]**.
+
 1. [Opcional] A Ação de Envio **[!UICONTROL Enviar Email]** fornece a opção de incluir anexos e um [Documento de Registro (DoR)](generate-document-of-record-core-components.md) no email.
 1. Clique em **[!UICONTROL Salvar&amp;Fechar]**.
 
@@ -113,7 +124,7 @@ A caixa de diálogo **Propriedades do Formulário** é exibida.
 
 * É recomendável manter o conteúdo do email claro e conciso. Os usuários devem entender a finalidade do email e quaisquer ações que precisem ser realizadas.
 * É recomendável que todos os campos de formulário tenham nomes de elemento exclusivos, mesmo que eles sejam colocados em painéis diferentes em um Formulário adaptável.
-* Ao usar o AEM as a Cloud Service, o email de saída requer criptografia. Por padrão, a funcionalidade de email de saída está desativada. Para ativá-lo, envie um tíquete de suporte para [solicitar acesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=pt-BR#sending-email).
+* Ao usar o AEM as a Cloud Service, o email de saída requer criptografia. Por padrão, a funcionalidade de email de saída está desativada. Para ativá-lo, envie um tíquete de suporte para [solicitar acesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
 ## Artigos relacionados
 
