@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Incorporar um tema Adaptive Forms em um tema AEM Sites
 
-Você pode incorporar um tema Adaptive Forms (como o [tema do AEM Forms Canvas](https://github.com/adobe/aem-forms-theme-canvas)) ao seu tema do AEM Sites. Dessa forma, um único tema direciona as páginas do seu site e qualquer Forms adaptável inserido nessas páginas, com uma compilação e uma implantação por meio do [Pipeline de front-end do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html).
+Você pode incorporar um tema Adaptive Forms (como o [tema do AEM Forms Canvas](https://github.com/adobe/aem-forms-theme-canvas)) ao seu tema do AEM Sites. Dessa forma, um único tema direciona as páginas do seu site e qualquer Forms adaptável inserido nessas páginas, com uma compilação e uma implantação por meio do [Pipeline de front-end do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=pt-BR).
 
 Este artigo é para desenvolvedores que mantêm ou personalizam o tema padrão (ou personalizado) do AEM Sites e desejam incluir o estilo do Formulário adaptável sem gerenciar uma implantação de tema do Forms separada.
 
@@ -22,7 +22,7 @@ Este artigo é para desenvolvedores que mantêm ou personalizam o tema padrão (
 
 Antes de começar, verifique se você tem:
 
-* **AEM as a Cloud Service** com o [Pipeline de Front-End](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) configurado para o tema do site.
+* **AEM as a Cloud Service** com o [Pipeline de Front-End](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=pt-BR) configurado para o tema do site.
 * **Fontes de tema de site** - por exemplo, o [tema de modelo de site padrão](https://github.com/adobe/aem-site-template-standard) (o repositório que contém `theme/` com `src/theme.scss`, `src/components/` e assim por diante).
 * **fontes de tema do Forms** - o [tema do AEM Forms Canvas](https://github.com/adobe/aem-forms-theme-canvas) (ou outro tema compatível do Adaptive Forms) clonado ou baixado localmente.
 * **Node.js e npm** - para criar o tema do site (consulte o tema README para ver as versões com suporte).
@@ -192,7 +192,7 @@ Esta é a única alteração necessária na estrutura do tema do site existente;
    npm run build
    ```
 
-2. Implante através do [Pipeline de front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html) existente. Após a implantação, o mesmo tema CSS será aplicado às páginas do site e ao Forms adaptável incorporado.
+2. Implante através do [Pipeline de front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=pt-BR) existente. Após a implantação, o mesmo tema CSS será aplicado às páginas do site e ao Forms adaptável incorporado.
 
 ## Resolução de problemas {#troubleshooting}
 
@@ -207,4 +207,4 @@ Esta é a única alteração necessária na estrutura do tema do site existente;
 ## Consulte também: {#see-also}
 
 * [Usar temas para estilizar o Forms adaptável com base em Componentes principais](/help/forms/using-themes-in-core-components.md)
-* [Desenvolver com pipelines de front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html)
+* [Desenvolver com pipelines de front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html?lang=pt-BR)
