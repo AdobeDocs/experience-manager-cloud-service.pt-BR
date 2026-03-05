@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 1de2a860d96397863312f62b3c3c73e6deddd9d8
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2990'
 ht-degree: 8%
 
 ---
@@ -100,14 +100,17 @@ Toque ou clique em **Cancelar** ou **Concluído** para descartar ou salvar as al
 
 #### Opções de formatação de rich text {#formatting-options}
 
-O editor de rich text (RTE) do Editor universal permite que o autor aplique a formatação de texto padrão. Por padrão, as seguintes opções estão disponíveis.
+O editor de rich text (RTE) do Editor universal permite que o autor aplique a formatação de texto padrão. As seguintes opções estão disponíveis.
 
 * **Estilo de parágrafo**
-   * Parágrafos, h1-h6, código
+   * Parágrafo, h1-h6, código
 * **Negrito**
 * **Itálico**
 * **Sublinhado**
 * **Tachado**
+* **Cor do texto**
+   * Abre uma paleta de cores onde é possível selecionar uma cor ou especificar um valor hexadecimal
+   * Disponível somente no editor modal, não no contexto
 * **Sobrescrito**
 * **Subscrito**
 * **Lista de marcadores**
@@ -122,12 +125,21 @@ O editor de rich text (RTE) do Editor universal permite que o autor aplique a fo
    * Especifique uma URL ou use o [seletor de ativos](/help/assets/overview-asset-selector.md#using-asset-selector) para selecionar um ativo da AEM.
 * **Tabela**
    * Use o menu suspenso para inserir uma nova tabela do número selecionado de colunas e linhas ou inserir e remover novas colunas/linhas.
+* **Alinhamento**
+   * **Alinhar à esquerda**
+   * **Alinhar ao Centro**
+   * **Alinhar à direita**
+   * **Alinhar Justificar**
+* **Da direita para a esquerda**
+* **Da esquerda para a direita**
+* **Recuo**
+* **Diminuir recuo**
 * **Colar como texto**
    * Remova a formatação do texto na área de transferência antes de colá-lo no Editor Universal.
 * **Remover toda a formatação**
    * Remova todas as opções de formatação do texto selecionado.
 
-O RTE pode ser configurado para ocultar opções ou mostrar opções adicionais, dependendo das necessidades dos autores. Consulte o documento [Configurando o RTE para o Editor Universal](/help/implementing/universal-editor/configure-rte.md) para obter mais informações.
+Dependendo do back-end, as opções disponíveis por padrão podem variar. O RTE pode ser configurado para ocultar opções ou mostrar opções adicionais, dependendo das necessidades dos autores. Consulte o documento [Configurando o RTE para o Editor Universal](/help/implementing/universal-editor/configure-rte.md) para obter mais informações.
 
 ### Editando mídia {#edit-media}
 
@@ -178,7 +190,13 @@ Dependendo das necessidades do fluxo de trabalho, talvez você queira editar o F
 
    ![Selecione o ícone adicionar](assets/add-icon.png)
 
-1. Se mais de um componente for permitido para o contêiner, selecione aquele que deseja inserir na lista suspensa. Se somente um componente for permitido, ele será inserido automaticamente.
+1. A caixa de diálogo do seletor de componentes é aberta.
+   * Use a coluna da esquerda para filtrar componentes por categoria ou use a pesquisa para filtrar por nome.
+   * Clique no nome do componente na coluna à direita para inseri-lo no container.
+   * Se somente um componente for permitido no contêiner, ele será inserido automaticamente.
+   * Clique fora do seletor para cancelar a inserção do componente.
+
+   ![Seletor de componentes](assets/component-picker.png)
 
 O componente é inserido no container e pode ser editado no editor.
 
@@ -269,7 +287,7 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 
 ### Copiar e colar {#copy-paste}
 
-Você pode copiar e colar componentes que estão em [&#x200B; contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
+Você pode copiar e colar componentes que estão em [ contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
 
 Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegador, desde que as guias já estejam abertas. Não é possível copiar um item e abrir uma nova guia do navegador para colá-lo.
 
