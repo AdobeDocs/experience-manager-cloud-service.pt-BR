@@ -1,10 +1,10 @@
 ---
-title: Trabalho de otimização de conteúdo
-description: Saiba como usar o trabalho de otimização de conteúdo para transformar como os usuários refinam e adaptam ativos aplicando instruções de linguagem natural para criar variações prontas para canal.
+title: Agente de otimização de conteúdo
+description: Saiba como usar o agente de otimização de conteúdo para transformar como os usuários refinam e adaptam ativos aplicando instruções de linguagem natural para criar variações prontas para canal.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: a31cd8ea0ae02a51efb748097c195d68dc8b554d
+source-git-commit: a9f1ed92e3ca05be6f4db578a814330004100b3e
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -12,11 +12,11 @@ ht-degree: 0%
 ---
 
 
-# Trabalho de otimização de conteúdo {#content-optimization-job}
+# Agente de otimização de conteúdo {#content-optimization-agent}
 
-Como parte do [Agente de Supervisor de Conteúdo do AEM](/help/ai-in-aem/agents/content-advisor/overview.md), o trabalho de otimização de conteúdo transforma a forma como os usuários refinam e adaptam ativos aplicando instruções de linguagem natural para criar variações prontas para canal. Seja gerando novas representações, ajustando propriedades visuais, alterando planos de fundo ou preparando ativos para canais digitais específicos, o trabalho interpreta a intenção do usuário e executa tarefas de edição complexas automaticamente. Ele funciona perfeitamente com [o trabalho de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/discovery.md), pegando os ativos encontrados e produzindo variações otimizadas usando o [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) de núcleo que atendem aos requisitos de marca, canal e campanha sem esforço de design manual.
+Como parte do [Agente de Supervisor de Conteúdo do AEM](/help/ai-in-aem/agents/content-advisor/overview.md), o agente de otimização de conteúdo transforma o modo como os usuários refinam e adaptam ativos aplicando instruções de linguagem natural para criar variações prontas para canal. Seja gerando novas representações, ajustando propriedades visuais, alterando planos de fundo ou preparando ativos para canais digitais específicos, o agente interpreta a intenção do usuário e executa tarefas de edição complexas automaticamente. Ele funciona perfeitamente com [o agente de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/discovery.md), pegando os ativos encontrados e produzindo variações otimizadas usando o [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) de núcleo que atendem aos requisitos de marca, canal e campanha sem esforço de design manual.
 
-Alguns dos principais benefícios do trabalho de otimização de conteúdo incluem:
+Alguns dos principais benefícios do agente de otimização de conteúdo incluem:
 
 * **Transformação sem esforço de ativos**: converte prompts simples e conversacionais em operações de imagem precisas, como redimensionamento, nitidez, espelhamento ou recoloração, eliminando a necessidade de ferramentas de edição especializadas.
 
@@ -24,7 +24,7 @@ Alguns dos principais benefícios do trabalho de otimização de conteúdo inclu
 
 * **Aprimoramento do Creative em escala**: aplica ajustes visuais e aprimoramentos, como alterações no plano de fundo ou sobreposições gráficas, para oferecer suporte a fluxos de trabalho criativos de alto volume sem retardar as equipes.
 
-* **[Colaboração perfeita com o trabalho de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/discovery.md)**: baseia-se nos ativos identificados pelo trabalho de descoberta de conteúdo, permitindo a recuperação e a otimização completas de ativos por meio de uma conversa natural.
+* **[Colaboração perfeita com o agente de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/discovery.md)**: baseia-se nos ativos identificados pelo agente de descoberta de conteúdo, permitindo recuperação e otimização completas de ativos por meio de conversações naturais.
 
 >[!IMPORTANT]
 >
@@ -34,7 +34,7 @@ Alguns dos principais benefícios do trabalho de otimização de conteúdo inclu
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480078)
 
-## Pré-requisitos {#prerequisites-content-optimization-job}
+## Pré-requisitos {#prerequisites-content-optimization-agent}
 
 Para gerar variações ou otimizações para ativos de imagem. Você deve ter:
 
@@ -44,52 +44,52 @@ Para gerar variações ou otimizações para ativos de imagem. Você deve ter:
 
 * Os ativos no [estado aprovado](/help/assets/manage-organize-assets-view.md#manage-asset-status) em seu ambiente do AEM as a Cloud Service.
 
-## Habilidades {#skills-content-optimization-job}
+## Habilidades {#skills-content-optimization-agent}
 
-O trabalho de otimização de conteúdo fornece as seguintes habilidades:
+O agente de otimização de conteúdo oferece as seguintes habilidades:
 
 * **Entender a intenção através da linguagem natural**
 
-  O trabalho de otimização de conteúdo interpreta a intenção do usuário a partir de prompts em linguagem natural, contabilizando o canal, a campanha e o contexto de público-alvo para determinar as ações de otimização mais relevantes.
+  O agente de otimização de conteúdo interpreta a intenção do usuário a partir de prompts em linguagem natural, levando em conta o contexto do canal, da campanha e do público-alvo para determinar as ações de otimização mais relevantes.
 
 * **Gera variantes de conteúdo dinâmico**
 
-  O trabalho de otimização de conteúdo cria variantes otimizadas como URLs dinâmicas personalizadas para diferentes canais e tipos de formato.
+  O agente de otimização de conteúdo cria variantes otimizadas como URLs dinâmicos personalizadas para diferentes canais e tipos de formato.
 
 * **Otimiza o conteúdo da imagem**
 
-  O trabalho de otimização de conteúdo aplica aprimoramentos como conversão de formato, ajustes de resolução, recorte e nitidez para melhorar a qualidade da imagem.
+  O agente de otimização de conteúdo aplica aprimoramentos como conversão de formato, ajustes de resolução, recorte e nitidez para melhorar a qualidade da imagem.
 
 * **Otimização de ativos de várias variantes**
 
-  A tarefa de otimização de conteúdo pode gerar várias variações de imagem otimizadas a partir dos ativos retornados pela tarefa de descoberta de conteúdo usando um único prompt de linguagem natural, permitindo que os usuários produzam representações prontas para canal de maneira rápida e eficiente.
+  O agente de otimização de conteúdo pode gerar várias variações de imagem otimizadas a partir dos ativos retornados pelo agente de descoberta de conteúdo usando um único prompt de linguagem natural, permitindo que os usuários produzam representações prontas para canal de maneira rápida e eficiente.
 
-## Personas {#personas-content-optimization-job}
+## Personas {#personas-content-optimization-agent}
 
-Os profissionais de marketing de canal, principal persona do trabalho de otimização de conteúdo, podem selecionar o conteúdo original de alta resolução correto e solicitar formatos otimizados personalizados para seus canais e segmentos de público-alvo.
+Os profissionais de marketing de canal, principal persona do agente de otimização de conteúdo, podem selecionar o conteúdo original de alta resolução correto e solicitar formatos otimizados adequados aos seus canais e segmentos de público-alvo.
 
-Profissionais de marketing regionais e trabalhadores de agências também podem usar o trabalho de otimização de conteúdo para gerar rapidamente variações de imagem prontas para canais que oferecem suporte à produção de conteúdo mais rápida e consistente.
+Profissionais de marketing regionais e trabalhadores de agências também podem usar o agente de otimização de conteúdo para gerar rapidamente variações de imagem prontas para canais que oferecem suporte à produção de conteúdo mais rápida e consistente.
 
-## Como acessar {#access-content-optimization-job}
+## Como acessar {#access-content-optimization-agent}
 
-Você pode acessar o trabalho de otimização de conteúdo no AEM por meio do Assistente de IA. Faça logon em [`experience.adobe.com`](https://experience.adobe.com) e você pode começar a interagir com o Assistente de IA especificando seu prompt em linguagem natural usando o campo `Ask AI Assistant anything`:
+Você pode acessar o agente de otimização de conteúdo no AEM por meio do Assistente de IA. Faça logon em [`experience.adobe.com`](https://experience.adobe.com) e você pode começar a interagir com o Assistente de IA especificando seu prompt em linguagem natural usando o campo `Ask AI Assistant anything`:
 
-![Acessar trabalho de otimização de conteúdo](/help/ai-in-aem/agents/content-advisor/assets/access-discovery-agent.png)
+![Acessar agente de otimização de conteúdo](/help/ai-in-aem/agents/content-advisor/assets/access-discovery-agent.png)
 
 ## Casos de uso comuns e exemplos de prompt {#use-cases-prompts}
 
-Use o trabalho de otimização de conteúdo procurando os ativos corretos por meio do [trabalho de descoberta de conteúdo.](/help/ai-in-aem/agents/content-advisor/discovery.md) Quando as imagens relevantes forem exibidas, os usuários poderão gerar variantes otimizadas ou específicas de canal para um ou vários ativos diretamente dos resultados da pesquisa. Esse fluxo de trabalho garante entradas de alta qualidade e resultados de otimização consistentemente melhores. [Consulte a lista completa de otimizações disponíveis](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) para obter mais informações.
+Use o agente de otimização de conteúdo procurando os ativos corretos por meio do [agente de descoberta de conteúdo.](/help/ai-in-aem/agents/content-advisor/discovery.md) Quando as imagens relevantes forem exibidas, os usuários poderão gerar variantes otimizadas ou específicas de canal para um ou vários ativos diretamente dos resultados da pesquisa. Esse fluxo de trabalho garante entradas de alta qualidade e resultados de otimização consistentemente melhores. [Consulte a lista completa de otimizações disponíveis](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) para obter mais informações.
 
 * **Criação de representação de alta resolução**
 
-  A tarefa pode gerar novas representações de um ativo em uma resolução e um nível de qualidade especificados, facilitando a preparação de variações prontas para canais sem edição manual.
+  O agente pode gerar novas representações de um ativo em uma resolução e um nível de qualidade especificados, facilitando a preparação de variações prontas para canais sem edição manual.
 
 
   Exemplo de prompt:
 
   Crie uma representação `2000px` como `JPEG` com qualidade `80%`.
 
-  Pesquise o ativo correto usando o [trabalho de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/discovery.md) e use os seguintes prompts no caso de vários resultados de pesquisa:
+  Pesquise o ativo correto usando o [agente de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/discovery.md) e use os seguintes prompts no caso de vários resultados de pesquisa:
 
   Para o terceiro resultado da pesquisa, crie uma representação `2000px` como `JPEG` com qualidade `80%`.
 
@@ -99,7 +99,7 @@ Use o trabalho de otimização de conteúdo procurando os ativos corretos por me
 
 * **Aprimoramento da imagem**
 
-  A tarefa pode aplicar melhorias visuais, como nitidez, para garantir que os ativos tenham aparência nítida e bem definida antes de serem usados em campanhas.
+  O agente pode aplicar melhorias visuais — como nitidez — para garantir que os ativos tenham aparência nítida e bem definida antes de serem usados em campanhas.
 
   Exemplo de prompt:
 
@@ -108,7 +108,7 @@ Use o trabalho de otimização de conteúdo procurando os ativos corretos por me
 
 * **Ajustes de cor de fundo**
 
-  A tarefa pode atualizar ou substituir cores de plano de fundo em ativos transparentes, oferecendo suporte a esquemas de cores específicos da marca ou temas visuais orientados por campanha.
+  O agente pode atualizar ou substituir cores de fundo em ativos transparentes, suportando esquemas de cores específicos da marca ou temas visuais orientados por campanha.
 
   Exemplo de prompt:
 
@@ -116,7 +116,7 @@ Use o trabalho de otimização de conteúdo procurando os ativos corretos por me
 
 * **Transformações de orientação**
 
-  A tarefa pode virar ou espelhar visuais para se alinhar às necessidades de layout ou direção criativa, sem precisar de ferramentas de edição externas.
+  O agente pode virar ou espelhar visuais para se alinhar às necessidades de layout ou direção criativa, sem precisar de ferramentas de edição externas.
 
   Exemplo de prompt:
 
@@ -124,7 +124,7 @@ Use o trabalho de otimização de conteúdo procurando os ativos corretos por me
 
 * **Representações otimizadas por canal**
 
-  A tarefa pode produzir representações personalizadas para requisitos específicos da plataforma, como o Instagram Stories, garantindo que os ativos atendam automaticamente às diretrizes de formato, taxa e qualidade.
+  O agente pode produzir representações personalizadas para requisitos específicos da plataforma, como o Instagram Stories, garantindo que os ativos atendam automaticamente às diretrizes de formato, taxa e qualidade.
 
   Exemplo de prompt:
 
@@ -132,7 +132,7 @@ Use o trabalho de otimização de conteúdo procurando os ativos corretos por me
 
 * **Sobreposições de marca e geração composta**
 
-  A tarefa pode aplicar gráficos promocionais, sobreposições ou medalhas a ativos existentes com posicionamento preciso, apoiando a criação rápida de compostos prontos para campanha.
+  O agente pode aplicar gráficos promocionais, sobreposições ou selos aos ativos existentes com posicionamento preciso, apoiando a criação rápida de compostos prontos para campanha.
 
   Exemplo de prompt:
 
@@ -143,9 +143,9 @@ Use o trabalho de otimização de conteúdo procurando os ativos corretos por me
   >As posições de sobreposição podem não ser precisas.
 
 
-## Resultados da Otimização {#content-optimization-job-results}
+## Resultados da Otimização {#content-optimization-agent-results}
 
-Quando você especifica um prompt de otimização, o trabalho de otimização de conteúdo retorna o ativo aprimorado juntamente com opções de acesso convenientes com base no tipo de ativo:
+Quando você especifica um prompt de otimização, o agente de otimização de conteúdo retorna o ativo aprimorado juntamente com opções de acesso convenientes com base no tipo de ativo:
 
 * **Imagens**: a resposta inclui uma visualização em miniatura e opções para abrir a URL do Dynamic Media ou baixar a imagem otimizada.
 
@@ -165,11 +165,11 @@ Esses resultados facilitam a análise da saída otimizada e o seu uso imediato e
 <!--
 
 
-## Prompting best Practices {#prompting-best-practices-content-optimization-job}
+## Prompting best Practices {#prompting-best-practices-content-optimization-agent}
 
 The following are some prompting best practices:
 
-* Be explicit about the enhancement you want the content optimization job to apply. Clearly state the transformation or adjustment you expect. Precise instructions help the agent produce accurate and predictable results. For example, Instead of `Make it good quality`, specify `Create a JPEG image with 90% quality`.
+* Be explicit about the enhancement you want the content optimization agent to apply. Clearly state the transformation or adjustment you expect. Precise instructions help the agent produce accurate and predictable results. For example, Instead of `Make it good quality`, specify `Create a JPEG image with 90% quality`.
 
 * Provide detailed parameters whenever possible. The more context you give, such as dimensions, format, quality, placement, or color values, the more tailored the output is.
 

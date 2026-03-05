@@ -4,9 +4,9 @@ description: Saiba mais sobre IA no Adobe Experience Manager as a Cloud Service
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: 92941c325f7702be8cf5f7f5b2ef3f9bd32c6354
+source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '436'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,6 @@ O AEM fornece um intervalo de [agentes](/help/ai-in-aem/agents/overview.md) para
 
 * [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md)
 * [Agente do Supervisor de Conteúdo](/help/ai-in-aem/agents/content-advisor/overview.md)
-* [Agente de modernização de experiência](/help/ai-in-aem/agents/modernization/overview.md)
 * [Agente de governança](/help/ai-in-aem/agents/governance/overview.md)
 
 ## IA gerativa no AEM {#generative-ai-in-aem}
@@ -72,6 +71,6 @@ Há muitos recursos disponíveis, incluindo:
 
 * [IA responsável na Adobe](https://www.adobe.com/trust/responsible-ai.html)
 
-* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/generative-ai)
+* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/generative-ai#aem)
+   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)

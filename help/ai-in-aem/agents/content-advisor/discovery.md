@@ -1,10 +1,10 @@
 ---
-title: Tarefa de Descoberta de Conteúdo
-description: Saiba como usar o trabalho de descoberta de conteúdo para fornecer conteúdo relevante do AEM sob demanda por meio de avisos naturais e conversacionais para uma experiência de descoberta simplificada e sem cliques.
+title: Agente de Descoberta de Conteúdo
+description: Saiba como usar o agente de descoberta de conteúdo para fornecer conteúdo relevante do AEM sob demanda por meio de avisos naturais e conversacionais para uma experiência de descoberta simplificada e sem cliques.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 157c5e442194931c7a34499bb6153141325393ca
+source-git-commit: a9f1ed92e3ca05be6f4db578a814330004100b3e
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 1%
@@ -12,11 +12,11 @@ ht-degree: 1%
 ---
 
 
-# Tarefa de Descoberta de Conteúdo {#discovery-job}
+# Agente de Descoberta de Conteúdo {#discovery-agent}
 
-Como parte do [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md) do AEM, o trabalho de descoberta de conteúdo fornece conteúdo AEM sob demanda por meio de solicitações naturais e conversacionais para uma experiência de descoberta simplificada e sem cliques. Ele faz pesquisas de forma inteligente em Assets, Fragmentos de conteúdo e Forms adaptável para fornecer materiais relevantes, como imagens, vídeos, documentos PDF, artigos e modelos de formulário. Usando a linguagem natural, você pode pesquisar conteúdo sem criar consultas complexas ou aplicar filtros na interface do AEM Assets. Com base em seu prompt, a tarefa retorna resultados preparados juntamente com metadados de ativos e URLs de entrega, prontos para serem incorporados em outros aplicativos.
+Como parte do [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md) da AEM, o agente de descoberta de conteúdo fornece conteúdo AEM sob demanda por meio de solicitações naturais e conversacionais para uma experiência de descoberta simplificada e sem cliques. Ele faz pesquisas de forma inteligente em Assets, Fragmentos de conteúdo e Forms adaptável para fornecer materiais relevantes, como imagens, vídeos, documentos PDF, artigos e modelos de formulário. Usando a linguagem natural, você pode pesquisar conteúdo sem criar consultas complexas ou aplicar filtros na interface do AEM Assets. Com base em seu prompt, o agente retorna resultados preparados juntamente com metadados de ativos e URLs de entrega, prontos para serem incorporados em outros aplicativos.
 
-Alguns dos principais benefícios do trabalho de descoberta de conteúdo incluem:
+Alguns dos principais benefícios do agente de descoberta de conteúdo incluem:
 
 * **Descoberta de Conteúdo Unificado**: acesse todos os tipos de conteúdo do AEM, como imagens, vídeos, documentos do PDF, artigos e formulários em uma única interface conversacional.
 
@@ -36,27 +36,27 @@ Alguns dos principais benefícios do trabalho de descoberta de conteúdo incluem
 
 ## Habilidades {#skills-discovery-agent}
 
-O trabalho de descoberta de conteúdo oferece as seguintes habilidades:
+O agente de descoberta de conteúdo oferece as seguintes habilidades:
 
 * **Descoberta de conteúdo de linguagem natural**\
-  O trabalho de descoberta de conteúdo permite que os usuários encontrem ativos, fragmentos de conteúdo e formulários adaptáveis relevantes no Adobe Experience Manager (AEM) usando prompts de linguagem natural simples — sem a necessidade de consultas de pesquisa complexas.
+  O agente de descoberta de conteúdo permite que os usuários encontrem ativos, fragmentos de conteúdo e formulários adaptáveis relevantes no Adobe Experience Manager (AEM) usando prompts de linguagem natural simples — sem a necessidade de consultas de pesquisa complexas.
 
 * **Descoberta de ativos baseada em marcas**
 
-  O trabalho de descoberta de conteúdo usa prompts de linguagem natural para encontrar ativos associados a tags específicas no repositório do AEM, ajudando os usuários a acessar rapidamente o conteúdo organizado ou não de acordo com a taxonomia da organização.
+  O agente de descoberta de conteúdo usa prompts de linguagem natural para localizar ativos associados a tags específicas no repositório do AEM, ajudando os usuários a acessar rapidamente o conteúdo organizado ou não de acordo com a taxonomia da organização.
 
 * **Descoberta de conteúdo com base em pasta:**\
-  O trabalho de descoberta de conteúdo pode identificar ativos interpretando prompts de idioma natural que fazem referência a nomes de pastas no AEM. Os usuários podem simplesmente mencionar a pasta em seu prompt, sem navegar manualmente pelo repositório, reduzindo significativamente o número de cliques necessários para localizar o conteúdo correto.
+  O agente de descoberta de conteúdo pode identificar ativos interpretando prompts de linguagem natural que fazem referência a nomes de pastas no AEM. Os usuários podem simplesmente mencionar a pasta em seu prompt, sem navegar manualmente pelo repositório, reduzindo significativamente o número de cliques necessários para localizar o conteúdo correto.
 
 ## Personas {#personas-content-discovery}
 
 ### Gerentes de campanha {#campaign-managers}
 
-O trabalho de descoberta de conteúdo permite que os gerentes de campanha identifiquem e reutilizem rapidamente conteúdo confiável e de alto desempenho para ideação.
+O agente de descoberta de conteúdo permite que os gerentes de campanha identifiquem e reutilizem rapidamente conteúdo confiável e de alto desempenho para ideação.
 
 ### Profissionais de marketing de canal {#channel-marketers}
 
-O trabalho de descoberta de conteúdo permite que os profissionais de marketing de canal encontrem ativos relevantes com eficiência para criar experiências coesas e de vários canais.
+O agente de descoberta de conteúdo permite que os profissionais de marketing de canal encontrem ativos relevantes com eficiência para criar experiências coesas e de vários canais.
 
 ### Bibliotecários DAM {#dam-librarians}
 
@@ -68,11 +68,11 @@ As agências e os parceiros podem encontrar facilmente ativos aprovados pela mar
 
 ## Como acessar {#access}
 
-Você pode acessar o trabalho de descoberta de conteúdo no AEM por meio do Assistente de IA. Faça logon em [`experience.adobe.com`](https://experience.adobe.com) e você pode começar a interagir com o Assistente de IA especificando seu prompt no idioma natural usando a caixa de pesquisa:
+Você pode acessar o agente de descoberta de conteúdo no AEM por meio do Assistente de IA. Faça logon em [`experience.adobe.com`](https://experience.adobe.com) e você pode começar a interagir com o Assistente de IA especificando seu prompt no idioma natural usando a caixa de pesquisa:
 
-![Acessar trabalho de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/assets/access-discovery-agent.png)
+![Acessar agente de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/assets/access-discovery-agent.png)
 
-Para obter informações sobre o terminal MCP para acessar o trabalho de descoberta de conteúdo, entre em contato com o Suporte da Adobe.
+Para obter informações sobre o terminal MCP para acessar o agente de descoberta de conteúdo, entre em contato com o Suporte da Adobe.
 
 ## Casos de uso comuns e exemplos de prompt {#use-cases-prompts}
 
@@ -80,14 +80,14 @@ Para obter informações sobre o terminal MCP para acessar o trabalho de descobe
 
 **Descoberta de ativos baseada em marcas**
 
-O trabalho de descoberta de conteúdo usa prompts de linguagem natural para encontrar ativos associados a tags específicas no repositório do AEM, ajudando os usuários a acessar rapidamente o conteúdo organizado de acordo com a taxonomia de sua organização.
+O agente de descoberta de conteúdo usa prompts de linguagem natural para encontrar ativos associados a tags específicas no repositório do AEM, ajudando os usuários a acessar rapidamente o conteúdo organizado de acordo com a taxonomia de sua organização.
 
 Exemplo de prompt:
 
 Mostrar imagens marcadas `office` na pasta `WKND`.
 
 **Descoberta de conteúdo com base em pasta:**\
-O trabalho de descoberta de conteúdo pode identificar ativos interpretando prompts de idioma natural que fazem referência a nomes de pastas no AEM. Os usuários podem simplesmente mencionar a pasta em seu prompt, sem navegar manualmente pelo repositório, reduzindo significativamente o número de cliques necessários para localizar o conteúdo correto.
+O agente de descoberta de conteúdo pode identificar ativos interpretando prompts de linguagem natural que fazem referência a nomes de pastas no AEM. Os usuários podem simplesmente mencionar a pasta em seu prompt, sem navegar manualmente pelo repositório, reduzindo significativamente o número de cliques necessários para localizar o conteúdo correto.
 
 Exemplos de prompts:
 
@@ -97,7 +97,7 @@ Exemplos de prompts:
 
 **Descoberta de ativos baseada em formato**
 
-O trabalho de descoberta de conteúdo pode identificar ativos que atendem a requisitos de qualidade específicos, como formato de arquivo, permitindo que os usuários localizem rapidamente os visuais do produto que estão prontos para entrega e reutilização de alta qualidade em todos os canais.
+O agente de descoberta de conteúdo pode identificar ativos que atendem a requisitos específicos de qualidade, como formato de arquivo, permitindo que os usuários localizem rapidamente os visuais do produto que estão prontos para entrega e reutilização de alta qualidade em todos os canais.
 
 Exemplo de prompt:
 
@@ -105,15 +105,15 @@ Localizar imagens PNG da embalagem do produto.
 
 **Descoberta de conteúdo com base em orientação**
 
-O trabalho de descoberta de conteúdo pode filtrar ativos reconhecendo atributos visuais, como a presença de pessoas e a orientação de uma imagem. Isso permite que os usuários restrinjam rapidamente o conteúdo aos visuais mais relevantes, sem aplicar manualmente vários filtros no AEM.
+O agente de descoberta de conteúdo pode filtrar ativos reconhecendo atributos visuais, como a presença de pessoas e a orientação de uma imagem. Isso permite que os usuários restrinjam rapidamente o conteúdo aos visuais mais relevantes, sem aplicar manualmente vários filtros no AEM.
 
 Exemplo de prompt:
 
 Mostrar ativos com a pessoa na orientação paisagem.
 
-### Fragmentos de conteúdo {#discovery-job-use-cases-content-fragments}
+### Fragmentos de conteúdo {#discovery-agent-use-cases-content-fragments}
 
-O trabalho de descoberta de conteúdo ajuda os usuários a localizar rapidamente os fragmentos de conteúdo corretos, interpretando referências de linguagem natural a nomes de campanha, marcas de produtos, status da publicação e atividade de criação recente. Ele permite que as equipes apresentem fragmentos prontos para campanha e visualizem conteúdo específico da marca, tudo sem navegar manualmente pelas pastas ou aplicar vários filtros no AEM.
+O agente de descoberta de conteúdo ajuda os usuários a localizar rapidamente os fragmentos de conteúdo corretos, interpretando referências de linguagem natural a nomes de campanha, marcas de produtos, status da publicação e atividade de criação recente. Ele permite que as equipes apresentem fragmentos prontos para campanha e visualizem conteúdo específico da marca, tudo sem navegar manualmente pelas pastas ou aplicar vários filtros no AEM.
 
 Exemplos de prompts:
 
@@ -125,31 +125,31 @@ Exemplos de prompts:
 
 * Listar todos os fragmentos de conteúdo criados nas últimas 2 semanas.
 
-### Forms {#discovery-job-use-cases-forms}
+### Forms {#discovery-agent-use-cases-forms}
 
-O trabalho de descoberta de conteúdo ajuda a encontrar rapidamente formulários adaptáveis usando prompts de linguagem natural. Ele faz pesquisas no conteúdo e nos metadados do formulário para encontrar correspondências com base em palavras-chave de seus prompts. Isso significa que você pode descobrir formulários relevantes com êxito, mesmo se os termos de pesquisa não estiverem no título ou na descrição do formulário.
+O agente de descoberta de conteúdo ajuda a encontrar rapidamente formulários adaptáveis usando prompts de linguagem natural. Ele faz pesquisas no conteúdo e nos metadados do formulário para encontrar correspondências com base em palavras-chave de seus prompts. Isso significa que você pode descobrir formulários relevantes com êxito, mesmo se os termos de pesquisa não estiverem no título ou na descrição do formulário.
 
 Exemplos de prompts:
 
 * Mostre-me todos os formulários de solicitação de empréstimo.
-* Localize formulários para candidatar-se a um cargo.
+* Localizar formulários para solicitar um agente.
 * Localizar formulários de contato.
 * Estou procurando formulários de integração de funcionários.
 * Mostre-me formulários de solicitação de cartão de crédito.
 
 Observação: no momento, a descoberta de formulários é compatível apenas com formulários do Edge Delivery Services e a pesquisa baseada em tags não está disponível para formulários no momento.
 
-## Resultados da pesquisa {#discovery-job-search-results}
+## Resultados da pesquisa {#discovery-agent-search-results}
 
-### Ativos {#discovery-job-search-results-assets}
+### Ativos {#discovery-agent-search-results-assets}
 
-O trabalho de descoberta de conteúdo retorna os principais resultados de cada consulta, classificados por relevância para garantir que as correspondências exatas apareçam primeiro. O trabalho combina consultas orientadas por metadados com pesquisa semântica para reunir um conjunto focado de correspondências prováveis e, em seguida, usa um LLM para classificá-las com base na intenção do usuário. Essa abordagem combinada fornece resultados precisos e sensíveis ao contexto sem depender totalmente de uma correspondência direta de palavra-chave.
+O agente de descoberta de conteúdo retorna os principais resultados de cada consulta, classificados por relevância para garantir que as correspondências exatas apareçam primeiro. O agente combina consultas orientadas por metadados com pesquisa semântica para reunir um conjunto focado de correspondências prováveis e, em seguida, usa um LLM para classificá-las com base na intenção do usuário. Essa abordagem combinada fornece resultados precisos e sensíveis ao contexto sem depender totalmente de uma correspondência direta de palavra-chave.
 
 Cada resultado inclui o nome do ativo junto com os principais metadados do ativo, como o caminho do ativo, criador, data de criação, título, descrição, formato, último modificador, data da última modificação, tamanho do arquivo, dimensões, [URL do Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) e marcas associadas. Se um ativo estiver no estado aprovado, os resultados também incluirão o [Dynamic Media com OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md).
 
 Você pode clicar no caminho do ativo para navegar facilmente até o local do ativo no AEM.
 
-![Pesquisar ativos usando o trabalho de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
+![Pesquisar ativos usando o agente de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
 
 Você pode usar esses detalhes do ativo para avaliar rapidamente se um ativo atende aos requisitos sem navegar até cada ativo para exibir esses detalhes.
 
@@ -159,20 +159,20 @@ Você pode usar esses detalhes do ativo para avaliar rapidamente se um ativo ate
 
 ### Fragmentos de conteúdo {#discovery-agent-search-results-content-fragments}
 
-O trabalho de descoberta de conteúdo fornece recursos de pesquisa de texto completo para Fragmentos de conteúdo, retornando os principais resultados que melhor correspondem ao prompt especificado. Cada resultado inclui o nome do Fragmento do conteúdo junto com campos de metadados principais, como caminho do Fragmento do conteúdo, criador, data de criação, variações, último modificador e campos de data da última modificação.
+O agente de descoberta de conteúdo fornece recursos de pesquisa de texto completo para Fragmentos de conteúdo, retornando os principais resultados que melhor correspondem ao prompt especificado. Cada resultado inclui o nome do Fragmento do conteúdo junto com campos de metadados principais, como caminho do Fragmento do conteúdo, criador, data de criação, variações, último modificador e campos de data da última modificação.
 
-![Pesquisar fragmentos de conteúdo usando o trabalho de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/assets/search-content-fragments-discovery-agent.png)
+![Pesquisar fragmentos de conteúdo usando o agente de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/assets/search-content-fragments-discovery-agent.png)
 
 Você pode clicar no caminho do Fragmento de conteúdo para navegar facilmente até o local do Fragmento de conteúdo no AEM.
 
-## Solicitação de práticas recomendadas {#prompting-best-practices-discovery-job}
+## Solicitação de práticas recomendadas {#prompting-best-practices-discovery-agent}
 
-Especifique detalhes concisos nos prompts em seu idioma natural para que o job possa retornar resultados precisos e relevantes. Quanto mais claramente você descrever o que está procurando, melhor a tarefa poderá refinar e restringir a saída. Por exemplo, você pode:
+Especifique detalhes concisos nos prompts em seu idioma, para que o agente possa retornar resultados precisos e relevantes. Quanto mais claramente você descrever o que está procurando, melhor o agente poderá refinar e restringir a saída. Por exemplo, você pode:
 
 * Defina metadados de ativos, como tags, nomes de pastas, datas de criação, status de publicação, nomes de autores em suas solicitações para filtrar ativos.
 
 * Use os metadados específicos da sua organização, como categorias (tênis de corrida, eletrônicos), estações (outono, primavera), eventos (sexta-feira preta, lançamento de produto) e canais (Web, email, impressão) para filtrar ainda mais o conteúdo.
 
-## Limitações   {#limitations-discovery-job}
+## Limitações   {#limitations-discovery-agent}
 
-O trabalho de descoberta de conteúdo oferece suporte a prompts baseados em dimensão somente para tipos de formato de imagem e SVG. Por exemplo, `Find images wider than 1080px`.
+O agente de descoberta de conteúdo oferece suporte a prompts baseados em dimensões somente para tipos de formato de imagem e SVG. Por exemplo, `Find images wider than 1080px`.

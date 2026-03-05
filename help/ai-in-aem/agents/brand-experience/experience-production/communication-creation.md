@@ -1,18 +1,18 @@
 ---
 title: Trabalho de Criação de Comunicação
-description: Saiba mais sobre o trabalho de criação de comunicação dos Brand Experience Agents e como usar a linguagem natural para criar Comunicações interativas.
+description: Saiba mais sobre o trabalho de criação de comunicação dos Agentes de produção de experiência e como usar a linguagem natural para criar Comunicações interativas.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
-source-git-commit: 9be60c79ef001edf7590a8fd3fd64c1a9a1ab9f9
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
 
 
-# Habilidade de criação de comunicação {#ic-creation-skill}
+# Trabalho de Criação de Comunicação {#ic-creation-skill}
 
 <!-- UNCOMMENT ACTIVATION SECTION AT THE BOTTOM ONCE THIS IS NO LONGER ALPHA -->
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 [Comunicações interativas](/help/forms/introduction-to-interactive-communication.md) são documentos personalizados, orientados por dados, criados para correspondência comercial, como demonstrativos de conta, documentos de política, contas, kits de boas-vindas e avisos de benefícios. Ao contrário dos formulários que coletam entradas de usuários, as Comunicações interativas geram documentos de saída com conteúdo dinâmico e específico do destinatário.
 
-O trabalho de criação de comunicação é um recurso do [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) projetado para desenvolver Comunicações Interativas usando prompts de linguagem natural. Esse trabalho gera automaticamente correspondência personalizada e orientada por dados para impressão (no formato PDF). O trabalho é revelado pelo Assistente de IA.
+O trabalho de criação de comunicação faz parte do [Agente de Produção de Experiência](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md), que foi projetado para desenvolver Comunicações Interativas usando prompts de linguagem natural. Esse trabalho gera automaticamente correspondência personalizada e orientada por dados para impressão (no formato PDF). O trabalho é revelado pelo Assistente de IA.
 
 Alguns dos principais benefícios do trabalho de criação de comunicação incluem:
 
