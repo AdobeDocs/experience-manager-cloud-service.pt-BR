@@ -4,7 +4,7 @@ description: Saiba como o Agente de desenvolvimento no AEM analisa pipelines com
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 95b54c3c90a4fd221a91e538b6c5c43e03b74b14
+source-git-commit: 778c65a65e246c9cc3fc5e8b233edcd07c876261
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 O agente pode recuperar os status do pipeline e ajudar você a solucionar problemas de etapas de criação com falha, sugerindo correções e economizando tempo ao depurar implantações do AEM as a Cloud Service em ambientes de desenvolvimento, preparo e produção. Ele examina logs de compilação e código relacionado para recomendar uma correção que pode ser aplicada manualmente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478012?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ O agente pode recuperar os status do pipeline e ajudar você a solucionar proble
 
 Para acessar este agente, consulte as [notas de versão](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) para obter instruções sobre como se inscrever no programa beta, certificando-se de indicar seu interesse no Agente de Desenvolvimento. Você também pode enviar um feedback específico do agente de desenvolvimento por email para [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Siga um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) para saber como usar o Agente de Desenvolvimento para solucionar falhas de pipeline.
+[Siga um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) para saber como usar o Agente de Desenvolvimento para solucionar falhas de pipeline.
 
 ## Acessar o agente de desenvolvimento por meio do Cloud Manager {#how-to-access-the-agent}
 
