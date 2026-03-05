@@ -287,7 +287,7 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 
 ### Copiar e colar {#copy-paste}
 
-Você pode copiar e colar componentes que estão em [ contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
+Você pode copiar e colar componentes que estão em [&#x200B; contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
 
 Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegador, desde que as guias já estejam abertas. Não é possível copiar um item e abrir uma nova guia do navegador para colá-lo.
 
