@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Crie um link para ativos selecionados para compartilhá-los facilmente com outras pessoas. Como usuário autorizado do [!DNL Content Hub], selecione um ou mais ativos disponíveis no ambiente [!DNL Content Hub], gere um link e envie-o para outros usuários públicos ou privados.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474924/?captions=por_br&learn=on&enablevpops=on){transcript=true}
 
 ## Pré-requisitos {#prerequisites}
 
