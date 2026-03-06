@@ -3,9 +3,9 @@ title: Exibir insights de ativos no Content Hub
 description: Saiba como exibir insights de ativos no [!DNL Content Hub]
 role: User
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -50,3 +50,25 @@ Também é possível exibir:
 * **[!UICONTROL Assets por Campanhas]**: contagem de ativos e respectiva porcentagem com base em campanhas.
 * **[!UICONTROL Assets por canais]**: contagem de ativos e respectiva porcentagem com base nos canais usados.
 * **[!UICONTROL Assets por regiões]**: contagem de ativos e respectiva porcentagem com base nas regiões de uso de ativos.
+
+## Perguntas frequentes {#faqs-assets-insights-content-hub}
+
+### O que precisamos do Assets Insights no AEM Assets Content Hub?
+
+O Assets Insights no AEM Assets Content Hub fornece dados valiosos sobre estatísticas de uso de ativos em campanhas, canais e regiões, ajudando as partes interessadas de marketing a entender o desempenho e a popularidade dos ativos para melhorar a experiência do usuário.
+
+### Quem pode acessar os recursos descritos no Assets Insights?
+
+Os usuários do Content Hub podem executar as ações e acessar os recursos mencionados na seção Assets Insights.
+
+### Quais insights do ativo estão disponíveis na guia Insights?
+
+Você pode visualizar o número de ativos no repositório, o número de coleções, os uploads do Assets por ano, mês ou dia, os usuários ativos por dia ou mês e a classificação de ativos com base nos formatos de arquivo.
+
+### Como posso exibir estatísticas de ativos carregados no AEM Assets Content Hub?
+
+Você pode exibir estatísticas de ativos e coleções carregados navegando até a guia Insights, na qual é possível rastrear o histórico de carregamento por ano, mês ou dia.
+
+### Quais métricas posso analisar em relação à atividade do usuário no Content Hub?
+
+É possível analisar o número de usuários ativos por dia ou por mês, que é representado visualmente usando um gráfico de linhas.

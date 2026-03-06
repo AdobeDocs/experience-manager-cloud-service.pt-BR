@@ -3,9 +3,9 @@ title: Compartilhar Assets em  [!DNL the Content Hub]
 description: Compartilhar Assets em  [!DNL the Content Hub]
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '919'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Crie um link para ativos selecionados para compartilhá-los facilmente com outras pessoas. Como usuário autorizado do [!DNL Content Hub], selecione um ou mais ativos disponíveis no ambiente [!DNL Content Hub], gere um link e envie-o para outros usuários públicos ou privados.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474924/?captions=por_br&learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## Pré-requisitos {#prerequisites}
 
@@ -64,5 +64,33 @@ Acesse a página de ativos compartilhados por meio do link e faça o seguinte:
 * Clique na miniatura do ativo para ver os metadados do ativo.
 * Na página de ativos compartilhados ([acessada por meio de um link privado](#share-assets)), clique em uma miniatura de ativo e selecione ![baixar](/help/assets/assets/download-icon.svg) para selecionar e exibir as representações dinâmicas disponíveis do ativo no painel **[!UICONTROL Baixar]** antes de selecioná-las e baixá-las.
   ![](/help/assets/assets/download-renditions-shared-assets-page.png)
+
+## Perguntas frequentes {#faqs-share-assets-content-hub}
+
+### O que significa compartilhar ativos no AEM Assets Content Hub?
+
+O compartilhamento de ativos no AEM Assets Content Hub permite que usuários autorizados compartilhem facilmente um ou mais ativos ou coleções inteiras com outros gerando um link. Esse link pode ser enviado para usuários privados (que devem fazer logon) ou públicos (que podem acessar como convidados), dando aos destinatários acesso direto para exibir e baixar os ativos selecionados.
+
+### Como faço para compartilhar ativos ou coleções com outras pessoas usando o AEM Assets Content Hub?
+
+Para compartilhar ativos ou coleções no Content Hub, navegue até a página inicial do Content Hub, selecione um ou mais ativos (ou acesse a guia Coleções para coleções) e clique no ícone Compartilhar. Na caixa de diálogo Compartilhar, você pode visualizar os ativos, remover qualquer um, se necessário, adicionar um título e descrição, selecionar quem pode acessar o link (privado ou público), definir um período de expiração e, em seguida, clicar em Obter link para gerar e copiar o URL compartilhável. O link pode ser enviado para os membros da equipe ou para as partes interessadas.
+
+### Quais opções de acesso estão disponíveis ao compartilhar ativos no AEM Assets Content Hub e como elas se diferem?
+
+O Content Hub permite escolher entre duas opções de acesso para links compartilhados: privado e público. Os links privados exigem que os recipients façam logon no ambiente do Content Hub para visualizar e baixar ativos, fornecendo segurança adicional. Links públicos podem ser acessados por qualquer pessoa com o link, sem a necessidade de entrar. Cada tipo de link vem com suas próprias configurações de expiração, como de 24 horas a uma semana para links públicos e datas personalizadas para links privados.
+
+### Existe alguma configuração gerenciada pelo administrador para gerar links públicos para ativos no AEM Assets Content Hub?
+
+Sim, os administradores podem habilitar ou desabilitar a opção **Habilitar Link Público**, disponível na guia **Coleções e Compartilhamento** da interface de Configuração, para gerenciar a geração de links públicos para ativos no AEM Assets Content Hub.
+
+### Posso definir datas de expiração para links de ativos compartilhados no AEM Assets Content Hub e por que isso é importante?
+
+Sim, você pode definir datas de expiração para links compartilhados privados e públicos no Content Hub. Para links públicos, é possível escolher entre predefinições, como 24 horas e uma semana, enquanto links privados permitem selecionar entre predefinições ou definir uma data de expiração personalizada. As datas de expiração são importantes porque, quando o link expira, ele não pode mais ser usado para acessar ou baixar os ativos, o que ajuda a manter a segurança e o controle do conteúdo.
+
+### O que os recipients podem fazer com o link de ativo compartilhado criado usando o AEM Assets Content Hub e há opções para baixar diferentes representações?
+
+Os recipients que recebem um link de ativo compartilhado podem abri-lo no navegador para visualizar, selecionar e baixar os ativos fornecidos. Se as representações de ativos estiverem ativadas no Content Hub, os destinatários poderão escolher quais representações (como Original ou Estático) desejam baixar. Os ativos e as representações são baixados como um arquivo zip e os metadados podem ser visualizados clicando na miniatura do ativo. O link permanece funcional até sua data de expiração definida.
+
+
 
 

@@ -3,9 +3,9 @@ title: Controle de acesso baseado em atributos
 description: Saiba como habilitar o controle de acesso baseado em atributos para definir regras baseadas em metadados e definir o nível de acesso aos ativos disponíveis no Content Hub
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Alguns dos principais benefícios do controle de acesso baseado em atributos inc
 
 * Reduz o número de duplicatas - melhora a integridade do ativo. São necessárias duplicatas em permissões baseadas em pastas quando os mesmos ativos são compartilhados com grupos diferentes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475419/?captions=por_br&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## Como ativar o controle de acesso baseado em atributos? {#enable-attribute-based-access-control}
 
@@ -102,3 +102,34 @@ Isso permite escrever regras simples e expressivas, como: ALLOW if region = emea
 * Capture a intenção de negócios da regra no comentário, independentemente da condição ter sido gravada corretamente, pois a intenção nos ajuda a validar e corrigir a lógica, se necessário.
 
 * Os arquivos de licença do PDF, que são definidos para DRM, precisam estar visíveis para todos, para que os usuários possam vê-los ao baixar o ativo com a licença.
+
+## Perguntas frequentes {#faqs-attribute-based-access-control-content-hub}
+
+### O que é o ABAC (Attribute-based Access Control, controle de acesso baseado em atributos) no AEM Assets Content Hub?
+
+O controle de acesso baseado em atributos (ABAC) no AEM Assets Content Hub permite que os administradores definam regras baseadas em metadados para controlar o nível de acesso que diferentes grupos de usuários têm aos ativos digitais. O acesso é determinado pelo fato de os metadados do ativo corresponderem às condições especificadas nas regras, permitindo o gerenciamento granular e dinâmico da visibilidade do ativo.
+
+### Como os administradores definem as regras de acesso usando o ABAC no AEM Assets Content Hub?
+
+Os administradores definem regras de acesso criando condições com base nos metadados do ativo, como marca ou região, e vinculando-os a IDs específicas do grupo de usuários. Essas regras usam operadores lógicos (AND, OR) e de comparação (equals, not equals) para especificar exatamente quais ativos estão visíveis para quais grupos de usuários.
+
+### Quais são os principais benefícios de usar o ABAC em relação às permissões tradicionais baseadas em pastas?
+
+O ABAC elimina a dependência de estruturas de pastas para permissões, permite que os administradores façam upload de ativos e atribuam permissões retroativamente e reduz o número de ativos duplicados necessários. Isso melhora a integridade do ativo e simplifica o gerenciamento de permissões, especialmente quando os ativos precisam ser compartilhados com vários grupos.
+
+### Os administradores podem configurar regras ABAC diretamente na interface do AEM Assets Content Hub?
+
+Não, a partir de agora, os administradores não podem criar regras ABAC diretamente na interface do Content Hub. Em vez disso, eles devem baixar uma planilha de modelo (link de download fornecido neste artigo), definir suas regras lá e enviá-las ao Suporte da Adobe por meio de um tíquete de suporte para implementação.
+
+### Que tipos de condições de metadados podem ser usadas ao configurar regras ABAC no AEM Assets Content Hub?
+
+As regras ABAC no AEM Assets Content Hub podem usar operadores lógicos como AND e OR, e operadores de comparação como &quot;é igual&quot; e não &quot;é igual&quot;. As propriedades de metadados usadas nas regras devem ser corretamente definidas e disponibilizadas nos esquemas de metadados do AEM e podem incluir campos como região, marca ou status de publicação.
+
+### Por que o AEM Assets Content Hub ABAC é particularmente útil para organizações com grandes equipes e diversas necessidades de ativos?
+
+O ABAC é útil para organizações com equipes grandes, pois permite acesso granular e baseado em regras a ativos com base em funções de usuário, regiões ou marcas. Ele garante que os usuários vejam apenas os ativos relevantes para suas responsabilidades, sem atribuições de permissão manuais ou duplicação excessiva de ativos.
+
+### Como os administradores devem preparar a planilha ABAC antes de enviá-la para o Suporte da Adobe?
+
+Os administradores devem criar grupos de usuários no Adobe Admin Console, anotar suas IDs de grupo e definir claramente as permissões e condições para cada grupo na planilha. Eles devem garantir que todas as propriedades de metadados sejam mapeadas corretamente para os esquemas apropriados e usar a coluna Comentários para esclarecer a intenção de negócios de cada regra, facilitando para o Adobe validar e implementar as regras.
+

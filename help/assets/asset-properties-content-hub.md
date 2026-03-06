@@ -3,10 +3,10 @@ title: Visualizar ativo e suas propriedades em  [!DNL the Content Hub]
 description: Saiba como visualizar ativos e propriedades no [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 8%
+source-wordcount: '971'
+ht-degree: 5%
 
 ---
 
@@ -109,9 +109,9 @@ Algumas propriedades dos ativos exibidos em [!DNL Content Hub] são derivadas, o
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **Tags inteligentes:** o [!DNL The Content Hub] usa os serviços de conteúdo inteligente da IA do Adobe para treinar ativos usando o algoritmo de reconhecimento na estrutura baseada em tags. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. As Tags inteligentes aumentam a velocidade do conteúdo de seus projetos, ajudando você a encontrar ativos relevantes rapidamente. As tags inteligentes são um exemplo de informações de ativos que não estão contidas na imagem. O [!DNL Experience Manager Assets] aplica tags inteligentes automaticamente a ativos, por padrão.
+* **Tags inteligentes:** o [!DNL The Content Hub] usa os serviços de conteúdo inteligente da Adobe AI para treinar ativos usando o algoritmo de reconhecimento na estrutura baseada em tags. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. As Tags inteligentes aumentam a velocidade do conteúdo de seus projetos, ajudando você a encontrar ativos relevantes rapidamente. As tags inteligentes são um exemplo de informações de ativos que não estão contidas na imagem. O [!DNL Experience Manager Assets] aplica tags inteligentes automaticamente a ativos, por padrão.
 
-* **Marcas de cores:** [Marcas de cores](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=pt-BR) ajudam a reconhecer um ativo usando cores identificadas automaticamente em um ativo por meio dos recursos de IA da Adobe.
+* **Marcas de cores:** [Marcas de cores](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) ajudam a reconhecer um ativo usando cores identificadas automaticamente em um ativo por meio dos recursos de IA da Adobe.
 
 * Data de upload
 
@@ -135,3 +135,27 @@ Os administradores também podem configurar as propriedades, que são exibidas p
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
+
+## Perguntas frequentes {#faqs-asset-properties-content-hub}
+
+### Por que você visualiza ativos e suas propriedades no AEM Assets Content Hub?
+
+A visualização de ativos e suas propriedades no Content Hub permite que os usuários visualizem detalhadamente os detalhes do ativo, que são essenciais para a distribuição e o gerenciamento eficientes de ativos. À medida que as informações digitais crescem, simplesmente confiar nos nomes de arquivo e nas miniaturas torna-se indimensionável. A exibição de propriedades detalhadas ajuda a categorizar ativos, torna-os mais acessíveis, fácil de usar e garante que as informações estejam completas para todos os usuários.
+
+### Como posso visualizar e interagir com as propriedades de um ativo no AEM Assets Content Hub?
+
+Para visualizar as propriedades de um ativo no Content Hub, navegue até o ativo ou pesquise por ele e clique nele para abrir a página de propriedades dele. Aqui, é possível aumentar ou diminuir o zoom na visualização, desfazer o zoom, mover para ativos anteriores ou seguintes, baixar o ativo, editá-lo com o Adobe Express, adicioná-lo a uma coleção ou fechar a visualização. A página de propriedades exibe informações detalhadas, como título, formato, tamanho, resolução, tags, tags de cor e tags inteligentes.
+
+### O que são propriedades derivadas no AEM Assets Content Hub e como elas são geradas?
+
+As propriedades derivadas no Content Hub são geradas automaticamente quando os ativos são carregados e aprovados. Os exemplos incluem o tamanho do ativo, as tags inteligentes e as tags de cores. As tags inteligentes usam os serviços de conteúdo inteligente da Adobe AI para reconhecer e aplicar automaticamente tags relevantes, melhorando a descoberta de ativos. As tags de cor também são identificadas automaticamente usando IA, ajudando os usuários a reconhecer ativos por suas cores de destaque.
+
+### Os administradores podem personalizar quais propriedades de ativos estão visíveis no Content Hub?
+
+Sim, os administradores têm a capacidade de configurar quais propriedades são exibidas para cada ativo no Content Hub. Isso pode ser feito para a interface do usuário de visualização de ativos e cartões de ativos em resultados de pesquisa ou coleções, garantindo que os usuários vejam as informações mais relevantes com base nos requisitos.
+
+### Quais são os formatos de arquivo compatíveis com a visualização de ativos?
+
+Os formatos de arquivo compatíveis incluem JPEG e PNG para imagens, Quicktime, MP4 e MPEG para vídeos, TXT, DOC/DOCX e XML para documentos, e PDF para mídia de impressão.
+
+

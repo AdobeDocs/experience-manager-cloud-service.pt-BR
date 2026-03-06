@@ -2,10 +2,10 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 30dc2465aacf9d586755a1aa69cc473f237d0103
 workflow-type: tm+mt
-source-wordcount: '2265'
-ht-degree: 8%
+source-wordcount: '2815'
+ht-degree: 7%
 
 ---
 
@@ -35,7 +35,7 @@ O Experience Manager Assets permite que os administradores configurem as opçõe
 
 * Quaisquer links personalizados que você precise incluir no Content Hub, além de ativos, coleções e insights.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472951/?captions=por_br&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Pré-requisitos {#prerequisites-configuration-ui}
 
@@ -264,7 +264,7 @@ Se a visibilidade dos ativos expirados estiver habilitada, a Content Hub também
 
 ### Representações {#renditions-content-hub}
 
-As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para desabilitá-la, siga estas etapas:
 
@@ -329,3 +329,59 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 Saiba mais sobre o [compartilhamento de ativos no [!DNL Content Hub]](share-assets-content-hub.md).
 
+## Perguntas frequentes {#faqs-content-hub-upload-assets}
+
+### Quem pode acessar e definir as configurações da interface do usuário do AEM Assets Content Hub?
+
+Somente usuários com direitos de administrador do Content Hub podem acessar e definir as configurações da interface do usuário do Content Hub. Permissões administrativas devem ser concedidas por meio do Adobe Admin Console antes de acessar a interface de configuração.
+
+### O que os administradores podem configurar na interface do usuário do AEM Assets Content Hub?
+
+Os administradores podem definir a seguinte configuração na interface do usuário de configuração do AEM Assets Content Hub:
+
+* Importar campos de metadados (incluindo campos obrigatórios e configurações de aprovação automática)
+
+* Filtros de pesquisa mostrados na página de pesquisa
+
+* Campos de metadados pesquisáveis usados para indexação
+
+* Metadados do cartão de ativos (até seis campos exibidos em cartões)
+
+* Propriedades de exibição dos detalhes do ativo
+
+* Elementos gráficos (logotipo, texto de banner, cores, imagem de banner)
+
+* Regras de visibilidade de ativos (incluindo comportamento de ativos expirados)
+
+* Opções de representação e download
+
+* Links de navegação personalizados (guias externas)
+
+* Configurações de coleção e compartilhamento (links públicos e permissões)
+
+Essas configurações controlam a experiência visual e o comportamento funcional do Content Hub para usuários finais.
+
+
+### Como os administradores podem adicionar novos campos de metadados para uploads de ativos no AEM Assets Content Hub?
+
+Os administradores podem adicionar novos campos de metadados para uploads de ativos clicando em **Adicionar metadados** na guia **Importar**, especificando o rótulo, mapeando-o para a propriedade apropriada do esquema de metadados, selecionando o tipo de entrada e decidindo se o campo é obrigatório ou opcional. Depois de confirmar e salvar, o novo campo fica disponível para os usuários durante os uploads de ativos.
+
+### Qual é a configuração Aprovação automática para ativos no AEM Assets Content Hub e como ela funciona?
+
+A configuração Aprovação automática, quando ativada, permite que novos ativos sejam disponibilizados imediatamente no Content Hub após o upload. Por padrão, essa configuração está desativada, o que requer que autores ou administradores do AEM aprovem manualmente novos ativos antes que eles sejam exibidos no portal do Content Hub.
+
+### Como os administradores configuram filtros para pesquisas de ativos no AEM Assets Content Hub?
+
+Os administradores podem configurar filtros para pesquisas de ativos clicando em **Adicionar filtros**, especificando o rótulo do filtro, mapeando-o para a propriedade de metadados apropriada, selecionando o tipo de dados e confirmando a adição. Os filtros se tornam disponíveis na interface assim que há pelo menos um ativo correspondente aos critérios do filtro. As alterações são aplicadas clicando em **Salvar**.
+
+### Quais propriedades de ativos podem ser exibidas na visualização de Detalhes do ativo e como elas são configuradas no AEM Assets Content Hub?
+
+Propriedades de ativos, como nome do arquivo, título, formato, tamanho e campos personalizados, como categorias, podem ser exibidas na exibição Detalhes do ativo. Os administradores adicionam essas propriedades clicando em **Adicionar metadados**, especificando o rótulo, mapeando-o para o esquema de metadados, selecionando o tipo de dados, confirmando e salvando as alterações.
+
+### Como os administradores podem personalizar os detalhes dos metadados mostrados nos cartões de ativos no AEM Assets Content Hub?
+
+Os administradores podem personalizar os detalhes dos metadados mostrados nos cartões de ativos clicando em **Adicionar metadados** nas configurações do Cartão de ativos, especificando o rótulo (por exemplo, formato de arquivo), mapeando-o para a propriedade apropriada no esquema de metadados e confirmando a adição. Até seis campos de metadados podem ser exibidos em cartões de ativos.
+
+### Os administradores podem personalizar seu portal AEM Assets Content Hub para atender aos requisitos de marca de sua organização?
+
+Sim. Os administradores podem personalizar a aparência do AEM Assets Content Hub editando o título e o texto do corpo do banner principal, selecionando cores de texto por meio de um seletor de cores ou código hexadecimal e definindo cores secundárias e primárias para plano de fundo, texto e ícones.
