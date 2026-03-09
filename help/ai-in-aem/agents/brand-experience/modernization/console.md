@@ -145,7 +145,7 @@ A visualização de configurações permite gerenciar configurações básicas d
 
 ![Modo de exibição de configurações](assets/settings-view.png)
 
-* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [ possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [&#x200B; possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * O token requer os seguintes escopos somente leitura:
       * `file_content:read`
       * `file_metadata:read`
