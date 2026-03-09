@@ -4,9 +4,9 @@ description: Saiba como o Agente de modernização de experiência integra novos
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 7e5450f853e04f12e3a25e4a996aa8c3afe383ca
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -66,13 +66,9 @@ O Console de Modernização de experiência de autoatendimento está disponível
 
 ## Modelo de entrega {#delivery-model}
 
-Para migrações complexas ou resultados acelerados, a Adobe oferece o modelo de entrega do Agentic Outcome Engineer (AOE). Esse é um serviço opcional no qual os engenheiros da Adobe operam as ferramentas de IA em seu nome.
+Para migrações complexas ou resultados acelerados, a Adobe oferece o modelo de entrega do Agentic Outcome Engineer (AOE). Esse é um serviço opcional no qual os engenheiros da Adobe operam as ferramentas de IA em seu nome. Para obter detalhes sobre esse modelo de entrega, consulte o documento [Modelo de entrega do Agente de Modernização de Experiência.](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
 
-* Os AOEs da Adobe operam o agente junto com você, combinando automação de IA com orientação especializada para fornecer resultados prontos para produção em escala.
-* Isso fornece uma opção de redefinição estratégica para empresas que enfrentam implementações paralisadas ou desafios de modernização herdados.
-* O modelo AOE oferece um caminho mais rápido e de menor risco que aproveita a automação da IA, garantindo governança, qualidade e resultados bem-sucedidos.
-
-Para explorar ainda mais o Modelo de entrega da AOE:
+Se você estiver interessado no modelo AOE da próxima migração:
 
 * Entre em contato com o representante da Adobe ou com a equipe de conta para iniciar o escopo e o agendamento.
 * A Adobe confirmará a qualificação, fará uma estimativa do compromisso e proporá um plano de compromisso.
@@ -94,7 +90,7 @@ O agente não dá suporte aos seguintes destinos.
    * As habilidades têm como alvo somente o Edge Delivery Services.
 * Padrões de entrega headless, como entrega baseada em API ou SPA (por exemplo, Next.js)
 
-Os requisitos a seguir ainda não são cobertos por habilidades de automação dedicadas e exigem esforço manual.
+Os requisitos a seguir não são cobertos por habilidades de automação dedicadas e exigem esforço manual.
 
 * Perfeição de pixel estrita
    * Somente a fidelidade de design prática é automatizada
