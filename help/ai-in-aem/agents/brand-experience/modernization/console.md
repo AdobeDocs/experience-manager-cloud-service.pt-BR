@@ -4,9 +4,9 @@ description: Guia de referência para a interface e os recursos do Console de mo
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -145,5 +145,14 @@ A visualização de configurações permite gerenciar configurações básicas d
 
 ![Modo de exibição de configurações](assets/settings-view.png)
 
-* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console possa acessar blocos de design para o seu projeto.
+* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [ possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+   * O token requer os seguintes escopos somente leitura:
+      * `file_content:read`
+      * `file_metadata:read`
+      * `library_assets:read`
+      * `library_content:read`
+      * `team_library_content:read`
+      * `file_dev_resources:read`
+      * `projects:read`
+   * [Consulte a documentação do Figma](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) para obter mais informações sobre como configurar tokens de acesso pessoal.
 * **Redefinir espaço de trabalho** reverte o console para seu estado inicial e todas as alterações não enviadas ou não carregadas serão perdidas.
