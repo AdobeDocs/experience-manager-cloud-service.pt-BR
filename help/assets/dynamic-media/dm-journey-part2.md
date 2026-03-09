@@ -62,7 +62,7 @@ Agora adicione um parâmetro de processamento de imagem ao final do URL. No camp
 
 Observe que é gerada uma nova representação da inspeção. Uma vantagem importante para entender esse simples exercício de alteração da largura da imagem é que a imagem vista é gerada 100% dinamicamente.
 
-Agora altere o valor de largura de `500` pixels para `1000` pixels e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
+Agora altere o valor de largura de `500` pixels para `1000` pixels e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=_blank}.
 No momento em que você pressiona **[!UICONTROL Enter]**, o navegador retorna ao Servidor de Imagens do Dynamic Media. Ele gera uma representação totalmente nova do relógio, com base no novo valor de largura que você acabou de inserir, em seguida, fornece a nova imagem de volta ao navegador e a armazena em cache.
 
 O Dynamic Media tem vários parâmetros de processamento de imagens que você pode usar para ajustar os ativos de imagem nas páginas da Web. Você pode [ver uma lista deles aqui](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
