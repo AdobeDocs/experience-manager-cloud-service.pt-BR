@@ -1,14 +1,14 @@
 ---
 title: Seletor de fragmentos de conteúdo de front-end micro para Adobe Experience Manager as a Cloud Service
 description: Use o Seletor de fragmento de conteúdo de micro front-end para pesquisar, localizar e recuperar fragmentos de conteúdo do aplicativo.
-role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+role: Admin, User, Developer
+exl-id: 5b18fb2c-26c8-4d9d-ba2e-9e53c09f5022
+source-git-commit: 006bfe9067267da1524ab456605a956162c889e3
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 6%
+source-wordcount: '833'
+ht-degree: 5%
 
 ---
-
 
 # Seletor de fragmentos de conteúdo de front-end micro {#micro-frontend-content-fragment-selector}
 
@@ -69,9 +69,11 @@ Use o componente `ContentFragmentSelector`. Há várias opções de instalação
 
 Depois que o Seletor de fragmento de conteúdo estiver configurado e autenticado para usar o Seletor de fragmento de conteúdo com o aplicativo do AEM as a Cloud Service, você poderá selecionar Fragmentos de conteúdo ou executar várias outras operações para pesquisar os fragmentos no repositório:
 
-![O Seletor de Fragmento do Conteúdo](/help/headless/assets/content-fragment-selector-using.png)
+![O Seletor de Fragmento do Conteúdo](/help/headless/assets/content-fragment-selector-unwrapped.png)
 
-* Com o seletor **Repositório** na parte superior direita, você pode selecionar o repositório que deseja usar
+* Na barra de ferramentas superior, é possível:
+   * Use o seletor **Repositório** na parte superior direita para selecionar o repositório que deseja usar
+   * Selecione o formato, a lista ou a grade
 * No painel esquerdo, é possível:
    * Ocultar ou mostrar pastas do repositório selecionado
    * Selecione uma pasta específica para mostrar os fragmentos de conteúdo nessa pasta
@@ -81,6 +83,9 @@ Depois que o Seletor de fragmento de conteúdo estiver configurado e autenticado
    * Classificar a lista atual de acordo com várias colunas; crescentes ou decrescentes
    * Ver o indicador do formato de visualização
    * Mostrar, ocultar e especificar filtros
+* No painel direito, é possível:
+   * Exibir propriedades
+   * Exibir referências
 
 ### Ocultar/Mostrar painel {#hide-show-panel}
 
@@ -130,3 +135,16 @@ Você pode classificar fragmentos no Seletor de fragmento de conteúdo por vári
 O Seletor de fragmentos de conteúdo permite visualizar o fragmento no:
 
 * **Modo de Exibição de Tabela**
+* **Modo de Exibição de Grade**
+
+A exibição necessária pode ser selecionada nos ícones na barra de ferramentas superior:
+
+![O Seletor de Fragmento de Conteúdo - Tipo de Exibição](/help/headless/assets/content-fragment-selector-view-type.png)
+
+## Integrar o Seletor de fragmentos de conteúdo aos aplicativos {#integrate-the-content-fragment-selector-with-applications}
+
+É possível integrar o Seletor de fragmentos de conteúdo a vários aplicativos, como:
+
+* [Integre o Seletor de Fragmento de Conteúdo a um aplicativo do Adobe](/help/headless/content-fragment-selector/integrate-adobe-application.md)
+* [Integrar o Seletor de fragmento de conteúdo a aplicativos que não sejam da Adobe ou de terceiros](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+* [Integre o Seletor de fragmento de conteúdo usando o Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
