@@ -8,10 +8,11 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1674'
 ht-degree: 83%
 
 ---
@@ -23,7 +24,7 @@ O [!DNL Adobe Experience Manager Assets] está configurado com o [!DNL Azure Med
 
 As transcrições são versões em texto do conteúdo falado; um exemplo é um filme que você está assistindo em qualquer plataforma OTT, que geralmente inclui legendas para ajudar na acessibilidade ou no consumo do conteúdo em outros idiomas. Ou qualquer arquivo de áudio ou vídeo usado para fins de marketing, aprendizado ou entretenimento. Essas experiências começam com uma transcrição que é formatada ou traduzida conforme apropriado. A transcrição de áudio ou vídeo é um processo que exige muito tempo e pode causar erros quando executado manualmente. Também é um desafio escalar o processo manual, dada a necessidade cada vez maior de conteúdo de áudio e vídeo. O [!DNL Experience Manager Assets] usa a transcrição com IA do Azure, que permite o processamento em alta escala dos ativos de áudio e vídeo e gera as transcrições de texto (arquivos .vtt) junto com detalhes de carimbo de data e hora. Além do Assets, o recurso de transcrição também é compatível com o Dynamic Media.
 
-O recurso de transcrição está disponível sem nenhum custo no [!DNL Experience Manager Assets]. No entanto, os administradores exigem as credenciais do Azure do usuário para configurar o serviço de transcrição no [!DNL Experience Manager Assets]. Você também pode [obter credenciais de avaliação](https://azure.microsoft.com/en-us/pricing/details/media-services/) diretamente da Microsoft® para experimentar o recurso de transcrição de áudio ou vídeo no Assets.
+O recurso de transcrição está disponível sem nenhum custo no [!DNL Experience Manager Assets]. No entanto, os administradores exigem as credenciais Azure do usuário para configurar o serviço de transcrição no [!DNL Experience Manager Assets]. Você também pode [obter credenciais de avaliação](https://azure.microsoft.com/en-us/pricing/details/media-services/) diretamente da Microsoft® para experimentar o recurso de transcrição de áudio ou vídeo no Assets.
 
 ## Pré-requisitos de transcrição {#prerequisites}
 
@@ -65,7 +66,7 @@ Vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL 
 
 Na guia **[!UICONTROL IA de Conteúdo]**, clique no botão **[!UICONTROL Adicionar Novo]** para configurar a transcrição. Aqui, você pode incluir e excluir os formatos de arquivo (tipos MIME) para gerar transcrições selecionando tipos de arquivo na lista suspensa. Na ilustração a seguir, todos os arquivos de áudio e vídeo compatíveis estão incluídos e os arquivos de texto foram excluídos.
 
-Ative a opção **[!UICONTROL Criar transcrição em VTT no mesmo diretório]** para criar e armazenar a representação de transcrição (arquivo .vtt) na mesma pasta em que o ativo original está. As outras representações também são geradas pelo fluxo de trabalho de processamento de ativos do DAM padrão, independentemente dessa configuração.
+Habilite a opção **[!UICONTROL Criar transcrição em VTT no mesmo diretório]** para criar e armazenar a representação de transcrição (arquivo .vtt) na mesma pasta em que o ativo original está. As outras representações também são geradas pelo fluxo de trabalho de processamento de ativos do DAM padrão, independentemente dessa configuração.
 
 ![configure-transcription-service](assets/configure-transcription-profile.png)
 
@@ -77,7 +78,7 @@ O perfil de vídeo também contém as seguintes configurações personalizadas. 
 
 ![configure-transcription-service](assets/video-processing-profile2.png)
 
-Vamos configurar a transcrição neste perfil de vídeo. Navegue até a guia **[!UICONTROL IA de conteúdo]** e clique no botão **[!UICONTROL Adicionar novo]**. Inclua todos os arquivos de áudio e vídeo e exclua os arquivos de imagem e aplicativo. Ative a opção **[!UICONTROL Criar transcrição em VTT no mesmo diretório]** e salve a configuração.
+Vamos configurar a transcrição neste perfil de vídeo. Navegue até a guia **[!UICONTROL IA de conteúdo]** e clique no botão **[!UICONTROL Adicionar novo]**. Inclua todos os arquivos de áudio e vídeo e exclua os arquivos de imagem e aplicativo. Habilite a opção **[!UICONTROL Criar transcrição em VTT no mesmo diretório]** e salve a configuração.
 
 ![configure-transcription-service](assets/video-processing-profile1.png)
 
@@ -127,7 +128,7 @@ Consulte também:
 * [Tutorial em vídeo sobre como adicionar legendas ocultas (CC) aos vídeos do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR#add-cc-closed-captioning-to-dynamic-media-video)
 * [Publicar vídeos do Dynamic Media no YouTube](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
-Na ilustração a seguir, o URL reflete a parte da legenda que se refere à transcrição (arquivo .vtt). O vídeo reflete o idioma falado (texto transcrito) como uma **[!UICONTROL Legenda oculta]** no carimbo de data e hora fornecido no vídeo. O usuário pode ativar ou desativar a legenda usando o botão **[!UICONTROL CC]**.
+Na ilustração a seguir, o URL reflete a parte da legenda que se refere à transcrição (arquivo .vtt). O vídeo reflete o idioma falado (texto transcrito) como uma **[!UICONTROL Legenda oculta]** no carimbo de data e hora fornecido no vídeo. O usuário pode habilitar ou desabilitar a legenda usando o botão **[!UICONTROL CC]**.
 
 ![configure-transcription-service](assets/transcript-example.png)
 

@@ -4,10 +4,11 @@ description: Use o Seletor de ativos para pesquisar, localizar e recuperar metad
 contentOwner: KK
 feature: Selectors
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '5357'
+source-wordcount: '5363'
 ht-degree: 29%
 
 ---
@@ -106,7 +107,7 @@ A integração é feita importando o pacote do Seletor de ativos e conectando ao
 
 É possível integrar o Seletor de ativos a vários aplicativos, como:
 
-* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
+* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Integrar o Seletor de ativos a um aplicativo que não seja da Adobe](#adobe-non-app-integration)
 * [Integração do Dynamic Media com recursos OpenAPI](#adobe-app-integration-polaris)
 

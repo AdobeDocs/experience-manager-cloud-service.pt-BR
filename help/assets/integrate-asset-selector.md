@@ -2,10 +2,11 @@
 title: Integrar o Seletor de ativos usando o Vanilla JS
 description: Integrar o seletor de ativos a vários aplicativos da Adobe, que não sejam da Adobe e de terceiros.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '185'
 ht-degree: 46%
 
 ---
@@ -29,7 +30,7 @@ A integração é feita importando o pacote do Seletor de ativos e conectando ao
 
 É possível integrar o Seletor de ativos a vários aplicativos, como:
 
-* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] &#x200B;](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] ](/help/assets/integrate-asset-selector-adobe-app.md)
 * [Integrar o Seletor de ativos a um aplicativo que não seja da Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Integração do Dynamic Media com recursos OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 

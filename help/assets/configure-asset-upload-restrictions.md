@@ -1,13 +1,14 @@
 ---
 title: Configurar restrições de upload de ativos
 description: Configure o Adobe Experience Manager Assets para restringir os tipos de ativos que os usuários podem carregar com base no tipo MIME. Ele ajuda a impedir uploads acidentais de formato indesejado e arquivos mal-intencionados.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 feature: Upload, Asset Ingestion
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 11%
+source-wordcount: '378'
+ht-degree: 12%
 
 ---
 

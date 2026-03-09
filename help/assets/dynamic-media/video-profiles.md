@@ -4,10 +4,11 @@ description: O Dynamic Media já vem com um perfil de Codificação de vídeo ad
 contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3694'
+source-wordcount: '3700'
 ht-degree: 6%
 
 ---
@@ -94,7 +95,7 @@ A tabela a seguir identifica as práticas recomendadas ao codificar perfis para 
 
 ## Sobre o uso de recorte inteligente em Perfis de vídeo {#about-smart-crop-video}
 
-O recorte inteligente para vídeo é um recurso opcional disponível em Perfis de vídeo. É uma ferramenta que usa a IA do Adobe para detectar e recortar automaticamente o ponto focal em qualquer vídeo adaptável ou vídeo progressivo que você tenha carregado, independentemente do tamanho.
+O recorte inteligente para vídeo é um recurso opcional disponível em Perfis de vídeo. É uma ferramenta que usa o Adobe AI para detectar e recortar automaticamente o ponto focal em qualquer vídeo adaptável ou vídeo progressivo que você tenha carregado, independentemente do tamanho.
 
 Os formatos de vídeo compatíveis com o corte inteligente incluem MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -104,7 +105,7 @@ O tamanho máximo suportado do arquivo de vídeo para corte inteligente é o seg
 * 30 quadros por segundo (FPS).
 * Tamanho do arquivo de 300 MB.
 
-A IA do Adobe é limitada a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o vídeo tiver um FPS mais alto, a duração máxima de vídeo compatível diminuirá. Por exemplo, um vídeo de 60 FPS deve ter dois minutos e meio de duração para ser compatível com a IA do Adobe e o recorte inteligente.
+O Adobe AI é limitado a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o vídeo tiver um FPS mais alto, a duração máxima de vídeo compatível diminuirá. Por exemplo, um vídeo de 60 FPS deve ter dois minutos e meio de duração para ser compatível com o Adobe AI e o recorte inteligente.
 
 ![Recorte inteligente para vídeo](assets/smart-crop-video.png)
 

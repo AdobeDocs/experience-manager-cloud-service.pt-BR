@@ -1,13 +1,14 @@
 ---
 title: Trabalhar com fragmentos de conteúdo (Assets - Fragmentos de conteúdo)
 description: Saiba como os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo, ideal para a criação de páginas e entrega headless.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8d8e45126a27b9ad5fdbc2276f08c28e4240c830
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2627'
+source-wordcount: '2633'
 ht-degree: 46%
 
 ---

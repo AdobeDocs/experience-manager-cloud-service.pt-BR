@@ -1,14 +1,15 @@
 ---
 title: Visualização - Representação JSON (Assets - Fragmentos de conteúdo)
 description: Saiba como visualizar facilmente a representação em JSON dos fragmentos de conteúdo ao implementar sua solução AEM Headless.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 62%
+source-wordcount: '185'
+ht-degree: 61%
 
 ---
 
@@ -28,7 +29,7 @@ Ao usar o ícone **Visualizar**:
 
 É possível visualizar a representação em JSON do fragmento atual. Por exemplo:
 
-![Editor de fragmento do conteúdo — Visualização de um fragmento](assets/cfm-preview-02.png)
+![Editor de fragmento de conteúdo — Visualização de um fragmento](assets/cfm-preview-02.png)
 
 <!--
 **Copy URL** lets you copy to clipboard the URL for either author or publish.

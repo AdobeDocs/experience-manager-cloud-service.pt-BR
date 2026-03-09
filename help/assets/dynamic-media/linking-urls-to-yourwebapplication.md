@@ -4,11 +4,12 @@ description: Saiba como vincular URLs ao aplicativo da Web no Dynamic Media.
 contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 4%
+source-wordcount: '1287'
+ht-degree: 5%
 
 ---
 
@@ -52,7 +53,7 @@ Há várias maneiras diferentes de obter uma string de URL. No entanto, as etapa
 
 1. Navegue até o ativo *publicado* cujo URL da predefinição de imagem ou URL da predefinição do visualizador você deseja copiar e selecione o ativo para abri-lo.
 
-   Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou da imagem também deve ser publicada.
+   Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou a predefinição de imagem também deve ser publicada.
 
    Consulte [Publicar Assets](publishing-dynamicmedia-assets.md).
 

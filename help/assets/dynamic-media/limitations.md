@@ -7,11 +7,12 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 2%
+source-wordcount: '314'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +32,7 @@ Ao criar um Conjunto de rotação ou um Conjunto de imagens, ou fazer upload de 
 | Ativo - Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
 | **Imagem** - Número de Recortes Inteligentes por imagem | 5 | 100 |
-| **Todos os conjuntos** - Número de ativos duplicados por conjunto | Sem duplicatas | 20 |
+| **Todos os conjuntos** - Número de ativos duplicados por conjunto | Nenhuma duplicata | 20 |
 | **Todos os conjuntos** - Número máximo de ativos por conjunto | De 5 a 10 imagens por conjunto | 1000 |
 | **Grupo de rotação** - Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
 | **PDF** - Número máximo de páginas para que uma PDF seja considerada para extração |  | 100 (para todos os PDFs) |

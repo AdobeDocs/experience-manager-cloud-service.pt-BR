@@ -2,11 +2,12 @@
 title: Saiba como pesquisar e descobrir ativos no [!DNL Assets view]?
 description: Saiba como pesquisar e descobrir ativos na visualização do AEM Assets. A eficiente funcionalidade de pesquisa permite descobrir rapidamente o ativo apropriado e ajuda a melhorar a velocidade do conteúdo.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1627'
 ht-degree: 74%
 
 ---
@@ -124,9 +125,9 @@ To remove custom filters:
 
 ## Pesquisar com IA {#ai-search}
 
-A Pesquisa de IA é um recurso de pesquisa avançada que entende o significado e a intenção por trás da consulta de um usuário, em vez de depender de correspondências exatas de palavras-chave. Ele usa inteligência artificial (IA) e aprendizado de máquina para fornecer resultados mais precisos e com reconhecimento de contexto.
+Pesquisa com IA é um recurso de pesquisa avançada que entende o significado e a intenção por trás da consulta de um usuário, em vez de depender de correspondências exatas de palavras-chave. Ele usa inteligência artificial (IA) e aprendizado de máquina para fornecer resultados mais precisos e com reconhecimento de contexto.
 
-Ao contrário da pesquisa tradicional baseada em palavras-chave, que procura termos exatos, a Pesquisa AI interpreta as relações entre palavras, conceitos e intenção do usuário. Isso garante que os usuários encontrem o que procuram, mesmo que a consulta seja redigida de forma diferente, contenha erros de digitação ou esteja em outro idioma.
+Ao contrário da pesquisa tradicional baseada em palavras-chave, que procura termos exatos, o Pesquisa com IA interpreta as relações entre palavras, conceitos e intenção do usuário. Isso garante que os usuários encontrem o que procuram, mesmo que a consulta seja redigida de forma diferente, contenha erros de digitação ou esteja em outro idioma.
 
 Alguns, se seus principais benefícios incluírem:
 
@@ -138,25 +139,25 @@ Alguns, se seus principais benefícios incluírem:
 
 * **Pesquisa sensível ao contexto**: reconhece a intenção por trás de uma consulta, não apenas as palavras exatas.
 
-### Exemplos para a pesquisa de IA {#examples-ai-search}
+### Exemplos para Pesquisas com IA {#examples-ai-search}
 
 **Exemplo de prompt**: *Mulher tomando café*
 
 A pesquisa tradicional baseada em palavras-chave procura correspondências exatas de metadados de ativos, como `Woman`, `drinking`, `Coffee`, e retorna ativos que incluem todos esses termos nos metadados.
 
-No entanto, a Pesquisa de IA corresponde a palavras semelhantes, como `Girl`, `Lady` no caso de `Woman` e `Cappuccino` e `Latte` no caso de `Coffee`.
+No entanto, Pesquisa com IA corresponde a palavras semelhantes, como `Girl`, `Lady` no caso de `Woman` e `Cappuccino` e `Latte` no caso de `Coffee`.
 
 Da mesma forma, você pode especificar este prompt em espanhol ou digitar incorretamente `Woman` como `Wman` e ainda obter os mesmos resultados.
 
 ![Pesquisa semântica no modo de exibição Assets](assets/semantic-search.png)
 
-### Ativar ou desativar a pesquisa de IA na exibição do Assets {#enable-disable-ai-search}
+### Ativar ou desativar Pesquisa com IA no modo de exibição Assets {#enable-disable-ai-search}
 
-Execute as seguintes etapas para ativar ou desativar a Pesquisa de IA:
+Execute as seguintes etapas para ativar ou desativar Pesquisas com IA:
 
 1. Navegue até **[!UICONTROL Configurações]** >> **[!UICONTROL Configurações Gerais]** e selecione a guia **[!UICONTROL Pesquisa]**.
 
-1. Na seção **[!UICONTROL Pesquisa]**, selecione **[!UICONTROL Pesquisa de IA]** para habilitar a Pesquisa de IA ou **[!UICONTROL Palavra-chave]** para desabilitá-la.
+1. Na seção **[!UICONTROL Pesquisa]**, selecione **[!UICONTROL Pesquisa com IA]** para habilitar Pesquisa com IA ou **[!UICONTROL Palavra-chave]** para desabilitá-la.
 
    ![Pesquisa semântica no modo de exibição Assets](/help/assets/assets/enable-disable-ai-search.png)
 
@@ -394,7 +395,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Forneça feedback sobre a documentação por meio das opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita.
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 
 

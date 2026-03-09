@@ -1,13 +1,14 @@
 ---
 title: Árvore de estrutura do fragmento de conteúdo (Assets - Fragmentos de conteúdo)
 description: Use o recurso de árvore de estrutura do editor de fragmento de conteúdo no AEM para entender melhor seu conteúdo headless.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '189'
 ht-degree: 36%
 
 ---

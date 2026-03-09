@@ -1,13 +1,14 @@
 ---
 title: Aprimorar a descoberta de conteúdo com metadados gerados por IA
 description: Saiba como aprimorar a descoberta de conteúdo com metadados gerados por IA
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
+exl-id: 51d8500e-8a19-40b3-a222-4c7e27eeb667
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
-
 
 # Aprimorar a descoberta de conteúdo com metadados gerados por IA {#ai-smart-tags}
 

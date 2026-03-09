@@ -2,13 +2,14 @@
 title: Pesquisar práticas recomendadas do  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Práticas recomendadas para pesquisar, localizar e recuperar metadados de ativos no aplicativo.
 contentOwner: KK
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2527'
-ht-degree: 2%
+source-wordcount: '2533'
+ht-degree: 3%
 
 ---
 
@@ -268,7 +269,7 @@ Isso leva você à coleção de ativos com cores e metadados semelhantes.
 
 ## Aspectos da pesquisa personalizada {#custom-search-facets}
 
-Os aspectos de pesquisa no Adobe Experience Manager permitem pesquisar ativos de várias maneiras, em vez de em uma única ordem pré-determinada ou taxonômica. Você pode personalizar os aspectos de pesquisa e adicionar predicados de acordo com sua necessidade. Leia [Aspectos da Pesquisa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=pt-BR#) para obter o guia passo a passo sobre como adicionar um predicado personalizado.
+Os aspectos de pesquisa no Adobe Experience Manager permitem pesquisar ativos de várias maneiras, em vez de em uma única ordem pré-determinada ou taxonômica. Você pode personalizar os aspectos de pesquisa e adicionar predicados de acordo com sua necessidade. Leia [Aspectos da Pesquisa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) para obter o guia passo a passo sobre como adicionar um predicado personalizado.
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
@@ -316,7 +317,7 @@ The newly added assets are not indexed.
     </tr>
     <tr>
         <td> Aspectos personalizados </td>
-        <td> Você pode adicionar <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=pt-BR">aspectos de pesquisa personalizados de acordo com o requisito.</td>
+        <td> Você pode adicionar <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">aspectos de pesquisa personalizados de acordo com o requisito.</td>
         <td> Os aspectos personalizados são parcialmente compatíveis com a visualização do Assets. Os aspectos suportados são:
             <ul>
             <li> Tags previstas
@@ -430,5 +431,5 @@ The newly added assets are not indexed.
 
 >[!MORELIKETHIS]
 >
->* [Pesquisar ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=pt-BR)
->* [Pesquisar aspectos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=pt-BR)
+>* [Pesquisar ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
+>* [Pesquisar aspectos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)

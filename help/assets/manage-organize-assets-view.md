@@ -3,12 +3,13 @@ title: Organize seus ativos digitais
 description: Mover, excluir, copiar, renomear, atualizar e criar versões de seus ativos no [!DNL Assets view].
 role: User, Leader
 contentOwner: AG
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 64%
+source-wordcount: '1660'
+ht-degree: 63%
 
 ---
 

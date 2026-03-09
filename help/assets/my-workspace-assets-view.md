@@ -1,12 +1,13 @@
 ---
 title: Visualização Meu Workspace para Assets
 description: Meu espaço de trabalho é uma página que fornece módulos visuais personalizáveis para um acesso conveniente às áreas-chave da interface do Assets e informações mais relevantes para o usuário.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '751'
 ht-degree: 84%
 
 ---
@@ -82,11 +83,11 @@ A guia **[!UICONTROL Principais downloads]** exibe os dez principais ativos mais
 
 ## Personalizar Meu espaço de trabalho {#configure-widgets}
 
-Todos os widgets são exibidos por padrão, mas você pode ativar ou desativar os widgets exibidos em Meu espaço de trabalho. As preferências são específicas para cada usuário.
+Todos os widgets são exibidos por padrão, mas você pode habilitar ou desabilitar os widgets exibidos em Meu espaço de trabalho. As preferências são específicas para cada usuário.
 
 1. Clique em **[!UICONTROL Meu espaço de trabalho]**, disponível no painel de navegação esquerdo e clique em **[!UICONTROL Personalizar]**.
 
-1. Desative a alternância do widget que você não precisa exibir no espaço de trabalho. Você também pode arrastar um widget para um local apropriado para atualizar sua ordem de exibição no espaço de trabalho.
+1. Desative o botão de alternância do widget que você não precisa exibir no espaço de trabalho. Você também pode arrastar um widget para um local apropriado para atualizar sua ordem de exibição no espaço de trabalho.
 
 1. Clique em **[!UICONTROL Concluído]** para salvar as alterações.
 

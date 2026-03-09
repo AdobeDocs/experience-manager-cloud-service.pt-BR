@@ -1,14 +1,15 @@
 ---
 title: Metadados - Propriedades do fragmento (Assets - Fragmentos de conteúdo)
 description: Veja como visualizar e editar as propriedades de metadados dos fragmentos de conteúdo.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 62%
+source-wordcount: '291'
+ht-degree: 61%
 
 ---
 

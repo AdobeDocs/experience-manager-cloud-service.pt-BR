@@ -2,10 +2,11 @@
 title: Restringir a entrega de ativos com Dynamic Media com recursos OpenAPI
 description: Saiba como restringir a entrega de ativos com recursos OpenAPI.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
@@ -54,7 +55,7 @@ O campo está disponível no formulário de metadados padrão. Se o ativo não f
 1. Adicione um campo **[!UICONTROL Data]** da seção **[!UICONTROL Criar formulário]** no lado direito à seção Metadados no formulário.
 1. Clique no campo recém-adicionado e faça as seguintes atualizações no painel **[!UICONTROL Configurações]**:
    1. Altere o **[!UICONTROL Rótulo do Campo]** para **No Horário** ou **Fora do Horário**.
-   1. Atualize o **[!UICONTROL Mapear para a propriedade]** para _./jcr:content/onTime_ para os campos **No Horário** e _./jcr:content/offTime_ para o campo **Tempo Desligado**.
+   1. Atualize o **[!UICONTROL Mapear para a propriedade]** para _./jcr:content/onTime_ para o campo **No Horário** e _./jcr:content/offTime_ para o campo **Off Time**.
 1. Clique em **[!UICONTROL Salvar]**.
 
 Da mesma forma, na visualização do Assets, se o ativo não for baseado no esquema de metadados padrão e os campos Momento da ativação e Momento da desativação não estiverem disponíveis nas propriedades do ativo, execute as seguintes etapas:
@@ -63,14 +64,14 @@ Da mesma forma, na visualização do Assets, se o ativo não for baseado no esqu
 1. Selecione o formulário de metadados e clique em **[!UICONTROL Editar]**.
 1. Adicione um campo **[!UICONTROL Data]** da seção **[!UICONTROL Componentes]** no painel esquerdo ao formulário.
 1. Clique no campo recém-adicionado e altere o **[!UICONTROL Rótulo]** para **Momento da ativação** ou **Momento da desativação**.
-1. Atualize a **[!UICONTROL propriedade de Metadados]** para _./jcr:content/onTime_ para os campos **No Horário** e _./jcr:content/offTime_ para o campo **Tempo Desligado**.
+1. Atualize a **[!UICONTROL propriedade de Metadados]** para _./jcr:content/onTime_ para o campo **No Horário** e _./jcr:content/offTime_ para o campo **Off Time**.
 1. Clique em **[!UICONTROL Salvar]**.
 
 
 
 ## Entrega de ativos restritos {#delivery-restricted-assets}
 
-A entrega de ativos restritos é baseada na autorização bem-sucedida para acessar ativos. A autorização é por meio de [Tokens de portador IMS](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/) (aplicativo para solicitações iniciadas a partir do [Seletor de ativos AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)), ou um cookie seguro (se você tiver provedores de identidade personalizados configurados nos serviços de Publicação/Visualização do AEM e tiver configurado a criação e a inclusão do cookie nas páginas).
+A entrega de ativos restritos é baseada na autorização bem-sucedida para acessar ativos. A autorização é por meio de [Tokens de portador IMS](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/) (aplicativo para solicitações iniciadas a partir do [Seletor de ativos AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)), ou um cookie seguro (se você tiver provedores de identidade personalizados configurados nos serviços de Publicação/Visualização do AEM e tiver configurado a criação e a inclusão do cookie nas páginas).
 
 ### Entrega para solicitações do autor ou do Seletor de ativos do AEM {#delivery-aem-author-asset-selector}
 
@@ -82,8 +83,8 @@ Nos serviços de autor do AEM Cloud Service, bem como no Seletor de ativos, o To
 >Para obter mais informações sobre como habilitar a autenticação IMS em integrações baseadas no Seletor de ativos da AEM, entre em contato com o Suporte corporativo
 
 1. Para experiências não baseadas no Seletor de ativos, o AEM as a Cloud Service e o Dynamic Media com recursos OpenAPI atualmente oferecem suporte a integrações de api no lado do servidor e podem gerar tokens de portador IMS.
-   * Siga as instruções [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) para executar integrações de API de serviço para servidor que possam recuperar os tokens do Portador IMS por meio do [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
-   * Por tempo limitado, o acesso de desenvolvedor local (não destinado a casos de uso de produção), tokens de Portador IMS de vida curta para o usuário autenticado no [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) podem ser gerados seguindo as instruções [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
+   * Siga as instruções [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) para executar integrações de API de serviço para servidor que possam recuperar os tokens do Portador IMS por meio do [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
+   * Por tempo limitado, o acesso de desenvolvedor local (não destinado a casos de uso de produção), tokens de Portador IMS de vida curta para o usuário autenticado no [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) podem ser gerados seguindo as instruções [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
 
 1. Ao fazer solicitações de API de [Pesquisa](search-assets-api.md) e [Entrega](deliver-assets-apis.md), adicione o token do Portador IMS obtido ao cabeçalho **[!UICONTROL Autorização]** da solicitação HTTP (verifique se o valor tem o prefixo **[!UICONTROL Portador]**).
 
@@ -93,4 +94,4 @@ Nos serviços de autor do AEM Cloud Service, bem como no Seletor de ativos, o To
 
 ### Entrega para provedores de identidade personalizados no serviço de Publicação {#delivery-custom-identity-provider}
 
-O AEM Sites, o AEM Assets e o Dynamic Media com licenças OpenAPI podem ser usados juntos, permitindo que a entrega restrita de ativos seja configurada em sites hospedados no serviço de publicação ou visualização do AEM. O fluxo de entrega seguro usa cookies do navegador para estabelecer o acesso do usuário. Ter um domínio personalizado para a camada de entrega que é o subdomínio do domínio de publicação é um pré-requisito para a implementação deste caso de uso. Se os serviços de Publicação e Visualização do AEM Sites estiverem configurados para usar um [provedor de identidade personalizado (IdP)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), um novo cookie chamado `delivery-token`, que encapsula a associação de grupo do usuário, deverá ser definido na autenticação do usuário posterior do domínio de publicação. O nível de entrega extrai o material de autorização do cookie seguro e valida o acesso. Registre um [tíquete de suporte da empresa](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) para obter mais detalhes.
+O AEM Sites, o AEM Assets e o Dynamic Media com licenças OpenAPI podem ser usados juntos, permitindo que a entrega restrita de ativos seja configurada em sites hospedados no serviço de publicação ou visualização do AEM. O fluxo de entrega seguro usa cookies do navegador para estabelecer o acesso do usuário. Ter um domínio personalizado para a camada de entrega que é o subdomínio do domínio de publicação é um pré-requisito para a implementação deste caso de uso. Se os serviços de Publicação e Visualização do AEM Sites estiverem configurados para usar um [provedor de identidade personalizado (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), um novo cookie chamado `delivery-token`, que encapsula a associação de grupo do usuário, deverá ser definido na autenticação do usuário posterior do domínio de publicação. O nível de entrega extrai o material de autorização do cookie seguro e valida o acesso. Registre um [tíquete de suporte da empresa](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) para obter mais detalhes.

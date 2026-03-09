@@ -1,13 +1,14 @@
 ---
 title: Gerenciamento de fragmentos de conteúdo (Assets - Fragmentos de conteúdo)
 description: Saiba como usar o console Assets para gerenciar os fragmentos de conteúdo do AEM, como base para o conteúdo headless ou para a criação de páginas.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1947'
 ht-degree: 62%
 
 ---
@@ -139,7 +140,7 @@ Selecione o fragmento para revelar a barra de ferramentas com ações aplicávei
 
 >[!NOTE]
 >
->Muitas delas são [ações padrão para o Assets](/help/assets/manage-digital-assets.md) e/ou o [aplicativo de desktop da AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=pt-BR).
+>Muitas delas são [ações padrão para o Assets](/help/assets/manage-digital-assets.md) e/ou o [aplicativo de desktop da AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Abrir o editor de fragmentos {#opening-the-fragment-editor}
 

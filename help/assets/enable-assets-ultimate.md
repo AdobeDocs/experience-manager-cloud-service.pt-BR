@@ -3,11 +3,12 @@ title: Ativar o Assets Ultimate
 description: Saiba como habilitar o Assets Ultimate para clientes novos e existentes.
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 1%
+source-wordcount: '1408'
+ht-degree: 2%
 
 ---
 

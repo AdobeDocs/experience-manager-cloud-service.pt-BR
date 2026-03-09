@@ -1,10 +1,11 @@
 ---
 title: Gerenciar o Assets licenciado no Content Hub
 description: Saiba mais sobre como adicionar um campo de licença ao formulário de metadados de ativos, aplicar a propriedade de metadados de licença às pastas de ativos e aprovar ativos com licenças para uso.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
-source-git-commit: bfa7ceeb839574ff1b80ffc25b6519a629247385
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '616'
 ht-degree: 1%
 
 ---

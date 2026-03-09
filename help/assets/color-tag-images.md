@@ -1,12 +1,13 @@
 ---
 title: Tags de cores para imagens
 description: O Adobe Experience Manager Assets permite distinguir cores em uma imagem e aplicá-las automaticamente como tags. Em seguida, você pode usar essas tags para pesquisar e filtrar imagens.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1249'
 ht-degree: 6%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 6%
 
 ![Banner de Marcação de Cores](assets/banner-image.png)
 
-O Adobe Experience Manager (AEM) Assets usa os recursos de IA do Adobe para distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação. Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem.
+O Adobe Experience Manager (AEM) Assets usa os recursos do Adobe AI para distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação. Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem.
 
 Você pode configurar o número de cores, dentro de um intervalo de um a 40, que são marcados em uma imagem para que você possa pesquisar imagens com base nessas cores posteriormente. O Experience Manager Assets aplica as tags com base na cobertura de cor de uma imagem. Também é possível configurar o formato de exibição de uma tag de cor.
 

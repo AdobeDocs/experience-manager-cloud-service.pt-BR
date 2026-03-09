@@ -3,10 +3,11 @@ title: Habilitar extensibilidade da interface do usuário em  [!DNL AEM Assets V
 description: Saiba mais sobre o recurso de Extensibilidade da Interface do Usuário do  [!DNL AEM Assets View]. [!DNL AEM Assets View] A interface do usuário permite adicionar componentes de interface do usuário personalizados para atender a necessidades comerciais específicas.
 feature: App Builder
 role: User, Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---

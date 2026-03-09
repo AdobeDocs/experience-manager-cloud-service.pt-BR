@@ -4,10 +4,11 @@ description: Saiba como trabalhar com vídeo de 360 e realidade virtual (VR) no 
 contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Você pode usar o visualizador de vídeo 360/VR para renderizar vídeo equiretan
 
 O áudio espacial não é suportado atualmente; se o áudio estiver misturado em estéreo, o equilíbrio (L/R) não muda conforme o cliente muda o ângulo de visão da câmera.
 
-Consulte [Uso de vídeos do Dynamic Media 360 e miniatura de vídeo personalizada com o AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html?lang=pt-BR#dynamic-media).
+Consulte [Uso de vídeos do Dynamic Media 360 e miniatura de vídeo personalizada com o AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
 
 Consulte também [Gerenciamento de Predefinições do Visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -37,7 +38,7 @@ Selecione [Estação Espacial 360](https://s7d1.scene7.com/s7viewers/html5/Video
 
 Você pode usar o Adobe Premier Pro para visualizar e editar a gravação 360/VR. Por exemplo, você pode colocar logotipos e texto corretamente em uma cena e aplicar efeitos e transições projetados especificamente para mídia quadrretangular.
 
-Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/br/premiere-pro/how-to/edit-360-vr-video.html).
+Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Fazer upload de ativos para uso com o visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 

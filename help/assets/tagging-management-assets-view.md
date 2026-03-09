@@ -1,12 +1,13 @@
 ---
 title: Como gerenciar tags na visualização do Assets?
 description: Saiba como gerenciar tags na visualização do Assets. As tags ajudam a categorizar ativos que podem ser procurados e pesquisados com mais eficiência.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1745'
 ht-degree: 98%
 
 ---

@@ -1,14 +1,15 @@
 ---
 title: Reutilizar fragmentos de conteúdo usando MSM e Live Copies
 description: Saiba mais sobre como usar a funcionalidade de Live Copy do MSM para usar o mesmo conteúdo de fragmento de conteúdo, ou similar, em vários locais, enquanto sincroniza com o conteúdo original.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 10%
+source-wordcount: '438'
+ht-degree: 12%
 
 ---
 

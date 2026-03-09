@@ -2,12 +2,13 @@
 title: Como a visualização do Assets no AEM beneficia você?
 description: Saiba mais sobre os principais benefícios da visualização do Assets no AEM. A Adobe, usando sua experiência em capacitar profissionais de marketing e criativos, apresenta uma nova experiência revolucionária para o usuário.
 mini-toc-levels: 3
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '972'
 ht-degree: 69%
 
 ---

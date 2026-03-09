@@ -1,13 +1,14 @@
 ---
 title: Variações - Criação dos fragmentos de conteúdo (Assets - Fragmentos de conteúdo)
 description: Entenda como as variações de Fragmento de conteúdo permitem criar conteúdo para o fragmento e, em seguida, criar variações desse conteúdo de acordo com a finalidade, aumentando assim a flexibilidade.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2536'
 ht-degree: 50%
 
 ---
@@ -269,7 +270,7 @@ O resumo de texto foi criado para ajudar os usuários a reduzir o comprimento do
    ![resumo](assets/cfm-variations-05.png)
 
 1. Especifique o número alvo de palavras e selecione **Iniciar**:
-1. O texto original é apresentado lado a lado com o resumo proposto:
+1. O texto original é exibido lado a lado com o resumo proposto:
 
    * As frases que serão eliminadas são destacadas em vermelho e tachadas.
    * Clique em qualquer frase destacada para mantê-la no conteúdo resumido.
@@ -277,7 +278,7 @@ O resumo de texto foi criado para ajudar os usuários a reduzir o comprimento do
 
 1. Selecione **Resumir** para confirmar as alterações.
 
-1. O texto original é apresentado lado a lado com o resumo proposto:
+1. O texto original é exibido lado a lado com o resumo proposto:
 
    * As frases que serão eliminadas são destacadas em vermelho e tachadas.
    * Clique em qualquer frase destacada para mantê-la no conteúdo resumido.
@@ -502,7 +503,7 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 
 >[!CAUTION]
 >
->A sincronização só está disponível para copiar alterações *do **Principal**&#x200B;para a variação*.
+>A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
 >
 >Somente o elemento atual da variação será sincronizado.
 >

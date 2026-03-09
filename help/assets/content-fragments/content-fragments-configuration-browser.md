@@ -1,14 +1,15 @@
 ---
 title: Fragmentos de conteúdo - Navegador de configuração (Assets - Fragmentos de conteúdo)
 description: Saiba como ativar a funcionalidade de Fragmento de conteúdo no Navegador de configuração.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 feature: Content Fragments
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 80%
+source-wordcount: '361'
+ht-degree: 79%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 80%
 
 Saiba como ativar determinadas funcionalidades do fragmento de conteúdo no Navegador de configuração para usar os recursos avançados de entrega headless do AEM.
 
-## Ativar a funcionalidade de fragmento de conteúdo para sua instância {#enable-content-fragment-functionality-instance}
+## Habilitar a funcionalidade de fragmento de conteúdo para sua instância {#enable-content-fragment-functionality-instance}
 
 Antes de usar fragmentos de conteúdo, você deve usar o **navegador de configuração** para habilitar:
 
@@ -35,7 +36,7 @@ Para habilitar a funcionalidade dos fragmentos de conteúdo, você deve fazer o 
 * Ativar o uso da funcionalidade de fragmento de conteúdo por meio do navegador de configuração
 * Aplicar a configuração à sua pasta de ativos
 
-### Ativar a funcionalidade de fragmento de conteúdo no navegador de configuração {#enable-content-fragment-functionality-in-configuration-browser}
+### Habilitar a funcionalidade de fragmento de conteúdo no navegador de configuração {#enable-content-fragment-functionality-in-configuration-browser}
 
 Para usar determinadas [funcionalidades dos fragmentos de conteúdo](#creating-a-content-fragment-model), primeiro é **necessário** habilitá-las por meio do **navegador de configuração**:
 
@@ -66,7 +67,7 @@ Para usar determinadas [funcionalidades dos fragmentos de conteúdo](#creating-a
       * Ele será gerado automaticamente com base no título e ajustado conforme as [convenções de nomenclatura do AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Você pode ajustá-lo se necessário.
    1. Para permitir seu uso, selecione
-      * **Modelos de fragmentos do conteúdo**
+      * **Modelos de fragmentos de conteúdo**
       * **Consultas GraphQL persistidas**
 
       ![Definir configuração](assets/cfm-conf-01.png)

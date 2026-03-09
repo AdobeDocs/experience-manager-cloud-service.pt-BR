@@ -2,12 +2,13 @@
 title: Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL (Assets - fragmentos de conteúdo)
 description: Saiba mais sobre os conceitos básicos da criação de um CMS headless no AEM usando fragmentos de conteúdo com GraphQL para entrega de conteúdo headless.
 feature: Content Fragments
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 role: User
 solution: Experience Manager Sites
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '724'
 ht-degree: 83%
 
 ---
@@ -64,7 +65,7 @@ A implementação da API GraphQL do AEM é baseada nas [bibliotecas GraphQL do J
 Os [fragmentos de conteúdo](#content-fragments) podem ser usados como base para o GraphQL em consultas do AEM, pois:
 
 * Permitem projetar, criar, preparar e publicar conteúdo independente de páginas.
-* Os [Modelos de fragmentos do conteúdo](#content-fragments-models) fornecem a estrutura necessária por meio de tipos de dados definidos.
+* Os [Modelos de fragmentos de conteúdo](#content-fragments-models) fornecem a estrutura necessária por meio de tipos de dados definidos.
 * A [referência do fragmento](#fragment-references), disponível ao definir um modelo, pode ser usada para definir camadas adicionais de estrutura.
 
 ![Fragmentos de conteúdo para uso com GraphQL](assets/cfm-nested-01.png "Fragmentos de conteúdo para uso com GraphQL")
@@ -77,11 +78,11 @@ Fragmentos de conteúdo:
 
 * Baseiam-se em um [Modelo de fragmento de conteúdo](#content-fragments-models), que predefine a estrutura do fragmento resultante.
 
-### Modelos de fragmentos do conteúdo {#content-fragments-models}
+### Modelos de fragmentos de conteúdo {#content-fragments-models}
 
 Esses [Modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md):
 
-* São usados para gerar os [Esquemas](https://graphql.org/learn/schema/), uma vez **Ativados**.
+* São usados para gerar os [Esquemas](https://graphql.org/learn/schema/), uma vez **Habilitados**.
 
 * Fornecem os tipos de dados e campos necessários para o GraphQL. Garantem que seu aplicativo solicite apenas o que é possível e receba o que é esperado.
 

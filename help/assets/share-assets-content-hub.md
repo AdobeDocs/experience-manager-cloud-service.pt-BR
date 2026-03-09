@@ -2,10 +2,11 @@
 title: Compartilhar Assets em  [!DNL the Content Hub]
 description: Compartilhar Assets em  [!DNL the Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '925'
 ht-degree: 1%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 1%
 
 Crie um link para ativos selecionados para compartilhá-los facilmente com outras pessoas. Como usuário autorizado do [!DNL Content Hub], selecione um ou mais ativos disponíveis no ambiente [!DNL Content Hub], gere um link e envie-o para outros usuários públicos ou privados.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474924/?captions=por_br&learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## Pré-requisitos {#prerequisites}
 

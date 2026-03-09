@@ -2,10 +2,11 @@
 title: APIs de entrega
 description: Saiba como usar as APIs de entrega.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 9f7164e99abb6fce3b1bbc6401234996bcd43889
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ A tabela a seguir ilustra o uso das várias APIs de entrega disponíveis:
 >[!IMPORTANT]
 >
 >Você pode testar qualquer modificador, que geralmente não está disponível por meio de APIs experimentais. Por exemplo, `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
->&#x200B;>Clique aqui para saber mais sobre como usar as [APIs experimentais](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) e a [lista completa de modificadores](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>Clique aqui para saber mais sobre como usar as [APIs experimentais](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) e a [lista completa de modificadores](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 O Dynamic Media com recursos de OpenAPI também é compatível com vídeos de formulários longos. Os vídeos podem suportar até 50 GB e 2 horas.
 
@@ -73,7 +74,7 @@ headers: {
     }
 ```
 
-Para invocar as APIs de Entrega, é necessário um token IMS nos detalhes `Authorization` para entregar um ativo restrito. O token IMS é obtido de uma conta técnica. Consulte [Buscar as credenciais do AEM as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para criar uma nova conta técnica. Consulte [Gerar o token de acesso](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para gerar o token IMS e usá-lo corretamente no cabeçalho da solicitação de APIs de Entrega.
+Para invocar as APIs de Entrega, é necessário um token IMS nos detalhes `Authorization` para entregar um ativo restrito. O token IMS é obtido de uma conta técnica. Consulte [Buscar as credenciais do AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para criar uma nova conta técnica. Consulte [Gerar o token de acesso](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) para gerar o token IMS e usá-lo corretamente no cabeçalho da solicitação de APIs de Entrega.
 
 
 Para exibir amostras de solicitações, amostras de respostas e códigos de resposta, consulte [APIs de entrega](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).

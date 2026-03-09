@@ -1,20 +1,21 @@
 ---
 title: Conteúdo associado (Assets - Fragmentos de conteúdo)
-description: Entenda como o recurso de conteúdo associado para fragmentos de conteúdo AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento.
+description: Entenda como o recurso de conteúdo associado para Fragmentos de conteúdo do AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '298'
 ht-degree: 40%
 
 ---
 
 # Conteúdo associado{#associated-content}
 
-Para Fragmentos de conteúdo do Adobe Experience Manager (AEM) as a Cloud Service, o recurso de conteúdo associado (disponível no editor original) fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento. Isso proporciona flexibilidade ao [fornecer um intervalo de ativos para acessar ao usar o fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado. Esse recurso pode ser usado para a entrega de conteúdo headless e para a criação de páginas.
+Para fragmentos de conteúdo do Adobe Experience Manager (AEM) as a Cloud Service, o recurso de conteúdo associado (disponível no editor original) fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento. Isso proporciona flexibilidade ao [fornecer um intervalo de ativos para acessar ao usar o fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado. Esse recurso pode ser usado para a entrega de conteúdo headless e para a criação de páginas.
 
 >[!NOTE]
 >

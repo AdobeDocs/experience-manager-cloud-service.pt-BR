@@ -4,10 +4,11 @@ description: Publicar ativos, pastas e coleções no Brand Portal.
 contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1293'
 ht-degree: 85%
 
 ---
@@ -32,8 +33,8 @@ Se fizer modificações subsequentes no ativo, pasta ou coleção original no AE
 >[!NOTE]
 >
 >A Adobe recomenda uma publicação escalonada, de preferência durante horários que não sejam de pico, para que o autor do AEM não ocupe recursos excessivos.
->&#x200B;>O Assets deve ser publicado em lotes. A recomendação para o tamanho do lote é de 15K.
->&#x200B;> Para [!DNL Experience Manager Assets] as a [!DNL Cloud Service], a taxa de transferência observada em condições de laboratório é de 1000 ativos por hora. A taxa é observada com um tamanho médio de ativos de 10 MB.
+>O Assets deve ser publicado em lotes. A recomendação para o tamanho do lote é de 15K.
+> Para [!DNL Experience Manager Assets] as a [!DNL Cloud Service], a taxa de transferência observada em condições de laboratório é de 1000 ativos por hora. A taxa é observada com um tamanho médio de ativos de 10 MB.
 
 ## Publicar ativos no Brand Portal {#publish-assets-to-bp}
 
@@ -93,12 +94,12 @@ Para agendar a publicação dos ativos no Brand Portal para uma data ou hora pos
 >
 > * A parte de usuários existente do grupo Usuários DAM tem acesso de leitura no caminho &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
 > * Os novos usuários (ou usuários não administradores) exigem os seguintes direitos para publicar no brand portal.
->   &#x200B;> Caminhos:
->   &#x200B;> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->   &#x200B;>`/libs : jcr:read`
->   &#x200B;>`/conf : jcr:read`
->   &#x200B;>`/content : jcr:read, crx:replicate`
->   &#x200B;>`/content/dam/ : jcr:read,modify, crx:replicate`
+> Caminhos:
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read`
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Publicar pastas no Brand Portal {#publish-folders-to-brand-portal}
 
@@ -160,7 +161,7 @@ Para agendar a publicação das pastas de ativos para uma data ou hora posterior
 
 1. Alterne para o Modo de exibição de lista ![Modo de exibição de lista](assets/list-view.svg) para ver o status de publicação atual do ativo.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![status do relatório gerado](assets/report-status.JPG)
 
@@ -258,11 +259,11 @@ Veja a seguir as etapas para cancelar a publicação de uma coleção:
 
 Além do que foi descrito acima, você também pode publicar esquemas de metadados, predefinições de imagens, aspectos de pesquisa e tags do AEM Assets para o Brand Portal.
 
-* [Publicar predefinições, esquemas e aspectos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=pt-BR)
-* [Publicar marcações no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=pt-BR)
+* [Publicar predefinições, esquemas e aspectos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publicar marcações no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-Consulte a [documentação do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=pt-BR) para obter mais informações.
+Consulte a [documentação do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para obter mais informações.
 
 
 <!--

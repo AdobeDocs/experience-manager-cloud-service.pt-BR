@@ -1,12 +1,13 @@
 ---
 title: Importação de ativos em massa usando a visualização do Assets
 description: Saiba como importar ativos em massa usando a nova interface do Assets (visualização do Assets). Ela fornece a capacidade de importar um grande número de ativos de uma fonte de dados para o AEM Assets.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1880'
 ht-degree: 88%
 
 ---
@@ -27,7 +28,7 @@ A Importação em massa na visualização do AEM Assets fornece a capacidade de 
 * Dropbox
 * OneDrive
 
->[!VIDEO](https://video.tv.adobe.com/v/3451964/?captions=por_br&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## Pré-requisitos {#prerequisites}
 

@@ -2,11 +2,12 @@
 title: Coleções do seletor de ativos
 description: Trabalhar com coleções do seletor de ativos.
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 4%
+source-wordcount: '455'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +34,7 @@ Além disso, também é possível personalizar a seleção de ativos na guia Col
 
 ## Exibir coleções {#view-collections}
 
-O Seletor de ativos permite exibir coleções em uma exibição de lista ![1&rbrace; ou em uma exibição de grade 3&rbrace;. &#x200B;](assets/do-not-localize/list-view.png)![](assets/do-not-localize/grid-view.png) Consulte [tipos de exibição no Seletor de ativos](overview-asset-selector.md#types-of-view).
+O Seletor de ativos permite exibir coleções em uma exibição de lista ![1} ou em uma exibição de grade ](assets/do-not-localize/list-view.png)3}. ![](assets/do-not-localize/grid-view.png) Consulte [tipos de exibição no Seletor de ativos](overview-asset-selector.md#types-of-view).
 
 ## Arraste e solte ativos na coleção {#collection-drag-and-drop}
 

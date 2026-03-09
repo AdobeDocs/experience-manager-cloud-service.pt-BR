@@ -2,10 +2,11 @@
 title: Pesquisar ativos no Content Hub
 description: Saiba como pesquisar ativos no [!DNL Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 95d7935142e26b717e2c33a2bd0e8e2c2f52a623
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---

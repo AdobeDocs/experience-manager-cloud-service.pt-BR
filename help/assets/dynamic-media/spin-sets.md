@@ -4,10 +4,11 @@ description: Saiba como trabalhar com conjuntos de rotação no Dynamic Media.
 contentOwner: Rick Brough
 feature: Spin Sets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1962'
 ht-degree: 8%
 
 ---

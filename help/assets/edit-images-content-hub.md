@@ -1,10 +1,11 @@
 ---
 title: Editar imagens no Content Hub usando o Adobe Express
 description: Editar imagens no Content Hub usando o Adobe Express
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '716'
 ht-degree: 1%
 
 ---
@@ -29,7 +30,7 @@ Para editar imagens usando o Content Hub:
 
 1. Clique em **[!DNL Open in Adobe Express]**, disponível no cartão de ativos da imagem que você precisa editar. Como alternativa, clique na imagem para abrir seus detalhes e clique no logotipo [!DNL Adobe Express]. O editor incorporado do Adobe Express é carregado sem sair do Content Hub.
 
-   Você pode aproveitar a funcionalidade [!DNL Adobe Express] para executar todas as ações relacionadas à edição de imagens, como [redimensionar imagem](https://helpx.adobe.com/br/express/using/resize-image.html), [remover ou alterar a cor de fundo](https://helpx.adobe.com/br/express/using/remove-background.html), [recortar imagem](https://helpx.adobe.com/br/express/using/crop-image.html), combinar a imagem com a imagem ou o texto gerado pela IA e muito mais.
+   Você pode aproveitar a funcionalidade [!DNL Adobe Express] para executar todas as ações relacionadas à edição de imagens, como [redimensionar imagem](https://helpx.adobe.com/express/using/resize-image.html), [remover ou alterar a cor de fundo](https://helpx.adobe.com/express/using/remove-background.html), [recortar imagem](https://helpx.adobe.com/express/using/crop-image.html), combinar a imagem com a imagem ou o texto gerado pela IA e muito mais.
 
 1. Faça as modificações e clique em **[!UICONTROL Salvar]** para salvar o ativo editado em um dos tipos de formato:
 
