@@ -4,9 +4,9 @@ description: Saiba como o Agente de modernização de experiência integra novos
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 0bef673daf2030ce2418d0d3a0560a8476868657
+source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,11 @@ O Agente de Modernização de Experiência fornece um ambiente de desenvolviment
 * A governança corporativa é imposta à medida que os desenvolvedores mantêm controle total sobre o que vem por meio do processo normal de revisão e aprovação do GitHub.
 
 O Console de Modernização de experiência de autoatendimento está disponível em geral. Os usuários interessados podem solicitar acesso para garantir uma experiência de integração tranquila.
+
+Introdução ao Console de modernização de experiência!
+
+* Se você estiver modernizando seu site com a Criação de Documentos de destino, [comece aqui.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+* Se você estiver modernizando seu site com a criação de páginas no AEM, [comece aqui.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
 
 ## Modelo de entrega {#delivery-model}
 

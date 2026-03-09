@@ -4,9 +4,9 @@ description: Guia de referência para a interface e os recursos do Console de mo
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
+source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -67,19 +67,17 @@ A barra lateral esquerda permite acesso rápido a exibições importantes do con
 
 A exibição **Página Inicial** é o seu ponto de partida para usar o console.
 
-* Na parte superior há um [painel de prompt](#prompt-panel) para fazer solicitações do console.
-* Abaixo do painel de aviso são sugeridos prompts para usar para iniciar seu projeto.
+* Na parte superior há uma [entrada de prompt](#prompt-input) para fazer solicitações do console.
+* Abaixo do painel de prompts estão sugestões de prompts para começar a usar seu projeto.
 
-### Painel de seleção {#prompt-panel}
+### Entrada de prompt {#prompt-input}
 
-O painel de prompt fornece controles para interagir com a IA.
+A entrada do prompt fornece controles para interagir com a IA.
 
 * **Planejar / Executar modos** (ícones de lâmpada e varinha mágica): alternar entre os modos de planejamento e execução, respectivamente
    * **Modo de plano**: a IA analisa solicitações e descreve uma abordagem sem fazer alterações, o que é útil para entender a estratégia antes de confirmar.
    * **Modo de execução**: a IA executa o plano e faz alterações reais no arquivo.
 * **Anexar arquivos** (ícone de clipe de papel): carregue e anexe arquivos ao prompt para contexto adicional (por exemplo, designs de referência, capturas de tela, especificações)
-* **Configurações** (ícone de engrenagem): ignorar perguntas de confirmação da IA
-* **Limpar chat**: redefine a conversa e limpa a janela de contexto da IA. Use esta opção ao iniciar uma nova tarefa não relacionada à conversa anterior.
 
 ## Exibição de conteúdo {#content-view}
 
@@ -91,15 +89,32 @@ A **Exibição de conteúdo** fornece ferramentas para navegar e visualizar cont
 
 ![Exibição de conteúdo](assets/content-imported.png)
 
-O painel de visualização oferece três modos:
+### Painel de bate-papo {#chat-panel}
+
+O painel de chat permite exibir e continuar sua conversa com o agente de Modernização de experiência. O painel de chat inclui o histórico de mensagens de chat e uma [entrada de prompt](#prompt-input) para fazer solicitações adicionais do console.
+
+* **Ações de chat**
+   * **Limpar chat**: redefine a conversa e limpa a janela de contexto da IA. Use esta opção ao iniciar uma nova tarefa não relacionada à conversa anterior.
+   * **Baixar chat**: baixa o histórico da conversa como um arquivo de marcação.
+
+### Painel Visualizar {#preview-panel}
+
+O painel de visualização oferece até quatro modos:
 
 * **Visualizar** (documento com ícone de lupa) para exibir o conteúdo do HTML renderizado
-* **exibição do HTML** (ícone de documento) para exibir a estrutura de conteúdo de criação do documento subjacente, respectivamente
-* **Modo de design** (ícone de pincel) para selecionar elementos da página para o contexto do prompt
+   * **Modo de exibição responsivo** para exibir o conteúdo renderizado do HTML em um modo de exibição de desktop, tablet ou móvel
+   * **Modo de design** (ícone de pincel) para adicionar elementos da página ao seu prompt para contexto adicional
+* **Exibição de documento** (ícone de documento) para exibir a estrutura de conteúdo de criação do documento subjacente, respectivamente
+* **Exibição do Markdown (criação no AEM)** (ícone de código) para exibir a estrutura de conteúdo subjacente do Markdown
+* **Visualização JCR XML (criação no AEM)** (ícone de dados) para exibir a estrutura de conteúdo JCR XML resultante
 
 Você sempre pode clicar no ícone **Atualizar visualização** para atualizar o painel de visualização.
 
-O botão **Carregar conteúdo** abre uma janela modal para carregar arquivos para o AEM Document Authoring.
+O botão **Excluir** remove a página selecionada do espaço de trabalho. O conteúdo visualizado ou publicado não será excluído.
+
+O botão **Erros** (criação do AEM) abre uma janela modal para exibir os erros na página selecionada.
+
+O botão **Carregar conteúdo** abre uma janela modal para carregar arquivos para o AEM.
 
 * Os campos **Organização** e **Repositório** serão preenchidos previamente se o projeto tiver um arquivo `fstab.yaml`
 * A seleção de arquivo fornece caminhos de destino editáveis
@@ -111,15 +126,16 @@ O botão **Carregar conteúdo** abre uma janela modal para carregar arquivos par
 
 A **Visualização de código** fornece ferramentas para procurar código e gerenciar alterações de código. A exibição é dividida em três painéis, da esquerda para a direita:
 
-* Solicitar painel para interagir com o console e o projeto
+* Painel de bate-papo para interagir com o console e o projeto
 * Navegador de arquivos para obter uma visão geral dos arquivos de código ou alterações como diferenciais
-* Painel Visualizar para visualizar um arquivo de código ou diferenciar selecionado no navegador de arquivos
+* Painel Visualizar para visualizar um arquivo de código ou alterações selecionadas no navegador de arquivos
 
 ![Modo de exibição de código](assets/code-view.png)
 
 O painel de visualização oferece dois modos diferentes:
 
-* **Arquivos Workspace** para navegar pelos arquivos de código no espaço de trabalho atual
+* **Arquivos Workspace** para procurar os arquivos de código no espaço de trabalho atual
+   * Use o botão **Adicionar ao chat** para adicionar o arquivo ao painel de chat para contexto.
 * **Alterações do Git** para exibir as diferenças de arquivos, alterações criadas pelo seu trabalho no projeto
    * Clique no ícone `+` para preparar o arquivo alterado
    * Clique no ícone de seta para descartar o arquivo alterado
@@ -145,7 +161,9 @@ A visualização de configurações permite gerenciar configurações básicas d
 
 ![Modo de exibição de configurações](assets/settings-view.png)
 
-* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [&#x200B; possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+* **O Project** permite que você exiba e edite as configurações do projeto, como a personalização da URL da biblioteca.
+* O **Suporte** permite solicitar ajuda à equipe de suporte da AEM.
+* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [ possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * O token requer os seguintes escopos somente leitura:
       * `file_content:read`
       * `file_metadata:read`
