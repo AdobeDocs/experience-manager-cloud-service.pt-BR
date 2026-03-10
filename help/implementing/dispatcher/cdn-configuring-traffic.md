@@ -4,9 +4,9 @@ description: Saiba como configurar o tráfego CDN declarando regras e filtros em
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1932'
 ht-degree: 0%
 
 ---
@@ -437,6 +437,10 @@ As conexões com as origens são somente SSL e usam a porta 443.
 | **forwardAuthorization** (opcional, o padrão é falso) | Se definido como verdadeiro, o cabeçalho &quot;Autorização&quot; da solicitação do cliente será passado para o backend; caso contrário, o cabeçalho de Autorização será removido. |
 | **tempo limite** (opcional, em segundos, o padrão é 60) | Número de segundos que o CDN deve aguardar até que um servidor de back-end forneça o primeiro byte de um corpo de resposta HTTP. Esse valor também é usado como um tempo limite entre bytes para o servidor de back-end. |
 
+>[!IMPORTANT]
+>
+>O valor de **domínio** não deve conter `.adobeaemcloud.com`. Não é possível criar proxy diretamente para um domínio adobeaemcloud.com. Essa restrição protege contra loops de solicitação indesejados. Para usar o tráfego de proxy em seu ambiente AEM as a Cloud Service, use um [domínio personalizado](#proxying-to-aemaacs) instalado em seu ambiente AEMaaCS como back-end de origem.
+
 ### Domínio personalizado de proxy para a camada estática do AEM {#proxy-custom-domain-static}
 
 Os seletores de origem podem ser usados para rotear o tráfego de publicação do AEM para o conteúdo estático do AEM implantado usando o [pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Os casos de uso incluem o fornecimento de recursos estáticos no mesmo domínio da página (por exemplo, example.com/static) ou em um domínio explicitamente diferente (por exemplo, static.example.com).
@@ -494,6 +498,41 @@ data:
 >[!NOTE]
 >
 >Como a CDN Gerenciada pela Adobe é usada, certifique-se de configurar a invalidação por push no modo **gerenciado**, seguindo a [documentação de invalidação por push da Instalação](https://www.aem.live/docs/byo-dns#setup-push-invalidation) do Edge Delivery Services.
+
+
+### Utilização de proxy no ambiente do AEMaaCS {#proxying-to-aemaacs}
+
+Você não pode usar um domínio `adobeaemcloud.com` diretamente como uma origem na sua configuração de CDN. Isso é rejeitado (o domínio não deve conter `.adobeaemcloud.com`) para proteger contra loops de solicitação indesejados. Isso também se aplica ao roteamento de um domínio instalado para um site do Edge Delivery.
+
+Se o domínio personalizado (`www.example.com`) já estiver instalado em um ambiente AEMaaCS, o roteamento padrão será roteado para o back-end do AEM sem nenhuma regra CDN. Use seletores de origem quando precisar rotear entre ambientes (por exemplo, de `pXXXX-eYYYY` para `pXXXX-eZZZZ`) ou de um site do Edge Delivery para um ambiente do AEMaaCS.
+
+Para direcionar o tráfego de proxy para o ambiente do AEM as a Cloud Service nesses casos (por exemplo, para rotear caminhos específicos como `/graphql` para um back-end), instale um domínio personalizado no ambiente do AEMaaCS e use esse domínio personalizado como a origem na sua configuração de CDN.
+
+**Exemplo:** Se a camada de publicação do AEM estiver acessível em `publish-pXXXXX-eYYYYY.adobeaemcloud.com`, não use esse domínio em `originSelectors`. Em vez disso:
+
+1. Instale um domínio personalizado em seu ambiente AEMaaCS (por exemplo, `aem-publish-origin.example.com`) que aponte para seu serviço de publicação.
+2. Na configuração da CDN, defina uma origem com esse domínio personalizado e roteie os caminhos desejados (por exemplo, `/graphql`) para ele.
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: graphql-to-aem-publish
+        when:
+          allOf:
+            - reqProperty: domain
+              equals: www.example.com
+            - reqProperty: path
+              like: /graphql*
+        action:
+          type: selectOrigin
+          originName: aem-publish-origin
+    origins:
+      - name: aem-publish-origin
+        domain: aem-publish-origin.example.com
+```
 
 
 ## Redirecionamentos do lado do servidor {#server-side-redirectors}
