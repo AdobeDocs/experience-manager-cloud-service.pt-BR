@@ -4,9 +4,9 @@ description: Saiba como usar o Protocolo de contexto de modelo com o AEM as a Cl
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 2cbbb53c1bf5277ab54e6731152c0400b4e67aba
+source-git-commit: b3704dad066b66b103fdec849879f889e895c09d
 workflow-type: tm+mt
-source-wordcount: '1757'
+source-wordcount: '1761'
 ht-degree: 0%
 
 ---
@@ -142,7 +142,7 @@ Cada usuário executa essa etapa ou um administrador do aplicativo cliente MCP p
 1. Verificar ferramentas descobertas
    * Depois de autenticado, o aplicativo descobre as ferramentas MCP do servidor. Você pode iniciar solicitando ao LLM a execução das operações do AEM.
 
-Abaixo estão os guias passo a passo para cada aplicativo suportado:
+Abaixo estão os aplicativos compatíveis, alguns dos quais vinculam aos guias passo a passo:
 
 #### Aplicativos de bate-papo (Web e desktop) {#setup-chat-applications}
 
