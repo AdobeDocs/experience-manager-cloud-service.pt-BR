@@ -4,9 +4,9 @@ description: Saiba como você pode usar pipelines de configuração para implant
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: ac04829b63ca5e2fee71f6c71d0730f21c576382
+source-git-commit: 66ea803dbf8e8b12fecf6256a88c94c2ca6fa112
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1445'
 ht-degree: 2%
 
 ---
@@ -19,9 +19,9 @@ Saiba como você pode usar pipelines de configuração para implantar diferentes
 
 Um pipeline de configuração do Cloud Manager implanta arquivos de configuração (criados no formato YAML) em um ambiente de destino. Vários recursos do AEM as a Cloud Service podem ser configurados dessa maneira, incluindo o encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e vários recursos de CDN.
 
-Para projetos do **Entrega de publicação**, os pipelines de configuração podem ser implantados via Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção. Os arquivos de configuração podem ser implantados em ambientes de desenvolvimento rápido (RDEs) usando a [ferramenta de linha de comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+Para projetos do **Entrega de publicação**, os pipelines de configuração podem ser implantados via Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção. Os arquivos de configuração podem ser implantados em ambientes de desenvolvimento rápido (RDEs) usando a [ferramenta de linha de comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline). Use uma implantação direcionada [**Publicar Pipeline de Entrega**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) ([Produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) ou [Não Produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)) quando precisar configurar o tráfego para um domínio anexado a um ambiente de Publicação de Entrega.
 
-Os pipelines de configuração também podem ser implantados por meio do Cloud Manager para Projetos do **Edge Delivery**.
+Os pipelines de configuração também podem ser implantados por meio do Cloud Manager para Projetos do **Edge Delivery**. Use um [**Pipeline do Edge Delivery**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) quando o domínio estiver anexado a um **Site do Edge Delivery**.
 
 As seções a seguir deste documento fornecem uma visão geral de informações importantes sobre como os pipelines de configuração podem ser usados e como as configurações para eles devem ser estruturadas. Ele descreve conceitos gerais compartilhados entre todos ou um subconjunto dos recursos compatíveis com os pipelines de configuração.
 
