@@ -3,9 +3,9 @@ title: Aprovar ativos para o Content Hub
 description: Saiba como aprovar ativos no Assets as a Cloud Service para disponibilizá-los no Content Hub.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1741'
 ht-degree: 4%
 
 ---
@@ -118,7 +118,7 @@ Siga estas etapas para automatizar a aprovação de ativos recém-assimilados em
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de Metadados]**.
 1. Clique em **[!UICONTROL Criar]** no lado superior direito da página.
 1. Adicione um título de Perfil e clique em **[!UICONTROL Criar]**. O perfil de metadados foi criado com sucesso.
-1. Selecione o perfil de metadados recém-criado e clique em **[!UICONTROL Editar _(e)_]**. <br>O formulário **[!UICONTROL Editar Perfil de Metadados]**&#x200B;é aberto com a guia **[!UICONTROL Básico]**&#x200B;realçada.
+1. Selecione o perfil de metadados recém-criado e clique em **[!UICONTROL Editar _(e)_]**. <br>O formulário **[!UICONTROL Editar Perfil de Metadados]**é aberto com a guia **[!UICONTROL Básico]**realçada.
 1. Arraste e solte um **[!UICONTROL Campo de Texto de Linha Única]** da seção **[!UICONTROL Criar Formulário]** no lado direito para a seção Metadados no formulário.
 1. Clique no campo recém-adicionado e faça as seguintes atualizações no painel **[!UICONTROL Configurações]**:
    1. Altere o **[!UICONTROL Rótulo do campo]** para _Assets Aprovado_.
@@ -157,39 +157,39 @@ A exibição de ativos carregados usando o Content Hub depende de se você [habi
 
 ## Perguntas frequentes {#faqs-content-hub-approved-assets}
 
-### Qual é a finalidade da aprovação de ativos para o Content Hub no Experience Manager as a Cloud Service? {#approving-assets-content-hub}
+### Qual é a finalidade da aprovação de ativos para o AEM Assets Content Hub no Experience Manager as a Cloud Service? {#approving-assets-content-hub}
 
-A aprovação de ativos garante que somente as versões mais recentes e aprovadas estejam disponíveis para uso no Content Hub, mantendo a rígida consistência da marca em todos os canais e aplicativos. Esse processo controlado simplifica o gerenciamento de ativos para gerentes de marca e profissionais de marketing.
+A aprovação de ativos garante que somente as versões mais recentes e aprovadas estejam disponíveis para uso no AEM Assets Content Hub, mantendo a rígida consistência da marca em todos os canais e aplicativos. Esse processo controlado simplifica o gerenciamento de ativos para gerentes de marca e profissionais de marketing.
 
-### Quais são os pré-requisitos necessários para aprovar ativos para o Content Hub?
+### Quais são os pré-requisitos necessários para aprovar ativos para o AEM Assets Content Hub?
 
 Você deve ter acesso ao AEM Assets as a Cloud Service e permissões de gravação para editar metadados de ativos, especificamente o campo **Status** nas propriedades dos ativos.
 
-### Como você aprova um único ativo usando a exibição do Assets no AEM as a Cloud Service?
+### Como você aprova um único ativo usando a exibição do Assets no AEM as a Cloud Service para que esteja disponível no AEM Assets Content Hub?
 
-Selecione o ativo, clique em **Detalhes** na barra de ferramentas, navegue até a guia **Básico**, escolha **Aprovado** na lista suspensa **Status** e clique em **Salvar**. O ativo é disponibilizado no Content Hub.
+Selecione o ativo, clique em **Detalhes** na barra de ferramentas, navegue até a guia **Básico**, escolha **Aprovado** na lista suspensa **Status** e clique em **Salvar**. O ativo é disponibilizado no AEM Assets Content Hub.
 
-### Os ativos podem ser aprovados em massa para o Content Hub e, em caso afirmativo, como?
+### Os ativos podem ser aprovados em massa para o AEM Assets Content Hub e, em caso afirmativo, como?
 
-Sim, os ativos podem ser aprovados em massa. Na exibição do Assets, selecione vários ativos, clique em **Editar metadados em massa**, selecione **Aprovado** no campo **Status** em Propriedades e clique em **Salvar**. Todos os ativos selecionados estão disponíveis no Content Hub.
+Sim, os ativos podem ser aprovados em massa. Na exibição do Assets, selecione vários ativos, clique em **Editar metadados em massa**, selecione **Aprovado** no campo **Status** em Propriedades e clique em **Salvar**. Todos os ativos selecionados estão disponíveis no AEM Assets Content Hub.
 
-### Como funciona o processo de aprovação de ativos no Content Hub? {#asset-approval-content-hub}
+### Como funciona o processo de aprovação de ativos no AEM Assets Content Hub? {#asset-approval-content-hub}
 
-Se o botão Aprovação automática estiver ativado, os ativos carregados usando o Content Hub estarão disponíveis automaticamente. Se estiver desativado, os ativos carregados serão colocados na pasta **ativos hidratados** do Assets as a Cloud Service e você precisará editar manualmente o status em massa para **Aprovados** para que sejam exibidos no Content Hub.
+Se o botão Aprovação automática estiver ativado, os ativos carregados usando o AEM Assets Content Hub estarão disponíveis automaticamente. Se estiver desativado, os ativos carregados serão colocados na pasta **ativos hidratados** do Assets as a Cloud Service e você precisará editar manualmente o status em massa para **Aprovados** para que sejam exibidos no Content Hub.
 
-### O que é o campo Destino de aprovação e como ele afeta a publicação de ativos?
+### O que é o campo Destino de aprovação na exibição do AEM Assets e como ele afeta a publicação de ativos?
 
 O campo **Destino da aprovação** na página Detalhes do ativo permite escolher onde os ativos aprovados são publicados. As opções incluem **Delivery** (publica no Dynamic Media com OpenAPI e Content Hub) ou somente **Content Hub**. Se nenhuma opção for selecionada, o padrão para o ambiente Assets as a Cloud Service será aplicado. Consulte [Destino de aprovação padrão e destinos de publicação para ativos aprovados](#default-approval-target-options-publish-destinations) para obter mais informações.
 
 
-### O que acontece se você não visualizar o campo Destino da aprovação na página Exibir detalhes do ativo do Assets?
+### O que acontece se você não visualizar o campo Destino da aprovação na página Exibir detalhes do ativo do AEM Assets?
 
 Se o campo **Destino da Aprovação** estiver ausente na página Exibir detalhes do ativo da Assets, você deverá editar o formulário de metadados, arrastar o campo **Aprovação para** dos componentes disponíveis para o formulário e clicar em **Salvar**. Isso permite definir metas de aprovação para ativos.
 
-### Como você pode automatizar a aprovação de ativos recém-assimilados na visualização de administrador?
+### Como você pode automatizar a aprovação de ativos recém-assimilados na visualização de administrador do AEM Assets?
 
 Crie uma pasta no ambiente de criação, navegue até **Ferramentas** > **Assets** > **Perfis de Metadados**, crie e edite um perfil de metadados. Adicione um Campo de Texto de Linha Única, rotule-o como **Assets Aprovado**, mapeie-o como &#39;./jcr:content/metadata/dam:status&#39; e defina seu valor padrão como `approved`. Aplique o perfil de metadados à pasta. Isso aprova automaticamente novos ativos adicionados à pasta.
 
-### Quem pode acessar ativos aprovados no Content Hub e quais controles estão em vigor?
+### Quem pode acessar ativos aprovados no AEM Assets Content Hub e quais controles estão em vigor?
 
-Os ativos aprovados estão disponíveis para usuários que fazem parte da mesma organização na Content Hub. Controles rigorosos garantem que somente as versões mais recentes e aprovadas estejam acessíveis, ajudando a manter a consistência e a segurança da marca.
+Os ativos aprovados estão disponíveis para usuários que fazem parte da mesma organização no AEM Assets Content Hub. Controles rigorosos garantem que somente as versões mais recentes e aprovadas estejam acessíveis, ajudando a manter a consistência e a segurança da marca.

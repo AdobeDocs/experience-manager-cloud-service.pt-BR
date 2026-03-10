@@ -4,9 +4,9 @@ description: Saiba como baixar um ou mais ativos e suas representações no port
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -148,7 +148,7 @@ Saiba mais sobre [exibir e gerenciar representações em [!DNL Experience Manage
 
 * [Representações dinâmicas](/help/assets/renditions.md#dynamic-renditions): as representações dinâmicas são versões personalizadas em tempo real de ativos para executar várias ações, como redimensionar imagens para diferentes resoluções de dispositivo ou recortar para ajustar várias taxas de proporção. Essas representações permitem oferecer experiências personalizadas e otimizadas para requisitos mais amplos. Representações dinâmicas de ativos são criadas no ambiente de autor [!DNL Adobe Experience Manager Assets]. Para obter informações sobre as etapas necessárias para habilitar representações dinâmicas, consulte [Habilitar representações dinâmicas](#enable-dynamic-media-renditions).
 
-* [Corte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): o corte inteligente se concentra exclusivamente na parte essencial de um ativo durante o processo de corte. O Corte inteligente do Dynamic Media aproveita a inteligência artificial fornecida pelo Adobe AI para rastrear o ponto de interesse, garantindo que nossos ativos tenham melhor aparência em todos os tamanhos de tela. O recorte inteligente [!DNL Adobe Experience Manager] exibe a largura e a altura das representações de um ativo junto com o título. Veja mais em [usando o Recorte inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [Corte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): o corte inteligente se concentra exclusivamente na parte essencial de um ativo durante o processo de corte. O Corte inteligente do Dynamic Media aproveita a inteligência artificial fornecida pelo Adobe AI para rastrear o ponto de interesse, garantindo que nossos ativos tenham melhor aparência em todos os tamanhos de tela. O recorte inteligente [!DNL Adobe Experience Manager] exibe a largura e a altura das representações de um ativo junto com o título. Veja mais em [usando o Recorte inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
   As representações de Recorte inteligente são exibidas e estão disponíveis para download somente se você tiver acesso ao [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). As representações de Recorte inteligente estão disponíveis somente para ativos de imagem.
 
@@ -184,7 +184,7 @@ Para ativar representações dinâmicas:
 
 ### Como baixar um único ativo ou vários ativos do AEM Assets Content Hub?
 
-Para baixar um único ativo, clique no ícone de download no cartão de ativos. Para vários ativos, selecione-os e clique em Download na barra de ações. O Content Hub inicia o download dos ativos em sua representação original se os downloads forem ativados pelo administrador. Se as representações de ativos estiverem disponíveis, será possível selecionar representações específicas antes de baixar.
+Para baixar um único ativo no AEM Assets Content Hub, clique no ícone de download no cartão de ativos. Para vários ativos, selecione-os e clique em Download na barra de ações. O Content Hub inicia o download dos ativos em sua representação original se os downloads forem ativados pelo administrador. Se as representações de ativos estiverem disponíveis, será possível selecionar representações específicas antes de baixar.
 
 ### Existe alguma configuração gerenciada pelo administrador no AEM Assets Content Hub para permitir que os usuários baixem ativos originais ou habilitem a disponibilidade de representações?
 
@@ -192,15 +192,15 @@ Sim, os administradores podem habilitar ou desabilitar os botões **Habilitar di
 
 ### O que são representações de ativos e que tipos estão disponíveis no AEM Assets Content Hub?
 
-As representações de ativos são diferentes representações do arquivo de ativo original ajustado para vários casos de uso. Os tipos incluem representações estáticas (como miniaturas, versões otimizadas para a Web ou para dispositivos móveis ou arquivos de alta resolução para impressão), representações estáticas personalizadas e representações dinâmicas (incluindo versões de Recorte inteligente). As representações estáticas são pré-geradas, enquanto as representações dinâmicas são criadas em tempo real com base em uma solicitação.
+As representações de ativos no AEM Assets Content Hub são diferentes representações do arquivo de ativo original personalizado para vários casos de uso. Os tipos incluem representações estáticas (como miniaturas, versões otimizadas para a Web ou para dispositivos móveis ou arquivos de alta resolução para impressão), representações estáticas personalizadas e representações dinâmicas (incluindo versões de Recorte inteligente). As representações estáticas são pré-geradas, enquanto as representações dinâmicas são criadas em tempo real com base em uma solicitação.
 
 ### Como o Corte inteligente funciona com ativos no AEM Assets Content Hub?
 
-O Corte inteligente é um recurso alimentado por IA que identifica a parte mais importante de uma imagem e recorta de forma inteligente ao redor dela. Isso garante que as imagens tenham ótima aparência em diferentes telas e formatos. As representações de Recorte inteligente estão disponíveis para ativos de imagem se sua organização suportar recursos de mídia dinâmica.
+O Recorte inteligente no AEM Assets Content Hub é um recurso alimentado por IA que identifica a parte mais importante de uma imagem e recorta de forma inteligente em torno dela. Isso garante que as imagens tenham ótima aparência em diferentes telas e formatos. As representações de Recorte inteligente estão disponíveis para ativos de imagem se sua organização suportar recursos de mídia dinâmica.
 
 ### Como ativar representações dinâmicas no AEM Assets Content Hub?
 
-Para ativar representações dinâmicas:
+Para ativar representações dinâmicas no AEM Assets Content Hub:
 
 * Verifique se o Dynamic Media com recursos de OpenAPI está ativado. Os ativos aprovados ficam disponíveis para entrega pública.
 
@@ -212,9 +212,9 @@ Para ativar representações dinâmicas:
 
 As representações dinâmicas são compatíveis somente com ativos de imagem.
 
-### Como baixar representações de ativos no Content Hub?
+### Como baixar representações de ativos no AEM Assets Content Hub?
 
-Para baixar representações, selecione o ativo e clique na ação de download. Se as representações forem ativadas pelo administrador, será exibida uma caixa de diálogo na qual você poderá escolher quais representações baixar. Para ativos licenciados, aceite os termos de licença antes de baixar. Para vários ativos, selecione-os, escolha representações e baixe-os como um arquivo ZIP. É possível selecionar todas as representações disponíveis ou específicas, como representações estáticas ou dinâmicas.
+Para baixar representações no AEM Assets Content Hub, selecione o ativo e clique na ação de download. Se as representações forem ativadas pelo administrador, será exibida uma caixa de diálogo na qual você poderá escolher quais representações baixar. Para ativos licenciados, aceite os termos de licença antes de baixar. Para vários ativos, selecione-os, escolha representações e baixe-os como um arquivo ZIP. É possível selecionar todas as representações disponíveis ou específicas, como representações estáticas ou dinâmicas.
 
 
 

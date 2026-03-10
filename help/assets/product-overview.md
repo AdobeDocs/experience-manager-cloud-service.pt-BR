@@ -3,10 +3,10 @@ title: Visão geral do Content Hub
 description: Saiba mais sobre o Content Hub, seus principais benefícios, como acessá-lo e como fornecer feedback sobre as opções disponíveis nele.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 4%
+source-wordcount: '962'
+ht-degree: 3%
 
 ---
 
@@ -22,9 +22,9 @@ O Content Hub está disponível como parte do Experience Manager Assets as a Clo
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
-## Por que Content Hub?
+## Por que AEM Assets Content Hub?
 
-A Content Hub oferece os seguintes benefícios principais:
+O AEM Assets Content Hub oferece os seguintes benefícios principais:
 
 **Localize e compartilhe todos os ativos aprovados pela marca disponíveis em um portal intuitivo**
 
@@ -42,7 +42,7 @@ O Content Hub permite criar novo conteúdo com o Adobe Express (se você tiver d
 
 O Content Hub requer um ambiente de autor de produção do Experience Manager as a Cloud Service versão 2024.6 ou mais recente (a versão mínima é 2024.6.16799).
 
-## Como acessar o Content Hub? {#access-content-hub}
+## Como acessar o AEM Assets Content Hub? {#access-content-hub}
 
 [Após configurar o Content Hub](/help/assets/deploy-content-hub.md) e adicionar um usuário ao [perfil de produto do Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), o Content Hub pode ser acessado das seguintes maneiras:
 
@@ -86,29 +86,29 @@ Siga estas etapas para configurar o Content Hub para sua equipe:
 
 ## Perguntas frequentes {#faqs-content-hub-overview}
 
-### O que é o Content Hub? {#what-is-content-hub}
+### O que é o AEM Assets Content Hub? {#what-is-content-hub}
 
-O Content Hub é um recurso do Adobe Experience Manager as a Cloud Service que permite que equipes maiores descubram facilmente ativos relevantes e aprovados por meio de um portal intuitivo e os adaptem rapidamente às suas necessidades. Ela permite a distribuição de ativos em escala e facilita a criação de variantes de conteúdo na marca para melhorar a agilidade de marketing.
+O AEM Assets Content Hub é um recurso do Adobe Experience Manager as a Cloud Service que permite que equipes maiores descubram facilmente ativos relevantes e aprovados por meio de um portal intuitivo e os adaptem rapidamente às suas necessidades. Ela permite a distribuição de ativos em escala e facilita a criação de variantes de conteúdo na marca para melhorar a agilidade de marketing.
 
-### Quais são os pré-requisitos para acessar o Content Hub? {#prerequisites-for-content-hub}
+### Quais são os pré-requisitos para acessar o AEM Assets Content Hub? {#prerequisites-for-content-hub}
 
 O Content Hub requer um ambiente de autor de produção do Experience Manager as a Cloud Service, especificamente a versão 2024.6 ou mais recente (versão mínima 2024.6.16799).
 
-### Como o Content Hub melhora a experiência de pesquisa para ativos aprovados pela marca? {#content-hub-improves-search-experience}
+### Como o AEM Assets Content Hub melhora a experiência de pesquisa para ativos aprovados pela marca? {#content-hub-improves-search-experience}
 
-O Content Hub apresenta todos os ativos aprovados em uma hierarquia simples, facilitando a localização e o compartilhamento de ativos aprovados pela marca em um portal intuitivo. Essa configuração simplifica o processo de pesquisa e garante que os usuários possam localizar com eficiência os ativos de que precisam.
+O AEM Assets Content Hub apresenta todos os ativos aprovados em uma hierarquia simples, facilitando a localização e o compartilhamento de ativos aprovados pela marca em um portal intuitivo. Essa configuração simplifica o processo de pesquisa e garante que os usuários possam localizar com eficiência os ativos de que precisam.
 
-### Quem pode configurar a interface do usuário do Content Hub e quais aspectos podem ser configurados? {#content-hub-configuration}
+### Quem pode configurar a interface do usuário do AEM Assets Content Hub e quais aspectos podem ser configurados? {#content-hub-configuration}
 
-Um administrador pode configurar a interface do usuário do Content Hub, incluindo filtros para pesquisa, campos para adicionar ou importar ativos, propriedades de ativos e conteúdo de banner para marca. Isso permite a personalização com base nos requisitos organizacionais.
+Um administrador pode configurar a interface do usuário do AEM Assets Content Hub, incluindo filtros para pesquisa, campos para adicionar ou importar ativos, propriedades de ativos e conteúdo de banner para marca. Isso permite a personalização com base nos requisitos organizacionais.
 
-### Como o Content Hub capacita os não criativos a editar e remixar conteúdo? {#content-hub-edit-remix-content}
+### Como o AEM Assets Content Hub capacita os usuários não criativos a editar e remixar conteúdo? {#content-hub-edit-remix-content}
 
 O Content Hub permite que os usuários não criativos editem o conteúdo existente e criem variações novas na marca usando ferramentas, modelos e elementos da marca fáceis de usar. Se os usuários tiverem direitos ao Adobe Express, também poderão aproveitar os recursos do Adobe Firefly GenAI para a criação avançada de conteúdo.
 
-### Como os usuários podem acessar o Content Hub? {#content-hub-access}
+### Como os usuários podem acessar o AEM Assets Content Hub? {#content-hub-access}
 
-Os usuários podem acessar o Content Hub por meio de links diretos (https://experience.adobe.com/#/assets/contenthub) ou fazendo logon em experience.adobe.com e selecionando Experience Manager Assets Content Hub na seção Acesso rápido.
+Os usuários podem acessar o AEM Assets Content Hub por meio de links diretos (https://experience.adobe.com/#/assets/contenthub) ou fazendo logon em experience.adobe.com e selecionando Experience Manager Assets Content Hub na seção Acesso rápido.
 
 ### Quantos usuários do Content Hub Limited estão incluídos no AEM Assets? {#content-hub-limited-users-with-aem-assets}
 

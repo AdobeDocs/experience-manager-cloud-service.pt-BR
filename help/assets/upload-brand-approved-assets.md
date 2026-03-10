@@ -4,9 +4,9 @@ description: Saiba como fazer upload dos ativos aprovados pela sua marca para o 
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1159'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 [Os usuários do Content Hub com direitos para adicionar ativos](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) podem adicionar ativos ao Content Hub a partir do sistema de arquivos local ou importar ativos de fontes de dados do OneDrive ou do Dropbox. Todos os ativos são exibidos no nível superior do Content Hub, independentemente da estrutura de pastas disponível no sistema de arquivos local ou nas fontes de dados do OneDrive e do Dropbox para aprimorar os recursos de pesquisa.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445380/?captions=por_br&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 Os ativos marcados como `Approved` no Assets as a Cloud Service estão automaticamente disponíveis no Content Hub. Para obter mais informações, consulte [Aprovar ativos para o Content Hub](/help/assets/approve-assets-content-hub.md).
 
@@ -81,27 +81,27 @@ A exibição de ativos carregados usando o Content Hub depende de se você [habi
 
 ## Perguntas frequentes {#faqs-content-hub-upload-assets}
 
-### Que tipos de ativos posso fazer upload no Content Hub e de onde? {#asset-types-upload-to-content-hub}
+### Que tipos de ativos posso fazer upload para o AEM Assets Content Hub e de onde? {#asset-types-upload-to-content-hub}
 
-Os usuários do Content Hub com direitos para adicionar ativos podem fazer upload de ativos aprovados pela marca em seus sistemas de arquivos locais. Todos os ativos carregados, independentemente da estrutura original da pasta, são exibidos no nível superior do Content Hub para aprimorar os recursos de pesquisa.
+Os usuários do AEM Assets Content Hub com direitos para adicionar ativos podem fazer upload de ativos aprovados pela marca em seus sistemas de arquivos locais. Todos os ativos carregados, independentemente da estrutura original da pasta, são exibidos no nível superior do Content Hub para aprimorar os recursos de pesquisa.
 
-### Como a Content Hub aprimora a pesquisa e a organização de ativos? {#search-content-hub}
+### Como o AEM Assets Content Hub aprimora a pesquisa e a organização de ativos? {#search-content-hub}
 
-O Content Hub aprimora a pesquisa e a organização de ativos permitindo que os usuários definam os principais detalhes de cada upload, como nome da campanha, palavras-chave, canais, período e região. Ele também gera automaticamente propriedades adicionais para cada ativo (como tamanho, formato e resolução de arquivo) e usa o Adobe AI para aplicar Tags inteligentes, facilitando e agilizando a localização de ativos relevantes.
+O AEM Assets Content Hub aprimora a pesquisa e a organização de ativos permitindo que os usuários definam os principais detalhes de cada upload, como nome da campanha, palavras-chave, canais, período e região. Ele também gera automaticamente propriedades adicionais para cada ativo (como tamanho, formato e resolução de arquivo) e usa o Adobe AI para aplicar Tags inteligentes, facilitando e agilizando a localização de ativos relevantes.
 
-### Como fazer upload de ativos do meu sistema de arquivos local para o Content Hub? {#upload-assets-content-hub}
+### Como fazer upload de ativos do meu sistema de arquivos local para o AEM Assets Content Hub? {#upload-assets-content-hub}
 
-Para carregar ativos do seu sistema de arquivos local, clique em **Adicionar Assets** para abrir a caixa de diálogo de carregamento. Você pode arrastar e soltar arquivos ou pastas ou navegar manualmente para selecioná-los. Você deve agrupar seus ativos com um nome de campanha, e é recomendável preencher outros campos, como palavras-chave, canais, período e região para uma melhor organização. Depois de pronto, clique em **Carregar**, analise os detalhes e confirme para iniciar o carregamento.
+Para carregar ativos do seu sistema de arquivos local para o AEM Assets Content Hub, clique em **Adicionar Assets** para abrir a caixa de diálogo de carregamento. Você pode arrastar e soltar arquivos ou pastas ou navegar manualmente para selecioná-los. Você deve agrupar seus ativos com um nome de campanha, e é recomendável preencher outros campos, como palavras-chave, canais, período e região para uma melhor organização. Depois de pronto, clique em **Carregar**, analise os detalhes e confirme para iniciar o carregamento.
 
-### Como funciona o processo de aprovação de ativos no Content Hub? {#asset-approval-content-hub}
+### Como funciona o processo de aprovação de ativos no AEM Assets Content Hub? {#asset-approval-content-hub}
 
-Se o botão Aprovação automática estiver ativado, os ativos carregados usando o Content Hub estarão disponíveis automaticamente. Se estiver desativado, os ativos carregados serão colocados na pasta **ativos hidratados** do Assets as a Cloud Service e você precisará editar manualmente o status em massa para **Aprovados** para que sejam exibidos no Content Hub.
+Se o botão Aprovação automática estiver ativado, os ativos carregados usando o AEM Assets Content Hub estarão disponíveis automaticamente. Se estiver desativado, os ativos carregados serão colocados na pasta **ativos hidratados** do Assets as a Cloud Service e você precisará editar manualmente o status em massa para **Aprovados** para que sejam exibidos no Content Hub.
 
-### É possível configurar os campos obrigatórios ou opcionais ao fazer upload de ativos no Content Hub? {#available-fields-while-uploading-assets-to-content-hub}
+### É possível configurar os campos obrigatórios ou opcionais ao fazer upload de ativos no AEM Assets Content Hub? {#available-fields-while-uploading-assets-to-content-hub}
 
-Os administradores podem usar a Interface do usuário de configuração para definir os campos obrigatórios ou opcionais ao fazer upload de ativos no Content Hub.
+Os administradores podem usar a Interface do usuário de configuração para definir os campos obrigatórios ou opcionais ao fazer upload de ativos no AEM Assets Content Hub.
 
-### O que devo fazer se os meus ativos carregados não forem exibidos automaticamente no Content Hub? {#assets-do-not-display-in-content-hub}
+### O que devo fazer se meus ativos carregados não forem exibidos automaticamente no AEM Assets Content Hub? {#assets-do-not-display-in-content-hub}
 
-Se os ativos não forem exibidos automaticamente, significa que o botão Aprovação automática está desativado. Os ativos estão localizados na pasta **ativos hidratados** do seu ambiente do Assets as a Cloud Service. Você precisa editar o status deles em lote para **Aprovado** para que eles apareçam no Content Hub.
+Se os ativos não forem exibidos automaticamente no AEM Assets Content Hub, significa que o botão Aprovação automática está desativado. Os ativos estão localizados na pasta **ativos hidratados** do seu ambiente do Assets as a Cloud Service. Você precisa editar o status deles em lote para **Aprovado** para que eles apareçam no Content Hub.
 

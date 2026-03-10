@@ -3,9 +3,9 @@ title: Editar imagens no Content Hub usando o Adobe Express
 description: Editar imagens no Content Hub usando o Adobe Express
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '744'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Para editar imagens usando o Content Hub:
 
 1. Clique em **[!DNL Open in Adobe Express]**, disponível no cartão de ativos da imagem que você precisa editar. Como alternativa, clique na imagem para abrir seus detalhes e clique no logotipo [!DNL Adobe Express]. O editor incorporado do Adobe Express é carregado sem sair do Content Hub.
 
-   Você pode aproveitar a funcionalidade [!DNL Adobe Express] para executar todas as ações relacionadas à edição de imagens, como [redimensionar imagem](https://helpx.adobe.com/br/express/using/resize-image.html), [remover ou alterar a cor de fundo](https://helpx.adobe.com/br/express/using/remove-background.html), [recortar imagem](https://helpx.adobe.com/br/express/using/crop-image.html), combinar a imagem com a imagem ou o texto gerado pela IA e muito mais.
+   Você pode aproveitar a funcionalidade [!DNL Adobe Express] para executar todas as ações relacionadas à edição de imagens, como [redimensionar imagem](https://helpx.adobe.com/express/using/resize-image.html), [remover ou alterar a cor de fundo](https://helpx.adobe.com/express/using/remove-background.html), [recortar imagem](https://helpx.adobe.com/express/using/crop-image.html), combinar a imagem com a imagem ou o texto gerado pela IA e muito mais.
 
 1. Faça as modificações e clique em **[!UICONTROL Salvar]** para salvar o ativo editado em um dos tipos de formato:
 
@@ -56,27 +56,27 @@ Os administradores também podem configurar os campos obrigatórios e opcionais 
 
 ### Quem pode editar imagens no AEM Assets Content Hub?
 
-Os usuários com direitos para acessar o Adobe Express e o AEM Assets Content Hub, e que têm os direitos de remixar ativos para novas variações, podem editar imagens usando o Content Hub.
+Os usuários com direitos para acessar o Adobe Express e o AEM Assets Content Hub, e que têm os direitos de remixar ativos para novas variações, podem editar imagens usando o AEM Assets Content Hub.
 
 ### Como editar uma imagem usando o Adobe Express no AEM Assets Content Hub?
 
-Para editar uma imagem, clique em **Abrir no Adobe Express** no cartão de ativos da imagem ou abra os detalhes da imagem e clique no logotipo do Adobe Express. Isso carrega o editor do Adobe Express incorporado no AEM Assets Content Hub, permitindo que você faça suas edições sem sair da plataforma.
+Para editar uma imagem no AEM Assets Content Hub, clique em **Abrir no Adobe Express** no cartão de ativos da imagem ou abra os detalhes da imagem e clique no logotipo do Adobe Express. Isso carrega o editor do Adobe Express incorporado no AEM Assets Content Hub, permitindo que você faça suas edições sem sair da plataforma.
 
 ### Quais recursos de edição o Adobe Express oferece no AEM Assets Content Hub?
 
-O Adobe Express oferece vários recursos de edição de imagens, incluindo redimensionamento de imagens, remoção ou alteração da cor do plano de fundo, recorte de imagens e combinação com imagens ou texto gerados por IA, entre outros recursos.
+O Adobe Express oferece vários recursos de edição de imagens no AEM Assets Content Hub, incluindo redimensionamento de imagens, remoção ou alteração da cor do plano de fundo, recorte de imagens e combinação com imagens ou texto gerados por IA, entre outros recursos.
 
 ### Como posso salvar minhas imagens editadas em quais formatos de arquivo no AEM Assets Content Hub?
 
-Você pode salvar as imagens editadas nos formatos PNG (boa qualidade), JPG (adequado para arquivos pequenos) ou PDF (adequado para documentos).
+Você pode salvar as imagens editadas nos formatos PNG (boa qualidade), JPG (adequado para arquivos pequenos) ou PDF (adequado para documentos) no AEM Assets Content Hub.
 
-### Quais campos devo preencher ao salvar uma imagem editada no Content Hub?
+### Quais campos devo preencher ao salvar uma imagem editada no AEM Assets Content Hub?
 
-Ao salvar uma imagem editada, especifique um nome para o ativo no campo **Salvar como** e um nome de campanha no campo **Nome da campanha**. A Adobe também recomenda especificar valores em campos adicionais, como Palavras-chave, Canais, Cronograma e Região, para melhorar a capacidade de pesquisa e a organização.
+Ao salvar uma imagem editada no AEM Assets Content Hub, especifique um nome para o ativo no campo **Salvar como** e um nome de campanha no campo **Nome da campanha**. A Adobe também recomenda especificar valores em campos adicionais, como Palavras-chave, Canais, Cronograma e Região, para melhorar a capacidade de pesquisa e a organização.
 
-### É possível salvar minhas edições como um novo ativo no Content Hub?
+### É possível salvar minhas edições como um novo ativo no AEM Assets Content Hub?
 
-Sim, após a edição, você pode clicar em **Salvar como novo ativo** para salvar suas alterações como um novo ativo no Content Hub.
+Sim, após a edição, você pode clicar em **Salvar como novo ativo** para salvar suas alterações como um novo ativo no AEM Assets Content Hub.
 
 ### Os administradores podem personalizar os campos enquanto fazem upload de ativos para o AEM Assets Content Hub?
 

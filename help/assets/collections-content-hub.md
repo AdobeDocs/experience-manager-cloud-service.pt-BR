@@ -4,9 +4,9 @@ description: Saiba como gerenciar coleções no Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1953'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Uma coleção se refere a um conjunto de ativos que podem ser compartilhados ent
 
 Ele ajuda os usuários a acessar e gerenciar facilmente os diversos ativos disponíveis no [!DNL Content Hub].
 
->[!VIDEO](https://video.tv.adobe.com/v/3445305/?captions=por_br&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Pré-requisitos {#prerequisites}
 
@@ -210,17 +210,17 @@ Uma coleção no AEM Assets Content Hub se refere a um conjunto de ativos que po
 
 Para criar uma nova coleção no AEM Assets Content Hub, vá para a guia Coleções e clique em **Criar Coleção**. Na nova janela Coleção, adicione um Título e Descrição, selecione o tipo de controle de acesso na lista suspensa **Quem pode acessar** e clique em **Criar**. Em seguida, é possível adicionar ativos à coleção.
 
-### Que tipos de controle de acesso estão disponíveis ao criar uma coleção?
+### Que tipos de controle de acesso estão disponíveis ao criar uma coleção no AEM Assets Content Hub?
 
-Há três tipos de controle de acesso: **Privado** - Somente o criador e os administradores podem editar e acessar, **Público** - Somente exibição - Todos podem exibir, mas somente o criador e os administradores podem editar, e **Público** - Exibir e editar - todos podem acessar e editar a coleção sem restrições.
+Há três tipos de controle de acesso no AEM Assets Content Hub: **Privado** - Somente o criador e os administradores podem editar e acessar, **Público** - Somente exibição - Todos podem exibir, mas somente o criador e os administradores podem editar, e **Público** - Exibir e editar - todos podem acessar e editar a coleção sem restrições.
 
-### Quem pode executar ações em coleções no Content Hub?
+### Quem pode executar ações em coleções no AEM Assets Content Hub?
 
-Os usuários do Content Hub podem executar ações como criar, exibir, compartilhar, baixar, remover, excluir, fixar coleções e marcá-las como favoritos. Os administradores têm privilégios adicionais, como visualizar todas as opções de acesso e excluir coleções.
+Os usuários do AEM Assets Content Hub podem executar ações como criar, exibir, compartilhar, baixar, remover, excluir, fixar coleções e marcá-las como favoritos. Os administradores têm privilégios adicionais, como visualizar todas as opções de acesso e excluir coleções.
 
 ### Como adicionar ativos a uma coleção existente no AEM Assets Content Hub?
 
-Selecione os ativos que deseja adicionar, clique em **Adicionar à coleção** e escolha a coleção na lista. Também é possível pesquisar coleções usando a barra de pesquisa. Clique em **Adicionar à coleção** para confirmar a ação.
+Para adicionar ativos a uma coleção existente no AEM Assets Content Hub, selecione os ativos que deseja adicionar, clique em **Adicionar à coleção** e escolha a coleção na lista. Também é possível pesquisar coleções usando a barra de pesquisa. Clique em **Adicionar à coleção** para confirmar a ação.
 
 ### As coleções podem ser filtradas e pesquisadas no AEM Assets Content Hub?
 
@@ -232,11 +232,11 @@ Para baixar ativos de uma coleção no AEM Assets Content Hub, navegue até a gu
 
 ### Como os ativos podem ser compartilhados a partir de uma coleção no AEM Assets Content Hub?
 
-O Assets pode ser compartilhado ao ativar o compartilhamento de link público no Content Hub. Selecione o ícone de compartilhamento no cartão de ativos para copiar o link de compartilhamento, que pode ser enviado para os recipients. Observe que coleções privadas não podem ser compartilhadas.
+O Assets pode ser compartilhado ao ativar o compartilhamento de link público no AEM Assets Content Hub. Selecione o ícone de compartilhamento no cartão de ativos para copiar o link de compartilhamento, que pode ser enviado para os recipients. Observe que coleções privadas não podem ser compartilhadas.
 
 ### Quem pode remover ativos de uma coleção no AEM Assets Content Hub?
 
-Um proprietário da coleção, um administrador ou um usuário não administrador com direitos de edição pode remover um ou vários ativos de uma coleção. Para remover, selecione os ativos e clique em **Remover da coleção**. Em seguida, confirme a remoção.
+Um proprietário da coleção, um administrador ou um usuário não administrador com direitos de edição pode remover um ou vários ativos de uma coleção no AEM Assets Content Hub. Para remover, selecione os ativos e clique em **Remover da coleção**. Em seguida, confirme a remoção.
 
 ### Quem tem permissão para excluir uma coleção do AEM Assets Content Hub e como isso é feito?
 

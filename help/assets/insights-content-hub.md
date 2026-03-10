@@ -4,9 +4,9 @@ description: Saiba como exibir insights de ativos no [!DNL Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -58,18 +58,18 @@ Também é possível exibir:
 
 O Assets Insights no AEM Assets Content Hub fornece dados valiosos sobre estatísticas de uso de ativos em campanhas, canais e regiões, ajudando as partes interessadas de marketing a entender o desempenho e a popularidade dos ativos para melhorar a experiência do usuário.
 
-### Quem pode acessar os recursos descritos no Assets Insights?
+### Quem pode acessar os recursos descritos no Assets Insights no AEM Assets Content Hub?
 
-Os usuários do Content Hub podem executar as ações e acessar os recursos mencionados na seção Assets Insights.
+Os usuários do AEM Assets Content Hub podem executar as ações e acessar os recursos mencionados na seção Assets Insights.
 
-### Quais insights do ativo estão disponíveis na guia Insights?
+### Quais insights do ativo estão disponíveis na guia Insights do AEM Assets Content Hub?
 
-Você pode visualizar o número de ativos no repositório, o número de coleções, os uploads do Assets por ano, mês ou dia, os usuários ativos por dia ou mês e a classificação de ativos com base nos formatos de arquivo.
+Você pode visualizar o número de ativos no repositório, o número de coleções, os uploads do Assets por ano, mês ou dia, os usuários ativos por dia ou mês e a classificação de ativos com base nos formatos de arquivo no AEM Assets Content Hub.
 
 ### Como posso exibir estatísticas de ativos carregados no AEM Assets Content Hub?
 
-Você pode exibir estatísticas de ativos e coleções carregados navegando até a guia Insights, na qual é possível rastrear o histórico de carregamento por ano, mês ou dia.
+Você pode exibir estatísticas de ativos e coleções carregados no AEM Assets Content Hub navegando até a guia Insights, na qual é possível rastrear o histórico de carregamento por ano, mês ou dia.
 
-### Quais métricas posso analisar em relação à atividade do usuário no Content Hub?
+### Quais métricas posso analisar em relação à atividade do usuário no AEM Assets Content Hub?
 
-É possível analisar o número de usuários ativos por dia ou por mês, que é representado visualmente usando um gráfico de linhas.
+É possível analisar o número de usuários ativos por dia ou por mês, que é representado visualmente usando um gráfico de linhas no AEM Assets Content Hub.

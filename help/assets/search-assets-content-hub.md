@@ -4,9 +4,9 @@ description: Saiba como pesquisar ativos no [!DNL Content Hub]
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
@@ -173,11 +173,11 @@ Saiba mais sobre [como configurar ativos no [!DNL Content Hub]](configure-conten
 
 ### Como posso restringir meus resultados de pesquisa no AEM Assets Content Hub?
 
-Você pode restringir os resultados da pesquisa no Content Hub usando pesquisa baseada em texto, aplicando vários filtros (como formato de arquivo, status de aprovação, data de modificação etc.), pesquisando por tags ou tags inteligentes e usando o painel Filtros. A combinação de vários predicados ou opções de filtro ajuda a direcionar com precisão os ativos necessários.
+Você pode restringir os resultados da pesquisa no AEM Assets Content Hub usando pesquisa baseada em texto, aplicando vários filtros (como formato de arquivo, status de aprovação, data de modificação etc.), pesquisando por tags ou tags inteligentes e usando o painel Filtros. A combinação de vários predicados ou opções de filtro ajuda a direcionar com precisão os ativos necessários.
 
 ### Posso realizar uma pesquisa em massa no AEM Assets Content Hub para vários ativos de uma só vez?
 
-Sim, você pode executar uma Pesquisa em massa no Content Hub inserindo vários valores (como nomes, formatos de arquivo, tags) separados por delimitadores especificados. O recurso Pesquisa em massa permite encontrar rapidamente vários ativos em uma única consulta, tornando-a mais eficiente do que pesquisar ativos um por um.
+Sim, você pode executar uma Pesquisa em massa no AEM Assets Content Hub inserindo vários valores (como nomes, formatos de arquivo, tags) separados por delimitadores especificados. O recurso Pesquisa em massa permite encontrar rapidamente vários ativos em uma única consulta, tornando-a mais eficiente do que pesquisar ativos um por um.
 
 
 ### Os administradores podem personalizar os filtros disponíveis na pesquisa do AEM Assets Content Hub?
