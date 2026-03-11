@@ -2,10 +2,10 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 30dc2465aacf9d586755a1aa69cc473f237d0103
+source-git-commit: 1b7cbf4e66a57dd86b04122ecb6b79eb59b3f02a
 workflow-type: tm+mt
-source-wordcount: '2815'
-ht-degree: 7%
+source-wordcount: '2962'
+ht-degree: 6%
 
 ---
 
@@ -35,7 +35,7 @@ O Experience Manager Assets permite que os administradores configurem as opçõe
 
 * Quaisquer links personalizados que você precise incluir no Content Hub, além de ativos, coleções e insights.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472951/?captions=por_br&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Pré-requisitos {#prerequisites-configuration-ui}
 
@@ -84,7 +84,7 @@ Você pode configurar os campos de metadados exibidos para os usuários ao fazer
 
 1. Clique em **[!UICONTROL Adicionar metadados]**.
 
-1. Especifique um rótulo para a propriedade, mapeie-o para uma propriedade usando o campo **[!UICONTROL Metadados]** e selecione o tipo de entrada para os novos metadados do ativo.
+1. Especifique um rótulo para a propriedade, mapeie-o para uma propriedade usando o campo **[!UICONTROL Metadados]** e selecione o tipo de entrada apropriado para os novos metadados do ativo. Os rótulos de tipo de entrada são atualizados para se alinharem ao Adobe Experience Manager (AEM). Os tipos de entrada disponíveis incluem Texto, Tags, Data, Número, Lista suspensa, Texto de vários valores, Tags inteligentes e Tags de cores inteligentes. Para determinados campos de metadados (xcm:colorDistribution, xcm:machineKeywords), o tipo de entrada é atribuído automaticamente e não pode ser modificado.
 
 1. Clique no botão **[!UICONTROL Campo obrigatório]** para tornar o novo campo de metadados obrigatório para especificação para usuários ao carregar novos ativos.
 
@@ -98,7 +98,7 @@ Clique na opção **[!UICONTROL Aprovação automática]** se precisar que todos
 
 Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
 
-![Detalhes do carregamento da interface de configuração no Content Hub](/help/assets/assets/import-content-hub1.png)
+![Detalhes do carregamento da interface de configuração no Content Hub](assets/filter-new.png)
 
 Metadados ativados na interface do usuário de configuração são exibidos na página de upload de ativos:
 ![Carregar metadados no Content Hub](assets/add-assets-for-approval1.png)
@@ -108,12 +108,9 @@ Metadados ativados na interface do usuário de configuração são exibidos na p
 O Content Hub permite que os administradores configurem filtros que são exibidos ao pesquisar ativos. Execute as seguintes etapas para adicionar um novo filtro:
 
 1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Filtros]**.
-
 1. Clique em **[!UICONTROL Adicionar filtros]**.
-
-1. Especifique um rótulo para o filtro, mapeie-o para uma propriedade usando o campo **[!UICONTROL Metadados]** e selecione o tipo de entrada para o novo filtro.
+1. Especifique um rótulo para o filtro, mapeie-o para uma propriedade usando o campo **[!UICONTROL Metadados]** e selecione o tipo de entrada apropriado para o novo filtro. Os rótulos de tipo de entrada são atualizados para se alinharem ao Adobe Experience Manager (AEM). Os tipos de entrada disponíveis incluem Texto, Tags, Data, Número, Lista suspensa, Texto de vários valores, Tags inteligentes e Tags de cores inteligentes. Para determinados campos de metadados (xcm:colorDistribution, xcm:machineKeywords), o tipo de entrada é atribuído automaticamente e não pode ser modificado.
 1. Clique em **[!UICONTROL Confirmar]**. O novo filtro é exibido na lista dos filtros existentes.
-
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações para que o novo filtro seja exibido na página Pesquisar ao filtrar ativos.
 
    >[!NOTE]
@@ -121,7 +118,7 @@ O Content Hub permite que os administradores configurem filtros que são exibido
    >O novo filtro é exibido na página Pesquisar somente se houver pelo menos um ativo no repositório que corresponda aos critérios do filtro.
 
 Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada filtro disponível, para editar os rótulos ou clicar no ícone excluir para excluir qualquer filtro existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
-![Filtros de configuração de interface do usuário no Content Hub](assets/configuration-filter1.png)
+![Filtros de configuração de interface do usuário no Content Hub](assets/add-filters.png)
 
 Os filtros ativados na Interface do Usuário de Configuração são exibidos na página Pesquisar:
 ![Pesquisar no Content Hub](assets/content-hub-filters1.png)
@@ -136,7 +133,7 @@ Para habilitar a pesquisa de vários ativos de uma só vez no [!DNL Content Hub]
 
 1. Habilitar alternância de **[!UICONTROL Pesquisa em Massa]**. Os delimitadores padrão `[ , | \t | \r\n | \r | \n ]` são exibidos automaticamente. Além disso, também é possível adicionar outros delimitadores. Para fazer isso, especifique delimitadores na caixa de entrada separados por um `pipe symbol (|)`.
 
-   ![Configuração de Pesquisa em Massa](assets/bulk-search-configuration.png)
+   ![Configuração de Pesquisa em Massa](assets/edit-filter-new.png)
 
 1. Clique em **[!UICONTROL Confirmar]** para salvar as alterações. Veja [Pesquisa em Massa no Content Hub](search-assets-content-hub.md#bulk-search) em ação.
 
@@ -147,15 +144,14 @@ Você também pode configurar as propriedades de ativos exibidas para cada ativo
 1. Na interface do usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Detalhes do ativo]**.
 
 1. Clique em **[!UICONTROL Adicionar metadados]**.
-
-1. Especifique um rótulo para a propriedade, mapeie-o para uma propriedade usando o campo **[!UICONTROL Metadados]** e selecione o tipo de entrada para os novos metadados do ativo.
+1. Especifique um rótulo para a propriedade, mapeie-o para uma propriedade usando o campo **[!UICONTROL Metadados]** e selecione o tipo de entrada apropriado para os novos metadados do ativo. Os rótulos de tipo de entrada são atualizados para se alinharem ao Adobe Experience Manager (AEM). Os tipos de entrada disponíveis incluem Texto, Tags, Data, Número, Lista suspensa, Texto de vários valores, Tags inteligentes e Tags de cores inteligentes. Para determinados campos de metadados (xcm:colorDistribution, xcm:machineKeywords), o tipo de entrada é atribuído automaticamente e não pode ser modificado.
 1. Clique em **[!UICONTROL Confirmar]**. Os novos metadados são exibidos na lista das propriedades de ativos existentes.
 
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações para que a nova propriedade seja exibida na página de detalhes do ativo.
 
 Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada propriedade disponível, para editar os rótulos ou clicar no ícone excluir para excluir qualquer detalhe de ativo existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
 
-![Detalhes do ativo da interface do usuário de configuração no Content Hub](assets/configuration-asset-details.png)
+![Detalhes do ativo da interface do usuário de configuração no Content Hub](assets/asset-detailsn.png)
 
 As propriedades ativadas na Interface do Usuário da Configuração são exibidas na página Detalhes do ativo:
 
@@ -264,7 +260,7 @@ Se a visibilidade dos ativos expirados estiver habilitada, a Content Hub também
 
 ### Representações {#renditions-content-hub}
 
-As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para desabilitá-la, siga estas etapas:
 
