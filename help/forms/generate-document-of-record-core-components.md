@@ -2,11 +2,12 @@
 title: Gerar um PDF de envio (antigo Documento de registro) para o Adaptive Forms
 description: Saiba como gerar um PDF de envio a partir de envios de formulário para os Componentes principais do Forms adaptável. Crie uma PDF do formulário enviado para arquivamento ou referência.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3320'
 ht-degree: 1%
 
 ---

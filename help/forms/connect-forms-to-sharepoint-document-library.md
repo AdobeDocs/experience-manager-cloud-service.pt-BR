@@ -4,11 +4,12 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: Como conectar a biblioteca de documentos do SharePoint para um formulário adaptável, Enviar para o SharePoint, Criar uma configuração da biblioteca de documentos do SharePoint, Usar a ação de envio Enviar para o SharePoint em um formulário adaptável, Biblioteca de documentos do SharePoint do modelo de dados do AEM Forms, Biblioteca de documentos do SharePoint do modelo de dados do Forms, Integrar o modelo de dados do Forms à biblioteca de documentos do SharePoint
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 0%
+source-wordcount: '997'
+ht-degree: 1%
 
 ---
 
@@ -36,15 +37,15 @@ Para conectar o AEM Forms ao seu armazenamento da Biblioteca de Documentos do Mi
    ![Configuração do SharePoint](/help/forms/assets/sharepoint_configuration.png)
 
 1. Especifique o **[!UICONTROL Título]**, **[!UICONTROL ID do Cliente]**, **[!UICONTROL Segredo do Cliente]** e **[!UICONTROL URL do OAuth]**. Para obter informações sobre como recuperar a ID do cliente, o Segredo do cliente e a ID do locatário para a URL do OAuth, consulte a [Documentação da Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * Você pode recuperar os `Client ID` e `Client Secret` de seu aplicativo do portal do Microsoft® Azure.
-   * No portal do Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Substitua `[author-instance]` pela URL da sua instância de Autor.
+   * Você pode recuperar os `Client ID` e `Client Secret` do seu aplicativo no portal Microsoft® Azure.
+   * No portal Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Substitua `[author-instance]` pela URL da sua instância de Autor.
    * Adicione as permissões de API `offline_access` e `Sites.Manage.All` para fornecer permissões de leitura/gravação. O `Sites.Manage.All` é um escopo de permissão na API Graph do Microsoft que concede a um aplicativo a capacidade de gerenciar todos os aspectos dos Sites do SharePoint, como excluir ou modificar Sites.
 
      >[!NOTE]
      >
      > Você também pode [configurar os Sites do SharePoint com acesso limitado](/help/forms/configure-sharepoint-site-limited-access.md) usando o escopo de permissão `Sites.Selected` na API gráfica do Microsoft. O `Sites.Selected` é um escopo de permissão na API gráfica do Microsoft que permite acesso mais granular e restrito aos sites do SharePoint.
 
-   * Usar URL do OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal do Microsoft® Azure.
+   * Usar URL do OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal Microsoft® Azure.
 
      >[!NOTE]
      >
@@ -105,7 +106,7 @@ Execute as seguintes etapas para usar uma configuração de armazenamento da Bib
 > * Ao enviar o formulário, os dados são salvos no Armazenamento da Biblioteca de Documentos do Microsoft® Sharepoint especificado. A estrutura de pasta para salvar dados é `/folder_name/form_name/year/month/date/submission_id/data`.
 > * Os anexos também são armazenados no diretório `/folder_name/form_name/year/month/date/submission_id/data`. No entanto, se você selecionar **Salvar anexos com nome original**, os anexos serão armazenados na pasta usando seus nomes de arquivo originais.
 
->[!TAB Editor Universal]
+>[!TAB Universal Editor]
 
 Execute as seguintes etapas para usar uma configuração de armazenamento da Biblioteca de documentos da SharePoint em um formulário adaptável criado no Editor universal como:
 

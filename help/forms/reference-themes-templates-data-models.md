@@ -2,11 +2,12 @@
 title: Como obter temas de referência e modelos para formulários do AEM?
 description: O AEM Forms fornece exemplos de temas, modelos e modelos de dados de formulário de formulários adaptáveis para ajudá-lo a criar formulários rapidamente.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '784'
 ht-degree: 4%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 | Aplica-se a | Link do artigo |
 | -------- | ---------------------------- |
-| Formulário adaptável com base nos Componentes principais | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR) |
+| Formulário adaptável com base nos Componentes principais | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
 | Formulário adaptável baseado em componentes de base | Este artigo |
 
 >[!NOTE]
@@ -129,7 +130,7 @@ Você pode obter o seguinte Modelo de Dados de Formulário (FDM) instalando o [p
 * Microsoft® Dynamics 365
 * Salesforce
 
-Para obter informações sobre como usar esses modelos, consulte [Configurar o Microsoft Dynamics 365 e o Salesforce Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=pt-BR#configure-dynamics-cloud-service)
+Para obter informações sobre como usar esses modelos, consulte [Configurar o Microsoft Dynamics 365 e o Salesforce Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
 
 
 ## Consulte também {#see-also}

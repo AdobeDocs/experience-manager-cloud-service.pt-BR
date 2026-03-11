@@ -4,10 +4,11 @@ description: Utilize o AEM Forms para produzir formulários prontos para os neg�
 landing-page-description: Saiba como usar formulários no AEM as a Cloud Service.
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1375'
 ht-degree: 46%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 46%
 <div class="version-selector">
   <p><strong>Procurando documentação para uma versão diferente?</strong></p>
   <ul>
-    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html?lang=pt-BR">Documentação do AEM 6.5 Forms</a></li>
+    <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html">Documentação do AEM 6.5 Forms</a></li>
     <li><strong>AEM Forms as a Cloud Service</strong> (Atual)</li>
   </ul>
 </div>
@@ -123,7 +124,7 @@ Conecte formulários a fontes de dados e obtenha insights sobre o desempenho do 
 | Analytics para formulários | Use o Adobe Analytics para obter insights valiosos sobre o comportamento e as preferências do usuário: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html?lang=pt-BR">Conectar um formulário adaptável ao Adobe Analytics</a></li></ul> |
 | Integrações do Adobe | Conectar seus formulários a outras soluções da Adobe: <ul><li><a href="/help/forms/submit-adaptive-form-to-workfront-fusion.md">Conecte-se ao Adobe Workfront Fusion</a> e envie dados para cenários do Workfront</li><li><a href="/help/forms/integrate-form-to-marketo-engage.md">Conecte-se ao Adobe Marketo Engage</a> e <a href="/help/forms/submit-adaptive-form-to-marketo-engage.md">envie dados para o Marketo</a></li></ul> |
 | Integrações do Microsoft | Conecte seus formulários aos serviços da Microsoft: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=pt-BR">Conectar-se ao Microsoft® Dynamics 365</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=pt-BR">Conecte-se ao Microsoft® Azure Blob Storage</a> e <a href="/help/forms/configure-submit-action-azure-blob-storage.md">envie dados para o Azure Blob Storage</a></li><li><a href="/help/forms/connect-forms-to-sharepoint-document-library.md">Conecte-se à Biblioteca de Documentos Microsoft® SharePoint</a> e <a href="/help/forms/configure-submit-action-sharepoint.md">envie dados para a SharePoint</a></li><li><a href="/help/forms/configure-submit-action-onedrive.md">Conecte-se ao Microsoft® OneDrive</a> e envie dados para o OneDrive</li><li><a href="/help/forms/forms-microsoft-power-automate-integration.md">Conecte-se ao Microsoft® Power Automate</a> e acione fluxos no envio do formulário</li><li><a href="/help/forms/ms-dynamics-odata-configuration.md">Conectar-se ao Microsoft® Dynamics OData</a></li></ul> |
-| Outras Fontes de Dados | Conecte-se a fontes de dados e endpoints adicionais: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=pt-BR">Conectar-se a um ponto de acesso RDBMS ou Rest</a></li><li><a href="/help/forms/aem-forms-salesforce-integration.md">Conecte-se ao Salesforce</a> e envie dados para o Salesforce</li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=pt-BR#submit-to-rest-endpoint">Enviar para o ponto de acesso REST</a></li></ul> |
+| Outras Fontes de Dados | Conecte-se a fontes de dados e endpoints adicionais: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=pt-BR">Conectar-se a um ponto de acesso RDBMS ou Rest</a></li><li><a href="/help/forms/aem-forms-salesforce-integration.md">Conecte-se ao Salesforce</a> e envie dados para o Salesforce</li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">Enviar para o ponto de acesso REST</a></li></ul> |
 
 ## Assistente de IA no AEM
 

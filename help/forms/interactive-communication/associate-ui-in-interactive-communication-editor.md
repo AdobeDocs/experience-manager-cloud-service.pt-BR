@@ -4,13 +4,14 @@ description: Descubra a interface do usuário associada no Editor de comunicaç�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 234b6dc747bbba21e9249d526bf894860572dfe5
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '606'
 ht-degree: 1%
 
 ---
-
 
 # Associar a interface no Editor de comunicação interativa
 

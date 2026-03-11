@@ -4,10 +4,11 @@ description: Saiba como configurar a ação de envio do Formulário adaptável p
 keywords: Enviar dados para o Marketo engage, Configurar a ação de envio como Enviar para o Marketo Engage
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '778'
 ht-degree: 5%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 5%
 
 ![Fluxo de trabalho](/help/forms/assets/workflow-marketo-3.png)
 
-O editor Adaptive Forms fornece a ação de envio **Enviar para o Marketo Engage** para enviar dados Adaptive Forms ao Adobe Marketo Engage para processamento. Você pode configurar um Formulário adaptável existente para enviar dados ao [Adobe Marketo Engage](https://experienceleague.adobe.com/pt-br/docs/marketo/using/home) no envio.
+O editor Adaptive Forms fornece a ação de envio **Enviar para o Marketo Engage** para enviar dados Adaptive Forms ao Adobe Marketo Engage para processamento. Você pode configurar um Formulário adaptável existente para enviar dados ao [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) no envio.
 
 Várias ações de envio prontas para uso para manipular envios de formulários estão disponíveis. Você pode saber mais sobre essas opções no artigo [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md).
 
@@ -67,7 +68,7 @@ Você pode configurar a ação de envio de um Formulário adaptável com base no
 
 Depois de configurar a ação de envio para o Formulário adaptável como **Enviar para o Marketo Engage**, você pode enviar dados para o Adobe Marketo Engage para processamento. Os dados podem ser usados para analisar e otimizar campanhas de marketing, automatizar emails de acompanhamento e acionar workflows com base em envios de formulários.
 
->[!TAB Editor Universal]
+>[!TAB Universal Editor]
 
 Você pode configurar a ação de envio de um Formulário adaptável criado no Universal Editor para enviar dados ao Adobe Marketo Engage. Para configurar a ação de envio para o Marketo Engage, execute as seguintes etapas:
 
@@ -97,7 +98,7 @@ Depois de configurar a ação de envio para o Formulário adaptável como **Envi
 
 ## Próxima etapa
 
-Você também pode conectar um Formulário adaptável à [biblioteca do Munchkin](https://experienceleague.adobe.com/pt-br/docs/marketo/using/product-docs/administration/setup/munchkin) para rastrear o número de visitas, cliques e envios de formulários.
+Você também pode conectar um Formulário adaptável à [biblioteca do Munchkin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) para rastrear o número de visitas, cliques e envios de formulários.
 
 ## Artigos relacionados
 

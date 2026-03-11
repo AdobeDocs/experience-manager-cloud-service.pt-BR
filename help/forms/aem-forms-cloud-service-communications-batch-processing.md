@@ -3,10 +3,11 @@ title: Criação de PDF em massa sem esforços - Domine a arte com o processamen
 description: Como criar comunicações personalizadas e orientadas à marca?
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1716'
 ht-degree: 2%
 
 ---
@@ -40,15 +41,15 @@ Uma operação em lote é um processo de geração de vários documentos de tipo
 
 ### Componentes de uma operação em lote {#components-of-a-batch-operations}
 
-**Configuração da nuvem**: a configuração da nuvem do Experience Manager ajuda a conectar uma instância do Experience Manager ao Armazenamento do Microsoft Azure de propriedade do cliente. Ele permite especificar as credenciais da conta do Microsoft Azure de propriedade do cliente para se conectar a ele.
+**Configuração da nuvem**: a configuração da nuvem do Experience Manager ajuda a conectar uma instância do Experience Manager ao Microsoft Azure Storage de propriedade do cliente. Ele permite especificar as credenciais da conta do Microsoft Azure de propriedade do cliente para conexão com ele.
 
-**Configuração do Repositório de Dados em Lote (USC)**: a configuração de dados em lote ajuda a configurar uma instância específica do armazenamento de Blob para APIs em Lote. Ele permite especificar os locais de entrada e saída no armazenamento do Microsoft Azure Blob de propriedade do cliente.
+**Configuração do Repositório de Dados em Lote (USC)**: a configuração de dados em lote ajuda a configurar uma instância específica do armazenamento de Blob para APIs em Lote. Ele permite especificar os locais de entrada e saída no armazenamento Microsoft Azure Blob do cliente.
 
 **APIs de lote**: permite criar configurações de lote e executar as execuções em lote com base nessas configurações para mesclar um modelo PDF ou XDP com dados e gerar saída nos formatos PDF, PS, PCL, DPL, IPL e ZPL. As comunicações fornecem APIs em lote para gerenciamento de configuração e execução em lote.
 
 ![tabela-de-mesclagem-de-dados](assets/communications-batch-structure.png)
 
-**Armazenamento**: as APIs de comunicação usam o armazenamento na nuvem do Microsoft Azure de propriedade do cliente para buscar registros do cliente e armazenar documentos gerados. Configure o Armazenamento do Microsoft Azure na Configuração do Experience Manager Cloud Service.
+**Armazenamento**: as APIs de comunicação usam o armazenamento na nuvem do Azure da Microsoft de propriedade do cliente para buscar registros do cliente e armazenar documentos gerados. Você configura o Microsoft Azure Storage na configuração do Experience Manager Cloud Service.
 
 **Aplicativo**: seu aplicativo personalizado para usar as APIs em lote para gerar e consumir documentos.
 
@@ -73,12 +74,12 @@ Para usar a API de lote, é necessário o seguinte:
 
 Antes de usar uma operação em lote:
 
-* Fazer upload dos dados do cliente (arquivos XML) para o Armazenamento de blobs do Microsoft Azure
+* Fazer upload dos dados do cliente (arquivos XML) para o Microsoft Azure Blob Storage
 * Criar uma configuração na nuvem
 * Criar configuração de armazenamento de dados em lote
 * Faça upload de modelos e outros ativos para sua instância do Experience Manager Forms Cloud Service
 
-### Fazer upload dos dados do cliente (arquivos XML) para o Armazenamento do Azure
+### Fazer upload dos dados do cliente (arquivos XML) para o Azure Storage
 
 No Armazenamento do Microsoft Azure, crie [contêineres](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) e [carregue dados do cliente (XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) para as [pastas](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) dentro dos contêineres.
 
@@ -88,14 +89,14 @@ No Armazenamento do Microsoft Azure, crie [contêineres](https://docs.microsoft.
 
 ### Criar uma configuração na nuvem {#create-a-cloud-configuration}
 
-A configuração da Nuvem conecta sua instância do Experience Manager ao Armazenamento do Microsoft Azure. Para criar uma configuração na nuvem:
+A configuração da nuvem conecta sua instância do Experience Manager ao Microsoft Azure Storage. Para criar uma configuração na nuvem:
 
-1. Acesse Ferramentas > Serviços de nuvem > Armazenamento do Azure
+1. Acesse Ferramentas > Serviços em nuvem > Armazenamento do Azure
 1. Abra uma pasta para hospedar a configuração e clique em Criar. Você usa a pasta Global ou cria uma pasta.
-1. Especifique o nome da configuração e as credenciais para se conectar ao serviço. Você pode [recuperar essas credenciais do portal de Armazenamento do Microsoft Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
+1. Especifique o nome da configuração e as credenciais para se conectar ao serviço. Você pode [recuperar essas credenciais do portal Microsoft Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
 1. Clique em Criar.
 
-Sua instância do Experience Manager agora está pronta para se conectar ao Armazenamento do Microsoft Azure e usá-lo para armazenar e ler conteúdo, quando necessário.
+Sua instância do Experience Manager agora está pronta para se conectar ao Microsoft Azure Storage e usá-lo para armazenar e ler conteúdo, quando necessário.
 
 ### Criar configuração de armazenamento de dados em lote {#create-batch-data-store-configuration}
 
@@ -105,13 +106,13 @@ Para criar a configuração:
 
 1. Acesse Ferramentas > Forms > Conector de armazenamento unificado.
 1. Abra uma pasta para hospedar a configuração e clique em Criar. Você usa a pasta Global ou cria uma pasta.
-1. Especifique o Título e o Nome da configuração. Em Armazenamento, selecione Armazenamento do Microsoft Azure.
-1. Em Caminho de configuração de armazenamento, procure e selecione a Configuração na nuvem que contém credenciais da conta de armazenamento do Azure de propriedade do cliente.
-1. Na Pasta do Source, especifique o nome do contêiner de Armazenamento do Azure e a pasta que contém os registros.
-1. Na Pasta de destino, especifique o caminho do contêiner de Armazenamento do Azure e a pasta para armazenar os documentos gerados.
+1. Especifique o Título e o Nome da configuração. Em Armazenamento, selecione Microsoft Azure Storage.
+1. Em Caminho de configuração de armazenamento, procure e selecione a Configuração na nuvem que contém credenciais da conta de armazenamento da Azure de propriedade do cliente.
+1. Na Pasta do Source, especifique o nome do container do Azure Storage e a pasta que contém os registros.
+1. Na Pasta de destino, especifique o caminho do contêiner e a pasta de armazenamento do Azure para armazenar os documentos gerados.
 1. Clique em Criar.
 
-Sua instância do Experience Manager agora está conectada ao Armazenamento do Microsoft Azure e configurada para recuperar e enviar dados para locais específicos no Armazenamento do Microsoft Azure.
+Sua instância do Experience Manager agora está conectada ao Microsoft Azure Storage e configurada para recuperar e enviar dados para locais específicos no Microsoft Azure Storage.
 
 ### Faça upload de modelos e outros ativos para sua instância do Experience Manager {#upload-templates-and-other-assets-to-your-AEM-instance}
 
@@ -148,7 +149,7 @@ Para executar (executar) um lote, use o `POST /config /[configName]/execution`. 
 
 >[!NOTE]
 >
->Enquanto o lote estiver em execução, não faça alterações nas pastas de origem e destino correspondentes, na configuração da fonte de dados e na configuração da nuvem do Microsoft Azure.
+>Enquanto o lote estiver em execução, não faça alterações nas pastas de origem e destino correspondentes, na configuração da fonte de dados e na configuração da Microsoft Azure Cloud.
 
 ### Verificar status de um lote {#status-of-a-batch}
 

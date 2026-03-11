@@ -4,11 +4,12 @@ description: O componente de Botão de opção no Editor de comunicação intera
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 0%
+source-wordcount: '577'
+ht-degree: 1%
 
 ---
 

@@ -4,10 +4,11 @@ description: Melhore a segurança dos formulários com o serviço de Tornição 
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
-source-git-commit: 914139a6340f15ee77024793bf42fa30c913931e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '958'
 ht-degree: 11%
 
 ---
@@ -52,10 +53,8 @@ Para configurar o Turnstile para AEM Forms, você precisa obter a [Chave de site
 
 1. Configure o Cloud Service:
    1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** e selecione **[!UICONTROL Turnstile]**.
-
       ![Borboleta na interface do usuário](assets/turnstile-in-ui.png)
    1. Selecione um Contêiner de configuração, criado ou atualizado, conforme descrito na seção anterior. Selecione **[!UICONTROL Criar]**.
-
       ![Estrutura de configuração](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Tipo de Widget]** como gerenciado, o tipo de widget pode ser alterado, o que depende da chave obtida no pré-requisito, **[!UICONTROL Título]**, **[!UICONTROL Nome]**, **[!UICONTROL Chave do Site]** e **[!UICONTROL Chave Secreta]** para o serviço de Borracha [obtida no pré-requisito](#prerequisite). Selecione **[!UICONTROL Criar]**.
 

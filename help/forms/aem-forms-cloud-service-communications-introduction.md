@@ -4,10 +4,11 @@ description: Gerar, manipular e proteger documentos com APIs de comunicação da
 Keywords: document generation, PDF manipulation, document security, batch processing, document conversion, PDF/A compliance
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2789'
+source-wordcount: '2795'
 ht-degree: 26%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 26%
 
 > **Disponibilidade de Versão**
 >
-> * **AEM 6.5**: [Visão Geral dos Serviços de Documento da AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=pt-BR)
+> * **AEM 6.5**: [Visão Geral dos Serviços de Documento da AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**: Este artigo
 
 ## Introdução
@@ -87,7 +88,7 @@ A tabela abaixo exibe a diferença entre os formatos AFP e PDF:
 | **Controle de saída** | Controle refinado sobre o layout de impressoras | Layout visual otimizado para tela e impressão |
 | **Fontes e Elementos Gráficos** | Usa referências de fonte e recurso; requer renderizadores para interpretar | Incorpora fontes e imagens diretamente no arquivo |
 
-A API de geração de documento retorna o documento PDF ou o documento AFP gerado. Opcionalmente, também é possível carregar os PDFs gerados no Armazenamento de blobs do Azure.
+A API de geração de documento retorna o documento PDF ou o documento AFP gerado. Opcionalmente, também é possível fazer upload dos PDFs gerados no Azure Blob Storage.
 
 <span class="preview"> O carregamento dos PDFs gerados usando a API de geração de documentos para o recurso de Armazenamento Azure Blob está no [Programa Early Adoter](/help/forms/early-access-ea-features.md). Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 

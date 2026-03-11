@@ -3,12 +3,13 @@ title: Form Analytics com Adobe Analytics e AEM Forms - Guia completo
 seo-title: "Form Analytics: Track Performance, Boost Conversions with Adobe Analytics & AEM Forms"
 description: Guia completo para análise de formulários com o Adobe Analytics e o AEM Forms. Acompanhe o desempenho do formulário, analise o comportamento do usuário, reduza o abandono e otimize as conversões.
 keywords: análise de formulários, rastreamento de desempenho de formulários, análise de abandono de formulários, otimização de conversão, análise de comportamento do usuário, Adobe Analytics forms, AEM Forms analytics
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '7898'
+source-wordcount: '7904'
 ht-degree: 0%
 
 ---
@@ -70,7 +71,7 @@ A análise de formulários eficiente se concentra em métricas que afetam direta
 
 **Métricas Comportamentais Avançadas**
 
-- **Análise de funil de conversão**: jornada de usuário em formulários de várias etapas, mostrando padrões de progressão e distribuição
+- **Análise de Funnel de conversão**: jornada do usuário através de formulários de várias etapas, mostrando padrões de progressão e distribuição
 - **Desempenho do dispositivo e do navegador**: fatores técnicos que afetam a conclusão em diferentes ambientes de usuário
 - **Profundidade do Envolvimento do Usuário**: tempo gasto em formulários, padrões de interação de campo e indicadores de atenção do usuário
 
@@ -323,7 +324,7 @@ Monitore o desempenho dos formulários à medida que ele acontece, com painéis 
 
 ### Recursos de rastreamento prontos para uso
 
-O AEM Forms integra-se perfeitamente com o [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=pt-BR) para capturar e rastrear automaticamente as métricas de desempenho dos formulários publicados. Você pode monitorar o comportamento de usuários autenticados e anônimos sem configurações adicionais.
+O AEM Forms integra-se perfeitamente com o [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) para capturar e rastrear automaticamente as métricas de desempenho dos formulários publicados. Você pode monitorar o comportamento de usuários autenticados e anônimos sem configurações adicionais.
 
 Antes de implementar a análise de formulários, verifique se o seu [ambiente do AEM Forms está configurado corretamente](/help/forms/setup-forms-cloud-service.md) e se você [criou seus formulários adaptáveis](/help/forms/creating-adaptive-form-core-components.md) usando os Componentes Principais ou os [Componentes de Base](/help/forms/creating-adaptive-form.md).
 
@@ -353,7 +354,7 @@ Além dos eventos de formulários padrão, o Adobe Analytics permite um rastream
 
 - **Métricas específicas de negócios**: defina eventos personalizados usando o editor de regras para rastrear interações de formulários específicas da organização
 - **Mapeamento de Jornada de usuário**: crie eventos personalizados para rastrear caminhos de usuário complexos através de formulários de várias etapas
-- **Análise de funil de conversão**: configure eventos personalizados para medir pontos de conversão e estágios iniciais específicos
+- **Análise de Funnel de conversão**: configure eventos personalizados para medir pontos de conversão e estágios iniciais específicos
 - **Eventos de Integração**: Rastrear interações de formulário com sistemas externos e APIs
 
 ### Recursos avançados de relatórios
@@ -362,7 +363,7 @@ A Adobe Analytics oferece recursos de geração de relatórios de nível empresa
 
 - **Painéis em tempo real**: monitore o desempenho dos formulários e as interações do usuário à medida que elas ocorrem
 - **Análise de Segmentação**: analisar o desempenho do formulário em diferentes grupos de usuários, fontes de tráfego e dados demográficos
-- **Visualização de funil**: visualize a progressão do usuário através de formulários de várias etapas e identifique oportunidades de otimização
+- **Visualização do Funnel**: visualize a progressão do usuário através de formulários de várias etapas e identifique oportunidades de otimização
 - **Análise de coorte**: controle as melhorias de desempenho do formulário ao longo do tempo e meça o impacto da otimização
 - **Rastreamento entre dispositivos**: entenda como os usuários interagem com formulários em diferentes dispositivos e sessões
 
@@ -465,12 +466,12 @@ O Forms que é carregado em menos de 3 segundos tem taxas de conclusão 70% mais
 - **Análise de Tipo de Usuário**: comparar o desempenho entre usuários novos e recorrentes
 - **Insights Demográficos**: entender como diferentes grupos de usuários interagem com formulários
 
-**Análise de funil de conversão**
+**Análise de Funnel de Conversão**
 
 - **Progressão de Formulário de Várias Etapas**: Rastrear o avanço do usuário por meio de formulários complexos
 - **Conversão de etapa por etapa**: meça as taxas de conclusão em cada etapa do formulário
-- **Otimização de Funil**: identificar e resolver gargalos na progressão do formulário
-- **Integração de Teste A/B**: comparar o desempenho de funil entre variações de formulário
+- **Otimização do Funnel**: identificar e resolver gargalos na progressão do formulário
+- **Integração de Teste A/B**: comparar o desempenho do funnel entre variações de formulário
 
 **Métricas de impacto nos negócios**
 
@@ -527,12 +528,12 @@ Antes de iniciar a implementação do form Analytics, verifique se seu ambiente 
 Antes de configurar [!DNL Adobe Analytics], crie:
 
 - Uma Adobe ID para fazer logon no [Adobe Experience Cloud](https://experience.adobe.com/#/home).
-- Um [conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=pt-BR).
+- Um [conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
 
 
 ### Instalar o AEM Forms e as extensões do [!DNL Adobe Analytics] {#install-extensions}
 
-Execute as seguintes etapas para configurar o AEM Forms e as extensões do [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=pt-BR):
+Execute as seguintes etapas para configurar o AEM Forms e as extensões do [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html):
 
 1. Faça logon no Adobe Experience Cloud e selecione um nome apropriado para a empresa.
 
@@ -676,7 +677,7 @@ Execute as seguintes etapas para publicar a configuração:
 
 ## &#x200B;2. Configurar o AEM Forms {#configure-aem-forms}
 
-Antes de criar uma configuração do Adobe Launch, crie uma [Configuração do Adobe IMS usando o Adobe Launch como a Solução da nuvem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=pt-BR).
+Antes de criar uma configuração do Adobe Launch, crie uma [Configuração do Adobe IMS usando o Adobe Launch como a Solução da nuvem](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
 ### Criar configuração do Adobe Launch {#create-adobe-launch-configuration}
 
@@ -688,7 +689,7 @@ Execute as seguintes etapas para criar uma configuração do Adobe Launch:
 
 1. Especifique um título para a configuração no campo **[!UICONTROL Título]**.
 
-1. Selecione a [configuração IMS da Adobe associada](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=pt-BR).
+1. Selecione a [configuração IMS da Adobe associada](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
 1. Selecione o nome da empresa usada durante a [configuração do Adobe Analytics](#Configure-adobe-analytics).
 
@@ -708,7 +709,7 @@ Para usar a configuração [!DNL Adobe Launch] em um Formulário adaptável exis
 1. Selecione **[!UICONTROL Salvar e fechar]**. O Formulário adaptável está habilitado para [!DNL Adobe Analytics].
 1. Publique o formulário.
 
-Depois de habilitar [!DNL Adobe Analytics] para um formulário adaptável, você poderá [validar](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=pt-BR#validate-the-page-view-beacon) se houver um fluxo de eventos de dados apropriado entre o AEM Forms e o [!DNL Adobe Analytics]. A integração do AEM Forms com o Adobe Analytics está concluída. Agora você pode [configurar e exibir relatórios no Adobe Analytics](#view-reports-adobe-analytics).
+Depois de habilitar [!DNL Adobe Analytics] para um formulário adaptável, você poderá [validar](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) se houver um fluxo de eventos de dados apropriado entre o AEM Forms e o [!DNL Adobe Analytics]. A integração do AEM Forms com o Adobe Analytics está concluída. Agora você pode [configurar e exibir relatórios no Adobe Analytics](#view-reports-adobe-analytics).
 
 ### Criar regras para capturar eventos personalizados (Opcional) {#capture-custom-events}
 
@@ -850,7 +851,7 @@ Entender como interpretar e agir nos dados de análise de formulário é fundame
 
 **Painel de KPIs (Indicadores-chave de desempenho)**
 
-- **Funil de conversão de formulário**: visualizar a progressão do usuário através do processo de conclusão do formulário
+- **Funnel de Conversão de Formulário**: visualizar a progressão do usuário através do processo de conclusão do formulário
 - **Análise de Abandono**: identificar pontos específicos em que os usuários deixam formulários incompletos
 - **Tendências de Desempenho**: controle as alterações de desempenho do formulário ao longo do tempo e identifique padrões
 - **Análise Comparativa**: comparar o desempenho em diferentes formulários, períodos e segmentos de usuário
@@ -1021,7 +1022,7 @@ Esta seção abrangente de perguntas frequentes aborda perguntas comuns sobre a 
 
 **P: Qual é a diferença entre a análise de formulário e a análise geral de sites?**
 
-R: A análise de formulários foca especificamente nas interações do usuário nos formulários, fornecendo insights detalhados sobre o comportamento no nível de campo, padrões de preenchimento e pontos de abandono. Enquanto a análise geral de sites rastreia exibições de página e jornadas gerais do usuário, a análise de formulários oferece dados granulares sobre experiências do usuário específicas do formulário, erros de validação, tempos de conclusão de campo e análise de funil de conversão nos próprios formulários.
+R: A análise de formulários foca especificamente nas interações do usuário nos formulários, fornecendo insights detalhados sobre o comportamento no nível de campo, padrões de preenchimento e pontos de abandono. Enquanto a análise geral de sites rastreia exibições de página e jornadas gerais do usuário, a análise de formulários oferece dados granulares sobre experiências do usuário específicas do formulário, erros de validação, tempos de conclusão de campo e análise de conversão do funnel nos próprios formulários.
 
 **P: Preciso de conhecimento técnico para implementar a análise de formulários com o Adobe Analytics?**
 
@@ -1043,7 +1044,7 @@ R: Sim, o Adobe Analytics oferece suporte ao rastreamento de formulários entre 
 
 **P: Como faço para manipular formulários de análise de formulários de várias etapas ou de estilo de assistente?**
 
-R: Formulários de várias etapas exigem configuração especial para rastrear o progresso em cada etapa. Implemente eventos personalizados para conclusão de etapa, configure a análise de funil para visualizar os pontos de interrupção entre etapas e use variáveis personalizadas para rastrear os caminhos do usuário no assistente de formulário. O Adobe Analytics fornece orientação específica para o rastreamento de formulários de várias páginas.
+R: Formulários de várias etapas exigem configuração especial para rastrear o progresso em cada etapa. Implemente eventos personalizados para conclusão de etapa, configure a análise do funnel para visualizar os pontos de interrupção entre etapas e use variáveis personalizadas para rastrear os caminhos do usuário no assistente de formulário. O Adobe Analytics fornece orientação específica para o rastreamento de formulários de várias páginas.
 
 **P: O que acontece com os dados de análise se um usuário preencher um formulário offline ou com o JavaScript desabilitado?**
 
@@ -1083,7 +1084,7 @@ R: Os SPAs exigem configuração especial para a análise de formulários, pois 
 
 **P: O que devo fazer se a análise de formulários estiver afetando o desempenho do carregamento de páginas?**
 
-R: Otimize a implementação do Analytics carregando scripts de análise de forma assíncrona, implementando o carregamento lento para rastreamento não crítico, reduzindo o número de variáveis e eventos personalizados, usando configurações de regras eficientes no Adobe Launch e monitorando os Componentes principais da Web para garantir que a análise não afete negativamente a experiência do usuário.
+R: Otimize a implementação do Analytics carregando scripts de análise de forma assíncrona, implementando o carregamento lento para rastreamento não crítico, reduzindo o número de variáveis e eventos personalizados, usando configurações de regras eficientes no Adobe Launch e monitorando o Core Web Vitals para garantir que a análise não afete negativamente a experiência do usuário.
 
 **P: Como garantir a conformidade do form Analytics com as regras de privacidade?**
 

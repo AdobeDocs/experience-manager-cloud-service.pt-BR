@@ -5,10 +5,11 @@ keywords: comparação de formulários adaptáveis, componentes principais, comp
 role: Architect, Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: adaptive-forms-comparison
-source-git-commit: 37799555babb15809409ec5cda8a1c46ceff24f2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1959'
 ht-degree: 5%
 
 ---
@@ -65,7 +66,7 @@ Os Componentes principais são compatíveis com vários modelos de renderizaçã
 | **Componentes** | 30 componentes padronizados, incluindo caixa de texto, caixa numérica, seletor de data, lista suspensa, grupo de caixas de seleção, botão de opção, anexo de arquivo, assistente, acordeão, guias horizontais/verticais |
 | **Modelos de formulário** | Esquema JSON (v4 e 2020-12), modelo de dados de formulário (FDM), modelos XDP/XFA (limitado) |
 | **Mecanismo de regras** | Editor visual de regras com lógica condicional, validação, chamada de serviço, funções personalizadas |
-| **Enviar Ações** | Endpoint REST, Email, Fluxo de trabalho do AEM, SharePoint, OneDrive, Armazenamento Azure Blob, Power Automate, Workfront Fusion, Modelo de dados de formulário |
+| **Enviar Ações** | Endpoint REST, Email, Fluxo de trabalho do AEM, SharePoint, OneDrive, Azure Blob Storage, Power Automate, Workfront Fusion, Modelo de dados de formulário |
 | **Preenchimento prévio** | Serviço de preenchimento do modelo de dados de formulário, serviços de preenchimento personalizado |
 | **CAPTCHA** | reCAPTCHA, hCaptcha, tartaruga |
 | **Documento de registro** | Geração de PDF com modelos personalizados ou OOTB |

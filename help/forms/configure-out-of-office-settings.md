@@ -1,12 +1,13 @@
 ---
 title: Como definir as configurações de Ausência Temporária no AEM Forms?
 description: Delegue tarefas enquanto estiver fora do escritório ou fora dele para uma execução perfeita do fluxo de trabalho.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
 | AEM as a Cloud Service | Este artigo |
 
 Se você planeja ficar fora do escritório, é possível especificar o que acontece com os itens atribuídos a você nesse período.
@@ -39,7 +40,7 @@ Você pode segregar a delegação de itens com base nos modelos de fluxo de trab
 
 Execute as seguintes etapas para Ativar a configuração Ausência Temporária para sua conta e delegar seus Itens da Caixa de entrada a outro usuário:
 
-1. Faça logon na instância do AEM. Selecione o ícone ![Caixa de entrada](assets/bell.svg) e selecione **[!UICONTROL Exibir tudo]**. Uma lista dos itens da caixa de entrada é exibida.
+1. Faça logon na sua instância do AEM. Selecione o ícone ![Caixa de entrada](assets/bell.svg) e selecione **[!UICONTROL Exibir tudo]**. Uma lista dos itens da caixa de entrada é exibida.
 1. Selecione o ícone ![Exibir Seletor](assets/viewlist.svg) ou ![Exibir Seletor](assets/calendar.svg) ao lado do botão **[!UICONTROL Criar]** e selecione **[!UICONTROL Configurações]**. A caixa de diálogo de configurações é exibida.
 1. Abra a guia **[!UICONTROL Ausência Temporária]** na caixa de diálogo de configurações.
 1. Selecione o botão **[!UICONTROL Habilitar/Desabilitar]** para habilitar a configuração Ausência Temporária.

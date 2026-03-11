@@ -3,13 +3,14 @@ title: APIs de comunicações do AEM Forms - Visão geral
 description: Visão geral das APIs de comunicações do AEM Forms, incluindo métodos de autenticação e referência completa da API
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: 1f9fb00c-c284-45c1-a8ba-51a59dbaee3d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '947'
 ht-degree: 4%
 
 ---
-
 
 # APIs de comunicações do AEM Forms - Visão geral
 
@@ -19,7 +20,7 @@ As APIs do AEM Forms são estruturadas e acessadas por meio de dois consoles pri
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - O Adobe Developer Console é o gateway para APIs, Eventos, Tempo de Execução e App Builder da Adobe.
 
-* [AEM Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - O AEM Developer Console fornece acesso a detalhes, configurações, contas técnicas e credenciais de serviço no nível do ambiente para oferecer suporte a tarefas operacionais e de integração.
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - O AEM Developer Console fornece acesso a detalhes, configurações, contas técnicas e credenciais de serviço no nível do ambiente para oferecer suporte a tarefas operacionais e de integração.
 
 APIs diferentes suportam [métodos de autenticação](#authentication-methods) diferentes.
 

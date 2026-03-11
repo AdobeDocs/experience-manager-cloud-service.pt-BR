@@ -3,13 +3,14 @@ title: Gerenciar versões de formulários no Forms Manager
 description: Saiba como criar e gerenciar versões do Adaptive Forms, fragmentos de formulário, temas e outros ativos na interface do usuário do Forms Manager.
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer, Admin
-source-git-commit: 52d6e8163ef24d362287cbedf54c2977fff9c87b
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: cd2c6e15-99a6-4b4e-bfd1-8291a2001ebe
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '433'
 ht-degree: 3%
 
 ---
-
 
 # Gerenciar versões do Formulário Assets na interface do usuário do Forms Manager
 

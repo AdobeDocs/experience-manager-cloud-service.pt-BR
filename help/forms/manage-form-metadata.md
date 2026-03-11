@@ -2,11 +2,12 @@
 title: Como podemos gerenciar metadados para o AEM Forms?
 description: Os metadados facilitam a categorização e a organização de ativos e ajudam os usuários que procuram um ativo específico.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1738'
 ht-degree: 3%
 
 ---
@@ -15,12 +16,12 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
+> A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html) |
 | AEM as a Cloud Service | Este artigo |
 
 Os metadados facilitam a categorização e a organização de ativos e ajudam os usuários que procuram um ativo específico.
@@ -39,7 +40,7 @@ Os seguintes tipos de ativos têm suporte no [!DNL AEM Forms]:
 
 * Modelos de formulário (formulários XFA)
 * PDF forms
-* Documento (PDF simples)
+* Documento (PDFs simples)
 * Formulários adaptáveis
 * Modelo de dados do Forms
 * XFS
@@ -71,7 +72,7 @@ Esta é uma lista extensa de propriedades de metadados com suporte no [!DNL AEM 
    <td><p>Um valor somente leitura que especifica o tipo de ativo. Ele pode ter um dos seguintes valores:</p> 
     <ul> 
      <li>Modelo de formulário</li> 
-     <li>formulário PDF, formulário PDF (Acroform) ou formulário PDF (Signed)</li> 
+     <li>Formulário do PDF, formulário do PDF (AcroForm) ou formulário do PDF (Assinado)</li> 
      <li>Documento, Documento (Assinado)</li> 
      <li>Formulário adaptável</li> 
      <li>Modelo de dados de formulário (FDM)</li>
@@ -113,17 +114,17 @@ Esta é uma lista extensa de propriedades de metadados com suporte no [!DNL AEM 
    <td>Um valor somente leitura que especifica a hora em que o formulário foi publicado pela última vez.</td> 
   </tr> 
   <tr> 
-   <td>Horário ligado/desligado do Publish</td> 
+   <td>Publicar hora de ligar/desligar</td> 
    <td>Todos, exceto o recurso</td> 
    <td><p>Hora em que o formulário está agendado para ser publicado/despublicado automaticamente. O usuário define esse valor ao editar metadados.</p> 
     <ul> 
-     <li>Os horários de ativação e desativação do Publish devem estar após a data atual. </li> 
-     <li>O Tempo de desativação do Publish deve estar além do tempo de ativação da publicação. </li> 
+     <li>A data de ativação e desativação da publicação deve ser posterior à data atual. </li> 
+     <li>Publicar Fora do Tempo deve estar além de publicar No Tempo. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>Enviar URL</td> 
-   <td><p>Modelo de formulário</p> <p>formulário PDF</p> </td> 
+   <td><p>Modelo de formulário</p> <p>Formulário do PDF</p> </td> 
    <td><p>Para configurar uma URL especificada pelo usuário para enviar dados de formulário a um servlet.</p> <p>O URL de envio pode ser configurado usando qualquer um dos métodos a seguir, listados em ordem de precedência:</p> 
     <ul> 
      <li>Especifique um URL de envio diretamente em um Modelo de formulário usando o botão Enviar HTTP ao criar um formulário XFA no AEM Forms Designer.</li> 
@@ -134,7 +135,7 @@ Esta é uma lista extensa de propriedades de metadados com suporte no [!DNL AEM 
   <tr> 
    <td>Perfil de renderização do HTML</td> 
    <td>Modelo de formulário</td> 
-   <td>O perfil de renderização de HTML usado ao renderizar um Modelo de Formulário no formato HTML.</td> 
+   <td>O perfil de renderização do HTML usado ao renderizar um Modelo de formulário no formato HTML.</td> 
   </tr> 
   <tr> 
    <td>Renderizar formato</td> 
@@ -298,7 +299,7 @@ Uma ferramenta (Editor de Esquema de Metadados) é fornecida para definir o esqu
 
       >[!NOTE]
       >
-      >Não altere o prefixo &#39;./jcr:content/metadata/&#39;, pois define o caminho onde a propriedade é armazenada.
+      >Não altere o prefixo &#39;./jcr:content/metadata/&#39;, pois define o caminho onde a propriedade está armazenada.
       >
       >Além disso, o nome da propriedade deve ser exclusivo para evitar a gravação de valores para duas ou mais propriedades no mesmo local no repositório. Portanto, é recomendável alterar o valor &quot;padrão&quot;.
 

@@ -5,11 +5,12 @@ keywords: construtor de formulários, AEM forms, criador de formulários, criar 
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: choose-form-builder-guide
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 3%
+source-wordcount: '954'
+ht-degree: 4%
 
 ---
 
@@ -78,7 +79,7 @@ O Universal Editor oferece duas abordagens de criação avançadas para o Edge D
 
 ### Capacidades técnicas
 
-| **Recurso** | **Fundação** | **Núcleo** | **Editor Universal** | **Baseado em documento** |
+| **Recurso** | **Fundação** | **Núcleo** | **Universal Editor** | **Baseado em documento** |
 |----------------|----------------|----------|---------------------|-------------------|
 | **Complexidade do formulário** | Básico | Avançado | Avançado | Simples a moderado |
 | **Mecanismo de regras** | Avançado | Avançado | Avançado | Limitado |
@@ -90,7 +91,7 @@ O Universal Editor oferece duas abordagens de criação avançadas para o Edge D
 
 ### Integração e envio
 
-| **Recurso** | **Fundação** | **Núcleo** | **Editor Universal** | **Baseado em documento** |
+| **Recurso** | **Fundação** | **Núcleo** | **Universal Editor** | **Baseado em documento** |
 |-------------|----------------|----------|---------------------|-------------------|
 | **Modelos de dados** | FDM, Personalizado | FDM, Personalizado | FDM, Personalizado | Personalizado |
 | **Enviar ações** | Várias opções | Várias opções | Várias opções | Somente planilha |
@@ -101,7 +102,7 @@ O Universal Editor oferece duas abordagens de criação avançadas para o Edge D
 
 ### Publicação e desempenho
 
-| **Aspecto** | **Fundação** | **Núcleo** | **Editor Universal** | **Baseado em documento** |
+| **Aspecto** | **Fundação** | **Núcleo** | **Universal Editor** | **Baseado em documento** |
 |------------|----------------|----------|---------------------|-------------------|
 | **Publicação** | Somente AEM | AEM + Edge Delivery + APIs headless | Edge Delivery | Edge Delivery |
 | **Desempenho** | Padrão | Aprimorado | Pontuações altas de farol | Pontuações altas de farol |
@@ -201,4 +202,4 @@ Para obter orientação personalizada, consulte sua equipe de implementação do
 - [Comparação detalhada da criação de formulários](/help/edge/docs/forms/authoring-a-form.md)
 - [Visão geral dos Componentes principais do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR)
 - [Visão geral do Edge Delivery Services para Forms](/help/edge/docs/forms/overview.md)
-- [Forms adaptável headless com componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)
+- [Forms adaptável headless com componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)

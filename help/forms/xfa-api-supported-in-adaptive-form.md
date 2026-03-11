@@ -8,13 +8,14 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '689'
 ht-degree: 5%
 
 ---
-
 
 # Suporte XFA no Adaptive Forms baseado em XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
@@ -56,7 +57,7 @@ Quando um formulário adaptável é criado usando um arquivo XDP, você pode arr
   </tr>
   <tr>
    <td><p>Campo de data/hora </p> </td>
-   <td><p>Seletor de data</p> </td>
+   <td><p>Seletor de datas</p> </td>
   </tr>
   <tr>
    <td><p>Rabisco de assinatura</p> </td>
@@ -267,4 +268,3 @@ A tabela a seguir captura como as validações XFA são mapeadas para validaçõ
 >[!NOTE]
 >
 >Não é possível substituir a propriedade obrigatória pelo botão de opção Formulário adaptável e pelo grupo de caixas de seleção vinculados aos botões de seleção XFA.
-

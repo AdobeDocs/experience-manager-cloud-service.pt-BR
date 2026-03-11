@@ -1,19 +1,20 @@
 ---
 title: Como solucionar falhas de criação de formulários?
-description: Solução de problemas de falhas na criação de formulários no ambiente as a Cloud Service do AEM Forms.
+description: Solução de problemas de falhas na criação de formulários no ambiente do AEM Forms as a Cloud Service.
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 0%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
 
 # Problema ao publicar formulários{#form-creation-fails}
 
-Depois que os usuários atualizarem para a versão as a Cloud Service do AEM Forms `2024.5.16461`:
+Depois que os usuários atualizarem para o AEM Forms as a Cloud Service versão `2024.5.16461`:
 
 **Alguns usuários** podem enfrentar problemas ao criar formulários. O problema é que, quando um usuário cria um formulário, a seguinte mensagem de erro aparece na caixa de diálogo de criação:
 
@@ -28,9 +29,9 @@ O problema ocorre porque o autor publica o formulário sem **publicar primeiro o
 Para resolver o problema, execute as seguintes etapas:
 
 1. Certifique-se de que o modelo usado no formulário não tenha o `jcr:uuid` e outras propriedades protegidas geradas pelo sistema no caminho `<template-path>/initial/jcr:content node`.
-1. Publish o modelo usando explicitamente o console de modelo.
+1. Publique o template explicitamente usando o console do template.
 1. Agora, quando o modelo for publicado, tente criar novos formulários usando o modelo.
-1. Se o modelo usado for atualizado nas próximas versões, Publish o modelo novamente (conforme fornecido na etapa 2) para evitar problemas de falha na criação de formulários.
+1. Se o modelo usado for atualizado nas versões futuras, publique o modelo novamente (conforme fornecido na etapa 2) para evitar problemas de falha na criação de formulários.
 
 
 <!--

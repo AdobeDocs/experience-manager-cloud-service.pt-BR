@@ -1,12 +1,13 @@
 ---
 title: O que são considerações, problemas conhecidos e práticas recomendadas no AEM Forms?
 description: Considerações sobre problemas conhecidos e práticas recomendadas para APIs de comunicação do AEM Forms.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
@@ -62,7 +63,7 @@ Para mesclar dados neste design de formulário, crie uma fonte de dados XML que 
 
 Para obter acesso total aos recursos de renderização das APIs de comunicações, é recomendável usar um arquivo XDP como entrada. Às vezes, um arquivo PDF pode ser usado. No entanto, o uso de um arquivo PDF como entrada tem as limitações:
 
-Um documento PDF que não contém um fluxo XFA não pode ser renderizado como PostScript, PCL ou ZPL. As APIs de comunicação podem renderizar documentos PDF com fluxos XFA (ou seja, formulários criados no Designer) em formatos laser e de rótulo. Se o documento PDF for assinado, certificado ou contiver direitos de uso (aplicados pelo serviço AEM Forms Reader Extensions), ele não poderá ser renderizado nesses formatos de impressão.
+Um documento do PDF que não contém um fluxo XFA não pode ser renderizado como PostScript, PCL ou ZPL. As APIs de comunicação podem renderizar documentos do PDF com fluxos XFA (ou seja, formulários criados no Designer) em formatos laser e de rótulo. Se o documento do PDF estiver assinado, certificado ou contiver direitos de uso (aplicados usando o serviço AEM Forms Reader Extensions), ele não poderá ser renderizado nesses formatos de impressão.
 
 
 ### Áreas imprimíveis {#printable-areas}
@@ -84,11 +85,11 @@ Para criar um formulário que use fontes residentes na impressora, escolha no De
 
 Se uma fonte estiver instalada em um computador cliente, ela estará disponível na lista suspensa no Designer. Se a fonte não estiver instalada, será necessário especificar o nome da fonte manualmente. A opção &quot;Substituir permanentemente fontes indisponíveis&quot; no Designer pode estar desativada. Caso contrário, quando o arquivo XDP for salvo no Designer, o nome da fonte de substituição será gravado no arquivo XDP. Isso significa que a fonte residente na impressora não é usada.
 
-Existem dois tipos de fontes OpenType®. Um tipo é uma fonte TrueType OpenType® suportada por PCL. O outro é o CFF OpenType®. A saída de PDF e PostScript suporta fontes Type-1, TrueType e OpenType® incorporadas. A saída PCL suporta fontes TrueType incorporadas.
+Existem dois tipos de fontes OpenType®. Um tipo é uma fonte TrueType OpenType® suportada por PCL. O outro é o CFF OpenType®. A saída do PDF e do PostScript suporta fontes Type-1, TrueType e OpenType® incorporadas. A saída PCL suporta fontes TrueType incorporadas.
 
-As fontes Type-1 e OpenType® não estão incorporadas na saída PCL. O conteúdo formatado com as fontes Type-1 e OpenType® é rasterizado e gerado como uma imagem bitmap que pode ser grande e de geração mais lenta.
+As fontes Type-1 e OpenType® não são incorporadas na saída PCL. O conteúdo formatado com as fontes Type-1 e OpenType® é rasterizado e gerado como uma imagem bitmap que pode ser grande e mais lenta de ser gerada.
 
-As fontes baixadas ou incorporadas são substituídas automaticamente ao gerar saída PostScript, PCL ou PDF. Isso significa que somente o subconjunto dos glifos de fonte necessários para renderizar corretamente o documento gerado é incluído na saída gerada.
+As fontes baixadas ou incorporadas são substituídas automaticamente ao gerar saída do PostScript, PCL ou PDF. Isso significa que somente o subconjunto dos glifos de fonte necessários para renderizar corretamente o documento gerado é incluído na saída gerada.
 
 ### Trabalhar com arquivos de perfil de dispositivo (arquivo XDC) {#working-with-xdc-files}
 
@@ -137,8 +138,8 @@ A tabela a seguir especifica as opções de XCI.
 
 | Opção XCI | Descrição |
 | ------------------------------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| config/present/pdf/creator | Identifica o criador do documento usando a entrada Criador no dicionário de Informações do Documento. Para obter informações sobre esse dicionário, consulte o Guia de referência de PDF. |
-| config/present/pdf/producer | Identifica o produtor do documento usando a entrada Produtor no dicionário de Informações do documento. Para obter informações sobre esse dicionário, consulte o Guia de referência de PDF. |
+| config/present/pdf/creator | Identifica o criador do documento usando a entrada Criador no dicionário de Informações do Documento. Para obter informações sobre esse dicionário, consulte o Guia de referência do PDF. |
+| config/present/pdf/producer | Identifica o produtor do documento usando a entrada Produtor no dicionário de Informações do documento. Para obter informações sobre esse dicionário, consulte o Guia de referência do PDF. |
 | config/present/layout | Controla se a saída é um painel único ou paginada. |
 | config/present/pdf/compression/level | Especifica o grau de compactação a ser usado ao gerar um documento PDF. |
 | config/present/pdf/scriptModel | Controla se informações específicas de XFA são incluídas no documento PDF de saída. |
@@ -153,10 +154,10 @@ A tabela a seguir especifica as opções de XCI.
 | config/present/output/to | Controla o local onde os dados de log ou de saída são gravados. |
 | config/present/script/currentPage | Especifica a página inicial quando o documento é aberto. |
 | config/present/script/exclude | Informa ao servidor da AEM Forms/APIs de comunicações quais eventos devem ser ignorados. |
-| config/present/pdf/linearized | Controla se o documento de PDF de saída está linearizado. |
+| config/present/pdf/linearized | Controla se o documento PDF de saída está linearizado. |
 | config/present/script/runScripts | Controla qual conjunto de scripts o AEM Forms executa. |
-| config/present/pdf/tagged | Controla a inclusão de tags no documento de PDF de saída. As tags, no contexto de PDF, são informações adicionais incluídas em um documento para expor a estrutura lógica do documento. As tags auxiliam na acessibilidade e na reformatação. Por exemplo, um número de página pode ser marcado como um artefato para que um leitor de tela não o enuncie no meio do texto. Embora as tags tornem um documento mais útil, elas também aumentam o tamanho do documento e o tempo de processamento para criá-lo. |
-| config/present/pdf/version | Especifica a versão do documento de PDF a ser gerada. |
+| config/present/pdf/tagged | Controla a inclusão de tags no documento PDF de saída. As tags, no contexto do PDF, são informações adicionais incluídas em um documento para expor a estrutura lógica do documento. As tags auxiliam na acessibilidade e na reformatação. Por exemplo, um número de página pode ser marcado como um artefato para que um leitor de tela não o enuncie no meio do texto. Embora as tags tornem um documento mais útil, elas também aumentam o tamanho do documento e o tempo de processamento para criá-lo. |
+| config/present/pdf/version | Especifica a versão do documento do PDF a ser gerada. |
 
 
 ## Problemas conhecidos
@@ -173,27 +174,27 @@ A tabela a seguir especifica as opções de XCI.
 
 ## Práticas recomendadas
 
-* a Adobe recomenda que você hospede arquivos de dados no armazenamento de contêiner de blob na região da nuvem usada pelo AEM Cloud Service.
+* A Adobe recomenda que você hospede arquivos de dados no armazenamento de contêiner de blob na região da nuvem usada pelo AEM Cloud Service.
 
 ## Perguntas frequentes {#faq}
 
 **Posso usar uma pasta monitorada ou outros mecanismos de armazenamento para armazenar entrada e saída?**
 
-No momento, você pode usar o Armazenamento do Microsoft Azure para salvar dados de entrada e documentos gerados. O armazenamento do Microsoft Azure fornece várias opções para [automatizar operações de movimentação de dados](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
+No momento, você pode usar o Microsoft Azure Storage para salvar dados de entrada e documentos gerados. O armazenamento do Microsoft Azure fornece várias opções para [automatizar operações de movimentação de dados](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
 
-**Uma conta de Armazenamento do Microsoft Azure está incluída na licença do Cloud Service Experience Manager Forms?**
+**Uma conta do Microsoft Azure Storage está incluída na licença do Experience Manager Forms Cloud Service?**
 
-A conta de Armazenamento do Microsoft Azure é independente da licença Cloud Service do Experience Manager Forms.
+A conta de armazenamento Microsoft Azure é independente da licença Experience Manager Forms Cloud Service.
 
-**As APIs de comunicação armazenam dados nos servidores Experience Manager Forms Cloud Service?**
+**As APIs de Comunicação armazenam dados nos servidores Experience Manager Forms Cloud Service?**
 
-Os dados de entrada e saída são salvos somente no Armazenamento do Microsoft Azure.
+Os dados de entrada e saída são salvos somente no Microsoft Azure Storage.
 
 **As APIs de comunicação estão disponíveis apenas para o Experience Manager Forms Cloud Service? É possível obter funcionalidade semelhante em um ambiente local?**
 
 Você pode usar o serviço AEM Forms Output para combinar um modelo (XFA ou PDF) com os dados do cliente para gerar documentos nos formatos PDF, PS, PCL e ZPL.
 
-Em comparação com o ambiente local, o Cloud Service oferece benefícios adicionais de dimensionamento automático e economia.
+Em comparação com o ambiente local, a Cloud Service oferece benefícios adicionais de dimensionamento automático e economia.
 
 <!--**Where is data processed?**
 
@@ -208,8 +209,8 @@ Sim, você pode executar várias operações em lote simultaneamente. Sempre use
 
 >[!MORELIKETHIS]
 >
->* [Introdução às Comunicações as a Cloud Service do AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Introdução às Comunicações do AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitetura do AEM Forms as a Cloud Service para APIs de comunicação e Forms adaptável](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Processamento da comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

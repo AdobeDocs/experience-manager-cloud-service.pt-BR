@@ -3,10 +3,11 @@ title: Como salvar o formulário adaptável baseado em Componentes principais co
 description: Saiba como salvar os Componentes principais com base no Formulário adaptável como um rascunho. Também entende como usar o componente Rascunhos e envios para listar rascunhos e envios para usuários conectados?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 role: User, Developer
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1357'
 ht-degree: 1%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 1%
 
 # Salvar formulários como rascunhos e listá-los na página Sites
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 Considere um usuário que começa a preencher um formulário, mas precisa pausar e retornar posteriormente. O AEM oferece uma opção `save-as-draft`, permitindo que o usuário salve o formulário como rascunho para conclusão futura. Para facilitar isso, o AEM fornece o componente de **Rascunhos e envios** do Forms Portal pronto para uso, que exibe rascunhos e envios em páginas do AEM Sites. O componente lista formulários que foram salvos como rascunhos para conclusão posterior, bem como aqueles que foram enviados. Somente os usuários conectados podem editar os rascunhos ou exibir os formulários enviados. No entanto, se um usuário anônimo navegar pela lista de formulários usando o componente **Pesquisa e Listagem** e salvar um formulário como rascunho, ele não será listado pelo componente **Rascunhos e Envios**. Para visualizar rascunhos e envios, os usuários devem estar conectados no momento do envio do formulário.
 
@@ -22,13 +23,13 @@ Considere um usuário que começa a preencher um formulário, mas precisa pausar
 
 ## Pré-requisitos
 
-* [Configurar o Armazenamento do Azure e o Conector de Armazenamento Unificado para Rascunhos e Envios do componente do Portal da Forms](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
+* [Configurar o Azure Storage Connector e o Unified Storage Connector para rascunhos e envios do componente do Forms Portal](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component)
 
-### Configurar o Azure Storage e o Conector de armazenamento unificado para rascunhos e envios do componente do Portal da Forms
+### Configurar o Azure Storage e o Unified Storage Connector para rascunhos e envios do componente do Forms Portal
 
-O componente **Rascunhos e Envios** precisa de uma configuração de armazenamento para salvar e listar rascunhos na página do AEM Sites. O Conector de armazenamento unificado oferece uma estrutura para vincular o AEM ao armazenamento externo. Para salvar o formulário como rascunho, verifique se você tem uma conta de armazenamento do Azure e uma chave de acesso para autorizar o acesso à conta de armazenamento [!DNL Azure]. Depois de ter a conta de armazenamento do Azure e a chave de acesso, execute as seguintes etapas para criar uma configuração de Armazenamento do Azure:
+O componente **Rascunhos e Envios** precisa de uma configuração de armazenamento para salvar e listar rascunhos na página do AEM Sites. O Conector de armazenamento unificado oferece uma estrutura para vincular o AEM ao armazenamento externo. Para salvar o formulário como rascunho, verifique se você tem uma conta de armazenamento do Azure e uma chave de acesso para autorizar o acesso à conta de armazenamento [!DNL Azure]. Depois de ter a conta de armazenamento do Azure e a chave de acesso, execute as seguintes etapas para criar uma configuração do Azure Storage:
 
-1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços de Nuvem]** > **[!UICONTROL Armazenamento do Azure]**.
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços na Nuvem]** > **[!UICONTROL Armazenamento do Azure]**.
 
    ![Seleção de Cartão de Armazenamento do Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
 
@@ -37,7 +38,7 @@ O componente **Rascunhos e Envios** precisa de uma configuração de armazenamen
    ![Selecionar pasta de configuração de armazenamento do Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. Especifique um título para a configuração no campo **[!UICONTROL Título]**.
-1. Especifique o nome da conta de armazenamento [!DNL Azure] nos campos **[!UICONTROL Conta de Armazenamento do Azure]** e **[!UICONTROL Chave de Acesso do Azure]**.
+1. Especifique o nome da conta de armazenamento [!DNL Azure] nos campos **[!UICONTROL Conta de Armazenamento da Azure]** e **[!UICONTROL Chave de Acesso da Azure]**.
 
    ![Configuração de Armazenamento do Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
@@ -47,9 +48,9 @@ O componente **Rascunhos e Envios** precisa de uma configuração de armazenamen
 
    >[!NOTE]
    >
-   > Você pode recuperar a **[!UICONTROL Conta de Armazenamento do Azure]** e a **[!UICONTROL Chave de Acesso do Azure]** no [Portal do Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+   > Você pode recuperar a **[!UICONTROL Conta de Armazenamento do Azure]** e a **[!UICONTROL Chave de Acesso do Azure]** do [Portal Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
 
-   Depois de criar com êxito a Configuração de Armazenamento do Azure, configure o Conector de Armazenamento Unificado para o Forms Portal, usando as seguintes etapas:
+   Depois de criar com êxito a Configuração de armazenamento do Azure, configure o Conector de armazenamento unificado para o Forms Portal, usando as seguintes etapas:
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Conector de Armazenamento Unificado]**.
 
@@ -64,9 +65,9 @@ O componente **Rascunhos e Envios** precisa de uma configuração de armazenamen
 
 >[!NOTE]
 >
-> Se você precisar configurar uma opção de armazenamento diferente do Azure, escreva para <aem-forms-ea@adobe.com> a partir do seu endereço de email oficial com os seus requisitos detalhados.
+> Se você precisar configurar uma opção de armazenamento diferente do Azure, grave no <aem-forms-ea@adobe.com> por meio de seu endereço de email oficial, com os requisitos detalhados.
 
-Depois de configurar com êxito o Armazenamento do Azure e o Conector de Armazenamento Unificado para armazenar os rascunhos e formulários enviados, adicione o componente **Rascunhos e envios** na página AEM Sites.
+Depois de configurar com êxito o Azure Storage and Unified Storage Connector para armazenar os rascunhos e formulários enviados, adicione o componente **Rascunhos e envios** na página do AEM Sites.
 
 ## Como adicionar o componente Rascunhos e envios a uma página do AEM Sites?
 

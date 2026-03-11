@@ -4,10 +4,11 @@ description: O artigo descreve vários casos de uso para uma função personaliz
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2190'
 ht-degree: 0%
 
 ---

@@ -3,13 +3,14 @@ title: Como personalizar a aparência de formulários adaptáveis?
 description: Use a estrutura LESS para o Adaptive Forms para personalizar a aparência do Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: efe59f3c-ca69-4bb5-a3ab-e7d8ea3c768e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2313'
 ht-degree: 3%
 
 ---
-
 
 # Construtores de estilo para o Adaptive Forms{#styling-constructs-for-adaptive-forms}
 
@@ -19,7 +20,7 @@ Conhecimento de CSS e da estrutura LESS.
 
 ## O que pode ser personalizado {#what-can-be-customized}
 
-O artigo lista as classes css disponíveis publicamente do Adaptive Forms. Você pode usar essas classes para estilizar vários componentes de um Formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está fora do escopo deste artigo. Use estas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando o [editor de temas](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/themes.html).
+O artigo lista as classes css disponíveis publicamente do Adaptive Forms. Você pode usar essas classes para estilizar vários componentes de um Formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está fora do escopo deste artigo. Use estas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando o [editor de temas](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalização de estilos no Adaptive Forms {#customizing-styles-in-adaptive-forms}
 
@@ -40,10 +41,10 @@ Com base na inicialização, o seguinte conjunto de propriedades CSS define o te
 
 * Cor do plano de fundo
 * Borda (tipo, cor, espessura)
-* Cor da Fonte
+* Cor da fonte
 * Preenchimento
 * Margem
-* Tamanho da Fonte
+* Tamanho da fonte
 * AlturaDaLinha
 
 Atualmente, as variáveis LESS são definidas apenas para essas propriedades dos vários elementos em um Formulário adaptável.
@@ -134,7 +135,7 @@ Os campos incluem rótulos, widgets, descrição da Ajuda (descrição longa e c
 
 ## Estilo do rótulo {#label-styling}
 
-O elemento HTML **rótulo** usado para o campo inclui as classes **left** ou **top**, dependendo se o rótulo está na parte superior ou à esquerda.
+O elemento de HTML **label** usado para o campo inclui as classes **left** ou **top**, dependendo se o rótulo está na parte superior ou à esquerda.
 
 <table>
  <tbody>
@@ -178,7 +179,7 @@ As regras de CSS para o rótulo são aplicadas usando o rótulo **guideFieldLabe
 
 ## Estilo dos widgets {#widgets-styling}
 
-Dependendo do tipo, os widgets também incluem classes. Geralmente, os widgets incluem a classe `guideFieldWidget`. Os widgets enviados com o HTML normalmente usam a entrada de elemento de HTML padrão e selecionam. O estilo é feito de acordo. Não é possível estilizar um widget personalizado alterando as variáveis.
+Dependendo do tipo, os widgets também incluem classes. Geralmente, os widgets incluem a classe `guideFieldWidget`. Os widgets enviados com o HTML normalmente usam a entrada de elemento padrão do HTML e selecionam. O estilo é feito de acordo. Não é possível estilizar um widget personalizado alterando as variáveis.
 
 <table>
  <tbody>
@@ -527,7 +528,7 @@ Você pode alterar o tema de cores das linhas de cabeçalho e corpo em uma tabel
  </tbody>
 </table>
 
-## Anexo de arquivo {#file-attachment}
+## Arquivo em anexo {#file-attachment}
 
 O widget Anexo de arquivo do Adaptive Forms permite fazer upload de arquivos. Você também pode personalizar o widget usando as variáveis.
 
@@ -555,7 +556,7 @@ O widget Anexo de arquivo do Adaptive Forms permite fazer upload de arquivos. Vo
   </tr>
   <tr>
    <td><p><code>filePreviewIconColor</code></p> </td>
-   <td><p>Cor do ícone de Visualização (ícone Bootstrap) no widget</p> </td>
+   <td><p>Cor do ícone Visualizar (ícone Bootstrap) no widget</p> </td>
   </tr>
   <tr>
    <td><p><code>fileItemCommentHeight</code></p> </td>
@@ -593,7 +594,7 @@ Há quatro tipos de guias do navegador. Isso inclui guias à esquerda, na parte 
  </tbody>
 </table>
 
-O código de HTML a seguir para o elemento tab navigator é (semelhante às guias de inicialização):
+O código HTML a seguir para o elemento do navegador de guias é (semelhante às guias de inicialização ):
 
 `<li>`
 
@@ -1124,4 +1125,3 @@ O tema de **Inscrição simples** em /etc/clientlibs/fd/af/guidetheme/simpleEnro
   </tr>
  </tbody>
 </table>
-

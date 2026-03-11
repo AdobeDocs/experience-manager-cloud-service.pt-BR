@@ -5,12 +5,13 @@ contentOwner: robhagat
 content-type: reference
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '661'
 ht-degree: 4%
 
 ---
@@ -28,7 +29,7 @@ Execute as seguintes etapas para configurar registros do lado do servidor:
 
 1. Ir para `https://'[server]:[port]'/system/console/configMgr`. Localize e abra a opção *Configuração do log do Apace Sling*. Uma caixa de diálogo é exibida:
 
-   ![&#x200B; Caixa de diálogo de opção de configuração do agente de log do Apace Sling &#x200B;](assets/logconfig.png)
+   ![ Caixa de diálogo de opção de configuração do agente de log do Apace Sling ](assets/logconfig.png)
 
    Opção de configuração do logger de log do Apace Sling
 

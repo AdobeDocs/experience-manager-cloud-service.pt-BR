@@ -2,11 +2,12 @@
 title: Como podemos traduzir um Formulário adaptável baseado em Componentes principais?
 description: Saiba como criar um Modelo de dados de formulário (FDM) no AEM Forms, testar o modelo com dados e serviços de amostra e configurar várias opções para um modelo.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '891'
 ht-degree: 4%
 
 ---

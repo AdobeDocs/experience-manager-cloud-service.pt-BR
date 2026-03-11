@@ -4,10 +4,11 @@ description: Saiba como integrar sua instância do Marketo Engage ao AEM Forms u
 keywords: Como conectar uma instância do Marketo com o formulário? , Conectar um formulário ao Marketo, Integrar um formulário ao Marketo Engage, Integrar um formulário adaptável a uma instância do Marketo.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1054'
 ht-degree: 4%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 4%
 
 ![Fluxo de trabalho](/help/forms/assets/workflow-marketo-4.png)
 
-Depois de criar a configuração do serviço de nuvem para integrar o Marketo Engage com o AEM Forms, você pode configurar um Formulário adaptável para integrar com o [Adobe Marketo Engage](https://experienceleague.adobe.com/pt-br/docs/marketo/using/home).
+Depois de criar a configuração do serviço de nuvem para integrar o Marketo Engage com o AEM Forms, você pode configurar um Formulário adaptável para integrar com o [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home).
 
 É possível conectar o Marketo Engage a um formulário adaptável usando o assistente de formulários, que simplifica o processo de configuração orientando você em cada etapa. Ele inclui a seleção de modelos, estilos e campos de dados, bem como a configuração do mapeamento de dados para garantir que o formulário esteja pronto para se comunicar com o Marketo Engage após a criação. Usando o assistente de formulário, você também pode configurar o Formulário adaptável para enviar dados diretamente para o Adobe Marketo Engage no envio.
 
@@ -174,7 +175,7 @@ O Formulário adaptável agora está configurado para se conectar com a instânc
 
 ## Próxima etapa
 
-Você também pode conectar um Formulário adaptável à [biblioteca do Munchkin](https://experienceleague.adobe.com/pt-br/docs/marketo/using/product-docs/administration/setup/munchkin) para rastrear o número de visitas, cliques e envios de formulários.
+Você também pode conectar um Formulário adaptável à [biblioteca do Munchkin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin) para rastrear o número de visitas, cliques e envios de formulários.
 
 ## Artigos relacionados
 

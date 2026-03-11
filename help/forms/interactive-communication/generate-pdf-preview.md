@@ -4,10 +4,11 @@ description: Visualização do PDF no Editor de comunicação interativa com dif
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -46,7 +47,7 @@ Visualize comunicações interativas sem dados, dados locais ou dados de amostra
 
 +++&#x200B;2. Visualizar com dados JSON locais
 
-2.1. Prepare um arquivo JSON estruturado. Para referência, você pode copiar os dados de amostra do esquema JSON [(FDM)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) usado para a comunicação.
+2.1. Prepare um arquivo JSON estruturado. Para referência, você pode copiar os dados de amostra do esquema JSON [(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model) usado para a comunicação.
 
 2.2. No Editor IC, vá para **Visualização do PDF** > Usando Dados Locais.
 

@@ -4,10 +4,11 @@ description: Descubra as etapas para configurar o Ponto de extremidade Rest ao e
 keywords: Endpoint REST do AEM Forms, Enviar para endpoint REST, Postar dados no URL REST, Configurar ação de endpoint REST
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1477'
 ht-degree: 1%
 
 ---

@@ -3,11 +3,12 @@ title: Como enviar dados de um formulário adaptável para o Microsoft&reg; OneD
 description: Explore o processo simplificado de conexão do AEM Forms com o Microsoft&reg; OneDrive usando a Ação de envio Enviar para o OneDrive. Saiba mais sobre o guia passo a passo para configurar o OneDrive e definir ações de envio para obter armazenamento e recuperação de dados eficientes
 keywords: Integração do AEM Forms OneDrive, Conectar-se ao Microsoft OneDrive, Configuração do OneDrive com formulários do AEM
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '927'
 ht-degree: 1%
 
 ---
@@ -48,10 +49,10 @@ Para conectar o AEM Forms ao seu Microsoft® OneDrive Storage:
    ![Tela de Configuração do OneDrive](/help/forms/assets/onedrive-configuration.png)
 
 1. Especifique o **[!UICONTROL Título]**, **[!UICONTROL ID do Cliente]**, **[!UICONTROL Segredo do Cliente]** e **[!UICONTROL URL do OAuth]**. Para obter informações sobre como recuperar a ID do cliente, o Segredo do cliente e a ID do locatário para a URL do OAuth, consulte a [Documentação da Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * Você pode recuperar os `Client ID` e `Client Secret` de seu aplicativo do portal do Microsoft® Azure.
-   * No portal do Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Substitua `[author-instance]` pela URL da sua instância de Autor.
+   * Você pode recuperar os `Client ID` e `Client Secret` do seu aplicativo no portal Microsoft® Azure.
+   * No portal Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Substitua `[author-instance]` pela URL da sua instância de Autor.
    * Adicione as permissões de API `offline_access` e `Files.ReadWrite.All` para fornecer permissões de leitura/gravação.
-   * Usar URL do OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal do Microsoft® Azure.
+   * Usar URL do OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal Microsoft® Azure.
 
    >[!NOTE]
    >
@@ -120,7 +121,7 @@ A caixa de diálogo **Propriedades do Formulário** é exibida.
    > * Consulte o artigo [Destaques dos recursos do Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para saber como habilitar ou desabilitar extensões no Universal Editor.
 1. Clique na guia **Envio** e selecione **[!UICONTROL Enviar para o OneDrive]**.
    ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
-Se você selecionar **Salvar anexos com nome original**, os anexos serão armazenados na pasta usando seus nomes de arquivo originais. Você também pode salvar o Documento de registro (DoR) no Armazenamento de blobs do Azure.
+Se você selecionar **Salvar anexos com nome original**, os anexos serão armazenados na pasta usando seus nomes de arquivo originais. Você também pode salvar o Documento de registro (DoR) no Armazenamento de blobs da Azure.
 1. Selecione a **[!UICONTROL Configuração de Armazenamento]**, onde você deseja salvar seus dados.
 1. Clique em **[!UICONTROL Salvar&amp;Fechar]**
 

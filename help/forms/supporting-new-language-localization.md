@@ -2,11 +2,12 @@
 title: Como adicionar suporte para novos locais a um formulário adaptável baseado em componentes de base?
 description: Para o Adaptive Forms, você pode adicionar localidades para mais idiomas, além do fornecido imediatamente.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -15,12 +16,12 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
+> A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
 | Componentes principais | [Clique aqui](supporting-new-language-localization-core-components.md) |
 | Componentes de fundação | Este artigo |
 
@@ -53,14 +54,14 @@ Para adicionar suporte para um novo local no tempo de execução do Adaptive For
 1. [Adicionar suporte de localidade para o dicionário](#add-locale-support-for-the-dictionary)
 1. [Confirmar as alterações no repositório e implantar o pipeline](#commit-changes-in-repo-deploy-pipeline)
 
-#### 1. Clonar o repositório {#clone-the-repository}
+#### &#x200B;1. Clonar o repositório {#clone-the-repository}
 
-1. Na linha de comando, navegue até o local em que deseja clonar o repositório Cloud Service do Forms.
-1. Execute o comando que você [recuperou do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git). É semelhante a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Na linha de comando, navegue até o local em que deseja clonar o repositório do Forms Cloud Service.
+1. Execute o comando que você [recuperou do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git). É semelhante a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Use o nome de usuário e a senha do Git para clonar o repositório.
-1. Abra a pasta clonada do repositório de Cloud Service do Forms no editor de sua preferência.
+1. Abra a pasta clonada do repositório do Forms Cloud Service no editor de sua preferência.
 
-#### 2. Adicionar um local ao serviço de Localização do Guia {#add-a-locale-to-the-guide-localization-service}
+#### &#x200B;2. Adicionar um local ao serviço de Localização do Guia {#add-a-locale-to-the-guide-localization-service}
 
 1. Localize o arquivo `Guide Localization Service.cfg.json` e adicione a localidade que você deseja adicionar à lista de localidades com suporte.
 
@@ -68,7 +69,7 @@ Para adicionar suporte para um novo local no tempo de execução do Adaptive For
    >
    > Crie um arquivo com o nome como arquivo `Guide Localization Service.cfg.json`, se já não estiver presente.
 
-#### 3. Adicionar biblioteca de cliente de pasta específica de nome de localidade {#add-locale-name-specific-folder}
+#### &#x200B;3. Adicionar biblioteca de cliente de pasta específica de nome de localidade {#add-locale-name-specific-folder}
 
 1. Na pasta UI.content, crie a pasta `etc/clientlibs`.
 1. Além disso, crie uma pasta chamada `locale-name` em `etc/clientlibs` para servir como contêiner para clientlibs xfa e af.
@@ -98,7 +99,7 @@ I18N.js
      LogMessages.js
    ```
 
-#### 4. Adicionar suporte local ao dicionário {#add-locale-support-for-the-dictionary}
+#### &#x200B;4. Adicionar suporte local ao dicionário {#add-locale-support-for-the-dictionary}
 
 Execute esta etapa somente se o `<locale>` que você está adicionando não estiver entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -115,12 +116,12 @@ Execute esta etapa somente se o `<locale>` que você está adicionando não esti
    <filter root="/etc/languages"/>
    ```
 
-Antes de confirmar as alterações no repositório Git AEM, é necessário acessar as [informações do repositório Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git).
+Antes de confirmar as alterações no repositório Git do AEM, é necessário acessar as [informações do repositório Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 
-#### 5. Confirme as alterações no repositório e implante o pipeline {#commit-changes-in-repo-deploy-pipeline}
+#### &#x200B;5. Confirme as alterações no repositório e implante o pipeline {#commit-changes-in-repo-deploy-pipeline}
 
-Confirme as alterações no repositório GIT após adicionar um suporte de localidade. Implante seu código usando o pipeline de pilha completa. Saiba [como configurar um pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline) para adicionar um novo suporte de localidade.
-Quando o pipeline estiver concluído, o local recém-adicionado aparecerá no ambiente AEM.
+Confirme as alterações no repositório GIT após adicionar um suporte de localidade. Implante seu código usando o pipeline de pilha completa. Saiba [como configurar um pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) para adicionar um novo suporte de localidade.
+Quando o pipeline estiver concluído, o local recém-adicionado aparecerá no ambiente do AEM.
 
 ### Usar local adicionado no Adaptive Forms {#use-added-locale-in-af}
 
@@ -158,7 +159,7 @@ Obtenha uma [biblioteca de exemplo de cliente](/help/forms/assets/locale-support
 
 ## Práticas recomendadas para oferecer suporte à nova localização {#best-practices}
 
-* O Adobe recomenda criar um projeto de tradução após criar um Formulário adaptável.
+* A Adobe recomenda criar um projeto de tradução após criar um Formulário adaptável.
 
 * Quando novos campos são adicionados em um Formulário adaptável existente:
    * **Para tradução automática**: recrie o dicionário e execute o projeto de tradução. Os campos adicionados a um Formulário adaptável após a criação de um projeto de tradução permanecem não traduzidos.

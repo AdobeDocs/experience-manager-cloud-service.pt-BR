@@ -4,14 +4,16 @@ Description: Learn how to configure an Azure SQL Database connection in AEM Form
 Keywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: e29f70aa1a8164787c7d310a05c24d7e501803e5
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 0%
+source-wordcount: '607'
+ht-degree: 1%
 
 ---
 
-# Conectar um Formulário adaptável ao Armazenamento SQL do Azure
+# Conectar um formulário adaptável ao Azure SQL Storage
 
 O Forms adaptável no Adobe Experience Manager (AEM) pode se integrar a bancos de dados externos para armazenar ou recuperar dados.
 Este artigo descreve como conectar um formulário adaptável a um banco de dados SQL do Azure usando JDBC por meio do AEM as a Cloud Service.
@@ -24,10 +26,10 @@ Este artigo descreve como conectar um formulário adaptável a um banco de dados
 
 A integração do Adaptive Forms com o Azure SQL oferece vários benefícios:
 
-* **Interação de dados em tempo real:** habilita a leitura e gravação ao vivo de dados entre formulários e o banco de dados do Azure.
+* **Interação de dados em tempo real:** permite a leitura e a gravação de dados ao vivo entre formulários e o banco de dados do Azure.
 * **Escalabilidade:** o Azure SQL fornece desempenho de banco de dados escalável adequado para aplicativos de nível empresarial.
 * **Armazenamento de dados centralizado:** Mantém os envios de formulários e os dados recuperados armazenados com segurança em um local central.
-* **Conformidade de segurança:** aproveita as opções de rede, firewall e criptografia integradas do Azure para garantir comunicação segura.
+* **Conformidade com a segurança:** aproveita as opções internas de rede, firewall e criptografia da Azure para garantir uma comunicação segura.
 * **Integração nativa em nuvem:** ideal para arquiteturas modernas e inovadoras que usam o AEM as a Cloud Service.
 
 ## Pré-requisitos
@@ -40,7 +42,7 @@ A integração do Adaptive Forms com o Azure SQL oferece vários benefícios:
 
   ![Criar Azure Db](/help/forms/assets/create-azure-db.png)
 
-* Habilitar a rede avançada [configurada usando um IP de saída dedicado](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) para o banco de dados do Azure criado.
+* Habilitar a rede [Avançada configurada usando um IP de saída dedicado](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) para o banco de dados Azure criado.
 
   >[!NOTE]
   >
@@ -50,7 +52,7 @@ A integração do Adaptive Forms com o Azure SQL oferece vários benefícios:
 
 * Defina o encaminhamento de portas no ambiente de nuvem com:
    * **portOrigin**: Entre `30000–30999`
-   * **portDest**: `1433` (porta padrão para o SQL do Azure)
+   * **portDest**: `1433` (porta padrão para Azure SQL)
 Por exemplo: `portOrigin: 30433 → portDest: 1433`
 
      >
@@ -72,7 +74,7 @@ Por exemplo: `portOrigin: 30433 → portDest: 1433`
 
    **Onde encontrar essas informações?**
 
-   Para obter as instruções passo a passo sobre como localizar esses detalhes, consulte o artigo &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git)&quot; da Adobe Experience League.
+   Para obter as instruções passo a passo sobre como localizar esses detalhes, consulte o artigo &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot; da Adobe Experience League.
 
    Quando o comando for concluído com sucesso, você verá uma nova pasta criada no diretório local. Esta pasta é nomeada em homenagem ao seu aplicativo.
 
@@ -84,7 +86,7 @@ Inclua a [dependência de driver SQL](https://central.sonatype.com/artifact/com.
 
 >[!NOTE]
 >
-> Para incluir a dependência SQL em seu projeto, consulte a seção [Dependências do driver SQL](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
+> Para incluir a dependência SQL em seu projeto, consulte a seção [Dependências do driver SQL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies).
 
 **Etapa 3: Adicionar configuração JDBC**
 
@@ -94,7 +96,7 @@ Inclua a [dependência de driver SQL](https://central.sonatype.com/artifact/com.
    cd ui.config/src/jcr_root/apps/<application folder>/osgiconfig/config/
    ```
 
-**Etapa 4: Criar o Arquivo de Configuração de Conexão SQL do Azure**
+**Etapa 4: Criar o Arquivo de Configuração de Conexão do Azure SQL**
 
 1. Crie o arquivo:
 
@@ -136,7 +138,7 @@ git push
 
 **Etapa 7: Criar um Modelo de Dados de Formulário (FDM)**
 
-Quando a configuração do AEM e do Azure for concluída e as alterações no código forem implantadas:
+Quando a configuração do AEM e do Azure estiver concluída e as alterações de código forem implantadas:
 
 1. Vá para a instância do autor do AEM.
 1. Navegue até **Ferramentas** > **Forms** > **Integrações de Dados**.
@@ -157,7 +159,7 @@ Quando a configuração do AEM e do Azure for concluída e as alterações no c�
 * Use o **gerenciamento de segredos** para evitar a codificação rígida de senhas em arquivos de configuração.
 * Roteie regularmente as credenciais do banco de dados e atualize a configuração com segurança.
 * Monitore logs de conectividade JDBC em busca de falhas e latência.
-* Siga as práticas recomendadas do Azure para proteger bancos de dados SQL e configurações de firewall.
+* Siga as práticas recomendadas da Azure para proteger bancos de dados SQL e configurações de firewall.
 * Evite usar contas de banco de dados de alto privilégio para acessar formulários.
 
 ## Artigos relacionados

@@ -4,13 +4,14 @@ description: Saiba como criar o Modelo de dados de formulário (FDM) com base na
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: true
 hidefromtoc: true
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 2%
+source-wordcount: '1018'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM as a Cloud Service | Este artigo |
 
 ![integração de dados](assets/data-integeration.png)
@@ -36,7 +37,7 @@ O [!DNL Microsoft Dynamics] é um software de CRM (relacionamento com o cliente)
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  O MS Dynamics OData Cloud Service (Serviço OData) está disponível com todos os modos de execução. Para obter mais informações sobre como configurar os modos de execução para uma instância [!DNL Experience Manager], consulte [Modos de Execução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  O MS Dynamics OData Cloud Service (Serviço OData) está disponível com todos os modos de execução. Para obter mais informações sobre como configurar os modos de execução para uma instância [!DNL Experience Manager], consulte [Modos de Execução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#runmodes).
 
 O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções no artigo [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md).
 
@@ -65,7 +66,7 @@ Faça o seguinte para definir a URL de resposta para o aplicativo [!DNL Microsof
 
    `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
-   ![Diretório do Azure](assets/azure_directory_new.png)
+   ![Diretório Azure](assets/azure_directory_new.png)
 
 1. Salve a configuração.
 
@@ -105,7 +106,6 @@ Faça o seguinte para registrar um cliente OAuth em um computador do Ative Diret
 
    * `Client-ID` é uma ID de cliente que você pode gerar usando qualquer gerador de GUID.
    * `redirect-uri` é a URL para o serviço de nuvem OData [!DNL Microsoft Dynamics] em [!DNL Experience Manager Forms]. O serviço de nuvem padrão instalado com o [!DNL Experience Manager Forms] é implantado na seguinte URL:
-
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Execute o seguinte comando para conceder acesso à máquina do AD FS:

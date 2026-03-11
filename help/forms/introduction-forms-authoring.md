@@ -1,15 +1,13 @@
 ---
 title: Introdução à criação do Forms adaptável
 description: O AEM Forms fornece uma interface fácil de usar, mas eficiente para a criação do Forms adaptável. Ele fornece vários componentes e ferramentas que podem ser usadas para criar formulários.
-content-type: reference
-topic-tags: author, introduction
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8e57406d97b3019a3c3530390d1fd52c836fcdeb
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2502'
 ht-degree: 89%
 
 ---
@@ -22,7 +20,7 @@ ht-degree: 89%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service | Este artigo |
 
 ## Visão geral {#overview}
@@ -36,7 +34,7 @@ Formulários adaptáveis fornecem uma experiência envolvente, responsiva, dinâ
 Esse é um modelo de formulário ideal se você tiver investido em formulários baseados em XFA ou XDP. Ele fornece uma maneira direta de converter formulários baseados em XFA em formulários adaptáveis. Quaisquer regras de XFA existentes são retidas nos formulários adaptáveis associados. O formulário adaptável resultante oferece suporte a construções em XFA, como validações, eventos, propriedades e padrões.
 
 * **Usar uma definição de esquema XML (XSD) ou um esquema JSON**
-Os esquemas XML e JSON representam a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na sua organização. Você pode associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estarão disponíveis para uso na guia Objetos do modelo de dados do navegador de conteúdo ao criar formulários adaptáveis.
+Os esquemas XML e JSON representam a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na sua organização. Você pode associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estarão disponíveis para uso na guia Objetos de modelo de dados do navegador de conteúdo ao criar formulários adaptáveis.
 
 * **Não usar nenhum modelo de formulário**
 Os formulários adaptáveis criados com essa opção não usam nenhum modelo de formulário. O XML de dados gerado desses formulários tem uma estrutura simples com campos e valores correspondentes.
@@ -91,7 +89,7 @@ No navegador de conteúdo, é possível ver:
    * **Objetos de formulário**
 Mostra a hierarquia de objetos do formulário. O autor pode navegar até um componente de formulário específico selecionando esse elemento na Árvore de objetos de formulário. O autor pode pesquisar objetos e reorganizá-los a partir dessa árvore.
 
-   * **Objetos do modelo de dados**
+   * **Objetos de modelo de dados**
 Permite ver a hierarquia do modelo de formulário.
 Ela permite arrastar e soltar elementos do modelo de formulário no Formulário adaptável. Os elementos adicionados são convertidos automaticamente em componentes de formulário, mantendo suas propriedades originais. É possível ver objetos de modelo de dados quando o formulário usa esquema XML, esquema JSON ou modelo XDP.
 
@@ -157,7 +155,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no Formulário 
   </tr>
   <tr>
    <td>Email</td>
-   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Anexo de arquivo</td>

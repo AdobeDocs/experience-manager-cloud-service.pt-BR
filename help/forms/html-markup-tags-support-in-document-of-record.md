@@ -3,11 +3,12 @@ title: Tags de marcação do HTML compatíveis no Submission PDF (antigo Documen
 description: Guia de referência para tags de marcação do HTML compatíveis ao gerar um PDF de envio (antigo Documento de registro), incluindo considerações sobre comportamento de renderização e acessibilidade.
 feature: Adaptive Forms
 role: Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 5%
+source-wordcount: '460'
+ht-degree: 6%
 
 ---
 

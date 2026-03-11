@@ -3,13 +3,14 @@ title: O que é o componente separador no Adaptive Forms?
 description: O componente Separador no Adaptive Forms ajuda a segregar visualmente as seções de um formulário.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: 1b7857f9-b201-43ca-870d-42a09c441d9a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 1%
+source-wordcount: '319'
+ht-degree: 2%
 
 ---
-
 
 # Componente separador no Adaptive Forms{#separator-component-in-adaptive-forms}
 
@@ -35,4 +36,3 @@ Para especificar as propriedades de um componente separador:
 1. Siga uma das seguintes opções:
    * Confirme as alterações clicando em **OK**
    * Saia da caixa de diálogo sem nenhuma alteração clicando em **Cancelar**.
-

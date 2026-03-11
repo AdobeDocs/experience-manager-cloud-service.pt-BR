@@ -5,13 +5,14 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '767'
 ht-degree: 3%
 
 ---
-
 
 # Criar a primeira comunicação interativa
 
@@ -54,7 +55,7 @@ A anatomia inclui dados com os seguintes modos de entrada:
 
 ## Etapa 2: Criar modelo de dados de formulário
 
-Um modelo de dados de formulário permite conectar uma Comunicação interativa a fontes de dados diferentes. Por exemplo, perfil de usuário AEM, serviços Web RESTful, serviços Web baseados em SOAP, serviços OData e bancos de dados relacionais. Um modelo de dados de formulário é um esquema de representação de dados unificada de entidades e serviços comerciais disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com uma Comunicação interativa para recuperar dados de fontes de dados conectadas. Para obter mais informações sobre o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](/help/forms/data-integration.md).
+Um modelo de dados de formulário permite conectar uma Comunicação interativa a fontes de dados diferentes. Por exemplo, o perfil de usuário do AEM, os serviços Web RESTful, os serviços Web baseados no SOAP, os serviços OData e os bancos de dados relacionais. Um modelo de dados de formulário é um esquema de representação de dados unificada de entidades e serviços comerciais disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com uma Comunicação interativa para recuperar dados de fontes de dados conectadas. Para obter mais informações sobre o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](/help/forms/data-integration.md).
 
 ## Etapa 3: Criar fragmentos
 
@@ -70,7 +71,7 @@ O Editor de comunicações interativas fornece vários modelos OOTB. Você pode 
 
 Depois de criar todos os blocos de construção, como modelo de dados de formulário, fragmentos de documento e modelos para a versão da Web, você pode começar a criar uma comunicação interativa. Para começar a criar uma comunicação interativa:
 
-1. Faça logon no ambiente as a Cloud Service do AEM Forms.
+1. Faça logon no ambiente AEM Forms as a Cloud Service.
 1. Acesse Forms > Forms e documentos
 1. Clique em **Criar** e selecione **Documento de comunicação**. Você verá uma tela de configuração para definir as seguintes opções:
 

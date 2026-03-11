@@ -3,10 +3,12 @@ title: Como integrar o Modelo de dados de formulário (FDM) de um formulário co
 description: Saiba como criar formulários com base em um modelo de dados de formulário (FDM). Gere e edite dados de amostra para objetos de modelo de dados no FDM.
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: f08fb365-8750-4b81-9877-c382e7aebba0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 0%
+source-wordcount: '670'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +63,7 @@ Execute as seguintes etapas para configurar o Modelo de dados de formulário com
 Para enviar anexos ao banco de dados, selecione **Enviar anexos de formulário**. O Documento de Registro (DoR) é salvo no banco de dados selecionando **Enviar Documento de Registro**.
 1. Clique em **[!UICONTROL Salvar]** para salvar as configurações de Envio.
 
->[!TAB Editor Universal]
+>[!TAB Universal Editor]
 
 Execute as seguintes etapas para configurar o Modelo de dados de formulário com o Formulário adaptável criado em Universal como:
 
@@ -78,7 +80,7 @@ Execute as seguintes etapas para configurar o Modelo de dados de formulário com
 1. Clique na guia **Envio** e selecione **[!UICONTROL Enviar usando o Modelo de Dados de Formulário]**.
 
    ![OneDrive GIF](/help/forms/assets/submit-uisng-fdm-ue.png)
-Se você selecionar **Salvar anexos com nome original**, os anexos serão armazenados na pasta usando seus nomes de arquivo originais. Você também pode salvar o Documento de registro (DoR) no Armazenamento de blobs do Azure.
+Se você selecionar **Salvar anexos com nome original**, os anexos serão armazenados na pasta usando seus nomes de arquivo originais. Você também pode salvar o Documento de registro (DoR) no Armazenamento de blobs da Azure.
 
 1. Selecione a **[!UICONTROL Configuração de Armazenamento]**, onde você deseja salvar seus dados.
 1. Clique em **[!UICONTROL Salvar&amp;Fechar]**

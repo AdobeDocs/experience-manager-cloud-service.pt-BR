@@ -3,10 +3,11 @@ title: Como configurar o Conector de armazenamento unificado (USC) para AEM Form
 description: Saiba como gerenciar o Conector de armazenamento unificado (USC) para AEM Forms. Use o Conector de armazenamento unificado (USC) para conectar o AEM Forms a armazenamentos de dados externos.
 role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c17e4e70fa8cec176c908983230b03f2899bc1ca
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -15,11 +16,11 @@ ht-degree: 0%
 
 Você pode usar o Conector de armazenamento unificado (USC) para conectar o AEM Forms a armazenamentos de dados externos.
 
-Por exemplo, é possível preencher valores para campos em um formulário adaptável e enviá-lo para um fluxo de trabalho do AEM. Você pode configurar ainda mais os AEM Workflows para armazenar dados em um armazenamento externo, como o servidor de armazenamento do Microsoft Azure. Use o Conector de armazenamento unificado (USC) para criar uma conexão entre os fluxos de trabalho do AEM e o armazenamento externo.
+Por exemplo, é possível preencher valores para campos em um formulário adaptável e enviá-lo para um fluxo de trabalho do AEM. Você pode configurar ainda mais os AEM Workflows para armazenar dados em um armazenamento externo, como o servidor de armazenamento Microsoft Azure. Use o Conector de armazenamento unificado (USC) para criar uma conexão entre os fluxos de trabalho do AEM e o armazenamento externo.
 
-## Conectar os fluxos de trabalho do AEM a um servidor de armazenamento do Microsoft Azure {#connect-workflows-with-azure}
+## Conectar fluxos de trabalho do AEM a um servidor de armazenamento Microsoft Azure {#connect-workflows-with-azure}
 
-Crie uma configuração de armazenamento do Azure e consulte essa configuração usando o Conector de armazenamento unificado (USC). Em seguida, você pode configurar modelos de Fluxo de Trabalho do AEM para externalizar o armazenamento de dados e conectá-los a um servidor de armazenamento do Azure.
+Crie uma configuração de armazenamento do Azure e consulte-a usando o Unified Storage Connector (USC). Em seguida, você pode configurar modelos de fluxo de trabalho do AEM para externalizar o armazenamento de dados e conectá-los a um servidor de armazenamento do Azure.
 
 ### Criar configuração de armazenamento [!DNL Azure] {#create-azure-storage-configuration}
 
@@ -27,10 +28,10 @@ Antes de executar essas etapas, verifique se você tem uma conta de armazenament
 
 Execute as seguintes etapas para criar uma configuração de armazenamento do [!DNL Azure]:
 
-1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços de Nuvem]** > **[!UICONTROL Armazenamento do Azure]**.
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços na Nuvem]** > **[!UICONTROL Armazenamento do Azure]**.
 1. Selecione uma pasta para criar a configuração e selecione **[!UICONTROL Criar]**.
 1. Especifique um título para a configuração no campo **[!UICONTROL Título]**.
-1. Especifique o nome da conta de armazenamento [!DNL Azure] no campo **[!UICONTROL Conta de Armazenamento do Azure]**.
+1. Especifique o nome da conta de armazenamento [!DNL Azure] no campo **[!UICONTROL Conta de Armazenamento da Azure]**.
 1. Especifique a chave para acessar a conta de armazenamento do Azure no campo **[!UICONTROL Chave de Acesso do Azure]** e selecione **[!UICONTROL Salvar]**.
 
 ### Configurar o Conector de armazenamento unificado (USC) para fluxos de trabalho do AEM {#configure-unified-storage-connector-workflows}
@@ -39,7 +40,7 @@ Execute as seguintes etapas para configurar o Conector de armazenamento unificad
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Conector de Armazenamento Unificado]**.
 
-1. Na seção **[!UICONTROL Fluxo de Trabalho]**, selecione **[!UICONTROL Azure]** na lista suspensa Armazenamento.
+1. Na seção **[!UICONTROL Fluxo de trabalho]**, selecione **[!UICONTROL Azure]** na lista suspensa Armazenamento.
 1. Especifique o [caminho de configuração para a configuração de armazenamento do Azure](#create-azure-storage-configuration) no campo **[!UICONTROL Caminho de Configuração de Armazenamento]**.
 1. Selecione **[!UICONTROL Publicar]** e **[!UICONTROL Salvar]** para salvar a configuração.
 

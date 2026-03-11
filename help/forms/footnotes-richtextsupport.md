@@ -2,12 +2,13 @@
 title: Como adicionar uma nota de rodapé a um formulário adaptável?
 description: Use o editor de rich text (RTE) para notas de rodapé em um formulário adaptável.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: a7265b4f8df34efc09076c03d1433f9aae542e76
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 0%
+source-wordcount: '456'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +29,7 @@ As notas de rodapé são numeradas sequencialmente na ordem em que aparecem na p
 * Fornece informações adicionais que podem interromper o fluxo normal das informações principais.
 * Fornece informações entre parênteses ou permissões de copyright.
 
-No Adaptive Forms, a [!UICONTROL nota de rodapé] é usada para exibir as informações sobre como preencher ou usar o formulário. Para obter informações sobre como criar um Forms adaptável, consulte [Criando um Formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=pt-BR).
+No Adaptive Forms, a [!UICONTROL nota de rodapé] é usada para exibir as informações sobre como preencher ou usar o formulário. Para obter informações sobre como criar um Forms adaptável, consulte [Criando um Formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html).
 
 ## Nota de rodapé no Adaptive Forms {#using-footnote-adaptiveforms}
 

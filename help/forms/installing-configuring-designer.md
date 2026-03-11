@@ -1,13 +1,14 @@
 ---
 title: Como baixar e instalar o Forms Designer para criar modelos de documento de registro?
-description: Use o Forms Designer para criar modelos XDP e PDF Form que servem como modelo para um Documento de registro.
+description: Use o Forms Designer para criar modelos de formulário XDP e PDF que servem como modelo para um Documento de registro.
 keywords: Instalação do Designer, Instalação do Forms Designer, Requisitos para instalação do Forms Designer
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '415'
 ht-degree: 7%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 7%
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Este artigo |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/installing-configuring-designer.html) |
 
 O Designer é uma ferramenta de design gráfico de formulário do tipo apontar-e-clicar que simplifica a criação de modelos de formulário XDP e PDF. Você pode criar um modelo de formulário, definir sua lógica e atender a requisitos legislativos rigorosos. Um formulário XDP e PDF servem como um modelo de Documento de registro em um Formulário adaptável. Estes modelos de formulários são diferentes dos [modelos de Formulário adaptável](template-editor.md).
 

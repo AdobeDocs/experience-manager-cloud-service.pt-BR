@@ -4,11 +4,12 @@ description: Os usuários podem visualizar o formulário antes de publicá-lo ou
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 2%
+source-wordcount: '342'
+ht-degree: 3%
 
 ---
 
@@ -33,12 +34,12 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
    <td>PDF preview</td>
   </tr>-->
   <tr>
-   <td>Formulário PDF</td>
-   <td>Visualização e visualização de PDF com dados<br /> </td>
+   <td>Formulário do PDF</td>
+   <td>Visualização e Visualização do PDF com Dados<br /> </td>
   </tr>
   <tr>
    <td>Formulário adaptável</td>
-   <td>Visualização de HTML e visualização de HTML com dados</td>
+   <td>Visualização do HTML e visualização do HTML com dados</td>
   </tr>
   <!--<tr>
    <td>Form Template</td>
@@ -60,10 +61,10 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
    As opções são:
 
    * Visualizar como HTML
-   * Exibir com dados
+   * Visualizar com dados
      <!--* Preview as PDF (available for form templates)-->
 
-## Exibir com dados {#preview-with-data}
+## Visualizar com dados {#preview-with-data}
 
 Ao selecionar **Visualizar com Dados**, você poderá ver como ficará o formulário com os dados reais inseridos. A opção Preview with Data permite fazer upload de um XML que contém dados de usuário de amostra. Os dados do usuário de exemplo são usados para preencher o formulário de visualização no formato escolhido.
 

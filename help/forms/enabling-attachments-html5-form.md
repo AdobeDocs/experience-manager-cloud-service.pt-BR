@@ -5,12 +5,13 @@ content-type: reference
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -29,7 +30,7 @@ Você pode fazer upload, pré-visualizar e enviar anexos com formulários HTML5.
    | multiSelect | verdadeiro ou falso (verdadeiro por padrão) |
    | fileSizeLimit | Número em MBs (2 MB por padrão). Por exemplo, 5. |
    | buttonText | Texto do botão para a janela pop-up (&quot;Anexar&quot; por padrão) |
-   | Aceitar | lista separada por vírgulas de tipos de arquivos a serem aceitos (&quot;audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf&quot; por padrão) |
+   | Aceitar | lista separada por vírgulas de tipos de arquivos a serem aceitos (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; por padrão) |
 
    Por exemplo:
 

@@ -9,13 +9,14 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
-
 
 # Associar revisores de envio a um formulário {#associating-submission-reviewers-with-a-form}
 
@@ -34,7 +35,7 @@ Para associar um grupo de revisores a um formulário, edite o esquema de metadad
 Para editar o esquema de metadados:
 
 1. No modo de autor, em Experience Manager, clique em **Ferramentas** > **Assets** > **Esquemas de Metadados**.
-1. Na página Forms de Esquema, navegue até **Forms** > **Forms AEM Criado no.**
+1. Na página Forms de Esquema, navegue até **Forms** > **Forms Criado no AEM.**
 
    O URL da página é:
 
@@ -60,13 +61,13 @@ Os grupos de usuários permitem associar diferentes conjuntos de revisores de en
 Antes de executar as etapas a seguir, consulte [Pré-requisito](adding-reviewers-form.md#prerequisite).
 
 Para criar um grupo e adicionar membros a ele, navegue até **Ferramentas** > **Operações** > **Segurança** > **Grupos**.
-Para obter mais informações, consulte [Serviços e Administração de Usuários](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=pt-BR).
+Para obter mais informações, consulte [Serviços e Administração de Usuários](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
 Adicione o grupo que você cria como membro do grupo de usuários predefinido: **forms-submit-reviewers**. Este grupo de usuários é fornecido com [!DNL AEM Forms] e garante que os usuários sejam adicionados como revisores de envio.
 
 Para associar grupos de usuários a um Formulário adaptável:
 
 1. No modo de criação, navegue até **Forms** > **Forms e Documentos**.
-1. Use a opção **Selecionar &#x200B;** para selecionar um Formulário adaptável e clique em **Exibir propriedades**.
+1. Use a opção **Selecionar **para selecionar um Formulário adaptável e clique em **Exibir propriedades**.
 1. Na janela Propriedades do formulário, clique em **Editar** e em **AVANÇADO**.
 1. Insira o grupo no campo de grupo de revisores de envio e clique em **Concluído**.
 

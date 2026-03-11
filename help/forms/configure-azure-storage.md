@@ -3,10 +3,11 @@ title: Como configurar o armazenamento do Azure?
 description: Saiba como integrar formulários ao servidor de armazenamento do Azure.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -27,13 +28,13 @@ A [[!DNL Experience Manager Forms] Integração de Dados](data-integration.md) f
 
 Antes de executar essas etapas, verifique se você tem uma conta de armazenamento [!DNL Azure] e uma chave de acesso para autorizar o acesso à conta de armazenamento [!DNL Azure].
 
-1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Armazenamento do Azure]**.
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços na Nuvem]** > **[!UICONTROL Armazenamento do Azure]**.
 1. Selecione uma pasta para criar a configuração e selecione **[!UICONTROL Criar]**.
 1. Especifique um título para a configuração no campo **[!UICONTROL Título]**.
-1. Especifique o nome da conta de armazenamento [!DNL Azure] no campo **[!UICONTROL Conta de Armazenamento do Azure]**.
+1. Especifique o nome da conta de armazenamento [!DNL Azure] no campo **[!UICONTROL Conta de Armazenamento da Azure]**.
 1. Especifique a chave para acessar a conta de armazenamento do Azure no campo **[!UICONTROL Chave de Acesso do Azure]** e selecione **[!UICONTROL Salvar]**.
 
-## Criar modelo de dados do formulário {#create-azure-form-data-model}
+## Criar modelo de dados de formulário {#create-azure-form-data-model}
 
 Depois de criar a configuração de armazenamento [!DNL Azure], você pode [criar o Modelo de Dados de Formulário](create-form-data-models.md). Especifique a pasta que contém a configuração [!DNL Azure] no campo **[!UICONTROL Configuração do Data Source]** ao criar o Modelo de Dados de Formulário (FDM). Em seguida, você pode selecionar a configuração na lista de configurações que existem no nome da pasta especificada.
 
@@ -61,14 +62,14 @@ Para adicionar serviços do [!DNL Azure]:
      </tr>
      <tr>
       <td>Obter Blob do Azure</td>
-      <td>Recuperar dados armazenados como um Blob no armazenamento do Azure usando uma ID ou um nome</td>
+      <td>Recupere dados armazenados como um Blob no armazenamento do Azure usando uma ID ou um nome</td>
      </tr>
      <tr>
       <td>Obter Blob com URL de binários do Azure</td>
       <td>Recupere dados armazenados como um Blob com URL para binários no armazenamento do Azure usando uma ID ou um nome</td>
      </tr>
      <tr>
-      <td>Salvar Blob no Azure</td>
+      <td>Salvar blob no Azure</td>
       <td>Use uma ID de blob para salvar dados no armazenamento do Azure</td>
      </tr>
      <tr>
@@ -84,7 +85,7 @@ Para adicionar serviços do [!DNL Azure]:
       <td>Recupere URLs SAS para Blobs do Azure com base nas IDs de Blob na solicitação de entrada.</td>
      </tr>
      <tr>
-      <td>Excluir Blob do Azure</td>
+      <td>Excluir blob do Azure</td>
       <td>Usar uma ID de blob para excluir dados do armazenamento do Azure</td>
      </tr>
     </tbody>
@@ -102,7 +103,7 @@ Depois de definir as propriedades do objeto de modelo de dados como chaves de pe
 
 >[!NOTE]
 >
->Somente 10 chaves de pesquisa são permitidas por entidade do Azure, pois o Azure permite apenas 10 tags por Blob, e o valor de propriedades marcado como chaves de pesquisa é armazenado nas tags de índice do Azure após o hash.
+>Somente 10 chaves de pesquisa são permitidas por entidade Azure, pois o Azure permite apenas 10 tags por Blob e o valor de propriedades marcadas como chaves de pesquisa é armazenado nas tags de índice Azure após o hash.
 
 <!--
 

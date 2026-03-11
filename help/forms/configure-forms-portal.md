@@ -2,11 +2,12 @@
 title: Como criar um Portal do Forms em uma página do Experience Manager Sites?
 description: Saiba como criar um Portal do Forms e usar os Componentes principais prontos para uso em uma página do AEM Sites.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '365'
 ht-degree: 4%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
 | AEM as a Cloud Service (Componentes principais) | Este artigo |
 
 O Forms Portal fornece uma maneira eficiente de exibir e listar o Adaptive Forms em uma página do AEM Sites. É útil para organizações que exigem uma plataforma apresentarem sistematicamente vários formulários aos usuários.

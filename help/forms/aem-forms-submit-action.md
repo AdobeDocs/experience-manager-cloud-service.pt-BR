@@ -3,13 +3,14 @@ title: Como configurar uma ação enviar para um formulário adaptável?
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias ações.
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 7%
+source-wordcount: '673'
+ht-degree: 8%
 
 ---
-
 
 # Enviar ações compatíveis com o Adaptive Forms
 
@@ -49,7 +50,7 @@ Também é possível enviar um Formulário adaptável para outras configuraçõe
 
 A tabela abaixo mostra quais ações de envio são compatíveis com base no método de criação de formulário usado no AEM Forms:
 
-| Ação de envio | [Componentes de base](/help/forms/configuring-submit-actions.md) | [Componentes principais](/help/forms/configure-submit-actions-core-components.md) | [Editor Universal](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [Forms baseado em documento](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
+| Ação de envio | [Componentes de base](/help/forms/configuring-submit-actions.md) | [Componentes principais](/help/forms/configure-submit-actions-core-components.md) | [Universal Editor](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [Forms baseado em documento](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
 |----------------------------|------------------------|------------------|------------------|------------------------|
 | Enviar um e-mail | ✅ com suporte | ✅ com suporte | ✅ com suporte |                        |
 | Fluxo do Power Automate | ✅ com suporte | ✅ com suporte | ✅ com suporte |                        |
@@ -118,4 +119,3 @@ When you prefill a form data model (FDM), or schema based Adaptive Form with XML
 ## Consulte também
 
 {{af-submit-action}}
-

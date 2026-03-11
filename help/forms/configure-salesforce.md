@@ -3,11 +3,12 @@ title: Como configurar modelos de dados de formulário prontos para uso do Sales
 description: Saiba como integrar o Salesforce ao Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 184db05b-7237-4dce-8059-03c39b93d7d7
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 0%
+source-wordcount: '495'
+ht-degree: 1%
 
 ---
 

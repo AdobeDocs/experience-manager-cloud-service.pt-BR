@@ -4,10 +4,11 @@ description: A comunicação interativa de importação e exportação permite q
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 7e328932-070d-4eb3-8176-500ef31581be
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -32,8 +33,8 @@ Crie uma Comunicação interativa (IC) em um ambiente e reutilize-a em outro exp
 
 +++&#x200B;1. Como exportar a comunicação interativa
 
-1.1. Selecione uma IC (Comunicação Interativa) [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication)criada.
-
+1.1. Selecione uma IC (Comunicação Interativa) [criada.
+](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication)
 1.2. Clique na opção **Baixar** para exportá-lo como um arquivo ZIP.
 1.3. O arquivo ZIP baixado inclui a IC junto com seu **modelo**, **fragmentos** e **modelo de dados** selecionados.
 

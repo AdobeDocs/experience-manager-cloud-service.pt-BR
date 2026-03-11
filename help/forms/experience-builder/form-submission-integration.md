@@ -6,10 +6,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -66,7 +67,7 @@ Armazenar envios de formulários nos serviços de armazenamento em nuvem:
 
 **Plataformas com suporte:**
 
-- Armazenamento de blobs do Microsoft Azure
+- Microsoft Azure Blob Storage
 - Amazon S3
 - Armazenamento em nuvem Google
 - SharePoint Online
@@ -141,7 +142,7 @@ Conectar formulários aos fluxos de trabalho do processo empresarial:
 
 ### Etapa 4: configurar o armazenamento na nuvem
 
-**Configuração do Armazenamento Azure Blob:**
+**Configuração do Azure Blob Storage:**
 
     Armazenar envios de formulários no Azure:
     - Contêiner: formulários-envios

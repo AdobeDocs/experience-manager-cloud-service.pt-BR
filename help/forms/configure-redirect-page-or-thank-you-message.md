@@ -4,11 +4,12 @@ description: Saiba como os usuários podem exibir uma mensagem de agradecimento 
 feature: Adaptive Forms, Core Components
 role: User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 0%
+source-wordcount: '245'
+ht-degree: 1%
 
 ---
 

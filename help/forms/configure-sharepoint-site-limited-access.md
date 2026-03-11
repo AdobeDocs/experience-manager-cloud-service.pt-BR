@@ -4,10 +4,11 @@ description: Saiba como configurar o SharePoint Site com acesso limitado usando 
 keywords: Como configurar o SharePoint Site com acesso limitado?, Configurar o SharePoint com acesso limitado, Usar escopo de autorização para limitar o acesso ao SharePoint Site.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 2%
 
 ---
@@ -36,20 +37,20 @@ Vantagens de fornecer acesso limitado ao SharePoint Site:
 
 Siga as etapas abaixo para configurar o SharePoint Sites com acesso limitado usando escopos de autorização:
 
-1. [Crie um aplicativo com o &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [Crie um aplicativo com o ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [Definir o escopo de autorização na instância do AEM](#set-the-authorization-scope-at-aem-instance)
 
 ### Criar um aplicativo com a permissão limitada no portal do Azure
 
-Crie um aplicativo no [portal do Microsoft Azure](https://portal.azure.com/#home) com o escopo de permissão `Sites.Selected` na API gráfica do Microsoft.
+Crie um aplicativo no [portal Microsoft Azure](https://portal.azure.com/#home) com o escopo de permissão `Sites.Selected` na API gráfica do Microsoft.
 
 ![Site selecionado do SharePoint](/help/forms/assets/sharepoint-selected-site.png)
 
 Para obter informações sobre como recuperar `Client ID`, `Client Secret` e `Tenant ID` para `OAuth URL`, consulte a [Documentação da Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
 
-* No portal do Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Substitua `[author-instance]` pela URL da sua instância de Autor.
+* No portal Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Substitua `[author-instance]` pela URL da sua instância de Autor.
 * Adicione o escopo de permissões `offline_access` e `Sites.Selected` na API gráfica do Microsoft para fornecer acesso restrito aos sites.
-* Para URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal do Microsoft® Azure.
+* Para URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal Microsoft® Azure.
 
 Para usar a permissão de API `Sites.Selected`, é necessário um aplicativo registrado no portal do Azure com as permissões apropriadas definidas para o SharePoint Online Sites. Essa configuração garante que o aplicativo tenha a autorização necessária para interagir com o site do SharePoint dentro do escopo definido, fornecendo assim o acesso limitado necessário.
 
@@ -68,7 +69,7 @@ Para fornecer acesso limitado a um site do Microsoft SharePoint, é essencial de
 
 1. Especifique o **[!UICONTROL Título]**, **[!UICONTROL ID do Cliente]** e **[!UICONTROL Segredo do Cliente]**. Para obter informações sobre como recuperar a ID e o Segredo do Cliente, consulte a [Documentação da Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
 
-1. Use a URL do OAuth como `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal do Microsoft® Azure.
+1. Use a URL do OAuth como `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal Microsoft® Azure.
 
    >[!NOTE]
    >

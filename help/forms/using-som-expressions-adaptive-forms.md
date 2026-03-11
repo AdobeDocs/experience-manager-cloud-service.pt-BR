@@ -3,17 +3,18 @@ title: Como podemos usar expressões SOM no Adaptive Forms?
 description: Saiba como extrair expressões SOM de um painel no Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
 
-
 # Uso de expressões SOM no Adaptive Forms{#using-som-expressions-in-adaptive-forms}
 
-O Forms adaptável é modelado como AEM Page, que é representada como a estrutura de conteúdo JCR no repositório AEM. O elemento principal da estrutura de conteúdo é o nó guideContainer. Abaixo de guideContainer, há rootPanel que pode conter painéis e campos aninhados.
+O Forms adaptável é modelado como uma página do AEM, que é representada como estrutura de conteúdo JCR no repositório do AEM. O elemento principal da estrutura de conteúdo é o nó guideContainer. Abaixo de guideContainer, há rootPanel que pode conter painéis e campos aninhados.
 
 Você pode usar um modelo de objeto de script (SOM) para fazer referência a valores, propriedades e métodos em um modelo de objeto de documento (DOM) específico. Um DOM organiza os objetos de memória e as propriedades em uma hierarquia de árvore. Uma expressão SOM faz referência a campos/desenha elementos e painéis.
 
@@ -41,4 +42,4 @@ Nos painéis, você pode acessar o recurso na barra de ferramentas do painel. O 
 
 Extração de expressões SOM usando a barra de ferramentas do painel
 
-Algumas APIs listadas no [GuideBridge](https://helpx.adobe.com/br/aem-forms/6/javascript-api/GuideBridge.html) usam a expressão SOM de um elemento. Por exemplo, para focalizar um campo específico em um Formulário adaptável, passe a expressão SOM correspondente para a API `getFocus` em `guideBridge`.
+Algumas APIs listadas no [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) usam a expressão SOM de um elemento. Por exemplo, para focalizar um campo específico em um Formulário adaptável, passe a expressão SOM correspondente para a API `getFocus` em `guideBridge`.

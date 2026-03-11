@@ -1,13 +1,14 @@
 ---
 title: Como integrar um formulário adaptável com o Microsoft&reg; Power Automate?
 description: Integrar um formulário adaptável com o Microsoft&reg; Power Automate.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: conecte formulários do AEM para automatizar o poder, automatizar o poder AEM Forms, integrar automatizar o poder ao Adaptive Forms, enviar dados do Adaptive Forms para o Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 64b6ce166baa892fcddd13c2e9c8b5e7e0053815
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1641'
 ht-degree: 4%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 4%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service | Este artigo |
 
 <span class="preview"> Se você estiver no GovCloud e precisar se conectar a um locatário do GCC (Government Cloud Computing), envie um email em seu endereço oficial para aem-forms-ea@adobe.com para solicitar acesso por meio do Early Adoter Program. </span>
@@ -58,7 +59,7 @@ Execute as seguintes ações para conectar sua instância do Forms as a Cloud Se
 
 ### Criar Aplicativo do Ative Diretory do Microsoft® Azure {#ms-power-automate-application}
 
-1. Faça logon no [Portal do Azure](https://portal.azure.com/).
+1. Faça logon no [Azure Portal](https://portal.azure.com/).
 1. Selecione [!UICONTROL Azure Ative Diretory] na navegação à esquerda.
 1. Na página Diretório padrão, selecione [!UICONTROL Registros de aplicativo] no painel esquerdo.
 1. Na página Registros do aplicativo, clique em Novos registros.
@@ -103,7 +104,7 @@ Clique em `Add permissions` para salvar as permissões.
    >Ao criar um Formulário adaptável, especifique o nome do contêiner no campo **[!UICONTROL Contêiner de configuração]**.
 
 1. Na página de configuração, selecione **[!UICONTROL Criar]** para criar a configuração [!DNL Microsoft® Power Automate Flow Service] no AEM Forms.
-1. Na página **[!UICONTROL Configurar Serviço Dataverse para o Microsoft® Power Automate]**, Especifique a **[!UICONTROL ID do Cliente]** (também conhecida como ID do Aplicativo), o **[!UICONTROL Segredo do Cliente]**, a **[!UICONTROL URL do OAuth]** e a **[!UICONTROL URL do Ambiente Dinâmico]**. Use a ID do Cliente, o Segredo do Cliente, a URL do OAuth e a URL do Ambiente Dinâmico do [Aplicativo do Microsoft® Azure Ative Diretory](#ms-power-automate-application) criados na seção anterior. Use a opção Endpoints na interface do usuário do aplicativo do Microsoft® Azure Ative Diretory para encontrar o URL do OAuth
+1. Na página **[!UICONTROL Configurar Serviço Dataverse para o Microsoft® Power Automate]**, Especifique a **[!UICONTROL ID do Cliente]** (também conhecida como ID do Aplicativo), o **[!UICONTROL Segredo do Cliente]**, a **[!UICONTROL URL do OAuth]** e a **[!UICONTROL URL do Ambiente Dinâmico]**. Use a ID do cliente, o Segredo do cliente, o URL do OAuth e o URL do Ambiente Dinâmico do [Aplicativo do Microsoft® Azure Ative Diretory](#ms-power-automate-application) criados na seção anterior. Use a opção Endpoints na interface do usuário do aplicativo do Microsoft® Azure Ative Diretory para encontrar o URL do OAuth
 
    ![Use a opção Endpoints na interface do usuário do aplicativo Microsoft Power Automate para localizar a URL do OAuth](assets/endpoints.png)
 
@@ -131,7 +132,7 @@ Clique em `Add permissions` para salvar as permissões.
 
 1. Na página **[!UICONTROL Configurar Dataverse para o Microsoft® Power Automate]**, especifique a **[!UICONTROL ID do Cliente]** (também conhecida como ID do Aplicativo), o **[!UICONTROL Segredo do Cliente]**, o **[!UICONTROL URL do OAuth]** e o **[!UICONTROL URL do Ambiente Dinâmico]**. Use a ID do cliente, o Segredo do cliente, o URL do OAuth e a ID de ambiente do Dynamics. Use a opção Endpoints na interface do usuário do aplicativo do Microsoft® Azure Ative Diretory para localizar o URL do OAuth. Abra o link [Meus fluxos](https://us.flow.microsoft.com) e selecione Meus Fluxos para usar a ID listada na URL como ID de Ambiente do Dynamics.
 
-1. Selecione **[!UICONTROL Conectar]**. Se solicitado, faça logon em sua conta do Microsoft® Azure. Selecione **[!UICONTROL Salvar]**.
+1. Selecione **[!UICONTROL Conectar]**. Se solicitado, efetue login na sua conta Microsoft® Azure. Selecione **[!UICONTROL Salvar]**.
 
 ### Publicar as configurações de nuvem do Microsoft® Power Automate Dataverse e do Microsoft® Power Automate Flow Service {#publish-microsoft-power-automate-dataverse-cloud-configuration}
 

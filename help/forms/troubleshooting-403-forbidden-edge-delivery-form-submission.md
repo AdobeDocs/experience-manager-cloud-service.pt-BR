@@ -3,10 +3,11 @@ title: Solução de problemas de erros 403 proibidos no envio do formulário do 
 description: Saiba como diagnosticar e resolver erros 403 proibidos ao enviar formulários do Edge Delivery Services para o AEM Publish. Este guia aborda causas comuns, incluindo CORS, regras do Dispatcher e problemas de Filtro de referenciador.
 feature: Edge Delivery Services
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
-source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1124'
 ht-degree: 2%
 
 ---
@@ -27,7 +28,7 @@ Esse problema geralmente ocorre em integrações do Edge Delivery Services em qu
 
 >[!IMPORTANT]
 >
->Com configurações de resposta, vários sites podem ser hospedados usando o mesmo repositório. Cada domínio do site deve ser adicionado individualmente às listas de permissões para que os envios de formulários funcionem corretamente.
+>Com configurações de resposta, vários sites podem ser hospedados usando o mesmo repositório. Cada domínio do site deve ser adicionado individualmente às incluis na lista de permissões para que os envios de formulários funcionem corretamente.
 >
 >**Exemplo:**
 >
@@ -35,7 +36,7 @@ Esse problema geralmente ocorre em integrações do Edge Delivery Services em qu
 >- Site 1: `main--abc--adobe.aem.live`
 >- Site 2: `main--abc1--adobe.aem.live`
 >
->Incluir na lista de permissões Ambos os domínios precisam separar entradas para o envio de formulários de ambos os sites.
+>Ambos os domínios precisam de entradas de incluo na lista de permissões separadas para que o envio de formulário funcione de ambos os sites.
 
 ## Causas comuns e soluções
 
@@ -75,7 +76,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 >
 >Substitua `main--abc--adobe.aem.live` e `main--abc1--adobe.aem.live` pelos domínios de site reais. Cada site hospedado no mesmo repositório requer uma entrada de configuração do CORS separada.
 
-Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 ### &#x200B;2. Regras do Dispatcher
 
@@ -213,14 +214,14 @@ Siga estas etapas para identificar a causa específica do erro 403:
 ### &#x200B;1. Configuração Adequada Durante A Instalação
 
 - Definir as configurações de CORS, Dispatcher e Filtro referenciador durante a configuração inicial do Edge Delivery Services
-- incluir na lista de permissões **Para cada novo site:** Adicione o domínio específico a todas as perguntas (CORS, Filtro de Referenciador)
+- **Para cada novo site:** Adicione o domínio específico a todas as incluis na lista de permissões (CORS, Filtro de Referenciador)
 - Testar envios de formulários no ambiente de desenvolvimento antes de entrar em funcionamento
 
 ### &#x200B;2. Configurações específicas do ambiente
 
 - Usar configurações diferentes para ambientes de desenvolvimento, de preparo e de produção
 - Incluir domínios de host local para teste de desenvolvimento local
-- incluir na lista de permissões **Documentar todos os domínios de site** que precisam de acesso de pesquisa para o seu repositório
+- **Documentar todos os domínios de site** que precisam de acesso incluído na lista de permissões para seu repositório
 
 ### &#x200B;3. Monitoramento e registro
 
@@ -233,7 +234,7 @@ Siga estas etapas para identificar a causa específica do erro 403:
 - **Manter um Registro** de todos os domínios de site usando o mesmo repositório
 - Treinar a equipe de desenvolvimento nas etapas de solução de problemas
 - Manter uma lista de verificação para configuração de formulário do Edge Delivery Services
-- **Atualizar listas de permissões** sempre que novos sites forem criados a partir de repositórios existentes
+- **Atualizar incluis na lista de permissões** sempre que novos sites forem criados a partir de repositórios existentes
 
 ## Gerenciamento de Domínio do Site para Configurações de Resposta
 
@@ -257,13 +258,13 @@ Com as arquiteturas Helix-5 e repless, siga estas diretrizes:
 
 - Usar entradas de domínio específicas em `allow.hosts` para melhorar a segurança
 - Suplemente com padrões de regex para uma cobertura mais ampla
-- Auditoria e atualização regulares de incluis na lista de permissões conforme os sites são adicionados ou removidos
+- Auditoria e atualização de incluis na lista de permissões regularmente à medida que sites são adicionados ou removidos
 
 ## Recursos adicionais
 
 - [Configuração de filtro referenciador com AEM Headless](/help/headless/deployment/referrer-filter.md)
-- [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [Noções Básicas Sobre Compartilhamento De Recursos Entre Origens](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [Noções Básicas Sobre Compartilhamento De Recursos Entre Origens](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 - [Documentação do Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
 
 ## Tópicos relacionados

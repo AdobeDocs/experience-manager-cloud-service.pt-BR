@@ -1,12 +1,13 @@
 ---
 title: Como integrar o DocuSign a um Formulário adaptável?
 description: Saiba como usar o DocuSign com um formulário adaptável para coletar assinaturas eletrônicas.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1540'
 ht-degree: 0%
 
 ---
@@ -120,7 +121,7 @@ Execute as seguintes etapas para configurar a ação de envio personalizada pron
 
    Após executar essas etapas, você poderá exibir uma nova ação de envio personalizada [Enviar com assinaturas eletrônicas do DocuSign](#enabledocusign), disponível na lista de opções de envio para um formulário adaptável e uma [configuração do serviço de nuvem do DocuSign](#configure-docusign-with-aem-forms) em seu ambiente de desenvolvimento local.
 
-1. Compile e [Implante o código em seu [!DNL AEM Forms] ambiente as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#customer-releases).
+1. Compile e [Implante o código em seu [!DNL AEM Forms] ambiente as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases).
 
 ## Integrar [!DNL DocuSign] a [!DNL AEM Forms] {#configure-docusign-with-aem-forms}
 

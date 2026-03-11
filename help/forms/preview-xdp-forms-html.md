@@ -3,12 +3,13 @@ title: Gerar visualização HTML5 de um formulário XDP
 description: A guia Visualizar HTML no LiveCycle Designer pode ser usada para visualizar formulários conforme eles aparecem em um navegador.
 topic-tags: author
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -88,7 +89,7 @@ O **modo protegido** está ativado, por padrão. Mantenha-o ativado para os ambi
    >
    >Verifique se o servidor do AEM Forms está ativo e em execução. A visualização do HTML se conecta ao servidor do CRX para *gerar* uma visualização.
 
-   ![Opções do AEM Forms Designer &#x200B;](assets/server_options.png)
+   ![Opções do AEM Forms Designer ](assets/server_options.png)
 
    Opções do AEM Forms Designer
 

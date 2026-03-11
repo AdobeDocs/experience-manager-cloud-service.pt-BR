@@ -5,10 +5,11 @@ keywords: construtor de formulários, componentes de base, criar formulários, c
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1594'
 ht-degree: 59%
 
 ---

@@ -3,11 +3,12 @@ title: Como adicionar suporte para novas localidades a um formulário adaptável
 description: Saiba como adicionar novas localidades para um Formulário adaptável.
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2160'
 ht-degree: 2%
 
 ---
@@ -125,7 +126,7 @@ Para adicionar suporte a novos locais a um formulário adaptável com base em co
 
    **Onde encontrar essas informações?**
 
-   Para obter as instruções passo a passo sobre como localizar esses detalhes, consulte o artigo &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git)&quot; da Adobe Experience League.
+   Para obter as instruções passo a passo sobre como localizar esses detalhes, consulte o artigo &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot; da Adobe Experience League.
 
    **Seu projeto está pronto!**
 
@@ -381,9 +382,9 @@ Agora você está pronto para usar o novo local com sua Forms adaptável. Você 
 
    1. Implante o código atualizado:
 
-      Acione uma implantação do seu código por meio do [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline). Isso cria e implanta automaticamente o código atualizado com o novo suporte de localidade.
+      Acione uma implantação do seu código por meio do [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Isso cria e implanta automaticamente o código atualizado com o novo suporte de localidade.
 
-      Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline).
+      Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 
 ## Visualizar um formulário adaptável com a localidade recém-adicionada
@@ -402,12 +403,12 @@ Essas etapas orientam você na pré-visualização de um Formulário adaptável 
 ## Práticas recomendadas para oferecer suporte à nova localização {#best-practices}
 
 * A Adobe recomenda criar um projeto de tradução após criar um Formulário adaptável. Isso simplifica o processo de localização.
-* Quando os componentes Caixa numérica e Seletor de data são convertidos em um local específico, podem ocorrer problemas de formatação. Para atenuar isso, uma opção **Idioma** foi incorporada à caixa de diálogo Configurar do [componente seletor de datas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) e do [componente Caixa Numérica](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Quando os componentes Caixa numérica e Seletor de data são convertidos em um local específico, podem ocorrer problemas de formatação. Para atenuar isso, uma opção **Idioma** foi incorporada à caixa de diálogo Configurar do [componente seletor de datas](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) e do [componente Caixa Numérica](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Tratamento de novos campos:
 
-   * **Tradução Automática**: se estiver usando tradução automática, você precisará recriar o dicionário e executar novamente o projeto de tradução[&#x200B; depois de adicionar novos campos a um Formulário Adaptável existente. &#x200B;](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) Os novos campos adicionados após o projeto de tradução inicial permanecem não traduzidos.
+   * **Tradução Automática**: se estiver usando tradução automática, você precisará recriar o dicionário e executar novamente o projeto de tradução[ depois de adicionar novos campos a um Formulário Adaptável existente. ](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) Os novos campos adicionados após o projeto de tradução inicial permanecem não traduzidos.
 
    * **Tradução humana**: para fluxos de trabalho de tradução humana, exporte o dicionário usando a interface do usuário em `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Atualize o dicionário para os novos campos e faça upload da versão revisada.
 

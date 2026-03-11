@@ -4,11 +4,12 @@ description: O AEM Forms fornece ferramentas para criar Forms adaptável acessí
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2024'
 ht-degree: 0%
 
 ---
@@ -44,17 +45,17 @@ O ANDI funciona com todos os principais navegadores da Internet. Consulte a [doc
 
 ### Baixe e instale o tema acessível pelo Ultramarine
 
-O tema acessível a ultramarinos é um tema de referência. Ele ajuda a demonstrar como corrigir o contraste de cores e outros problemas relacionados à acessibilidade em um Formulário adaptável. A Adobe recomenda criar um tema personalizado para o ambiente de produção com base nos estilos aprovados por sua organização. Execute as seguintes etapas para fazer upload do tema para sua instância AEM:
+O tema acessível a ultramarinos é um tema de referência. Ele ajuda a demonstrar como corrigir o contraste de cores e outros problemas relacionados à acessibilidade em um Formulário adaptável. A Adobe recomenda criar um tema personalizado para o ambiente de produção com base nos estilos aprovados por sua organização. Execute as seguintes etapas para fazer upload do tema para sua instância do AEM:
 
 1. Baixe o pacote de tema.
 1. Navegue até **[!UICONTROL Experience Manager]** > **[!UICONTROL Navegação]** ![Navegação](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** na sua instância do AEM.
-1. Selecione **[!UICONTROL Criar]** > **[!UICONTROL Carregar arquivo]**. Selecione e faça upload do arquivo x Ultramarine-Accessible-Theme.zip. Ele carrega o tema para sua instância AEM.
+1. Selecione **[!UICONTROL Criar]** > **[!UICONTROL Carregar arquivo]**. Selecione e faça upload do arquivo x Ultramarine-Accessible-Theme.zip. Ele carrega o tema para sua instância do AEM.
 
 ## Tornar um formulário adaptável acessível
 
 Você deve se concentrar em quatro aspectos principais: navegação pelo teclado, contraste de cores, texto alternativo significativo para imagens e rótulos apropriados para controles de formulários para tornar um Formulário adaptável acessível. Execute as seguintes etapas para tornar o seu Forms adaptável existente acessível:
 
-### 1. Aplicar um tema acessível e executar correções adicionais
+### &#x200B;1. Aplicar um tema acessível e executar correções adicionais
 
 Aplique o tema acessível pelo Ultramarine ao seu formulário adaptável existente. Para aplicar o tema:
 
@@ -93,7 +94,7 @@ Depois de aplicar um tema acessível, execute as correções adicionais listadas
 
 1. Remova os campos de assinatura rabisco, se houver, no Formulário adaptável. Configure o Formulário adaptável para usar o [!DNL Adobe Sign] para uma experiência de assinatura digital contínua.
 
-### 2. Fornecer rótulos adequados para controles de formulário {#provide-proper-labels-for-form-controls}
+### &#x200B;2. Fornecer rótulos adequados para controles de formulário {#provide-proper-labels-for-form-controls}
 
 O rótulo ou título de um componente identifica o que o componente de formulário representa. Por exemplo, o texto &quot;Nome&quot; informa aos usuários que eles devem inserir seu nome em um campo de texto. Para ser acessível por leitores de tela, o rótulo é associado programaticamente a um componente de formulário. Como alternativa, o controle de formulário é configurado com informações adicionais de acessibilidade.
 
@@ -108,7 +109,7 @@ Para usar a opção Acessibilidade, siga estas etapas:
 
 ![Opções de acessibilidade em componentes de formulário](assets/accessibility-options.png)
 
-**Texto personalizado** Os autores do formulário fornecem o conteúdo no campo de texto personalizado da opção de acessibilidade. A tecnologia assistiva, como leitores de tela, usa esse texto personalizado. O uso da configuração de Título é a melhor opção na maioria dos cenários. Considere a criação de Texto de Reader de tela personalizada somente ao usar o Título ou se não for possível usar uma descrição curta.
+**Texto personalizado** Os autores do formulário fornecem o conteúdo no campo de texto personalizado da opção de acessibilidade. A tecnologia assistiva, como leitores de tela, usa esse texto personalizado. O uso da configuração de Título é a melhor opção na maioria dos cenários. Considere a criação do Texto Reader de tela personalizada somente ao usar o Título ou se não for possível usar uma descrição curta.
 
 **Descrição curta** Para a maioria dos componentes, a descrição curta aparece em tempo de execução quando o usuário passa o ponteiro sobre o componente. É possível definir essa opção no campo de descrição curta, na opção conteúdo da ajuda.
 
@@ -123,7 +124,7 @@ Para usar a opção Acessibilidade, siga estas etapas:
 >* O botão de opção e a caixa de seleção podem ter apenas duas opções de acessibilidade, a saber, Texto personalizado e Título.
 >* Para o Adaptive Forms baseado em XFA, a opção de acessibilidade é herdada das opções de acessibilidade definidas no XDP. As dicas de ferramentas do XDP são mapeadas de acordo com a Descrição curta e a Legenda são mapeadas de acordo com o Título. As outras opções funcionam como estão.
 
-### 3. Fornecer equivalentes de texto para imagens {#provide-text-equivalents-for-images}
+### &#x200B;3. Fornecer equivalentes de texto para imagens {#provide-text-equivalents-for-images}
 
 As imagens podem ajudar a melhorar a compreensão de alguns usuários. No entanto, para usuários que usam leitores de tela, as imagens reduzem a acessibilidade do formulário. Se você optar por usar imagens, forneça descrições de texto para todas as imagens.
 
@@ -133,7 +134,7 @@ Selecione um componente de imagem e selecione ![cmppr](assets/cmppr.png). Na bar
 
 ![Texto alternativo para uma imagem](assets/image-properties.png)
 
-### 4. Fornecer contraste de cor suficiente {#provide-sufficient-color-contrast}
+### &#x200B;4. Fornecer contraste de cor suficiente {#provide-sufficient-color-contrast}
 
 O design de acessibilidade envolve considerar diretrizes adicionais para o uso de cores. Os autores de formulários podem usar cores para melhorar a aparência dos formulários, destacando vários componentes de formulário. No entanto, o uso inadequado da cor pode dificultar ou impossibilitar a leitura de uma forma por pessoas com diferentes habilidades.
 
@@ -143,7 +144,7 @@ Os usuários com deficiências visuais dependem de um alto contraste entre o tex
 
 <!-- See [Creating custom themes for Adaptive Forms](creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the Adaptive Forms. -->
 
-### 5. Verifique se os controles de formulário estão acessíveis ao teclado {#ensure-that-form-controls-are-keyboard-accessible}
+### &#x200B;5. Verifique se os controles de formulário estão acessíveis ao teclado {#ensure-that-form-controls-are-keyboard-accessible}
 
 Um formulário acessível pode ser preenchido completamente usando apenas o teclado ou um dispositivo de entrada equivalente. Os usuários com mobilidade reduzida ou visão prejudicada podem não ter outra escolha a não ser usar o teclado e muitos usuários que podem usar um mouse preferem a entrada pelo teclado. Ao permitir os vários métodos de entrada, você não apenas cria formulários acessíveis, mas também cria formulários mais adequados às preferências de todos os usuários.
 

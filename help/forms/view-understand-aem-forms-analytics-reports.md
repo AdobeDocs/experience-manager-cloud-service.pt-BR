@@ -6,11 +6,12 @@ topic-tags: develop
 feature: Adaptive Forms
 role: Admin, User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 756dee1f-4685-4783-961d-b172a5bd0692
-source-git-commit: 56a3d50d7cc8db532097b97f0898f87fc6ba0b3d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 2%
+source-wordcount: '990'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 2%
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Este artigo |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
 
 No cenário de rápida evolução da análise digital, manter-se atualizado com as tendências globais é fundamental para tomar decisões informadas e otimizar as experiências digitais. Para resolver isso, o Adaptive Forms integra-se perfeitamente ao Adobe Analytics para capturar e rastrear métricas de desempenho para seus formulários e documentos publicados. O objetivo por trás da análise dessas métricas é tomar decisões orientadas por dados, usando métricas e análises para melhorar a usabilidade e a eficácia dos formulários.
 
@@ -56,7 +57,7 @@ Ele tem as métricas Representações de formulário, Envios de formulário, Err
 
 * **Erros de validação**: o erro de validação exibe o número total de erros relacionados à validação que ocorreram nos campos dos formulários.
 
-* **Visitantes únicos**: visitantes únicos representam o número de vezes que o formulário é renderizado por um visitante. Para obter mais informações sobre visitantes únicos, consulte [Visitantes únicos, Visitas e comportamento do cliente](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=pt-BR).
+* **Visitantes únicos**: visitantes únicos representam o número de vezes que o formulário é renderizado por um visitante. Para obter mais informações sobre visitantes únicos, consulte [Visitantes únicos, Visitas e comportamento do cliente](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 
   ![Desempenho do Forms](assets/forms-performance.png){width="100%"}
 
@@ -64,8 +65,8 @@ Ele tem as métricas Representações de formulário, Envios de formulário, Err
 
 Ele ajuda a obter insights valiosos sobre a atividade de visitantes em seus formulários:
 
-* **Visitas e envios**: descreve a frequência de visitas aos seus formulários em um intervalo de datas e o número correspondente de envios de formulários. Para obter mais informações sobre este clique, [Visitas](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=pt-BR).
-* **Visitantes únicos e seu total de visitas**: faz a distinção entre usuários novos e recorrentes. Por exemplo, um visitante pode chegar ao seu site todos os dias por um mês, mas ainda assim contam como um visitante único exclusivo. Visite [Visitantes únicos](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=pt-BR) para obter informações detalhadas.
+* **Visitas e envios**: descreve a frequência de visitas aos seus formulários em um intervalo de datas e o número correspondente de envios de formulários. Para obter mais informações sobre este clique, [Visitas](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
+* **Visitantes únicos e seu total de visitas**: faz a distinção entre usuários novos e recorrentes. Por exemplo, um visitante pode chegar ao seu site todos os dias por um mês, mas ainda assim contam como um visitante único exclusivo. Visite [Visitantes únicos](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) para obter informações detalhadas.
 
   ![Visitantes do Forms](assets/forms-visitors.png){width="100%"}
 

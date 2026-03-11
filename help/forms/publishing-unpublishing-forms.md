@@ -1,5 +1,5 @@
 ---
-title: Como publicar e desfazer a publicação de formulários e documentos em formulários AEM?
+title: Como publicar e desfazer a publicação de formulários e documentos no AEM Forms?
 description: Agende a publicação e o cancelamento da publicação do Adaptive Forms. Os formulários publicados são replicados na instância de publicação.
 content-type: reference
 topic-tags: publish
@@ -8,17 +8,18 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
 
 # Publicação e cancelamento de publicação de formulários e documentos{#publishing-and-unpublishing-forms-and-documents}
 
-O [!DNL AEM Forms] permite criar, publicar e desfazer a publicação de formulários com facilidade. O servidor [!DNL AEM Forms] fornece duas instâncias: Autor e Publish. A instância do autor é utilizada para criar e gerenciar ativos e recursos de formulários. A instância do Publish serve para manter ativos e recursos relacionados disponíveis para usuários finais.
+O [!DNL AEM Forms] permite criar, publicar e desfazer a publicação de formulários com facilidade. O servidor [!DNL AEM Forms] fornece duas instâncias: Autor e Publicar. A instância do autor é utilizada para criar e gerenciar ativos e recursos de formulários. A instância de publicação serve para manter ativos e recursos relacionados disponíveis para usuários finais.
 
 ## Ativos compatíveis   {#supported-assets-nbsp}
 
@@ -30,7 +31,7 @@ O [!DNL AEM Forms] oferece suporte aos seguintes tipos de ativos:
 * Temas
 * Modelos de formulário <!-- (XFA forms) -->
 * PDF forms
-* Documento (documentos de PDF simples)
+* Documento (documentos simples do PDF)
 * Conjuntos de formulários
 * Recurso (imagens, esquemas e folhas de estilos)
 
@@ -41,7 +42,7 @@ Ao selecionar um formulário e publicá-lo, seus ativos e recursos relacionados 
 O Adaptive Forms pode utilizar algumas configurações, configurações e personalizações que não são publicadas automaticamente. É recomendável publicar ou ativar esses recursos antes de publicar um Formulário adaptável.
 
 * Modelos editáveis de formulário adaptável
-* Configurações de Cloud Service para Adobe Sign, Typekit, reCAPTCHA e Form Data Model (FDM)
+* Configurações do Cloud Service para Adobe Sign, Typekit, reCAPTCHA e Form Data Model (FDM)
 * Outras configurações de serviços na nuvem são ativadas somente se o usuário tiver permissões de administrador.
 * Personalizações. Isso inclui, mas não se limita a:
 
@@ -57,16 +58,16 @@ O Adaptive Forms pode utilizar algumas configurações, configurações e person
 Um ativo pode ter os seguintes estados:
 
 * **Publicação desfeita:** um ativo que nunca foi publicado (o estado não publicado é aplicável somente aos ativos do Forms. Os ativos do Gerenciamento de correspondências não têm um estado Não publicado.)
-* **Publicado**: um ativo que foi publicado e está disponível na instância do Publish
+* **Publicado**: um ativo que foi publicado e está disponível na instância de publicação
 * **Modificado**: um ativo que é modificado depois de ser publicado
 
-## Publish e um ativo {#publish-an-asset}
+## Publicar um ativo {#publish-an-asset}
 
 1. Faça logon no servidor [!DNL AEM Forms].
 1. Use um dos itens a seguir para selecionar e publicar um ativo.
 
-   1. Mova o ponteiro sobre um ativo e selecione **[!UICONTROL Publish]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
-   1. Siga um destes procedimentos e selecione Publish:
+   1. Mova o ponteiro sobre um ativo e selecione **[!UICONTROL Publicar]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
+   1. Siga um destes procedimentos e selecione Publicar:
 
       * Se você estiver na exibição de cartão, selecione **[!UICONTROL Inserir seleção]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png) e selecione o ativo. O ativo está selecionado.
       * Se você estiver na exibição em lista, marque a caixa de seleção de um ativo. O ativo está selecionado.
@@ -77,7 +78,7 @@ Um ativo pode ter os seguintes estados:
       >
       >Não selecione vários ativos. Não é possível publicar vários ativos de uma só vez.
 
-1. Quando o processo do Publish é iniciado, uma caixa de diálogo de confirmação é exibida listando todos os ativos e recursos relacionados. Na caixa de diálogo que contém ativos relacionados, selecione **[!UICONTROL Publish]**. O ativo é publicado e a caixa de diálogo Publish Assets Success é exibida.
+1. Quando o processo de publicação é iniciado, uma caixa de diálogo de confirmação é exibida listando todos os ativos e recursos relacionados. Na caixa de diálogo que contém ativos relacionados, selecione **[!UICONTROL Publicar]**. O ativo é publicado e a caixa de diálogo Publicar sucesso do Assets é exibida.
 
    >[!NOTE]
    >
@@ -89,13 +90,13 @@ Um ativo pode ter os seguintes estados:
 
    >[!NOTE]
    >
-   >Para o Forms Manager, se o usuário não tiver permissão para publicar os ativos listados, a ação do Publish será desativada. Um ativo que requer permissões adicionais é mostrado em vermelho.
+   >Para o Forms Manager, se o usuário não tiver permissão para publicar os ativos listados, a ação Publicar será desativada. Um ativo que requer permissões adicionais é mostrado em vermelho.
 
-   Depois que um ativo é publicado, as propriedades de metadados do ativo são copiadas para a instância do Publish e o status do ativo é alterado para Publicado. O status dos ativos dependentes publicados também é alterado para Publicado.
+   Depois que um ativo é publicado, as propriedades de metadados do ativo são copiadas para a instância de Publicação e o status do ativo é alterado para Publicado. O status dos ativos dependentes publicados também é alterado para Publicado.
 
    <!-- After publishing an asset, you can use the Forms Portal to display all the assets on a web page. For more information, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md).-->
 
-## Publish: todas as Assets do gerenciamento de correspondência {#publish-all-the-correspondence-management-assets}
+## Publicar todos os Assets do gerenciamento de correspondência {#publish-all-the-correspondence-management-assets}
 
 O [!DNL AEM Forms] permite publicar todos os ativos do Gerenciamento de correspondências em um servidor de uma só vez. Os ativos publicados incluem todos os ativos do Gerenciamento de correspondências e dependências relacionadas.
 
@@ -104,21 +105,21 @@ Conclua as seguintes etapas para publicar todos os ativos do Gerenciamento de co
 1. Faça logon no servidor [!DNL AEM Forms].
 1. Selecione **Adobe Experience Manager** na barra de navegação global.
 1. Selecione ![ferramentas](assets/tools.png) e **Forms**.
-1. Selecione a **Publish Correspondence Management Assets**.
+1. Selecione **Publicar Assets de Gerenciamento de Correspondências**.
 
    ![publicar-cmp-assets](assets/publish-cmp-assets.png)
 
-   A página Assets do Publish All Correspondence Management é exibida e mostra as informações sobre a última vez que o processo Assets do Publish Correspondence Management foi tentado.
+   A página Publicar todas as Assets do gerenciamento de correspondência é exibida e mostra as informações sobre a última vez que o processo de Assets do Gerenciamento de correspondência de publicação foi tentado.
 
    ![publicar-detalhes-última-execução](assets/publish-last-run-details.png)
 
-1. Selecione **Publish** e, na mensagem de confirmação, selecione **OK**.
+1. Selecione **Publicar** e, na mensagem de confirmação, selecione **OK**.
 
    Após a conclusão de um processo em lote, é possível exibir os detalhes da última execução. Isso inclui informações como o logon do Administrador e se a execução do lote foi bem-sucedida ou falhou.
 
    >[!NOTE]
    >
-   >O processo do Publish não pode ser cancelado depois de iniciado. Além disso, enquanto a operação do Publish estiver em andamento, não crie, exclua, modifique ou publique quaisquer ativos ou inicie a operação Exportar toda a correspondência do Assets Management.
+   >O processo de publicação não pode ser cancelado depois de iniciado. Além disso, enquanto a operação Publicar estiver em processo, não crie, exclua, modifique ou publique quaisquer ativos ou inicie a operação Exportar toda a correspondência do Assets Management.
 
 ## Automatizar a publicação e o cancelamento da publicação de Forms e documentos {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
@@ -128,7 +129,7 @@ Siga estas etapas para agendar a data e a hora de publicação e cancelamento da
 
 1. Selecione um ativo e selecione **[!UICONTROL Exibir Propriedades]**. A página Propriedades de metadados é aberta.
 1. Na página Propriedades dos metadados, selecione **[!UICONTROL Avançado]** e **[!UICONTROL Editar]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-1. Nos campos **[!UICONTROL Publish On Time]** e **[!UICONTROL Publish Off Time]**, selecione a data e a hora.\
+1. Nos campos **[!UICONTROL Publicar no Horário]** e **[!UICONTROL Publicar Fora do Horário]**, selecione a data e a hora.\
    Selecione **[!UICONTROL Concluído]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## Cancelar a publicação de um ativo {#unpublish-an-asset}

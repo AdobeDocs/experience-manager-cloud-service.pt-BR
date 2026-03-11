@@ -8,10 +8,11 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2329'
 ht-degree: 0%
 
 ---
@@ -192,10 +193,10 @@ Monitore o uso da API, os volumes de geração de documentos e as [transações 
 Armazene e gerencie com segurança os envios de formulários e os documentos gerados para retenção e conformidade a longo prazo.
 
 **Armazenamento de Documentos**
-Armazene documentos gerados e envios de formulários no sistema de Gerenciamento de Ativos Digitais da AEM ou integre-os a repositórios de documentos externos como o [SharePoint](/help/forms/configure-submit-action-sharepoint.md), o [OneDrive](/help/forms/configure-submit-action-onedrive.md) ou o [Armazenamento de Blobs do Azure](/help/forms/configure-submit-action-azure-blob-storage.md).
+Armazene documentos gerados e envios de formulários no sistema de Gerenciamento de Ativos Digitais da AEM ou integre-os a repositórios de documentos externos como o [SharePoint](/help/forms/configure-submit-action-sharepoint.md), o [OneDrive](/help/forms/configure-submit-action-onedrive.md) ou o [Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md).
 
 **Conformidade e Retenção**
-Implemente políticas de retenção de dados que estejam em conformidade com os requisitos normativos, incluindo GDPR, CCPA e HIPAA. [Os &#x200B;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) processos de arquivamento automatizados garantem que os documentos sejam retidos por períodos obrigatórios e descartados com segurança quando apropriado.
+Implemente políticas de retenção de dados que estejam em conformidade com os requisitos normativos, incluindo GDPR, CCPA e HIPAA. [Os ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) processos de arquivamento automatizados garantem que os documentos sejam retidos por períodos obrigatórios e descartados com segurança quando apropriado.
 
 **Segurança e Controle de Acesso**
 Aplique criptografia, assinaturas digitais e [controles de acesso com base em função](/help/forms/forms-groups-privileges-tasks.md) aos documentos arquivados. As trilhas de auditoria controlam o acesso aos documentos e as modificações para a emissão de relatórios de conformidade e a supervisão da segurança.

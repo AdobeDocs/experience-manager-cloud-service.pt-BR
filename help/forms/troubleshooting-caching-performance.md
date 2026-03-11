@@ -4,17 +4,18 @@ description: Solucionar problemas relacionados ao cache do AEM Forms as a Cloud 
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
 # Desempenho de cache {#caching-performance}
 
-Você pode encontrar alguns dos seguintes problemas ao configurar ou usar o cache Adaptive Forms em um ambiente de Cloud Service:
+Você pode encontrar alguns dos seguintes problemas ao configurar ou usar o cache Adaptive Forms em um ambiente Cloud Service:
 
 ## Alguns Forms adaptáveis contendo imagens ou vídeos não são invalidados automaticamente do cache do Dispatcher {#images-videos-not-invalidated}
 
@@ -34,7 +35,7 @@ Quando a URL do Formulário adaptável não contiver nenhuma informação de loc
 
 Execute as seguintes etapas para resolver o problema:
 
-1. Abra o projeto Experience Manager.
+1. Abra o projeto do Experience Manager.
 1. Abra o `dispatcher/scr/conf.d/rewrites/rewrite.rules` para edição.
 1. Abra o `conf.d/httpd-dispatcher.conf` ou qualquer outro arquivo de configuração configurado para ser carregado no tempo de execução.
 1. Adicione o código a seguir ao arquivo e salve-o. É uma amostra de código, modifique-a para atender ao seu ambiente.

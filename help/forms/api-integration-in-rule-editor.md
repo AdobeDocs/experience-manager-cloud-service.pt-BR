@@ -5,10 +5,11 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: integração da API no editor de regras, chame as melhorias no serviço
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1040'
 ht-degree: 2%
 
 ---

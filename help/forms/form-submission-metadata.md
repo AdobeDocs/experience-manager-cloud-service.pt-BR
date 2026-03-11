@@ -6,13 +6,14 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
+exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
-
 
 # Adicionar informações de dados do usuário para metadados de envio de formulário {#adding-information-from-user-data-to-form-submission-metadata}
 

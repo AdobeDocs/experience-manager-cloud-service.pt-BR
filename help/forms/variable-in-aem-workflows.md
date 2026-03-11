@@ -1,26 +1,27 @@
 ---
 title: Como podemos adicionar variáveis às etapas do fluxo de trabalho do AEM?
 description: Saiba como criar uma variável, definir um valor para a variável e usá-lo em  [!DNL AEM Forms] etapas do fluxo de trabalho.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1936'
 ht-degree: 1%
 
 ---
 
-# Variáveis em fluxos de trabalho AEM centrados no Forms {#variables-in-aem-forms-workflows}
+# Variáveis em fluxos de trabalho do AEM centrados no Forms {#variables-in-aem-forms-workflows}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
 | AEM as a Cloud Service | Este artigo |
 
 Uma variável em um modelo de fluxo de trabalho é uma maneira de armazenar um valor com base em seu tipo de dados. É possível usar o nome da variável em qualquer etapa do fluxo de trabalho para recuperar o valor armazenado na variável. Você também pode usar nomes de variáveis para definir expressões para tomar decisões de roteamento.
 
-Em modelos de fluxo de trabalho do AEM, é possível:
+Nos modelos de fluxo de trabalho do AEM, é possível:
 
 * [Crie uma variável](variable-in-aem-workflows.md#create-a-variable) de um tipo de dados com base no tipo de informações que você deseja armazenar nela.
 * [Defina um valor para a variável](variable-in-aem-workflows.md#set-a-variable) usando a etapa de fluxo de trabalho Definir Variável.
@@ -37,7 +38,7 @@ As variáveis são uma extensão da interface [MetaDataMap](https://helpx.adobe.
 Você cria variáveis usando a seção Variáveis disponível no sidekick do modelo de fluxo de trabalho. As variáveis de fluxo de trabalho do AEM são compatíveis com os seguintes tipos de dados:
 
 * **Tipos de dados primitivos**: Long, Double, Boolean, Date e String
-* **Tipos de dados complexos**: [Documento](https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) e instância do Modelo de Dados de Formulário.
+* **Tipos de dados complexos**: [Documento](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) e instância do Modelo de Dados de Formulário.
 
 >[!NOTE]
 >
@@ -157,7 +158,7 @@ A divisão OR cria uma divisão no fluxo de trabalho, depois da qual apenas uma 
 
 Você pode definir a expressão de roteamento para uma ramificação usando uma definição de regra, um script ECMA ou um script externo.
 
-Você pode usar variáveis para definir a expressão de roteamento usando o editor de expressão. Para obter mais informações sobre como usar expressões de roteamento para a etapa de Divisão OR, consulte [OU Etapa de divisão](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=pt-BR#extending-aem?lang=pt-BR#or-split).
+Você pode usar variáveis para definir a expressão de roteamento usando o editor de expressão. Para obter mais informações sobre como usar expressões de roteamento para a etapa de Divisão OR, consulte [OU Etapa de divisão](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#or-split).
 
 Neste exemplo, antes de definir a expressão de roteamento, use o [exemplo 2](variable-in-aem-workflows.md#example2) para definir o valor da variável **totalvalue**. A ramificação 1 estará ativa se o valor da variável **totalvalue** for maior que 50000. Da mesma forma, é possível definir uma regra para tornar a Ramificação 2 ativa se o valor da variável **totalvalue** for menor que 50000.
 
@@ -173,13 +174,13 @@ A **Etapa Ir para** permite que você especifique a próxima etapa no modelo de 
 
 Semelhante à etapa OU Split, você pode definir a expressão de roteamento para a etapa Ir para usando uma definição de regra, um script ECMA ou um script externo.
 
-Você pode usar variáveis para definir a expressão de roteamento usando o editor de expressão. Para obter mais informações sobre o uso de expressões de roteamento para a etapa Ir para, consulte [Etapa Ir para](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=pt-BR#extending-aem?lang=pt-BR#goto-step).
+Você pode usar variáveis para definir a expressão de roteamento usando o editor de expressão. Para obter mais informações sobre o uso de expressões de roteamento para a etapa Ir para, consulte [Etapa Ir para](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#goto-step).
 
 ![Regra de Ir para](assets/variables_goto_rule1_new.png)
 
 Neste exemplo, a etapa Ir para especifica Revisar Aplicativo de Cartão de Crédito como a próxima etapa se o valor da variável **actiontaken** for igual a **Need more info**.
 
-Para obter mais exemplos sobre como usar a definição de regra na etapa Ir para, consulte [Simulando um loop For](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=pt-BR#extending-aem?lang=pt-BR#simulateforloop).
+Para obter mais exemplos sobre como usar a definição de regra na etapa Ir para, consulte [Simulando um loop For](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#simulateforloop).
 
 #### Etapas de fluxo de trabalho centradas na Forms {#forms-workflow-centric-workflow-steps}
 
@@ -285,4 +286,4 @@ Para excluir uma variável:
 
 ## Referências {#references}
 
-Para obter mais exemplos sobre como usar variáveis nas etapas do fluxo de trabalho [!DNL AEM Forms], consulte [Variáveis em fluxos de trabalho AEM](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
+Para obter mais exemplos sobre como usar variáveis nas etapas do Fluxo de Trabalho [!DNL AEM Forms], consulte [Variáveis em fluxos de trabalho do AEM](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
