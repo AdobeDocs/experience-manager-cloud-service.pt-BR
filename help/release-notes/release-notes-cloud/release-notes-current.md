@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 49d29c468a2047e3026948030c3663db0beada53
+source-git-commit: eae7609f3f35f17a6c31cf242b6b0cc2d464a3fb
 workflow-type: tm+mt
-source-wordcount: '1944'
+source-wordcount: '1961'
 ht-degree: 8%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -38,16 +38,16 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo de visão geral da versão de fevereiro de 2026 para obter um resumo dos recursos adicionados na versão 2026.2.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3480404/?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
 
 
 ## Programas do AEM Beta {#aem-beta-programs}
 
-Os programas beta do Adobe Experience Manager (AEM) são uma maneira de os clientes obterem acesso a recursos e códigos de pré-lançamento, fornecer feedback e orientar o futuro do AEM.
+Os programas beta do Adobe Experience Manager (AEM) são uma maneira de os clientes obterem acesso a recursos e código de pré-lançamento, fornecerem feedback e guiarem o futuro do AEM.
 
 >[!IMPORTANT]
 >
->As versões beta podem conter defeitos e são fornecidas “NO ESTADO EM QUE SE ENCONTRAM” sem garantias de qualquer tipo. O Adobe não tem obrigação de manter, corrigir, atualizar, alterar, modificar ou dar suporte (por meio dos Serviços de Suporte do Adobe ou de outra forma) às versões beta. A Adobe recomenda que os clientes tenham cuidado e não dependam do funcionamento ou do desempenho correto das versões beta, nem de qualquer documentação ou material que as acompanhe. Os recursos e as APIs na versão beta estão sujeitos a alterações sem aviso prévio. Portanto, qualquer uso das versões beta é de inteira responsabilidade do cliente.
+>As versões do Beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte da Adobe ou de outra forma) às versões beta. A Adobe recomenda que os clientes tenham cuidado e não dependam do funcionamento ou do desempenho correto das versões beta, nem de qualquer documentação ou material que as acompanhe. Os recursos e as APIs na versão beta estão sujeitos a alterações sem aviso prévio. Portanto, qualquer uso das versões beta é de inteira responsabilidade do cliente.
 
 **Vantagens de participar**
 Obter acesso antecipado aos recursos que a Adobe está desenvolvendo permite que clientes e parceiros forneçam feedback e modelem o desenvolvimento de produtos. Também os ajuda a se preparar para adotar novos recursos antes da disponibilidade geral.
@@ -86,7 +86,7 @@ Consulte [programas beta do Cloud Manager](/help/implementing/cloud-manager/rele
 
 **Supervisor de Conteúdo para acessar o AEM Assets no Adobe Express**
 
-O [Supervisor de Conteúdo agora está disponível no Adobe Express](/help/assets/native-integration-adobe-express.md), apresentando a descoberta inteligente de ativos para o AEM Assets diretamente na interface do Express. O Content Advisor fornece recomendações sensíveis a contexto com base no conteúdo da tela e resumos de campanhas, suporta pesquisa viabilizada por IA, permite suporte nativo para representações prontas para uso do canal ativadas pelo Dynamic Media e muitos outros recursos. O Supervisor de conteúdo transforma o modo como você detecta e usa ativos aprovados, ajudando a encontrar o conteúdo correto mais rapidamente para simplificar seus fluxos de trabalho criativos.
+[O Supervisor de Conteúdo agora está disponível no Adobe Express](/help/assets/native-integration-adobe-express.md), introduzindo a descoberta inteligente de ativos para o AEM Assets diretamente na interface do Express. O Supervisor de conteúdo fornece recomendações com reconhecimento de contexto com base no conteúdo da tela e nos resumos da campanha, oferece suporte à pesquisa alimentada por IA, habilita o suporte nativo para representações prontas para canal on-line viabilizadas pelo Dynamic Media e muitos outros recursos. O Supervisor de conteúdo transforma o modo como você detecta e usa ativos aprovados, ajudando a encontrar o conteúdo correto mais rapidamente para simplificar seus fluxos de trabalho criativos.
 
 ### Novos recursos no Dynamic Media com OpenAPI {#dynamic-media-openAPI-new-features}
 
@@ -106,20 +106,20 @@ O controle de acesso baseado em atributos (ABAC) permite que os administradores 
 Os componentes de seleção múltipla suspensos no Adaptive Forms agora renderizam seus rótulos de exibição selecionados na [PDF de envio gerada](/help/forms/generate-document-of-record-core-components.md), garantindo que o documento reflita com precisão o que os usuários veem no formulário.
 
 **Acessibilidade aprimorada para componentes de caixa de seleção, botão de opção e painel**
-Os Componentes principais adaptáveis do Forms apresentam marcação semântica compatível com WCAG 2.2 para [grupos de caixas de seleção(v2)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [grupos de botões de opção(v2)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) e o [componente de Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Esses componentes usam os elementos do HTML `<fieldset>` e `<legend>` para estabelecer relações significativas entre os rótulos de grupo e suas opções, permitindo a interpretação precisa por leitores de tela e outras tecnologias de assistência.
+Os Componentes principais adaptáveis do Forms apresentam marcação semântica compatível com WCAG 2.2 para [grupos de caixas de seleção(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [grupos de botões de opção(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) e o [componente de Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Esses componentes usam os elementos do HTML `<fieldset>` e `<legend>` para estabelecer relações significativas entre os rótulos de grupo e suas opções, permitindo a interpretação precisa por leitores de tela e outras tecnologias de assistência.
 
 **Suporte ao controle de versão no Forms Manager**
 O Forms Manager agora [oferece suporte ao controle de versão do Adaptive Forms (Componentes principais e Componentes de base)](/help/forms/manage-form-versions-forms-manager.md), fragmentos de formulário, temas, modelos XDP e ativos binários. Crie versões, visualize o histórico completo de versões e restaure estados anteriores dos ativos de formulário diretamente do console Forms e Documentos.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### [!DNL Experience Manager] como um [!DNL Cloud Service] Foundation Novos Recursos {#foundation-new}
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Novos recursos {#foundation-new}
 
 #### Pausar Atualizações de Manutenção Automática {#pause-updates}
 
-Dias de lançamento, eventos ao vivo, pico de vendas — esses momentos não podem ser interrompidos. [Nossos novos recursos de autoatendimento](/help/implementing/deploying/quiet-hours-update-free-periods.md) interrompem as atualizações automáticas de manutenção quando é importante, para que suas equipes permaneçam concentradas.
+Dias de ativação, eventos ao vivo, pico de vendas — esses momentos não quebram. [Nossos novos recursos de autoatendimento](/help/implementing/deploying/quiet-hours-update-free-periods.md) interrompem as atualizações de manutenção automáticas quando é importante, para que suas equipes permaneçam focadas.
 
-* Quiet Hours: bloqueie a manutenção automática durante os horários definidos a cada dia. Ideal para horas de trabalho, corridas noturnas ou cutovers matinais.
+* Quiet Hours: bloqueia a manutenção automática durante os horários definidos a cada dia. Ideal para horas de trabalho, corridas noturnas ou cortes matinais.
 * Período Livre de Atualização: Bloqueia a manutenção automática por uma semana inteira. Use-o para inicializações, promoções ou congelamentos anuais.
 
 #### Solução de problemas do pipeline de qualidade de código com o agente de desenvolvimento {#devagent-codequality}
@@ -182,16 +182,16 @@ O AEM Edge Functions permite executar o JavaScript na camada CDN, aproximando o 
 Casos de uso comuns incluem:
 
 * Personalização de conteúdo com base na geolocalização, tipo de dispositivo ou atributos do usuário
-* Atuando como middleware entre a CDN e sua origem
-* Reformatar respostas de APIs de terceiros (e talvez agregar várias respostas de API) antes de entregá-las ao navegador
-* Compondo e servindo HTML renderizado pelo servidor na borda usando conteúdo unido de várias infraestruturas
+* Atuar como middleware entre a CDN e sua origem
+* Reformatação de respostas de APIs de terceiros (e talvez agregação de várias respostas de API) antes de entregá-las ao navegador
+* Compor e servir HTML renderizado pelo servidor na borda usando conteúdo compilado de vários back-ends
 * Expor um servidor MCP para LLMs como ChatGPT e Claude para acessar ferramentas personalizadas
 
 Temos um número limitado de oportunidades disponíveis para projetos do AEM Publish Delivery ou do Edge Delivery Services para sites de produção em tempo real. Se você estiver interessado em participar ou quiser saber mais, envie um email para [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) com uma breve descrição do seu caso de uso.
 
 #### Cloud Manager MCP Server (Programa Beta) {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480347/?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 IDEs modernos usam o protocolo de contexto de modelo (MCP) para permitir que modelos de linguagem grandes (LLMs) chamem ferramentas expostas por servidores MCP. Em vez de integrar diretamente com especificações de API de baixo nível, os desenvolvedores podem simplesmente descrever sua intenção em linguagem natural.
 
@@ -203,14 +203,20 @@ Saiba mais sobre [Servidores MCP do AEM](/help/ai-in-aem/mcp-support/using-mcp-w
 
 Os recursos de [solução de problemas de pipeline](/help/ai-in-aem/agents/brand-experience/development/development.md) do Agente de Desenvolvimento ajudam os desenvolvedores a diagnosticar e resolver problemas de forma eficiente nas implantações do AEM as a Cloud Service. Além de oferecer suporte a pipelines de Empilhamento completo (Implantação e Qualidade de Código), o Agente de Desenvolvimento agora oferece suporte à solução de problemas do **Pipeline de configuração no nível da Web** como parte de um programa beta.
 
-Para solicitar acesso ao beta, envie um email para [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). É necessário acesso pré-existente aos agentes no AEM.
+Para solicitar acesso ao beta, envie um email para [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). É necessário acesso pré-existente aos Agentes no AEM.
+
+>[!NOTE]
+>
+>Disponível como um recurso de passivo em 25 de setembro.
+>Envie um email para [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) para ativá-lo em seus programas.
+>
 
 #### Ferramentas de IA do IDE para desenvolvimento em Java e Dispatcher do AEM (Programa Beta) {#ai-dev-beta}
 
 As equipes de pilha em Java estão cada vez mais usando o desenvolvimento assistido por IA em ferramentas como Cursor, Claude Code, Visual Studio e IntelliJ para acelerar a entrega de recursos e melhorar a qualidade do código. Associe-se à versão beta para:
 
-* Compartilhe experiências do mundo real para ajudar a moldar futuros recursos de IA compatíveis com Adobe
-* Experimente as ferramentas do IDE que podem ser usadas pelos agentes de IA para gerar e depurar o código AEM e a configuração do dispatcher
+* Compartilhar experiências reais para ajudar a moldar futuros recursos de IA compatíveis com a Adobe
+* Experimente as ferramentas do IDE que podem ser usadas pelos agentes de IA para gerar e depurar o código AEM e a configuração do Dispatcher
 
 Envie um email para [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) para obter mais informações.
 
@@ -232,21 +238,21 @@ Valide uma build de produção com tráfego de teste somente interno antes de ex
 
 Implante as versões de código para produção, mas restrinja-as somente ao tráfego de teste interno antes de decidir se aceita o tráfego ativo ou não.
 
-Envie um email para [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) para solicitar acesso e compartilhar comentários.
+Envie um email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) para solicitar acesso e compartilhar feedback.
 
-#### Instantâneos para RDEs (programa beta) {#rde-snapshot-program}
+#### Instantâneos para RDEs (Programa Beta) {#rde-snapshot-program}
 
-Na versão beta, os RDEs (Rapid Development Environments) agora oferecem suporte a um recurso para tirar um instantâneo do estado atual do código e do conteúdo, que pode ser restaurado posteriormente. Isso pode ser útil ao sincronizar códigos que podem precisar ser revertidos ou ao alternar entre o desenvolvimento de diferentes recursos. Também é possível restaurar apenas o conteúdo mutável como um ponto de partida conhecido para testes.
+Na versão beta, os ambientes de desenvolvimento rápido (RDEs) agora oferecem suporte a um recurso para obter um instantâneo do estado atual do código e do conteúdo, que pode ser restaurado posteriormente. Isso pode ser útil ao sincronizar código que pode precisar ser revertido ou ao alternar entre o desenvolvimento de diferentes recursos. Também é possível restaurar apenas o conteúdo mutável como um ponto de partida conhecido para testes.
 
 Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) se houver interesse em usar e fornecer feedback sobre este recurso.
 
 #### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
