@@ -4,10 +4,10 @@ description: A ferramenta de cópia de conteúdo permite que os usuários copiem
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: 86205946b7c4b7173448eca728f4495ab7e35064
+source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 28%
+source-wordcount: '1574'
+ht-degree: 27%
 
 ---
 
@@ -143,7 +143,14 @@ Depois que um conjunto de conteúdo é criado, você pode usá-lo para copiar co
 1. (Opcional) Se desejar, defina o seguinte:
 
    * **Incluir Listas de Controle de Acesso** - Selecione se deseja copiar as permissões de controle de acesso do conteúdo junto com o conteúdo.
-   * **Apagar** - Selecione para excluir o conteúdo existente no destino antes de iniciar a importação, para que você possa começar do zero e evitar conflitos com o conteúdo pré-existente. Se você deixar **Apagar** desmarcado, o Cloud Manager importará o novo conteúdo para cima do conteúdo de destino existente. Um prompt de confirmação é exibido antes do início do apagamento e o Cloud Manager registra a ação de apagamento e os detalhes de importação para rastreabilidade.
+   * **Apagar** - Selecione para excluir o conteúdo existente no destino antes de iniciar a importação, para que você possa começar de um estado limpo e evitar conflitos com o conteúdo pré-existente. Se você deixar **Apagar** desmarcado, o Cloud Manager importará o novo conteúdo para cima do conteúdo de destino existente. Um prompt de confirmação é exibido antes do início do apagamento e o Cloud Manager registra a ação de apagamento e os detalhes de importação para rastreabilidade.
+     ![Copiar conteúdo](assets/content_copy_wipe-destination.png)
+      * Ao escolher a opção **Apagar destino antes de importar** e clicar em **Copiar**, um pop-up será exibido com um aviso, no qual você tem as opções para:
+         * **Cancelar** (Nesse caso, o fluxo **Copiar Conteúdo** não será iniciado)
+         * **Confirmar** (o fluxo **Copiar Conteúdo** será iniciado e o conteúdo no destino será apagado)
+           ![Copiar conteúdo](assets/content-copy-wipe-destination-warning.png)
+
+      * Se você não escolher **Apagar destino antes de importar**, o fluxo **Copiar Conteúdo** funcionará como antes.
 
 1. Clique em **Copiar**.
 
