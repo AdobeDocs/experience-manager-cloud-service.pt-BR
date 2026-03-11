@@ -23,7 +23,7 @@ ht-degree: 1%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componentes de base) | Este artigo |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/adaptive-form-fragments-core-components.md) |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=pt-BR) |
 
 Embora cada formulário seja projetado para um propósito específico, há alguns segmentos comuns na maioria dos formulários, como o de fornecer detalhes pessoais, como nome e endereço, detalhes da família, detalhes de renda etc. Os desenvolvedores de formulários são necessários para criar esses segmentos comuns sempre que um novo formulário for criado. O Forms adaptável fornece um mecanismo conveniente para criar segmentos de formulário, como um painel ou um grupo de campos, somente uma vez e reutilizá-los no Forms adaptável. Esses segmentos reutilizáveis e independentes são chamados de Fragmentos de formulário adaptáveis.
 

@@ -29,7 +29,7 @@ Sim, você pode criar um Formulário adaptável baseado em XFA na instância do 
 * **Posso migrar o conteúdo de ambientes no local ou [!DNL Adobe-Managed Services] para o ambiente do as a Cloud Service [!DNL Forms]?**
 Sim, você pode migrar seu código personalizado, seu conteúdo e seus ativos de ambientes no local ou do [!DNL Adobe-Managed Services] para o ambiente do [!DNL Forms] as a Cloud Service. Para obter instruções detalhadas, consulte [Migrar para o Forms as a Cloud Service](migrate-to-forms-as-a-cloud-service.md).
 
-<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
+<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=pt-BR#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
 
 * **Onde posso obter a documentação de referência da API do AEM [!DNL Forms] as a Cloud Service [!DNL Java™]?**
 Você pode baixar a documentação de referência da API Java™ de [!DNL Maven Central Repository]. Para baixar:
@@ -105,7 +105,7 @@ Crie o Formulário adaptável com base no esquema JSON no ambiente Forms do Expe
 
   You can get started with Adobe Experience Manager easily with just a few steps:
 
-  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?#generate-service-credentials) the service credentials.  
+  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=pt-BR&#generate-service-credentials) the service credentials.  
   
   1. Setup your connection: Add your service credentials to the Adobe Experience Manager Connector. You can get crdential from service credential JSON and copy these credential details to your one-time connection setup:
 
