@@ -4,9 +4,9 @@ description: Saiba mais sobre as primeiras etapas para se tornar produtivo rapid
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 283608acebab0704532ee2a2d856f248a818f671
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Introdução ao Agente de modernização de experiência {#getting-started}
 
-Saiba mais sobre as primeiras etapas para se tornar produtivo rapidamente com o Agente de modernização de experiência usando o Console de modernização de experiência.
+Learn the first steps to get started using the Experience Modernization Agent and the Experience Modernization Console.
 
 >[!NOTE]
 >
->Se você estiver interessado em usar o Console de modernização de experiência, poderá solicitar acesso para garantir uma experiência de integração tranquila.
+>If you are interested in using the Experience Modernization Console, you can request access through your account manager to ensure a smooth onboarding experience.
 
 ## Preparar um repositório GitHub da Edge Delivery {#prepare-repo}
 
