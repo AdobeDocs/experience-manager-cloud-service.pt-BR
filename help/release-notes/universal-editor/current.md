@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2026.03.05
-description: Estas são as notas de versão do Universal Editor de 2026.03.05.
+title: Notas de versão do Universal Editor 2026.03.12
+description: Estas são as notas de versão do Universal Editor de 2026.03.12.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
+source-git-commit: ef6e65a72eaa5e7e8b15f8ec096cd43351bc2674
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
 
 
-# Notas de versão do Universal Editor 2026.03.05 {#release-notes}
+# Notas de versão do Universal Editor 2026.03.12 {#release-notes}
 
-Estas são as notas de versão da versão de 5 de março de 2026 do Editor universal.
+Estas são as notas de versão da versão de 12 de março de 2026 do Editor universal.
 
 >[!TIP]
 >
@@ -26,8 +26,7 @@ Estas são as notas de versão da versão de 5 de março de 2026 do Editor unive
 
 ## Novidades {#what-is-new}
 
-* [O seletor de componentes](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) tem um novo design.
-* [Um seletor de cores](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) para o RTE está disponível agora.
+* Agora os componentes podem ser adicionados através do [menu de contexto](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) de contêineres.
 
 ## Recursos da adoção antecipada {#early-adopter}
 
@@ -37,5 +36,4 @@ Se você estiver interessado em testar os recursos futuros listados abaixo e com
 
 ## Outras melhorias {#other-improvements}
 
-* As opções de alinhamento, direção de texto e recuo agora estão [habilitadas por padrão no RTE](/help/implementing/universal-editor/configure-rte.md), desde que o back-end dê suporte a elas.
-* Agora as guias são renderizadas ao usar um Fragmento de conteúdo com esquema de API aberta e interface do usuário.
+* Correção de um problema em que os elementos secundários da Criação de documentos não obedeciam às regras NonChild.
