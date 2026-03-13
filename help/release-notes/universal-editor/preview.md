@@ -4,9 +4,9 @@ description: Estas são as notas de versão da versão de pré-visualização do
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: fc73e3dd01d22ece3c2e2c55a5f62d04ee8564a9
+source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
@@ -28,4 +28,13 @@ Estas notas de versão do **preview** são fornecidas como conveniência, para q
 
 ## Recursos futuros {#upcoming-features}
 
-* Uma opção para adicionar componentes foi adicionada ao menu de contexto.
+* Os itens no painel direito agora podem ser recolhidos na tela inicial.
+* O seletor de ativos agora é compatível com definições de filtro.
+* Se não houver ações disponíveis para o item selecionado, o menu de contexto não mostrará mais uma divisa para acessar as ações.
+
+## Aprimoramentos futuros {#upcoming-improvements}
+
+* Se houver uma definição de modelo/filtro/componente, ela será buscada novamente ao alternar de um aplicativo para outro no editor.
+* A remoção de uma imagem não deixa mais tags de imagem vazias ao usar o DA como back-end.
+* As classes em blocos agora são manipuladas adequadamente ao usar o DA como back-end.
+* A API aberta agora salva ativos remotos adequadamente como objetos.

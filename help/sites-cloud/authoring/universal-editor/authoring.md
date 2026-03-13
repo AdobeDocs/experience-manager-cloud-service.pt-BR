@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 1de2a860d96397863312f62b3c3c73e6deddd9d8
+source-git-commit: 57ea90c922b073828b4aede15bf2dd499ebbf0c2
 workflow-type: tm+mt
-source-wordcount: '2990'
+source-wordcount: '3002'
 ht-degree: 8%
 
 ---
@@ -186,9 +186,15 @@ Dependendo das necessidades do fluxo de trabalho, talvez você queira editar o F
 
    ![Selecionar um componente para adicionar a um contêiner](assets/ue-add-component.png)
 
-1. Em seguida, selecione o ícone adicionar no painel de propriedades.
+1. É possível então:
 
-   ![Selecione o ícone adicionar](assets/add-icon.png)
+   * Selecione o ícone **Adicionar** no painel de propriedades.
+
+     ![Selecione o ícone adicionar](assets/add-icon.png)
+
+   * Selecione a opção **Adicionar** no menu de contexto.
+
+     ![Adicionar do menu de contexto](assets/add-from-context-menu.png)
 
 1. A caixa de diálogo do seletor de componentes é aberta.
    * Use a coluna da esquerda para filtrar componentes por categoria ou use a pesquisa para filtrar por nome.
@@ -207,21 +213,28 @@ O componente é inserido no container e pode ser editado no editor.
 ### Duplicação de componentes em contêineres {#duplicating-components}
 
 1. Selecione um componente em um container usando a [árvore de conteúdo](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) ou o editor.
-1. Em seguida, selecione o ícone **Duplicar** no painel de propriedades.
 
-   ![Selecionar um componente para adicionar a um contêiner](assets/ue-duplicate-component.png)
-1. O componente é duplicado e inserido abaixo do componente selecionado.
+1. É possível então:
 
-O componente é inserido no container e pode ser editado no editor.
+   * Selecione o ícone **Duplicar** no painel de propriedades.
+
+     ![Selecionar um componente para adicionar a um contêiner](assets/ue-duplicate-component.png)
+
+   * Selecione a opção **Duplicar** no menu de contexto.
+
+     ![Duplicar do menu de contexto](assets/duplicate-from-context-menu.png)
+
+O componente é duplicado e inserido abaixo do componente selecionado.
 
 ### Exclusão de componentes de contêineres {#deleting-components}
 
-1. Selecione um componente de contêiner na [árvore de conteúdo](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) ou no editor.
-1. Selecione o ícone de divisa do container para expandir seu conteúdo na árvore de conteúdo.
-1. Em seguida, na árvore de conteúdo, selecione um componente no contêiner.
-1. Selecione o ícone Excluir no painel de propriedades.
+1. Selecione um componente em um container na [árvore de conteúdo](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) ou no editor.
+1. É possível então:
+   * Selecione o ícone **Excluir** no painel de propriedades.
 
-   ![Excluindo um componente](assets/ue-delete-component.png)
+     ![Excluindo um componente](assets/ue-delete-component.png)
+   * Selecione a opção **Excluir** no menu de contexto.
+     ![Excluir do menu de contexto](assets/delete-from-context-menu.png)
 
 O componente selecionado foi excluído.
 
@@ -287,7 +300,7 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 
 ### Copiar e colar {#copy-paste}
 
-Você pode copiar e colar componentes que estão em [&#x200B; contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
+Você pode copiar e colar componentes que estão em [ contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
 
 Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegador, desde que as guias já estejam abertas. Não é possível copiar um item e abrir uma nova guia do navegador para colá-lo.
 
@@ -295,21 +308,23 @@ Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegado
 ![Ícone Colar](assets/paste.png)
 
 1. Selecione um componente no editor ou na árvore de conteúdo.
-1. O ícone **Copiar** aparece no painel de propriedades [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Toque ou clique.
-1. O ícone **Colar** aparece no painel de propriedades.
+1. É possível então:
+   * Clique no ícone **Copiar** no painel [propriedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+     ![Copiar do painel](assets/copy-from-panel.png)
+   * Selecione a opção **Copiar** no menu de contexto.
+     ![Copiar do menu de contexto](assets/copy-from-context-menu.png)
 1. Selecione o componente _após_ no qual você deseja colar o componente copiado.
-1. Toque ou clique em Colar.
-1. O componente copiado foi colado _depois_ do componente selecionado.
+1. É possível então:
+   * Toque ou clique em **Colar** no painel de propriedades.
+     ![Colar do painel](assets/paste-from-panel.png)
+   * Selecione **Colar** no menu de contexto.
+     ![Colar do menu de contexto](assets/paste-from-context-menu.png)
+
+O componente copiado foi colado _depois_ do componente selecionado.
 
 >[!TIP]
 >
 >Use a tecla de atalho `Command-C` ou `Command-V` para copiar ou colar, respectivamente.
-
-## Opções de contexto {#context-options}
-
-Ao editar no local, o editor oferecerá opções relevantes ao contexto com um clique com o botão direito do mouse, como duplicação, exclusão ou cópia de componentes.
-
-![Menu de opções de contexto](assets/context-options-menu.png)
 
 ## Visualização de conteúdo {#previewing-content}
 

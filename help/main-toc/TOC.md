@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
 workflow-type: tm+mt
-source-wordcount: '7111'
+source-wordcount: '7114'
 ht-degree: 56%
 
 ---
@@ -257,6 +257,7 @@ ht-degree: 56%
       + [Notas de versão atuais do Universal Editor](/help/release-notes/universal-editor/current.md)
       + [Visualizar notas de versão para o Editor universal](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [Notas de versão 2026.03.05](/help/release-notes/universal-editor/2026/2026-03-05.md)
          + [Notas de versão 2026.02.26](/help/release-notes/universal-editor/2026/2026-02-26.md)
          + [Notas de versão 2026.02.19](/help/release-notes/universal-editor/2026/2026-02-19.md)
          + [Notas de versão 2026.02.13](/help/release-notes/universal-editor/2026/2026-02-13.md)
@@ -272,7 +273,7 @@ ht-degree: 56%
          + [Notas de versão 2025.11.06](/help/release-notes/universal-editor/2025/2025-11-06.md)
          + [Notas de versão 2025.10.30](/help/release-notes/universal-editor/2025/2025-10-30.md)
          + [Notas de versão 2025.10.24](/help/release-notes/universal-editor/2025/2025-10-24.md)
-         + [Notas de versão 2025.10.16](/help/release-notes/universal-editor/2025/2025-10-16.md)
+         + [Notas de versão de 2025.10.16](/help/release-notes/universal-editor/2025/2025-10-16.md)
          + [Notas de versão 2025.10.09](/help/release-notes/universal-editor/2025/2025-10-09.md)
          + [Notas de versão 2025.10.02](/help/release-notes/universal-editor/2025/2025-10-02.md)
          + [Notas de versão 2025.09.25](/help/release-notes/universal-editor/2025/2025-09-25.md)
@@ -298,8 +299,8 @@ ht-degree: 56%
          + [Notas de versão 2024.09.27](/help/release-notes/universal-editor/2024/2024-09-27.md)
          + [Notas de versão 2024.09.26](/help/release-notes/universal-editor/2024/2024-09-26.md)
          + [Notas de versão 2024.09.18](/help/release-notes/universal-editor/2024/2024-09-18.md)
-         + [Notas de versão 2024.09.03](/help/release-notes/universal-editor/2024/2024-09-03.md)
-         + [Notas de versão 2024.08.13](/help/release-notes/universal-editor/2024/2024-08-13.md)
+         + [Notas de versão de 2024.09.03](/help/release-notes/universal-editor/2024/2024-09-03.md)
+         + [Notas de versão de 2024.08.13](/help/release-notes/universal-editor/2024/2024-08-13.md)
          + [Notas de versão 2024.07.28](/help/release-notes/universal-editor/2024/2024-07-28.md)
          + [Notas de versão 2024.06.28](/help/release-notes/universal-editor/2024/2024-06-28.md)
    + [Novidades?](/help/release-notes/what-is-new.md)
@@ -437,7 +438,7 @@ ht-degree: 56%
          + [Gerenciamento de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [Propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md)
          + [Editar as propriedades da página](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
-         + [Visualizar páginas  &#x200B;](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+         + [Visualizar páginas  ](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [Versões de página](/help/sites-cloud/authoring/sites-console/page-versions.md)
          + [Diferencial de páginas](/help/sites-cloud/authoring/sites-console/page-diff.md)
@@ -570,7 +571,7 @@ ht-degree: 56%
       + [Exportar fragmentos de conteúdo para o Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportar Fragmentos de experiência para o Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integração ao Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Usando fragmentos de conteúdo no Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=pt-BR)
+      + [Usando fragmentos de conteúdo no Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operacional do AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [Experimentação contextual](/help/sites-cloud/administering/contextual-experimentation.md)
 + Ativos {#assets}
@@ -582,7 +583,7 @@ ht-degree: 56%
    + [Acessibilidade no  [!DNL Assets]](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [Ativar o Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
-   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+   + [Ativos do as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Solução de problemas do AEM Assets](/help/assets/troubleshoot-aem-assets.md)
    + [Usuários do Assets Collaborator](/help/assets/assets-collaborator-users.md)
    + Gerenciar ativos digitais {#manage}
@@ -614,7 +615,7 @@ ht-degree: 56%
       + [Aprimorar a descoberta de conteúdo com metadados gerados por IA](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
       + [Tags inteligentes para vídeos](/help/assets/smart-tags-for-videos.md)
       + [Como organizar ativos](/help/assets/organize-assets.md)
-      + [Usar ativos do  [!DNL Adobe Stock] &#x200B;](/help/assets/aem-assets-adobe-stock.md)
+      + [Usar ativos do  [!DNL Adobe Stock] ](/help/assets/aem-assets-adobe-stock.md)
       + [Gerenciar coleções](/help/assets/manage-collections.md)
       + [Visão geral dos metadados](/help/assets/manage-metadata.md)
       + [Integrar com a  [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
@@ -630,7 +631,7 @@ ht-degree: 56%
       + [Criar e compartilhar pastas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para ativos](/help/assets/drm.md)
       + [Inserir marca d&#39;água em ativos](/help/assets/watermark-assets.md)
-      + [Processar ativos usando APIs da [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Processar ativos usando APIs da [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Tags de cores para imagens](/help/assets/color-tag-images.md)
       + [Gerenciar documentos PDF](/help/assets/manage-pdf-documents.md)
    + Configurar, administrar e estender o [!DNL Assets] {#admin}
@@ -783,9 +784,9 @@ ht-degree: 56%
       + [Propriedades do ativo](/help/assets/asset-properties-content-hub.md)
       + [Controle de acesso baseado em atributos](/help/assets/attribute-based-access-control.md)
       + [Compartilhar ativos na Content Hub](/help/assets/share-assets-content-hub.md)
-      + [Baixar ativos usando o Content Hub](/help/assets/download-assets-content-hub.md)
-      + [Gerenciar o Assets licenciado no Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
-      + [Gerenciar coleções no Content Hub](/help/assets/collections-content-hub.md)
+      + [Baixar ativos usando o Hub de Conteúdo](/help/assets/download-assets-content-hub.md)
+      + [Gerenciar Ativos Licenciados no Hub de Conteúdo](/help/assets/manage-licensed-assets-on-content-hub.md)
+      + [Gerenciar coleções no Hub de Conteúdo](/help/assets/collections-content-hub.md)
       + [Editar imagens usando o Adobe Express no Content Hub](/help/assets/edit-images-content-hub.md)
       + [Insights de ativos no Content Hub](/help/assets/insights-content-hub.md)
       + [Perguntas frequentes sobre o Content Hub](/help/assets/frequently-asked-questions-content-hub.md)
@@ -826,7 +827,7 @@ ht-degree: 56%
       + [Migrar do [!DNL AEM 6.5 Forms] ou anterior para o [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos e permissões](/help/forms/forms-groups-privileges-tasks.md)
       + [Importar, exportar e organizar formulários adaptáveis, formulários PDF e outros ativos](/help/forms/import-export-forms-templates.md)
-      + [Ativar a alternância de recursos no Kit de desenvolvimento de software da Adobe Experience (AEM SDK)](/help/forms/enable-feature-toggle.md)
+      + [Ativar a alternância de recurso no Kit de desenvolvimento de software de experiência de Adobe (AEM SDK)](/help/forms/enable-feature-toggle.md)
    + Introdução {#getting-started-forms}
       + [Caso de uso e ambiente de desenvolvimento de configuração](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Criar o formulário de solicitação de empréstimo](/help/forms/create-adaptive-form-tutorial.md)
@@ -843,9 +844,9 @@ ht-degree: 56%
       + Modelo de dados de formulário {#use-form-data-model}
          + [Conectar o AEM Forms ao banco de dados ou à fonte de dados](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
-         + [Configurar OData do [!DNL Microsoft Dynamics] &#x200B;](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Conectar o formulário adaptável ao aplicativo do Salesforce usando o fluxo de credenciais do cliente OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configurar armazenamento do [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
+         + [Configurar OData do [!DNL Microsoft Dynamics] ](/help/forms/ms-dynamics-odata-configuration.md)
+         + [Conectar o formulário adaptável ao aplicativo Salesforce usando o fluxo de credenciais do cliente OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
+         + [Configurar armazenamento do [!DNL Azure] ](/help/forms/configure-azure-storage.md)
          + [Configurar [!DNL Microsoft Dynamics 365] serviços em nuvem](/help/forms/configure-msdynamics.md)
          + [Conectar o formulário adaptável ao banco de dados SQL do Azure](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurar os serviços em nuvem do Salesforce](/help/forms/configure-salesforce.md)
@@ -963,7 +964,7 @@ ht-degree: 56%
             + [Construtores de estilo para o Adaptive Forms](/help/forms/styling-constructs-adaptive-forms.md)
             + [Aplicar estilos CSS em linha a componentes individuais do Formulário adaptável](/help/forms/inline-style-adaptive-forms.md)
             + [Como usar o componente Separador no Adaptive Forms?](/help/forms/separator-component-in-adaptive-forms.md)
-         + Adicionar regras e usar expressões em um Formulário adaptável {#add-rules-and-use-expressions-in-an-adaptive-form}
+         + Adicionar regras e usar expressões em um formulário adaptável {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Adicionar regras a um Formulário adaptável](/help/forms/rule-editor.md)
             + [Adição de um manipulador de erros personalizado usando o serviço Chamada do Editor de regras](/help/forms/add-custom-error-handler-adaptive-forms.md)
             + [Conceder acesso ao editor de regras para grupos de usuários selecionados](/help/forms/rule-editor-access-user-groups.md)
@@ -1124,7 +1125,7 @@ ht-degree: 56%
             + [Introdução aos projetos de criação do AEM](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
             + [Console de Modernização](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
             + [Guia de solicitação](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
-            + [Modelo de entrega da AOE](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
+            + [Entrega da AOE](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
          + [Agente de desenvolvimento](/help/ai-in-aem/agents/brand-experience/development/development.md)
       + Agente do Supervisor de Conteúdo {#content-advisor}
          + [Visão geral](/help/ai-in-aem/agents/content-advisor/overview.md)
@@ -1181,7 +1182,7 @@ ht-degree: 56%
       + [Atribuição do reprodutor a uma exibição](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
    + Uso dos recursos principais do produto {#core-product-features}
       + [Suporte a miniaturas para vídeos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
-      + [Serviço de notificação do Screens](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
+      + [Screens Notification Service](/help/screens-cloud/using-core-product-features/screens-notification-service.md)
    + Desenvolvimento no Screens as a Cloud Service {#developing-screens-cloud}
       + [APIs REST](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [Criar componentes](/help/screens-cloud/developing/creating-components.md)
@@ -1251,7 +1252,7 @@ ht-degree: 56%
          + [Como configurar uma ação enviar para um formulário adaptável?](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [Como configurar uma página de redirecionamento ou uma mensagem de agradecimento](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
          + [Adicionar o Google reCAPTCHA ao Forms no Editor universal](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [Como integrar o Modelo de dados de formulário (FDM) a um formulário no Universal Editor?](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [Como integrar o Modelo de Dados de Formulário (FDM) a um formulário no Editor Universal?](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [Como preencher previamente campos de formulário adaptável](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [Publicar Forms adaptável com o Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [Criar componentes personalizados para um formulário EDS](/help/edge/docs/forms/universal-editor/create-custom-component.md)
@@ -1297,21 +1298,21 @@ ht-degree: 56%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação{#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Visualizando fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Visualizando fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
       + [Integrar a um aplicativo do Adobe](/help/headless/content-fragment-selector/integrate-adobe-application.md)
       + [Integrar a aplicativos que não sejam da Adobe ou de terceiros](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
       + [Integrar seletor de fragmento de conteúdo usando o Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
-   + [APIs do AEM para entrega e gerenciamento de conteúdo estruturado](/help/headless/apis-headless-and-content-fragments.md)
+   + [APIs de AEM para gerenciamento e fornecimento de conteúdo estruturado](/help/headless/apis-headless-and-content-fragments.md)
    + API do GraphQL {#graphql-api}
       + [API GraphQL para fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
       + [Gerenciar pontos de extremidade do GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
@@ -1390,7 +1391,7 @@ ht-degree: 56%
          + [Adicionar um repositório da Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Adicionar um repositório privado](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [Adicionar um repositório externo](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [Gerenciar tokens de acesso de repositórios externos](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+         + [Gerenciar Tokens de Acesso de Repositórios Externos](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [Acessar repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Suporte ao submódulo Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Usar o Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
@@ -1426,7 +1427,7 @@ ht-degree: 56%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
