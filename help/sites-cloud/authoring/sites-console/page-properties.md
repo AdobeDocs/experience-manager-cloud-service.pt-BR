@@ -7,10 +7,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 0c99c27e22fd14485b367fdda8dc76c03aff65dc
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 33%
+source-wordcount: '2211'
+ht-degree: 32%
 
 ---
 
@@ -77,10 +77,10 @@ Aplique uma identidade de marca consistente em todas as páginas, anexando uma d
 
 * **Título da página** - Um título a ser usado na página
 
-   * Normalmente, é usado por componentes de título.
+   * Isso é normalmente usado por componentes de título.
    * Se estiver vazio, a variável **Título** é usada.
 
-* **Título de Navegação** - Você pode especificar um título separado para usar na navegação (por exemplo, se desejar algo mais conciso).
+* **Título da Navegação** - Você pode especificar um título separado para uso na navegação (por exemplo, se desejar algo mais conciso).
 
    * Se estiver vazio, o **Título da página** será usado.
 
@@ -93,22 +93,22 @@ O horário de ativação/desativação de uma página é uma maneira conveniente
 
 * **Momento da ativação**: a data e a hora em que a página publicada ficará visível (renderizada) no ambiente de publicação. A página deve estar publicada, seja manualmente ou por replicação automática pré-configurada.
 
-   * Se já [publicada](/help/sites-cloud/authoring/sites-console/publishing-pages.md), esta página estará disponível na instância de publicação, mas permanecerá inativa (oculta) até a renderização no horário especificado.
+   * Se já tiver [publicado](/help/sites-cloud/authoring/sites-console/publishing-pages.md), esta página estará disponível na instância de publicação, mas permanecerá inativa (oculta) até a renderização no tempo especificado.
    * Se não for publicada e [estiver configurada para replicação automática](/help/operations/replication.md#on-and-off-times-trigger-configuratio), a página será publicada automaticamente e, em seguida, renderizada no horário especificado.
    * Se não for publicada e não estiver configurada para replicação automática, a página não será publicada automaticamente. Um 404 é exibido quando é feita uma tentativa de acessar a página.
 
 * **Momento da desativação**: semelhante e frequentemente usado em combinação com o **Momento da ativação**, define o momento em que a página publicada fica oculta no ambiente de publicação.
 
-Deixe esses campos (**Momento da ativação** e **Momento da desativação**) vazios para páginas que deseja publicar e que estão disponíveis imediatamente e no ambiente de publicação até que sejam desativadas (o cenário normal).
+Deixe estes campos (**No horário** e **Fora do horário**) vazios para as páginas que você deseja publicar e que estejam disponíveis imediatamente e no ambiente de publicação até que sejam desativadas (o cenário normal).
 
 >[!NOTE]
 >Se o **Momento da ativação** ou **Momento da desativação** estiverem no passado e a replicação automática estiver configurada, então a ação relevante será acionada imediatamente.
 
 >[!TIP]
 >
->Os tempos de ativação/desativação lidam estritamente com o conteúdo já publicado (manualmente ou por replicação automática). Por esse motivo, fluxos de trabalho de publicação, como aqueles para aprovação de conteúdo, não são acionados por horários de ativação/desativação e horários de ativação/desativação não afetam o status de publicação da página. Por esse motivo, os horários de ativação/desativação são mais apropriados para mostrar/ocultar temporariamente um conteúdo já aprovado e publicado.
+>Os tempos de ativação/desativação lidam estritamente com o conteúdo que já foi publicado (manualmente ou por meio de replicação automática). Por esse motivo, fluxos de trabalho de publicação, como os de aprovação de conteúdo, não são acionados por horários de ativação/desativação e os horários de ativação/desativação não afetam o status de publicação da página. Por esse motivo, os horários de ativação/desativação são mais apropriados para exibir/ocultar temporariamente conteúdo que já esteja aprovado e publicado.
 >
->Se quiser publicar conteúdo novo com todos os fluxos de trabalho associados ou remover totalmente (cancelar a publicação do conteúdo) do site, considere [gerenciar sua publicação.](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)
+>Se você deseja publicar um novo conteúdo com todos os fluxos de trabalho associados ou remover totalmente (cancelar a publicação do conteúdo) de seu site, considere [gerenciar sua publicação.](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication)
 
 ### URL personalizado {#vanity-url}
 
@@ -145,7 +145,7 @@ Essa propriedade permite inserir um URL personalizado para esta página, o que p
 ### Configuração {#configuration}
 
 * **Herdado de &lt;caminho>** - Habilitar/desabilitar herança da **Configuração da Nuvem** para a página
-   * Alterna a disponibilidade da **Configuração na Nuvem** para edição
+   * Alterna a disponibilidade da **Configuração da Nuvem** para edição
 
 * **Configuração da nuvem**: o caminho para a configuração selecionada
 
@@ -161,11 +161,17 @@ Essa propriedade permite inserir um URL personalizado para esta página, o que p
 
 * **Habilitar** - Habilita o uso de autenticação para acessar a página
 
->[!NOTE]
->
->Os grupos de usuários fechados para a página são definidos na guia **[Permissões](#permissions)**.
+  >[!NOTE]
+  >
+  >Os grupos de usuários fechados para a página são definidos na guia **[Permissões](#permissions)**.
 
 * **Página de logon** - a página a ser usada para logon
+
+  >[!WARNING]
+  >
+  >A página de logon especificada **não** deve apontar para uma página que esteja protegida por um **Requisito de Autenticação**. Certifique-se de que a página de logon seja uma página pública, desprotegida. Por exemplo, uma página dedicada, como `/content/<mysite>/en/login`, sem o **Requisito de Autenticação** habilitado.
+  >
+  >Se a página de logon configurada não tiver **Habilitar** marcado, o requisito de autenticação nessa página será removido silenciosamente na inicialização, tornando-a publicamente acessível.
 
 ### Exportar {#export}
 
@@ -193,11 +199,11 @@ Esta seção é usada para selecionar e configurar a imagem a ser apresentada. I
 
 ### Miniatura  {#thumbnail}
 
-Esta seção é usada para selecionar e configurar a miniatura da imagem para a página. Isso é usado em componentes que fazem referência à página; por exemplo, teasers, listas de páginas etc.
+Esta seção é usada para selecionar e configurar a miniatura da imagem da página. Isso é usado em componentes que fazem referência à página; por exemplo, teasers, listas de páginas etc.
 
 * **Gerar visualização** - gere uma visualização da página para usar como miniatura
 * **Fazer upload da imagem** - faça upload de uma imagem para usar como miniatura
-* **Selecionar imagem** - Selecione um ativo existente para usar como miniatura
+* **Selecionar imagem** - Selecione um ativo existente para usar como a miniatura
 * **Reverter** - esta opção fica disponível após você ter feito uma alteração na miniatura. Se você não quiser manter a alteração, poderá revertê-la antes de salvar.
 
 ## Cloud Services {#cloud-services}
@@ -236,10 +242,10 @@ Essa guia só fica visível para páginas que servem como blueprints. Os bluepri
 
 ## Live Copy {#live-copy}
 
-Essa guia só fica visível para páginas configuradas como Live Copies. Assim como em [blueprints,](#blueprint) Live Copies fazem parte do [Gerenciamento de Vários Sites.](/help/sites-cloud/administering/msm/overview.md)
+Essa guia só fica visível para páginas configuradas como Live Copies. Assim como ocorre com [plantas,](#blueprint) cópias ao vivo fazem parte do [Gerenciamento de vários sites](/help/sites-cloud/administering/msm/overview.md).
 
-* **Sincronizar** - Sincronizar o Live Copy com o blueprint, mantendo as modificações locais
-* **Redefinir** - Redefinir o Live Copy para o estado de blueprint, removendo as modificações locais
+* **Sincronizar** - Sincronize o Live Copy com o esquema, mantendo as modificações locais
+* **Redefinir** - Redefinir o Live Copy para o estado do blueprint, removendo modificações locais
 * **Suspender** - suspender modificações adicionais de implantação na Live Copy 
 * **Desanexar** - Desanexar Live Copy do blueprint
 
@@ -277,19 +283,19 @@ Por meio de uma configuração simples, um autor de conteúdo pode ativar recurs
    * Se o URL for relativo, o URL do manifest será usado como URL base para resolver
    * Quando vazio, o URL da página da qual o aplicativo foi instalado é usado.
    * É recomendável definir um valor.
-* **Modo de Exibição** - Como o navegador deve ser oculto ou apresentado ao usuário no dispositivo local
-* **Orientação da tela** - Como o PWA lidará com as orientações do dispositivo
-* **Cor do tema** - A cor do aplicativo que afeta como o sistema operacional do usuário local exibe a barra de ferramentas da interface nativa e os controles de navegação
+* **Modo de Exibição** - Como o navegador deve ser ocultado ou apresentado de outra forma ao usuário no dispositivo local
+* **Orientação da tela** - Como o PWA tratará as orientações do dispositivo
+* **Cor do tema** - A cor do aplicativo que afeta como o sistema operacional do usuário local exibe a barra de ferramentas e os controles de navegação da interface do usuário nativa
 * **Cor do plano de fundo** - A cor do plano de fundo do aplicativo, mostrado quando o aplicativo é carregado
 * **Ícone** - O ícone que representa o aplicativo no dispositivo do usuário quando o PWA é instalado
 
 ### Gerenciamento de cache (avançado) {#cache-management}
 
-* **Estratégia de armazenamento em cache e frequência de atualização de conteúdo** - Define o modelo de armazenamento em cache da sua PWA.
+* **Estratégia de armazenamento em cache e frequência de atualização de conteúdo** - Define o modelo de armazenamento em cache do seu PWA.
 * **Arquivos para armazenar em cache para uso offline**
-   * **Pré-armazenamento em cache de arquivos (visualização técnica)** - Os arquivos hospedados no AEM são salvos no cache do navegador local quando o service worker está sendo instalado e antes de ser usado.
-   * **Bibliotecas do lado do cliente** - Bibliotecas do lado do cliente para armazenar em cache para obter experiência offline
-   * **Inclusões de caminho** - As solicitações de rede para os caminhos definidos são interceptadas e o conteúdo em cache é retornado de acordo com a Estratégia de cache e frequência de atualização de conteúdo configuradas
+   * **Pré-cache de arquivo (visualização técnica)** - Os arquivos hospedados no AEM são salvos no cache local do navegador quando o Service Worker estiver sendo instalado e antes de ser usado.
+   * **Bibliotecas do lado do cliente** - Bibliotecas do lado do cliente a serem armazenadas em cache para experiência offline
+   * **Inclusões de caminho** - As solicitações de rede para os caminhos definidos são interceptadas e o conteúdo armazenado em cache é retornado de acordo com a estratégia de Armazenamento em Cache configurada e a frequência de atualização de conteúdo
    * **Exclusões de caminho** - Esses arquivos nunca serão armazenados em cache, independentemente das configurações em Pré-armazenamento em cache de arquivos e Inclusões de caminho.
 
 >[!NOTE]
