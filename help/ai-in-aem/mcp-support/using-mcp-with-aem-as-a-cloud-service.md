@@ -64,7 +64,7 @@ As ferramentas específicas expostas por cada servidor MCP podem evoluir com o t
 
 O cliente MCP usa o protocolo MCP para recuperar a lista de ferramentas e os esquemas que o LLM pode usar.
 
-Consulte o [Tutorial do Servidor MCP de Conteúdo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e o [Vídeo do Servidor MCP do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obter mais informações sobre seus recursos e como usá-los.
+Consulte o [Tutorial do Servidor MCP de Conteúdo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e o [Vídeo do Servidor MCP do Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obter mais informações sobre seus recursos e como usá-los.
 
 ## Aplicativos MCP suportados {#supported-mcp-applications}
 
