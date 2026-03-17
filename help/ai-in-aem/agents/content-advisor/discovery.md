@@ -4,21 +4,21 @@ description: Saiba como usar o agente de descoberta de conteúdo para fornecer c
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: a9f1ed92e3ca05be6f4db578a814330004100b3e
+source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 1%
+source-wordcount: '2066'
+ht-degree: 0%
 
 ---
 
 
 # Agente de Descoberta de Conteúdo {#discovery-agent}
 
-Como parte do [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md) da AEM, o agente de descoberta de conteúdo fornece conteúdo AEM sob demanda por meio de solicitações naturais e conversacionais para uma experiência de descoberta simplificada e sem cliques. Ele faz pesquisas de forma inteligente em Assets, Fragmentos de conteúdo e Forms adaptável para fornecer materiais relevantes, como imagens, vídeos, documentos PDF, artigos e modelos de formulário. Usando a linguagem natural, você pode pesquisar conteúdo sem criar consultas complexas ou aplicar filtros na interface do AEM Assets. Com base em seu prompt, o agente retorna resultados preparados juntamente com metadados de ativos e URLs de entrega, prontos para serem incorporados em outros aplicativos.
+Como parte do [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md) da AEM, o agente de descoberta de conteúdo fornece conteúdo AEM sob demanda por meio de solicitações naturais e conversacionais para uma experiência de descoberta simplificada e sem cliques. Ele pesquisa de forma inteligente em Assets, fragmentos de conteúdo, páginas do AEM Sites e no Adaptive Forms para fornecer materiais relevantes, como imagens, vídeos, documentos PDF, artigos e modelos de formulário. Usando a linguagem natural, você pode pesquisar conteúdo sem criar consultas complexas ou aplicar filtros na interface do AEM Assets. Com base em seu prompt, o agente retorna resultados preparados juntamente com metadados de ativos e URLs de entrega, prontos para serem incorporados em outros aplicativos.
 
 Alguns dos principais benefícios do agente de descoberta de conteúdo incluem:
 
-* **Descoberta de Conteúdo Unificado**: acesse todos os tipos de conteúdo do AEM, como imagens, vídeos, documentos do PDF, artigos e formulários em uma única interface conversacional.
+* **Descoberta de Conteúdo Unificado**: acesse todos os tipos de conteúdo do AEM, como imagens, vídeos, documentos do PDF, artigos, páginas e formulários em uma única interface conversacional.
 
 * **Planejamento mais rápido de campanha**: colete rapidamente visuais e formulários para campanhas de marketing em canais de email, da Web e sociais.
 
@@ -38,12 +38,15 @@ Alguns dos principais benefícios do agente de descoberta de conteúdo incluem:
 
 O agente de descoberta de conteúdo oferece as seguintes habilidades:
 
-* **Descoberta de conteúdo de linguagem natural**\
-  O agente de descoberta de conteúdo permite que os usuários encontrem ativos, fragmentos de conteúdo e formulários adaptáveis relevantes no Adobe Experience Manager (AEM) usando prompts de linguagem natural simples — sem a necessidade de consultas de pesquisa complexas.
+* **Descoberta de conteúdo de linguagem natural**
 
-* **Descoberta de ativos baseada em marcas**
+  O agente Content Discovery permite que os usuários encontrem ativos relevantes, fragmentos de conteúdo, formulários adaptáveis e páginas do AEM Sites no Adobe Experience Manager (AEM) usando prompts de linguagem natural simples — sem a necessidade de consultas de pesquisa complexas.
 
-  O agente de descoberta de conteúdo usa prompts de linguagem natural para localizar ativos associados a tags específicas no repositório do AEM, ajudando os usuários a acessar rapidamente o conteúdo organizado ou não de acordo com a taxonomia da organização.
+* **Descoberta de ativos baseada em metadados**
+
+  O agente de Descoberta de conteúdo usa prompts de linguagem natural para localizar ativos com base nos metadados disponíveis para ativos no AEM. Os usuários podem detectar ativos usando metadados como tags, IDs de email do autor ou editor, datas publicadas ou modificadas, tipo MIME, tipo de ativo, status, propriedades de metadados personalizadas definidas em formulários de metadados na exibição do Assets ou do Admin e assim por diante. Consulte [Casos de uso comuns e Prompts de amostra](#use-cases-prompts) para obter a lista completa.
+
+  Você também pode combinar vários filtros de metadados em um único prompt para refinar os resultados da pesquisa.
 
 * **Descoberta de conteúdo com base em pasta:**\
   O agente de descoberta de conteúdo pode identificar ativos interpretando prompts de linguagem natural que fazem referência a nomes de pastas no AEM. Os usuários podem simplesmente mencionar a pasta em seu prompt, sem navegar manualmente pelo repositório, reduzindo significativamente o número de cliques necessários para localizar o conteúdo correto.
@@ -78,22 +81,51 @@ Para obter informações sobre o terminal MCP para acessar o agente de descobert
 
 ### Ativos {#discovery-agent-use-cases-assets}
 
-**Descoberta de ativos baseada em marcas**
+**Descoberta de ativos baseada em metadados**
 
-O agente de descoberta de conteúdo usa prompts de linguagem natural para encontrar ativos associados a tags específicas no repositório do AEM, ajudando os usuários a acessar rapidamente o conteúdo organizado de acordo com a taxonomia de sua organização.
+O agente de Descoberta de conteúdo usa prompts de linguagem natural para localizar ativos com base nos metadados disponíveis para ativos no AEM. Os usuários podem detectar ativos usando as seguintes propriedades de metadados: Tags, Criado por ID de email, Modificado por ID de email, Publicado por ID de email, Data de criação, Data de modificação, Data de publicação, Tipo MIME, Tipo de ativo, Status, formato de arquivo, tamanho de arquivo, largura da imagem, altura da imagem e vários filtros de metadados em um único prompt.
 
-Exemplo de prompt:
+O Content Discovery Agent também pesquisa as propriedades personalizadas disponíveis em esquemas de metadados para a visualização de Administrador e formulários de metadados para a visualização de Assets. Você pode modificar seus prompts adequadamente para pesquisar valores disponíveis nessas propriedades de ativo personalizadas.
 
-Mostrar imagens marcadas `office` na pasta `WKND`.
+>[!NOTE]
+>
+>Para melhorar o desempenho da descoberta, indexe propriedades relevantes de metadados personalizados. As propriedades indexadas permitem que o agente recupere o conteúdo correspondente mais rapidamente quando os usuários incluírem essas propriedades em seus prompts.
+
+
+Exemplos de prompts:
+
+* **Pesquisar com base nas marcas**: mostrar imagens marcadas `office` na pasta `WKND`.
+* **Pesquisa com base no formato de arquivo, tipo de ativo, status do ativo e Publicado por Email ID**: Mostrar imagens no formato `.PNG` que são `approved` e `published by <user email ID>`.
+* **Pesquisa com base no formato de arquivo, tipo de ativo, status do ativo e Criado por ID de Email**: Mostrar vídeos no formato `.mp4` aprovados e `created by <user email ID>`.
+* **Pesquisa baseada no formato de arquivo, tipo de ativo, status do ativo e Data de Criação**: Mostrar imagens no formato `.PNG` que são criadas após 1º de janeiro de 2025 e `published by <user email ID>`
+* **Pesquisa baseada no tipo MIME, Data de Criação e Publicado por ID de Email**: Mostrar `image/jpeg` criado após `January 1, 2025` e `published by <user email ID>`.
+* **Pesquisar com base nas propriedades de formato de arquivo e metadados personalizados**: mostrar imagens no formato `.JPEG` que tenham `Product SKU ID as <SKU value>`.
+
+* **Pesquisar ativos com metadados ausentes**: mostrar ativos criados nos últimos 90 dias com `<Name of metadata property including custom properties>` está em branco.
+
+* **Pesquise ativos usando tamanho de arquivo, largura de imagem e altura de imagem**: mostra imagens maiores que 5 MB com largura maior que 2000 pixels e altura maior que 1200 pixels.
+
 
 **Descoberta de conteúdo com base em pasta:**\
-O agente de descoberta de conteúdo pode identificar ativos interpretando prompts de linguagem natural que fazem referência a nomes de pastas no AEM. Os usuários podem simplesmente mencionar a pasta em seu prompt, sem navegar manualmente pelo repositório, reduzindo significativamente o número de cliques necessários para localizar o conteúdo correto.
+O Content Discovery Agent pode identificar ativos interpretando prompts de idioma natural que fazem referência a nomes de pastas no AEM. Os usuários podem simplesmente mencionar a pasta em seu prompt, sem navegar manualmente pelo repositório, reduzindo significativamente o número de cliques necessários para localizar o conteúdo correto.
 
 Exemplos de prompts:
 
 * Há algum svgs na pasta `WKND`?
 * Mostrar ativos modificados após `Nov 1 2025` na pasta `WKND`.
 * Listar `lifestyle` imagens na pasta `WKND`.
+
+**Perguntas adicionais para habilitar a descoberta de conteúdo com base em pasta**
+
+Quando um nome de pasta é incluído em um prompt (sem o caminho completo do ativo), o Agente de Descoberta de Conteúdo primeiro verifica se há uma pasta correspondente no caminho raiz `/content/dam/<folder-name>`.
+
+Se uma pasta correspondente não for encontrada no nível raiz, o agente sugere caminhos de pasta alternativos onde o nome da pasta especificado existe no repositório. Isso ajuda os usuários a identificar rapidamente o local correto sem navegar manualmente pela estrutura de pastas.
+
+Por exemplo, o caminho `/content/dam/<folder-name>` não foi encontrado. Você quis dizer um desses?
+
+* Opção 1
+
+* Opção 2
 
 **Descoberta de ativos baseada em formato**
 
@@ -111,9 +143,37 @@ Exemplo de prompt:
 
 Mostrar ativos com a pessoa na orientação paisagem.
 
+**Expandindo os resultados da pesquisa**
+
+O Content Discovery Agent retorna os 20 resultados mais relevantes por tipo de conteúdo para um prompt. Se resultados correspondentes adicionais estiverem disponíveis, os usuários poderão solicitar o próximo conjunto inserindo um prompt de acompanhamento como `show me more`. O agente recupera o próximo conjunto de resultados da pesquisa original, permitindo que os usuários explorem progressivamente conjuntos de resultados maiores sem refinar o prompt.
+
+**Localizando ativos semelhantes**
+
+O Content Discovery Agent permite que os usuários encontrem ativos semelhantes a um resultado específico retornado nos resultados da pesquisa. Depois que o agente exibir os principais resultados de um prompt, você poderá solicitar ativos semelhantes referenciando a posição de um item na lista de resultados. Por exemplo, um prompt como `find assets similar to the 3rd result` instrui o agente a identificar e retornar outros ativos relevantes relacionados a esse item. Isso ajuda os usuários a descobrir rapidamente o conteúdo relacionado sem criar um novo prompt de pesquisa.
+
+**Classificando resultados da pesquisa**
+
+O agente de descoberta de conteúdo permite que os usuários classifiquem os resultados da pesquisa diretamente em seus prompts de idioma natural. Os usuários podem especificar critérios de classificação, como data de modificação, data de criação ou nome do ativo, e escolher ordem crescente ou decrescente.
+
+Exemplos de prompts:
+
+* Localizar imagens em montanha classificadas por data de modificação em ordem decrescente (mostra primeiro os ativos modificados mais recentemente).
+
+* Mostra as imagens de montanha ordenadas pelo nome em ordem crescente (mostra os nomes das imagens que começam com a letra A, primeiro seguida por B, e assim por diante).
+
+### Páginas do AEM Sites {#content-discovery-agent-aem-sites-pages}
+
+O agente de Descoberta de conteúdo ajuda os usuários a localizar rapidamente páginas relevantes do AEM Sites, interpretando prompts de linguagem natural que fazem referência a tópicos de página, campanhas ou outras palavras-chave contextuais. O agente executa uma pesquisa de texto completo com base nas palavras-chave no prompt para identificar as páginas correspondentes no repositório do AEM, eliminando a necessidade de navegar manualmente pela estrutura dos sites.
+
+Exemplos de Prompts:
+
+* Encontre todas as páginas do AEM Sites para a campanha de verão.
+
+* Encontre páginas do AEM Sites com um tema Coffee.
+
 ### Fragmentos de conteúdo {#discovery-agent-use-cases-content-fragments}
 
-O agente de descoberta de conteúdo ajuda os usuários a localizar rapidamente os fragmentos de conteúdo corretos, interpretando referências de linguagem natural a nomes de campanha, marcas de produtos, status da publicação e atividade de criação recente. Ele permite que as equipes apresentem fragmentos prontos para campanha e visualizem conteúdo específico da marca, tudo sem navegar manualmente pelas pastas ou aplicar vários filtros no AEM.
+O Content Discovery Agent ajuda os usuários a localizar rapidamente os fragmentos de conteúdo corretos, interpretando referências de linguagem natural a nomes de campanha, marcas de produtos, status da publicação e atividade de criação recente. Ele permite que as equipes apresentem fragmentos prontos para campanha e visualizem conteúdo específico da marca, tudo sem navegar manualmente pelas pastas ou aplicar vários filtros no AEM.
 
 Exemplos de prompts:
 
@@ -127,7 +187,7 @@ Exemplos de prompts:
 
 ### Forms {#discovery-agent-use-cases-forms}
 
-O agente de descoberta de conteúdo ajuda a encontrar rapidamente formulários adaptáveis usando prompts de linguagem natural. Ele faz pesquisas no conteúdo e nos metadados do formulário para encontrar correspondências com base em palavras-chave de seus prompts. Isso significa que você pode descobrir formulários relevantes com êxito, mesmo se os termos de pesquisa não estiverem no título ou na descrição do formulário.
+O Content Discovery Agent ajuda a encontrar rapidamente formulários adaptáveis usando prompts de linguagem natural. Ele faz pesquisas no conteúdo e nos metadados do formulário para encontrar correspondências com base em palavras-chave de seus prompts. Isso significa que você pode descobrir formulários relevantes com êxito, mesmo se os termos de pesquisa não estiverem no título ou na descrição do formulário.
 
 Exemplos de prompts:
 
@@ -173,6 +233,10 @@ Especifique detalhes concisos nos prompts em seu idioma, para que o agente possa
 
 * Use os metadados específicos da sua organização, como categorias (tênis de corrida, eletrônicos), estações (outono, primavera), eventos (sexta-feira preta, lançamento de produto) e canais (Web, email, impressão) para filtrar ainda mais o conteúdo.
 
-## Limitações   {#limitations-discovery-agent}
+## Limitações {#limitations-discovery-agent}
 
-O agente de descoberta de conteúdo oferece suporte a prompts baseados em dimensões somente para tipos de formato de imagem e SVG. Por exemplo, `Find images wider than 1080px`.
+* O Content Discovery Agent oferece suporte a prompts baseados em dimensão somente para tipos de formato de imagem e SVG. Por exemplo, `Find images wider than 1080px`.
+
+* Os administradores do Content Hub podem acessar o Content Discovery Agent usando o portal do Content Hub. No entanto, os resultados são recuperados somente da instância do autor do AEM. Atualmente, os usuários da Content Hub Limited não podem obter os benefícios do Content Discovery Agent (em breve).
+
+* O recurso Localizar semelhante funciona somente para imagens com [aprimoramentos de Marcas inteligentes](/help/assets/ai-generated-metadata-assets-view.md).

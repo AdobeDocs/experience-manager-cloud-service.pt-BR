@@ -4,9 +4,9 @@ description: Saiba como usar o agente de otimização de conteúdo para transfor
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: a9f1ed92e3ca05be6f4db578a814330004100b3e
+source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Você pode acessar o agente de otimização de conteúdo no AEM por meio do Assi
 
 ## Casos de uso comuns e exemplos de prompt {#use-cases-prompts}
 
-Use o agente de otimização de conteúdo procurando os ativos corretos por meio do [agente de descoberta de conteúdo.](/help/ai-in-aem/agents/content-advisor/discovery.md) Quando as imagens relevantes forem exibidas, os usuários poderão gerar variantes otimizadas ou específicas de canal para um ou vários ativos diretamente dos resultados da pesquisa. Esse fluxo de trabalho garante entradas de alta qualidade e resultados de otimização consistentemente melhores. [Consulte a lista completa de otimizações disponíveis](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) para obter mais informações.
+Use o agente de otimização de conteúdo procurando os ativos corretos por meio do [agente de descoberta de conteúdo.](/help/ai-in-aem/agents/content-advisor/discovery.md) Quando as imagens relevantes forem exibidas, os usuários poderão gerar variantes otimizadas ou específicas de canal para um ou vários ativos diretamente dos resultados da pesquisa. Como alternativa, os usuários podem gerar variantes especificando a UUID do ativo ou o caminho do ativo no prompt, sem precisar executar uma pesquisa anterior. Esse fluxo de trabalho garante entradas de alta qualidade e resultados de otimização consistentemente melhores. [Consulte a lista completa de otimizações disponíveis](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) para obter mais informações.
 
 * **Criação de representação de alta resolução**
 
