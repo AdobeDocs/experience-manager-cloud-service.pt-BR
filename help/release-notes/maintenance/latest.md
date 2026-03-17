@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 2a7b83b99547637e02ec7cef9c92c5dd794a9adc
+source-git-commit: b83d8736d47778ed133e0cc07207e02e581bbc69
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '635'
 ht-degree: 17%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 24893, lançada publicamente em quarta-feira, 17 de março de 2026. A versão de manutenção anterior era 24678.
 
-A ativação de recursos do 2026.3.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2026.3.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-24893}
 
@@ -29,7 +29,7 @@ A ativação de recursos do 2026.3.0 fornecerá o conjunto completo de recursos 
 * GRANITE-57035: Use Bouncy Castle como provedor de segurança padrão.
 * GRANITE-59249: Evite registrar um provedor de segurança na JVM.
 * GRANITE-61564: Falha ao abrir configurações de exibição em `/security/users.html` para administradores.
-* GRANITE-64748: OIDC: expiração configurável do cookie sling.oauth-request-key.
+* GRANITE-64748: OIDC: expiração do cookie `sling.oauth-request-key` configurável.
 * SITES-39767: suporte ao valor nonce por meio do atributo de solicitação (CSP).
 * SKYOPS-129301: Defina o nível de conformidade jar javadoc das APIs como 17.
 * GRANITE-64962: atualize o Apache Jackrabbit Oak para 1.92.0.
@@ -59,7 +59,7 @@ A ativação de recursos do 2026.3.0 fornecerá o conjunto completo de recursos 
 * GUIDES-37781: Ao atribuir um usuário a uma tarefa de revisão, a lista suspensa lista todos os usuários em vez de apenas aqueles associados aos projetos selecionados, resultando em opções de usuário inválidas.
 * GUIDES-39385: Ao abrir um Relatório para um mapa, há um atraso no carregamento do painel Filtros.
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problemas conhecidos {#known-issues-24893}
 
@@ -82,4 +82,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.66 | [Apache Httpd 2.4.66](https://apache.googlesource.com/httpd/+/refs/tags/2.4.66/CHANGES) |
 | Componentes principais do AEM | 2.30.4 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
