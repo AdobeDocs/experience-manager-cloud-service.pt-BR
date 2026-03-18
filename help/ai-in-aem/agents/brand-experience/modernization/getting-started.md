@@ -4,9 +4,9 @@ description: Saiba mais sobre as primeiras etapas para se tornar produtivo rapid
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 283608acebab0704532ee2a2d856f248a818f671
+source-git-commit: 22a8260bf760ca4501813348c90bfc96c74e2224
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Introdução ao Agente de modernização de experiência {#getting-started}
 
-Learn the first steps to get started using the Experience Modernization Agent and the Experience Modernization Console.
+Saiba mais sobre as primeiras etapas para começar a usar o Agente de modernização de experiência e o Console de modernização de experiência.
 
 >[!NOTE]
 >
->If you are interested in using the Experience Modernization Console, you can request access through your account manager to ensure a smooth onboarding experience.
+>Se você estiver interessado em usar o Console de modernização da experiência, poderá solicitar acesso por meio do gerente de conta para garantir uma experiência de integração tranquila.
 
 ## Preparar um repositório GitHub da Edge Delivery {#prepare-repo}
 
@@ -47,8 +47,8 @@ O console solicita um repositório ao fazer logon pela primeira vez.
 
 1. Clique em **Conectar repositório**.
 1. Isso abre o aplicativo Conector de código AEM em uma nova guia do navegador. Clique em **Autorizar Conector de Código AEM**.
-1. De volta ao console, selecione **Proprietário**, **Repositório** e **Seleção de ramificação** e clique em **Fazer check-out para o espaço de trabalho**.
-   ![Conectando ao projeto GitHub](assets/connect-to-github-project.png)
+1. De volta ao console, especifique o URL de visualização do site. O URL de visualização pode ser obtido visualizando qualquer documento no site ou construindo-o a partir de uma ramificação, nome-do-site e organização. O sistema recuperará o projeto Github associado automaticamente. Em alguns casos, também pode ser solicitado que você forneça as coordenadas github.
+   ![Conectando ao projeto GitHub](assets/connect-site-and-github.png)
 1. Quando solicitado a **Substituir espaço de trabalho existente**, clique em **Substituir espaço de trabalho**.
    ![Substituir espaço de trabalho existente](assets/replace-existing-workspace.png)
 
