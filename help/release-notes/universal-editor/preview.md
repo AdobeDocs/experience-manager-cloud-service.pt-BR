@@ -4,9 +4,9 @@ description: Estas são as notas de versão da versão de pré-visualização do
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
+source-git-commit: bbf371dbf8102611345f2d289a3eaba56ee1d87c
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -38,3 +38,7 @@ Estas notas de versão do **preview** são fornecidas como conveniência, para q
 * A remoção de uma imagem não deixa mais tags de imagem vazias ao usar o DA como back-end.
 * As classes em blocos agora são manipuladas adequadamente ao usar o DA como back-end.
 * A API aberta agora salva ativos remotos adequadamente como objetos.
+
+## Futura alteração de interrupção {#breaking-change}
+
+* Todas as extensões devem ser atualizadas para `@adobe/uix-guest` >= `1.1.7` para melhorar a estabilidade.
