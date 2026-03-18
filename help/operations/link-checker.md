@@ -3,13 +3,13 @@ title: Verificador de links
 description: Saiba como o Verificador de links ajuda os autores validando links à medida que são adicionados ao conteúdo e quais opções de configuração ele oferece.
 feature: Operations
 role: Admin
-source-git-commit: cc8e242715faaef5cda25b428c315947ec3d7e06
+exl-id: f5f71e2f-69e3-44f9-812d-71fe417896f8
+source-git-commit: 08771212329423a2bf182ff2cdaf63be8cc37f80
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
 
 ---
-
 
 # Verificador de links {#link-checker}
 
@@ -36,7 +36,7 @@ O Verificador de links valida [links internos](#internal) e [links externos.](#e
 Links internos são links para outro conteúdo no repositório do AEM. Links internos podem ser adicionados usando o seletor de caminho, o editor de rich text ou usando um componente personalizado. Por exemplo:
 
 * Você cria a página `/content/wknd/us/en/adventures/ski-touring`
-* Esta página contém um link para `/content/wknd/us/en/adventures/extreme-ironing` em um componente de Texto [.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/wcm-components/text)
+* Esta página contém um link para `/content/wknd/us/en/adventures/extreme-ironing` em um componente de Texto [.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
 
 Os links internos são validados assim que o autor de conteúdo adiciona esse link a uma página. Se o link se tornar inválido:
 
@@ -52,7 +52,7 @@ Os links internos são validados assim que o autor de conteúdo adiciona esse li
 Links externos são links para conteúdo fora do repositório do AEM. Links externos podem ser adicionados usando o editor de rich text ou usando um componente personalizado. Por exemplo:
 
 * Você cria a página `/content/wknd/us/en/adventures/ski-touring`
-* Esta página contém um link para `https://bunwarmerthermalunderwear.com` em um componente de Texto [.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/wcm-components/text)
+* Esta página contém um link para `https://bunwarmerthermalunderwear.com` em um componente de Texto [.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
 
 Os links externos são validados para sintaxe e por meio da verificação de sua disponibilidade. Essa verificação é feita de forma assíncrona em um intervalo configurável. Se o Verificador de links encontrar um link externo inválido:
 
@@ -69,10 +69,10 @@ O Verificador de Links Externos depende de vários serviços e entender como ele
 
 1. Sempre que um autor de conteúdo salva qualquer link para uma página, um manipulador de eventos é acionado.
 1. O manipulador de eventos percorre todo o conteúdo em `/content`, verifica se há links novos ou atualizados e os adiciona a um cache para o Verificador de links.
-1. O **Serviço Verificador de Links CQ do Dia** é executado em um agendamento regular para verificar se as entradas no cache têm sintaxe válida.
+1. O **Serviço Verificador de Links do Adobe AEM** é executado em um agendamento regular para verificar se as entradas no cache têm sintaxe válida.
 1. Os links validados pela sintaxe são exibidos na janela [Verificador de links externos.](#external-using) No entanto, eles estarão em um estado **Pendente**.
-1. A **Tarefa do Verificador de Links do CQ de Dias** é executada regularmente para validar os links fazendo uma chamada de GET.
-1. A **Tarefa do Verificador de Links CQ do Dia** atualiza as entradas na [janela do Verificador de Links Externos](#external-using) com os resultados das chamadas de GET.
+1. A **Tarefa do Verificador de Links do Adobe AEM** é executada regularmente para validar os links fazendo uma chamada GET.
+1. A **Tarefa do Verificador de Links do Adobe AEM** atualiza as entradas na [janela do Verificador de Links Externos](#external-using) com os resultados das chamadas de GET.
 
 ### Utilização do Verificador de links externos {#external-using}
 
@@ -109,12 +109,12 @@ Todos os outros ícones na janela Verificador de links externos estão inativos.
 
 O Verificador de links está disponível automaticamente e pronto para uso no AEM. No entanto, há várias configurações de OSGi que podem ser modificadas para alterar seu comportamento:
 
-* **Serviço de Armazenamento de Informações do Verificador de Links CQ do Dia** - Esse serviço define o tamanho do cache do Verificador de Links no repositório.
-* **Serviço Day CQ Verificador de Links** - Esse serviço executa a verificação assíncrona da sintaxe de links externos.
+* **Serviço de Armazenamento de Informações do Verificador de Links do Adobe AEM** - Esse serviço define o tamanho do cache do Verificador de Links no repositório.
+* **Serviço Verificador de Links do Adobe AEM** - Esse serviço executa a verificação assíncrona da sintaxe de links externos.
    * Você pode definir o período de verificação e quais tipos de links são ignorados pelo verificador entre outras opções.
-* **Tarefa do Verificador de Links CQ do Dia** - Este serviço executa a validação de links externos do GET.
+* **Tarefa do Verificador de Links do Adobe AEM** - Este serviço executa a validação GET de links externos.
    * Ela permite definições separadas de intervalos para verificar links ruins e bons entre outras opções.
-* **Transformador do Verificador de Links CQ de Dias** - Este serviço converte links com base em um conjunto de regras definido pelo usuário.
+* **Transformador do Verificador de Links do Adobe AEM** - Este serviço converte links com base em um conjunto de regras definido pelo usuário.
 
 Consulte o documento [Configuração de OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes sobre como alterar as configurações de OSGi.
 
@@ -123,7 +123,7 @@ Consulte o documento [Configuração de OSGi](/help/implementing/deploying/confi
 Você pode optar por desativar totalmente o Verificador de links. Para fazer isso:
 
 1. Abra o console OSGi.
-1. Editar o **Transformador do Verificador de links CQ de dias**
+1. Editar o **Transformador do Verificador de Links do Adobe AEM**
 1. Marque as opções que deseja desativar:
    * **Desabilitar Verificação** - para desabilitar a validação de links
    * **Desabilitar Regravação** - para desabilitar transformações de link
