@@ -4,9 +4,9 @@ description: Saiba como usar o agente de descoberta de conteúdo para fornecer c
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
+source-git-commit: 10a4b44fde65ae865d2e6d908e9e442752326fcd
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '2073'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Exemplos de prompts:
 * **Pesquisa com base no formato de arquivo, tipo de ativo, status do ativo e Criado por ID de Email**: Mostrar vídeos no formato `.mp4` aprovados e `created by <user email ID>`.
 * **Pesquisa baseada no formato de arquivo, tipo de ativo, status do ativo e Data de Criação**: Mostrar imagens no formato `.PNG` que são criadas após 1º de janeiro de 2025 e `published by <user email ID>`
 * **Pesquisa baseada no tipo MIME, Data de Criação e Publicado por ID de Email**: Mostrar `image/jpeg` criado após `January 1, 2025` e `published by <user email ID>`.
-* **Pesquisar com base nas propriedades de formato de arquivo e metadados personalizados**: mostrar imagens no formato `.JPEG` que tenham `Product SKU ID as <SKU value>`.
+* **Pesquisar com base nas propriedades de formato de arquivo e metadados personalizados**: mostrar imagens no formato `.JPEG` que tenham `Product SKU ID = <SKU value>` (deve estar na propriedade de metadados = formato de valor).
 
 * **Pesquisar ativos com metadados ausentes**: mostrar ativos criados nos últimos 90 dias com `<Name of metadata property including custom properties>` está em branco.
 
