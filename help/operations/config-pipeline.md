@@ -4,9 +4,9 @@ description: Saiba como você pode usar pipelines de configuração para implant
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 66ea803dbf8e8b12fecf6256a88c94c2ca6fa112
+source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1491'
 ht-degree: 2%
 
 ---
@@ -221,13 +221,11 @@ data:
 
 Ao incluir o campo de metadados *envTypes*, somente o valor **prod** deve ser usado (a omissão do campo de metadados envTypes também é boa). Para a *tier* reqProperty, somente o valor **publish** deve ser usado.
 
-## Variáveis de ambiente secreto {#secret-env-vars}
+## Segredos de configuração  {#secret-in-configuration}
 
-Para que informações confidenciais não precisem ser armazenadas no controle do código-fonte, os arquivos de configuração dão suporte a variáveis de ambiente do Cloud Manager do tipo **secret**. Para algumas configurações, incluindo o encaminhamento de logs, as variáveis de ambiente secretas são obrigatórias para determinadas propriedades.
+Para que informações confidenciais não precisem ser armazenadas no controle do código-fonte, os arquivos de configuração suportam a referência de segredos das variáveis de pipeline de Configuração ou das variáveis de Ambiente. Para algumas configurações, incluindo o encaminhamento de logs, as variáveis secretas são obrigatórias para determinadas propriedades. Consulte [Configurando credenciais e autenticação da CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md) para obter detalhes sobre o uso de segredos na configuração da CDN.
 
-Observe que as variáveis de ambiente secretas são usadas para publicar projetos de entrega; consulte a seção Variáveis de pipeline secretas para projetos Edge Delivery Services.
-
-O trecho a seguir é um exemplo de como a variável de ambiente secreta `${{SPLUNK_TOKEN}}` é usada na configuração.
+O trecho a seguir é um exemplo de como a variável secreta `${{SPLUNK_TOKEN}}` é usada na configuração.
 
 ```
 kind: "LogForwarding"
@@ -241,12 +239,22 @@ data:
       index: "AEMaaCS"
 ```
 
-Para obter detalhes sobre como usar variáveis de ambiente, consulte [Variáveis de ambiente do Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
-## Variáveis de pipeline secretas {#secret-pipeline-vars}
 
-Para Projetos Edge Delivery Services, use variáveis de pipeline do Cloud Manager do tipo **segredo** para que informações confidenciais não precisem ser armazenadas no controle do código-fonte. A caixa de seleção *Etapa Aplicada* deve usar a opção **implantar**.
+### Variáveis de pipeline secretas {#secret-pipeline-vars}
 
-A sintaxe é idêntica ao trecho mostrado na seção anterior.
+A **maneira preferida** é usar variáveis de pipeline do Cloud Manager do tipo **segredo** para que as informações confidenciais não precisem ser armazenadas no controle do código-fonte. A caixa de seleção **Etapa Aplicada** deve usar a opção **implantar**.
 
 Para obter detalhes sobre como usar variáveis de pipeline, consulte [Variáveis de pipeline no Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+
+
+### Variáveis de ambiente secreto {#secret-env-vars}
+
+Use variáveis de ambiente secreto quando quiser ter valores secretos diferentes por ambiente.
+
+Para obter detalhes sobre como usar variáveis de ambiente, consulte [Variáveis de ambiente do Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+
+>[!NOTE]
+>O uso de variáveis de ambiente secretas é mais complicado e envolve uma disciplina rigorosa: as variáveis de ambiente não são implantadas junto com o pipeline de configuração. Você deve implantá-los antes de executar o pipeline e não deve removê-los enquanto a configuração do pipeline ainda os referenciar. É por isso que os segredos do pipeline são preferidos.
+
+
