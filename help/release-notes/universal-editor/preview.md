@@ -4,9 +4,9 @@ description: Estas são as notas de versão da versão de pré-visualização do
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: bbf371dbf8102611345f2d289a3eaba56ee1d87c
+source-git-commit: e8231cd1c2d432e75268b1439fd585d19a406449
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Notas de versão de visualização do Universal Editor {#preview}
 
-Estas são as notas de versão da **versão de visualização** do Editor Universal. Estes recursos estão disponíveis atualmente no **ambiente de visualização** do Editor Universal. Esses recursos estão programados para serem lançados para disponibilização geral em 12 de março de 2026.
+Estas são as notas de versão da **versão de visualização** do Editor Universal. Estes recursos estão disponíveis atualmente no **ambiente de visualização** do Editor Universal. Esses recursos estão programados para serem lançados para disponibilização geral em 26 de março de 2026.
 
 Estas notas de versão do **preview** são fornecidas como conveniência, para que você saiba quais alterações do Universal Editor estão por vir e possa testá-las [alternando para a versão de visualização.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,17 +28,10 @@ Estas notas de versão do **preview** são fornecidas como conveniência, para q
 
 ## Recursos futuros {#upcoming-features}
 
-* Os itens no painel direito agora podem ser recolhidos na tela inicial.
-* O seletor de ativos agora é compatível com definições de filtro.
-* Se não houver ações disponíveis para o item selecionado, o menu de contexto não mostrará mais uma divisa para acessar as ações.
+* A configuração de ativos de criação de documentos agora é exposta por meio de um endpoint de configuração.
+* Um ponto de extensão foi adicionado ao menu contextual.
+* Um novo ícone de fluxo de trabalho personalizado foi adicionado ao sistema DynamicIcon de extensibilidade para exibir um estado de cancelamento profundo/superficial na interface.
 
 ## Aprimoramentos futuros {#upcoming-improvements}
 
-* Se houver uma definição de modelo/filtro/componente, ela será buscada novamente ao alternar de um aplicativo para outro no editor.
-* A remoção de uma imagem não deixa mais tags de imagem vazias ao usar o DA como back-end.
-* As classes em blocos agora são manipuladas adequadamente ao usar o DA como back-end.
-* A API aberta agora salva ativos remotos adequadamente como objetos.
-
-## Futura alteração de interrupção {#breaking-change}
-
-* Todas as extensões devem ser atualizadas para `@adobe/uix-guest` >= `1.1.7` para melhorar a estabilidade.
+* Correção de um problema com classes de Criação de documentos que não funcionavam com vários campos, pois esperavam uma cadeia de caracteres.

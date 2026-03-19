@@ -4,12 +4,13 @@ description: Entenda como você pode configurar o editor de rich text (RTE) no E
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 1%
 
 ---
+
 
 # Configuração do RTE para o Editor universal {#configure-rte}
 
