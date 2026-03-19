@@ -4,9 +4,9 @@ description: Saiba como usar o Protocolo de contexto de modelo com o AEM as a Cl
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 3b935114d543a0bf99f3c03a2840942862396216
+source-git-commit: 3f65f818ae3dd70030a56c04982a037536575ddd
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Muitas equipes do Adobe Experience Manager (AEM) agora trabalham em ambientes de
 Com a integração do MCP do AEM, diferentes perfis podem colaborar em torno do mesmo conteúdo:
 
 * **Desenvolvedores** podem orquestrar operações de conteúdo e fluxos de trabalho a partir de seus aplicativos de bate-papo ou IDE
-* **Os profissionais** e os arquitetos de conteúdo podem gerenciar sites, fragmentos de conteúdo e ativos com a assistência da IA enquanto permanecem dentro do modelo de permissão existente da AEM.
+* **Os profissionais** e os arquitetos de conteúdo podem gerenciar sites, fragmentos de conteúdo e importar ativos com a assistência da IA, sem deixar de seguir o modelo de permissão existente da AEM.
 
 >[!IMPORTANT]
 >
@@ -52,8 +52,8 @@ O AEM expõe os servidores MCP como pontos de extremidade HTTP. Os endpoints lis
 
 | **Servidor MCP** | **Ponto de extremidade** | **Descrição** |
 |---|---|----------------------------------------------------------------------------------------------------------------------|
-| **Conteúdo** | `/content` | Todas as operações de conteúdo de baixo nível, incluindo criação, leitura, atualização e exclusão (CRUD) de páginas, fragmentos e ativos. |
-| **Conteúdo (somente leitura)** | `/content-readonly` | Operações de conteúdo somente leitura (Obter, Listar/Pesquisar) para páginas, fragmentos e ativos. |
+| **Conteúdo** | `/content` | Operações de conteúdo, incluindo criação, leitura, atualização e exclusão (CRUD) de páginas e fragmentos de conteúdo, além de importação de ativos. |
+| **Conteúdo (somente leitura)** | `/content-readonly` | Operações de conteúdo somente leitura (Obter, Listar/Pesquisar) para páginas e fragmentos de conteúdo. |
 | **Cloud Manager** | `/cloudmanager` | Gerencie entidades do Cloud Manager, incluindo programas, ambientes, repositórios e pipelines, que também podem ser acionados. <br><br>*Este servidor MCP agora está em **beta**; para solicitar acesso, envie um email para [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) com uma descrição do seu caso de uso.* |
 
 As ferramentas específicas expostas por cada servidor MCP podem evoluir com o tempo. Na prática, você pode solicitar que o aplicativo habilitado para MCP descubra ferramentas por meio de um prompt como:
@@ -64,7 +64,7 @@ As ferramentas específicas expostas por cada servidor MCP podem evoluir com o t
 
 O cliente MCP usa o protocolo MCP para recuperar a lista de ferramentas e os esquemas que o LLM pode usar.
 
-Consulte o [Tutorial do Servidor MCP de Conteúdo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e o [Vídeo do Servidor MCP do Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obter mais informações sobre seus recursos e como usá-los.
+Consulte o [Tutorial do Servidor MCP de Conteúdo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e o [Vídeo do Servidor MCP do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obter mais informações sobre seus recursos e como usá-los.
 
 ## Aplicativos MCP suportados {#supported-mcp-applications}
 
@@ -177,8 +177,8 @@ Alguns cenários representativos incluem:
    * Criar novos fragmentos
    * Atualizar fragmentos existentes quando as mensagens da campanha forem alteradas.
 
-* **Gerenciamento de Assets**
-   * Importar ativos com Verificação de Status
+* **Importação de ativos**
+   * Importar ativos com verificação de status
 
 ### Exemplo de fluxos de trabalho {#example-workflows}
 
