@@ -19,7 +19,7 @@ Entenda como configurar o seletor de ativos para uso com o Editor universal.
 
 O Editor Universal usa [o seletor de ativos](/help/assets/overview-asset-selector.md#using-asset-selector) para permitir que os autores naveguem e selecionem ativos para inserção em seu conteúdo.
 
-O seletor de ativos pode ser configurado no Universal Editor com o uso de [ filtros de componentes.](/help/implementing/universal-editor/filtering.md) Este documento descreve quais opções de configuração estão disponíveis.
+O seletor de ativos pode ser configurado no Universal Editor com o uso de [&#x200B; filtros de componentes.](/help/implementing/universal-editor/filtering.md) Este documento descreve quais opções de configuração estão disponíveis.
 
 >[!NOTE]
 >
