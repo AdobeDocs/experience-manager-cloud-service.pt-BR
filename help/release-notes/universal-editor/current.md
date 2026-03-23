@@ -4,9 +4,9 @@ description: Estas são as notas de versão do Universal Editor de 2026.3.19.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8d9d162ec5bba99afb1ae86252a49a9880be4e68
+source-git-commit: 048e86fe7930173bb33de9252607e2910520b575
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '195'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Estas são as notas de versão da versão de 19 de março de 2026 do Editor univ
 
 * Os itens nas propriedades agora são recolhidos ao navegar de volta para [a tela inicial.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
 * [O seletor de ativos](/help/implementing/universal-editor/configure-assets-selector.md) agora dá suporte a [definições de filtro.](/help/implementing/universal-editor/filtering.md)
-* Se não houver ações disponíveis para o item selecionado, [o menu de contexto](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) não mostrará mais uma divisa para acessar ações.
+* Se não houver ações disponíveis para o item selecionado, [o menu de contexto](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) agora mostrará uma mensagem indicando isso.
 
 ## Outras melhorias {#other-improvements}
 
