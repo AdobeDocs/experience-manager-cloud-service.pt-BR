@@ -4,9 +4,9 @@ description: Saiba como usar o Protocolo de contexto de modelo com o AEM as a Cl
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 3f65f818ae3dd70030a56c04982a037536575ddd
+source-git-commit: 6c2061cd6e6aee26c32935f4d33417a1f945665d
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ As ferramentas específicas expostas por cada servidor MCP podem evoluir com o t
 
 O cliente MCP usa o protocolo MCP para recuperar a lista de ferramentas e os esquemas que o LLM pode usar.
 
-Consulte o [Tutorial do Servidor MCP de Conteúdo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e o [Vídeo do Servidor MCP do Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obter mais informações sobre seus recursos e como usá-los.
+Consulte o [Tutorial do Servidor MCP de Conteúdo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e o [Vídeo do Servidor MCP do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obter mais informações sobre seus recursos e como usá-los.
 
 ## Aplicativos MCP suportados {#supported-mcp-applications}
 
@@ -82,7 +82,7 @@ Os servidores MCP da AEM foram projetados para funcionar com um conjunto definid
 * Aumentar recuo do aplicativo de desktop
 * Cline (JetBrains, Código VS, Cursor)
 * Cursor
-* GitHub Copilot (Código VS)
+* GitHub Copilot (JetBrains, Código VS)
 * Kiro (aplicativo de desktop, CLI)
 * OpenAI Codex (Aplicativo de desktop)
 * OpenAI Codex CLI
@@ -104,6 +104,7 @@ Os guias passo a passo que abrangem ambas as etapas estão disponíveis para:
 * [Claude Antrópico](/help/ai-in-aem/mcp-support/setup-claude.md)
 * [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
+* [JetBrains com o Copilot do GitHub](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
 * [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
 
 ### Configuração do AEM {#aem-configuration}
@@ -116,7 +117,7 @@ Todos os aplicativos listados em [Aplicativos MCP com suporte](#supported-mcp-ap
 
 #### Restrição de Servidores MCP {#restricting-mcp-servers}
 
-Incluir na lista de permissões Todos os servidores MCP são resolvidos por padrão. Como administrador, você tem a opção de restringir o acesso a servidores MCP específicos no nível de organização, programa ou ambiente. Essa restrição oferece controle granular sobre quais recursos de MCP estão disponíveis para os usuários em sua organização.
+Todos os servidores MCP são resolvidos por padrão. Como administrador, você tem a opção de restringir o acesso a servidores MCP específicos no nível de organização, programa ou ambiente. Essa restrição oferece controle granular sobre quais recursos de MCP estão disponíveis para os usuários em sua organização.
 
 #### Gerenciando o Acesso para Cliente MCP {#managing-mcp-client-access}
 
