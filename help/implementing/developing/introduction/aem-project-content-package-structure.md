@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->Familiarize-se com o [uso do Arquétipo de projeto do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview#) básico e com o [Plug-in FileVault Content Maven](/help/implementing/developing/tools/maven-plugin.md), pois este artigo se baseia nesses aprendizados e conceitos.
+>Familiarize-se com o [uso do Arquétipo de projeto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview#) básico e com o [Plug-in FileVault Content Maven](/help/implementing/developing/tools/maven-plugin.md), pois este artigo se baseia nesses aprendizados e conceitos.
 
 Este artigo descreve as alterações necessárias para que os projetos do Adobe Experience Manager Maven sejam compatíveis com o AEM as a Cloud Service, garantindo que eles respeitem a divisão de conteúdo mutável e imutável. Além disso, as dependências são estabelecidas para criar implantações determinísticas e não conflitantes e são agrupadas em uma estrutura implantável.
 
@@ -62,7 +62,7 @@ A estrutura de implantação de aplicativo recomendada é a seguinte:
 + O arquivo Jar do pacote OSGi é gerado e incorporado diretamente em todo o projeto.
 
 + O pacote `ui.apps` contém todo o código a ser implantado e só é implantado em `/apps`. Elementos comuns do pacote `ui.apps` incluem, mas não estão limitados a:
-   + [Definições de componentes e scripts HTL](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview#)
+   + [Definições de componentes e scripts HTL](https://experienceleague.adobe.com/pt-br/docs/experience-manager-htl/content/overview#)
       + `/apps/my-app/components`
    + JavaScript e CSS (via [Bibliotecas de Clientes](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
@@ -72,7 +72,7 @@ A estrutura de implantação de aplicativo recomendada é a seguinte:
       + `/apps/settings`
    + ACLs (permissões)
       + Qualquer `rep:policy` para qualquer caminho em `/apps`
-   + [Scripts agrupados pré-compilados](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts#)
+   + [Scripts agrupados pré-compilados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts#)
 
 >[!NOTE]
 >
