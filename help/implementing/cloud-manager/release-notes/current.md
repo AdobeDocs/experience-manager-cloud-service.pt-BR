@@ -4,9 +4,9 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2026.3.0 no Adobe E
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: eb3e826e27e14b8b1da534440f11d43e973130ec
+source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '731'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ A próxima versão está planejada para sexta-feira, 2 de abril de 2026.
 
 ## Novidades - Cloud Manager {#cloud-manager-whats-new}
 
-* **O Cloud Manager agora oferece suporte à opção** Apagar **para** Importações de cópia de conteúdo **&#x200B;**
+* **O Cloud Manager agora oferece suporte à opção** Apagar **para** Importações de cópia de conteúdo ****
 
   Ao habilitar o **Apagar**, o Cloud Manager exclui o conteúdo existente no destino antes de iniciar a importação, para que você possa começar do zero e evitar conflitos com o conteúdo pré-existente. Se você deixar **Apagar** desativado, o Cloud Manager importará o novo conteúdo para cima do conteúdo de destino existente. Um prompt de confirmação é exibido antes do início do apagamento e o Cloud Manager registra a ação de apagamento e os detalhes de importação para rastreabilidade.
 
@@ -95,7 +95,9 @@ Na caixa de diálogo **Adicionar/Editar Pipeline**, na guia **Código Source**, 
 * **Compilação Completa** — compila todos os módulos no repositório em cada execução.
 * **Compilação Inteligente** — cria apenas módulos que foram alterados desde a última confirmação, o que reduz o tempo geral de compilação.
 
-Você controla quais pipelines usam a **Compilação inteligente**. Durante a versão beta, essa opção aparece somente para os pipelines **Qualidade do Código** e **Implantação de Desenvolvimento**.
+Você controla quais pipelines usam a **Compilação inteligente**. Durante a versão beta, essa opção aparece somente para os pipelines **Qualidade do código** e **Implantação de pilha completa de desenvolvimento**.
+
+Consulte [Sobre o uso da Compilação Inteligente em um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) e [Adicionar um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
 Interessado? Envie um email para [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) com sua ID organizacional e ID do programa da Adobe.
 
