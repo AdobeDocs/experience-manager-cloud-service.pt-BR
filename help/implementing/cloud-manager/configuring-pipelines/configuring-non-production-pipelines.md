@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
+source-git-commit: 8391980183b8c5a91046e01474200b9eaf8e0546
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 19%
@@ -210,7 +210,7 @@ O ganho de desempenho com o uso do Smart Build depende de vários fatores, inclu
 * A frequência e o escopo das alterações de código.
 * A distribuição de dependências entre módulos.
 
-Geralmente, projetos com muitos módulos independentes normalmente veem a maior melhoria.
+Geralmente, projetos com muitos módulos independentes podem ver a maior melhoria.
 
 ### Recusa de cache por módulo{#smart-build-cache-optout}
 
