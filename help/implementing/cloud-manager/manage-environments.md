@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: a254afed91dce2cd58df8762a6dbe39680fe9e5c
+source-git-commit: 7e9e6e98638b099c5d6f9820cb6f675afe44bfaf
 workflow-type: tm+mt
 source-wordcount: '2464'
-ht-degree: 36%
+ht-degree: 33%
 
 ---
 
@@ -108,7 +108,7 @@ As regiões selecionadas serão aplicadas a ambos os ambientes, de produção e 
 
 Se você não especificar nenhuma região adicional, [você poderá fazer isso depois que os ambientes forem criados](#edit-regions).
 
-Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-networking.md) para o programa, é recomendável fazê-lo antes de adicionar outras regiões de publicação aos ambientes usando a API do Cloud Manager. Caso contrário, o tráfego das regiões de publicação adicionais passará pelo proxy da região principal.
+Se você quiser provisionar a [rede avançada](/help/security/configuring-advanced-networking.md) para o programa, recomenda-se que esse provisionamento seja feito antes de adicionar outras regiões de publicação aos ambientes usando a API do Cloud Manager. Caso contrário, o tráfego das regiões de publicação adicionais passará pelo proxy da região principal.
 
 ### Editar várias regiões de publicação {#edit-regions}
 
@@ -130,7 +130,7 @@ Você também pode remover regiões de publicação adicionais. No entanto, voc�
 
 As alterações feitas no ambiente de produção também serão aplicadas no ambiente de preparo. As alterações em várias regiões de publicação podem ser editadas somente no ambiente de produção.
 
-Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-networking.md) para o programa, é recomendável fazê-lo antes de adicionar outras regiões de publicação aos ambientes. Caso contrário, o tráfego das regiões de publicação adicionais passará pelo proxy da região principal.
+Se você quiser provisionar a [rede avançada](/help/security/configuring-advanced-networking.md) para o programa, recomenda-se que esse provisionamento seja feito antes de adicionar outras regiões de publicação aos ambientes. Caso contrário, o tráfego das regiões de publicação adicionais passará pelo proxy da região principal.
 
 ## Exibir detalhes de um ambiente {#viewing-environment}
 
@@ -310,7 +310,7 @@ Uma nova guia é aberta no navegador com a página de logon do **Developer Conso
 
 Somente um usuário com a função **Desenvolvedor** terá acesso ao **Developer Console**. No entanto, para programas de sandbox, qualquer usuário com acesso ao programa de sandbox tem acesso ao **Developer Console**.
 
-Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obter mais detalhes.
+Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obter mais detalhes.
 
 Esta opção também está disponível na guia **Ambiente** da janela **Visão geral** ao clicar no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de um ambiente individual.
 
