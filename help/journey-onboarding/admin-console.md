@@ -4,7 +4,7 @@ description: Depois de entender a preparação necessária para realizar a integ
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 8ed13eb6f476bab07da07549a83ab9ac16bdea72
+source-git-commit: 9f237747f19ee537fbc51f39e935472c6a023328
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 43%
@@ -72,7 +72,7 @@ Antes de usar o Admin Console para administrar os usuários da sua equipe, você
 
    ![Pesquisar usuários](/help/journey-onboarding/assets/get-started3.png)
 
-1. Se tudo funcionar corretamente, a pesquisa retornará seu registro. Se o valor na coluna **FUNÇÃO DE ADMINISTRADOR** mostrar **Sistema**, isso quer dizer que você (ou o usuário mostrado) é um administrador do sistema.
+1. Se tudo funcionar corretamente, a pesquisa retornará seu registro. Se o valor na coluna **FUNÇÃO DE ADMINISTRADOR** mostrar **Sistema**, isso quer dizer que você (ou o usuário exibido) é um administrador do sistema.
 
    ![Status do sistema](/help/journey-onboarding/assets/get-started4.png)
 
@@ -123,6 +123,6 @@ A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo 
 
 * [Visão geral do Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html) - Uma visão geral abrangente do Admin Console
 * [Criar ou atualizar seu Adobe ID](https://helpx.adobe.com/br/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Saiba como criar um Adobe ID, alterá-lo e gerenciar vários Adobe IDs.
-* [Manipulador de autenticação SAML 2.0](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) - O AEM vem com um manipulador de autenticação SAML. Esse manipulador oferece suporte ao Protocolo de solicitação de autenticação SAML 2.0 (perfil Web-SSO) usando a associação POST HTTP.
-* [Funções administrativas](https://helpx.adobe.com/br/enterprise/using/admin-roles.html) - Usando o Adobe Admin Console, as organizações podem definir uma hierarquia administrativa flexível que permita o gerenciamento refinado do acesso e uso dos produtos da Adobe.
-* [Suporte e sessões com especialistas](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) - Saiba como acessar as opções de suporte na Admin Console, gerenciar os casos de suporte, agendar uma sessão com um especialista e muito mais.
+* [Manipulador de autenticação SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#) - O AEM vem com um manipulador de autenticação SAML. Esse manipulador oferece suporte ao Protocolo de solicitação de autenticação SAML 2.0 (perfil Web-SSO) usando a associação POST HTTP.
+* [Funções administrativas](https://helpx.adobe.com/enterprise/using/admin-roles.html) - Usando o Adobe Admin Console, as organizações podem definir uma hierarquia administrativa flexível que permita o gerenciamento refinado do acesso e uso dos produtos da Adobe.
+* [Suporte e sessões com especialistas](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) - Saiba como acessar as opções de suporte na Admin Console, gerenciar os casos de suporte, agendar uma sessão com um especialista e muito mais.
