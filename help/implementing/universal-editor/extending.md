@@ -50,7 +50,7 @@ Se quiser explorar as possibilidades de criar suas próprias extensões, consult
 
 >[!TIP]
 >
->Se preferir aprender por exemplo, consulte o [tutorial de extensibilidade da interface do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
+>Se preferir aprender por exemplo, consulte o [tutorial de extensibilidade da interface do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
 
 [Usando o Extension Manager no AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), você pode habilitar ou desabilitar suas extensões por instância, acessar extensões primárias do Adobe, inclusive as do Universal Editor, e muito mais.
 
