@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2026.03.19
-description: Estas são as notas de versão do Universal Editor de 2026.3.19.
+title: Notas de versão do Universal Editor 2026.03.26
+description: Estas são as notas de versão do Universal Editor de 26.3.2026.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 048e86fe7930173bb33de9252607e2910520b575
+source-git-commit: abbc43adbe64149098c049810482d37f76034eab
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '146'
 ht-degree: 1%
 
 ---
 
 
-# Notas de versão do Universal Editor 2026.03.19 {#release-notes}
+# Notas de versão do Universal Editor 2026.03.26 {#release-notes}
 
-Estas são as notas de versão da versão de 19 de março de 2026 do Editor universal.
+Estas são as notas de versão do editor universal de 26 de março de 2026.
 
 >[!TIP]
 >
@@ -22,21 +22,14 @@ Estas são as notas de versão da versão de 19 de março de 2026 do Editor univ
 
 >[!TIP]
 >
->Para obter as notas de versão atuais do Adobe Experience Manager as a Cloud Service, consulte [esta página](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Para obter as notas de versão atuais do Adobe Experience Manager as a Cloud Service, consulte [esta página.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## Novidades {#what-is-new}
 
-* Os itens nas propriedades agora são recolhidos ao navegar de volta para [a tela inicial.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
-* [O seletor de ativos](/help/implementing/universal-editor/configure-assets-selector.md) agora dá suporte a [definições de filtro.](/help/implementing/universal-editor/filtering.md)
-* Se não houver ações disponíveis para o item selecionado, [o menu de contexto](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) agora mostrará uma mensagem indicando isso.
+* [A configuração de ativos de Criação de Documentos](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets) agora é exposta por meio de um ponto de extremidade de configuração.
+* [Um ponto de extensão](/help/implementing/universal-editor/extending.md#extending-ui) foi adicionado ao menu contextual.
+* Um novo ícone de fluxo de trabalho personalizado foi adicionado ao sistema DynamicIcon de extensibilidade para exibir o estado de cancelamento profundo/superficial na interface.
 
 ## Outras melhorias {#other-improvements}
 
-* Se houver uma definição de modelo/filtro/componente, ela será buscada novamente ao alternar de um aplicativo para outro no editor.
-* A remoção de uma imagem não deixa mais tags de imagem vazias ao usar o DA como back-end.
-* As classes em blocos agora são manipuladas adequadamente ao usar o DA como back-end.
-* A API aberta agora salva ativos remotos adequadamente como objetos.
-
-## Quebra de alteração {#breaking-change}
-
-* Todas as extensões devem ser atualizadas para `@adobe/uix-guest` >= `1.1.7` para melhorar a estabilidade.
+* Correção de um problema com classes de Criação de documentos que não funcionavam com vários campos, pois esperavam uma cadeia de caracteres.

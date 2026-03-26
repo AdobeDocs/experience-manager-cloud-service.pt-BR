@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para estender os recursos d
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
+source-git-commit: abbc43adbe64149098c049810482d37f76034eab
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -50,14 +50,17 @@ Se quiser explorar as possibilidades de criar suas próprias extensões, consult
 
 >[!TIP]
 >
->Se preferir aprender por exemplo, consulte o [tutorial de extensibilidade da interface do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
+>Se preferir aprender por exemplo, consulte o [tutorial de extensibilidade da interface do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
 
 [Usando o Extension Manager no AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), você pode habilitar ou desabilitar suas extensões por instância, acessar extensões primárias do Adobe, inclusive as do Universal Editor, e muito mais.
 
-## Pontos de extensão {#extension-points}
+### Pontos de extensão {#extension-points}
 
-Além da extensibilidade da interface do usuário, o Universal Editor oferece muitos outros pontos de extensão flexíveis para permitir a integração perfeita de requisitos comerciais personalizados.
+Para obter uma lista completa dos pontos de extensão disponíveis na interface do Universal Editor, consulte a documentação do Adobe Developer [Pontos de Extensão do Universal Editor.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/)
+
+## Recursos adicionais {#additional-resources}
+
+Além da extensibilidade da interface do usuário, o Editor universal oferece outras opções de personalização para permitir a integração perfeita de requisitos comerciais personalizados.
 
 * **[Blocos](https://www.aem.live/developer/block-collection)**: no formato JSON simples, os projetos podem ajustar os blocos e os recursos UE disponíveis para criação de conteúdo.
-* **[Interface do Usuário Personalizada](#extending-ui)**: as extensões podem exibir a interface do usuário necessária em painéis laterais ou caixas de diálogo modais.
 * **[Eventos](/help/implementing/universal-editor/events-universal-editor.md)**: as extensões recebem eventos sobre as ações e seleções do autor na página para responder adequadamente.
