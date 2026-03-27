@@ -273,7 +273,7 @@ O campo Várias linhas é aberto em tela cheia e:
 
   >[!CAUTION]
   >
-  >A sincronização só está disponível para copiar alterações *de **Main**para a variação*.
+  >A sincronização só está disponível para copiar alterações *de **Main**&#x200B;para a variação*.
   >
   >A transferência de alterações *de uma variação para **Main*** não está disponível como uma opção.
 
