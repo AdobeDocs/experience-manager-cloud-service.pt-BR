@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 605ba43b498041198b62df26b83f7a4f1f5966ac
+source-git-commit: 3a99b537c4b78dd9a21be9ed74c5a7943da0a385
 workflow-type: tm+mt
-source-wordcount: '7176'
+source-wordcount: '7214'
 ht-degree: 55%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 55%
    + Notas de versão do recurso AEMaaCS {#release-notes}
       + [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2026 {#2026}
+         + [Notas da versão 2026.2.0](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
          + [Notas da versão 2026.1.0](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
       + 2025 {#2025}
          + [Notas de versão para 2025.12.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-12-0.md)
@@ -441,7 +442,7 @@ ht-degree: 55%
          + [Gerenciamento de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [Propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md)
          + [Editar as propriedades da página](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
-         + [Visualizar páginas  &#x200B;](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+         + [Visualizar páginas  ](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [Versões de página](/help/sites-cloud/authoring/sites-console/page-versions.md)
          + [Diferencial de páginas](/help/sites-cloud/authoring/sites-console/page-diff.md)
@@ -574,7 +575,7 @@ ht-degree: 55%
       + [Exportar fragmentos de conteúdo para o Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportar Fragmentos de experiência para o Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integração ao Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-      + [Usando fragmentos de conteúdo no Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=pt-BR)
+      + [Usando fragmentos de conteúdo no Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [Telemetria operacional do AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [Experimentação contextual](/help/sites-cloud/administering/contextual-experimentation.md)
 + Ativos {#assets}
@@ -606,7 +607,7 @@ ht-degree: 55%
       + [Aprimorar a descoberta de conteúdo com metadados gerados por IA](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
       + [Tags inteligentes para vídeos](/help/assets/smart-tags-for-videos.md)
       + [Como organizar ativos](/help/assets/organize-assets.md)
-      + [Usar ativos do  [!DNL Adobe Stock] &#x200B;](/help/assets/aem-assets-adobe-stock.md)
+      + [Usar ativos do  [!DNL Adobe Stock] ](/help/assets/aem-assets-adobe-stock.md)
       + [Gerenciar coleções](/help/assets/manage-collections.md)
       + [Visão geral dos metadados](/help/assets/manage-metadata.md)
       + [Integrar com a  [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
@@ -622,7 +623,7 @@ ht-degree: 55%
       + [Criar e compartilhar pastas privadas](/help/assets/private-folder.md)
       + [Digital Rights Management para ativos](/help/assets/drm.md)
       + [Inserir marca d&#39;água em ativos](/help/assets/watermark-assets.md)
-      + [Processar ativos usando APIs da [!DNL Creative Cloud] &#x200B;](/help/assets/cc-api-integration.md)
+      + [Processar ativos usando APIs da [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
       + [Tags de cores para imagens](/help/assets/color-tag-images.md)
       + [Gerenciar documentos PDF](/help/assets/manage-pdf-documents.md)
       + Seletor de ativos de micro front-end {#asset-selector}
@@ -849,9 +850,9 @@ ht-degree: 55%
       + Modelo de dados de formulário {#use-form-data-model}
          + [Conectar o AEM Forms ao banco de dados ou à fonte de dados](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
-         + [Configurar OData do [!DNL Microsoft Dynamics] &#x200B;](/help/forms/ms-dynamics-odata-configuration.md)
+         + [Configurar OData do [!DNL Microsoft Dynamics] ](/help/forms/ms-dynamics-odata-configuration.md)
          + [Conectar o formulário adaptável ao aplicativo do Salesforce usando o fluxo de credenciais do cliente OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
-         + [Configurar armazenamento do [!DNL Azure] &#x200B;](/help/forms/configure-azure-storage.md)
+         + [Configurar armazenamento do [!DNL Azure] ](/help/forms/configure-azure-storage.md)
          + [Configurar [!DNL Microsoft Dynamics 365] serviços em nuvem](/help/forms/configure-msdynamics.md)
          + [Conectar o formulário adaptável ao banco de dados Azure SQL](/help/forms/connect-adaptive-form-to-azure-sql.md)
          + [Configurar os serviços em nuvem do Salesforce](/help/forms/configure-salesforce.md)
@@ -895,6 +896,7 @@ ht-degree: 55%
             + [Definir o layout de um formulário adaptável com base nos Componentes principais](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [Criar um fragmento de formulário adaptável](/help/forms/adaptive-form-fragments-core-components.md)
             + [Criar temas para um Formulário adaptável - Componentes principais](/help/forms/using-themes-in-core-components.md)
+            + [Personalização de temas do formulário adaptável usando o Editor de temas](/help/forms/customizing-themes-using-theme-editor.md)
             + [Incorporar um tema Adaptive Forms em um tema AEM Sites](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
             + [Criar um modelo de formulário adaptável com base nos Componentes principais](/help/forms/template-editor-core-components.md)
             + [Criar um formulário adaptável (componentes principais) com base em modelos de formulário XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
@@ -1061,9 +1063,13 @@ ht-degree: 55%
       + [Suporte à edição de XDP](/help/forms/interactive-communication/support-xdp-editing.md)
       + [Criar versões e adicionar comentários](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
       + [Copiar e colar a comunicação interativa](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
+      + [Iniciar fluxo de trabalho na comunicação interativa](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
+      + [Criar tabela dinâmica](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
    + Interface do usuário associada {#associateui}
       + [Associar a interface no Editor de comunicação interativa](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+      + [Habilitar e configurar a Interface do Usuário Associada para Comunicações Interativas](/help/forms/interactive-communication/enable-configure-associate-ui.md)
       + [Integrar a interface do usuário do Associate no seu aplicativo](/help/forms/interactive-communication/invoke-associate-ui.md)
+      + [Fluxo de trabalho de envio para interface do usuário associada — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
    + [Perguntas frequentes](/help/forms/interactive-communications-faq.md)
 + Fluxos de trabalho centrados no Forms {#create-form-centric-workflows}
    + [Introdução ao fluxo de trabalho centrado no Forms](/help/forms/aem-forms-workflow.md)
@@ -1305,14 +1311,14 @@ ht-degree: 55%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação{#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Visualizando fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Visualizando fragmentos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
@@ -1434,7 +1440,7 @@ ht-degree: 55%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
