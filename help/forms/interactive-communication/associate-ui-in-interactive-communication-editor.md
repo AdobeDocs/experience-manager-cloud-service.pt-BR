@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '639'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Responsável pela configuração do sistema, governança, integrações de back-
 
 ### &#x200B;2. Autor
 
-Projeta e gerencia a comunicação interativa usando a interface do usuário Associar. ß
+Projeta e gerencia a comunicação interativa e a configura para a interface do usuário Associar (incluindo a ativação da exibição Associar e do fluxo de trabalho opcional).
 
 | Responsabilidade | Foco |
 |---------------|-------|
@@ -78,7 +78,7 @@ Usa a Interface do usuário do Associate para auxiliar clientes, atualizar infor
 
 >[!NOTE]
 >
-> O associado deve fazer parte do grupo **forms-associates**.
+> Os associados devem fazer parte do grupo **forms-associates**. Para autores que também enviam da interface do usuário Associate na instância do Author, adicione-os a **workflow-users** também.
 
 ## Casos de uso dinâmico
 
@@ -92,36 +92,22 @@ A interface do usuário Associate oferece suporte à geração instantânea e pe
 | **Setor público** | Gerar relatórios de verificação policial, recibos de serviço ao cidadão, cartas de confirmação de reclamação e resumos de atualização de casos no local. |
 | **Governo** | Crie resumos de status da requisição, cartas de aprovação de serviço e comunicação em tempo real para inscrições em esquemas de previdência. |
 
-## Ativação do fluxo de trabalho Associar interface
+## Ativação da interface de usuário Associar
 
-O autor pode seguir as etapas abaixo para configurar e publicar uma Comunicação interativa (IC) para acessar a interface do usuário associada:
+Os autores habilitam a Interface do Usuário Associada e, opcionalmente, configuram um fluxo de trabalho para envios em **Configurações de comunicação interativa**:
 
->[!NOTE]
->
-> Componentes compatíveis para associar: Campo de data, Campo numérico, Campo de texto, DateTimeField, DateField, Caixa de seleção, Botão de opção, Suspenso.
+1. **Habilitar Modo de Exibição Associado** — Em **Associar Propriedades**, marque **Habilitar Edição de Modo de Exibição Associado**, clique em **Aplicar Alterações** e salve o documento.
+2. **Configurar fluxo de trabalho (opcional)** — No **Fluxo de trabalho**, ative **Configurar Fluxo de Trabalho para Atualização**. Selecione um modelo de fluxo de trabalho e, opcionalmente, defina uma mensagem de sucesso e uma URL de redirecionamento.
+3. **Configurar campos editáveis** — Habilite os campos associados para editar e definir validações.
+4. **Publicar e compartilhar** — Publique a IC e compartilhe o link com os associados.
 
-### Criar a IC
-
-Projete e configure a Comunicação interativa, garantindo que a identidade visual, os vínculos de dados, as regras de conformidade e as integrações sejam definidos corretamente.
-
-### Habilitar a Interface do Usuário Associada
-
-Na barra de ação superior, ative a opção Associate UI para disponibilizar a IC para orientada por associado.
-
-### Habilitar a interface do usuário Associar no componente
-
-### Configurar campos editáveis
-
-Na seção de campos obrigatórios, ative os campos que os associados podem editar.
-Defina validações para garantir uma entrada de dados precisa e controlada.
-
-### Publicar a IC
-
-Após finalizar todas as configurações, publique a Comunicação interativa para acesso seguro.
-
-### Compartilhar a IC publicada com Associados
-
-Fornecer o link IC publicado para o Associado, permitindo que eles se autentiquem, insiram informações específicas do cliente e gerem a comunicação final com entradas válidas.
+Para obter instruções passo a passo com capturas de tela e comportamento de envio/fluxo de trabalho (Autor em Autor vs. Associar em Publicar), consulte [Habilitar e configurar a Interface do Usuário para Comunicações Interativas](/help/forms/interactive-communication/enable-configure-associate-ui.md). Para criar um fluxo de trabalho que gera o PDF a partir de envios IC, consulte [Fluxo de trabalho de envio para Interface do usuário associada — IC Gerar saída PDF](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md).
 
 A **Interface de usuário associada** preenche a lacuna entre a criação de conteúdo estruturado e o envolvimento do cliente em tempo real.\
 Combinando design intuitivo, configuração de back-end robusta e controles de conformidade rigorosos, as organizações podem fornecer **comunicações rápidas, precisas e personalizadas** em escala.
+
+## Consulte também:
+
+- [Habilitar e configurar a Interface do Usuário Associada para Comunicações Interativas](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [Integrar a interface do usuário do Associate no seu aplicativo](/help/forms/interactive-communication/invoke-associate-ui.md)
+- [Fluxo de trabalho de envio para interface do usuário associada — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
