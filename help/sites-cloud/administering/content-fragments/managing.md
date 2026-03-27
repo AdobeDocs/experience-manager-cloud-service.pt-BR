@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
+source-git-commit: bafb253be9b3834e1b77047dab52928ba84752a6
 workflow-type: tm+mt
 source-wordcount: '3342'
 ht-degree: 32%
@@ -533,7 +533,7 @@ Para fazer check-in de um fragmento:
 1. Selecione **Fazer Check-in** na barra de ferramentas.
 1. Confirme a ação **Fazer Check-in**.
 
-## Check-in Forçado (Administrador) {#forced-adminstrator-check-in}
+### Check-in Forçado (Administrador) {#forced-adminstrator-check-in}
 
 Pode acontecer que o usuário que fez check-out de um fragmento de conteúdo não esteja disponível para fazer check-in do fragmento.
 
