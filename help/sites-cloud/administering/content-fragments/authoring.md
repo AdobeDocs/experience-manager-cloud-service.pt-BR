@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 2807f3e0890bc291d4005b70c303659f7a3f643e
+source-git-commit: 7ae45257352e5fa45ec0e74c3b9d737a4ef3db41
 workflow-type: tm+mt
 source-wordcount: '2839'
 ht-degree: 3%
@@ -58,6 +58,7 @@ Ao abrir o Editor de fragmento de conteúdo pela primeira vez, você vê quatro 
      >[!WARNING]
      >
      >O editor original é aberto na mesma guia. Não é recomendável ter ambos os editores abertos ao mesmo tempo.
+
    * Quaisquer avisos válidos para o fragmento e sua conta. Por exemplo, se você não tiver os privilégios corretos para editar o fragmento ou se outro usuário tiver [retirado](/help/sites-cloud/administering/content-fragments/managing.md#check-out-and-check-in) os fragmentos, você só terá acesso de leitura.
 
 * painel esquerdo: mostra as **[Variações](#variations)** do fragmento de conteúdo e seus **Campos**:
@@ -273,7 +274,7 @@ O campo Várias linhas é aberto em tela cheia e:
 
   >[!CAUTION]
   >
-  >A sincronização só está disponível para copiar alterações *de **Main**&#x200B;para a variação*.
+  >A sincronização só está disponível para copiar alterações *de **Main**para a variação*.
   >
   >A transferência de alterações *de uma variação para **Main*** não está disponível como uma opção.
 
