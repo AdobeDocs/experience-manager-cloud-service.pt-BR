@@ -15,7 +15,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 O Editor de temas no Adobe Experience Manager (AEM) Forms é uma interface visual que permite criar e personalizar temas para o seu Forms adaptável sem escrever código manualmente. Um tema define a aparência dos componentes e painéis do formulário, incluindo cores do plano de fundo, estilos de fonte, bordas, dimensões e espaçamento. Ao aplicar um tema, os estilos especificados refletem nos componentes correspondentes e você pode reutilizar o mesmo tema em vários Forms adaptáveis.
@@ -208,7 +208,7 @@ Você pode definir estilos diferentes para tamanhos de dispositivos diferentes p
 
    ![Emulador de dispositivo no Editor de Tema - régua e opções de dispositivo (Área de Trabalho, Tablet, iPad, Tela Menor)](/help/forms/assets/custom-theme-emulator.png)
 
-Portanto, o mesmo tema pode ter diferentes tamanhos de espaçamento ou estilos relacionados a layout por dispositivo, correspondendo ao [comportamento do Editor de temas do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) para estilo responsivo.
+Portanto, o mesmo tema pode ter diferentes tamanhos de espaçamento ou estilos relacionados a layout por dispositivo, correspondendo ao [comportamento do Editor de temas do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=pt-BR) para estilo responsivo.
 
 ## Usar substituições CSS avançadas {#use-advanced-css-overrides}
 
