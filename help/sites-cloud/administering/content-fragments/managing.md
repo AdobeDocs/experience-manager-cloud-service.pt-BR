@@ -6,10 +6,10 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
 workflow-type: tm+mt
-source-wordcount: '2943'
-ht-degree: 36%
+source-wordcount: '3342'
+ht-degree: 32%
 
 ---
 
@@ -93,17 +93,20 @@ Isso classificará toda a tabela de acordo com essa coluna. A classificação s�
 
 O painel principal/direito (exibição de tabela) do console fornece uma variedade de informações sobre os Fragmentos de conteúdo. Alguns itens também fornecem links diretos para outras ações e/ou informações:
 
+* **Título**
+   * Um ícone de cadeado indica que o fragmento está [com check-out](#check-out-and-check-in) e bloqueado por um usuário; selecionar o ícone de cadeado mostra detalhes da conta que fez o check-out do fragmento.
+   * O ícone de informações (i) fornece acesso rápido a informações adicionais específicas do fragmento no painel direito.
 * **Nome**
    * Fornece um link para abrir o fragmento no editor.
 * **Modelo**
    * Somente informações.
-   * Pode ser usada para [Filtragem Rápida](#fast-filtering)
+   * Pode ser usada para [Filtragem Rápida](#fast-filtering).
 * **Pasta**
    * Fornece um link para abrir a pasta no console.
 Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
 * **Status**
    * Somente informações.
-   * Pode ser usada para [Filtragem Rápida](#fast-filtering)
+   * Pode ser usada para [Filtragem Rápida](#fast-filtering).
 * **Visualização**
    * Somente informações:
       * **Sincronizado**: o fragmento de conteúdo está sincronizado nos serviços de **Autor** e **Visualização**.
@@ -187,8 +190,8 @@ Selecionar um fragmento específico abre uma barra de ferramentas focada nas aç
 * **[Substituir](#find-and-replace)**
 * **Mover**
 * **Renomear**
+* **[Fazer Check-out e Check-in](#check-out-and-check-in)**
 * **[Excluir](#deleting-a-fragment)** (disponível somente para fragmentos não publicados)
-
 
 >[!NOTE]
 >
@@ -481,6 +484,64 @@ Antes da substituição, os critérios de validação são verificados e você �
 >Se você selecionar mais de 20 fragmentos de conteúdo, verá a mensagem **Não é possível localizar e substituir**.
 
 ![Confirmar Substituição](assets/cf-managing-confirm-replace.png)
+
+## Fazer check-out e check-in {#check-out-and-check-in}
+
+O AEM permite:
+
+* [confira](#check-out-a-content-fragment) um fragmento de conteúdo, impedindo que outros usuários trabalhem no fragmento
+* [fazer check-in](#check-in-a-content-fragment) dos Fragmentos de conteúdo, permitindo que outros usuários continuem a trabalhar com o fragmento
+
+Ao fazer check-out de um fragmento, ele é bloqueado (`jcr:lock`). Um ícone de cadeado na coluna **Título** indica um fragmento bloqueado. Selecionar o ícone de cadeado fornece detalhes da conta que fez check-out do fragmento.
+
+É possível editar, publicar, desfazer a publicação, mover ou excluir um fragmento bloqueado. Outros usuários não podem executar nenhuma dessas ações no fragmento até que você faça check-in do fragmento; embora ainda possam alterar os metadados do fragmento bloqueado.
+
+Essa funcionalidade ajuda a evitar conflitos quando vários usuários colaboram na edição de fragmentos.
+
+>[!NOTE]
+>
+>Para fazer check-out/check-in de um fragmento de conteúdo, você deve ter acesso de gravação.
+
+>[!CAUTION]
+>
+>É possível excluir uma pasta que contenha um Fragmento de conteúdo com check-out.
+>
+>Antes de excluir uma pasta, verifique se ela não contém Fragmentos de conteúdo (ou outros ativos digitais) cujo check-out tenha sido feito pelos usuários.
+
+>[!NOTE]
+>
+>Como os fragmentos de conteúdo são armazenados internamente como Assets, essa funcionalidade está intimamente relacionada aos [arquivos de check-in e check-out no Experience Manager DAM](/help/assets/check-out-and-submit-assets.md).
+
+### Fazer check-out de um fragmento de conteúdo {#check-out-a-content-fragment}
+
+Para fazer check-out de um fragmento:
+
+1. No console de **Fragmentos de conteúdo**, navegue até o local do Fragmento de conteúdo.
+1. Selecione o fragmento.
+1. Selecione **Fazer Check-out** na barra de ferramentas.
+1. Confirme a ação **Fazer Check-out**.
+
+   * Um ícone de cadeado na coluna **Título** indica que o fragmento está bloqueado e só pode ser editado por você.
+   * Se outro usuário abrir o fragmento para edição, verá uma mensagem informando que estão no modo somente leitura.
+
+### Fazer check-in de um fragmento de conteúdo {#check-in-a-content-fragment}
+
+Para fazer check-in de um fragmento:
+
+1. No console de **Fragmentos de conteúdo**, navegue até o local do Fragmento de conteúdo.
+1. Selecione o fragmento.
+1. Selecione **Fazer Check-in** na barra de ferramentas.
+1. Confirme a ação **Fazer Check-in**.
+
+## Check-in Forçado (Administrador) {#forced-adminstrator-check-in}
+
+Pode acontecer que o usuário que fez check-out de um fragmento de conteúdo não esteja disponível para fazer check-in do fragmento.
+
+Nessas situações, um administrador pode executar a operação de **Check-in**.
+
+>[!NOTE]
+>
+>Consulte também [Check-in Forçado](/help/assets/check-out-and-submit-assets.md#forced-check-in) do Assets.
 
 ## Excluir um fragmento {#deleting-a-fragment}
 
