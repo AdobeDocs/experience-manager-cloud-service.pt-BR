@@ -4,9 +4,9 @@ description: Saiba como minimizar o impacto operacional das atualizações autom
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
+source-git-commit: 2306be3f92a98560afa51fd67f83caa77c6f575c
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >[!NOTE]
 >Você pode usar os recursos Período de Silêncio e Atualizar Períodos Livres somente após ser integrado às [Atualizações Automáticas de Manutenção](/help/implementing/deploying/aem-version-updates.md).
 
-As [atualizações automáticas de manutenção](/help/implementing/deploying/aem-version-updates.md) do AEM as a Cloud Service garantem que suas instâncias permaneçam seguras e atualizadas com as versões de manutenção mais recentes. Dito isso, em alguns casos (como eventos de ativação), pode ser necessário &quot;proteger&quot; essas horas de trabalho críticas contra possíveis interrupções. Dessa forma, a AEM as a Cloud Service oferece a opção de definir um período no qual as atualizações automáticas não ocorrem para seus programas em andamento.
+As [atualizações automáticas de manutenção](/help/implementing/deploying/aem-version-updates.md) do AEM as a Cloud Service garantem que suas instâncias permaneçam seguras e atualizadas com as versões de manutenção mais recentes. Dito isso, em alguns casos (como eventos de ativação), pode ser necessário &quot;proteger&quot; essas horas de trabalho críticas contra possíveis interrupções. O AEM as a Cloud Service oferece opções para selecionar períodos que pausam atualizações de manutenção automáticas em seus programas. Isso não impede toda a atividade da infraestrutura. Alterações na plataforma de nível inferior fora das atualizações de manutenção ainda podem ocorrer (por exemplo, IMS).
 
 Você pode configurar esses intervalos de tempo usando duas opções de agendamento:
 
@@ -25,7 +25,7 @@ Você pode configurar esses intervalos de tempo usando duas opções de agendame
 
 Os recursos de atualização de períodos livres e horários silenciosos são configurados com base em &quot;por programa&quot;. Lembre-se de que somente usuários com a &quot;função de usuário&quot; de **Proprietário da empresa** e **Gerente de implantação** podem exibir e usar esses recursos.
 
-Além disso, para obter informações sobre períodos programados de manutenção automática do AEM as a Cloud Service, consulte a página [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+Além disso, para obter informações sobre períodos programados de manutenção automática do AEM as a Cloud Service, consulte a página [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 ## Horas de silêncio {#quiet-hours}
 
@@ -75,7 +75,7 @@ Um ícone **Ativo** será exibido próximo ao período livre de atualização at
 
 ## Períodos de Exclusão de Manutenção Planejada {#planned-maintenance}
 
-O Adobe tem vários períodos de exclusão de manutenção planejados. Esses períodos são definidos pela Adobe para minimizar os riscos em eventos críticos e geralmente ocorrem de duas a três vezes por ano. Você pode exibir o agendamento exato para os períodos de exclusão de manutenção na página [Roteiro da versão de manutenção](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
+O Adobe tem vários períodos de exclusão de manutenção planejados. Esses períodos são definidos pela Adobe para minimizar os riscos em eventos críticos e geralmente ocorrem de duas a três vezes por ano. Você pode exibir o agendamento exato para os períodos de exclusão de manutenção na página [Roteiro da versão de manutenção](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap).
 
 Para ajudar você a configurar os períodos sem atualização com precisão, os períodos de exclusão de manutenção também são exibidos na interface do usuário Período de silêncio e Atualizar períodos livres.
 
