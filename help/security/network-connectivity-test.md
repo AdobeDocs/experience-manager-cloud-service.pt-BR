@@ -330,4 +330,4 @@ A ferramenta tenta uma conexão HTTP/HTTPS em cada porta. Para serviços não HT
 ## Informações relacionadas {#related-information}
 
 * [Configuração de redes avançadas para o AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
-* [Tutoriais avançados de rede no Experience League](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/advanced-networking)
+* [Tutoriais avançados de rede no Experience League](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/advanced-networking)
