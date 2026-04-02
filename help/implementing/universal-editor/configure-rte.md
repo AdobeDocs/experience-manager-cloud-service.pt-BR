@@ -4,9 +4,9 @@ description: Entenda como você pode configurar o editor de rich text (RTE) no E
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Este RTE é configurável com o uso de [filtros de componente.](/help/implementi
 
 >[!NOTE]
 >
->Quando você inicia um projeto do Universal Editor, todos os recursos de rich text compatíveis com o back-end (AEM com Edge Delivery ou implementação headless) são ativados automaticamente.
+>Quando você inicia um projeto do Universal Editor, todos os recursos de rich text compatíveis com o seu back-end (AEM com Edge Delivery ou implementação headless) são automaticamente ativos e disponibilizados na [janela do editor modal do RTE.](/help/sites-cloud/authoring/universal-editor/authoring.md#modal-editor)
 >
 >* Você pode desativar as opções desnecessárias.
 >* Ativar opções que não são compatíveis com seu tipo de projeto não é suportado.
@@ -77,7 +77,7 @@ A configuração da barra de ferramentas controla quais opções de edição est
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image"],
+    "insert": ["link", "unlink", "image", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -292,6 +292,82 @@ O recuo tem uma configuração de nível de recurso que controla o escopo do com
 >
 >O aninhamento de lista com as teclas Tab/Shift+Tab funciona independentemente das configurações gerais de recuo.
 
+### Caracteres especiais {#special-characters}
+
+A ação de inserção `special_characters` abre um popover do seletor de caracteres para inserir caracteres especiais (símbolos, operadores matemáticos, sinais de moeda, pontuação, setas, etc.) na posição do cursor.
+
+```json
+{
+  "toolbar": {
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
+    "sections": ["insert"],
+  },
+  "actions": {
+    "special_characters": {
+      "label": "Special Characters"
+    }
+  }
+}
+```
+
+Um conjunto padrão de 44 caracteres usados com frequência é incluído pronto para uso. A lista de caracteres pode ser personalizada por meio de duas opções de configuração:
+
+* `appendCharacters` - Adicionar caracteres ao conjunto padrão
+* `characters` - Substituir totalmente o conjunto padrão
+
+Cada entrada de caractere tem `character` (o caractere Unicode) e `title` (dica de ferramenta/nome acessível).
+
+#### Anexar caracteres aos padrões {#append-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" },
+        { "character": "\u2764", "title": "Heavy black heart" },
+      ];
+    }
+  }
+}
+```
+
+#### Substituir os caracteres especiais padrão {#replace-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" },
+        { "character": "\u2122", "title": "Trade mark sign" },
+      ];
+    }
+  }
+}
+```
+
+#### Ambas as opções juntas {#both-special-character-options}
+
+Este exemplo usa `characters` como base e, em seguida, anexa caracteres adicionais usando `appendCharacters`.
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" }
+      ],
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" }
+      ]
+    }
+  }
+}
+```
+
 ### Colar como texto {#paste-as-text}
 
 A ação do editor `paste_text` habilita um fluxo de trabalho padrão de colagem como texto simples.
@@ -364,7 +440,9 @@ Veja a seguir um exemplo de uma configuração completa.
         ],
         "insert": [
           "link",
-          "unlink"
+          "unlink",
+          "image",
+          "special_characters"
         ],
         "sections": [
           "format",
@@ -401,6 +479,17 @@ Veja a seguir um exemplo de uma configuração completa.
         },
         "unlink": {
           "label": "Remove Link"
+        },
+        // Image actions with picture wrapping
+        "image": {
+          "wrapInPicture": false, // Use <img> tag instead of <picture>
+          "shortcut": "Mod-Shift-I",
+          "label": "Insert Image",
+        },
+        // Special characters with custom additions
+        "special_characters": {
+          "label": "Special Characters",
+          "appendCharacters": [{ "character": "\u2605", "title": "Black star" }],
         },
         // Other actions with basic customization
         "h1": {

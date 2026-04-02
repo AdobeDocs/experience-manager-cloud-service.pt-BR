@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 57ea90c922b073828b4aede15bf2dd499ebbf0c2
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '3002'
+source-wordcount: '3020'
 ht-degree: 8%
 
 ---
@@ -92,7 +92,9 @@ O [painel de propriedades](/help/sites-cloud/authoring/universal-editor/navigati
 
 ![Componente de rich text no painel de propriedades](assets/rich-text-properties-panel.png)
 
-Toque na entrada para abrir uma caixa de diálogo apresentando uma tela maior para editar o rich text.
+#### O Editor Modal {#modal-editor}
+
+Toque na entrada em [o painel de propriedades](#properties-rail) para abrir um editor modal que ofereça uma tela maior para editar o rich text.
 
 ![Caixa de diálogo de edição de rich text](assets/rich-text-canvas.png)
 
@@ -136,6 +138,8 @@ O editor de rich text (RTE) do Editor universal permite que o autor aplique a fo
 * **Diminuir recuo**
 * **Colar como texto**
    * Remova a formatação do texto na área de transferência antes de colá-lo no Editor Universal.
+* **Caractere especial**
+   * Insira um caractere especial no texto.
 * **Remover toda a formatação**
    * Remova todas as opções de formatação do texto selecionado.
 
@@ -300,7 +304,7 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 
 ### Copiar e colar {#copy-paste}
 
-Você pode copiar e colar componentes que estão em [&#x200B; contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
+Você pode copiar e colar componentes que estão em [ contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
 
 Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegador, desde que as guias já estejam abertas. Não é possível copiar um item e abrir uma nova guia do navegador para colá-lo.
 

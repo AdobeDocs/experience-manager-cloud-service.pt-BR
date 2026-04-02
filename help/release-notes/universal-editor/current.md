@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2026.03.26
-description: Estas são as notas de versão do Universal Editor de 26.3.2026.
+title: Notas de versão do Universal Editor 2026.04.02
+description: Estas são as notas de versão do Universal Editor de 2026.04.02.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: abbc43adbe64149098c049810482d37f76034eab
+source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '113'
 ht-degree: 1%
 
 ---
 
 
-# Notas de versão do Universal Editor 2026.03.26 {#release-notes}
+# Notas de versão do Universal Editor 2026.04.02 {#release-notes}
 
-Estas são as notas de versão do editor universal de 26 de março de 2026.
+Estas são as notas de versão da versão de 2 de abril de 2026 do Editor universal.
 
 >[!TIP]
 >
@@ -26,10 +26,8 @@ Estas são as notas de versão do editor universal de 26 de março de 2026.
 
 ## Novidades {#what-is-new}
 
-* [A configuração de ativos de Criação de Documentos](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets) agora é exposta por meio de um ponto de extremidade de configuração.
-* [Um ponto de extensão](/help/implementing/universal-editor/extending.md#extending-ui) foi adicionado ao menu contextual.
-* Um novo ícone de fluxo de trabalho personalizado foi adicionado ao sistema DynamicIcon de extensibilidade para exibir o estado de cancelamento profundo/superficial na interface.
+* [Uma opção configurável](/help/implementing/universal-editor/configure-rte.md#special-characters) para [adicionar caracteres especiais](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) foi adicionada à barra de ferramentas do editor de rich text (RTE).
 
 ## Outras melhorias {#other-improvements}
 
-* Correção de um problema com classes de Criação de documentos que não funcionavam com vários campos, pois esperavam uma cadeia de caracteres.
+* Os campos de tag não são mais retornados incorretamente como vários campos pelo adaptador OpenAPI.
