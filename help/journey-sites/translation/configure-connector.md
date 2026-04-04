@@ -8,7 +8,7 @@ exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 77%
@@ -76,7 +76,7 @@ Depois que o pacote do conector do seu serviço de tradução de preferência fo
 
 Para criar uma configuração de tradução:
 
-1. No menu de navegação global, selecione **Ferramentas** > **Cloud Service** > **Cloud Service de tradução**.
+1. No menu de navegação global, selecione **Ferramentas** > **Serviços em nuvem** > **Serviços de tradução em nuvem**.
 1. Navegue até o local em que deseja criar a configuração na estrutura de conteúdo. Geralmente, ela é baseada em um projeto específico, mas também pode ser global.
    * Por exemplo, nesse caso, pode-se criar uma configuração global que se aplique a todo o conteúdo ou uma configuração específica para o projeto WKND.
 
@@ -123,8 +123,8 @@ Para fazer isso, navegue até a raiz do idioma do conteúdo. Para os fins do nos
 1. Vá para a navegação global e vá para **Navegação** > **Assets** > **Arquivos**.
 1. No console de ativos, selecione a raiz do idioma a ser configurada e selecione **Propriedades**.
 1. Selecione a guia **Cloud Services**.
-1. Em **Configurações de Cloud Service**, na lista suspensa **Adicionar configuração**, selecione o conector. Ele deve aparecer na lista suspensa quando você tiver instalado o pacote, conforme [descrito anteriormente](#connect-translation-provider).
-1. Em **Configurações de Cloud Service**, na lista suspensa **Adicionar configuração**, selecione também a sua configuração.
+1. Em **Configurações do Cloud Service**, na lista suspensa **Adicionar configuração**, selecione seu conector. Ele deve aparecer na lista suspensa quando você tiver instalado o pacote, conforme [descrito anteriormente](#connect-translation-provider).
+1. Em **Configurações do Cloud Service**, na lista suspensa **Adicionar configuração**, selecione também a sua configuração.
 1. Selecione **Salvar e fechar**.
 
 ![Selecionar configurações do Cloud Service](assets/select-cloud-service-configurations.png)
@@ -142,5 +142,5 @@ Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites r
 
 Embora seja recomendável seguir para a próxima parte da jornada de tradução revisando o documento [Configurar regras de tradução](translation-rules.md), os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
 
-* [Configuração da estrutura de integração de tradução](/help/sites-cloud/administering/translation/integration-framework.md) - revise uma lista de conectores de tradução selecionados e saiba como configurar a estrutura de integração de tradução para integrar-se a serviços de tradução de terceiros.
+*  [Configuração da estrutura de integração de tradução](/help/sites-cloud/administering/translation/integration-framework.md) - revise uma lista de conectores de tradução selecionados e saiba como configurar a estrutura de integração de tradução para integrar-se a serviços de tradução de terceiros.
 * [Conexão com o Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) - o AEM fornece uma conta de avaliação do Microsoft Translation para fins de teste.

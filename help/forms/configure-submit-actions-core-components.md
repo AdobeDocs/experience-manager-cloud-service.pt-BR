@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '353'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -21,17 +21,19 @@ A Adobe <span class="preview"> recomenda usar os Componentes Principais para [ad
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Componentes principais) | Este artigo |
 | AEM as a Cloud Service (Edge Delivery Services) | [Clique aqui](/help/forms/configure-submit-action-eds-forms.md) |
 
 Uma ação enviar permite escolher o destino dos dados capturados por meio de um formulário adaptável. É acionado quando um usuário clica no botão **[!UICONTROL Enviar]** em um Formulário adaptável. O Forms Adaptável baseado no Componente Principal oferece suporte a várias [ações de envio prontas para uso](#submit-actions-supported-by-adaptive-forms-based-on-core-components).
 
-<!--You can also configure different actions for an Adaptive Form submissions.
+<!--
+You can also configure different actions for an Adaptive Form submissions.
 
 * **Redirect URL/Path** - This option allows user to configure a page for each form, to which the form users are redirected after submitting an Adaptive Form. 
-* **Show Message** - This option allows users to add a message that is displayed when the Adaptive Form is successfully submitted. The predefined text is included in the dialog box and it can be modified by the user. -->
+* **Show Message** - This option allows users to add a message that is displayed when the Adaptive Form is successfully submitted. The predefined text is included in the dialog box and it can be modified by the user.
+-->
 
 ## Ações de envio para o Forms com base nos Componentes principais
 
@@ -43,7 +45,7 @@ As seguintes ações de envio são compatíveis com o Forms adaptável com base 
 * [Chamar um Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Enviar usando o Modelo de dados de formulário (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Enviar para o Armazenamento de blob do Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [Enviar para endpoint REST](/help/forms/configure-submit-action-restpoint.md)
+* [Enviar para o terminal REST](/help/forms/configure-submit-action-restpoint.md)
 * [Enviar para o OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Chamar um fluxo de trabalho do AEM](/help/forms/configure-submit-action-workflow.md)
 * [Enviar para Envolvimento da Marketo](/help/forms/submit-adaptive-form-to-marketo-engage.md)
@@ -59,7 +61,8 @@ Além disso, você pode [personalizar as Ações de Envio padrão](/help/forms/c
 
 ### Configurar uma ação enviar para um formulário adaptável com base nos componentes principais
 
-<!--To define a Submit action for an Adaptive Form, use the Configure Dialog of an **Adaptive Form Container** component. The configure dialog of a **Adaptive Form Container** component includes:
+<!--
+To define a Submit action for an Adaptive Form, use the Configure Dialog of an **Adaptive Form Container** component. The configure dialog of a **Adaptive Form Container** component includes:
 
 * Basic Tab
 * Form Data Model Tab
@@ -67,11 +70,12 @@ Além disso, você pode [personalizar as Ações de Envio padrão](/help/forms/c
   ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
 -->
 
-Você pode definir as propriedades do Contêiner de formulário usando a guia Envio da caixa de diálogo Configurar. Para saber mais sobre a caixa de diálogo de configuração de um componente de Contêiner de formulário, [clique aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html?lang=pt-BR).
+Você pode definir as propriedades do Contêiner de formulário usando a guia Envio da caixa de diálogo Configurar. Para saber mais sobre a caixa de diálogo de configuração de um componente de Contêiner de formulário, [clique aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html).
 
 ![Clique no ícone de chave inglesa para abrir a caixa de diálogo Contêiner de formulário adaptável para configurar uma ação de envio](/help/forms/assets/adaptive-forms-submit-message.png)
 
-<!--To select and configure a Submit Action for your form:
+<!--
+To select and configure a Submit Action for your form:
 
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
@@ -127,7 +131,7 @@ For a comprehensive guide on the detailed steps to post or submit data to a REST
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem). When a form is submitted, the selected workflow starts automatically. 
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action integrates an Adaptive Form with an [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). When a form is submitted, the selected workflow starts automatically. 
 
  [Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes](/help/forms/configure-submit-action-workflow.md) provides step-by-step instructions to seamlessly integrate AEM Workflow with Adaptive Forms, optimizing business processes and enhancing workflow automation.
 
@@ -143,7 +147,7 @@ The **[!UICONTROL Submit to Azure Blob Storage]** Submit Action connects an Adap
 
 AEM as a Cloud Service allows submitting data to Azure Storage from AEM Adaptive Forms. Learn how to [create and use Azure Blob Storage configuration in AEM Forms](/help/forms/configure-submit-action-azure-blob-storage.md) for efficient data storage. 
 
-To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=pt-BR#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=pt-BR#deployment-process) to your Cloud Service instance.
+To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
 ## Submit to Power Automate {#microsoft-power-automate}
 

@@ -5,7 +5,7 @@ exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 39%
@@ -60,7 +60,7 @@ O armazenamento em cache de páginas ou fragmentos do AEM no [AEM Dispatcher](ht
 
 Além do CIF de conteúdo puro gerenciado pela AEM, uma página pode normalmente exibir dados comerciais que são buscados dinamicamente no Adobe Commerce via GraphQL. Embora a estrutura da página em si nunca mude, o conteúdo comercial pode mudar. Por exemplo, se os dados do produto, como nome e preço, forem alterados no Adobe Commerce.
 
-Para garantir que as páginas do CIF sejam armazenadas em cache por um tempo limitado no AEM Dispatcher, a Adobe recomenda usar a [Invalidação de cache com base no tempo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-time-based-cache-invalidation-enablettl) (conhecida como cache com base em TTL) ao armazenar páginas do CIF no AEM Dispatcher. Esse recurso pode ser configurado no AEM com o uso do pacote adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
+Para garantir que as páginas do CIF sejam armazenadas em cache por um tempo limitado no AEM Dispatcher, a Adobe recomenda usar a [Invalidação de cache com base no tempo](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-time-based-cache-invalidation-enablettl) (conhecida como cache com base em TTL) ao armazenar páginas do CIF no AEM Dispatcher. Esse recurso pode ser configurado no AEM com o uso do pacote adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
 
 Com o armazenamento em cache com base em TTL, o desenvolvedor normalmente define uma ou várias durações de armazenamento em cache para determinadas páginas do AEM. Essa duração garante que as páginas do CIF sejam armazenadas em cache somente no AEM Dispatcher pela duração configurada e que o conteúdo seja atualizado com frequência.
 

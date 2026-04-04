@@ -6,7 +6,7 @@ feature: Carousel Banners
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4498'
 ht-degree: 1%
@@ -49,7 +49,8 @@ Para começar a usar o com rapidez:
 
    Comece identificando variáveis dinâmicas usadas pela implementação de Visualização rápida existente. Isso o ajuda a inserir os pontos de acesso e os dados de mapa de imagem corretamente durante o processo de criação do banner do carrossel no Experience Manager Assets.
 
-<!-- LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
+<!--
+ LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
 
    >[!NOTE]
    >
@@ -100,7 +101,8 @@ Comece identificando variáveis dinâmicas usadas pela implementação de Visual
 
 Ao adicionar pontos de acesso ou mapas de imagem a uma imagem de banner, você atribui uma SKU (Stock Keeping Unit, Unidade de manutenção de estoque). Você também pode atribuir variáveis extras opcionais a cada ponto de acesso ou mapa de imagem. Essas variáveis são usadas posteriormente para corresponder pontos de acesso ou mapas de imagem ao conteúdo de Visualização rápida.
 
-<!-- LEAVE; COMMERCE BEING ADDED LATER
+<!--
+ LEAVE; COMMERCE BEING ADDED LATER
 
 >[!NOTE]
 >
@@ -148,10 +150,10 @@ Considere os seguintes exemplos de URLs do Quickview e seus pontos de acesso ou 
    <td>SKU única, encontrada na cadeia de caracteres de consulta.</td>
    <td><p>Os URLs de Visualização rápida gravados incluem o seguinte:</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>A única parte variável na URL é o valor do parâmetro da cadeia de caracteres de consulta <code>productId=</code>, e é claramente um valor de SKU. Portanto, os pontos de acesso ou mapas de imagem precisam apenas de campos SKU preenchidos com valores como <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -167,9 +169,9 @@ Considere os seguintes exemplos de URLs do Quickview e seus pontos de acesso ou 
    <td>SKU e ID de categoria na cadeia de caracteres de consulta.</td>
    <td><p>Os URLs de Visualização rápida gravados incluem o seguinte:</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>Nesse caso, há duas partes variáveis no URL. O SKU é armazenado no parâmetro <code>prodId</code> e a ID da categoria é armazenada no parâmetro <code>category=</code>.</p> <p>Dessa forma, as definições de ponto de acesso/mapa de imagem são pares. Isto é, um valor de SKU e uma variável extra chamada <code>categoryId</code>. Os pares resultantes são os seguintes:</p>
     <ul>
      <li><p>A SKU é <strong><code>305466</code></strong> e <code>categoryId</code> é <code>1100004</code>.</p> </li>

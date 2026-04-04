@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 73%
@@ -46,11 +46,13 @@ Ao navegar pelos ativos de uma pasta, você pode usar a interface para exibir mi
 * **Lixeira**: lista os ativos excluídos da pasta raiz **[!UICONTROL Ativos]**. É possível selecionar um ativo na pasta “Lixeira” e restaurá-lo para o local de origem ou excluí-lo permanentemente. Você pode especificar uma palavra-chave ou aplicar filtros, como status do ativo, tipo de arquivo, tipo de MIME, tamanho da imagem, criação de ativos, datas de modificação e expiração, bem como filtrar por ativos descartados pelo usuário atual. Também é possível aplicar filtros personalizados para pesquisar ativos apropriados na pasta Lixeira. Para obter mais informações sobre como usar filtros padrão e personalizados, consulte como [pesquisar ativos no Assets view](/help/assets/search-assets-view.md).
 * **Configurações**: você pode configurar várias opções de exibição do Assets usando **Configurações**, como Formulários de metadados, Relatórios e Gerenciamento de Taxonomia.
 
-<!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
+<!--
+ TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
 * **Libraries**: Access to [!DNL Adobe Creative Cloud Team] (CCT) Libraries view. This view is visible only if the user is entitled to CCT Libraries.
 -->
 
-<!-- TBD: My Work Space shows task inbox and it is not visible on AEM Cloud Demos as of now. It is the source of truth server hence not documenting My Work Space option for now.
+<!--
+ TBD: My Work Space shows task inbox and it is not visible on AEM Cloud Demos as of now. It is the source of truth server hence not documenting My Work Space option for now.
 -->
 
 É possível abrir ou recolher a barra lateral esquerda para aumentar a área de visualização de ativos disponível.
@@ -86,7 +88,8 @@ Você também pode visualizar vídeos.
 
 Se você visualizar explicitamente um ativo, o [!DNL Assets view] o mostrará como um ativo exibido recentemente.
 
-<!-- TBD: Describe the options.
+<!--
+ TBD: Describe the options.
 
 Explicitly previewed assets are displayed as recently viewed assets. Give screenshot of this.
 Other use cases after previewing.

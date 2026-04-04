@@ -6,7 +6,7 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 90%
@@ -49,7 +49,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 
    >[!NOTE]
    >
-   > Para manter a integridade da instância de fluxo de trabalho, siga as práticas recomendadas de [limpeza regular de instâncias de fluxo de trabalho](#regular-purging-of-workflow-instances) ou as [práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=pt-BR).
+   > Para manter a integridade da instância de fluxo de trabalho, siga as práticas recomendadas de [limpeza regular de instâncias de fluxo de trabalho](#regular-purging-of-workflow-instances) ou as [práticas recomendadas de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html).
 
 ## Pesquisar instâncias de fluxo de trabalho {#search-workflow-instances}
 
@@ -113,7 +113,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 Quando um fluxo de trabalho falha, o AEM fornece o console **Falhas**, que permite investigar e tomar as medidas apropriadas após tratar a causa original:
 
 * **Detalhes da falha**
-Abre uma janela para mostrar a **Mensagem de Falha**, **Etapa e &#x200B;** Pilha de Falhas**.
+Abre uma janela para mostrar a **Mensagem de Falha**, **Etapa e **Pilha de Falhas**.
 
 * **Abrir histórico**
 Mostra detalhes do histórico do fluxo de trabalho.

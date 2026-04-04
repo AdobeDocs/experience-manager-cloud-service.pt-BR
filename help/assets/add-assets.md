@@ -5,7 +5,7 @@ feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3195'
 ht-degree: 9%
@@ -30,13 +30,14 @@ Você também pode optar por concluir o processamento adicional nos ativos carre
 |---------------------|----------------|-----------------|
 | [Interface do usuário do Console do Assets](#upload-assets) | Upload ocasional, facilidade de pressionar e arrastar, upload localizador. Não use o para fazer upload de muitos ativos. | Todos os usuários |
 | [Carregar API](#upload-using-apis) | Para decisões dinâmicas durante o upload. | Desenvolvedor |
-| Aplicativo de desktop do [[!DNL Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR) | Assimilação de ativos em baixo volume, mas não para migração. | Administrador, profissional de marketing |
+| Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Assimilação de ativos em baixo volume, mas não para migração. | Administrador, profissional de marketing |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | Útil quando profissionais de criação e marketing trabalham em ativos nos aplicativos de desktop [!DNL Creative Cloud] compatíveis. | Creative, Profissional de marketing |
 | [Assimilação de ativos em massa](#asset-bulk-ingestor) | Recomendado para migrações em grande escala e assimilações ocasionais em massa. Somente para armazenamentos de dados compatíveis. | Administrador, Desenvolvedor |
 
 ## Upload de ativos {#upload-assets}
 
-<!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
+<!--
+ #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Select the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
@@ -49,11 +50,13 @@ Você também pode optar por concluir o processamento adicional nos ativos carre
    When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
-<!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
+<!--
+ #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
+<!--
+ #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, [!DNL Experience Manager] saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, [!DNL Experience Manager] consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -88,7 +91,8 @@ Além disso, a interface de usuário do [!DNL Assets] exibe o ativo mais recente
 >
 >Para carregar hierarquias de pastas aninhadas, consulte [carregar ativos em massa](#bulk-upload).
 
-<!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
+<!--
+ #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
 ### Serial uploads {#serialuploads}
 
@@ -147,14 +151,14 @@ A assimilação de ativos em massa pode lidar com muitos ativos com eficiência.
 Para fazer upload de um número maior de arquivos, use uma das abordagens a seguir. Além disso, consulte os [casos de uso e métodos](#upload-methods-comparison)
 
 * [APIs de carregamento de ativos](developer-reference-material-apis.md#asset-upload): use um script ou ferramenta de carregamento personalizado que use APIs para adicionar outras manipulações de ativos (por exemplo, traduzir metadados ou renomear arquivos), se necessário.
-* [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR): útil para profissionais criativos e profissionais de marketing que carregam ativos de seu sistema de arquivos local. Use-o para fazer upload de pastas aninhadas disponíveis localmente.
+* [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): útil para profissionais criativos e profissionais de marketing que carregam ativos de seu sistema de arquivos local. Use-o para fazer upload de pastas aninhadas disponíveis localmente.
 * [Ferramenta de assimilação em massa](#asset-bulk-ingestor): use para assimilação de grandes quantidades de ativos ocasionalmente ou inicialmente ao implantar [!DNL Experience Manager].
 
 ### Ferramenta Importação de ativos em massa {#asset-bulk-ingestor}
 
 A ferramenta é fornecida somente para o grupo de administradores para ser usada na assimilação em larga escala de ativos de armazenamentos de dados Azure ou S3. Veja um vídeo que aborda a configuração e a assimilação.
 
->[!VIDEO](https://video.tv.adobe.com/v/341393/?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 A imagem a seguir ilustra os vários estágios ao assimilar ativos para a Experience Manager de um armazenamento de dados:
 
@@ -203,7 +207,7 @@ Para configurar a ferramenta Importação em massa, siga estas etapas:
 
 1. Defina um local no DAM onde os ativos devem ser importados usando o campo **[!UICONTROL Pasta de destino do Assets]**. Por exemplo, `/content/dam/imported_assets`.
 
-1. (Opcional) Especifique o arquivo de metadados a ser importado, fornecido em formato CSV no campo **[!UICONTROL Arquivo de metadados]**. Especifique o arquivo CSV no local do blob de origem e consulte o caminho ao configurar a ferramenta Importação em massa. O formato de arquivo CSV referenciado neste campo é igual ao formato de arquivo CSV quando você [Importa e exporta metadados de ativos em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=pt-BR). Se você selecionar a opção **Excluir arquivo de origem após a importação**, filtre arquivos CSV usando os campos **Excluir** ou **Incluir Tipo MIME** ou **Filtrar por Caminho/Arquivo**. Você pode usar uma expressão regular para filtrar arquivos CSV nesses campos.
+1. (Opcional) Especifique o arquivo de metadados a ser importado, fornecido em formato CSV no campo **[!UICONTROL Arquivo de metadados]**. Especifique o arquivo CSV no local do blob de origem e consulte o caminho ao configurar a ferramenta Importação em massa. O formato de arquivo CSV referenciado neste campo é igual ao formato de arquivo CSV quando você [Importa e exporta metadados de ativos em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Se você selecionar a opção **Excluir arquivo de origem após a importação**, filtre arquivos CSV usando os campos **Excluir** ou **Incluir Tipo MIME** ou **Filtrar por Caminho/Arquivo**. Você pode usar uma expressão regular para filtrar arquivos CSV nesses campos.
 
 1. Clique em **[!UICONTROL Salvar]** para salvar a configuração.
 
@@ -358,7 +362,7 @@ O Experience Manager exibe o histórico de tarefas. Na página Histórico do tra
 Além da interface de usuário do navegador da Web, o [!DNL Experience Manager] oferece suporte a outros clientes na área de trabalho. Eles também fornecem experiência de upload sem a necessidade de acessar o navegador da Web.
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) fornece acesso aos ativos do [!DNL Experience Manager] em aplicativos de desktop da Adobe Photoshop, Adobe Illustrator e Adobe InDesign. Você pode carregar o documento aberto no momento no [!DNL Experience Manager] diretamente da interface do usuário do Adobe Asset Link nesses aplicativos de desktop.
-* O [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR) simplifica o trabalho com ativos no desktop, independentemente do tipo de arquivo ou aplicativo nativo que os manipula. É útil fazer upload de arquivos em hierarquias de pastas aninhadas a partir do sistema de arquivos local, pois o upload do navegador só suporta o upload de listas de arquivos simples.
+* O [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifica o trabalho com ativos no desktop, independentemente do tipo de arquivo ou aplicativo nativo que os manipula. É útil fazer upload de arquivos em hierarquias de pastas aninhadas a partir do sistema de arquivos local, pois o upload do navegador só suporta o upload de listas de arquivos simples.
 
 ## Processar ativos quando carregados {#process-when-uploaded}
 
@@ -401,7 +405,8 @@ Os detalhes técnicos das APIs e do protocolo de carregamento, bem como os links
 * O método de importação em massa importa toda a estrutura de pastas como ela existe na fonte de dados. No entanto, somente as pastas não vazias são criadas em [!DNL Experience Manager].
 
 
-<!-- TBD: Link to file name handling in DA docs when it is documented. 
+<!--
+ TBD: Link to file name handling in DA docs when it is documented. 
 -->
 
 **Consulte também**
@@ -422,7 +427,7 @@ Os detalhes técnicos das APIs e do protocolo de carregamento, bem como os links
 
 >[!MORELIKETHIS]
 >
->* Aplicativo de desktop do [[!DNL Adobe Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
+>* Aplicativo de desktop do [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
 >* [Sobre [!DNL Adobe Asset Link]](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentação](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
 >* [Referência técnica para o carregamento do ativo](developer-reference-material-apis.md#asset-upload)

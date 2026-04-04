@@ -6,7 +6,7 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 0%
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=pt-BR) |
-| AEM as a Cloud Service (Componentes principais) | [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM as a Cloud Service (Componentes principais) | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
 | AEM as a Cloud Service (Componentes de base) | Este artigo |
 
 Um Formulário adaptável fornece várias Ações de envio prontas para uso (OOTB). Uma Ação de envio especifica detalhes das ações a serem executadas nos dados coletados por meio do Formulário adaptável. Por exemplo, enviar dados em um email.
@@ -102,8 +102,11 @@ Uma Ação Enviar é uma sling:Folder que inclui o seguinte:
 * **post.POST.jsp**: o servlet Submit chama esse script com os dados enviados e os dados adicionais nas seções anteriores. Qualquer menção à execução de uma ação nesta página implica em executar o script post.POST.jsp. Para registrar a Ação de envio com o Forms adaptável a ser exibido na caixa de diálogo Editar formulário adaptável, adicione essas propriedades ao `sling:Folder`:
 
    * **guideComponentType** do tipo String e valor **fd/af/components/guidesubmittype**
-   * **guideDataModel** do tipo Cadeia de Caracteres que especifica o tipo de Formulário Adaptável ao qual a Ação de Envio se aplica. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** é compatível com o Adaptive Forms baseado em XSD. Há suporte para **basic** para o Adaptive Forms que não usam XDP ou XSD. Para exibir a ação em vários tipos de Forms adaptável, adicione as cadeias de caracteres correspondentes. Separe cada string por vírgula. Por exemplo, para tornar uma ação visível no <!--XFA- and -->Forms adaptável baseado em XSD, especifique o valor como <!--**xfa** and--> **xsd**.
-
+   * **guideDataModel** do tipo Cadeia de Caracteres que especifica o tipo de Formulário Adaptável ao qual a Ação de Envio se aplica. **xsd** é compatível com o Adaptive Forms baseado em XSD. Há suporte para **basic** para o Adaptive Forms que não usam XDP ou XSD. Para exibir a ação em vários tipos de Forms adaptável, adicione as cadeias de caracteres correspondentes. Separe cada string por vírgula. Por exemplo, para tornar uma ação visível no Forms adaptável baseado em XSD, especifique o valor como **xsd**.
+  <!--
+    Replace above?
+    * **guideDataModel** of type String that specifies the type of Adaptive Form for which the Submit Action is applicable. **xfa** is supported for XFA-based Adaptive Forms while **xsd** is supported for XSD-based Adaptive Forms. **basic** is supported for Adaptive Forms that do not use XDP or XSD. To display the action on multiple types of Adaptive Forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on XFA- and XSD-based Adaptive Forms, specify the value as <**xfa** and **xsd**.
+    -->
    * **jcr:description** do tipo String. O valor dessa propriedade é exibido na lista Ação de envio na guia Ações de envio da caixa de diálogo Edição do formulário adaptável. As ações OOTB estão presentes no repositório do CRX no local **/libs/fd/af/components/guidesubmittype**.
 
    * **submitService** do tipo Cadeia de caracteres. Para obter mais informações, consulte [Agendar envio do Formulário Adaptável para ações personalizadas](#schedule-adaptive-form-submission).
@@ -112,7 +115,7 @@ Uma Ação Enviar é uma sling:Folder que inclui o seguinte:
 
 >[!NOTE]
 >
-> Para saber como criar uma ação de envio personalizada para Componentes Principais, consulte [Criar uma ação de envio personalizada para o Adaptive Forms (Componentes Principais)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
+> Para saber como criar uma ação de envio personalizada para Componentes Principais, consulte [Criar uma ação de envio personalizada para o Adaptive Forms (Componentes Principais)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
 
 Execute as seguintes etapas para criar uma Ação enviar personalizada que salve os dados no repositório do CRX e envie um email para você. O formulário adaptável contém o conteúdo do armazenamento de ação de envio OOTB (desaprovado) que salva os dados no repositório do CRX. Além disso, o AEM fornece uma API de [Email](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) que pode ser usada para enviar emails. Antes de usar a API de email, configure o serviço Day CQ Mail por meio do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (obsoleto) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório do CRX.
 
@@ -210,7 +213,7 @@ Execute as seguintes etapas para criar uma Ação enviar personalizada que salve
 
 ## Usar a propriedade submitService para ações de envio personalizadas {#submitservice-property}
 
-Ao definir a Ação de Envio personalizada, que inclui a propriedade `submitService`, o formulário aciona o [FormSubmitActionService](https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) no envio. O `FormSubmitActionService` usa o método `getServiceName` para recuperar o valor da propriedade `submitService`. Com base no valor da propriedade `submitService`, o serviço invoca o método de envio apropriado. Inclua o `FormSubmitActionService` no pacote personalizado que você carregou para o servidor [!DNL AEM Forms].
+Ao definir a Ação de Envio personalizada, que inclui a propriedade `submitService`, o formulário aciona o [FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) no envio. O `FormSubmitActionService` usa o método `getServiceName` para recuperar o valor da propriedade `submitService`. Com base no valor da propriedade `submitService`, o serviço invoca o método de envio apropriado. Inclua o `FormSubmitActionService` no pacote personalizado que você carregou para o servidor [!DNL AEM Forms].
 
 Adicione a propriedade `submitService` do tipo cadeia de caracteres ao `sling:Folder` de sua Ação de Envio personalizada para habilitar [!DNL Adobe Sign] para o Formulário adaptável. Você pode selecionar a opção **[!UICONTROL Habilitar Adobe Sign]** na seção **[!UICONTROL Assinatura Eletrônica]** das propriedades do contêiner de Formulário Adaptável somente após definir o valor da propriedade `submitService` da sua Ação de Envio personalizada.
 

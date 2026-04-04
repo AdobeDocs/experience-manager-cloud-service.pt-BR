@@ -2,15 +2,14 @@
 title: Introdução ao Agente de modernização de experiência para projetos de criação do AEM
 description: Saiba mais sobre as etapas de configuração específicas necessárias para projetos de criação do AEM ao começar a usar o Agente de modernização de experiência usando o Console de modernização de experiência.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-exl-id: a1b2c3d4-e5f6-4789-a012-3456789abcde
-source-git-commit: df23c3a4c497943135f8719425225526ae14aa92
+role: User, Admin, Developer
+exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 1%
 
 ---
-
 
 # Introdução ao Agente de modernização de experiência para projetos de criação do AEM {#getting-started-aem-authoring}
 

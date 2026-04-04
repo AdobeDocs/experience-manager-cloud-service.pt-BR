@@ -10,7 +10,7 @@ thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 role: Admin
 index: false
-source-git-commit: 856442039fcd25ec675a6258d182f7a35f590c3c
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 29%
@@ -20,7 +20,7 @@ ht-degree: 29%
 
 # Desenvolver o AEM Commerce para o AEM as a Cloud Service {#develop}
 
-O desenvolvimento de projetos do AEM Commerce, com base no Commerce integration framework (CIF) for AEM as a Cloud Service, segue as mesmas regras e práticas recomendadas de outros projetos do AEM no AEM as a Cloud Service. Revise o seguinte primeiro:
+O desenvolvimento de projetos do AEM Commerce, com base no Commerce integration framework (CIF) para AEM as a Cloud Service, segue as mesmas regras e práticas recomendadas de outros projetos do AEM no AEM as a Cloud Service. Revise o seguinte primeiro:
 
 * [Estrutura de projetos do AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 * [SDK do AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
@@ -37,7 +37,7 @@ O complemento CIF é fornecido como um arquivo de recursos Sling. O arquivo zip 
 >[!TIP]
 >
 >**Novo no AEM as a Cloud Service?**
->&#x200B;>Consulte [um guia mais detalhado para configurar um ambiente de desenvolvimento local usando o AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR)
+>Consulte [um guia mais detalhado para configurar um ambiente de desenvolvimento local usando o AEM as a Cloud Service SDK.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
 ### Software necessário {#required-software}
 

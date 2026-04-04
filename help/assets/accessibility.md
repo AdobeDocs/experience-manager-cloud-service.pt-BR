@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 2%
@@ -43,7 +43,8 @@ O [!DNL Experience Manager] fornece vários níveis de suporte para os seguintes
 
 Para ler um relatório com detalhes sobre o nível de conformidade, consulte a página [Relatório de conformidade para acessibilidade](https://www.adobe.com/accessibility/compliance.html) (ACR).
 
-<!-- TBD: Add link after release.
+<!--
+ TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
 -->
 
@@ -70,7 +71,8 @@ Os recursos principais do [!DNL Assets] estão mais acessíveis do que antes e s
 
 Muitos elementos da interface do usuário que são clicáveis ou acionáveis com um ponteiro também podem ser envolvidos com o uso do teclado. Usando um teclado, os usuários podem se concentrar em elementos da interface do usuário e realizar a ação apropriada. Os usuários podem usar atalhos do teclado diretamente para acionar um comando ou uma ação sem precisar se concentrar em elementos da interface do usuário e acioná-la usando o teclado. Por exemplo, os usuários podem abrir a linha do tempo de um ativo no lado esquerdo navegando até o controle da interface do usuário com o teclado e selecionando `Return` e o atalho de teclado `Alt + 2`.
 
-<!-- TBD items:
+<!--
+ TBD items:
 
 * The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile pop-up dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -113,7 +115,8 @@ Depois de fazer logon, os usuários do DAM podem navegar na interface do usuári
 
 Se um usuário expandir a ajuda ou a opção de perfil do usuário no menu, a opção ou o status apropriado será anunciado pelo leitor de tela. Se um usuário expandir a opção de perfil do usuário, as opções disponíveis poderão ser selecionadas usando um teclado. Por exemplo, um administrador pode representar um usuário diferente. Se um usuário procurar uma cadeia de caracteres na opção [!UICONTROL Ajuda], o narrador anunciará &quot;Procurando Ajuda&quot; para indicar que uma pesquisa está em andamento.
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+ TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -124,7 +127,8 @@ Se um usuário expandir a ajuda ou a opção de perfil do usuário no menu, a op
 
 Na interface do usuário do [!DNL Assets], os usuários podem usar o teclado para navegar pela lista de ativos digitais existentes no repositório do DAM, visualizar ou baixar um ativo, ver representações geradas, alternar exibições, ver as representações geradas, ver o histórico da linha do tempo e da versão, ver comentários e referências, e ver e gerenciar metadados.
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+ TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -150,7 +154,8 @@ Ao navegar pelo repositório de ativos, a seguinte funcionalidade melhora a aces
 * Comentários em um ativo estão disponíveis na linha do tempo do ativo. Ele é acessível se o painel esquerdo for acessado pelo teclado ou por um atalho de teclado.
 * As [!UICONTROL Configurações de Exibição] em [!DNL Experience Manager] podem ser acessadas com teclado. Os usuários podem navegar pelos tamanhos de cartão disponíveis usando as teclas de seta e selecionar e navegar pela guia para navegar e definir outros elementos na visualização Configurações de exibição existente.
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+ TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -195,7 +200,8 @@ Ao filtrar os resultados da pesquisa:
 
 ## Compartilhar ativos {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+ TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 Ao compartilhar ativos, as seguintes funcionalidades melhoram a acessibilidade:

@@ -2,9 +2,9 @@
 title: Visão geral dos agentes no AEM
 description: Saiba mais sobre os agentes disponíveis no AEM para acelerar a criação de conteúdo e orquestrar alterações automaticamente.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 3%
@@ -27,21 +27,21 @@ Esses agentes estão disponíveis no Adobe Experience Manager (AEM) as a Cloud S
 
 Você tem três opções para acessar agentes.
 
-1. Você pode ter a opção de acessar os AEM Agents por meio do [Tentar Antes de Comprar,](http://experienceleague.adobe.com/pt-br/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) que está sendo lançado em fases. Seu CSM ou TAM pode ajudar a confirmar a disponibilidade para sua organização.
+1. Você pode ter a opção de acessar os AEM Agents por meio do [Tentar Antes de Comprar,](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) que está sendo lançado em fases. Seu CSM ou TAM pode ajudar a confirmar a disponibilidade para sua organização.
 1. Explore os agentes do AEM [por meio de uma avaliação.](https://www.aem.live/developer/aem-playground)
 1. Conecte-se com seu CSM ou TAM para discutir o acesso por meio da SKU Agentic, se isso estiver alinhado a seu roteiro e planos de avaliação.
 
-À medida que novas habilidades forem disponibilizadas no lançamento antecipado, ofereceremos oportunidades adicionais para participar e compartilhar feedback. Recomendamos que você assista [esta página](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) para obter atualizações.
+À medida que novas habilidades forem disponibilizadas no lançamento antecipado, ofereceremos oportunidades adicionais para participar e compartilhar feedback. Recomendamos que você assista [esta página](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) para obter atualizações.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
-O [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automatiza tarefas de alto esforço e grande volume por meio dos seguintes agentes, cada um especializado em um conjunto específico de trabalhos.
+O [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automatiza tarefas de alto esforço e alto volume por meio dos seguintes agentes, cada um especializado em um conjunto específico de trabalhos.
 
 * **[Agente de Modernização de Experiência](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)** - Migra sites para formatos prontos para nuvem
 * **[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)** - Reduz o tempo de entrada no mercado com atualizações de conteúdo, criação de formulários e comunicações
 * **[Agente de Desenvolvimento](/help/ai-in-aem/agents/brand-experience/development/development.md)** - Fornece solução de problemas assistida por IA e automação de compilação
 
-Por meio desses agentes, o Brand Experience Agent absorve o pesado trabalho operacional por trás das atualizações e da modernização, ajudando as equipes a realizar alterações mais rapidamente e com mais confiança na era da IA atual.
+Por meio desses agentes, a Brand Experience Agent absorve o pesado trabalho operacional por trás das atualizações e da modernização, ajudando as equipes a entregar as alterações mais rapidamente e com maior confiança na era da IA atual.
 
 ## Agente do Supervisor de Conteúdo {#content-advisor-agent}
 
@@ -56,7 +56,7 @@ O agente interpreta a intenção do usuário e executa tarefas de edição compl
 
 O [Agente de governança](/help/ai-in-aem/agents/governance/overview.md) protege a integridade e a conformidade da marca em toda a AEM. Ao aplicar políticas de segurança, normativas e de marca, o agente executa as tarefas necessárias para garantir que cada interação e ativação siga os padrões estabelecidos.
 
-## Limitações   {#limitations}
+## Limitações {#limitations}
 
 Esteja ciente das seguintes limitações gerais dos agentes do AEM:
 

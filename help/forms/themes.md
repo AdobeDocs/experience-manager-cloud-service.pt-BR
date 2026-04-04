@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5564'
 ht-degree: 1%
@@ -20,10 +20,10 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Este artigo |
 
-Você pode criar e aplicar temas para estilizar um Formulário adaptável<!-- or an interactive communication-->. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes. O tema é gerenciado independentemente sem uma referência a um Formulário adaptável<!-- or interactive communication -->.
+Você pode criar e aplicar temas para estilizar um Formulário adaptável<!-- or an interactive communication-->. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes. O tema é gerenciado de forma independente sem uma referência a um Formulário adaptável.
 
 Você pode baixar e instalar o pacote de conteúdo de referência [!DNL AEM Forms] do portal [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) para importar temas de referência e modelos para o seu ambiente.
 
@@ -166,7 +166,8 @@ Lista de metapropriedades de um tema (encontrada na página de propriedades de u
    <td>Sim</td>
    <td>Um rótulo anexado ao tema para identificação usado para melhorar a pesquisa.</td>
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>11.</td>
    <td>References</td>
    <td>Links</td>
@@ -199,19 +200,21 @@ Lista de metapropriedades de um tema (encontrada na página de propriedades de u
      <li>Default value - computed using theme location.</li>
      <li>When this value is changed, the category name is updated on the corresponding clientlib node. Updating Clientlib Category Name in the jsp files is not required because clientlib category name is used by reference.</li>
     </ul> </td>
-  </tr> -->
+  </tr>
+  -->
  </tbody>
 </table>
 
 ## Sobre o Editor de temas {#about-the-theme-editor}
 
-O Editor de temas é uma interface amigável para usuários empresariais e designers da Web/desenvolvedores que fornece as funcionalidades necessárias para especificar facilmente o estilo de vários elementos do Formulário adaptável <!-- and interactive communication -->. Quando você cria um tema, ele é armazenado como uma entidade separada, como formulários <!--  , interactive communications, letters, document fragments, and data dictionaries-->.
+O Editor de temas é uma interface amigável para usuários empresariais e designers da Web/desenvolvedores que fornece as funcionalidades necessárias para especificar facilmente o estilo de vários elementos do Formulário adaptável <!-- and interactive communication -->. Quando você cria um tema, ele é armazenado como uma entidade separada, como formulários.
+<!--  , interactive communications, letters, document fragments, and data dictionaries -->
 
 O Editor de temas permite personalizar estilos dos componentes estilizados em um tema. Você pode personalizar a aparência de um formulário <!-- or interactive communication --> em um dispositivo.
 
 O Editor de temas é dividido em dois painéis:
 
-* **Tela** - Aparece no lado direito. Ele mostra um exemplo de Formulário adaptável <!--  or interactive communication --> no qual todas as alterações de estilo são refletidas instantaneamente. Você também pode selecionar objetos diretamente da tela para pesquisar estilos associados a eles e editar esses estilos. Uma régua de resolução de dispositivo na parte superior controla a Tela de Pintura. Selecionar um ponto de interrupção de resolução na régua mostra a visualização do formulário de amostra <!--  or interactive communication --> para a respectiva resolução. A tela é discutida detalhadamente [abaixo](themes.md#using-canvas).
+* **Tela** - Aparece no lado direito. Ele mostra um exemplo de Formulário adaptável <!--  or interactive communication --> no qual todas as alterações de estilo são refletidas instantaneamente. Você também pode selecionar objetos diretamente da tela para pesquisar estilos associados a eles e editar esses estilos. Uma régua de resolução de dispositivo na parte superior controla a Tela de Pintura. Selecionar um ponto de interrupção de resolução na régua mostra a visualização do formulário de amostra para a respectiva resolução. A tela é discutida detalhadamente [abaixo](themes.md#using-canvas).
 
 * A **Barra Lateral*** é exibida no lado esquerdo. Ele tem os seguintes itens:
 
@@ -282,7 +285,9 @@ Use os pontos de interrupção do Editor de temas para definir um estilo alterna
 
 >[!NOTE]
 >
->O tema é criado primeiro usando um formulário<!-- or interactive communication--> e, em seguida, aplicado em formulários diferentes<!-- or interactive communications-->. Os pontos de interrupção usados na criação do tema podem ser diferentes da forma <!-- or interactive communication --> na qual o tema é aplicado. As consultas de mídia CSS são baseadas no formulário <!-- or interactive communication --> usado na criação do tema, e não no formulário <!-- or interactive communication --> no qual o tema é aplicado.
+>O tema é criado primeiro usando um formulário e, em seguida, aplicado em formulários diferentes. Os pontos de interrupção usados na criação do tema podem ser diferentes da forma em que o tema é aplicado. As consultas de mídia CSS são baseadas no formulário usado na criação do tema, e não no formulário no qual o tema é aplicado.
+
+<!-- ADD: or interactive communication above throughout? -->
 
 ### O contexto das propriedades de estilo é alterado na barra lateral ao selecionar objetos {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -350,7 +355,7 @@ Personalizar o estilo de estado de sucesso do componente Widget de caixa de text
 
 ### Utilização da Tela {#using-canvas}
 
-O tema é criado usando o formulário pronto para uso ou um formulário <!-- or interactive communication --> de sua escolha. A Tela mostra a visualização do formulário ou <!-- interactive communication --> usado para criar o tema com personalizações especificadas no tema. A régua acima do formulário é usada para determinar o layout de acordo com o tamanho da exibição do seu dispositivo.
+O tema é criado usando o formulário pronto para uso ou um formulário <!-- or interactive communication --> de sua escolha. A Tela mostra a pré-visualização do formulário ou usada para criar o tema com personalizações especificadas no tema. A régua acima do formulário é usada para determinar o layout de acordo com o tamanho da exibição do seu dispositivo.
 
 Na barra de ferramentas da Tela de Pintura, você verá:
 
@@ -488,7 +493,7 @@ Um ponto de interrupção representa um dispositivo móvel e seu tamanho de exib
 1. Use a barra lateral para personalizar o estilo dos componentes do formulário <!-- or interactive communication --> no tema para o tamanho de exibição selecionado.
 1. Certifique-se de que a personalização foi salva.
 
-Você pode estilizar componentes de <!-- or interactive communication --> para vários dispositivos. Os componentes do formulário <!-- and interactive communication --> para desktops e dispositivos móveis podem ter estilos totalmente diferentes.
+Você pode estilizar componentes de <!-- or interactive communication --> para vários dispositivos. Os componentes de formulário para desktops e dispositivos móveis podem ter estilos totalmente diferentes.
 
 ### Uso do Web Fonts em um tema {#using-web-fonts-in-a-theme}
 
@@ -568,14 +573,16 @@ Para aplicar um tema a um Formulário adaptável:
 
 Você também pode definir um tema para um Formulário adaptável ao criá-lo.
 
-<!-- To apply a theme to an interactive communication:
+<!--
+ To apply a theme to an interactive communication:
 
 1. Open your interactive communication in edit mode. To open a interactive communication in edit mode, select a form and click **Open**.
 1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) &gt;**Document Container**, and then click ![cmppr](assets/cmppr.png).
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png) -->
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+-->
 
 ### Alterar tema de um formulário em tempo de execução {#change-theme-of-a-form-at-runtime}
 
@@ -642,7 +649,8 @@ Você pode ver o CSS gerado usando as seguintes opções:
 
 * Você pode enfrentar problemas com seu tema atual se um ativo for adicionado de outro tema e o outro tema for movido ou excluído. É recomendável evitar a navegação e adicionar ativos de outros temas.
 
-<!-- * **Using base clientlib, theme editor, and inline styling**
+<!--
+ * **Using base clientlib, theme editor, and inline styling**
 
     * **Base clientlib**:
 
@@ -654,7 +662,8 @@ Você pode ver o CSS gerado usando as seguintes opções:
         1. In the Advanced tab, in the Clientlib Location field, browse, and select the client-library you want to use.
         1. Click **[!UICONTROL Save]**.
 
-      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor. -->
+      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor.
+      -->
     Você também pode criar um tema, criar cópias dele e modificar o estilo fornecido nos temas copiados para casos de uso semelhantes.
     Consulte [Obtendo aparência específica usando Temas](#specific-af-appearance)
     
@@ -666,9 +675,11 @@ Você pode ver o CSS gerado usando as seguintes opções:
     
     Você pode estilizar componentes usando o modo Estilo no formulário &lt;!— ou comunicação interativa —> editor multicanal quando você trabalha com um formulário. O uso do modo de estilo para alterar o estilo do componente de formulário substitui o estilo especificado no tema. Se quiser alterar o estilo de determinados componentes de um formulário específico, consulte [Estilo incorporado de componentes](inline-style-adaptive-forms.md).
 
-<!-- * **Using client-side libraries**
+<!--
+ * **Using client-side libraries**
 
-  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above. -->
+  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above.
+  -->
 
 * **Alterando a largura do layout do painel de contêiner**
 

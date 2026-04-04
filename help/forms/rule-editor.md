@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '6688'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componentes de base) | Este artigo |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/rule-editor-core-components.md) |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## Visão geral {#overview}
 
@@ -203,7 +203,8 @@ A figura a seguir mostra um exemplo de adição dinâmica de caixas de seleção
 
 **[!UICONTROL Remover instância]** Remove uma instância do painel ou linha de tabela repetível especificado.
 
-**[!UICONTROL Navegar até]** Navega até outro <!--Interactive Communications,--> Forms Adaptive, outros ativos, como imagens ou fragmentos de documentos, ou uma URL externa. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Navegar até]** Navega até outro <!--Interactive Communications,--> Forms adaptável, outros ativos, como imagens ou fragmentos de documentos, ou uma URL externa.
+<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 ### [!UICONTROL Definir valor de] {#set-value-of}
 
@@ -535,11 +536,12 @@ Para gravar regras, execute as seguintes etapas:
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+ ### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -647,7 +649,7 @@ Por exemplo, você deseja adicionar uma função personalizada que calcula a ár
 
 Para criar uma biblioteca do cliente e adicioná-la ao repositório do CRX, execute as seguintes etapas:
 
-1. Crie uma biblioteca do cliente. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=pt-BR#developing).
+1. Crie uma biblioteca do cliente. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. No CRXDE, adicione uma propriedade `categories` com o valor de tipo de cadeia de caracteres como `customfunction` à pasta `clientlib`.
 
    >[!NOTE]
@@ -836,11 +838,13 @@ Quando o usuário indica que está morando no endereço residencial atual por me
 
 ![Mais provas solicitadas](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+ ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ## Exemplo de regras {#example}
 
@@ -872,11 +876,13 @@ Regra no editor visual
 
 Na regra de exemplo, a instrução na seção When é a condição, que quando retorna True, executa as ações especificadas na seção Then.
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Uso de uma saída de função em uma regra {#using-a-function-output-in-a-rule}
 
@@ -896,11 +902,13 @@ Agora, você deseja adicionar quantidades especificadas na coluna Quantidade do 
 
 Regra no editor visual
 
-<!-- he rule appears as follows in the code editor.
+<!--
+ he rule appears as follows in the code editor.
 
 ![example-function-output-code](assets/example-function-output-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Validação de um valor de campo usando expressão {#validating-a-field-value-using-expression}
 
@@ -910,8 +918,10 @@ No form ordem de compra explicado no exemplo anterior, você deseja impedir que 
 
 Regra no editor visual
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![example-validate-code](assets/example-validate-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->

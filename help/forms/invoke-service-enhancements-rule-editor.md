@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 keywords: chame os aprimoramentos do serviço no VRE, preenchendo as opções suspensas usando invocar serviço, Defina o painel repetível usando a saída de invocar serviço, Defina o painel usando a saída de invocar serviço, Use o parâmetro de saída de invocar serviço para validar outro campo.
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: e69201c40b72f4eaabe3da634ecf05bd04769f6b
 workflow-type: tm+mt
 source-wordcount: '2156'
 ht-degree: 1%
@@ -172,7 +172,7 @@ Digite `101` na caixa de texto `Pet ID` para preencher dinamicamente as opções
 
 ![Resultado](/help/forms/assets/output1.png)
 
-> 
+>[!NOTE]
 >
 > As opções suspensas também podem ser preenchidas dinamicamente chamando um serviço, analisando a resposta JSON e aplicando funções personalizadas. Para obter mais detalhes, consulte [esta seção](#retrieve-property-values-from-a-json-array).
 

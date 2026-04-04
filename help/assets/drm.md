@@ -6,7 +6,7 @@ feature: Asset Management,DRM
 role: User, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 Os ativos digitais são frequentemente associados a uma licença que especifica os termos e a duração do uso. Usando a plataforma [!DNL Experience Manager], você pode gerenciar com eficiência as informações de expiração de ativos e de licenciamento.
@@ -75,7 +75,8 @@ Você pode configurar o scheduler usando as seguintes propriedades:
 * O número máximo de ativos expirados em uma iteração do agendador é o valor da propriedade `asset_expired_limit`.
 * Para executar o trabalho periodicamente, defina o valor da propriedade `cq.dam.expiry.notification.scheduler.istimebased` como `false` e defina o valor da propriedade `cq.dam.expiry.notification.scheduler.period.rule` com o tempo em segundos.
 
-<!-- TBD: Web Console not available in CS.
+<!--
+ TBD: Web Console not available in CS.
 
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which 

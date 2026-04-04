@@ -4,7 +4,7 @@ description: Saiba como acessar o Cloud Manager para poder configurar os recurso
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 54%
@@ -30,7 +30,7 @@ Depois de ler este documento, é preciso entender o seguinte:
 
 O Cloud Manager é um componente essencial do AEM as a Cloud Service e serve como ponto de entrada único para a equipe. Ele apoia os clientes com configurações de desenvolvimento corporativo e pipelines de CI/CD criados com propósitos específicos, que estão equipados de forma a garantir testes completos e código da mais alta qualidade para fornecer experiências excepcionais. O Cloud Manager fornece tudo o que é necessário para começar a usar o autoatendimento, incluindo a capacidade de criar recursos e ambientes de nuvem.
 
-Normalmente, um membro da equipe com o perfil de produto **Proprietário da empresa** é responsável por adicionar os recursos de nuvem, como programas e ambientes. Essa pessoa entende as necessidades comerciais e conclui a configuração inicial do Cloud Manager.
+Normalmente, um membro da equipe com o perfil de produto **Proprietário da empresa** é responsável por adicionar os recursos de nuvem, como programas e ambientes. Essa pessoa entende as necessidades empresariais e conclui a configuração inicial do Cloud Manager.
 
 Para os fins desta jornada de integração, você, como administrador do sistema, já atribuiu a si mesmo o perfil de produto **Proprietário da empresa** e pode configurar os recursos da nuvem. Dependendo dos requisitos reais do projeto, os proprietários da empresa podem ou não ser os mesmos indivíduos que os administradores do sistema.
 
@@ -53,7 +53,8 @@ Um administrador do sistema com a função **Proprietário da empresa** deve ent
 <!--
 By successfully signing in as a system administrator with the **Business Owner** role, you use Cloud Manager for use by the other users with the **Business Owner** role. You do not receive a confirmation or any message. Simply signing in is sufficient.
 
-Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles. -->
+Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles.
+-->
 
 ## Acessar o Cloud Manager {#navigate-cloud-manager}
 
@@ -76,9 +77,11 @@ Users with the **Business Owner** role receive a welcome email with a link to ge
    >
    >You can also navigate directly to Cloud Manager's login page from `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Bookmark this page for future reference.
 
-1. You are directed to Cloud Manager's landing page. -->
+1. You are directed to Cloud Manager's landing page.
+-->
 
-<!-- OLD
+<!--
+ OLD
 Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
 
 1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
@@ -97,7 +100,8 @@ How you access your programs and products via Cloud Manager is up to you and has
 
 >[!NOTE]
 >
->Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface. -->
+>Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface.
+-->
 
 ## Exibir programas {#viewing-programs}
 
@@ -105,7 +109,7 @@ Ao acessar o Cloud Manager, o conteúdo exibido dependerá do estado dos seus pr
 
 ### Quando não existem programas {#no-programs}
 
-Se não existirem programas em sua organização, a página de aterrissagem o direcionará para criar seu primeiro programa.
+Se não existirem programas em sua organização, a página de destino o direcionará para criar seu primeiro programa.
 
 ![Nenhum programa](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
 

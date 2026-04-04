@@ -2,14 +2,14 @@
 title: Como importar uma política de marca
 description: Usar o Adobe Governance Agent para importar uma política de marca
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 94d671ebbd5aeb5992fdbc9d779ffbca51f82585
+role: User, Admin, Developer
+exl-id: 8057e82b-36d4-4280-b433-f26cfcfe9fe6
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
 
 ---
-
 
 # Como importar uma política de marca {#how-to-import-a-brand-policy}
 
@@ -114,4 +114,3 @@ Para importar uma marca para o Agente de governança:
    ![Configurando os detalhes da verificação](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
 
 1. Por fim, para obter uma lista de domínios e as marcas às quais eles estão associados, você pode pressionar a guia **Domínios**. Esta seção permitirá adicionar, excluir ou modificar domínios na lista.
-

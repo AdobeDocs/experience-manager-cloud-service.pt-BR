@@ -8,7 +8,7 @@ exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 85%
@@ -50,7 +50,7 @@ Em um nível superior, a tradução no AEM consiste em quatro etapas simples:
 1. Revisar e publicar o conteúdo traduzido.
 
 
-Mais adiante na jornada, você aprenderá os detalhes sobre como o AEM traduz conteúdo passo a passo.
+Mais adiante na jornada, você aprenderá os detalhes de como o AEM traduz conteúdo passo a passo.
 
 ## O que vem a seguir {#what-is-next}
 

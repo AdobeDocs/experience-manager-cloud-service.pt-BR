@@ -4,7 +4,7 @@ description: Descubra como os perfis de produto e de equipe do AEM as a Cloud Se
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: b9cc5450effb70afcb67725fe38826646d947da9
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2124'
 ht-degree: 23%
@@ -22,7 +22,8 @@ Ao conceder ao usuário acesso a uma solução específica da Adobe, você pode 
 
 A Adobe Admin Console tem uma hierarquia estruturada de produtos, instâncias de produtos e perfis de produtos, à qual os usuários internos de uma organização podem ser atribuídos como membros, fornecendo a eles acesso às soluções e aos recursos que foram licenciados.
 
-<!-- Alexandru: Drafting for now 
+<!--
+ Alexandru: Drafting for now 
 
 Your AEM as a Cloud Service team members are added and assigned to one or more of the following product profiles via the Admin Console during onboarding.
 
@@ -30,7 +31,8 @@ Your AEM as a Cloud Service team members are added and assigned to one or more o
 
 * **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
 
-![Product profiles](/help/onboarding/assets/admin-console-profiles.png) -->
+![Product profiles](/help/onboarding/assets/admin-console-profiles.png)
+-->
 
 ## Perfis de produto e de equipe do AEM as a Cloud Service {#aem-product-profiles}
 
@@ -90,8 +92,10 @@ A tabela a seguir descreve uma lista dos Perfis de produto possíveis abaixo de 
                 <li>Se o serviço padrão permanecer selecionado
                     <ul>
                         <li>os usuários neste perfil de produto também serão membros do grupo "AEM Sites Content Managers - Service" do AEM.</li>
-                      <!--  <li>users in this product profile will have access to AEM Sites Content Management API.</li>
-                        <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>-->
+                      <!--
+                        <li>users in this product profile will have access to AEM Sites Content Management API.</li>
+                        <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>
+                        -->
                     </ul>
                 </li>
             </ul>
@@ -209,7 +213,7 @@ A tabela a seguir descreve uma lista dos Perfis de produto possíveis abaixo de 
         </td>
     </tr>
     <tr>
-        <td>Publicação no AEM</td>
+        <td>AEM Publish</td>
         <td>Usuários do AEM - publicar - Programa <code>id</code> - Ambiente <code>id</code></td>
         <td>Usuários do AEM</td>
         <td>

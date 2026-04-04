@@ -4,7 +4,7 @@ description: Saiba como criar fragmentos de formulário no Editor universal e ad
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 1%
@@ -234,10 +234,12 @@ Para integrar um fragmento de formulário ao formulário:
    <td><p>Iniciar revisão/Gerenciar revisão</p> </td>
    <td><p>Permite iniciar e gerenciar uma revisão do fragmento selecionado.<br /> <br /> </p> </td>
     </tr>
-    <!--<tr>
+    <!--
+    <tr>
    <td><p>Add Dictionary</p> </td>
    <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-    </tr>-->
+    </tr>
+    -->
     <tr>
    <td><p>Publicar/Desfazer publicação</p> </td>
    <td><p>Publica/cancela a publicação do fragmento selecionado.<br /> <br /> </p> </td>

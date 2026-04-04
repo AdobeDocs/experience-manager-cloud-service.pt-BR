@@ -6,7 +6,7 @@ role: Admin, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service | Este artigo |
 
 Você pode mover o Adaptive Forms e ativos relacionados, como temas do Formulário Adaptável, Modelo de Dados de Formulário (FDM), modelos de Formulário Adaptável, Fragmentos e PDF forms, entre [!DNL AEM Forms] instâncias.
@@ -72,7 +72,7 @@ Para carregar um formulário ou um ativo relacionado:
 Você pode exportar temas em [!DNL AEM Forms] que você pode usar em outros projetos ou instâncias. O AEM permite baixar temas como um arquivo zip, que pode ser carregado na instância.
 Para baixar um tema:
 
-1. Faça logon na sua instância de Autor do [!DNL Experience Manager Forms].
+1. Faça logon na Instância de criação do [!DNL Experience Manager Forms].
 1. Selecione **[!UICONTROL Forms]** > **[!UICONTROL Temas]**.
 
    ![Selecionar tema](/help/forms/assets/select-theme.png)
@@ -293,7 +293,8 @@ To download all the Correspondence Management assets and related dependencies as
 
    To add the assets in the package to another instance of Correspondence Management, [import the package to an [!DNL AEM Forms] instance](import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
-<!-- ### Import Document Fragments, Letters and/or Data Dictionaries into Correspondence Management {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
+<!--
+ ### Import Document Fragments, Letters and/or Data Dictionaries into Correspondence Management {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
 You can import assets that are exported into a .cmp file. A .cmp file can have one or more letters, data dictionaries, document fragments, and dependent assets.
 
@@ -311,7 +312,8 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
    >[!NOTE]
    >
-   >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator. -->
+   >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator.
+   -->
 
 ## Consulte também {#see-also}
 

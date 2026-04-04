@@ -6,7 +6,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1947'
 ht-degree: 62%
@@ -140,7 +140,7 @@ Selecione o fragmento para revelar a barra de ferramentas com ações aplicávei
 
 >[!NOTE]
 >
->Muitas delas são [ações padrão para o Assets](/help/assets/manage-digital-assets.md) e/ou o [aplicativo de desktop da AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html?lang=pt-BR).
+>Muitas delas são [ações padrão para o Assets](/help/assets/manage-digital-assets.md) e/ou o [aplicativo de desktop da AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Abrir o editor de fragmentos {#opening-the-fragment-editor}
 
@@ -225,7 +225,8 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
    * **[Gerenciar publicação](#publishing-and-referencing-a-fragment)**
 
 <!--
-This updates any page references and ensures that the Dispatcher is flushed as required. -->
+This updates any page references and ensures that the Dispatcher is flushed as required.
+-->
 
 ## Salvar, fechar e versões {#save-close-and-versions}
 

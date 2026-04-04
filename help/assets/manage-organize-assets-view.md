@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 63%
@@ -79,7 +79,8 @@ O [!DNL Assets view] exibe somente as opções relevantes na barra de ferramenta
 ## Controle de versão de ativos {#versions-of-assets}
 
 <!-- 
-TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed? -->
+TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed?
+-->
 
 O [!DNL Assets view] realiza o controle de versão dos ativos quando eles são carregados novamente, após serem atualizados ou editados. Você pode visualizar o histórico de versões e a lista de versões antigas para restaurar uma versão antiga dos ativos como a versão mais recente, que pode então ser revertida para a versão anterior, se necessário. As versões de ativos são criadas nos seguintes cenários:
 
@@ -117,13 +118,15 @@ Para exibir e comparar versões:
 
    ![comparar versões do ativo](/help/assets/assets/version-compare2.png)
 
-<!-- old content
+<!--
+ old content
 To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
 -->
 
 Selecione a versão mais recente e clique em **[!UICONTROL Nova versão]** para carregar uma nova cópia do ativo a partir do sistema de arquivos local para criar uma versão do ativo.
 
-<!-- old content
+<!--
+ old content
 You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
 
 ![View versions of an asset](assets/view-asset-versions1.png)

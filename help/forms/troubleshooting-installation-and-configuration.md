@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Para habilitar a opção **[!UICONTROL Forms]**:
 
    ![Selecione a opção Forms](assets/installation-configuration-select-forms-option.png)
 
-1. [Criar](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=pt-BR#how-to-use) e [executar](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR) ambos os pipelines de produção e não produção.
+1. [Criar](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use) e [executar](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR) ambos os pipelines de produção e não produção.
 
 Depois que o pipeline for criado e implantado, a opção **[!UICONTROL Forms]** aparecerá na página **[!UICONTROL Navegação]**.
 
@@ -48,7 +48,8 @@ A missing profile can lead to environment creation failure. Check that the profi
 1. Click **[!UICONTROL New Profile]** in the Products tab.
 1. Specify Name, Display Name, and Description for the profile. Click **[!UICONTROL Done]**. A profile is created.
 
-If the profile exists and issues still persist, contact Adobe Support. -->
+If the profile exists and issues still persist, contact Adobe Support.
+-->
 
 ## Falha na criação do pipeline {#build-pipeline-fails}
 

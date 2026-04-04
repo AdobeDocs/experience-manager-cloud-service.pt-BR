@@ -2,9 +2,9 @@
 title: Agente do Supervisor de Conteúdo
 description: Saiba como o Agente de consultoria de conteúdo remove o atrito da evolução do conteúdo ao absorver o pesado trabalho operacional por trás da descoberta e otimização de conteúdo, ajudando as equipes a fornecer alterações mais rapidamente e com maior confiança para a era da IA de hoje.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 907c9558-0b59-453c-b710-40b095b19cf5
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%

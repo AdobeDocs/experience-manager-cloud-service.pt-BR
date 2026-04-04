@@ -4,8 +4,8 @@ description: Entenda como o envio e o fluxo de trabalho funcionam para a Interfa
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-exl-id: a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d
-source-git-commit: a41459520feb03594212b91e68cfd8e2b1e610c4
+exl-id: 9d8a33e4-e206-48e6-9daf-b15feb9c67a3
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -20,7 +20,8 @@ ht-degree: 0%
 
 Este artigo explica como o envio e o fluxo de trabalho funcionam quando você habilita um fluxo de trabalho para a Interface do usuário associada. Em seguida, ele mostra como configurar um fluxo de trabalho de envio. A apresentação usa como exemplo a geração de um PDF a partir da carga da IC (Comunicação interativa); você pode adaptar as etapas para outros tipos de fluxo de trabalho.
 
-<!--## Submission and workflow behavior {#submission-and-workflow-behavior}
+<!--
+## Submission and workflow behavior {#submission-and-workflow-behavior}
 
 When you enable **Configure Workflow for Update** for an Associate UI, submissions from the Associate UI can trigger an AEM workflow. The following explains where workflows run, who uses which environment, and how to plan for data and access.
 
@@ -38,7 +39,8 @@ Authors can open the Associate UI on the Author instance—for example, to test 
 
 ### When an associate submits from the Publish instance
 
-Associates open the Associate UI on the Publish instance, using the integration you set up. When they submit, the submission is sent to the Author instance and the workflow runs on Author. Associates sign in on Publish (for example, via [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) and do not need access to Author. To set up how associates open the Associate UI on Publish, see [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md).-->
+Associates open the Associate UI on the Publish instance, using the integration you set up. When they submit, the submission is sent to the Author instance and the workflow runs on Author. Associates sign in on Publish (for example, via [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) and do not need access to Author. To set up how associates open the Associate UI on Publish, see [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md).
+-->
 
 ## Configurar um fluxo de trabalho de envio
 
@@ -83,11 +85,11 @@ Em [Habilitar e configurar a Interface do Usuário Associada](/help/forms/intera
 
 ![Configurações de Comunicação Interativa - Configuração de fluxo de trabalho para Interface do Usuário Associada](/help/forms/assets/associate-ui-configure-workflow.png)
 
-Quando **Externalizar o armazenamento de dados do fluxo de trabalho** estiver habilitado, configure o externalizador para que os dados do fluxo de trabalho sejam armazenados em seu armazenamento externo (por exemplo, Azure). Consulte [Externalizar dados de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=pt-BR).
+Quando **Externalizar o armazenamento de dados do fluxo de trabalho** estiver habilitado, configure o externalizador para que os dados do fluxo de trabalho sejam armazenados em seu armazenamento externo (por exemplo, Azure). Consulte [Externalizar dados de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html).
 
 ## Consulte também:
 
 - [Associar a interface no Editor de comunicação interativa](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Habilitar e configurar a Interface do Usuário Associada para Comunicações Interativas](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [Integrar a interface do usuário do Associate no seu aplicativo](/help/forms/interactive-communication/invoke-associate-ui.md)
-- [Externalizar dados de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=pt-BR)
+- [Externalizar dados de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)

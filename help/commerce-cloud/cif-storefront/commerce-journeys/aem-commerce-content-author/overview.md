@@ -5,7 +5,7 @@ exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 76%
@@ -35,7 +35,7 @@ As jornadas de documentação foram projetadas com base nas práticas recomendad
 
 Se quiser saber como a Adobe recomenda resolver casos de negócios de sites com o AEM, as jornadas do AEM Sites são um ótimo ponto de partida.
 
-## Público {#audience}
+## Público-alvo {#audience}
 
 Esta jornada foi projetada para o autor de conteúdo do AEM Commerce. Esta jornada apresenta os requisitos, as etapas e a abordagem para começar e gerenciar páginas de catálogo, modelos e experiências completas do produto.
 

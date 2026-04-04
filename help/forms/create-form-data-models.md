@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1543'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -27,7 +27,8 @@ A integração de dados do [!DNL Experience Manager Forms] fornece uma interface
 
 * **Usando fontes de dados pré-configuradas**: se você tiver configurado as fontes de dados conforme descrito em [Configurar fontes de dados](configure-data-sources.md), poderá selecioná-las ao criar um modelo de dados de formulário (FDM). Ele traz todos os objetos, propriedades e serviços do modelo de dados das fontes de dados selecionadas disponíveis para uso no modelo de dados de formulário (FDM).
 
-* **Sem fontes de dados**: se você não tiver configurado fontes de dados para seu modelo de dados de formulário (FDM), ainda poderá criá-lo sem fontes de dados. Você pode usar o Modelo de Dados de Formulário (FDM) para criar o Forms Adaptável <!--and interactive communication--> e testá-los usando dados de amostra. Quando as fontes de dados estiverem disponíveis, você poderá vincular o Modelo de Dados de Formulário (FDM) às fontes de dados, o que refletirá automaticamente no Forms Adaptável associado<!--and interactive communications-->.
+* **Sem fontes de dados**: se você não tiver configurado fontes de dados para seu modelo de dados de formulário (FDM), ainda poderá criá-lo sem fontes de dados. Você pode usar o Modelo de Dados de Formulário (FDM) para criar o Forms Adaptável <!--and interactive communication--> e testá-los usando dados de amostra. Quando as fontes de dados estiverem disponíveis, você poderá vincular o Modelo de dados de formulário (FDM) às fontes de dados, o que refletirá automaticamente no Forms adaptável associado.
+  <!--and interactive communications-->
 
 >[!NOTE]
 >
@@ -94,7 +95,7 @@ Faça o seguinte para adicionar ou atualizar fontes de dados a um modelo de dado
 
 ## Configurações sensíveis ao contexto para modos de execução específicos {#runmode-specific-context-aware-config}
 
-O [!UICONTROL Modelo de Dados de Formulário (FDM)] usa [configurações com reconhecimento de contexto do Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=pt-BR) para oferecer suporte a diferentes parâmetros de fonte de dados para conexão com fontes de dados para diferentes modos de execução [!DNL Experience Manager].
+O [!UICONTROL Modelo de Dados de Formulário (FDM)] usa [configurações com reconhecimento de contexto do Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html) para oferecer suporte a diferentes parâmetros de fonte de dados para conexão com fontes de dados para diferentes modos de execução [!DNL Experience Manager].
 
 Quando o [!UICONTROL Modelo de Dados de Formulário (FDM)] usa configurações de nuvem para armazenar parâmetros, que, ao ser submetido a check-in e implantado por meio do controle do código-fonte (repositório GIT do Cloud-Manager), cria configurações de nuvem com os mesmos parâmetros para todos os modos de execução (Desenvolvimento, Preparo e Produção). No entanto, para casos de uso em que há necessidade de ter conjuntos de dados diferentes para ambientes de teste e produção, usamos parâmetros de fonte de dados (por exemplo, URL da fonte de dados) para diferentes modos de execução do [!DNL Experience Manager].
 
@@ -111,7 +112,7 @@ Para habilitar configurações de nuvem específicas da implantação no [!UICON
 1. Integrar configuração de nuvem no Projeto do Arquétipo [!DNL Experience Manager].
    1. Descompacte o pacote baixado.
    1. Copie a pasta `jcr_root` e coloque-a como `ui.content` > `src` > `main` > `content`.
-   1. Atualize `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` para conter o filtro `/conf/{foldername}/settings/cloudconfigs/fdm`. Para obter detalhes, consulte o [módulo ui.content do Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html?lang=pt-BR). Quando esse projeto de arquétipo é implantado por meio do pipeline CM, a mesma configuração de nuvem é instalada em todos os ambientes (ou modos de execução). Para alterar o valor de campos (como URL) das configurações de nuvem com base no ambiente, use a configuração OSGi discutida na etapa a seguir.
+   1. Atualize `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` para conter o filtro `/conf/{foldername}/settings/cloudconfigs/fdm`. Para obter detalhes, consulte o [módulo ui.content do Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). Quando esse projeto de arquétipo é implantado por meio do pipeline CM, a mesma configuração de nuvem é instalada em todos os ambientes (ou modos de execução). Para alterar o valor de campos (como URL) das configurações de nuvem com base no ambiente, use a configuração OSGi discutida na etapa a seguir.
 
 1. Crie uma configuração com reconhecimento de contexto do Apache Sling. Para criar a configuração OSGi:
    1. **Configure os arquivos de configuração OSGi no projeto do Arquétipo [!DNL Experience Manager].**
@@ -132,7 +133,7 @@ Quando esse projeto de arquétipo é implantado por meio do pipeline CM, a subst
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] usuários podem criptografar os valores secretos usando o suporte de criptografia para obter detalhes. Consulte [suporte de criptografia para propriedades de configuração](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=pt-BR#enabling-encryption-support) e coloque o texto criptografado no valor após [configurações com reconhecimento de contexto estarem disponíveis no service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=pt-BR#runmode-specific-context-aware-config).
+      >[!DNL Adobe Managed Service] usuários podem criptografar os valores secretos usando o suporte de criptografia para obter detalhes. Consulte [suporte de criptografia para propriedades de configuração](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) e coloque o texto criptografado no valor após [configurações com reconhecimento de contexto estarem disponíveis no service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
 
 1. Atualize as definições de fonte de dados usando a opção para atualizar as definições de fonte de dados no [Editor de Modelo de Dados de Formulário](#data-sources) para atualizar o cache do FDM por meio da interface do FDM e obter a configuração mais recente.
 

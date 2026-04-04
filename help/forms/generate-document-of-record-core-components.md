@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3320'
 ht-degree: 1%
@@ -159,7 +159,8 @@ Lembre-se das seguintes considerações e limitações ao trabalhar no PDF de en
 * Não há suporte para vinculação de conteúdo no PDF de envio gerado para o Formulário adaptável baseado em esquema XML.
 * A versão localizada do PDF de envio é criada sob demanda para um local quando o usuário solicita a renderização do PDF de envio. A localização do PDF de envio ocorre junto com a localização do Formulário adaptável. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
-<!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
+<!--
+ ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
 While creating an adaptive form, in the Form Model tab of Adaptive Form properties, select one the following option: 
 
@@ -172,7 +173,8 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
 
-When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
+When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration).
+-->
 
 ## Mapeamento de elementos do formulário adaptável {#mapping-of-adaptive-form-elements}
 

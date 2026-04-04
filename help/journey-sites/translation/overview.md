@@ -8,7 +8,7 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 89%
@@ -23,19 +23,19 @@ Comece aqui para obter uma jornada guiada por meio da tradução de conteúdo do
 
 O AEM Sites é um avançado conjunto de ferramentas para criar e gerenciar experiências digitais. Autores de conteúdo podem criar experiências digitais facilmente usando o editor de sites e organizar o conteúdo usando o console Sites, tudo isso enquanto visualizam o conteúdo em tempo real, conforme é entregue pelo AEM aos seus públicos-alvo entre canais.
 
-O AEM oferece ferramentas tão eficientes quanto essas para tradução de conteúdo, permitindo que você o entregue o mais rápido possível aos seus públicos em outras regiões ou localidades. Esta jornada de documentação apresenta as ferramentas de criação para que você entenda como o conteúdo é criado e gerenciado no AEM. Ela também aborda tudo o que você precisa saber para gerenciar seu próprio projeto de tradução.
+O AEM oferece ferramentas tão eficientes quanto essas para tradução de conteúdo, permitindo que você o entregue o mais rápido possível aos seus públicos-alvos em outras regiões ou localidades. Esta jornada de documentação apresenta as ferramentas de criação para que você entenda como o conteúdo é criado e gerenciado no AEM. Ela também aborda tudo o que você precisa saber para gerenciar seu próprio projeto de tradução.
 
 Se você já estiver familiarizado com o AEM Sites e com seus requisitos de tradução, talvez já tenha o conhecimento básico dessa jornada. Nesse caso, considere consultar nossa documentação técnica vinculada à seção de [recursos adicionais abaixo](#additional-resources).
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de Documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema comercial do começo ao fim, mesmo que ele tenha o mínimo de conhecimento prévio sobre o tópico ou sobre o AEM.
 
 As jornadas de documentação foram projetadas com base nas práticas recomendadas, informadas pela última pesquisa da Adobe, na experiência comprovada de implementação dos consultores da Adobe e no feedback de projetos de clientes.
 
 Se quiser saber como a Adobe recomenda resolver casos de negócios de sites com o AEM, as jornadas do AEM Sites são um ótimo ponto de partida.
 
-## Público {#audience}
+## Público-alvo {#audience}
 
 Essa jornada foi criada para o perfil de um especialista em tradução, geralmente chamado de Gerente de projetos de tradução. Essa jornada apresenta os requisitos, as etapas e a abordagem para a tradução de conteúdo do AEM Sites. A jornada pode definir perfis adicionais com os quais o especialista em tradução deve interagir, mas o ponto de vista da jornada é o do especialista em tradução.
 
@@ -56,7 +56,7 @@ As informações nesta jornada podem ser úteis para todos os perfis, mas alguma
 
 Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento básico sobre a tradução de conteúdo de sites no AEM e oferecem links para a documentação técnica detalhada.
 
-Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo na tradução no AEM, a Adobe recomenda que você comece do início e avance sequencialmente.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você for novo em tradução no AEM, a Adobe recomenda começar do início e avançar sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|

@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 33%
@@ -96,7 +96,8 @@ A próxima versão está planejada para sexta-feira, 15 de julho de 2021.
    * Suporte para [!DNL Assets Essentials].
    * Capacidade de conectar-se automaticamente a [!DNL Experience Manager] como [!DNL Cloud Service] ou [!DNL Assets Essentials].
 
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
+<!--
+ TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Assets] {#beta-features-assets}
@@ -155,7 +156,7 @@ A data de lançamento do AEM Screens as a Cloud Service é 24 de junho de 2021.
 ### Novidades {#what-is-new-screens-june}
 
 >[!NOTE]
->Consulte o [Guia do AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=pt-BR) para obter o conhecimento básico necessário para instalar, configurar e executar com êxito o Screens as a Cloud Service e criar um link para a documentação técnica de conceitos detalhados.
+>Consulte o [Guia do AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) para obter o conhecimento básico necessário para instalar, configurar e executar com êxito o Screens as a Cloud Service e criar um link para a documentação técnica de conceitos detalhados.
 
 * O gerenciamento de registro de dispositivos em massa significa que o provisionamento de grandes quantidades de dispositivos de reprodução é mais rápido e eficiente.
 
@@ -184,7 +185,7 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.5.4 é 28 
 
 ### Novidades {#what-is-new-ctt-latest}
 
-* Suporte para uma etapa [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=pt-BR) opcional adicionada para uso com a CTT. A etapa de pré-cópia pode ser usada para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo quando a instância do AEM de origem é configurada para usar um armazenamento de dados do Amazon S3 ou do Azure Blob.
+* Suporte para uma etapa [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) opcional adicionada para uso com a CTT. A etapa de pré-cópia pode ser usada para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo quando a instância do AEM de origem é configurada para usar um armazenamento de dados Amazon S3 ou Azure Blob Storage.
 
 * A grade de proteção foi adicionada à CTT para impedir que os usuários interrompam uma assimilação e corrompam os dados quando eles atingirem o ponto crítico durante a fase de assimilação.
 

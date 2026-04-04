@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 770318fd14e28c8406650eb563df36fe88227359
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2662'
-ht-degree: 53%
+ht-degree: 54%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 53%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Teste de interface do usuário"
->abstract="Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos. Os testes de interface do usuário são testes baseados em Selenium, compactados em uma imagem do Docker, para permitir uma grande variedade de opções de idioma e estruturas. Como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium."
+>abstract="Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos. Os testes de interface são baseados no Selenium e compactados em uma imagem do Docker para permitir uma variedade de opções de linguagens e estruturas. Como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium."
 
 Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos.
 
@@ -239,8 +239,10 @@ As seguintes variáveis de ambiente são passadas para a imagem do Docker em tem
 Os exemplos de teste da Adobe fornecem funções auxiliares para acessar os parâmetros de configuração:
 
 Cypress: use a função padrão `Cypress.env('VARIABLE_NAME')`
-<!-- BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
-* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class -->
+<!--
+ BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
+* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+-->
 
 ### Gerar relatórios de teste {#generate-test-reports}
 
@@ -273,8 +275,8 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 | Tempo-limite | 30 min | Por quanto tempo o teste é executado. |
 | Duração recomendada | 15 min | A Adobe recomenda manter os testes dentro desse limite de tempo. |
 
-* Se o Autor/Publicação de destino estiver protegido pelo incluir na lista de permissões incluo na lista de permissões de IP, a infraestrutura de teste da interface do usuário do pipeline deverá ser ou os testes da interface do usuário poderão falhar com 403 Proibido.
-Consulte também [Falha de teste de interface do usuário no AEMaaCS devido ao Incluir na lista de permissões de IP](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introdução a Incluis na lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Se o Autor/Publicação de destino estiver protegido pelo incluir na lista de permissões de IP, a infraestrutura de teste da interface do usuário do pipeline deverá ser ou os testes da interface do usuário poderão falhar com 403 Proibido.
+Consulte também [Falha de teste de interface do usuário no AEMaaCS devido ao Incluir na lista de permissões de IP](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introdução a Incluis na lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >
@@ -306,9 +308,11 @@ Os exemplos de teste fornecidos pela Adobe criam, por padrão, capturas de tela 
 
 Você pode usar as funções auxiliares para criar capturas de tela nos testes.
 
-<!-- BOTH URLS ARE 404
+<!--
+  BOTH URLS ARE 404
 * JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
+* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+-->
 
 Se um arquivo de resultados de teste for criado durante uma execução de teste da interface, você poderá baixá-lo da Cloud Manager clicando no botão `Download Details` na [**etapa Teste da interface personalizado**](/help/implementing/cloud-manager/deploy-code.md).
 
@@ -322,10 +326,12 @@ Os testes às vezes devem carregar arquivos no aplicativo que está sendo testad
    * Equivalente a `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.
    * Consulte a documentação e as bibliotecas da linguagem de programação usada na imagem do Docker para saber como executar essa solicitação HTTP.
 
-   <!-- BOTH URLS ARE 404
+   <!--
+    BOTH URLS ARE 404
    * The Adobe test samples provide helper functions for uploading files:
      * JavaScript: See the [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) command.
-     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class. -->
+     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class.
+     -->
 
 1. Se o upload for bem-sucedido, a solicitação retornará uma resposta `200 OK` do tipo `text/plain`.
    * O conteúdo da resposta é um identificador de arquivo opaco.

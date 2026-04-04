@@ -8,7 +8,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM as a Cloud Service | Este artigo |
 
 ![integração de dados](assets/data-integeration.png)
@@ -32,12 +32,14 @@ O [!DNL Microsoft Dynamics] é um software de CRM (relacionamento com o cliente)
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
-<!--When the package is installed, the following entities and services are available on your [!DNL Experience Manager Forms] instance:
+<!--
+When the package is installed, the following entities and services are available on your [!DNL Experience Manager Forms] instance:
 
-* MS Dynamics OData Cloud Service (OData Service)-->
+* MS Dynamics OData Cloud Service (OData Service)
+-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  O MS Dynamics OData Cloud Service (Serviço OData) está disponível com todos os modos de execução. Para obter mais informações sobre como configurar os modos de execução para uma instância [!DNL Experience Manager], consulte [Modos de Execução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  O MS Dynamics OData Cloud Service (Serviço OData) está disponível com todos os modos de execução. Para obter mais informações sobre como configurar os modos de execução para uma instância [!DNL Experience Manager], consulte [Modos de Execução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#runmodes).
 
 O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções no artigo [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md).
 
@@ -154,7 +156,8 @@ O serviço de nuvem MS Dynamics OData Cloud Service (OData Service) está config
 
 ## Criar modelo de dados de formulário (FDM) {#create-form-data-model}
 
-<!--When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
+<!--
+When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
 
 On opening the Form Data Model for the first time, it connects to the configured [!DNL Microsoft Dynamics] service and fetches entities from your [!DNL Microsoft Dynamics] instance. The "contact" and "lead" entities from [!DNL Microsoft Dynamics] are already added in the form data model.
 
@@ -162,7 +165,8 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
 
 `https://'[server]:[port]'/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
  Form Data Model 
-![default-fdm-1](assets/default-fdm-1.png)-->
+![default-fdm-1](assets/default-fdm-1.png)
+-->
 
 Após configurar o serviço de nuvem MS Dynamics OData, você pode usá-lo ao criar o modelo de dados de formulário (FDM). Para obter mais informações, consulte [Criar modelo de dados de formulário (FDM)](create-form-data-models.md).
 

@@ -6,7 +6,7 @@ feature: Asset Management, Translation
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 17%
@@ -17,7 +17,7 @@ ht-degree: 17%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 Ativos multilíngues são ativos com binários, metadados e tags em vários idiomas. Geralmente, binários, metadados e tags para ativos existem em um idioma, que são traduzidos para outros idiomas para uso em projetos multilíngues. O Adobe Experience Manager Assets permite automatizar fluxos de trabalho para traduzir ativos (incluindo binários, metadados e tags) para gerar ativos em outros idiomas para uso em projetos multilíngues.
@@ -31,11 +31,11 @@ Tradução automática de ativos no AEM: o serviço de tradução automática tr
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html?lang=pt-BR
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html?lang=pt-BR
-[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html?lang=pt-BR)
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html
+[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html)
 
-One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html?lang=pt-BR
+One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html
 
 -->
 
@@ -87,7 +87,7 @@ Execute as seguintes etapas para se preparar para traduzir ativos:
 
 Para criar a raiz do idioma, crie uma pasta e use um código de idioma ISO como o valor da propriedade Nome. Depois de criar a raiz do idioma, você pode criar uma cópia de idioma em qualquer nível dentro da raiz de idioma.
 
-Por exemplo, a página raiz da cópia em italiano da hierarquia de amostra tem `it` como a propriedade Nome. A propriedade Nome é usada como o nome do nó do ativo no repositório e, portanto, determina o caminho dos ativos. (*&lt;servidor>:&lt;porta>/assets.html/content/dam/it/*)
+Por exemplo, a página raiz da cópia em italiano da hierarquia de amostra tem `it` como a propriedade Nome. A propriedade Nome é usada como o nome do nó do ativo no repositório e, portanto, determina o caminho dos ativos. (*&lt;server>:&lt;port>/assets.html/content/dam/it/*)
 
 1. No console Assets, selecione **[!UICONTROL Criar]** e escolha **[!UICONTROL Pasta]** no menu.
 1. No campo Nome, digite o código do país no formato de `<language-code>`.
@@ -194,7 +194,8 @@ Ao executar um fluxo de trabalho de tradução para atualizar uma cópia de idio
 
 1. Navegue até o console Assets e abra a página Propriedades de cada um dos ativos traduzidos para exibir os metadados traduzidos.
 
-<!-- TBD: Possibly this blog was not migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
+<!--
+ TBD: Possibly this blog was not migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
 
 For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
 -->

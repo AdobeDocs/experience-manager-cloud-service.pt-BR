@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Com
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 8%
@@ -34,7 +34,7 @@ O AEM Forms oferece as seguintes ações de envio prontas para uso:
 * [Chamar um Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Enviar usando o Modelo de dados de formulário (FDM)](/help/forms/using-form-data-model.md)
 * [Enviar para o Armazenamento de blob do Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [Enviar para endpoint REST](/help/forms/configure-submit-action-restpoint.md)
+* [Enviar para o terminal REST](/help/forms/configure-submit-action-restpoint.md)
 * [Enviar para o OneDrive](/help/forms/configure-submit-action-onedrive.md)
 * [Chamar um fluxo de trabalho do AEM](/help/forms/configure-submit-action-workflow.md)
 * [Enviar para Envolvimento da Marketo](/help/forms/submit-adaptive-form-to-marketo-engage.md)
@@ -93,7 +93,8 @@ Se o usuário final ignorar essas validações e enviar os formulários, o servi
 >
 >A validação do lado do servidor valida o modelo de formulário. É recomendável criar uma biblioteca do cliente separada para validações e não misturá-la com outras coisas, como o estilo do HTML e a manipulação de DOM na mesma biblioteca do cliente.
 
-<!--### Supporting Custom functions in Validation Expressions {#supporting-custom-functions-in-validation-expressions-br}
+<!--
+### Supporting Custom functions in Validation Expressions {#supporting-custom-functions-in-validation-expressions-br}
 
 At times, if there are **complex validation rules**, the exact validation script reside in custom functions and author calls these custom functions from field validation expression. To make this custom function library known and available while performing server-side validations, the form author can configure the name of AEM client library under the **[!UICONTROL Basic]** tab of Adaptive Form Container properties as shown below.
 
@@ -114,7 +115,8 @@ Refer to the following articles to learn how to create custom functions for:
 
 As a part of AEM security and hardening guidelines, configure custom error pages such as 400.jsp, 404.jsp, and 500.jsp. These handlers are called, when on submitting a form 400, 404, or 500 errors appear. The handlers are also called when these error codes are triggered on the Publish node. You can also create JSP pages for other HTTP error codes.
 
-When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.-->
+When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
+-->
 
 ## Consulte também
 

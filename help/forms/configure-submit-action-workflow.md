@@ -6,7 +6,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 1%
@@ -19,7 +19,7 @@ A Ação de Envio **[!UICONTROL Chamar um Fluxo de Trabalho do AEM]** associa um
 
 >[!NOTE]
 >
->  Saiba como [criar um modelo de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem) para definir a série de etapas executadas quando um usuário inicia o fluxo de trabalho. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos.
+>  Saiba como [criar um modelo de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) para definir a série de etapas executadas quando um usuário inicia o fluxo de trabalho. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos.
 
 O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções no artigo [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md).
 
@@ -40,7 +40,8 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 * **[!UICONTROL Processing Server User Name]**: Workflow user's username
 
-* **[!UICONTROL Processing Server Password]**: Workflow user's password -->
+* **[!UICONTROL Processing Server Password]**: Workflow user's password
+-->
 
 ## Integrar o fluxo de trabalho do AEM com o Adaptive Forms {#steps-to-integrate-workflow-with-af}
 
@@ -48,7 +49,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 >[!TAB Componente de base]
 
-Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem) para um Formulário adaptável com base em Componentes de Base, execute as seguintes etapas:
+Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) para um Formulário adaptável com base em Componentes de Base, execute as seguintes etapas:
 
 1. Abra o Formulário adaptável para edição e navegue até a seção **[!UICONTROL Envio]** das propriedades do Contêiner de formulário adaptável.
 1. Na lista suspensa **[!UICONTROL Enviar Ação]**, selecione **Enviar Ação** como **[!UICONTROL Chamar um fluxo de trabalho do AEM]**.
@@ -74,7 +75,7 @@ Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https:/
 
 >[!TAB Componente principal]
 
-Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem) para um Formulário adaptável com base nos Componentes principais, execute as seguintes etapas:
+Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) para um Formulário adaptável com base nos Componentes principais, execute as seguintes etapas:
 
 1. Abra o navegador Conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
 1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
@@ -103,7 +104,7 @@ Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https:/
 
 >[!TAB Universal Editor]
 
-Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem) para um Formulário adaptável criado no Universal Editor, execute as seguintes etapas:
+Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) para um Formulário adaptável criado no Universal Editor, execute as seguintes etapas:
 
 1. Abra o Formulário adaptável para edição.
 1. Clique na extensão **Editar propriedades do formulário** no editor.
@@ -143,7 +144,8 @@ A caixa de diálogo **Propriedades do Formulário** é exibida.
 ## Best Practices
 
 * When configuring the **[!UICONTROL Invoke an AEM Workflow]** Submit Action, select the appropriate workflow model that aligns with the desired business process.
-* In case, the workflow involves external data storage, be sure to configure the workflow accordingly. It is recommended to set up variables appropriately and in accordance with any external storage requirements. -->
+* In case, the workflow involves external data storage, be sure to configure the workflow accordingly. It is recommended to set up variables appropriately and in accordance with any external storage requirements.
+-->
 
 ## Artigos relacionados
 

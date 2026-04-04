@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 0%
@@ -19,8 +19,10 @@ ht-degree: 0%
 
 # Definir configurações gerais do Dynamic Media
 
-<!-- hide: yes
-hidefromtoc: yes -->
+<!--
+ hide: yes
+hidefromtoc: yes
+-->
 
 {{work-with-dynamic-media}}
 
@@ -56,7 +58,7 @@ Consulte também [Opcional - Configuração e definição das definições do Dy
    * Guia [Illustrator](#illustrator-tab)
 
    ![Página de configurações gerais do Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Página Configurações Gerais do Dynamic Media, com a guia **[!UICONTROL Edição de Imagem]**&#x200B;selecionada.*<br><br>
+   *Página Configurações Gerais do Dynamic Media, com a guia **[!UICONTROL Edição de Imagem]**selecionada.*<br><br>
 
 1. Quando terminar, próximo ao canto superior direito da página, clique em **[!UICONTROL Salvar]**.
 
@@ -90,7 +92,7 @@ Na criação da conta, o Adobe Dynamic Media fornece automaticamente os servidor
 
   Controla a preservação de qualquer definição de corte manual existente.
 
-  Consulte também `preserveCrop` em [UploadPostJob](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) e [ReprocessAssetsJob](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), ambos no Guia de Referência de Visualizadores do Dynamic Media.
+  Consulte também `preserveCrop` em [UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job) e [ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job), ambos no Guia de Referência de Visualizadores do Dynamic Media.
 
 ## Opções de upload padrão {#default-upload-options}
 
@@ -107,7 +109,7 @@ O efeito Tirar nitidez da máscara usa as mesmas opções do filtro Tirar nitide
 | **[!UICONTROL Limite]** | Obrigatório.<br>O limite é um intervalo de contraste ignorado quando o filtro Tirar nitidez da máscara é aplicado. Esse efeito é importante para que nenhum &quot;ruído&quot; seja introduzido em uma imagem quando esse filtro for usado. O intervalo de valores é `0` - `255`, que é o número de etapas de brilho em uma imagem em tons de cinza. `0`=preto, `128`=50% cinza e `255`=branco.<br>Um valor limite de `12` ignora pequenas variações no brilho do tom da pele para evitar a adição de ruído, mas ainda adiciona o contraste da borda a áreas de contraste, como onde as pálpebras tocam a pele.<br>Se você tiver uma foto do rosto de alguém, a Máscara de Nitidez afetará as partes contrastadas da imagem. Por exemplo, onde pestanas e pele se encontram para criar uma área óbvia de contraste e a própria pele lisa. Mesmo a pele mais suave exibe alterações sutis nos valores de brilho. Se você não usar um valor de limite, o filtro acentua essas alterações sutis nos pixels de capa. Por sua vez, um efeito ruidoso e indesejável é criado enquanto o contraste das pálpebras é aumentado, aumentando a nitidez.<br>Para evitar esse problema, é introduzido um valor limite que informa ao filtro para ignorar os pixels que não alteram drasticamente o contraste, como a capa lisa.<br>No gráfico de zíper mostrado anteriormente, observe a textura ao lado dos zíperes. O ruído da imagem é exibido porque os valores de limite eram muito baixos para suprimir o ruído. |
 | **[!UICONTROL Monocromático]** | Selecione para desfazer a nitidez da imagem de brilho (intensidade).<br>Desmarque para remover a nitidez de cada componente de cor separadamente. |
 
-Consulte também [Nitidez de imagens no Adobe Dynamic Media e no Servidor de Imagens](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=pt-BR).
+Consulte também [Nitidez de imagens no Adobe Dynamic Media e no Servidor de Imagens](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=en).
 
 ### Guia PostScript {#postscript-tab}
 

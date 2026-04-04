@@ -2,12 +2,12 @@
 title: Componentes principais do Forms adaptável vs Edge Delivery Services Forms vs Componentes de base
 description: Comparação técnica de abordagens de criação do AEM Forms - Componentes principais, Edge Delivery Services Forms e Componentes de base. Arquitetura, renderização, recursos e casos de uso
 keywords: comparação de formulários adaptáveis, componentes principais, componentes de base, formulários de serviços de entrega de borda, comparação de formulários do AEM, comparação do construtor de formulários
-role: Architect, Developer, Admin
+role: Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: adaptive-forms-comparison
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 5%
@@ -82,7 +82,7 @@ Os Componentes principais são compatíveis com vários modelos de renderizaçã
 - **Modelo**: modelo de formulário adaptável (componente principal) necessário
 - **Tema**: tema da tela (OOTB) ou tema personalizado
 
-### Limitações  
+### Limitações
 
 - **Restrições de Esquema JSON**: tipo nulo, tipos de união (qualquer), construções OneOf/AnyOf/AllOf/NOT sem suporte
 - **Lacunas de Componente**: Bloco do Adobe Sign, Assinatura Escrita, Gráfico, Opção de Imagem não disponível (disponível em Componentes do Foundation)
@@ -216,7 +216,7 @@ O EDS Forms oferece suporte a duas abordagens de criação:
 - Configuração do filtro referenciador OSGi
 - Configuração do CORS para domínios de site do Edge Delivery
 
-### Limitações  
+### Limitações
 
 **Criação Baseada em Documento:**
 
@@ -309,7 +309,7 @@ Os seguintes componentes estão **disponíveis** somente nos Componentes de Base
 - Modelo de formulário adaptável (Foundation)
 - Usuário no grupo `forms-users`
 
-### Limitações  
+### Limitações
 
 - **Publicação**: somente AEM (sem APIs do Edge Delivery Services ou Headless)
 - **Desempenho**: desempenho padrão (não otimizado para pontuações Lighthouse)

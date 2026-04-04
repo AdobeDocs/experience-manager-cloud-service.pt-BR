@@ -5,9 +5,9 @@ index: true
 exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '202'
 ht-degree: 2%
 
 ---
@@ -35,4 +35,4 @@ Na AEM Screens Cloud, os clientes podem solicitar um relatório sobre o status d
 
 ### Exemplo de caso de uso
 
-Se você definir a hora do relatório como 5 am e o tempo limite de ping como 1 hora, e seu dispositivo Screens não executar ping entre 4:00 am e 5:00 am, você receberá uma notificação por email confirmando a inatividade do dispositivo.
+Se você definir o tempo do relatório como 5 am e o tempo limite de ping como 1 hora, e seu dispositivo Screens não executar ping entre 4:00 am - 5:00 am, você receberá uma notificação por email confirmando a inatividade do dispositivo.

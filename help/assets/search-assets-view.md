@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 74%
@@ -220,7 +220,8 @@ Para criar uma pesquisa salva, pesquise por algum ativo, aplique um ou mais filt
 
 ![Criar coleção inteligente](assets/create-smart-collection.png)
 
-<!-- TBD: Search behavior. Full-text search. Ranking and rank boosts. Hidden assets.
+<!--
+ TBD: Search behavior. Full-text search. Ranking and rank boosts. Hidden assets.
 Report poor UX that users can only save a filtered search and not a simple search.
 .
 Are other supported files fully indexed and support full-text search? Eg. audio/videos files can at best have metadata indexed.
@@ -395,7 +396,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * Forneça feedback sobre a documentação por meio das opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita.
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 
 

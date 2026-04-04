@@ -4,10 +4,10 @@ description: Saiba mais sobre Pesquisa e indexação de conteúdo no AEM as a Cl
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 8d881caf5181e9c3cdc6dcb69f0deabc2d5eeed8
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2918'
-ht-degree: 17%
+source-wordcount: '2906'
+ht-degree: 16%
 
 ---
 
@@ -59,7 +59,7 @@ Uma definição de índice pode se enquadrar em uma das seguintes categorias:
 
 2. Personalização de um índice OOTB. Para personalizar um índice OOTB, anexe `-custom-` seguido de um número. Por exemplo, `/oak:index/damAssetLucene-8-custom-1` é a personalização do índice OOTB `/oak:index/damAssetLucene-8`. Normalmente, uma personalização é uma cópia do índice OOTB, além de propriedades adicionais que precisam ser indexadas.
 
-3. Índice totalmente personalizado: você pode criar um índice totalmente novo do zero. Esses índices também precisam terminar com `-custom-` e um número de versão. Além disso, para evitar conflitos de nomenclatura, use um prefixo no nome do índice. Por exemplo: `/oak:index/acme.product-1-custom-2`, onde `acme.` é o prefixo.
+3. Índice totalmente personalizado: true pode criar um índice totalmente novo do zero. Esses índices também precisam terminar com `-custom-` e um número de versão. Além disso, para evitar conflitos de nomenclatura, use um prefixo no nome do índice. Por exemplo: `/oak:index/acme.product-1-custom-2`, onde `acme.` é o prefixo.
 
 >[!NOTE]
 >
@@ -82,9 +82,11 @@ Para um índice totalmente personalizado, prepare um novo pacote de definição 
 Conforme mencionado nas seções de limitações, o `type` da definição de índice personalizado sempre deve ser definido como `lucene`, mesmo que a definição de índice extraída usando o Gerenciador de Pacotes seja de um tipo diferente (por exemplo, `elasticsearch`).
 A propriedade `async` também deve ser alterada caso a definição do índice extraído esteja definida como `elastic-async`. A propriedade `async` deve ser definida como uma das seguintes opções: `[async]`, `[async,nrt]` ou `[fulltext-async]` para a definição de índice personalizado.
 
-<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+<!--
+ Alexandru: temporarily drafting this statement due to CQDOC-17701
 
-The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+-->
 
 >[!NOTE]
 >

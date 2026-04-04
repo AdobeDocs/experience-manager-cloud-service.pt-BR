@@ -2,9 +2,9 @@
 title: Agente de Descoberta de Conteúdo
 description: Saiba como usar o agente de descoberta de conteúdo para fornecer conteúdo relevante do AEM sob demanda por meio de avisos naturais e conversacionais para uma experiência de descoberta simplificada e sem cliques.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 10a4b44fde65ae865d2e6d908e9e442752326fcd
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2073'
 ht-degree: 0%

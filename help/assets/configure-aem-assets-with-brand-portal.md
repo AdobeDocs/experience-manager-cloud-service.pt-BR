@@ -6,10 +6,10 @@ feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -39,7 +39,7 @@ The Cloud Manager user activates Brand Portal for an Experience Manager Assets a
 You require the following to activate Brand Portal on your Experience Manager Assets as a [!DNL Cloud Service] instance:
 
 * An up and running Experience Manager Assets as a [!DNL Cloud Service] instance.
-* A user having access to Cloud Manager, assigned to Profiles of the Cloud Manager Product. See [accessing Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=pt-BR#accessing-cloud-manager) for more information. 
+* A user having access to Cloud Manager, assigned to Profiles of the Cloud Manager Product. See [accessing Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) for more information. 
 
 >[!NOTE]
 >
@@ -78,9 +78,9 @@ You can activate Brand Portal while creating the production environments for you
 
 **See also**:
 
-* [Add users and roles in Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=pt-BR)
+* [Add users and roles in Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
 
-* [Manage environments in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR#adding-environments)
+* [Manage environments in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
 
 
 **Login to your Brand Portal tenant**:
@@ -150,11 +150,11 @@ You can now:
 * [Publish assets from Experience Manager Assets to Brand Portal](publish-to-brand-portal.md)
 * [Publish folders from Experience Manager Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publish collections from Experience Manager Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Publish assets from Brand Portal to Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR) - Asset Sourcing in Brand Portal
-* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=pt-BR)
-* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=pt-BR)
+* [Publish assets from Brand Portal to Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Sourcing in Brand Portal
+* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-See [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=pt-BR) for more information.
+See [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for more information.
 
 **Distribution logs**
 
@@ -202,16 +202,18 @@ Along with the automation workflow to activate Brand Portal on Experience Manage
 >[!NOTE]
 >
 > Não é possível criar novas credenciais JWT a partir de junho de 2024. De agora em diante, somente as credenciais do OAuth são criadas.
-> Veja mais [criando uma configuração OAuth](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+> Veja mais [criando uma configuração OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
 
 A seção a seguir descreve como configurar manualmente o Experience Manager Assets as a [!DNL Cloud Service] com o Brand Portal usando o Adobe Developer Console.
 
 Anteriormente, o Experience Manager Assets as a [!DNL Cloud Service] era configurado manualmente com o Brand Portal via Adobe Developer Console, que obtém um token de conta do Adobe Identity Management Services (IMS) para autorização do locatário do Brand Portal. Ele requer configurações no Experience Manager Assets e no Adobe Developer Console.
 
 <!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
-<!--1. Under the project, configure an API using the public key to create a service account connection.
+<!--
+1. Under the project, configure an API using the public key to create a service account connection.
 1. Get the service account credentials and JSON Web Token (JWT) payload information.
-1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.-->
+1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.
+-->
 1. No Adobe Developer Console, crie um projeto para seu locatário do Brand Portal (organização).
 1. No Experience Manager Assets, configure o serviço em nuvem da Brand Portal usando a conta IMS e o terminal Brand Portal (URL da organização).
 1. Teste sua configuração publicando um ativo do Experience Manager Assets no Brand Portal.
@@ -236,8 +238,10 @@ Execute as seguintes etapas na sequência especificada para configurar o Experie
 1. [Criar uma nova integração do Adobe IMS usando o OAuth](#create-ims-account-configuration)
 1. [Configurar o serviço em nuvem](#configure-cloud-service)
    <!--1. [Obtain public certificate](#public-certificate)-->
-<!--1. [Create service account (JWT) connection](#createnewintegration) 
-1. [Configure IMS account](#create-ims-account-configuration)-->
+<!--
+1. [Create service account (JWT) connection](#createnewintegration) 
+1. [Configure IMS account](#create-ims-account-configuration)
+-->
 
 <!--
 ### Create IMS configuration {#create-ims-configuration}
@@ -318,7 +322,7 @@ Perform the following steps to generate the service account credentials and JWT 
    >[!NOTE] 
    >
    >* You can view the credentials and perform actions such as generate JWT tokens, copy credential details, retrieve client secret, and so on.
-   >* Currently, only the Adobe's Developer Console Service Account (JWT) credential type is supported. Do not use the `OAuth Server-to-Server` credential type until it is supported in mid-April. Read more at [JWT Credentials Deprecation in Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html?lang=pt-BR).
+   >* Currently, only the Adobe's Developer Console Service Account (JWT) credential type is supported. Do not use the `OAuth Server-to-Server` credential type until it is supported in mid-April. Read more at [JWT Credentials Deprecation in Adobe Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
 
@@ -369,11 +373,11 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 
 ### Configurar as credenciais do OAuth no Adobe Developer Console {#config-oauth}
 
-[Configure as credenciais do OAuth no Adobe Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) e selecione a API do Brand Portal.
+[Configure as credenciais do OAuth no Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#credentials-in-the-developer-console) e selecione a API do Brand Portal.
 
 ### Criar nova integração do Adobe IMS usando o OAuth {#create-ims-account-configuration}
 
-[Crie uma nova Integração do Adobe IMS usando o OAuth](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) e selecione Brand Portal no menu suspenso em Solução da nuvem.
+[Crie uma nova Integração do Adobe IMS usando o OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration) e selecione Brand Portal no menu suspenso em Solução da nuvem.
 
 <!--
 Ensure that you have performed the following steps:
@@ -382,7 +386,8 @@ Ensure that you have performed the following steps:
 * [Create service account (JWT) connection](#createnewintegration)
 -->
 
-<!--1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
+<!--
+1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
 
 1. Specify a **[!UICONTROL Title]** for the IMS account.
 
@@ -391,7 +396,8 @@ Ensure that you have performed the following steps:
 <!--
 1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Click **[!UICONTROL Create]**.
 -->
-<!--Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
+<!--
+   Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
    The IMS account is configured. 
 
@@ -437,7 +443,7 @@ Execute as seguintes etapas para configurar o Brand Portal Cloud Service:
 Agora você pode testar a configuração verificando o agente de distribuição e publicando ativos no Brand Portal.
 
 **Incluir na lista de permissões IPs de saída no SPS se a visualização segura estiver habilitada**
-Se estiver usando o Dynamic Media-Scene7 com [visualização segura habilitada](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=pt-BR) para uma empresa, recomenda-se que o administrador da empresa do Scene7 [inclua na lista de permissões os IPs de saída públicos](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=pt-BR#testing-the-secure-testing-service) para as respectivas regiões usando a interface flash do SPS (Scene7 Publishing System).
+Se estiver usando o Dynamic Media-Scene7 com [visualização segura habilitada](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) para uma empresa, recomenda-se que o administrador da empresa do Scene7 [inclua na lista de permissões os IPs de saída públicos](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) para as respectivas regiões usando a interface flash do SPS (Scene7 Publishing System).
 Os IPs de saída são os seguintes:
 
 | **Região** | **IP de saída** |
@@ -492,11 +498,11 @@ You can now:
 * [Publish assets from AEM Assets to Brand Portal](publish-to-brand-portal.md)
 * [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR) - Asset Sourcing in Brand Portal
-* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=pt-BR)
-* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=pt-BR)
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Sourcing in Brand Portal
+* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-See [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=pt-BR) for more information.
+See [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for more information.
 
 ## Distribution logs {#distribution-logs}
 

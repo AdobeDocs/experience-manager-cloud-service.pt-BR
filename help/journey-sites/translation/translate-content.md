@@ -8,7 +8,7 @@ exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 66%
@@ -197,7 +197,7 @@ Para adicionar conteúdo a uma tarefa de tradução:
 1. Selecione **Selecionar** para adicionar o conteúdo selecionado ao trabalho.
 1. Na caixa de diálogo **Traduzir**, especifique que deseja **Criar Cópia de Idioma**.
 
-   ![Criar cópia de idioma](assets/translate-copy-master.png)
+   ![Criar cópia no idioma de destino](assets/translate-copy-master.png)
 
 1. O conteúdo agora está incluído na tarefa.
 
@@ -281,11 +281,11 @@ Agora que concluiu esta parte da jornada de tradução do AEM Sites, você deve:
 * Ser capaz de criar novos projetos de tradução.
 * Use projetos de tradução para traduzir o conteúdo.
 
-Desenvolva esse conhecimento e prossiga com sua jornada de tradução do AEM Sites revisando a seguir o documento [Conteúdo traduzido do Publish](publish-content.md), no qual você aprenderá a publicar seu conteúdo traduzido e a atualizar essas traduções conforme o conteúdo da raiz do idioma mudar.
+Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando a seguir o documento [Publicar conteúdo traduzido](publish-content.md), onde você aprenderá a publicar seu conteúdo traduzido e como atualizar essas traduções conforme o conteúdo da raiz do idioma mudar.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de tradução revisando o documento [Conteúdo traduzido do Publish](publish-content.md), os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
+Embora seja recomendável seguir para a próxima parte da jornada de tradução revisando o documento [Publicar conteúdo traduzido](publish-content.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada.
 
 * [Gerenciamento de projetos de tradução](/help/sites-cloud/administering/translation/managing-projects.md) - Saiba mais sobre os detalhes de projetos de tradução e recursos adicionais, como fluxos de trabalho de tradução humana e projetos multilíngues.
 * [Ambiente e ferramentas de criação](/help/sites-cloud/authoring/path-selection.md#path-selection) - O AEM fornece vários mecanismos para organização e edição de conteúdo, incluindo um navegador de caminhos robusto.

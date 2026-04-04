@@ -7,7 +7,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componentes principais) | Este artigo |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/adaptive-form-fragments.md) |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 Embora cada formulário seja projetado para um propósito específico, há alguns segmentos comuns na maioria dos formulários, como o de fornecer detalhes pessoais, como nome e endereço, detalhes familiares e detalhes de renda. Os desenvolvedores de formulários são necessários para criar esses segmentos comuns sempre que um novo formulário for criado.
 
@@ -33,7 +33,7 @@ Você pode adicionar um fragmento várias vezes a um documento e usar as proprie
 
 >[!NOTE]
 >
-> Você pode personalizar facilmente a experiência do fragmento para usuários com a [Caixa de diálogo de Configuração e Caixa de diálogo de Design do componente de Fragmento de Formulário](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> Você pode personalizar facilmente a experiência do fragmento para usuários com a [Caixa de diálogo de Configuração e Caixa de diálogo de Design do componente de Fragmento de Formulário](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 ## Criar um fragmento de formulário adaptável {#create-a-fragment}
 
@@ -66,7 +66,8 @@ Você pode criar um fragmento de formulário adaptável do zero ou salvar um pai
 
 1. Clique em **Criar** e em **Abrir** para abrir o fragmento, com um modelo padrão, no modo de edição. No modo de edição, é possível adicionar qualquer componente de Formulário adaptável ao fragmento.
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Além disso, se você selecionou um esquema XML como o modelo de formulário do fragmento, uma nova guia que exibe a hierarquia de modelo de formulário é exibida no localizador de conteúdo. Ela permite arrastar e soltar elementos do modelo de formulário no fragmento. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Além disso, se você selecionou um esquema XML como o modelo de formulário do fragmento, uma nova guia que exibe a hierarquia de modelo de formulário é exibida no localizador de conteúdo. Ela permite arrastar e soltar elementos do modelo de formulário no fragmento.
+<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
 Depois que o fragmento do Formulário adaptável com base em um esquema ou modelo de dados de formulário (FDM) é criado, o modelo de dados de formulário (FDM) ou os elementos do esquema aparecem na guia Fontes de dados do navegador de conteúdo no Criador de formulários adaptáveis. Você pode arrastar e soltar elementos do modelo de formulário no fragmento. Os elementos de modelo de formulário adicionados são convertidos em componentes de formulário, ao mesmo tempo em que retêm as propriedades originais do esquema associado.
 
@@ -92,11 +93,13 @@ Para adicionar um fragmento de formulário adaptável a um formulário adaptáve
 
 O fragmento de Formulário adaptável é adicionado por referência ao Formulário adaptável e permanece em sincronia com o fragmento de Formulário adaptável independente. Isso implica que quaisquer modificações feitas no fragmento do Formulário adaptável sejam espelhadas em todas as instâncias em que o fragmento é incorporado no Adaptive Forms.
 
-<!--### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
+<!--
+### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
 
 You can choose to embed an Adaptive Form fragment in an Adaptive Form by clicking the ![Embed](assets/Smock_Import_18_N.svg) icon the panel toolbar of the added fragment
 
-The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.-->
+The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.
+-->
 
 <!-- 
 ## Configure fragment appearance {#configure-fragment-appearance}

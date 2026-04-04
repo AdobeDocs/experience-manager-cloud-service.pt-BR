@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
-source-git-commit: 76ccdf13f56d7020ef266bc54bebbcc6eff1067d
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2273'
 ht-degree: 7%
@@ -19,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -87,7 +87,7 @@ O Content Hub agora inclui uma opção **Mostrar tudo** nos filtros, permitindo 
 
 Aproveite o upload automatizado de novos arquivos e pastas, as operações aprimoradas de arquivos, a detecção mais inteligente de ativos e a integração perfeita com o AEM — tornando o gerenciamento de conteúdo mais rápido, claro e intuitivo.
 
-Para obter a lista completa de recursos, consulte as [Notas de Versão do Aplicativo de Desktop](https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/release-notes).
+Para obter a lista completa de recursos, consulte as [Notas de Versão do Aplicativo de Desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### Novos recursos no Dynamic Media com recursos OpenAPI {#new-features-dynamic-media-with-openapi}
 
@@ -125,7 +125,8 @@ Os principais benefícios incluem:
 
 A [API de Sincronização de Saída AFP](/help/forms/document-generation-afp-api.md) permite que administradores e usuários gerem a saída AFP (Advanced Function Presentation) do Adaptive Forms e sincronizem a saída com sistemas externos ou locais de armazenamento. O AFP é um formato de documento de alto desempenho otimizado para impressão, geralmente usado em ambientes corporativos de grande escala.
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+<!--
+ ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
@@ -147,7 +148,8 @@ O Programa de acesso antecipado da AEM Forms oferece uma oportunidade única par
 Essas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no Programa de Acesso Antecipado, consulte a [documentação do Programa de Acesso Antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
 
 
-<!-- **Forms Optimization opportunities**
+<!--
+ **Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -160,7 +162,8 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive.
+-->
 
 **Editor de Regras para o Editor de Comunicações Interativas**
 
@@ -223,7 +226,7 @@ Propriedades OSGi:
 
 ### Descontinuação do Java 11 Runtime {#java11-runtime-deprecation}
 
-O **Java 11 runtime*- agora está obsoleto, e a maioria dos ambientes já foi atualizada para o &#x200B;** Java 21 runtime** de maior desempenho.
+O **Java 11 runtime*- agora está obsoleto, e a maioria dos ambientes já foi atualizada para o **Java 21 runtime** de maior desempenho.
 
 Se seu ambiente não pôde ser atualizado devido a dependências sem suporte (consulte [requisitos de tempo de execução do Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), você deve ter recebido um email da Adobe com as próximas etapas específicas. Verifique se todas as atualizações necessárias foram concluídas até **28 de agosto de 2025** para que seu ambiente possa ser atualizado sem interrupções.
 
@@ -303,7 +306,7 @@ Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe
 
 ### Encaminhamento de logs do AEM para mais destinos (programa Beta) {#log-forwarding-beta}
 
-Embora os logs possam ser baixados da Cloud Manager, muitas organizações acham útil transmitir esses logs para um destino de registro preferencial. O AEM já oferece suporte ao encaminhamento de logs do AEM e do CDN para o Armazenamento de Blobs do Azure, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. Esse recurso é configurado de maneira automatizada e implantado usando o Pipeline de configuração.
+Embora os logs possam ser baixados da Cloud Manager, muitas organizações acham útil transmitir esses logs para um destino de registro preferencial. O AEM já é compatível com o encaminhamento de logs do AEM e do CDN para o Azure Blob Storage, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. Esse recurso é configurado de maneira automatizada e implantado usando o Pipeline de configuração.
 
 Agora na versão beta, você pode encaminhar logs do AEM para o Amazon S3, Sumo Logic, Dynatrace e sua própria conta da New Relic (não a conta fornecida pela Adobe). Observe que os logs do AEM (incluindo o Apache/Dispatcher) são compatíveis com esses destinos de log, mas não com os logs CDN. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para acesso.
 
@@ -311,7 +314,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

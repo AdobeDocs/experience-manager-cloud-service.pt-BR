@@ -3,7 +3,8 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.10.0.
 feature: Release Information
 role: Admin
-source-git-commit: c5918c887be60c5198b762d860fe72afd31df352
+exl-id: d5eb6d9e-308f-4a51-8bcf-b8077b5bec82
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1894'
 ht-degree: 8%
@@ -18,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -38,7 +39,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,7 +65,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -84,11 +85,12 @@ O Editor universal agora oferece uma experiência de criação unificada para cr
 
 **Ações de Envio com Suporte:**
 
-O Editor universal oferece suporte a uma ampla variedade de fluxos de trabalho de envio, incluindo Ação de envio personalizada, Enviar para o Microsoft SharePoint, Enviar para o Microsoft OneDrive, Enviar para o Azure Blob Storage, Enviar para o endpoint REST, Chamar um fluxo de trabalho do AEM, Chamar um fluxo do Power Automate, Enviar para o Marketo Engage, Enviar para o Adobe Experience Platform (AEP), Enviar para planilha, Enviar usando o Modelo de dados de formulário (FDM), Enviar para o Workfront Fusion e Enviar email.
+O Editor universal oferece suporte a uma ampla variedade de fluxos de trabalho de envio, incluindo Ação de envio personalizada, Enviar para o Microsoft SharePoint, Enviar para o Microsoft OneDrive, Enviar para o Azure Blob Storage, Enviar para endpoint REST, Chamar um fluxo de trabalho do AEM, Chamar um fluxo do Power Automate, Enviar para o Marketo Engage, Enviar para o Adobe Experience Platform (AEP), Enviar para planilha, Enviar usando o Modelo de dados de formulário (FDM), Enviar para o Workfront Fusion e Enviar email.
 
 Para obter detalhes completos, consulte a documentação do [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md). Para obter informações sobre como configurar ações de envio, consulte [Ação de envio do formulário adaptável](/help/edge/docs/forms/universal-editor/submit-action.md).
 
-<!-- ### Pre-Release features in AEM Forms 
+<!--
+ ### Pre-Release features in AEM Forms 
 
 **Rule Editor Enhancements**
 
@@ -100,7 +102,8 @@ The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYL
 
 **Function and Mathematical Expression Support in Input Parameters**
  
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). -->
+Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+-->
 
 ### Novos recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
@@ -282,11 +285,11 @@ Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe
 
 ### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

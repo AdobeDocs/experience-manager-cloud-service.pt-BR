@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '2283'
 ht-degree: 9%
@@ -37,7 +37,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo Visão geral da versão de março de 2024 que exibe um resumo dos recursos adicionados na versão 2024.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450364?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -49,7 +49,7 @@ O AEM Sites agora pode ser usado como uma fonte de conteúdo para o Edge Deliver
 
 ![Criação no AEM](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Para obter mais informações, consulte a [documentação](/help/edge/overview.md) e assista ao [AEM Gems - Introdução à criação no AEM e no Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=pt#M43905)
+Para obter mais informações, consulte a [documentação](/help/edge/overview.md) e assista ao [AEM Gems - Introdução à criação no AEM e no Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
 **Editor Universal para Implementações Headless**
 
@@ -73,7 +73,7 @@ O novo Editor de fragmento de conteúdo agora permite que os autores de conteúd
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 
-**Gerar Variações**
+**Gerar variações**
 
 Aproveite a GenAI por meio do novo recurso do AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta da Adobe para consideração no programa.
 

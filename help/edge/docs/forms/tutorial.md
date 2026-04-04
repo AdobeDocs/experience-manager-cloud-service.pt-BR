@@ -4,7 +4,7 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 0%
@@ -72,9 +72,11 @@ O modelo do AEM Forms Boilerplate inicia rapidamente com um projeto do AEM pré-
 
 ### Vincular sua própria fonte de conteúdo
 
-<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
+<!--
+Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)
+-->
 
 Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e apontar seu repositório GitHub para sua própria pasta de conteúdo:
 
@@ -266,7 +268,8 @@ Parabéns! Você configurou seu ambiente de desenvolvimento local com êxito e i
 ## Adicionar bloco adaptável do Forms ao seu projeto existente do AEM
 
 <!--
->[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
+>[!VIDEO](https://video.tv.adobe.com/v/3427789)
+-->
 
 Se você tiver um projeto do AEM existente, é possível integrar o Bloco de Forms adaptável ao seu projeto atual para começar a criar formulários.
 

@@ -4,7 +4,7 @@ description: Entenda como você pode configurar o editor de rich text (RTE) no E
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
+source-git-commit: 8fcad5e212b1c64d3939065ab277e426935cb5ec
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 1%
@@ -172,7 +172,7 @@ As ações de tabela oferecem suporte ao encapsulamento de conteúdo para contro
 }
 ```
 
-#### Opções de Configuração de Tabela {#table-configuration-options}
+#### Opções de configuração de tabela {#table-configuration-options}
 
 * `wrapInParagraphs`: `false` (padrão) - As células da tabela contêm conteúdo de texto não ajustado
 * `wrapInParagraphs`: `true` - Células de tabela quebram conteúdo em marcas de parágrafo

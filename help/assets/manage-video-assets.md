@@ -6,7 +6,7 @@ feature: Asset Management, Publishing, Collaboration, Video
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4995'
 ht-degree: 6%
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 O formato de vídeo é uma parte essencial dos ativos digitais de uma organização. O [!DNL Adobe Experience Manager] oferece ofertas e recursos completos para gerenciar todo o ciclo de vida dos ativos de vídeo após sua criação.
@@ -37,8 +37,10 @@ Para fazer upload de um ativo de vídeo, siga estas etapas:
 1. Clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Arquivos]**. <br>Como alternativa, arraste um arquivo para a interface.
 Saiba mais sobre [como carregar ativos](manage-digital-assets.md#uploading-assets) no [!DNL Experience Manager Assets].
 
-<!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
-1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen. -->
+<!--
+ 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. The video plays in the native video player of the browser. You can play, pause, control the volume, and zoom the video to full screen.
+-->
 
 ### Visualizar ativos de vídeo
 
@@ -206,7 +208,8 @@ Ou, se você pretende usar as marcas padrão no Experience Manager, ignore esta 
 >
 >Depois que o Cloud Service é configurado, outra configuração não é necessária para habilitar o agente de replicação de publicação do YouTube neste momento. O motivo é que ele foi ativado quando a configuração do Cloud Service foi salva.
 
-<!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
+<!--
+ ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
 After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, select **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
@@ -214,7 +217,8 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. On the Agents of Author page, select **[!UICONTROL YouTube Publish (youtube)]**.
 1. On the toolbar, to the right of Settings, select **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
-1. Select **[!UICONTROL OK]**. -->
+1. Select **[!UICONTROL OK]**.
+-->
 
 ### Configurar o YouTube no Experience Manager {#setting-up-youtube-in-aem}
 
@@ -411,7 +415,7 @@ Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse
 1. No canto superior direito da página de propriedades do vídeo, selecione **[!UICONTROL Salvar e fechar]**.
 1. Na barra de ferramentas, selecione **[!UICONTROL Publicação rápida]**.
 
-   Consulte também [Usar o Gerenciamento de Publicação com o Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=pt-BR#page-authoring).
+   Consulte também [Usar o Gerenciamento de Publicação com o Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring).
 
    Como opção, verifique o vídeo publicado no canal do YouTube.
 
@@ -546,7 +550,8 @@ Você pode monitorar o progresso, incluindo falha de codificação/publicação 
 
 1. Você recebe notificações por email sobre tarefas de fluxo de trabalho interrompidas ou com falha. Essas notificações por email podem ser configuradas por um administrador. Consulte [Configurar notificações por email](#configuring-e-mail-notifications).
 
-<!-- EMAIL NOT AVAILABLE IN SKYLINE
+<!--
+ EMAIL NOT AVAILABLE IN SKYLINE
 
 #### Configuring e-mail notifications {#configuring-e-mail-notifications}
 

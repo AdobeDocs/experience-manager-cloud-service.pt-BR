@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Para autores de Forms adaptáveis, os fragmentos de referência são fornecidos 
 * Termos e condições
 * Termos e condições com assinatura
 
-Quando você instala o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada em Forms e documentos. Para instalar um pacote, consulte [Implantação de Pacotes de Conteúdo via Cloud Manager e Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#deploying-content-packages-via-cloud-manager-and-package-manager) e [Como Trabalhar com Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR).
+Quando você instala o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada em Forms e documentos. Para instalar um pacote, consulte [Implantação de Pacotes de Conteúdo via Cloud Manager e Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) e [Como Trabalhar com Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 ![Todos os fragmentos listados](assets/ootb-frags.png)
 
@@ -45,9 +45,11 @@ Inclui campos para especificar um endereço para correspondência. Os campos dis
 
 ![Fragmento do endereço](assets/address.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/address-1.png)-->
+](assets/address-1.png)
+-->
 
 ## Informações de contato {#contact-information}
 
@@ -55,9 +57,11 @@ Inclui campos para capturar um número de telefone e endereço de email.
 
 ![Fragmento de informações de contato](assets/contact-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/contact-info-1.png)-->
+](assets/contact-info-1.png)
+-->
 
 ## Informações de cartão de crédito {#credit-card-information}
 
@@ -70,9 +74,11 @@ Inclui campos para capturar detalhes do emprego atual, como status do emprego, c
 
 ![Fragmento de emprego atual](assets/current-emp.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/current-emp-1.png)-->
+](assets/current-emp-1.png)
+-->
 
 ## Informações de Dependentes {#dependents-information}
 
@@ -80,9 +86,11 @@ Inclui campos para especificar informações sobre um ou mais dependentes, como 
 
 ![Fragmento de informações de dependentes](assets/dependents-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/dependents-info-1.png)-->
+](assets/dependents-info-1.png)
+-->
 
 ## Histórico de Emprego {#employment-history}
 
@@ -90,9 +98,11 @@ Inclui campos para capturar o histórico de emprego. Permite adicionar várias o
 
 ![Fragmento do histórico de emprego](assets/emp-history.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/emp-history-1.png)-->
+](assets/emp-history-1.png)
+-->
 
 ## Receita e Despesas {#income-expenditure}
 
@@ -100,9 +110,11 @@ Inclui campos para registrar fluxo de caixa e despesas mensais. O Forms que exig
 
 ![Fragmento de receita e despesa](assets/income.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/income-1.png)-->
+](assets/income-1.png)
+-->
 
 ## Nome {#name}
 
@@ -110,9 +122,11 @@ Inclui campos para especificar título, nome, nome do meio e sobrenome.
 
 ![Nomear fragmento](assets/name.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/name-1.png)-->
+](assets/name-1.png)
+-->
 
 ## Termos e condições {#terms-conditions}
 
@@ -120,9 +134,11 @@ Especifica os termos e condições que os usuários devem aceitar antes de envia
 
 ![Fragmento dos Termos e Condições](assets/tnc.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-1.png)-->
+](assets/tnc-1.png)
+-->
 
 ## Termos e condições com assinatura {#terms-conditions-with-scribble}
 
@@ -130,6 +146,8 @@ Especifica os termos e condições que os usuários devem aceitar e assinar ante
 
 ![Termos e condições com assinatura](assets/tnc-scribble.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-scribble-1.png)-->
+](assets/tnc-scribble-1.png)
+-->

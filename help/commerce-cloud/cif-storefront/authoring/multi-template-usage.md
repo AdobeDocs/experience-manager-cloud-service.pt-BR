@@ -1,5 +1,5 @@
 ---
-title: Criação de várias categorias e páginas de produto
+title: Criação de várias categorias e páginas do produto
 description: Saiba como enriquecer as páginas de aterrissagem de categoria e de detalhes do produto com conteúdo de marketing direcionado.
 sub-product: Commerce
 version: Experience Manager as a Cloud Service
@@ -12,7 +12,7 @@ thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 45%
@@ -20,7 +20,7 @@ ht-degree: 45%
 ---
 
 
-# Criação de várias categorias e páginas de produto {#multiple}
+# Criação de várias categorias e páginas do produto {#multiple}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 45%
 
 Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) dão aos autores de conteúdo a capacidade de criar páginas adicionais de categoria e do produto. Essas páginas podem ser enriquecidas com conteúdo de marketing adicional e configuradas para direcionar categorias e produtos específicos. O vídeo a seguir apresenta a configuração desse recurso.
 
->[!VIDEO](https://video.tv.adobe.com/v/32789/?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
 Páginas de produto específicas podem ser selecionadas por um SKU ou pela categoria de um produto. O último só é compatível com alguns dos formatos padrão de URL da página do produto disponíveis, pois requer que as informações da categoria sejam codificadas no URL do produto.
 

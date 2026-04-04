@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
 | AEM as a Cloud Service | Este artigo |
 
 Ao criar um formulário, você adiciona campos e componentes para definir a estrutura do formulário, o conteúdo e as ações no editor. Você adiciona campos e componentes no `guideRootPanel` do contêiner de formulário. Com o Editor de modelos, você pode criar um modelo que contenha estrutura básica e conteúdo inicial que os autores possam usar para criar formulários.
@@ -37,7 +37,7 @@ Você pode baixar e instalar o pacote de conteúdo de referência [!DNL AEM Form
 
 Você pode acessar o editor de modelos no menu Ferramentas navegando até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Modelos]**. Aqui, os modelos são organizados em pastas ativadas para modelos editáveis.
 
-O Experience Manager fornece uma pasta global para organizar modelos. No entanto, não está ativado por padrão. Você pode solicitar que o administrador ative a pasta global ou crie uma pasta para modelos. Para obter mais informações sobre como criar pastas, consulte [Pastas de Modelo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=pt-BR#editing-templates-template-authors).
+O Experience Manager fornece uma pasta global para organizar modelos. No entanto, não está ativado por padrão. Você pode solicitar que o administrador ative a pasta global ou crie uma pasta para modelos. Para obter mais informações sobre como criar pastas, consulte [Pastas de Modelo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).
 
 ### Criação de um modelo {#create-template}
 
@@ -161,7 +161,7 @@ Ao criar um Formulário adaptável, você pode ver o modelo listado quando é so
 
 ## Importação ou exportação de um template {#importing-or-exporting-a-template}
 
-Um formulário funciona com seu modelo. Ao baixar um Formulário adaptável criado usando um modelo personalizado, o modelo não é baixado. Quando você importa o formulário em uma instância do [!DNL AEM Forms] diferente, ele é importado sem seu modelo. Se um formulário for importado, mas seu template não estiver disponível, o formulário não será renderizado. Você pode empacotar o modelo personalizado do nó `/conf` em `https://<server>:<port>/crx/packmgr` e colocá-lo na porta na instância [!DNL AEM Forms] para onde deseja carregar o formulário. Você também pode [Criar um modelo usando o AEM Architect e implantá-lo na sua instância do Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=pt-BR#prerequisites).
+Um formulário funciona com seu modelo. Ao baixar um Formulário adaptável criado usando um modelo personalizado, o modelo não é baixado. Quando você importa o formulário em uma instância do [!DNL AEM Forms] diferente, ele é importado sem seu modelo. Se um formulário for importado, mas seu template não estiver disponível, o formulário não será renderizado. Você pode empacotar o modelo personalizado do nó `/conf` em `https://<server>:<port>/crx/packmgr` e colocá-lo na porta na instância [!DNL AEM Forms] para onde deseja carregar o formulário. Você também pode [Criar um modelo usando o AEM Architect e implantá-lo na sua instância do Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >
@@ -204,7 +204,8 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Forms template, check or uncheck the **Include Out of the box AF and AD Templates** option.
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, and you want it to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
-1. Click **Save**. The display options for the out of the box templates are changed. -->
+1. Click **Save**. The display options for the out of the box templates are changed.
+-->
 
 ## Salvar um formulário adaptável como modelo {#saving-adaptive-form-as-template}
 
@@ -227,7 +228,7 @@ Você também pode salvar um Formulário adaptável como um modelo para uso futu
 
 * Ao modificar as propriedades do formulário no editor de modelo, não use a propriedade BindReference.
 * Caso queira adicionar um ponto de interrupção, crie-o ao criar um modelo de formulário adaptável.
-Para obter mais informações sobre pontos de interrupção, consulte [Layout responsivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=pt-BR#authoring).
+Para obter mais informações sobre pontos de interrupção, consulte [Layout responsivo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring).
 
 
 ## Consulte também {#see-also}

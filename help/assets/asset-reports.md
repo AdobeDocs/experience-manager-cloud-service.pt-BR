@@ -6,7 +6,7 @@ feature: Asset Reports, Asset Management
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 Os relatórios de ativos permitem avaliar a utilidade da implantação do [!DNL Adobe Experience Manager Assets]. Com o [!DNL Assets], você pode gerar vários relatórios para seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com os ativos e quais ativos são <!-- downloaded and --> compartilhados.
@@ -44,7 +44,8 @@ Quando um relatório é gerado, você é notificado via <!-- through an email (o
 * Arquivos
 * Compartilhamento de link
 
-<!-- Removed download report.
+<!--
+ Removed download report.
 * Upload
 * Download
 * Expiration
@@ -67,7 +68,7 @@ Os administradores do [!DNL Adobe Experience Manager] podem facilmente gerar e p
 
    >[!NOTE]
    >
-   >Atribua a si mesmo um **perfil de produto Administrador do AEM** para criar um relatório de **Download**. Consulte [Atribuir Perfis de Produto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para se habilitar a um perfil de produto de Administrador do AEM.
+   >Atribua a si mesmo um **perfil de produto Administrador do AEM** para criar um relatório de **Download**. Consulte [Atribuir Perfis de Produto do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para se habilitar a um perfil de produto de Administrador do AEM.
 
    ![Selecionar tipo de relatório](assets/choose_report.png)
 
@@ -125,7 +126,8 @@ Os administradores do [!DNL Adobe Experience Manager] podem facilmente gerar e p
 
 Você pode adicionar colunas personalizadas aos seguintes relatórios para exibir mais dados de acordo com seus requisitos personalizados:
 
-<!-- Remove download report.
+<!--
+ Remove download report.
 * Upload
 * Download
 * Expiration
@@ -163,7 +165,8 @@ Para adicionar colunas personalizadas a esses relatórios, siga estas etapas:
 
 1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatório foi iniciada.
 
-<!-- TBD: How to configure purge now? Is it using OSGi configurations?
+<!--
+ TBD: How to configure purge now? Is it using OSGi configurations?
 
 ## Configure purging service {#configure-purging-service}
 
@@ -179,7 +182,8 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 * Se o [!UICONTROL Relatório de Uso do Disco] não for gerado e se você estiver usando o [!DNL Dynamic Media], verifique se todos os ativos foram processados corretamente. Para resolver, reprocesse os ativos e gere o relatório novamente.
 
-<!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
+<!--
+ These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
 TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
@@ -187,7 +191,8 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
 -->
 
-<!-- Removed download report.
+<!--
+ Removed download report.
    >[!NOTE]
    >
    >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.

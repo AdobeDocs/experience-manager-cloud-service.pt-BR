@@ -4,10 +4,10 @@ description: Saiba como configurar ações de envio no AEM Forms usando o Edge D
 feature: Edge Delivery Services
 role: Admin, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -78,12 +78,12 @@ Envie dados de formulário diretamente para a instância de publicação do AEM 
 - Fluxos de trabalho personalizados do AEM necessários após envio
 - Integração do Form Data Model (FDM) com bancos de dados
 - Integrações de serviços de terceiros (Marketo, Power Automate, Workfront Fusion)
-- Armazenamento Azure Blob ou bibliotecas de documentos do SharePoint
+- Azure Blob Storage ou bibliotecas de documentos do SharePoint
 - Validação ou lógica de processamento complexa do lado do servidor
 
 ### Ações de envio disponíveis
 
-- [Enviar para endpoint REST](/help/forms/configure-submit-action-restpoint.md)
+- [Enviar para o terminal REST](/help/forms/configure-submit-action-restpoint.md)
 - [Enviar email por meio dos serviços de email da AEM](/help/forms/configure-submit-action-send-email.md)
 - [Enviar usando modelo de dados de formulário](/help/forms/configure-data-sources.md)
 - [Chamar fluxo de trabalho de AEM](/help/forms/aem-forms-workflow-step-reference.md)
@@ -150,7 +150,7 @@ Configure o Filtro referenciador para permitir domínios de site específicos do
 
 3. Implantar a configuração por meio do Cloud Manager
 
-Para obter a configuração detalhada do Filtro referenciador OSGi, consulte o Guia do [Filtro referenciador](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
+Para obter a configuração detalhada do Filtro referenciador OSGi, consulte o Guia do [Filtro referenciador](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
 
 #### &#x200B;3. Questões do CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)
 
@@ -180,10 +180,10 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 >
 >Substitua `main--abc--adobe.aem.live` e `main--abc1--adobe.aem.live` pelos domínios de site reais. Cada site hospedado no mesmo repositório requer uma entrada de configuração do CORS separada.
 
-Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 
-Para habilitar o CORS para o seu ambiente de desenvolvimento local, consulte o artigo [Entender o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
+Para habilitar o CORS para o seu ambiente de desenvolvimento local, consulte o artigo [Entender o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
 
 <!--
 #### 4. CDN Redirect Rules
@@ -191,7 +191,8 @@ Para habilitar o CORS para o seu ambiente de desenvolvimento local, consulte o a
 Configure your Edge Delivery CDN to route submissions:
 
 - Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
-- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)
+-->
 
 #### &#x200B;4. Configuração do formulário
 
@@ -248,7 +249,8 @@ Configure Cross-Origin Resource Sharing on the form source:
 
 ![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
 
-+++-->
++++
+-->
 
 +++ Problemas comuns
 

@@ -8,7 +8,7 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -143,7 +143,8 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
         Selecting the **[!UICONTROL Include folder contents]** checkbox enables the **[!UICONTROL Include only immediate folder contents]** checkbox for selection.
 
         * If you select both options, all the forms and assets of the selected folder, subfolders (empty), and references are published. The forms and assets of the subfolders are not published.
-        * -->
+        *
+        -->
 
 
 ### Publicar ou desfazer a publicação de um formulário mais tarde

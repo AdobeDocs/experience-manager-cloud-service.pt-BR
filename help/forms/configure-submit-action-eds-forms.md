@@ -6,7 +6,7 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 8%
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 | Versão | Link do artigo |
 |---------|-----------------------------|
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Este artigo |
@@ -43,19 +43,23 @@ As seguintes ações de envio são suportadas pelo [Adaptive Forms criado no Uni
 * [Enviar para o Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 * [Enviar para planilha](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 É possível configurar a ação de envio para formulários criados no Universal Editor usando a guia **Envio** da extensão **Editar Propriedades do Formulário**.
 
-<!--**How to Configure Submit Action for Forms authored in Universal Editor?**
+<!--
+**How to Configure Submit Action for Forms authored in Universal Editor?**
 You can configure the submit action for forms created in the Universal Editor using the **Submission** tab of the **Edit Form Properties** extension.
 
 ![Form properties icon](/help/forms/assets/ue-form-properties-icon.png)
 
-![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)-->
+![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)
+-->
 
 >[!NOTE]
 >

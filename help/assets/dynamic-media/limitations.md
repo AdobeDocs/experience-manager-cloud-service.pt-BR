@@ -9,7 +9,7 @@ feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 3%
@@ -55,8 +55,10 @@ O Dynamic Media não é compatível com as seguintes combinações de navegador 
 
 ## Fim do suporte para Secure Socket Layer 2.0 e 3.0 e Transport Layer Security 1.0 e 1.1 {#tls}
 
-<!-- CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+<!--
+ CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022)
+-->
 
 A partir de 30 de abril de 2024, o Adobe Dynamic Media encerrará o suporte para o seguinte:
 

@@ -5,7 +5,7 @@ exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -95,7 +95,7 @@ Adicione qualquer imagem na parte superior da página.
 
 O modelo pode ser visualizado com qualquer categoria/produto. Abra **Informações da Página** e selecione **Exibir com categoria/produto**. Selecione o produto/categoria no seletor para obter uma visualização com este produto/categoria. Selecione a categoria **Comprar a aparência** para obter uma visualização do modelo atualizado.
 
-![criar modelo &#x200B;](assets/create-template-picker.png)
+![criar modelo ](assets/create-template-picker.png)
 
 Agora é necessário atribuir esse template à categoria específica. Abra as propriedades no menu **Informações da página** e alterne para a guia Comércio. Clique no ícone de pasta para selecionar a categoria **Comprar a aparência** no seletor de categorias. É possível atribuir várias categorias a um modelo e também incluir subcategorias ativando a caixa de seleção.
 
@@ -121,5 +121,5 @@ Desenvolva esse conhecimento e prossiga com sua jornada revisando a seguir o doc
 
 Embora seja recomendável seguir para a próxima parte da jornada revisando o documento [Gerenciar experiência de catálogo de produtos por etapa](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md), os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada headless:
 
-* [Criação de várias categorias e páginas de produto](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
-* [Guia de migração para o Experience Manager Cloud Service](/help/commerce-cloud/cif-storefront/migration.md) - Como migrar de uma versão antiga para o complemento AEM Commerce integration framework (CIF)
+* [Criação de várias categorias e páginas do produto](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
+* [Guia de migração para o Experience Manager Cloud Service](/help/commerce-cloud/cif-storefront/migration.md) - Como migrar de uma versão antiga para o complemento Estrutura de integração do AEM Commerce (CIF)

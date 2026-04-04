@@ -4,7 +4,7 @@ description: Suporte OAuth2 para o serviço de email no Adobe Experience Manager
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: 8ceca10cc581c4b8e577ddd0a964a707c226c7fc
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 81%
@@ -30,8 +30,10 @@ Para obter mais informações sobre o Serviço de email do AEM as a Cloud Servic
 
 1. Preencha as informações de acordo com suas necessidades e clique em **Registrar**.
 1. Vá para o aplicativo criado e selecione **Permissões de API**.
-<!-- Alexandru: removing as a result of CQDOC-20609 
-1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**. -->
+<!--
+ Alexandru: removing as a result of CQDOC-20609 
+1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**.
+-->
 1. Selecione as permissões abaixo para seu aplicativo e clique em **Adicionar permissão**:
 
    >[!NOTE]
@@ -151,7 +153,7 @@ Antes de continuar a configurar o OAuth no lado do AEM, valide o accessToken e o
    * `email`
    * `profile`
 1. Criar um arquivo de propriedade OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
-em `/apps/<my-project>/osgiconfig/config` com a sintaxe abaixo. Os valores `smtp.host` e `smtp.port` refletem a configuração avançada de rede, conforme descrito na seção [Tutorial do serviço de email](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/examples/email-service).
+em `/apps/<my-project>/osgiconfig/config` com a sintaxe abaixo. Os valores `smtp.host` e `smtp.port` refletem a configuração avançada de rede, conforme descrito na seção [Tutorial do serviço de email](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service).
 
    ```
    {

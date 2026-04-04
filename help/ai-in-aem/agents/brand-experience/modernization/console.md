@@ -2,9 +2,9 @@
 title: Console de Modernização da experiência
 description: Guia de referência para a interface e os recursos do Console de modernização de experiência
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 0%
@@ -163,7 +163,7 @@ A visualização de configurações permite gerenciar configurações básicas d
 
 * **O Project** permite que você exiba e edite as configurações do projeto, como a personalização da URL da biblioteca.
 * O **Suporte** permite solicitar ajuda à equipe de suporte da AEM.
-* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [&#x200B; possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [ possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * O token requer os seguintes escopos somente leitura:
       * `file_content:read`
       * `file_metadata:read`

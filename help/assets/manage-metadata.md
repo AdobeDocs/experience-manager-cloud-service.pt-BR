@@ -7,7 +7,7 @@ feature: Asset Management, Metadata
 role: User, Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 8%
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 [!DNL Adobe Experience Manager Assets] mantém metadados para cada ativo. Ele facilita a categorização e a organização de ativos e ajuda as pessoas que estão procurando um ativo específico. Com a capacidade de extrair metadados de arquivos carregados para o [!DNL Experience Manager Assets], o gerenciamento de metadados integra-se ao fluxo de trabalho criativo. Com a capacidade de manter e gerenciar metadados com seus ativos, você pode organizar e processar ativos automaticamente com base nos metadados.
@@ -96,7 +96,8 @@ Esse tipo de metadados garante o gerenciamento eficaz de ativos, o controle de a
 
 <!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
 
-<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+<!--
+ The two basic types of metadata are technical metadata and descriptive metadata.
 
 Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
 
@@ -107,7 +108,8 @@ Technical metadata is useful for software applications that are dealing with dig
 
 Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
 
-The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management.
+-->
 
 ## Metadados e última modificação {#last-modification}
 
@@ -135,7 +137,7 @@ Há várias maneiras de incorporar metadados em arquivos. Uma seleção de padr�
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por [!DNL Experience Manager Assets] para todo o gerenciamento de metadados. O padrão oferece codificação de metadados universais que pode ser incorporada em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois ele fornece um modelo de conteúdo avançado. Os usuários do XMP Standard e do [!DNL Experience Manager Assets] têm uma plataforma eficiente com base na qual compilar. Para obter mais informações, consulte [XMP](https://www.adobe.com/br/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por [!DNL Experience Manager Assets] para todo o gerenciamento de metadados. O padrão oferece codificação de metadados universais que pode ser incorporada em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois ele fornece um modelo de conteúdo avançado. Os usuários do XMP Standard e do [!DNL Experience Manager Assets] têm uma plataforma eficiente com base na qual compilar. Para obter mais informações, consulte [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -202,7 +204,8 @@ O Assets as a [!DNL Cloud Service] pode gerar metadados personalizados para um a
 >
 >Somente um perfil de processamento pode ser aplicado a uma pasta. Para aplicar vários processamentos a ativos em uma pasta, adicione mais opções a um único perfil de processamento. Por exemplo, um único perfil pode gerar representações, transcodificar ativos, gerar metadados personalizados e assim por diante. É possível aplicar filtros do tipo MIME para cada tarefa para que a tarefa apropriada seja acionada para o formato de arquivo necessário.
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
 ## Configure limit for bulk metadata update {#configlimit}
 
@@ -239,7 +242,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * CQ - Usado por [!DNL Experience Manager Assets].
 * DAM - Usado por [!DNL Experience Manager Assets].
 * DEX - [O explorador de Descrição Optima SC](https://www.optimasc.com/products/dex/index.html) é uma coleção de ferramentas para gerenciamento de metadados e arquivos de sistemas operacionais Windows.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/br/camera-raw/using/introduction-camera-raw.html).
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto e MP - Microsoft Photo.

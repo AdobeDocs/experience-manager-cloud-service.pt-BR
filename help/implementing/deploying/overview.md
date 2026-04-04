@@ -4,7 +4,7 @@ description: Saiba mais sobre os fundamentos e as práticas recomendadas da impl
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 93%
@@ -41,7 +41,7 @@ Para desenvolver um código personalizado para uma versão interna, a versão re
 
 O vídeo a seguir fornece uma visão geral de alto nível sobre como implantar código no AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/33377?quality=9&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -52,9 +52,11 @@ O vídeo a seguir fornece uma visão geral de alto nível sobre como implantar c
 
 ### Implantações por meio do Cloud Manager {#deployments-via-cloud-manager}
 
-<!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
+<!--
+ Alexandru: temporarily commenting this out, until I get some clarification from Brian 
 
-![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
+![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8)
+-->
 
 Clientes implantam código personalizado em ambientes na nuvem por meio do Cloud Manager. O Cloud Manager transforma pacotes de conteúdo montados localmente em um artefato compatível com o modelo de recurso do Sling, que é a forma como um aplicativo do AEM as a Cloud Service é descrito ao ser executado em um ambiente na nuvem. Como resultado, ao examinar os pacotes do [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) em ambientes na nuvem, o nome incluirá “cp2fm” e os pacotes transformados terão todos os metadados removidos. Não é possível interagir com eles, o que significa que não podem ser baixados, replicados ou abertos. Para obter a documentação detalhada sobre o conversor, consulte [sling-org-apache-sling-feature-cpconverter no GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
@@ -166,9 +168,11 @@ Para criar instruções `repoinit`, siga o procedimento abaixo:
 
 Mais detalhes sobre `repoinit` podem ser encontrados na [documentação do Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 
-<!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
+<!--
+ ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
 
-above appears to be internal, to confirm with Brian -->
+above appears to be internal, to confirm with Brian
+-->
 
 ### Gerenciador de Pacotes “únicos” para Pacotes de conteúdo variável {#package-manager-oneoffs-for-mutable-content-packages}
 
@@ -176,7 +180,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Gerenciador de pacotes - Migração de pacotes de conteúdo variável"
 >abstract="Explore o uso do Gerenciador de pacotes para casos de uso nos quais um pacote de conteúdo deve ser instalado “Uma única vez”. A instalação inclui a importação de conteúdo específico da produção até o preparo com a finalidade de depurar um problema de produção, transferindo um pequeno pacote de conteúdo do ambiente local para ambientes da AEM Cloud e muito mais."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=pt-BR" text="Ferramenta Transferência de conteúdo"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=pt-BR" text="Ferramenta de transferência de conteúdo"
 
 Há casos de uso em que um pacote de conteúdo deve ser instalado como “único”. Por exemplo, importação de conteúdo específico da produção para o preparo a fim de depurar um problema de produção. Para esses cenários, o [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) pode ser usado em ambientes do AEM as a Cloud Service.
 
@@ -186,7 +190,7 @@ Como o Gerenciador de pacotes é um conceito de tempo de execução, não é pos
 >
 >A interface do Gerenciador de Pacotes pode retornar uma mensagem de erro **indefinido** se um pacote demorar mais de dez minutos para ser instalado.
 >
->Esse tempo não se deve a um erro na instalação, mas a um tempo limite que o Cloud Service tem para todas as solicitações.
+>Esse tempo não se deve a um erro na instalação, mas a um tempo-limite que o Cloud Service tem para todas as solicitações.
 >
 >Não repita a instalação se esse erro aparecer. A instalação está ocorrendo corretamente em segundo plano. Se você reiniciar a instalação, alguns conflitos poderão ser introduzidos por vários processos de importação simultâneos.
 
@@ -327,9 +331,11 @@ Ao desenvolver localmente, um parâmetro de inicialização do modo de execuçã
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 ```
 
-<!-- ### Performance Monitoring {#performance-monitoring}
+<!--
+ ### Performance Monitoring {#performance-monitoring}
 
-Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
+Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager.
+-->
 
 ## Configuração das tarefas de manutenção no controle de origem {#maintenance-tasks-configuration-in-source-control}
 

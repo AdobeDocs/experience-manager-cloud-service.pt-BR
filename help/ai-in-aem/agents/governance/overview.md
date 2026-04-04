@@ -2,9 +2,9 @@
 title: Visão geral do agente de governança
 description: Saiba como o AEM Governance Agent protege a integridade e a conformidade da marca no AEM
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
-source-git-commit: 07bdd1add0129e0bccd7a67ccb4bbae18d1df607
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%

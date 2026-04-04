@@ -4,7 +4,7 @@ description: Esta página fornece uma visão geral sobre a fase de implementaç�
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 feature: Migration
 role: Admin
-source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -115,7 +115,8 @@ Siga esta seção para explorar o cartão de atividade Transferência de conteú
 
    ![Trabalhos de assimilação](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
-<!--### Estimating Content Transfer Time {#calculating}
+<!--
+### Estimating Content Transfer Time {#calculating}
 
 A Content Transfer Tool calculator has been provided to estimate how long it could take to complete the content transfer activity. You can use the content repository size slider to select the size that applies to your project. The transfer times vary for the extraction and ingestion phases. 
 
@@ -126,8 +127,9 @@ A Content Transfer Tool calculator has been provided to estimate how long it cou
 
 To estimate the size of the AEM Repository, you can run the Disk Usage report under `http://HOST:PORT/etc/reports/diskusage.html`. 
 
-You can also estimate the size of specific repository paths by using the `path` parameter, for example, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`. -->
+You can also estimate the size of specific repository paths by using the `path` parameter, for example, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
+-->
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber como fazer logon no Cloud Acceleration Manager e usar a fase de Implementação, você estará pronto para revisar a próxima etapa da [Fase de ativação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=pt-BR).
+Depois de saber como fazer logon no Cloud Acceleration Manager e usar a fase de Implementação, você estará pronto para revisar a próxima etapa da [Fase de ativação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).

@@ -8,7 +8,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 55%
@@ -23,7 +23,7 @@ ht-degree: 55%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -138,7 +138,8 @@ Na guia **Acessibilidade**, é possível definir os valores dos rótulos de [ace
 
    ![Complete the signing process](assets/scribblecomplete.jpg)
 
-The signatures are added to the form and the form control moves to the next panel. -->
+The signatures are added to the form and the form control moves to the next panel.
+-->
 
 ## Consulte também {#see-also}
 

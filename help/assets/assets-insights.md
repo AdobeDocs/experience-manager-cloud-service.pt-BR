@@ -6,7 +6,7 @@ feature: Asset Insights, Asset Reports
 role: User, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 12%
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 A funcionalidade do Assets Insights permite rastrear as classificações de usuários e as estatísticas de uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas da Adobe. Ele ajuda a fornecer insights sobre o desempenho e a popularidade das imagens.
@@ -77,7 +77,8 @@ Exiba pontuações de todos os ativos em uma pasta simultaneamente usando a **[!
 1. Clique na opção **[!UICONTROL Layout]** da barra de ferramentas e escolha **[!UICONTROL Exibição do Insights]**.
 1. A página exibe as pontuações de uso dos ativos. Compare as classificações dos vários ativos e obtenha insights.
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
 ## Schedule background job {#scheduling-background-job}
 
@@ -119,7 +120,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. Depois que [!DNL Experience Manager] configurar seu conjunto de relatórios, clique em **[!UICONTROL Concluído]**.
 
-Para obter mais informações, consulte [Adobe Analytics Web Services](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html?lang=pt-BR#api-access-information).
+Para obter mais informações, consulte [Adobe Analytics Web Services](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
 
 ### Rastreador de páginas {#page-tracker}
 

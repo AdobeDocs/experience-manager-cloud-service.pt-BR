@@ -6,7 +6,7 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2000'
 ht-degree: 91%
@@ -55,7 +55,8 @@ A seguinte ação é necessária:
 
 1. Você precisa [integrar o AEM ao Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-<!-- link rewriter - targets in content-fragments-customizing do not exist yet
+<!--
+ link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -158,7 +159,8 @@ Can this still occur?
 
    * **Configuração da nuvem do A4T Analytics**: selecione a configuração da nuvem do Analytics usada para métricas e metas de atividade do Target. Isso é necessário se estiver usando o Adobe Analytics como fonte de relatórios ao direcionar conteúdo.
 
-<!-- Is this needed?
+<!--
+ Is this needed?
 If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
 -->
 
@@ -170,7 +172,7 @@ If you do not see your cloud configuration, see note in [Configuring A4T Analyti
 
   >[!NOTE]
   >
-  >O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=pt-BR), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
+  >O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
   >
   >A mbox.js foi descontinuada e será removida em um estágio posterior.
   >
@@ -242,7 +244,7 @@ Sua estrutura foi criada. Para replicar a estrutura para a instância de publica
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=pt-BR).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >

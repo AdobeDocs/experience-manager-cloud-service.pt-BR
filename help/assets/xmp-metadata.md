@@ -6,7 +6,7 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 17%
@@ -17,7 +17,7 @@ ht-degree: 17%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html) |
 | AEM as a Cloud Service | Este artigo |
 
 XMP (Extensible Metadata Platform) é o padrão de metadados usado pelo Experience Manager Assets para todo o gerenciamento de metadados. O XMP fornece um formato padrão para a criação, o processamento e o intercâmbio de metadados para uma grande variedade de aplicativos.
@@ -115,7 +115,8 @@ Para aplicar manualmente o fluxo de trabalho a um ativo apenas uma vez, aplique 
 
 Para aplicar o fluxo de trabalho a todos os ativos carregados, adicione o fluxo de trabalho a um perfil de pós-processamento.
 
-<!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
+<!--
+ Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
 

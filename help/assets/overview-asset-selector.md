@@ -4,7 +4,7 @@ description: Use o Seletor de ativos para pesquisar, localizar e recuperar metad
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 29%
@@ -28,7 +28,8 @@ O Seletor de ativos oferece muitos benefícios, como:
 * Capacidade de alternar repositórios em uma organização IMS para seleção de ativos.
 * Capacidade de classificar ativos por nome, dimensões e tamanho e visualizá-los na exibição de Lista, Grade, Galeria ou Cascata.
 
-<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
+<!--
+Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
 1. [Install Asset Selector](#installation)
 2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
@@ -48,8 +49,10 @@ Você deve garantir os seguintes métodos de comunicação:
 * O aplicativo host está sendo executado em HTTPS.
 * Você não pode executar o aplicativo em `localhost`. Se quiser integrar o Seletor de ativos ao computador local, crie um domínio personalizado, por exemplo `[https://<your_campany>.localhost.com:<port_number>]`, e adicione esse domínio personalizado no `redirectUrl list`.
 * Você pode configurar e adicionar clientID na variável de ambiente do AEM Cloud Service com o respectivo `imsClientId`.
-<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
-![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
+<!--
+* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)
+-->
 * A lista de escopos IMS precisa ser definida na configuração de ambiente.
 * O URL do aplicativo está na lista de permissões de URLs de redirecionamento do cliente IMS.
 * O fluxo de logon do IMS é configurado e renderizado usando um pop-up no navegador da Web. Portanto, os pop-ups devem ser ativados ou permitidos no navegador de destino.
@@ -203,7 +206,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -287,4 +290,4 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
 >* [Integrar o Seletor de ativos a vários aplicativos](/help/assets/integrate-asset-selector.md)
 >* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
 >* [Integrar o Seletor de ativos ao Dynamic Media com recursos OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [Visualizações de Produto viabilizadas pela Integração do AEM Assets para o Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/product-visuals/overview)
+>* [Visualizações de Produto viabilizadas pela Integração do AEM Assets para o Commerce](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/overview)

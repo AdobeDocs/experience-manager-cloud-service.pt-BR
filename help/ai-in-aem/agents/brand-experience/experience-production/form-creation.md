@@ -1,10 +1,10 @@
 ---
 title: Trabalho de Criação de Formulário
-description: Saiba mais sobre o trabalho de criação de formulários do Brand Experience Agent e como usar a linguagem natural para criar formulários do zero.
+description: Saiba mais sobre a tarefa de criação de formulários do Brand Experience Agent e como usar a linguagem natural para criar formulários do zero.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%

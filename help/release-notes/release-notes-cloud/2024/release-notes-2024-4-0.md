@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: 153a3172-676f-4434-94d4-12fab8e17734
 feature: Release Information
 role: Admin
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 11%
@@ -37,7 +37,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo Visão geral da versão de abril de 2024 que exibe um resumo dos recursos adicionados na versão 2024.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3446311?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3429111?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -249,19 +249,19 @@ Agora, você tem uma experiência aprimorada ao filtrar arquivos. A funcionalida
 
 Aproveite benefícios como acesso mais rápido a arquivos relevantes e uma interface do usuário mais intuitiva, tornando sua experiência de pesquisa mais estável e eficiente.
 
-![filtro de pesquisa rápida &#x200B;](/help/release-notes/assets/guides/repository-filter-search-quick.png)
+![filtro de pesquisa rápida ](/help/release-notes/assets/guides/repository-filter-search-quick.png)
 
 *Use os filtros rápidos para procurar arquivos DITA e não DITA.*
 
-Saiba mais sobre o recurso **Pesquisa de filtro** na seção [Painel esquerdo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS).
+Saiba mais sobre o recurso **Pesquisa de filtro** na seção [Painel esquerdo](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS).
 
 ### Melhorias nos Data Source Connectors
 
 Os seguintes aprimoramentos foram feitos nos conectores de fonte de dados da versão 2024.4.0:
 
-#### Conecte-se às Fontes de Dados dos Quadros de Desenvolvimento (ADO) do Salsify, Akeneo e Microsoft Azure
+#### Conecte-se às Fontes de dados dos painéis de desenvolvimento do Microsoft Azure (ADO), Salsify e Akeneo
 
-Além dos conectores prontos para uso existentes, o Experience Manager Guides também fornece conectores para fontes de dados do Salsify, Akeneo e Microsoft Azure DevOps Boards (ADO). Como administrador, você pode baixar e instalar esses conectores. Em seguida, configure os conectores instalados.
+Além dos conectores prontos para uso existentes, a Experience Manager Guides também fornece conectores para fontes de dados do Salsify, Akeneo e Microsoft Azure DevOps Boards (ADO). Como administrador, você pode baixar e instalar esses conectores. Em seguida, configure os conectores instalados.
 
 #### Copie e cole a amostra de consulta para criar um trecho de conteúdo ou tópico
 
@@ -280,10 +280,10 @@ Esse recurso ajuda você a usar os dados armazenados em seus arquivos JSON e reu
 
 #### Configurar vários URLs de recursos para um conector criar trechos de conteúdo ou tópicos
 
-Como administrador, você pode configurar vários URLs de recursos para alguns conectores, como Cliente REST genérico, Salsify, Akeneo e placas DevOps (ADO) do Microsoft Azure.
-Em seguida, como autor, conecte-se às fontes de dados para criar trechos de conteúdo ou tópicos usando os geradores. Esse recurso é útil, pois você não precisa criar uma fonte de dados para cada URL. Ele ajuda você a buscar dados rapidamente de qualquer um dos recursos de uma fonte de dados específica em um único trecho de conteúdo ou tópico. Exibir mais detalhes sobre os conectores de fonte de dados e como [configurar um conector de fonte de dados na interface do usuário](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Saiba como [usar dados da sua fonte de dados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
+Como administrador, você pode configurar vários URLs de recursos para alguns conectores, como Generic REST Client, Salsify, Akeneo e Microsoft Azure DevOps Boards (ADO).
+Em seguida, como autor, conecte-se às fontes de dados para criar trechos de conteúdo ou tópicos usando os geradores. Esse recurso é útil, pois você não precisa criar uma fonte de dados para cada URL. Ele ajuda você a buscar dados rapidamente de qualquer um dos recursos de uma fonte de dados específica em um único trecho de conteúdo ou tópico. Exibir mais detalhes sobre os conectores de fonte de dados e como [configurar um conector de fonte de dados na interface do usuário](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Saiba como [usar dados da sua fonte de dados](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
 
-Para obter mais informações sobre os novos recursos e aprimoramentos, exiba [informações sobre as versões do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre os novos recursos e aprimoramentos, exiba [informações sobre as versões do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

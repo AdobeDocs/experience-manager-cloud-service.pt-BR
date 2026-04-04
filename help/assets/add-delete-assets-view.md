@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 90%
@@ -21,8 +21,10 @@ Você pode usar os seguintes métodos para fazer upload de um ou mais ativos ou 
 * Arraste ativos ou pastas na interface e siga as instruções na tela.
 * Clique em **[!UICONTROL Adicionar ativos]** na barra de ferramentas e adicione alguns arquivos à caixa de diálogo de upload.
 
-<!-- TBD: Update this GIF
-![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
+<!--
+ TBD: Update this GIF
+![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif)
+-->
 
 Você pode usar qualquer um desses métodos para fazer upload de ativos após criar uma pasta. Para criar uma pasta vazia, clique em **[!UICONTROL Criar pasta]** na barra de ferramentas. O [!DNL Assets view] oferece uma eficiente funcionalidade de pesquisa de texto completo, mas você também pode usar pastas para organizar melhor seus ativos.
 
@@ -85,7 +87,8 @@ Se você tentar fazer upload de ativos duplicados, os ativos não serão carrega
 >[!TIP]
 >
 >Você pode carregar ativos para o repositório DAM diretamente dos aplicativos de desktop do [!DNL Creative Cloud].
-<!--TBD
+<!--
+TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
 
@@ -109,4 +112,4 @@ Os usuários podem excluir ativos ou pastas individuais que não são mais neces
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)

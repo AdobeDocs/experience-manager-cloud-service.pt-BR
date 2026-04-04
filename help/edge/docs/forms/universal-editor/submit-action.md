@@ -5,7 +5,7 @@ keywords: como selecionar a ação enviar para um formulário adaptável, conect
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | Versão | Link do artigo |
 |---------|-----------------------------|
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | Este artigo |
@@ -60,10 +60,12 @@ As seguintes ações de envio são suportadas pelo [Adaptive Forms criado no Uni
 - [Enviar para o Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 - [Enviar para planilha](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 É possível configurar a ação de envio para formulários criados no Universal Editor usando a guia **Envio** da extensão **Editar Propriedades do Formulário**.
 

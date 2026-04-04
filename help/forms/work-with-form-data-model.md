@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4152'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -110,7 +110,7 @@ Para criar uma propriedade secundária:
 
 1. Selecione **[!UICONTROL Concluído]** para salvar a propriedade secundária e selecione **[!UICONTROL Salvar]** para salvar o modelo de dados de formulário (FDM). A propriedade secundária agora é adicionada ao objeto de modelo de dados.
 
-Após criar objetos e propriedades do modelo de dados, você pode continuar a criar o Forms Adaptável <!--and interactive communications--> com base no modelo de dados de formulário (FDM). Posteriormente, quando as fontes de dados estiverem disponíveis e configuradas, você poderá vincular o Modelo de dados de formulário (FDM) às fontes de dados. A associação é atualizada automaticamente no Forms Adaptável <!--and interactive communications--> associado. Para obter mais informações sobre como criar o Forms Adaptável <!--and interactive communications--> usando o modelo de dados de formulário (FDM), consulte [Usar modelo de dados de formulário](using-form-data-model.md).
+Após criar objetos e propriedades do modelo de dados, você pode continuar a criar o Forms Adaptável <!--and interactive communications--> com base no modelo de dados de formulário (FDM). Posteriormente, quando as fontes de dados estiverem disponíveis e configuradas, você poderá vincular o Modelo de dados de formulário (FDM) às fontes de dados. A vinculação é atualizada automaticamente no Adaptive Forms associado. Para obter mais informações sobre como criar o Forms adaptável usando o modelo de dados de formulário (FDM), consulte [Usar modelo de dados de formulário](using-form-data-model.md).
 
 ### Vincular objetos e propriedades do modelo de dados {#bind-data-model-objects-and-properties}
 
@@ -197,7 +197,7 @@ Use o atributo de solicitação para recuperar as propriedades associadas da fon
 
 1. Selecione **[!UICONTROL Solicitar Atributo]** no menu suspenso **[!UICONTROL Associando a]** e insira o nome do atributo no campo **[!UICONTROL Valor de Associação]**.
 
-1. Crie uma [sobreposição](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=pt-BR#developing) para o head.jsp. Para criar a sobreposição, abra o CRX DE e copie o arquivo `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` para `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Crie uma [sobreposição](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=en#developing) para o head.jsp. Para criar a sobreposição, abra o CRX DE e copie o arquivo `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` para `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
    >[!NOTE]
    >

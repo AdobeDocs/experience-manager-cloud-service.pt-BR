@@ -5,7 +5,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -76,8 +76,10 @@ Use sempre o arquivo XDC correto para a impressora. Por exemplo, evite escolher 
 
 Um design de formulário usado com as APIs de comunicações pode conter scripts executados no servidor. Certifique-se de que um design de formulário não contenha scripts que sejam executados no cliente. Para obter informações sobre como criar scripts de design de formulário, consulte a [Ajuda do Designer](use-forms-designer.md).
 
-<!-- #### Working with Fonts
- Document Considerations for Working with Fonts>> -->
+<!--
+ #### Working with Fonts
+ Document Considerations for Working with Fonts>>
+ -->
 
 ### Mapeamento de fontes {#font-mapping}
 
@@ -196,13 +198,15 @@ Você pode usar o serviço AEM Forms Output para combinar um modelo (XFA ou PDF)
 
 Em comparação com o ambiente local, a Cloud Service oferece benefícios adicionais de dimensionamento automático e economia.
 
-<!--**Where is data processed?**
+<!--
+**Where is data processed?**
 
 **Who has access to data?**
 
 **Is data encrypted?**
 
-**Where is data hosted?** -->
+**Where is data hosted?**
+-->
 
 **É possível executar várias operações em lote simultaneamente?**
 Sim, você pode executar várias operações em lote simultaneamente. Sempre use pastas de origem e destino diferentes para cada operação para evitar conflitos.

@@ -6,7 +6,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 3%
@@ -29,10 +29,12 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
    <td><strong>Tipo de ativo</strong><br /> </td>
    <td><strong>Opções de visualização disponíveis</strong><br /> </td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td>Document</td>
    <td>PDF preview</td>
-  </tr>-->
+  </tr>
+  -->
   <tr>
    <td>Formulário do PDF</td>
    <td>Visualização e Visualização do PDF com Dados<br /> </td>
@@ -41,10 +43,12 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
    <td>Formulário adaptável</td>
    <td>Visualização do HTML e visualização do HTML com dados</td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td>Form Template</td>
    <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
-  </tr>-->
+  </tr>
+  -->
  </tbody>
 </table>
 

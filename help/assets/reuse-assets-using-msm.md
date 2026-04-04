@@ -7,7 +7,7 @@ role: User, Admin, Developer
 feature: Asset Management
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3413'
 ht-degree: 10%
@@ -18,7 +18,7 @@ ht-degree: 10%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html) |
 | AEM as a Cloud Service | Este artigo |
 
 A funcionalidade do Gerenciador de Vários Sites (MSM) no [!DNL Adobe Experience Manager] permite que os usuários reutilizem conteúdo criado uma vez e reutilizado em vários locais da Web. A mesma funcionalidade está disponível para ativos digitais com o nome MSM para [!DNL Assets]. Ao usar o MSM para [!DNL Assets], você pode:
@@ -326,7 +326,8 @@ Se você tiver vários ativos em uma pasta de live copy, iniciar ações em cada
 
    *Figura: atualize facilmente muitos ativos nas pastas de live copy a partir do console [!UICONTROL Visão geral da Live Copy].*
 
-<!-- TBD: Can MSM be extended using Java APIs in CS?
+<!--
+ TBD: Can MSM be extended using Java APIs in CS?
 
 ## Extend MSM for [!DNL Assets] {#extend-api}
 

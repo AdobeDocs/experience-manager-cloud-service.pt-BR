@@ -4,7 +4,7 @@ description: O AEM tem APIs abrangentes e eficientes que você pode usar para o 
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 4%
@@ -25,9 +25,11 @@ As APIs a seguir são fundamentais para o AEM.
 | [Interface do usuário do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Pilha da Web aberta da Adobe, fornecendo vários componentes essenciais (os materiais do Granite 6.5 se aplicam ao AEMaaCS) |
 | [Interface do Coral](https://opensource.adobe.com/coral-spectrum/documentation/) | Estilo visual do Adobe para interfaces do usuário em nuvem, projetado para oferecer consistência na experiência do usuário |
 
-<!---
+<!--
+-
 |Editor core JavaScript API reference|Provides all the base objects and concepts to support authoring of content resources|
---->
+-
+-->
 
 >[!NOTE]
 >
@@ -59,7 +61,7 @@ Se uma API for fornecida pelo AEM, prefira-a ao Sling, JCR e OSGi. Se o AEM não
 
 >[!TIP]
 >
->Para obter detalhes sobre essas diretrizes, consulte o documento [Entender as práticas recomendadas da API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=pt-BR).
+>Para obter detalhes sobre essas diretrizes, consulte o documento [Entender as práticas recomendadas da API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html).
 
 ## Serviços e APIs de entrega e gerenciamento de conteúdo da AEM {#delivery-apis}
 
@@ -76,7 +78,7 @@ O AEM oferece componentes personalizáveis e opções de entrega de conteúdo.
 |  |  |
 | [API Assets](/help/assets/mac-api-assets.md) | Permite operações de criação, leitura, atualização e exclusão (CRUD) em ativos, incluindo binários, metadados, representações e comentários. Consulte API HTTP do AEM Assets |
 | [API HTTP de fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md) | Acessar conteúdo de fragmento de conteúdo diretamente pela API HTTP por meio de operações CRUD |
-| [API HTTP do Assets de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=pt-BR) | Formato exato de solicitações de ativos HTTP compatíveis |
+| [API HTTP do Assets de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato exato de solicitações de ativos HTTP compatíveis |
 
 >[!NOTE]
 >

@@ -6,7 +6,7 @@ feature: Selectors
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5363'
 ht-degree: 29%
@@ -30,7 +30,8 @@ O Seletor de ativos oferece muitos benefícios, como:
 * Capacidade de alternar repositórios em uma organização IMS para seleção de ativos.
 * Capacidade de classificar ativos por nome, dimensões e tamanho e visualizá-los na exibição de Lista, Grade, Galeria ou Cascata.
 
-<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
+<!--
+Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
 1. [Install Asset Selector](#installation)
 2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
@@ -107,7 +108,7 @@ A integração é feita importando o pacote do Seletor de ativos e conectando ao
 
 É possível integrar o Seletor de ativos a vários aplicativos, como:
 
-* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] &#x200B;](#adobe-app-integration-vanilla)
+* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Integrar o Seletor de ativos a um aplicativo que não seja da Adobe](#adobe-non-app-integration)
 * [Integração do Dynamic Media com recursos OpenAPI](#adobe-app-integration-polaris)
 
@@ -473,7 +474,7 @@ O URL do delivery dinâmico possui a seguinte sintaxe:
 
 +++
 
-+++**Pronto para escolher a URL de entrega dinâmica**
++++ **Pronto para escolher a URL de entrega dinâmica**
 Todos os ativos selecionados são carregados pela função `handleSelection` que atua como um objeto JSON. Por exemplo, `JsonObj`. O URL dinâmico de entrega é criado pela combinação das seguintes operadoras:
 
 | Objeto | JSON |
@@ -523,6 +524,8 @@ Na captura de tela acima, o URL de entrega da representação original do PDF pr
   O trecho de código na captura de tela acima é um exemplo de um ativo de vídeo. Inclui a matriz de links de representações. O `selection[5]` no trecho é o exemplo de miniatura de imagem que pode ser usada como o espaço reservado da miniatura de vídeo na experiência de destino. O `selection[5]` na matriz das representações é para o reprodutor de vídeo. Ele serve uma HTML e pode ser definido como `src` do iframe. Suporta transmissão adaptável de taxa de bits, que é a entrega do vídeo otimizada para a Web.
 
   No exemplo acima, a URL do reprodutor de vídeo é `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
+
++++
 
 +++**Interface de usuário do Seletor de ativos para Dynamic Media com recursos OpenAPI**
 
@@ -821,10 +824,12 @@ A tabela a seguir descreve algumas das propriedades importantes do objeto de ati
 
 O Seletor de ativos permite controlar o uso de um ativo expirado. Você pode personalizar o ativo expirado com um selo **Expirando em breve** que pode ajudá-lo a saber com antecedência sobre os ativos que expirarão em 30 dias a partir da data atual. Além disso, isso pode ser personalizado de acordo com a exigência. Você também pode permitir a seleção de um ativo expirado na tela ou vice-versa. A personalização de um ativo expirado pode ser feita usando alguns snippets de código de várias maneiras:
 
-<!--{
+<!--
+{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
     allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
-}-->
+}
+-->
 
 ```
 expiryOptions: {
@@ -845,7 +850,8 @@ expiryOptions:{
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
-![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)
+-->
 
 #### Configuração da duração de um ativo expirado {#set-duration-of-expired-asset}
 

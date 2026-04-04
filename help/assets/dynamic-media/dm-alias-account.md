@@ -9,7 +9,7 @@ role: User,Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 0%
@@ -18,14 +18,15 @@ ht-degree: 0%
 
 # Sobre a configuração de uma conta alias de empresa do Dynamic Media {#about-dm-alias-acct}
 
-<!-- hide: yes
+<!--
+ hide: yes
 hidefromtoc: yes 
 -->
 
 <!-- 
 >[!NOTE]
 >
->This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
 -->
 
 Os URLs do Dynamic Media e o código de inserção do visualizador contêm o nome da conta da empresa. Esse nome de conta foi criado no momento do provisionamento do Dynamic Media. Pode haver cenários em que sua empresa tenha passado por uma aquisição ou reformulação da marca, ou em que você deseje simplesmente usar um nome mais fácil de memorizar. Nesses cenários, não é fácil atualizar manualmente o nome da conta da empresa em todos os URLs e o código de inserção do visualizador que aparece imediatamente. Além disso, há a possibilidade de que você afete o repositório existente do Dynamic Media ou o conteúdo ao vivo. Para resolver esse problema, você pode configurar uma conta alias de empresa do Dynamic Media.

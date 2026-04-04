@@ -2,9 +2,9 @@
 title: Tarefa de atualização de conteúdo
 description: Saiba qual é o trabalho de atualização de conteúdo do Brand Experience Agent e o que ele pode fazer por você.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 2%
@@ -20,7 +20,7 @@ O trabalho de atualização de conteúdo do [Agente de produção de experiênci
 
 A tarefa de atualização de conteúdo atualiza o conteúdo existente, incluindo fragmentos de conteúdo, páginas, formulários e ativos. O trabalho pode executar ações como atualizar, remover, substituir ou adicionar elementos de conteúdo para manter as experiências precisas e atuais. As entradas podem ser descrições de linguagem natural e, quando usadas com PDFs Jira, as capturas de tela também podem fornecer entradas.
 
-A tarefa de atualização de conteúdo transforma os detalhes que você fornece, por meio de linguagem natural ou visuais, em atualizações de conteúdo na sua página. Você fornece o URL de uma página que precisa ser atualizada, juntamente com detalhes sobre o que precisa ser atualizado, e a habilidade do agente conclui sua tarefa. Quando usado com o Adobe Experience Manager (AEM) as a Cloud Service, o trabalho cria uma nova [inicialização](/help/sites-cloud/authoring/launches/overview.md) para que você possa examinar as atualizações antes de aplicar. Quando usado com a criação de Documentos, o trabalho cria uma nova [versão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
+A tarefa de atualização de conteúdo transforma os detalhes que você fornece, por meio de linguagem natural ou visuais, em atualizações de conteúdo na sua página. Você fornece o URL de uma página que precisa ser atualizada, juntamente com detalhes sobre o que precisa ser atualizado, e a habilidade do agente conclui sua tarefa. Quando usado com o Adobe Experience Manager (AEM) as a Cloud Service, o trabalho cria uma nova [inicialização](/help/sites-cloud/authoring/launches/overview.md) para que você possa examinar as atualizações antes de aplicar. Quando usado com a criação de Documentos, o trabalho cria uma nova [versão](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 ## Recursos {#capabilities}
 
@@ -124,7 +124,7 @@ No caso de um comando `process` para acionar atualizações, as respostas podem 
 
 Você pode explorar os Agentes da AEM por meio do [Playground](https://www.aem.live/developer/aem-playground) ou conectar-se com seu CSM ou TAM para discutir o acesso por meio da SKU do Agente.
 
-## Limitações   {#limitations}
+## Limitações {#limitations}
 
 Esteja ciente das seguintes limitações:
 

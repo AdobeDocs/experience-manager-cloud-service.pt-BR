@@ -6,7 +6,7 @@ exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2198'
 ht-degree: 93%
@@ -56,7 +56,7 @@ Os fragmentos de experiência podem ser exportados para o espaço de trabalho pa
 >
 >* [Desenvolvimento do Adobe Target](https://developers.adobetarget.com/)
 >* [Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction)
->* [Adobe Target - como usar os fragmentos de experiência do Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=pt-BR)
+>* [Adobe Target - como usar os fragmentos de experiência do Adobe Experience Manager (AEM)?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
 >* [AEM 6.5 - configuração manual da integração com o Adobe Target - criação de uma configuração da nuvem do Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=pt-BR#creating-a-target-cloud-configuration)
 
 ## Pré-requisitos {#prerequisites}
@@ -160,7 +160,8 @@ Agora é possível selecionar a nova configuração para edição.
 
    ![config-target-settings-dialog](assets/config-target-settings-dialog.png)
 
-   <!-- Can this still occur?
+   <!--
+    Can this still occur?
 
    >[!NOTE]
    >
@@ -187,7 +188,8 @@ Agora é possível selecionar a nova configuração para edição.
 
    * **Configuração da nuvem do A4T Analytics**: selecione a configuração da nuvem do Analytics usada para métricas e metas de atividade do Target. Isso é necessário se estiver usando o Adobe Analytics como fonte de relatórios ao direcionar conteúdo.
 
-     <!-- Is this needed?
+     <!--
+      Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
@@ -199,7 +201,7 @@ Agora é possível selecionar a nova configuração para edição.
 
      >[!NOTE]
      >
-     >O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=pt-BR), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
+     >O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
      >
      >A mbox.js foi descontinuada e será removida em um estágio posterior.
      >
@@ -271,7 +273,7 @@ Sua estrutura foi criada. Para replicar a estrutura para a instância de publica
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=pt-BR).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >

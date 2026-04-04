@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 67%
@@ -50,7 +50,8 @@ Assista ao vídeo [Visão geral da versão de outubro de 2021](https://video.tv.
 
 * As Tags inteligentes são aplicadas automaticamente aos ativos usando microsserviços de ativos, em vez dos Serviços de conteúdo inteligente. O modelo subjacente é atualizado para melhorar os resultados da marcação e reduzir a polarização. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
-<!-- Leave this commented.
+<!--
+ Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
 No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.

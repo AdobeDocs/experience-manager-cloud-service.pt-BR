@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: Admin, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1602'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Este artigo |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
 A Automação de configuração do Experience Cloud ajuda a conectar o Adobe Analytics ao Adaptive Forms, o que auxilia na análise rápida da interação do usuário com seus formulários e oferece insights sobre as interações e o envolvimento do visitante. A Automação de configuração do Experience Cloud também ajuda a monitorar o desempenho do formulário, o que envolve a avaliação de métricas como tempos de conclusão e pontos de devolução. Essa análise ajuda a otimizar formulários para obter uma melhor experiência do usuário, ao mesmo tempo em que distingue o comportamento do usuário com base no status de logon, por exemplo, usuários anônimos, para identificar tendências e padrões gerais.
 
@@ -76,7 +76,8 @@ Para verificar se os itens mencionados acima estão disponíveis para o seu ambi
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=pt-BR)
+<!--
+ For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
 -->
 
 ## Configurar Adobe Analytics {#configure-adobe-analytics}
@@ -154,7 +155,7 @@ Para conectar e habilitar o Analytics no Adaptive Forms para AEM Sites, você de
 
 Para conectar o Formulário adaptável em uma página do AEM Sites e habilitar o Analytics para análises de rastreamento rápido, inclua a biblioteca do cliente `customfooterlibs` na página do AEM Sites usando o Arquétipo AEM/Repositório Git e o pipeline de implantação.
 
-1. Abra o projeto [Arquétipo do AEM Forms ou Repositório Git Clonado](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) em um editor de texto. Por exemplo, Visual Studio Code.
+1. Abra o projeto [Arquétipo do AEM Forms ou Repositório Git Clonado](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) em um editor de texto. Por exemplo, Visual Studio Code.
 
 1. Navegue até a página dos sites onde o formulário adaptável existe, por exemplo, Neste projeto de demonstração, temos `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
 
@@ -177,7 +178,7 @@ Para conectar o Formulário adaptável em uma página do AEM Sites e habilitar o
 
    O `customfooterlibs.html` é usado para o JavaScript.
 
-1. [Execute o pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=pt-BR) para implantar as alterações.
+1. [Execute o pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) para implantar as alterações.
 
 ### Ativar regras do Form Analytics para o Forms no Sites {#bind-forms-analytics-rules-to-forms-in-sites}
 

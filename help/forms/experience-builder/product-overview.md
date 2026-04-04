@@ -8,7 +8,7 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 2%
@@ -73,7 +73,8 @@ O Experience Builder exige o ambiente de autor de produção do AEM Forms as a C
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | *Editor Forms adaptável* | *Universal Editor* |
 
-<!-- >
+<!--
+ >
 
 ## Learn more on key capabilities {#key-capabilities-forms-experience-builder}
 
@@ -163,7 +164,8 @@ O Experience Builder exige o ambiente de autor de produção do AEM Forms as a C
       <em>Get responses to common questions about Forms Experience Builder capabilities and usage.</em>
    </p>
 </td>
-</table> -->
+</table>
+-->
 
 
 
@@ -193,7 +195,8 @@ Estas são algumas maneiras de começar a explorar o Forms Experience Builder:
 
 - **Integrar aos seus sistemas**: configure envios de formulários para se conectar aos fluxos de trabalho de negócios existentes, sejam eles enviando dados para uma API REST, criando um novo cliente potencial no seu CRM ou salvando documentos no armazenamento na nuvem. [Saiba mais](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#data-integration--submission).
 
-<!-- ## Onboarding
+<!--
+ ## Onboarding
 
 The Forms Experience Builder is currently available through an Early Access Program. To request access, follow these steps:
 

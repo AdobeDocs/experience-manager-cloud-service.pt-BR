@@ -7,7 +7,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 index: false
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 61%
@@ -44,7 +44,7 @@ Com o PWA, o usuário tem uma cópia local do site, dando uma experiência semel
 
 >[!NOTE]
 >
->Aplicativos Web progressivos são uma tecnologia em evolução, e o suporte para instalação de aplicativos locais e outros recursos [&#x200B; depende do navegador usado](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
+>Aplicativos Web progressivos são uma tecnologia em evolução, e o suporte para instalação de aplicativos locais e outros recursos [ depende do navegador usado](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
 
 ## Pré-requisitos {#prerequisites}
 

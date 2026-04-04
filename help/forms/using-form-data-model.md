@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -83,7 +83,8 @@ Você pode criar [Forms adaptável](creating-adaptive-form.md) e Fragmentos de f
 
    Você pode arrastar e soltar objetos de modelo de dados no Formulário adaptável ou fragmento para adicionar campos de formulário. Os campos de formulário adicionados retêm as propriedades de metadados e a vinculação com as propriedades do objeto de modelo de dados. O vínculo garante que os valores de campo sejam atualizados nas fontes de dados correspondentes no envio do formulário e preenchidos previamente quando o formulário for renderizado.
 
-<!-- ## Create interactive communications {#create-ic}
+<!--
+ ## Create interactive communications {#create-ic}
 
 You can create an interactive communication based on a Form Data Model that you can use to prefill interactive communication with data from configured data sources. In addition, the building blocks of an interactive communication, such as text, list, and condition document fragments can be based on a form data model.
 
@@ -101,13 +102,15 @@ For more information, see:
 
 [Conditions in Interactive Communications](conditions-interactive-communications.md)
 
-[List fragments](lists.md) -->
+[List fragments](lists.md)
+-->
 
 ## Visualizar com dados de amostra {#preview-ic}
 
 O editor do Modelo de dados de formulário permite gerar e editar dados de amostra para objetos de modelo de dados no modelo de dados de formulário (FDM). Você pode usar esses dados para visualizar e testar o <!--interactive communications and--> Adaptive Forms. Você deve gerar os dados de amostra antes de visualizar como descrito em [Trabalhar com o modelo de dados de formulário](work-with-form-data-model.md#sample).
 
-<!--To preview an interactive communication with sample Form Data Model data:
+<!--
+To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
 1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
@@ -115,23 +118,26 @@ O editor do Modelo de dados de formulário permite gerar e editar dados de amost
 
 The interactive communication opens with prefilled sample data.
 
-![web-preview](assets/web-preview.png)-->
+![web-preview](assets/web-preview.png)
+-->
 
 Para visualizar um formulário adaptável com dados de amostra, abra o formulário adaptável no modo de autor e selecione **[!UICONTROL Visualizar]**.
 
 ## Preencher previamente usando o serviço de modelo de dados de formulário {#prefill}
 
-O [!DNL Experience Manager Forms] fornece o Serviço de Preenchimento de Modelo de Dados de Formulário pronto para uso que você pode habilitar para o Adaptive Forms <!--and interactive communications--> com base no modelo de dados de formulário (FDM). O serviço de preenchimento prévio consulta as fontes de dados para objetos de modelo de dados no Formulário Adaptável <!--and interactive communication--> e, consequentemente, preenche os dados enquanto renderiza o formulário ou a comunicação.
+O [!DNL Experience Manager Forms] fornece o Serviço de Preenchimento de Modelo de Dados de Formulário pronto para uso que você pode habilitar para o Adaptive Forms <!--and interactive communications--> com base no modelo de dados de formulário (FDM). O serviço de preenchimento prévio consulta as fontes de dados para objetos de modelo de dados no Formulário adaptável e, portanto, preenche os dados enquanto renderiza o formulário ou a comunicação.
 
 Para habilitar o Serviço de Preenchimento de Modelo de Dados de Formulário para um Formulário Adaptável, abra as propriedades do Contêiner de Formulário Adaptável e selecione **[!UICONTROL Serviço de Preenchimento de Modelo de Dados de Formulário]** no menu suspenso **[!UICONTROL Serviço de Preenchimento Prévio]** na opção Básico. Em seguida, salve as propriedades.
 
 ![serviço de preenchimento](assets/prefill-service.png)
 
-<!--To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
+<!--
+To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
 
 ![edit-ic-props](assets/edit-ic-props.png)
 
-Edit Properties dialog for an interactive communication-->
+Edit Properties dialog for an interactive communication
+-->
 
 ## Gravar dados do Formulário adaptável enviado nas fontes de dados {#write-af}
 

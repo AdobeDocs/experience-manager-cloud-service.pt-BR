@@ -3,7 +3,8 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.8.0.
 feature: Release Information
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+exl-id: 0c8f7ece-7175-435b-8838-867983688fce
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 8%
@@ -18,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -38,7 +39,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -79,8 +80,8 @@ Torne o Dynamic Media com URLs OpenAPI mais legíveis por humanos, aproveitando 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Componente de entrada de data e hora](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): um componente de data e hora está disponível, permitindo que os usuários selecionem data e hora usando uma interface de calendário e relógio ou inserindo valores manualmente em um formato com suporte.
-* [Tratamento de Erros Aprimorado para Carregamentos de Arquivos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): o componente de Anexo de Arquivo agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
+* [Componente de entrada de data e hora](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): um componente de data e hora está disponível, permitindo que os usuários selecionem data e hora usando uma interface de calendário e relógio ou inserindo valores manualmente em um formato com suporte.
+* [Tratamento de Erros Aprimorado para Carregamentos de Arquivos](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): o componente de Anexo de Arquivo agora valida automaticamente o tipo de arquivo carregado em relação à lista de permissões. Se um usuário carregar um arquivo em um formato não compatível, o formulário exibirá um erro durante o envio. O componente também verifica o conteúdo do arquivo para validar seu tipo, melhorando a segurança geral do formulário.
 * [Resposta de Erro Especificada para Ação de Envio Personalizada](/help/forms/custom-submit-action-troubleshooting.md): Quando uma ação de envio personalizada encontra um erro sem tratamento, o código de erro 502 é retornado. Isso ajuda a identificar que o problema está relacionado à ação de envio personalizada, facilitando a depuração.
 * [Excluindo campos ocultos do documento de registro](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): uma nova propriedade foi adicionada para permitir a exclusão de campos ocultos do documento de registro. Por padrão, essa opção não está selecionada e se aplica a todos os campos de formulário.
 
@@ -101,7 +102,7 @@ Torne o Dynamic Media com URLs OpenAPI mais legíveis por humanos, aproveitando 
 
 ### Recursos iniciais do usuário no AEM Forms
 
-* [Componente de assinatura assinável](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): agora você pode usar o componente de assinatura assinável para ajudar os usuários a adicionar suas assinaturas a um formulário, como em um formulário de contrato. O componente permite aos usuários desenhar sua assinatura diretamente no formulário usando um mouse, caneta ou tela sensível ao toque.
+* [Componente de assinatura assinável](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): agora você pode usar o componente de assinatura assinável para ajudar os usuários a adicionar suas assinaturas a um formulário, como em um formulário de contrato. O componente permite aos usuários desenhar sua assinatura diretamente no formulário usando um mouse, caneta ou tela sensível ao toque.
 * [Integração de API direta no Editor de regras](/help/forms/api-integration-in-rule-editor.md): o Adaptive Forms agora oferece suporte à integração de API direta no Editor de regras visuais sem exigir um Modelo de dados de formulário. Os autores podem configurar APIs usando uma importação de URL ou cURL, mapear parâmetros de entrada/saída e chamadas seguras com autenticação.
 
 <!--
@@ -118,7 +119,8 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive.
+-->
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -209,7 +211,7 @@ Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe
 
 ### Encaminhamento de logs do AEM para mais destinos (programa Beta) {#log-forwarding-beta}
 
-Embora os logs possam ser baixados da Cloud Manager, muitas organizações acham útil transmitir esses logs para um destino de registro preferencial. O AEM já oferece suporte ao encaminhamento de logs do AEM e do CDN para o Armazenamento de Blobs do Azure, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. Esse recurso é configurado de maneira automatizada e implantado usando o Pipeline de configuração.
+Embora os logs possam ser baixados da Cloud Manager, muitas organizações acham útil transmitir esses logs para um destino de registro preferencial. O AEM já é compatível com o encaminhamento de logs do AEM e do CDN para o Azure Blob Storage, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. Esse recurso é configurado de maneira automatizada e implantado usando o Pipeline de configuração.
 
 Agora na versão beta, você pode encaminhar logs do AEM para o Amazon S3, Sumo Logic, Dynatrace e sua própria conta da New Relic (não a conta fornecida pela Adobe). Observe que os logs do AEM (incluindo o Apache/Dispatcher) são compatíveis com esses destinos de log, mas não com os logs CDN. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para acesso.
 
@@ -217,7 +219,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

@@ -4,7 +4,7 @@ description: Saiba como configurar o Cloud Manager para trabalhar com os seus re
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 34%
@@ -26,7 +26,8 @@ Ao configurar o Cloud Manager para integrar com sua Nuvem privada do GitHub (rep
 >
 >Consulte [Adicionar repositórios externos no Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-<!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
+<!--
+ CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
 * **Direct Integration**: With this setup, you can directly link your private GitHub repositories to Cloud Manager, allowing for seamless code validation, deployment, and CI/CD (Continuous Integration/Continuous Deployment) pipelines without needing to maintain a separate sync process with Adobe's default Git repository.
 
@@ -40,7 +41,8 @@ In essence, a "Build your own GitHub" in Adobe Cloud Manager empowers teams to m
 
 >[!NOTE]
 >
->This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available. -->
+>This feature is exclusive to public GitHub. Support for self-hosted GitHub is not available.
+-->
 
 ## Configuração {#configuration}
 

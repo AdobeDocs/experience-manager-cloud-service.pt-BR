@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 2%
@@ -21,15 +21,17 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/layout-capabilities-adaptive-forms-core-components.md) |
 | AEM as a Cloud Service (Componentes de base) | Este artigo |
 
 O [!DNL Adobe Experience Manager] permite criar Forms adaptável fácil de usar que oferece experiências dinâmicas para usuários finais. O layout de formulário controla como os itens ou componentes são exibidos em um Formulário adaptável.
 
-<!-- ## Prerequisite knowledge {#prerequisite-knowledge}
+<!--
+ ## Prerequisite knowledge {#prerequisite-knowledge}
 
-Before learning about the different layout capabilities of Adaptive Forms, read [Introduction to authoring forms](introduction-forms-authoring.md) to know more about Adaptive Forms. -->
+Before learning about the different layout capabilities of Adaptive Forms, read [Introduction to authoring forms](introduction-forms-authoring.md) to know more about Adaptive Forms.
+-->
 
 ## Tipos de layouts {#types-of-layouts}
 
@@ -99,7 +101,7 @@ Usando este layout, você pode colocar o componente **[!UICONTROL Formulário ad
 
 Os layouts móveis permitem uma navegação fácil nos dispositivos móveis com telas relativamente menores. Os layouts móveis usam estilos com guias ou de assistente para navegação de formulário. A aplicação de um layout móvel fornece um único layout para todo o formulário.
 
-Esse layout controla a navegação usando uma barra de navegação e um menu de navegação. A barra de navegação mostra o ícone **&lt;** e **>** para indicar as etapas de navegação **[!UICONTROL próximo]** e **[!UICONTROL anterior]** no formulário.
+Esse layout controla a navegação usando uma barra de navegação e um menu de navegação. A barra de navegação mostra o ícone **&lt;** e **>** para indicar as etapas de navegação **[!UICONTROL next]** e **[!UICONTROL previous]** no formulário.
 
 Os Layouts Móveis estão disponíveis no local `/libs/fd/af/layouts/mobile/`. Os seguintes layouts móveis estão disponíveis no Adaptive Forms, por padrão.
 
@@ -126,7 +128,8 @@ Esse layout, como o nome sugere, mostra apenas o menu de navegação e a barra d
 {{see-also}}
 
 
-<!-- ## Toolbar layouts {#toolbar-layouts}
+<!--
+ ## Toolbar layouts {#toolbar-layouts}
 
 A Toolbar Layout controls positioning and display of any action buttons that you add to your Adaptive Forms. The layout can be added at a form level or at a panel level.
 
@@ -156,6 +159,7 @@ For the Mobile layout, you can add action buttons using icons.
 
 ![Mobile fixed layout for toolbar](assets/toolbar_layout_mobile_fixed.png)
 
-Mobile fixed layout for toolbar-->
+Mobile fixed layout for toolbar
+-->
 
 

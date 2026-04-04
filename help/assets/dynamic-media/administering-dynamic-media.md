@@ -7,7 +7,7 @@ feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 5%
@@ -18,9 +18,10 @@ ht-degree: 5%
 
 {{work-with-dynamic-media}}
 
-[O Dynamic Media](https://business.adobe.com/br/products/experience-manager/assets/dynamic-media.html) ajuda você a gerenciar ativos fornecendo merchandising visual avançado e ativos de marketing sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, o Dynamic Media gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.
+[O Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ajuda você a gerenciar ativos fornecendo merchandising visual avançado e ativos de marketing sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, o Dynamic Media gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.
 
-<!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
+<!--
+ OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 >[!NOTE]
 >

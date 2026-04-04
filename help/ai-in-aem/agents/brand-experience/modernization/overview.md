@@ -2,9 +2,9 @@
 title: Visão geral do Agente de modernização de experiência
 description: Saiba como o Agente de modernização de experiência integra novos sites ao Edge Delivery Services com a ajuda da IA.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 84fed5a82d6c23cd51d9796eb644121c6ef06a29
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Saiba como o Agente de modernização de experiência integra sites no Edge Deli
 
 ## Introdução {#introduction}
 
-[Como parte do Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md), o Agente de Modernização de Experiência acelera a integração com o Edge Delivery Services, automatizando as migrações de sites e a configuração de sites essenciais.
+[Como parte da Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md), o Agente de Modernização de Experiência acelera a integração com o Edge Delivery Services, automatizando as migrações de sites e a configuração de sites essenciais.
 
 Ele combina [habilidades de criação e migração de sites](#creation-migration) para integração inicial de sites e [recursos de desenvolvimento de blocos](#block-development) para oferecer suporte à criação de sites e fluxos de trabalho de migração. Além disso, ele oferece o [Console de Modernização da Experiência](#console) como um ambiente de desenvolvimento assistido por IA baseado na Web, disponível diretamente para você. Embora os usuários possam operar o agente diretamente através desse console, os desenvolvedores mantêm controle total sobre o que é enviado.
 
@@ -78,7 +78,7 @@ Se você estiver interessado no modelo AOE da próxima migração:
 * Entre em contato com o representante da Adobe ou com a equipe de conta para iniciar o escopo e o agendamento.
 * A Adobe confirmará a qualificação, fará uma estimativa do compromisso e proporá um plano de compromisso.
 
-## Limitações   {#limitations}
+## Limitações {#limitations}
 
 Os seguintes casos de uso exigem esforço de implementação adicional, além das habilidades do Agente de modernização de experiência.
 

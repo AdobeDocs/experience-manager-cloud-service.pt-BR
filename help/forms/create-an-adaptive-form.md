@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2615'
 ht-degree: 72%
@@ -48,8 +48,10 @@ Você precisará do seguinte para criar um formulário adaptável:
    * Você também pode [criar um modelo Adaptive Forms (Componentes principais)](template-editor.md) do zero.
 
 * **Um tema de formulários adaptáveis**: um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes.  O modelo `Canvas` está incluído em todos os novos programas do AEM Forms as a Cloud Service.
-  <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
-    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
+  <!--
+     * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
+    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program.
+    -->
 
 * **Permissões**: adicionar usuários ao grupo [!DNL forms-users]. Os membros do grupo [!DNL forms-users] tem permissões para criar formulários adaptáveis. Para obter uma lista detalhada de grupos de usuários específicos de formulários, consulte [Grupos e permissões](forms-groups-privileges-tasks.md).
 
@@ -183,7 +185,8 @@ Você precisará do seguinte para criar um formulário adaptável:
 
    Com base no tipo de Formulário adaptável, os elementos de formulário presentes no esquema JSON do <!--XFA form template, XML schema or --> associado ou no Modelo de Dados de Formulário (FDM) são exibidos na guia **[!UICONTROL Objetos do Modelo de Dados]** do **[!UICONTROL Navegador de Conteúdo]** na barra lateral. Também é possível arrastar e soltar esses elementos para criar seu formulário adaptável.
 
-<!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
+<!--
+ ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
 [Data integration](data-integration.md) lets you integrate multiple data sources and bring their entities and services together to create a form data model. It is an extension of JSON schema. You can use a Form Data Model to create an Adaptive Form. The entities or data model objects configured in a Form Data Model are available as data model objects for form authoring. They are bound to respective data sources and used to prefill a form and write submitted data back to the respective data sources. You can also call services configured in a Form Data Model using Adaptive Form rules.
 
@@ -230,7 +233,8 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 >[!NOTE]
 >
->You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model2). -->
+>You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model2).
+-->
 
 ## Editar propriedades do modelo de formulário de um formulário adaptável {#edit-form-model-foundation-components}
 

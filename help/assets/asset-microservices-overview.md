@@ -6,7 +6,7 @@ feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 98%
@@ -32,7 +32,8 @@ Os microsserviços de ativos ajudam a evitar a necessidade de ferramentas e mét
 
 Um diagrama de arquitetura de alto nível descreve os principais elementos da ingestão, do processamento e do fluxo dos ativos no sistema.
 
-<!-- Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
+<!--
+ Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
@@ -74,7 +75,8 @@ Os workflows de pós-processamento são modelos de fluxo de trabalho regulares d
 
 O Adobe Experience Manager pode ser configurado para acionar automaticamente os fluxos de trabalho de pós-processamento após a conclusão do processamento de ativos.
 
-<!-- TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
+<!--
+ TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
 -->
 
 **Consulte também**
@@ -98,5 +100,5 @@ O Adobe Experience Manager pode ser configurado para acionar automaticamente os 
 >* [Introdução ao uso dos microsserviços de ativos](asset-microservices-configure-and-use.md)
 >* [Formatos de arquivo não suportados](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
->* Aplicativo de desktop do [[!DNL Experience Manager]  &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
+>* Aplicativo de desktop do [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR)
 >* [Documentação do Apache Oak sobre acesso binário direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

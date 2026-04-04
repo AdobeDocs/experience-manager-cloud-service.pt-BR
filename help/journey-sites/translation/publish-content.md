@@ -8,7 +8,7 @@ exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 75%
@@ -49,7 +49,7 @@ Portanto, o AEM é fisicamente separado em duas instâncias.
 1. A instância do **autor** é o sistema no qual os autores e administradores de conteúdo trabalham para criar e gerenciar conteúdo.
 1. A instância de **publicação** é o sistema que entrega o conteúdo para os consumidores.
 
-Depois que o conteúdo é criado na instância do autor, ele deve ser transferido para a instância de publicação para que esteja disponível para consumo. O processo de transferência do autor para a publicação é chamado de **publicação**.
+Depois que o conteúdo é criado na instância de criação, ele deve ser transferido para a instância de publicação para que esteja disponível para consumo. O processo de transferência do autor para a publicação é chamado de **publicação**.
 
 ## Publicar seu conteúdo traduzido {#publishing}
 
@@ -120,7 +120,7 @@ Você vê que um novo cartão de tarefa foi adicionado ao projeto. Neste exemplo
 
 ![Tarefa de tradução adicional adicionada](assets/additional-translation-job.png)
 
-É possível notar que as estatísticas listadas no novo cartão são diferentes. Isso ocorre porque o AEM reconhece o que mudou desde a última tradução e inclui apenas o conteúdo que deve ser traduzido. Isso inclui a nova tradução de conteúdo atualizado e a primeira tradução de conteúdo novo.
+É possível notar que as estatísticas listadas no novo cartão são diferentes. Isso ocorre porque o AEM reconhece o que mudou desde a última tradução e inclui somente o conteúdo que deve ser traduzido. Isso inclui a nova tradução de conteúdo atualizado e a primeira tradução de conteúdo novo.
 
 A partir deste ponto, você [inicia e gerencia seu trabalho de tradução da mesma forma que fazia com o original](translate-content.md#using-translation-project).
 

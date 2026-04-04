@@ -4,7 +4,7 @@ description: Saiba como baixar um ou mais ativos e suas representações no port
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1400'
 ht-degree: 0%
@@ -102,15 +102,19 @@ To download multiple assets and their renditions, execute the following steps:
 
     If any of the selected asset is a licensed asset, click the license of the asset in left pane to see its preview, which enables you to select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-    <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+    ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
+-->
 
-<!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
+<!--
+1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
 1. Optional: Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
 1. Select **I have read and accept all the terms and conditions mentioned above.** 
-1. Click **Download** to download the selected assets.-->
+1. Click **Download** to download the selected assets.
+-->
 
-<!---This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
+<!--
+-This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
 
 
 The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
@@ -128,13 +132,16 @@ The dialog box that displays depends on whether the download list includes expir
 
 1. Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
 
-1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.-->
+1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.
+-->
 <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
 
-<!---
+<!--
+-
 ### Download non-licensed Assets {#download-non-licensed-assets}
 
- To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
+ To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.
+-->
 
 ## Tipos de representações {#types-of-renditions}
 
@@ -148,7 +155,7 @@ Saiba mais sobre [exibir e gerenciar representações em [!DNL Experience Manage
 
 * [Representações dinâmicas](/help/assets/renditions.md#dynamic-renditions): as representações dinâmicas são versões personalizadas em tempo real de ativos para executar várias ações, como redimensionar imagens para diferentes resoluções de dispositivo ou recortar para ajustar várias taxas de proporção. Essas representações permitem oferecer experiências personalizadas e otimizadas para requisitos mais amplos. Representações dinâmicas de ativos são criadas no ambiente de autor [!DNL Adobe Experience Manager Assets]. Para obter informações sobre as etapas necessárias para habilitar representações dinâmicas, consulte [Habilitar representações dinâmicas](#enable-dynamic-media-renditions).
 
-* [Corte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): o corte inteligente se concentra exclusivamente na parte essencial de um ativo durante o processo de corte. O Corte inteligente do Dynamic Media aproveita a inteligência artificial fornecida pelo Adobe AI para rastrear o ponto de interesse, garantindo que nossos ativos tenham melhor aparência em todos os tamanhos de tela. O recorte inteligente [!DNL Adobe Experience Manager] exibe a largura e a altura das representações de um ativo junto com o título. Veja mais em [usando o Recorte inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [Corte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): o corte inteligente se concentra exclusivamente na parte essencial de um ativo durante o processo de corte. O Corte inteligente do Dynamic Media aproveita a inteligência artificial fornecida pelo Adobe AI para rastrear o ponto de interesse, garantindo que nossos ativos tenham melhor aparência em todos os tamanhos de tela. O recorte inteligente [!DNL Adobe Experience Manager] exibe a largura e a altura das representações de um ativo junto com o título. Veja mais em [usando o Recorte inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
   As representações de Recorte inteligente são exibidas e estão disponíveis para download somente se você tiver acesso ao [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). As representações de Recorte inteligente estão disponíveis somente para ativos de imagem.
 

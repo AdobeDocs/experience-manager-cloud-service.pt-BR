@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 74%
@@ -27,12 +27,13 @@ Após editar uma imagem, é possível salvá-la como uma nova versão. O control
 ## Editar imagem {#edit-image}
 
 Vá para a interface de exibição do Assets, usando o link - [Exibição do Assets](https://experience.adobe.com/#/assets) e selecionando o repositório correto. Para receber acesso, entre em contato com a administração da organização.
-Para obter informações de referência adicionais, consulte - [Introdução ao Adobe Experience Manager Assets View](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Entenda a interface de usuário do Assets View](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) e [Casos de uso do Assets View](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Para obter informações de referência adicionais, consulte - [Introdução ao Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Entenda a interface de usuário do Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) e [Casos de uso do Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
 >title="Adobe Express Integration"
->abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
+>abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."
+-->
 
 ### Editar imagem na exibição do Assets usando o Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
@@ -155,7 +156,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/br/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}

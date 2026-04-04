@@ -5,7 +5,7 @@ role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 1f9fb00c-c284-45c1-a8ba-51a59dbaee3d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 4%
@@ -20,7 +20,7 @@ As APIs do AEM Forms são estruturadas e acessadas por meio de dois consoles pri
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - O Adobe Developer Console é o gateway para APIs, Eventos, Tempo de Execução e App Builder da Adobe.
 
-* [AEM Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - O AEM Developer Console fornece acesso a detalhes, configurações, contas técnicas e credenciais de serviço no nível do ambiente para oferecer suporte a tarefas operacionais e de integração.
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - O AEM Developer Console fornece acesso a detalhes, configurações, contas técnicas e credenciais de serviço no nível do ambiente para oferecer suporte a tarefas operacionais e de integração.
 
 APIs diferentes suportam [métodos de autenticação](#authentication-methods) diferentes.
 
@@ -36,7 +36,8 @@ As APIs anteriores oferecem suporte à autenticação de servidor para servidor 
 <!--
 >[!NOTE]
 >
-> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.-->
+> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.
+ -->
 
 ## Visão geral da classificação de API
 

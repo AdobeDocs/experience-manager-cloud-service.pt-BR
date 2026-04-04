@@ -6,7 +6,7 @@ exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 16%
@@ -56,4 +56,4 @@ Nos projetos, os Componentes principais do AEM CIF e os componentes do projeto p
 
 ## Pesquisar
 
-A CIF fornece um [Componente principal de pesquisa](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) pronto para uso, que é uma experiência de pesquisa renderizada no lado do servidor com base na [API do Commerce GraphQL.](https://developer.adobe.com/commerce/webapi/graphql/) clientes do Commerce têm a opção de usar o [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=pt-BR). Siga este [link](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md) para saber mais sobre a integração CIF - Live Search.
+A CIF fornece um [Componente principal de pesquisa](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) pronto para uso, que é uma experiência de pesquisa renderizada no lado do servidor com base na [API do Commerce GraphQL.](https://developer.adobe.com/commerce/webapi/graphql/) clientes do Commerce têm a opção de usar o [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html). Siga este [link](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md) para saber mais sobre a integração CIF - Live Search.

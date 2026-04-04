@@ -2,9 +2,9 @@
 title: Agente de otimização de conteúdo
 description: Saiba como usar o agente de otimização de conteúdo para transformar como os usuários refinam e adaptam ativos aplicando instruções de linguagem natural para criar variações prontas para canal.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
-source-git-commit: 45c547a0a7372e5ebe23bd6b816798cd3b225872
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%

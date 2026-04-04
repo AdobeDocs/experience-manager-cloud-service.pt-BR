@@ -3,19 +3,19 @@ title: Personalização de temas do formulário adaptável usando o Editor de te
 description: Saiba como usar o Editor de temas para criar e personalizar temas visuais para Forms adaptável baseada em Componentes principais no Adobe Experience Manager.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: f1b318803b9b854ec2ce800670f6484799113599
+exl-id: 4a541c11-38e9-4dbc-8464-38be6b1ee94d
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1951'
 ht-degree: 1%
 
 ---
 
-
 # Personalização de temas do formulário {#customizing-form-themes}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service | Este artigo |
 
 O Editor de temas no Adobe Experience Manager (AEM) Forms é uma interface visual que permite criar e personalizar temas para o seu Forms adaptável sem escrever código manualmente. Um tema define a aparência dos componentes e painéis do formulário, incluindo cores do plano de fundo, estilos de fonte, bordas, dimensões e espaçamento. Ao aplicar um tema, os estilos especificados refletem nos componentes correspondentes e você pode reutilizar o mesmo tema em vários Forms adaptáveis.
@@ -113,14 +113,16 @@ Da esquerda para a direita, a barra de ferramentas fornece:
 * **D: Emulador**: Selecione um dispositivo ou ponto de interrupção (por exemplo, Desktop, Tablet ou Mobile) para visualizar o formulário nesse tamanho de tela. A visualização do formulário é redimensionada para corresponder ao ponto de interrupção selecionado. Todos os estilos definidos enquanto um ponto de interrupção está selecionado aplicam-se somente a esse ponto de interrupção, para que você possa definir estilos responsivos. Para obter detalhes, consulte [Estilo para telas de diferentes tamanhos](#styling-for-different-screen-sizes).
 * **E: Editar/Visualizar**: alternar entre dois modos. **Editar** é o padrão: você pode clicar em componentes na tela para selecioná-los e alterar seu estilo na barra lateral. **Visualizar** mostra o formulário como um usuário final o veria sem bordas de seleção, rótulos de componentes ou a barra lateral de estilos, para que você possa verificar como o formulário com tema é exibido e se comporta antes de publicar.
 
-<!--**3. Bottom of the sidebar: Simulate Error and Simulate Success**
+<!--
+**3. Bottom of the sidebar: Simulate Error and Simulate Success**
 
 When you style components by state (for example, Error or Success), you can preview that look without submitting the form. In AEM Forms as a Cloud Service, **Simulate Error** and **Simulate Success** are available at the **bottom of the left sidebar**. Scroll down in the sidebar if you don’t see them; they appear when you have a component selected and let you toggle the preview to match the Error or Success state.
 
 * **Simulate Error**: Show the form as if a field failed validation, so you can see your **[!UICONTROL Error]** state styling.
 * **Simulate Success**: Show the form as if validation passed, so you can see your **[!UICONTROL Success]** state styling.
 
-Toggle these on or off as you adjust styles for each state. For more on styling by state, see [Style by component state](#style-by-state).-->
+Toggle these on or off as you adjust styles for each state. For more on styling by state, see [Style by component state](#style-by-state).
+-->
 
 ### Estilo de um componente
 
@@ -151,7 +153,8 @@ Para aplicar um estilo:
 
    ![Aplicando estilo](/help/forms/assets/custom-theme-applying-style.png)
 
-<!--#### Style by component state {#style-by-state}
+<!--
+#### Style by component state {#style-by-state}
 
 Components can have different visual states (for example, default, focus, hover, disabled, error, success). You can style each state separately so the form looks correct during user interaction and validation.
 
@@ -162,7 +165,8 @@ Components can have different visual states (for example, default, focus, hover,
 
    ![State dropdown in sidebar for styling Default, Focus, Error, Success, and other states](/help/forms/assets/custom-theme-state-dropdown.png)
 
-The styles you define apply only when the component is in the selected state. For example, if you set a red border and red background for the **[!UICONTROL Error]** state, the field shows that styling when validation fails. If your environment supports it, use **Simulate Error** or **Simulate Success** at the bottom of the sidebar to preview how the component looks in those states without submitting the form.-->
+The styles you define apply only when the component is in the selected state. For example, if you set a red border and red background for the **[!UICONTROL Error]** state, the field shows that styling when validation fails. If your environment supports it, use **Simulate Error** or **Simulate Success** at the bottom of the sidebar to preview how the component looks in those states without submitting the form.
+-->
 
 ### Estilo no nível do formulário {#form-level-styling}
 
@@ -208,7 +212,7 @@ Você pode definir estilos diferentes para tamanhos de dispositivos diferentes p
 
    ![Emulador de dispositivo no Editor de Tema - régua e opções de dispositivo (Área de Trabalho, Tablet, iPad, Tela Menor)](/help/forms/assets/custom-theme-emulator.png)
 
-Portanto, o mesmo tema pode ter diferentes tamanhos de espaçamento ou estilos relacionados a layout por dispositivo, correspondendo ao [comportamento do Editor de temas do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=pt-BR) para estilo responsivo.
+Portanto, o mesmo tema pode ter diferentes tamanhos de espaçamento ou estilos relacionados a layout por dispositivo, correspondendo ao [comportamento do Editor de temas do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) para estilo responsivo.
 
 ## Usar substituições CSS avançadas {#use-advanced-css-overrides}
 

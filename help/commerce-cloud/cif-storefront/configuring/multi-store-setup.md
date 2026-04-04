@@ -12,7 +12,7 @@ thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
 index: false
-source-git-commit: 856442039fcd25ec675a6258d182f7a35f590c3c
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 12%
@@ -26,7 +26,7 @@ Os Componentes principais do CIF do Adobe Experience Manager (AEM) podem ser usa
 
 Uma apresentação em vídeo detalhando as opções para integrar várias visualizações da Adobe Commerce Store ao Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/32832/?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 Os recursos de Gerenciamento de vários sites do AEM para Live Copy e Language Copy são usados com a Commerce integration framework para gerenciar sites globalmente em regiões e localidades.
 
@@ -36,7 +36,7 @@ Para conectar um site do AEM e os Componentes principais do AEM CIF a uma visual
 
 ## Configuração {#configuration}
 
-1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em [Sites, lojas e visualizações da Adobe Commerce.](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR)
+1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em [Sites, lojas e visualizações da Adobe Commerce.](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
 1. Verifique se a conexão entre o AEM e o Adobe Commerce está funcionando.
 
@@ -62,7 +62,7 @@ Para conectar um site do AEM e os Componentes principais do AEM CIF a uma visual
 
 ## Recursos adicionais {#additional-resources}
 
-* [Sites, Lojas e Exibições do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR)
+* [Sites, Lojas e Exibições do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 * [Componentes principais da CIF do AEM — Configuração de várias lojas/sites](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [Usar o gerenciamento de vários sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=pt-BR)
-* [Reutilizar conteúdo: gerenciador de vários sites e Live Copy](/help/sites-cloud/administering/msm/overview.md)
+* [Usar o Gerenciador multisite](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [Reutilizar conteúdo: Gerenciador multisite e Live Copy](/help/sites-cloud/administering/msm/overview.md)

@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2274'
 ht-degree: 77%
@@ -243,9 +243,10 @@ Execute as seguintes etapas para editar um formulário de metadados:
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
-<!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
+<!--
+ TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
 
 * Select a metadata form and click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**.
@@ -253,7 +254,8 @@ To reuse an existing form to create a form, do one of these:
 * Click **[!UICONTROL Create]**, select **[!UICONTROL Use existing form structure as template]** option, and select an existing form. 
 -->
 
-<!-- TBD: Queries for PM and engg.
+<!--
+ TBD: Queries for PM and engg.
 
 Can we edit the existing metadata in any form?
 
@@ -268,7 +270,8 @@ Is there a detailed metadata tab. Where do the other details of an asset go?
 How can one search based strictly on the metadata. Similar to AEM Assets GQL queries.
 -->
 
-<!-- TBD: Link to related articles if any.
+<!--
+ TBD: Link to related articles if any.
 
 >[!MORELIKETHIS]
 >

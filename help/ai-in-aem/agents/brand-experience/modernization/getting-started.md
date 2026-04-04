@@ -2,9 +2,9 @@
 title: Introdução ao Agente de modernização de experiência
 description: Saiba mais sobre as primeiras etapas para se tornar produtivo rapidamente com o Agente de modernização de experiência usando o Console de modernização de experiência.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 22a8260bf760ca4501813348c90bfc96c74e2224
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1110'
 ht-degree: 0%

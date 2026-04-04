@@ -2,9 +2,9 @@
 title: Entrega do agente de modernização de experiência pela AOE
 description: Saiba mais sobre os Adobe Agentic Outcome Engineers (AOEs) e como eles podem ajudar você a ter sucesso com o Agente de modernização de experiência.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 75f73bb8-4d97-4c8f-b364-374a2a026b19
-source-git-commit: 8c3d14fd29b289bbd8538fd5d81b75bddbfa9082
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%
@@ -101,6 +101,6 @@ O sistema resultante é baseado no Edge Delivery Sites, que atinge consistenteme
 * **SEO:** Estrutura do Clean HTML otimizada para classificação do mecanismo de pesquisa
 * **Acessibilidade:** conformidade interna com padrões de acessibilidade
 
-## Limitações   {#limitations}
+## Limitações {#limitations}
 
 A entrega do Agente de modernização de experiência e da AOE não é perfeita para cada projeto. [Revise as limitações do agente.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)

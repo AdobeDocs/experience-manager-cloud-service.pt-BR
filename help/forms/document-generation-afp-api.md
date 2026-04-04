@@ -5,7 +5,7 @@ feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 10%
@@ -32,7 +32,8 @@ To support AFP output generation, the following OSGi bundles must be present and
 >[!NOTE]
 >
 > * If any bundle is inactive, resolve dependency issues or reinstall manually.
-> * To enable AFP generation, the `FT_FORMS-17887` toggle configurations must be set in AEM configuration manager.-->
+> * To enable AFP generation, the `FT_FORMS-17887` toggle configurations must be set in AEM configuration manager.
+ -->
 
 ## API de geração de AFP
 

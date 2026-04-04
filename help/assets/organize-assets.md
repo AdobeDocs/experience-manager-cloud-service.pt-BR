@@ -6,7 +6,7 @@ feature: Asset Management, Best Practices
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 6%
@@ -17,14 +17,15 @@ ht-degree: 6%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 Todos os ativos digitais, metadados e conteúdo dos documentos do Microsoft® Office e do PDF são extraídos e tornados pesquisáveis. A pesquisa permite uma filtragem sofisticada de ativos e respeita completamente as permissões apropriadas. Os metadados são abordados em detalhes em Metadados no Gerenciamento de ativos digitais.
 
 O [!DNL Experience Manager Assets] oferece suporte a várias formas de organização de conteúdo. Você pode organizá-los de maneira hierárquica usando pastas ou de maneira não ordenada e ad hoc, por exemplo, tags. Os usuários podem editar tags no Editor de ativos DAM, onde subativos, representações e metadados são exibidos.
 
-<!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
+<!--
+ Commenting to pull down the existing content before applying changes wrt CQDOC-15930
 ## Create folders {#create-folders}
 
 When organizing a collection of assets, for example, all *Nature* images, you can create folders to keep them together. You can use folders to categorize and organize your assets. [!DNL Assets] does not require you to organize assets in folders to work better.

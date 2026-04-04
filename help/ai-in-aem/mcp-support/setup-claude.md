@@ -2,8 +2,9 @@
 title: Configuração de Claude Antrópico com AEM MCP
 description: Saiba como configurar o Anthropic Claude para se conectar aos servidores MCP do AEM
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 8b77b992171623dcf7b065079d72992a5da3a01d
+role: User, Admin, Developer
+exl-id: 2b90b2b2-cdd0-4f1e-890f-2f58f578face
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%

@@ -2,14 +2,14 @@
 title: Guia de solicitação do Agente de modernização de experiência
 description: Este guia fornece dicas para o prompt eficaz do Agente de modernização de experiência e descreve o que suas habilidades fazem.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
+role: User, Admin, Developer
+exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2696'
 ht-degree: 0%
 
 ---
-
 
 # Guia de solicitação do Agente de modernização de experiência {#prompting-guide}
 

@@ -4,7 +4,7 @@ description: Trabalhar com coleções do seletor de ativos.
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 5%
@@ -28,13 +28,14 @@ As coleções de microfront-end no Seletor de ativos estão disponíveis imediat
 ![Coleções na exibição de painel](assets/collections-rail-modal-view.png)
 
 <!--
-Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).-->
+Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).
+-->
 
 Além disso, também é possível personalizar a seleção de ativos na guia Coleções. Para fazer isso, você pode personalizá-lo usando o `handleSelection`. Consulte [manipulação de seleção de Assets usando Esquema de Objeto](/help/assets/asset-selector-customization.md#handling-selection).
 
 ## Exibir coleções {#view-collections}
 
-O Seletor de ativos permite exibir coleções em uma exibição de lista ![1&rbrace; ou em uma exibição de grade &#x200B;](assets/do-not-localize/list-view.png)3&rbrace;. ![](assets/do-not-localize/grid-view.png) Consulte [tipos de exibição no Seletor de ativos](overview-asset-selector.md#types-of-view).
+O Seletor de ativos permite exibir coleções em uma exibição de lista ![1} ou em uma exibição de grade ](assets/do-not-localize/list-view.png)3}. ![](assets/do-not-localize/grid-view.png) Consulte [tipos de exibição no Seletor de ativos](overview-asset-selector.md#types-of-view).
 
 ## Arraste e solte ativos na coleção {#collection-drag-and-drop}
 

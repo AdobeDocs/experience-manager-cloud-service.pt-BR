@@ -7,7 +7,7 @@ role: User
 mini-toc-levels: 2
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3224'
 ht-degree: 1%
@@ -39,7 +39,7 @@ E agora, obtenha uma melhor pontuação do Google Core Web Vital para LCP (Large
 >* Largura de banda de rede
 >* DPR (Relação de pixels do dispositivo)
 >
->Para saber como é fácil usar o Instantâneo, reproduza o [Vídeo de treinamento do Instantâneo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos e 17 segundos).
+>Para saber como é fácil usar o Instantâneo, reproduza o [Vídeo de treinamento do Instantâneo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos e 17 segundos).
 
 A Smart Imaging se beneficia do aumento de desempenho de estar totalmente integrado ao melhor serviço premium de CDN (Content Delivery Network) da Adobe. Este serviço encontra a rota de Internet ideal entre servidores, redes e pontos de correspondência. Ele encontra uma rota que tem a menor latência e a menor taxa de perda de pacotes em vez de usar a rota padrão na Internet.
 
@@ -58,12 +58,14 @@ Compare WebP e AVIF com PNG, você pode observar uma redução de 84% no tamanho
 
 Consulte também [Otimização de imagem com formatos de imagem de próxima geração (WebP e AVIF)](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
-<!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
+<!--
+ HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
 * Large variety of devices with different form factors and high-resolution displays.
 * Constrained network bandwidth.
 
-In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
+In terms of images, the goal is to serve the best quality images as efficiently as possible.
+-->
 
 **Vantagens da criação inteligente de imagens**
 
@@ -87,7 +89,7 @@ Ativar a Conversão de Formato de Navegador anexando `bfc=on` à URL da imagem c
 
 Você pode desativar o Smart Imaging anexando `bfc=off` ao URL da imagem.
 
-Consulte também [bfc](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) na API de disponibilização e renderização de imagens do Dynamic Media.
+Consulte também [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) na API de disponibilização e renderização de imagens do Dynamic Media.
 
 ### Sobre a otimização da proporção de pixels do dispositivo {#dpr}
 
@@ -105,7 +107,8 @@ Atualmente, a densidade de pixels da exibição vem dos valores de cabeçalho da
 >[!NOTE]
 >
 >* Você pode usar `dpr=on,dprValue` mesmo que a configuração da DPR no nível da empresa esteja desativada.
->* Devido à otimização do DPR, quando a imagem resultante é maior que a configuração MaxPix Dynamic Media, a largura MaxPix é sempre reconhecida ao manter a proporção da imagem. -->
+>* Devido à otimização do DPR, quando a imagem resultante é maior que a configuração MaxPix Dynamic Media, a largura MaxPix é sempre reconhecida ao manter a proporção da imagem.
+>-->
 
 | Tamanho da imagem solicitada | Valor da Proporção de pixels do dispositivo (dpr) | Tamanho da imagem entregue |
 |---|---|---|
@@ -212,24 +215,30 @@ Por exemplo, digamos que uma predefinição de imagem especifique um formato JPE
 
 +++
 
-<!-- OLD VERSION BELOW AS PER CQDOC-22085>
+<!--
+ OLD VERSION BELOW AS PER CQDOC-22085>
 Yes. Smart Imaging works with your existing image presets and observes all your image settings. What changes is the image format, or the quality setting, or both. For format conversion, Smart Imaging maintains full visual fidelity as defined by your image preset settings, but at a smaller file size.
 
-For example, suppose that an image preset is defined with JPEG format, size 500 x 500, quality=85, and unsharp mask=0.1,1,5. When Smart Imaging detects that a user is on a Chrome browser, the image is converted to WebP format, with size 500 x 500. And, unsharp mask=0.1,1,5 is at a WebP quality that matches a JPEG quality of 85 as close as possible. The footprint of that WebP conversion is compared with the JPEG, and the smaller of the two is returned. -->
+For example, suppose that an image preset is defined with JPEG format, size 500 x 500, quality=85, and unsharp mask=0.1,1,5. When Smart Imaging detects that a user is on a Chrome browser, the image is converted to WebP format, with size 500 x 500. And, unsharp mask=0.1,1,5 is at a WebP quality that matches a JPEG quality of 85 as close as possible. The footprint of that WebP conversion is compared with the JPEG, and the smaller of the two is returned.
+-->
 
-<!-- QUESTION BELOW WAS REMOVED AS PER CQDOC-22085
+<!--
+ QUESTION BELOW WAS REMOVED AS PER CQDOC-22085
 
 +++**Do I have to change any URLs, image presets, or deploy new code on my site?**
 
 No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add code to your website to detect a user's browser. All of this functionality is handled automatically.
 
-<!-- Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. It is all handled automatically.
+<!--
+ Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. It is all handled automatically.
 
 In case you must configure a new custom domain to use Smart Imaging, the URLs must be updated to reflect this custom domain.
 
-To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) -->
+To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging)
+-->
 
-<!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. 
+<!--
+ OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. 
 
 -->
 
@@ -280,7 +289,7 @@ Ao criar o caso de suporte, especifique quais recursos de Imagem inteligente voc
 
       * Listar todos os domínios relevantes, como *`company.com`* ou *`mycompany.scene7.com`*
       * A Imagem inteligente é compatível com domínios genéricos e personalizados.
-      * Para identificar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e entre na conta da sua empresa.
+      * Para identificar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e entre na conta da sua empresa.
 
          1. Navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]**.
          1. Procure o campo **[!UICONTROL Nome do Servidor Publicado]** para confirmar seu domínio.
@@ -451,11 +460,14 @@ Sim. O Smart Imaging agora oferece suporte à conversão com perdas com base no 
 
 
 
-<!-- ## If Smart Imaging manages the quality settings, are there minimums and maximums I can set? For example, is it possible to set "no lower than 60" and "no greater than 80 quality"? {#minimum-maximum}
+<!--
+ ## If Smart Imaging manages the quality settings, are there minimums and maximums I can set? For example, is it possible to set "no lower than 60" and "no greater than 80 quality"? {#minimum-maximum}
 
-There is no such provisioning ability in the current Smart Imaging. -->
+There is no such provisioning ability in the current Smart Imaging.
+-->
 
-<!-- ## Sometimes a JPEG image is returned to Chrome instead of a WebP image. Why does that change happen? {#jpeg-webp}
+<!--
+ ## Sometimes a JPEG image is returned to Chrome instead of a WebP image. Why does that change happen? {#jpeg-webp}
 
 Smart Imaging determines if the conversion is beneficial or not. It returns the new image only if the conversion results in a smaller file size with comparable quality.
 

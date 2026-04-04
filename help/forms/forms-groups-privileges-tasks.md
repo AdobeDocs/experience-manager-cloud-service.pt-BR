@@ -5,7 +5,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 22%
@@ -16,10 +16,10 @@ ht-degree: 22%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service | Este artigo |
 
-Você pode [criar grupos](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=pt-BR#accessing) e atribuir políticas e [usuários](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=pt-BR#accessing) aos grupos. Essas políticas controlam as permissões dos usuários que fazem parte do grupo.
+Você pode [criar grupos](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) e atribuir políticas e [usuários](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) aos grupos. Essas políticas controlam as permissões dos usuários que fazem parte do grupo.
 
 Depois de configurar o as a Cloud Service [!DNL AEM Forms], os grupos listados na tabela abaixo, como [!DNL forms-users] e forms-power-user, estarão automaticamente disponíveis para atribuição:
 
@@ -39,7 +39,8 @@ Depois de configurar o as a Cloud Service [!DNL AEM Forms], os grupos listados n
      <li>Criar temas</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
@@ -58,7 +59,8 @@ Depois de configurar o as a Cloud Service [!DNL AEM Forms], os grupos listados n
      <li>Review submissions</li> 
      <li>Approve or reject submissions</li> 
     </ul> </td> 
-  </tr> -->
+  </tr>
+  -->
   <tr>
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
@@ -73,28 +75,35 @@ Depois de configurar o as a Cloud Service [!DNL AEM Forms], os grupos listados n
      <li>Criar e modificar um modelo de dados de formulário</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>cm-agent-users</td> 
    <td>
     <ul> 
      <li>Access Correspondence Management letters or interactive communications using Agent UI</li> 
     </ul> </td> 
-  </tr> --> 
-  <!-- <tr>
+  </tr>
+  -->
+  <!--
+   <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
-    <ul> -->
+    <ul>
+    -->
     <!-- <li>Create an inbox application</li>  -->
-    <!-- <li>Create a workflow model</li> 
+    <!--
+     <li>Create a workflow model</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>[!DNL workflow-users]</td> 
    <td>
     <ul> 
-     <li>Use AEM inbox applications<br /> -->
+     <li>Use AEM inbox applications<br />
+     -->
      <!-- 
-     <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>  -->
+     <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>
+     -->
     </ul> </td> 
   </tr>
   <tr>

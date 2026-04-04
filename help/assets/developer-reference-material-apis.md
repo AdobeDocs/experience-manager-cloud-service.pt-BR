@@ -6,7 +6,7 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1876'
 ht-degree: 4%
@@ -31,7 +31,7 @@ O [!DNL Assets] as a [!DNL Cloud Service] fornece várias APIs para interagir pr
 | × | Não suportado. Não use. |
 | - | Não disponível |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | APIs Java [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Serviço de computação do ativo](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=pt-BR) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=pt-BR#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR) |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | APIs Java [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Serviço de computação do ativo](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Binário original** |  |  |  |  |  |  |
 | Criar original | ✓ | × | - | × | × | - |
@@ -495,7 +495,8 @@ Os seguintes modelos de fluxo de trabalho técnico são substituídos por micros
 * `com.day.cq.dam.core.process.AssetOffloadingProcess`
 * `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
 
-<!-- Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
+<!--
+ Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
 
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
@@ -531,7 +532,8 @@ Os seguintes modelos de fluxo de trabalho técnico são substituídos por micros
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 -->
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
+<!--
+ PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
