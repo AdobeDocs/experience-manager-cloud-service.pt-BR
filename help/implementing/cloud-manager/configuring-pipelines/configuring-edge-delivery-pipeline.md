@@ -68,7 +68,7 @@ Antes de começar a implantar seu código, defina as configurações de pipeline
 
    * **Adicionar um pipeline de Edge Delivery da página Pipelines**
 
-      1. No painel à esquerda, em **Programa**, clique em **![ícone de Fluxo de Trabalho ou em ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) Pipelines**.
+      1. No painel à esquerda, em **Programa**, clique em **![ícone de Fluxo de Trabalho ou em &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) Pipelines**.
       1. Na página Pipelines, próximo ao canto superior direito, clique em **Adicionar pipeline** > **Adicionar pipeline de Edge Delivery**.
 
          ![A página Pipelines com o botão Adicionar Pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinespage-add-ed-pipeline.png)

@@ -249,7 +249,7 @@ Agora, você tem uma experiência aprimorada ao filtrar arquivos. A funcionalida
 
 Aproveite benefícios como acesso mais rápido a arquivos relevantes e uma interface do usuário mais intuitiva, tornando sua experiência de pesquisa mais estável e eficiente.
 
-![filtro de pesquisa rápida ](/help/release-notes/assets/guides/repository-filter-search-quick.png)
+![filtro de pesquisa rápida &#x200B;](/help/release-notes/assets/guides/repository-filter-search-quick.png)
 
 *Use os filtros rápidos para procurar arquivos DITA e não DITA.*
 

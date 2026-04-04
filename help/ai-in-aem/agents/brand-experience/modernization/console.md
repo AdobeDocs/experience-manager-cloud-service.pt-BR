@@ -163,7 +163,7 @@ A visualização de configurações permite gerenciar configurações básicas d
 
 * **O Project** permite que você exiba e edite as configurações do projeto, como a personalização da URL da biblioteca.
 * O **Suporte** permite solicitar ajuda à equipe de suporte da AEM.
-* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [ possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [&#x200B; possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * O token requer os seguintes escopos somente leitura:
       * `file_content:read`
       * `file_metadata:read`

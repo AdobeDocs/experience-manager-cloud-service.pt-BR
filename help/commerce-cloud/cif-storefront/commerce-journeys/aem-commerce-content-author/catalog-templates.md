@@ -95,7 +95,7 @@ Adicione qualquer imagem na parte superior da página.
 
 O modelo pode ser visualizado com qualquer categoria/produto. Abra **Informações da Página** e selecione **Exibir com categoria/produto**. Selecione o produto/categoria no seletor para obter uma visualização com este produto/categoria. Selecione a categoria **Comprar a aparência** para obter uma visualização do modelo atualizado.
 
-![criar modelo ](assets/create-template-picker.png)
+![criar modelo &#x200B;](assets/create-template-picker.png)
 
 Agora é necessário atribuir esse template à categoria específica. Abra as propriedades no menu **Informações da página** e alterne para a guia Comércio. Clique no ícone de pasta para selecionar a categoria **Comprar a aparência** no seletor de categorias. É possível atribuir várias categorias a um modelo e também incluir subcategorias ativando a caixa de seleção.
 
