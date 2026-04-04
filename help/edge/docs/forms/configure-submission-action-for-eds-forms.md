@@ -150,7 +150,7 @@ Configure o Filtro referenciador para permitir domínios de site específicos do
 
 3. Implantar a configuração por meio do Cloud Manager
 
-Para obter a configuração detalhada do Filtro referenciador OSGi, consulte o Guia do [Filtro referenciador](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
+Para obter a configuração detalhada do Filtro referenciador OSGi, consulte o Guia do [Filtro referenciador](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter).
 
 #### &#x200B;3. Questões do CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)
 
@@ -180,10 +180,10 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 >
 >Substitua `main--abc--adobe.aem.live` e `main--abc1--adobe.aem.live` pelos domínios de site reais. Cada site hospedado no mesmo repositório requer uma entrada de configuração do CORS separada.
 
-Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 
-Para habilitar o CORS para o seu ambiente de desenvolvimento local, consulte o artigo [Entender o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
+Para habilitar o CORS para o seu ambiente de desenvolvimento local, consulte o artigo [Entender o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing).
 
 <!--
 #### 4. CDN Redirect Rules

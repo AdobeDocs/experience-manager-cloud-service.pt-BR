@@ -86,7 +86,7 @@ A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em 
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms}
 
-* Agora você pode usar o serviço Conversão automática de formulários para [converter o PDF forms em francês, alemão e espanhol](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) para formulários adaptáveis.
+* Agora você pode usar o serviço Conversão automática de formulários para [converter o PDF forms em francês, alemão e espanhol](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=pt-BR&#language-specific-meta-model) para formulários adaptáveis.
 * Adição de um painel separado ao editor de modelo para exibir erros relacionados aos componentes de formulário adaptáveis. Ele ajuda a consolidar todos os erros de formulário adaptável em um local e a reduzir o tempo de resolução.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#beta-features-forms}
@@ -100,7 +100,7 @@ A API `com.day.cq.dam.api.collection.SmartCollection` não está disponível em 
 
 * **Documento de registro baseado em acroforma**: você também pode [usar o Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-br) como um modelo para Documento de registro além do modelo de formulário baseado em XFA.
 
-* **Conector do armazenamento de dados do Microsoft® Azure**: agora é possível [conectar o Modelo de dados do formulário ao Armazenamento Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulários adaptáveis no Microsoft® Azure Storage as a BLOB.
+* **Conector do armazenamento de dados do Microsoft® Azure**: agora é possível [conectar o Modelo de dados do formulário ao Armazenamento Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=pt-BR). Ele permite recuperar e armazenar dados de formulários adaptáveis no Microsoft® Azure Storage as a BLOB.
 
 ## Complemento CIF {#cloud-services-cif}
 
@@ -192,7 +192,7 @@ A data de lançamento do Cloud Acceleration Manager é 15 de julho de 2021.
 
 ### Novidades {#what-is-new-cam}
 
-O Cloud Acceleration Manager é um aplicativo baseado em nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, começando pelo planejamento até a ativação do Cloud Service. Prepare sua equipe para a migração bem-sucedida com práticas recomendadas, dicas, documentação e ferramentas da Adobe para ajudar em cada fase da jornada no AEM as Cloud Service. Saiba mais [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html).
+O Cloud Acceleration Manager é um aplicativo baseado em nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, começando pelo planejamento até a ativação do Cloud Service. Prepare sua equipe para a migração bem-sucedida com práticas recomendadas, dicas, documentação e ferramentas da Adobe para ajudar em cada fase da jornada no AEM as Cloud Service. Saiba mais [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=pt-BR).
 
 >[!NOTE]
 >

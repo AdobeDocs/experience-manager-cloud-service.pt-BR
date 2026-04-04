@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->Você também pode assistir a [este clipe](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) para obter uma introdução rápida em vídeo sobre como usar o Navegador do Repositório para depurar o AEM as a Cloud Service.
+>Você também pode assistir a [este clipe](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=pt-BR) para obter uma introdução rápida em vídeo sobre como usar o Navegador do Repositório para depurar o AEM as a Cloud Service.
 
 ## Introdução {#introduction}
 
@@ -33,7 +33,7 @@ Acessível a partir do [AEM as a Cloud Service Developer Console](/help/implemen
 
 As seguintes condições devem ser atendidas para acessar o AEM as a Cloud Service Developer Console ou o Navegador do repositório
 
-Para acessar o AEM as a Cloud Service Developer Console, consulte [Acesso ao Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
+Para acessar o AEM as a Cloud Service Developer Console, consulte [Acesso ao Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
 Para acessar o Navegador do repositório, os requisitos são os mesmos do AEM as a Cloud Service Developer Console (especificados acima). Para exibir o conteúdo do Navegador do repositório de uma instância específica:
 
@@ -41,7 +41,7 @@ Para acessar o Navegador do repositório, os requisitos são os mesmos do AEM as
 
 * Instâncias de publicação: os usuários com o Perfil de Produto de Usuários do AEM para a **Instância de publicação** podem exibir o navegador do repositório com acesso mínimo de leitura. Sem esse conjunto de perfis de produto, os usuários navegarão como um usuário anônimo e alguns caminhos não serão exibidos devido a permissões limitadas.
 
-Para obter mais informações sobre como configurar permissões de usuário, consulte a [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
+Para obter mais informações sobre como configurar permissões de usuário, consulte a [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=pt-BR).
 
 ### Iniciar o navegador do repositório {#launching-the-repository-browser}
 

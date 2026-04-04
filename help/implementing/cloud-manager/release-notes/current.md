@@ -34,7 +34,7 @@ A próxima versão está planejada para sexta-feira, 7 de maio de 2026.
 
   Consulte a documentação [Usar MCP com AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
-  Consulte o tutorial [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#).
+  Consulte o tutorial [Cloud Manager MCP Server](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#).
 
 * **Compilações mais rápidas com cache de módulo**
 
