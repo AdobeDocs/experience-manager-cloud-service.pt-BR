@@ -5,7 +5,7 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 1f71c905fadd51d95fc5292ce95903c46895ec94
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 98%
@@ -25,7 +25,7 @@ Listas planas de vocabulários controlados podem se tornar incontroláveis com o
 
 Você pode criar um namespace no nível raiz e criar uma estrutura hierárquica de subtags no namespace. Por exemplo, você pode criar um namespace `Activities` no nível raiz e ter as tags `Cycling`, `Hiking` e `Running` no namespace. É possível incluir as subtags `Clothing` e `Shoes` em `Running`.
 
-![Gerenciamento de marcação](assets/tags-hierarchy.png)
+![Gerenciamento de tags](assets/tags-hierarchy.png)
 
 A marcação oferece muitos benefícios, como:
 
@@ -199,7 +199,7 @@ A visualização Assets oferece a capacidade de importar tags bloqueadas de uma 
 1. Escolha o arquivo CSV do seu dispositivo. Clique em **[!UICONTROL selecionar um arquivo]** para navegar até o arquivo do seu dispositivo. Como alternativa, você pode arrastar e soltar o arquivo CSV do seu dispositivo.
 1. Clique em **[!UICONTROL Fazer upload]**. As tags do arquivo CSV são listadas na lista de tags bloqueadas.
 
-   ![Importar lista de tags bloqueadas](assets/import-blocked-tags.png)
+   ![Importar lista de tags bloqueadas](assets/import-csv-new.png)
 
 Caso deseje baixar um modelo de tags bloqueadas, siga as etapas abaixo:
 

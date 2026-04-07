@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: eaaf86a24a83b6516959e66a010ca5df2e060123
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 90%
@@ -32,7 +32,7 @@ Depois de selecionar os arquivos, você verá uma caixa de diálogo de confirma�
 
 Depois que todos os arquivos forem enfileirados, clique em **[!UICONTROL Fazer upload]**.
 
-![Fazer upload de arquivos e pastas](assets/upload-browse-files-folders.png)
+![Fazer upload de arquivos e pastas](assets/upload-files.png)
 
 *Figura: antes de fazer upload dos ativos selecionados, é possível adicionar ou remover ativos da fila.*
 
@@ -48,13 +48,13 @@ Para acompanhar o progresso do upload, clique em **[!UICONTROL Progresso do uplo
 
 Para exibir um subconjunto de ativos com base no progresso ou status do upload, use o filtro na barra lateral **[!UICONTROL Progresso do upload]**. Os vários filtros permitem exibir todos os ativos, uploads concluídos, uploads em andamento, ativos enfileirados para upload, uploads pausados, ativos duplicados e ativos que falharam no upload.
 
-![Filtrar o progresso do upload com base no seu status](assets/filter-upload-progress.png)
+![Filtrar o progresso do upload com base no seu status](assets/filter-progress.png)
 
 *Figura: filtre os ativos da fila de upload com base no status ou progresso do upload.*
 
 Assim que o upload dos ativos é concluído, o [!DNL Assets view] processa os ativos para gerar miniaturas e processar metadados. Para muitos ativos, o processamento leva algum tempo. Se não vir uma miniatura e uma mensagem de processamento for exibida na miniatura do espaço reservado, verifique a pasta novamente após alguns minutos. Durante o processamento, entre outras coisas, o [!DNL Assets view] gera as representações, adiciona tags inteligentes e indexa os detalhes do ativo para pesquisa.
 
-![Os ativos são processados após o upload e o bloco exibe o processamento](assets/upload-processing.png)
+![Os ativos são processados após o upload e o bloco exibe o processamento](assets/upload-process.png)
 
 *Figura: os ativos carregados exibem o processamento no bloco que são processados.*
 
@@ -70,17 +70,17 @@ O [!DNL Assets view] processa os ativos carregados em tempo quase real e gera re
 
 Se o upload de um ativo compatível falhar por algum motivo, clique em **[!UICONTROL Tentar novamente]** no painel [!UICONTROL Progresso do upload].
 
-![Tentar novamente um upload com falha](assets/upload-retry.png)
+![Tentar novamente um upload com falha](assets/upload-failed.png)
 
 *Figura: tente novamente se um arquivo compatível não for carregado por algum motivo.*
 
 Se você tentar fazer upload de ativos duplicados, os ativos não serão carregados até que você confirme explicitamente o upload. No início, os ativos duplicados são marcados como uploads com falha. Para resolver, basta criar uma versão, excluir e substituir os ativos existentes ou criar uma cópia duplicada renomeando o ativo. Você pode resolver uma falha de ativo de cada vez ou fazer isso em massa para todas as duplicatas com falha de uma só vez.
 
-![Gerenciar ativos duplicados, um de cada vez](assets/uploads-manage-duplicates.png)
+![Gerenciar ativos duplicados, um de cada vez](assets/duplicate-new.png)
 
 *Figura: para ativos duplicados que não são carregados por padrão, resolva o problema um ativo de cada vez.*
 
-![Gerenciar todos os uploads com falha em massa](assets/upload-progress-manage-failed-uploads.png)
+![Gerenciar todos os uploads com falha em massa](assets/manage-duplicate.png)
 
 *Figura: para ativos duplicados que não são carregados por padrão, resolva os problemas de todos os ativos de uma só vez.*
 
@@ -98,7 +98,7 @@ Os usuários podem excluir ativos ou pastas individuais que não são mais neces
 
 * Use a opção disponível na miniatura de um ativo ou de uma pasta.
 
-  ![Opções na miniatura de ativos para gerenciar um ativo](assets/options-on-thumbnail.png)
+  ![Opções na miniatura de ativos para gerenciar um ativo](assets/delete-new.png)
 
   *Figura: as ações para arquivos e pastas estão disponíveis no ativo ou no bloco de pastas.*
 
@@ -112,4 +112,4 @@ Os usuários podem excluir ativos ou pastas individuais que não são mais neces
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
