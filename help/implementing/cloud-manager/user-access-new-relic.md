@@ -52,7 +52,7 @@ Para um programa recém-criado, uma subconta do New Relic One é criada para voc
    1. No painel lateral esquerdo, clique em **Cloud Manager**.
 1. Selecione a organização desejada.
 1. No console **Meus Programas**, clique em um programa para o qual você deseja gerenciar seus usuários do New Relic One.
-1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
+1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 1. Na página Ambientes, próximo ao canto superior direito, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Ativar New Relic**.
 
    ![Ativar New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-activate.png)
@@ -76,7 +76,7 @@ Você pode definir os usuários da sua subconta do New Relic One associada ao se
    1. No painel lateral esquerdo, clique em **Cloud Manager**.
 1. Selecione a organização desejada.
 1. No console **Meus Programas**, clique em um programa para o qual você deseja gerenciar seus usuários do New Relic One.
-1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
+1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 1. Na página Ambientes, próximo ao canto superior direito, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Gerenciar Usuários**.
 
    ![Gerenciar usuários do New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-manage-users.png)
@@ -129,7 +129,7 @@ Depois de [ativar sua conta do New Relic](#activate-account), você poderá abri
    1. No painel lateral esquerdo, clique em **Cloud Manager**.
 1. Selecione a organização desejada.
 1. No console **Meus Programas**, clique em um programa para o qual você deseja abrir o New Relic One.
-1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
+1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 1. Na página Ambientes, próximo ao canto superior direito, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Abrir o New Relic**.
 
    ![Abrir New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-open-new-relic.png)
