@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: e035c1c27f652af231034588eb1359354182dcb0
+source-git-commit: 881e7788c2ae8fd01fbe2c0af08228fd96179733
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 31%
+source-wordcount: '562'
+ht-degree: 19%
 
 ---
 
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 25194, lançada publicamente em quinta-feira, 1 de abril de 2026. A versão de manutenção anterior era 24678.
 
-A ativação de recursos do 2026.4.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2026.4.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 >[!NOTE]
 >
@@ -41,6 +41,17 @@ A ativação de recursos do 2026.4.0 fornece o conjunto completo de recursos par
 * ASSETS-65187: visualização de CSV na nuvem quando os dados da coluna contêm vírgulas de escape.
 * ASSETS-63441: Verifique se todos os usuários têm permissão para ler a configuração do Assets Omnisearch.
 * SITES-40095: Editor de metadados: o fragmento de conteúdo local faz referência a mais de 10 entradas.
+
+#### Guias do AEM {#guides-25194}
+
+* GUIDES-38412 : Ao editar um arquivo do Schematron `(*.sch)` e usar o recurso localizar e substituir, o painel localizar e substituir aparece parcialmente fora da tela na parte inferior, impedindo o acesso aos campos e controles de entrada.
+* GUIDES-37806: Quando o mesmo tópico é reutilizado em vários mapas com diferentes predefinições condicionais, a publicação do mapa mais recente no Salesforce substitui o conteúdo do tópico, resultando na exibição de dados incorretos para os usuários de mapas publicados anteriormente.
+* GUIDES-39394: Quando uma imagem gerenciada inicialmente como um ativo específico de idioma com uma versão específica (por exemplo, em `/en/`) é movida para uma pasta global com uma versão atualizada e a exportação da linha de base é executada, a nova linha de base continua a fazer referência a versões desatualizadas específicas do idioma dessa imagem, resultando em uma falha na exportação da linha de base.
+* GUIDES-39054: Ao criar uma linha de base dinâmica, o Editor às vezes fica sem responder devido a várias solicitações de API simultâneas, fazendo com que todas as outras operações travem.
+* GUIDES-37781: Ao atribuir um usuário a uma tarefa de revisão, a lista suspensa lista todos os usuários em vez de apenas aqueles associados aos projetos selecionados, resultando em opções de usuário inválidas.
+* GUIDES-39385: Ao abrir um Relatório para um mapa, há um atraso no carregamento do painel Filtros.
+
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problemas conhecidos {#known-issues-25194}
 
@@ -63,4 +74,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.30.4 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
