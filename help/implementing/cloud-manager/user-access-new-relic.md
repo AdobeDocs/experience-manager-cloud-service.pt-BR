@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 5f25d73203fea21122a8f77b82fcfa6383561001
+source-git-commit: 090a890e25ee45fb8a46255c097f243a24b00756
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 21%
@@ -52,7 +52,7 @@ Para um programa recém-criado, uma subconta do New Relic One é criada para voc
    1. No painel lateral esquerdo, clique em **Cloud Manager**.
 1. Selecione a organização desejada.
 1. No console **Meus Programas**, clique em um programa para o qual você deseja gerenciar seus usuários do New Relic One.
-1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
+1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 1. Na página Ambientes, próximo ao canto superior direito, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Ativar New Relic**.
 
    ![Ativar New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-activate.png)
@@ -76,7 +76,7 @@ Você pode definir os usuários da sua subconta do New Relic One associada ao se
    1. No painel lateral esquerdo, clique em **Cloud Manager**.
 1. Selecione a organização desejada.
 1. No console **Meus Programas**, clique em um programa para o qual você deseja gerenciar seus usuários do New Relic One.
-1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
+1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 1. Na página Ambientes, próximo ao canto superior direito, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Gerenciar Usuários**.
 
    ![Gerenciar usuários do New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-manage-users.png)
@@ -129,7 +129,7 @@ Depois de [ativar sua conta do New Relic](#activate-account), você poderá abri
    1. No painel lateral esquerdo, clique em **Cloud Manager**.
 1. Selecione a organização desejada.
 1. No console **Meus Programas**, clique em um programa para o qual você deseja abrir o New Relic One.
-1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
+1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 1. Na página Ambientes, próximo ao canto superior direito, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Abrir o New Relic**.
 
    ![Abrir New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-open-new-relic.png)
@@ -185,7 +185,7 @@ Depois que uma execução de pipeline compatível for concluída, você poderá 
 
    ![Alterar indicadores do rastreador no gráfico de tempo de transações da Web](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
 
-1. Clique em qualquer evento de alteração na tabela para abrir uma exibição detalhada.
+1. Clique em qualquer evento de alteração no gráfico para abrir uma exibição detalhada.
 
    ![Painel de atributos de implantação com a URL do deepLink realçada](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>Exibição detalhada de um evento de alteração.</i>
 
