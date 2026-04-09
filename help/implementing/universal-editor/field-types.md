@@ -4,9 +4,9 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 7e01f5832d4ea56495b35c32689882b33d49d520
+source-git-commit: 486b192f4ac427156028bc50bb41364f8690724a
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: '1659'
 ht-degree: 8%
 
 ---
@@ -126,7 +126,7 @@ A seguir estão os tipos de componentes possíveis para usar em campos de render
 | [Conteúdo do AEM](#aem-content) | `aem-content` |
 | [Booleano](#boolean) | `boolean` |
 | [Grupo de caixas de seleção](#checkbox-group) | `checkbox-group` |
-| [Container](#container) | `container` |
+| [Contêiner](#container) | `container` |
 | [Fragmento de conteúdo](#content-fragment) | `aem-content-fragment` |
 | [Data e hora](#date-time) | `date-time` |
 | [Fragmento de experiência](#experience-fragment) | `aem-experience-fragment` |
@@ -623,7 +623,13 @@ Um tipo de componente de seleção múltipla apresenta vários itens para seleç
 
 #### Número {#number}
 
-Um tipo de componente numérico permite a entrada de um número. Ela oferece tipos de validação adicionais.
+Um tipo de componente numérico permite a entrada de um número. Ela oferece uma configuração adicional.
+
+| Configuração | Tipo de valor | Descrição | Obrigatório |
+|---|---|---|---|
+| `valueFormat` | `string` | O tipo de número a ser armazenado pode ser `long` (padrão) ou `double`. | Não |
+
+Também oferece tipos de validação adicionais.
 
 | Tipo de validação | Tipo de valor | Descrição | Obrigatório |
 |---|---|---|---|

@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2026.04.02
-description: Estas são as notas de versão do Universal Editor de 2026.04.02.
+title: Notas de versão do Universal Editor 2026.04.09
+description: Estas são as notas de versão do Universal Editor de 2026.04.09.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
+source-git-commit: a5f3b703706beab106591477372328e45f881b44
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '138'
 ht-degree: 1%
 
 ---
 
 
-# Notas de versão do Universal Editor 2026.04.02 {#release-notes}
+# Notas de versão do Universal Editor 2026.04.09 {#release-notes}
 
-Estas são as notas de versão da versão de 2 de abril de 2026 do Editor universal.
+Estas são as notas de versão da versão de 9 de abril de 2026 do Editor universal.
 
 >[!TIP]
 >
@@ -26,8 +26,6 @@ Estas são as notas de versão da versão de 2 de abril de 2026 do Editor univer
 
 ## Novidades {#what-is-new}
 
-* [Uma opção configurável](/help/implementing/universal-editor/configure-rte.md#special-characters) para [adicionar caracteres especiais](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) foi adicionada à barra de ferramentas do editor de rich text (RTE).
-
-## Outras melhorias {#other-improvements}
-
-* Os campos de tag não são mais retornados incorretamente como vários campos pelo adaptador OpenAPI.
+* [A opção de adição de imagem na barra de ferramentas do editor de rich text (RTE)](/help/implementing/universal-editor/configure-rte.md#image) agora tem suporte para [criação de projetos e conteúdo persistente no AEM as a Cloud Service.](https://www.aem.live/docs/aem-authoring)
+* [O painel de propriedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) agora pode ser recolhido quando você navega do editor de volta para [a tela inicial.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
+   * Entre em contato com o Atendimento ao cliente da Adobe se desejar usar esse recurso.
