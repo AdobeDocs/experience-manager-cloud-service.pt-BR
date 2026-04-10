@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 090a890e25ee45fb8a46255c097f243a24b00756
+source-git-commit: 93d22e32dc2f21bddccf7ad1305aab7d22b8345a
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 21%
@@ -52,7 +52,7 @@ Para um programa recém-criado, uma subconta do New Relic One é criada para voc
    1. No painel lateral esquerdo, clique em **Cloud Manager**.
 1. Selecione a organização desejada.
 1. No console **Meus Programas**, clique em um programa para o qual você deseja gerenciar seus usuários do New Relic One.
-1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
+1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 1. Na página Ambientes, próximo ao canto superior direito, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Ativar New Relic**.
 
    ![Ativar New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-activate.png)
@@ -76,7 +76,7 @@ Você pode definir os usuários da sua subconta do New Relic One associada ao se
    1. No painel lateral esquerdo, clique em **Cloud Manager**.
 1. Selecione a organização desejada.
 1. No console **Meus Programas**, clique em um programa para o qual você deseja gerenciar seus usuários do New Relic One.
-1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
+1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 1. Na página Ambientes, próximo ao canto superior direito, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Gerenciar Usuários**.
 
    ![Gerenciar usuários do New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-manage-users.png)
@@ -86,7 +86,7 @@ Você pode definir os usuários da sua subconta do New Relic One associada ao se
    * Insira o nome e o sobrenome do usuário que deseja adicionar
    * Digite o endereço de email associado
    * Clique no ![ícone Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Adicionar**. Repita essa etapa para cada usuário que deseja adicionar.
-   * Clique em ![Excluir ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) para remover um usuário.
+   * Clique no ![ícone Fechar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) para remover um usuário.
 
    ![Adicionar usuários](assets/newrelic-add-users.png)
 
@@ -129,7 +129,7 @@ Depois de [ativar sua conta do New Relic](#activate-account), você poderá abri
    1. No painel lateral esquerdo, clique em **Cloud Manager**.
 1. Selecione a organização desejada.
 1. No console **Meus Programas**, clique em um programa para o qual você deseja abrir o New Relic One.
-1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
+1. No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados ou em ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 1. Na página Ambientes, próximo ao canto superior direito, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Abrir o New Relic**.
 
    ![Abrir New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-open-new-relic.png)
