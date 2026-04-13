@@ -6,9 +6,9 @@ feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 69f83da6eee02e0b1d116d71c5d0b022c91e3ba0
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1260'
 ht-degree: 1%
 
 ---
@@ -200,7 +200,7 @@ No CRXDE Lite, faça o seguinte:
 1. Navegue até a pasta `<sync-folder>/_CSS/_OOTB` na pasta de sincronização do Dynamic Media (por exemplo, `/content/dam/_CSS/_OOTB`).
 1. Localize o nó de metadados do ativo problemático (por exemplo, `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
 1. Verifique a presença de `dam:scene7*` propriedades. Se o ativo foi sincronizado e publicado com êxito, você vê que o conjunto `dam:scene7FileStatus` é para **PublishComplete**.
-1. Tente solicitar o trabalho artístico diretamente da Dynamic Media, concatenando os valores das seguintes propriedades e literais de string:
+1. Tente solicitar o trabalho artístico diretamente do Dynamic Media, concatenando os valores das seguintes propriedades e literais de string:
 
    * `dam:scene7Domain`
    * `"is/content"`
@@ -220,6 +220,34 @@ Se o trabalho artístico de ativos de amostra ou predefinição do visualizador 
 1. Em Cloud Services, navegue até a página Configuração do Dynamic Media e abra a caixa de diálogo de configuração do Dynamic Media - S7.
 1. Não fazer alterações, selecione **Salvar**.
 Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ativos de amostra, o CSS de predefinição do visualizador e o trabalho artístico.
+
+### Problema: Erro #2046 ao abrir a guia Largura de banda e Armazenamento {#error-2046-bandwidth-storage}
+
+**Como depurar**
+
+![Erro #2046 exibido na guia Largura de Banda e Armazenamento do Dynamic Media Classic](assets/2046-error.png)
+
+* Os usuários encontram o erro #2046 ao abrir a guia Largura de banda e armazenamento no aplicativo de desktop do Dynamic Media Classic (Scene7).
+* O problema é causado por um certificado de assinatura digital expirado em uma RSL em cache (Biblioteca compartilhada de tempo de execução) usada pela estrutura do Adobe AIR.
+* A falha ocorre durante a revalidação do certificado local.
+
+**Solução**
+
+Limpe o cache local para forçar o Adobe AIR a baixar a RSL (Biblioteca compartilhada de tempo de execução) atualizada.
+
+**macOS**
+
+1. Vá até:
+   `~/Library/Caches/Adobe/Flash Player/AssetCache/<folder>/`
+2. Excluir todos os arquivos `.swz` e `.heu`.
+
+**Windows**
+
+1. Vá até:
+   `%APPDATA%\Adobe\Flash Player\AssetCache\<folder>\`
+2. Excluir todos os arquivos dentro da pasta.
+
+Reinicie o aplicativo depois de limpar o cache.
 
 ### Problema: a Visualização da imagem não está sendo carregada na criação das predefinições do visualizador {#image-preview-not-loading}
 
