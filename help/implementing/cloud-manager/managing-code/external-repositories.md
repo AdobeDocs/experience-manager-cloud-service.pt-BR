@@ -4,9 +4,9 @@ description: Saiba como adicionar um repositório externo no Cloud Manager. O Cl
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: bf76cb67dea88b2412a10996cb077f5c884ec7bf
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2442'
 ht-degree: 23%
 
 ---
@@ -110,7 +110,7 @@ Consulte também [Gerenciar tokens de acesso](/help/implementing/cloud-manager/m
 | Opção de token de acesso | Descrição |
 | --- | --- |
 | **Usar token de acesso já existente** | Se você já forneceu um token de acesso ao repositório para sua organização e tem acesso a vários repositórios, você pode selecionar um token. Use a lista suspensa **Nome do token** para escolher o token que deseja aplicar ao repositório. Caso contrário, adicione um novo token de acesso. |
-| **Adicionar novo token de acesso** | <ul><li>No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<li>Crie um token de acesso do repositório usando a [documentação do Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Permissões necessárias para o PAT (token de acesso pessoal) do Bitbucket<br>Essas permissões permitem que o Cloud Manager acesse o conteúdo do repositório, gerencie solicitações de pull e configure ou reaja a eventos de webhook.<br>Ao criar a senha de aplicativo no Bitbucket, verifique se ela inclui as seguintes permissões de senha de aplicativo necessárias:<ul><li>Repositório (somente leitura)<li>Solicitações de pull (leitura e gravação)<li>Webhooks (leitura e gravação)</li></li></ul></li></li></ul></ul></ul><ul><li>No campo **Token de acesso**, cole o token que acabou de criar. |
+| **Adicionar novo token de acesso** | <ul><li>No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<li>Crie um token de acesso do repositório usando a [documentação do Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Permissões necessárias para o Token de acesso do repositório de buckets.<br>Essas permissões permitem que o Cloud Manager acesse o conteúdo do repositório, gerencie solicitações de pull e configure ou reaja a eventos de webhook.<br>Ao criar o token de acesso do repositório no Bitbucket, verifique se ele inclui as seguintes permissões necessárias:<ul><li>Repositório (somente leitura)<li>Solicitações de pull (leitura e gravação)<li>Webhooks (leitura e gravação)</li></li></ul></li></li></ul></ul></ul><ul><li>No campo **Token de acesso**, cole o token que acabou de criar. |
 
 Após a validação, o repositório externo estará pronto para ser usado e vinculado a um pipeline.
 
