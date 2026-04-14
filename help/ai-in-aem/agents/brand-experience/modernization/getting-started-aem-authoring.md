@@ -4,9 +4,9 @@ description: Saiba mais sobre as etapas de configuração específicas necessár
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 7b880e6d776e2eb9c53cef4552b876b051bdc7ba
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,8 @@ Para projetos de criação do AEM usando o Editor universal, a preparação do A
 ## Criar seu repositório de projetos do Edge Delivery Services {#create-repo}
 
 1. Use o repositório [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) como seu modelo (não o modelo padrão do Edge Delivery Services).
+1. Verifique se `fstab.yaml` aponta para o host do AEM, o proprietário do Git e o repositório Git e confirme as alterações em `main` antes de conectar os aplicativos GitHub.
+   * Consulte [Configurar fonte de conteúdo](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) para obter instruções.
 1. Siga o [tutorial do Universal Editor](https://www.aem.live/developer/ue-tutorial) para configurar seu repositório.
    * Pare quando for solicitado que você crie um site no AEM.
 1. Excluir `paths.json` e confirmar essa alteração em `main`.
@@ -35,8 +37,6 @@ Para projetos de criação do AEM usando o Editor universal, a preparação do A
 1. Clique em **Criar**.
    * Você é redirecionado para a página Sites.
    * Atualize a página se o novo site não for exibido imediatamente.
-1. Se você ainda não tiver feito isso ao [configurar seu repositório](#create-repo), atualize o `fstab.yaml` para que ele aponte para seu host AEM, proprietário Git e repositório Git e confirme essas alterações no `main`.
-   * Consulte [Configurar fonte de conteúdo](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) para obter instruções.
 
 ## Continue com as etapas padrão de introdução {#continue}
 
