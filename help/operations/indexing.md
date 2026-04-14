@@ -4,10 +4,10 @@ description: Saiba mais sobre Pesquisa e indexação de conteúdo no AEM as a Cl
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 54168b195bd234b0ca7932ca52c11056558dc53d
 workflow-type: tm+mt
-source-wordcount: '2906'
-ht-degree: 16%
+source-wordcount: '3321'
+ht-degree: 14%
 
 ---
 
@@ -20,8 +20,8 @@ Com o AEM as a Cloud Service, a Adobe está passando de um modelo centrado em in
 Abaixo está uma lista das principais alterações em comparação ao AEM 6.5 e versões anteriores:
 
 1. Os usuários não têm mais acesso ao Gerenciador de índice de uma única instância do AEM para depurar, configurar ou manter a indexação. Ele só será usado para desenvolvimento e implantações locais.
-1. Os usuários não alteram índices em uma única instância do AEM, nem precisam se preocupar mais com verificações de consistência ou reindexação.
-1. Em geral, as alterações de índice são iniciadas antes de entrar na produção para não contornar gateways de qualidade nos pipelines de CI/CD do Cloud Manager e não afetar os KPIs de negócios em produção.
+1. Os usuários não alteram índices em uma única instância do AEM, nem precisam mais se preocupar com verificações de consistência ou reindexação.
+1. Em geral, as alterações de índice são iniciadas antes de entrar na produção, para não contornar gateways de qualidade nos pipelines de CI/CD do Cloud Manager e não afetar os KPIs de negócios em produção.
 1. Todas as métricas relacionadas, incluindo o desempenho da pesquisa na produção, estão disponíveis para clientes no tempo de execução para fornecer uma visualização integral sobre os tópicos de pesquisa e indexação.
 1. Os clientes podem configurar alertas de acordo com suas necessidades.
 1. Os SREs estão monitorando a integridade do sistema 24 horas por dia, 7 dias por semana, e são tomadas medidas o mais rápido possível.
@@ -40,7 +40,6 @@ Limitações:
 >
 >Para obter mais detalhes sobre indexação e consultas do Oak, incluindo uma descrição detalhada de recursos avançados de pesquisa e indexação, consulte a [documentação do Apache Oak](https://jackrabbit.apache.org/oak/docs/query/query.html).
 
-
 ## Como usar {#how-to-use}
 
 As definições de índice podem ser categorizadas em três casos de uso principais, da seguinte maneira:
@@ -51,6 +50,202 @@ As definições de índice podem ser categorizadas em três casos de uso princip
 
 Para ambos os itens 1 e 2 acima, é necessário criar uma definição de índice como parte da base de código personalizada no cronograma de lançamento respectivo do Cloud Manager. Para obter mais informações, consulte a documentação [Implantação no AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
+Se for necessária uma alteração na configuração do índice, verifique se a sua configuração está em conformidade com as diretrizes fornecidas na seção [Configuração do projeto](#project-configuration). Faça as adaptações necessárias de acordo.
+
+## Configuração do projeto
+
+As etapas para incorporá-lo ao seu projeto são as seguintes:
+
+1. É altamente recomendável usar a versão >= `1.3.2` do Jackrabbit `filevault-package-maven-plugin`. Se necessário, atualize a versão no nível superior `pom.xml`:
+
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           ...
+           <version>1.3.2</version>
+       ...
+   </plugin>
+   ```
+
+2. Adicionar o seguinte ao nível superior `pom.xml`:
+
+   ```xml
+   <jackrabbit-packagetype>
+       <options>   
+           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+       </options>
+   </jackrabbit-packagetype>
+   ```
+
+   Esta é uma amostra do arquivo `pom.xml` de nível superior do projeto com as configurações acima incluídas:
+
+   Nome do arquivo: `pom.xml`
+
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           ...
+           <version>1.3.2</version>
+           <configuration>
+               ...
+               <validatorsSettings>
+                   <jackrabbit-packagetype>
+                       <options>
+                           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+                       </options>
+                   </jackrabbit-packagetype>
+                   ...
+               ...
+   </plugin>
+   ```
+
+3. Em `ui.apps/pom.xml` e `ui.apps.structure/pom.xml`, é necessário habilitar as opções `allowIndexDefinitions` e `noIntermediateSaves` em `filevault-package-maven-plugin`. Habilitar `allowIndexDefinitions` permite definições de índice personalizadas, enquanto `noIntermediateSaves` garante que as configurações sejam adicionadas com precisão.
+
+   Nomes de arquivo: `ui.apps/pom.xml` e `ui.apps.structure/pom.xml`
+
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           <configuration>
+               <allowIndexDefinitions>true</allowIndexDefinitions>
+               <properties>
+                   <cloudManagerTarget>none</cloudManagerTarget>
+                   <noIntermediateSaves>true</noIntermediateSaves>
+               </properties>
+       ...
+   </plugin>
+   ```
+
+4. Adicionar um filtro para `/oak:index` em `ui.apps.structure/pom.xml`:
+
+   ```xml
+   <filters>
+       ...
+       <filter><root>/oak:index</root></filter>
+   </filters>
+   ```
+
+>[!TIP]
+>
+>Para obter mais detalhes sobre a estrutura de pacote necessária para o AEM as a Cloud Service, consulte [Estrutura de Projeto do AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+
+## Gerenciamento simplificado de índice usando o índice de comparação
+
+A maioria dos índices do AEM pode ser configurada usando o Gerenciamento simplificado de índice.
+Isso oferece uma maneira simples de personalizar índices prontos para uso (OOTB) e definir índices personalizados usando um arquivo JSON.
+
+>[!TIP]
+>
+>Há uma ferramenta online que ajuda a configurar os índices do AEM: [Ferramentas de Indexação do Oak](https://oak-indexing.github.io/oakTools/index.html). Ela tem [uma seção sobre Gerenciamento simplificado de índice](https://oak-indexing.github.io/oakTools/simplified.html) com um guia passo a passo e ferramentas adicionais para ajudar a converter o índice personalizado nesse novo formato.
+
+Limitações: o Gerenciamento simplificado de índice não está disponível atualmente para índices que incluem `/apps`, `/libs`.
+Ele pode ser usado para todos os índices que têm uma propriedade `includedPaths`, por exemplo `/content`.
+Para índices sem uma propriedade `includedPaths`, ou onde `includedPaths` contém `/apps` ou `/libs`,
+considere alterar a consulta ou usar o modo Configurações de índice herdado abaixo.
+
+O Gerenciamento simplificado de índice é capaz de personalizar os índices prontos para uso (OOTB) existentes e adicionar índices totalmente personalizados.
+Com o gerenciamento simplificado de índice, não há necessidade de copiar definições ou definir versões explicitamente.
+As personalizações de definição de índice são mescladas automaticamente com o índice pronto para uso mais recente,
+e uma nova versão do índice será criada quando necessário.
+
+Para a maioria dos índices, é possível criar índices personalizados e personalizações em índices existentes usando um pacote `diff.index`.
+Para configurar esse índice, use o seguinte guia passo a passo.
+O exemplo a seguir personaliza o índice `damAssetLucene`
+e introduz um índice totalmente personalizado ao mesmo tempo.
+O processo é o seguinte:
+
+1. Crie uma nova pasta no diretório `ui.apps` chamada `ui.apps/src/main/content/jcr_root/_oak_index/diff.index`.
+
+2. Adicione um arquivo de configuração `.content.xml` (esta é uma configuração de espaço reservado necessária, não uma definição de índice regular) com o seguinte conteúdo: `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/.content.xml`
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?><jcr:root
+       xmlns:jcr="http://www.jcp.org/jcr/1.0"
+       xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+       jcr:primaryType="nt:unstructured"
+       type="lucene" includedPaths="/same" queryPaths="/same" async="async">
+   <diff.json jcr:primaryType="nt:file"/></jcr:root>
+   ```
+
+3. Crie um arquivo de texto `diff.json` com o conteúdo a seguir.
+Neste exemplo, personalizamos o índice pronto para uso `damAssetLucene`
+para indexar adicionalmente a propriedade chamada `test`. Também definimos
+um índice totalmente personalizado chamado `acme.testIndex` que indexa a propriedade `testing` nos nós `nt:unstructured`:
+
+   `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/diff.json`
+
+   ```json
+   {
+       "damAssetLucene": {
+           "indexRules": {
+               "dam:Asset": {
+                   "properties": {
+                       "test": {
+                           "name": "test",
+                           "propertyIndex": true
+                       }
+                   }
+               }
+           }
+       },
+       "acme.testIndex": {
+           "async": [ "async" ],
+           "compatVersion": 2,
+           "evaluatePathRestrictions": true,
+           "includedPaths": [ "/content" ],
+           "queryPaths": [ "/content" ],
+           "selectionPolicy": "tag",
+           "tags": [ "testing" ],
+           "type": "lucene",
+           "indexRules": {
+               "nt:unstructured": {
+                   "properties": {
+                       "testing": {
+                           "name": "testing",
+                           "propertyIndex": true
+                       }
+                   }
+               }
+           }
+       }
+   }
+   ```
+
+4. Adicionar uma entrada ao filtro FileVault em `ui.apps/src/main/content/META-INF/vault/filter.xml`:
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <workspaceFilter version="1.0">
+       ...
+       <filter root="/oak:index/diff.index"/> 
+   </workspaceFilter>
+   ```
+
+Depois de aplicar as alterações, implante o novo aplicativo usando o Cloud Manager.
+Essa implantação inicia dois trabalhos que adicionam (e mesclam, se necessário)
+as definições de índice para autor e publicação.
+Antes da mudança, os repositórios subjacentes são reindexados usando as definições de índice atualizadas.
+
+## Configurações de índice herdadas
+
+Índices que não podem ser configurados usando o Gerenciamento simplificado de índice
+é necessário usar o modo de configuração herdado.
+
+A Configuração do Índice Herdado se aplica somente a índices que não podem ter uma propriedade `includedPaths`
+ou que tenham uma propriedade que precise cobrir `/apps`, `/libs` ou `/`.
+Alguns índices prontos para uso abrangem esses caminhos:
+
+* `cqPageLucene`: Se você precisa personalizar este índice,
+considere migrar suas consultas para usar `cqPageContent`,
+que tem um valor `includedPaths` de `/content` e uma marca.
+* `ntBaseLucene`: A prática recomendada é evitar a alteração deste índice,
+e, em vez disso, usar um índice totalmente personalizado com um prefixo como `acme.`,
+que abrange apenas os caminhos necessários.
+Consulte a seção Gerenciamento simplificado de índice para obter detalhes.
+
 ## Nomes de índice {#index-names}
 
 Uma definição de índice pode se enquadrar em uma das seguintes categorias:
@@ -59,7 +254,7 @@ Uma definição de índice pode se enquadrar em uma das seguintes categorias:
 
 2. Personalização de um índice OOTB. Para personalizar um índice OOTB, anexe `-custom-` seguido de um número. Por exemplo, `/oak:index/damAssetLucene-8-custom-1` é a personalização do índice OOTB `/oak:index/damAssetLucene-8`. Normalmente, uma personalização é uma cópia do índice OOTB, além de propriedades adicionais que precisam ser indexadas.
 
-3. Índice totalmente personalizado: true pode criar um índice totalmente novo do zero. Esses índices também precisam terminar com `-custom-` e um número de versão. Além disso, para evitar conflitos de nomenclatura, use um prefixo no nome do índice. Por exemplo: `/oak:index/acme.product-1-custom-2`, onde `acme.` é o prefixo.
+3. Índice totalmente personalizado: você pode criar um índice totalmente novo do zero. Esses índices também precisam terminar com `-custom-` e um número de versão. Além disso, para evitar conflitos de nomenclatura, use um prefixo no nome do índice. Por exemplo: `/oak:index/acme.product-1-custom-2`, onde `acme.` é o prefixo.
 
 >[!NOTE]
 >
@@ -79,7 +274,7 @@ Para um índice totalmente personalizado, prepare um novo pacote de definição 
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
-Conforme mencionado nas seções de limitações, o `type` da definição de índice personalizado sempre deve ser definido como `lucene`, mesmo que a definição de índice extraída usando o Gerenciador de Pacotes seja de um tipo diferente (por exemplo, `elasticsearch`).
+Conforme mencionado nas seções de limitações, o `type` da definição de índice personalizado sempre deve ser definido como `lucene` mesmo se a definição de índice extraído usando o Gerenciador de Pacotes for de um tipo diferente (por exemplo, `elasticsearch`).
 A propriedade `async` também deve ser alterada caso a definição do índice extraído esteja definida como `elastic-async`. A propriedade `async` deve ser definida como uma das seguintes opções: `[async]`, `[async,nrt]` ou `[fulltext-async]` para a definição de índice personalizado.
 
 <!--
@@ -167,88 +362,6 @@ Nome do arquivo: `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-
    ```
 
 5. Verifique se a sua configuração está de acordo com as diretrizes fornecidas na seção [Configuração do Projeto](#project-configuration). Faça as adaptações necessárias de acordo.
-
-## Configuração do projeto
-
-É altamente recomendável usar a versão >= `1.3.2` do Jackrabbit `filevault-package-maven-plugin`. As etapas para incorporá-lo ao seu projeto são as seguintes:
-
-1. Atualizar a versão no nível superior `pom.xml`:
-
-   ```xml
-   <plugin>
-       <groupId>org.apache.jackrabbit</groupId>
-           <artifactId>filevault-package-maven-plugin</artifactId>
-           ...
-           <version>1.3.2</version>
-       ...
-   </plugin>
-   ```
-
-2. Adicionar o seguinte ao nível superior `pom.xml`:
-
-   ```xml
-   <jackrabbit-packagetype>
-       <options>   
-           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-       </options>
-   </jackrabbit-packagetype>
-   ```
-
-   Esta é uma amostra do arquivo `pom.xml` de nível superior do projeto com as configurações acima incluídas:
-
-   Nome do arquivo: `pom.xml`
-
-   ```xml
-   <plugin>
-       <groupId>org.apache.jackrabbit</groupId>
-           <artifactId>filevault-package-maven-plugin</artifactId>
-           ...
-           <version>1.3.2</version>
-           <configuration>
-               ...
-               <validatorsSettings>
-                   <jackrabbit-packagetype>
-                       <options>
-                           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-                       </options>
-                   </jackrabbit-packagetype>
-                   ...
-               ...
-   </plugin>
-   ```
-
-3. Em `ui.apps/pom.xml` e `ui.apps.structure/pom.xml`, é necessário habilitar as opções `allowIndexDefinitions` e `noIntermediateSaves` em `filevault-package-maven-plugin`. Habilitar `allowIndexDefinitions` permite definições de índice personalizadas, enquanto `noIntermediateSaves` garante que as configurações sejam adicionadas com precisão.
-
-   Nomes de arquivo: `ui.apps/pom.xml` e `ui.apps.structure/pom.xml`
-
-   ```xml
-   <plugin>
-       <groupId>org.apache.jackrabbit</groupId>
-           <artifactId>filevault-package-maven-plugin</artifactId>
-           <configuration>
-               <allowIndexDefinitions>true</allowIndexDefinitions>
-               <properties>
-                   <cloudManagerTarget>none</cloudManagerTarget>
-                   <noIntermediateSaves>true</noIntermediateSaves>
-               </properties>
-       ...
-   </plugin>
-   ```
-
-4. Adicionar um filtro para `/oak:index` em `ui.apps.structure/pom.xml`:
-
-   ```xml
-   <filters>
-       ...
-       <filter><root>/oak:index</root></filter>
-   </filters>
-   ```
-
-Depois de adicionar a nova definição de índice, implante o novo aplicativo usando o Cloud Manager. Essa implantação inicia dois trabalhos, responsáveis por adicionar (e mesclar, se necessário) as definições de índice ao MongoDB e ao Azure Segment Store para criação e publicação, respectivamente. Antes da mudança, os repositórios subjacentes passam por reindexação com as definições de índice atualizadas.
-
->[!TIP]
->
->Para obter mais detalhes sobre a estrutura de pacote necessária para o AEM as a Cloud Service, consulte [Estrutura de Projeto do AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Gerenciamento de Índice usando Implantações Móveis {#index-management-using-rolling-deployments}
 
@@ -360,7 +473,7 @@ A nova versão do aplicativo usa a seguinte configuração (alterada):
 
 ### Desfazer uma alteração {#undoing-a-change}
 
-Às vezes, é necessário desfazer uma modificação em uma definição de índice, por exemplo, devido a um erro ou porque a modificação não é mais necessária. Por exemplo, se a definição de índice `damAssetLucene-8-custom-3` contiver um erro, talvez você queira reverter para a definição anterior, `damAssetLucene-8-custom-2`. Para fazer isso, crie um novo índice chamado `damAssetLucene-8-custom-4` que seja uma cópia do índice anterior, `damAssetLucene-8-custom-2.`
+Às vezes, é necessário desfazer uma modificação em uma definição de índice, por exemplo, devido a um erro ou porque a modificação não é mais necessária. Por exemplo, se a definição de índice `damAssetLucene-8-custom-3` contiver um erro, talvez você queira reverter para a definição anterior, `damAssetLucene-8-custom-2`. Para fazer isso, crie um novo índice chamado `damAssetLucene-8-custom-4` que seja uma cópia do índice anterior, `damAssetLucene-8-custom-2`.
 
 ### Remover um índice {#removing-an-index}
 
