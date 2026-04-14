@@ -4,9 +4,9 @@ description: Saiba mais sobre as primeiras etapas para se tornar produtivo rapid
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: c4b1da46f6739f43d38bc05584c246371340a966
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,16 @@ Parabéns! O conteúdo e os estilos migrados agora estão ativos no ambiente de 
 ![Conteúdo de visualização publicado](assets/published-preview.png)
 
 Se você enviou seu código para uma ramificação diferente de `main`, a visualização aberta da Criação de documentos não mostrará os estilos. Altere para a ramificação atualizando o URL da visualização e você poderá ver seus estilos.
+
+## Resolução de problemas {#troubleshooting}
+
+### Incluir na lista de permissões Endereços IP {#allowlist-ip-addresses}
+
+Se o site estiver protegido por um firewall ou por restrições de acesso, você poderá incluir na lista de permissões os seguintes endereços IP para que os serviços de back-end possam eliminar o site:
+
+* `34.228.136.112`
+* `54.90.51.39`
+* `3.224.194.242`
 
 ## Recursos adicionais {#additional-resources}
 
