@@ -169,7 +169,7 @@ Se você fizer uma alteração em qualquer valor em qualquer seção, clique em 
 * **Permissões do agente** - Permitem que o agente acesse as opções de configuração
    * **Permitir que o LLM acesse admin.hlx.page em meu nome** - Quando habilitado, o assistente de IA pode buscar configurações de site e metadados da Adobe Experience Manager usando suas credenciais IMS.
    * **Token IMS personalizado** - Você pode fornecer um token IMS personalizado para usar em vez do token de sessão padrão.
-* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [ possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [&#x200B; possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * O token requer os seguintes escopos somente leitura:
       * `file_content:read`
       * `file_metadata:read`
