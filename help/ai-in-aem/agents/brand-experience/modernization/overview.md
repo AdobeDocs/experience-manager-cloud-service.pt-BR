@@ -4,9 +4,9 @@ description: Saiba como o Agente de modernização de experiência integra novos
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,10 @@ Introdução ao Console de modernização de experiência!
 
 * Se você estiver modernizando seu site com a Criação de Documentos de destino, [comece aqui.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
 * Se você estiver modernizando seu site com a criação de páginas no AEM, [comece aqui.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+
+## Habilidade de documentação do projeto {#project-documentation}
+
+Reconhecendo a natureza de entrega de projeto, [a habilidade de documentação do projeto](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md) pode gerar automaticamente documentação abrangente após a conclusão do trabalho de criação e desenvolvimento.
 
 ## Entrega do Engenheiro de Resultados Agenciados (AOE) {#aoe-delivery}
 

@@ -4,9 +4,9 @@ description: Guia de referência para a interface e os recursos do Console de mo
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1220'
 ht-degree: 0%
 
 ---
@@ -157,13 +157,19 @@ Ao enviar alterações, você deve ter as primeiras alterações preparadas para
 
 ## Exibição de configurações {#settings-view}
 
-A visualização de configurações permite gerenciar configurações básicas do console.
+A visualização de configurações permite gerenciar configurações básicas do console e é dividida nas seções a seguir.
 
 ![Modo de exibição de configurações](assets/settings-view.png)
 
+Se você fizer uma alteração em qualquer valor em qualquer seção, clique em **Salvar** para salvar essas alterações na seção individual.
+
 * **O Project** permite que você exiba e edite as configurações do projeto, como a personalização da URL da biblioteca.
-* O **Suporte** permite solicitar ajuda à equipe de suporte da AEM.
-* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [&#x200B; possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+   * **URL da biblioteca** - Esta URL aponta para um arquivo library.json que define os blocos disponíveis, suas variações e o conteúdo do exemplo.
+   * **URL base do site** - A URL de origem do site que está sendo migrado
+* **Permissões do agente** - Permitem que o agente acesse as opções de configuração
+   * **Permitir que o LLM acesse admin.hlx.page em meu nome** - Quando habilitado, o assistente de IA pode buscar configurações de site e metadados da Adobe Experience Manager usando suas credenciais IMS.
+   * **Token IMS personalizado** - Você pode fornecer um token IMS personalizado para usar em vez do token de sessão padrão.
+* **Credenciais** permite que você especifique um token de acesso pessoal para o Figma, para que o console [ possa acessar blocos de design para o seu projeto.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * O token requer os seguintes escopos somente leitura:
       * `file_content:read`
       * `file_metadata:read`
@@ -173,4 +179,7 @@ A visualização de configurações permite gerenciar configurações básicas d
       * `file_dev_resources:read`
       * `projects:read`
    * [Consulte a documentação do Figma](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) para obter mais informações sobre como configurar tokens de acesso pessoal.
-* **Redefinir espaço de trabalho** reverte o console para seu estado inicial e todas as alterações não enviadas ou não carregadas serão perdidas.
+* O **Suporte** resume informações compartilhadas com a equipe de suporte da Adobe quando você faz uma solicitação de suporte.
+   * **Solicitar suporte** - Clique para iniciar uma solicitação de suporte da Adobe sem sair do console.
+* **A zona de perigo** contém configurações que podem reverter seu espaço de trabalho.
+   * **Redefinir espaço de trabalho** - Clique para redefinir o espaço de trabalho para seu estado inicial. Essa operação não pode ser desfeita.
