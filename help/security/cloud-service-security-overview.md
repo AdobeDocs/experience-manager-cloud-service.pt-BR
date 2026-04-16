@@ -4,10 +4,10 @@ description: Saiba mais sobre tópicos importantes de segurança relacionados ao
 exl-id: 19b123de-5db5-4fa8-81ec-e5438fed3f7f
 feature: Security
 role: Admin
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 9401e35733f6064c6b185d83407307a9a1e2366f
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 45%
+source-wordcount: '188'
+ht-degree: 38%
 
 ---
 
@@ -27,3 +27,7 @@ Sim. O AEM Forms oferece suporte a mecanismos seguros de transmissão de dados, 
 Sim. A AEM Forms oferece suporte à auditoria por meio de histórico de fluxo de trabalho, controles de acesso e logs do sistema, que ajudam as seguradoras a atender às necessidades de auditoria interna e externa.
 
 Consulte o white paper [Segurança do Adobe Experience Manager Cloud Service](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf) para obter uma visão geral detalhada sobre a segurança do AEM as a Cloud Service.
+
+>[!NOTE]
+>
+>Consulte também [Disponibilidade da HIPAA para o Adobe Experience Manager as a Cloud Service](/help/compliance/hipaa/hipaa-readiness.md) para obter a documentação fornecida pela Adobe para ajudá-lo a entender a disponibilidade da HIPAA e a estar em conformidade com os regulamentos.
