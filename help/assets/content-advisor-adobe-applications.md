@@ -5,16 +5,16 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
+source-git-commit: 98ba709098bdf1c8a9f02b99e1e63ec97cb00ab4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
 
 # Usar o Supervisor de conteúdo para acessar conteúdo do AEM em aplicativos Adobe{#content-advisor-aem-assets-adobe-applications}
 
-O Content Advisor oferece uma experiência unificada de detecção de conteúdo em todos os aplicativos Adobe. Integrado nativamente a aplicativos como Adobe Workfront (em breve), AJO B2C (em breve), AEM Sites e outros, o Content Advisor reúne o conteúdo (ativos e fragmentos de conteúdo) em uma única interface inteligente. Ele permite que você descubra, navegue e reutilize facilmente o conteúdo mais relevante, diretamente do seu fluxo de trabalho, para que possa se mover mais rápido sem quebrar o contexto.
+O Content Advisor oferece uma experiência unificada de detecção de conteúdo em todos os aplicativos Adobe. Integrado nativamente a aplicativos como Adobe Workfront, AJO B2C (em breve), AEM Sites e outros, o Content Advisor reúne o conteúdo (ativos e fragmentos de conteúdo) em uma única interface inteligente. Ele permite que você descubra, navegue e reutilize facilmente o conteúdo mais relevante, diretamente do seu fluxo de trabalho, para que possa se mover mais rápido sem quebrar o contexto.
 
 >[!IMPORTANT]
 > 
@@ -128,7 +128,7 @@ Clique no ícone de ![visualização](assets/do-not-localize/preview-icon.svg) p
 
 ![Visualizar representações do Dynamic Media](assets/content-advisor-dm-preview.png)
 
-Clique em **[!UICONTROL Adicionar modificadores]**, especifique um modificador na caixa de texto e pressione Enter para aplicar a transformação a todas as representações de ativos em tempo real. Da mesma forma, é possível adicionar vários modificadores às representações e pré-visualizar essas transformações. Clique no nome da representação e clique em **[!UICONTROL Selecionar]** para torná-la disponível em seu aplicativo host. A representação após a aplicação desses modificadores não é salva. Consulte a lista de modificadores com suporte para [Dynamic Media Scene7](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) e [Dynamic Media com OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Clique em **[!UICONTROL Adicionar modificadores]**, especifique um modificador na caixa de texto e pressione Enter para aplicar a transformação a todas as representações de ativos em tempo real. Da mesma forma, é possível adicionar vários modificadores às representações e pré-visualizar essas transformações. Clique no nome da representação e clique em **[!UICONTROL Selecionar]** para torná-la disponível em seu aplicativo host. A representação após a aplicação desses modificadores não é salva. Consulte a lista de modificadores com suporte para [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) e [Dynamic Media com OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 ### Descoberta de fragmentos de conteúdo {#content-fragments-discovery-content-advisor}
 
@@ -196,7 +196,9 @@ A tabela a seguir ilustra o suporte ao recurso Supervisor de Conteúdo nos aplic
 
 | Aplicativo | Suporte para upload breve para pesquisa no Assets | Suporte para o painel de conteúdo sugerido durante a pesquisa no Assets | Suporte para o painel Dynamic Media durante a pesquisa no Assets | Suporte para pesquisar fragmentos de conteúdo |
 |--------------------------------------|----------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|------------------------------------------|
-| AEM Sites (Criação baseada em documento) | ✓ | − | ✓ | − |
-| AEM Sites (Criação de documentos) | ✓ | ✓ | ✓ | − |
+| [AEM Sites - Criação de Documentos](https://www.aem.live/docs/authoring-guide#document-authoring) | ✓ | ✓ | ✓ | − |
+| [AEM Sites - Editor universal](https://www.aem.live/docs/authoring-guide#universal-editor-in-aem-sites) | ✓ | ✓ | ✓ | − |
+| AEM Sites - [GoogleDrive](https://www.aem.live/docs/authoring-guide#google-drive)/[Criação no Sharepoint](https://www.aem.live/docs/authoring-guide#microsoft-sharepoint) | ✓ | − | ✓ | − |
 | AEM Sites (Editor de fragmento de conteúdo) | ✓ | ✓ | ✓ | − |
-| AEM Sites (Editor universal) | ✓ | ✓ | ✓ | − |
+| Fluxo de trabalho do Adobe Workfront | ✓ | ✓ | − | ✓ |
+| Planejamento do Adobe Workfront | ✓ | ✓ | − | ✓ |
