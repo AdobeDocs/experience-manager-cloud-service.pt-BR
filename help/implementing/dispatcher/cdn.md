@@ -4,9 +4,9 @@ description: Saiba como usar o CDN gerenciado pela AEM e como apontar seu própr
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: a36eae0f32b36224c53f756238ba2f5f90699e6c
+source-git-commit: 355c0c9db126f17954e7f26953132b44b56bf653
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1786'
 ht-degree: 10%
 
 ---
@@ -95,7 +95,7 @@ Instruções de configuração:
 1. Defina a SNI para o ingresso do Adobe CDN.
 1. Defina o cabeçalho Host para o domínio de origem. Por exemplo: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Defina o cabeçalho `X-Forwarded-Host` com o nome de domínio para que o AEM possa determinar o cabeçalho do host. Por exemplo: `X-Forwarded-Host:example.com`.
-1. Defina `X-AEM-Edge-Key`. O valor deve ser configurado usando um pipeline de configuração do Cloud Manager, conforme descrito em [este artigo](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+1. Defina `X-AEM-Edge-Key`. O valor deve ser configurado usando primeiro um pipeline de configuração do Cloud Manager e, em seguida, a mesma chave de borda deve ser configurada no CDN do cliente, conforme descrito em [este artigo](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
    * Necessário para que a CDN do Adobe possa validar a origem das solicitações e transmitir os cabeçalhos `X-Forwarded-*` para o aplicativo do AEM. Por exemplo, `X-Forwarded-For` é usado para determinar o IP do cliente. Portanto, torna-se responsabilidade do chamador confiável (ou seja, a CDN gerenciada pelo cliente) garantir a exatidão dos cabeçalhos `X-Forwarded-*` (consulte a observação abaixo).
    * Opcionalmente, o acesso à entrada da CDN da Adobe pode ser bloqueado quando um `X-AEM-Edge-Key` não estiver presente. Informe ao Adobe se você precisar de acesso direto ao ingresso do Adobe CDN (a ser bloqueado).
@@ -163,7 +163,7 @@ Esse processo permite a verificação de detalhes, como os valores do host, a co
 >Você pode usar um ambiente de desenvolvimento rápido (RDE) para implantar e testar sua configuração:
 >
 >* [Ambientes de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Como usar o Ambiente de Desenvolvimento Rápido](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Como usar o Ambiente de Desenvolvimento Rápido](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Configurações de exemplo de fornecedor de CDN {#sample-configurations}
 
