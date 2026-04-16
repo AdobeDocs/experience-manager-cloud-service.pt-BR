@@ -4,9 +4,9 @@ description: Esta página descreve como criar representações de vídeo no Scre
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 210997fa8568245ab9e4e5d44d7faf99bc108ee3
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Siga as etapas abaixo para criar representações de vídeo no Screens as a Clou
 1. Navegue até o canal no Provedor de conteúdo do Screens.
 
    >[!NOTE]
-   >Consulte [Usando o Provedor de Conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=pt-BR#screens-content-provider) para obter mais detalhes.
+   >Consulte [Usando o Provedor de Conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) para obter mais detalhes.
 
 1. Clique na seção Ferramentas na barra de navegação à esquerda, clique em **Assets** e em **Processando Perfis**.
 
@@ -53,7 +53,7 @@ Siga as etapas abaixo para criar representações de vídeo no Screens as a Clou
    >Use o nome da codificação que começa com &quot;screens-&quot;. Somente essas representações de vídeo são consideradas para reproduzir a experiência de vídeo no Screens as a Cloud Service. Insira a taxa de bits que funciona em seus vídeos (2500 kbps para vídeo de 720 px e 5000 kbps para 1080 px).
 
    >[!NOTE]
-   >Várias representações de vídeo podem ser adicionadas com variação de largura/altura/taxa de bits para que seus vídeos funcionem. Todas as telas e representações são baixadas pelos dispositivos Screens, mesmo que o dispositivo reproduza apenas a representação de vídeo.
+   >Várias representações de vídeo podem ser adicionadas com variação de largura/altura/taxa de bits para que seus vídeos funcionem.
 
 1. Clique em **Salvar**.
 
