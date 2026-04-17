@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: 98ba709098bdf1c8a9f02b99e1e63ec97cb00ab4
+source-git-commit: 2ae4533890cbf01183df8b5283109fff0b9eae60
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1945'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ O Content Advisor oferece uma experiência unificada de detecção de conteúdo 
 O Content Advisor traz detecção inteligente e sensível ao contexto diretamente para a experiência de criação, ajudando você a encontrar rapidamente conteúdo relevante e aprovado com base em sua intenção. Com recursos como sugestões inteligentes, representações do Dynamic Media e metadados de ativos detalhados, ele permite avaliar e reutilizar o conteúdo com eficiência sem sair da interface do aplicativo, acelerando a criação de conteúdo e mantendo a consistência da marca.
 
 ![Imagem de banner do Supervisor de Conteúdo](assets/content-advisor-banner-image-updated.png)
+
+O Adobe Experience Manager (AEM) Assets também se integra nativamente ao Adobe Express, permitindo que você descubra, acesse e use ativos do AEM Assets diretamente na interface do Express usando o Supervisor de conteúdo. Para obter mais informações, consulte [Usar o Supervisor de Conteúdo para acessar o AEM Assets no Adobe Express](/help/assets/native-integration-adobe-express.md).
 
 
 ## Pré-requisitos {#prerequisites}
@@ -128,7 +130,7 @@ Clique no ícone de ![visualização](assets/do-not-localize/preview-icon.svg) p
 
 ![Visualizar representações do Dynamic Media](assets/content-advisor-dm-preview.png)
 
-Clique em **[!UICONTROL Adicionar modificadores]**, especifique um modificador na caixa de texto e pressione Enter para aplicar a transformação a todas as representações de ativos em tempo real. Da mesma forma, é possível adicionar vários modificadores às representações e pré-visualizar essas transformações. Clique no nome da representação e clique em **[!UICONTROL Selecionar]** para torná-la disponível em seu aplicativo host. A representação após a aplicação desses modificadores não é salva. Consulte a lista de modificadores com suporte para [Dynamic Media Scene7](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) e [Dynamic Media com OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Clique em **[!UICONTROL Adicionar modificadores]**, especifique um modificador na caixa de texto e pressione Enter para aplicar a transformação a todas as representações de ativos em tempo real. Da mesma forma, é possível adicionar vários modificadores às representações e pré-visualizar essas transformações. Clique no nome da representação e clique em **[!UICONTROL Selecionar]** para torná-la disponível em seu aplicativo host. A representação após a aplicação desses modificadores não é salva. Consulte a lista de modificadores com suporte para [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) e [Dynamic Media com OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 ### Descoberta de fragmentos de conteúdo {#content-fragments-discovery-content-advisor}
 
