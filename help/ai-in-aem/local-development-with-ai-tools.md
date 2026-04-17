@@ -3,13 +3,13 @@ title: Desenvolvimento local com ferramentas de IA
 description: Saiba como configurar ferramentas de codificação de IA com contexto de projeto, habilidades de agente e servidores MCP para acelerar o desenvolvimento do AEM as a Cloud Service.
 feature: Developing
 role: Developer
-source-git-commit: 0bc00b6e14be6ba111ac26ce69f07e138ca400e4
+exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
+source-git-commit: f7a46a5b8c5bbe30ab5d6828ba99b2435b88dbeb
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
-
 
 # Desenvolvimento local com ferramentas de IA {#local-development-with-ai-tools}
 
@@ -69,7 +69,7 @@ Escolha o método que corresponde à ferramenta de codificação de IA. Instalar
 
 ```bash
 # Add the Adobe Skills marketplace (one-time setup)
-/plugin marketplace add adobe/skills#beta
+/plugin marketplace add adobe/skills
 
 # Install all available skills
 /plugin install aem-cloud-service@adobe-skills
@@ -79,17 +79,17 @@ Escolha o método que corresponde à ferramenta de codificação de IA. Instalar
 
 ```bash
 # Install all available skills
-npx skills add https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service --all
+npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-service --all
 ```
 
 #### Aprimoramento (extensão CLI do GitHub) {#upskill-github-cli-extension}
 
 ```bash
 # Install the gh-upskill extension (one-time setup)
-gh extension install trieloff/gh-upskill
+gh extension install ai-ecoverse/gh-upskill
 
 # Install all available skills
-gh upskill adobe/skills --branch beta --path skills/aem/cloud-service --all
+gh upskill adobe/skills --path skills/aem/cloud-service --all
 ```
 
 ### Usar a habilidade sure-agents-md {#use-the-ensure-agents-md-skill}
@@ -150,7 +150,7 @@ O Protocolo de contexto de modelo (MCP) é um padrão aberto que permite que as 
 
 ### Instalar o pacote de conteúdo {#install-the-content-package}
 
-Baixe o pacote de conteúdo do [Portal de Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Abeta) e instale o `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` no Quickstart local usando o Gerenciador de Pacotes em `/crx/packmgr`.
+Baixe o pacote de conteúdo do [Portal de Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3) e instale o `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` no Quickstart local usando o Gerenciador de Pacotes em `/crx/packmgr`.
 
 **Compatibilidade:** validada com AEM SDK `2026.2.24678.20260226T154829Z-260200` e mais recente.
 
@@ -210,7 +210,7 @@ Ao contrário da habilidade do dispatcher, o servidor MCP do Dispatcher expõe a
 ### Pré-requisitos {#prerequisites}
 
 - Docker Desktop 4.x ou posterior, instalado e em execução
-- AEM Dispatcher SDK baixado do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Abeta)
+- AEM Dispatcher SDK baixado do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)
 
 >[!NOTE]
 >
