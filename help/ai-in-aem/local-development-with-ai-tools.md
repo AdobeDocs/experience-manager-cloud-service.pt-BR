@@ -4,20 +4,14 @@ description: Saiba como configurar ferramentas de codificação de IA com contex
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: f7a46a5b8c5bbe30ab5d6828ba99b2435b88dbeb
+source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
 
 # Desenvolvimento local com ferramentas de IA {#local-development-with-ai-tools}
-
->[!IMPORTANT]
->
->Os recursos descritos neste artigo são **beta**. Obter acesso antecipado aos recursos que a Adobe está desenvolvendo permite que clientes e parceiros forneçam feedback (ao enviar um email para [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) e aperfeiçoem o produto. Também os ajuda a se preparar para adotar novos recursos antes da disponibilidade geral.
->
->As versões do Beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte da Adobe ou de outra forma) às versões beta. A Adobe recomenda que os clientes tenham cuidado e não dependam do funcionamento ou do desempenho correto das versões beta, nem de qualquer documentação ou material que as acompanhe. Os recursos e as APIs na versão beta estão sujeitos a alterações sem aviso prévio. Portanto, qualquer uso das versões beta é de inteira responsabilidade do cliente.
 
 >[!NOTE]
 >
@@ -52,7 +46,7 @@ Quatro componentes complementares abordam esta questão:
 
 Habilidades são conjuntos de instruções que codificam fluxos de trabalho de desenvolvimento de várias etapas. Quando invocada, a IA segue o procedimento da habilidade, em vez de depender apenas do conhecimento geral, produzindo resultados consistentes e compatíveis com a convenção.
 
-O Adobe publica habilidades do AEM as a Cloud Service no repositório **[adobe/skills](https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service/skills)** na ramificação `beta`, pois esse recurso ainda não está disponível:
+A Adobe publica habilidades do AEM as a Cloud Service no **[adobe/skills](https://github.com/adobe/skills/tree/main/plugins/aem/cloud-service)** repositório:
 
 | Habilidade | Propósito |
 |---|---|
@@ -202,6 +196,12 @@ Qualquer cliente MCP pode se conectar apontando para `http://localhost:4502/bin/
 >O valor `Basic YWRtaW46YWRtaW4=` é a codificação Base64 de `admin:admin`, a credencial padrão para um Quickstart local. Não use com ambientes não locais.
 
 ## Dispatcher MCP Server {#dispatcher-mcp-server}
+
+>[!IMPORTANT]
+>
+>Este recurso é **beta**. Obter acesso antecipado aos recursos que a Adobe está desenvolvendo permite que clientes e parceiros forneçam feedback (ao enviar um email para [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) e aperfeiçoem o produto. Também os ajuda a se preparar para adotar novos recursos antes da disponibilidade geral.
+>
+>As versões do Beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte da Adobe ou de outra forma) às versões beta. A Adobe recomenda que os clientes tenham cuidado e não dependam do funcionamento ou do desempenho correto das versões beta, nem de qualquer documentação ou material que as acompanhe. Os recursos e as APIs na versão beta estão sujeitos a alterações sem aviso prévio. Portanto, qualquer uso das versões beta é de inteira responsabilidade do cliente.
 
 O servidor Dispatcher MCP é fornecido com o AEM Dispatcher SDK. Ela permite que as ferramentas de IA validem a configuração HTTPD do Dispatcher e do Apache, rastreiem a manipulação de solicitações e inspecionem o comportamento do cache em relação a uma instância do Dispatcher executada localmente no Docker.
 
