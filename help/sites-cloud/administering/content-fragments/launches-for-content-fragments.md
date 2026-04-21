@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1784'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Uma *Inicialização* é criada para permitir que você faça alterações na pr
 >
 >Para obter detalhes completos, consulte [Inicializações para páginas](/help/sites-cloud/authoring/launches/overview.md).
 
-Você cria uma *Inicialização* e, em seguida, edita e atualiza os fragmentos de conteúdo na *Inicialização*. Se forem feitas alterações nos fragmentos do *Source* durante esta fase, você poderá copiá-las para o *Launch* com a operação *Rebase*. Quando pronto, *Promover* duplica o conteúdo da inicialização de volta para a origem. Em seguida, você pode ativar os fragmentos de origem manual ou automaticamente (dependendo dos campos definidos ao criar e editar a inicialização). Você também pode especificar se os fragmentos referenciados devem ser incluídos nesse processo.
+Você cria uma *Inicialização* e, em seguida, edita e atualiza os fragmentos de conteúdo na *Inicialização*. Se forem feitas alterações nos fragmentos do *Source* durante esta fase, você poderá copiar o *Source* (incluindo alterações) para o *Launch* com a operação **[Rebase](#rebase-a-launch-from-source)**. Quando pronto, *Promover* duplica o conteúdo da inicialização de volta para a origem. Em seguida, você pode ativar os fragmentos de origem manual ou automaticamente (dependendo dos campos definidos ao criar e editar a inicialização). Você também pode especificar se os fragmentos referenciados devem ser incluídos nesse processo.
 
 Por exemplo, os fragmentos de produto sazonais da loja online são atualizados trimestralmente para que os produtos em destaque se alinhem à temporada atual. Para se preparar para a próxima atualização trimestral, é possível criar uma inicialização dos fragmentos apropriados. Ao longo do trimestre, as seguintes alterações são acumuladas na cópia do lançamento:
 
@@ -88,9 +88,9 @@ Embora o painel direito permita:
 
    * **Publicar pronto**; Habilitar essa opção publicará automaticamente os fragmentos quando a inicialização for promovida para a origem.
 
-* E também definir:
+* Definir uma **Data de Promoção** e Hora: se a [inicialização for promovida automaticamente](#promote-automatically)
 
-   * A **Promover Data** e Hora: se a [inicialização for promovida automaticamente](#promote-automatically)
+* Exiba e execute outras ações em **[Trabalhos](#jobs-history)** que foram executados (**Comparar Inicialização com Source**)
 
 ## Criar um lançamento {#create-a-launch}
 
@@ -203,7 +203,6 @@ Para gerenciar os fragmentos de conteúdo no seu lançamento e também editar o 
          * Source: azul
          * Launch: rosa
          * Conflitos: amarelo
-   * As ações [Promover](#promote-a-launch-to-source) e [Rebase](#rebase-a-launch-from-source) estão disponíveis na parte superior direita.
    * **Atualizações encontradas**: no canto superior esquerdo, um resumo de todas as atualizações é exibido. O número de atualizações de origem em azul, o número de atualizações do Launch em rosa e atualizações para ambos (conflitos) em amarelo.
       * Os ícones de olho permitem mostrar ou ocultar as atualizações de conteúdo reais para obter uma visão geral mais clara.
    * Os controles deslizantes **Incluir** permitem definir os Fragmentos de conteúdo a serem incluídos na operação subsequente de Promover ou Rebasear:
@@ -217,11 +216,38 @@ Para gerenciar os fragmentos de conteúdo no seu lançamento e também editar o 
    * O conteúdo do fragmento é exibido no nível do campo (elemento do fragmento de conteúdo/nível do tipo de dados); com realces indicando alterações.
    * Selecione **Exibir** para recalcular as diferenças.
 
+1. As ações [Promover](#promote-a-launch-to-source) e [Rebase](#rebase-a-launch-from-source) estão disponíveis na parte superior direita.
+
+1. **Voltar** retorna você ao console. Se quiser rever essas diferenças específicas novamente, você poderá exibir as entradas de **[Trabalhos](#jobs-history)**.
+
    ![Comparar Source e Launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
+
+## Histórico de tarefas {#jobs-history}
+
+Para exibir detalhes de **Comparar com trabalhos do Source** anteriores que foram executados:
+
+1. Navegue até o Console de fragmentos de conteúdo.
+
+1. Abra a guia **Inicializações**.
+
+1. Selecione o seu lançamento, o painel de informações será aberto à direita.
+
+1. Na seção **Trabalhos**, você verá **diferenças de inicialização** entradas para cada um dos trabalhos **Comparar com o Source** que foram executados:
+
+   ![Histórico de tarefas](/help/sites-cloud/administering/content-fragments/assets/cf-launches-jobs.png)
+
+1. Selecione:
+
+   * O ícone de lupa para abrir os detalhes completos de uma tarefa específica.
+Isso retorna a você a exibição **[Comparar Inicialização com Source](#compare-launch-to-source)**, com as ações disponíveis.
+   * **Exiba o log** para ter uma visão geral dos detalhes de todos os trabalhos.
+Aqui, você também pode selecionar um trabalho específico e mostrar os **Resultados**. Isso leva você de volta à exibição **[Comparar Inicialização com Source](#compare-launch-to-source)**, com as ações disponíveis.
+
+   Ambas as ações o levarão ao trabalho **Comparar o Launch com o Source** apropriado. Aqui você pode **[Rebase](#rebase-a-launch-from-source)** ou **[Promover](#promote-a-launch-to-source)** seu lançamento como estava naquele momento.
 
 ## Trocar base de uma inicialização (do Source) {#rebase-a-launch-from-source}
 
-Quando forem feitas atualizações nos fragmentos de origem e você quiser copiar essas alterações para o seu lançamento:
+Quando forem feitas atualizações nos fragmentos de origem, você poderá copiar a origem (incluindo alterações) para a sua inicialização com a ação **Rebase**:
 
 1. Navegue até o Console de fragmentos de conteúdo.
 
