@@ -6,16 +6,16 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
+source-git-commit: 29b646d024287bfbc0801c90843e5c36e5fd57ea
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1852'
 ht-degree: 1%
 
 ---
 
 # Lançamentos para fragmentos de conteúdo {#launches-for-content-fragments}
 
-No Adobe Experience Manager (AEM) as a Cloud Service, os Lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura.
+No Adobe Experience Manager (AEM) as a Cloud Service, uma inicialização permite desenvolver conteúdo com eficiência para uma versão futura.
 
 Uma *Inicialização* é criada para permitir que você faça alterações na preparação de uma publicação futura, ao mesmo tempo em que mantém o conteúdo atual. Para fragmentos de conteúdo, isso significa que você está editando duas versões ao mesmo tempo: o conteúdo que está publicado no momento e uma versão desse conteúdo que será publicada posteriormente. Depois que esse tempo chegar, você poderá substituir o conteúdo dos fragmentos de conteúdo originais e publicar as novas versões.
 
