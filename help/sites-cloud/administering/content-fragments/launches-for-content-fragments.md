@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
+source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1851'
 ht-degree: 1%
 
 ---
@@ -187,7 +187,7 @@ Para gerenciar os fragmentos de conteúdo no seu lançamento e também editar o 
 
 ## Comparar o Launch à origem {#compare-launch-to-source}
 
-É recomendável que, antes de qualquer ação Rebase ou Promover, você sempre compare a origem e o lançamento para confirmar as alterações e o impacto no conteúdo (ambas as ações substituem o conteúdo de destino):
+É recomendável que, antes de qualquer ação de **[Rebase](#rebase-a-launch-from-source)** ou **[Promover](#promote-a-launch-to-source)**, você sempre compare a origem e a inicialização para confirmar as alterações e o impacto delas no seu conteúdo (ambas as ações substituem o conteúdo de destino):
 
 1. Navegue até o Console de fragmentos de conteúdo.
 
@@ -247,7 +247,7 @@ Aqui, você também pode selecionar um trabalho específico e mostrar os **Resul
 
 ## Trocar base de uma inicialização (do Source) {#rebase-a-launch-from-source}
 
-Quando forem feitas atualizações nos fragmentos de origem, você poderá copiar a origem (incluindo alterações) para a sua inicialização com a ação **Rebase**:
+Quando forem feitas atualizações nos fragmentos de origem, você poderá copiar a origem (incluindo alterações) para sua inicialização com a ação **Rebase**:
 
 1. Navegue até o Console de fragmentos de conteúdo.
 
@@ -261,9 +261,17 @@ Quando forem feitas atualizações nos fragmentos de origem, você poderá copia
 >
 >Você também pode **Rebasear** um lançamento de **[Comparar o Launch com o Source](#compare-launch-to-source)**.
 
+>[!NOTE]
+>
+>É recomendável que, antes de qualquer ação de **Rebase** ou **Promover**, você sempre [compare a origem e o lançamento](#compare-launch-to-source) para confirmar as alterações e o impacto delas no seu conteúdo, já que ambas as ações substituem o conteúdo de destino.
+
 ## Promover uma inicialização (para o Source) {#promote-a-launch-to-source}
 
 Quando o lançamento estiver pronto para ser publicado, ele deverá ser copiado para a origem. Você pode fazer isso no console ou definir as configurações para que isso aconteça automaticamente em uma data e hora específicas.
+
+>[!NOTE]
+>
+>É recomendável que, antes de qualquer ação de **Rebase** ou **Promover**, você sempre [compare a origem e o lançamento](#compare-launch-to-source) para confirmar as alterações e o impacto delas no seu conteúdo, já que ambas as ações substituem o conteúdo de destino.
 
 ### Promover manualmente {#promote-manually}
 
