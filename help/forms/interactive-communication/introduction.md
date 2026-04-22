@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 682b5dbf587b6b06f35f29bfb74a96b2c40fb3d7
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 1%
 
 ---
@@ -45,17 +45,19 @@ O Editor de comunicação interativa (IC) foi projetado para eficiência, usabil
 
 | **Recurso** | **Principais Recursos** |
 |--------------------------------------|---------------------------------------------------------------------------------------|
-| **Editor WYSIWYG** | - Perfeição de pixels para renderização precisa <br> - Controles de estilo de fonte <br> - Layout flexível para design profissional |
-| **Controle de layout** | - Posicionamento (absoluto e com fluxo) <br> - Fácil funcionalidade de arrastar e soltar <br> - Use páginas mestras para definir layouts consistentes |
-| **Componentes** | - Acesso a componentes recém-introduzidos, incluindo tabelas, gráficos e códigos de barras <br> - Componentes prontos para uso para design mais rápido |
-| **Associação de Dados** | - Vincular componentes diretamente a fontes de dados <br> - Preencher campos automaticamente para comunicação personalizada |
-| **Editor de regras** | - Configurar validações dinâmicas <br> - Adicionar cálculos e lógica condicional para interatividade |
-| **Biblioteca de fragmentos** | - Criar blocos de construção modulares (cabeçalhos, rodapés, isenções de responsabilidade, ícones) <br> - Manter a consistência em várias comunicações |
-| **Modelos** | - Garantir identidade visual e estrutura uniformes em todas as comunicações |
+| **Editor WYSIWYG** | - Perfeição de pixels para renderização precisa <br> - [Controles de estilo de fonte](/help/forms/interactive-communication/add-custom-fonts.md) <br> - Layout flexível para design profissional |
+| [**Controle de layout**](/help/forms/interactive-communication/handle-content-overflow.md) | - Posicionamento (absoluto e com fluxo) <br> - Fácil funcionalidade de arrastar e soltar <br> - Use páginas mestras para definir layouts consistentes |
+| **Componentes** | - Acesso a componentes recém-introduzidos, incluindo [tabelas](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md), gráficos e [códigos de barras](/help/forms/interactive-communication/barcode.md) <br> - Componentes prontos para uso para design mais rápido |
+| [**Associação de Dados**](/help/forms/interactive-communication/configure-data-binding.md) | - Vincular componentes diretamente a fontes de dados <br> - Preencher campos automaticamente para comunicação personalizada |
+| [**Editor de regras**](/help/forms/interactive-communication/use-the-rule-editor.md) | - Configurar validações dinâmicas <br> - Adicionar cálculos e lógica condicional para interatividade |
+| [**Biblioteca de fragmentos**](/help/forms/interactive-communication/create-interactive-communication-fragment.md) | - Criar blocos de construção modulares (cabeçalhos, rodapés, isenções de responsabilidade, ícones) <br> - Manter a consistência em várias comunicações |
+| [**Modelos**](/help/forms/interactive-communication/create-interactive-communication-template.md) | - Garantir identidade visual e estrutura uniformes em todas as comunicações |
 
 ## Integração
 
 A capacidade de Comunicação interativa (IC) está disponível por meio do programa Acesso antecipado (EA). Para solicitar acesso, envie um email para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) de sua ID de email oficial com a ID do ambiente e a ID da organização. Depois que a Adobe confirmar sua inscrição, siga a [Documentação de integração do serviço](/help/forms/setup-forms-cloud-service.md) para habilitar a Comunicação Interativa em seu ambiente do AEM Forms.
+
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## Próximas etapas
 
