@@ -6,7 +6,7 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 7baad256dfbf978e294b0ca66f7cf9205ac8648f
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 93%
@@ -85,7 +85,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
    * **Título do lançamento**: o nome do lançamento. O nome deve ser significativo para os autores.
    * **com conteúdo já existente**: o conteúdo original será usado para criar o lançamento.
    * **usar um novo modelo para substituir a página**: consulte [Criar inicialização com um novo modelo](#create-launch-with-new-template) para obter mais detalhes.
-   * **Herdar dados online da página de origem:** selecione essa opção para atualizar automaticamente o conteúdo das páginas de inicialização quando as páginas de origem forem alteradas. Essa opção faz isso transformando a inicialização em uma [Live Copy](/help/sites-cloud/administering/msm/overview.md). Por padrão, esta opção é selecionada.-->
+   * **Herdar dados online da página de origem:** selecione essa opção para atualizar automaticamente o conteúdo das páginas de inicialização quando as páginas de origem forem alteradas. Essa opção faz isso transformando a inicialização em uma [Live Copy](/help/sites-cloud/administering/msm/overview.md). Por padrão, essa opção está selecionada.
    * **Data da inicialização**: a data e a hora em que a cópia de inicialização deve ser ativada (dependendo do sinalizador de **Pronto para produção**; consulte [Inicializações - a ordem dos eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Propriedades da inicialização](/help/sites-cloud/authoring/assets/launches-properties.png)
