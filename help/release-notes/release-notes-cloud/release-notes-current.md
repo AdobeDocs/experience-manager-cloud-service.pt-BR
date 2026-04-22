@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: c9ab1fefa8170a1397eb5801f26128e82e7cd4ca
+source-git-commit: a10a4bf02d5e006e6c151b48606c4e9412193a14
 workflow-type: tm+mt
 source-wordcount: '2180'
 ht-degree: 6%
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo Visão geral da versão de março de 2026 que exibe um resumo dos recursos adicionados na versão 2026.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483065/?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 
 ## Programas do AEM Beta {#aem-beta-programs}
 
@@ -148,7 +148,7 @@ Em breve — suporte do Supervisor de conteúdo para aplicativos B2C da Adobe Wo
 Os componentes de seleção múltipla suspensos no Adaptive Forms agora renderizam seus rótulos de exibição selecionados na [PDF de envio gerada](/help/forms/generate-document-of-record-core-components.md), garantindo que o documento reflita com precisão o que os usuários veem no formulário.
 
 **Acessibilidade aprimorada para componentes de caixa de seleção, botão de opção e painel**
-Os Componentes principais adaptáveis do Forms apresentam marcação semântica compatível com WCAG 2.2 para [grupos de caixas de seleção(v2)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [grupos de botões de opção(v2)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) e o [componente de Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Esses componentes usam os elementos do HTML `<fieldset>` e `<legend>` para estabelecer relações significativas entre os rótulos de grupo e suas opções, permitindo a interpretação precisa por leitores de tela e outras tecnologias de assistência.
+Os Componentes principais adaptáveis do Forms apresentam marcação semântica compatível com WCAG 2.2 para [grupos de caixas de seleção(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [grupos de botões de opção(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) e o [componente de Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Esses componentes usam os elementos do HTML `<fieldset>` e `<legend>` para estabelecer relações significativas entre os rótulos de grupo e suas opções, permitindo a interpretação precisa por leitores de tela e outras tecnologias de assistência.
 
 **Suporte ao controle de versão no Forms Manager**
 O Forms Manager agora [oferece suporte ao controle de versão do Adaptive Forms (Componentes principais e Componentes de base)](/help/forms/manage-form-versions-forms-manager.md), fragmentos de formulário, temas, modelos XDP e ativos binários. Crie versões, visualize o histórico completo de versões e restaure estados anteriores dos ativos de formulário diretamente do console Forms e Documentos.
@@ -163,7 +163,7 @@ O Forms Manager agora [oferece suporte ao controle de versão do Adaptive Forms 
 
 #### Cloud Manager MCP Server {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480347/?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 IDEs modernos usam o protocolo de contexto de modelo (MCP) para permitir que modelos de linguagem grandes (LLMs) chamem ferramentas expostas por servidores MCP. Em vez de integrar diretamente com especificações de API de baixo nível, os desenvolvedores podem simplesmente descrever sua intenção em linguagem natural.
 
@@ -215,7 +215,7 @@ Saiba mais na [documentação beta de Desenvolvimento local com ferramentas de I
 
 #### Funções do AEM Edge (Programa Beta) {#edge-functions}
 
-O AEM Edge Functions permite executar o JavaScript na camada CDN, aproximando o processamento de dados do usuário final. Isso reduz a latência e permite experiências responsivas e dinâmicas na borda.
+[O AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) permite executar o JavaScript na camada CDN, aproximando o processamento de dados do usuário final. Isso reduz a latência e permite experiências responsivas e dinâmicas na borda.
 
 Casos de uso comuns incluem:
 
@@ -261,11 +261,11 @@ Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe
 
 #### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
