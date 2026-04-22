@@ -38,7 +38,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo Visão geral da versão de março de 2026 que exibe um resumo dos recursos adicionados na versão 2026.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483065/?captions=por_br&quality=12)
 
 ## Programas do AEM Beta {#aem-beta-programs}
 
@@ -163,7 +163,7 @@ O Forms Manager agora [oferece suporte ao controle de versão do Adaptive Forms 
 
 #### Cloud Manager MCP Server {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480347/?captions=por_br&quality=12)
 
 IDEs modernos usam o protocolo de contexto de modelo (MCP) para permitir que modelos de linguagem grandes (LLMs) chamem ferramentas expostas por servidores MCP. Em vez de integrar diretamente com especificações de API de baixo nível, os desenvolvedores podem simplesmente descrever sua intenção em linguagem natural.
 
