@@ -6,7 +6,7 @@ exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 12%
@@ -38,11 +38,21 @@ Ao usar o MSM para fragmentos de conteúdo, você pode:
 
 O MSM para fragmentos de conteúdo, combinado com a funcionalidade no Editor de fragmento de conteúdo, permite quebrar e restaurar a herança no nível do campo.
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+
 >[!CAUTION]
 >
 >O MSM para fragmentos de conteúdo só está disponível ao usar fragmentos de conteúdo por meio do console **Assets**.
 >
 >A funcionalidade do MSM é *não* disponível ao usar o console **Fragmentos de conteúdo**.
+
+<!--
+>[!NOTE]
+>
+>This page covers MSM functionality when using the **Assets** console.
+>
+>MSM for Content Fragments is also available when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+-->
 
 ## Como {#how-to}
 
