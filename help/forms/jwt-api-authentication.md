@@ -5,10 +5,13 @@ role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: e7747b21-f680-4b3a-bf05-d0fcf0af0999
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+hide: true
+hidefromToC: true
+index: false
+source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 3%
+source-wordcount: '478'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ A autenticação de servidor para servidor JWT no AEM Forms, especialmente para 
 Antes de começar, verifique se os seguintes pré-requisitos foram atendidos:
 
 * Verifique se você tem acesso ao [Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html) específico do ambiente que usa.
-* Atribua a função de [Administrador do Sistema ou Desenvolvedor para acessar o Adobe Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/access-rights).
+* Atribua a função de [Administrador do Sistema ou Desenvolvedor para acessar o Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights).
 
 ## Como gerar um token de acesso usando credenciais JWT?
 
@@ -107,7 +110,7 @@ Siga as etapas abaixo, que mostram como gerar um token de acesso a partir das cr
 
 >[!NOTE]
 >
-> Para saber mais sobre as credenciais de serviço e como gerar um token de acesso usando a API do Adobe IMS, [clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
+> Para saber mais sobre as credenciais de serviço e como gerar um token de acesso usando a API do Adobe IMS, [clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 Agora você pode usar o token de acesso gerado para fazer uma chamada de API para ambientes de desenvolvimento, preparo ou produção.
 

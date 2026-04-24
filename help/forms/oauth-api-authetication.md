@@ -5,9 +5,12 @@ role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+hide: true
+hidefromToC: true
+index: false
+source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '908'
 ht-degree: 2%
 
 ---
@@ -20,14 +23,14 @@ A autenticação de servidor para servidor do OAuth permite acesso seguro e base
 
 Antes de começar, verifique se os seguintes pré-requisitos foram atendidos:
 
-* Verifique se você tem [acesso ao Adobe Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/access-rights) específico para o ambiente que usa.
-* [Atribua a função de Administrador do Sistema ou Desenvolvedor no Adobe Admin Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) para habilitar o acesso ao Adobe Developer Console.
+* Verifique se você tem [acesso ao Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) específico para o ambiente que usa.
+* [Atribua a função de Administrador do Sistema ou Desenvolvedor no Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) para habilitar o acesso ao Adobe Developer Console.
 
 ## Como gerar um token de acesso usando a autenticação de servidor para servidor do OAuth?
 
 Siga as etapas abaixo para gerar um token de acesso do console do Adobe Developer e fazer sua primeira chamada de API por meio da autenticação de servidor para servidor OAuth.
 
-### &#x200B;1. Configuração do projeto do Adobe Developer Console
+### &#x200B;1. Configuração de projeto do Adobe Developer Console
 
 1. Navegue até [Adobe Developer Console](https://developer.adobe.com/console)
 2. Faça logon com sua Adobe ID
@@ -98,7 +101,7 @@ Adicione APIs do Forms com base no que você deseja fazer:
 
 2. **Selecionar API de Entrega e Tempo de Execução do AEM Forms**
    1. Na caixa de diálogo _Adicionar API_, filtre por **Experience Cloud**
-   2. Selecione **&quot;API de Entrega e Tempo de Execução do AEM Forms&quot;**
+   2. Selecionar **&quot;API de entrega e tempo de execução do AEM Forms&quot;**
       ![Adicionar API de comunicação do Forms](/help/forms/assets/adc-add-runtime-api.png)
 
    3. Clique em **Avançar**
@@ -178,7 +181,7 @@ Gerar tokens de acesso manualmente no Adobe Developer Console:
 
 >[!TAB Para Produção]
 
-Gerar tokens de forma programática usando a API do [Adobe IMS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
+Gerar tokens de forma programática usando a API do [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service):
 
 **Credenciais necessárias:**
 
