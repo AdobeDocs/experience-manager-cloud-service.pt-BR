@@ -4,9 +4,9 @@ description: Saiba como usar o Protocolo de contexto de modelo com o AEM as a Cl
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: c7c8a616e00a7e97ac9b8ab50411c0a9e9417273
+source-git-commit: 5056eefbc6d6e40a94adfce3c64b7745f38b96b7
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1812'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,10 @@ O AEM expõe os servidores MCP como pontos de extremidade HTTP. Os endpoints lis
 
 | **Servidor MCP** | **Ponto de extremidade** | **Descrição** |
 |---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Conteúdo** | `/content` | Todas as operações de conteúdo de baixo nível, incluindo criação, leitura, atualização e exclusão (CRUD) de páginas, fragmentos e ativos. |
-| **Conteúdo (somente leitura)** | `/content-readonly` | Operações de conteúdo somente leitura (Obter, Listar/Pesquisar) para páginas, fragmentos e ativos. |
+| **Conteúdo** | `/content` | Operações de conteúdo, incluindo criação, leitura, atualização e exclusão (CRUD) de páginas e fragmentos de conteúdo, além de importação de ativos. |
+| **Conteúdo (somente leitura)** | `/content-readonly` | Operações de conteúdo somente leitura (Obter, Listar/Pesquisar) para páginas e fragmentos de conteúdo. |
 | **Cloud Manager** | `/cloudmanager` | Gerencie entidades do Cloud Manager, incluindo programas, ambientes, repositórios e pipelines, que também podem ser acionados. |
-| **Governança de experiência** | `/experience-governance` | Avalie o conteúdo (texto, imagens, páginas) em relação às regras de governança da marca e liste as configurações e verificações da marca.<br/>Os clientes devem se inscrever na [avaliação de agentes ou ter uma licença paga](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) para acessar o MCP da Governança de Experiência. |
+| **Governança de experiência** | `/experience-governance` | Avalie o conteúdo (texto, imagens, páginas) em relação às regras de governança da marca e liste as configurações e verificações da marca.<br/>Os clientes devem se inscrever na [avaliação de agentes ou ter uma licença paga](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) para acessar o MCP da Governança de Experiência. |
 
 As ferramentas específicas expostas por cada servidor MCP podem evoluir com o tempo. Na prática, você pode solicitar que o aplicativo habilitado para MCP descubra ferramentas por meio de um prompt como:
 
@@ -65,7 +65,7 @@ As ferramentas específicas expostas por cada servidor MCP podem evoluir com o t
 
 O cliente MCP usa o protocolo MCP para recuperar a lista de ferramentas e os esquemas que o LLM pode usar.
 
-Consulte o [Tutorial do Servidor MCP de Conteúdo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e o [Vídeo do Servidor MCP do Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obter mais informações sobre seus recursos e como usá-los.
+Consulte o [Tutorial do Servidor MCP de Conteúdo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e o [Vídeo do Servidor MCP do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obter mais informações sobre seus recursos e como usá-los.
 
 ## Aplicativos MCP suportados {#supported-mcp-applications}
 
@@ -214,7 +214,7 @@ Ao trabalhar com LLMs por meio do MCP, lembre-se do seguinte:
 * **Altamente capaz, mas não infalível**
 Os LLMs podem realizar tarefas complexas, mas são propensos a erros ocasionais. O mesmo prompt pode produzir resultados ou apresentações ligeiramente diferentes sem uma razão óbvia. Sempre revise os resultados antes de aplicar as alterações ao conteúdo de produção.
 
-* **Desenvolvendo recursos**
+* **Evolução dos recursos**
 Os modelos de LLM estão melhorando continuamente. Com o tempo, eles se tornam mais inteligentes ao descobrir novas maneiras de combinar ferramentas de MCP para atingir suas metas. Uma tarefa que exigiu vários prompts hoje pode funcionar perfeitamente com um único prompt amanhã.
 
 * **A supervisão humana é essencial:**
