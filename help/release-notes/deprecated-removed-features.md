@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: a536fc6203a589bef76387d5afbe6a8460630163
+source-git-commit: 3b1afd0b917a49e44f90969841d8c7d09a5158c0
 workflow-type: tm+mt
-source-wordcount: '4283'
-ht-degree: 26%
+source-wordcount: '4140'
+ht-degree: 22%
 
 ---
 
@@ -33,12 +33,11 @@ Durante a janela de tempo de desativação, a Adobe lembrará os clientes das a�
 >
 >Várias [APIs obsoletas](#aem-apis) serão removidas em **4 de maio de 2026**. Revise estas datas e impactos principais:
 >
->* **A partir de 26 de janeiro de 2026**: os emails de notificação da Central de Ações são enviados como um lembrete para remover o uso dessas APIs.
+>* **A partir de 26 de janeiro de 2026**: os emails de notificação da Central de Ações são enviados como um lembrete para remover o uso dessas APIs, se um pipeline tiver sido executado recentemente.
 >* **26 de fevereiro de 2026**: os pipelines do Cloud Manager que contêm código usando essas APIs **pausarão** durante a etapa **Qualidade do Código**. Um Gerente de implantação, Gerente de projeto ou Proprietário da empresa pode substituir o problema para permitir que o pipeline continue. *Isso pode retardar sua capacidade de validar e liberar alterações no código.*
 >* **30 de março de 2026**: os pipelines do Cloud Manager que contêm código usando essas APIs **falharão** durante a etapa **Qualidade do código**. As implantações serão bloqueadas até que o uso da API obsoleta seja removido. *Isso pode impedir que você libere atualizações com prazo determinado e pode afetar suas operações comerciais.*
->* **4 de maio de 2026**: os ambientes que ainda usam APIs obsoletas **não receberão atualizações críticas de versões do Adobe** e não estão sujeitos aos compromissos padrão da Adobe sobre desempenho e disponibilidade. Como resultado, você não receberá novos recursos ou correções de erros, a estabilidade e o tempo de atividade do aplicativo podem ser afetados negativamente e a exposição ao risco de segurança pode aumentar ainda mais.
+>* **4 de maio de 2026**: os ambientes que ainda usam APIs obsoletas **não receberão atualizações críticas de versões do Adobe** e não estão sujeitos aos compromissos padrão da Adobe sobre desempenho e disponibilidade. Como resultado, você não receberá novos recursos ou correções de erros, a estabilidade e o tempo de atividade do aplicativo podem ser afetados negativamente e a exposição ao risco de segurança pode aumentar ainda mais. Para receber novamente as atualizações de versão do Adobe, um pipeline de pilha completa deve ser executado com êxito; a atualização será aplicada em alguns dias.
 >
->Para evitar bloqueios de implantação, remova o uso da API antes de 30 de março de 2026.
 
 ## Funcionalidade obsoleta {#deprecated-features}
 
@@ -48,7 +47,7 @@ A funcionalidade na tabela abaixo foi anunciada como obsoleta, mas ainda não fo
 | ------------ | ------------------ | ----------- |
 | Sites | [Suporte a Fragmento de Conteúdo na API HTTP do Assets](/help/assets/content-fragments/assets-api-content-fragments.md) | [Entrega de fragmento de conteúdo com OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>em conjunto com<br> [OpenAPIs de gerenciamento de fragmentos de conteúdo e modelos de fragmento de conteúdo](/help/headless/content-fragment-openapis.md) |
 | Sites | [Recursos do PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Nenhum |
-| Sites | [Editor SPA](/help/implementing/developing/hybrid/introduction.md) | Os editores preferidos para gerenciar conteúdo headless no AEM são:<br>- [O editor universal](https://www.aem.live/docs/aem-authoring) para edição visual.<br>- [O editor de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para editar com base em formulários. |
+| Sites | [Editor SPA](/help/implementing/developing/hybrid/introduction.md) | Os editores preferenciais para o gerenciamento de conteúdo headless no AEM são:<br>- [O Editor Universal](https://www.aem.live/docs/aem-authoring) para edição visual.<br>- [O Editor de Fragmento de Conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para edição baseada em formulário. |
 | [!DNL Sites] | [API de uso do JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API de uso do Java](https://experienceleague.adobe.com/pt-br/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Propriedades dos Fragmentos de experiência para **Status da rede social**. | A remoção do recurso está prevista para breve. |
 | Sites | [Automação da Instalação do Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | Nenhum |
@@ -59,8 +58,8 @@ A funcionalidade na tabela abaixo foi anunciada como obsoleta, mas ainda não fo
 | [!DNL Assets] | Transcodificação FFmpeg de vídeos. | Para gerar miniaturas do FFmpeg, use os [Microserviços de ativos](/help/assets/asset-microservices-overview.md). Para a transcodificação FFmpeg, use o [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Interface de replicação em árvore na guia &quot;Distribuir&quot; dos agentes de replicação (remoção após 30 de setembro de 2021) | [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Etapa do Fluxo de Trabalho de Ativação da Árvore](/help/operations/replication.md#tree-activation) se aproxima. |
 | [!DNL Foundation] | A guia Distribuir da tela do administrador do agente de replicação e a API de replicação não podem replicar pacotes de conteúdo maiores que 10 MB. | [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Etapa do Fluxo de Trabalho de Ativação da Árvore](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | As integrações que usam credenciais geradas de projetos da Adobe Developer Console estão perdendo gradualmente o suporte às credenciais da Conta de serviço (JWT). A partir de 1º de maio de 2024, novas credenciais de Conta de serviço (JWT) não poderão ser criadas no Adobe Developer Console. As credenciais da Conta de serviço (JWT) existentes permanecem utilizáveis para integrações configuradas até 1º de janeiro de 2025, quando param de funcionar, exigindo que os clientes migrem para as credenciais de servidor para servidor do OAuth. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) para credenciais OAuth de servidor para servidor. |
-| [!DNL Foundation] | Fluxo de trabalho da árvore de conteúdo de publicação e a etapa relacionada do Fluxo de trabalho da árvore de conteúdo de publicação, que foi usada para replicações de hierarquias de conteúdo. | Use a [Etapa &#x200B;](/help/operations/replication.md#tree-activation) do Fluxo de Trabalho de Ativação da Árvore, que tem melhor desempenho. |
+| [!DNL Foundation] | As integrações que usam credenciais geradas de projetos da Adobe Developer Console estão perdendo gradualmente o suporte às credenciais da Conta de serviço (JWT). A partir de 1º de maio de 2024, novas credenciais de Conta de serviço (JWT) não poderão ser criadas no Adobe Developer Console. As credenciais da Conta de serviço (JWT) existentes permanecem utilizáveis para integrações configuradas até 1º de janeiro de 2025, quando param de funcionar, exigindo que os clientes migrem para as credenciais de servidor para servidor do OAuth. [Saiba mais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) para credenciais OAuth de servidor para servidor. |
+| [!DNL Foundation] | Fluxo de trabalho da árvore de conteúdo de publicação e a etapa relacionada do Fluxo de trabalho da árvore de conteúdo de publicação, que foi usada para replicações de hierarquias de conteúdo. | Use a [Etapa ](/help/operations/replication.md#tree-activation) do Fluxo de Trabalho de Ativação da Árvore, que tem melhor desempenho. |
 | [!DNL Foundation] | Utilização da interface do usuário do para compactar/minificar bibliotecas de clientes do JavaScript. A Adobe não planeja atualizar ainda mais a biblioteca YUI. | A Adobe recomenda que os clientes mudem para o Google Closure Compiler (GCC) para sua implementação. |
 | [!DNL Foundation] | Suporte para com.adobe.granite.oauth.server | Integração do Adobe IMS |
 
@@ -71,14 +70,14 @@ Esta seção lista as funcionalidades que foram removidas.
 | Área | Destaque | Substituição | Data definida para remoção |
 | ------------ | ------------------ | ----------- | ------------------- |
 | Interface do usuário | A interface clássica é removida da interface do usuário do produto. Algumas caixas de diálogo da interface clássica estão disponíveis para alguns recursos selecionados, como o Verificador de links, a Limpeza de versão e algumas configurações do Cloud Service. As próximas [atualizações do produto](/help/release-notes/home.md) podem remover ainda mais a disponibilidade da interface clássica. | Interface do usuário padrão | Removido |
-| [!DNL Dynamic Media] | As integrações anteriores com o [Dynamic Media Classic](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) e o [Dynamic Media Hybrid mode](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) não estão disponíveis no [!DNL Experience Manager] as a [!DNL Cloud Service]. | Use o [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornecido com o [!DNL Experience Manager] as a [!DNL Cloud Service]. | Removido |
+| [!DNL Dynamic Media] | As integrações anteriores com o [Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/scene7#integration) e o [Dynamic Media Hybrid mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dynamic#dynamic) não estão disponíveis no [!DNL Experience Manager] as a [!DNL Cloud Service]. | Use o [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fornecido com o [!DNL Experience Manager] as a [!DNL Cloud Service]. | Removido |
 | [!DNL Sites] | Portal Director e Portlet Component | Estes recursos foram descontinuados no [!DNL Experience Manager] 6.4 e agora foram removidos do [!DNL Experience Manager]. | Removido |
 | [!DNL Sites] | Importador de design | Este recurso foi removido porque as seções imutáveis do repositório do [!DNL Experience Manager] não estão acessíveis no tempo de execução. | Removido |
 | [!DNL Assets] | O compartilhamento do [!DNL Assets] com os serviços Assets Core Service e Creative Cloud não está disponível. | Para integração com a [!DNL Adobe Creative Cloud], use o [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html). | Removido |
 | [!DNL Foundation] | Suporte para fontes de dados do Apache Sling (pacote OSGi org.apache.sling.datasource) | N/A | Removido |
 | [!DNL Foundation] | Suporte para modelos de script JST (pacote OSGi org.apache.sling.scripting.jst) | N/A | Removido |
 | [!DNL Foundation] | Suporte para o quadro de permissões Apache Felix Http | OSGi Http Whiteboard | Março de 2022 |
-| [!DNL Foundation] | Suporte para o recurso org.apache.sling.serviceusermapping para [obter a ID de usuário do serviço](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/A | 30/08/24 |
+| [!DNL Foundation] | Suporte para o recurso org.apache.sling.serviceusermapping para [obter a ID de usuário do serviço](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/A | 8/30/24 |
 | [!DNL Foundation] | O tempo de execução do Java 11 está obsoleto e foi substituído pelo Adobe com o tempo de execução do Java 21. Observe que é aceitável que o código ainda seja criado com o Java 11 (Java 17 e 21 são as outras opções) | O tempo de execução do Java 21 é aplicado. Para garantir a compatibilidade, é essencial atualizar as versões da biblioteca conforme descrito nos [Requisitos de tempo de execução](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) | 29/05/25 de março |
 
 ## APIs obsoletas {#aem-apis}
@@ -110,166 +109,166 @@ As APIs na tabela abaixo (clique para expandir e ver) foram anunciadas como obso
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
     <td>Use as interfaces Auth Core/Auth Core SPI do Sling como alternativa. <a href="#org.apache.sling.commons.auth">Consulte as notas de remoção abaixo.</a></td>
     <td>2015</td>
-    <td>26/02/2026</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
-<td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
+<td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>Os pacotes Eclipse Jetty e Felix Http Jetty não são mais suportados. <a href="#org.eclipse.jetty">Consulte as notas de remoção abaixo.</a></td>
-    <td>27/05/2021</td>
-    <td>26/02/2026</td>
+    <td>5/27/2021</td>
+    <td>2/26/2026</td>
   </tr>
  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
-    <td>O uso dessa API não é compatível com o AEM as a Cloud Service. <a href="#com.mongodb">Consulte as notas de remoção abaixo.</a></td>
-    <td>27/05/2021</td>
-    <td>26/02/2026</td>
+    <td>O uso desta API não é compatível com o AEM as a Cloud Service. <a href="#com.mongodb">Consulte as notas de remoção abaixo.</a></td>
+    <td>5/27/2021</td>
+    <td>2/26/2026</td>
   </tr>
    <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
     <td>Esta API está obsoleta porque o Apache Abdera é um projeto inativo desde 2017. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Consulte as notas de remoção abaixo.</a></td>
-    <td>29/07/2021</td>
-    <td>26/02/2026</td>
+    <td>7/29/2021</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
     <td>Esta API está obsoleta porque o Apache Abdera é um projeto inativo desde 2017. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Consulte as notas de remoção abaixo.</a></td>
-    <td>08/04/2019</td>
-    <td>26/02/2026</td>
+    <td>4/8/2019</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
     <td>O quadro de permissões Apache Felix Http não é mais suportado. Migre seu código para o OSGi Http Whiteboard. <a href="#org.apache.felix.http.whiteboard">Consulte as notas de remoção abaixo.</a></td>
     <td>27/01/2022</td>
-    <td>26/02/2026</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
     <td>Essa API está obsoleta. Migre seu código para as APIs XML fornecidas pelo JDK.</td>
     <td>27/01/2022</td>
-    <td>26/02/2026</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
     <td>O AEM as a Cloud Service não oferece suporte a essa API de log back interna. <a href="#ch.qos.logback">Consulte as notas de remoção abaixo.</a></td>
     <td>27/01/2022</td>
-    <td>26/02/2026</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
     <td>O AEM as a Cloud Service não é compatível com essa API de log4j interna. <a href="#org.slf4j">Consulte as notas de remoção abaixo.</a></td>
     <td>27/01/2022</td>
-    <td>26/02/2026</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.event</td>
     <td>O AEM as a Cloud Service não é compatível com essa API slf4j interna. <a href="#org.slf4j">Consulte as notas de remoção abaixo.</a></td>
-    <td>11/04/2022</td>
-    <td>26/02/2026</td>
+    <td>4/11/2022</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>O Apache Log4j 1 chegou ao fim da vida útil em 2015 e não é mais compatível. <a href="#org.apache.log4j">Consulte as notas de remoção abaixo.</a></td>
     <td>27/01/2022</td>
-    <td>26/02/2026</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>As bibliotecas principais do Google Guava estão obsoletas no Cloud Service. <a href="#com.google.common">Consulte as notas de remoção abaixo.</a></td>
     <td>15/05/2023</td>
-    <td>26/02/2026</td>
+    <td>2/26/2026</td>
   </tr>
     <tr>
-    <td>com.drew.*</td>
+    <td>com.draw.*</td>
     <td>A extração de metadados de imagens e vídeos deve ser feita via Asset Compute no Cloud Service ou via Apache POI ou Apache Tika.</td>
-    <td>17/09/2024</td>
-    <td>26/02/2026</td>
+    <td>9/17/2024</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
     <td>Essa API é somente para uso interno.</td>
-    <td>23/09/2024</td>
-    <td>26/02/2026</td>
+    <td>9/23/2024</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
 <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
     <td>O Felix web console não é suportado em ambientes em nuvem. <a href="#org.apache.felix.webconsole">Consulte as notas de remoção abaixo.</a></td>
-    <td>30/04/2021</td>
-    <td>26/02/2026</td>
+    <td>4/30/2021</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
     <td>Essa API é somente para uso interno.</td>
-    <td>23/09/2024</td>
-    <td>30/09/2026</td>
+    <td>9/23/2024</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
-    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.utison.bson l</td>
     <td>O uso desta API não é compatível com o AEM as a Cloud Service.</td>
     <td>31/10/2022</td>
-    <td>30/09/2026</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
     <td>Essa API está obsoleta. Em vez disso, use os Construtores do Apache Sling.</td>
     <td>31/10/2022</td>
-    <td>30/09/2026</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss</td>
     <td>Em vez disso, use org.apache.sling.xss.</td>
     <td>12/12/2023</td>
-    <td>30/09/2026</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
     <td>Essa API está obsoleta.</td>
-    <td>10/07/2024</td>
-    <td>30/09/2026</td>
+    <td>07/10/2024</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.mailer.commons</td>
     <td>Essa API está obsoleta, pois depende do commons-lang (que está obsoleto desde 2021).</td>
-    <td>30/11/2025</td>
-    <td>30/09/2026</td>
+    <td>11/30/2025</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.adobe.granite.httpcache.api</td>
-    <td>Essa API não é mais compatível.</td>
+    <td>Essa API não é mais aceita.</td>
     <td>01/01/2026</td>
-    <td>30/09/2026</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.webdav.client.methods</td>
     <td>O uso desta API não é compatível com o AEM as a Cloud Service.</td>
-    <td>13/02/2026</td>
-    <td>30/09/2026</td>
+    <td>2/13/2026</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
     <td>Em vez disso, use org.apache.sling.xss.</td>
     <td>12/12/2023</td>
-    <td>30/09/2026</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
-    <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org.apache.tika.parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazetteer<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>org.apache.tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.sentiment<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax<br>org.apache.tika.sax.xpath<br>org.apache.tika.utils<br>org.apache.tika.parser.microsoft.ooxml.xps</td>
+    <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.incorporder<br>org.apache.tika.exception<br>org.apache.tika.extrator<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org .apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.parser .captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika .parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org apache.tika.parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic gazetteer<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.org.apache ache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf .ml2006<br>org.apache.tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.parser .ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.parser .opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.gnition<br>org.apache.tika.parser.gnition.tf<br>org.apache.tika.parser.rtf<br>org.org.org.org ache.tika.parser.sentimento<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordPerfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax<br>org.apache.tika.9.sax.apache.tika.9<br><br></td>
     <td>Esta versão do Apache Tika está desatualizada e, portanto, será removida do Cloud Service. Mude para uma versão mais recente do Apache Tika.</td>
-    <td>30/04/2026</td>
-    <td>30/09/2026</td>
+    <td>4/30/2026</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
 <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
     <td>O Commons Lang 2 está em modo de manutenção. O Commons Lang 3 deve ser usado em seu lugar. <a href="#apache.commons">Consulte as notas de remoção abaixo.</a></td>
-    <td>30/04/2021</td>
+    <td>4/30/2021</td>
     <td>31/03/2027 (Tentativa)</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
     <td>O Commons Collections 3 está em modo de manutenção. O Commons Collections 4 deve ser usado em seu lugar. <a href="#apache.commons">Consulte as notas de remoção abaixo.</a></td>
-    <td>30/04/2021</td>
+    <td>4/30/2021</td>
     <td>31/03/2027 (Tentativa)</td>
   </tr>
   <tr>
     <td>org.json</td>
     <td>Recomenda-se a implementação e o uso do Apache Johnzon do <a href="https://johnzon.apache.org/index.html">javax.json</a>. </td>
-    <td>30/04/2021</td>
+    <td>4/30/2021</td>
     <td>31/03/2027 (Tentativa)</td>
   </tr>
   <tr>
@@ -286,7 +285,7 @@ As APIs na tabela abaixo (clique para expandir e ver) foram anunciadas como obso
   <tr>
     <td>org.osgi.service.http</td>
     <td>A API HTTP do serviço OSGi está obsoleta, em vez disso, use o quadro de permissões do OSGi Servlet.</td>
-    <td>01/05/2024</td>
+    <td>5/1/2024</td>
     <td>31/12/2027 (Tentativa)</td>
   </tr>
   </tbody>
@@ -325,7 +324,7 @@ Esta seção lista APIs que foram descontinuadas e removidas. Algumas APIs fazem
     <td>org.apache.felix.systemready</td>
     <td>É recomendado que use a API Apache Felix HealthCheck em seu lugar</td>
   </tr>
-  <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
+  <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.webjetty.jetty .client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse .jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
     <td>Os pacotes Eclipse Jetty e Felix Http Jetty não são mais suportados.</td>
   </tr>
   <tr>
@@ -350,7 +349,7 @@ Esta seção lista APIs que foram descontinuadas e removidas. Algumas APIs fazem
   </tr>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
-    <td>API herdada do AEM 6.x. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Consulte as notas de remoção abaixo.</a></td>
+    <td>Legacy AEM 6.x API. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">Consulte as notas de remoção abaixo.</a></td>
   </tr>
   <tr>
     <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
@@ -380,17 +379,19 @@ Esta seção lista APIs que foram descontinuadas e removidas. Algumas APIs fazem
 
 Esta seção reflete a orientação de remoção de APIs para várias APIs nas tabelas acima.
 
-Para identificar quais APIs Java obsoletas seu código está usando, integre o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) ao seu projeto Maven e execute-o localmente. O relatório lista todos os usos de API obsoletos detectados e indica qual pacote OSGi está fazendo referência a cada API. Consulte [este tutorial](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) para saber como usar o plug-in Maven.
+Para identificar quais APIs Java obsoletas seu código está usando, integre o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) ao seu projeto Maven e execute-o localmente. O relatório lista todos os usos de API obsoletos detectados e indica qual pacote OSGi está fazendo referência a cada API. Consulte [este tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal) para saber como usar o plug-in Maven.
 
 Embora você deva corrigir todas as APIs obsoletas ao longo do tempo, priorize quaisquer APIs listadas na tabela API obsoleta com uma data de remoção do Target de 26 de fevereiro de 2026 (ou anterior). No relatório do AEM Analyzer, essas APIs podem aparecer com uma data de remoção efetiva em 31/8/2025.
 
 Depois de atualizar o código, verifique se nenhum uso de API obsoleto permanece no Cloud Manager verificando os resultados da etapa de qualidade do código.
 
+Se as atualizações não forem feitas até 4 de maio, você não receberá mais atualizações de versão do AEM. Para receber atualizações de versão do Adobe novamente, o pipeline de pilha completa deve ser executado com êxito; a atualização será aplicada em alguns dias.
+
 ### Diretrizes gerais
 
 Se você usar uma biblioteca de terceiros que atualmente requer a API obsoleta, tente atualizar para uma versão mais recente dessa biblioteca de terceiros.
 
-Se decidir implantar sua própria versão da API obsoleta, por exemplo, sua própria versão do Guava, verifique se todos os pacotes que usam essa API serão conectados à sua versão. Se você decidir implantar a mesma versão principal que está incluída no Cloud Service, nenhuma outra ação será necessária. No entanto, se você seguir as recomendações e implantar a versão mais recente, será necessário ajustar o projeto Maven. Inclua essa biblioteca como uma nova dependência antes de `aem-sdk-api`. Dessa forma, seu código será vinculado à nova versão. Depois de fazer as alterações, verifique com o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) se o uso da API obsoleta não será mais sinalizado.
+Se decidir implantar sua própria versão da API obsoleta, por exemplo, sua própria versão do Guava, verifique se todos os pacotes que usam essa API serão conectados à sua versão. Se você decidir implantar a mesma versão principal que está incluída no Cloud Service, nenhuma outra ação será necessária. No entanto, se você seguir as recomendações e implantar a versão mais recente, será necessário ajustar o projeto Maven. Inclua essa biblioteca como uma nova dependência antes de `aem-sdk-api`. Dessa forma, seu código será vinculado à nova versão. Depois de fazer as alterações, verifique com o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) se o uso da API obsoleta não será mais sinalizado.
 
 Se você estiver usando o ACS AEM Commons, use pelo menos a versão 6.11.0 (recomenda-se a versão mais recente) e certifique-se de [incluir a versão para Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) especificando o classificador `cloud` para o pacote de conteúdo.
 
@@ -516,7 +517,7 @@ As seções abaixo refletem a superfície de configuração OSGi do AEM as a Clo
 
 O código do cliente pode configurar qualquer configuração OSGi não listada.
 
-Essas regras são validadas durante o processo de criação do Cloud Manager. Regras adicionais podem ser adicionadas ao longo do tempo e a data de aplicação esperada é anotada na tabela. Espera-se que os clientes cumpram essas regras até a data de aplicação prevista. O não cumprimento das regras após a data de remoção gera erros no processo de criação do Cloud Manager. Os projetos Maven devem incluir o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) para sinalizar erros de configuração OSGI durante o desenvolvimento local do SDK.
+Essas regras são validadas durante o processo de criação do Cloud Manager. Regras adicionais podem ser adicionadas ao longo do tempo e a data de aplicação esperada é anotada na tabela. Espera-se que os clientes cumpram essas regras até a data de aplicação prevista. O não cumprimento das regras após a data de remoção gera erros no processo de criação do Cloud Manager. Os projetos Maven devem incluir o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) para sinalizar erros de configuração OSGI durante o desenvolvimento local do SDK.
 
 Informações adicionais sobre a configuração OSGI podem ser encontradas em [este local](/help/implementing/deploying/configuring-osgi.md).
 
@@ -526,11 +527,11 @@ As propriedades para os seguintes PIDs de componente OSGi estão obsoletos e o u
 
 | **ID do componente OSGI** | **Propriedades Não Modificáveis** | **Descontinuação** | **Imposição** |
 |---|---|---|---|
-| **`org.apache.sling.commons.log.LogManager`** | todas | 24/04/25 | 31/08/25 (configuração ignorada em junho) |
-| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 24/04/25 | 31/08/25 (configuração ignorada em junho) |
-| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | todas | 2024 | 31/08/25 |
-| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | todas | 03/06/25 | 31/08/25 |
-| **`org.apache.http.proxyconfigurator`** | todas | 03/06/25 | 31/08/25 |
+| **`org.apache.sling.commons.log.LogManager`** | todas | 4/24/25 | 31/08/25 (configuração ignorada em junho) |
+| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 31/08/25 (configuração ignorada em junho) |
+| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | todas | 2024 | 8/31/25 |
+| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | todas | 6/3/25 | 8/31/25 |
+| **`org.apache.http.proxyconfigurator`** | todas | 6/3/25 | 8/31/25 |
 
 ### Configurações OSGi não modificáveis {#unmodifiable-osgi-properties}
 
