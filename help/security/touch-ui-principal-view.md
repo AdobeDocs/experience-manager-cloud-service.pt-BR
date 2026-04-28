@@ -3,13 +3,13 @@ title: Exibição principal para gerenciamento de permissões
 description: Saiba mais sobre a nova interface de toque que facilita o gerenciamento de permissões.
 feature: Security
 role: Admin
-source-git-commit: 66ec051a2412fdbfb18dec5b79c6d5d5ca496216
+exl-id: 855e112a-39f7-4aee-9e29-ece1aa9acf0a
+source-git-commit: 99632006310beebe13c5d5885a8e9e7937c8f627
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1210'
 ht-degree: 1%
 
 ---
-
 
 # Exibição principal para gerenciamento de permissões {#principal-view-for-permissions-management}
 
@@ -45,55 +45,55 @@ Clicar no nome mostra as permissões atribuídas à direita. O painel de permiss
 
 ## Adicionando uma nova Entrada de Controle de Acesso para um Principal {#adding-new-access-control-entry-for-a-principal}
 
-Novas permissões podem ser adicionadas adicionando uma Entrada de controle de acesso. Basta clicar no botão Adicionar ACE.
+Novas permissões podem ser adicionadas adicionando uma Entrada de controle de acesso. Simply click the Add ACE button.
 
-![Adicionar nova ACL para uma Entidade](assets/patru.png)
+![Add new ACL for a Principal](assets/patru.png)
 
-Isso exibe a janela mostrada abaixo. A próxima etapa é escolher um caminho em que a permissão deve ser configurada.
+This brings up the window shown below, the next step is to choose a path where the permission must be configured.
 
-![Configurar caminho de permissões](assets/cinci-1.png)
+![Configure permissions path](assets/cinci-1.png)
 
-Aqui, um caminho é selecionado onde você pode configurar uma permissão para **dam-users**:
+Here, a path is selected where you can configure a permission for **dam-users**:
 
-![Exemplo de configuração para dam-users](assets/sase-1.png)
+![Example configuration for dam-users](assets/sase-1.png)
 
-Depois que o caminho é selecionado, o fluxo de trabalho volta para essa tela, onde o usuário pode selecionar um ou mais privilégios dos namespaces disponíveis (como `jcr`, `rep` ou `crx`), conforme mostrado abaixo.
+After the path is selected, the workflow goes back to this screen, where the user can then select one or more of the privileges from the available namespaces (like `jcr`, `rep` or `crx`) as shown i below.
 
-Os privilégios podem ser adicionados pesquisando usando o campo de texto e selecionando na lista.
-
->[!NOTE]
->
->Para obter uma lista completa de privilégios e descrições, consulte [Administração de Usuários, Grupos e Direitos de Acesso](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
-
-![Permissão de pesquisa para um determinado caminho.](assets/image2019-3-21_0-5-47.png) ![Adicionar nova entrada para &#39;dam-users&#39; como mostrado por um caminho selecionado em colunas verticais.](assets/image2019-3-21_0-6-53.png)
-
-Depois que a lista de privilégios for selecionada, o usuário poderá escolher o Tipo de permissão: Negar ou Permitir, conforme mostrado abaixo.
-
-![Selecionar permissão](assets/screen_shot_2019-03-17at63938pm.png) ![Selecionar permissão](assets/screen_shot_2019-03-17at63947pm.png)
-
-## Uso de restrições {#using-restrictions}
-
-Além da lista de privilégios e do Tipo de permissão em um determinado caminho, essa tela também permite adicionar restrições para controle de acesso refinado, como mostrado abaixo:
-
-![Adicionar restrições](assets/image2019-3-21_1-4-14.png)
+Privileges can be added by searching using the text field and then selecting from the list.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o que significa cada restrição, consulte [a Documentação do Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>For a complete list of privileges and descriptions, see [User, Group, and Access Rights Administration](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
 
-É possível adicionar restrições, como mostrado abaixo, escolhendo o tipo de restrição, inserindo o valor e clicando no ícone **+**.
+![Search permission for a given path.](assets/image2019-3-21_0-5-47.png) ![Add New Entry for &#39;dam-users&#39; as shown by a path selected in vertical columns.](assets/image2019-3-21_0-6-53.png)
 
-![Adicionar o tipo de restrição](assets/sapte-1.png) ![Adicionar o tipo de restrição](assets/opt-1.png)
+After the list of privileges has been selected, the user can choose the Permission Type : Deny or Allow, as shown below.
 
-O novo ACE é refletido na Lista de controle de acesso conforme mostrado abaixo. Observe que `jcr:write` é um privilégio agregado que inclui `jcr:removeNode` que foi adicionado acima, mas não é mostrado abaixo como coberto por `jcr:write`.
+![Select permission](assets/screen_shot_2019-03-17at63938pm.png) ![Select permission](assets/screen_shot_2019-03-17at63947pm.png)
 
-## Edição de ACEs {#editing-aces}
+## Using Restrictions {#using-restrictions}
 
-As Entradas de controle de acesso podem ser editadas selecionando um principal e escolhendo o ACE que você deseja editar.
+In addition to the list of privileges and the Permission Type on a given path, this screen also lets you add restrictions for fine grained access control as shown below:
 
-Por exemplo, aqui você pode editar a entrada abaixo para **dam-users** clicando no ícone de lápis à direita:
+![Add restrictions](assets/image2019-3-21_1-4-14.png)
 
-![Adicionar restrição](assets/image2019-3-21_0-35-39.png)
+>[!NOTE]
+>
+>For more information on what each restriction means, see [the Jackrabbit Oak Documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+
+Restrictions can be added as shown below by choosing the restriction type, entering the value and hitting the **+** icon.
+
+![Add the restriction type](assets/sapte-1.png) ![Add the restriction type](assets/opt-1.png)
+
+The new ACE is reflected in the Access Control List as shown below. Note that `jcr:write` is an aggregate privilege that includes `jcr:removeNode` that was added above, but is not shown below as its covered under `jcr:write`.
+
+## Editing ACEs {#editing-aces}
+
+Access Control Entries can be edited by selecting a principal and choosing the ACE that you want to edit.
+
+For example,  here you can edit the below entry for **dam-users** by clicking the pencil icon on the right:
+
+![Add restriction](assets/image2019-3-21_0-35-39.png)
 
 A tela de edição é exibida com ACEs configuradas pré-selecionadas, que podem ser excluídas clicando no ícone cruzado ao lado delas ou novos privilégios podem ser adicionados ao caminho fornecido, conforme mostrado abaixo.
 
@@ -126,7 +126,7 @@ Você pode acessar o modo de exibição da Interface para Toque de Permissões c
 
 Depois de iniciar a exibição de Permissões, você pode clicar em **Exibição do Nó** ou **Exibição Filtrada** no canto superior direito da tela, dependendo da sua preferência de exibição.
 
-#### Visualização de nós
+#### Visualização de nós {#node-view}
 
 Nesta visualização, as ACLs são apresentadas para cada Nó individual (caminho). Ele fornece informações sobre:
 
@@ -136,14 +136,17 @@ Os usuários têm a opção de adicionar, remover ou atualizar ACLs. Quando um c
 
 ![Modo de Exibição de Nó](assets/image-2025-2-5_15-26-2.png)
 
-#### Visualização filtrada
+#### Visualização de auditoria {#audit-view}
 
-Essa visualização permite que os usuários pesquisem com eficiência por permissões em um caminho e principais especificados. Nessa visualização, os usuários podem determinar facilmente o tipo de permissões concedidas a um grupo de principais para o caminho selecionado.
-Além disso, a Exibição filtrada fornece informações sobre ACLs eficazes. Ele exibe as ACLs associadas ao nó principal do caminho selecionado, considerando o principal selecionado e quaisquer principais comuns.
+Essa visualização permite que os usuários pesquisem com eficiência as permissões aplicadas em um caminho especificado e entidades de segurança selecionadas. Nessa visualização, os usuários podem identificar claramente o tipo de permissões concedidas a uma ou mais entidades para o caminho selecionado.
 
-![Modo de Exibição de Filtro](assets/FilteredView.png)
+Como opção, a associação de grupo pode ser exibida marcando a caixa de seleção dedicada. Quando essa opção estiver habilitada, a avaliação de permissão considerará todos os grupos do principal, não apenas o principal selecionado.
 
-### A Visualização De Permissões Do Navegador Do Repositório {#the-repository-browser-permissions-view}
+Além disso, a Visualização de auditoria fornece informações sobre ACLs eficazes. Ele exibe as ACLs associadas ao nó principal do caminho selecionado, levando em conta o principal selecionado e todos os principais comuns.
+
+![Modo de Exibição de Filtro](assets/audit-view.png)
+
+### As permissões do navegador do repositório e a visualização de auditoria {#the-repository-browser-permissions-and-audit-view}
 
 A exibição de permissões também pode ser acessada pelo [Navegador do Repositório](/help/implementing/developing/tools/repository-browser.md).
 
@@ -155,7 +158,11 @@ Você pode acessá-lo ao:
 
 1. Uma vez no Navegador do repositório, clique na guia **Permissões**
 
-   ![Guia Permissões](assets/image-2025-2-5_15-29-33.png)
+   ![Guia Permissões](/help/security/assets/permissions-tab.png)
+
+1. A visualização de auditoria permite que os usuários pesquisem com eficiência as permissões aplicadas em um caminho especificado e entidades de segurança selecionadas. Como opção, a associação de grupo pode ser exibida marcando a caixa de seleção dedicada.
+
+   ![Guia Auditoria](/help/security/assets/audit-tab.png)
 
 **Observação**: para exibir as permissões, são necessários direitos de administrador. Siga as etapas mencionadas [aqui](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy) para acessar as permissões.
 
