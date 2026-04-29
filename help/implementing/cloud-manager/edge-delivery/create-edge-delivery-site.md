@@ -4,42 +4,28 @@ description: Saiba como criar um site do Edge Delivery rapidamente no Cloud Mana
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
+source-git-commit: d3d956e9342fe6bb507b0efd952dfbecdda269c2
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 0%
+source-wordcount: '1477'
+ht-degree: 2%
 
 ---
 
 # Crie seu primeiro site do Edge Delivery com um clique{#about-one-click-edge-delivery-site}
 
-A criação do seu primeiro site do Edge Delivery com um clique foi projetada para ajudar a automatizar a integração e a implantação de sites do Edge Delivery no Cloud Manager. Ele simplifica bastante o processo, fazendo você clicar em um único botão. Esse clique único provisiona a infraestrutura necessária, integra-se ao GitHub para controle de versão e configura o armazenamento de documentos e ativos no Google Drive.
+A criação do seu primeiro site do Edge Delivery com um clique foi projetada para ajudar a automatizar a integração e a implantação de sites do Edge Delivery no Cloud Manager. Ele simplifica bastante o processo, fazendo você clicar em um único botão. O clique único provisiona a infraestrutura necessária, integra-se ao GitHub para controle de versão e configura o armazenamento de documentos e ativos no Google Drive.
 
 Essa automação ajuda a reduzir o esforço manual necessário para configurar o site inicial. Ele garante fluxos de trabalho perfeitos, escalabilidade e melhora o desempenho de suas equipes quando se trata de gerenciar conteúdo na borda.
+
+>[!IMPORTANT]
+>
+>O provisionamento do site do Edge Delivery com um clique é otimizado para sites de prova de conceito e protótipos rápidos. Para cargas de trabalho de produção, a Adobe recomenda migrar seu site para uma organização dedicada da Edge Delivery Services.
 
 <!--
  Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on)
 -->
-
-
-
-<!--
-## Practical use cases {#use-cases}
-
-| Use case | Description |
-| --- | --- |
-| Website and application deployment | <ul><li>Automate the hosting and delivery of static or dynamic sites.</li><li>Ensure fast performance through edge caching. </li></ul> |
-| API gateway and content delivery | <ul><li>Optimize API responses by caching data at the edge.</li><li>Reduce backend load and improved response times. </li></ul> |
-| Real-time content updates | <ul><li>Instant deployment of new content across edge locations.</li><li>Support integration with automated content pipelines. </li></ul> |
-| Edge computing workloads | <ul><li>Support serverless computing to process workloads closer to users.</li><li>Reduce latency and enhance performance. </li></ul> |
-| Security and governance | <ul><li>Security is provided with integrated DDoS (Distributed Denial of Service) protection and WAF (Web Application Firewall) integration.</li><li>Ensure that content is delivered securely through TLS (Transport Security Layer) encryption. </li></ul> |
--->
-
-
-
-
 
 ## Crie um site do Edge Delivery no Cloud Manager com um clique {#one-click-edge-delivery-site}
 
@@ -56,7 +42,7 @@ Consulte também [Introdução ao Edge Delivery Services no Cloud Manager](/help
 1. Entre no Cloud Manager em [experience.adobe.com](https://experience.adobe.com).
    1. Na seção **Acesso rápido**, clique em **Experience Manager**.
    1. No painel lateral esquerdo, clique em **Cloud Manager**.
-   1. Selecione a organização desejada.
+   1. Selecione uma organização.
 1. No console **Meus Programas**, clique em um programa.
 1. No canto superior esquerdo da página, clique em ![Mostrar ícone de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu do lado esquerdo.
 1. No menu do lado esquerdo, no cabeçalho **Programa**, clique em **Visão geral**.
@@ -75,7 +61,7 @@ Consulte também [Introdução ao Edge Delivery Services no Cloud Manager](/help
 
    Uma janela aparece perto do centro superior da tela informando que o provisionamento do site do Edge Delivery foi iniciado.
 
-Quando o provisionamento e a validação do site são concluídos pelo Cloud Manager, o **Nome do site** (o nome do projeto inserido anteriormente) aparece na caixa de listagem **Sites do Edge Delivery** na página do Edge Delivery. Além disso, um ponto verde é exibido à esquerda da coluna Verified status (Status verificado).
+   Quando o Cloud Manager concluir o provisionamento e a validação do site, o **Nome do site** (o nome do projeto inserido anteriormente) aparecerá na caixa de listagem **Sites do Edge Delivery** na página Edge Delivery. Um ponto verde também aparece à esquerda da coluna de status **Verificado**.
 
 Consulte também [Publicar conteúdo do autor do AEM no Edge Delivery](#publish-from-aem-author).
 
@@ -90,7 +76,7 @@ Consulte também [Publicar conteúdo do autor do AEM no Edge Delivery](#publish-
    | O que explorar | Etapas |
    | --- | --- |
    | Repositório GitHub de um site | <ul><li>Na caixa de listagem **Sites do Edge Delivery**, no cabeçalho de coluna **Repositório**, clique na URL do site que você acabou de criar.<br>Talvez seja necessário entrar no GitHub com seu nome de usuário ou endereço de email e sua senha.</li> |
-   | Publicar um site | <ul><li> Na caixa de listagem **Sites do Edge Delivery**, na extremidade direita do nome do site, clique em ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) para abrir o menu suspenso.</li><li>Clique em ![Ícone Publicar Verificação](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg) **Publicar site** no menu suspenso.<br>Uma mensagem em caixa de informações é exibida informando que a publicação do site foi iniciada com êxito.</li></ul> |
+   | Publicar um site | <ul><li> Na caixa de listagem **Sites do Edge Delivery**, na extremidade direita do nome do site, clique em ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) para abrir o menu suspenso.</li><li>Clique em ![Ícone Publicar Verificação](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PublishCheck_18_N.svg) **Publicar site** no menu suspenso.<br>Uma mensagem de notificação do sistema será exibida informando que a publicação do site foi iniciada com êxito.</li></ul> |
    | Visualizar um site publicado | <ul><li>Na caixa de listagem **Sites do Edge Delivery**, no cabeçalho de coluna **Nome do site**, clique na URL do site que você acabou de criar e publicar.<br>Na barra de Endereços de URL do seu navegador, observe que a URL do site termina com `.page`, indicando que você está visualizando uma visualização do site.</li><li>Para ver o site ativo, altere manualmente `.page` para `.live` na barra de Endereços de URL.</li></ul> |
    | Conceda aos usuários acesso ao repositório de conteúdo no Google Drive | <ul><li> Na caixa de listagem **Sites do Edge Delivery**, na extremidade direita do nome do site, clique em ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) para abrir o menu suspenso.</li><li>Clique em ![Ícone Adicionar usuários](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **Obter acesso ao repositório de conteúdo** no menu suspenso.</li><li>Na caixa de diálogo **`Add collaborators to your site`**, digite o endereço de email de um colaborador e clique em ![Ícone de marca de seleção](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Continue adicionando emails do colaborador, conforme necessário.</li><li>Quando terminar, clique em **Adicionar colaboradores**.</li><li>Para compartilhar o link com seus colaboradores de conteúdo, na caixa de diálogo **Collaboration adicionado com êxito**, clique em **OK**.</li><li>Na caixa de diálogo Collaboration adicionada com êxito, clique em ![Ícone Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar o link e compartilhá-lo com seus colaboradores.<br>Antes de compartilhar o link, confirme se os colaboradores estão conectados com o endereço de email associado à sua conta IMS. Se a conta de email IMS não estiver disponível, ele deverá usar o endereço de email adicionado como colaborador. Isso garante que os colaboradores possam acessar o link e ver o conteúdo a ser editado ou atualizado no Google Drive.</li><li>Quando terminar a edição, clique em **Publicar site** no Cloud Manager, conforme descrito acima.<br>Ou visualize as alterações feitas, conforme descrito acima.</li></ul> |
    | Conceda aos usuários acesso ao repositório básico no GitHub | <ul><li> Na caixa de listagem **Sites do Edge Delivery**, na extremidade direita do nome do site, clique em ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) para abrir o menu suspenso.</li><li>Clique em ![Ícone do código](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **Obter acesso ao repositório base** no menu suspenso.</li><li>Na caixa de diálogo **Acessar o repositório base do seu site**, digite o nome de usuário do GitHub de um colaborador e clique em ![Ícone de marca de seleção](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Continue adicionando nomes de usuário do GitHub, conforme necessário.</li><li>Quando terminar, clique em **Adicionar colaboradores**.</li>Os usuários devem conceder acesso a seu próprio nome de usuário do GitHub para visualizar o repositório. |
@@ -117,7 +103,7 @@ Depois que o site do Edge Delivery for criado e **verificado** no Cloud Manager,
 
 * **Do Cloud Manager** -
 
-   1. Na guia **Publicar Entrega** da página **Visão Geral**, no cartão **Ambientes**, clique no ![ícone Informações](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg) destacado.
+   1. Na guia **Publicar Entrega** da página **Visão Geral**, no cartão **Ambientes**, clique no ícone destacado ![Informações](https://spectrum.adobe.com/static/icons/ui_18/InfoMedium.svg).
 
    1. Na janela pop-up informativa, selecione **Clique para ativar** para habilitar o provisionamento do nível de publicação na interface do usuário do Cloud Manager.
 
