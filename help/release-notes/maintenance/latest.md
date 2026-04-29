@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9d9acd2151aca65a0c988b90bc4f94e088395f3f
+source-git-commit: fb50ebd0aecda2cf59e5a75136884f26488b4b90
 workflow-type: tm+mt
-source-wordcount: '2221'
+source-wordcount: '2310'
 ht-degree: 4%
 
 ---
@@ -18,9 +18,9 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 ## Versão 25520 {#25520}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 25520, lançada publicamente em sexta-feira, 23 de abril de 2026. A versão de manutenção anterior era 25194.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 25520, lançada publicamente em 23 de abril de 2026. A versão de manutenção anterior era 25194.
 
-A ativação de recursos do 2026.4.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2026.4.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 
 ### Aprimoramentos {#enhancements-25520}
@@ -77,7 +77,7 @@ A ativação de recursos do 2026.4.0 fornece o conjunto completo de recursos par
 * SITES-42531: a dica de ferramenta é deslocalizada ao bloquear &quot;Fragmento de conteúdo&quot; na página &quot;Assets&quot;.
 * SITES-42532: sequência de caracteres &quot;Posteriormente&quot; deslocalizada na publicação do CF no AEM no Assets.
 * SITES-39250: os caracteres localizados são exibidos incorretamente no link em Assets > Editor de fragmentos de conteúdo.
-* SITES-41117: Não localizado &#39;O valor selecionado precisa ser um Tipo de Modelo válido dentro de `{}` ou um modelo global.&#39; sequência de caracteres no Editor de modelos de fragmentos de conteúdo.
+* SITES-41117: cadeia de caracteres &quot;O valor selecionado precisa ser um Tipo de Modelo válido dentro de `{}` ou um modelo global&quot; deslocalizada no Editor de Modelos de Fragmentos de Conteúdo.
 * SITES-41431: verbosidade reduzida do feedback do leitor de tela para o botão de bloqueio para fornecer anúncios mais claros e concisos.
 * SITES-40819: o foco do teclado foi corrigido para não retornar ao elemento de acionamento após uma interação, garantindo uma ordem de foco previsível.
 * SITES-40751: adição de rótulos visíveis no foco do teclado para itens da barra de ferramentas para que os usuários de teclado possam identificar claramente as ações.
@@ -110,7 +110,7 @@ A ativação de recursos do 2026.4.0 fornece o conjunto completo de recursos par
 
 ### Problemas conhecidos {#known-issues-25520}
 
-Nenhum.
+* SITES-43715: Edge Delivery com Universal Editor: a falha na validação de permissão adiciona latência às cargas de trabalho de publicação.
 
 ### Recursos e APIs obsoletos {#deprecated-25520}
 
@@ -129,4 +129,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.30.4 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
