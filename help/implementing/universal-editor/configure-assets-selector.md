@@ -3,13 +3,13 @@ title: Configuração do seletor de Assets para o editor universal
 description: Entenda como configurar o seletor de ativos para uso com o Editor universal.
 feature: Developing
 role: Admin, Developer
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+exl-id: 0bf7b418-5ecd-454f-ac46-03792268c59c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 1%
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
-
 
 # Configuração do seletor de Assets para o editor universal {#configure-assets-selector}
 
@@ -17,9 +17,9 @@ Entenda como configurar o seletor de ativos para uso com o Editor universal.
 
 ## Visão geral {#overview}
 
-O Editor Universal usa [o seletor de ativos](/help/assets/overview-asset-selector.md#using-asset-selector) para permitir que os autores naveguem e selecionem ativos para inserção em seu conteúdo.
+O Editor universal usa o seletor de ativos para permitir que os autores naveguem e selecionem ativos para inserção em seu conteúdo.
 
-O seletor de ativos pode ser configurado no Universal Editor com o uso de [&#x200B; filtros de componentes.](/help/implementing/universal-editor/filtering.md) Este documento descreve quais opções de configuração estão disponíveis.
+O seletor de ativos pode ser configurado no Universal Editor com o uso de [filtros de componentes.](/help/implementing/universal-editor/filtering.md) Este documento descreve quais opções de configuração estão disponíveis.
 
 >[!NOTE]
 >
@@ -93,6 +93,10 @@ O exemplo a seguir contém a maioria das opções para fins de ilustração.
 ]
 ```
 
-## Recursos adicionais {#additional-resources}
+<!--
 
-Para obter detalhes sobre o seletor de ativos, consulte o documento [Seletor de ativos de microfront-end](/help/assets/overview-asset-selector.md#using-asset-selector) na documentação de ativos.
+## Additional Resources {#additional-resources}
+
+For details on the assets selector, please see the document [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md#using-asset-selector) in the assets documentation.
+
+-->

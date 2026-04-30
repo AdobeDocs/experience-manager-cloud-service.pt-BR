@@ -4,9 +4,9 @@ description: Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1673'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Da mesma forma, o Experience Manager Assets distingue o status Rejeitado na exib
 
 ## Como você pode fazer com que a ID de usuário ou de grupo do Adobe IMS (Adobe Identity Management Services) seja usada para definir as funções em ativos na exibição de administrador do Experience Manager, para proteger a experiência de entrega e pesquisa? {#set-roles-secure-delivery-search}
 
-Os usuários que exigem acesso ao ambiente do Experience Manager Author são gerenciados como usuários do Adobe IMS no Admin Console da Adobe. Para obter informações sobre o que são os usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console, consulte [Usuários do Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=pt-BR).
+Os usuários que exigem acesso ao ambiente do Experience Manager Author são gerenciados como usuários do Adobe IMS no Admin Console da Adobe. Para obter informações sobre o que são os usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console, consulte [Usuários do Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=en).
 
 
 ## É possível aprovar vários ativos simultaneamente em uma pasta? {#approve-multiple-assets-in-folder}
@@ -107,7 +107,7 @@ Estas são algumas das principais diferenças entre o Dynamic Media com recursos
 | [Disponível somente com o Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Também disponível com On-premise ou Adobe Managed Services com etapas adicionais de configuração e provisionamento. |
 | [Conjunto avançado de modificadores de imagem com suporte, como largura, altura, rotação, inversão, qualidade e formato](/help/assets/deliver-assets-apis.md) | Conjunto avançado de modificadores de imagem disponíveis |
 | [Entrega de ativos restrita com base em usuários, funções, data e hora](/help/assets/restrict-assets-delivery.md) | O Assets publicado no Dynamic Media é acessível a todos os usuários |
-| A maioria dos desenvolvedores está familiarizada com as especificações da OpenAPI. A extensibilidade do AEM Assets fica muito simples ao usar o [Seletor de ativos de micro front-end](/help/assets/overview-asset-selector.md). | APIs baseadas em SOAP, que se tornam uma barreira ao desenvolver personalizações de integração. |
+| A maioria dos desenvolvedores está familiarizada com as especificações da OpenAPI. A extensibilidade do AEM Assets torna-se realmente simples ao usar o [Supervisor de Conteúdo](/help/assets/integrate-adobe-non-adobe-applications.md). | APIs baseadas em SOAP, que se tornam uma barreira ao desenvolver personalizações de integração. |
 | Quaisquer alterações feitas em ativos aprovados no DAM, incluindo atualizações de versão e modificações de metadados, são refletidas automaticamente nos URLs de entrega. Com um valor curto de TTL (Time-to-Live) de 10 minutos configurado para o Dynamic Media com recursos OpenAPI por meio do CDN, as atualizações ficam visíveis em todas as interfaces de criação e publicação em menos de 10 minutos. | TTL de CDN recomendado de 10 horas. Você pode substituir o valor TTL usando a ação de invalidação de cache. |
 | Somente os ativos aprovados estão disponíveis para entrega de ativos em aplicativos downstream, permitindo ativos aprovados pela marca em experiências digitais. | As atualizações em um ativo publicado do Dynamic Media são publicadas automaticamente sem nenhum fluxo de trabalho de aprovação, o que não garante ativos aprovados pela marca em experiências digitais. |
 | Relatórios de uso com base no número de ativos entregues. Esse recurso estará disponível em breve. | Os relatórios de uso não estão disponíveis. Esse recurso estará disponível em breve. |
@@ -128,7 +128,7 @@ A tabela abaixo descreve as principais diferenças entre as duas soluções:
 | Suporte para todos os tipos de formato de ativos compatíveis com o AEM Assets. | Não há suporte para vídeos. |
 | Você pode usar o Dynamic Media na implantação local do Sites enquanto busca ativos da implantação remota do DAM. | A implantação do Dynamic Media no Sites local é somente leitura. |
 | Nenhuma restrição no número de instâncias do AEM Sites conectadas a uma implantação remota do DAM. Você pode [restringir o acesso a ativos na instância do Sites, configurando funções](/help/assets/restrict-assets-delivery.md) para ativos aprovados no DAM remoto. | Restrição para conectar não mais do que quatro instâncias do AEM Sites à implantação remota do DAM. O aumento do número requer testes adicionais. |
-| O Seletor de ativos e o Dynamic Media com recursos OpenAPI são extensíveis para permitir integrações personalizadas. | As APIs do Assets conectadas não são extensíveis para permitir integrações personalizadas. |
+| O Content Advisor e o Dynamic Media com recursos OpenAPI são extensíveis para permitir integrações personalizadas. | As APIs do Assets conectadas não são extensíveis para permitir integrações personalizadas. |
 | Quaisquer alterações feitas em ativos aprovados disponíveis na implantação remota do DAM, incluindo atualizações de versão e modificações de metadados, são refletidas automaticamente na instância do Sites em um valor curto de Tempo de vida (TTL) de 10 minutos. | As atualizações de ativos na implantação remota do DAM são tratadas por meio de eventos de ciclo de vida automaticamente, mas leva muito mais tempo do que o Dynamic Media com recursos OpenAPI. |
 | Os metadados de ativos no DAM remoto também estão disponíveis na instância do AEM Sites. | Os metadados de ativos no DAM remoto não estão disponíveis na instância do AEM Sites. |
 

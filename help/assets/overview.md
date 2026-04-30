@@ -3,9 +3,9 @@ title: Introdução ao Assets as a Cloud Service para gerenciamento de ativos di
 description: Introdução ao Assets as a Cloud Service para gerenciamento de ativos digitais no AEM
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '5648'
+source-wordcount: '6014'
 ht-degree: 7%
 
 ---
@@ -16,7 +16,7 @@ O AEM Assets as a Cloud Service oferece uma solução PaaS nativa em nuvem para 
 
 A Adobe oferece uma solução robusta de gerenciamento de ativos digitais (DAM) para você aproveitar ao máximo seus ativos digitais. O Adobe Experience Manager Assets tem duas experiências separadas que usam o mesmo repositório de Cloud Services para atender aos seus requisitos. Para obter informações sobre experiências personalizadas para o AEM Assets, consulte [Experiências personalizadas disponíveis para o Gerenciamento de ativos digitais](#persona-based-experiences).
 
-Para obter informações sobre as ofertas do AEM Assets Ultimate e do AEM Assets Prime, consulte [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md) e [Assets as a Cloud Service Prime](/help/assets/assets-prime.md).
+Para obter informações sobre as ofertas do AEM Assets Ultimate e do AEM Assets Prime, consulte [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md) e [Assets as a Cloud Service](/help/assets/assets-prime.md).
 
 Alguns dos principais recursos do Gerenciamento de ativos digitais da Adobe incluem:
 
@@ -58,11 +58,11 @@ Use estes links para acessar a documentação detalhada sobre estas ferramentas 
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/get-started">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
    <img alt="Usar o aplicativo de desktop do AEM" src="./assets/desktop-app-upload.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-desktop-app/using/get-started">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/get-started">
       <strong>Usar aplicativo de desktop do AEM</strong>
       </a>
    </div>
@@ -213,11 +213,11 @@ Use estes links para acessar a documentação detalhada sobre estas ferramentas 
 
 
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
    <img alt="Corte inteligente" src="./assets/smart-cropping.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video">
       <strong>Recorte inteligente</strong>
       </a>
    </div>
@@ -270,11 +270,11 @@ O AEM Assets fornece recursos que ajudam você a encontrar rapidamente o ativo c
 
 
 <td>
-   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=pt">
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
    <img alt="Práticas recomendadas de gerenciamento de metadados" src="./assets/metadata-best-practices.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298?profile.language=pt">
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
       <strong>Práticas recomendadas de gerenciamento de metadados</strong>
       </a>
    </div>
@@ -466,8 +466,8 @@ O AEM Assets pode se integrar perfeitamente a vários aplicativos Adobe e não A
 
 * **Dynamic Media com recursos OpenAPI**: [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) oferece um conjunto abrangente de APIs de [pesquisa](/help/assets/search-assets-api.md) e [entrega](/help/assets/deliver-assets-apis.md). Ele permite que os desenvolvedores integrem facilmente o delivery de ativos aos seus aplicativos. Os aplicativos incluem o Adobe e aplicativos de terceiros. Ele fornece uma interface de usuário do seletor de ativos de micro front-end para pesquisar e selecionar ativos aprovados. O seletor pode ser facilmente integrado a qualquer aplicativo com base em estruturas JavaScript, como React JS, Angular JS e Vanilla JS.
 
-* **Seletor de ativos de micro front-end**: o Seletor de ativos de micro front-end fornece uma interface que se integra ao repositório do Experience Manager Assets para que você possa navegar ou pesquisar ativos digitais disponíveis no repositório. Em seguida, você pode usá-los na experiência de criação do aplicativo.
-É possível integrar o Seletor de ativos a um aplicativo da Adobe ou que não seja da Adobe.
+* **Supervisor de Conteúdo**: o Supervisor de Conteúdo fornece uma interface de usuário que se integra ao repositório do Experience Manager Assets para que você possa navegar ou pesquisar ativos digitais disponíveis no repositório. Em seguida, você pode usá-los na experiência de criação do aplicativo.
+É possível integrar o Supervisor de Conteúdo a um aplicativo da Adobe ou que não seja da Adobe.
 
 <table>
 <td>
@@ -499,16 +499,16 @@ O AEM Assets pode se integrar perfeitamente a vários aplicativos Adobe e não A
    </p>
 </td>
 <td>
-   <a href="/help/assets/overview-asset-selector.md">
-   <img alt="Seletor de ativos" src="./assets/integration-asset-selector.jpeg" />
+   <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+   <img alt="Assessor de conteúdo" src="./assets/integration-asset-selector.jpeg" />
    </a>
    <div>
-      <a href="/help/assets/overview-asset-selector.md">
-      <strong>Seletor de ativos de micro front-end</strong>
+      <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+      <strong>Supervisor de Conteúdo</strong>
       </a>
    </div>
    <p>
-      <em>Saiba como integrar o Seletor de Ativos de Microfront-end a um aplicativo da Adobe ou que não seja da Adobe.</em>
+      <em>Saiba como integrar o Supervisor de Conteúdo a um aplicativo do Adobe ou não-Adobe.</em>
    </p>
 </td>
 </table>
@@ -519,7 +519,7 @@ O AEM Assets pode se integrar perfeitamente a vários aplicativos Adobe e não A
 
 * **Integração com o Adobe Workfront**: [!DNL Adobe Workfront] é um aplicativo de gerenciamento de trabalho que ajuda você a gerenciar todo o ciclo de vida do trabalho em um único local. A integração entre o [!DNL Workfront] e o [!DNL Adobe Experience Manager Assets] permite que as organizações melhorem a velocidade do conteúdo e o prazo para comercialização, conectando intrinsecamente o gerenciamento de trabalho e de ativos digitais. No contexto do gerenciamento de trabalho no Workfront, os usuários têm acesso aos documentos e imagens necessários.
 
-  Ofertas do Adobe para [integrar [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] nativamente](https://experienceleague.adobe.com/pt-br/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
+  Ofertas do Adobe para [integrar [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] nativamente](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations).
 
 * **Integração com o Figma**: o AEM Assets integra-se nativamente com o Figma, o que permite que os designers acessem os ativos armazenados diretamente no AEM Assets na Interface do Usuário do Figma. Você pode colocar conteúdo gerenciado no AEM Assets na tela do Figma e depois salvar conteúdo novo ou editado no repositório do AEM Assets. Para acessar o AEM Assets Connector disponível na página da Comunidade Figma, clique [aqui](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
@@ -575,7 +575,7 @@ O AEM Assets pode se integrar perfeitamente a vários aplicativos Adobe e não A
 * **Integração com o Adobe Journey Optimizer**: combine fluxos de trabalho de marketing e criação usando o Adobe Experience Manager Assets. Integrado nativamente à Adobe Journey Optimizer, acesse o Assets as a Cloud Service para armazenar, gerenciar, descobrir e distribuir ativos digitais. Ele fornece um repositório único e centralizado de ativos que você pode usar para preencher suas mensagens.
 
 * **Integração com o Commerce**: a Integração do Adobe Experience Manager (AEM) Assets para Commerce combina os recursos avançados do AEM as a Digital Asset Management (DAM) system com o Adobe Commerce para melhorar as experiências de comércio eletrônico. Esses recursos são fornecidos pela conexão de projetos do Commerce ao eficiente ambiente de gerenciamento de ativos da AEM, para fornecer uma maneira contínua, escalável e eficiente de gerenciar e fornecer ativos em vitrines comerciais.
-* **Integração do AEM Assets com fluxos de Criação Baseada em Documentos para o Edge Delivery Services**: quando o [!DNL AEM Assets] se integra às suas ferramentas de Criação Baseada em Documentos, como o [!DNL Microsoft Word] ou o [!DNL Google Docs], ele fornece um Seletor de Ativos na sua ferramenta de criação. Use este Seletor de ativos para acessar [!DNL AEM Assets] e inserir ativos aprovados em seu conteúdo.
+* **Integração do AEM Assets com fluxos de Criação Baseada em Documentos para o Edge Delivery Services**: quando o [!DNL AEM Assets] se integra às suas ferramentas de Criação Baseada em Documentos, como o [!DNL Microsoft Word] ou o [!DNL Google Docs], ele fornece o Supervisor de Conteúdo na sua ferramenta de criação. Use o Supervisor de Conteúdo para acessar [!DNL AEM Assets] e inserir ativos aprovados no conteúdo.
 Se você já tiver um site do [!DNL Edge Delivery Services], consulte a documentação do [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) para saber como integrar o [!DNL AEM Assets] ao seu projeto existente do [!DNL AEM].
 
 * **Integrando [!DNL AEM Assets] com fluxos de criação baseados em [!DNL Universal Editor] para[!DNL Edge Delivery Services]**: configure o [!DNL Universal Editor] para integrar com [!DNL AEM Assets]. Essa integração permite que você use o [!DNL Dynamic Media with OpenAPI capabilities] para entregar ativos.
@@ -585,11 +585,11 @@ Se você já tiver um site do [!DNL Edge Delivery Services], consulte a document
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/combine/assets">
+   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
    <img alt="Integração com o Adobe Journey Optimizer" src="./assets/integration-figma.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/combine/assets">
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
       <strong>Integração com o Adobe Journey Optimizer</strong>
       </a>
    </div>
@@ -598,11 +598,11 @@ Se você já tiver um site do [!DNL Edge Delivery Services], consulte a document
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
    <img alt="Integração com o Commerce" src="./assets/integration-ajo.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">
       <strong>Integração com o Commerce</strong>
       </a>
    </div>
@@ -698,11 +698,11 @@ Alguns dos principais benefícios do Agente de governança incluem:
 
 <table>
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
    <img alt="Visão geral do Discovery Agent" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
       <strong>Visão Geral do Discovery Agent</strong>
       </a>
    </div>
@@ -712,11 +712,11 @@ Alguns dos principais benefícios do Agente de governança incluem:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
    <img alt="Visão geral da otimização de conteúdo" src="./assets/content-optimization-agent.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
       <strong>Visão geral do Content Otimization Agent</strong>
       </a>
    </div>
@@ -726,11 +726,11 @@ Alguns dos principais benefícios do Agente de governança incluem:
 </td>
 
 <td>
-   <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="Visão geral do agente de governança" src="./assets/governance-agent-overview.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
       <strong>Visão Geral do Agente de Governança</strong>
       </a>
    </div>
@@ -888,7 +888,7 @@ O Dynamic Media com recursos de OpenAPI coloca o DAM no centro de um ecossistema
 
 O Dynamic Media com recursos OpenAPI oferece os seguintes benefícios principais:
 
-* **Integrações perfeitas**: o Dynamic Media com recursos OpenAPI oferece um conjunto abrangente de APIs de pesquisa e entrega. Ele permite que seus desenvolvedores [integrem facilmente a entrega de ativos a seus aplicativos](/help/assets/integrate-dynamic-media-open-apis.md). Os aplicativos incluem o Adobe e aplicativos de terceiros. Ele fornece uma [interface de usuário do seletor de ativos de front-end de micro](/help/assets/overview-asset-selector.md) para pesquisar e selecionar ativos aprovados. O seletor pode ser facilmente integrado a qualquer aplicativo com base em estruturas JavaScript, como React JS, Angular JS e Vanilla JS.
+* **Integrações perfeitas**: o Dynamic Media com recursos OpenAPI oferece um conjunto abrangente de APIs de pesquisa e entrega. Ele permite que seus desenvolvedores [integrem facilmente a entrega de ativos a seus aplicativos](/help/assets/integrate-dynamic-media-open-apis.md). Os aplicativos incluem o Adobe e aplicativos de terceiros. Ela fornece uma [interface do usuário do Supervisor de Conteúdo](/help/assets/integrate-adobe-non-adobe-applications.md) para pesquisar e selecionar ativos aprovados. O seletor pode ser facilmente integrado a qualquer aplicativo com base em estruturas JavaScript, como React JS, Angular JS e Vanilla JS.
 
 * **Gerenciamento centralizado de ativos digitais**: o DAM é a única fonte da verdade para todos os ativos digitais. Seus ativos digitais são gerenciados centralmente no AEM Assets e entregues a aplicativos de consumo por referência usando URLs de entrega, sem copiar binários de ativos.
 
@@ -896,7 +896,7 @@ O Dynamic Media com recursos OpenAPI oferece os seguintes benefícios principais
 
 * **Consistência da marca**: somente [ativos aprovados pela marca](/help/assets/approve-assets.md) são expostos aos aplicativos downstream. [Os gerentes de marca e profissionais de marketing mantêm controle rigoroso sobre os ativos da marca](/help/assets/restrict-assets-delivery.md). Somente a versão aprovada e mais recente do ativo está disponível para uso, garantindo a consistência da marca em todos os canais e aplicativos.
 
-* **Entrega otimizada para a Web**: os ativos digitais são entregues em formatos otimizados para a Web para aprimorar os Componentes principais da Web das suas experiências digitais. Essa otimização inclui suporte para representações WebP para imagens, transmissão adaptável por meio dos protocolos HLS ou DASH para vídeos e representações originais para documentos.
+* **Entrega otimizada para a Web**: os ativos digitais são entregues em formatos otimizados para a Web para aprimorar a Core Web Vitals das suas experiências digitais. Essa otimização inclui suporte para representações WebP para imagens, transmissão adaptável por meio dos protocolos HLS ou DASH para vídeos e representações originais para documentos.
 
 * **Transformação de ativo dinâmico**: o sistema permite a transformação de imagem instantânea usando parâmetros de URL conhecidos como modificadores de imagem. [Por exemplo, largura, altura, girar, virar, qualidade, recorte, formato e recorte inteligente](/help/assets/deliver-assets-apis.md). As representações transformadas são geradas dinamicamente e entregues perfeitamente por meio da CDN.
 

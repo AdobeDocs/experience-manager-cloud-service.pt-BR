@@ -4,9 +4,9 @@ description: Saiba mais sobre os principais conceitos, como por que usar o Dynam
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ O Dynamic Media com recursos de OpenAPI coloca o DAM no centro de um ecossistema
 
 O Dynamic Media com recursos OpenAPI oferece os seguintes benefícios principais:
 
-* **Integrações perfeitas**: o Dynamic Media com recursos OpenAPI oferece um conjunto abrangente de APIs de pesquisa e entrega. Ele permite que seus desenvolvedores [integrem facilmente a entrega de ativos a seus aplicativos](/help/assets/integrate-dynamic-media-open-apis.md). Os aplicativos incluem o Adobe e aplicativos de terceiros. Ele fornece uma [interface de usuário do seletor de ativos de front-end de micro](/help/assets/overview-asset-selector.md) para pesquisar e selecionar ativos aprovados. O seletor pode ser facilmente integrado a qualquer aplicativo com base em estruturas JavaScript, como React JS, Angular JS e Vanilla JS.
+* **Integrações perfeitas**: o Dynamic Media com recursos OpenAPI oferece um conjunto abrangente de APIs de pesquisa e entrega. Ele permite que seus desenvolvedores [integrem facilmente a entrega de ativos a seus aplicativos](/help/assets/integrate-dynamic-media-open-apis.md). Os aplicativos incluem o Adobe e aplicativos de terceiros. Ela fornece uma [interface do Supervisor de Conteúdo](/help/assets/integrate-adobe-non-adobe-applications.md) para pesquisar e selecionar ativos aprovados. O seletor pode ser facilmente integrado a qualquer aplicativo com base em estruturas JavaScript, como React JS, Angular JS e Vanilla JS.
 
 * **Gerenciamento centralizado de ativos digitais**: o DAM é a única fonte da verdade para todos os ativos digitais. Seus ativos digitais são gerenciados centralmente no AEM Assets e entregues a aplicativos de consumo por referência usando URLs de entrega, sem copiar binários de ativos.
 
@@ -29,7 +29,7 @@ O Dynamic Media com recursos OpenAPI oferece os seguintes benefícios principais
 
 * **Consistência da marca**: somente [ativos aprovados pela marca](/help/assets/approve-assets.md) são expostos aos aplicativos downstream. [Os gerentes de marca e profissionais de marketing mantêm controle rigoroso sobre os ativos da marca](/help/assets/restrict-assets-delivery.md). Somente as versões aprovadas e mais recentes do ativo estão disponíveis para uso, garantindo a consistência da marca em todos os canais e aplicativos.
 
-* **Entrega otimizada para a Web**: os ativos digitais são entregues em formatos otimizados para a Web para aprimorar os Componentes principais da Web das suas experiências digitais. Isso inclui suporte para representações WebP para imagens, transmissão adaptável por meio dos protocolos HLS ou DASH para vídeos e representações originais para documentos.
+* **Entrega otimizada para a Web**: os ativos digitais são entregues em formatos otimizados para a Web para aprimorar a Core Web Vitals das suas experiências digitais. Isso inclui suporte para representações WebP para imagens, transmissão adaptável por meio dos protocolos HLS ou DASH para vídeos e representações originais para documentos.
 
 * [Transformação dinâmica de ativos](https://developer.adobe.com/experience-cloud/experience-manager-apis): nosso sistema permite a transformação instantânea de imagens usando parâmetros de URL conhecidos como modificadores de imagem. Por exemplo, largura, altura, girar, virar, qualidade, recorte, formato e recorte inteligente. As representações transformadas são geradas dinamicamente e entregues perfeitamente por meio da CDN.
 
@@ -108,16 +108,16 @@ Depois de enviar o tíquete de suporte, o Adobe habilita o Dynamic Media com rec
       </a>
    </div>
    <p>
-      <em>Integre sua própria interface de usuário personalizada com o repositório do Experience Manager Assets usando as APIs de Pesquisa e Entrega ou use o Seletor de Ativos de Microfront-end do Adobe.</em>
+      <em>Integre sua própria interface de usuário personalizada com o repositório do Experience Manager Assets usando as APIs de Pesquisa e Entrega ou use o Supervisor de Conteúdo do Adobe.</em>
    </p>
 </td>
 <td>
-   <a href="/help/assets/overview-asset-selector.md">
-   <img alt="Seletor de ativos da Adobe" src="./assets/asset-selector-prereqs.png" />
+   <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+   <img alt="Supervisor de conteúdo do Adobe" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/overview-asset-selector.md">
-      <strong>Seletor de ativos de microfront-end do Adobe</strong>
+      <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+      <strong>Supervisor de Conteúdo do Adobe</strong>
       </a>
    </div>
    <p>

@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '3020'
-ht-degree: 8%
+source-wordcount: '3101'
+ht-degree: 7%
 
 ---
 
@@ -64,7 +64,7 @@ Você pode clicar neste selo para obter acesso rápido a um menu de contexto com
 
 O contorno fino e azul claro se transforma em um contorno azul escuro para indicar a seleção e um cursor é exibido. Faça as alterações e pressione Enter/Return ou selecione fora da caixa de texto para salvar as alterações.
 
-Quando você seleciona o componente de texto, seus detalhes são mostrados no painel de propriedades [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Também é possível editar o texto no painel.
+Quando você seleciona o componente de texto, seus detalhes são mostrados no painel [propriedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Também é possível editar o texto no painel.
 
 ![Editando texto no painel de propriedades](assets/ue-editing-text-component-rail.png)
 
@@ -124,7 +124,7 @@ O editor de rich text (RTE) do Editor universal permite que o autor aplique a fo
 * **Desvincular**
    * Remover link do texto selecionado.
 * **Imagem**
-   * Especifique uma URL ou use o [seletor de ativos](/help/assets/overview-asset-selector.md#using-asset-selector) para selecionar um ativo da AEM.
+   * Especifique uma URL ou use o [Supervisor de Conteúdo](/help/assets/integrate-adobe-non-adobe-applications.md) para selecionar um ativo do AEM.
 * **Tabela**
    * Use o menu suspenso para inserir uma nova tabela do número selecionado de colunas e linhas ou inserir e remover novas colunas/linhas.
 * **Alinhamento**
@@ -152,7 +152,7 @@ Você pode exibir seus detalhes no painel [propriedades.](/help/sites-cloud/auth
 ![Editando mídia](assets/ue-edit-media.png)
 
 1. Toque ou clique na visualização da imagem selecionada no painel de propriedades.
-1. A janela [seletor de ativos](/help/assets/overview-asset-selector.md#using-asset-selector) é aberta para permitir que você selecione um ativo.
+1. A janela [Supervisor de Conteúdo](/help/assets/integrate-adobe-non-adobe-applications.md) é aberta para permitir que você selecione um ativo.
 1. Selecione para selecionar um novo ativo.
 1. Selecione **Selecionar** para retornar ao painel de propriedades onde o ativo foi substituído.
 
@@ -304,7 +304,7 @@ Selecione os botões Desfazer ou Refazer para desfazer ou refazer a última edi�
 
 ### Copiar e colar {#copy-paste}
 
-Você pode copiar e colar componentes que estão em [&#x200B; contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam que o componente seja colado.
+Você pode copiar e colar componentes que estão em [contêineres.](/help/implementing/universal-editor/field-types.md#container) Isso só será possível se o contêiner de destino não tiver [filtros configurados](/help/implementing/universal-editor/filtering.md) ou tiver filtros que permitam a colagem do componente.
 
 Copiar e colar podem estar na mesma guia do navegador ou entre guias do navegador, desde que as guias já estejam abertas. Não é possível copiar um item e abrir uma nova guia do navegador para colá-lo.
 
