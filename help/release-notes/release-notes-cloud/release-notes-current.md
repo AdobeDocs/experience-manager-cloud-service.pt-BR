@@ -39,7 +39,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483065/?captions=por_br&quality=12)
 -->
 
 ## Programas do AEM Beta {#aem-beta-programs}
