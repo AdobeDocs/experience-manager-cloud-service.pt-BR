@@ -2,10 +2,10 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 1b7cbf4e66a57dd86b04122ecb6b79eb59b3f02a
+source-git-commit: 7e0c34627aa3ac873aa94f836fe1c30d70389e19
 workflow-type: tm+mt
-source-wordcount: '2962'
-ht-degree: 6%
+source-wordcount: '3050'
+ht-degree: 7%
 
 ---
 
@@ -35,7 +35,7 @@ O Experience Manager Assets permite que os administradores configurem as opçõe
 
 * Quaisquer links personalizados que você precise incluir no Content Hub, além de ativos, coleções e insights.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472951/?captions=por_br&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
 
 ## Pré-requisitos {#prerequisites-configuration-ui}
 
@@ -160,7 +160,7 @@ As propriedades ativadas na Interface do Usuário da Configuração são exibida
 ### Cartão de ativos {#asset-card}
 
 Você também pode configurar as propriedades dos metadados principais que precisam ser exibidos no **Cartão de ativos** até um máximo de 6 campos.
-![Metadados-chave no Cartão de Ativo](/help/assets/assets/asset-card-metadata.png)
+![Metadados-chave no Cartão de ativos](/help/assets/assets/asset-card-metadata.png)
 Execute as seguintes etapas para configurar as propriedades de metadados e exibi-las no **[!UICONTROL Cartão de ativos]**:
 
 1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **Cartão de ativos**.
@@ -173,6 +173,10 @@ Da mesma forma, clique em ![editar](/help/assets/assets/edit-content-hub.svg) qu
 ### Pesquisar {#configure-metadata-search-content-hub}
 
 Os administradores podem definir os campos de metadados que são pesquisados quando um usuário especifica um critério de pesquisa no Content Hub. Execute as seguintes etapas:
+
+>[!CAUTION]
+>
+>É recomendável selecionar cuidadosamente os campos marcados como pesquisáveis. Inclua apenas os campos que os usuários provavelmente procurarão e que ajudam a retornar resultados significativos. Campos como datas e números são mais adequados para filtragem e classificação do que como conteúdo pesquisável. Marcar muitos campos como pesquisáveis pode afetar a qualidade e o desempenho dos resultados da pesquisa.
 
 1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Adicionar metadados]**.
 
@@ -187,7 +191,7 @@ Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edi
 
 Como administrador, personalize o portal do [!DNL Content Hub] para atender aos requisitos de marca.
 ![redefinir padrão](/help/assets/assets/reset-default-content-hub.png)
-Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]**, use o **[!UICONTROL Banner]**, **[!UICONTROL Cores]** e **[!UICONTROL Imagem do banner]** para executar as seguintes personalizações:
+Na página ![Identidade Visual](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Identidade Visual]**, use as seções **[!UICONTROL Banner]**, **[!UICONTROL Cores]** e **[!UICONTROL Imagem do banner]** para executar as seguintes personalizações:
 
 1. [Alterar a imagem do logotipo da seção [!UICONTROL Imagem de logotipo]](#Change-the-logo-image)
 1. [Alterar a imagem do banner da seção [!UICONTROL Imagem do banner]](#Change-the-banner-image)
@@ -260,7 +264,7 @@ Se a visibilidade dos ativos expirados estiver habilitada, a Content Hub também
 
 ### Representações {#renditions-content-hub}
 
-As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para desabilitá-la, siga estas etapas:
 
