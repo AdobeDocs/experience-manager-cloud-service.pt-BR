@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0ba0b95eac6b3a3ca0aa6ed0a816edcc63b9d50f
+source-git-commit: 687be0c3895cbcd8a9530d25f279100f610efe96
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2054'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483065/?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## Programas do AEM Beta {#aem-beta-programs}
@@ -91,6 +91,10 @@ Consulte [programas beta do Cloud Manager](/help/implementing/cloud-manager/rele
 
 Os usuários do AEM agora podem aproveitar os Modelos de idiomas grandes (LLMs) para tradução de conteúdo, fornecendo qualidade de tradução humana com velocidade de tradução automática. Semelhante aos serviços tradicionais de tradução de terceiros, o Azure OpenAI pode ser configurado como um provedor de tradução no AEM, com suporte para LLMs adicionais planejados para versões futuras. Os clientes usam suas próprias licenças LLM para esse recurso. Além disso, os guias de estilo de tradução corporativa podem ser carregados no AEM, permitindo a extração de regras de tradução para garantir a consistência da marca e do estilo. Consulte [Configurando a integração da tradução de IA](/help/sites-cloud/administering/translation/ai-translation-integration.md) para obter mais informações.
 
+### Editor de fragmento de conteúdo {#cf-editor}
+
+O novo Editor de fragmento de conteúdo agora permite visualizar a representação em JSON de um fragmento de conteúdo. Isso ajuda a validar a estrutura do conteúdo independentemente da renderização e restaura a paridade com o Editor de fragmento de conteúdo anterior na interface para toque do AEM para esse recurso.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **O Supervisor de Conteúdo agora está disponível para aplicativos Adobe Workfront e não Adobe**
@@ -127,13 +131,13 @@ As ferramentas do IDE podem ser usadas pelos agentes de codificação para gerar
 Saiba mais sobre o [Desenvolvimento local com Ferramentas de IA](/help/ai-in-aem/local-development-with-ai-tools.md) e sinta-se à vontade para enviar um email para [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) com perguntas ou comentários.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3484983/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
 
 #### Servidor MCP de governança da experiência {#gov-mcp-server}
 
 O Servidor MCP de governança de experiência agora está disponível ao público em geral (GA). Ele se integra a ferramentas de desenvolvedor de IA e chatbots que oferecem suporte ao protocolo de contexto de modelo (MCP), permitindo que você proteja a integridade e a conformidade da marca usando prompts de linguagem natural em seu chatbot ou IDE. Você pode avaliar o conteúdo (texto, imagens, páginas) em relação às regras de governança da marca e recuperar as configurações da marca e as verificações de governança disponíveis.
 
-Saiba mais sobre [Servidores MCP do AEM](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) e o [Agente de Governança](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+Saiba mais sobre [Servidores MCP do AEM](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) e o [Agente de Governança](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 #### Claude Connector {#aem-claude-connector}
 
@@ -241,11 +245,11 @@ Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe
 
 #### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
