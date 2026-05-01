@@ -39,7 +39,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483065/?captions=por_br&quality=12)
 -->
 
 ## Programas do AEM Beta {#aem-beta-programs}
@@ -131,7 +131,7 @@ As ferramentas do IDE podem ser usadas pelos agentes de codificação para gerar
 Saiba mais sobre o [Desenvolvimento local com Ferramentas de IA](/help/ai-in-aem/local-development-with-ai-tools.md) e sinta-se à vontade para enviar um email para [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) com perguntas ou comentários.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3484983/?captions=por_br&learn=on&enablevpops)
 
 #### Servidor MCP de governança da experiência {#gov-mcp-server}
 
