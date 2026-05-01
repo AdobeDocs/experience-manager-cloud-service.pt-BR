@@ -6,10 +6,10 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Aplicável ao AEM Sites)."
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a27d861061d4ee41bdfc080bc50a942de60f593b
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 81%
+source-wordcount: '340'
+ht-degree: 70%
 
 ---
 
@@ -19,6 +19,7 @@ Automatize a tradução de conteúdo e ativos da página para criar e manter sit
 
 * **Tradução humana:** o conteúdo é enviado para seu provedor de tradução e traduzido por tradutores profissionais. Quando concluído, o conteúdo traduzido é retornado e importado para o AEM. Quando seu provedor de tradução é integrado ao AEM, o conteúdo é enviado automaticamente entre o AEM e o provedor de tradução.
 * **Tradução automática:** o serviço de tradução automática traduz imediatamente seu conteúdo.
+* **Tradução de agente (integração com a tradução AI):** conecte o AEM a um modelo de idioma grande por meio dos Serviços de Nuvem de Tradução e use os mesmos projetos e fluxos de trabalho de tradução que outros provedores. Você pode fazer upload de guias de estilo para que o AEM gere regras de tradução por localidade. Consulte [Configurando a integração de tradução de IA](ai-translation-integration.md).
 
 >[!TIP]
 >
@@ -39,6 +40,6 @@ Se o seu provedor de serviços de tradução não fornecer um conector para inte
 >
 >Seu usuário deve ser membro do grupo `project-administrators` para usar os recursos de Cópia de idioma.
 
-## Práticas recomendadas     {#best-practices}
+## Práticas recomendadas {#best-practices}
 
 A página [Práticas recomendadas de tradução](best-practices.md) contém informações importantes sobre a implementação.
