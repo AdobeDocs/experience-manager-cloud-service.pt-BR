@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d389f158ddd71f90b5ee9b707050f5b593ec595a
+source-git-commit: 0ba0b95eac6b3a3ca0aa6ed0a816edcc63b9d50f
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2009'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483065/?captions=por_br&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## Programas do AEM Beta {#aem-beta-programs}
@@ -101,16 +101,18 @@ Agora você pode detectar, avaliar e reutilizar ativos aprovados da AEM Assets d
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Recursos de acesso antecipado no AEM Forms {#forms-early-access-features}
+### Novos recursos no AEM Forms
 
-**Exibir rótulos para lista suspensa de várias seleções no PDF de Envio**
-Os componentes de seleção múltipla suspensos no Adaptive Forms agora renderizam seus rótulos de exibição selecionados na [PDF de envio gerada](/help/forms/generate-document-of-record-core-components.md), garantindo que o documento reflita com precisão o que os usuários veem no formulário.
+* **Substituir configuração de nuvem do reCAPTCHA por OSGi** 
+As IDs de projeto, chaves de site e segredos do reCAPTCHA Enterprise que você mantém com seus arquivos de origem podem ser resolvidos em valores diferentes em cada ambiente do Cloud Service depois que você [adicionar a substituição e a implantação da Configuração Sensível ao Contexto pelo Cloud Manager](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi).
 
-**Acessibilidade aprimorada para componentes de caixas de seleção, botões de opção e painéis**
-Os Componentes principais adaptáveis do Forms apresentam marcação semântica compatível com WCAG 2.2 para [grupos de caixas de seleção(v2)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [grupos de botões de opção(v2)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button) e o [componente de Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Esses componentes usam os elementos do HTML `<fieldset>` e `<legend>` para estabelecer relações significativas entre os rótulos de grupo e suas opções, permitindo a interpretação precisa por leitores de tela e outras tecnologias de assistência.
+* **Autenticação baseada em certificado** 
+O Forms adaptável que envia para uma lista do Microsoft SharePoint agora oferece suporte à [autenticação baseada em certificado](/help/forms/connect-forms-to-sharepoint-list.md#certificate-based-authentication) junto com a autenticação de URL OAuth. Para logon baseado em certificado, registre um alias de certificado e detalhes do locatário no AEM e no Microsoft Azure.
 
-**Suporte ao controle de versão no Forms Manager**
-O Forms Manager agora [oferece suporte ao controle de versão do Adaptive Forms (Componentes principais e Componentes de base)](/help/forms/manage-form-versions-forms-manager.md), fragmentos de formulário, temas, modelos XDP e ativos binários. Crie versões, visualize o histórico completo de versões e restaure estados anteriores dos ativos de formulário diretamente do console Forms e Documentos.
+* **Aprimoramentos do Editor de Regras**
+
+   * O editor de regras do Adaptive Forms agora oferece suporte à gramática simplificada para [regras de Evento de Despacho e Evento de Acionamento para acionadores prontos para uso (OOTB) e para eventos personalizados](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events), de modo que os autores não estão limitados à gramática somente em acionadores personalizados.
+   * Quando as regras no Forms Adaptável baseadas em Componentes Principais agora incluem o [componente de Anexo de Arquivo junto com outras condições usando a lógica AND ou OR](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component), de modo que a regra executa suas ações somente quando o estado do anexo e as outras verificações avaliam como pretendido.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -131,7 +133,7 @@ Saiba mais sobre o [Desenvolvimento local com Ferramentas de IA](/help/ai-in-aem
 
 O Servidor MCP de governança de experiência agora está disponível ao público em geral (GA). Ele se integra a ferramentas de desenvolvedor de IA e chatbots que oferecem suporte ao protocolo de contexto de modelo (MCP), permitindo que você proteja a integridade e a conformidade da marca usando prompts de linguagem natural em seu chatbot ou IDE. Você pode avaliar o conteúdo (texto, imagens, páginas) em relação às regras de governança da marca e recuperar as configurações da marca e as verificações de governança disponíveis.
 
-Saiba mais sobre [Servidores MCP do AEM](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) e o [Agente de Governança](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
+Saiba mais sobre [Servidores MCP do AEM](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) e o [Agente de Governança](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 #### Claude Connector {#aem-claude-connector}
 
@@ -239,11 +241,11 @@ Envie um email para [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe
 
 #### APM (Application Performance Monitoring, monitoramento do desempenho de aplicativos) expandido (programa Alpha) {#apm-alpha}
 
-Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
+Para fins de observação, o AEM Cloud Service oferece suporte atualmente ao [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) fornecido pela Adobe e ao [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace) gerenciado pelo cliente. À medida que exploramos o suporte para opções adicionais de APM, envie um email para [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) com seu fornecedor ou tecnologia de preferência, juntamente com casos de uso.
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e5045b87719781301d91874c7355eda9426beef
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 0%
+source-wordcount: '2396'
+ht-degree: 1%
 
 ---
 
@@ -28,6 +28,7 @@ A tabela abaixo lista as melhorias recentes feitas ao editor de regras no Adapti
 | [Variáveis dinâmicas](#support-for-dynamic-variables-in-rules) | Crie regras usando variáveis que são alteradas com base na entrada do usuário ou em outras condições. | - Habilita condições de regra flexíveis <br> - Reduz a necessidade de lógica duplicada <br> - Elimina a necessidade de criar campos ocultos |
 | [Regras personalizadas baseadas em eventos](#custom-event-based-rules-support) | Defina regras que respondam a eventos personalizados além dos acionadores padrão. | - Oferece suporte a casos de uso avançados <br> - Maior controle sobre quando e como as regras são executadas <br> - Melhora a interatividade |
 | [Execução do painel repetível com reconhecimento de contexto](#context-based-rule-execution-for-repeatable-panels) | As regras agora são executadas no contexto correto para cada painel repetido, em vez de somente na última instância. | - Aplicativo de regra preciso para cada instância de repetição <br> - Reduz erros nas seções dinâmicas <br> - Melhora a experiência do usuário com conteúdo repetido |
+| [Condições When combinadas com o componente de Anexo de Arquivo](#combined-when-conditions-with-the-file-attachment-component) | Crie uma regra When para o componente Anexo de Arquivo usando as lógicas Adicionar Condição e AND ou OR, para que o anexo seja avaliado junto com outras validações. | - As ações são executadas somente quando o estado do anexo e outras verificações são avaliados como pretendido <br> - Menos regras encadeadas para cenários de carregamento <br> - Criação mais clara para formulários que exigem arquivos e entradas validadas juntas |
 | [Suporte para cadeia de caracteres de consulta, UTM e parâmetros do navegador](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Crie regras que adaptam o comportamento do formulário com base em parâmetros de URL ou valores específicos do navegador. | - Habilita a personalização com base na origem ou no ambiente <br> - Útil para fluxos de marketing ou específicos de rastreamento <br> - Não há necessidade de script extra ou personalização |
 
 >[!NOTE]
@@ -139,7 +140,6 @@ Em vez de associar a lógica diretamente aos campos, o formulário usa uma abord
 
 **Implementação usando Evento de Despacho e Evento On Trigger**
 
-
 >[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 O fragmento de logon é adicionado ao formulário, contendo campos predefinidos para Nome de usuário e Senha. Uma regra está configurada no botão **Obter OTP** para exibir o **Painel de Validação**, que inclui o campo de entrada para inserir e validar o OTP.
@@ -158,6 +158,10 @@ Quando o usuário envia o formulário com as credenciais corretas e um OTP váli
 
 Suporte para eventos personalizados que permitem aos desenvolvedores criar e acionar eventos personalizados que podem ser usados como condições no editor de regras.
 
+### Gramática simplificada para eventos personalizados e OOTB {#simplified-grammar-for-ootb-and-custom-events}
+
+O editor de regras aprimorado inclui uma **gramática simplificada** para regras baseadas em eventos que usam o **Evento de Despacho** e o **Evento de Acionamento**. Anteriormente, essa gramática se aplicava somente a **eventos personalizados**; eventos prontos para uso (OOTB) não tinham suporte, o que geralmente exigia regras **When** para acionadores OOTB e regras **On Trigger Event** para eventos personalizados. Os eventos OOTB agora têm suporte com a mesma gramática simplificada, habilitando um padrão de criação consistente sem alternar entre **Quando** e **No Evento de Acionador**, com base no fato de o acionador ser OOTB ou personalizado.
+
 ## Execução de regras baseadas em contexto para painéis repetíveis
 
 O Forms adaptável oferece suporte à execução de regras sensíveis ao contexto para painéis repetíveis. Isso permite que as regras sejam aplicadas especificamente à instância do painel em que o usuário interage, em vez de afetar todas as instâncias ou padronizar para a última.
@@ -175,6 +179,26 @@ A captura de tela abaixo exibe a regra para o campo **Número do Produto** dentr
 Quando a quantidade é alterada, a regra busca o preço unitário do produto selecionado e calcula o custo total somente para esse painel.
 
 ![Saída de regra sensível ao contexto](/help/forms/assets/context-aware-rule-output.png)
+
+## Condições When combinadas com o componente de Anexo de Arquivo {#combined-when-conditions-with-the-file-attachment-component}
+
+O editor de regras aprimorado oferece suporte às regras **When** que combinam o componente **Anexo de Arquivo** com outras condições usando a lógica **AND** ou **OR**. **Adicionar Condição** na cláusula **When** pode incluir o estado do anexo de arquivo junto com verificações em outros campos ou na validação do painel, de modo que uma ação é executada somente quando cada condição selecionada é atendida.
+
+**Cenário**: um formulário de registro de animal de estimação coleta a **ID do Animal**, o **Nome do Animal** e a **Categoria do Animal**, e inclui um anexo de arquivo **Adicionar Foto**. O formulário executa uma ação, por exemplo, limpar ou atualizar **Adicionar Foto**, quando o anexo altera **e**, quando as condições configuradas nos outros campos (seus valores) são satisfeitas.
+
+**Implementação usando as condições When com o componente Anexo de Arquivo no Editor de Regras**
+
+Uma regra está configurada no objeto de destino (como **Adicionar Foto**). A seção **When** usa **Adicionar Condição** para combinar o gatilho de anexo de arquivo com condições em um ou mais campos, de modo que a ação depende do anexo e desses valores de campo.
+
+A captura de tela abaixo exibe a condição **When** com várias condições e opções **Adicionar Condição**:
+
+![Quando a regra com várias condições e Adicionar Condição](/help/forms/assets/rule-editor-when-file-attachment-conditions.png)
+
+Quando a cláusula **When** é avaliada como verdadeira para a lógica **AND** ou **OR** configurada, a regra executa a ação configurada.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3483735/file-attachment/?quality=12&learn=on)
+
+Quando a **ID do Pet** contém `101`, o anexo **Adicionar Foto** é limpo. Da mesma forma, quando o **Nome do Pet** contém `a`, o anexo é limpo.
 
 ## Regras baseadas em parâmetros de URL e navegador no Adaptive Forms
 
