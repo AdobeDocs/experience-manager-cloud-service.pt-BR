@@ -38,7 +38,7 @@ Alguns dos principais benefícios do controle de acesso baseado em atributos inc
 * Suporta governança escalável entre marcas e regiões
 * Melhora o gerenciamento de ativos
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475419/?captions=por_br&learn=on&enablevpops){transcript=true}
 
 ## Como ativar o controle de acesso baseado em atributos {#enable-attribute-based-access-control}
 
