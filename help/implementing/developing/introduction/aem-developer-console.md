@@ -57,7 +57,7 @@ O Developer Console só pode ser acessado por usuários com determinadas funçõ
 
 Para visualizar dados de serviços de autoria e publicação, os usuários também devem ser atribuídos ao &quot;Usuários do AEM&quot; ou ao &quot;Perfil de produto de administradores do AEM&quot; em ambos os serviços.
 
-Para obter mais informações sobre como configurar permissões de usuário, consulte a [Documentação do Cloud Manager.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+Para obter mais informações sobre como configurar permissões de usuário, consulte a [Documentação do Cloud Manager.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
 
 ## Guia Pacotes OSGi {#osgi-bundles}
 
