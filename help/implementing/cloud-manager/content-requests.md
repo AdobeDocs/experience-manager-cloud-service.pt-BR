@@ -120,7 +120,7 @@ Conforme mencionado na seção [Variações de solicitações de conteúdo do Cl
 
 ### Regras de filtro de tráfego para gerenciar solicitações de conteúdo {#traffic-filter-rules-to-manage-crs}
 
-Para controlar melhor suas solicitações de conteúdo, analise o tráfego de CDN antes de definir regras de filtro. A [ferramenta de análise de log da CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) ajuda a obter insights sobre o desempenho da CDN e os padrões de solicitação. Primeiro, entenda de onde seu tráfego vem e se existem padrões de sinalização inesperados (um padrão de bot comum é usar um agente de usuário vazio).
+Para controlar melhor suas solicitações de conteúdo, analise o tráfego de CDN antes de definir regras de filtro. A [ferramenta de análise de log da CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) ajuda a obter insights sobre o desempenho da CDN e os padrões de solicitação. Primeiro, entenda de onde seu tráfego vem e se existem padrões de sinalização inesperados (um padrão de bot comum é usar um agente de usuário vazio).
 
 **O que observar e registrar:**
 
