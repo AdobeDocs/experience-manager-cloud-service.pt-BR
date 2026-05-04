@@ -4,10 +4,10 @@ description: Saiba mais sobre como encaminhar logs para fornecedores de registro
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: 41605c0feb5b8cf651ecb2971a05fde12bcb86d8
+source-git-commit: ac4ce2421cdeb29aec7183f515ae32bfca37e82f
 workflow-type: tm+mt
-source-wordcount: '2482'
-ht-degree: 1%
+source-wordcount: '2560'
+ht-degree: 2%
 
 ---
 
@@ -79,7 +79,7 @@ Os clientes com uma licença de com um fornecedor de registro em log ou que hosp
       <td>Lógica Sumo</td>
       <td>Sim</td>
       <td>Sim</td>
-      <td style="background-color: #ffb3b3;">Futuro</td>
+      <td>Sim</td>
     </tr>
   </tbody>
 </table>
@@ -509,15 +509,13 @@ data:
 * A porta padrão é 443. Opcionalmente, ele pode ser substituído por uma propriedade chamada `port`.
 * Dependendo do log específico, o campo sourcetype terá um dos seguintes valores: *aemaccess*, *aemerror*,
   *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
-* Incluir na lista de permissões Se os IPs necessários tiverem sido migrados e os registros ainda não estiverem sendo entregues, verifique se não há regras de firewall impondo a validação do token de Splunk. O Fastly executa uma etapa de validação inicial na qual um token do Splunk inválido é enviado intencionalmente. Se o firewall estiver definido para encerrar conexões com tokens inválidos do Splunk, o processo de validação falhará, impedindo que o Fastly entregue logs para a instância do Splunk.
+* Se os IPs necessários tiverem sido migrados e os registros ainda não estiverem sendo entregues, verifique se não há regras de firewall impondo a validação do token de Splunk. O Fastly executa uma etapa de validação inicial na qual um token do Splunk inválido é enviado intencionalmente. Se o firewall estiver definido para encerrar conexões com tokens inválidos do Splunk, o processo de validação falhará, impedindo que o Fastly entregue logs para a instância do Splunk.
 
 >[!NOTE]
 >
 > [Ao migrar](#legacy-migration) do encaminhamento de logs herdado para este modelo de autoatendimento, os valores do campo `sourcetype` enviados para o índice do Splunk podem ter sido alterados, portanto, ajuste-os adequadamente.
 
 ### Lógica Sumo {#sumologic}
-
-O encaminhamento de logs para o Sumo Logic é compatível com logs do AEM e do Dispatcher; os logs CDN ainda não são compatíveis.
 
 Ao configurar a Lógica de sumô para assimilação de dados, você verá um &quot;Endereço Source HTTP&quot; que fornece o host, o URI do receptor e a chave privada em uma única string.  Por exemplo:
 
@@ -538,9 +536,12 @@ data:
 ```
 
 >[!NOTE]
->O suporte ao Log de CDN para SumoLogic está planejado para o futuro. Envie um email para [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para registrar interesse.
+>O comportamento do campo `index` depende do tipo de log:
 >
-> Você precisará de uma assinatura Sumo Logic Enterprise para aproveitar a funcionalidade do campo &quot;índice&quot;.  As assinaturas não empresariais terão seus logs roteados para a partição `sumologic_default` como padrão.  Consulte a [Documentação de Particionamento Lógico de Resumo](https://help.sumologic.com/docs/search/optimize-search-partitions/) para obter mais informações.
+>* **Logs do AEM (incluindo Apache/Dispatcher)**: roteado para a partição especificada por `index`, desde que você tenha uma assinatura do Sumo Logic Enterprise. As assinaturas não empresariais encaminham para a partição `sumologic_default`.
+>* **Logs da CDN**: o campo `index` é ignorado, pois a indexação não tem suporte técnico para logs da CDN encaminhados ao Sumo Logic. Os logs CDN são sempre roteados para a partição `sumologic_default`.
+>
+>Consulte a [Documentação de Particionamento Lógico de Resumo](https://help.sumologic.com/docs/search/optimize-search-partitions/) para obter mais informações.
 
 ## Formatos de entrada de log {#log-formats}
 
