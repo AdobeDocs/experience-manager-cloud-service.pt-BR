@@ -4,10 +4,10 @@ description: Saiba como o Agente de produção de experiência no AEM ajuda a ac
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 0666d9660d657876bca77835d333d9dfe536b374
+source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 2%
+source-wordcount: '345'
+ht-degree: 5%
 
 ---
 
@@ -51,3 +51,9 @@ O trabalho [Criação de comunicação](/help/ai-in-aem/agents/brand-experience/
 O agente pode trabalhar com outras habilidades do agente, como por exemplo:
 
 * Obter ativos de origem do Agente do Experience Advisory
+
+## Recursos adicionais {#additional-resources}
+
+Os seguintes recursos podem ser úteis à medida que você continua explorando o Agente de produção de experiência:
+
+* Você também pode usar a [Pasta de trabalho do Experience Production Agent](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/) para obter instruções guiadas e práticas.

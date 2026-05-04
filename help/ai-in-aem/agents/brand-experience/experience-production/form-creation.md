@@ -4,9 +4,9 @@ description: Saiba mais sobre a tarefa de criação de formulários do Brand Exp
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ Alguns dos principais benefícios do trabalho de criação de formulários inclu
 * **Importar um documento do PDF e convertê-lo em um formulário**: você pode importar e transformar documentos existentes do PDF em formulários. A habilidade analisa o conteúdo carregado para detectar tipos de campo, preservar layouts e aprimorar os formulários com design responsivo e lógica de validação enquanto garante que os padrões de marca e conformidade sejam mantidos.
 
 Ao usar qualquer um desses recursos, você será solicitado a escolher o tipo de formulário a ser criado. Especifique um modelo de formulários adaptáveis com base em Componentes principais ou um modelo de formulários adaptáveis com base em Edge Delivery Services e indique o caminho de sua preferência para salvar o formulário. Se você estiver criando um formulário com base no Edge Delivery Services, também poderá especificar a URL do GitHub do seu repositório.
-
 
 ### Exemplos de Prompts {#sample-prompts}
 
@@ -104,3 +103,9 @@ The form creation skill combines form creation and site integration in a single 
 * *Create a simple survey form with 5 questions and embed it on the customer portal homepage*
 * *Build an event registration form with name, email, and date selection, then add it to /content/events/conference-2025*
 -->
+
+## Recursos adicionais {#additional-resources}
+
+Os seguintes recursos podem ser úteis à medida que você continua explorando o Agente de produção de experiência:
+
+* Você também pode usar a [Pasta de trabalho do Experience Production Agent](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/) para obter instruções guiadas e práticas.
