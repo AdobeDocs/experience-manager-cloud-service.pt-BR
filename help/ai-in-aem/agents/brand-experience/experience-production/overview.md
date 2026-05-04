@@ -4,7 +4,7 @@ description: Saiba como o Agente de produção de experiência no AEM ajuda a ac
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
+source-git-commit: d9e892bd0f43fd32ef6c9e614273993baff2571e
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 5%

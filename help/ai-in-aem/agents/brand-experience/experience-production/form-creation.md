@@ -4,9 +4,9 @@ description: Saiba mais sobre a tarefa de criação de formulários do Brand Exp
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
+source-git-commit: d9e892bd0f43fd32ef6c9e614273993baff2571e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Trabalho de Criação de Formulário {#form-creation-job}
 
-O trabalho de criação de formulários faz parte do [Agente de Produção de Experiência](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md), que foi projetado para desenvolver formulários usando prompts de linguagem natural. Esse trabalho gera automaticamente a estrutura de formulário e os tipos de campo apropriados. O trabalho é revelado pelo Assistente de IA.
+O trabalho de criação de formulários é parte do [Agente de Produção de Experiência](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md), que foi projetado para desenvolver formulários usando prompts de linguagem natural. Esse trabalho gera automaticamente a estrutura de formulário e os tipos de campo apropriados. O trabalho é revelado pelo Assistente de IA.
 
 Alguns dos principais benefícios do trabalho de criação de formulários incluem:
 
