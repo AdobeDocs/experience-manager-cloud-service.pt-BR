@@ -4,9 +4,9 @@ description: Saiba como configurar ferramentas de codificação de IA com contex
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
+source-git-commit: 827cf0dada4e624418dc967a9bce8ebf728f7ad7
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ Quatro componentes complementares abordam esta questão:
 | **Habilidades do agente** | Conjuntos de instruções reutilizáveis para tarefas de desenvolvimento recorrentes, como criação de componentes e configuração do Dispatcher |
 | **Servidor MCP local do AEM Quickstart** | Expõe dados em tempo de execução em tempo real de uma instância local do AEM SDK para oferecer suporte à solução de problemas |
 | **Servidor MCP local do Dispatcher** | Habilita a validação e a inspeção em tempo de execução de uma instância local do Dispatcher |
+
+Revise os [tutoriais de desenvolvimento assistido por IA](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) para obter instruções adicionais e práticas.
 
 >[!NOTE]
 >
@@ -57,7 +59,7 @@ A Adobe publica habilidades do AEM as a Cloud Service no **[adobe/skills](https:
 
 ### Instalar habilidades {#install-skills}
 
-Escolha o método que corresponde à ferramenta de codificação de IA. Instalar as habilidades uma vez as disponibiliza para todos os projetos nessa máquina.
+Escolha o método que corresponde à ferramenta de codificação de IA. Instalar as habilidades uma vez as disponibiliza para todos os projetos nessa máquina. Consulte o [Tutorial Configurar habilidades do agente do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) para obter uma apresentação concreta.
 
 #### código Claude {#claude-code}
 
@@ -121,6 +123,8 @@ CTA Link (ctaLink) - Pathfield
 
 O agente ecoa a especificação do campo para confirmação e, em seguida, gera todos os arquivos de componente. Os padrões compatíveis incluem vários campos com itens aninhados compostos, lógica condicional de mostrar/ocultar, extensão do Componente principal por meio do Sling Resource Merger e testes JUnit 5 usando AEM Mocks.
 
+Saiba mais seguindo o [desenvolvimento de Componentes usando o tutorial Habilidades do agente do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
+
 ### Usar a habilidade do Dispatcher {#use-the-dispatcher-skill}
 
 Chame a habilidade do dispatcher para qualquer trabalho de configuração HTTPD do Dispatcher ou Apache. As solicitações de rotas de habilidades para uma das seis sub-habilidades especializadas, dependendo da natureza da solicitação:
@@ -150,7 +154,7 @@ Baixe o pacote de conteúdo do [Portal de Distribuição de Software](https://ex
 
 ### Ferramentas disponíveis {#available-tools}
 
-| Ferramenta  | Descrição |
+| Ferramenta | Descrição |
 |---|---|
 | `aem-logs` | Recupera entradas de log do AEM e do OSGi, filtráveis por padrão regex, nível de log e contagem de entradas |
 | `diagnose-osgi-bundle` | Diagnostica por que um pacote ou componente DS não está sendo iniciado; relata pacotes ausentes, referências não satisfeitas e problemas de configuração |
@@ -263,7 +267,7 @@ Outros IDEs podem ser configurados de maneira semelhante. O `docs/DispatcherMCP.
 
 ### Ferramentas disponíveis {#available-tools-dispatcher}
 
-| Ferramenta  | Descrição |
+| Ferramenta | Descrição |
 |---|---|
 | `validate` | Valida as configurações HTTPD do Dispatcher e Apache |
 | `lint` | Executa verificações estáticas com reconhecimento de modo e análise de práticas recomendadas |
