@@ -348,11 +348,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -362,11 +362,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -391,11 +391,11 @@ config.stage
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -405,11 +405,11 @@ config.prod
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val2",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -419,11 +419,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -448,11 +448,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -462,11 +462,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -489,11 +489,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -503,11 +503,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "$[env:my_var1;default=val1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
