@@ -4,9 +4,9 @@ description: Configuração das regras de filtro de tráfego, incluindo as regra
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: d967706a000edc8c06193d1a8a39a1931fffbb99
+source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
 workflow-type: tm+mt
-source-wordcount: '4610'
+source-wordcount: '4819'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Por padrão, o Adobe toma medidas para evitar a degradação do desempenho devid
 
 Os clientes podem tomar medidas proativas para atenuar os ataques à camada do aplicativo (camada 7), configurando regras em várias camadas do fluxo de entrega de conteúdo.
 
-Por exemplo, na camada do Apache, os clientes podem configurar o [módulo do Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou o [ModSecurity](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) para limitar o acesso a determinado conteúdo.
+Por exemplo, na camada do Apache, os clientes podem configurar o [módulo do Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou o [ModSecurity](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) para limitar o acesso a determinado conteúdo.
 
 Como este artigo descreve, as regras de filtro de tráfego podem ser implantadas na CDN Gerenciada pela Adobe, usando os [pipelines de configuração](/help/operations/config-pipeline.md) da Cloud Manager. Além das *regras padrão de filtro de tráfego* baseadas em propriedades como endereço IP, caminho e cabeçalhos ou regras baseadas na definição de limites de taxa, os clientes também podem licenciar uma subcategoria poderosa de regras de filtro de tráfego chamada *regras do WAF*.
 
@@ -178,7 +178,7 @@ Um Grupo de condições é composto por várias Condições simples e/ou de grup
 
 | **Propriedade** | **Tipo** | **Descrição** |
 |---|---|---|
-| reqProperty | `string` | Propriedade de solicitação.<br><br>Um de:<br><ul><li>`path`: Retorna o caminho completo de uma URL sem os parâmetros de consulta. (use `pathRaw` para a variante sem escape)</li><li>`url`: Retorna a URL completa, incluindo os parâmetros de consulta. (use `urlRaw` para a variante sem escape)</li><li>`queryString`: Retorna a parte da consulta de uma URL</li><li>`method`: retorna o método HTTP usado na solicitação.</li><li>`tier`: Retorna um de `author`, `preview` ou `publish`.</li><li>`domain`: retorna a propriedade de domínio (conforme definido no cabeçalho `Host`) em minúsculas</li><li>`clientIp`: Retorna o IP do cliente.</li><li>`forwardedDomain`: retorna o primeiro domínio definido no cabeçalho `X-Forwarded-Host` em minúsculas</li><li>`forwardedIp`: retorna o primeiro IP no cabeçalho `X-Forwarded-For`.</li><li>`clientRegion`: Retorna o código de subdivisão do país que identifica a região em que o cliente está localizado, conforme descrito em [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry`: retorna um código de duas letras ([Símbolo de indicador regional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) que identifica o país em que o cliente está localizado.</li><li>`clientContinent`: Retorna um código de duas letras (AF, AN, AS, EU, NA, OC, SA) que identifica em qual continente o cliente está localizado.</li><li>`clientAsNumber`: Retorna o número [Sistema Autônomo](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) associado ao IP do cliente.</li><li>`clientAsName`: Retorna o nome associado ao número do Sistema Autônomo.</li></ul> |
+| reqProperty | `string` | Propriedade de solicitação.<br><br>Um de:<br><ul><li>`path`: Retorna o caminho completo de uma URL sem os parâmetros de consulta. (use `pathRaw` para a variante sem escape)</li><li>`originalPath`: retorna o caminho original imutável da solicitação sem os parâmetros de consulta — o caminho antes de qualquer transformação de solicitação CDN.</li><li>`url`: Retorna a URL completa, incluindo os parâmetros de consulta. (use `urlRaw` para a variante sem escape)</li><li>`originalUrl`: Retorna a URL original completa e imutável da solicitação, incluindo os parâmetros de consulta — a URL antes de qualquer transformação de solicitação CDN.</li><li>`queryString`: Retorna a parte da consulta de uma URL</li><li>`method`: retorna o método HTTP usado na solicitação.</li><li>`tier`: Retorna um de `author`, `preview` ou `publish`.</li><li>`domain`: retorna a propriedade de domínio (conforme definido no cabeçalho `Host`) em minúsculas</li><li>`clientIp`: Retorna o IP do cliente.</li><li>`forwardedDomain`: retorna o primeiro domínio definido no cabeçalho `X-Forwarded-Host` em minúsculas</li><li>`forwardedIp`: retorna o primeiro IP no cabeçalho `X-Forwarded-For`.</li><li>`clientRegion`: Retorna o código de subdivisão do país que identifica a região em que o cliente está localizado, conforme descrito em [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry`: retorna um código de duas letras ([Símbolo de indicador regional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) que identifica o país em que o cliente está localizado.</li><li>`clientContinent`: Retorna um código de duas letras (AF, AN, AS, EU, NA, OC, SA) que identifica em qual continente o cliente está localizado.</li><li>`clientAsNumber`: Retorna o número [Sistema Autônomo](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) associado ao IP do cliente.</li><li>`clientAsName`: Retorna o nome associado ao número do Sistema Autônomo.</li></ul> |
 | reqHeader | `string` | Retorna o cabeçalho da solicitação com o nome especificado |
 | queryParam | `string` | Retorna o parâmetro de consulta com o nome especificado |
 | reqCookie | `string` | Retorna o cookie com o nome especificado |
@@ -239,7 +239,7 @@ A propriedade `wafFlags`, que pode ser usada nas regras de filtro de tráfego li
 | BACKDOOR | Backdoor | Um sinal backdoor é uma solicitação que tenta determinar se um arquivo backdoor comum está presente no sistema. |
 | CMDEXE | Execução de comando | Execução de Comando é a tentativa de obter controle ou danificar um sistema alvo através de comandos arbitrários do sistema por meio da entrada do usuário. |
 | CMDEXE-NO-BIN | Execução de Comando exceto em `/bin/` | Forneça o mesmo nível de proteção que `CMDEXE` ao desabilitar o falso-positivo em `/bin` devido à arquitetura do AEM. |
-| XSS | Criação de script entre sites | Cross-Site Scripting é a tentativa de sequestrar a conta de um usuário ou a sessão de navegação na Web por meio de um código JavaScript mal-intencionado. |
+| XSS | Script entre sites | Cross-Site Scripting é a tentativa de sequestrar a conta de um usuário ou a sessão de navegação na Web por meio de um código JavaScript mal-intencionado. |
 | PASSAGEM | Diretório de passagem | O Diretory Traversal é a tentativa de navegar pelas pastas privilegiadas em todo o sistema, na esperança de obter informações confidenciais. |
 | USERAGENT | Ferramentas de ataque | Ferramentas de ataque é o uso de software automatizado para identificar vulnerabilidades de segurança ou para tentar explorar uma vulnerabilidade detectada. |
 | LOG4J-JNDI | Log4J JNDI | Os ataques de JNDI do Log4J tentam explorar a [vulnerabilidade do Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) presente nas versões do Log4J anteriores à 2.16.0 |
@@ -471,6 +471,8 @@ data:
           type: block
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
+
+Para obter mais trechos de código para cenários avançados, consulte o artigo [Trechos de Configuração CDN para Cenários Comuns](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
 ## Regras CVE {#cve-rules}
 
@@ -777,7 +779,7 @@ Antes de julho de 2025, a Adobe recomendou as regras do WAF listadas abaixo, que
 
 ## Tutorial {#tutorial}
 
-Trabalhe com [uma série de tutoriais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) para obter conhecimento prático e experiência sobre regras de filtro de tráfego, incluindo regras do WAF.
+Trabalhe com [uma série de tutoriais](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) para obter conhecimento prático e experiência sobre regras de filtro de tráfego, incluindo regras do WAF.
 
 Os tutoriais incluem:
 

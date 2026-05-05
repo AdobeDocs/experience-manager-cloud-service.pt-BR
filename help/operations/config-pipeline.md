@@ -4,9 +4,9 @@ description: Saiba como você pode usar pipelines de configuração para implant
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
+source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1530'
 ht-degree: 2%
 
 ---
@@ -35,6 +35,8 @@ As seções a seguir deste documento fornecem uma visão geral de informações 
 ## Configurações compatíveis {#configurations}
 
 A tabela a seguir oferece uma lista abrangente dessas configurações com links para a documentação dedicada descrevendo sua sintaxe de configuração distinta e outras informações.
+
+Para configurações relacionadas ao CDN, além do artigo vinculado na tabela, consulte também o artigo [Fragmentos de configuração do CDN para cenários comuns](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
 | Tipo | Valor `kind` YAML | Descrição | Publicar entrega | Edge Delivery |
 |---|---|---|---|---|

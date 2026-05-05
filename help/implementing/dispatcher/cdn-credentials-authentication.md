@@ -4,9 +4,9 @@ description: Saiba como configurar credenciais e autenticação de CDN declarand
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 9f264bab062d5013ff5a4b40b1228be1f922ef51
+source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
 workflow-type: tm+mt
-source-wordcount: '2181'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Você pode implantar segredos usados na configuração do CDN de duas maneiras:
 
 * **Variáveis de segredo de ambiente** - Configuradas no Cloud Manager como [variáveis de ambiente](/help/implementing/cloud-manager/environment-variables.md) do tipo **Segredo** e **Serviço Aplicado** definidas como **Todas**. Eles estão disponíveis como uma configuração no nível do ambiente.
 
-**Preferencial: variáveis de segredo do pipeline.** Use variáveis de segredo de pipeline quando possível, pois elas são implantadas junto com sua configuração na mesma execução do pipeline. Isso mantém os segredos e a configuração em sincronia e simplifica as implantações.
+**Preferencial: variáveis secretas do pipeline.** Use variáveis secretas de pipeline quando possível, pois elas são implantadas junto com sua configuração na mesma execução do pipeline. Isso mantém os segredos e a configuração em sincronia e simplifica as implantações.
 
 Não é possível misturar segredos de pipeline com segredos de ambiente para a mesma configuração. Se as variáveis secretas de pipeline forem definidas para a etapa de implantação, elas serão usadas como preferência.
 
@@ -105,9 +105,11 @@ data:
           authenticator: edge-auth
 ```
 
+Para obter mais trechos de código para cenários comuns, consulte o artigo [Trechos de Configuração CDN para Cenários Comuns](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
+
 Consulte [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#common-syntax) para obter uma descrição das propriedades acima do nó `data`. O valor da propriedade `kind` deve ser *CDN* e a propriedade `version` deve ser definida como `1`.
 
-Consulte a etapa do tutorial [Configurar e implantar regra CDN de validação de cabeçalho HTTP](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obter mais detalhes.
+Consulte a etapa do tutorial [Configurar e implantar regra CDN de validação de cabeçalho HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obter mais detalhes.
 
 As propriedades adicionais incluem:
 
@@ -227,7 +229,7 @@ As propriedades adicionais incluem:
 >[!NOTE]
 >A Chave de Limpeza deve ser configurada como uma [Variável de Ambiente Cloud Manager do tipo secreto](/help/operations/config-pipeline.md#secret-env-vars), antes da implantação da configuração que faz referência a ela. É recomendável usar uma chave aleatória exclusiva com comprimento mínimo de 32 bytes; por exemplo, a biblioteca criptográfica Open SSL pode gerar uma chave aleatória executando o comando openssl rand -hex 32
 
-Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focado na configuração de chaves de limpeza e na execução da limpeza do cache do CDN.
+Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focado na configuração de chaves de limpeza e na execução da limpeza do cache do CDN.
 
 ## Autenticação básica {#basic-auth}
 

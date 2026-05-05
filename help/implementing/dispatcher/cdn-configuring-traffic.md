@@ -4,9 +4,9 @@ description: Saiba como configurar o tráfego CDN declarando regras e filtros em
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
+source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '2051'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ Também podem ser configuradas na CDN as Regras de filtro de tráfego (incluindo
 Além disso, se a CDN não puder entrar em contato com sua origem, você poderá escrever uma regra que faça referência a uma página de erro personalizada auto-hospedada (que é renderizada). Saiba mais sobre isso lendo o artigo [Configurando páginas de erro de CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
 Todas essas regras, declaradas em um arquivo de configuração no controle do código-fonte, são implantadas usando o [pipeline de configuração](/help/operations/config-pipeline.md) do Cloud Manager. Observe que o tamanho cumulativo do arquivo de configuração, incluindo as regras de filtro de tráfego, não pode exceder 100 KB.
+
+Para obter mais trechos de código para cenários comuns, consulte o artigo [Trechos de Configuração CDN para Cenários Comuns](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
 
 ## Ordem de avaliação {#order-of-evaluation}
 
@@ -384,6 +386,8 @@ As ações disponíveis são explicadas na tabela abaixo.
 
 Você pode aproveitar a CDN da AEM para rotear o tráfego para diferentes back-ends, incluindo aplicativos que não sejam da Adobe (talvez por caminho ou subdomínio).
 
+As propriedades de solicitação `originalPath` e `originalUrl` são o caminho original imutável (sem parâmetros de consulta) e a URL completa (incluindo parâmetros de consulta), respectivamente, cada um obtido antes de qualquer [solicitação de transformações](#request-transformations) de CDN. Use-as nas condições `when` quando precisar ancorar regras no que o cliente enviou inicialmente, em vez de valores que podem ter sido regravados anteriormente na sequência de avaliação. Use `originalPath` para correspondência somente de caminho; use `originalUrl` quando a cadeia de consulta precisar fazer parte da condição (por exemplo, roteamento ou filtragem em uma URL de solicitação inicial específica).
+
 Exemplo de configuração:
 
 ```
@@ -393,7 +397,7 @@ data:
   originSelectors:
     rules:
       - name: example-com
-        when: { reqProperty: path, like: /proxy* }
+        when: { reqProperty: originalPath, like: /proxy* }
         action:
           type: selectOrigin
           originName: example-com
@@ -524,7 +528,7 @@ data:
           allOf:
             - reqProperty: domain
               equals: www.example.com
-            - reqProperty: path
+            - reqProperty: originalPath
               like: /graphql*
         action:
           type: selectOrigin
@@ -552,13 +556,13 @@ data:
   redirects:
     rules:
       - name: redirect-absolute
-        when: { reqProperty: path, equals: "/page.html" }
+        when: { reqProperty: originalPath, equals: "/page.html" }
         action:
           type: redirect
           status: 301
           location: https://example.com/page
       - name: redirect-relative
-        when: { reqProperty: path, equals: "/anotherpage.html" }
+        when: { reqProperty: originalPath, equals: "/anotherpage.html" }
         action:
           type: redirect
           location: /anotherpage
