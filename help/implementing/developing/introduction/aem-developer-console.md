@@ -4,9 +4,9 @@ description: Saiba mais sobre o AEM as a Cloud Service Developer Console e seu c
 feature: Developing
 role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
-source-git-commit: 51c14ba3c15e0136911003752253d21ed673a0eb
+source-git-commit: 4d8131d6734baeb8c0c50af911cbf9d636c38e1f
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,7 @@ O AEM as a Cloud Service Developer Console inclui um conjunto de ferramentas som
 >O Developer Console é somente leitura. Se você estiver trabalhando no desenvolvimento local usando o SDK e precisar modificar as configurações do OSGi ou o conteúdo do repositório, poderá usar:
 >
 >* [CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+>* [O Console da Web](/help/implementing/developing/tools/web-console.md)
 
 <!--
 There are multiple ways of accessing it:
@@ -57,7 +58,7 @@ O Developer Console só pode ser acessado por usuários com determinadas funçõ
 
 Para visualizar dados de serviços de autoria e publicação, os usuários também devem ser atribuídos ao &quot;Usuários do AEM&quot; ou ao &quot;Perfil de produto de administradores do AEM&quot; em ambos os serviços.
 
-Para obter mais informações sobre como configurar permissões de usuário, consulte a [Documentação do Cloud Manager.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+Para obter mais informações sobre como configurar permissões de usuário, consulte a [Documentação do Cloud Manager.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
 
 ## Guia Pacotes OSGi {#osgi-bundles}
 
