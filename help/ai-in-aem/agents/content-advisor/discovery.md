@@ -4,10 +4,10 @@ description: Saiba como usar o agente de descoberta de conteúdo para fornecer c
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 0%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -99,11 +99,38 @@ Exemplos de prompts:
 * **Pesquisa com base no formato de arquivo, tipo de ativo, status do ativo e Criado por ID de Email**: Mostrar vídeos no formato `.mp4` aprovados e `created by <user email ID>`.
 * **Pesquisa baseada no formato de arquivo, tipo de ativo, status do ativo e Data de Criação**: Mostrar imagens no formato `.PNG` que são criadas após 1º de janeiro de 2025 e `published by <user email ID>`
 * **Pesquisa baseada no tipo MIME, Data de Criação e Publicado por ID de Email**: Mostrar `image/jpeg` criado após `January 1, 2025` e `published by <user email ID>`.
-* **Pesquisar com base nas propriedades de formato de arquivo e metadados personalizados**: mostrar imagens no formato `.JPEG` que tenham `Product SKU ID = <SKU value>` (deve estar na propriedade de metadados = formato de valor).
 
 * **Pesquisar ativos com metadados ausentes**: mostrar ativos criados nos últimos 90 dias com `<Name of metadata property including custom properties>` está em branco.
 
 * **Pesquise ativos usando tamanho de arquivo, largura de imagem e altura de imagem**: mostra imagens maiores que 5 MB com largura maior que 2000 pixels e altura maior que 1200 pixels.
+
+**Suporte a linguagem natural para metadados personalizados**
+
+O agente de Descoberta de Conteúdo é compatível com a consulta de propriedades de metadados personalizadas definidas em esquemas de metadados. Você pode fazer referência a valores de metadados diretamente em seus prompts sem precisar especificá-los usando um formato de valor-chave estrito. O agente interpreta a intenção e corresponde os campos de metadados relevantes automaticamente.
+
+Exemplos de prompts:
+
+* **Localizar ativos que tenham um valor de propriedade não definido**: encontre os ativos cuja campanha Name não esteja definida (a propriedade deve ser indexada para obter os resultados apropriados).
+
+* **Localizando ativos que têm um valor de propriedade definido**: encontre os ativos cuja campanha Name esteja definida (a propriedade deve ser indexada para resultados apropriados).
+
+* **Localizando ativos que têm um valor de propriedade definido como X**: encontre ativos cuja campanha tenha o Nome Coffee-day.
+
+* **Localizando ativos que têm um valor de propriedade definido como o conjunto de valores X, Y**: encontre ativos cuja campanha tenha o Nome de Coffee-day juntamente com aqueles cuja campanha tenha o Nome de tea-day.
+
+* **Mostrando o valor de um campo de propriedade específico**: os ativos do café Get me também mostram o nome da campanha desses ativos.
+
+* **Localizar ativos que correspondam a uma condição de propriedade baseada em data**: obtenha-me ativos cuja licença não expirou.
+
+
+
+
+
+
+
+
+
+
 
 
 **Descoberta de conteúdo com base em pasta:**\
@@ -153,13 +180,17 @@ O Content Discovery Agent permite que os usuários encontrem ativos semelhantes 
 
 **Classificando resultados da pesquisa**
 
-O agente de descoberta de conteúdo permite que os usuários classifiquem os resultados da pesquisa diretamente em seus prompts de idioma natural. Os usuários podem especificar critérios de classificação, como data de modificação, data de criação ou nome do ativo, e escolher ordem crescente ou decrescente.
+O agente Content Discovery permite que os usuários classifiquem os resultados da pesquisa diretamente em seus prompts de idioma natural. Os usuários podem especificar critérios de classificação, como data de modificação, data de criação ou nome do ativo, e escolher ordem crescente ou decrescente.
 
 Exemplos de prompts:
 
 * Localizar imagens em montanha classificadas por data de modificação em ordem decrescente (mostra primeiro os ativos modificados mais recentemente).
 
 * Mostra as imagens de montanha ordenadas pelo nome em ordem crescente (mostra os nomes das imagens que começam com a letra A, primeiro seguida por B, e assim por diante).
+
+**Detecção de ambiente com reconhecimento de contexto**
+
+Na visualização de Administrador, o agente de Descoberta de conteúdo detecta automaticamente o ambiente de criação e o usa para resolver prompts, sem exigir que você especifique explicitamente o URL do autor.
 
 ### Páginas do AEM Sites {#content-discovery-agent-aem-sites-pages}
 
@@ -203,13 +234,15 @@ Observação: no momento, a descoberta de formulários é compatível apenas com
 
 ### Ativos {#discovery-agent-search-results-assets}
 
-O agente de descoberta de conteúdo retorna os principais resultados de cada consulta, classificados por relevância para garantir que as correspondências exatas apareçam primeiro. O agente combina consultas orientadas por metadados com pesquisa semântica para reunir um conjunto focado de correspondências prováveis e, em seguida, usa um LLM para classificá-las com base na intenção do usuário. Essa abordagem combinada fornece resultados precisos e sensíveis ao contexto sem depender totalmente de uma correspondência direta de palavra-chave.
+O Content Discovery Agent retorna os principais resultados de cada consulta, classificados por relevância para garantir que as correspondências exatas apareçam primeiro. O agente combina consultas orientadas por metadados com pesquisa semântica para reunir um conjunto focado de correspondências prováveis e, em seguida, usa um LLM para classificá-las com base na intenção do usuário. Essa abordagem combinada fornece resultados precisos e sensíveis ao contexto sem depender totalmente de uma correspondência direta de palavra-chave.
 
-Cada resultado inclui o nome do ativo junto com os principais metadados do ativo, como o caminho do ativo, criador, data de criação, título, descrição, formato, último modificador, data da última modificação, tamanho do arquivo, dimensões, [URL do Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) e marcas associadas. Se um ativo estiver no estado aprovado, os resultados também incluirão o [Dynamic Media com OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md).
+Cada resultado é exibido como um cartão de ativos, mostrando o nome do ativo, a pré-visualização e os metadados principais, como descrição e formato. Você pode clicar no ícone Informações em um cartão para exibir propriedades de ativos adicionais.
 
-Você pode clicar no caminho do ativo para navegar facilmente até o local do ativo no AEM.
+Use a opção **Mostrar Tabela** para exibir resultados em formato tabular. Clique em **Mostrar todos os resultados** para exibir o conjunto completo de 20 ativos recuperados no painel direito.
 
-![Pesquisar ativos usando o agente de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
+Cada resultado também inclui metadados de ativos principais, como caminho do ativo, tamanho, data de criação e o criador, data de modificação, juntamente com o usuário que modificou o ativo, formato e descrição. Se um ativo estiver no estado aprovado, os resultados também incluirão o [Dynamic Media com OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md). Você pode clicar no caminho do ativo para navegar facilmente até o local do ativo no AEM.
+
+![Pesquisar ativos usando o agente de descoberta de conteúdo](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 
 Você pode usar esses detalhes do ativo para avaliar rapidamente se um ativo atende aos requisitos sem navegar até cada ativo para exibir esses detalhes.
 
