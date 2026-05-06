@@ -4,9 +4,9 @@ description: Saiba como usar o Protocolo de contexto de modelo com o AEM as a Cl
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
+source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,10 @@ O AEM expõe os servidores MCP como pontos de extremidade HTTP. Os endpoints lis
 
 | **Servidor MCP** | **Ponto de extremidade** | **Descrição** |
 |---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Conteúdo** | `/content` | Operações de conteúdo, incluindo criação, leitura, atualização e exclusão (CRUD) de páginas e fragmentos de conteúdo, além de importação de ativos e pesquisa de ativos.                                                                          <br>Envie um email para aemagentsteam@adobe.com para habilitar a **pesquisa de ativos**. Inclua o nome da organização junto com o caso de uso no email. |
-| **Conteúdo (somente leitura)** | `/content-readonly` | Operações de conteúdo somente leitura (Obter, Lista/Pesquisar) para páginas e fragmentos de conteúdo, além de pesquisa de ativos.                                                                             <br>Envie um email para aemagentsteam@adobe.com para habilitar a **pesquisa de ativos**. Inclua o nome da organização junto com o caso de uso no email. |
+| **Conteúdo** | `/content` | Operações de conteúdo, incluindo criação, leitura, atualização e exclusão (CRUD) de páginas e fragmentos de conteúdo, além de importação de ativos e pesquisa de ativos.                                                                          <br>Envie um email para `aemagentsteam@adobe.com` para habilitar a **pesquisa de ativos**. Inclua o nome da organização junto com o caso de uso no email. |
+| **Conteúdo (somente leitura)** | `/content-readonly` | Operações de conteúdo somente leitura (Obter, Lista/Pesquisar) para páginas e fragmentos de conteúdo, além de pesquisa de ativos.                                                                             <br>Envie um email para `aemagentsteam@adobe.com` para habilitar a **pesquisa de ativos**. Inclua o nome da organização junto com o caso de uso no email. |
 | **Cloud Manager** | `/cloudmanager` | Gerencie entidades do Cloud Manager, incluindo programas, ambientes, repositórios e pipelines, que também podem ser acionados. |
-| **Governança de experiência** | `/experience-governance` | Avalie o conteúdo (texto, imagens, páginas) em relação às regras de governança da marca e liste as configurações e verificações da marca.<br/>Os clientes devem se inscrever na [avaliação de agentes ou ter uma licença paga](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) para acessar o MCP da Governança de Experiência. |
+| **Governança de experiência** | `/experience-governance` | Avalie o conteúdo (texto, imagens, páginas) em relação às regras de governança da marca e liste as configurações e verificações da marca.<br/>Os clientes devem se inscrever na [avaliação de agentes ou ter uma licença paga](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) para acessar o MCP da Governança de Experiência. |
 
 As ferramentas específicas expostas por cada servidor MCP podem evoluir com o tempo. Na prática, você pode solicitar que o aplicativo habilitado para MCP descubra ferramentas por meio de um prompt como:
 
@@ -65,7 +65,7 @@ As ferramentas específicas expostas por cada servidor MCP podem evoluir com o t
 
 O cliente MCP usa o protocolo MCP para recuperar a lista de ferramentas e os esquemas que o LLM pode usar.
 
-Consulte o [Tutorial do Servidor MCP de Conteúdo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e o [Vídeo do Servidor MCP do Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obter mais informações sobre seus recursos e como usá-los.
+Consulte o [Tutorial do Servidor MCP de Conteúdo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e o [Vídeo do Servidor MCP do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obter mais informações sobre seus recursos e como usá-los.
 
 ## Aplicativos MCP suportados {#supported-mcp-applications}
 
@@ -186,7 +186,7 @@ Alguns cenários representativos incluem:
 
   >[!NOTE]
   >
-  >Envie um email para aemagentsteam@adobe.com para ativar a pesquisa de ativos. Inclua o nome da organização junto com o caso de uso no email.
+  >Envie um email para `aemagentsteam@adobe.com` para habilitar a pesquisa de ativos para você. Inclua o nome da organização junto com o caso de uso no email.
 
 ### Exemplo de fluxos de trabalho {#example-workflows}
 

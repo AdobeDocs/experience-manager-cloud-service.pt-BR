@@ -4,7 +4,7 @@ description: Saiba como usar o agente de descoberta de conteúdo para fornecer c
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
+source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -236,7 +236,7 @@ Observação: no momento, a descoberta de formulários é compatível apenas com
 
 O Content Discovery Agent retorna os principais resultados de cada consulta, classificados por relevância para garantir que as correspondências exatas apareçam primeiro. O agente combina consultas orientadas por metadados com pesquisa semântica para reunir um conjunto focado de correspondências prováveis e, em seguida, usa um LLM para classificá-las com base na intenção do usuário. Essa abordagem combinada fornece resultados precisos e sensíveis ao contexto sem depender totalmente de uma correspondência direta de palavra-chave.
 
-Cada resultado é exibido como um cartão de ativos, mostrando o nome do ativo, a pré-visualização e os metadados principais, como descrição e formato. Você pode clicar no ícone Informações em um cartão para exibir propriedades de ativos adicionais.
+Cada resultado é exibido como um cartão de ativos, exibindo o nome do ativo, a pré-visualização e os metadados principais, como descrição e formato. Você pode clicar no ícone Informações em um cartão para exibir propriedades de ativos adicionais.
 
 Use a opção **Mostrar Tabela** para exibir resultados em formato tabular. Clique em **Mostrar todos os resultados** para exibir o conjunto completo de 20 ativos recuperados no painel direito.
 
