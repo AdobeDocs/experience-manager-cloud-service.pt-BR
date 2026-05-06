@@ -6,7 +6,8 @@ topic-tags: configuring
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ce0158b1f4d1a1cf9f6102a79c1ca29ee7edd3b5
+exl-id: 3aaa615f-d3bf-4d1a-9dff-b6e271f0e9a6
+source-git-commit: 3995e0090e1b0be1cbc430c3da7458b6ce867e09
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 0%
@@ -20,23 +21,24 @@ Saiba como usar o Console da Web do Adobe Experience Manager (AEM) para gerencia
 
 ## Visão geral {#overview}
 
-O AEM as a Cloud Service trata a configuração e o código [&#x200B; como imutáveis em tempo de execução.](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) Isso significa que todas as configurações devem ser implantadas como você codificaria em um ambiente de produção. Para instâncias de produção, isso garante que portas de qualidade sejam aprovadas e oferece um nível de estabilidade e clareza do ambiente atual.
+O AEM as a Cloud Service trata a configuração e o código [ como imutáveis em tempo de execução.](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) Isso significa que todas as configurações devem ser implantadas como você codificaria em um ambiente de produção. Para instâncias de produção, isso garante que portas de qualidade sejam aprovadas e oferece um nível de estabilidade e clareza do ambiente atual.
 
-Para fins de desenvolvimento, no entanto, atualizações e alterações de pacotes de configuração OSGi geralmente são necessárias para testar alterações de desenvolvimento ad-hoc. Como parte do AEM as a Cloud Service SDK, o Console da Web permite isso. Consulte o documento [Configuração de OSGi para Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obter mais informações sobre configurações de OSGi para AEM as a Cloud Service.
+No entanto, atualizações e alterações de pacote ad-hoc [Configuração OSGi](/help/implementing/deploying/configuring-osgi.md) geralmente são necessárias para testar os desenvolvimentos locais. Como parte do [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), o Console da Web habilita essas atualizações em tempo real.
 
-O console pode ser acessado de `http://<host>:<port>/system/console`
+Com o AEM as a Cloud Service sendo executado localmente, o console pode ser acessado de `http://<host>:<port>/system/console`.
 
-O Console da Web oferece uma seleção de telas para manter os pacotes OSGi, incluindo:
+O Console da Web oferece uma seleção de telas e opções para manter os pacotes OSGi, incluindo:
 
-* [Configuração](#configuration): usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar os parâmetros do sistema AEM
-* [Pacotes](#bundles): usados para instalar pacotes
-* [Componentes](#components): usados para controlar o status dos componentes necessários para o AEM
+* [Configuração](#configuration): para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar os parâmetros de sistema do AEM
+* [Pacotes](#bundles): para instalar pacotes
+* [Componentes](#components): para controlar o status dos componentes necessários para o AEM
+* [Gerando configurações OSGi](#generating-osgi-configurations): para gerar automaticamente configurações OSGi como JSON
 
-Quaisquer alterações feitas são aplicadas imediatamente ao sistema de desenvolvimento em execução. Não é necessário reiniciar.
+Quaisquer alterações feitas são aplicadas imediatamente à SDK em execução. Não é necessário reiniciar.
 
-No Console da Web, todas as descrições que mencionam as configurações padrão estão relacionadas aos padrões do Sling. O AEM tem seus próprios padrões e, portanto, os padrões definidos podem ser diferentes daqueles documentados no console.
+No Console da Web, todas as descrições que mencionam as configurações padrão estão relacionadas aos padrões do Sling. O AEM tem seus próprios padrões e, portanto, os padrões definidos podem ser diferentes daqueles documentados pelo console.
 
-O Console da Web no Adobe Experience Manager (AEM) é baseado no [Console de Gerenciamento da Web do Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). O Apache Felix é um esforço da comunidade para implementar a Plataforma de serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
+O Console da Web no Adobe Experience Manager (AEM) é baseado no [Console de Gerenciamento da Web do Apache Felix.](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html) O Apache Felix é um esforço da comunidade para implementar a Plataforma de serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
 
 >[!NOTE]
 >
@@ -55,14 +57,14 @@ A tela **Configuração** é usada para configurar pacotes OSGi e, portanto, é 
 
 Uma lista de configurações é exibida:
 
-![configMgr](assets/config-mgr.png)
+![A tela Configuração](assets/configuration.png)
 
-Há dois tipos de configurações disponíveis nas listas suspensas desta tela:
+Há dois tipos de configurações disponíveis na lista desta tela:
 
 * **As configurações** permitem que você atualize as configurações existentes. Eles têm uma identidade persistente (PID) e podem ser:
    * Padrão e integral para o AEM - São obrigatórios, se excluídos, os valores retornarão às configurações padrão.
    * Instâncias criadas de configurações de fábrica - Essas instâncias são criadas pelo usuário, a exclusão remove a instância.
-* **As Configurações de Fábrica** permitem criar uma instância do objeto de funcionalidade necessário. Ele é alocado para uma Identidade persistente e, em seguida, listado na lista suspensa Configurações.
+* **As Configurações de Fábrica** permitem criar uma instância do objeto de funcionalidade necessário. Ele é alocado para uma Identidade persistente e, em seguida, listado na lista Configurações.
 
 Selecionar qualquer entrada na lista exibe os parâmetros relacionados a essa configuração:
 
@@ -82,7 +84,7 @@ Em seguida, você pode atualizar os parâmetros conforme necessário e:
 
 >[!TIP]
 >
->Consulte [Configuração OSGi com o Console da Web](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes.
+>Consulte [Configuração de OSGi para Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes sobre configurações de OSGi.
 
 ## Pacotes {#bundles}
 
@@ -117,25 +119,24 @@ A lista especifica o status do pacote. clicando no nome de um pacote específico
 A tela **Componentes** permite habilitar e desabilitar componentes. Ele pode ser acessado das seguintes maneiras:
 
 * O menu suspenso: **Principal -> Componentes**
-
 * URL: `http://<host>:<port>/system/console/components`
 
-Uma lista de componentes é exibida. Vários ícones estão disponíveis para permitir que você ative, desative ou (quando apropriado) abra os detalhes de configuração de um componente específico.
+Uma lista de componentes é exibida. Os ícones estão disponíveis para cada linha para permitir que você ative, desative ou (quando apropriado) abra os detalhes de configuração de um componente específico.
 
 ![Componentes](assets/components.png)
 
 Clicar no nome de um componente específico exibe mais informações sobre o seu status. Aqui você também pode ativar, desativar ou recarregar o componente.
 
-![Detalhes do componente](assets/component-detail.png)
+![Detalhes do componente](assets/component-details.png)
 
 >[!NOTE]
 >
->Ativar ou desativar um componente se aplica somente até que o SDK seja reiniciado.
+>Habilitar ou desabilitar um componente se aplica somente até que o SDK seja reiniciado.
 >
 >O estado inicial é definido no descritor do componente, que é gerado durante o desenvolvimento e armazenado no pacote no momento da criação do pacote.
 
 ## Gerar configurações de OSGi {#generating-osgi-configs}
 
-O Console da Web pode ser usado para configurar componentes OSGi e exportar configurações OSGi como JSON. Isso é útil para configurar componentes OSGi fornecidos pela AEM cujas propriedades OSGi e seus formatos de valor podem não ser bem compreendidos pelo desenvolvedor que define as configurações OSGi no projeto do AEM.
+O Console da Web pode ser usado para configurar componentes OSGi e exportar configurações OSGi como JSON. Isso é útil para configurar componentes OSGi fornecidos pela AEM cujas propriedades OSGi e formatos de valor talvez você não esteja familiarizado ao definir configurações OSGi em seu projeto do AEM.
 
 Consulte o documento [Configuração de OSGi para Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-web-console) para obter mais informações.
