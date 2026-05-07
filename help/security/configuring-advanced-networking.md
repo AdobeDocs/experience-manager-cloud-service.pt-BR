@@ -4,10 +4,10 @@ description: Saiba como configurar recursos avançados de rede, como VPN ou um e
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: bfb39bd630c451b4649955af3c264bacefd1c477
+source-git-commit: 3d2b4b7aad0c7d15d14b7f9328945303ed31d71b
 workflow-type: tm+mt
-source-wordcount: '5549'
-ht-degree: 18%
+source-wordcount: '5860'
+ht-degree: 20%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 18%
 
 Este artigo apresenta os recursos avançados de rede disponíveis no AEM as a Cloud Service. Esses recursos incluem autoatendimento e provisionamento de API de VPN, portas não padrão e endereços IP de saída dedicados.
 
-Além dessa documentação, também há uma série de tutoriais criados para orientá-lo em cada uma das opções avançadas de rede. Consulte [Rede avançada](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
+Além dessa documentação, também há uma série de tutoriais criados para orientá-lo em cada uma das opções avançadas de rede. Consulte [Rede avançada](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/advanced-networking).
 
 >[!IMPORTANT]
 >
 >Você pode configurar redes avançadas no AEM as a Cloud Service por meio da interface do usuário do Cloud Manager ou usando a API do Cloud Manager (por exemplo, cURL).
 >
->Este artigo se concentra no uso do método da interface do usuário do. Se preferir automatizar a configuração por meio da API, consulte o [tutorial sobre VPN (Virtual Private Network)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Este artigo se concentra no uso do método da interface do usuário do. Se preferir automatizar a configuração por meio da API, consulte o [tutorial sobre VPN (Virtual Private Network)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
->**Automatizando a rede avançada com a API**
+>**Automatização de rede avançada com a API**
 >Para automatizar a configuração avançada de rede (como criação de VPN), é possível usar a API do Cloud Manager:
 >
 >```bash
@@ -44,7 +44,7 @@ Além dessa documentação, também há uma série de tutoriais criados para ori
 >   }'
 >```
 >
->Veja o tutorial completo e mais exemplos de API no [tutorial de VPN (Virtual Private Network)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/vpn).
+>Veja o tutorial completo e mais exemplos de API no [tutorial de VPN (Virtual Private Network)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn).
 >
 
 ## Visão geral {#overview}
@@ -59,7 +59,7 @@ Este artigo descreve cada uma dessas opções em detalhes e por que você pode u
 
 >[!CAUTION]
 >
->Se você já tiver sido provisionado com a tecnologia de saída dedicada herdada e quiser configurar uma dessas opções avançadas de rede, [contate o Atendimento ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&lang=pt-BR#home).
+>Se você já tiver sido provisionado com a tecnologia de saída dedicada herdada e quiser configurar uma dessas opções avançadas de rede, [contate o Atendimento ao Cliente da Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=pt-BR#home).
 >
 >Tentar configurar redes avançadas com a tecnologia de saída herdada pode afetar a conectividade do site.
 
@@ -162,7 +162,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 Se estiver usando bibliotecas de rede Java™ não padrão, configure proxies usando as propriedades acima para todo o tráfego.
 
-O tráfego não http/s com destinos por meio de portas declaradas no parâmetro `portForwards` deve fazer referência a uma propriedade chamada `AEM_PROXY_HOST`, juntamente com a porta mapeada. Por exemplo:
+O tráfego não HTTP/S com destinos por meio de portas declaradas no parâmetro `portForwards` deve fazer referência a uma propriedade chamada `AEM_PROXY_HOST`, juntamente com a porta mapeada. Por exemplo:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -175,7 +175,7 @@ A tabela abaixo descreve o roteamento de tráfego:
   <tr>
     <th>Tráfego</th>
     <th>Condição de destino</th>
-    <th>Porta </th>
+    <th>Porta</th>
     <th>Conexão</th>
     <th>Exemplo de destino externo</th>
   </tr>
@@ -248,7 +248,7 @@ O mesmo IP dedicado é aplicado a todos os ambientes em um programa e se aplica 
 
 Sem o recurso de endereço IP dedicado habilitado, o tráfego do AEM as a Cloud Service flui por meio de um conjunto compartilhado de IPs. Esses IPs são usados por outros clientes da AEM as a Cloud Service.
 
-Configurar um endereço IP de saída dedicado é semelhante a [saída de porta flexível](#flexible-port-egress). A principal diferença é que, após a configuração, o tráfego sempre sairá de um IP dedicado e exclusivo. Para localizar esse IP, use um resolvedor de DNS para identificar o endereço IP associado a `p{PROGRAM_ID}.external.adobeaemcloud.com`. Não é esperado que o endereço IP mude, mas se precisar mudar, é fornecida uma notificação com antecedência.
+Configurar um endereço IP de saída dedicado é semelhante a [saída de porta flexível](#flexible-port-egress). A principal diferença é que, após a configuração, o tráfego sempre sai de um IP dedicado e exclusivo. Para localizar esse IP, use um resolvedor de DNS para identificar o endereço IP associado a `p{PROGRAM_ID}.external.adobeaemcloud.com`. Não é esperado que o endereço IP mude, mas se precisar mudar, é fornecida uma notificação com antecedência.
 
 >[!TIP]
 >
@@ -303,7 +303,7 @@ Uma vez chamada, normalmente leva aproximadamente 15 minutos para a infraestrutu
 
 ### Roteamento de tráfego {#dedicated-egress-ip-traffic-routing}
 
-O tráfego http ou https passa por um proxy pré-configurado, desde que use propriedades padrão do sistema Java™ para configurações de proxy.
+O tráfego HTTP ou HTTPS passa por um proxy pré-configurado, desde que use propriedades padrão do sistema Java™ para configurações de proxy.
 
 O tráfego não http/s com destinos por meio de portas declaradas no parâmetro `portForwards` deve fazer referência a uma propriedade chamada `AEM_PROXY_HOST`, juntamente com a porta mapeada. Por exemplo:
 
@@ -316,7 +316,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   <tr>
     <th>Tráfego</th>
     <th>Condição de destino</th>
-    <th>Porta </th>
+    <th>Porta</th>
     <th>Conexão</th>
     <th>Exemplo de destino externo</th>
   </tr>
@@ -324,7 +324,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 <tbody>
   <tr>
     <td><b>Protocolo http ou https</b></td>
-    <td>Tráfego para serviços do Azure (*.windows.net) ou da Adobe</td>
+    <td>Tráfego para Azure (*.windows.net) ou serviços da Adobe</td>
     <td>Qualquer</td>
     <td>Por meio dos IPs de cluster compartilhados (não o IP dedicado)</td>
     <td>adobe.io<br>api.windows.net</td>
@@ -622,8 +622,8 @@ Ao habilitar uma configuração avançada de rede para um ambiente, você també
    * Para cada host de destino, você deve mapear a porta de destino pretendida para uma porta de 30000 a 30999.
    * As regras de encaminhamento de portas estão disponíveis para todos os tipos avançados de rede.
 
-* **Hosts sem Proxy** - Os hosts sem proxy permitem que você declare um conjunto de hosts que devem ser roteados por um intervalo de endereços IPs compartilhados em vez do IP dedicado.
-   * Essa abordagem pode ser útil, pois a criação de tráfego por meio de IPs compartilhados pode ser otimizada ainda mais.
+* **Hosts sem Proxy** - Os hosts sem proxy permitem que você declare um conjunto de hosts que devem ser roteados por um intervalo de endereços IP compartilhados em vez do IP dedicado.
+   * Essa abordagem pode ser útil porque a criação de tráfego por meio de endereços IP compartilhados pode ser otimizada ainda mais.
    * Os hosts não proxy estão disponíveis apenas para endereços IP de saída dedicados e tipos avançados de rede VPN.
 
 >[!NOTE]
@@ -642,7 +642,7 @@ Ao habilitar uma configuração avançada de rede para um ambiente, você també
 
 1. A caixa de diálogo **Configurar rede avançada** é aberta.
 
-1. Na guia **Hosts não proxy**, para endereços IP de saída dedicados e VPNs, é possível definir um conjunto de hosts. Esses hosts definidos devem ser roteados por um intervalo de endereços IPs compartilhados, em vez do IP dedicado, fornecendo o nome do host no campo **Host Não Proxy** e clicando em **Adicionar**.
+1. Na guia **Hosts não proxy**, para endereços IP de saída dedicados e VPNs, é possível definir um conjunto de hosts. Esses hosts definidos devem ser roteados por um intervalo de endereços IP compartilhados, em vez do IP dedicado, fornecendo o nome do host no campo **Host Não Proxy** e clicando em **Adicionar**.
 
    * O host é adicionado à lista de hosts na guia.
    * Repita esta etapa se quiser adicionar vários hosts.
@@ -673,7 +673,7 @@ A API deve responder em apenas alguns segundos, indicando o status `updating`. A
 
 As regras de encaminhamento de porta por ambiente podem ser atualizadas chamando o ponto de extremidade `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` e incluindo o conjunto completo de parâmetros de configuração, em vez de um subconjunto.
 
-O endereço IP de saída dedicado e os tipos de rede avançados VPN dão suporte a um parâmetro `nonProxyHosts`. Esse suporte permite declarar um conjunto de hosts que devem rotear por um intervalo de endereços IPs compartilhados em vez do IP dedicado. Os URLs `nonProxyHost` podem seguir os padrões `example.com` ou `*.example.com`, em que o curinga é compatível somente no início do domínio.
+O endereço IP de saída dedicado e os tipos de rede avançados VPN dão suporte a um parâmetro `nonProxyHosts`. Esse suporte permite declarar um conjunto de hosts que devem rotear por um intervalo de endereços IP compartilhados em vez do IP dedicado. Os URLs `nonProxyHost` podem seguir os padrões `example.com` ou `*.example.com`, em que o curinga é compatível somente no início do domínio.
 
 Mesmo se não houver regras de roteamento de tráfego de ambiente (hosts ou ignoradas), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` ainda deve ser chamado, apenas com uma carga vazia.
 
@@ -727,7 +727,7 @@ Depois que a infraestrutura de rede é criada para um programa, somente as propr
 >* Somente o tipo de infraestrutura de rede avançada VPN pode ser editado depois de criado e somente em campos limitados.
 >* Por motivos de segurança, a **Chave compartilhada** sempre deve ser fornecida ao editar uma infraestrutura avançada de rede VPN, mesmo que você não esteja editando a chave.
 
-### Edição e exclusão com a interface {#delete-ui}
+### Editar, testar ou excluir com a interface {#delete-ui}
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
 
@@ -735,29 +735,33 @@ Depois que a infraestrutura de rede é criada para um programa, somente as propr
 
 1. Na página **Visão geral do programa**, navegue até a guia **Ambientes**.
 1. No painel esquerdo, clique em **Infraestrutura de Rede**.
-1. Clique no ícone ![Mais, reticências](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) ao lado da infraestrutura que você deseja excluir.
+1. Clique em ![Mais ícone, reticências](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) ao lado da infraestrutura que você deseja editar, testar ou excluir.
 
    ![Selecionando edição ou exclusão de rede avançada no nível de programa](assets/advanced-networking-ui-delete-infrastructure.png)
 
-1. Clique em **Editar** ou **Excluir**.
+1. Clique em **Editar**, **Testar** ou **Excluir**.
 
 1. Siga uma das seguintes opções:
 
    * Se você escolher **Editar**, o assistente **Editar infraestrutura de rede** será aberto. Edite conforme necessário seguindo as etapas descritas ao criar a infraestrutura.
 
+   * Se você escolheu **Testar** para testar automaticamente suas conexões antes de habilitá-las no nível do ambiente, no menu suspenso **Testes recentes**, selecione uma entrada para recarregar sua configuração e clique em **Testar**. Se nenhum teste for executado, o menu exibirá *Nenhum teste recente*.
+
+     Como alternativa, no campo de texto **Host**, insira o nome de host de destino necessário. Em seguida, no menu suspenso **Porta**, selecione a porta apropriada necessária. Clique em **Testar**. Os resultados são exibidos na seção **Resultados dos testes** da caixa de diálogo.
+
    * Se você escolheu **Excluir**, confirme a exclusão na caixa de diálogo **Excluir configuração de rede** com **Excluir** ou cancele com **Cancelar**.
 
 As alterações são refletidas na guia **Ambientes**.
 
-### Edição e exclusão com a API {#delete-api}
+### Editar e excluir com a API {#delete-api}
 
 Para **excluir** a infraestrutura de rede de um programa, chame `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
 
-## Alterando o Tipo de Infraestrutura Avançada de Rede de um Programa {#changing-program}
+## Alterar o tipo de infraestrutura de rede avançada de um programa {#changing-program}
 
 Só é possível ter um tipo de infraestrutura avançada de rede configurada para um programa de cada vez. A infraestrutura de rede avançada deve ser de saída de porta flexível, endereço IP de saída dedicado ou VPN.
 
-Se você decidir que precisa de outro tipo de infraestrutura de rede avançada além daquele que você já configurou, exclua o existente e crie outro. Faça o seguinte:
+Se você decidir que precisa de um tipo de infraestrutura de rede avançada diferente daquele que você já configurou, exclua o existente e crie outro. Faça o seguinte:
 
 1. [Excluir rede avançada em todos os ambientes](#editing-deleting-environments).
 1. [Excluir a infraestrutura de rede avançada](#editing-deleting-program).
@@ -777,15 +781,15 @@ Quando uma região adicional é adicionada a um ambiente com rede avançada já 
 >
 >Todas as regiões compartilham a [configuração de rede avançada do ambiente](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration), portanto, não é possível rotear o tráfego para destinos diferentes com base na região da qual o tráfego está saindo.
 
-### Endereço IP de saída dedicado {#additional-publish-regions-dedicated-egress}
+### Endereços IP de saída dedicados {#additional-publish-regions-dedicated-egress}
 
 #### Rede avançada já habilitada na região principal {#already-enabled}
 
 Se uma configuração de rede avançada já estiver habilitada na região principal, siga estas etapas:
 
-1. Se você bloqueou sua infraestrutura de modo que o endereço IP dedicado da AEM incluir na lista de permissões seja, desative temporariamente todas as regras de negação nessa infraestrutura. Se você ignorar esta etapa, sua infraestrutura negará temporariamente solicitações dos endereços IP da nova região. Esta etapa não será necessária se você tiver bloqueado sua infraestrutura usando um FQDN (Nome de Domínio Totalmente Qualificado), como `p1234.external.adobeaemcloud.com`. Todas as regiões do AEM geram tráfego de rede avançado do mesmo FQDN.
+1. Se você bloqueou sua infraestrutura de modo que o endereço IP dedicado da AEM seja, desative temporariamente todas as regras de negação nessa infraestrutura. Se você ignorar esta etapa, sua infraestrutura negará temporariamente solicitações dos endereços IP da nova região. Esta etapa não será necessária se você tiver bloqueado sua infraestrutura usando um FQDN (Nome de Domínio Totalmente Qualificado), como `p1234.external.adobeaemcloud.com`. Todas as regiões do AEM geram tráfego de rede avançado do mesmo FQDN.
 1. Crie a infraestrutura de rede com escopo de programa para a região secundária por meio de uma chamada POST para a API de criação de infraestrutura de rede do Cloud Manager, conforme descrito na documentação de rede avançada. A única diferença na configuração JSON do conteúdo em relação à região principal será a propriedade de região
-1. Se você precisar bloquear sua infraestrutura por IP para permitir o tráfego do AEM, adicione os IPs que correspondem a `p1234.external.adobeaemcloud.com`. Deve haver um por região.
+1. Se você precisar bloquear sua infraestrutura por IP para permitir o tráfego do AEM, adicione os endereços IP que correspondem a `p1234.external.adobeaemcloud.com`. Deve haver um por região.
 
 #### Rede avançada ainda não configurada em nenhuma região {#not-yet-configured}
 
@@ -800,9 +804,9 @@ O procedimento é basicamente semelhante às instruções anteriores. No entanto
 
 O procedimento é quase idêntico às instruções fornecidas para endereços IP de saída dedicados. A única diferença é que a propriedade region é configurada de forma diferente da região principal. Além disso, você pode configurar o campo `connections.gateway`. A configuração pode rotear para um terminal VPN diferente operado por sua organização, geograficamente mais próximo da nova região.
 
-## Resolução de problemas
+## Solução de problemas
 
-Observe que os pontos a seguir são fornecidos como diretrizes informativas e abrangem as práticas recomendadas para a solução de problemas. Essas recomendações têm como objetivo auxiliar no diagnóstico e na resolução de problemas com eficiência.
+Esteja ciente de que os pontos a seguir são fornecidos como diretrizes informativas e englobam as práticas recomendadas para a solução de problemas. Essas recomendações têm como objetivo auxiliar no diagnóstico e na resolução de problemas com eficiência.
 
 ### Pool de conexão {#connection-pooling-advanced-networking}
 
