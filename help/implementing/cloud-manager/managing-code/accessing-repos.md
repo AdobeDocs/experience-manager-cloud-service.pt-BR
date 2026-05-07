@@ -1,5 +1,5 @@
 ---
-title: 'Informações de acesso do repositório '
+title: Informações de acesso do repositório
 description: Saiba como acessar e gerenciar os repositórios Git gerenciado pela Adobe usando o gerenciamento de conta Git por autoatendimento do Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '406'
 ht-degree: 96%
 
 ---
@@ -64,6 +64,6 @@ O recurso **Acessar informações do repositório** também está disponível na
 
 ## Revogação de uma senha de acesso {#revoke-password}
 
-É possível revogar uma senha de acesso a qualquer momento. 
+É possível revogar uma senha de acesso a qualquer momento.
 
 Para fazer isso, [crie um tíquete de suporte para esta solicitação](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&support-tab=home#support). O tíquete será tratado com alta prioridade e deverá ser revogado em um dia.
