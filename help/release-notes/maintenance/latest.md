@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 82b3b4bdcd09aa86974518f4f62e73c9f377c83f
+source-git-commit: d00af3aee8c2a42233bfc0f914a4e24abe921e08
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '783'
 ht-degree: 14%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 14%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 25821 {#release-25821}
+## Versão 25892 {#release-25892}
 
-Resumidos abaixo estão as melhorias contínuas da versão de manutenção 25821, que foi lançada publicamente em 5 de maio de 2026. A versão de manutenção anterior era 25520.
+Resumidos abaixo estão as melhorias contínuas da versão de manutenção 25892, que foi lançada publicamente em 7 de maio de 2026. A versão de manutenção anterior era 25520.
 
-A ativação de recursos do 2026.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2026.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-25821}
+>[!NOTE]
+>
+>A versão 25821 foi tornada privada.
+
+### Aprimoramentos {#enhancements-25892}
 
 * CQ-4362304: crie o front-end de diretrizes e atualize a interface de configuração do LLM.
 * GRANITE-39546: atualize o Apache Tika para 3.x.
@@ -52,7 +56,7 @@ A ativação de recursos do 2026.5.0 fornecerá o conjunto completo de recursos 
 * SKYOPS-138356: Atualização `com.adobe.granite.oauth.server` para 1.1.36.
 * SKYOPS-138739: Atualização do SnakeYAML para 2.6.
 
-### Problemas corrigidos {#fixed-issues-25821}
+### Problemas corrigidos {#fixed-issues-25892}
 
 * ASSETS-59546: remova as dependências da biblioteca commons-lang obsoleta.
 * ASSETS-64831: a contagem de tentativas de redefinição de AssetProcessorProcess causa ativos travados.
@@ -67,7 +71,7 @@ A ativação de recursos do 2026.5.0 fornecerá o conjunto completo de recursos 
 * SITES-39267: restaure pagePath em entradas da cadeia de relacionamento.
 * SITES-43715: A validação de permissão falha ao ler o status do recurso.
 
-#### Guias do AEM {#guides-25821}
+#### Guias do AEM {#guides-25892}
 
 * GUIDES-45110: Ao selecionar uma imagem no Editor usando a caixa de diálogo **Selecionar arquivo**, somente os formatos de varredura (como JPG, PNG e GIF) são exibidos. Arquivos de vetor (como `.ai` e `.eps`) não são exibidos e não podem ser selecionados.
 * GUIDES-41938: A criação de um tópico em uma pasta com espaços em seu nome cria incorretamente uma pasta duplicada em que os espaços são substituídos por hifens e o tópico é salvo lá, em vez da pasta original.
@@ -75,21 +79,21 @@ A ativação de recursos do 2026.5.0 fornecerá o conjunto completo de recursos 
 * GUIDES-43547: Quando tópicos ou mapas grandes são abertos, a instância do Autor fica sem resposta, exigindo uma reinicialização em alguns casos.
 * GUIDES-32520: Quando o Backspace é usado em elementos, o Editor rola para a parte superior do tópico, independentemente da posição do cursor (Editor 2.0).
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problemas conhecidos {#known-issues-25821}
+### Problemas conhecidos {#known-issues-25892}
 
 Nenhum.
 
-### Recursos e APIs obsoletos {#deprecated-25821}
+### Recursos e APIs obsoletos {#deprecated-25892}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-25821}
+### Correções de segurança {#security-25892}
 
 A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda 19 vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
 
-### Tecnologias integradas {#embedded-tech-25821}
+### Tecnologias integradas {#embedded-tech-25892}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
@@ -98,4 +102,4 @@ A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua
 | HTL do AEM | 1.4.28-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES) |
 | Componentes principais do AEM | 2.30.4 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (padrão) | [Versões Node.js com suporte](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
