@@ -78,7 +78,7 @@ Antes de iniciar a marcação para exclusão, o sistema valida se o programa de 
 1. Selecione a organização apropriada.
 1. Na página **Meus Programas**, para o programa de produção que você deseja marcar para exclusão, clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Excluir programa**.
 
-   ![Selecionar Excluir Programa da lista suspensa de um programa de produção ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*O exemplo de programa de produção visto acima serve apenas para fins ilustrativos.*
+   ![Selecionar Excluir Programa da lista suspensa de um programa de produção &#x200B;](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*O exemplo de programa de produção visto acima serve apenas para fins ilustrativos.*
 
 1. Na caixa de diálogo **Marcar programa de produção para exclusão**, revise o aviso que lista os recursos conectados ao seu programa, incluindo ambientes de produção, preparo e desenvolvimento.
 
