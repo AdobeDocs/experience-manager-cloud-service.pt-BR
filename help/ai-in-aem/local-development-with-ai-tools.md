@@ -4,9 +4,9 @@ description: Saiba como configurar ferramentas de codificação de IA com contex
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 827cf0dada4e624418dc967a9bce8ebf728f7ad7
+source-git-commit: 6fe463cb3f350f84e3853950e667eac851f672ef
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Quatro componentes complementares abordam esta questão:
 | **Servidor MCP local do AEM Quickstart** | Expõe dados em tempo de execução em tempo real de uma instância local do AEM SDK para oferecer suporte à solução de problemas |
 | **Servidor MCP local do Dispatcher** | Habilita a validação e a inspeção em tempo de execução de uma instância local do Dispatcher |
 
-Revise os [tutoriais de desenvolvimento assistido por IA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) para obter instruções adicionais e práticas.
+Revise os [tutoriais de desenvolvimento assistido por IA](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) para obter instruções adicionais e práticas.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ A Adobe publica habilidades do AEM as a Cloud Service no **[adobe/skills](https:
 
 ### Instalar habilidades {#install-skills}
 
-Escolha o método que corresponde à ferramenta de codificação de IA. Instalar as habilidades uma vez as disponibiliza para todos os projetos nessa máquina. Consulte o [Tutorial Configurar habilidades do agente do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) para obter uma apresentação concreta.
+Escolha o método que corresponde à ferramenta de codificação de IA. Instalar as habilidades uma vez as disponibiliza para todos os projetos nessa máquina. Consulte o [Tutorial Configurar habilidades do agente do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) para obter uma apresentação concreta.
 
 #### código Claude {#claude-code}
 
@@ -121,9 +121,9 @@ CTA Text (ctaText) - Textfield
 CTA Link (ctaLink) - Pathfield
 ```
 
-O agente ecoa a especificação do campo para confirmação e, em seguida, gera todos os arquivos de componente. Os padrões compatíveis incluem vários campos com itens aninhados compostos, lógica condicional de mostrar/ocultar, extensão do Componente principal por meio do Sling Resource Merger e testes JUnit 5 usando AEM Mocks.
+O agente ecoa a especificação do campo para confirmação e, em seguida, gera todos os arquivos de componente. Os padrões compatíveis incluem vários campos com itens aninhados compostos, lógica condicional de mostrar/ocultar, extensão do Componente principal por meio do Sling Resource Merger e testes JUnit 5 usando AEM Mocks. O design pode vir de várias fontes, incluindo uma descrição de texto, uma imagem ou um URL de design do Figma usando o servidor MCP do Figma.
 
-Saiba mais seguindo o [desenvolvimento de Componentes usando o tutorial Habilidades do agente do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
+Saiba mais seguindo o [desenvolvimento de Componentes usando o tutorial Habilidades do agente do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
 
 ### Usar a habilidade do Dispatcher {#use-the-dispatcher-skill}
 
