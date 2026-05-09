@@ -140,7 +140,7 @@ O Servidor MCP de governança de experiência agora está disponível ao públic
 Saiba mais sobre [Servidores MCP do AEM](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) e o [Agente de Governança](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486263/?captions=por_br&learn=on&enablevpops)
 
 #### Claude Connector {#aem-claude-connector}
 
