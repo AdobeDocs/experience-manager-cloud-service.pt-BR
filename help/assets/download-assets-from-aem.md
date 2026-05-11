@@ -6,9 +6,9 @@ feature: Asset Management
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
+source-git-commit: d2f264ed2c7cb701a66e6d4e226cd697a586c2d5
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1285'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 É possível baixar ativos, incluindo representações estáticas e dinâmicas. Como alternativa, você pode enviar emails com links para ativos diretamente do [!DNL Adobe Experience Manager Assets]. Os ativos baixados são incluídos em um arquivo ZIP. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -35,9 +35,9 @@ Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 <!-- * [Link Share](#link-share-download) -->
 
 * [Interface do usuário do Experience Manager](#download-assets)
-* [Comuns de compartilhamento de ativos](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=pt-BR)
-* [Aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#download-assets)
+* [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [Aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## Baixar ativos usando a interface [!DNL Experience Manager] {#download-assets}
 
@@ -46,6 +46,15 @@ O Experience Manager otimiza a experiência de download com base na quantidade e
 Por padrão, [!DNL Experience Manager] aciona uma notificação na [[!DNL Experience Manager] Caixa de Entrada](/help/sites-cloud/authoring/inbox.md) ao gerar um arquivo de download.
 
 ![Notificação da Caixa de entrada](assets/inbox-notification-for-large-downloads.png)
+
+Quando um usuário solicita um download contendo pastas ou coleções, o AEM executa uma estimativa rápida do número de itens (Assets, Pastas ou Representações) abaixo das pastas ou coleções baixadas, para garantir que o download solicitado esteja dentro dos limites permitidos. Por padrão, downloads com mais de 50.000 itens são bloqueados e o AEM exibe a mensagem `The selected items are larger than the configured maximum download limit`.
+
+É possível aumentar o limite de tamanho do download adicionando uma configuração OSGI mostrada abaixo ao código do aplicativo e [implantando por meio de um pipeline de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi):
+
+```
+com.adobe.cq.dam.download.impl.DownloadConfiguration   
+downloadMaxItems = 100000
+```
 
 
 ### Ativar notificações por email para downloads grandes {#enable-emails-for-large-downloads}
@@ -56,7 +65,7 @@ Os downloads assíncronos são acionados em qualquer um dos seguintes casos:
 * Se o tamanho do download for superior a 100 MB
 * Se o download levar mais de 30 segundos para se preparar
 
-Enquanto o download assíncrono é executado no back-end, o usuário pode continuar a explorar e trabalhar mais no Experience Manager. Além das notificações da caixa de entrada do Experience Manager, o Experience Manager pode enviar emails para notificar o usuário na conclusão do processo de download. Para habilitar este recurso, os administradores podem configurar o serviço de email [configurando uma conexão de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=pt-BR#sending-email).
+Enquanto o download assíncrono é executado no back-end, o usuário pode continuar a explorar e trabalhar mais no Experience Manager. Além das notificações da caixa de entrada do Experience Manager, o Experience Manager pode enviar emails para notificar o usuário na conclusão do processo de download. Para habilitar este recurso, os administradores podem configurar o serviço de email [configurando uma conexão de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Depois que o serviço de email é configurado, os administradores e usuários podem ativar notificações por email na interface do Experience Manager.
 
@@ -83,7 +92,7 @@ Para baixar ativos, siga estas etapas:
    | **[!UICONTROL Criar uma pasta separada para cada ativo]** | Selecione essa opção para criar uma pasta para cada ativo que contenha todas as representações baixadas do ativo. Se não estiver selecionada, cada ativo (e suas representações, se selecionado para download) estará contido na pasta principal do arquivo gerado. |
    | **[!UICONTROL Email]** | Selecione essa opção para enviar uma notificação por email (contendo um link para o download) para outro usuário. O usuário destinatário deve ser membro do grupo `dam-users`. Os modelos padrão de email estão disponíveis nos seguintes locais:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Os modelos que você personaliza durante a implantação estão disponíveis nos seguintes locais: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Você pode armazenar modelos personalizados específicos do locatário nos seguintes locais:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Ativo(s)]** | Selecione essa opção para baixar o ativo em sua forma original.<br>A opção de subativos estará disponível se o ativo original tiver subativos. |
-   | **[!UICONTROL Representação(ões)]** | Uma representação é a representação binária de um ativo. O Assets tem uma representação principal - a do arquivo carregado. Eles podem ter qualquer número de representações. <br> Com essa opção, você pode selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. |
+   | **[!UICONTROL Representação(ões)]** | Uma representação é a representação binária de um ativo. O Assets tem uma representação principal - a do arquivo carregado. Eles podem ter qualquer número de representações. <br> Com essa opção, é possível selecionar as representações que deseja baixar. As representações disponíveis dependem do ativo selecionado. |
    | **[!UICONTROL Recortes inteligentes]** | Selecione esta opção para baixar todas as representações de corte inteligente do ativo selecionado no [!DNL Experience Manager]. Um arquivo zip com as representações de Recorte inteligente é criado e baixado no computador local. |
    | **[!UICONTROL Representação(ões) Dinâmica(s)]** | Selecione essa opção para gerar uma série de representações alternativas em tempo real. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente, selecionando na lista [Predefinição de imagem](/help/assets/dynamic-media/image-presets.md). <br>Além disso, você pode selecionar o tamanho e a unidade de medida, o formato, o espaço de cores, a resolução e qualquer modificador de imagem opcional, como a inversão da imagem. A opção só estará disponível se você tiver o [!DNL Dynamic Media] habilitado. |
 
@@ -114,7 +123,7 @@ Para habilitar o serviço `OnOffTimeAssetAccessFilter`, é necessário criar uma
 1. No código do projeto no Git, crie um arquivo de configuração em `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. O arquivo deve conter `{}` como conteúdo, o que significa uma configuração OSGi vazia para o componente OSGi correspondente. Essa ação ativa o serviço.
 1. Implante seu código, incluindo esta nova configuração, através de [!DNL Cloud Manager].
 1. Depois de implantados, as representações e os metadados ficam acessíveis de acordo com as configurações de tempo de ativação/desativação dos ativos. Se a data ou a hora atual for anterior à hora de ativação ou posterior à hora de desativação, uma mensagem de erro será exibida.
-Para obter mais detalhes sobre como adicionar uma configuração OSGi vazia, consulte este [guia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR).
+Para obter mais detalhes sobre como adicionar uma configuração OSGi vazia, consulte este [guia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Dicas e limitações {#tips-limitations}
 
@@ -138,5 +147,5 @@ Para obter mais detalhes sobre como adicionar uma configuração OSGi vazia, con
 >[!MORELIKETHIS]
 >
 >* [Baixar ativos protegidos por DRM](drm.md)
->* [Baixar ativos usando o aplicativo de desktop Experience Manager no Win ou no Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR)
+>* [Baixar ativos usando o aplicativo de desktop Experience Manager no Win ou no Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [Baixe ativos usando o Adobe Assets Link nos aplicativos Adobe Creative Cloud compatíveis](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)
