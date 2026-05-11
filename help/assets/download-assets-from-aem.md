@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 É possível baixar ativos, incluindo representações estáticas e dinâmicas. Como alternativa, você pode enviar emails com links para ativos diretamente do [!DNL Adobe Experience Manager Assets]. Os ativos baixados são incluídos em um arquivo ZIP. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -36,8 +36,8 @@ Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 
 * [Interface do usuário do Experience Manager](#download-assets)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [Aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=pt-BR)
+* [Aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#download-assets)
 
 ## Baixar ativos usando a interface [!DNL Experience Manager] {#download-assets}
 
@@ -49,7 +49,7 @@ Por padrão, [!DNL Experience Manager] aciona uma notificação na [[!DNL Experi
 
 Quando um usuário solicita um download contendo pastas ou coleções, o AEM executa uma estimativa rápida do número de itens (Assets, Pastas ou Representações) abaixo das pastas ou coleções baixadas, para garantir que o download solicitado esteja dentro dos limites permitidos. Por padrão, downloads com mais de 50.000 itens são bloqueados e o AEM exibe a mensagem `The selected items are larger than the configured maximum download limit`.
 
-É possível aumentar o limite de tamanho do download adicionando uma configuração OSGI mostrada abaixo ao código do aplicativo e [implantando por meio de um pipeline de Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi):
+É possível aumentar o limite de tamanho do download adicionando uma configuração OSGI mostrada abaixo ao código do aplicativo e [implantando por meio de um pipeline de Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi):
 
 ```
 com.adobe.cq.dam.download.impl.DownloadConfiguration   
@@ -65,7 +65,7 @@ Os downloads assíncronos são acionados em qualquer um dos seguintes casos:
 * Se o tamanho do download for superior a 100 MB
 * Se o download levar mais de 30 segundos para se preparar
 
-Enquanto o download assíncrono é executado no back-end, o usuário pode continuar a explorar e trabalhar mais no Experience Manager. Além das notificações da caixa de entrada do Experience Manager, o Experience Manager pode enviar emails para notificar o usuário na conclusão do processo de download. Para habilitar este recurso, os administradores podem configurar o serviço de email [configurando uma conexão de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Enquanto o download assíncrono é executado no back-end, o usuário pode continuar a explorar e trabalhar mais no Experience Manager. Além das notificações da caixa de entrada do Experience Manager, o Experience Manager pode enviar emails para notificar o usuário na conclusão do processo de download. Para habilitar este recurso, os administradores podem configurar o serviço de email [configurando uma conexão de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=pt-BR#sending-email).
 
 Depois que o serviço de email é configurado, os administradores e usuários podem ativar notificações por email na interface do Experience Manager.
 
@@ -123,7 +123,7 @@ Para habilitar o serviço `OnOffTimeAssetAccessFilter`, é necessário criar uma
 1. No código do projeto no Git, crie um arquivo de configuração em `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. O arquivo deve conter `{}` como conteúdo, o que significa uma configuração OSGi vazia para o componente OSGi correspondente. Essa ação ativa o serviço.
 1. Implante seu código, incluindo esta nova configuração, através de [!DNL Cloud Manager].
 1. Depois de implantados, as representações e os metadados ficam acessíveis de acordo com as configurações de tempo de ativação/desativação dos ativos. Se a data ou a hora atual for anterior à hora de ativação ou posterior à hora de desativação, uma mensagem de erro será exibida.
-Para obter mais detalhes sobre como adicionar uma configuração OSGi vazia, consulte este [guia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
+Para obter mais detalhes sobre como adicionar uma configuração OSGi vazia, consulte este [guia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR).
 
 ## Dicas e limitações {#tips-limitations}
 
@@ -147,5 +147,5 @@ Para obter mais detalhes sobre como adicionar uma configuração OSGi vazia, con
 >[!MORELIKETHIS]
 >
 >* [Baixar ativos protegidos por DRM](drm.md)
->* [Baixar ativos usando o aplicativo de desktop Experience Manager no Win ou no Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Baixar ativos usando o aplicativo de desktop Experience Manager no Win ou no Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR)
 >* [Baixe ativos usando o Adobe Assets Link nos aplicativos Adobe Creative Cloud compatíveis](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)
