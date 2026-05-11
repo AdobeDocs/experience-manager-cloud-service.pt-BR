@@ -47,10 +47,10 @@ O AEM expõe os servidores MCP como pontos de extremidade HTTP. Os pontos de ext
 
 | Servidor MCP | Terminal | Descrição |
 |---|---|---|
-| **Conteúdo** | `/content` | Operações de conteúdo, incluindo criação, leitura, atualização e exclusão (CRUD) de páginas e fragmentos de conteúdo, além de importação de ativos e pesquisa de ativos.<br>Se estiver interessado, inscreva-se na [avaliação de agentes ou tenha uma licença paga](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) para acessar o MCP da Governança de Experiência. |
-| **Conteúdo (somente leitura)** | `/content-readonly` | Operações de conteúdo somente leitura (obter, listar/pesquisar) para páginas e fragmentos de conteúdo, além de pesquisa de ativos.<br>Se estiver interessado, inscreva-se na [avaliação de agentes ou tenha uma licença paga](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) para acessar o MCP da Governança de Experiência. |
+| **Conteúdo** | `/content` | Operações de conteúdo, incluindo criação, leitura, atualização e exclusão (CRUD) de páginas e fragmentos de conteúdo, além de importação de ativos e pesquisa de ativos.<br>Se estiver interessado, inscreva-se na [avaliação de agentes ou tenha uma licença paga](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) para acessar o MCP da Governança de Experiência. |
+| **Conteúdo (somente leitura)** | `/content-readonly` | Operações de conteúdo somente leitura (obter, listar/pesquisar) para páginas e fragmentos de conteúdo, além de pesquisa de ativos.<br>Se estiver interessado, inscreva-se na [avaliação de agentes ou tenha uma licença paga](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) para acessar o MCP da Governança de Experiência. |
 | **Cloud Manager** | `/cloudmanager` | Gerencie entidades do Cloud Manager, incluindo programas, ambientes, repositórios e pipelines, que também podem ser acionados. |
-| **Governança de experiência** | `/experience-governance` | Avalie o conteúdo (texto, imagens, páginas) em relação às regras de governança da marca e liste as configurações e verificações da marca.<br/>Se estiver interessado, inscreva-se na [avaliação de agentes ou tenha uma licença paga](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) para acessar o MCP da Governança de Experiência. |
+| **Governança de experiência** | `/experience-governance` | Avalie o conteúdo (texto, imagens, páginas) em relação às regras de governança da marca e liste as configurações e verificações da marca.<br/>Se estiver interessado, inscreva-se na [avaliação de agentes ou tenha uma licença paga](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) para acessar o MCP da Governança de Experiência. |
 
 As ferramentas específicas expostas por cada servidor MCP podem evoluir com o tempo. Na prática, você pode solicitar que o aplicativo habilitado para MCP descubra ferramentas por meio de um prompt como:
 
@@ -60,7 +60,7 @@ As ferramentas específicas expostas por cada servidor MCP podem evoluir com o t
 
 O cliente MCP usa o protocolo MCP para recuperar a lista de ferramentas e os esquemas que o LLM pode usar.
 
-Consulte o [Tutorial do Servidor MCP de Conteúdo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e o [Vídeo do Servidor MCP do Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obter mais informações sobre seus recursos e como usá-los.
+Consulte o [Tutorial do Servidor MCP de Conteúdo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) e o [Vídeo do Servidor MCP do Cloud Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) para obter mais informações sobre seus recursos e como usá-los.
 
 ## Aplicativos MCP suportados {#supported-mcp-applications}
 
