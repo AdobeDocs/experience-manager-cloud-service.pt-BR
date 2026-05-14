@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: c92611e4b815e49887e175943b81177e60623067
+source-git-commit: 13d79aaa9508282c0d0672fd864afd5b384c034e
 workflow-type: tm+mt
-source-wordcount: '2165'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ Clique no ícone de ![visualização](assets/do-not-localize/preview-icon.svg) p
 
 ![Visualizar representações do Dynamic Media](assets/content-advisor-dm-preview.png)
 
-Clique em **[!UICONTROL Adicionar modificadores]**, especifique um modificador na caixa de texto e pressione Enter para aplicar a transformação a todas as representações de ativos em tempo real. Da mesma forma, é possível adicionar vários modificadores às representações e pré-visualizar essas transformações. Clique no nome da representação e clique em **[!UICONTROL Selecionar]** para torná-la disponível em seu aplicativo host. A representação após a aplicação desses modificadores não é salva. Consulte a lista de modificadores com suporte para [Dynamic Media Scene7](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) e [Dynamic Media com OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+Clique em **[!UICONTROL Adicionar modificadores]**, especifique um modificador na caixa de texto e pressione Enter para aplicar a transformação a todas as representações de ativos em tempo real. Da mesma forma, é possível adicionar vários modificadores às representações e pré-visualizar essas transformações. Clique no nome da representação e clique em **[!UICONTROL Selecionar]** para torná-la disponível em seu aplicativo host. A representação após a aplicação desses modificadores não é salva. Consulte a lista de modificadores com suporte para [Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference) e [Dynamic Media com OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 ### Descoberta de fragmentos de conteúdo {#content-fragments-discovery-content-advisor}
 
@@ -201,6 +201,8 @@ A tabela a seguir ilustra o suporte ao recurso Supervisor de Conteúdo nos aplic
 | AEM Sites - Editor de fragmento de conteúdo (somente no campo Referência de conteúdo) | ✓ | ✓ | ✓ | − |
 | Fluxo de trabalho do Adobe Workfront | ✓ | ✓ | − | ✓ |
 | Planejamento do Adobe Workfront | ✓ | ✓ | − | ✓ |
+| [Modo de Exibição do AEM Assets](/help/assets/assets-view-introduction.md) | ✓ | − | − | − |
+| [AEM Content Hub](/help/assets/product-overview.md) | ✓ | ✓ | − | − |
 
 ## Suporte a recursos do Supervisor de conteúdo em aplicativos que não sejam da Adobe {#content-advisor-feature-support-non-adobe-applications}
 
