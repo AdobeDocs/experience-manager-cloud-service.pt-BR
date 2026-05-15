@@ -46,7 +46,7 @@ Agora, configure a ação Enviar de um componente de Contêiner de formulário a
 
 1. Vá para a página do site.
 1. Selecione ![settings_icon](assets/settings_icon.png) de um contêiner de Formulário adaptável. A caixa de diálogo **[!UICONTROL Contêiner de formulário adaptável]** é aberta.
-1. Abra a guia **[!UICONTROL Envio]** e especifique **[!UICONTROL Enviar Ação]** para [Chamar um fluxo de trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
+1. Abra a guia **[!UICONTROL Envio]** e especifique **[!UICONTROL Enviar Ação]** para [Chamar um fluxo de trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=pt-BR#invoke-an-aem-workflow)
 
 1. Clique em [Concluído] para salvar as configurações.
 

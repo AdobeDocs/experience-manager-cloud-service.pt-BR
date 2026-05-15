@@ -97,7 +97,7 @@ A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferê
 
    >[!IMPORTANT]
    >
-   >* Após a conclusão do Mapeamento de usuários, você pode navegar de volta para a página Migração de conteúdo usando a navegação estrutural. O cartão Mapeamento de usuário exibe o status e o carimbo de data e hora. Clique em **Transferência de conteúdo** para criar um Conjunto de migração para executar a extração. Consulte [Executando a Ferramenta de Transferência de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obter mais detalhes.
+   >* Após a conclusão do Mapeamento de usuários, você pode navegar de volta para a página Migração de conteúdo usando a navegação estrutural. O cartão Mapeamento de usuário exibe o status e o carimbo de data e hora. Clique em **Transferência de conteúdo** para criar um Conjunto de migração para executar a extração. Consulte [Executando a Ferramenta de Transferência de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=pt-BR#running-tool) para obter mais detalhes.
 
 ### Retomando o Processo de Mapeamento de Usuário {#resume-user-mapping-process}
 
