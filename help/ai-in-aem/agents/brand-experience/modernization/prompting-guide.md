@@ -4,9 +4,9 @@ description: Este guia fornece dicas para o prompt eficaz do Agente de moderniza
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 65a35ce2a47187f7939991a45b67692312331774
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '3121'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ O fluxo de trabalho recomendado é iterativo: valide em um conjunto pequeno prim
 1. **Execute a importação em massa em um pequeno conjunto de páginas.** - Peça ao agente para executar a importação em massa e fornecer uma pequena lista de URLs que seguem o mesmo modelo.
 1. **Revise e refine os resultados.** - Inspecione as páginas importadas.
    * Se algo parecer incorreto, peça ao agente para ajustar analisadores, transformadores ou lógica de importação.
-1. **Aumentar.** - Quando os resultados parecerem corretos, forneça a lista completa de URLs.
+1. **Expandir.** - Quando os resultados parecerem corretos, forneça a lista completa de URLs.
    * O agente reutilizará a mesma lógica de importação e executará uma importação em massa em escala.
 
 ### Rascunho de páginas da Web {#scraping-webpages}
@@ -219,7 +219,7 @@ Use este prompt para validar páginas migradas inteiras para fidelidade visual d
    1. Migrar uma página.
    1. Aplicar um design.
    1. Executar uma crítica de bloco nos blocos principais
-   1. Execute uma crítica de página de aplicativo para validação completa.
+   1. Execute uma crítica de página para validação completa.
 
 ### Migração de bloco de Figma {#figma-block-migration}
 
@@ -245,7 +245,7 @@ Observe que você deve configurar os detalhes do Figma no [Console de Moderniza�
    1. **Mapeamento para blocos existentes** — O agente identifica o bloco correspondente mais próximo na biblioteca de blocos do projeto e cria uma variante personalizada.
    1. **Geração de CSS** — o agente grava estilos que fazem referência às propriedades personalizadas de CSS extraídas, garantindo a consistência do design.
    1. **Download de ativos** — o agente salva imagens e ícones do Figma no espaço de trabalho do ambiente hospedado.
-   1. **Geração de conteúdo do Edge Delivery Services** — O agente cria o arquivo de Markdown seguindo a estrutura de bloco do EDS
+   1. **Geração de conteúdo do Edge Delivery Services** — O agente cria o arquivo de Markdown seguindo a estrutura de bloco do Edge Delivery Services
    1. **Validação de saída** — o agente pré-visualiza o resultado e executa uma comparação visual com o design original do Figma.
 * A habilidade lê primeiro os metadados (etapa 1) para entender a estrutura e, em seguida, extrai o contexto detalhado do design (etapas 2 a 5).
    * Essa abordagem em fases evita problemas com arquivos Figma grandes ou complexos.
@@ -253,6 +253,60 @@ Observe que você deve configurar os detalhes do Figma no [Console de Moderniza�
    * Todos os estilos são extraídos como propriedades personalizadas de CSS (tokens de design) antes que qualquer CSS seja gravado.
    * Isso garante que o bloco migrado permaneça consistente com seu sistema de design.
 * O prompt requer a URL do Figma (com `fileKey` e `node-id` opcional) ou uma chave de arquivo do Figma diretamente como entrada.
+
+### Reprojetar Migração Usando Blocos Derivados De Figma {#figma-redesign-migration}
+
+Use esse aviso quando um site existente estiver sendo migrado para uma experiência reprojetada.
+
+Nesse fluxo de trabalho, primeiro crie a coleção de blocos de destino do Figma. A migração do site é executada em relação ao site de origem ativo e mapeia o conteúdo de origem nos blocos que foram criados no Figma.
+
+* **Figma** é o design de destino e a origem da biblioteca de blocos.
+* **O site ativo** permanece como fonte de conteúdo.
+
+#### Exemplo de Prompts {#example-figma-redesign}
+
+1. Crie a coleção de blocos de Figma:
+
+   * &quot;Crie a coleção de blocos do Edge Delivery Services a partir destes componentes do Figma: `https://figma.com/design/{fileKey}?node-id={nodeId}`&quot;
+
+1. Migre o conteúdo original para esses blocos:
+
+   * &quot;Migrar essas páginas e mapear o conteúdo para a coleção de blocos derivada do Figma: URL1, URL2, URL3&quot;
+
+#### O que saber {#wtk-figma-redesign}
+
+* O Figma é usado primeiro para estabelecer o conjunto de blocos redesenhado.
+* A migração do site mapeia o conteúdo real do site para esse conjunto de blocos.
+* **A validação de conteúdo** é feita no site de origem.
+* **A validação visual** é feita contra o sistema de design e coleção de blocos derivados do Figma.
+* Novas variantes de blocos devem ser criadas somente quando os blocos derivados de Figma existentes não podem representar o conteúdo de origem.
+
+#### Fluxo de trabalho recomendado {#figma-redesign-workflow}
+
+1. Identifique os componentes do Figma necessários para o site reprojetado.
+1. Migrar esses componentes para blocos ou variantes do Edge Delivery Services.
+1. Revise a coleção de blocos gerada e os tokens de design.
+1. Execute a migração do site em páginas de origem representativas.
+1. Mapeie o conteúdo de origem para os blocos derivados de Figma.
+1. Valide o conteúdo em relação ao site de origem.
+1. Valide a saída visual em relação ao design do Figma de destino.
+1. Refine blocos ou mapeamentos e dimensione para mais páginas.
+
+### Criar uma nova página no Figma {#figma-new-page-from-figma}
+
+Use esse prompt quando a página ainda não existir em um site de origem e uma página ou quadro do diagrama deve direcionar a criação de uma nova página do Edge Delivery Services.
+
+#### Exemplo de Prompts {#example-figma-new-page}
+
+* &quot;Migrar esta página do Figma para o Edge Delivery Services: `https://figma.com/design/{fileKey}?node-id={nodeId}`&quot;
+
+#### O que saber {#wtk-figma-new-page}
+
+* Este prompt funciona melhor com um **quadro ou página Figma específica**, não com um arquivo inteiro.
+* O quadro deve ser organizado em **limpar seções de página**.
+* As seções são mapeadas para blocos existentes, conteúdo padrão ou novas variantes.
+* O texto e os ativos vêm do Figma.
+* Recursos dinâmicos, como pesquisa, calculadoras, personalização ou localizadores de lojas podem exigir **desenvolvimento de blocos separados** além do que a migração do Figma produz.
 
 ### Configuração da navegação {#navigation-setup}
 
@@ -413,3 +467,9 @@ Use este prompt para solucionar problemas com blocos, imagens, CSS ou pré-visua
    1. Código de bloco
    1. Console do navegador
 * O agente pode verificar visualizações locais em `http://localhost:3000`.
+
+<!--
+## Additional Sections {#additional-sections}
+
+@gwalt, is the additional content in the prompting guide wiki ready to be added here?
+-->
