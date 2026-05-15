@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2026.05.07
-description: Estas são as notas de versão do Universal Editor de 2026.05.07.
+title: Notas de versão do Universal Editor 2026.05.14
+description: Estas são as notas de versão do Universal Editor 2026.05.14.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
+source-git-commit: 409ec2536b650f5b7135fc8009d955f54079dff8
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '123'
 ht-degree: 1%
 
 ---
 
 
-# Notas de versão do Universal Editor 2026.05.07 {#release-notes}
+# Notas de versão do Universal Editor 2026.05.14 {#release-notes}
 
-Estas são as notas de versão da versão de 7 de maio de 2026 do Universal Editor.
+Estas são as notas de versão da versão de 14 de maio de 2026 do Universal Editor.
 
 >[!TIP]
 >
@@ -26,13 +26,9 @@ Estas são as notas de versão da versão de 7 de maio de 2026 do Universal Edit
 
 ## Novidades {#what-is-new}
 
-* Agora você pode [arrastar e soltar componentes no editor para movê-los.](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move)
-* Um service worker foi introduzido para reduzir a latência entre a interface do usuário do Editor universal e os sistemas de back-end.
-* Todos os adaptadores para fragmentos de conteúdo (AEM 6.5, OpenAPI e GraphQL) agora incluem os filtros para o seletor de ativos a fim de garantir consistência e que os usuários possam selecionar somente ativos permitidos.
-* `content:patch` intenção foi fornecida.
-* Para ajudar na acessibilidade, o fluxo do autor e os pontos de referência foram definidos.
+* [O painel de propriedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) agora é aberto por padrão.
+* [Os ícones de extensão foram migrados para o Spectrum 2.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
 
-## Outras melhorias futuras {#other-improvements}
+## Outras melhorias {#other-improvements}
 
-* Declarações de tipo desnecessárias em `assignImageDimensionFields` foram removidas.
-* Correção de um problema em que o tratamento do lado do servidor da operação `add` iterava o valor da cadeia de caracteres, tratando-o como um objeto em vez de um patch.
+* URLs com espaços e/ou caracteres especiais agora estão corretamente codificados em porcentagem quando armazenados pelo editor de rich text.

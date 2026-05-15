@@ -4,9 +4,9 @@ description: Estas são as notas de versão da versão de pré-visualização do
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: a622916de4edd29b5ecbbd0e0e7f4b2d87ff0511
+source-git-commit: b6a8b340f89e079047db668d6418e7952185a41f
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Notas de versão de visualização do Universal Editor {#preview}
 
-Estas são as notas de versão da **versão de visualização** do Editor Universal. Estes recursos estão disponíveis atualmente no **ambiente de visualização** do Editor Universal. Esses recursos estão programados para serem lançados para disponibilização geral em 14 de maio de 2026.
+Estas são as notas de versão da **versão de visualização** do Editor Universal. Estes recursos estão disponíveis atualmente no **ambiente de visualização** do Editor Universal. Esses recursos estão programados para serem lançados para disponibilização geral em 21 de maio de 2026.
 
 Estas notas de versão do **preview** são fornecidas como conveniência, para que você saiba quais alterações do Universal Editor estão por vir e possa testá-las [alternando para a versão de visualização.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -26,7 +26,6 @@ Estas notas de versão do **preview** são fornecidas como conveniência, para q
 >
 >O conteúdo da versão real, bem como a data de lançamento, estão sujeitos a alterações.
 
-## Outras melhorias futuras {#other-improvements}
+## Alterações futuras {#upcoming-improvements}
 
-* Agora o painel da tela de desenho é aberto por padrão.
-* [Os ícones de extensão foram migrados para o Spectrum 2.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
+* Pequenas melhorias e correções
