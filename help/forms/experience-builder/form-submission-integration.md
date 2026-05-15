@@ -8,10 +8,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 1%
 
 ---
 
@@ -164,9 +164,9 @@ Conectar formulários aos fluxos de trabalho do processo empresarial:
 **Implementação:**
 Envie o formulário de feedback do cliente para:
 1. Enviar email para <support@company.com> com detalhes do formulário
-2. POST na API do CRM para criar registro de cliente
+2. POSTAR na API do CRM para criar registro de cliente
 3. Acionar o fluxo de trabalho de criação de tíquete de suporte
-4. Envie um e-mail de agradecimento ao cliente
+4. Enviar email de agradecimento ao cliente
 
 ### Formulário de integração de funcionários
 
@@ -181,7 +181,7 @@ Envie o formulário de feedback do cliente para:
 Processar integração de funcionários:
 1. Email <hr@company.com> com detalhes do funcionário
 2. Fazer upload de documentos para a pasta de funcionários da SharePoint
-3. Iniciar o fluxo de trabalho de integração no Power Automate
+3. Iniciar fluxo de trabalho de integração no Power Automate
 4. Criar contas no sistema de RH, email e outras ferramentas
 
 ### Formulário de geração de clientes potenciais
@@ -195,10 +195,10 @@ Processar integração de funcionários:
 
 **Implementação:**
 Geração de leads de processo:
-1. PUBLICAR dados de clientes potenciais na API do Marketo
+1. POST de dados de clientes potenciais para a API do Marketo
 2. Criar registro de cliente potencial no Salesforce
-3. Enviar email à equipe de vendas com detalhes do cliente potencial
-4. Iniciar sequência automatizada de criação de email
+3. Enviar email para a equipe de vendas com detalhes do cliente potencial
+4. Iniciar sequência automática de criação de email
 
 ## Cenários de integração avançada
 

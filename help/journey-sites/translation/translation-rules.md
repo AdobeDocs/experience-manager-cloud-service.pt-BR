@@ -2,13 +2,12 @@
 title: Configurar regras de tradução
 description: Saiba como definir regras de tradução para identificar o conteúdo a ser traduzido.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: 831009b8-8e09-4b0f-b0fd-4e21221c1455
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 80%
@@ -56,7 +55,7 @@ Várias regras podem ser criadas para dar suporte a requisitos complexos de trad
 
 As regras de tradução são projetadas para lidar com tais cenários. No entanto, neste exemplo, ilustramos como criar regras com foco em uma configuração simples e única.
 
-Existe um console **Configuração de tradução** disponível para configurar regras de tradução.
+Existe um console de **Configuração de tradução** disponível para configurar regras de tradução.
 
 Para acessá-lo:
 

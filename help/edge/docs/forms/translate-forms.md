@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -83,9 +83,9 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 **A**: para inserir texto em um idioma localizado específico, ajuste as configurações de teclado do dispositivo. Consulte os seguintes links para obter instruções sobre como fazer isso:
 
-- [Configure seu Mac para receber entrada em outro idioma](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
+- [Configurar o Mac para receber entrada em outro idioma](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
 - [Configurar o Windows para receber entrada em outro idioma](https://support.microsoft.com/en-us/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:text=Select%20the%20Start%20%3E%20Settings%20%3E%20Time,you%20want%2C%20then%20select%20Options)
-- [Configure seu Android ou iPhones/iPads para receber entrada em outro idioma](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
+- [Configurar o Android ou iPhones/iPads para receber entrada em outro idioma](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
 
 
 **Q**: como posso recuperar uma lista de localidades usadas na função `GOOGLETRANSLATE`?

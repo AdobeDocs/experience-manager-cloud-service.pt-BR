@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: b59cb56c-9629-48e4-b5c9-a861013a1360
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '1035'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ O desenvolvimento local com o AEM SDK economiza tempo e simplifica o processo de
 
 **Pronto para Começar?**
 
-1. [Configurar ferramentas de desenvolvimento para o AEM Projects](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): baixe e instale a versão mais recente do [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=pt-BR#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=pt-BR#install-git), [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=pt-BR#node-js) e [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=pt-BR#install-maven). Além disso, instale um editor de texto simples. Os exemplos deste tutorial são baseados no Visual Studio Code.
+1. [Configurar ferramentas de desenvolvimento para o AEM Projects](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects): baixe e instale a versão mais recente do [Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up), [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-git), [Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#node-js) e [Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-maven). Além disso, instale um editor de texto simples. Os exemplos deste tutorial são baseados no Visual Studio Code.
 
 1. [Instalar o AEM SDK](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development): baixe e instale a versão mais recente do AEM SDK. Isso fornece as ferramentas essenciais para o desenvolvimento do AEM. Anote a versão do AEM SDK.
 

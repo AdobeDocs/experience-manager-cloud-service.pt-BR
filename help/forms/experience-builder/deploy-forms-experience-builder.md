@@ -7,9 +7,9 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 977f227e-e941-4797-ba74-53d5b8c60ca9
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1428'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ Para formulários entregues por meio do Edge Delivery Services, o construtor é 
 
 | Exemplo de conversa |   |
 |--------------------------------------------------------------------------------------------------------------------------------------------|---|
-| **Tente esta conversa para criar um formulário de contato abrangente (com base na demonstração do Summit):**<br><br>**Você:** &quot;Crie um formulário de contato para capturar informações pessoais, incluindo nome completo, endereço de email, número de telefone, nome da empresa, cargo e um campo de mensagem para consultas&quot;<br><br>**IA:** Selecione um modelo<br>    Uma lista suspensa para selecionar um modelo <br><br>**IA:** Selecione um tema<br>    Uma lista suspensa para selecionar um tema <br><br>**IA:** Criar formulário | ![Seu Primeiro Formulário](/help/edge/docs/forms/assets/create-form.png) |
+| **Tente esta conversa para criar um formulário de contato abrangente (com base na demonstração do Summit):**<br><br>**Você:** &quot;Crie um formulário de contato para capturar informações pessoais, incluindo nome completo, endereço de email, número de telefone, nome da empresa, cargo e um campo de mensagem para consultas&quot;<br><br>**IA:** Selecione um modelo<br> Uma lista suspensa para selecionar um modelo <br><br>**IA:** Selecione um tema<br> Uma lista suspensa para selecionar um tema <br><br>**IA:** Criar formulário | ![Seu Primeiro Formulário](/help/edge/docs/forms/assets/create-form.png) |
 | <br>**IA:** Abrir formulário criado | </br> O formulário é criado e aberto no editor |
 
 

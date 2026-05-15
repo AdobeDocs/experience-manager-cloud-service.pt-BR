@@ -10,9 +10,9 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2397'
 ht-degree: 0%
 
 ---
@@ -67,20 +67,20 @@ O AEM Forms oferece suporte à jornada completa de formulários digitais, desde 
 
 **Jornada de Fluxo de Trabalho do AEM Forms:**
 
-    CRIAR → GOVERNAR → PUBLICAR → CAPTURAR → PROCESSO → INTEGRAR → RASTREAR → ARQUIVAR → MELHORAR
-            ↓        ↓         ↓         ↓         ↓          ↓       ↓        ↓
-    Design   Revisão   Implantar   Coletar   Alça   Conectar   Monitorar armazenamento   Otimizar
-    ^                                                                              ↓
-     Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda ESQUERDA ESQUERDA ESQUERDA ESQUERDA ESTE ESQUERDA ESTE ESTE ESQUERDA ESQUERDA ESTE ESTE ESTE ESTE ESTE ESTE ESTE ESQUERDA ESTE
+    CRIAR → GOVERNAR → PUBLISH → CAPTURAR → PROCESSO → INTEGRAR → RASTREAR → ARQUIVAR → MELHORAR
+     ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ 2}Revisão de Design Implantar Collect Handle Connect Monitor Store Otimize
+     ↑
+     Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda da Esquerda Esquerda da Melhoria Contínua na Loop Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda Esquerda
+    
 
 ### Criar: Design e desenvolvimento de formulários {#create}
 
 Crie formulários adaptáveis usando várias abordagens de criação personalizadas para diferentes necessidades e requisitos técnicos.
 
-**Construtor de Formulários Visuais**
+**Construtor de formulários visuais**
 Crie formulários responsivos por meio de interfaces de arrastar e soltar usando [Componentes principais](/help/forms/creating-adaptive-form-core-components.md), [Componentes de base](/help/forms/creating-adaptive-form.md) ou [Edge Delivery Services](/help/edge/docs/forms/overview.md). O editor visual fornece feedback imediato enquanto mantém uma marcação semântica limpa que funciona em dispositivos e tecnologias assistivas.
 
-**Criação Baseada em Documento**
+**Criação baseada em documento**
 Crie formulários usando ferramentas familiares, como o Microsoft Excel por meio do [Edge Delivery Services](/help/edge/docs/forms/overview.md). Essa abordagem permite que os autores de conteúdo criem formulários de alto desempenho sem conhecimento técnico e, ao mesmo tempo, atinjam pontuações excepcionais no Google Lighthouse.
 
 **Modelos e Temas**
@@ -92,7 +92,7 @@ Conectar formulários aos sistemas de back-end durante a fase de design. O [Mode
 **Validações e Lógica Condicional**
 Implemente a [lógica condicional](/help/forms/rule-editor-core-components.md), a divulgação progressiva e a validação adaptável para orientar os usuários por processos complexos. [A funcionalidade Salvar e retomar](/help/forms/save-core-component-based-form-as-draft.md) permite que os usuários preencham formulários em várias sessões.
 
-**HTML5 Forms**
+Forms do **HTML5**
 Renderize formulários baseados em XFA como [formulários HTML5](/help/forms/introductionhtml5.md) para dispositivos móveis e navegadores herdados. O HTML5 Forms fornece experiência nativa em dispositivos móveis sem plug-ins, mantendo a lógica e a validação de formulários a partir de modelos XDP originais.
 
 **Comunicações interativas**
@@ -105,7 +105,7 @@ Estabeleça processos de supervisão e aprovação para garantir que os formulá
 **Aprovações baseadas em fluxo de trabalho**
 Rotear designs de formulário por meio de processos de revisão em várias etapas, com atribuições baseadas em funções. As partes interessadas podem [revisar](/help/forms/create-reviews-forms.md), [comentar](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md) e aprovar formulários antes da publicação, mantendo o controle de qualidade e a supervisão de conformidade usando os [fluxos de trabalho do AEM](/help/forms/aem-forms-workflow.md).
 
-**Gerenciamento de Versões**
+**Gerenciamento de versão**
 Rastreie versões de formulários e mantenha trilhas de auditoria para conformidade normativa. O [controle de versão](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md) integrado garante que você possa reverter alterações, comparar iterações e manter registros históricos para auditorias de conformidade.
 
 **Controle de acesso e permissões**
@@ -121,7 +121,7 @@ Publicar formulários no [AEM Sites](/help/forms/embed-adaptive-form-aem-sites.m
 **Localização e Personalization**
 Enviar formulários em vários idiomas usando os [fluxos de trabalho de tradução do AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md), com suporte para [idiomas da esquerda para a direita e da direita para a esquerda](/help/forms/right-left-languages.md). Integre com o Adobe Target para personalizar experiências de formulário com base em segmentos de usuário, comportamento ou dados contextuais.
 
-**Otimização do desempenho**
+**Otimização de desempenho**
 Aproveite o Edge Delivery Services para carregar formulários com velocidade surpreendente e otimizar o desempenho de SEO. As redes de entrega de conteúdo garantem acessibilidade global com latência mínima.
 
 **Portal do Forms**
@@ -134,10 +134,10 @@ Otimize a experiência de preenchimento de formulário para maximizar as taxas d
 **Design responsivo**
 O Forms se adapta automaticamente a diferentes tamanhos de tela e métodos de entrada. Os controles otimizados para toque, a navegação pelo teclado e a compatibilidade com o leitor de tela garantem a [acessibilidade](/help/forms/creating-accessible-adaptive-forms.md) em todos os tipos de usuário.
 
-**Assinaturas Digitais**
+**Assinaturas digitais**
 Integre o [Adobe Sign](/help/forms/working-with-adobe-sign.md) para obter assinaturas eletrônicas com vínculo legal dentro da experiência do formulário. Os usuários podem assinar documentos sem sair do formulário, simplificando os processos de aprovação e reduzindo o abandono.
 
-**Enviar Ações**
+**Enviar ações**
 Configure [ações de envio](/help/forms/configure-submit-actions-core-components.md) para definir o que acontece quando os usuários concluem e enviam formulários. Direcione dados para email, bancos de dados, workflows ou sistemas externos enquanto fornece feedback e confirmação imediatos aos usuários.
 
 ### Processo: Controle e Roteamento de Submissão {#process}
@@ -148,7 +148,7 @@ Lide com envios de formulários com recursos robustos de processamento, validaç
 Garanta a integridade dos dados por meio da validação no lado do servidor e das regras de processamento automatizadas. Transformar, validar e rotear os dados enviados ao gerar recebimentos, confirmações ou material de acompanhamento para os usuários.
 
 **APIs de comunicação**
-Gerar, manipular e proteger documentos de forma programática por meio de [RESTful APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md). Crie PDFs, formatos prontos para impressão, monte documentos, aplique assinaturas digitais e processe [operações em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) de grande volume para fluxos de trabalho de documentos de escala empresarial.
+Gerar, manipular e proteger documentos de forma programática por meio de [APIs RESTful](/help/forms/aem-forms-cloud-service-communications-introduction.md). Crie PDFs, formatos prontos para impressão, monte documentos, aplique assinaturas digitais e processe [operações em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) de grande volume para fluxos de trabalho de documentos de escala empresarial.
 
 **Documento de registro**
 Gerar automaticamente registros PDF de envios de formulários para conformidade e confirmação do usuário. O [Documento de Registro](/help/forms/generate-document-of-record-core-components.md) cria versões formatadas e imprimíveis de formulários preenchidos com dados enviados, fornecendo documentação oficial para transações e requisitos normativos.
@@ -156,17 +156,17 @@ Gerar automaticamente registros PDF de envios de formulários para conformidade 
 **Orquestração de Fluxo de Trabalho**
 Acione processos de negócios complexos com base em envios de formulários. Direcione dados por meio de cadeias de aprovação, atribua tarefas a usuários específicos e automatize operações de rotina mantendo trilhas de auditoria.
 
-**Tratamento e Recuperação de Erros**
+**Tratamento e recuperação de erros**
 Os mecanismos de repetição e o processamento de fallback integrados garantem que nenhum envio seja perdido. O registro abrangente ajuda a solucionar problemas e a manter os contratos de nível de serviço.
 
 ### Integrar: conectividade de back-end {#integrate}
 
 Conecte formulários aos sistemas de negócios e fontes de dados existentes para obter um fluxo de informações perfeito.
 
-**Conectores Pré-Criados**
-Integração nativa com soluções do [Salesforce](/help/forms/configure-salesforce.md), [Microsoft Dynamics](/help/forms/configure-msdynamics.md), [SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md) e Adobe Experience Cloud. Conectores pré-construídos reduzem o tempo de desenvolvimento enquanto garantem a sincronização de dados confiável.
+**Conectores pré-construídos**
+Integração nativa com soluções da [Salesforce](/help/forms/configure-salesforce.md), [Microsoft Dynamics](/help/forms/configure-msdynamics.md), [SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md) e Adobe Experience Cloud. Conectores pré-construídos reduzem o tempo de desenvolvimento enquanto garantem a sincronização de dados confiável.
 
-**Integração da API RESTful**
+Integração da API RESTful ****
 Conecte-se a qualquer serviço acessível pela Web por meio de APIs RESTful via [enviar ações](/help/forms/configure-submit-action-restpoint.md) ou [integração de dados](/help/forms/data-integration.md). O modelo de dados de formulário abstrai a complexidade da integração, fornecendo uma interface consistente independentemente da arquitetura do sistema subjacente.
 
 **Troca de Dados em Tempo Real**
@@ -176,17 +176,17 @@ Permita o fluxo de dados bidirecional entre formulários e sistemas de negócios
 
 Entenda o desempenho do formulário e o comportamento do usuário por meio de análises e monitoramento abrangentes.
 
-**Análise de formulários**
+**Form Analytics**
 Rastreie taxas de conclusão, padrões de abandono e interações em nível de campo por meio da [integração com o Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md). Identifique pontos de atrito, meça funis de conversão e entenda o comportamento do usuário em diferentes segmentos.
 
-**Monitoramento de Desempenho**
+**Monitoramento de desempenho**
 Monitore os tempos de carregamento dos formulários, as taxas de sucesso dos envios e o desempenho do sistema. Os painéis em tempo real fornecem insights sobre saúde técnica e métricas de experiência do usuário.
 
 **Business Intelligence**
 Gerar relatórios sobre uso de formulário, volumes de envio e eficiência de processo. O Analytics informa o planejamento de capacidade, a otimização da experiência do usuário e as melhorias no processo de negócios.
 
 **Relatórios de transação**
-Monitore o uso da API, os volumes de geração de documentos e as [transações faturáveis](/help/forms/transaction-reports-billable-apis.md) em sua implantação do AEM Forms. Acompanhe os padrões de consumo, otimize a alocação de recursos e mantenha a conformidade com os requisitos de licenciamento com base no uso.
+Monitore o uso da API, os volumes de geração de documentos e as [transações faturáveis](/help/forms/transaction-reports-billable-apis.md) na implantação do AEM Forms. Acompanhe os padrões de consumo, otimize a alocação de recursos e mantenha a conformidade com os requisitos de licenciamento com base no uso.
 
 ### Arquivamento: gerenciamento e conformidade de documentos {#archive}
 
@@ -195,10 +195,10 @@ Armazene e gerencie com segurança os envios de formulários e os documentos ger
 **Armazenamento de Documentos**
 Armazene documentos gerados e envios de formulários no sistema de Gerenciamento de Ativos Digitais da AEM ou integre-os a repositórios de documentos externos como o [SharePoint](/help/forms/configure-submit-action-sharepoint.md), o [OneDrive](/help/forms/configure-submit-action-onedrive.md) ou o [Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md).
 
-**Conformidade e Retenção**
-Implemente políticas de retenção de dados que estejam em conformidade com os requisitos normativos, incluindo GDPR, CCPA e HIPAA. [Os &#x200B;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) processos de arquivamento automatizados garantem que os documentos sejam retidos por períodos obrigatórios e descartados com segurança quando apropriado.
+**Conformidade e retenção**
+Implemente políticas de retenção de dados que estejam em conformidade com os requisitos normativos, incluindo GDPR, CCPA e HIPAA. [Os ](/help/forms/aem-forms-cloud-service-communications-batch-processing.md) processos de arquivamento automatizados garantem que os documentos sejam retidos por períodos obrigatórios e descartados com segurança quando apropriado.
 
-**Segurança e Controle de Acesso**
+**Segurança e controle de acesso**
 Aplique criptografia, assinaturas digitais e [controles de acesso com base em função](/help/forms/forms-groups-privileges-tasks.md) aos documentos arquivados. As trilhas de auditoria controlam o acesso aos documentos e as modificações para a emissão de relatórios de conformidade e a supervisão da segurança.
 
 ### Melhorar: otimização e aprimoramento {#improve}
@@ -208,7 +208,7 @@ Otimize continuamente o desempenho do formulário e a experiência do usuário p
 **Integração de teste A/B**
 Use o Adobe Target para testar diferentes layouts de formulário, disposições de campo e fluxos de usuário. A análise estatística ajuda a identificar as abordagens mais eficazes para diferentes segmentos de usuários e casos de uso.
 
-**Otimização Orientada Por Análise**
+**Otimização orientada pelo Analytics**
 Analise os dados de comportamento do usuário para identificar oportunidades de melhoria. [Visualize e entenda relatórios de análise](/help/forms/view-understand-aem-forms-analytics-reports.md) para mapeamento de calor, análise de interação de campo e reconhecimento de padrão de abandono para informar melhorias de design iterativo.
 
 **Aprimoramento iterativo**

@@ -10,9 +10,9 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1990'
 ht-degree: 1%
 
 ---
@@ -255,7 +255,7 @@ Otimização de formulários por meio do teste de diferentes layouts, disposiç�
 
 Gerenciamento centralizado de formulários, controle de acesso do usuário e recursos de governança para implantações de formulários em escala corporativa.
 
-### Portal Forms {#forms-portal}
+### Portal de fomulários {#forms-portal}
 
 Repositório de formulários centralizado com recursos de pesquisa, categorização de formulários, gerenciamento de rascunho e rastreamento de envio em uma interface unificada.
 

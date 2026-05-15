@@ -4,9 +4,9 @@ description: O Dynamic Media com recursos de OpenAPI permite gerar automaticamen
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: video-smartcrop-dmwoapi
-source-git-commit: 8ddd2ade491069e4592becf3b77c04e6bbb2c06a
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,10 @@ Para ativar os Recortes inteligentes de vídeo, configure o esquema de metadados
 
 A opção **Criar cortes inteligentes de vídeo** agora está disponível no formulário de metadados de ativos de vídeo.
 
-![Criar campo de Recortes Inteligentes de Vídeo](/help/assets/assets/video-smartcrop-metadata-field.png)
+<!--
+broken link
+![Create Video Smartcrops field](/help/assets/assets/video-smartcrop-metadata-field.png)
+-->
 
 ## Aplicar cortes inteligentes de vídeo a vídeos aprovados {#apply-video-smart-crops}
 

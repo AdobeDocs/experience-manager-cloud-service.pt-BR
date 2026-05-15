@@ -7,9 +7,9 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1480'
+source-wordcount: '1469'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Aproveite classificações de negócios e dados profissionais abrangentes para f
 **Tipos de entidade de negócio e setor:**
 
     Adicionar um campo para classificação setorial com códigos NAICS
-    Criar uma lista suspensa de tipos de entidades comerciais (LLC, Corporation, Parceria etc.)
+    Criar uma lista suspensa de tipos de entidades de negócios (LLC, Corporação, Parceria etc.)
     Adicionar um campo para categorias de tamanho de empresa (inicialização, SME, empresa)
     Incluir seleção de departamento para organizações grandes
     Adicionar um campo para tipos de serviço profissional

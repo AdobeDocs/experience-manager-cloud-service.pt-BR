@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '2662'
-ht-degree: 54%
+source-wordcount: '2888'
+ht-degree: 55%
 
 ---
 
@@ -276,7 +276,7 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 | Duração recomendada | 15 min | A Adobe recomenda manter os testes dentro desse limite de tempo. |
 
 * Se o Autor/Publicação de destino estiver protegido pelo incluir na lista de permissões de IP, a infraestrutura de teste da interface do usuário do pipeline deverá ser ou os testes da interface do usuário poderão falhar com 403 Proibido.
-Consulte também [Falha de teste de interface do usuário no AEMaaCS devido ao Incluir na lista de permissões de IP](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introdução a Incluis na lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+Consulte também [Falha de teste de interface do usuário no AEMaaCS devido ao Incluir na lista de permissões de IP](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) e [Introdução a Incluis na lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 >[!NOTE]
 >

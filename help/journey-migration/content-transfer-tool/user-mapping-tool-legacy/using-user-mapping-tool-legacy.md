@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 >
 >Esta documentação se refere a uma versão obsoleta da ferramenta. Para obter mais informações sobre a versão mais recente, consulte [Migração de grupo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
-A Ferramenta de mapeamento de usuários usa uma API que permite pesquisar usuários do Adobe Identity Management System (IMS) por email e retornar suas IDs de IMS. Essa API exige que o usuário crie uma ID do cliente para sua organização, um Segredo do cliente e um Token de acesso ou portador.
+A Ferramenta de mapeamento de usuários usa uma API que permite pesquisar usuários do Adobe Identity Management System (IMS) por email e retornar suas IDs do IMS. Essa API exige que o usuário crie uma ID do cliente para sua organização, um Segredo do cliente e um Token de acesso ou portador.
 
 ## Configuração da ferramenta Mapeamento de usuários {#setting-up-user-mapping}
 
@@ -65,7 +65,7 @@ A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferê
    * **ID da Organização**: insira a ID da Organização do Adobe Identity Management System (IMS) da organização para a qual os usuários estão sendo migrados.
 
      >[!NOTE]
-     >Para obter a ID da organização, faça logon no [Admin Console](https://adminconsole.adobe.com/) e escolha sua organização (na área superior direita) se você pertencer a mais de uma. A ID da organização está na URL dessa página, no formato como `xx@AdobeOrg`, onde xx é a ID da organização IMS. Como alternativa, você pode encontrar a ID da organização na página [Adobe Developer Console](https://developer.adobe.com/console/) onde gera o token de acesso.
+     >Para obter a ID da Organização, faça logon no [Admin Console](https://adminconsole.adobe.com/) e escolha sua organização (na área superior direita) se você pertencer a mais de uma. A ID da organização está na URL dessa página, no formato como `xx@AdobeOrg`, onde xx é a ID da organização IMS. Como alternativa, você pode encontrar a ID da organização na página [Adobe Developer Console](https://developer.adobe.com/console/) onde gera o token de acesso.
 
    * **ID do Cliente**: Insira a ID do Cliente que você salvou da etapa de Instalação.
 
@@ -97,7 +97,7 @@ A Ferramenta de mapeamento de usuários é integrada à Ferramenta de transferê
 
    >[!IMPORTANT]
    >
-   >* Após a conclusão do Mapeamento de usuários, você pode navegar de volta para a página Migração de conteúdo usando a navegação estrutural. O cartão Mapeamento de usuário exibe o status e o carimbo de data e hora. Clique em **Transferência de conteúdo** para criar um Conjunto de migração para executar a extração. Consulte [Executando a Ferramenta de Transferência de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=pt-BR#running-tool) para obter mais detalhes.
+   >* Após a conclusão do Mapeamento de usuários, você pode navegar de volta para a página Migração de conteúdo usando a navegação estrutural. O cartão Mapeamento de usuário exibe o status e o carimbo de data e hora. Clique em **Transferência de conteúdo** para criar um Conjunto de migração para executar a extração. Consulte [Executando a Ferramenta de Transferência de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obter mais detalhes.
 
 ### Retomando o Processo de Mapeamento de Usuário {#resume-user-mapping-process}
 

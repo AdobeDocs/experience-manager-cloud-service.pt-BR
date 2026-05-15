@@ -1,13 +1,12 @@
 ---
 title: Integrar [!DNL AEM Assets] com [!DNL Figma].
 description: Saiba como integrar o [!DNL AEM Assets] com o [!DNL Figma] para acessar e usar os ativos de sua organização no fluxo de trabalho de design do [!DNL Figma] .
-hide: false
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '580'
 ht-degree: 1%
 
 ---
@@ -41,13 +40,13 @@ Como alternativa, acesse o [[!DNL Adobe Experience Manager (AEM) Assets Connecto
 
 >[!NOTE]
 >
-> [Contate o Suporte da Adobe](https://helpx.adobe.com/br/contact.html) para obter ajuda se você vir uma mensagem de **[!UICONTROL Erro de Rede]** depois de fazer logon no ambiente [!DNL AEM].
+> [Contate o Suporte da Adobe](https://helpx.adobe.com/contact.html) para obter ajuda se você vir uma mensagem de **[!UICONTROL Erro de Rede]** depois de fazer logon no ambiente [!DNL AEM].
 
 ## Importar [!DNL AEM] ativos para a tela [!DNL Figma]{#import-aem-assets-into-figma-workflow}
 
-[Acesse o [!UICONTROL painel &#x200B;] do Assets do Adobe Experience Manager (AEM)](#access-aem-assets-connector) na interface de design do [!DNL Figma] e faça o seguinte:
+[Acesse o [!UICONTROL painel ] do Assets do Adobe Experience Manager (AEM)](#access-aem-assets-connector) na interface de design do [!DNL Figma] e faça o seguinte:
 
-1. Pesquise ativos no painel [!UICONTROL Conector do Assets do Adobe Experience Manager (AEM)]. Para obter mais informações, consulte [usando o Seletor de ativos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Pesquise ativos no painel [!UICONTROL Conector do Assets do Adobe Experience Manager (AEM)]. Para obter mais informações, consulte [usando o Seletor de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Arraste e solte o ativo na tela ou selecione o ativo e clique em **[!UICONTROL Selecionar]** para trazer o ativo para a tela.
 
@@ -60,7 +59,7 @@ Quando o design do Figma estiver pronto, você poderá [exportar o ativo para o 
 
 ## Exportar ativos para o repositório [!DNL AEM Assets]{#export-figma-design-to-aem-assets-folder}
 
-[Acesse o painel [!UICONTROL &#x200B; do &#x200B;]Conector Assets do Adobe Experience Manager (AEM)](#access-aem-assets-connector) na interface de design do [!DNL Figma] e execute as seguintes etapas para exportar seu design para o repositório do [!DNL AEM Assets]:
+[Acesse o painel ](#access-aem-assets-connector) do [!UICONTROL Conector Assets do Adobe Experience Manager (AEM)] na interface de design do [!DNL Figma] e execute as seguintes etapas para exportar seu design para o repositório do [!DNL AEM Assets]:
 
 1. Navegue até a pasta de destino onde deseja salvar o design do [!DNL Figma]. Se você já estiver dentro de uma pasta, clique em Mais opções (![três pontos](/help/assets/assets/three-dots.svg)) no caminho da pasta para selecionar uma pasta de destino diferente.
 1. Opcional: agrupe ativos na tela para selecioná-los como uma única unidade para fazer upload em sua pasta.

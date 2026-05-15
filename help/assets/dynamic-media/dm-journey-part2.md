@@ -8,13 +8,12 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2853'
 ht-degree: 0%
 
 ---
@@ -39,7 +38,7 @@ Consulte também [Jornada do Dynamic Media; Noções básicas, Parte I](/help/as
 
 Depois que os ativos do Dynamic Media forem carregados e publicados, você poderá copiar o URL gerado de um ativo e colá-lo no navegador para ver como o ativo aparecerá para um cliente. O URL copiado a seguir para uma imagem observada é dividido por cores para facilitar a leitura e a compreensão.
 
-![Anatomia de uma URL de Dynamic Media](/help/assets/dynamic-media/assets/dm-colored-url.png)
+![Anatomia de uma URL do Dynamic Media](/help/assets/dynamic-media/assets/dm-colored-url.png)
 _Anatomia de uma URL do Dynamic Media._
 
 A primeira parte do URL em vermelho faz referência ao próprio domínio do servidor. Nesse caso, o Dynamic Media está em execução em um domínio de servidor genérico, que é `https://s7d1.scene7.com/is/image/`. É fácil ver um conjunto de imagens e entender se elas estão sendo veiculadas pelo Dynamic Media apenas observando o domínio do servidor. O URL será bastante consistente. No entanto, alguns clientes do Dynamic Media mudaram para um domínio de servidor dedicado, onde pode ser `name-of-your-company.scene7.com`. Um domínio de servidor dedicado é necessário para a Imagem inteligente.
@@ -62,10 +61,10 @@ Agora adicione um parâmetro de processamento de imagem ao final do URL. No camp
 
 Observe que é gerada uma nova representação da inspeção. Uma vantagem importante para entender esse simples exercício de alteração da largura da imagem é que a imagem vista é gerada 100% dinamicamente.
 
-Agora altere o valor de largura de `500` pixels para `1000` pixels e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=_blank}.
+Agora altere o valor de largura de `500` pixels para `1000` pixels e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
 No momento em que você pressiona **[!UICONTROL Enter]**, o navegador retorna ao Servidor de Imagens do Dynamic Media. Ele gera uma representação totalmente nova do relógio, com base no novo valor de largura que você acabou de inserir, em seguida, fornece a nova imagem de volta ao navegador e a armazena em cache.
 
-O Dynamic Media tem vários parâmetros de processamento de imagens que você pode usar para ajustar os ativos de imagem nas páginas da Web. Você pode [ver uma lista deles aqui](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=pt-BR).
+O Dynamic Media tem vários parâmetros de processamento de imagens que você pode usar para ajustar os ativos de imagem nas páginas da Web. Você pode [ver uma lista deles aqui](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
 Agora, tente adicionar um parâmetro de rotação à imagem observada. E o fim do caminho da URL, imediatamente após `wid=1000`, digite `&rotate=90` e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}.
 
@@ -110,7 +109,7 @@ Essa imagem deve ser entregue com os mesmos parâmetros onde quer que eles sejam
 
 Por um momento, vamos examinar como uma predefinição de imagem é criada no Dynamic Media.
 
-![Criando uma predefinição de imagem começando com a guia Básico](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
+![Criação de uma predefinição de imagem começando com a guia Básico](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
 _Criando uma predefinição de imagem começando com a guia Básico._
 
 No exemplo acima, você pode ver que uma nova predefinição de imagem foi criada com o nome _Medium_. O Dynamic Media usa um exemplo de imagem pronta para uso - a mochila - para ajudá-lo a ver as características da predefinição de imagem ao criá-la.
@@ -119,7 +118,7 @@ A predefinição de imagem _Medium_ tem uma largura de 500 pixels e uma altura d
 
 Selecionar a guia **[!UICONTROL Avançado]** fornece opções para o espaço de cores do ativo. Dependendo do formato selecionado na guia **[!UICONTROL Básico]** - no exemplo acima, o JPEG foi selecionado - você pode entregar ativos no RGB, em Tons de Cinza ou CMYK. No menu suspenso **[!UICONTROL Perfil de Cores]**, você pode selecionar como fornecer um ativo de imagem CMYK a ser usado para impressão. Observe também que há parâmetros adicionais que você pode aplicar para ajustar a nitidez das imagens. Neste caso, **[!UICONTROL Tirar nitidez da máscara]** foi aplicada.
 
-![Criando uma predefinição de imagem selecionando opções na guia Avançado](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
+![Criar uma predefinição de imagem selecionando opções na guia Avançado](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
 _Criando uma predefinição de imagem selecionando opções na guia Avançado._
 
 Você lembra, em [Anatomia de um URL do Dynamic Media](#dm-journey-d) anteriormente, que leu sobre o URL do Dynamic Media e como ele é criado. A caixa de texto **[!UICONTROL Modificador de Imagem]** é onde você pode digitar os parâmetros de processamento de imagem adicionais desejados. Os parâmetros são incluídos no nome predefinido do URL quando as imagens são entregues, usando a predefinição. Na captura de tela acima, o parâmetro `bgc=451B15` foi adicionado. Ou seja, uma cor de fundo marrom-escuro foi adicionada.
@@ -146,7 +145,7 @@ _Predefinições de imagens estáticas e dinâmicas. A imagem observada foi rend
 
 Mas e se você tiver que mudar uma imagem no seu site? Por exemplo, suponha que você tenha feito alguns testes e descobriu que a imagem de 120 x 120 (a predefinição de imagem `Cart`) não está sendo recebida como você pensava. É necessário aumentar a imagem, aumentando a largura para 175 pixels e a altura para 175 pixels. Tradicionalmente, você teria que entrar no Adobe Photoshop e recriar todas essas imagens do carrinho. Porém, com o Dynamic Media, basta editar a predefinição da imagem, atualizando os valores de Largura e Altura para 175, e salvar a predefinição, como visto no exemplo abaixo.
 
-![Editando uma predefinição de imagem](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
+![Editar uma predefinição de imagem](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _Editando a Largura e a Altura da predefinição de imagem `Cart`._
 
 Depois de alterar a predefinição de imagem e liberar o cache, todas as imagens são atualizadas e todas as URLs que estão sendo usadas com essa predefinição são alteradas para qualquer lugar. __ Isso significa que não há links quebrados nem redirecionamentos de página da Web necessários.
@@ -175,7 +174,7 @@ _O Editor do Conjunto de Imagens permite adicionar ativos de imagem e reordenar 
 
 E aqui está a imagem `Running` definida no Experience Manager Assets.
 
-![A imagem em execução definida no Experience Manager Assets, Exibição de Cartão](/help/assets/dynamic-media/assets/dm-image-set.png)
+![A imagem em Execução definida no Experience Manager Assets, Exibição de Cartão](/help/assets/dynamic-media/assets/dm-image-set.png)
 _A imagem `Running` definida no Experience Manager Assets, Exibição de Cartão._
 
 Independentemente de ter criado um conjunto de imagens, um conjunto de mídia mista, um conjunto de rotação ou qualquer outra mídia interativa após a criação do conjunto, você deseja ver como ele aparece e se comporta para um cliente. O Dynamic Media tem vários visualizadores integrados que permitem fazer exatamente isso.
@@ -183,7 +182,7 @@ Independentemente de ter criado um conjunto de imagens, um conjunto de mídia mi
 Você começa selecionando o conjunto de imagens criado para abri-lo em uma visualização, como pode ser visto no exemplo a seguir.
 
 ![O conjunto de imagens em execução na visualização com a opção Visualizadores selecionada](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
-_O conjunto de imagens `Running` na visualização com a opção Visualizadores selecionada._
+_A imagem `Running` definida na visualização com a opção Visualizadores selecionada._
 
 Observe na visualização que é possível selecionar as amostras de sapato de corrida e aplicar mais ou menos zoom nos sapatos. Para aplicar um visualizador ao conjunto, selecione **[!UICONTROL Visualizadores]** no menu suspenso.
 
@@ -217,7 +216,7 @@ Se você quiser saber mais sobre o que acabou de ler, use os materiais abaixo pa
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=pt-BR) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -227,8 +226,8 @@ _Dynamic Media Help topics_
 
 _Tutoriais do Dynamic Media_
 
-* [Usar Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR)
-* [Biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/pt-br?lang=en#recommended/solutions/experience-manager) (pesquisar no _Dynamic Media_)
+* [Uso do Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (pesquisar no _Dynamic Media_)
 
 _Visualizadores do Dynamic Media_
 

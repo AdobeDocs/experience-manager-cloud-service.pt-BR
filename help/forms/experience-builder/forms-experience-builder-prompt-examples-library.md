@@ -7,9 +7,9 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2192'
 ht-degree: 0%
 
 ---
@@ -229,7 +229,7 @@ Esses exemplos mostram como criar formulários passo a passo, começando simples
 **Classificações de Empresa:**
 
     Adicionar um campo para classificação setorial com códigos NAICS
-    Criar uma lista suspensa de tipos de entidades comerciais (LLC, Corporation, Parceria etc.)
+    Criar uma lista suspensa de tipos de entidades de negócios (LLC, Corporação, Parceria etc.)
     Adicionar um campo para categorias de tamanho de empresa (inicialização, SME, empresa)
     Incluir seleção de departamento para organizações grandes
     Adicionar um campo para tipos de serviço profissional

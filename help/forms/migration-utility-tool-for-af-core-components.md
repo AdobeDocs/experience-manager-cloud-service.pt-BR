@@ -9,10 +9,10 @@ hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 6%
+source-wordcount: '1109'
+ht-degree: 8%
 
 ---
 
@@ -56,7 +56,7 @@ O Utilitário de conversão do Forms converte o Forms adaptável, que é baseado
 
 * [Configurar o ambiente de desenvolvimento local para o AEM Forms](/help/forms/setup-local-development-environment.md).
 * Instale os componentes principais adaptáveis do Forms mais recentes até o momento para ativar o ambiente do AEM Cloud Service.
-* Adicione usuários ao grupo [!DNL forms-users]. Os membros do grupo [!DNL forms-users] têm permissões para criar um Formulário adaptável.
+* Adicione usuários ao grupo [!DNL forms-users]. Os membros do grupo [!DNL forms-users] tem permissões para criar formulários adaptáveis.
 * Os usuários com as seguintes funções têm permissões para instalar as Ferramentas de modernização do AEM em um ambiente do AEM:
 
    * Função de desenvolvedor
@@ -166,5 +166,5 @@ Agora é possível ver que o Formulário adaptável incorporado aos Componentes 
 
 ## Práticas recomendadas {#best-practices}
 
-* Certifique-se de que os formulários baseados em Componentes de Base usem apenas os componentes que tenham um [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalente disponível. Nos casos em que você usa Componentes de base que não têm um Componente principal equivalente, o Componente de base não é convertido. Como resultado, não funciona corretamente ao criar um formulário
+* Certifique-se de que os formulários baseados em Componentes de Base usem apenas os componentes que tenham um [Componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalente disponível. Nos casos em que você usa Componentes de base que não têm um Componente principal equivalente, o Componente de base não é convertido. Como resultado, não funciona corretamente ao criar um formulário
 * Verifique se as regras para converter os Componentes de base em Componentes principais estão formatadas em XML.

@@ -6,7 +6,7 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 1%
@@ -25,25 +25,25 @@ Os seguintes casos específicos são registrados:
 
 1. Se um usuário não tiver um endereço de email no campo `profile/email` de seu nó *jcr*, o usuário ou grupo em questão será migrado, mas não será mapeado. Essa regra ocorre mesmo se o endereço de email for usado como um nome de usuário para fazer logon.
 
-1. Se um email não for encontrado no sistema Adobe Identity Management System (IMS) para a ID de organização usada (ou se a ID do IMS não puder ser recuperada), o usuário ou grupo será migrado, mas não será mapeado.
+1. Se um email não for encontrado no sistema Adobe Identity Management System (IMS) para a ID da organização usada (ou se a ID do IMS não puder ser recuperada), o usuário ou grupo será migrado, mas não será mapeado.
 
 1. Se o usuário estiver desativado, será tratado da mesma forma que se não estivesse desativado. Ele é mapeado e migrado normalmente e permanece desativado na instância da nuvem.
 
-1. Se existir um usuário na instância do AEM Cloud Service de destino com o mesmo nome de usuário (rep:principalName) de um dos usuários na instância de AEM de origem, esse usuário ou grupo não será migrado.
+1. Se existir um usuário na instância de destino do AEM Cloud Service com o mesmo nome de usuário (rep:principalName) de um dos usuários na instância de origem do AEM, esse usuário ou grupo não será migrado.
 
 1. Se um usuário for migrado sem ser mapeado primeiro por meio do Mapeamento de usuários, ele não poderá fazer logon usando a ID IMS no sistema de nuvem de destino. Talvez seja possível fazer logon usando o método tradicional do AEM, mas esse fluxo de trabalho normalmente não é o desejado ou esperado.
 
 ## Considerações adicionais {#additional-considerations}
 
-* Se a configuração **Apagar conteúdo existente na instância da nuvem antes de assimilar** estiver definida, os usuários já transferidos na instância do Cloud Service serão excluídos. O repositório existente inteiro também é excluído e um novo repositório é criado no qual o conteúdo é assimilado. Esta ação também redefine todas as configurações, incluindo permissões na instância Cloud Service de destino, e é verdadeira para um usuário administrador adicionado ao grupo **administradores**. O usuário administrador deve ser lido no grupo **administradores** para recuperar o token de acesso para CTT.
+* Se a configuração **Apagar conteúdo existente na instância da Nuvem antes de assimilar** estiver definida, os usuários já transferidos na instância do Cloud Service serão excluídos. O repositório existente inteiro também é excluído e um novo repositório é criado no qual o conteúdo é assimilado. Esta ação também redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino, e é verdadeira para um usuário administrador adicionado ao grupo **administradores**. O usuário administrador deve ser lido no grupo **administradores** para recuperar o token de acesso para CTT.
 
-* O Adobe recomenda remover qualquer usuário existente da instância do AEM do Cloud Service de destino antes de executar o CTT com o Mapeamento de usuário. Essa ação é necessária para evitar qualquer conflito entre a migração de usuários da instância do AEM de origem para a instância do AEM de destino. Conflitos podem ocorrer durante a assimilação se o mesmo usuário existir na instância de AEM de origem e na instância AEM de destino.
+* A Adobe recomenda remover qualquer usuário existente da instância do Cloud Service AEM de destino antes de executar a CTT com o Mapeamento de usuário. Essa ação é necessária para evitar qualquer conflito entre a migração de usuários da instância do AEM de origem para a instância do AEM de destino. Conflitos podem ocorrer durante a assimilação se o mesmo usuário existir na instância do AEM de origem e na instância do AEM de destino.
 
 * Quando atualizações complementares de conteúdo são executadas, se o conteúdo não for transferido porque não foi alterado desde a transferência anterior, os usuários e grupos associados a esse conteúdo também não serão transferidos. Essa regra é verdadeira mesmo se os usuários e grupos tiverem sido alterados enquanto isso. Isso ocorre porque usuários e grupos são migrados junto com o conteúdo ao qual estão associados.
 
-* Se o AEM Cloud Service tiver um usuário com um nome de usuário diferente, mas com o mesmo endereço de email de um usuário na instância AEM de origem, e o Mapeamento de usuário estiver ativado, uma mensagem de erro será registrada. Além disso, o usuário AEM de origem não é transferido, pois somente um usuário com determinado endereço de email é permitido no sistema de destino.
+* Se o AEM Cloud Service tiver um usuário com um nome de usuário diferente, mas o mesmo endereço de email de um usuário na instância de origem do AEM e o Mapeamento de usuário estiver ativado, uma mensagem de erro será registrada. Além disso, o usuário do AEM de origem não é transferido, pois somente um usuário com determinado endereço de email é permitido no sistema de destino.
 
-* Se dois usuários na instância de origem do AEM tiverem o mesmo endereço de email e o Mapeamento de usuário estiver ativado, uma mensagem de erro será registrada. Além disso, um dos usuários do AEM de origem é transferido porque somente um usuário com determinado endereço de email é permitido no sistema de destino.
+* Se dois usuários na instância de origem do AEM tiverem o mesmo endereço de email e o Mapeamento de usuário estiver ativado, uma mensagem de erro será registrada. Além disso, um dos usuários de origem do AEM é transferido porque somente um usuário com determinado endereço de email é permitido no sistema de destino.
 
 ### O que vem a seguir {#whats-next}
 

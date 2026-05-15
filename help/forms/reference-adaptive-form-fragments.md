@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Para autores de Forms adaptáveis, os fragmentos de referência são fornecidos 
 * Termos e condições
 * Termos e condições com assinatura
 
-Quando você instala o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada em Forms e documentos. Para instalar um pacote, consulte [Implantação de Pacotes de Conteúdo via Cloud Manager e Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#deploying-content-packages-via-cloud-manager-and-package-manager) e [Como Trabalhar com Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR).
+Quando você instala o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada em Forms e documentos. Para instalar um pacote, consulte [Implantação de Pacotes de Conteúdo via Cloud Manager e Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) e [Como Trabalhar com Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 ![Todos os fragmentos listados](assets/ootb-frags.png)
 

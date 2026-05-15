@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 9abc6e42-3b53-4dca-bd6a-ced5cf6c6ac4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 0%
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
@@ -55,7 +55,7 @@ Você pode usar o campo Descrição longa para especificar texto longo ou incorp
 
 ![Adicionando mídia avançada como ajuda em contexto para campos de formulário](assets/long-descriptions.png)
 
-Adicionar descrição longa exibe um **?Ícone** ao lado do campo. Clicar no ícone exibe o conteúdo adicionado na seção de descrição longa.
+Adicionando descrição longa exibe um **?** ícone ao lado do campo. Clicar no ícone exibe o conteúdo adicionado na seção de descrição longa.
 
 ![Exemplo de ajuda em contexto de mídia avançada](assets/photoshop.png)
 
@@ -65,6 +65,6 @@ Além da ajuda em contexto para campos de formulário, você pode especificar a 
 
 ![Adicionando ajuda em contexto para um painel de formulário](assets/panel-level-help.png)
 
-Adicionar ajuda para o painel exibe um **?Ícone** ao lado da descrição do painel. Clicar no ícone exibe o conteúdo adicionado na seção Conteúdo da ajuda da caixa de diálogo de edição do painel.
+Adicionando ajuda para o painel exibe um **?** ícone ao lado da descrição do painel. Clicar no ícone exibe o conteúdo adicionado na seção Conteúdo da ajuda da caixa de diálogo de edição do painel.
 
 ![Exemplo de ajuda em contexto no nível do painel do formulário](assets/photoshop-1.png)

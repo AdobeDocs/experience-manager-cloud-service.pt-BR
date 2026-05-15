@@ -2,15 +2,14 @@
 title: Traduzir conteúdo
 description: Use o conector e as regras de tradução para traduzir o conteúdo.
 index: true
-hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2535'
 ht-degree: 66%
 
 ---
@@ -251,7 +250,7 @@ Selecione esse ícone para abrir o conteúdo traduzido no console e ver os detal
 
 ![Uma página traduzida](assets/translated-page.png)
 
-É possível modificar ainda mais o conteúdo traduzido necessário, desde que você tenha a permissão adequada; mas a edição de conteúdo está fora do escopo dessa jornada. Consulte a seção [Recursos adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico.
+É possível modificar ainda mais o conteúdo traduzido necessário, desde que você tenha a permissão adequada; mas a edição de conteúdo está fora do escopo dessa jornada. Consulte a seção [Recursos Adicionais](#additional-resources) no final deste documento para obter mais informações sobre este tópico.
 
 O objetivo do projeto é coletar todos os recursos relacionados a uma tradução em um único local para facilitar o acesso e dar uma visão geral clara. No entanto, como você pode ver ao visualizar os detalhes de um item traduzido, as próprias traduções fluem de volta para a pasta de sites do idioma de tradução. Neste exemplo, a pasta é
 

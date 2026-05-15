@@ -7,10 +7,10 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 0%
+source-wordcount: '484'
+ht-degree: 1%
 
 ---
 
@@ -53,7 +53,7 @@ Layouts de design do formulário 2.1
 
 - Aceita preenchimento estático e dinâmico de conteúdo com base na estrutura de dados.
 
-## &#x200B;3. Utilização
+## &#x200B;3. Uso
 
 Os subformulários são amplamente usados para:
 

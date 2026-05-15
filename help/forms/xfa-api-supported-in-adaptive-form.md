@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '695'
 ht-degree: 5%
 
 ---
@@ -57,7 +57,7 @@ Quando um formulário adaptável é criado usando um arquivo XDP, você pode arr
   </tr>
   <tr>
    <td><p>Campo de data/hora </p> </td>
-   <td><p>Seletor de datas</p> </td>
+   <td><p>Seletor de data</p> </td>
   </tr>
   <tr>
    <td><p>Rabisco de assinatura</p> </td>
@@ -77,7 +77,7 @@ Quando um formulário adaptável é criado usando um arquivo XDP, você pode arr
   </tr>
   <tr>
    <td><p>Campo de senha </p> </td>
-   <td><p>Caixa de senha</p> </td>
+   <td><p>Caixa Senha</p> </td>
   </tr>
   <tr>
    <td><p>Imagem</p> </td>

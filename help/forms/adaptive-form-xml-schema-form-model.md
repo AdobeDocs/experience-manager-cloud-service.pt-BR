@@ -8,9 +8,9 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '970'
 ht-degree: 6%
 
 ---
@@ -201,7 +201,7 @@ Você pode adicionar as seguintes restrições aos elementos do esquema XML para
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador Numérico<br /> </li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>

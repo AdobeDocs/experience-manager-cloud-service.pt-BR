@@ -8,13 +8,12 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Aplicável ao AEM Assets)."
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '3620'
+source-wordcount: '3692'
 ht-degree: 0%
 
 ---
@@ -82,7 +81,7 @@ Esse método de entrega exclusivo garante que experiências de qualidade consist
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![O Adobe Dynamic Media fornece a mesma imagem principal a mídias diferentes em tamanhos e formatos diferentes](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+![O Adobe Dynamic Media fornece a mesma imagem principal a mídias diferentes, em tamanhos e formatos diferentes](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
 _O Adobe Dynamic Media garante que experiências consistentes e de qualidade sejam oferecidas em qualquer tela, independentemente do tamanho ou da largura de banda._
 
 À medida que você lê, aprenderá mais sobre por que esse conceito de &quot;um arquivo de ativo principal, infinitas possibilidades&quot; é importante.
@@ -253,14 +252,14 @@ Além de publicar ativos manualmente, você pode configurar o Dynamic Media para
 
 Após o upload, há diferentes maneiras de pré-visualizar as representações de um ativo no Dynamic Media. Visualizar representações pode ajudar a fornecer uma ideia do que um cliente vê. Um método de visualização comum é selecionar um ativo e exibir suas representações ao selecionar uma _predefinição de imagem_, como visto a seguir.
 
-![Visualização de uma representação de um ativo com base na predefinição de imagem grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
+![Visualização de uma representação de um ativo com base na predefinição de Imagem grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Pré-visualização de uma representação de um ativo com base na predefinição de imagem &quot;Grande&quot; selecionada. O botão URL foi clicado. O caminho de URL resultante contém o nome de predefinição de imagem &quot;Grande&quot; e pode ser usado em uma página da Web._
 
 O URL acima está ativo. [Experimente](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
 
 Outro método para visualizar um ativo é selecionar o ativo da imagem e, em seguida, selecionar uma predefinição de _Visualizadores_, como visto a seguir.
 
-![Visualizando um ativo com base na predefinição do visualizador Zoom Vertical Light](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
+![Visualização de um ativo com base na predefinição do visualizador Zoom vertical claro](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Visualizando um ativo com base na predefinição do visualizador &quot;ZoomVertical_light&quot; selecionada. O ponteiro do mouse (`+`) foi movido sobre a inspeção para ampliar. Observe os botões URL e Incorporar._
 
 A representação acima está ativa. [Experimente](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}.
@@ -286,8 +285,8 @@ _Dynamic Media Help topics_
 
 _Tutoriais do Dynamic Media_
 
-* [Usar Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=pt-BR)
-* [Biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/pt-br?lang=en#recommended/solutions/experience-manager) (pesquisar no _Dynamic Media_)
+* [Uso do Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (pesquisar no _Dynamic Media_)
 
 _Visualizadores do Dynamic Media_
 

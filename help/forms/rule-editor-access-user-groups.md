@@ -6,13 +6,13 @@ role: User
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 2%
+source-wordcount: '330'
+ht-degree: 6%
 
 ---
-
 
 # Conceder acesso ao editor de regras para grupos de usuários selecionados {#grant-rule-editor-access-to-select-user-groups}
 
@@ -44,7 +44,7 @@ Há diferentes tipos de usuários com habilidades variadas que trabalham com o A
 
    ![Criar Usuário](assets/create_user_new.png)
 
-   Agora, quando um usuário que não faz parte do grupo de usuários especificado (aqui    `RuleEditorsUserGroup`) toque em um campo, o ícone Editar regra ( ![edit-rules1](assets/edit-rules1.png)) não está disponível na barra de ferramentas Componentes:
+   Agora, quando um usuário que não faz parte do grupo de usuários especificado (aqui `RuleEditorsUserGroup`) toca em um campo, o ícone Editar Regra ( ![edit-rules1](assets/edit-rules1.png)) não está disponível na barra de ferramentas Componentes:
 
    ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 
@@ -54,5 +54,4 @@ Há diferentes tipos de usuários com habilidades variadas que trabalham com o A
 
    Barra de ferramentas Componentes conforme visível para um usuário sem acesso ao editor de regras
 
-   Para obter instruções sobre como adicionar usuários a grupos, consulte [Administração e Segurança do Usuário](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=pt-BR).
-
+   Para obter instruções sobre como adicionar usuários a grupos, consulte [Administração e Segurança do Usuário](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).

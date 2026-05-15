@@ -7,7 +7,7 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Aplicável ao AEM Forms)."
 exl-id: d481e705-62bf-47f7-a832-1a005ec5ec59
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 1%
@@ -65,7 +65,7 @@ Inicie um novo thread de conversa no Forms Experience Builder:
 3. Um novo thread de conversa será criado
 4. Comece descrevendo os novos requisitos de formulário
 
-**Vantagens:**
+**Benefícios:**
 
 - Mantém os projetos de formulários diferentes organizados
 - Fornece uma tabulação limpa para a criação de novos formulários

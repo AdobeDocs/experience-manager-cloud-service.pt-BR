@@ -5,23 +5,23 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: e53535a8-cd6b-4f30-9523-773243098757
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 4%
+source-wordcount: '394'
+ht-degree: 3%
 
 ---
 
-
 # Criar e gerenciar revisões para um Formulário adaptável {#review-step-forms-aem-sites-page}
 
-Usando a [Etapa de atribuição](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=pt-BR#assign-task-step) do fluxo de trabalho do AEM, o revisor revisa o formulário enviado e executa a ação nele. Para revisar o formulário enviado usando a etapa Atribuir tarefa, siga estas etapas:
+Usando a [Etapa de atribuição](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step) do fluxo de trabalho do AEM, o revisor revisa o formulário enviado e executa a ação nele. Para revisar o formulário enviado usando a etapa Atribuir tarefa, siga estas etapas:
 
-1. [Criar um fluxo de trabalho do AEM](#create-an-aem-workflow)
+1. [Criar um workflow do AEM](#create-an-aem-workflow)
 1. [Configurar a ação de envio do contêiner de Formulário adaptável](#configure-submit-action)
 1. [Enviar um formulário adaptável após a revisão](#submit-af-after-review)
 
-## Criar um fluxo de trabalho do AEM {#create-an-aem-workflow}
+## Criar um workflow do AEM {#create-an-aem-workflow}
 
 1. Abra a instância do autor no modo de edição.
 1. Vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de Trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL Criar]** > **[!UICONTROL Criar Modelo]**
@@ -46,7 +46,7 @@ Agora, configure a ação Enviar de um componente de Contêiner de formulário a
 
 1. Vá para a página do site.
 1. Selecione ![settings_icon](assets/settings_icon.png) de um contêiner de Formulário adaptável. A caixa de diálogo **[!UICONTROL Contêiner de formulário adaptável]** é aberta.
-1. Abra a guia **[!UICONTROL Envio]** e especifique **[!UICONTROL Enviar Ação]** para [Invocar um fluxo de trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=pt-BR#invoke-an-aem-workflow)
+1. Abra a guia **[!UICONTROL Envio]** e especifique **[!UICONTROL Enviar Ação]** para [Chamar um fluxo de trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
 
 1. Clique em [Concluído] para salvar as configurações.
 

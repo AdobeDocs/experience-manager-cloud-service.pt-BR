@@ -6,9 +6,9 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -59,8 +59,8 @@ Esse painel permite que você tome decisões orientadas por dados sobre seus for
 Vamos traduzir esses resultados em etapas acionáveis!
 
 * **Poucos envios?** Investigue a clareza e a facilidade de uso do formulário. É muito longo ou tem perguntas confusas? Considere revisar para obter uma melhor experiência do usuário.
-* **Tempos de Criação Altos?** Analise o processo de criação. Há etapas ou recursos desnecessários que não estão sendo usados com eficiência? Use recursos que economizam tempo, como modelos.
-* **Fragmentos subutilizados?** Verifique se os fragmentos são bem organizados, pesquisáveis e fáceis de entender. Considere promover o uso de fragmentos em sua equipe.
+* **Grandes Tempos de Criação?** Analise o processo de criação. Há etapas ou recursos desnecessários que não estão sendo usados com eficiência? Use recursos que economizam tempo, como modelos.
+* **Fragmentos subutilizados?** Verifique se os fragmentos estão bem organizados, pesquisáveis e fáceis de entender. Considere promover o uso de fragmentos em sua equipe.
 
 Ao analisar essas tendências, você pode criar formulários melhores, economizar tempo na criação e aproveitar componentes reutilizáveis. Isso se traduz em um fluxo de trabalho mais suave, usuários mais satisfeitos e, em última análise, um maior retorno sobre seu investimento.
 

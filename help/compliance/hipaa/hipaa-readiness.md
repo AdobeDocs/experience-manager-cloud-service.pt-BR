@@ -2,11 +2,12 @@
 title: Disponibilidade para HIPAA para Adobe Experience Manager as a Cloud Service
 description: Saiba mais sobre o suporte do Experience Manager as a Cloud Service para os Regulamentos HIPAA e como estar em conformidade ao implementar um novo projeto AEM as a Cloud Service.
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 49721ac71bc2bde10eb5f25db58ee1b07c8a82e5
+role: Admin, Developer, Leader
+exl-id: 9928811e-3487-430a-9e2f-04959460c95f
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 6%
+source-wordcount: '1029'
+ht-degree: 7%
 
 ---
 
@@ -93,7 +94,7 @@ A tabela a seguir descreve quais serviços da AEM estão prontos para HIPAA e qu
 | AEM Cloud Manager | AEM Cloud Manager, Orquestrador de versões, Alternadores de versão, Validador de versões | Pronto para HIPAA |
 | AEM Cloud Manager | Distribuição de software | Não preparado para HIPAA<br>[1] Pode ser adicionado a um Programa de Segurança Estendida quando nenhum PHI é introduzido. |
 |   |   |   |
-| AEM Guides  | AEM Guides  | Não preparado para HIPAA |
+| Guias do AEM  | Guias do AEM  | Não preparado para HIPAA |
 |   |   |   |
 | LLM Optimizer | LLM Optimizer | Não preparado para HIPAA<br>[1] Pode ser adicionado a um Programa de Segurança Estendida quando nenhum PHI é introduzido. |
 
@@ -132,7 +133,7 @@ Isso significa que você deve:
 
 A tabela a seguir mostra onde os tipos de ambiente podem ser compatíveis como prontos para HIPAA.
 
-| | RDE | Dev | Estágio  | Prod |
+| | RDE | Dev | Fase  | Prod |
 | --- | --- | --- | --- | --- |
 | Tipo de ambiente  | Não  | Não  | Não  | Sim  |
 

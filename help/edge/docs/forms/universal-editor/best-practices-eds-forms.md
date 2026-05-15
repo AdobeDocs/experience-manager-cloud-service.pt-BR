@@ -6,9 +6,9 @@ role: Admin, Developer
 hide: true
 hidefromtoc: true
 exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
@@ -95,5 +95,5 @@ Este guia fornece uma visão geral do uso de formulários com o AEM Edge Deliver
 
 - [Criação baseada em documento com o Edge Delivery Services Forms](/help/edge/docs/forms/tutorial.md)
 - [Editor universal com o Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-- [Criação de Documentos (DA) e Incorporação de Conteúdo](https://www.aem.live/developer/da-tutorial)
+- [Criação de documentos (DA) e incorporação de conteúdo](https://www.aem.live/developer/da-tutorial)
 - [Serviço de Envio do AEM Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)

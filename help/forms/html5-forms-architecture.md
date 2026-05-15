@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 0%
+source-wordcount: '2069'
+ht-degree: 2%
 
 ---
 
@@ -97,7 +97,7 @@ O HTML5 forms usa o armazenamento em cache para otimizar a taxa de transferênci
   </tr>
   <tr>
    <td>Agressivo</td>
-   <td>Armazenar em cache o conteúdo do HTML renderizado <br /> Armazenar em cache todos os artefatos no nível Conservador.<br /> <strong>Observação</strong>: essa estratégia resulta em melhor desempenho, mas consome mais memória para armazenar os artefatos em cache.</td>
+   <td>Armazenar em cache conteúdo HTML renderizado <br /> Armazenar em cache todos os artefatos no nível Conservador.<br /> <strong>Observação</strong>: essa estratégia resulta em melhor desempenho, mas consome mais memória para armazenar os artefatos em cache.</td>
   </tr>
  </tbody>
 </table>

@@ -4,9 +4,9 @@ description: Saiba como criar fragmentos de formulário no Editor universal e ad
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1706'
 ht-degree: 1%
 
 ---
@@ -223,7 +223,7 @@ Para integrar um fragmento de formulário ao formulário:
    <td><p> Fornece opções para copiar o fragmento de formulário e colá-lo no local desejado. <br /> <br /> </p> </td>
     </tr>
    <tr>
-   <td><p>Visualização</p> </td>
+   <td><p>Pré-visualização</p> </td>
    <td><p>Fornece opções para visualizar o fragmento como HTML ou executar uma visualização personalizada mesclando dados de um arquivo XML com o fragmento. <br /> </p> </td>
     </tr>
     <tr>
@@ -236,8 +236,8 @@ Para integrar um fragmento de formulário ao formulário:
     </tr>
     <!--
     <tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+    <td><p>Add Dictionary</p> </td>
+    <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
     </tr>
     -->
     <tr>
