@@ -4,10 +4,10 @@ description: Saiba como usar o CDN gerenciado pela AEM e como apontar seu própr
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 355c0c9db126f17954e7f26953132b44b56bf653
+source-git-commit: 5f81fd54e28ce2636960ad66d1ae9317b9653e61
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 10%
+source-wordcount: '1907'
+ht-degree: 9%
 
 ---
 
@@ -97,7 +97,7 @@ Instruções de configuração:
 1. Defina o cabeçalho `X-Forwarded-Host` com o nome de domínio para que o AEM possa determinar o cabeçalho do host. Por exemplo: `X-Forwarded-Host:example.com`.
 1. Defina `X-AEM-Edge-Key`. O valor deve ser configurado usando primeiro um pipeline de configuração do Cloud Manager e, em seguida, a mesma chave de borda deve ser configurada no CDN do cliente, conforme descrito em [este artigo](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
-   * Necessário para que a CDN do Adobe possa validar a origem das solicitações e transmitir os cabeçalhos `X-Forwarded-*` para o aplicativo do AEM. Por exemplo, `X-Forwarded-For` é usado para determinar o IP do cliente. Portanto, torna-se responsabilidade do chamador confiável (ou seja, a CDN gerenciada pelo cliente) garantir a exatidão dos cabeçalhos `X-Forwarded-*` (consulte a observação abaixo).
+   * Necessário para que a CDN do Adobe possa validar a origem das solicitações e transmitir os cabeçalhos `X-Forwarded-*` para o aplicativo do AEM. Por exemplo, `X-Forwarded-For` é usado para determinar o IP do cliente. Portanto, torna-se responsabilidade do chamador confiável (ou seja, a CDN gerenciada pelo cliente) garantir a exatidão dos cabeçalhos `X-Forwarded-*` (consulte a observação abaixo). Consulte também [como testar cabeçalhos encaminhados com `x-aem-debug`](#test-forwarded-headers).
    * Opcionalmente, o acesso à entrada da CDN da Adobe pode ser bloqueado quando um `X-AEM-Edge-Key` não estiver presente. Informe ao Adobe se você precisar de acesso direto ao ingresso do Adobe CDN (a ser bloqueado).
 
 Consulte a seção [Configurações de exemplo de fornecedor de CDN](#sample-configurations) para obter exemplos de configuração dos principais fornecedores de CDN.
@@ -117,6 +117,7 @@ No Windows:
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
+
 
 >[!NOTE]
 >
@@ -138,13 +139,6 @@ Essa configuração de CDN do cliente é compatível com o nível de publicaçã
 
 Para depurar uma configuração BYOCDN, use o cabeçalho `x-aem-debug` com um valor de `edge=true`. Por exemplo:
 
-No Linux:
-
-```
-curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
-```
-
-No Windows:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
@@ -153,17 +147,37 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Fo
 Esse processo reflete determinadas propriedades usadas na solicitação no cabeçalho de resposta `x-aem-debug`. Por exemplo:
 
 ```
-x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,x-aem-edge-Key=set,host=redactedaemdomain,x-forwarded-host=wknd.site
 ```
 
+
+
 Esse processo permite a verificação de detalhes, como os valores do host, a configuração de autenticação de borda e o valor do cabeçalho x-forwarded-host. Também identifica se uma chave de borda está definida e qual chave será usada se houver uma correspondência.
+
+#### Testar cabeçalhos encaminhados com x-aem-debug {#test-forwarded-headers}
+
+Para testar se um visitante não pode controlar cabeçalhos encaminhados (`X-Forwarded-For`, `X-Forwarded-Host`, `Forwarded`), o CDN gerenciado pela AEM apaga os valores fornecidos pelo visitante e define os confiáveis. Chame seu site com valores aleatórios e inspecione o cabeçalho de resposta `x-aem-debug`:
+
+```
+curl https://www.example.com -v --header "X-Forwarded-Host: bad.example.com" --header "x-aem-debug: edge=true"
+```
+
+```
+curl https://www.example.com -v --header "X-Forwarded-For: 1.2.3.4" --header "x-aem-debug: edge=true"
+```
+
+Substitua `www.example.com` pelo domínio do site. O cabeçalho de resposta `x-aem-debug` deve refletir o host do site e o IP do cliente; os valores enviados não devem aparecer. Por exemplo:
+
+```
+x-aem-debug: edge=true,x-forwarded-host=www.example.com, x-forwarded-for=....
+```
 
 >[!NOTE]
 >
 >Você pode usar um ambiente de desenvolvimento rápido (RDE) para implantar e testar sua configuração:
 >
 >* [Ambientes de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [Como usar o Ambiente de Desenvolvimento Rápido](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [Como usar o Ambiente de Desenvolvimento Rápido](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### Configurações de exemplo de fornecedor de CDN {#sample-configurations}
 
