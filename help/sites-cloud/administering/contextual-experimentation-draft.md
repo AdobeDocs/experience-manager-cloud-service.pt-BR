@@ -3,10 +3,9 @@ title: Experimentação contextual no AEM as a Cloud Service
 description: Saiba como usar o painel de experimentação para adicionar recursos de experimentação ao site.
 feature: Administering
 role: Admin
-exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: 4764d9b3343ca88e0de7506d955741e8cac2f2e1
+source-git-commit: c948abf5391e61f01912f769b17e1ac0bd81a745
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1949'
 ht-degree: 0%
 
 ---
@@ -55,7 +54,7 @@ Antes de configurar experimentos, lembre-se de que você precisará usar os site
 1. Clique no ícone A/B para abrir a extensão de experimentação.
 
 >[!NOTE]
->Se tiver problemas para configurar a experimentação para o seu projeto, entre em contato com [aem-contextual-experimentation@adobe.com](mailto:aem-contextual-experimentation@adobe.com).
+>Se tiver problemas para configurar a experimentação para seu projeto, entre em contato com `aem-contextual-experimentation@adobe.com`.
 
 >[!NOTE]
 >Para obter mais detalhes sobre como instalar e configurar o mecanismo de experimentação, consulte a seção de documentação do seguinte [repositório](https://github.com/adobe/aem-experimentation/tree/v2-ui).
